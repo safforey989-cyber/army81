@@ -2,16 +2,16 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# تثبيت المكتبات
+# curl for healthcheck
+RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/*
+
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# نسخ الكود
 COPY . .
 
-# إنشاء مجلد السجلات
-RUN mkdir -p logs
+RUN mkdir -p workspace/reports workspace/compressed logs
 
-EXPOSE 8181
+EXPOSE 8181 8501
 
 CMD ["python", "gateway/app.py"]

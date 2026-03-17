@@ -1,0 +1,10 @@
+.env
+__pycache__
+*.pyc
+.git
+*.db
+.claude
+workspace/chroma_db
+workspace/reports
+workspace/compressed
+logs/*.log

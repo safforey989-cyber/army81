@@ -1,25 +1,42 @@
 version: "3.9"
 
 services:
-  army81:
+  gateway:
     build: .
     ports:
       - "8181:8181"
-    env_file:
-      - .env
+    env_file: .env
     volumes:
-      - ./logs:/app/logs
+      - ./workspace:/app/workspace
       - ./agents:/app/agents
-    restart: unless-stopped
+      - ./memory:/app/memory
+    restart: always
+    command: python gateway/app.py
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8181/health"]
       interval: 30s
       timeout: 10s
       retries: 3
 
-  # قاعدة بيانات محلية للتطوير
-  redis:
-    image: redis:7-alpine
+  dashboard:
+    build: .
     ports:
-      - "6379:6379"
-    restart: unless-stopped
+      - "8501:8501"
+    env_file: .env
+    depends_on:
+      - gateway
+    restart: always
+    command: streamlit run dashboard/army81_dashboard.py --server.port 8501 --server.address 0.0.0.0 --browser.gatherUsageStats false
+    volumes:
+      - ./workspace:/app/workspace
+      - ./agents:/app/agents
+
+  updater:
+    build: .
+    env_file: .env
+    depends_on:
+      - gateway
+    restart: always
+    command: python scripts/daily_updater.py --schedule
+    volumes:
+      - ./workspace:/app/workspace
