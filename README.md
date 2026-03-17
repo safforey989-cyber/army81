@@ -1,96 +1,71 @@
-# Army81 - نظام 81 وكيل ذكاء اصطناعي متكامل
+# Army81 — نظام 81 وكيل ذكاء اصطناعي
 
-> نظام بيئي متكامل من 81 وكيلاً متخصصاً يعملون معاً كفريق واحد، مع قدرة على التطور الذاتي.
+نظام متكامل من 81 وكيلاً متخصصاً يعملون معاً كفريق واحد.
 
-## البنية
+## التشغيل السريع
 
-| الفئة | العدد | الوصف |
-|-------|-------|-------|
-| cat1_leadership | 12 | القيادة والإدارة الاستراتيجية |
-| cat2_engineering | 15 | التطوير والهندسة البرمجية |
-| cat3_research | 12 | البحث والتحليل |
-| cat4_creative | 10 | المحتوى والإبداع |
-| cat5_operations | 12 | العمليات والأتمتة |
-| cat6_security | 10 | الأمن والجودة |
-| cat7_evolution | 10 | التحسين الذاتي والتطور |
+```bash
+# 1. استنسخ المشروع
+git clone https://github.com/YOUR_USERNAME/army81.git
+cd army81
 
-## التثبيت السريع
+# 2. إعداد البيئة
+cp .env.example .env
+# عبّئ .env بمفاتيحك (GOOGLE_API_KEY مطلوب للبدء)
 
-### Windows
-```cmd
-setup.bat
+# 3. تثبيت المكتبات
+pip install -r requirements.txt
+
+# 4. تشغيل الاختبارات
+python tests/test_core.py
+
+# 5. تشغيل النظام
+python gateway/app.py
+# افتح: http://localhost:8181
 ```
 
-### Linux / Mac
+## الهيكل
+
+| الفئة | العدد | التخصص |
+|-------|-------|--------|
+| cat1_science | 9 | العلوم والتقنية |
+| cat2_society | 15 | المجتمع والاستراتيجية |
+| cat3_tools | 10 | الأدوات والتمكين |
+| cat4_management | 8 | الإدارة |
+| cat5_behavior | 13 | السلوك البشري |
+| cat6_leadership | 16 | القيادة |
+| **المجموع** | **81** | |
+
+## API
+
 ```bash
-chmod +x setup.sh && ./setup.sh
-```
-
-### Docker
-```bash
-docker-compose up -d
-```
-
-## الاستخدام
-
-### سطر الأوامر
-```bash
-# حالة النظام
-python cli.py status
-
-# قائمة الوكلاء
-python cli.py list
-
 # تنفيذ مهمة (توجيه تلقائي)
-python cli.py task "اكتب تقريراً عن أحدث تطورات الذكاء الاصطناعي"
+POST /task
+{"task": "لخص أهم أخبار الذكاء الاصطناعي اليوم"}
 
-# تنفيذ مهمة لوكيل محدد
-python cli.py task "اكتب كود Python لتحليل CSV" --agent A13
+# تنفيذ لوكيل محدد
+POST /task
+{"task": "...", "agent_id": "A04"}
 
-# سلسلة وكلاء (pipeline)
-python cli.py pipeline "حلل هذا المشروع وحسنه" --agents A28 A13 A14
-
-# وضع الدردشة التفاعلي
-python cli.py chat
-
-# تشغيل خادم API
-python cli.py serve --port 8181
-```
-
-### API (FastAPI)
-```bash
-# تشغيل الخادم
-python cli.py serve
-
-# تنفيذ مهمة
-curl -X POST http://localhost:8181/task \
-  -H "Content-Type: application/json" \
-  -d '{"task": "اكتب مقالاً عن الذكاء الاصطناعي"}'
-
-# قائمة الوكلاء
-curl http://localhost:8181/agents
+# سلسلة وكلاء
+POST /pipeline
+{"task": "...", "agent_ids": ["A01", "A04", "A07"]}
 
 # حالة النظام
-curl http://localhost:8181/status
+GET /status
 ```
 
-## المكونات الأساسية
+## للمطورين والأدوات AI
 
-- **Smart Router**: بوابة ذكية توجه المهام للوكيل المناسب
-- **Memory System**: ذاكرة 4 مستويات (قصيرة، عاملة، طويلة، عرضية)
-- **A2A Protocol**: بروتوكول تواصل مباشر بين الوكلاء
-- **Daily Updater**: تحديث يومي تلقائي من GitHub وHuggingFace
-- **Self Improver**: محرك تحسين ذاتي مستوحى من Hermes Agent
+اقرأ [CLAUDE.md](CLAUDE.md) أولاً — يحتوي على كل التعليمات والمهام القادمة.
 
-## النماذج المدعومة
+## CHANGELOG
 
-| المزود | النماذج | الاستخدام |
-|--------|---------|-----------|
-| Ollama (محلي) | qwen3:8b, qwen2.5-coder:14b | المهام الروتينية |
-| OpenAI | gpt-4o, gpt-5 | المهام الحرجة |
-| Anthropic | claude-3.5-sonnet | التحليل العميق |
-| Perplexity | sonar-pro | البحث المباشر |
-
-## الترخيص
-
-MIT License
+### v1.0.0 — 2026-03-17
+- البنية الأساسية: BaseAgent, LLMClient, SmartRouter
+- نماذج حقيقية: Gemini, Claude, Ollama
+- أدوات: web_search, fetch_news
+- وكيلان نموذجيان: A01, A04
+- FastAPI Gateway
+- اختبارات أساسية
+- GitHub Actions CI
