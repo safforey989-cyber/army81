@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "tasks": [
+    {
+      "id": "B001",
+      "type": "research",
+      "task": "لخص آخر تطورات LLMs في 2026 في 5 نقاط",
+      "min_words": 80
+    },
+    {
+      "id": "B002",
+      "type": "code",
+      "task": "اكتب دالة Python تحسب Fibonacci بـ memoization",
+      "must_contain": ["def", "return"]
+    },
+    {
+      "id": "B003",
+      "type": "strategy",
+      "task": "ضع خطة تسويقية مختصرة لمنتج AI جديد",
+      "min_words": 100
+    },
+    {
+      "id": "B004",
+      "type": "medical",
+      "task": "اشرح آلية عمل الأنسولين في الجسم",
+      "min_words": 80
+    },
+    {
+      "id": "B005",
+      "type": "financial",
+      "task": "حلل 3 مخاطر رئيسية للاستثمار في العملات الرقمية",
+      "min_words": 80
+    }
+  ]
+}
