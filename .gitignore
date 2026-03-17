@@ -1,8 +1,42 @@
+# Python
 __pycache__/
-*.pyc
-.env
-*.db
-memory/
-logs/
-skills/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# البيئة الافتراضية
 .venv/
+venv/
+env/
+
+# المفاتيح (لا ترفع هذا أبداً!)
+.env
+*.key
+secrets/
+
+# قواعد البيانات المحلية
+*.db
+*.sqlite
+
+# السجلات
+logs/
+*.log
+
+# ملفات النظام
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Docker
+.docker/
+
+# ملفات مؤقتة
+tmp/
+temp/
