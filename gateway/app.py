@@ -1,6 +1,7 @@
 """
 Army81 Gateway — FastAPI
 نقطة الدخول الوحيدة للنظام
+v1.3.0 — Phase 3: /workflow endpoint + 40 agents
 """
 import json
 import logging
@@ -18,6 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from core.base_agent import BaseAgent, load_agent_from_json
 from router.smart_router import SmartRouter
 from tools.web_search import web_search, fetch_news
+from tools.registry import build_tools_registry
 from core.base_agent import Tool
 
 # ── Logging ──────────────────────────────────────────────
@@ -36,28 +38,15 @@ logger = logging.getLogger("army81")
 app = FastAPI(
     title="Army81",
     description="نظام 81 وكيل ذكاء اصطناعي متكامل",
-    version="1.0.0",
+    version="1.3.0",
 )
 app.add_middleware(CORSMiddleware, allow_origins=["*"],
                    allow_methods=["*"], allow_headers=["*"])
 
 router = SmartRouter()
 
-# ── أدوات مشتركة ──────────────────────────────────────────
-TOOLS_REGISTRY: Dict[str, Tool] = {
-    "web_search": Tool(
-        name="web_search",
-        description="بحث على الإنترنت للحصول على معلومات حديثة",
-        func=web_search,
-        parameters={"query": "str"},
-    ),
-    "fetch_news": Tool(
-        name="fetch_news",
-        description="جمع أخبار حديثة حول موضوع",
-        func=fetch_news,
-        parameters={"topic": "str"},
-    ),
-}
+# ── سجل الأدوات الكامل ────────────────────────────────────
+TOOLS_REGISTRY: Dict[str, Tool] = build_tools_registry()
 
 
 def load_all_agents():
@@ -100,6 +89,12 @@ class PipelineRequest(BaseModel):
 class BroadcastRequest(BaseModel):
     task: str
     category: Optional[str] = None
+
+class WorkflowRequest(BaseModel):
+    workflow: str                    # "research_pipeline" | "analysis_pipeline" | "decision_support" | "custom"
+    task: str
+    agent_ids: Optional[List[str]] = None   # للـ custom workflow فقط
+    context: Optional[Dict] = None
 
 # ── Endpoints ─────────────────────────────────────────────
 @app.on_event("startup")
@@ -153,9 +148,83 @@ async def broadcast(req: BroadcastRequest):
     results = router.broadcast(req.task, req.category)
     return {"count": len(results), "results": results}
 
+@app.post("/workflow")
+async def run_workflow(req: WorkflowRequest):
+    """
+    تنفيذ مهمة عبر LangGraph workflow
+    workflow: "research_pipeline" | "analysis_pipeline" | "decision_support" | "custom"
+    مثال: {"workflow": "research_pipeline", "task": "حلّل مستقبل الذكاء الاصطناعي"}
+    """
+    from workflows.langgraph_flows import (
+        build_research_workflow,
+        build_analysis_workflow,
+        build_decision_workflow,
+        build_custom_workflow,
+    )
+    from core.llm_client import LLMClient
+
+    agents_dict = router.agents
+    llm = LLMClient("gemini-flash")
+
+    WORKFLOW_MAP = {
+        "research_pipeline": lambda: build_research_workflow(agents_dict, llm),
+        "analysis_pipeline": lambda: build_analysis_workflow(agents_dict, llm),
+        "decision_support":  lambda: build_decision_workflow(agents_dict, llm),
+    }
+
+    if req.workflow == "custom":
+        if not req.agent_ids:
+            raise HTTPException(400, "agent_ids مطلوب للـ custom workflow")
+        wf = build_custom_workflow(req.agent_ids, agents_dict, llm, name="custom")
+    elif req.workflow in WORKFLOW_MAP:
+        wf = WORKFLOW_MAP[req.workflow]()
+    else:
+        raise HTTPException(
+            400,
+            f"workflow '{req.workflow}' غير معروف. الخيارات: {list(WORKFLOW_MAP.keys()) + ['custom']}"
+        )
+
+    if not wf.agents:
+        raise HTTPException(
+            503,
+            f"لا يوجد وكلاء كافيين لـ '{req.workflow}'. تأكد من تحميل الوكلاء."
+        )
+
+    result = wf.run(req.task, req.context or {})
+    return result
+
+@app.get("/workflows")
+async def list_workflows():
+    """عرض الـ workflows المتاحة وأعضاؤها"""
+    from workflows.langgraph_flows import (
+        build_research_workflow, build_analysis_workflow, build_decision_workflow
+    )
+    from core.llm_client import LLMClient
+
+    agents_dict = router.agents
+    llm = LLMClient("gemini-flash")
+
+    workflows_info = {}
+    for name, builder in [
+        ("research_pipeline", build_research_workflow),
+        ("analysis_pipeline", build_analysis_workflow),
+        ("decision_support",  build_decision_workflow),
+    ]:
+        wf = builder(agents_dict, llm)
+        workflows_info[name] = {
+            "agents": [a.agent_id for a in wf.agents],
+            "agent_names": [a.name_ar for a in wf.agents],
+            "ready": len(wf.agents) > 0,
+        }
+
+    return {
+        "available_workflows": workflows_info,
+        "custom": "POST /workflow با workflow='custom' و agent_ids=['A01','A04',...]",
+    }
+
 @app.get("/health")
 async def health():
-    return {"status": "healthy", "agents": len(router.agents)}
+    return {"status": "healthy", "agents": len(router.agents), "version": "1.3.0"}
 
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":

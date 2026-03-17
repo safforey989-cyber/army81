@@ -1,5 +1,28 @@
 # CHANGELOG
 
+## [1.3.0] — 2026-03-17 — المرحلة 3: 28 وكيل جديد + Daily Updater + /workflow
+
+### ما تم بناؤه (Claude Code — المرحلة 3)
+- **28 وكيل جديد (A02-A03 + A15-A40) — إجمالي: 40 وكيل**
+  - **cat5_behavior (A15-A27):** علم النفس، التفاوض، لغة الجسد، الإقناع، الذكاء العاطفي، الديناميكيات الاجتماعية، سلوك الجماهير، الاقتصاد السلوكي، حل النزاعات، سيكولوجية القيادة، التواصل، سيكولوجية القرار، الذكاء الثقافي
+  - **cat6_leadership (A28-A37):** الاستراتيجية العسكرية، إدارة الأزمات، الابتكار، الاستخبارات، الجيوسياسة، استشراف المستقبل، تقييم المخاطر، إدارة التغيير، استراتيجي المنظمات، مهندس القرارات
+  - **cat1_science (A02, A38-A40):** البحث العلمي، الفيزياء والكم، المناخ، كاشف التقنيات
+  - **cat2_society (A03):** تحليل السياسات
+- **`scripts/daily_updater.py`** — تحديث ذكاء يومي:
+  - يجمع من arXiv (5 موضوعات AI) + GitHub Trending (3 استعلامات) + NewsAPI (3 موضوعات)
+  - يحفظ كل شيء في Chroma تلقائياً
+  - يُنتج تقرير Markdown يومي في workspace/reports/
+  - APScheduler: يُجدول عند 2:00 صباحاً (Asia/Riyadh)
+  - تشغيل يدوي: `python scripts/daily_updater.py`
+  - تشغيل مجدول: `python scripts/daily_updater.py --schedule`
+- **`gateway/app.py`** تحديثات:
+  - v1.3.0 — يستخدم build_tools_registry() الكامل (16 أداة)
+  - `POST /workflow` — ينفذ مهمة عبر LangGraph workflow
+  - `GET /workflows` — يعرض الـ workflows المتاحة وجاهزيتها
+  - WorkflowRequest: workflow / task / agent_ids (custom) / context
+- `tests/test_phase3.py` — 37 اختبار جديد
+- **الاختبارات الكاملة: 66/66 نجحت** ✅ (7+22+37)
+
 ## [1.2.0] — 2026-03-17 — المرحلة 2: LangGraph + Chroma + 10 وكلاء جدد
 
 ### ما تم بناؤه (Claude Code — المرحلة 2)
