@@ -237,38 +237,118 @@ def run_daily_update():
     return summary
 
 
+# ── v3: دوال الجدولة الجديدة ───────────────────────────────
+
+def daily_distillation():
+    """3:00 صباحاً — تقطير المعرفة (DeepSeek style)"""
+    logger.info("=== Knowledge Distillation Started ===")
+    try:
+        from core.knowledge_distillation import KnowledgeDistillation
+        kd = KnowledgeDistillation()
+        result = kd.daily_distillation()
+        logger.info(f"Distillation complete: {result}")
+    except Exception as e:
+        logger.error(f"Distillation error: {e}")
+
+
+def compress_all_agents():
+    """كل أحد 4:00 صباحاً — ضغط ذاكرة كل الوكلاء"""
+    logger.info("=== Weekly Memory Compression Started ===")
+    try:
+        from memory.hierarchical_memory import HierarchicalMemory
+        import json, os
+        hm = HierarchicalMemory()
+
+        agents_dir = os.path.abspath(
+            os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "agents")
+        )
+        compressed = 0
+        for root, _, files in os.walk(agents_dir):
+            for f in files:
+                if f.endswith(".json"):
+                    try:
+                        with open(os.path.join(root, f), "r", encoding="utf-8") as fp:
+                            data = json.load(fp)
+                        agent_id = data.get("agent_id")
+                        if agent_id:
+                            hm.compress_weekly(agent_id)
+                            compressed += 1
+                    except Exception as e:
+                        logger.warning(f"Compress error for {f}: {e}")
+
+        logger.info(f"=== Memory Compression Done: {compressed} agents ===")
+    except Exception as e:
+        logger.error(f"Memory compression error: {e}")
+
+
+def weekly_evolution_cycle():
+    """كل أحد 5:00 صباحاً — دورة التطور الذاتي"""
+    logger.info("=== Weekly Evolution Cycle Started ===")
+    try:
+        from core.safe_evolution import SafeEvolution
+        se = SafeEvolution()
+        result = se.weekly_cycle()
+        logger.info(f"Evolution cycle complete: {result.get('changed', [])} improved")
+    except Exception as e:
+        logger.error(f"Evolution cycle error: {e}")
+
+
 # ── Scheduler ─────────────────────────────────────────────
 
 def start_scheduler():
-    """تشغيل APScheduler — يُنفّذ كل يوم الساعة 2 صباحاً"""
-    from apscheduler.schedulers.blocking import BlockingScheduler
-    from apscheduler.triggers.cron import CronTrigger
+    """تشغيل APScheduler — الجدولة الكاملة v3"""
+    from apscheduler.schedulers.background import BackgroundScheduler
 
-    scheduler = BlockingScheduler(timezone="Asia/Riyadh")
+    scheduler = BackgroundScheduler(timezone="Asia/Jerusalem")
 
-    # تشغيل يومي الساعة 2:00 صباحاً
+    # 2:00 صباحاً — تحديث خارجي (arXiv + GitHub + أخبار)
     scheduler.add_job(
         run_daily_update,
-        trigger=CronTrigger(hour=2, minute=0),
-        id="daily_army81_update",
+        'cron', hour=2, minute=0,
+        id="daily_update",
         name="Army81 Daily Intelligence Update",
         replace_existing=True,
     )
 
-    # تشغيل فوري عند البدء للتحقق
+    # 3:00 صباحاً — تقطير المعرفة (DeepSeek style)
     scheduler.add_job(
-        run_daily_update,
-        trigger="date",
-        run_date=datetime.now(),
-        id="startup_run",
-        name="Startup Test Run",
+        daily_distillation,
+        'cron', hour=3, minute=0,
+        id="daily_distillation",
+        name="Knowledge Distillation",
+        replace_existing=True,
     )
 
-    logger.info("Scheduler started. Daily update at 2:00 AM (Asia/Riyadh)")
+    # كل أحد 4:00 صباحاً — ضغط ذاكرة كل الوكلاء
+    scheduler.add_job(
+        compress_all_agents,
+        'cron', day_of_week='sun', hour=4,
+        id="weekly_compression",
+        name="Weekly Memory Compression",
+        replace_existing=True,
+    )
+
+    # كل أحد 5:00 صباحاً — دورة التطور الذاتي
+    scheduler.add_job(
+        weekly_evolution_cycle,
+        'cron', day_of_week='sun', hour=5,
+        id="weekly_evolution",
+        name="Weekly Evolution Cycle",
+        replace_existing=True,
+    )
+
+    scheduler.start()
+    logger.info("Scheduler v3 started:")
+    logger.info("  2:00 AM daily  → Intelligence Update")
+    logger.info("  3:00 AM daily  → Knowledge Distillation")
+    logger.info("  4:00 AM Sunday → Memory Compression")
+    logger.info("  5:00 AM Sunday → Evolution Cycle")
     logger.info("Press Ctrl+C to stop.")
 
     try:
-        scheduler.start()
+        import time
+        while True:
+            time.sleep(60)
     except (KeyboardInterrupt, SystemExit):
         logger.info("Scheduler stopped.")
         scheduler.shutdown()
