@@ -13,15 +13,15 @@ logger = logging.getLogger("army81.llm")
 # النماذج الحقيقية — OpenRouter يدعم 200+ نموذج
 # ======================================================
 REAL_MODELS = {
-    # Gemini عبر OpenRouter
+    # Gemini عبر OpenRouter (verified model IDs 2026-03-18)
     "gemini-flash":  {"provider": "openrouter", "model": "google/gemini-2.0-flash-001",    "tier": "free",  "rpm": 60},
-    "gemini-fast":   {"provider": "openrouter", "model": "google/gemini-flash-1.5",         "tier": "free",  "rpm": 60},
-    "gemini-pro":    {"provider": "openrouter", "model": "google/gemini-1.5-pro",           "tier": "paid",  "rpm": 20},
-    "gemini-think":  {"provider": "openrouter", "model": "google/gemini-2.0-flash-thinking","tier": "free",  "rpm": 10},
+    "gemini-fast":   {"provider": "openrouter", "model": "google/gemini-2.5-flash-lite",   "tier": "free",  "rpm": 60},
+    "gemini-pro":    {"provider": "openrouter", "model": "google/gemini-2.5-pro",           "tier": "paid",  "rpm": 20},
+    "gemini-think":  {"provider": "openrouter", "model": "google/gemini-2.5-flash",         "tier": "free",  "rpm": 10},
 
-    # Claude عبر OpenRouter
-    "claude-fast":   {"provider": "openrouter", "model": "anthropic/claude-haiku-4-5",     "tier": "paid",  "rpm": 60},
-    "claude-smart":  {"provider": "openrouter", "model": "anthropic/claude-sonnet-4-6",    "tier": "paid",  "rpm": 50},
+    # Claude عبر OpenRouter (verified model IDs 2026-03-18)
+    "claude-fast":   {"provider": "openrouter", "model": "anthropic/claude-haiku-4.5",     "tier": "paid",  "rpm": 60},
+    "claude-smart":  {"provider": "openrouter", "model": "anthropic/claude-sonnet-4.6",    "tier": "paid",  "rpm": 50},
 
     # نماذج مجانية عبر OpenRouter
     "llama-free":    {"provider": "openrouter", "model": "meta-llama/llama-3.2-3b-instruct:free", "tier": "free", "rpm": 20},

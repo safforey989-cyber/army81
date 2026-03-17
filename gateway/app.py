@@ -16,6 +16,9 @@ from pydantic import BaseModel
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from core.base_agent import BaseAgent, load_agent_from_json
 from router.smart_router import SmartRouter
 from tools.web_search import web_search, fetch_news
