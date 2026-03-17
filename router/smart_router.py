@@ -1,194 +1,197 @@
 """
-Army81 Smart Router - بوابة التوجيه الذكي
-يستقبل المهام ويوجهها للوكيل المناسب بالنموذج المناسب
+Army81 - Smart Router
+يستقبل المهام ويوجهها للوكيل الأنسب
 """
-import json
 import logging
 import time
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional
 from datetime import datetime
 
 logger = logging.getLogger("army81.router")
 
+# خريطة الكلمات المفتاحية → الفئات (عربي وإنجليزي)
+ROUTING_MAP = {
+    "cat1_science": [
+        "طب", "دواء", "مرض", "جين", "دنا", "روبوت", "فضاء", "كمومي",
+        "ليزر", "فوتون", "اتصالات", "نجم", "مجرة", "فيزياء", "كيمياء",
+        "medical", "robot", "space", "quantum", "laser", "physics"
+    ],
+    "cat2_society": [
+        "اقتصاد", "تاريخ", "قانون", "إعلام", "دعاية", "حرب", "سياسة",
+        "عملة", "بلوكشين", "مناخ", "سكان", "هجرة", "ثقافة", "قبيلة",
+        "economy", "history", "law", "war", "politics", "climate"
+    ],
+    "cat3_tools": [
+        "ذكاء اصطناعي", "أخبار", "برمجة", "كود", "تشفير", "أمن",
+        "إنذار", "ابتكار", "تضليل", "أزمة", "مستقبل",
+        "ai", "news", "code", "security", "crisis", "future"
+    ],
+    "cat4_management": [
+        "إدارة", "حوكمة", "مشروع", "تحول رقمي", "قرار", "أداء", "كارثة",
+        "management", "project", "digital", "decision", "governance"
+    ],
+    "cat5_behavior": [
+        "سلوك", "نفس", "مشاعر", "لغة جسد", "صوت", "وجه", "حشود",
+        "behavior", "psychology", "emotion", "body language", "crowd"
+    ],
+    "cat6_leadership": [
+        "استراتيجية", "رؤية", "تنسيق", "أولويات", "نزاع", "تقييم شامل",
+        "strategy", "vision", "coordination", "priority", "evaluation"
+    ],
+}
+
 
 class SmartRouter:
-    """
-    البوابة الذكية التي تستقبل كل المهام وتوزعها.
-    تعمل كـ "مدير المشروع" الذي يعرف قدرات كل وكيل.
-    """
+    """الموزّع الذكي للمهام"""
 
-    def __init__(self, agents_registry: Dict = None):
-        self.agents = agents_registry or {}
-        self.task_log: List[Dict] = []
-        self.routing_stats = {
-            "total_routed": 0,
-            "by_category": {},
-            "by_model": {},
-            "avg_routing_time_ms": 0,
-        }
+    def __init__(self):
+        self.agents: Dict[str, object] = {}
+        self.history: List[Dict] = []
+        self.stats = {"total": 0, "by_category": {}, "by_agent": {}}
 
-    def register_agent(self, agent):
-        """تسجيل وكيل في النظام"""
+    def register(self, agent):
+        """تسجيل وكيل"""
         self.agents[agent.agent_id] = agent
-        logger.info(f"Registered agent: {agent.agent_id} ({agent.name})")
+        logger.info(f"Registered: {agent.agent_id} ({agent.name_ar})")
 
-    def register_agents(self, agents_list):
-        """تسجيل قائمة وكلاء"""
-        for agent in agents_list:
-            self.register_agent(agent)
+    def register_all(self, agents: List):
+        for agent in agents:
+            self.register(agent)
+        logger.info(f"Total agents registered: {len(self.agents)}")
 
-    def route(self, task: str, context: Dict = None, preferred_agent: str = None,
-              preferred_category: str = None) -> Dict:
+    def route(self, task: str, agent_id: str = None, category: str = None,
+              context: Dict = None) -> Dict:
         """
-        توجيه مهمة للوكيل المناسب.
-        1. إذا حُدد وكيل معين، يُرسل له مباشرة
-        2. إذا حُددت فئة، يختار أفضل وكيل فيها
-        3. وإلا، يحلل المهمة ويختار تلقائياً
+        توجيه مهمة:
+        1. وكيل محدد → مباشرة
+        2. فئة محددة → أفضل وكيل فيها
+        3. تلقائي → تحليل المهمة
         """
         start = time.time()
         context = context or {}
 
         # 1. وكيل محدد
-        if preferred_agent and preferred_agent in self.agents:
-            agent = self.agents[preferred_agent]
-            result = agent.run(task, context)
-            self._log_routing(task, agent.agent_id, result, time.time() - start)
-            return result
+        if agent_id:
+            if agent_id in self.agents:
+                result = self.agents[agent_id].run(task, context)
+            else:
+                return {"status": "error", "result": f"الوكيل {agent_id} غير موجود"}
 
         # 2. فئة محددة
-        if preferred_category:
-            agent = self._best_agent_in_category(preferred_category, task)
-            if agent:
-                result = agent.run(task, context)
-                self._log_routing(task, agent.agent_id, result, time.time() - start)
-                return result
+        elif category:
+            agent = self._best_in_category(category)
+            if not agent:
+                return {"status": "error", "result": f"لا وكلاء في الفئة {category}"}
+            result = agent.run(task, context)
 
         # 3. توجيه تلقائي
-        agent = self._auto_route(task, context)
-        result = agent.run(task, context)
-        self._log_routing(task, agent.agent_id, result, time.time() - start)
-        return result
+        else:
+            agent = self._auto_select(task)
+            result = agent.run(task, context)
 
-    def broadcast(self, task: str, category: str = None, context: Dict = None) -> List[Dict]:
-        """إرسال مهمة لكل الوكلاء في فئة (أو كل الوكلاء)"""
-        results = []
-        targets = self.agents.values()
-        if category:
-            targets = [a for a in targets if a.category == category]
+        # تسجيل
+        self._log(task, result, time.time() - start)
+        return result.to_dict() if hasattr(result, "to_dict") else result
 
-        for agent in targets:
-            result = agent.run(task, context or {})
-            results.append(result)
-
-        return results
-
-    def pipeline(self, task: str, agent_chain: List[str], context: Dict = None) -> Dict:
+    def pipeline(self, task: str, agent_ids: List[str], context: Dict = None) -> Dict:
         """
-        تنفيذ مهمة عبر سلسلة وكلاء (pipeline).
-        نتيجة كل وكيل تصبح مدخل الوكيل التالي.
+        تسلسل وكلاء: نتيجة كل وكيل تدخل للتالي
         """
         context = context or {}
-        current_input = task
-        all_results = []
+        current = task
+        results = []
 
-        for agent_id in agent_chain:
-            if agent_id not in self.agents:
-                logger.warning(f"Agent {agent_id} not found in pipeline, skipping")
+        for aid in agent_ids:
+            if aid not in self.agents:
+                logger.warning(f"Pipeline: agent {aid} not found, skipping")
                 continue
 
-            agent = self.agents[agent_id]
-            context["pipeline_history"] = all_results
-            result = agent.run(current_input, context)
-            all_results.append(result)
+            r = self.agents[aid].run(current, context)
+            results.append(r.to_dict() if hasattr(r, "to_dict") else r)
 
-            if result["status"] == "error":
-                return {
-                    "status": "pipeline_error",
-                    "failed_at": agent_id,
-                    "results": all_results,
-                }
+            if getattr(r, "status", "") == "error":
+                return {"status": "pipeline_error", "failed_at": aid, "steps": results}
 
-            current_input = f"نتيجة الخطوة السابقة ({agent.name}):\n{result['result']}\n\nأكمل المهمة الأصلية: {task}"
+            result_text = getattr(r, "result", str(r))
+            current = f"نتيجة {self.agents[aid].name_ar}:\n{result_text}\n\nالمهمة الأصلية: {task}"
 
         return {
             "status": "success",
-            "final_result": all_results[-1] if all_results else None,
-            "pipeline_results": all_results,
+            "steps": len(results),
+            "final": results[-1] if results else None,
+            "all_results": results,
         }
 
-    def _auto_route(self, task: str, context: Dict):
-        """توجيه تلقائي بناءً على تحليل المهمة"""
+    def broadcast(self, task: str, category: str = None, context: Dict = None) -> List[Dict]:
+        """إرسال مهمة لكل وكلاء فئة"""
+        targets = list(self.agents.values())
+        if category:
+            targets = [a for a in targets if a.category == category]
+
+        results = []
+        for agent in targets:
+            r = agent.run(task, context or {})
+            results.append(r.to_dict() if hasattr(r, "to_dict") else r)
+
+        return results
+
+    def _auto_select(self, task: str):
+        """اختيار الوكيل تلقائياً بناءً على محتوى المهمة"""
         task_lower = task.lower()
 
-        # قواعد بسيطة وسريعة للتوجيه
-        routing_rules = [
-            (["كود", "برمج", "code", "program", "debug", "api", "script"], "cat2_engineering"),
-            (["بحث", "research", "ابحث", "find", "search", "paper"], "cat3_research"),
-            (["اكتب", "write", "محتوى", "content", "مقال", "article", "ترجم"], "cat4_creative"),
-            (["خطة", "plan", "استراتيج", "strateg", "قرار", "decision", "قيادة"], "cat1_leadership"),
-            (["أتمت", "automat", "جدول", "schedule", "مشروع", "project", "تقرير"], "cat5_operations"),
-            (["أمن", "secur", "اختبر", "test", "جودة", "quality", "audit"], "cat6_security"),
-            (["حسّن", "improve", "طوّر", "evolve", "تعلم", "learn", "skill"], "cat7_evolution"),
-        ]
+        # حدد الفئة بناءً على الكلمات المفتاحية
+        scores = {cat: 0 for cat in ROUTING_MAP}
+        for cat, keywords in ROUTING_MAP.items():
+            for kw in keywords:
+                if kw in task_lower:
+                    scores[cat] += 1
 
-        for keywords, category in routing_rules:
-            if any(kw in task_lower for kw in keywords):
-                agent = self._best_agent_in_category(category, task)
-                if agent:
-                    return agent
+        best_category = max(scores, key=scores.get)
 
-        # افتراضي: وكيل القيادة الاستراتيجية
-        return self._best_agent_in_category("cat1_leadership", task) or list(self.agents.values())[0]
+        if scores[best_category] > 0:
+            agent = self._best_in_category(best_category)
+            if agent:
+                logger.info(f"Auto-routed to {agent.agent_id} (category: {best_category})")
+                return agent
 
-    def _best_agent_in_category(self, category: str, task: str):
-        """اختيار أفضل وكيل في فئة معينة"""
+        # افتراضي: أول وكيل متاح
+        return list(self.agents.values())[0]
+
+    def _best_in_category(self, category: str):
+        """أفضل وكيل في فئة (الأقل انشغالاً)"""
         candidates = [a for a in self.agents.values() if a.category == category]
         if not candidates:
             return None
-
-        # اختيار الوكيل الأقل انشغالاً (أقل مهام منجزة مؤخراً)
-        candidates.sort(key=lambda a: a.stats.get("tasks_completed", 0))
+        # اختر الأقل مهاماً
+        candidates.sort(key=lambda a: a.stats.get("tasks_done", 0))
         return candidates[0]
 
-    def _log_routing(self, task: str, agent_id: str, result: Dict, routing_time: float):
-        """تسجيل عملية التوجيه"""
-        self.routing_stats["total_routed"] += 1
-        entry = {
-            "timestamp": datetime.now().isoformat(),
-            "task_preview": task[:200],
-            "agent_id": agent_id,
-            "status": result.get("status", "unknown"),
-            "routing_time_ms": round(routing_time * 1000, 2),
-        }
-        self.task_log.append(entry)
+    def _log(self, task: str, result, elapsed: float):
+        self.stats["total"] += 1
+        agent_id = getattr(result, "agent_id", "unknown")
+        self.stats["by_agent"][agent_id] = self.stats["by_agent"].get(agent_id, 0) + 1
+        self.history.append({
+            "ts": datetime.now().isoformat(),
+            "task": task[:100],
+            "agent": agent_id,
+            "status": getattr(result, "status", "unknown"),
+            "elapsed": round(elapsed, 2),
+        })
+        # احتفظ بآخر 1000 سجل
+        if len(self.history) > 1000:
+            self.history = self.history[-1000:]
 
-        # تحديث الإحصائيات
-        cat = self.agents.get(agent_id, None)
-        if cat:
-            cat_name = cat.category
-            self.routing_stats["by_category"][cat_name] = self.routing_stats["by_category"].get(cat_name, 0) + 1
-
-    def get_status(self) -> Dict:
+    def status(self) -> Dict:
         """حالة النظام الكاملة"""
         return {
-            "total_agents": len(self.agents),
-            "agents_by_category": self._count_by_category(),
-            "routing_stats": self.routing_stats,
-            "agents_status": [
-                {
-                    "id": a.agent_id,
-                    "name": a.name,
-                    "category": a.category,
-                    "model": a.model,
-                    "tasks_done": a.stats["tasks_completed"],
-                    "last_active": a.stats.get("last_active"),
-                }
-                for a in self.agents.values()
-            ],
+            "agents_count": len(self.agents),
+            "by_category": self._count_by_category(),
+            "stats": self.stats,
+            "agents": [a.info() for a in self.agents.values()],
         }
 
     def _count_by_category(self) -> Dict:
         counts = {}
-        for agent in self.agents.values():
-            counts[agent.category] = counts.get(agent.category, 0) + 1
+        for a in self.agents.values():
+            counts[a.category] = counts.get(a.category, 0) + 1
         return counts
