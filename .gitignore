@@ -20,6 +20,13 @@ secrets/
 # قواعد البيانات المحلية
 *.db
 *.sqlite
+*.sqlite3
+
+# Chroma vector DB (بيانات محلية ضخمة)
+workspace/chroma_db/
+
+# ملفات الـ workspace المؤقتة
+workspace/test_*.txt
 
 # السجلات
 logs/

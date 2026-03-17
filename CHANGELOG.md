@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## [1.2.0] — 2026-03-17 — المرحلة 2: LangGraph + Chroma + 10 وكلاء جدد
+
+### ما تم بناؤه (Claude Code — المرحلة 2)
+- `memory/chroma_memory.py` — ذاكرة دلالية بـ ChromaDB (all-MiniLM-L6-v2)
+  - remember(), recall() بحث دلالي بالمفاهيم
+  - تخزين دائم في workspace/chroma_db/
+- `workflows/langgraph_flows.py` — تدفق عمل بـ LangGraph
+  - AgentState TypedDict للحالة المشتركة
+  - Army81Workflow: يحول قائمة وكلاء إلى graph قابل للتنفيذ
+  - Workflows جاهزة: research_pipeline, analysis_pipeline, decision_support
+- `tools/registry.py` — أُضيف semantic_remember + semantic_recall (Chroma)
+- `requirements.txt` — أُضيف langgraph>=1.1, chromadb>=1.5
+- **10 وكلاء جدد (A05-A14):**
+  - A05 Code Developer (cat3_tools) — run_code, github_search
+  - A06 Data Analyst (cat4_management) — analyze_data, run_code, market_data
+  - A07 Medical Research (cat1_science) — pubmed_search, arxiv_search [gemini-pro]
+  - A08 Financial Analyst (cat2_society) — market_data, deep_search, fetch_news
+  - A09 Security Analyst (cat3_tools) — deep_search, arxiv_search, github_search
+  - A10 Knowledge Manager (cat4_management) — remember, recall, wiki_search
+  - A11 Translator (cat3_tools) — wiki_search, remember
+  - A12 Content Creator (cat2_society) — deep_search, fetch_news, write_file
+  - A13 Legal Advisor (cat2_society) — deep_search, wiki_search [gemini-pro]
+  - A14 Project Manager (cat4_management) — analyze_data, read_file, write_file
+- `tests/test_phase2.py` — 22 اختبار جديد (كلها تنجح ✅)
+- الاختبارات الكاملة: 29/29 نجحت (7 phase1 + 22 phase2)
+
 ## [1.1.0] — 2026-03-17 — المرحلة 1: الأدوات الحقيقية
 
 ### ما تم بناؤه (Claude Code — المرحلة 1)

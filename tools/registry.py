@@ -161,6 +161,21 @@ def build_tools_registry() -> Dict[str, Tool]:
         parameters={"query": "ما تبحث عنه"}
     )
 
+    # Chroma — ذاكرة دلالية (تذكر المفاهيم لا فقط الكلمات)
+    registry["semantic_remember"] = Tool(
+        name="semantic_remember",
+        description="حفظ معلومة في الذاكرة الدلالية — يمكن استرجاعها لاحقاً بالمفاهيم لا بالكلمات الحرفية",
+        func=_lazy_import("memory.chroma_memory", "remember"),
+        parameters={"content": "المحتوى", "agent_id": "معرف الوكيل", "tags": "وسوم للتصنيف"}
+    )
+
+    registry["semantic_recall"] = Tool(
+        name="semantic_recall",
+        description="استرجاع المعلومات ذات الصلة من الذاكرة الدلالية — يفهم المعنى لا الكلمات",
+        func=_lazy_import("memory.chroma_memory", "recall"),
+        parameters={"query": "سؤال أو موضوع", "n_results": "عدد النتائج"}
+    )
+
     logger.info(f"Tools registry built: {len(registry)} tools available")
     return registry
 
