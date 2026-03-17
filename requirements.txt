@@ -13,3 +13,7 @@ langchain-core>=1.2.0
 
 # Phase 3 — Daily Scheduler
 apscheduler>=3.10.0
+
+# Phase 4 — CrewAI + Streamlit Dashboard
+crewai>=1.10.0
+streamlit>=1.55.0
