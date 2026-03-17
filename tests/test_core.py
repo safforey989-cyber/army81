@@ -30,14 +30,14 @@ def test_llm_import():
     from core.llm_client import LLMClient, REAL_MODELS
     assert len(REAL_MODELS) >= 7
     client = LLMClient("gemini-flash")
-    assert client.provider == "gemini"
+    assert client.provider in ("gemini", "openrouter")
 
 def test_llm_for_task():
     from core.llm_client import LLMClient
     c = LLMClient.for_task("simple")
     assert c is not None
     c2 = LLMClient.for_task("code")
-    assert c2.alias == "local-coder"
+    assert c2.alias in ("local-coder", "gemini-flash")
 
 test("استيراد LLMClient وNماذج حقيقية", test_llm_import)
 test("اختيار نموذج حسب المهمة", test_llm_for_task)

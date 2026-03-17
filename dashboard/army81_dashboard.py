@@ -636,7 +636,7 @@ elif page == "🧠 الذاكرة":
         if db_path.exists():
             conn = sqlite3.connect(str(db_path))
             cursor = conn.execute(
-                "SELECT agent_id, task, success, timestamp FROM episodes ORDER BY timestamp DESC LIMIT 20"
+                "SELECT agent_id, task_summary, success, created_at FROM episodes ORDER BY created_at DESC LIMIT 20"
             )
             rows = cursor.fetchall()
             conn.close()
