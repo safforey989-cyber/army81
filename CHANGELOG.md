@@ -1,5 +1,35 @@
 # CHANGELOG
 
+## [2.1.0] — 2026-03-17 — إصلاح وتشغيل كامل
+
+### ما تم إصلاحه وإضافته
+- **إصلاح `requirements.txt`** — حل تعارضات الإصدارات (pydantic/langgraph/chromadb/crewai)
+- **`protocols/a2a.py`** — بروتوكول تواصل بين الوكلاء (A2A):
+  - `A2AProtocol` و `A2AMessage` — إرسال رسائل/مهام بين الوكلاء
+  - `send()` — إرسال رسالة مع تنفيذ تلقائي للمهام
+  - `delegate()` — تفويض مهمة من وكيل لآخر
+  - `chain()` — سلسلة تفويض (A → B → C) مع تمرير النتائج
+  - `broadcast_to_category()` — بث رسالة لكل وكلاء فئة
+  - صندوق وارد لكل وكيل + إحصائيات
+- **`scripts/add_agent.py`** — سكربت إضافة وكيل جديد:
+  - يقبل: --id, --name, --name_ar, --category, --model, --tools, --description
+  - يتحقق من عدم التكرار ويُنشئ system prompt حسب الفئة
+- **`tests/test_agents.py`** — 12 اختبار شامل:
+  - صلاحية JSON، عدد الوكلاء = 81، معرّفات فريدة
+  - تحميل كل الوكلاء، بناء سجل الأدوات
+  - بروتوكول A2A (استيراد، إرسال، حالة)
+  - الروتر مع الوكلاء، الفئات، Gateway
+- **`gateway/app.py`** — إضافة نقاط API للـ A2A:
+  - `POST /a2a/send` — إرسال رسالة/مهمة بين وكيلين
+  - `POST /a2a/chain` — سلسلة تفويض
+  - `GET /a2a/inbox/{agent_id}` — صندوق وارد
+  - `GET /a2a/status` — حالة البروتوكول
+- **التحقق الكامل**: 81 وكيل يُحمَّلون بـ 0 أخطاء، Gateway يعمل على المنفذ 8181
+
+### الاختبارات
+- `python tests/test_core.py` — 7/7 نجح ✅
+- `python tests/test_agents.py` — 12/12 نجح ✅
+
 ## [2.0.0] — 2026-03-17 — المرحلة 4: 41 وكيل جديد + CrewAI + Streamlit Dashboard
 
 ### ما تم بناؤه (Claude Code — المرحلة 4)
