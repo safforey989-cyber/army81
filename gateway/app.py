@@ -21,6 +21,7 @@ from router.smart_router import SmartRouter
 from tools.web_search import web_search, fetch_news
 from tools.registry import build_tools_registry
 from core.base_agent import Tool
+from protocols.a2a import A2AProtocol
 
 # ── Logging ──────────────────────────────────────────────
 os.makedirs("logs", exist_ok=True)
@@ -38,12 +39,13 @@ logger = logging.getLogger("army81")
 app = FastAPI(
     title="Army81",
     description="نظام 81 وكيل ذكاء اصطناعي متكامل",
-    version="1.3.0",
+    version="2.1.0",
 )
 app.add_middleware(CORSMiddleware, allow_origins=["*"],
                    allow_methods=["*"], allow_headers=["*"])
 
 router = SmartRouter()
+a2a = A2AProtocol(router)
 
 # ── سجل الأدوات الكامل ────────────────────────────────────
 TOOLS_REGISTRY: Dict[str, Tool] = build_tools_registry()
@@ -94,6 +96,20 @@ class WorkflowRequest(BaseModel):
     workflow: str                    # "research_pipeline" | "analysis_pipeline" | "decision_support" | "custom"
     task: str
     agent_ids: Optional[List[str]] = None   # للـ custom workflow فقط
+    context: Optional[Dict] = None
+
+class A2ARequest(BaseModel):
+    from_agent: str
+    to_agent: str
+    content: str
+    msg_type: str = "task"
+    priority: int = 5
+    context: Optional[Dict] = None
+
+class A2AChainRequest(BaseModel):
+    from_agent: str
+    agent_chain: List[str]
+    task: str
     context: Optional[Dict] = None
 
 # ── Endpoints ─────────────────────────────────────────────
@@ -222,9 +238,41 @@ async def list_workflows():
         "custom": "POST /workflow با workflow='custom' و agent_ids=['A01','A04',...]",
     }
 
+@app.post("/a2a/send")
+async def a2a_send(req: A2ARequest):
+    """إرسال رسالة أو مهمة بين وكيلين"""
+    return a2a.send(
+        from_agent=req.from_agent,
+        to_agent=req.to_agent,
+        content=req.content,
+        msg_type=req.msg_type,
+        priority=req.priority,
+        metadata=req.context or {},
+    )
+
+@app.post("/a2a/chain")
+async def a2a_chain(req: A2AChainRequest):
+    """سلسلة تفويض بين وكلاء"""
+    return a2a.chain(
+        from_agent=req.from_agent,
+        agent_chain=req.agent_chain,
+        task=req.task,
+        context=req.context or {},
+    )
+
+@app.get("/a2a/inbox/{agent_id}")
+async def a2a_inbox(agent_id: str):
+    """صندوق وارد وكيل"""
+    return {"agent_id": agent_id, "messages": a2a.get_inbox(agent_id)}
+
+@app.get("/a2a/status")
+async def a2a_status():
+    """حالة بروتوكول A2A"""
+    return a2a.status()
+
 @app.get("/health")
 async def health():
-    return {"status": "healthy", "agents": len(router.agents), "version": "1.3.0"}
+    return {"status": "healthy", "agents": len(router.agents), "version": "2.1.0"}
 
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":
