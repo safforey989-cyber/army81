@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  army81-api:
+    build: .
+    container_name: army81-api
+    ports:
+      - "8181:8181"
+    volumes:
+      - ./agents:/app/agents
+      - ./memory:/app/memory
+      - ./skills:/app/skills
+      - ./logs:/app/logs
+      - ./updates:/app/updates
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - SONAR_API_KEY=${SONAR_API_KEY:-}
+      - OLLAMA_HOST=http://ollama:11434
+    depends_on:
+      - ollama
+    restart: unless-stopped
+    networks:
+      - army81-net
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: army81-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    restart: unless-stopped
+    networks:
+      - army81-net
+
+volumes:
+  ollama-data:
+
+networks:
+  army81-net:
+    driver: bridge
