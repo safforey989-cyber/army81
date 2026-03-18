@@ -71,12 +71,15 @@ class SmartRouter:
         start = time.time()
         context = context or {}
 
-        # 1. وكيل محدد
+        # 1. وكيل محدد → ينفذ فقط هو، بدون neural_net
         if agent_id:
             if agent_id in self.agents:
                 result = self.agents[agent_id].run(task, context)
             else:
                 return {"status": "error", "result": f"الوكيل {agent_id} غير موجود"}
+            # اختصار: لا تمر على neural_net
+            self._log(task, result, time.time() - start)
+            return result.to_dict() if hasattr(result, "to_dict") else result
 
         # 2. فئة محددة
         elif category:
