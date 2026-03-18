@@ -328,6 +328,16 @@ class CloudMemory:
             for row in rows:
                 episode = dict(row)
                 episode.pop("id", None)  # Supabase يولّد ID خاص
+                # SQLite يخزن bool كـ 0/1 — حوّل لـ true/false
+                if "success" in episode:
+                    episode["success"] = bool(episode["success"])
+                # تأكد من أن rating رقم
+                if "rating" in episode:
+                    episode["rating"] = int(episode["rating"] or 7)
+                if "tokens" in episode:
+                    episode["tokens"] = int(episode["tokens"] or 0)
+                # أزل الحقول غير الموجودة في Supabase
+                episode.pop("teacher_example", None)
                 if self.supabase.insert("episodes", episode):
                     synced += 1
         except Exception as e:
