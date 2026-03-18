@@ -1591,6 +1591,63 @@ def hyper_stats():
             pass
     return {"sessions": len(reports)}
 
+# ═══════════════════════════════════════════════════
+# التطور الأُسّي — Exponential Evolution
+# ═══════════════════════════════════════════════════
+
+@app.post("/evolution/exponential/start")
+async def start_exponential_evolution(request: Request):
+    """إطلاق التطور الأُسّي — يتضاعف كل دورة"""
+    global swarm_active, swarm_session_id, swarm_events
+    data = await request.json()
+    duration = data.get("duration_hours", 2)
+
+    swarm_active = True
+    swarm_session_id = f"expo_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    swarm_events = []
+
+    def run_agent_fn(agent_id, task):
+        agent = router.get_agent(agent_id) if hasattr(router, 'get_agent') else None
+        if not agent:
+            agents_dict = {a.agent_id: a for a in router.agents.values()} if hasattr(router, 'agents') else {}
+            agent = agents_dict.get(agent_id)
+        if agent:
+            try:
+                r = agent.run(task, context={"exponential_evolution": True})
+                return r if isinstance(r, dict) else {"result": str(r)}
+            except Exception as e:
+                return {"result": f"ERROR: {e}"}
+        return {"result": "ERROR: agent not found"}
+
+    def background_evolution():
+        global swarm_active
+        try:
+            from core.exponential_evolution import ExponentialEvolution
+            evo = ExponentialEvolution()
+            agents_list = list(router.agents.values()) if hasattr(router, 'agents') else []
+            evo.run_exponential(agents_list, run_agent_fn, add_swarm_event, duration)
+        except Exception as e:
+            logger.error(f"Exponential evolution error: {e}")
+            add_swarm_event("error", "SYSTEM", data={"error": str(e)})
+        finally:
+            swarm_active = False
+
+    thread = threading.Thread(target=background_evolution, daemon=True)
+    thread.start()
+
+    return {"status": "started", "session_id": swarm_session_id,
+            "mode": "exponential", "duration_hours": duration}
+
+@app.get("/evolution/exponential/stats")
+def exponential_stats():
+    """إحصائيات التطور الأُسّي"""
+    try:
+        from core.exponential_evolution import ExponentialEvolution
+        evo = ExponentialEvolution()
+        return evo.get_stats()
+    except Exception as e:
+        return {"error": str(e)}
+
 
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":

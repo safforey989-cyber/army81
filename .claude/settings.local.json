@@ -64,7 +64,11 @@
       "Bash(curl.exe -s http://localhost:8181/swarm/status)",
       "Bash(find agents:*)",
       "Bash(ls tools/*.py)",
-      "Bash(Get-Process python:*)"
+      "Bash(Get-Process python:*)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d,indent=2,ensure_ascii=False\\)[:1000]\\)\")",
+      "Bash(curl.exe -s http://localhost:8181/training/status)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d,indent=2,ensure_ascii=False\\)[:500]\\)\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d,indent=2,ensure_ascii=False\\)[:2000]\\)\")"
     ]
   }
 }
