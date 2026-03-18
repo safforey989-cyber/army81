@@ -684,11 +684,20 @@ def add_swarm_event(event_type, from_agent, to_agent="", data=None):
 
 def run_swarm_session(duration_minutes: int, topic: str):
     """
-    جلسة السرب الحقيقية — الوكلاء يتواصلون فعلياً
+    جلسة السرب الحقيقية — الوكلاء يتواصلون فعلياً + يبنون ذاكرة
     """
     import time
     import random
     global swarm_active
+
+    # ── v12: ذاكرة السرب ──
+    try:
+        from memory.swarm_memory import SwarmMemoryManager
+        swarm_mem = SwarmMemoryManager.get_instance()
+        logger.info("SwarmMemory active — agents will build memories")
+    except Exception as e:
+        swarm_mem = None
+        logger.warning(f"SwarmMemory not available: {e}")
 
     logger.info(f"Swarm session started — {duration_minutes} min — {topic}")
     add_swarm_event("swarm_started", "SYSTEM", data={"topic": topic, "duration": duration_minutes})
@@ -733,12 +742,30 @@ def run_swarm_session(duration_minutes: int, topic: str):
                 add_swarm_event("agent_message", a1.agent_id, a2.agent_id,
                     {"phase": "introduction", "message": f"{a1.name_ar} يتعرف على {a2.name_ar}"})
 
-                task = f"عرّف نفسك باختصار للوكيل {a2.name_ar} ({a2.agent_id}). اذكر تخصصك وأدواتك وكيف يمكنكما التعاون. كن مختصراً في 3 جمل."
+                # حقن سياق الذاكرة الشخصية
+                mem_ctx = ""
+                if swarm_mem:
+                    mem_ctx = swarm_mem.inject_context(a1.agent_id, a2.agent_id)
+
+                task = f"""{mem_ctx}
+عرّف نفسك باختصار للوكيل {a2.name_ar} ({a2.agent_id}). اذكر تخصصك وأدواتك وكيف يمكنكما التعاون. كن مختصراً في 3 جمل."""
 
                 try:
                     result = a1.run(task, context={"swarm_session": True, "partner": a2.agent_id})
+                    result_text = result.result[:300] if hasattr(result, 'result') else str(result)[:300]
                     add_swarm_event("task_completed", a1.agent_id, a2.agent_id,
-                        {"phase": "introduction", "result": result.result[:300] if hasattr(result, 'result') else str(result)[:300]})
+                        {"phase": "introduction", "result": result_text})
+
+                    # ── حفظ التعارف في الذاكرة ──
+                    if swarm_mem:
+                        swarm_mem.record_introduction(
+                            a1.agent_id, a1.name_ar, a1.description[:100],
+                            a2.agent_id, a2.name_ar, a2.description[:100],
+                            result_text
+                        )
+                        add_swarm_event("memory_saved", a1.agent_id, a2.agent_id,
+                            {"type": "introduction", "agents": [a1.agent_id, a2.agent_id]})
+
                 except Exception as e:
                     add_swarm_event("task_failed", a1.agent_id, data={"error": str(e)[:100]})
 
@@ -759,17 +786,35 @@ def run_swarm_session(duration_minutes: int, topic: str):
                     "topic": f"مناقشة بين {a1.name_ar} و{'، '.join(p.name_ar for p in partners)}"
                 })
 
-                task = f"""أنت في حلقة نقاش مع الوكلاء: {', '.join(p.name_ar + ' (' + p.agent_id + ')' for p in partners)}.
+                # حقن سياق الذاكرة
+                disc_mem_ctx = ""
+                if swarm_mem:
+                    disc_mem_ctx = swarm_mem.inject_context(a1.agent_id)
+
+                task = f"""{disc_mem_ctx}
+أنت في حلقة نقاش مع الوكلاء: {', '.join(p.name_ar + ' (' + p.agent_id + ')' for p in partners)}.
 الموضوع: كيف يمكن لتخصصاتنا المختلفة أن تتكامل لتحسين النظام؟
 اقترح فكرة واحدة محددة وعملية للتعاون. كن مختصراً في 4 جمل."""
 
                 try:
                     result = a1.run(task, context={"swarm_session": True, "phase": "discussion"})
+                    result_text = result.result[:400] if hasattr(result, 'result') else str(result)[:400]
                     add_swarm_event("task_completed", a1.agent_id, data={
                         "phase": "discussion",
                         "cluster": cluster_ids,
-                        "result": result.result[:400] if hasattr(result, 'result') else str(result)[:400]
+                        "result": result_text
                     })
+
+                    # ── حفظ الرؤية في الذاكرة ──
+                    if swarm_mem:
+                        swarm_mem.record_insight(a1.agent_id, result_text, topic="collaboration")
+                        for p in partners:
+                            swarm_mem.record_introduction(
+                                a1.agent_id, a1.name_ar, a1.description[:100],
+                                p.agent_id, p.name_ar, p.description[:100],
+                                f"مناقشة حول تكامل التخصصات"
+                            )
+
                 except Exception as e:
                     add_swarm_event("task_failed", a1.agent_id, data={"error": str(e)[:100]})
 
@@ -804,24 +849,45 @@ def run_swarm_session(duration_minutes: int, topic: str):
                 ]
                 collab_task = random.choice(collaboration_tasks)
 
-                task = f"""أنت قائد فريق يضم: {', '.join(t.name_ar for t in team)}.
+                # حقن ذاكرة القائد
+                collab_mem_ctx = ""
+                if swarm_mem:
+                    collab_mem_ctx = swarm_mem.inject_context(leader.agent_id)
+
+                task = f"""{collab_mem_ctx}
+أنت قائد فريق يضم: {', '.join(t.name_ar for t in team)}.
 المهمة: {collab_task}
 قدّم اقتراحاً عملياً محدداً يمكن تنفيذه. كن مختصراً في 5 جمل."""
 
                 try:
                     result = leader.run(task, context={"swarm_session": True, "phase": "collaboration", "team": team_ids})
+                    result_text = result.result[:500] if hasattr(result, 'result') else str(result)[:500]
 
-                    # Record as memory
                     add_swarm_event("task_completed", leader.agent_id, data={
                         "phase": "collaboration",
                         "cluster": team_ids,
                         "collab_task": collab_task,
-                        "result": result.result[:500] if hasattr(result, 'result') else str(result)[:500]
+                        "result": result_text
                     })
 
+                    # ── حفظ التعاون في الذاكرة ──
+                    if swarm_mem:
+                        swarm_mem.record_collaboration(
+                            leader.agent_id, [t.agent_id for t in team],
+                            collab_task, result_text, success=True
+                        )
+                        # كل عضو يتذكر القائد
+                        for t in team:
+                            swarm_mem.record_introduction(
+                                t.agent_id, t.name_ar, t.description[:100],
+                                leader.agent_id, leader.name_ar, leader.description[:100],
+                                f"عملنا معاً على: {collab_task[:50]}"
+                            )
+
                     add_swarm_event("memory_saved", leader.agent_id, data={
+                        "type": "collaboration",
                         "topic": collab_task[:50],
-                        "amount": 5
+                        "agents_remembered": len(team_ids)
                     })
 
                 except Exception as e:
@@ -882,15 +948,65 @@ def run_swarm_session(duration_minutes: int, topic: str):
             add_swarm_event("error", "SYSTEM", data={"error": str(e)[:200]})
             time.sleep(5)
 
-    # Session complete
+    # Session complete — حفظ ملخص الذاكرة
     swarm_active = False
+
+    memory_stats = {}
+    if swarm_mem:
+        memory_stats = swarm_mem.get_full_stats()
+        # حفظ قرار جماعي عن الجلسة
+        swarm_mem.core.add_collective_decision(
+            f"أكملنا جلسة سرب {topic} — {round_num} جولة",
+            agent_ids[:10],
+            f"تعرفنا على بعض وناقشنا التعاون"
+        )
+        logger.info(f"SwarmMemory: {memory_stats.get('agents_with_memory', 0)} agents have memories, "
+                     f"{memory_stats.get('total_interactions', 0)} total interactions")
+
     add_swarm_event("swarm_completed", "SYSTEM", data={
         "total_rounds": round_num,
         "total_events": len(swarm_events),
-        "duration_actual": round(time.time() - start_time)
+        "duration_actual": round(time.time() - start_time),
+        "memory_stats": memory_stats,
     })
 
     logger.info(f"Swarm session completed — {round_num} rounds, {len(swarm_events)} events")
+
+
+# ═══════════════════════════════════════════════════════════
+# Swarm Memory Endpoints (v12)
+# ═══════════════════════════════════════════════════════════
+
+@app.get("/memory/swarm/stats")
+def swarm_memory_stats():
+    """إحصائيات ذاكرة السرب"""
+    try:
+        from memory.swarm_memory import SwarmMemoryManager
+        mgr = SwarmMemoryManager.get_instance()
+        return mgr.get_full_stats()
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/memory/agent/{agent_id}")
+def agent_memory(agent_id: str):
+    """ذاكرة وكيل محدد"""
+    try:
+        from memory.swarm_memory import SwarmMemoryManager
+        mgr = SwarmMemoryManager.get_instance()
+        mem = mgr.get_agent_memory(agent_id)
+        return mem.data
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/memory/core")
+def core_memory():
+    """ذاكرة النواة المشتركة"""
+    try:
+        from memory.swarm_memory import SwarmMemoryManager
+        mgr = SwarmMemoryManager.get_instance()
+        return mgr.core.data
+    except Exception as e:
+        return {"error": str(e)}
 
 
 # ═══════════════════════════════════════════════════════════
