@@ -115,6 +115,17 @@ class A2AChainRequest(BaseModel):
     task: str
     context: Optional[Dict] = None
 
+class SwarmRequest(BaseModel):
+    duration_minutes: int = 60
+    topic: str = "التعارف وبناء الشبكة"
+
+class SwarmEvent(BaseModel):
+    timestamp: str
+    event_type: str  # task_assigned, task_completed, agent_message, tool_used, memory_saved, cluster_formed
+    from_agent: str
+    to_agent: str = ""
+    data: dict = {}
+
 # ── Endpoints ─────────────────────────────────────────────
 @app.on_event("startup")
 async def startup():
@@ -579,6 +590,308 @@ async def latest_report():
         "content": latest.read_text(encoding="utf-8"),
         "size": latest.stat().st_size
     }
+
+# ═══ SWARM SESSION — Real Agent-to-Agent Communication ═══
+import asyncio
+import threading
+from queue import Queue
+
+# Global swarm state
+swarm_events = []  # Store all swarm events for dashboard polling
+swarm_active = False
+swarm_session_id = None
+
+@app.post("/swarm/start")
+async def start_swarm(req: SwarmRequest):
+    """بدء جلسة تواصل بين كل الـ 81 وكيل"""
+    global swarm_active, swarm_session_id, swarm_events
+
+    if swarm_active:
+        return {"status": "already_running", "session_id": swarm_session_id}
+
+    swarm_active = True
+    swarm_session_id = f"swarm_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    swarm_events = []
+
+    # Start swarm in background thread
+    thread = threading.Thread(
+        target=run_swarm_session,
+        args=(req.duration_minutes, req.topic),
+        daemon=True
+    )
+    thread.start()
+
+    return {
+        "status": "started",
+        "session_id": swarm_session_id,
+        "duration_minutes": req.duration_minutes,
+        "topic": req.topic,
+        "agents_count": len(router.agents)
+    }
+
+@app.post("/swarm/stop")
+async def stop_swarm():
+    """إيقاف جلسة السرب"""
+    global swarm_active
+    swarm_active = False
+    return {"status": "stopped", "total_events": len(swarm_events)}
+
+@app.get("/swarm/status")
+async def swarm_status():
+    """حالة جلسة السرب"""
+    return {
+        "active": swarm_active,
+        "session_id": swarm_session_id,
+        "total_events": len(swarm_events),
+        "recent_events": swarm_events[-20:] if swarm_events else [],
+        "agents_busy": sum(1 for a in router.agents.values() if hasattr(a, '_swarm_busy') and a._swarm_busy),
+    }
+
+@app.get("/swarm/events")
+async def swarm_events_feed(since: int = 0):
+    """دفق الأحداث — Dashboard يستدعي هذا كل ثانية"""
+    events = swarm_events[since:]
+    return {
+        "events": events,
+        "total": len(swarm_events),
+        "next_since": len(swarm_events),
+        "active": swarm_active,
+    }
+
+@app.get("/swarm/proposals")
+async def swarm_proposals():
+    """الاقتراحات التي اتفق عليها الوكلاء"""
+    proposals_file = os.path.join("workspace", "swarm_proposals.json")
+    if os.path.exists(proposals_file):
+        with open(proposals_file, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"proposals": []}
+
+
+def add_swarm_event(event_type, from_agent, to_agent="", data=None):
+    """إضافة حدث للسجل"""
+    global swarm_events
+    evt = {
+        "timestamp": datetime.now().isoformat(),
+        "event_type": event_type,
+        "from_agent": from_agent,
+        "to_agent": to_agent,
+        "data": data or {}
+    }
+    swarm_events.append(evt)
+    return evt
+
+
+def run_swarm_session(duration_minutes: int, topic: str):
+    """
+    جلسة السرب الحقيقية — الوكلاء يتواصلون فعلياً
+    """
+    import time
+    import random
+    global swarm_active
+
+    logger.info(f"Swarm session started — {duration_minutes} min — {topic}")
+    add_swarm_event("swarm_started", "SYSTEM", data={"topic": topic, "duration": duration_minutes})
+
+    agents_list = list(router.agents.values())
+    agent_ids = list(router.agents.keys())
+
+    start_time = time.time()
+    end_time = start_time + (duration_minutes * 60)
+    phase = 0  # 0=intro, 1=discuss, 2=collaborate, 3=propose
+
+    # Phase durations (proportional)
+    phase_times = [0.15, 0.35, 0.35, 0.15]  # 15% intro, 35% discuss, 35% collaborate, 15% propose
+
+    round_num = 0
+
+    while swarm_active and time.time() < end_time:
+        elapsed = time.time() - start_time
+        total_duration = duration_minutes * 60
+        progress = elapsed / total_duration
+
+        # Determine phase
+        if progress < phase_times[0]:
+            current_phase = "introduction"
+        elif progress < phase_times[0] + phase_times[1]:
+            current_phase = "discussion"
+        elif progress < phase_times[0] + phase_times[1] + phase_times[2]:
+            current_phase = "collaboration"
+        else:
+            current_phase = "proposals"
+
+        round_num += 1
+
+        try:
+            if current_phase == "introduction":
+                # Phase 1: Agents introduce themselves to each other
+                a1 = random.choice(agents_list)
+                a2 = random.choice(agents_list)
+                while a2.agent_id == a1.agent_id:
+                    a2 = random.choice(agents_list)
+
+                add_swarm_event("agent_message", a1.agent_id, a2.agent_id,
+                    {"phase": "introduction", "message": f"{a1.name_ar} يتعرف على {a2.name_ar}"})
+
+                task = f"عرّف نفسك باختصار للوكيل {a2.name_ar} ({a2.agent_id}). اذكر تخصصك وأدواتك وكيف يمكنكما التعاون. كن مختصراً في 3 جمل."
+
+                try:
+                    result = a1.run(task, context={"swarm_session": True, "partner": a2.agent_id})
+                    add_swarm_event("task_completed", a1.agent_id, a2.agent_id,
+                        {"phase": "introduction", "result": result.result[:300] if hasattr(result, 'result') else str(result)[:300]})
+                except Exception as e:
+                    add_swarm_event("task_failed", a1.agent_id, data={"error": str(e)[:100]})
+
+                time.sleep(3)  # Rate limiting
+
+            elif current_phase == "discussion":
+                # Phase 2: Agents discuss topics from their expertise
+                a1 = random.choice(agents_list)
+                # Pick 2-3 agents from different categories
+                others = [a for a in agents_list if a.category != a1.category]
+                partners = random.sample(others, min(2, len(others)))
+
+                # Form a cluster
+                cluster_ids = [a1.agent_id] + [p.agent_id for p in partners]
+                add_swarm_event("cluster_formed", a1.agent_id, data={
+                    "phase": "discussion",
+                    "cluster": cluster_ids,
+                    "topic": f"مناقشة بين {a1.name_ar} و{'، '.join(p.name_ar for p in partners)}"
+                })
+
+                task = f"""أنت في حلقة نقاش مع الوكلاء: {', '.join(p.name_ar + ' (' + p.agent_id + ')' for p in partners)}.
+الموضوع: كيف يمكن لتخصصاتنا المختلفة أن تتكامل لتحسين النظام؟
+اقترح فكرة واحدة محددة وعملية للتعاون. كن مختصراً في 4 جمل."""
+
+                try:
+                    result = a1.run(task, context={"swarm_session": True, "phase": "discussion"})
+                    add_swarm_event("task_completed", a1.agent_id, data={
+                        "phase": "discussion",
+                        "cluster": cluster_ids,
+                        "result": result.result[:400] if hasattr(result, 'result') else str(result)[:400]
+                    })
+                except Exception as e:
+                    add_swarm_event("task_failed", a1.agent_id, data={"error": str(e)[:100]})
+
+                # Dissolve cluster after a bit
+                time.sleep(2)
+                add_swarm_event("cluster_dissolved", a1.agent_id, data={"cluster": cluster_ids})
+
+                time.sleep(4)
+
+            elif current_phase == "collaboration":
+                # Phase 3: Agents work together on a real task
+                # Pick a leader and a team
+                leaders = [a for a in agents_list if 'leadership' in a.category or a.agent_id in ['A01', 'A00']]
+                leader = random.choice(leaders) if leaders else random.choice(agents_list)
+
+                team = random.sample([a for a in agents_list if a.agent_id != leader.agent_id], min(3, len(agents_list)-1))
+                team_ids = [leader.agent_id] + [t.agent_id for t in team]
+
+                add_swarm_event("cluster_formed", leader.agent_id, data={
+                    "phase": "collaboration",
+                    "cluster": team_ids,
+                    "topic": f"فريق عمل بقيادة {leader.name_ar}"
+                })
+
+                collaboration_tasks = [
+                    "اقترح طريقة لتحسين سرعة استجابة النظام بنسبة 50%",
+                    "صمم آلية لمشاركة المعرفة تلقائياً بين الوكلاء",
+                    "اقترح نظام تقييم ذاتي لقياس أداء كل وكيل",
+                    "صمم بروتوكول طوارئ عندما يفشل أحد الوكلاء",
+                    "اقترح طريقة لتقليل تكاليف API بنسبة 30%",
+                    "صمم نظام أولويات ذكي للمهام القادمة",
+                ]
+                collab_task = random.choice(collaboration_tasks)
+
+                task = f"""أنت قائد فريق يضم: {', '.join(t.name_ar for t in team)}.
+المهمة: {collab_task}
+قدّم اقتراحاً عملياً محدداً يمكن تنفيذه. كن مختصراً في 5 جمل."""
+
+                try:
+                    result = leader.run(task, context={"swarm_session": True, "phase": "collaboration", "team": team_ids})
+
+                    # Record as memory
+                    add_swarm_event("task_completed", leader.agent_id, data={
+                        "phase": "collaboration",
+                        "cluster": team_ids,
+                        "collab_task": collab_task,
+                        "result": result.result[:500] if hasattr(result, 'result') else str(result)[:500]
+                    })
+
+                    add_swarm_event("memory_saved", leader.agent_id, data={
+                        "topic": collab_task[:50],
+                        "amount": 5
+                    })
+
+                except Exception as e:
+                    add_swarm_event("task_failed", leader.agent_id, data={"error": str(e)[:100]})
+
+                time.sleep(2)
+                add_swarm_event("cluster_dissolved", leader.agent_id, data={"cluster": team_ids})
+                time.sleep(5)
+
+            elif current_phase == "proposals":
+                # Phase 4: Agents collectively propose improvements
+                # Use A01 (Strategic Commander) to synthesize
+                a01 = router.agents.get("A01")
+                if a01 and round_num % 3 == 0:
+                    # Gather recent collaboration results
+                    recent_results = [e["data"].get("result", "") for e in swarm_events[-30:]
+                                     if e["event_type"] == "task_completed" and e["data"].get("result")]
+                    summary = "\n".join(recent_results[-5:])[:1500]
+
+                    task = f"""بعد ساعة من التشاور مع 81 وكيلاً، هذه خلاصة النقاشات:
+{summary}
+
+بصفتك القائد الاستراتيجي، اكتب 3 اقتراحات محددة تحتاج موافقة المالك:
+1. [اقتراح تقني]
+2. [اقتراح تنظيمي]
+3. [اقتراح للتطوير]
+
+كن محدداً وعملياً. اكتب كل اقتراح في سطرين."""
+
+                    try:
+                        result = a01.run(task, context={"swarm_session": True, "phase": "final_proposals"})
+                        proposals_text = result.result if hasattr(result, 'result') else str(result)
+
+                        add_swarm_event("proposals_ready", "A01", data={
+                            "phase": "proposals",
+                            "proposals": proposals_text[:1000]
+                        })
+
+                        # Save proposals to file
+                        proposals_data = {
+                            "session_id": swarm_session_id,
+                            "timestamp": datetime.now().isoformat(),
+                            "proposals": proposals_text,
+                            "based_on_events": len(swarm_events),
+                            "status": "awaiting_approval"
+                        }
+                        os.makedirs("workspace", exist_ok=True)
+                        with open("workspace/swarm_proposals.json", "w", encoding="utf-8") as f:
+                            json.dump(proposals_data, f, ensure_ascii=False, indent=2)
+
+                    except Exception as e:
+                        add_swarm_event("task_failed", "A01", data={"error": str(e)[:100]})
+
+                time.sleep(8)
+
+        except Exception as e:
+            logger.error(f"Swarm round {round_num} error: {e}")
+            add_swarm_event("error", "SYSTEM", data={"error": str(e)[:200]})
+            time.sleep(5)
+
+    # Session complete
+    swarm_active = False
+    add_swarm_event("swarm_completed", "SYSTEM", data={
+        "total_rounds": round_num,
+        "total_events": len(swarm_events),
+        "duration_actual": round(time.time() - start_time)
+    })
+
+    logger.info(f"Swarm session completed — {round_num} rounds, {len(swarm_events)} events")
+
 
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":

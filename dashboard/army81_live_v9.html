@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Army81 — Live Neural Dashboard v9</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cairo:wght@300;400;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#000208;overflow:hidden;font-family:'Cairo',sans-serif;color:#e0e0e0;direction:rtl;}
+#canvas3d{position:fixed;top:0;left:0;z-index:1;}
+
+/* TOP BAR */
+#topBar{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:6px 16px;background:rgba(0,2,8,0.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,255,255,0.15);}
+#topBar .logo{font-family:'Orbitron';font-weight:900;font-size:18px;color:#FFD700;text-shadow:0 0 20px rgba(255,215,0,0.6);}
+#topBar .logo span{color:#00FFFF;font-size:11px;margin-right:8px;}
+.top-stats{display:flex;gap:12px;font-size:11px;font-family:'Orbitron';}
+.top-stats .stat{display:flex;align-items:center;gap:4px;}
+.top-stats .stat .label{color:#888;}
+.top-stats .stat .val{color:#00FFFF;font-weight:700;}
+.toolbar{display:flex;gap:6px;}
+.toolbar button{background:rgba(0,255,255,0.08);border:1px solid rgba(0,255,255,0.2);color:#e0e0e0;padding:5px 10px;border-radius:6px;cursor:pointer;font-size:11px;font-family:'Cairo';transition:all 0.3s;}
+.toolbar button:hover{background:rgba(0,255,255,0.2);border-color:#00FFFF;box-shadow:0 0 12px rgba(0,255,255,0.3);}
+
+/* EVENT LOG */
+#eventLog{position:fixed;top:45px;left:10px;z-index:90;width:280px;max-height:55vh;background:rgba(0,2,12,0.88);backdrop-filter:blur(14px);border:1px solid rgba(0,255,255,0.12);border-radius:12px;padding:10px;overflow-y:auto;font-size:11px;scrollbar-width:thin;display:none;}
+#eventLog h3{font-family:'Orbitron';font-size:12px;color:#00FFFF;margin-bottom:8px;text-align:center;}
+.event-item{display:flex;gap:6px;padding:5px 6px;margin-bottom:4px;border-radius:6px;border-left:3px solid;animation:evSlide 0.4s ease-out;}
+.event-item.task{border-color:#00FFFF;background:rgba(0,255,255,0.04);}
+.event-item.success{border-color:#39FF14;background:rgba(57,255,20,0.04);}
+.event-item.error{border-color:#FF3366;background:rgba(255,51,102,0.04);}
+.event-item.data{border-color:#FFD700;background:rgba(255,215,0,0.04);}
+.event-item.memory{border-color:#BF00FF;background:rgba(191,0,255,0.04);}
+.event-item.command{border-color:#FFD700;background:rgba(255,215,0,0.06);}
+.event-item.cluster{border-color:#FF6EC7;background:rgba(255,110,199,0.04);}
+.ev-icon{font-size:14px;min-width:20px;text-align:center;}
+.ev-body{flex:1;min-width:0;}
+.ev-title{font-weight:700;font-size:10px;color:#ccc;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ev-desc{font-size:10px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ev-time{font-family:'Orbitron';font-size:8px;color:#555;min-width:50px;text-align:left;}
+@keyframes evSlide{from{opacity:0;transform:translateX(-20px);}to{opacity:1;transform:translateX(0);}}
+
+/* STATS PANEL */
+#statsPanel{position:fixed;top:45px;right:10px;z-index:90;background:rgba(0,2,12,0.88);backdrop-filter:blur(14px);border:1px solid rgba(0,255,255,0.12);border-radius:12px;padding:10px 14px;font-size:11px;min-width:200px;}
+#statsPanel h3{font-family:'Orbitron';font-size:11px;color:#FFD700;margin-bottom:8px;text-align:center;}
+.s-row{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid rgba(255,255,255,0.03);}
+.s-label{color:#888;font-size:10px;}
+.s-val{font-family:'Orbitron';font-size:10px;color:#00FFFF;font-weight:700;}
+.s-val.green{color:#39FF14;}.s-val.gold{color:#FFD700;}.s-val.red{color:#FF3366;}
+#heartbeatBar{width:100%;height:2px;background:rgba(255,255,255,0.05);border-radius:1px;margin-top:6px;overflow:hidden;}
+#heartbeatPulse{height:100%;width:0;background:#39FF14;border-radius:1px;transition:width 0.3s;}
+
+/* VIEW MODES */
+#viewModes{position:fixed;bottom:15px;left:50%;transform:translateX(-50%);z-index:90;display:flex;gap:6px;background:rgba(0,2,12,0.85);backdrop-filter:blur(12px);border:1px solid rgba(0,255,255,0.12);border-radius:20px;padding:5px 10px;}
+#viewModes button{background:none;border:1px solid rgba(255,255,255,0.1);color:#888;padding:4px 12px;border-radius:14px;cursor:pointer;font-size:10px;font-family:'Cairo';transition:all 0.3s;}
+#viewModes button.active{background:rgba(0,255,255,0.15);border-color:#00FFFF;color:#00FFFF;}
+
+/* CHAT */
+#chatBox{display:none;position:fixed;bottom:60px;right:10px;z-index:95;width:340px;max-height:50vh;background:rgba(0,2,12,0.92);backdrop-filter:blur(16px);border:1px solid rgba(255,215,0,0.2);border-radius:14px;overflow:hidden;}
+#chatBox h3{font-family:'Orbitron';font-size:12px;color:#FFD700;padding:10px 14px;border-bottom:1px solid rgba(255,215,0,0.1);text-align:center;}
+#chatMessages{padding:10px;max-height:250px;overflow-y:auto;font-size:11px;scrollbar-width:thin;}
+.chat-msg{padding:6px 10px;margin-bottom:6px;border-radius:8px;}
+.chat-msg.user{background:rgba(0,255,255,0.08);border:1px solid rgba(0,255,255,0.15);text-align:right;}
+.chat-msg.system{background:rgba(255,215,0,0.06);border:1px solid rgba(255,215,0,0.1);font-size:10px;color:#aaa;}
+#chatInput{width:100%;padding:8px 12px;background:rgba(0,0,0,0.4);border:none;border-top:1px solid rgba(255,215,0,0.1);color:#e0e0e0;font-family:'Cairo';font-size:12px;outline:none;}
+#chatTarget{width:100%;padding:4px 8px;background:rgba(0,0,0,0.3);border:none;border-top:1px solid rgba(255,215,0,0.05);color:#aaa;font-size:10px;font-family:'Cairo';outline:none;}
+
+/* AGENT CARD */
+#agentCard{position:fixed;z-index:200;pointer-events:none;opacity:0;transform:translateY(10px);transition:opacity 0.25s,transform 0.25s;background:rgba(0,2,15,0.94);backdrop-filter:blur(20px);border:1px solid rgba(0,255,255,0.2);border-radius:14px;padding:14px;width:320px;box-shadow:0 0 30px rgba(0,255,255,0.1);}
+#agentCard.show{opacity:1;transform:translateY(0);}
+.card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(0,255,255,0.1);}
+.card-id{font-family:'Orbitron';font-size:14px;font-weight:900;}
+.card-name{font-size:12px;color:#aaa;}
+.card-state{font-size:10px;padding:2px 8px;border-radius:10px;font-family:'Orbitron';}
+.card-state.busy{background:rgba(255,165,0,0.2);color:#FFA500;}
+.card-state.active{background:rgba(57,255,20,0.2);color:#39FF14;}
+.card-state.idle{background:rgba(100,100,100,0.2);color:#888;}
+.card-state.error{background:rgba(255,51,102,0.2);color:#FF3366;}
+.card-section{margin-bottom:8px;}
+.card-section-title{font-size:9px;color:#666;font-family:'Orbitron';margin-bottom:4px;text-transform:uppercase;}
+.card-bar{height:4px;background:rgba(255,255,255,0.06);border-radius:2px;overflow:hidden;margin-bottom:6px;}
+.card-bar-fill{height:100%;border-radius:2px;transition:width 0.5s;}
+.card-bar-fill.progress{background:linear-gradient(90deg,#00FFFF,#39FF14);}
+.card-bar-fill.knowledge{background:linear-gradient(90deg,#FF6EC7,#BF00FF);}
+.tool-tag{display:inline-block;padding:1px 6px;margin:1px;border-radius:4px;font-size:8px;background:rgba(0,255,255,0.08);border:1px solid rgba(0,255,255,0.15);color:#aaa;}
+.tool-tag.active-tool{background:rgba(57,255,20,0.15);border-color:#39FF14;color:#39FF14;}
+
+/* LOADING */
+#loadScreen{position:fixed;inset:0;z-index:9999;background:#000208;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 1s;}
+#loadScreen.done{opacity:0;pointer-events:none;}
+#loadScreen h1{font-family:'Orbitron';font-size:36px;color:#FFD700;text-shadow:0 0 40px rgba(255,215,0,0.5);margin-bottom:6px;}
+#loadScreen p{font-family:'Orbitron';font-size:12px;color:#555;letter-spacing:4px;}
+#loadBar{width:300px;height:3px;background:rgba(255,255,255,0.06);border-radius:2px;margin-top:20px;overflow:hidden;}
+#ldFill{height:100%;width:0;background:linear-gradient(90deg,#FFD700,#00FFFF);border-radius:2px;transition:width 0.4s;}
+#ldStatus{margin-top:10px;font-size:11px;color:#666;font-family:'Cairo';}
+.glow-line{width:200px;height:1px;background:linear-gradient(90deg,transparent,#FFD700,transparent);margin:10px 0;}
+#fpsCounter{position:fixed;bottom:6px;left:4px;z-index:90;font-family:'Orbitron';font-size:9px;color:#39FF14;opacity:0.6;}
+</style>
+</head>
+<body>
+<canvas id="canvas3d"></canvas>
+
+<!-- TOP BAR -->
+<div id="topBar">
+  <div class="logo">ARMY81 <span>LIVE v9</span></div>
+  <div class="top-stats">
+    <div class="stat"><span class="label">مهام</span><span class="val" id="sTasks">0</span></div>
+    <div class="stat"><span class="label">نجاح</span><span class="val" id="sSuccess">0%</span></div>
+    <div class="stat"><span class="label">أخطاء</span><span class="val" id="sErrors">0</span></div>
+    <div class="stat"><span class="label">اتصالات</span><span class="val" id="sConn">0</span></div>
+    <div class="stat"><span class="label">نبضات</span><span class="val" id="pulseCount">0</span></div>
+    <div class="stat"><span class="label">ذاكرة</span><span class="val" id="sMemory">0 MB</span></div>
+    <div class="stat"><span class="label">نشط</span><span class="val" id="activeCount">0</span></div>
+    <div class="stat"><span class="label">عناقيد</span><span class="val" id="clusterCount">0</span></div>
+    <div class="stat"><span class="label">حمل</span><span class="val" id="sCoreLoad">0%</span></div>
+    <div class="stat"><span class="label">نبض</span><span class="val green" id="sHeartbeat">صحي</span></div>
+    <div class="stat"><span class="label">FPS</span><span class="val" id="sFps">0</span></div>
+    <div class="stat"><span class="label">GW</span><span class="val" id="gwMode">...</span><span class="gw-dot" id="gwDot"></span></div>
+  </div>
+  <div class="toolbar">
+    <button onclick="toggleLog()" id="logBtn">سجل <span id="eventBadge" style="background:#FF3366;color:#fff;border-radius:8px;padding:0 5px;font-size:9px;">0</span></button>
+    <button onclick="toggleChat()">محادثة</button>
+    <button onclick="resetCam()">إعادة ضبط</button>
+    <button onclick="topView()">علوي</button>
+    <button onclick="focusCore()">تركيز</button>
+    <button onclick="cinematic()">سينمائي</button>
+    <button onclick="startSwarmSession()" id="swarmBtn" style="border-color:rgba(57,255,20,0.3);color:#39FF14;">🐝 سرب ساعة</button>
+    <button onclick="stopSwarmSession()" style="border-color:rgba(255,165,0,0.3);">⏹️ إيقاف</button>
+    <button onclick="killSwitch()" id="killSwitch" style="border-color:rgba(255,51,102,0.3);">KILL</button>
+  </div>
+</div>
+
+<!-- EVENT LOG -->
+<div id="eventLog"><h3>سجل الأحداث الحية</h3><div id="eventItems"></div></div>
+
+<!-- STATS PANEL -->
+<div id="statsPanel">
+  <h3>إحصائيات النظام</h3>
+  <div id="heartbeatBar"><div id="heartbeatPulse"></div></div>
+</div>
+
+<!-- VIEW MODES -->
+<div id="viewModes">
+  <button class="active" onclick="setView('neural')">الشبكة العصبية</button>
+  <button onclick="setView('tools')">الأدوات</button>
+  <button onclick="setView('knowledge')">المعرفة</button>
+</div>
+
+<!-- CHAT -->
+<div id="chatBox">
+  <h3>مركز القيادة</h3>
+  <select id="chatTarget"><option value="all">بث عام — جميع الوكلاء</option></select>
+  <div id="chatMessages"></div>
+  <input id="chatInput" placeholder="أدخل الأمر..." onkeydown="if(event.key==='Enter')sendCmd()">
+</div>
+
+<!-- AGENT CARD -->
+<div id="agentCard">
+  <div class="card-header"><div><span class="card-id" id="cardId">A01</span><div class="card-name" id="cardName">وكيل</div></div><span class="card-state idle" id="cardState">خامل</span></div>
+  <div class="card-section"><div class="card-section-title">النشاط الحالي</div><div id="cardActivity" style="font-size:11px;color:#ccc;">لا يوجد</div></div>
+  <div class="card-section"><div class="card-section-title">التقدم</div><div class="card-bar"><div class="card-bar-fill progress" id="cardProgress" style="width:0"></div></div></div>
+  <div class="card-section"><div class="card-section-title">المعرفة</div><div class="card-bar"><div class="card-bar-fill knowledge" id="cardKnowledge" style="width:0"></div></div></div>
+  <div class="card-section"><div class="card-section-title">الذاكرة</div><div id="cardMemCount" style="font-size:10px;color:#BF00FF;">0 عنصر</div></div>
+  <div class="card-section"><div class="card-section-title">الأدوات</div><div id="cardTools" style="line-height:1.8;"></div></div>
+  <div class="card-section"><div class="card-section-title">آخر إجراء</div><div id="cardLastAction" style="font-size:10px;color:#888;">لا يوجد</div></div>
+</div>
+
+<!-- LOADING -->
+<div id="loadScreen">
+  <h1>ARMY81</h1>
+  <p>VISUAL STORY ENGINE v8</p>
+  <div class="glow-line"></div>
+  <div id="loadBar"><div id="ldFill"></div></div>
+  <div id="ldStatus">تهيئة النظام...</div>
+</div>
+<div id="fpsCounter">FPS: 0</div>
+
+<!-- THREE.JS GLOBAL SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+<script>
+/* ═══ CATEGORIES ═══ */
+const CATS={
+  cat1_science:{name:'العلوم',color:0x00FFFF,neon:'#00FFFF'},
+  cat2_society:{name:'المجتمع',color:0xFF00FF,neon:'#FF00FF'},
+  cat3_tools:{name:'الأدوات',color:0x39FF14,neon:'#39FF14'},
+  cat4_management:{name:'الإدارة',color:0xFFD700,neon:'#FFD700'},
+  cat5_behavior:{name:'السلوك',color:0xBF00FF,neon:'#BF00FF'},
+  cat6_leadership:{name:'القيادة',color:0xFF6EC7,neon:'#FF6EC7'},
+  cat7_new:{name:'التطوير',color:0xFF6B6B,neon:'#FF6B6B'}
+};
+
+const AGENTS=[
+{id:'A02',name_ar:'وكيل البحث العلمي',cat:'cat1_science',model:'gemini-pro',tools:['arxiv_search','pubmed_search','web_search','deep_search','remember','semantic_remember']},
+{id:'A07',name_ar:'وكيل البحث الطبي',cat:'cat1_science',model:'gemini-pro',tools:['pubmed_search','arxiv_search','web_search','deep_search','remember']},
+{id:'A38',name_ar:'وكيل الفيزياء وعلوم الكم',cat:'cat1_science',model:'gemini-pro',tools:['arxiv_search','web_search','deep_search','wiki_search','run_code']},
+{id:'A39',name_ar:'وكيل المناخ والبيئة',cat:'cat1_science',model:'gemini-flash',tools:['arxiv_search','web_search','deep_search','fetch_news','analyze_data','remember']},
+{id:'A40',name_ar:'وكيل كشف التقنيات الناشئة',cat:'cat1_science',model:'gemini-flash',tools:['arxiv_search','github_search','web_search','deep_search','fetch_news','semantic_remember','semantic_recall']},
+{id:'A52',name_ar:'وكيل الطب السريري',cat:'cat1_science',model:'gemini-pro',tools:['pubmed_search','arxiv_search','web_search','deep_search','remember']},
+{id:'A53',name_ar:'وكيل التصنيع المتقدم',cat:'cat1_science',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','github_search','remember']},
+{id:'A54',name_ar:'وكيل الروبوتات والأتمتة',cat:'cat1_science',model:'gemini-flash',tools:['arxiv_search','github_search','web_search','deep_search','run_code']},
+{id:'A55',name_ar:'وكيل تقنيات الفضاء والدفاع',cat:'cat1_science',model:'gemini-flash',tools:['arxiv_search','web_search','deep_search','fetch_news','remember']},
+{id:'A03',name_ar:'وكيل تحليل السياسات',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','analyze_data','remember']},
+{id:'A08',name_ar:'وكيل التحليل المالي',cat:'cat2_society',model:'gemini-flash',tools:['market_data','web_search','deep_search','fetch_news','analyze_data','remember']},
+{id:'A12',name_ar:'وكيل إنشاء المحتوى',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember','write_file']},
+{id:'A13',name_ar:'وكيل الاستشارة القانونية',cat:'cat2_society',model:'gemini-pro',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A41',name_ar:'وكيل الاقتصاد العالمي',cat:'cat2_society',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','market_data','analyze_data','remember']},
+{id:'A42',name_ar:'وكيل العملات الرقمية',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','market_data','fetch_news','arxiv_search','remember']},
+{id:'A43',name_ar:'وكيل تحليل التاريخ',cat:'cat2_society',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember','semantic_remember']},
+{id:'A44',name_ar:'وكيل تحليل الإعلام',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember']},
+{id:'A45',name_ar:'وكيل القانون الدولي',cat:'cat2_society',model:'gemini-pro',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A46',name_ar:'وكيل الفنون والثقافة',cat:'cat2_society',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A47',name_ar:'وكيل اللغويات',cat:'cat2_society',model:'gemini-flash',tools:['web_search','wiki_search','arxiv_search','remember']},
+{id:'A48',name_ar:'وكيل الرياضيات المتقدمة',cat:'cat2_society',model:'gemini-pro',tools:['run_code','arxiv_search','web_search','wiki_search']},
+{id:'A49',name_ar:'وكيل علم الاجتماع',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','arxiv_search','remember']},
+{id:'A50',name_ar:'وكيل التعليم والتعلّم',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','arxiv_search','remember']},
+{id:'A51',name_ar:'وكيل الهندسة العكسية',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','github_search','run_code','remember']},
+{id:'A04',name_ar:'وكيل الاستخبارات الإعلامية',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','fetch_news','deep_search','arxiv_search']},
+{id:'A05',name_ar:'وكيل تطوير البرمجيات',cat:'cat3_tools',model:'gemini-flash',tools:['run_code','github_search','web_search','read_file','write_file']},
+{id:'A09',name_ar:'وكيل الأمن السيبراني',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','github_search','fetch_news','remember']},
+{id:'A11',name_ar:'وكيل الترجمة والتعريب',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','wiki_search','remember']},
+{id:'A56',name_ar:'وكيل الاستخبارات العميقة',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','arxiv_search','remember','semantic_remember']},
+{id:'A57',name_ar:'وكيل تطوير التكاملات',cat:'cat3_tools',model:'gemini-flash',tools:['run_code','github_search','web_search','read_file','write_file']},
+{id:'A58',name_ar:'وكيل الإنذار المبكر',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','arxiv_search','remember','semantic_recall']},
+{id:'A59',name_ar:'وكيل الابتكار المفتوح',cat:'cat3_tools',model:'gemini-flash',tools:['github_search','arxiv_search','web_search','deep_search','remember']},
+{id:'A60',name_ar:'وكيل مكافحة التضليل',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','fetch_news','arxiv_search']},
+{id:'A61',name_ar:'وكيل الحوسبة البيولوجية',cat:'cat3_tools',model:'gemini-pro',tools:['arxiv_search','pubmed_search','github_search','run_code','web_search']},
+{id:'A06',name_ar:'وكيل تحليل البيانات',cat:'cat4_management',model:'gemini-flash',tools:['analyze_data','run_code','read_file','write_file','market_data']},
+{id:'A10',name_ar:'وكيل إدارة المعرفة',cat:'cat4_management',model:'gemini-flash',tools:['remember','recall','wiki_search','web_search','read_file','write_file']},
+{id:'A14',name_ar:'وكيل إدارة المشاريع',cat:'cat4_management',model:'gemini-flash',tools:['web_search','read_file','write_file','analyze_data','remember','recall']},
+{id:'A62',name_ar:'وكيل الحوكمة المؤسسية',cat:'cat4_management',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','analyze_data','write_file','remember']},
+{id:'A63',name_ar:'وكيل إدارة المؤسسات',cat:'cat4_management',model:'gemini-flash',tools:['web_search','deep_search','analyze_data','remember','write_file']},
+{id:'A64',name_ar:'وكيل المشاريع العملاقة',cat:'cat4_management',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','run_code','write_file','remember']},
+{id:'A65',name_ar:'وكيل التحول الرقمي',cat:'cat4_management',model:'gemini-flash',tools:['web_search','deep_search','github_search','arxiv_search','analyze_data','remember']},
+{id:'A66',name_ar:'وكيل إدارة الأداء',cat:'cat4_management',model:'gemini-flash',tools:['analyze_data','run_code','web_search','write_file','remember']},
+{id:'A15',name_ar:'وكيل علم النفس السلوكي',cat:'cat5_behavior',model:'gemini-pro',tools:['web_search','deep_search','wiki_search','pubmed_search','remember']},
+{id:'A16',name_ar:'وكيل خبير التفاوض',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A17',name_ar:'وكيل تحليل لغة الجسد',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A18',name_ar:'وكيل الإقناع والتأثير',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember']},
+{id:'A19',name_ar:'وكيل الذكاء العاطفي',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','wiki_search','pubmed_search','remember']},
+{id:'A20',name_ar:'وكيل الديناميكيات الاجتماعية',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember']},
+{id:'A21',name_ar:'وكيل سلوك الجماهير',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','arxiv_search','remember']},
+{id:'A22',name_ar:'وكيل الاقتصاد السلوكي',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','market_data','analyze_data']},
+{id:'A23',name_ar:'وكيل حل النزاعات',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A24',name_ar:'وكيل سيكولوجية القيادة',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','pubmed_search','remember']},
+{id:'A25',name_ar:'وكيل خبير التواصل',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A26',name_ar:'وكيل سيكولوجية القرار',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','run_code','remember']},
+{id:'A27',name_ar:'وكيل الذكاء الثقافي',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A01',name_ar:'وكيل القيادة الاستراتيجية',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','arxiv_search','remember','recall']},
+{id:'A28',name_ar:'وكيل الاستراتيجية العسكرية',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','arxiv_search','remember','recall']},
+{id:'A29',name_ar:'وكيل إدارة الأزمات',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','remember','recall','write_file']},
+{id:'A30',name_ar:'وكيل قيادة الابتكار',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','deep_search','github_search','arxiv_search','remember']},
+{id:'A31',name_ar:'وكيل تحليل الاستخبارات',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','arxiv_search','github_search','remember','recall']},
+{id:'A32',name_ar:'وكيل خبير الجيوسياسة',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','wiki_search','market_data','remember']},
+{id:'A33',name_ar:'وكيل استشراف المستقبل',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','arxiv_search','fetch_news','remember','semantic_remember','semantic_recall']},
+{id:'A34',name_ar:'وكيل تقييم المخاطر',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','deep_search','analyze_data','market_data','run_code','remember']},
+{id:'A35',name_ar:'وكيل إدارة التغيير',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','write_file']},
+{id:'A36',name_ar:'وكيل استراتيجي المنظمات',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','wiki_search','remember','write_file']},
+{id:'A37',name_ar:'وكيل مهندس القرارات',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','run_code','remember','recall','write_file']},
+{id:'A67',name_ar:'وكيل التواصل الإنساني',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A68',name_ar:'وكيل توزيع الموارد',cat:'cat6_leadership',model:'gemini-flash',tools:['analyze_data','run_code','web_search','market_data','remember']},
+{id:'A69',name_ar:'وكيل التقييم الشامل',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','remember','recall','write_file']},
+{id:'A70',name_ar:'وكيل الابتكار الجذري',cat:'cat6_leadership',model:'gemini-pro',tools:['arxiv_search','github_search','web_search','deep_search','semantic_remember']},
+{id:'A71',name_ar:'وكيل الأمن والنزاهة',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','deep_search','analyze_data','remember','recall']},
+{id:'A72',name_ar:'وكيل مراقبة التطور',cat:'cat7_new',model:'gemini-pro',tools:['analyze_data','remember','recall','semantic_remember','semantic_recall','web_search']},
+{id:'A73',name_ar:'وكيل تنسيق الوكلاء',cat:'cat7_new',model:'gemini-pro',tools:['web_search','analyze_data','remember','recall','semantic_remember','semantic_recall']},
+{id:'A74',name_ar:'وكيل ضبط الجودة',cat:'cat7_new',model:'gemini-pro',tools:['analyze_data','web_search','deep_search','remember','recall']},
+{id:'A75',name_ar:'وكيل تحسين النظام',cat:'cat7_new',model:'gemini-flash',tools:['analyze_data','run_code','remember','recall','web_search']},
+{id:'A76',name_ar:'وكيل تجميع التعلم',cat:'cat7_new',model:'gemini-flash',tools:['semantic_remember','semantic_recall','analyze_data','remember','recall','web_search']},
+{id:'A77',name_ar:'وكيل تنسيق سير العمل',cat:'cat7_new',model:'gemini-pro',tools:['analyze_data','remember','recall','web_search','write_file']},
+{id:'A78',name_ar:'وكيل التخصيص الديناميكي',cat:'cat7_new',model:'gemini-flash',tools:['analyze_data','run_code','remember','recall']},
+{id:'A79',name_ar:'وكيل التغذية الراجعة',cat:'cat7_new',model:'gemini-flash',tools:['analyze_data','semantic_remember','semantic_recall','remember','recall']},
+{id:'A80',name_ar:'وكيل التعرف على الأنماط',cat:'cat7_new',model:'gemini-pro',tools:['analyze_data','run_code','semantic_recall','deep_search','web_search']},
+{id:'A81',name_ar:'الوكيل الميتا الاستخباراتي',cat:'cat7_new',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','semantic_remember','semantic_recall','remember','recall','write_file']}
+];
+
+// Init agent runtime state
+AGENTS.forEach(a=>{a.state='idle';a.progress=0;a.knowledge=Math.random()*60+20;a.memory=0;a.memoryItems=[];a.taskCount=0;a.successCount=0;a.errorCount=0;a.currentTask=null;a.activeTools=[];a.lastAction='لا يوجد';a.shakeIntensity=0;a.glitchTime=0;a.currentGrowth=1;a.growthTarget=1;a.deepThinkTime=0;a.prevPos={x:0,y:0,z:0};a.trails=[];a.memRings=[];});
+
+// Populate chat target
+const sel=document.getElementById('chatTarget');
+AGENTS.forEach(a=>{const o=document.createElement('option');o.value=a.id;o.textContent=a.id+' — '+a.name_ar;sel.appendChild(o);});
+
+/* ═══ EVENT BUS ═══ */
+const EVT={TASK_ASSIGNED:'task_assigned',TASK_COMPLETED:'task_completed',TASK_FAILED:'task_failed',TOOL_USED:'tool_used',AGENT_MESSAGE:'agent_message',MEMORY_SAVED:'memory_saved',API_ERROR:'api_error',RATE_LIMIT:'rate_limit',COMMAND_SENT:'command_sent',CORE_LOAD_CHANGE:'core_load',CLUSTER_FORMED:'cluster_formed',CLUSTER_DISSOLVED:'cluster_dissolved'};
+const EventBus={_h:{},on(e,f){(this._h[e]=this._h[e]||[]).push(f);},emit(e,d){(this._h[e]||[]).forEach(f=>f(d));}};
+let totalEvents=0,eventLogVisible=false;
+
+function logEvent(type,icon,title,desc){
+  totalEvents++;
+  document.getElementById('eventBadge').textContent=Math.min(99,totalEvents);
+  const items=document.getElementById('eventItems');
+  const div=document.createElement('div');div.className='event-item '+type;
+  const now=new Date();
+  div.innerHTML='<span class="ev-icon">'+icon+'</span><div class="ev-body"><div class="ev-title">'+title+'</div><div class="ev-desc">'+desc+'</div></div><span class="ev-time">'+String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0')+':'+String(now.getSeconds()).padStart(2,'0')+'</span>';
+  items.insertBefore(div,items.firstChild);
+  if(items.children.length>60)items.removeChild(items.lastChild);
+}
+
+/* ═══ THREE.JS SCENE ═══ */
+const canvas=document.getElementById('canvas3d');
+const renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
+renderer.setSize(window.innerWidth,window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;
+
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x000208);scene.fog=new THREE.FogExp2(0x000208,0.005);
+const camera=new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeight,0.1,500);camera.position.set(0,30,55);
+const controls=new THREE.OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=0.08;controls.minDistance=10;controls.maxDistance=150;controls.autoRotate=true;controls.autoRotateSpeed=0.15;
+
+// Lighting
+scene.add(new THREE.AmbientLight(0x111122,0.4));
+const coreLight=new THREE.PointLight(0xFFD700,2,100);scene.add(coreLight);
+var pl1=new THREE.PointLight(0x00FFFF,0.6,80);pl1.position.set(40,20,-30);scene.add(pl1);
+var pl2=new THREE.PointLight(0xFF00FF,0.6,80);pl2.position.set(-40,20,30);scene.add(pl2);
+var pl3=new THREE.PointLight(0x39FF14,0.5,80);pl3.position.set(0,-20,50);scene.add(pl3);
+
+// Post-processing
+const composer=new THREE.EffectComposer(renderer);composer.addPass(new THREE.RenderPass(scene,camera));
+composer.addPass(new THREE.UnrealBloomPass(new THREE.Vector2(window.innerWidth,window.innerHeight),1.2,0.5,0.3));
+
+/* ═══ STARS ═══ */
+var starPos=new Float32Array(2000*3);for(var i=0;i<2000;i++){starPos[i*3]=(Math.random()-0.5)*400;starPos[i*3+1]=(Math.random()-0.5)*400;starPos[i*3+2]=(Math.random()-0.5)*400;}
+var starGeo=new THREE.BufferGeometry();starGeo.setAttribute('position',new THREE.BufferAttribute(starPos,3));
+scene.add(new THREE.Points(starGeo,new THREE.PointsMaterial({color:0xffffff,size:0.3,transparent:true,opacity:0.6})));
+
+/* ═══ NEBULA ═══ */
+var nebColors=[0x00FFFF,0xFF00FF,0x7B68EE,0x39FF14,0xFF6EC7,0xFFD700,0xBF00FF];
+var nebGroup=new THREE.Group();
+for(var n=0;n<8;n++){var nm=new THREE.Mesh(new THREE.SphereGeometry(15+Math.random()*30,8,8),new THREE.MeshBasicMaterial({color:nebColors[n%7],transparent:true,opacity:0.015,side:THREE.DoubleSide,depthWrite:false,blending:THREE.AdditiveBlending}));nm.position.set((Math.random()-0.5)*180,(Math.random()-0.5)*100,(Math.random()-0.5)*180);nm.scale.set(1+Math.random(),0.5+Math.random()*0.5,1+Math.random());nebGroup.add(nm);}
+scene.add(nebGroup);
+
+/* ═══ CORE REACTOR ═══ */
+var coreGroup=new THREE.Group();scene.add(coreGroup);
+var coreMat=new THREE.MeshStandardMaterial({color:0xFFD700,emissive:0xFFD700,emissiveIntensity:2,metalness:0.3,roughness:0.1});
+var coreInner=new THREE.Mesh(new THREE.SphereGeometry(2,32,32),coreMat);coreGroup.add(coreInner);
+var coreRings=[];
+[0xFFD700,0x00BFFF,0xFF6B9D].forEach(function(c,i){var r=new THREE.Mesh(new THREE.TorusGeometry(3+i*0.8,0.05,8,48),new THREE.MeshStandardMaterial({color:c,emissive:c,emissiveIntensity:1.2,transparent:true,opacity:0.7}));r.rotation.x=Math.PI/2+i*0.4;r.rotation.y=i*0.6;coreGroup.add(r);coreRings.push(r);});
+coreGroup.add(new THREE.Mesh(new THREE.IcosahedronGeometry(4,1),new THREE.MeshBasicMaterial({color:0xFFD700,wireframe:true,transparent:true,opacity:0.12})));
+var coreLoad=0,coreTargetSpeed=0.002;
+
+/* ═══ AGENTS 3D ═══ */
+var catShapes={cat1_science:'icosahedron',cat2_society:'dodecahedron',cat3_tools:'octahedron',cat4_management:'box',cat5_behavior:'sphere',cat6_leadership:'torus',cat7_new:'tetrahedron'};
+function mkGeo(s,sz){switch(s){case 'icosahedron':return new THREE.IcosahedronGeometry(sz,0);case 'dodecahedron':return new THREE.DodecahedronGeometry(sz,0);case 'octahedron':return new THREE.OctahedronGeometry(sz,0);case 'box':return new THREE.BoxGeometry(sz*1.4,sz*1.4,sz*1.4);case 'torus':return new THREE.TorusGeometry(sz*0.8,sz*0.3,8,16);case 'tetrahedron':return new THREE.TetrahedronGeometry(sz*1.2,0);default:return new THREE.SphereGeometry(sz,12,12);}}
+
+var catIdx={};var ci=0;Object.keys(CATS).forEach(function(k){catIdx[k]=ci++;});
+AGENTS.forEach(function(a){
+  var catI=catIdx[a.cat],ring=AGENTS.filter(function(x){return x.cat===a.cat;}),pos=ring.indexOf(a),tot=ring.length;
+  var radius=12+catI*7,angle=(pos/tot)*Math.PI*2;
+  var x=Math.cos(angle)*radius,z=Math.sin(angle)*radius,y=(Math.random()-0.5)*6;
+  a.pos={x:x,y:y,z:z};a.basePos={x:x,y:y,z:z};a.prevPos={x:x,y:y,z:z};
+  var sz=0.7,geo=mkGeo(catShapes[a.cat]||'sphere',sz);
+  var mat=new THREE.MeshStandardMaterial({color:CATS[a.cat].color,emissive:CATS[a.cat].color,emissiveIntensity:0.4,metalness:0.2,roughness:0.1,transparent:true,opacity:0.9});
+  var mesh=new THREE.Mesh(geo,mat);mesh.position.set(x,y,z);scene.add(mesh);a.mesh=mesh;
+  var sr=new THREE.Mesh(new THREE.TorusGeometry(sz+0.3,0.03,8,24),new THREE.MeshBasicMaterial({color:0x666666,transparent:true,opacity:0.4}));sr.position.copy(mesh.position);sr.rotation.x=Math.PI/2;scene.add(sr);a.statusRing=sr;
+  var au=new THREE.Mesh(new THREE.SphereGeometry(sz+1,8,8),new THREE.MeshBasicMaterial({color:CATS[a.cat].color,transparent:true,opacity:0,side:THREE.BackSide,blending:THREE.AdditiveBlending,depthWrite:false}));au.position.copy(mesh.position);scene.add(au);a.auraMesh=au;
+});
+
+/* ═══ NEURAL CONNECTIONS ═══ */
+var connections=[];
+AGENTS.forEach(function(a,i){
+  var same=AGENTS.filter(function(b){return b.cat===a.cat&&b!==a;});
+  same.forEach(function(b){if(a.id<b.id){var mid=new THREE.Vector3((a.pos.x+b.pos.x)/2+(Math.random()-0.5)*3,(a.pos.y+b.pos.y)/2+(Math.random()-0.5)*3,(a.pos.z+b.pos.z)/2+(Math.random()-0.5)*3);var curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(a.pos.x,a.pos.y,a.pos.z),mid,new THREE.Vector3(b.pos.x,b.pos.y,b.pos.z));var pts=curve.getPoints(20);var geo=new THREE.BufferGeometry().setFromPoints(pts);var line=new THREE.Line(geo,new THREE.LineBasicMaterial({color:CATS[a.cat].color,transparent:true,opacity:0.06,blending:THREE.AdditiveBlending}));scene.add(line);connections.push({line:line,from:a,to:b,curve:curve,baseOp:0.06,brightTime:0});}});
+  var oth=AGENTS.filter(function(b){return b.cat!==a.cat;});
+  for(var c=0;c<Math.min(2,oth.length);c++){var b=oth[Math.floor(Math.random()*oth.length)];if(connections.find(function(cn){return(cn.from===a&&cn.to===b)||(cn.from===b&&cn.to===a);}))continue;var mid=new THREE.Vector3((a.pos.x+b.pos.x)/2,(a.pos.y+b.pos.y)/2+5,(a.pos.z+b.pos.z)/2);var curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(a.pos.x,a.pos.y,a.pos.z),mid,new THREE.Vector3(b.pos.x,b.pos.y,b.pos.z));var pts=curve.getPoints(20);var geo=new THREE.BufferGeometry().setFromPoints(pts);var line=new THREE.Line(geo,new THREE.LineBasicMaterial({color:0x444466,transparent:true,opacity:0.03,blending:THREE.AdditiveBlending}));scene.add(line);connections.push({line:line,from:a,to:b,curve:curve,baseOp:0.03,brightTime:0});}
+});
+document.getElementById('sConn').textContent=connections.length;
+
+/* ═══ DATA GATEWAYS ═══ */
+var gateways=[{name:'Web',pos:new THREE.Vector3(0,-35,0),color:0x00FFFF},{name:'GitHub',pos:new THREE.Vector3(40,-30,0),color:0x39FF14},{name:'PubMed',pos:new THREE.Vector3(-40,-30,0),color:0xFF6EC7},{name:'Markets',pos:new THREE.Vector3(0,-30,40),color:0xFFD700}];
+gateways.forEach(function(g){var m=new THREE.Mesh(new THREE.OctahedronGeometry(1.2,0),new THREE.MeshStandardMaterial({color:g.color,emissive:g.color,emissiveIntensity:0.8,transparent:true,opacity:0.7}));m.position.copy(g.pos);scene.add(m);g.mesh=m;});
+
+/* ═══ VISUAL EFFECT POOLS ═══ */
+var pulses=[],shockwaves=[],dataFetches=[],commandBeams=[],clusters=[],storms=[];
+var dataStreams=[],deepThinkers=[],taskIcons=[],heartbeats=[],motionTrails=[],extBeams=[];
+var killActive=false,currentView='neural',heatmapOn=false;
+
+/* ═══ FEATURE 1: MEMORY RINGS (Saturn) ═══ */
+var memTopics={tech:0x00FFFF,security:0xFF3366,finance:0xFFD700,strategy:0xFF6EC7,psychology:0xBF00FF,science:0x39FF14,general:0x888888};
+function addMemoryRing(agent,topic){
+  if(agent.memRings.length>=8)return;
+  var color=memTopics[topic]||0x888888;
+  var r=new THREE.Mesh(new THREE.TorusGeometry(1+agent.memRings.length*0.2,0.02,6,32),new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:0.3,blending:THREE.AdditiveBlending}));
+  r.position.copy(agent.mesh.position);r.rotation.x=Math.PI/2+agent.memRings.length*0.15;
+  scene.add(r);agent.memRings.push(r);
+}
+
+/* ═══ FEATURE 2: DATA STREAMS ═══ */
+function createDataStream(from,to,duration){
+  var curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(from.pos.x,from.pos.y,from.pos.z),new THREE.Vector3((from.pos.x+to.pos.x)/2,(from.pos.y+to.pos.y)/2+4,(from.pos.z+to.pos.z)/2),new THREE.Vector3(to.pos.x,to.pos.y,to.pos.z));
+  var particles=[];
+  for(var i=0;i<20;i++){var p=new THREE.Mesh(new THREE.SphereGeometry(0.06,4,4),new THREE.MeshBasicMaterial({color:CATS[from.cat].color,transparent:true,opacity:0.7,blending:THREE.AdditiveBlending}));p.userData.t=Math.random();var pos=curve.getPoint(p.userData.t);p.position.copy(pos);scene.add(p);particles.push(p);}
+  dataStreams.push({curve:curve,particles:particles,life:duration*60});
+}
+
+/* ═══ FEATURE 3: DEEP THINK VORTEX ═══ */
+function createDeepThink(agent){
+  if(agent.deepThinkObj)return;
+  var group=new THREE.Group();var rings=[];var dots=[];
+  for(var i=0;i<3;i++){var r=new THREE.Mesh(new THREE.TorusGeometry(1+i*0.5,0.03,8,32),new THREE.MeshBasicMaterial({color:0x00BFFF,transparent:true,opacity:0.5,blending:THREE.AdditiveBlending}));group.add(r);rings.push(r);}
+  for(var j=0;j<6;j++){var d=new THREE.Mesh(new THREE.SphereGeometry(0.05,4,4),new THREE.MeshBasicMaterial({color:0x88BBFF,transparent:true,opacity:0.6,blending:THREE.AdditiveBlending}));group.add(d);dots.push(d);}
+  group.position.set(agent.mesh.position.x,agent.mesh.position.y+2,agent.mesh.position.z);
+  scene.add(group);
+  agent.deepThinkObj={group:group,rings:rings,dots:dots,time:0,solved:false};
+  deepThinkers.push(agent);
+}
+function solveDeepThink(agent){
+  if(!agent.deepThinkObj)return;
+  agent.deepThinkObj.solved=true;
+  for(var i=0;i<12;i++){var p=new THREE.Mesh(new THREE.SphereGeometry(0.08,4,4),new THREE.MeshBasicMaterial({color:0xFFFFFF,transparent:true,opacity:1,blending:THREE.AdditiveBlending}));p.position.copy(agent.deepThinkObj.group.position);p.userData.vel=new THREE.Vector3((Math.random()-0.5)*0.3,(Math.random()-0.5)*0.3,(Math.random()-0.5)*0.3);p.userData.life=1;scene.add(p);motionTrails.push({mesh:p,type:'eureka'});}
+}
+
+/* ═══ FEATURE 5: COMMAND PATH ═══ */
+function createCommandPath(agent,isBroadcast){
+  var wave=new THREE.Mesh(new THREE.SphereGeometry(0.5,16,16),new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:0.6,blending:THREE.AdditiveBlending}));
+  wave.position.set(0,0,0);scene.add(wave);
+  shockwaves.push({mesh:wave,scale:0.5,life:1,type:'command'});
+  if(!isBroadcast){
+    var curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(0,0,0),new THREE.Vector3(agent.pos.x/2,agent.pos.y/2+5,agent.pos.z/2),new THREE.Vector3(agent.pos.x,agent.pos.y,agent.pos.z));
+    var pM=new THREE.Mesh(new THREE.SphereGeometry(0.2,8,8),new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:1}));scene.add(pM);
+    var gl=new THREE.Mesh(new THREE.SphereGeometry(0.5,6,6),new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:0.4,blending:THREE.AdditiveBlending}));scene.add(gl);
+    pulses.push({mesh:pM,glow:gl,curve:curve,t:0,speed:0.015});
+  }
+}
+
+/* ═══ FEATURE 6: TASK TYPE ICONS ═══ */
+function getTaskType(taskName){if(taskName.indexOf('بحث')>=0)return 'research';if(taskName.indexOf('تحليل')>=0)return 'analysis';if(taskName.indexOf('أمن')>=0)return 'security';if(taskName.indexOf('استراتيج')>=0)return 'strategy';return 'analysis';}
+function createTaskIcon(agent,taskName){
+  removeTaskIcon(agent);
+  var type=getTaskType(taskName);
+  var colors={research:0x00FFFF,analysis:0x39FF14,security:0xFF00FF,strategy:0xFFD700};
+  var geo=type==='research'?new THREE.TorusGeometry(0.5,0.08,8,16):type==='security'?new THREE.IcosahedronGeometry(0.5,0):type==='strategy'?new THREE.OctahedronGeometry(0.5,0):new THREE.BoxGeometry(0.6,0.6,0.6);
+  var mat=new THREE.MeshBasicMaterial({color:colors[type]||0x00FFFF,transparent:true,opacity:0.6,blending:THREE.AdditiveBlending});
+  var icon=new THREE.Mesh(geo,mat);icon.position.set(agent.mesh.position.x,agent.mesh.position.y+2,agent.mesh.position.z);
+  scene.add(icon);agent.taskIcon=icon;taskIcons.push({mesh:icon,agent:agent,type:type});
+}
+function removeTaskIcon(agent){if(agent.taskIcon){scene.remove(agent.taskIcon);agent.taskIcon=null;var idx=taskIcons.findIndex(function(t){return t.agent===agent;});if(idx>=0)taskIcons.splice(idx,1);}}
+
+/* ═══ FEATURE 8: COLLECTIVE HEARTBEAT ═══ */
+var heartbeatTimer=0,heartbeatInterval=240,heartbeatColor=new THREE.Color(0x39FF14);
+function createHeartbeat(){
+  var wave=new THREE.Mesh(new THREE.RingGeometry(0.1,0.5,32),new THREE.MeshBasicMaterial({color:heartbeatColor,transparent:true,opacity:0.3,side:THREE.DoubleSide,blending:THREE.AdditiveBlending}));
+  wave.position.set(0,0,0);wave.lookAt(camera.position);
+  scene.add(wave);heartbeats.push({mesh:wave,scale:0.5,life:1});
+}
+
+/* ═══ FEATURE 10: EXTERNAL BEAM ═══ */
+function createExtBeam(agent,toolColor){
+  var geo=new THREE.CylinderGeometry(0.02,0.02,50,4);
+  var mat=new THREE.MeshBasicMaterial({color:toolColor,transparent:true,opacity:0.4,blending:THREE.AdditiveBlending});
+  var beam=new THREE.Mesh(geo,mat);beam.position.set(agent.mesh.position.x,agent.mesh.position.y+25,agent.mesh.position.z);
+  scene.add(beam);
+  var particles=[];
+  for(var i=0;i<8;i++){var p=new THREE.Mesh(new THREE.SphereGeometry(0.04,4,4),new THREE.MeshBasicMaterial({color:toolColor,transparent:true,opacity:0.8,blending:THREE.AdditiveBlending}));p.position.set(agent.mesh.position.x,agent.mesh.position.y+50-i*5,agent.mesh.position.z);p.userData.speed=0.15+Math.random()*0.1;scene.add(p);particles.push(p);}
+  extBeams.push({beam:beam,particles:particles,agent:agent,life:180});
+}
+
+/* ═══ EVENT HANDLERS ═══ */
+EventBus.on(EVT.TASK_ASSIGNED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.state='busy';a.currentTask=d.task;a.progress=0;a.shakeIntensity=0.12;a.deepThinkTime=0;a.mesh.material.emissiveIntensity=1.2;a.statusRing.material.color.setHex(0xFFA500);createTaskIcon(a,d.task);logEvent('task','⚡',a.name_ar,'بدأ: '+d.task);});
+
+EventBus.on(EVT.TASK_COMPLETED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.state='active';a.currentTask=null;a.progress=100;a.shakeIntensity=0;a.successCount++;a.taskCount++;a.mesh.material.emissiveIntensity=0.4;a.statusRing.material.color.setHex(0x39FF14);removeTaskIcon(a);if(a.deepThinkObj)solveDeepThink(a);a.growthTarget=a.currentGrowth+0.03;
+  var sw=new THREE.Mesh(new THREE.RingGeometry(0.1,0.3,32),new THREE.MeshBasicMaterial({color:0x39FF14,transparent:true,opacity:0.8,side:THREE.DoubleSide,blending:THREE.AdditiveBlending}));sw.position.copy(a.mesh.position);sw.lookAt(camera.position);scene.add(sw);shockwaves.push({mesh:sw,scale:1,life:1});
+  logEvent('success','✅',a.name_ar,'أنجز المهمة بنجاح');});
+
+EventBus.on(EVT.TASK_FAILED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.state='idle';a.currentTask=null;a.shakeIntensity=0;a.errorCount++;a.taskCount++;a.glitchTime=90;removeTaskIcon(a);if(a.deepThinkObj)solveDeepThink(a);logEvent('error','❌',a.name_ar,'فشل: '+(d.task||'مهمة'));});
+
+var toolGW={web_search:0,deep_search:0,github_search:1,pubmed_search:2,arxiv_search:2,market_data:3,fetch_news:0};
+var internetTools=['web_search','deep_search','github_search','pubmed_search','arxiv_search','market_data','fetch_news'];
+EventBus.on(EVT.TOOL_USED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.activeTools.push(d.tool);a.lastAction=d.tool;setTimeout(function(){a.activeTools=a.activeTools.filter(function(t){return t!==d.tool;});},3000);
+  var gwIdx=toolGW[d.tool];if(gwIdx!==undefined&&gateways[gwIdx]){var g=gateways[gwIdx];var p=new THREE.Mesh(new THREE.SphereGeometry(0.1,6,6),new THREE.MeshBasicMaterial({color:g.color,transparent:true,opacity:0.8,blending:THREE.AdditiveBlending}));p.position.copy(a.mesh.position);scene.add(p);dataFetches.push({mesh:p,start:a.mesh.position.clone(),target:g.pos.clone(),t:0,speed:0.012});}
+  if(internetTools.indexOf(d.tool)>=0){createExtBeam(a,gateways[gwIdx]?gateways[gwIdx].color:0x00FFFF);}
+  logEvent('data','🔧',a.name_ar,'استخدم: '+d.tool);});
+
+EventBus.on(EVT.AGENT_MESSAGE,function(d){var from=AGENTS.find(function(x){return x.id===d.fromId;}),to=AGENTS.find(function(x){return x.id===d.toId;});if(!from||!to)return;
+  var conn=connections.find(function(c){return(c.from===from&&c.to===to)||(c.from===to&&c.to===from);});
+  var curve=conn?conn.curve:new THREE.QuadraticBezierCurve3(new THREE.Vector3(from.pos.x,from.pos.y,from.pos.z),new THREE.Vector3((from.pos.x+to.pos.x)/2,(from.pos.y+to.pos.y)/2+4,(from.pos.z+to.pos.z)/2),new THREE.Vector3(to.pos.x,to.pos.y,to.pos.z));
+  if(conn){conn.line.material.opacity=0.4;conn.brightTime=60;}
+  var pM=new THREE.Mesh(new THREE.SphereGeometry(0.15,8,8),new THREE.MeshBasicMaterial({color:CATS[from.cat].color,transparent:true,opacity:1}));scene.add(pM);
+  var gl=new THREE.Mesh(new THREE.SphereGeometry(0.4,6,6),new THREE.MeshBasicMaterial({color:CATS[from.cat].color,transparent:true,opacity:0.3,blending:THREE.AdditiveBlending}));scene.add(gl);
+  pulses.push({mesh:pM,glow:gl,curve:curve,t:0,speed:0.008+Math.random()*0.006});
+  createDataStream(from,to,3);});
+
+EventBus.on(EVT.MEMORY_SAVED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.memory+=d.size||5;a.memoryItems.push(d.topic);a.knowledge=Math.min(100,a.knowledge+(d.amount||3));a.growthTarget=a.currentGrowth+0.04;
+  var topicMap={'الذكاء الاصطناعي':'tech','الأمن السيبراني':'security','الاقتصاد العالمي':'finance','الجيوسياسة':'strategy','علم النفس':'psychology','التكنولوجيا الحيوية':'science','الطاقة المتجددة':'science'};
+  addMemoryRing(a,topicMap[d.topic]||'general');
+  logEvent('memory','🧠',a.name_ar,'حفظ: '+d.topic);});
+
+EventBus.on(EVT.API_ERROR,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.errorCount++;a.glitchTime=60;a.statusRing.material.color.setHex(0xFF3366);logEvent('error','💥',a.name_ar,'خطأ: '+d.error);});
+
+EventBus.on(EVT.RATE_LIMIT,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;var st=new THREE.Mesh(new THREE.SphereGeometry(2,8,8),new THREE.MeshBasicMaterial({color:0xFF0000,transparent:true,opacity:0.15,blending:THREE.AdditiveBlending}));st.position.set(a.pos.x,a.pos.y+3,a.pos.z);scene.add(st);storms.push({mesh:st,agent:a,life:1,lt:0});logEvent('error','⛈️',a.name_ar,'Rate Limit: '+d.api);});
+
+EventBus.on(EVT.COMMAND_SENT,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;createCommandPath(a,false);logEvent('command','👑',a.name_ar,'أمر: '+d.command);});
+
+EventBus.on(EVT.CORE_LOAD_CHANGE,function(d){coreLoad=d.load;coreTargetSpeed=0.002+d.load*0.03;document.getElementById('sCoreLoad').textContent=Math.round(d.load*100)+'%';
+  if(d.load<0.3){heartbeatInterval=240;heartbeatColor.setHex(0x39FF14);document.getElementById('sHeartbeat').textContent='صحي';document.getElementById('sHeartbeat').className='s-val green';}
+  else if(d.load<0.6){heartbeatInterval=180;heartbeatColor.setHex(0xFFD700);document.getElementById('sHeartbeat').textContent='متوسط';document.getElementById('sHeartbeat').className='s-val gold';}
+  else if(d.load<0.85){heartbeatInterval=120;heartbeatColor.setHex(0xFFA500);document.getElementById('sHeartbeat').textContent='عالي';document.getElementById('sHeartbeat').className='s-val gold';}
+  else{heartbeatInterval=60;heartbeatColor.setHex(0xFF3366);document.getElementById('sHeartbeat').textContent='حرج';document.getElementById('sHeartbeat').className='s-val red';}
+});
+
+EventBus.on(EVT.CLUSTER_FORMED,function(d){var agents=d.agentIds.map(function(id){return AGENTS.find(function(a){return a.id===id;});}).filter(Boolean);if(agents.length<2)return;var center={x:0,y:0,z:0};agents.forEach(function(a){center.x+=a.pos.x;center.y+=a.pos.y;center.z+=a.pos.z;});center.x/=agents.length;center.y/=agents.length;center.z/=agents.length;agents.forEach(function(a){a.clusterTarget={x:center.x+(a.pos.x-center.x)*0.4,y:center.y+(a.pos.y-center.y)*0.4,z:center.z+(a.pos.z-center.z)*0.4};});clusters.push({agents:agents,center:center,life:1,id:d.clusterId||Math.random()});document.getElementById('clusterCount').textContent=clusters.length;
+  for(var i=0;i<agents.length-1;i++)createDataStream(agents[i],agents[i+1],8);
+  logEvent('cluster','🔗',d.task||'مهمة مشتركة',agents.map(function(a){return a.id;}).join(', '));});
+EventBus.on(EVT.CLUSTER_DISSOLVED,function(d){var idx=clusters.findIndex(function(c){return c.id===d.clusterId;});if(idx>=0){clusters[idx].agents.forEach(function(a){a.clusterTarget=null;});clusters.splice(idx,1);document.getElementById('clusterCount').textContent=clusters.length;}});
+
+/* ═══ REAL GATEWAY CONNECTION ═══ */
+var GW='http://localhost:8181';
+var swarmSince=0, gwConnected=false, swarmRunning=false;
+
+function tryGateway(){
+  fetch(GW+'/status').then(function(r){return r.json();}).then(function(d){
+    gwConnected=true;
+    document.getElementById('gwMode').textContent='LIVE';
+    document.getElementById('gwDot').className='gw-dot live';
+    logEvent('success','🟢','Gateway','متصل بـ localhost:8181');
+    startLivePolling();
+  }).catch(function(){
+    gwConnected=false;
+    document.getElementById('gwMode').textContent='DEMO';
+    document.getElementById('gwDot').className='gw-dot demo';
+    logEvent('data','🟡','Gateway','وضع العرض — Gateway غير متاح');
+    startDemo();
+  });
+}
+
+function startLivePolling(){
+  // Poll swarm events every 1.5 seconds
+  setInterval(function(){
+    if(!swarmRunning) return;
+    fetch(GW+'/swarm/events?since='+swarmSince).then(function(r){return r.json();}).then(function(d){
+      swarmSince=d.next_since;
+      swarmRunning=d.active;
+      d.events.forEach(function(evt){ processSwarmEvent(evt); });
+      // Update core load
+      var busy=AGENTS.filter(function(a){return a.state==='busy';}).length;
+      EventBus.emit(EVT.CORE_LOAD_CHANGE,{load:busy/AGENTS.length});
+    }).catch(function(){});
+  },1500);
+
+  // Poll gateway status every 5 seconds
+  setInterval(function(){
+    fetch(GW+'/status').then(function(r){return r.json();}).then(function(d){
+      document.getElementById('gwMode').textContent='LIVE';
+    }).catch(function(){
+      document.getElementById('gwMode').textContent='LOST';
+    });
+  },5000);
+
+  // Check for proposals every 15 seconds
+  setInterval(function(){
+    if(!swarmRunning) return;
+    fetch(GW+'/swarm/proposals').then(function(r){return r.json();}).then(function(d){
+      if(d.proposals && d.status==='awaiting_approval'){
+        logEvent('command','👑','A01 — القائد','اقتراحات جاهزة تنتظر موافقتك!');
+        var msgs=document.getElementById('chatMessages');
+        msgs.innerHTML+='<div class="chat-msg system">📋 <b>اقتراحات الوكلاء:</b><br>'+d.proposals.substring(0,500)+'</div>';
+      }
+    }).catch(function(){});
+  },15000);
+}
+
+function processSwarmEvent(evt){
+  var t=evt.event_type, d=evt.data||{}, from=evt.from_agent, to=evt.to_agent;
+
+  if(t==='swarm_started'){
+    logEvent('success','🐝','سرب','بدأت جلسة التواصل — '+d.topic);
+    return;
+  }
+  if(t==='swarm_completed'){
+    logEvent('success','🏁','سرب','انتهت الجلسة — '+d.total_events+' حدث');
+    swarmRunning=false;
+    return;
+  }
+  if(t==='agent_message'){
+    EventBus.emit(EVT.AGENT_MESSAGE,{fromId:from,toId:to});
+    logEvent('data','💬',from+' → '+to, d.message||'تواصل');
+  }
+  else if(t==='task_completed'){
+    EventBus.emit(EVT.TASK_COMPLETED,{agentId:from});
+    var preview=(d.result||'').substring(0,80);
+    logEvent('success','✅',from, (d.phase||'')+': '+preview);
+    // Show result in chat
+    var a=AGENTS.find(function(x){return x.id===from;});
+    var msgs=document.getElementById('chatMessages');
+    if(msgs && d.result){
+      msgs.innerHTML+='<div class="chat-msg system">🤖 <b>'+(a?a.name_ar:from)+'</b> ['+( d.phase||'')+']: '+d.result.substring(0,200)+'</div>';
+      msgs.scrollTop=msgs.scrollHeight;
+    }
+  }
+  else if(t==='task_failed'){
+    EventBus.emit(EVT.TASK_FAILED,{agentId:from,task:d.error||'خطأ'});
+  }
+  else if(t==='cluster_formed'){
+    var ids=d.cluster||[];
+    EventBus.emit(EVT.CLUSTER_FORMED,{agentIds:ids,task:d.topic||'فريق عمل',clusterId:'sw_'+Date.now()});
+    // Mark agents as busy
+    ids.forEach(function(id){
+      var ag=AGENTS.find(function(x){return x.id===id;});
+      if(ag){ag.state='busy';ag.shakeIntensity=0.08;}
+    });
+  }
+  else if(t==='cluster_dissolved'){
+    var ids=d.cluster||[];
+    ids.forEach(function(id){
+      var ag=AGENTS.find(function(x){return x.id===id;});
+      if(ag){ag.state='active';ag.shakeIntensity=0;ag.clusterTarget=null;}
+    });
+  }
+  else if(t==='memory_saved'){
+    EventBus.emit(EVT.MEMORY_SAVED,{agentId:from,amount:d.amount||3,size:10,topic:d.topic||'معرفة'});
+  }
+  else if(t==='proposals_ready'){
+    logEvent('command','👑','القائد A01','📋 اقتراحات جاهزة تنتظر موافقتك');
+    var msgs=document.getElementById('chatMessages');
+    if(msgs) msgs.innerHTML+='<div class="chat-msg system" style="background:rgba(255,215,0,0.1);border-color:#FFD700;">👑 <b>اقتراحات A01:</b><br>'+(d.proposals||'').substring(0,500)+'</div>';
+  }
+  else if(t==='error'){
+    logEvent('error','💥','خطأ',d.error||'');
+  }
+}
+
+function startSwarmSession(){
+  if(swarmRunning){logEvent('error','⚠️','سرب','الجلسة تعمل بالفعل');return;}
+  fetch(GW+'/swarm/start',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({duration_minutes:60,topic:'التعارف وبناء الشبكة والتشاور'})
+  }).then(function(r){return r.json();}).then(function(d){
+    swarmRunning=true;swarmSince=0;
+    logEvent('success','🐝','سرب','بدأت جلسة ساعة كاملة — 81 وكيل');
+    var msgs=document.getElementById('chatMessages');
+    if(msgs) msgs.innerHTML+='<div class="chat-msg system" style="background:rgba(57,255,20,0.1);">🐝 بدأت جلسة التواصل — الوكلاء يتعرفون على بعض الآن</div>';
+    if(!chatVis) toggleChat();
+  }).catch(function(e){
+    logEvent('error','❌','سرب','فشل البدء: '+e);
+  });
+}
+
+function stopSwarmSession(){
+  fetch(GW+'/swarm/stop',{method:'POST'}).then(function(){
+    swarmRunning=false;
+    logEvent('data','⏹️','سرب','تم إيقاف الجلسة');
+  }).catch(function(){});
+}
+
+/* DEMO FALLBACK — only when gateway is offline */
+function startDemo(){
+  var tasks=['تحليل بيانات','بحث علمي','مسح أمني','تقرير استراتيجي','تحليل سوق','مراجعة قانونية','تحليل نفسي','استشراف مستقبلي','تحليل جيوسياسي','تطوير كود'];
+  var topics=['الذكاء الاصطناعي','الأمن السيبراني','الاقتصاد العالمي','الجيوسياسة','علم النفس','التكنولوجيا الحيوية','الطاقة المتجددة'];
+  setInterval(function(){if(killActive)return;var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];if(a.state==='idle'&&Math.random()>0.6)EventBus.emit(EVT.TASK_ASSIGNED,{agentId:a.id,task:tasks[Math.floor(Math.random()*tasks.length)]});},2500);
+  setInterval(function(){if(killActive)return;AGENTS.filter(function(a){return a.state==='busy';}).forEach(function(a){a.progress=Math.min(100,a.progress+Math.random()*15);if(a.progress>=100){if(Math.random()>0.12)EventBus.emit(EVT.TASK_COMPLETED,{agentId:a.id});else EventBus.emit(EVT.TASK_FAILED,{agentId:a.id,task:a.currentTask||'مهمة'});}});},3000);
+  setInterval(function(){if(killActive)return;var busy=AGENTS.filter(function(a){return a.state==='busy';});if(busy.length>0){var a=busy[Math.floor(Math.random()*busy.length)];EventBus.emit(EVT.TOOL_USED,{agentId:a.id,tool:a.tools[Math.floor(Math.random()*a.tools.length)]});}},2000);
+  setInterval(function(){if(killActive)return;if(Math.random()>0.7){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)],b=AGENTS[Math.floor(Math.random()*AGENTS.length)];if(a!==b)EventBus.emit(EVT.AGENT_MESSAGE,{fromId:a.id,toId:b.id});}},3500);
+  setInterval(function(){if(killActive)return;if(Math.random()>0.75){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.MEMORY_SAVED,{agentId:a.id,amount:Math.random()*5+1,size:Math.random()*20+5,topic:topics[Math.floor(Math.random()*topics.length)]});}},4000);
+  setInterval(function(){if(killActive)return;if(Math.random()>0.92){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.API_ERROR,{agentId:a.id,error:'API Timeout'});}},8000);
+  setInterval(function(){if(killActive)return;if(Math.random()>0.95){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.RATE_LIMIT,{agentId:a.id,api:a.model});}},12000);
+  setInterval(function(){if(killActive)return;if(clusters.length<3&&Math.random()>0.7){var cat=Object.keys(CATS)[Math.floor(Math.random()*7)];var ca=AGENTS.filter(function(a){return a.cat===cat;}).sort(function(){return Math.random()-0.5;}).slice(0,3+Math.floor(Math.random()*3));var cid='cl_'+Date.now();EventBus.emit(EVT.CLUSTER_FORMED,{agentIds:ca.map(function(a){return a.id;}),task:tasks[Math.floor(Math.random()*tasks.length)],clusterId:cid});setTimeout(function(){EventBus.emit(EVT.CLUSTER_DISSOLVED,{clusterId:cid});},8000+Math.random()*7000);}},10000);
+  setInterval(function(){var busy=AGENTS.filter(function(a){return a.state==='busy';}).length;EventBus.emit(EVT.CORE_LOAD_CHANGE,{load:busy/AGENTS.length});},2000);
+}
+tryGateway();
+
+/* ═══ UI FUNCTIONS ═══ */
+var chatVis=false;
+function toggleChat(){chatVis=!chatVis;document.getElementById('chatBox').style.display=chatVis?'block':'none';}
+function toggleLog(){eventLogVisible=!eventLogVisible;document.getElementById('eventLog').style.display=eventLogVisible?'block':'none';}
+function toggleHeatmap(){heatmapOn=!heatmapOn;}
+function setView(v){currentView=v;document.querySelectorAll('#viewModes button').forEach(function(b){b.classList.remove('active');});document.querySelectorAll('#viewModes button').forEach(function(b){if(b.textContent.indexOf(v==='neural'?'العصبية':v==='tools'?'الأدوات':'المعرفة')>=0)b.classList.add('active');});}
+function sendCmd(){var input=document.getElementById('chatInput');var msg=input.value.trim();if(!msg)return;var target=document.getElementById('chatTarget').value;var msgs=document.getElementById('chatMessages');msgs.innerHTML+='<div class="chat-msg user">'+msg+'</div>';input.value='';
+  if(!gwConnected){msgs.innerHTML+='<div class="chat-msg system">❌ Gateway غير متصل</div>';msgs.scrollTop=msgs.scrollHeight;return;}
+  var agentId=target==='all'?null:target;
+  var agentObj=agentId?AGENTS.find(function(x){return x.id===agentId;}):null;
+  if(agentId){
+    EventBus.emit(EVT.COMMAND_SENT,{agentId:agentId,command:msg});
+    EventBus.emit(EVT.TASK_ASSIGNED,{agentId:agentId,task:msg});
+    createCommandPath(agentObj||AGENTS[0],false);
+    msgs.innerHTML+='<div class="chat-msg system">⚡ أمر إلى '+(agentObj?agentObj.name_ar:agentId)+' — جاري التنفيذ...</div>';
+  } else {
+    createCommandPath(AGENTS[0],true);
+    msgs.innerHTML+='<div class="chat-msg system">📡 بث لجميع الوكلاء...</div>';
+  }
+  // Real API call
+  fetch(GW+'/task',{method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({task:msg,agent_id:agentId})
+  }).then(function(r){return r.json();}).then(function(d){
+    var respAgent=d.agent_id||'SYS';
+    EventBus.emit(EVT.TASK_COMPLETED,{agentId:respAgent});
+    var resultText=(d.result||'لا يوجد رد').substring(0,800);
+    msgs.innerHTML+='<div class="chat-msg system">🤖 <b>'+(d.agent_name||respAgent)+'</b> ('+Math.round(d.elapsed_seconds||0)+'s | '+( d.model_used||'')+')<br>'+resultText+'</div>';
+    msgs.scrollTop=msgs.scrollHeight;
+  }).catch(function(e){
+    msgs.innerHTML+='<div class="chat-msg system" style="border-color:#FF3366;">❌ خطأ: '+e+'</div>';
+    msgs.scrollTop=msgs.scrollHeight;
+  });
+  msgs.scrollTop=msgs.scrollHeight;}
+function resetCam(){controls.autoRotate=true;camera.position.set(0,30,55);controls.target.set(0,0,0);}
+function topView(){controls.autoRotate=false;camera.position.set(0,80,0.1);controls.target.set(0,0,0);}
+function focusCore(){controls.autoRotate=false;camera.position.set(0,5,12);controls.target.set(0,0,0);}
+function cinematic(){controls.autoRotate=true;controls.autoRotateSpeed=1.5;setTimeout(function(){controls.autoRotateSpeed=0.15;},15000);}
+function killSwitch(){killActive=!killActive;document.getElementById('killSwitch').classList.toggle('active');if(killActive){AGENTS.forEach(function(a){a.state='idle';a.shakeIntensity=0;a.currentTask=null;removeTaskIcon(a);});logEvent('error','🛑','KILL SWITCH','إيقاف جميع الوكلاء');}else logEvent('success','🚀','النظام','إعادة التشغيل');}
+
+/* ═══ HOVER CARD ═══ */
+var raycaster=new THREE.Raycaster();var mouse=new THREE.Vector2();
+canvas.addEventListener('mousemove',function(e){
+  mouse.x=(e.clientX/window.innerWidth)*2-1;mouse.y=-(e.clientY/window.innerHeight)*2+1;
+  raycaster.setFromCamera(mouse,camera);
+  var hits=raycaster.intersectObjects(AGENTS.map(function(a){return a.mesh;}).filter(Boolean));
+  var card=document.getElementById('agentCard');
+  if(hits.length>0){var a=AGENTS.find(function(x){return x.mesh===hits[0].object;});if(a){card.classList.add('show');card.style.left=Math.min(e.clientX+15,window.innerWidth-340)+'px';card.style.top=Math.min(e.clientY-10,window.innerHeight-300)+'px';document.getElementById('cardId').textContent=a.id;document.getElementById('cardId').style.color=CATS[a.cat].neon;document.getElementById('cardName').textContent=a.name_ar;var st=document.getElementById('cardState');st.textContent=a.state==='busy'?'مشغول':a.state==='active'?'نشط':a.glitchTime>0?'خطأ':'خامل';st.className='card-state '+(a.glitchTime>0?'error':a.state);document.getElementById('cardActivity').textContent=a.currentTask||a.lastAction;document.getElementById('cardProgress').style.width=a.progress+'%';document.getElementById('cardKnowledge').style.width=a.knowledge+'%';document.getElementById('cardMemCount').textContent=a.memoryItems.length+' عنصر ('+Math.round(a.memory)+' MB)';document.getElementById('cardTools').innerHTML=a.tools.map(function(t){return '<span class="tool-tag '+(a.activeTools.indexOf(t)>=0?'active-tool':'')+'">'+t+'</span>';}).join('');document.getElementById('cardLastAction').textContent=a.lastAction;}}
+  else card.classList.remove('show');
+});
+
+/* ═══ ANIMATION LOOP ═══ */
+var lastTime=0,frameCount=0,fps=0;
+function animate(time){
+  requestAnimationFrame(animate);
+  var delta=(time-lastTime)/1000;lastTime=time;
+  frameCount++;if(frameCount%30===0){fps=Math.round(1/Math.max(delta,0.001));document.getElementById('sFps').textContent=fps;document.getElementById('fpsCounter').textContent='FPS: '+fps;}
+  controls.update();nebGroup.rotation.y+=0.0001;
+
+  // Core reactor
+  coreInner.rotation.y+=coreTargetSpeed*2;
+  coreInner.scale.setScalar(THREE.MathUtils.lerp(coreInner.scale.x,1+coreLoad*0.3,0.05));
+  coreRings.forEach(function(r,i){r.rotation.x+=coreTargetSpeed*(i+1);r.rotation.z+=coreTargetSpeed*0.7*(i+1);});
+  var cH=0.12-coreLoad*0.12;coreMat.color.setHSL(cH,1,0.5);coreMat.emissive.setHSL(cH,1,0.5);coreLight.intensity=2+coreLoad*4;
+
+  // Heartbeat
+  heartbeatTimer++;
+  if(heartbeatTimer>=heartbeatInterval){heartbeatTimer=0;createHeartbeat();var hb=document.getElementById('heartbeatPulse');hb.style.width='100%';hb.style.background=heartbeatColor.getStyle();setTimeout(function(){hb.style.width='0';},300);}
+
+  // Agents
+  AGENTS.forEach(function(a){
+    if(!a.mesh)return;
+    a.prevPos={x:a.mesh.position.x,y:a.mesh.position.y,z:a.mesh.position.z};
+    if(a.shakeIntensity>0){a.mesh.position.x=a.pos.x+(Math.random()-0.5)*a.shakeIntensity;a.mesh.position.y=a.pos.y+(Math.random()-0.5)*a.shakeIntensity;a.mesh.position.z=a.pos.z+(Math.random()-0.5)*a.shakeIntensity;a.mesh.rotation.x+=(Math.random()-0.5)*0.05;}
+    else if(a.clusterTarget){a.mesh.position.x=THREE.MathUtils.lerp(a.mesh.position.x,a.clusterTarget.x,0.02);a.mesh.position.y=THREE.MathUtils.lerp(a.mesh.position.y,a.clusterTarget.y,0.02);a.mesh.position.z=THREE.MathUtils.lerp(a.mesh.position.z,a.clusterTarget.z,0.02);}
+    else{a.mesh.position.x=THREE.MathUtils.lerp(a.mesh.position.x,a.basePos.x,0.03);a.mesh.position.y=THREE.MathUtils.lerp(a.mesh.position.y,a.basePos.y,0.03);a.mesh.position.z=THREE.MathUtils.lerp(a.mesh.position.z,a.basePos.z,0.03);}
+    a.mesh.rotation.y+=a.state==='busy'?0.02:0.002;
+    if(a.state==='busy'&&a.progress<30){a.deepThinkTime++;if(a.deepThinkTime>150)createDeepThink(a);}else{a.deepThinkTime=0;}
+    if(a.glitchTime>0){a.glitchTime--;a.mesh.material.emissiveIntensity=Math.random()>0.5?1.5:0.05;a.mesh.material.color.setHex(Math.random()>0.5?0xFF3366:0x0033FF);if(a.glitchTime<=0){a.mesh.material.color.setHex(CATS[a.cat].color);a.mesh.material.emissiveIntensity=0.4;a.statusRing.material.color.setHex(0x666666);}}
+    a.currentGrowth=THREE.MathUtils.lerp(a.currentGrowth,a.growthTarget,0.01);
+    var vScale=currentView==='knowledge'?(0.5+(a.knowledge/100)*1.5):1;
+    a.mesh.scale.setScalar(a.currentGrowth*vScale);
+    if(a.statusRing){a.statusRing.position.copy(a.mesh.position);a.statusRing.rotation.z+=0.005;}
+    if(a.auraMesh){a.auraMesh.position.copy(a.mesh.position);a.auraMesh.material.opacity=THREE.MathUtils.lerp(a.auraMesh.material.opacity,a.state==='busy'?0.25:a.state==='active'?0.1:0,0.05);a.auraMesh.scale.setScalar(a.currentGrowth*1.3);}
+    a.memRings.forEach(function(r,i){r.position.copy(a.mesh.position);r.rotation.z+=0.003*(i+1);r.rotation.x+=0.001*(i+1);});
+    var dx=a.mesh.position.x-a.prevPos.x,dy=a.mesh.position.y-a.prevPos.y,dz=a.mesh.position.z-a.prevPos.z;
+    if(Math.sqrt(dx*dx+dy*dy+dz*dz)>0.3){var tr=new THREE.Mesh(new THREE.SphereGeometry(0.15,4,4),new THREE.MeshBasicMaterial({color:CATS[a.cat].color,transparent:true,opacity:0.3,blending:THREE.AdditiveBlending}));tr.position.set(a.prevPos.x,a.prevPos.y,a.prevPos.z);scene.add(tr);motionTrails.push({mesh:tr,type:'trail'});}
+    if(a.state==='idle'&&a.shakeIntensity===0&&a.glitchTime===0)a.mesh.material.emissiveIntensity=THREE.MathUtils.lerp(a.mesh.material.emissiveIntensity,0.3,0.02);
+  });
+
+  // Connection brightness decay
+  connections.forEach(function(c){if(c.brightTime>0){c.brightTime--;c.line.material.opacity=THREE.MathUtils.lerp(c.line.material.opacity,c.baseOp,0.03);}});
+
+  // Pulses
+  for(var i=pulses.length-1;i>=0;i--){var p=pulses[i];p.t+=p.speed;if(p.t>=1){scene.remove(p.mesh);if(p.glow)scene.remove(p.glow);pulses.splice(i,1);continue;}var pos=p.curve.getPoint(p.t);p.mesh.position.copy(pos);p.mesh.material.opacity=1-p.t*0.5;if(p.glow){p.glow.position.copy(pos);p.glow.material.opacity=(1-p.t)*0.3;}}
+  document.getElementById('pulseCount').textContent=pulses.length;
+
+  // Shockwaves
+  for(var i=shockwaves.length-1;i>=0;i--){var sw=shockwaves[i];if(sw.shrink){sw.scale*=0.95;sw.life-=0.02;}else{sw.scale+=0.15;sw.life-=0.02;}sw.mesh.scale.setScalar(sw.scale);sw.mesh.material.opacity=sw.life*0.6;if(sw.life<=0){scene.remove(sw.mesh);shockwaves.splice(i,1);}}
+
+  // Data fetches
+  for(var i=dataFetches.length-1;i>=0;i--){var d=dataFetches[i];d.t+=d.speed;if(d.t>=1){scene.remove(d.mesh);dataFetches.splice(i,1);continue;}d.mesh.position.lerpVectors(d.start,d.target,d.t);d.mesh.material.opacity=1-d.t*0.3;}
+
+  // Data streams
+  for(var i=dataStreams.length-1;i>=0;i--){var ds=dataStreams[i];ds.life--;var opacity=Math.min(1,ds.life/60)*0.7;ds.particles.forEach(function(p){p.userData.t+=0.005+Math.random()*0.002;if(p.userData.t>1)p.userData.t=0;var pos=ds.curve.getPoint(p.userData.t);p.position.copy(pos);p.material.opacity=opacity;});if(ds.life<=0){ds.particles.forEach(function(p){scene.remove(p);});dataStreams.splice(i,1);}}
+
+  // Deep thinkers
+  for(var i=deepThinkers.length-1;i>=0;i--){var a=deepThinkers[i];if(!a.deepThinkObj)continue;var dt=a.deepThinkObj;dt.time+=0.02;dt.group.position.copy(a.mesh.position).add(new THREE.Vector3(0,2,0));
+    if(dt.solved){dt.rings.forEach(function(r){r.material.opacity-=0.02;r.scale.multiplyScalar(1.05);});dt.dots.forEach(function(d){d.material.opacity-=0.02;});if(dt.rings[0].material.opacity<=0){dt.rings.forEach(function(r){dt.group.remove(r);});dt.dots.forEach(function(d){dt.group.remove(d);});scene.remove(dt.group);a.deepThinkObj=null;deepThinkers.splice(i,1);}}
+    else{var spd=1+dt.time*0.5;dt.rings.forEach(function(r,ri){r.rotation.z+=0.02*spd*(ri+1);r.scale.setScalar(1+Math.sin(dt.time*2)*0.1);var hue=0.6-dt.time*0.01;r.material.color.setHSL(Math.max(0,hue),0.8,0.6);});dt.dots.forEach(function(d,di){var angle=dt.time*spd+di*(Math.PI*2/6);d.position.set(Math.cos(angle)*1.5,Math.sin(dt.time*3)*0.3,Math.sin(angle)*1.5);});}}
+
+  // Task icons
+  taskIcons.forEach(function(ti){if(ti.mesh){ti.mesh.position.set(ti.agent.mesh.position.x,ti.agent.mesh.position.y+2,ti.agent.mesh.position.z);ti.mesh.rotation.y+=0.02;ti.mesh.rotation.x+=0.01;}});
+
+  // Heartbeats
+  for(var i=heartbeats.length-1;i>=0;i--){var h=heartbeats[i];h.scale+=0.4;h.life-=0.008;h.mesh.scale.setScalar(h.scale);h.mesh.material.opacity=h.life*0.3;h.mesh.lookAt(camera.position);if(h.life<=0){scene.remove(h.mesh);heartbeats.splice(i,1);}}
+
+  // Motion trails + eureka
+  for(var i=motionTrails.length-1;i>=0;i--){var mt=motionTrails[i];if(mt.type==='eureka'){mt.mesh.position.add(mt.mesh.userData.vel);mt.mesh.userData.life-=0.02;mt.mesh.material.opacity=mt.mesh.userData.life;if(mt.mesh.userData.life<=0){scene.remove(mt.mesh);motionTrails.splice(i,1);}}else{mt.mesh.material.opacity-=0.015;if(mt.mesh.material.opacity<=0){scene.remove(mt.mesh);motionTrails.splice(i,1);}}}
+
+  // External beams
+  for(var i=extBeams.length-1;i>=0;i--){var eb=extBeams[i];eb.life--;eb.beam.material.opacity=Math.min(0.4,eb.life/60)*0.4;eb.particles.forEach(function(p){p.position.y-=p.userData.speed;if(p.position.y<eb.agent.mesh.position.y){p.position.y=eb.agent.mesh.position.y+50;p.material.opacity=0.8;}p.material.opacity*=0.99;});if(eb.life<=0){scene.remove(eb.beam);eb.particles.forEach(function(p){scene.remove(p);});extBeams.splice(i,1);}}
+
+  // Command beams
+  for(var i=commandBeams.length-1;i>=0;i--){var b=commandBeams[i];b.life-=0.015;b.mesh.material.opacity=b.life;if(b.life<=0){scene.remove(b.mesh);commandBeams.splice(i,1);}}
+
+  // Storms
+  for(var i=storms.length-1;i>=0;i--){var s=storms[i];s.life-=0.005;s.mesh.material.opacity=s.life*0.15;s.mesh.position.y=s.agent.mesh.position.y+3+Math.sin(time*0.005)*0.3;s.lt++;if(s.lt>30&&Math.random()>0.8){s.lt=0;var lGeo=new THREE.BufferGeometry().setFromPoints([s.mesh.position.clone(),s.agent.mesh.position.clone()]);var l=new THREE.Line(lGeo,new THREE.LineBasicMaterial({color:0xFF0000,transparent:true,opacity:0.8,blending:THREE.AdditiveBlending}));scene.add(l);setTimeout(function(){scene.remove(l);},150);}if(s.life<=0){scene.remove(s.mesh);storms.splice(i,1);}}
+
+  // Stats update
+  if(frameCount%60===0){var tT=AGENTS.reduce(function(s,a){return s+a.taskCount;},0),tS=AGENTS.reduce(function(s,a){return s+a.successCount;},0),tE=AGENTS.reduce(function(s,a){return s+a.errorCount;},0),tM=AGENTS.reduce(function(s,a){return s+a.memory;},0);document.getElementById('sTasks').textContent=tT;document.getElementById('sSuccess').textContent=tT>0?Math.round(tS/tT*100)+'%':'0%';document.getElementById('sErrors').textContent=tE;document.getElementById('sMemory').textContent=Math.round(tM)+' MB';document.getElementById('activeCount').textContent=AGENTS.filter(function(a){return a.state==='busy';}).length;}
+
+  composer.render();
+}
+
+/* ═══ LOADING ═══ */
+var loadSteps=['تهيئة المشهد ثلاثي الأبعاد...','بناء الشبكة العصبية...','ربط '+connections.length+' اتصال...','تهيئة نظام الأحداث...','تفعيل محرك القصة البصرية...','تهيئة نبض القلب الجماعي...','تفعيل ذاكرة زحل...','جاهز!'];
+var loadStep=0;
+function advLoad(){if(loadStep>=loadSteps.length){document.getElementById('loadScreen').classList.add('done');setTimeout(function(){document.getElementById('loadScreen').style.display='none';},1500);animate(0);logEvent('success','🚀','النظام','Army81 Visual Story Engine v8 جاهز');logEvent('task','🧠','الشبكة',connections.length+' اتصال عصبي');return;}document.getElementById('ldFill').style.width=((loadStep+1)/loadSteps.length*100)+'%';document.getElementById('ldStatus').textContent=loadSteps[loadStep];loadStep++;setTimeout(advLoad,400);}
+advLoad();
+
+/* ═══ RESIZE ═══ */
+window.addEventListener('resize',function(){camera.aspect=window.innerWidth/window.innerHeight;camera.updateProjectionMatrix();renderer.setSize(window.innerWidth,window.innerHeight);composer.setSize(window.innerWidth,window.innerHeight);});
+
+/* ═══ KEYBOARD ═══ */
+window.addEventListener('keydown',function(e){if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT')return;switch(e.key.toLowerCase()){case 'r':resetCam();break;case 't':topView();break;case 'f':focusCore();break;case 'c':toggleChat();break;case 'l':toggleLog();break;case 'h':toggleHeatmap();break;case 'escape':document.getElementById('chatBox').style.display='none';chatVis=false;document.getElementById('eventLog').style.display='none';eventLogVisible=false;break;case '1':setView('neural');break;case '2':setView('tools');break;case '3':setView('knowledge');break;}});
+</script>
+</body>
+</html>
