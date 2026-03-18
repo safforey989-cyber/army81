@@ -27,6 +27,10 @@ logging.basicConfig(
     ]
 )
 
+# Autonomy loop singleton (for scheduler ticks)
+_AUTONOMY = None
+_AUTONOMY_ROUTER = None
+
 # ── الموضوعات المتابعة يومياً ──────────────────────────────
 AI_TOPICS = [
     "large language models agents",
@@ -433,6 +437,16 @@ def start_scheduler():
         replace_existing=True,
     )
 
+    # ── Autonomy Tick (حلقة تطور قصيرة متكررة) ────────────
+    # تُستدعى كل 15 دقيقة لتفعيل "التطور الذاتي" بدون انتظار وظائف الساعة/اليوم.
+    scheduler.add_job(
+        _run_autonomy_tick,
+        'interval', minutes=15,
+        id="autonomy_tick",
+        name="Autonomy Loop Tick",
+        replace_existing=True,
+    )
+
     scheduler.start()
     logger.info("Scheduler v7 started — 24/7 Training Active:")
     logger.info("  Every 2h    → Performance Monitor")
@@ -445,6 +459,7 @@ def start_scheduler():
     logger.info("  4:00 AM Sun → Memory Compression")
     logger.info("  5:00 AM Sun → Evolution Cycle")
     logger.info("  6:00 AM Sun → Self Assessment")
+    logger.info("  Every 15m  → Autonomy Tick")
     logger.info("Press Ctrl+C to stop.")
 
     try:
@@ -454,6 +469,74 @@ def start_scheduler():
     except (KeyboardInterrupt, SystemExit):
         logger.info("Scheduler stopped.")
         scheduler.shutdown()
+
+def _bootstrap_router_for_autonomy():
+    """
+    تشغيل الـ updater كسيرفس مستقل يحتاج Router + Agents محملين،
+    وإلا ستعمل وظائف التدريب/المراقبة بدون أي وكلاء فعلياً.
+    """
+    try:
+        from router.smart_router import SmartRouter
+        from tools.registry import build_tools_registry
+        from core.base_agent import load_agent_from_json
+        import os
+
+        r = SmartRouter()
+        tools = build_tools_registry()
+
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        agents_dir = os.path.join(base_dir, "agents")
+
+        loaded = 0
+        for cat in sorted(os.listdir(agents_dir)):
+            cat_path = os.path.join(agents_dir, cat)
+            if not os.path.isdir(cat_path) or cat.startswith("_"):
+                continue
+            for fname in sorted(os.listdir(cat_path)):
+                if not fname.endswith(".json"):
+                    continue
+                try:
+                    a = load_agent_from_json(os.path.join(cat_path, fname), tools)
+                    r.register(a)
+                    loaded += 1
+                except Exception as e:
+                    logger.warning(f"Failed to load agent {fname}: {e}")
+
+        # اربط الـ router للمدرب المستمر
+        try:
+            from core.continuous_trainer import get_continuous_trainer
+            get_continuous_trainer(r)
+        except Exception as e:
+            logger.warning(f"Trainer bootstrap failed: {e}")
+
+        logger.info(f"Autonomy bootstrap: {loaded} agents loaded")
+        global _AUTONOMY_ROUTER
+        _AUTONOMY_ROUTER = r
+        return r
+    except Exception as e:
+        logger.error(f"Autonomy bootstrap error: {e}")
+        return None
+
+
+def _get_autonomy_loop():
+    global _AUTONOMY
+    if _AUTONOMY is None:
+        from core.autonomy_loop import AutonomyLoop
+        _AUTONOMY = AutonomyLoop(router=_AUTONOMY_ROUTER)
+    if _AUTONOMY_ROUTER is not None:
+        _AUTONOMY.attach_router(_AUTONOMY_ROUTER)
+    return _AUTONOMY
+
+
+def _run_autonomy_tick():
+    """كل 15 دقيقة — Tick صغير للتطور الذاتي"""
+    logger.info("=== Autonomy Tick ===")
+    try:
+        loop = _get_autonomy_loop()
+        res = loop.tick()
+        logger.info(f"Autonomy tick done: ran={len(res.get('ran', []))} errors={len(res.get('errors', []))}")
+    except Exception as e:
+        logger.error(f"Autonomy tick error: {e}")
 
 
 def _run_training_cycle():
@@ -559,6 +642,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.schedule:
+        _bootstrap_router_for_autonomy()
         start_scheduler()
     else:
         summary = run_daily_update()

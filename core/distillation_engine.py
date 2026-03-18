@@ -139,7 +139,7 @@ class DistillationEngine:
 
         return result
 
-    def daily_distillation(self, get_agent_fn=None) -> Dict:
+    def daily_distillation(self, get_agent_fn=None, *, max_pairs: Optional[int] = None, sleep_s: float = 0.25) -> Dict:
         """
         الدورة اليومية — الساعة 2 صباحاً
         لكل نوع مهمة → إذا teacher حلّها أمس → سجّل مثالاً للطالب
@@ -155,7 +155,11 @@ class DistillationEngine:
             "simple": "ما هو الفرق بين Python و JavaScript؟",
         }
 
-        for pair in self.TEACHER_STUDENT_PAIRS:
+        pairs = self.TEACHER_STUDENT_PAIRS
+        if isinstance(max_pairs, int) and max_pairs > 0:
+            pairs = pairs[:max_pairs]
+
+        for pair in pairs:
             domain = pair["domain"]
             task = test_tasks.get(domain, test_tasks["general"])
 
@@ -177,7 +181,8 @@ class DistillationEngine:
                     logger.warning(f"فشل التقطير لـ {domain}: {e}")
 
             results["pairs_processed"] += 1
-            time.sleep(2)
+            if sleep_s and sleep_s > 0:
+                time.sleep(sleep_s)
 
         logger.info(f"📚 انتهى التقطير: {results['examples_added']} أمثلة جديدة")
         return results

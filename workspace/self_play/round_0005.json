@@ -1,0 +1,13 @@
+{
+  "round": 5,
+  "domain": "security",
+  "challenge": {
+    "challenge": "اكتشف ثغرة في هذا الكود واشرح كيف يمكن استغلالها",
+    "code": "app.get('/user', (req) => db.query(`SELECT * FROM users WHERE id=${req.params.id}`))",
+    "difficulty": "medium"
+  },
+  "red_attack": null,
+  "blue_defense": null,
+  "winner": "blue",
+  "timestamp": "2026-03-18T20:10:33.814787"
+}

@@ -1,0 +1,51 @@
+{
+  "agent_id": "A01",
+  "created_at": "2026-03-18T21:06:51.461512",
+  "known_agents": {
+    "A05": {
+      "name": "تطوير البرمجيات",
+      "specialty": "برمجة",
+      "first_met": "2026-03-18T21:06:51.461512",
+      "interactions": [
+        {
+          "summary": "تعارفنا وناقشنا",
+          "timestamp": "2026-03-18T21:06:51.461512"
+        }
+      ],
+      "trust_score": 0.55,
+      "collaboration_count": 1
+    },
+    "A09": {
+      "name": "الأمن السيبراني",
+      "specialty": "أمن",
+      "first_met": "2026-03-18T21:06:51.463510",
+      "interactions": [
+        {
+          "summary": "تعارفنا على الأمن",
+          "timestamp": "2026-03-18T21:06:51.463510"
+        }
+      ],
+      "trust_score": 0.55,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A05",
+        "A09"
+      ],
+      "task": "بناء موصل Telegram",
+      "result": "تم بنجاح",
+      "success": true,
+      "timestamp": "2026-03-18T21:06:51.465512"
+    }
+  ],
+  "decisions": [],
+  "insights": [],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 2,
+  "last_active": "2026-03-18T21:06:51.463510"
+}

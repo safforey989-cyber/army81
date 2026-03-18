@@ -442,4 +442,7 @@ def get_continuous_trainer(router=None) -> ContinuousTrainer:
     global _trainer
     if _trainer is None:
         _trainer = ContinuousTrainer(router)
+    elif router is not None and getattr(_trainer, "router", None) is None:
+        # السماح بربط الروتر لاحقاً (مهم عند تشغيل scheduler خارج Gateway)
+        _trainer.router = router
     return _trainer

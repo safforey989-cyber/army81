@@ -1,0 +1,1001 @@
+{
+  "arxiv": [
+    {
+      "source": "arxiv",
+      "title": "Efficient Reasoning on the Edge",
+      "summary": "Large language models (LLMs) with chain-of-thought reasoning achieve state-of-the-art performance across complex problem-solving tasks, but their verbose reasoning traces and large context requirements make them impractical for edge deployment. These challenges include high token generation costs, large KV-cache footprints, and inefficiencies when distilling reasoning capabilities into smaller models for mobile devices. Existing approaches often rely on distilling reasoning traces from larger mo",
+      "url": "http://arxiv.org/abs/2603.16867v1",
+      "fetched_at": "2026-03-18T20:09:18.788305"
+    },
+    {
+      "source": "arxiv",
+      "title": "Prescribed-Time Distributed Generalized Nash Equilibrium Seeking",
+      "summary": "This paper proposes the first fully distributed algorithm for finding the Generalized Nash Equilibrium (GNE) of a non-cooperative game with shared coupling constraints and general cost coupling at a user-prescribed finite time T. As a foundation, a centralized gradient-based prescribed-time convergence result is established for the GNE problem, extending the optimization Lyapunov function framework to gradient dynamics, the only known realization among existing alternatives that naturally decomp",
+      "url": "http://arxiv.org/abs/2603.16865v1",
+      "fetched_at": "2026-03-18T20:09:18.788305"
+    },
+    {
+      "source": "arxiv",
+      "title": "Chronos: Temporal-Aware Conversational Agents with Structured Event Retrieval for Long-Term Memory",
+      "summary": "Recent advances in Large Language Models (LLMs) have enabled conversational AI agents to engage in extended multi-turn interactions spanning weeks or months. However, existing memory systems struggle to reason over temporally grounded facts and preferences that evolve across months of interaction and lack effective retrieval strategies for multi-hop, time-sensitive queries over long dialogue histories. We introduce Chronos, a novel temporal-aware memory framework that decomposes raw dialogue int",
+      "url": "http://arxiv.org/abs/2603.16862v1",
+      "fetched_at": "2026-03-18T20:09:18.788305"
+    },
+    {
+      "source": "arxiv",
+      "title": "Mediocrity is the key for LLM as a Judge Anchor Selection",
+      "summary": "The ``LLM-as-a-judge'' paradigm has become a standard method for evaluating open-ended generation. To address the quadratic scalability costs of pairwise comparisons, popular benchmarks like Arena-Hard and AlpacaEval compare all models against a single anchor. However, despite its widespread use, the impact of anchor selection on the reliability of the results remains largely unexplored. In this work, we systematically investigate the effect of anchor selection by evaluating 22 different anchors",
+      "url": "http://arxiv.org/abs/2603.16848v1",
+      "fetched_at": "2026-03-18T20:09:18.788305"
+    },
+    {
+      "source": "arxiv",
+      "title": "Internalizing Agency from Reflective Experience",
+      "summary": "Large language models are increasingly deployed as autonomous agents that must plan, act, and recover from mistakes through long-horizon interaction with environments that provide rich feedback. However, prevailing outcome-driven post-training methods (e.g., RL with verifiable rewards) primarily optimize final success signals, leaving rich environment feedback underutilized. Consequently, they often lead to distribution sharpening: the policy becomes better at reproducing a narrow set of already",
+      "url": "http://arxiv.org/abs/2603.16843v1",
+      "fetched_at": "2026-03-18T20:09:18.788305"
+    },
+    {
+      "source": "arxiv",
+      "title": "SegviGen: Repurposing 3D Generative Model for Part Segmentation",
+      "summary": "We introduce SegviGen, a framework that repurposes native 3D generative models for 3D part segmentation. Existing pipelines either lift strong 2D priors into 3D via distillation or multi-view mask aggregation, often suffering from cross-view inconsistency and blurred boundaries, or explore native 3D discriminative segmentation, which typically requires large-scale annotated 3D data and substantial training resources. In contrast, SegviGen leverages the structured priors encoded in pretrained 3D ",
+      "url": "http://arxiv.org/abs/2603.16869v1",
+      "fetched_at": "2026-03-18T20:09:23.077377"
+    },
+    {
+      "source": "arxiv",
+      "title": "MessyKitchens: Contact-rich object-level 3D scene reconstruction",
+      "summary": "Monocular 3D scene reconstruction has recently seen significant progress. Powered by the modern neural architectures and large-scale data, recent methods achieve high performance in depth estimation from a single image. Meanwhile, reconstructing and decomposing common scenes into individual 3D objects remains a hard challenge due to the large variety of objects, frequent occlusions and complex object relations. Notably, beyond shape and pose estimation of individual objects, applications in robo",
+      "url": "http://arxiv.org/abs/2603.16868v1",
+      "fetched_at": "2026-03-18T20:09:23.077377"
+    },
+    {
+      "source": "arxiv",
+      "title": "Prescribed-Time Distributed Generalized Nash Equilibrium Seeking",
+      "summary": "This paper proposes the first fully distributed algorithm for finding the Generalized Nash Equilibrium (GNE) of a non-cooperative game with shared coupling constraints and general cost coupling at a user-prescribed finite time T. As a foundation, a centralized gradient-based prescribed-time convergence result is established for the GNE problem, extending the optimization Lyapunov function framework to gradient dynamics, the only known realization among existing alternatives that naturally decomp",
+      "url": "http://arxiv.org/abs/2603.16865v1",
+      "fetched_at": "2026-03-18T20:09:23.077377"
+    },
+    {
+      "source": "arxiv",
+      "title": "Chronos: Temporal-Aware Conversational Agents with Structured Event Retrieval for Long-Term Memory",
+      "summary": "Recent advances in Large Language Models (LLMs) have enabled conversational AI agents to engage in extended multi-turn interactions spanning weeks or months. However, existing memory systems struggle to reason over temporally grounded facts and preferences that evolve across months of interaction and lack effective retrieval strategies for multi-hop, time-sensitive queries over long dialogue histories. We introduce Chronos, a novel temporal-aware memory framework that decomposes raw dialogue int",
+      "url": "http://arxiv.org/abs/2603.16862v1",
+      "fetched_at": "2026-03-18T20:09:23.077377"
+    },
+    {
+      "source": "arxiv",
+      "title": "MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation",
+      "summary": "A prevailing view in robot learning is that simulation alone is not enough; effective sim-to-real transfer is widely believed to require at least some real-world data collection or task-specific fine-tuning to bridge the gap between simulated and physical environments. We challenge that assumption. With sufficiently large-scale and diverse simulated synthetic training data, we show that zero-shot transfer to the real world is not only possible, but effective for both static and mobile manipulati",
+      "url": "http://arxiv.org/abs/2603.16861v1",
+      "fetched_at": "2026-03-18T20:09:23.078379"
+    },
+    {
+      "source": "arxiv",
+      "title": "WorldCam: Interactive Autoregressive 3D Gaming Worlds with Camera Pose as a Unifying Geometric Representation",
+      "summary": "Recent advances in video diffusion transformers have enabled interactive gaming world models that allow users to explore generated environments over extended horizons. However, existing approaches struggle with precise action control and long-horizon 3D consistency. Most prior works treat user actions as abstract conditioning signals, overlooking the fundamental geometric coupling between actions and the 3D world, whereby actions induce relative camera motions that accumulate into a global camer",
+      "url": "http://arxiv.org/abs/2603.16871v1",
+      "fetched_at": "2026-03-18T20:09:26.705546"
+    },
+    {
+      "source": "arxiv",
+      "title": "Chronos: Temporal-Aware Conversational Agents with Structured Event Retrieval for Long-Term Memory",
+      "summary": "Recent advances in Large Language Models (LLMs) have enabled conversational AI agents to engage in extended multi-turn interactions spanning weeks or months. However, existing memory systems struggle to reason over temporally grounded facts and preferences that evolve across months of interaction and lack effective retrieval strategies for multi-hop, time-sensitive queries over long dialogue histories. We introduce Chronos, a novel temporal-aware memory framework that decomposes raw dialogue int",
+      "url": "http://arxiv.org/abs/2603.16862v1",
+      "fetched_at": "2026-03-18T20:09:26.705546"
+    },
+    {
+      "source": "arxiv",
+      "title": "Is Conformal Factuality for RAG-based LLMs Robust? Novel Metrics and Systematic Insights",
+      "summary": "Large language models (LLMs) frequently hallucinate, limiting their reliability in knowledge-intensive applications. Retrieval-augmented generation (RAG) and conformal factuality have emerged as potential ways to address this limitation. While RAG aims to ground responses in retrieved evidence, it provides no statistical guarantee that the final output is correct. Conformal factuality filtering offers distribution-free statistical reliability by scoring and filtering atomic claims using a thresh",
+      "url": "http://arxiv.org/abs/2603.16817v1",
+      "fetched_at": "2026-03-18T20:09:26.705546"
+    },
+    {
+      "source": "arxiv",
+      "title": "Retrieving Counterfactuals Improves Visual In-Context Learning",
+      "summary": "Vision-language models (VLMs) have achieved impressive performance across a wide range of multimodal reasoning tasks, but they often struggle to disentangle fine-grained visual attributes and reason about underlying causal relationships. In-context learning (ICL) offers a promising avenue for VLMs to adapt to new tasks, but its effectiveness critically depends on the selection of demonstration examples. Existing retrieval-augmented approaches typically rely on passive similarity-based retrieval,",
+      "url": "http://arxiv.org/abs/2603.16737v1",
+      "fetched_at": "2026-03-18T20:09:26.705546"
+    },
+    {
+      "source": "arxiv",
+      "title": "Machine Learning Reconstruction of High-Dimensional Electronic Structure from Angle-Resolved Photoemission Spectroscopy",
+      "summary": "The emergent behavior of quantum materials is governed by their electronic structure, which can be experimentally probed by photoemission spectroscopy techniques that generate a four-dimensional dataset of energy and momentum. However, the quantitative extraction of Hamiltonian parameters from these high-dimensional spectra remains a significant challenge, currently relying on labor-intensive, expert-dependent analysis rather than standardized workflows. Here, we introduce a deep learning framew",
+      "url": "http://arxiv.org/abs/2603.16725v1",
+      "fetched_at": "2026-03-18T20:09:26.705546"
+    },
+    {
+      "source": "arxiv",
+      "title": "Efficient Reasoning on the Edge",
+      "summary": "Large language models (LLMs) with chain-of-thought reasoning achieve state-of-the-art performance across complex problem-solving tasks, but their verbose reasoning traces and large context requirements make them impractical for edge deployment. These challenges include high token generation costs, large KV-cache footprints, and inefficiencies when distilling reasoning capabilities into smaller models for mobile devices. Existing approaches often rely on distilling reasoning traces from larger mo",
+      "url": "http://arxiv.org/abs/2603.16867v1",
+      "fetched_at": "2026-03-18T20:09:30.465364"
+    },
+    {
+      "source": "arxiv",
+      "title": "ManiTwin: Scaling Data-Generation-Ready Digital Object Dataset to 100K",
+      "summary": "Learning in simulation provides a useful foundation for scaling robotic manipulation capabilities. However, this paradigm often suffers from a lack of data-generation-ready digital assets, in both scale and diversity. In this work, we present ManiTwin, an automated and efficient pipeline for generating data-generation-ready digital object twins. Our pipeline transforms a single image into simulation-ready and semantically annotated 3D asset, enabling large-scale robotic manipulation data generat",
+      "url": "http://arxiv.org/abs/2603.16866v1",
+      "fetched_at": "2026-03-18T20:09:30.465364"
+    },
+    {
+      "source": "arxiv",
+      "title": "Prescribed-Time Distributed Generalized Nash Equilibrium Seeking",
+      "summary": "This paper proposes the first fully distributed algorithm for finding the Generalized Nash Equilibrium (GNE) of a non-cooperative game with shared coupling constraints and general cost coupling at a user-prescribed finite time T. As a foundation, a centralized gradient-based prescribed-time convergence result is established for the GNE problem, extending the optimization Lyapunov function framework to gradient dynamics, the only known realization among existing alternatives that naturally decomp",
+      "url": "http://arxiv.org/abs/2603.16865v1",
+      "fetched_at": "2026-03-18T20:09:30.465364"
+    },
+    {
+      "source": "arxiv",
+      "title": "Chronos: Temporal-Aware Conversational Agents with Structured Event Retrieval for Long-Term Memory",
+      "summary": "Recent advances in Large Language Models (LLMs) have enabled conversational AI agents to engage in extended multi-turn interactions spanning weeks or months. However, existing memory systems struggle to reason over temporally grounded facts and preferences that evolve across months of interaction and lack effective retrieval strategies for multi-hop, time-sensitive queries over long dialogue histories. We introduce Chronos, a novel temporal-aware memory framework that decomposes raw dialogue int",
+      "url": "http://arxiv.org/abs/2603.16862v1",
+      "fetched_at": "2026-03-18T20:09:30.465364"
+    },
+    {
+      "source": "arxiv",
+      "title": "MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation",
+      "summary": "A prevailing view in robot learning is that simulation alone is not enough; effective sim-to-real transfer is widely believed to require at least some real-world data collection or task-specific fine-tuning to bridge the gap between simulated and physical environments. We challenge that assumption. With sufficiently large-scale and diverse simulated synthetic training data, we show that zero-shot transfer to the real world is not only possible, but effective for both static and mobile manipulati",
+      "url": "http://arxiv.org/abs/2603.16861v1",
+      "fetched_at": "2026-03-18T20:09:30.465364"
+    },
+    {
+      "source": "arxiv",
+      "title": "MedCL-Bench: Benchmarking stability-efficiency trade-offs and scaling in biomedical continual learning",
+      "summary": "Medical language models must be updated as evidence and terminology evolve, yet sequential updating can trigger catastrophic forgetting. Although biomedical NLP has many static benchmarks, no unified, task-diverse benchmark exists for evaluating continual learning under standardized protocols, robustness to task order and compute-aware reporting. We introduce MedCL-Bench, which streams ten biomedical NLP datasets spanning five task families and evaluates eleven continual learning strategies acro",
+      "url": "http://arxiv.org/abs/2603.16738v1",
+      "fetched_at": "2026-03-18T20:09:34.280957"
+    },
+    {
+      "source": "arxiv",
+      "title": "Arabic Morphosyntactic Tagging and Dependency Parsing with Large Language Models",
+      "summary": "Large language models (LLMs) perform strongly on many NLP tasks, but their ability to produce explicit linguistic structure remains unclear. We evaluate instruction-tuned LLMs on two structured prediction tasks for Standard Arabic: morphosyntactic tagging and labeled dependency parsing. Arabic provides a challenging testbed due to its rich morphology and orthographic ambiguity, which create strong morphology-syntax interactions. We compare zero-shot prompting with retrieval-based in-context lear",
+      "url": "http://arxiv.org/abs/2603.16718v1",
+      "fetched_at": "2026-03-18T20:09:34.280957"
+    },
+    {
+      "source": "arxiv",
+      "title": "Omanic: Towards Step-wise Evaluation of Multi-hop Reasoning in Large Language Models",
+      "summary": "Reasoning-focused large language models (LLMs) have advanced in many NLP tasks, yet their evaluation remains challenging: final answers alone do not expose the intermediate reasoning steps, making it difficult to determine whether a model truly reasons correctly and where failures occur, while existing multi-hop QA benchmarks lack step-level annotations for diagnosing reasoning failures. To address this gap, we propose Omanic, an open-domain multi-hop QA resource that provides decomposed sub-que",
+      "url": "http://arxiv.org/abs/2603.16654v1",
+      "fetched_at": "2026-03-18T20:09:34.280957"
+    },
+    {
+      "source": "arxiv",
+      "title": "Tarab: A Multi-Dialect Corpus of Arabic Lyrics and Poetry",
+      "summary": "We introduce the Tarab Corpus, a large-scale cultural and linguistic resource that brings together Arabic song lyrics and poetry within a unified analytical framework. The corpus comprises 2.56 million verses and more than 13.5 million tokens, making it, to our knowledge, the largest open Arabic corpus of creative text spanning both classical and contemporary production. Tarab is broadly balanced between songs and poems and covers Classical Arabic, Modern Standard Arabic (MSA), and six major reg",
+      "url": "http://arxiv.org/abs/2603.16601v1",
+      "fetched_at": "2026-03-18T20:09:34.280957"
+    },
+    {
+      "source": "arxiv",
+      "title": "EngGPT2: Sovereign, Efficient and Open Intelligence",
+      "summary": "EngGPT2-16B-A3B is the latest iteration of Engineering Group's Italian LLM and it's built to be a Sovereign, Efficient and Open model. EngGPT2 is trained on 2.5 trillion tokens - less than Qwen3's 36T or Llama3's 15T - and delivers performance on key benchmarks, including MMLU-Pro, GSM8K, IFEval and HumanEval, comparable to dense models in the 8B-16B range, while requiring one-fifth to half of the inference power, and between one-tenth to one-sixth of the training data and consequent needed trai",
+      "url": "http://arxiv.org/abs/2603.16430v1",
+      "fetched_at": "2026-03-18T20:09:34.280957"
+    }
+  ],
+  "github": [
+    {
+      "source": "github",
+      "name": "langflow-ai/langflow",
+      "description": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+      "stars": 145835,
+      "url": "https://github.com/langflow-ai/langflow",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "chatgpt",
+        "generative-ai",
+        "large-language-models",
+        "multiagent"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "langchain-ai/langchain",
+      "description": "The agent engineering platform",
+      "stars": 130070,
+      "url": "https://github.com/langchain-ai/langchain",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "chatgpt"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+      "stars": 102712,
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "llms",
+        "python",
+        "rag"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "browser-use/browser-use",
+      "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "stars": 81214,
+      "url": "https://github.com/browser-use/browser-use",
+      "language": "Python",
+      "topics": [
+        "ai-agents",
+        "ai-tools",
+        "browser-automation",
+        "browser-use",
+        "llm"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "FoundationAgents/MetaGPT",
+      "description": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
+      "stars": 65493,
+      "url": "https://github.com/FoundationAgents/MetaGPT",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "gpt",
+        "llm",
+        "metagpt",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "OpenBB-finance/OpenBB",
+      "description": "Financial data platform for analysts, quants and AI agents.",
+      "stars": 63274,
+      "url": "https://github.com/OpenBB-finance/OpenBB",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "crypto",
+        "derivatives",
+        "economics",
+        "equity"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "microsoft/autogen",
+      "description": "A programming framework for agentic AI",
+      "stars": 55838,
+      "url": "https://github.com/microsoft/autogen",
+      "language": "Python",
+      "topics": [
+        "agentic",
+        "agentic-agi",
+        "agents",
+        "ai",
+        "autogen"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "mem0ai/mem0",
+      "description": "Universal memory layer for AI Agents",
+      "stars": 50287,
+      "url": "https://github.com/mem0ai/mem0",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "application",
+        "chatbots"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "crewAIInc/crewAI",
+      "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+      "stars": 46458,
+      "url": "https://github.com/crewAIInc/crewAI",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "aiagentframework",
+        "llms"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "ComposioHQ/awesome-claude-skills",
+      "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "stars": 45664,
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "antigravity",
+        "automation",
+        "claude"
+      ],
+      "fetched_at": "2026-03-18T20:09:19.841706"
+    },
+    {
+      "source": "github",
+      "name": "FoundationAgents/MetaGPT",
+      "description": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
+      "stars": 65493,
+      "url": "https://github.com/FoundationAgents/MetaGPT",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "gpt",
+        "llm",
+        "metagpt",
+        "multi-agent"
+      ],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "zhayujie/chatgpt-on-wechat",
+      "description": "CowAgent是基于大模型的超级AI助理，能主动思考和任务规划、访问操作系统和外部资源、创造和执行Skills、拥有长期记忆并不断成长。同时支持飞书、钉钉、企微、QQ、微信公众号、网页等接入，可选择OpenAI/Claude/Gemini/DeepSeek/ Qwen/GLM/Kimi/LinkAI，能处理文本、语音、图片和文件，可快速搭建个人AI助手和企业数字员工。",
+      "stars": 42277,
+      "url": "https://github.com/zhayujie/chatgpt-on-wechat",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "chatgpt",
+        "claude",
+        "deepseek"
+      ],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "stars": 32852,
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "finance",
+        "llm",
+        "multiagent",
+        "trading"
+      ],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "OpenBMB/ChatDev",
+      "description": "ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration",
+      "stars": 31714,
+      "url": "https://github.com/OpenBMB/ChatDev",
+      "language": "Python",
+      "topics": [],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "bytedance/deer-flow",
+      "description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours.",
+      "stars": 31676,
+      "url": "https://github.com/bytedance/deer-flow",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "agentic",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai"
+      ],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "wshobson/agents",
+      "description": "Intelligent automation and multi-agent orchestration for Claude Code",
+      "stars": 31606,
+      "url": "https://github.com/wshobson/agents",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "anthropic",
+        "anthropic-claude",
+        "automation",
+        "claude"
+      ],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "openai/swarm",
+      "description": "Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.",
+      "stars": 21187,
+      "url": "https://github.com/openai/swarm",
+      "language": "Python",
+      "topics": [],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "openai/openai-agents-python",
+      "description": "A lightweight, powerful framework for multi-agent workflows",
+      "stars": 20092,
+      "url": "https://github.com/openai/openai-agents-python",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "framework",
+        "llm",
+        "openai"
+      ],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "camel-ai/owl",
+      "description": "🦉 OWL: Optimized Workforce Learning for General Multi-Agent Assistance in Real-World Task Automation",
+      "stars": 19207,
+      "url": "https://github.com/camel-ai/owl",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "artificial-intelligence",
+        "multi-agent-systems",
+        "task-automation",
+        "web-interaction"
+      ],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "google/adk-python",
+      "description": "An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
+      "stars": 18433,
+      "url": "https://github.com/google/adk-python",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "agentic",
+        "agentic-ai",
+        "agents",
+        "agents-sdk"
+      ],
+      "fetched_at": "2026-03-18T20:09:23.760872"
+    },
+    {
+      "source": "github",
+      "name": "langchain-ai/langchain",
+      "description": "The agent engineering platform",
+      "stars": 130070,
+      "url": "https://github.com/langchain-ai/langchain",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "chatgpt"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "open-webui/open-webui",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "stars": 127711,
+      "url": "https://github.com/open-webui/open-webui",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "llm",
+        "llm-ui",
+        "llm-webui",
+        "llms"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "Shubhamsaboo/awesome-llm-apps",
+      "description": "Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.",
+      "stars": 102712,
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "llms",
+        "python",
+        "rag"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "infiniflow/ragflow",
+      "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "stars": 75414,
+      "url": "https://github.com/infiniflow/ragflow",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "agentic",
+        "agentic-ai",
+        "agentic-workflow",
+        "ai"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "PaddlePaddle/PaddleOCR",
+      "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
+      "stars": 72561,
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "language": "Python",
+      "topics": [
+        "ai4science",
+        "chineseocr",
+        "document-parsing",
+        "document-translation",
+        "kie"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "pathwaycom/pathway",
+      "description": "Python ETL framework for stream processing, real-time analytics, LLM pipelines, and RAG.",
+      "stars": 60630,
+      "url": "https://github.com/pathwaycom/pathway",
+      "language": "Python",
+      "topics": [
+        "batch-processing",
+        "data-analytics",
+        "data-pipelines",
+        "data-processing",
+        "dataflow"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "mem0ai/mem0",
+      "description": "Universal memory layer for AI Agents",
+      "stars": 50287,
+      "url": "https://github.com/mem0ai/mem0",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "application",
+        "chatbots"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "run-llama/llama_index",
+      "description": "LlamaIndex is the leading document agent and OCR platform",
+      "stars": 47772,
+      "url": "https://github.com/run-llama/llama_index",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "application",
+        "data",
+        "fine-tuning",
+        "framework"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "QuivrHQ/quivr",
+      "description": "Opiniated RAG for integrating GenAI in your apps 🧠   Focus on your product rather than the RAG. Easy integration in existing products with customisation!  Any LLM: GPT4, Groq, Llama. Any Vectorstore: PGVector, Faiss. Any Files. Anyway you want.",
+      "stars": 39028,
+      "url": "https://github.com/QuivrHQ/quivr",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "api",
+        "chatbot",
+        "chatgpt",
+        "database"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "mindsdb/mindsdb",
+      "description": "Query Engine for AI Analytics: Build self-reasoning agents across all your live data",
+      "stars": 38784,
+      "url": "https://github.com/mindsdb/mindsdb",
+      "language": "Python",
+      "topics": [
+        "agents",
+        "ai",
+        "analytics",
+        "artificial-inteligence",
+        "bigquery"
+      ],
+      "fetched_at": "2026-03-18T20:09:27.448994"
+    },
+    {
+      "source": "github",
+      "name": "github/awesome-copilot",
+      "description": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.",
+      "stars": 25882,
+      "url": "https://github.com/github/awesome-copilot",
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "agents",
+        "ai",
+        "awesome",
+        "custom-agents"
+      ],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "sickn33/antigravity-awesome-skills",
+      "description": "The Ultimate Collection of 1000+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel.",
+      "stars": 25608,
+      "url": "https://github.com/sickn33/antigravity-awesome-skills",
+      "language": "Python",
+      "topics": [
+        "agentic-skills",
+        "ai-agents",
+        "ai-workflows",
+        "antigravity",
+        "autonomous-coding"
+      ],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "mlflow/mlflow",
+      "description": "The open source AI engineering platform for agents, LLMs, and ML models. MLflow enables teams of all sizes to debug, evaluate, monitor, and optimize production-quality AI applications while controlling costs and managing access to models and data.",
+      "stars": 24814,
+      "url": "https://github.com/mlflow/mlflow",
+      "language": "Python",
+      "topics": [
+        "agentops",
+        "agents",
+        "ai",
+        "ai-governance",
+        "apache-spark"
+      ],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "comet-ml/opik",
+      "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
+      "stars": 18345,
+      "url": "https://github.com/comet-ml/opik",
+      "language": "Python",
+      "topics": [
+        "evaluation",
+        "hacktoberfest",
+        "hacktoberfest2025",
+        "langchain",
+        "llama-index"
+      ],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "dottxt-ai/outlines",
+      "description": "Structured Outputs",
+      "stars": 13572,
+      "url": "https://github.com/dottxt-ai/outlines",
+      "language": "Python",
+      "topics": [
+        "cfg",
+        "generative-ai",
+        "json",
+        "llms",
+        "prompt-engineering"
+      ],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "EmbraceAGI/awesome-chatgpt-zh",
+      "description": "ChatGPT 中文指南🔥，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up! 🚀",
+      "stars": 11514,
+      "url": "https://github.com/EmbraceAGI/awesome-chatgpt-zh",
+      "language": "Python",
+      "topics": [
+        "agi",
+        "ai",
+        "awesome",
+        "awesome-list",
+        "chat-gpt"
+      ],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "microsoft/promptflow",
+      "description": "Build high-quality LLM apps - from prototyping, testing to production deployment and monitoring.",
+      "stars": 11072,
+      "url": "https://github.com/microsoft/promptflow",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "ai-application-development",
+        "ai-applications",
+        "chatgpt",
+        "gpt"
+      ],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "davidkimai/Context-Engineering",
+      "description": "\"Context engineering is the delicate art and science of filling the context window with just the right information for the next step.\" — Andrej Karpathy. A frontier, first-principles handbook inspired by Karpathy and 3Blue1Brown for moving beyond prompt engineering to the wider discipline of context",
+      "stars": 8575,
+      "url": "https://github.com/davidkimai/Context-Engineering",
+      "language": "Python",
+      "topics": [],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "aimhubio/aim",
+      "description": "Aim 💫 — An easy-to-use & supercharged open-source experiment tracker.",
+      "stars": 6038,
+      "url": "https://github.com/aimhubio/aim",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "data-science",
+        "data-visualization",
+        "experiment-tracking",
+        "machine-learning"
+      ],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "kyegomez/swarms",
+      "description": "The Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework. Website: https://swarms.ai",
+      "stars": 5909,
+      "url": "https://github.com/kyegomez/swarms",
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "agentic-workflow",
+        "agents",
+        "ai",
+        "artificial-intelligence"
+      ],
+      "fetched_at": "2026-03-18T20:09:31.235521"
+    },
+    {
+      "source": "github",
+      "name": "aub-mind/arabert",
+      "description": "Pre-trained Transformers for Arabic Language Understanding and Generation (Arabic BERT, Arabic GPT2, Arabic ELECTRA)",
+      "stars": 712,
+      "url": "https://github.com/aub-mind/arabert",
+      "language": "Python",
+      "topics": [
+        "arabert",
+        "arabic",
+        "arabic-classification",
+        "arabic-nlp",
+        "bert"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    },
+    {
+      "source": "github",
+      "name": "yongzhuo/Macropodus",
+      "description": "自然语言处理工具Macropodus，基于Albert+BiLSTM+CRF深度学习网络架构，中文分词，词性标注，命名实体识别，新词发现，关键词，文本摘要，文本相似度，科学计算器，中文数字阿拉伯数字(罗马数字)转换，中文繁简转换，拼音转换。tookit(tool) of NLP，CWS(chinese word segnment)，POS(Part-Of-Speech Tagging)，NER(name entity recognition)，Find(new words discovery)，Keyword(keyword extraction)，Summarize(text summari",
+      "stars": 662,
+      "url": "https://github.com/yongzhuo/Macropodus",
+      "language": "Python",
+      "topics": [
+        "albert",
+        "calulator",
+        "crf",
+        "cws",
+        "keyword"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    },
+    {
+      "source": "github",
+      "name": "Barqawiz/Shakkala",
+      "description": "Deep learning for AR text Vocalization - التشكيل الالي للنصوص العربية",
+      "stars": 351,
+      "url": "https://github.com/Barqawiz/Shakkala",
+      "language": "Python",
+      "topics": [
+        "arabic-nlp",
+        "deep-learning",
+        "lstm",
+        "rnn"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    },
+    {
+      "source": "github",
+      "name": "mobadarah/tajmeeaton",
+      "description": "تجميعة من المشاريع، وخصوصا مفتوحة المصدر",
+      "stars": 324,
+      "url": "https://github.com/mobadarah/tajmeeaton",
+      "language": "Python",
+      "topics": [
+        "arabic",
+        "arabic-font",
+        "arabic-language",
+        "arabic-nlp",
+        "arabic-numbers"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    },
+    {
+      "source": "github",
+      "name": "TRoboto/Maha",
+      "description": "Maha is a text processing library specially developed to deal with Arabic text.",
+      "stars": 213,
+      "url": "https://github.com/TRoboto/Maha",
+      "language": "Python",
+      "topics": [
+        "arabic-cleaners",
+        "arabic-nlp",
+        "arabic-parsers",
+        "arabic-text"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    },
+    {
+      "source": "github",
+      "name": "husseinmozannar/SOQAL",
+      "description": "Arabic Open Domain Question Answering System using Neural Reading Comprehension",
+      "stars": 165,
+      "url": "https://github.com/husseinmozannar/SOQAL",
+      "language": "Python",
+      "topics": [
+        "arabic",
+        "arabic-language",
+        "arabic-nlp",
+        "deep-learning",
+        "nlp"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    },
+    {
+      "source": "github",
+      "name": "MagedSaeed/farasapy",
+      "description": "A Python implementation of Farasa toolkit",
+      "stars": 139,
+      "url": "https://github.com/MagedSaeed/farasapy",
+      "language": "Python",
+      "topics": [
+        "arabic",
+        "arabic-nlp",
+        "diacritization",
+        "farasa",
+        "named-entity-recognition"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    },
+    {
+      "source": "github",
+      "name": "Qutuf/Qutuf",
+      "description": "Qutuf (قُطُوْف): An Arabic Morphological analyzer and Part-Of-Speech tagger as an Expert System.",
+      "stars": 135,
+      "url": "https://github.com/Qutuf/Qutuf",
+      "language": "Python",
+      "topics": [
+        "arabic",
+        "arabic-language",
+        "arabic-morphology",
+        "arabic-nlp",
+        "arabic-tagger"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    },
+    {
+      "source": "github",
+      "name": "motazsaad/process-arabic-text",
+      "description": "Pre-process arabic text (remove diacritics, punctuations and repeating characters) ",
+      "stars": 107,
+      "url": "https://github.com/motazsaad/process-arabic-text",
+      "language": "Python",
+      "topics": [
+        "arabic-nlp",
+        "punctuation",
+        "remove-diacritics"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    },
+    {
+      "source": "github",
+      "name": "iamaziz/ar-embeddings",
+      "description": "Sentiment Analysis for Arabic Text (tweets, reviews, and standard Arabic) using word2vec",
+      "stars": 95,
+      "url": "https://github.com/iamaziz/ar-embeddings",
+      "language": "Python",
+      "topics": [
+        "arabic",
+        "arabic-embedding",
+        "arabic-nlp",
+        "arabic-sentiment",
+        "embeddings"
+      ],
+      "fetched_at": "2026-03-18T20:09:35.180168"
+    }
+  ],
+  "huggingface": [
+    {
+      "source": "huggingface",
+      "name": "jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
+      "downloads": 2297534,
+      "likes": 51,
+      "pipeline_tag": "automatic-speech-recognition",
+      "fetched_at": "2026-03-18T20:09:37.867556"
+    },
+    {
+      "source": "huggingface",
+      "name": "hatmimoha/arabic-ner",
+      "downloads": 891404,
+      "likes": 22,
+      "pipeline_tag": "token-classification",
+      "fetched_at": "2026-03-18T20:09:37.867556"
+    },
+    {
+      "source": "huggingface",
+      "name": "CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment",
+      "downloads": 193315,
+      "likes": 8,
+      "pipeline_tag": "text-classification",
+      "fetched_at": "2026-03-18T20:09:37.867556"
+    },
+    {
+      "source": "huggingface",
+      "name": "CAMeL-Lab/bert-base-arabic-camelbert-da-sentiment",
+      "downloads": 101808,
+      "likes": 49,
+      "pipeline_tag": "text-classification",
+      "fetched_at": "2026-03-18T20:09:37.867556"
+    },
+    {
+      "source": "huggingface",
+      "name": "CAMeL-Lab/bert-base-arabic-camelbert-msa-ner",
+      "downloads": 76623,
+      "likes": 7,
+      "pipeline_tag": "token-classification",
+      "fetched_at": "2026-03-18T20:09:37.867556"
+    }
+  ],
+  "news": [],
+  "timestamp": "2026-03-18T20:09:17.856055"
+}

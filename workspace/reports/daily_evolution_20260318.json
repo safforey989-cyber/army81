@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-03-18T20:09:17.856055",
+  "phases": {
+    "web_crawl": {
+      "total_results": 80,
+      "sources": {
+        "arxiv": 25,
+        "github": 50,
+        "huggingface": 5,
+        "news": 0
+      }
+    },
+    "synth_data": {
+      "generated": 50,
+      "solved": 0,
+      "avg_quality": 0.0
+    },
+    "distillation": {
+      "pairs_processed": 5,
+      "examples_added": 0,
+      "gaps_measured": 0
+    },
+    "auto_research": {
+      "total": 11,
+      "success": 4,
+      "failed": 7
+    },
+    "crystallization": {
+      "agents_processed": 0,
+      "crystals_created": 0
+    },
+    "self_play": {
+      "rounds": 5,
+      "red_wins": 0,
+      "blue_wins": 5
+    },
+    "awakening": {
+      "cycle": 1,
+      "started_at": "2026-03-18T20:10:34.815912",
+      "phases": {
+        "auto_research": {
+          "status": "done",
+          "result": {
+            "total": 11,
+            "success": 1,
+            "failed": 10
+          }
+        },
+        "distillation": {
+          "status": "done",
+          "result": {
+            "pairs_processed": 5,
+            "examples_added": 0,
+            "gaps_measured": 0
+          }
+        },
+        "memory_crystal": {
+          "status": "done",
+          "result": {
+            "agents_processed": 0,
+            "crystals_created": 0
+          }
+        },
+        "token_economy": {
+          "status": "done"
+        },
+        "health_check": {
+          "gateway": true,
+          "memory": true,
+          "disk": true,
+          "disk_free_gb": 589.7514686584473
+        },
+        "evolution_report": {
+          "status": "done"
+        }
+      },
+      "elapsed_seconds": 42.544371366500854,
+      "completed_at": "2026-03-18T20:11:17.360283"
+    }
+  }
+}

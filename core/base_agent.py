@@ -143,6 +143,13 @@ class BaseAgent:
         self._skill_memory = None  # lazy
         self._cloud_memory = None  # v6: ذاكرة سحابية
 
+        # ── v14: ذاكرة السرب + التنفيذ العميق + اقتصاد الرموز ──
+        self._swarm_memory = None
+        self._deep_executor = None
+        self._token_economy = None
+        self._multi_router = None
+        self._network_intel = None
+
         logger.info(f"Agent ready: {self.agent_id} ({self.name_ar})")
 
     @property
@@ -172,6 +179,61 @@ class BaseAgent:
             except Exception:
                 pass
         return self._cloud_memory
+
+    @property
+    def swarm_memory(self):
+        """v14: ذاكرة السرب — فردية + نواة"""
+        if self._swarm_memory is None:
+            try:
+                from memory.swarm_memory import SwarmMemoryManager
+                self._swarm_memory = SwarmMemoryManager.get_instance()
+            except Exception:
+                pass
+        return self._swarm_memory
+
+    @property
+    def deep_executor(self):
+        """v14: التنفيذ العميق متعدد الخطوات"""
+        if self._deep_executor is None:
+            try:
+                from core.deep_executor import DeepExecutor
+                self._deep_executor = DeepExecutor()
+            except Exception:
+                pass
+        return self._deep_executor
+
+    @property
+    def token_economy(self):
+        """v14: اقتصاد الرموز"""
+        if self._token_economy is None:
+            try:
+                from core.token_economy import TokenEconomy
+                self._token_economy = TokenEconomy()
+            except Exception:
+                pass
+        return self._token_economy
+
+    @property
+    def multi_router(self):
+        """v14: التوجيه متعدد النماذج"""
+        if self._multi_router is None:
+            try:
+                from core.multi_model_router import MultiModelRouter
+                self._multi_router = MultiModelRouter()
+            except Exception:
+                pass
+        return self._multi_router
+
+    @property
+    def network_intel(self):
+        """v14: الذكاء الشبكي"""
+        if self._network_intel is None:
+            try:
+                from core.network_intelligence import NetworkIntelligence
+                self._network_intel = NetworkIntelligence()
+            except Exception:
+                pass
+        return self._network_intel
 
     def run(self, task: str, context: Dict = None) -> AgentResult:
         """تنفيذ مهمة — النقطة الرئيسية (v3)"""
@@ -214,11 +276,26 @@ class BaseAgent:
             try:
                 from core.consciousness import get_consciousness
                 cn = get_consciousness()
-                # router متاح عبر neural_net
                 _router = getattr(self.neural_net, 'router', None) if self.neural_net else None
                 consciousness_ctx = cn.generate(self.agent_id, task, _router)
             except Exception:
                 pass
+
+            # J-v14: ذاكرة السرب الشخصية
+            swarm_ctx = ""
+            if self.swarm_memory:
+                try:
+                    partner = context.get("partner", "")
+                    swarm_ctx = self.swarm_memory.inject_context(self.agent_id, partner)
+                except Exception:
+                    pass
+
+            # K-v14: فحص ميزانية الرموز قبل التنفيذ
+            if self.token_economy:
+                try:
+                    self.token_economy.initialize_agent(self.agent_id)
+                except Exception:
+                    pass
 
             # C: أثرِ الـ system prompt
             enriched_system = self.system_prompt
@@ -232,6 +309,8 @@ class BaseAgent:
                 enriched_system += f"\n\n{skill_ctx}"
             if neural_ctx:
                 enriched_system += f"\n\n{neural_ctx}"
+            if swarm_ctx:
+                enriched_system += f"\n\n{swarm_ctx}"
 
             # C: ابنِ الرسائل
             messages = self._build_messages(task, context)
@@ -279,6 +358,37 @@ class BaseAgent:
             if self.neural_net:
                 try:
                     self.neural_net.after_task_propagate(self.agent_id, result)
+                except Exception:
+                    pass
+
+            # I-v14: تسجيل في ذاكرة السرب + اقتصاد الرموز + الشبكة
+            if self.swarm_memory:
+                try:
+                    task_type = self._classify_task(task)
+                    if len(result_text) > 100:
+                        self.swarm_memory.record_insight(
+                            self.agent_id, result_text[:300], topic=task_type)
+                    # تقوية الروابط مع الشريك
+                    partner = context.get("partner", "")
+                    if partner and self.network_intel:
+                        self.network_intel.strengthen_connection(self.agent_id, partner, 0.05)
+                except Exception:
+                    pass
+
+            if self.token_economy:
+                try:
+                    tokens = response.get("tokens", 0) or 500
+                    self.token_economy.spend(self.agent_id, tokens, task[:50])
+                except Exception:
+                    pass
+
+            if self.network_intel:
+                try:
+                    self.network_intel.propagate_signal(
+                        self.agent_id, "task_completed",
+                        {"task_type": self._classify_task(task), "success": True},
+                        strength=0.8
+                    )
                 except Exception:
                     pass
 
@@ -332,6 +442,109 @@ class BaseAgent:
                 elapsed_seconds=round(time.time() - start, 2),
                 tokens_used=0,
             )
+
+    # ═══════════════════════════════════════════════════════════
+    # v14: قدرات متقدمة — تنفيذ عميق + تفويض + متعدد النماذج
+    # ═══════════════════════════════════════════════════════════
+
+    def run_deep(self, task: str, context: Dict = None) -> "AgentResult":
+        """
+        تنفيذ عميق — يكسر المهمة المعقدة إلى خطوات ويسلسلها
+        يُستخدم تلقائياً للمهام المعقدة (complexity > 5)
+        """
+        context = context or {}
+        if not self.deep_executor:
+            return self.run(task, context)
+
+        try:
+            plan = self.deep_executor.plan_execution(task, self.agent_id)
+            if len(plan.steps) <= 1:
+                return self.run(task, context)
+
+            # تنفيذ الخطة
+            result_plan = self.deep_executor.execute_plan(plan, self._agent_executor)
+            return AgentResult(
+                agent_id=self.agent_id,
+                agent_name=self.name_ar,
+                task=task,
+                result=result_plan.final_result or "لم تكتمل الخطة",
+                status="success" if result_plan.status == "completed" else "error",
+                model_used=self.model_alias,
+                elapsed_seconds=0,
+                tokens_used=0,
+            )
+        except Exception as e:
+            logger.error(f"Deep execution failed: {e}")
+            return self.run(task, context)
+
+    def _agent_executor(self, agent_id: str, task: str) -> Dict:
+        """يُستخدم من DeepExecutor لتنفيذ مهمة بوكيل محدد"""
+        result = self.run(task)
+        return {"result": result.result, "tokens": result.tokens_used}
+
+    def run_multi(self, task: str, models: List[str] = None,
+                  mode: str = "ensemble") -> "AgentResult":
+        """
+        تنفيذ بعدة نماذج في آنٍ واحد
+        mode: 'parallel' | 'ensemble' | 'debate'
+        """
+        if not self.multi_router:
+            return self.run(task)
+
+        start = time.time()
+        try:
+            if mode == "parallel" and models:
+                result = self.multi_router.route_parallel(
+                    task, models, system_prompt=self.system_prompt)
+                text = result.get("best_response", "")
+                model = result.get("best_model", self.model_alias)
+            elif mode == "debate" and models:
+                result = self.multi_router.route_debate(
+                    task, models, system_prompt=self.system_prompt)
+                text = result.get("content", "")
+                model = result.get("judge", self.model_alias)
+            else:
+                result = self.multi_router.route_ensemble(
+                    task, self.agent_id, system_prompt=self.system_prompt)
+                text = result.get("content", "")
+                model = result.get("refine_model", self.model_alias)
+
+            return AgentResult(
+                agent_id=self.agent_id, agent_name=self.name_ar,
+                task=task, result=text, status="success",
+                model_used=model, elapsed_seconds=round(time.time()-start, 2),
+                tokens_used=0,
+            )
+        except Exception as e:
+            logger.error(f"Multi-model failed: {e}")
+            return self.run(task)
+
+    def delegate(self, target_agent_id: str, task: str,
+                 context: Dict = None) -> Optional[Dict]:
+        """
+        تفويض مهمة لوكيل آخر — التعاون الحقيقي
+        """
+        if self.neural_net and hasattr(self.neural_net, 'router'):
+            router = self.neural_net.router
+            if router and target_agent_id in router.agents:
+                target = router.agents[target_agent_id]
+                result = target.run(task, context or {})
+
+                # تقوية الرابط في الشبكة
+                if self.network_intel:
+                    self.network_intel.strengthen_connection(
+                        self.agent_id, target_agent_id, 0.1)
+
+                # تسجيل التعاون في ذاكرة السرب
+                if self.swarm_memory:
+                    self.swarm_memory.record_collaboration(
+                        self.agent_id, [target_agent_id],
+                        task[:100], result.result[:200],
+                        success=(result.status == "success")
+                    )
+
+                return result.to_dict()
+        return None
 
     def _build_messages(self, task: str, context: Dict) -> List[Dict]:
         """بناء سلسلة الرسائل"""
@@ -432,7 +645,16 @@ class BaseAgent:
 
 def load_agent_from_json(json_path: str, tools_registry: Dict[str, Tool] = None) -> BaseAgent:
     """تحميل وكيل من ملف JSON"""
-    tools_registry = tools_registry or {}
+    # إذا لم يُمرَّر سجل أدوات، ابنِ سجل الأدوات الكامل تلقائياً
+    # حتى تُفعَّل أدوات الوكلاء فعلياً عند التحميل من JSON.
+    if tools_registry is None:
+        try:
+            from tools.registry import build_tools_registry
+            tools_registry = build_tools_registry()
+        except Exception:
+            tools_registry = {}
+    else:
+        tools_registry = tools_registry or {}
 
     with open(json_path, "r", encoding="utf-8") as f:
         data = json.load(f)

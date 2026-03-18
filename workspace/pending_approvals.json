@@ -34,5 +34,113 @@
     },
     "status": "pending",
     "created_at": "2026-03-18T13:58:10.071728"
+  },
+  {
+    "id": "req_20260318202310_3",
+    "title": "اقتراح إضافة: MetaGPT",
+    "description": "مستودع GitHub: FoundationAgents/MetaGPT\nالنجوم: 65496\nالوصف: 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming\nالرابط: https://github.com/FoundationAgents/MetaGPT\nدرجة الفائدة: 70%",
+    "action_type": "add_knowledge",
+    "action_data": {
+      "source": "github",
+      "repo": "FoundationAgents/MetaGPT"
+    },
+    "status": "pending",
+    "created_at": "2026-03-18T20:23:10.279056"
+  },
+  {
+    "id": "req_20260318202310_4",
+    "title": "اقتراح إضافة: openai-agents-python",
+    "description": "مستودع GitHub: openai/openai-agents-python\nالنجوم: 20093\nالوصف: A lightweight, powerful framework for multi-agent workflows\nالرابط: https://github.com/openai/openai-agents-python\nدرجة الفائدة: 70%",
+    "action_type": "add_knowledge",
+    "action_data": {
+      "source": "github",
+      "repo": "openai/openai-agents-python"
+    },
+    "status": "pending",
+    "created_at": "2026-03-18T20:23:10.280084"
+  },
+  {
+    "id": "req_20260318202310_5",
+    "title": "اقتراح إضافة: camel",
+    "description": "مستودع GitHub: camel-ai/camel\nالنجوم: 16401\nالوصف: 🐫 CAMEL: The first and the best multi-agent framework. Finding the Scaling Law of Agents. https://www.camel-ai.org\nالرابط: https://github.com/camel-ai/camel\nدرجة الفائدة: 70%",
+    "action_type": "add_knowledge",
+    "action_data": {
+      "source": "github",
+      "repo": "camel-ai/camel"
+    },
+    "status": "pending",
+    "created_at": "2026-03-18T20:23:10.280084"
+  },
+  {
+    "id": "req_20260318202710_6",
+    "title": "اقتراح إضافة: MetaGPT",
+    "description": "مستودع GitHub: FoundationAgents/MetaGPT\nالنجوم: 65496\nالوصف: 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming\nالرابط: https://github.com/FoundationAgents/MetaGPT\nدرجة الفائدة: 70%",
+    "action_type": "add_knowledge",
+    "action_data": {
+      "source": "github",
+      "repo": "FoundationAgents/MetaGPT"
+    },
+    "status": "pending",
+    "created_at": "2026-03-18T20:27:10.261671"
+  },
+  {
+    "id": "req_20260318202710_7",
+    "title": "اقتراح إضافة: openai-agents-python",
+    "description": "مستودع GitHub: openai/openai-agents-python\nالنجوم: 20093\nالوصف: A lightweight, powerful framework for multi-agent workflows\nالرابط: https://github.com/openai/openai-agents-python\nدرجة الفائدة: 70%",
+    "action_type": "add_knowledge",
+    "action_data": {
+      "source": "github",
+      "repo": "openai/openai-agents-python"
+    },
+    "status": "pending",
+    "created_at": "2026-03-18T20:27:10.263039"
+  },
+  {
+    "id": "req_20260318202710_8",
+    "title": "اقتراح إضافة: camel",
+    "description": "مستودع GitHub: camel-ai/camel\nالنجوم: 16401\nالوصف: 🐫 CAMEL: The first and the best multi-agent framework. Finding the Scaling Law of Agents. https://www.camel-ai.org\nالرابط: https://github.com/camel-ai/camel\nدرجة الفائدة: 70%",
+    "action_type": "add_knowledge",
+    "action_data": {
+      "source": "github",
+      "repo": "camel-ai/camel"
+    },
+    "status": "pending",
+    "created_at": "2026-03-18T20:27:10.263039"
+  },
+  {
+    "id": "req_20260318202817_9",
+    "title": "اقتراح إضافة: MetaGPT",
+    "description": "مستودع GitHub: FoundationAgents/MetaGPT\nالنجوم: 65496\nالوصف: 🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming\nالرابط: https://github.com/FoundationAgents/MetaGPT\nدرجة الفائدة: 70%",
+    "action_type": "add_knowledge",
+    "action_data": {
+      "source": "github",
+      "repo": "FoundationAgents/MetaGPT"
+    },
+    "status": "pending",
+    "created_at": "2026-03-18T20:28:17.549715"
+  },
+  {
+    "id": "req_20260318202817_10",
+    "title": "اقتراح إضافة: openai-agents-python",
+    "description": "مستودع GitHub: openai/openai-agents-python\nالنجوم: 20093\nالوصف: A lightweight, powerful framework for multi-agent workflows\nالرابط: https://github.com/openai/openai-agents-python\nدرجة الفائدة: 70%",
+    "action_type": "add_knowledge",
+    "action_data": {
+      "source": "github",
+      "repo": "openai/openai-agents-python"
+    },
+    "status": "pending",
+    "created_at": "2026-03-18T20:28:17.550716"
+  },
+  {
+    "id": "req_20260318202817_11",
+    "title": "اقتراح إضافة: camel",
+    "description": "مستودع GitHub: camel-ai/camel\nالنجوم: 16401\nالوصف: 🐫 CAMEL: The first and the best multi-agent framework. Finding the Scaling Law of Agents. https://www.camel-ai.org\nالرابط: https://github.com/camel-ai/camel\nدرجة الفائدة: 70%",
+    "action_type": "add_knowledge",
+    "action_data": {
+      "source": "github",
+      "repo": "camel-ai/camel"
+    },
+    "status": "pending",
+    "created_at": "2026-03-18T20:28:17.550716"
   }
 ]

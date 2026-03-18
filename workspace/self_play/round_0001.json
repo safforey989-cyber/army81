@@ -1,0 +1,13 @@
+{
+  "round": 1,
+  "domain": "factual",
+  "challenge": {
+    "challenge": "هذه الإجابة تحتوي معلومة خاطئة واحدة. اكتشفها وصححها.",
+    "answer": "الـ Transformer اخترعته Google عام 2015 في ورقة Attention is All You Need",
+    "difficulty": "easy"
+  },
+  "red_attack": null,
+  "blue_defense": null,
+  "winner": "blue",
+  "timestamp": "2026-03-18T20:10:29.805985"
+}

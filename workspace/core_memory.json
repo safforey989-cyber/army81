@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-03-18T21:06:51.461512",
+  "collective_decisions": [
+    {
+      "decision": "نستخدم OpenRouter لكل النماذج",
+      "participants": [
+        "A01",
+        "A05",
+        "A09"
+      ],
+      "reasoning": "أرخص وأسهل",
+      "timestamp": "2026-03-18T21:06:51.466753",
+      "status": "active"
+    }
+  ],
+  "shared_knowledge": [],
+  "system_rules": [],
+  "active_goals": [],
+  "completed_goals": [],
+  "pending_approvals": [],
+  "network_state": {
+    "total_interactions": 2,
+    "total_collaborations": 1,
+    "strongest_bonds": []
+  },
+  "evolution_log": []
+}

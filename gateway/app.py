@@ -1077,6 +1077,123 @@ def run_awakening():
     return {"error": "Awakening component not available"}
 
 
+# ═══════════════════════════════════════════════════════════
+# v14: Deep Execution + Multi-Model + Training + Network Intelligence
+# ═══════════════════════════════════════════════════════════
+
+@app.post("/task/deep")
+async def deep_task(request: Request):
+    """تنفيذ عميق متعدد الخطوات"""
+    data = await request.json()
+    task = data.get("task", "")
+    agent_id = data.get("preferred_agent", "A01")
+
+    agent = router.agents.get(agent_id, next(iter(router.agents.values()), None))
+    if not agent:
+        return {"error": "No agents available"}
+
+    result = agent.run_deep(task)
+    return result.to_dict()
+
+
+@app.post("/task/multi")
+async def multi_model_task(request: Request):
+    """تنفيذ بعدة نماذج"""
+    data = await request.json()
+    task = data.get("task", "")
+    models = data.get("models", ["gemini-flash", "deepseek-chat"])
+    mode = data.get("mode", "ensemble")
+    agent_id = data.get("preferred_agent", "A01")
+
+    agent = router.agents.get(agent_id, next(iter(router.agents.values()), None))
+    if not agent:
+        return {"error": "No agents available"}
+
+    result = agent.run_multi(task, models, mode)
+    return result.to_dict()
+
+
+@app.post("/task/chain")
+async def chain_task(request: Request):
+    """تنفيذ سلسلة وكلاء"""
+    data = await request.json()
+    task = data.get("task", "")
+    chain_type = data.get("chain", "research")
+
+    try:
+        from core.deep_executor import DeepExecutor
+        executor = DeepExecutor()
+
+        def agent_fn(aid, t):
+            a = router.agents.get(aid)
+            if a:
+                r = a.run(t)
+                return {"result": r.result, "tokens": r.tokens_used}
+            return {"result": "Agent not found", "tokens": 0}
+
+        result = executor.execute_chain(chain_type, task, agent_fn)
+        return result
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.post("/training/cycle")
+async def training_cycle():
+    """دورة تدريب واحدة"""
+    try:
+        from core.continuous_learning import ContinuousLearning
+        learner = ContinuousLearning()
+
+        def run_fn(aid, t):
+            a = router.agents.get(aid)
+            if a:
+                r = a.run(t)
+                return {"result": r.result, "tokens": r.tokens_used}
+            return {"result": "Agent not found"}
+
+        import threading
+        def bg():
+            learner.run_training_cycle(run_fn, max_agents=5)
+        threading.Thread(target=bg, daemon=True).start()
+        return {"status": "started", "message": "Training cycle running in background"}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/training/leaderboard")
+def training_leaderboard():
+    """ترتيب الوكلاء"""
+    try:
+        from core.continuous_learning import ContinuousLearning
+        learner = ContinuousLearning()
+        return {"leaderboard": learner.get_leaderboard()}
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/network/health")
+def network_health():
+    """صحة الشبكة العصبية"""
+    try:
+        from core.network_intelligence import NetworkIntelligence
+        ni = NetworkIntelligence()
+        return ni.get_network_health()
+    except Exception as e:
+        return {"error": str(e)}
+
+
+@app.get("/network/team/{task_type}")
+def find_team(task_type: str):
+    """أفضل فريق لمهمة"""
+    try:
+        from core.network_intelligence import NetworkIntelligence
+        ni = NetworkIntelligence()
+        team = ni.find_best_team(task_type)
+        return {"task_type": task_type, "team": team}
+    except Exception as e:
+        return {"error": str(e)}
+
+
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn

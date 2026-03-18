@@ -44,13 +44,14 @@ def build_tools_registry() -> Dict[str, Tool]:
     )
 
     # LangSearch / Tavily — بحث عميق للوكلاء
-    if os.getenv("LANGSEARCH_API_KEY") or os.getenv("TAVILY_API_KEY"):
-        registry["deep_search"] = Tool(
-            name="deep_search",
-            description="بحث عميق مع محتوى كامل — أفضل من web_search للمهام المعقدة (LangSearch/Tavily)",
-            func=_lazy_import("tools.web_search", "deep_search"),
-            parameters={"query": "سؤال أو موضوع"}
-        )
+    # ملاحظة: نجعله متاحاً دائماً مع fallback إلى web_search
+    # حتى لا تفشل تعريفات الوكلاء التي تعتمد عليه عند غياب المفاتيح.
+    registry["deep_search"] = Tool(
+        name="deep_search",
+        description="بحث عميق مع محتوى كامل — يستخدم LangSearch/Tavily عند توفره، وإلا يعود لـ web_search",
+        func=_lazy_import("tools.web_search", "deep_search"),
+        parameters={"query": "سؤال أو موضوع"}
+    )
 
     # Perplexity — بحث أكاديمي
     if os.getenv("PERPLEXITY_API_KEY"):
@@ -70,13 +71,13 @@ def build_tools_registry() -> Dict[str, Tool]:
     )
 
     # GitHub — رصد المستودعات
-    if os.getenv("GITHUB_TOKEN"):
-        registry["github_search"] = Tool(
-            name="github_search",
-            description="البحث في GitHub عن مستودعات ومشاريع مفتوحة المصدر",
-            func=_lazy_import("tools.github_tool", "search_repos"),
-            parameters={"query": "نص البحث", "sort": "stars/updated/forks"}
-        )
+    # متاح دائماً: بدون GITHUB_TOKEN يعمل بحدود أقل (rate limits).
+    registry["github_search"] = Tool(
+        name="github_search",
+        description="البحث في GitHub عن مستودعات ومشاريع مفتوحة المصدر (بدون token قد تتأثر الحدود)",
+        func=_lazy_import("tools.github_tool", "search_repos"),
+        parameters={"query": "نص البحث", "sort": "stars/updated/forks"}
+    )
 
     # ── 2. الملفات والبيانات ─────────────────────────────
 
@@ -240,6 +241,30 @@ def build_tools_registry() -> Dict[str, Tool]:
             func=_lazy_import("core.execution_engine", "_e2b_run_wrapper"),
             parameters={"code": "كود Python"}
         )
+
+    # ── 7. OSS Adapters (Auto-generated) ──────────────────
+    # يلتقط أي أدوات مولّدة داخل tools/oss_adapters/*.py ويضيفها كسِجل أدوات.
+    # كل ملف يجب أن يعرّف دالة: run(query: str = "") -> str
+    enable_oss = os.getenv("OSS_ADAPTERS_ENABLE", "1").strip().lower() not in ("0", "false", "no", "off")
+    if enable_oss:
+        try:
+            adapters_dir = os.path.join(os.path.dirname(__file__), "oss_adapters")
+            if os.path.isdir(adapters_dir):
+                for fname in sorted(os.listdir(adapters_dir)):
+                    if not fname.endswith(".py") or fname.startswith("_"):
+                        continue
+                    tool_name = fname.replace(".py", "")
+                    # تجنّب التضارب مع أسماء أدوات أساسية
+                    if tool_name in registry:
+                        continue
+                    registry[tool_name] = Tool(
+                        name=tool_name,
+                        description=f"OSS adapter tool (auto): {tool_name}",
+                        func=_lazy_import(f"tools.oss_adapters.{tool_name}", "run"),
+                        parameters={"query": "اختياري: نص استعلام/سؤال"},
+                    )
+        except Exception as e:
+            logger.warning(f"OSS adapters load failed: {e}")
 
     logger.info(f"Tools registry v6 built: {len(registry)} tools available")
     return registry

@@ -1,0 +1,29 @@
+{
+  "repo": "FoundationAgents/MetaGPT",
+  "stars": 65496,
+  "url": "https://github.com/FoundationAgents/MetaGPT",
+  "ideas": {
+    "repo": "FoundationAgents/MetaGPT",
+    "signals": [
+      "agent",
+      "multi-agent",
+      "api",
+      "cli"
+    ],
+    "ideas": [
+      "بناء tool wrapper يستدعي API/SDK الخاصة بالمشروع عند توفرها",
+      "بناء tool wrapper لتشغيل CLI commands الخاصة بالمشروع داخل sandbox (عند توفره)",
+      "استلهام نمط orchestration أو prompts من المشروع وإضافته كمعرفة"
+    ],
+    "tool_adapters": [
+      {
+        "name": "oss_foundationagents_metagpt_info",
+        "description": "عرض ملخص سريع عن FoundationAgents/MetaGPT (مبني من OSS exploiter)",
+        "kind": "info",
+        "repo": "FoundationAgents/MetaGPT"
+      }
+    ]
+  },
+  "readme_preview": "\n# MetaGPT: The Multi-Agent Framework\n\n<p align=\"center\">\n<a href=\"\"><img src=\"docs/resources/MetaGPT-new-log.png\" alt=\"MetaGPT logo: Enable GPT to work in a software company, collaborating to tackle more complex tasks.\" width=\"150px\"></a>\n</p>\n\n<p align=\"center\">\n[ <b>En</b> |\n<a href=\"docs/README_CN.md\">中</a> |\n<a href=\"docs/README_FR.md\">Fr</a> |\n<a href=\"docs/README_JA.md\">日</a> ]\n<b>Assign different roles to GPTs to form a collaborative entity for complex tasks.</b>\n</p>\n\n<p align=\"center\">\n<a href=\"https://opensource.org/licenses/MIT\"><img src=\"https://img.shields.io/badge/License-MIT-blue.svg\" alt=\"License: MIT\"></a>\n<a href=\"https://discord.gg/DYn29wFk9z\"><img src=\"https://img.shields.io/badge/Join-Discord-gGnrXvVz7a?logo=discord\" alt=\"Discord Follow\"></a>\n<a href=\"https://twitter.com/MetaGPT_\"><img src=\"https://img.shields.io/twitter/follow/MetaGPT?style=social\" alt=\"Twitter Follow\"></a>\n</p>\n\n<h4 align=\"center\">\n    \n</h4>\n\n## News\n\n🚀 Mar. 10, 2025: 🎉 [mgx.dev](https://mgx.dev/) is the #1 Product of the Week on @ProductHunt! 🏆\n\n🚀 Mar. &nbsp; 4, 2025: 🎉 [mgx.dev](https://mgx.dev/) is the #1 Product of the Day on @ProductHunt! 🏆\n\n🚀 Feb. 19, 2025: Today we are officially lau",
+  "created_at": "2026-03-18T20:31:00.672986"
+}

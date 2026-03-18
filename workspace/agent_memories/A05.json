@@ -1,0 +1,44 @@
+{
+  "agent_id": "A05",
+  "created_at": "2026-03-18T21:06:51.461512",
+  "known_agents": {
+    "A01": {
+      "name": "القيادة الاستراتيجية",
+      "specialty": "قيادة",
+      "first_met": "2026-03-18T21:06:51.462511",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ القيادة الاستراتيجية",
+          "timestamp": "2026-03-18T21:06:51.462511"
+        }
+      ],
+      "trust_score": 0.55,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A01",
+        "A09"
+      ],
+      "task": "بناء موصل Telegram",
+      "result": "تم بنجاح",
+      "success": true,
+      "timestamp": "2026-03-18T21:06:51.465512"
+    }
+  ],
+  "decisions": [],
+  "insights": [
+    {
+      "insight": "يجب إضافة rate limiting لكل API",
+      "topic": "security",
+      "timestamp": "2026-03-18T21:06:51.465512"
+    }
+  ],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 1,
+  "last_active": "2026-03-18T21:06:51.462511"
+}

@@ -284,7 +284,7 @@ class SafeEvolution:
         1. evaluate كل الوكلاء
         2. حدد أضعف 10 وكلاء
         3. improve كل واحد
-        4. git commit + push إذا تغيّر > 3 وكلاء
+        4. (اختياري) git commit + push إذا تغيّر > 3 وكلاء
         """
         import subprocess
 
@@ -323,8 +323,15 @@ class SafeEvolution:
             except Exception as e:
                 logger.error(f"[SafeEvolution] Error improving {agent_id}: {e}")
 
-        # 4. git commit إذا تغيّر > 3 وكلاء
-        if len(changed_agents) > 3:
+        # 4. git commit/push (اختياري)
+        # افتراضيًا: لا يقوم النظام بتعديل git أو الدفع تلقائياً.
+        # فعّل ذلك صراحة عبر متغيرات البيئة:
+        #   ALLOW_GIT_AUTOCOMMIT=1  (للكومِت)
+        #   ALLOW_GIT_PUSH=1        (للدفع)
+        allow_commit = os.getenv("ALLOW_GIT_AUTOCOMMIT", "").strip() == "1"
+        allow_push = os.getenv("ALLOW_GIT_PUSH", "").strip() == "1"
+
+        if len(changed_agents) > 3 and allow_commit:
             try:
                 agents_str = ", ".join(changed_agents[:5])
                 subprocess.run(["git", "add", "agents/"], check=True)
@@ -333,8 +340,11 @@ class SafeEvolution:
                     f"feat(evolution): auto-improve {len(changed_agents)} agents\n"
                     f"Improved: {agents_str}..."
                 ], check=True)
-                subprocess.run(["git", "push"], check=True)
-                logger.info(f"[SafeEvolution] Committed and pushed {len(changed_agents)} improvements")
+                if allow_push:
+                    subprocess.run(["git", "push"], check=True)
+                    logger.info(f"[SafeEvolution] Committed and pushed {len(changed_agents)} improvements")
+                else:
+                    logger.info(f"[SafeEvolution] Committed {len(changed_agents)} improvements (push disabled)")
             except Exception as e:
                 logger.warning(f"[SafeEvolution] Git commit error: {e}")
 

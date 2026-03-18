@@ -1,0 +1,38 @@
+{
+  "agent_id": "A09",
+  "created_at": "2026-03-18T21:06:51.463510",
+  "known_agents": {
+    "A01": {
+      "name": "القيادة",
+      "specialty": "قيادة",
+      "first_met": "2026-03-18T21:06:51.463510",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ القيادة",
+          "timestamp": "2026-03-18T21:06:51.463510"
+        }
+      ],
+      "trust_score": 0.55,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A01",
+        "A05"
+      ],
+      "task": "بناء موصل Telegram",
+      "result": "تم بنجاح",
+      "success": true,
+      "timestamp": "2026-03-18T21:06:51.465512"
+    }
+  ],
+  "decisions": [],
+  "insights": [],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 1,
+  "last_active": "2026-03-18T21:06:51.463510"
+}
