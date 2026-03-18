@@ -390,6 +390,8 @@ elif page == "💬 Chat تفاعلي":
                 })
             else:
                 steps = result.get("steps", [])
+                if not isinstance(steps, list):
+                    steps = []
                 for step in steps:
                     st.session_state.chat_history.append({
                         "role": "agent",
