@@ -1,0 +1,45 @@
+{
+  "description": "خريطة ربط فئات OpenClaw Skills بوكلاء Army81",
+  "total_skills": 5302,
+  "source": "awesome-openclaw-skills-main.zip",
+  "mapping": {
+    "cat1_science": {
+      "relevant_categories": ["search-and-research", "health-and-fitness", "data-and-analytics"],
+      "agents": ["A02", "A03", "A04", "A05", "A06", "A07", "A08", "A09", "A10"]
+    },
+    "cat2_society": {
+      "relevant_categories": ["communication", "marketing-and-sales", "notes-and-pkm", "personal-development"],
+      "agents": ["A11", "A12", "A13", "A14", "A15", "A16", "A17", "A18", "A19", "A20", "A21", "A22", "A23", "A24", "A25"]
+    },
+    "cat3_tools": {
+      "relevant_categories": ["coding-agents-and-ides", "cli-utilities", "browser-and-automation", "devops-and-cloud", "web-and-frontend-development"],
+      "agents": ["A26", "A27", "A28", "A29", "A30", "A31", "A32", "A33", "A34", "A35"]
+    },
+    "cat4_management": {
+      "relevant_categories": ["productivity-and-tasks", "calendar-and-scheduling", "git-and-github"],
+      "agents": ["A36", "A37", "A38", "A39", "A40", "A41", "A42", "A43"]
+    },
+    "cat5_behavior": {
+      "relevant_categories": ["ai-and-llms", "personal-development", "speech-and-transcription"],
+      "agents": ["A44", "A45", "A46", "A47", "A48", "A49", "A50", "A51", "A52", "A53", "A54", "A55", "A56"]
+    },
+    "cat6_leadership": {
+      "relevant_categories": ["ai-and-llms", "search-and-research", "security-and-passwords", "self-hosted-and-automation"],
+      "agents": ["A57", "A58", "A59", "A60", "A61", "A62", "A63", "A64", "A65", "A66", "A67", "A68", "A69", "A70", "A71", "A72"]
+    },
+    "cat7_new": {
+      "relevant_categories": ["ai-and-llms", "coding-agents-and-ides", "data-and-analytics", "self-hosted-and-automation"],
+      "agents": ["A73", "A74", "A75", "A76", "A77", "A78", "A79", "A80", "A81"]
+    }
+  },
+  "high_priority_skills": [
+    "academic-deep-research",
+    "agent-memory",
+    "agent-autonomy-kit",
+    "agent-team-kit",
+    "csv-pipeline",
+    "daily-report",
+    "data-analyst",
+    "pdf-and-documents"
+  ]
+}

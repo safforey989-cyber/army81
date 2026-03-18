@@ -22,6 +22,8 @@ PENDING_FILE = os.path.join(WORKSPACE_DIR, "pending_approvals.json")
 DISCOVERY_LOG = os.path.join(WORKSPACE_DIR, "discovery_log.json")
 SKILLS_DIR = os.path.join(BASE_DIR, "skills")
 AGENTS_DIR = os.path.join(BASE_DIR, "agents")
+OPENCLAW_DIR = os.path.join(BASE_DIR, "knowledge", "openclaw_skills")
+OPENCLAW_MAP = os.path.join(OPENCLAW_DIR, "SKILL_AGENT_MAP.json")
 
 os.makedirs(WORKSPACE_DIR, exist_ok=True)
 os.makedirs(SKILLS_DIR, exist_ok=True)
@@ -319,6 +321,81 @@ class SelfBuilder:
             "calendar_manager", "task_tracker",
         ]
         return [s for s in desired if s not in existing]
+
+    def search_openclaw_catalog(self, query: str, category: str = None) -> List[Dict]:
+        """
+        بحث في كتالوج OpenClaw Skills (5302 مهارة)
+        يبحث في ملفات knowledge/openclaw_skills/
+        """
+        results = []
+        query_lower = query.lower()
+
+        if not os.path.exists(OPENCLAW_DIR):
+            return results
+
+        # حدد الملفات للبحث
+        if category:
+            files = [f"{category}.md"]
+        else:
+            files = [f for f in os.listdir(OPENCLAW_DIR)
+                     if f.endswith(".md") and f != "README.md"
+                     and f != "SKILL_AGENT_MAP.json"]
+
+        for fname in files:
+            fpath = os.path.join(OPENCLAW_DIR, fname)
+            if not os.path.exists(fpath):
+                continue
+
+            cat_name = fname.replace(".md", "")
+            with open(fpath, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line.startswith("- [") and query_lower in line.lower():
+                        # Parse: - [name](url) - description
+                        try:
+                            name = line.split("](")[0].replace("- [", "")
+                            url = line.split("](")[1].split(")")[0]
+                            desc = line.split(") - ", 1)[1] if ") - " in line else ""
+                            results.append({
+                                "name": name,
+                                "url": url,
+                                "description": desc[:200],
+                                "category": cat_name,
+                            })
+                        except (IndexError, ValueError):
+                            pass
+
+        return results[:20]  # أعلى 20 نتيجة
+
+    def get_recommended_skills_for_agent(self, agent_id: str) -> List[Dict]:
+        """
+        يقترح مهارات OpenClaw مناسبة لوكيل معين
+        بناءً على خريطة SKILL_AGENT_MAP.json
+        """
+        if not os.path.exists(OPENCLAW_MAP):
+            return []
+
+        with open(OPENCLAW_MAP, "r", encoding="utf-8") as f:
+            mapping = json.load(f)
+
+        # ابحث عن الفئة التي ينتمي لها الوكيل
+        agent_category = None
+        for cat, info in mapping.get("mapping", {}).items():
+            if agent_id in info.get("agents", []):
+                agent_category = cat
+                break
+
+        if not agent_category:
+            return []
+
+        # ابحث في الفئات المرتبطة
+        relevant_cats = mapping["mapping"][agent_category].get("relevant_categories", [])
+        results = []
+        for cat in relevant_cats[:2]:  # أهم فئتين فقط
+            skills = self.search_openclaw_catalog("agent", category=cat)
+            results.extend(skills[:5])
+
+        return results
 
     def identify_useful_connectors(self) -> List[Dict]:
         """يحدد الموصلات المفيدة التي يمكن إضافتها"""
