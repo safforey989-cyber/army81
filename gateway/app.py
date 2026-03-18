@@ -25,6 +25,8 @@ from tools.web_search import web_search, fetch_news
 from tools.registry import build_tools_registry
 from core.base_agent import Tool
 from protocols.a2a import A2AProtocol
+from core.performance_monitor import PerformanceMonitor
+from protocols.pubsub_protocol import get_pubsub
 
 # ── Logging ──────────────────────────────────────────────
 os.makedirs("logs", exist_ok=True)
@@ -49,6 +51,8 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"],
 
 router = SmartRouter()
 a2a = A2AProtocol(router)
+performance_monitor = PerformanceMonitor(router)
+pubsub = get_pubsub()
 
 # ── سجل الأدوات الكامل ────────────────────────────────────
 TOOLS_REGISTRY: Dict[str, Tool] = build_tools_registry()
@@ -407,6 +411,35 @@ async def latest_report():
         "content": latest.read_text(encoding="utf-8"),
         "size": latest.stat().st_size
     }
+
+# ── Performance & PubSub Endpoints ────────────────────────
+@app.get("/performance")
+async def get_performance():
+    """تقرير أداء شامل لكل الوكلاء"""
+    return performance_monitor.generate_report()
+
+@app.get("/performance/{agent_id}")
+async def get_agent_performance(agent_id: str):
+    """تقرير أداء وكيل واحد"""
+    if agent_id not in router.agents:
+        raise HTTPException(404, f"Agent {agent_id} not found")
+    return performance_monitor.evaluate_agent(router.agents[agent_id])
+
+@app.get("/performance/suggestions")
+async def get_improvement_suggestions():
+    """اقتراحات تحسين للوكلاء الأضعف"""
+    return performance_monitor.get_improvement_suggestions()
+
+@app.get("/pubsub/status")
+async def pubsub_status():
+    """حالة بروتوكول Pub/Sub"""
+    return pubsub.status()
+
+@app.post("/pubsub/publish")
+async def pubsub_publish(topic: str, message: Dict, sender: str = "api"):
+    """نشر رسالة على موضوع"""
+    pubsub.publish(topic, message, sender)
+    return {"status": "published", "topic": topic}
 
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":

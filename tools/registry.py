@@ -38,9 +38,9 @@ def build_tools_registry() -> Dict[str, Tool]:
 
     registry["fetch_news"] = Tool(
         name="fetch_news",
-        description="جلب أخبار حديثة حول موضوع معين",
-        func=_lazy_import("tools.web_search", "fetch_news"),
-        parameters={"topic": "الموضوع", "lang": "اللغة (ar/en)"}
+        description="جلب أخبار حديثة حول موضوع معين من RSS + NewsAPI + Serper",
+        func=_lazy_import("tools.news_fetcher", "fetch_news_by_topic"),
+        parameters={"topic": "الموضوع", "max_results": "عدد النتائج (افتراضي 5)"}
     )
 
     # Tavily — بحث مُحسَّن للوكلاء
@@ -188,6 +188,7 @@ CATEGORY_TOOLS = {
     "cat4_management": ["web_search", "analyze_data", "read_file", "write_file", "remember"],
     "cat5_behavior": ["web_search", "deep_search", "wiki_search", "research"],
     "cat6_leadership": ["web_search", "deep_search", "research", "market_data", "remember", "recall"],
+    "cat7_new": ["web_search", "remember", "recall", "semantic_remember", "semantic_recall", "analyze_data"],
 }
 
 

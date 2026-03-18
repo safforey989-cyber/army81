@@ -1,5 +1,80 @@
 # CHANGELOG
 
+## [5.0.0] — 2026-03-18 — تنفيذ المراحل الأربع بالترتيب
+
+### المرحلة 1 — الأدوات الحقيقية
+- **`tools/news_fetcher.py`** — جمع أخبار من مصادر متعددة:
+  - RSS feeds (Google News, ArsTechnica, Feedburner) — 6 فئات
+  - NewsAPI — أخبار حديثة بكل اللغات
+  - Serper News API — كبديل أخير
+  - `fetch_news_by_topic()` — يحاول كل المصادر بالترتيب
+  - `fetch_rss_by_topic()` — RSS فقط حسب الموضوع
+  - `fetch_daily_briefing()` — تقرير إخباري يومي شامل
+- تحديث `tools/registry.py` — ربط fetch_news بـ news_fetcher بدلاً من web_search
+- إضافة `cat7_new` لخريطة `CATEGORY_TOOLS`
+
+### المرحلة 2 — تخصيص الوكلاء
+- **`agents/registry.py`** — سجل كامل لربط كل وكيل بأدواته:
+  - 81 وكيل مع أدوات مخصصة لكل واحد
+  - `get_tools_for_agent(agent_id)` — أدوات وكيل معين
+  - `get_agents_with_tool(tool_name)` — من يملك أداة معينة
+  - `get_category_agents(category)` — خريطة أدوات فئة
+  - `validate_registry()` — فحص صحة السجل
+- كل وكيل مربوط بـ 3-6 أدوات تناسب تخصصه
+
+### المرحلة 3 — البنية التحتية
+- **`memory/firestore_memory.py`** — تكامل كامل مع Google Cloud Firestore:
+  - `save_agent_memory()` / `get_agent_memory()` — ذاكرة الوكلاء
+  - `save_task_result()` / `get_task_history()` — تاريخ المهام
+  - `save_config()` / `get_config()` — إعدادات النظام
+  - `save_collective_insight()` / `query_collective()` — معرفة جماعية
+  - `check_firestore_health()` — فحص الاتصال
+- **`scripts/cloud_scheduler_setup.py`** — Google Cloud Scheduler:
+  - 4 وظائف مجدولة: تحديث يومي (2 ص)، ضغط أسبوعي (4 ص الأحد)، فحص أداء (6 ص)، تطور ذاتي (3 ص السبت)
+  - `--cloud` — إنشاء jobs في Cloud Scheduler
+  - `--local` — APScheduler محلي كبديل
+  - إنشاء سكربت shell تلقائي
+- **`protocols/pubsub_protocol.py`** — Pub/Sub للتواصل بين الوكلاء:
+  - يدعم Google Cloud Pub/Sub (إنتاج) مع fallback محلي (تطوير)
+  - `publish()` / `subscribe()` — نشر واشتراك
+  - `publish_task()` — نشر مهمة لوكيل
+  - `publish_result()` — نشر نتيجة
+  - `publish_alert()` — تنبيهات نظام
+  - `broadcast_to_category()` — بث لكل فئة
+  - دعم Wildcard subscriptions (مثل: `agents.*`)
+  - Singleton pattern عبر `get_pubsub()`
+
+### المرحلة 4 — التطور الذاتي
+- **`core/performance_monitor.py`** — مراقبة أداء الوكلاء:
+  - `evaluate_agent()` — تقييم شامل (نجاح، أدوات، سرعة)
+  - `generate_report()` — تقرير أداء لكل 81 وكيل
+  - `get_improvement_suggestions()` — اقتراحات تحسين
+  - `compare_agents()` — مقارنة بين وكلاء
+  - حفظ تقارير تلقائي في `workspace/performance_reports/`
+- **`core/prompt_optimizer.py`** — تحسين system prompts تلقائياً:
+  - `collect_lesson()` — جمع دروس من كل مهمة
+  - `analyze_patterns()` — تحليل أنماط النجاح والفشل
+  - `suggest_improvement()` — اقتراح prompt محسّن عبر AI
+  - `apply_improvement()` — تطبيق مع نسخة احتياطية
+  - `rollback_prompt()` — استعادة الـ prompt السابق
+  - `optimize_weakest()` — تحسين أضعف N وكيل تلقائياً
+
+### Gateway جديد
+- `GET /performance` — تقرير أداء شامل
+- `GET /performance/{agent_id}` — أداء وكيل واحد
+- `GET /performance/suggestions` — اقتراحات تحسين
+- `GET /pubsub/status` — حالة Pub/Sub
+- `POST /pubsub/publish` — نشر رسالة
+
+### الاختبارات
+- `python tests/test_core.py` — **14/14 نجح** ✅
+  - 7 اختبارات أساسية (سابقة)
+  - +2 أدوات جديدة (news_fetcher، agents registry)
+  - +3 بنية تحتية (Firestore، Pub/Sub، Cloud Scheduler)
+  - +2 تطور ذاتي (performance monitor، prompt optimizer)
+
+---
+
 ## [4.0.0] — 2026-03-18 — الترقية الشاملة الكاملة
 
 ### الإضافات الرئيسية
