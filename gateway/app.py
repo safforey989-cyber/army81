@@ -155,7 +155,37 @@ async def root():
 
 @app.get("/status")
 async def status():
-    return router.status()
+    base = router.status()
+
+    # v14: إضافة إحصائيات الذاكرة الحقيقية
+    memory_stats = {"episodic": 0, "chroma": 0, "swarm_agents": 0, "core_interactions": 0}
+    try:
+        import sqlite3
+        db = sqlite3.connect("workspace/episodic_memory.db")
+        memory_stats["episodic"] = db.execute("SELECT COUNT(*) FROM episodes").fetchone()[0]
+        db.close()
+    except Exception:
+        pass
+    try:
+        from memory.swarm_memory import SwarmMemoryManager
+        mgr = SwarmMemoryManager.get_instance()
+        s = mgr.get_full_stats()
+        memory_stats["swarm_agents"] = s.get("agents_with_memory", 0)
+        memory_stats["core_interactions"] = s.get("total_interactions", 0)
+        memory_stats["core_decisions"] = s.get("core", {}).get("decisions", 0)
+        memory_stats["core_knowledge"] = s.get("core", {}).get("shared_knowledge", 0)
+    except Exception:
+        pass
+    try:
+        from pathlib import Path
+        chroma_dir = Path("workspace/chroma_db")
+        if chroma_dir.exists():
+            memory_stats["chroma"] = sum(1 for _ in chroma_dir.rglob("*") if _.is_file())
+    except Exception:
+        pass
+
+    base["memory"] = memory_stats
+    return base
 
 @app.get("/agents")
 async def list_agents():
