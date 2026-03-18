@@ -4,7 +4,7 @@
   "name_ar": "وكيل الإنذار المبكر",
   "category": "cat3_tools",
   "description": "يرصد الإشارات الضعيفة للتهديدات والفرص القادمة ويطلق تنبيهات استباقية.",
-  "model": "claude-smart",
+  "model": "grok-mini",
   "tools": [
     "web_search",
     "deep_search",

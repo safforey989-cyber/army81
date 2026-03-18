@@ -4,7 +4,7 @@
   "name_ar": "وكيل خبير الجيوسياسة",
   "category": "cat6_leadership",
   "description": "يحلل التحولات الجيوسياسية وموازين القوى الدولية وتأثيرها على القرارات الاستراتيجية.",
-  "model": "gemini-flash",
+  "model": "grok-3",
   "tools": [
     "web_search",
     "deep_search",

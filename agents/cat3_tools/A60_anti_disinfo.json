@@ -4,7 +4,7 @@
   "name_ar": "وكيل مكافحة التضليل",
   "category": "cat3_tools",
   "description": "يكشف المعلومات المضللة والأخبار الكاذبة ويتحقق من المعلومات بمنهجية علمية.",
-  "model": "claude-smart",
+  "model": "perplexity-fast",
   "tools": [
     "web_search",
     "deep_search",

@@ -4,7 +4,7 @@
   "name_ar": "وكيل المناخ والبيئة",
   "category": "cat1_science",
   "description": "يحلل التغير المناخي والتحديات البيئية ويقيّم الحلول المستدامة بمنهج علمي دقيق.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "arxiv_search",
     "web_search",

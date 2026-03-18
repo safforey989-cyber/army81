@@ -4,7 +4,7 @@
   "name_ar": "وكيل حل النزاعات",
   "category": "cat5_behavior",
   "description": "يحلل النزاعات ويصمم مسارات الحل البنّاء سواء كانت شخصية أو تنظيمية أو دولية.",
-  "model": "gemini-flash",
+  "model": "claude-smart",
   "tools": [
     "web_search",
     "deep_search",

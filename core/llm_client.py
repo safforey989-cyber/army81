@@ -13,57 +13,108 @@ logger = logging.getLogger("army81.llm")
 # النماذج الحقيقية — OpenRouter يدعم 200+ نموذج
 # ======================================================
 REAL_MODELS = {
-    # ═══ Gemini — Google (OpenRouter) ═══
-    "gemini-flash":  {"provider": "openrouter", "model": "google/gemini-2.0-flash-001",    "tier": "free",  "rpm": 60},
-    "gemini-fast":   {"provider": "openrouter", "model": "google/gemini-2.5-flash-lite",   "tier": "free",  "rpm": 60},
-    "gemini-pro":    {"provider": "openrouter", "model": "google/gemini-2.5-pro",           "tier": "paid",  "rpm": 20},
-    "gemini-think":  {"provider": "openrouter", "model": "google/gemini-2.5-flash",         "tier": "free",  "rpm": 10},
+    # ══════════════════════════════
+    # Google Gemini (عبر OpenRouter)
+    # ══════════════════════════════
+    "gemini-flash":    {"provider": "openrouter", "model": "google/gemini-2.0-flash-001",       "tier": "fast",    "cost": 0.1,  "strengths": ["speed", "general", "arabic"]},
+    "gemini-pro":      {"provider": "openrouter", "model": "google/gemini-2.5-pro",             "tier": "smart",   "cost": 1.25, "strengths": ["reasoning", "long_context", "analysis"]},
+    "gemini-think":    {"provider": "openrouter", "model": "google/gemini-2.5-flash",           "tier": "reason",  "cost": 0.5,  "strengths": ["deep_thinking", "math", "science"]},
+    "gemini-2-flash":  {"provider": "openrouter", "model": "google/gemini-2.5-flash-preview",   "tier": "fast",    "cost": 0.15, "strengths": ["speed", "multimodal"]},
 
-    # ═══ Claude — Anthropic (OpenRouter) ═══
-    "claude-fast":   {"provider": "openrouter", "model": "anthropic/claude-haiku-4.5",     "tier": "paid",  "rpm": 60},
-    "claude-smart":  {"provider": "openrouter", "model": "anthropic/claude-sonnet-4.6",    "tier": "paid",  "rpm": 50},
+    # ══════════════════════════════
+    # Anthropic Claude (عبر OpenRouter)
+    # ══════════════════════════════
+    "claude-fast":     {"provider": "openrouter", "model": "anthropic/claude-haiku-4-5",        "tier": "fast",    "cost": 0.25, "strengths": ["speed", "instructions", "arabic"]},
+    "claude-smart":    {"provider": "openrouter", "model": "anthropic/claude-sonnet-4-6",       "tier": "smart",   "cost": 3.0,  "strengths": ["reasoning", "coding", "analysis"]},
+    "claude-opus":     {"provider": "openrouter", "model": "anthropic/claude-opus-4-6",         "tier": "premium", "cost": 15.0, "strengths": ["complex_reasoning", "creativity", "nuance"]},
 
-    # ═══ DeepSeek — تفكير عميق (OpenRouter) ═══
-    "deepseek-r1":   {"provider": "openrouter", "model": "deepseek/deepseek-r1",           "tier": "paid",  "rpm": 20},
-    "deepseek-chat": {"provider": "openrouter", "model": "deepseek/deepseek-chat",         "tier": "free",  "rpm": 30},
-    "deepseek-v3":   {"provider": "openrouter", "model": "deepseek/deepseek-chat-v3-0324:free", "tier": "free", "rpm": 30},
+    # ══════════════════════════════
+    # OpenAI GPT (عبر OpenRouter)
+    # ══════════════════════════════
+    "gpt4o":           {"provider": "openrouter", "model": "openai/gpt-4o",                     "tier": "smart",   "cost": 2.5,  "strengths": ["reasoning", "coding", "vision"]},
+    "gpt4o-mini":      {"provider": "openrouter", "model": "openai/gpt-4o-mini",                "tier": "fast",    "cost": 0.15, "strengths": ["speed", "general", "cost_effective"]},
+    "o3-mini":         {"provider": "openrouter", "model": "openai/o3-mini",                    "tier": "reason",  "cost": 1.1,  "strengths": ["math", "science", "deep_reasoning"]},
 
-    # ═══ Meta Llama (OpenRouter) ═══
-    "llama-free":    {"provider": "openrouter", "model": "meta-llama/llama-3.2-3b-instruct:free", "tier": "free", "rpm": 20},
-    "llama-70b":     {"provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct:free", "tier": "free", "rpm": 10},
+    # ══════════════════════════════
+    # Meta Llama (مجاني عبر OpenRouter)
+    # ══════════════════════════════
+    "llama-free":      {"provider": "openrouter", "model": "meta-llama/llama-3.2-3b-instruct:free", "tier": "free", "cost": 0.0, "strengths": ["general", "free"]},
+    "llama-70b":       {"provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct", "tier": "smart",   "cost": 0.3,  "strengths": ["reasoning", "general", "cheap"]},
 
-    # ═══ Qwen — Alibaba (OpenRouter) ═══
-    "qwen-free":     {"provider": "openrouter", "model": "qwen/qwen-2.5-7b-instruct:free",       "tier": "free", "rpm": 20},
-    "qwen-coder":    {"provider": "openrouter", "model": "qwen/qwen-2.5-coder-32b-instruct:free", "tier": "free", "rpm": 15},
+    # ══════════════════════════════
+    # DeepSeek (الأرخص + الأذكى)
+    # ══════════════════════════════
+    "deepseek-chat":   {"provider": "openrouter", "model": "deepseek/deepseek-chat",            "tier": "smart",   "cost": 0.14, "strengths": ["reasoning", "coding", "cheap"]},
+    "deepseek-r1":     {"provider": "openrouter", "model": "deepseek/deepseek-r1",              "tier": "reason",  "cost": 0.55, "strengths": ["deep_reasoning", "math", "science"]},
+    "deepseek-r1-free":{"provider": "openrouter", "model": "deepseek/deepseek-r1:free",         "tier": "free",    "cost": 0.0,  "strengths": ["reasoning", "free"]},
 
-    # ═══ Mistral (OpenRouter) ═══
-    "mistral-small": {"provider": "openrouter", "model": "mistralai/mistral-small-3.1-24b-instruct:free", "tier": "free", "rpm": 20},
+    # ══════════════════════════════
+    # Mistral (سريع + رخيص)
+    # ══════════════════════════════
+    "mistral-small":   {"provider": "openrouter", "model": "mistralai/mistral-small-3.1-24b-instruct:free", "tier": "free", "cost": 0.0, "strengths": ["speed", "multilingual", "free"]},
+    "mistral-large":   {"provider": "openrouter", "model": "mistralai/mistral-large-2411",      "tier": "smart",   "cost": 2.0,  "strengths": ["reasoning", "multilingual", "coding"]},
+    "codestral":       {"provider": "openrouter", "model": "mistralai/codestral-2501",          "tier": "smart",   "cost": 0.3,  "strengths": ["coding", "code_completion", "debugging"]},
 
-    # ═══ Microsoft Phi (OpenRouter) ═══
-    "phi-mini":      {"provider": "openrouter", "model": "microsoft/phi-4-mini-instruct:free",    "tier": "free", "rpm": 20},
+    # ══════════════════════════════
+    # Qwen (ممتاز للعربية والكود)
+    # ══════════════════════════════
+    "qwen-72b":        {"provider": "openrouter", "model": "qwen/qwen-2.5-72b-instruct",       "tier": "smart",   "cost": 0.35, "strengths": ["arabic", "coding", "multilingual"]},
+    "qwen-coder":      {"provider": "openrouter", "model": "qwen/qwen-2.5-coder-32b-instruct:free", "tier": "free", "cost": 0.0, "strengths": ["coding", "debugging", "free"]},
+    "qwen-free":       {"provider": "openrouter", "model": "qwen/qwen-2.5-7b-instruct:free",   "tier": "free",    "cost": 0.0,  "strengths": ["general", "free", "arabic"]},
 
-    # ═══ Perplexity — بحث مباشر ═══
-    "perplexity":    {"provider": "perplexity", "model": "sonar",                                  "tier": "paid", "rpm": 20},
+    # ══════════════════════════════
+    # xAI Grok (أحدث + متخصص)
+    # ══════════════════════════════
+    "grok-3":          {"provider": "openrouter", "model": "x-ai/grok-3-beta",                 "tier": "premium", "cost": 3.0,  "strengths": ["reasoning", "current_events", "analysis"]},
+    "grok-mini":       {"provider": "openrouter", "model": "x-ai/grok-3-mini-beta",            "tier": "fast",    "cost": 0.3,  "strengths": ["speed", "reasoning", "current_events"]},
 
-    # ═══ Ollama — محلي (fallback) ═══
-    "local-small":   {"provider": "ollama", "model": "llama3.2:3b",     "tier": "free", "rpm": 999},
-    "local-medium":  {"provider": "ollama", "model": "qwen2.5:7b",      "tier": "free", "rpm": 999},
-    "local-coder":   {"provider": "ollama", "model": "qwen2.5-coder:7b","tier": "free", "rpm": 999},
+    # ══════════════════════════════
+    # Perplexity (بحث + إجابة)
+    # ══════════════════════════════
+    "perplexity":      {"provider": "perplexity", "model": "sonar-pro",                        "tier": "search",  "cost": 3.0,  "strengths": ["web_search", "current_info", "citations"]},
+    "perplexity-fast": {"provider": "perplexity", "model": "sonar",                            "tier": "search",  "cost": 1.0,  "strengths": ["web_search", "fast", "current_info"]},
+
+    # ══════════════════════════════
+    # Ollama محلي (fallback مجاني)
+    # ══════════════════════════════
+    "local-small":     {"provider": "ollama", "model": "llama3.2:3b",      "tier": "local", "cost": 0.0, "strengths": ["offline", "free", "private"]},
+    "local-medium":    {"provider": "ollama", "model": "qwen2.5:7b",       "tier": "local", "cost": 0.0, "strengths": ["offline", "free", "arabic"]},
+    "local-coder":     {"provider": "ollama", "model": "qwen2.5-coder:7b", "tier": "local", "cost": 0.0, "strengths": ["coding", "offline", "free"]},
 }
 
+# خريطة التخصصات → أفضل نماذج (بالترتيب)
+TASK_MODEL_MAP = {
+    "coding":         ["qwen-coder", "codestral", "claude-smart", "deepseek-chat"],
+    "medical":        ["deepseek-r1", "gemini-think", "o3-mini", "claude-smart"],
+    "legal":          ["claude-smart", "gpt4o", "mistral-large", "deepseek-r1"],
+    "financial":      ["deepseek-chat", "gpt4o", "mistral-large", "gemini-pro"],
+    "arabic":         ["qwen-72b", "gemini-flash", "claude-fast", "qwen-free"],
+    "science":        ["deepseek-r1", "o3-mini", "gemini-think", "claude-smart"],
+    "strategy":       ["claude-smart", "gpt4o", "gemini-pro", "grok-3"],
+    "current_events": ["perplexity", "grok-3", "perplexity-fast"],
+    "creative":       ["claude-opus", "gpt4o", "gemini-pro"],
+    "fast_simple":    ["gemini-flash", "gpt4o-mini", "qwen-free", "llama-free"],
+    "math":           ["o3-mini", "deepseek-r1", "gemini-think"],
+    "security":       ["deepseek-r1", "claude-smart", "gemini-pro"],
+    "behavior":       ["claude-smart", "gemini-pro", "deepseek-r1"],
+    "leadership":     ["claude-opus", "gpt4o", "gemini-pro"],
+    "research":       ["gemini-pro", "deepseek-r1", "perplexity"],
+}
+
+# Legacy mapping (backwards compatibility)
 TASK_TO_MODEL = {
-    "simple":   "gemini-flash",
-    "research": "deepseek-r1",
-    "code":     "qwen-coder",
-    "critical": "claude-smart",
-    "fast":     "gemini-flash",
-    "analysis": "deepseek-chat",
-    "strategy": "claude-smart",
-    "medical":  "gemini-pro",
-    "financial":"gemini-pro",
-    "search":   "perplexity",
-    "local":    "local-medium",
-    "free":     "llama-70b",
+    "simple":    "gemini-flash",
+    "research":  "deepseek-r1",
+    "code":      "qwen-coder",
+    "critical":  "claude-smart",
+    "fast":      "gemini-flash",
+    "analysis":  "deepseek-chat",
+    "strategy":  "claude-smart",
+    "medical":   "deepseek-r1",
+    "financial": "deepseek-chat",
+    "search":    "perplexity",
+    "local":     "local-medium",
+    "free":      "llama-free",
 }
 
 OPENROUTER_BASE = "https://openrouter.ai/api/v1"

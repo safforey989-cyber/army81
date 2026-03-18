@@ -4,7 +4,7 @@
   "name_ar": "وكيل البحث العلمي",
   "category": "cat1_science",
   "description": "يبحث في الأدبيات العلمية ويلخص أحدث الاكتشافات ويربطها بالتطبيقات العملية.",
-  "model": "deepseek-r1",
+  "model": "gemini-pro",
   "tools": [
     "arxiv_search",
     "pubmed_search",

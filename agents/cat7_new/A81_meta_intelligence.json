@@ -4,7 +4,7 @@
   "name_ar": "الوكيل الميتا الاستخباراتي",
   "category": "cat7_new",
   "description": "القائد الاستراتيجي للنظام الكامل — يوحّد رؤى الـ80 وكيل ويصنع القرار النهائي.",
-  "model": "claude-fast",
+  "model": "claude-smart",
   "tools": [
     "web_search",
     "deep_search",

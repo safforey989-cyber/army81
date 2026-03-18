@@ -4,7 +4,7 @@
   "name_ar": "وكيل الفيزياء وعلوم الكم",
   "category": "cat1_science",
   "description": "يشرح المفاهيم الفيزيائية من الكلاسيكية إلى الكم ويحلل تطبيقات الفيزياء في التقنية.",
-  "model": "gemini-flash",
+  "model": "gemini-think",
   "tools": [
     "arxiv_search",
     "web_search",

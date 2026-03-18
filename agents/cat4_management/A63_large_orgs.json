@@ -4,7 +4,7 @@
   "name_ar": "وكيل إدارة المؤسسات الكبرى",
   "category": "cat4_management",
   "description": "متخصص في تعقيدات إدارة المنظمات الكبيرة: التنسيق والتوافق وكسر الصوامع.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "web_search",
     "deep_search",

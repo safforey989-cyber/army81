@@ -4,7 +4,7 @@
   "name_ar": "وكيل الاستخبارات الإعلامية",
   "category": "cat3_tools",
   "description": "يرصد الأخبار يومياً من مئات المصادر، يلخصها، ويوزع الأهم منها.",
-  "model": "gemini-flash",
+  "model": "perplexity-fast",
   "tools": [
     "web_search",
     "fetch_news",

@@ -4,7 +4,7 @@
   "name_ar": "وكيل تقييم المخاطر",
   "category": "cat6_leadership",
   "description": "يقيّم المخاطر الاستراتيجية والتشغيلية ويصمم أطر إدارة المخاطر المؤسسية.",
-  "model": "gemini-pro",
+  "model": "deepseek-r1",
   "tools": [
     "web_search",
     "deep_search",

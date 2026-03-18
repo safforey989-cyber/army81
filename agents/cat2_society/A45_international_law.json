@@ -4,7 +4,7 @@
   "name_ar": "وكيل القانون الدولي",
   "category": "cat2_society",
   "description": "يحلل القانون الدولي والمعاهدات وقرارات المحاكم الدولية وانعكاساتها على الدول.",
-  "model": "gemini-flash",
+  "model": "claude-smart",
   "tools": [
     "web_search",
     "deep_search",

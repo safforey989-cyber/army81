@@ -4,7 +4,7 @@
   "name_ar": "وكيل الحوسبة البيولوجية",
   "category": "cat3_tools",
   "description": "يطبق أدوات الحوسبة والذكاء الاصطناعي على مشاكل البيولوجيا والجينوم والطب.",
-  "model": "deepseek-chat",
+  "model": "deepseek-r1",
   "tools": [
     "arxiv_search",
     "pubmed_search",

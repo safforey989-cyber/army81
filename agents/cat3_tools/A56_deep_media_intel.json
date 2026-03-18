@@ -4,7 +4,7 @@
   "name_ar": "وكيل الاستخبارات الإعلامية العميقة",
   "category": "cat3_tools",
   "description": "يجمع الاستخبارات من مصادر إعلامية متعددة ويحلل الأنماط والروايات الكبرى.",
-  "model": "claude-smart",
+  "model": "perplexity-fast",
   "tools": [
     "web_search",
     "deep_search",

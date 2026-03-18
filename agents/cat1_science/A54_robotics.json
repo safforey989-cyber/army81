@@ -4,7 +4,7 @@
   "name_ar": "وكيل الروبوتات والأتمتة",
   "category": "cat1_science",
   "description": "يحلل مجال الروبوتات والأتمتة ويقيّم التطبيقات العملية والتحديات التقنية.",
-  "model": "gemini-flash",
+  "model": "gemini-think",
   "tools": [
     "arxiv_search",
     "github_search",

@@ -4,7 +4,7 @@
   "name_ar": "وكيل الاقتصاد السلوكي",
   "category": "cat5_behavior",
   "description": "يطبق علم الاقتصاد السلوكي لفهم القرارات الاقتصادية غير العقلانية وتصميم بيئات القرار.",
-  "model": "gemini-flash",
+  "model": "deepseek-chat",
   "tools": [
     "web_search",
     "deep_search",

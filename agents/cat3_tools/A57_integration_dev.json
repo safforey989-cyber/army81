@@ -4,7 +4,7 @@
   "name_ar": "وكيل تطوير التكاملات",
   "category": "cat3_tools",
   "description": "يصمم وينفذ تكاملات APIs والأنظمة ويبني pipelines البيانات والأتمتة.",
-  "model": "gemini-pro",
+  "model": "qwen-coder",
   "tools": [
     "run_code",
     "github_search",

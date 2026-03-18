@@ -4,7 +4,7 @@
   "name_ar": "وكيل الذكاء الثقافي",
   "category": "cat5_behavior",
   "description": "يحلل الفوارق الثقافية ويصمم استراتيجيات التواصل والعمل عبر الثقافات المختلفة.",
-  "model": "mistral-small",
+  "model": "qwen-72b",
   "tools": [
     "web_search",
     "deep_search",

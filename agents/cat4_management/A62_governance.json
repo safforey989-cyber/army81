@@ -4,7 +4,7 @@
   "name_ar": "وكيل الحوكمة المؤسسية",
   "category": "cat4_management",
   "description": "يصمم أطر الحوكمة المؤسسية ويضمن الامتثال والشفافية والمساءلة.",
-  "model": "deepseek-r1",
+  "model": "claude-smart",
   "tools": [
     "web_search",
     "deep_search",

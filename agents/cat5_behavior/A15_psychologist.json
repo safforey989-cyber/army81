@@ -4,7 +4,7 @@
   "name_ar": "وكيل علم النفس السلوكي",
   "category": "cat5_behavior",
   "description": "يحلل السلوك البشري والدوافع الخفية ويفسر الأنماط النفسية في الأفراد والمجموعات.",
-  "model": "gemini-flash",
+  "model": "deepseek-r1",
   "tools": [
     "web_search",
     "deep_search",

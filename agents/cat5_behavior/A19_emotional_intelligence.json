@@ -4,7 +4,7 @@
   "name_ar": "وكيل الذكاء العاطفي",
   "category": "cat5_behavior",
   "description": "يطور الوعي الذاتي والتعاطف وإدارة المشاعر لتحسين العلاقات وصنع القرار.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "web_search",
     "wiki_search",

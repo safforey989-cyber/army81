@@ -4,7 +4,7 @@
   "name_ar": "وكيل الهندسة العكسية",
   "category": "cat2_society",
   "description": "يحلل الأنظمة والمنتجات والاستراتيجيات من خلال عكس هندستها لفهم آليات عملها.",
-  "model": "gemini-flash",
+  "model": "deepseek-r1",
   "tools": [
     "web_search",
     "deep_search",

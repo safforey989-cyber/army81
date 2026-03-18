@@ -4,7 +4,7 @@
   "name_ar": "وكيل الاستشارة القانونية",
   "category": "cat2_society",
   "description": "يحلل القضايا القانونية، يفسّر القوانين، ويقدم مشورة قانونية توعوية.",
-  "model": "deepseek-r1",
+  "model": "claude-smart",
   "tools": [
     "web_search",
     "deep_search",

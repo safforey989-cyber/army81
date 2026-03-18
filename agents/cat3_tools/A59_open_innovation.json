@@ -4,7 +4,7 @@
   "name_ar": "وكيل الابتكار المفتوح",
   "category": "cat3_tools",
   "description": "يكتشف الابتكارات والحلول المفتوحة المصدر ويقيّم إمكانية تبنّيها.",
-  "model": "gemini-flash",
+  "model": "gpt4o-mini",
   "tools": [
     "github_search",
     "arxiv_search",

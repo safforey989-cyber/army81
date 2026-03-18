@@ -4,7 +4,7 @@
   "name_ar": "وكيل كشف التقنيات الناشئة",
   "category": "cat1_science",
   "description": "يرصد التقنيات الناشئة ويقيّم أثرها التحويلي ويحدد الفرص والتهديدات مبكراً.",
-  "model": "gemini-flash",
+  "model": "gpt4o-mini",
   "tools": [
     "arxiv_search",
     "github_search",

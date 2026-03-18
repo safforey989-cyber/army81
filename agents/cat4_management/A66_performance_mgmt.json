@@ -4,7 +4,7 @@
   "name_ar": "وكيل إدارة الأداء",
   "category": "cat4_management",
   "description": "يصمم أنظمة قياس وتحسين الأداء المؤسسي والفردي بطرق مبنية على البيانات.",
-  "model": "gemini-pro",
+  "model": "deepseek-chat",
   "tools": [
     "analyze_data",
     "run_code",

@@ -4,7 +4,7 @@
   "name_ar": "وكيل الرياضيات المتقدمة",
   "category": "cat2_society",
   "description": "يحل المسائل الرياضية المتقدمة ويشرح المفاهيم ويربط الرياضيات بالتطبيقات.",
-  "model": "gemini-flash",
+  "model": "o3-mini",
   "tools": [
     "run_code",
     "arxiv_search",

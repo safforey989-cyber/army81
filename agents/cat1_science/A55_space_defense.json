@@ -4,7 +4,7 @@
   "name_ar": "وكيل تقنيات الفضاء والدفاع",
   "category": "cat1_science",
   "description": "يحلل مجال الفضاء التجاري والدفاعي وتقنيات الصواريخ والأقمار الاصطناعية.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "arxiv_search",
     "web_search",

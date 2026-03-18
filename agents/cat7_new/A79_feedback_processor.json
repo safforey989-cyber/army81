@@ -4,7 +4,7 @@
   "name_ar": "وكيل معالجة التغذية الراجعة",
   "category": "cat7_new",
   "description": "يجمع ويحلل التغذية الراجعة من المستخدمين والنظام لتحسين الأداء المستمر.",
-  "model": "gemini-flash",
+  "model": "claude-fast",
   "tools": [
     "analyze_data",
     "semantic_remember",

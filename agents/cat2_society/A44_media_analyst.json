@@ -4,7 +4,7 @@
   "name_ar": "وكيل تحليل الإعلام والتواصل",
   "category": "cat2_society",
   "description": "يحلل الخطاب الإعلامي ورسائل وسائل التواصل ويرصد الاتجاهات والأجندات.",
-  "model": "gemini-flash",
+  "model": "grok-mini",
   "tools": [
     "web_search",
     "deep_search",

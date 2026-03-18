@@ -4,7 +4,7 @@
   "name_ar": "وكيل إنشاء المحتوى",
   "category": "cat2_society",
   "description": "ينشئ محتوى عالي الجودة: مقالات، تقارير، منشورات، وسكريبتات.",
-  "model": "gemini-flash",
+  "model": "claude-fast",
   "tools": [
     "web_search",
     "deep_search",

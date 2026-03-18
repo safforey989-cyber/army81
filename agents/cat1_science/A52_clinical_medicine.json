@@ -4,7 +4,7 @@
   "name_ar": "وكيل الطب السريري",
   "category": "cat1_science",
   "description": "يحلل الحالات السريرية والبروتوكولات العلاجية بمنهجية طبية دقيقة.",
-  "model": "gemini-flash",
+  "model": "deepseek-r1",
   "tools": [
     "pubmed_search",
     "arxiv_search",

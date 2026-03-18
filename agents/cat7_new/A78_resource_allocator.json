@@ -4,7 +4,7 @@
   "name_ar": "وكيل التخصيص الديناميكي للموارد",
   "category": "cat7_new",
   "description": "يخصص موارد النظام (الحوسبة، الوقت، الأولويات) ديناميكياً لتحسين الأداء الكلي.",
-  "model": "gemini-flash",
+  "model": "claude-fast",
   "tools": [
     "analyze_data",
     "run_code",

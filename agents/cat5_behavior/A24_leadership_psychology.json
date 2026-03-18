@@ -4,7 +4,7 @@
   "name_ar": "وكيل سيكولوجية القيادة",
   "category": "cat5_behavior",
   "description": "يحلل أنماط القيادة وتطوير القادة وبناء ثقافة تنظيمية عالية الأداء.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "web_search",
     "deep_search",

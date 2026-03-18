@@ -4,7 +4,7 @@
   "name_ar": "وكيل التعليم والتعلّم",
   "category": "cat2_society",
   "description": "يصمم تجارب التعلم ويحلل أنظمة التعليم ويطور مناهج فعّالة.",
-  "model": "gemini-flash",
+  "model": "claude-fast",
   "tools": [
     "web_search",
     "deep_search",

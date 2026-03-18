@@ -4,7 +4,7 @@
   "name_ar": "وكيل قيادة التواصل الإنساني",
   "category": "cat6_leadership",
   "description": "يبني الثقة والتواصل الحقيقي بين القادة وفرقهم ومجتمعاتهم.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "web_search",
     "wiki_search",

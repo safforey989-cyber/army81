@@ -4,7 +4,7 @@
   "name_ar": "وكيل تحسين النظام",
   "category": "cat7_new",
   "description": "يحسّن أداء النظام الكلي ويزيل الاختناقات ويعظّم الكفاءة التشغيلية.",
-  "model": "gemini-flash",
+  "model": "claude-fast",
   "tools": [
     "analyze_data",
     "run_code",

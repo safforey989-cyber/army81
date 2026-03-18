@@ -4,7 +4,7 @@
   "name_ar": "وكيل تحليل لغة الجسد",
   "category": "cat5_behavior",
   "description": "يقرأ الإشارات غير اللفظية ويفسر لغة الجسد والتعبيرات الوجهية والنبرة الصوتية.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "web_search",
     "wiki_search",

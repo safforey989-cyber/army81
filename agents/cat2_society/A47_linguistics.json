@@ -4,7 +4,7 @@
   "name_ar": "وكيل اللغويات وعلم اللغة",
   "category": "cat2_society",
   "description": "يحلل بنية اللغات وتطورها وتأثير اللغة على الفكر والمجتمع والتواصل.",
-  "model": "gemini-flash",
+  "model": "qwen-72b",
   "tools": [
     "web_search",
     "wiki_search",

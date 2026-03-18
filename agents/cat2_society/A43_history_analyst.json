@@ -4,7 +4,7 @@
   "name_ar": "وكيل تحليل التاريخ",
   "category": "cat2_society",
   "description": "يحلل الأحداث التاريخية ويستخرج الدروس ويربط الماضي بالحاضر لفهم المسارات المستقبلية.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "web_search",
     "wiki_search",

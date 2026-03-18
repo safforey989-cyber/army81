@@ -4,7 +4,7 @@
   "name_ar": "وكيل التحول الرقمي",
   "category": "cat4_management",
   "description": "يقود رحلات التحول الرقمي للمنظمات ويدمج التقنية في صميم الأعمال.",
-  "model": "gemini-flash",
+  "model": "gpt4o-mini",
   "tools": [
     "web_search",
     "deep_search",

@@ -4,7 +4,7 @@
   "name_ar": "وكيل التصنيع المتقدم",
   "category": "cat1_science",
   "description": "يحلل تقنيات التصنيع المتقدم: الطباعة ثلاثية الأبعاد، الأتمتة، سلاسل الإمداد الذكية.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "web_search",
     "deep_search",

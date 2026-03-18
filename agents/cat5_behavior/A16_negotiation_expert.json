@@ -4,7 +4,7 @@
   "name_ar": "وكيل خبير التفاوض",
   "category": "cat5_behavior",
   "description": "يصمم استراتيجيات التفاوض، يحلل مواقف الأطراف، ويقود للوصول لاتفاقيات مُرضية.",
-  "model": "gemini-flash",
+  "model": "claude-smart",
   "tools": [
     "web_search",
     "deep_search",

@@ -4,7 +4,7 @@
   "name_ar": "وكيل تجميع التعلم",
   "category": "cat7_new",
   "description": "يجمّع دروس التعلم من جميع الوكلاء ويبني قاعدة معرفة تراكمية مشتركة.",
-  "model": "gemini-flash",
+  "model": "claude-fast",
   "tools": [
     "semantic_remember",
     "semantic_recall",

@@ -4,7 +4,7 @@
   "name_ar": "وكيل الاقتصاد العالمي",
   "category": "cat2_society",
   "description": "يحلل الاقتصاد الكلي العالمي وتدفقات التجارة والسياسات النقدية والمالية الدولية.",
-  "model": "gemini-flash",
+  "model": "deepseek-chat",
   "tools": [
     "web_search",
     "deep_search",

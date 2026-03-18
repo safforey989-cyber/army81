@@ -4,7 +4,7 @@
   "name_ar": "وكيل مهندس القرارات",
   "category": "cat6_leadership",
   "description": "يصمم أنظمة صنع القرار المؤسسية ويبني بنى الحوكمة التي تضمن قرارات صحيحة باستمرار.",
-  "model": "gemini-flash",
+  "model": "o3-mini",
   "tools": [
     "web_search",
     "deep_search",

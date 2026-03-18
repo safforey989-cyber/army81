@@ -4,7 +4,7 @@
   "name_ar": "وكيل استراتيجي المنظمات",
   "category": "cat6_leadership",
   "description": "يصمم الهياكل التنظيمية وينمذج الاستراتيجيات المؤسسية ويحقق التوافق بين الرؤية والتنفيذ.",
-  "model": "gemini-flash",
+  "model": "claude-smart",
   "tools": [
     "web_search",
     "deep_search",

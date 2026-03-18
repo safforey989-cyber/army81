@@ -4,7 +4,7 @@
   "name_ar": "وكيل تحليل الاستخبارات",
   "category": "cat6_leadership",
   "description": "يجمع المعلومات من مصادر متعددة ويحللها لإنتاج استخبارات استراتيجية قابلة للتنفيذ.",
-  "model": "gemini-flash",
+  "model": "grok-3",
   "tools": [
     "web_search",
     "deep_search",

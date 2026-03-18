@@ -4,7 +4,7 @@
   "name_ar": "وكيل العملات الرقمية والأصول",
   "category": "cat2_society",
   "description": "يحلل سوق العملات الرقمية والـ DeFi والـ Web3 وتأثيرها على النظام المالي.",
-  "model": "gemini-flash",
+  "model": "deepseek-chat",
   "tools": [
     "web_search",
     "deep_search",

@@ -4,7 +4,7 @@
   "name_ar": "وكيل استراتيجية توزيع الموارد",
   "category": "cat6_leadership",
   "description": "يحسّن توزيع الموارد المحدودة لتحقيق أقصى أثر استراتيجي.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "analyze_data",
     "run_code",

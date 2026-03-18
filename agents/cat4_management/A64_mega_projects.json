@@ -4,7 +4,7 @@
   "name_ar": "وكيل إدارة المشاريع العملاقة",
   "category": "cat4_management",
   "description": "يدير المشاريع العملاقة متعددة السنوات ومليارية التكلفة بمنهجية متخصصة.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "web_search",
     "deep_search",

@@ -4,7 +4,7 @@
   "name_ar": "وكيل قيادة الابتكار",
   "category": "cat6_leadership",
   "description": "يقود ثقافة الابتكار ويصمم أنظمة الإبداع المؤسسي ويحوّل الأفكار إلى واقع.",
-  "model": "qwen-coder",
+  "model": "gpt4o",
   "tools": [
     "web_search",
     "deep_search",
