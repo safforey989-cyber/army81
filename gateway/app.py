@@ -286,7 +286,26 @@ async def a2a_status():
 
 @app.get("/health")
 async def health():
-    return {"status": "healthy", "agents": len(router.agents), "version": "3.0.0"}
+    return {"status": "healthy", "agents": len(router.agents), "version": "6.0.0"}
+
+# ── v6: Cloud Memory + Execution Engine ──────────
+@app.get("/cloud/status")
+async def cloud_status():
+    """حالة الذاكرة السحابية ومحرك التنفيذ"""
+    result = {}
+    try:
+        from memory.cloud_memory import get_cloud_memory
+        cm = get_cloud_memory()
+        result["cloud_memory"] = cm.get_global_stats()
+    except Exception as e:
+        result["cloud_memory"] = {"error": str(e)}
+    try:
+        from core.execution_engine import get_execution_engine
+        ee = get_execution_engine()
+        result["execution_engine"] = ee.status()
+    except Exception as e:
+        result["execution_engine"] = {"error": str(e)}
+    return result
 
 # ── v5: Neural Network Endpoints ─────────────────
 @app.get("/network/status")

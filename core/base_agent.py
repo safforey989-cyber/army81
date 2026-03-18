@@ -141,6 +141,7 @@ class BaseAgent:
         # ── v5: الشبكة العصبية + المهارات ──────────────────
         self.neural_net = None  # يُعيّن من NeuralNetwork.register_agents()
         self._skill_memory = None  # lazy
+        self._cloud_memory = None  # v6: ذاكرة سحابية
 
         logger.info(f"Agent ready: {self.agent_id} ({self.name_ar})")
 
@@ -160,6 +161,17 @@ class BaseAgent:
             except Exception:
                 pass
         return self._skill_memory
+
+    @property
+    def cloud_memory(self):
+        """v6: Cloud Memory — Redis + Supabase + SQLite"""
+        if self._cloud_memory is None:
+            try:
+                from memory.cloud_memory import get_cloud_memory
+                self._cloud_memory = get_cloud_memory()
+            except Exception:
+                pass
+        return self._cloud_memory
 
     def run(self, task: str, context: Dict = None) -> AgentResult:
         """تنفيذ مهمة — النقطة الرئيسية (v3)"""
@@ -254,6 +266,19 @@ class BaseAgent:
             if self.neural_net:
                 try:
                     self.neural_net.after_task_propagate(self.agent_id, result)
+                except Exception:
+                    pass
+
+            # I-v6: حفظ في الذاكرة السحابية (Redis + Supabase)
+            if self.cloud_memory:
+                try:
+                    self.cloud_memory.store_episode(
+                        self.agent_id, task, result_text,
+                        success=True, rating=7,
+                        model=response.get("model", self.model_alias),
+                        tokens=response.get("tokens", 0),
+                        task_type=self._classify_task(task),
+                    )
                 except Exception:
                     pass
 

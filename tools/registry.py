@@ -176,7 +176,72 @@ def build_tools_registry() -> Dict[str, Tool]:
         parameters={"query": "سؤال أو موضوع", "n_results": "عدد النتائج"}
     )
 
-    logger.info(f"Tools registry built: {len(registry)} tools available")
+    # ── 6. v6: أدوات متقدمة جديدة ─────────────────────────
+
+    # Brave Search — بحث خاص
+    if os.getenv("BRAVE_API_KEY"):
+        registry["brave_search"] = Tool(
+            name="brave_search",
+            description="بحث خاص عبر Brave — خصوصية عالية ونتائج دقيقة",
+            func=_lazy_import("core.execution_engine", "_brave_search_wrapper"),
+            parameters={"query": "نص البحث"}
+        )
+
+    # Polygon.io — بيانات مالية حية
+    if os.getenv("POLYGON_API_KEY"):
+        registry["stock_data"] = Tool(
+            name="stock_data",
+            description="بيانات أسهم حية — أسعار، حجم تداول، تغيرات يومية",
+            func=_lazy_import("core.execution_engine", "_polygon_ticker_wrapper"),
+            parameters={"symbol": "رمز السهم (مثال: AAPL, MSFT)"}
+        )
+        registry["stock_search"] = Tool(
+            name="stock_search",
+            description="بحث عن أسهم بالاسم أو الرمز",
+            func=_lazy_import("core.execution_engine", "_polygon_search_wrapper"),
+            parameters={"query": "اسم أو رمز السهم"}
+        )
+
+    # GitHub Enhanced — بحث كود
+    if os.getenv("GITHUB_TOKEN"):
+        registry["github_code"] = Tool(
+            name="github_code",
+            description="بحث في كود المصدر على GitHub",
+            func=_lazy_import("core.execution_engine", "_github_code_wrapper"),
+            parameters={"query": "نص البحث في الكود"}
+        )
+        registry["github_trending"] = Tool(
+            name="github_trending",
+            description="المستودعات الرائجة هذا الأسبوع على GitHub",
+            func=_lazy_import("core.execution_engine", "_github_trending_wrapper"),
+            parameters={"language": "لغة البرمجة (python, javascript...)"}
+        )
+
+    # HuggingFace — نماذج متخصصة
+    if os.getenv("HF_TOKEN"):
+        registry["hf_generate"] = Tool(
+            name="hf_generate",
+            description="توليد نص عبر نموذج HuggingFace متخصص",
+            func=_lazy_import("core.execution_engine", "_hf_generate_wrapper"),
+            parameters={"prompt": "النص المطلوب"}
+        )
+        registry["hf_classify"] = Tool(
+            name="hf_classify",
+            description="تصنيف نص تلقائياً (موضوع، مشاعر، فئة)",
+            func=_lazy_import("core.execution_engine", "_hf_classify_wrapper"),
+            parameters={"text": "النص", "labels": "التصنيفات (مفصولة بفاصلة)"}
+        )
+
+    # E2B Cloud Execution — تنفيذ سحابي
+    if os.getenv("E2B_API_KEY"):
+        registry["cloud_execute"] = Tool(
+            name="cloud_execute",
+            description="تنفيذ كود Python في سحابة E2B المعزولة (أكثر أماناً)",
+            func=_lazy_import("core.execution_engine", "_e2b_run_wrapper"),
+            parameters={"code": "كود Python"}
+        )
+
+    logger.info(f"Tools registry v6 built: {len(registry)} tools available")
     return registry
 
 
