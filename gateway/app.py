@@ -323,6 +323,51 @@ async def commander_decide(task: str):
         "decision": decision,
     }
 
+# ── MCP Endpoints ────────────────────────────────────────
+@app.get("/mcp/status")
+async def mcp_status():
+    """حالة نظام MCP — 30 خادم مسجّل"""
+    try:
+        from core.mcp_connector import get_mcp_connector
+        return get_mcp_connector().status()
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/mcp/servers")
+async def mcp_servers():
+    """قائمة كل خوادم MCP المسجلة"""
+    try:
+        from core.mcp_connector import get_mcp_connector
+        mc = get_mcp_connector()
+        return {
+            "total": len(mc.get_all_servers()),
+            "servers": mc.get_all_servers(),
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/mcp/agent/{agent_id}")
+async def mcp_for_agent(agent_id: str):
+    """خوادم MCP المناسبة لوكيل معين"""
+    try:
+        from core.mcp_connector import get_mcp_connector
+        mc = get_mcp_connector()
+        servers = mc.get_servers_for_agent(agent_id)
+        return {"agent_id": agent_id, "mcp_servers": servers}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/mcp/recommend")
+async def mcp_recommend(task: str):
+    """اقتراح خوادم MCP لمهمة"""
+    try:
+        from core.mcp_connector import get_mcp_connector
+        mc = get_mcp_connector()
+        recs = mc.recommend_for_task(task)
+        return {"task": task, "recommendations": recs}
+    except Exception as e:
+        return {"error": str(e)}
+
 # ── Metrics & Knowledge Endpoints ────────────────────────
 @app.get("/metrics")
 async def get_metrics():
