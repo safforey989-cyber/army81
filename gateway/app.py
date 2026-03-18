@@ -739,8 +739,9 @@ def run_swarm_session(duration_minutes: int, topic: str):
     end_time = start_time + (duration_minutes * 60)
     phase = 0  # 0=intro, 1=discuss, 2=collaborate, 3=propose
 
-    # Phase durations (proportional)
-    phase_times = [0.15, 0.35, 0.35, 0.15]  # 15% intro, 35% discuss, 35% collaborate, 15% propose
+    # Phase durations (proportional) — v14: 6 مراحل
+    # intro → knowledge_hunt → discuss → distill → collaborate → propose
+    phase_times = [0.10, 0.20, 0.20, 0.15, 0.20, 0.15]
 
     round_num = 0
 
@@ -749,15 +750,15 @@ def run_swarm_session(duration_minutes: int, topic: str):
         total_duration = duration_minutes * 60
         progress = elapsed / total_duration
 
-        # Determine phase
-        if progress < phase_times[0]:
-            current_phase = "introduction"
-        elif progress < phase_times[0] + phase_times[1]:
-            current_phase = "discussion"
-        elif progress < phase_times[0] + phase_times[1] + phase_times[2]:
-            current_phase = "collaboration"
-        else:
-            current_phase = "proposals"
+        # Determine phase — v14: 6 مراحل
+        cum = 0
+        phases_list = ["introduction", "knowledge_hunt", "discussion", "distillation", "collaboration", "proposals"]
+        current_phase = phases_list[-1]
+        for i, pt in enumerate(phase_times):
+            cum += pt
+            if progress < cum:
+                current_phase = phases_list[i]
+                break
 
         round_num += 1
 
@@ -801,8 +802,159 @@ def run_swarm_session(duration_minutes: int, topic: str):
 
                 time.sleep(3)  # Rate limiting
 
+            elif current_phase == "knowledge_hunt":
+                # ═══ Phase 2: صيد المعرفة — الوكلاء يبحثون في مصادر حقيقية ═══
+                hunter = random.choice(agents_list)
+
+                # مصادر حقيقية حسب التخصص
+                hunt_tasks = {
+                    "cat1_science": "ابحث في arXiv عن أحدث ورقة بحثية في الذكاء الاصطناعي والوكلاء (2025-2026). لخّص العنوان والنتيجة الرئيسية في 3 جمل.",
+                    "cat2_society": "ابحث عن آخر التطورات الاقتصادية والجيوسياسية في العالم. لخّص أهم 3 أحداث في 2026.",
+                    "cat3_tools": "ابحث في GitHub عن أحدث مستودعات AI agents المفتوحة (trending). اذكر أفضل 3 مع أسباب أهميتها.",
+                    "cat4_management": "ابحث عن أحدث منهجيات إدارة المشاريع الذكية وأطر العمل AI-powered. لخّص أهم 3 تطورات.",
+                    "cat5_behavior": "ابحث عن أحدث الأبحاث في علم النفس السلوكي والذكاء العاطفي الاصطناعي. لخّص 3 نتائج مهمة.",
+                    "cat6_leadership": "ابحث عن أحدث الاستراتيجيات العسكرية والجيوسياسية في العالم. لخّص أهم 3 تحولات في 2026.",
+                    "cat7_new": "ابحث عن أحدث تقنيات التطور الذاتي للأنظمة الذكية (self-improving AI). لخّص أهم 3 اختراقات.",
+                }
+                hunt_task = hunt_tasks.get(hunter.category, hunt_tasks["cat3_tools"])
+
+                add_swarm_event("agent_message", hunter.agent_id, "KNOWLEDGE",
+                    {"phase": "knowledge_hunt", "message": f"🔍 {hunter.name_ar} يبحث في مصادر المعرفة"})
+
+                try:
+                    result = hunter.run(hunt_task, context={"swarm_session": True, "phase": "knowledge_hunt"})
+                    result_text = result.result[:500] if hasattr(result, 'result') else str(result)[:500]
+
+                    add_swarm_event("task_completed", hunter.agent_id, data={
+                        "phase": "knowledge_hunt",
+                        "result": result_text
+                    })
+
+                    # حفظ المعرفة في النواة المشتركة
+                    if swarm_mem and len(result_text) > 50:
+                        swarm_mem.core.add_shared_knowledge(
+                            result_text[:500], hunter.agent_id,
+                            topic=hunter.category, confidence=0.85
+                        )
+                        swarm_mem.record_insight(hunter.agent_id, result_text[:300], hunter.category)
+
+                        add_swarm_event("memory_saved", hunter.agent_id, data={
+                            "type": "knowledge_hunt",
+                            "topic": hunter.category,
+                            "agents_remembered": 1
+                        })
+
+                    # مشاركة مع 3 وكلاء آخرين
+                    share_targets = random.sample(
+                        [a for a in agents_list if a.agent_id != hunter.agent_id], min(3, len(agents_list)-1))
+                    for target in share_targets:
+                        if swarm_mem:
+                            swarm_mem.record_introduction(
+                                hunter.agent_id, hunter.name_ar, hunter.description[:100],
+                                target.agent_id, target.name_ar, target.description[:100],
+                                f"شاركني معرفة عن {hunter.category}"
+                            )
+                        add_swarm_event("agent_message", hunter.agent_id, target.agent_id,
+                            {"phase": "knowledge_share", "message": f"مشاركة معرفة → {target.name_ar}"})
+
+                except Exception as e:
+                    add_swarm_event("task_failed", hunter.agent_id, data={"error": str(e)[:100]})
+
+                time.sleep(4)
+
+            elif current_phase == "distillation":
+                # ═══ Phase 4: التقطير — نموذج قوي يعلّم نموذج أخف ═══
+                # اختر زوج معلم-طالب
+                teacher_agents = [a for a in agents_list if a.model_alias in ["claude-smart", "deepseek-r1", "gemini-pro", "gpt4o"]]
+                student_agents = [a for a in agents_list if a.model_alias in ["gemini-flash", "claude-fast", "qwen-free", "llama-free"]]
+
+                if teacher_agents and student_agents:
+                    teacher = random.choice(teacher_agents)
+                    student = random.choice(student_agents)
+
+                    add_swarm_event("cluster_formed", teacher.agent_id, data={
+                        "phase": "distillation",
+                        "cluster": [teacher.agent_id, student.agent_id],
+                        "topic": f"🎓 تقطير: {teacher.name_ar} يعلّم {student.name_ar}"
+                    })
+
+                    # المعلم يحل مهمة معقدة مع شرح التفكير
+                    distill_tasks = [
+                        "فكّر بصوت عالٍ وحلّ: كيف نصمم نظام ذاكرة هرمي لوكلاء AI يحافظ على السياق عبر آلاف المحادثات؟",
+                        "فكّر خطوة بخطوة: ما أفضل خوارزمية لتوجيه المهام بين 81 وكيل بتخصصات مختلفة؟ أعطِ pseudocode.",
+                        "حلّل بعمق: كيف نبني نظام تقييم ذاتي يقيس جودة كل وكيل بدقة بدون تدخل بشري؟",
+                        "اشرح آلية: كيف نستخدم RAG مع Knowledge Graph لجعل الوكلاء يستنتجون حلولاً لم يتدربوا عليها؟",
+                        "صمّم: نظام أمان يمنع الوكلاء من تدمير أنفسهم أثناء التطور الذاتي. أعطِ 5 قواعد ذهبية مع كود.",
+                    ]
+                    distill_task = random.choice(distill_tasks)
+
+                    try:
+                        # المعلم يحل
+                        teacher_result = teacher.run(distill_task, context={"swarm_session": True, "phase": "distillation_teach"})
+                        teacher_text = teacher_result.result[:600] if hasattr(teacher_result, 'result') else str(teacher_result)[:600]
+
+                        add_swarm_event("task_completed", teacher.agent_id, data={
+                            "phase": "distillation_teach",
+                            "result": teacher_text[:300]
+                        })
+
+                        # الطالب يتعلم من الحل
+                        learn_task = f"""تعلّم من هذا الحل الذي قدمه خبير ({teacher.name_ar}):
+
+{teacher_text}
+
+الآن أعد صياغة الحل بأسلوبك مع إضافة ملاحظة واحدة جديدة. كن مختصراً."""
+
+                        student_result = student.run(learn_task, context={"swarm_session": True, "phase": "distillation_learn"})
+                        student_text = student_result.result[:400] if hasattr(student_result, 'result') else str(student_result)[:400]
+
+                        add_swarm_event("task_completed", student.agent_id, data={
+                            "phase": "distillation_learn",
+                            "result": student_text[:300]
+                        })
+
+                        # حفظ المثال في ذاكرة التقطير
+                        try:
+                            from core.distillation_engine import DistillationEngine
+                            de = DistillationEngine()
+                            de.record_teacher_solution(
+                                task_type="system_design",
+                                task=distill_task[:200],
+                                solution=teacher_text,
+                                model=teacher.model_alias,
+                                cot_steps=teacher_text[:500]
+                            )
+                        except Exception:
+                            pass
+
+                        # حفظ في النواة المشتركة
+                        if swarm_mem:
+                            swarm_mem.core.add_shared_knowledge(
+                                teacher_text[:400], teacher.agent_id,
+                                topic="distilled_knowledge", confidence=0.9
+                            )
+                            swarm_mem.record_collaboration(
+                                teacher.agent_id, [student.agent_id],
+                                f"تقطير: {distill_task[:50]}", teacher_text[:200], True
+                            )
+
+                        add_swarm_event("memory_saved", teacher.agent_id, data={
+                            "type": "distillation",
+                            "topic": "تقطير معرفي",
+                            "agents_remembered": 2
+                        })
+
+                    except Exception as e:
+                        add_swarm_event("task_failed", teacher.agent_id, data={"error": str(e)[:100]})
+
+                    time.sleep(2)
+                    add_swarm_event("cluster_dissolved", teacher.agent_id, data={
+                        "cluster": [teacher.agent_id, student.agent_id]})
+
+                time.sleep(4)
+
             elif current_phase == "discussion":
-                # Phase 2: Agents discuss topics from their expertise
+                # Phase 3: Agents discuss topics from their expertise
                 a1 = random.choice(agents_list)
                 # Pick 2-3 agents from different categories
                 others = [a for a in agents_list if a.category != a1.category]
@@ -928,24 +1080,79 @@ def run_swarm_session(duration_minutes: int, topic: str):
                 time.sleep(5)
 
             elif current_phase == "proposals":
-                # Phase 4: Agents collectively propose improvements
-                # Use A01 (Strategic Commander) to synthesize
+                # ═══ Phase 6: الاقتراحات + بناء نواة العقل المشترك ═══
                 a01 = router.agents.get("A01")
                 if a01 and round_num % 3 == 0:
-                    # Gather recent collaboration results
-                    recent_results = [e["data"].get("result", "") for e in swarm_events[-30:]
+                    # جمع كل المعرفة المكتسبة
+                    recent_results = [e["data"].get("result", "") for e in swarm_events[-50:]
                                      if e["event_type"] == "task_completed" and e["data"].get("result")]
-                    summary = "\n".join(recent_results[-5:])[:1500]
+                    knowledge_hunts = [e["data"].get("result", "") for e in swarm_events
+                                       if e["data"].get("phase") == "knowledge_hunt" and e["data"].get("result")]
+                    distill_results = [e["data"].get("result", "") for e in swarm_events
+                                       if e["data"].get("phase") in ("distillation_teach", "distillation_learn")]
 
-                    task = f"""بعد ساعة من التشاور مع 81 وكيلاً، هذه خلاصة النقاشات:
-{summary}
+                    summary = "\n".join(recent_results[-5:])[:800]
+                    knowledge_summary = "\n".join(knowledge_hunts[-3:])[:600]
+                    distill_summary = "\n".join(distill_results[-3:])[:600]
 
-بصفتك القائد الاستراتيجي، اكتب 3 اقتراحات محددة تحتاج موافقة المالك:
-1. [اقتراح تقني]
-2. [اقتراح تنظيمي]
-3. [اقتراح للتطوير]
+                    # بناء نواة العقل المشترك
+                    brain_data = {
+                        "version": datetime.now().strftime("%Y%m%d_%H%M"),
+                        "knowledge_acquired": len(knowledge_hunts),
+                        "distillations_done": len(distill_results),
+                        "collaborations": len([e for e in swarm_events if e["data"].get("phase") == "collaboration"]),
+                        "total_interactions": len(swarm_events),
+                    }
 
-كن محدداً وعملياً. اكتب كل اقتراح في سطرين."""
+                    if swarm_mem:
+                        full_stats = swarm_mem.get_full_stats()
+                        brain_data["agents_with_memory"] = full_stats.get("agents_with_memory", 0)
+                        brain_data["core_knowledge_items"] = full_stats.get("core", {}).get("shared_knowledge", 0)
+                        brain_data["core_decisions"] = full_stats.get("core", {}).get("decisions", 0)
+
+                    # حفظ نواة العقل
+                    brain_file = os.path.join("workspace", "shared_brain.json")
+                    os.makedirs("workspace", exist_ok=True)
+                    try:
+                        existing_brain = {}
+                        if os.path.exists(brain_file):
+                            with open(brain_file, "r", encoding="utf-8") as f:
+                                existing_brain = json.load(f)
+
+                        existing_brain["last_update"] = datetime.now().isoformat()
+                        existing_brain["sessions"] = existing_brain.get("sessions", 0) + 1
+                        existing_brain["total_knowledge"] = existing_brain.get("total_knowledge", 0) + len(knowledge_hunts)
+                        existing_brain["total_distillations"] = existing_brain.get("total_distillations", 0) + len(distill_results)
+                        existing_brain["latest_session"] = brain_data
+
+                        with open(brain_file, "w", encoding="utf-8") as f:
+                            json.dump(existing_brain, f, ensure_ascii=False, indent=2)
+
+                        add_swarm_event("memory_saved", "SYSTEM", data={
+                            "type": "brain_update",
+                            "topic": "نواة العقل المشترك",
+                            "agents_remembered": brain_data.get("agents_with_memory", 0)
+                        })
+                    except Exception as e:
+                        logger.error(f"Brain save error: {e}")
+
+                    task = f"""بعد ساعة من التشاور مع 81 وكيلاً، هذه خلاصة ما حدث:
+
+## المعرفة المكتسبة ({len(knowledge_hunts)} بحث):
+{knowledge_summary[:400]}
+
+## التقطير المعرفي ({len(distill_results)} تقطير):
+{distill_summary[:400]}
+
+## التعاونات:
+{summary[:400]}
+
+بصفتك القائد الاستراتيجي، اكتب:
+1. [قرار تقني] بناءً على المعرفة المكتسبة
+2. [قرار تنظيمي] لتحسين التعاون بين الوكلاء
+3. [طلب من المالك] شيء نحتاج موافقته عليه
+
+كن محدداً. كل اقتراح في سطرين."""
 
                     try:
                         result = a01.run(task, context={"swarm_session": True, "phase": "final_proposals"})

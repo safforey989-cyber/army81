@@ -637,6 +637,8 @@ function processSwarmEvent(evt){
 
   if(t==='swarm_started'){
     logEvent('success','🐝','سرب','بدأت جلسة التواصل — '+d.topic);
+    var msgs=document.getElementById('chatMessages');
+    if(msgs) msgs.innerHTML+='<div class="chat-msg system" style="background:rgba(57,255,20,0.08);">🐝 <b>6 مراحل:</b> تعارف → صيد معرفة → مناقشة → تقطير → تعاون → اقتراحات</div>';
     return;
   }
   if(t==='swarm_completed'){
@@ -657,7 +659,9 @@ function processSwarmEvent(evt){
   else if(t==='task_completed'){
     EventBus.emit(EVT.TASK_COMPLETED,{agentId:from});
     var preview=(d.result||'').substring(0,80);
-    logEvent('success','✅',from, (d.phase||'')+': '+preview);
+    var phaseEmoji={'introduction':'🤝','knowledge_hunt':'🔍','discussion':'💬','distillation_teach':'🎓','distillation_learn':'📚','collaboration':'🔧','proposals':'👑'};
+    var emoji=phaseEmoji[d.phase]||'✅';
+    logEvent('success',emoji,from, (d.phase||'')+': '+preview);
     // Show result in chat
     var a=AGENTS.find(function(x){return x.id===from;});
     var msgs=document.getElementById('chatMessages');
