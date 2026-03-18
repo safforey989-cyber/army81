@@ -3,1694 +3,1611 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Army81 — 3D Command Dashboard v3 — Hierarchical</title>
+<title>Army81 — Neural Command Center v5 LIVE</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;height:100%;overflow:hidden;background:#000510;font-family:'Cairo',sans-serif;color:#fff;direction:rtl}
 #canvas3d{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0}
 
+/* ═══ LOADING ═══ */
+#loadScreen{position:fixed;inset:0;z-index:9999;background:radial-gradient(ellipse at center,#000a1a,#000510);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 1s}
+#loadScreen.done{opacity:0;pointer-events:none}
+.ld-logo{font-family:'Orbitron';font-size:52px;font-weight:900;color:#FFD700;text-shadow:0 0 60px rgba(255,215,0,0.4);margin-bottom:8px;letter-spacing:4px}
+.ld-sub{font-size:13px;color:rgba(255,215,0,0.4);font-family:'Orbitron';margin-bottom:30px;letter-spacing:6px}
+.ld-bar{width:320px;height:3px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden;margin-bottom:14px}
+.ld-fill{height:100%;background:linear-gradient(90deg,#FFD700,#FF6B00);width:0%;transition:width 0.3s;border-radius:2px}
+.ld-status{font-size:12px;color:rgba(255,255,255,0.35)}
+
+/* ═══ GLASSMORPHISM BASE ═══ */
+.glass{background:rgba(5,10,30,0.65);backdrop-filter:blur(20px) saturate(1.4);border:1px solid rgba(255,215,0,0.08);border-radius:16px}
+.glass-strong{background:rgba(5,10,30,0.82);backdrop-filter:blur(28px) saturate(1.6);border:1px solid rgba(255,215,0,0.12);border-radius:16px}
+
 /* ═══ TOP BAR ═══ */
-#topBar{position:fixed;top:0;left:0;right:0;height:56px;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 24px;background:linear-gradient(180deg,rgba(0,5,16,0.95) 0%,rgba(0,5,16,0.7) 100%);border-bottom:1px solid rgba(255,215,0,0.15);backdrop-filter:blur(12px)}
-#topBar .logo{display:flex;align-items:center;gap:10px;font-family:'Orbitron',sans-serif;font-size:20px;font-weight:900;color:#FFD700;text-shadow:0 0 20px rgba(255,215,0,0.5)}
-#topBar .logo .badge{width:8px;height:8px;border-radius:50%;background:#0f0;box-shadow:0 0 8px #0f0;animation:pulse-dot 2s infinite}
-#topBar .status{display:flex;align-items:center;gap:16px;font-size:13px;color:rgba(255,255,255,0.7)}
-#topBar .status .count{color:#FFD700;font-family:'Orbitron',sans-serif;font-weight:700}
-#topBar .nav{display:flex;gap:4px}
-#topBar .nav button{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:6px 16px;border-radius:6px;cursor:pointer;font-family:'Cairo',sans-serif;font-size:12px;transition:all 0.3s}
-#topBar .nav button:hover,#topBar .nav button.active{background:rgba(255,215,0,0.15);border-color:rgba(255,215,0,0.4);color:#FFD700}
-
-/* ═══ SEARCH BAR (Improvement #6) ═══ */
-#searchBar{position:fixed;top:62px;left:50%;transform:translateX(-50%);z-index:95;display:none;width:min(500px,80vw)}
-#searchBar.open{display:block}
-#searchBar input{width:100%;background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.3);color:#fff;padding:10px 16px;border-radius:10px;font-family:'Cairo',sans-serif;font-size:14px;outline:none;backdrop-filter:blur(12px)}
-#searchBar input:focus{border-color:rgba(255,215,0,0.6);box-shadow:0 0 20px rgba(255,215,0,0.1)}
-#searchBar .results{background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.15);border-top:none;border-radius:0 0 10px 10px;max-height:250px;overflow-y:auto;display:none}
-#searchBar .results.has-items{display:block}
-#searchBar .result-item{padding:10px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;font-size:13px;border-bottom:1px solid rgba(255,255,255,0.03);transition:background 0.2s}
-#searchBar .result-item:hover{background:rgba(255,215,0,0.1)}
-#searchBar .result-item .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-#searchBar .filter-row{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
-#searchBar .filter-btn{padding:3px 10px;border-radius:12px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);color:rgba(255,255,255,0.5);font-size:11px;cursor:pointer;transition:all 0.2s;font-family:'Cairo',sans-serif}
-#searchBar .filter-btn.active{border-color:rgba(255,215,0,0.4);color:#FFD700;background:rgba(255,215,0,0.1)}
-
-/* ═══ STATS PANEL (LEFT) ═══ */
-#statsPanel{position:fixed;top:72px;left:16px;width:240px;z-index:90;background:rgba(0,5,16,0.85);border:1px solid rgba(255,215,0,0.12);border-radius:12px;padding:16px;backdrop-filter:blur(12px);font-size:13px;cursor:move;user-select:none}
-#statsPanel h3{font-family:'Orbitron',sans-serif;font-size:13px;color:#FFD700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.stat-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
-.stat-row:last-child{border-bottom:none}
-.stat-label{color:rgba(255,255,255,0.6)}
-.stat-value{color:#fff;font-family:'Orbitron',sans-serif;font-weight:700;font-size:14px}
-.stat-value.gold{color:#FFD700}
-.stat-value.green{color:#00FF88}
-.stat-value.red{color:#FF4444}
-.progress-bar{width:100%;height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin-top:8px;overflow:hidden}
-.progress-bar .fill{height:100%;border-radius:2px;transition:width 1s ease}
-#pendingRequests{margin-top:12px;padding-top:8px;border-top:1px solid rgba(255,215,0,0.15)}
-#pendingRequests .pending-item{display:flex;align-items:center;gap:6px;padding:4px 0;font-size:12px;color:rgba(255,255,255,0.5);cursor:pointer;transition:color 0.3s}
-#pendingRequests .pending-item:hover{color:#FFD700}
-#pendingRequests .pending-item::before{content:'';width:6px;height:6px;border-radius:50%;background:#FF4444;animation:pulse-dot 1.5s infinite}
-
-/* ═══ AGENT PANEL (RIGHT) ═══ */
-#agentPanel{position:fixed;top:72px;right:16px;width:300px;z-index:90;background:rgba(0,5,16,0.9);border:1px solid rgba(255,215,0,0.12);border-radius:12px;padding:20px;backdrop-filter:blur(12px);transform:translateX(340px);transition:transform 0.5s cubic-bezier(0.16,1,0.3,1);opacity:0;cursor:move;user-select:none}
-#agentPanel.open{transform:translateX(0);opacity:1}
-#agentPanel .close-btn{position:absolute;top:10px;left:10px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:all 0.3s}
-#agentPanel .close-btn:hover{background:rgba(255,0,0,0.2);border-color:rgba(255,0,0,0.4);color:#ff4444}
-#agentPanel .agent-header{text-align:center;margin-bottom:16px}
-#agentPanel .agent-id{font-family:'Orbitron',sans-serif;font-size:28px;font-weight:900;background:linear-gradient(135deg,#FFD700,#FF6B00);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-#agentPanel .agent-name{font-size:16px;color:rgba(255,255,255,0.9);margin-top:4px}
-#agentPanel .agent-name-ar{font-size:13px;color:rgba(255,255,255,0.5);margin-top:2px}
-#agentPanel .agent-cat{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;margin-top:8px}
-/* Status indicator (Improvement #12) */
-#agentPanel .agent-status{display:flex;align-items:center;gap:6px;justify-content:center;margin-top:8px;font-size:12px}
-#agentPanel .agent-status .status-dot{width:8px;height:8px;border-radius:50%;animation:pulse-dot 1.5s infinite}
-#agentPanel .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,215,0,0.3),transparent);margin:14px 0}
-#agentPanel .info-row{display:flex;justify-content:space-between;padding:5px 0;font-size:13px}
-#agentPanel .info-label{color:rgba(255,255,255,0.5)}
-#agentPanel .info-value{color:#fff;font-family:'Orbitron',sans-serif;font-size:12px}
-#agentPanel .desc{font-size:12px;color:rgba(255,255,255,0.5);line-height:1.6;margin-top:10px;padding:10px;background:rgba(255,255,255,0.03);border-radius:8px}
-#sendTaskBtn{width:100%;margin-top:14px;padding:10px;background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,107,0,0.2));border:1px solid rgba(255,215,0,0.3);border-radius:8px;color:#FFD700;font-family:'Cairo',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s}
-#sendTaskBtn:hover{background:linear-gradient(135deg,rgba(255,215,0,0.35),rgba(255,107,0,0.35));box-shadow:0 0 20px rgba(255,215,0,0.2)}
-
-/* ═══ AUDIT LOG (Improvement #17) ═══ */
-#auditLog{position:fixed;top:72px;left:50%;transform:translateX(-50%);width:min(600px,85vw);max-height:70vh;z-index:110;background:rgba(0,5,16,0.97);border:1px solid rgba(255,215,0,0.2);border-radius:12px;padding:20px;backdrop-filter:blur(16px);display:none;overflow:hidden}
-#auditLog.open{display:block}
-#auditLog h3{font-family:'Orbitron',sans-serif;font-size:14px;color:#FFD700;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
-#auditLog .log-list{max-height:50vh;overflow-y:auto;scrollbar-width:thin;scrollbar-color:rgba(255,215,0,0.3) transparent}
-#auditLog .log-item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.03);font-size:12px;animation:fadeInUp 0.3s ease}
-#auditLog .log-time{color:rgba(255,255,255,0.3);font-family:'Orbitron',sans-serif;font-size:10px;min-width:60px}
-#auditLog .log-icon{font-size:14px}
-#auditLog .log-text{color:rgba(255,255,255,0.7);flex:1}
-#auditLog .log-agent{color:#FFD700;font-weight:600}
-#auditLog .close-btn{background:none;border:none;color:rgba(255,255,255,0.5);cursor:pointer;font-size:18px}
-#auditLog .export-btn{padding:4px 12px;border-radius:6px;border:1px solid rgba(255,215,0,0.3);background:rgba(255,215,0,0.1);color:#FFD700;font-size:11px;cursor:pointer;font-family:'Cairo',sans-serif}
-
-/* ═══ CHAT BOX ═══ */
-#chatBox{position:fixed;bottom:0;left:50%;transform:translateX(-50%) translateY(100%);width:min(700px,90vw);z-index:100;background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.15);border-bottom:none;border-radius:16px 16px 0 0;padding:16px;backdrop-filter:blur(16px);transition:transform 0.5s cubic-bezier(0.16,1,0.3,1)}
-#chatBox.open{transform:translateX(-50%) translateY(0)}
-#chatBox .chat-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-#chatBox .chat-header .chat-controls{display:flex;align-items:center;gap:10px}
-#chatBox .chat-header select{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);color:#fff;padding:5px 10px;border-radius:6px;font-family:'Cairo',sans-serif;font-size:12px}
-#chatBox .chat-header label{font-size:12px;color:rgba(255,255,255,0.5);display:flex;align-items:center;gap:4px}
-#chatBox .chat-header label input{accent-color:#FFD700}
-#chatMessages{max-height:200px;overflow-y:auto;margin-bottom:12px;padding:8px;background:rgba(0,0,0,0.3);border-radius:8px;scrollbar-width:thin;scrollbar-color:rgba(255,215,0,0.3) transparent}
-#chatMessages::-webkit-scrollbar{width:4px}
-#chatMessages::-webkit-scrollbar-thumb{background:rgba(255,215,0,0.3);border-radius:2px}
-.chat-msg{padding:8px 12px;margin-bottom:8px;border-radius:8px;font-size:13px;line-height:1.6;animation:fadeInUp 0.3s ease}
-.chat-msg.user{background:rgba(255,215,0,0.08);border-right:3px solid #FFD700}
-.chat-msg.agent{background:rgba(0,191,255,0.08);border-right:3px solid #00BFFF}
-.chat-msg .msg-header{display:flex;justify-content:space-between;margin-bottom:4px;font-size:11px;color:rgba(255,255,255,0.4)}
-#chatInput{display:flex;gap:8px}
-#chatInput input{flex:1;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);color:#fff;padding:10px 16px;border-radius:8px;font-family:'Cairo',sans-serif;font-size:14px;outline:none;transition:border-color 0.3s}
-#chatInput input:focus{border-color:rgba(255,215,0,0.5)}
-#chatInput input::placeholder{color:rgba(255,255,255,0.3)}
-#chatInput button{padding:10px 20px;border-radius:8px;border:1px solid rgba(255,215,0,0.3);background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,107,0,0.15));color:#FFD700;font-family:'Cairo',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s;white-space:nowrap}
-#chatInput button:hover{background:linear-gradient(135deg,rgba(255,215,0,0.35),rgba(255,107,0,0.3));box-shadow:0 0 15px rgba(255,215,0,0.15)}
-#chatInput .mic-btn{padding:10px 14px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.5);border-radius:8px;cursor:pointer;transition:all 0.3s}
-#chatInput .mic-btn:hover{color:#FFD700;border-color:rgba(255,215,0,0.3)}
-#chatInput .mic-btn.recording{color:#FF4444;border-color:rgba(255,0,0,0.5);background:rgba(255,0,0,0.1);animation:pulse-dot 1s infinite}
-
-/* ═══ CAMERA CONTROLS ═══ */
-#cameraControls{position:fixed;bottom:80px;right:16px;z-index:90;display:flex;flex-direction:column;gap:6px}
-#cameraControls button{width:42px;height:42px;border-radius:10px;background:rgba(0,5,16,0.8);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.6);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all 0.3s;backdrop-filter:blur(8px);position:relative}
-#cameraControls button:hover{background:rgba(255,215,0,0.15);border-color:rgba(255,215,0,0.4);color:#FFD700}
-#cameraControls button .tooltip{position:absolute;right:52px;background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.2);padding:4px 10px;border-radius:6px;font-size:11px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.3s;font-family:'Cairo',sans-serif}
-#cameraControls button:hover .tooltip{opacity:1}
+#topBar{position:fixed;top:0;left:0;right:0;height:50px;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 18px;background:rgba(0,5,16,0.7);backdrop-filter:blur(24px) saturate(1.5);border-bottom:1px solid rgba(255,215,0,0.1)}
+.tb-logo{display:flex;align-items:center;gap:10px;font-family:'Orbitron';font-size:17px;font-weight:900;color:#FFD700;text-shadow:0 0 20px rgba(255,215,0,0.4)}
+.tb-dot{width:8px;height:8px;border-radius:50%;background:#0f0;box-shadow:0 0 10px #0f0;animation:pulse 2s infinite}
+.tb-center{display:flex;align-items:center;gap:16px;font-size:11px;color:rgba(255,255,255,0.6)}
+.tb-center .val{color:#FFD700;font-family:'Orbitron';font-weight:700}
+.tb-nav{display:flex;gap:3px}
+.nb{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:rgba(255,255,255,0.6);padding:5px 12px;border-radius:8px;cursor:pointer;font-family:'Cairo';font-size:10px;transition:all 0.3s;display:flex;align-items:center;gap:4px}
+.nb:hover,.nb.on{background:rgba(255,215,0,0.12);border-color:rgba(255,215,0,0.3);color:#FFD700}
+.nb .badge{background:#ff4444;color:#fff;font-size:8px;padding:1px 5px;border-radius:8px;font-family:'Orbitron'}
 
 /* ═══ DEMO BANNER ═══ */
-#demoBanner{position:fixed;top:60px;left:50%;transform:translateX(-50%);z-index:95;background:rgba(255,107,0,0.15);border:1px solid rgba(255,107,0,0.3);border-radius:8px;padding:8px 20px;font-size:12px;color:#FF6B00;display:none;backdrop-filter:blur(8px);font-family:'Cairo',sans-serif}
+#demoBanner{position:fixed;top:52px;left:50%;transform:translateX(-50%);z-index:99;padding:5px 18px;border-radius:8px;font-size:11px;color:#FFA500;display:none;white-space:nowrap}
 
-/* ═══ CHAT TOGGLE ═══ */
-#chatToggle{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:99;padding:10px 28px;background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,107,0,0.15));border:1px solid rgba(255,215,0,0.3);border-radius:30px;color:#FFD700;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.3s;backdrop-filter:blur(8px)}
-#chatToggle:hover{background:linear-gradient(135deg,rgba(255,215,0,0.35),rgba(255,107,0,0.3));box-shadow:0 0 25px rgba(255,215,0,0.2)}
+/* ═══ STATS PANEL ═══ */
+#statsPanel{position:fixed;top:60px;left:14px;width:220px;z-index:90;padding:14px;font-size:11px;cursor:move;user-select:none}
+#statsPanel h3{font-family:'Orbitron';font-size:11px;color:#FFD700;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.sr{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.sr .l{color:rgba(255,255,255,0.45);font-size:10px}
+.sr .v{color:#fff;font-family:'Orbitron';font-weight:700;font-size:12px}
+.sr .v.g{color:#FFD700}
+.sr .v.gr{color:#00FF88}
 
-/* ═══ SOUND TOGGLE (Improvement #18) ═══ */
-#soundToggle{position:fixed;top:62px;right:16px;z-index:95;width:36px;height:36px;border-radius:8px;background:rgba(0,5,16,0.8);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;transition:all 0.3s;backdrop-filter:blur(8px)}
-#soundToggle:hover{color:#FFD700;border-color:rgba(255,215,0,0.3)}
-#soundToggle.muted{color:#FF4444}
+/* ═══ HOLOGRAPHIC AGENT CARD ═══ */
+#holoCard{position:fixed;z-index:150;width:360px;pointer-events:none;opacity:0;transition:opacity 0.4s;transform-style:preserve-3d}
+#holoCard.show{opacity:1;pointer-events:auto}
+.hc-inner{padding:0;overflow:hidden;position:relative}
+.hc-glow{position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px;border-radius:18px;z-index:-1;opacity:0.5}
+.hc-header{padding:16px 18px 12px;display:flex;align-items:center;gap:14px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.hc-icon{width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Orbitron';font-weight:900;font-size:15px;color:#000;position:relative;box-shadow:0 0 20px rgba(255,215,0,0.3)}
+.hc-icon .ring{position:absolute;inset:-4px;border-radius:50%;border:2px solid;animation:spinRing 3s linear infinite}
+.hc-info h4{font-size:14px;margin-bottom:2px}
+.hc-info .cat{font-size:10px;color:rgba(255,255,255,0.4)}
+.hc-status{display:flex;align-items:center;gap:6px;margin-top:4px}
+.hc-status .dot{width:7px;height:7px;border-radius:50%}
+.hc-status .txt{font-size:10px}
+.hc-body{padding:14px 18px}
+.hc-section{margin-bottom:12px}
+.hc-section h5{font-size:10px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;font-family:'Orbitron'}
+.hc-progress{width:100%;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden;margin-top:4px}
+.hc-progress .fill{height:100%;border-radius:2px;transition:width 0.5s}
+.hc-task{font-size:11px;color:rgba(255,255,255,0.7);margin-bottom:4px}
+.hc-dep{font-size:10px;color:#FFA500;padding:4px 8px;border-radius:6px;background:rgba(255,165,0,0.1);border:1px solid rgba(255,165,0,0.2);margin-top:4px;display:inline-block}
+.hc-mem{font-size:10px;color:rgba(255,255,255,0.5);padding:3px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.hc-tools{display:flex;flex-wrap:wrap;gap:4px}
+.hc-tool{padding:2px 7px;border-radius:8px;font-size:9px;border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5)}
+.hc-tool.active{border-color:rgba(0,255,136,0.4);color:#00FF88;background:rgba(0,255,136,0.08);box-shadow:0 0 8px rgba(0,255,136,0.2)}
+.hc-actions{display:flex;gap:6px;padding:10px 18px;border-top:1px solid rgba(255,255,255,0.06)}
+.hc-btn{flex:1;padding:7px;border-radius:8px;border:1px solid rgba(255,215,0,0.2);background:rgba(255,215,0,0.06);color:#FFD700;font-size:10px;cursor:pointer;text-align:center;font-family:'Cairo';transition:all 0.3s}
+.hc-btn:hover{background:rgba(255,215,0,0.15);border-color:rgba(255,215,0,0.4)}
+.hc-btn.danger{border-color:rgba(255,68,68,0.3);color:#ff4444;background:rgba(255,68,68,0.06)}
+.hc-btn.danger:hover{background:rgba(255,68,68,0.15)}
 
-/* ═══ FPS COUNTER (Improvement #5) ═══ */
-#fpsCounter{position:fixed;bottom:16px;left:16px;z-index:90;font-family:'Orbitron',sans-serif;font-size:10px;color:rgba(255,255,255,0.3);background:rgba(0,5,16,0.6);padding:4px 8px;border-radius:4px}
+/* ═══ CHAT PANEL ═══ */
+#chatPanel{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(700px,92vw);z-index:95;border-bottom-left-radius:0;border-bottom-right-radius:0;overflow:hidden;transition:transform 0.4s}
+#chatPanel.hidden{transform:translateX(-50%) translateY(calc(100% - 42px))}
+.cp-header{padding:10px 16px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;border-bottom:1px solid rgba(255,255,255,0.05)}
+.cp-header h3{font-family:'Orbitron';font-size:11px;color:#FFD700;display:flex;align-items:center;gap:6px}
+.cp-mode{display:flex;align-items:center;gap:10px;font-size:10px;color:rgba(255,255,255,0.4)}
+.cp-mode select{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:#fff;padding:3px 8px;border-radius:6px;font-family:'Cairo';font-size:10px;outline:none}
+.cp-messages{max-height:200px;overflow-y:auto;padding:10px 16px}
+.cp-msg{padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.03);font-size:11px;display:flex;align-items:flex-start;gap:8px}
+.cp-msg .icon{font-size:14px;flex-shrink:0;margin-top:2px}
+.cp-msg .sender{color:#FFD700;font-size:10px;font-family:'Orbitron'}
+.cp-msg .text{color:rgba(255,255,255,0.7)}
+.cp-msg .time{color:rgba(255,255,255,0.2);font-size:9px;margin-right:auto;white-space:nowrap}
+.cp-input{display:flex;align-items:center;gap:8px;padding:10px 16px;border-top:1px solid rgba(255,255,255,0.05)}
+.cp-input input{flex:1;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#fff;padding:8px 14px;border-radius:10px;font-family:'Cairo';font-size:12px;outline:none;transition:border-color 0.3s}
+.cp-input input:focus{border-color:rgba(255,215,0,0.3)}
+.cp-input button{padding:8px 16px;border-radius:10px;border:1px solid rgba(255,215,0,0.3);background:linear-gradient(135deg,rgba(255,215,0,0.15),rgba(255,165,0,0.1));color:#FFD700;font-family:'Cairo';font-size:11px;cursor:pointer;transition:all 0.3s;white-space:nowrap}
+.cp-input button:hover{background:linear-gradient(135deg,rgba(255,215,0,0.25),rgba(255,165,0,0.2))}
 
-/* ═══ LOADING SCREEN ═══ */
-#loadingScreen{position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;background:#000510;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 1s ease}
-#loadingScreen.hidden{opacity:0;pointer-events:none}
-#loadingScreen .loader-text{font-family:'Orbitron',sans-serif;font-size:32px;font-weight:900;color:#FFD700;text-shadow:0 0 30px rgba(255,215,0,0.5);margin-bottom:20px}
-#loadingScreen .loader-bar{width:200px;height:3px;background:rgba(255,255,255,0.1);border-radius:2px;overflow:hidden}
-#loadingScreen .loader-bar .fill{width:0%;height:100%;background:linear-gradient(90deg,#FFD700,#FF6B00);border-radius:2px;transition:width 0.3s}
-#loadingScreen .loader-status{margin-top:12px;font-size:12px;color:rgba(255,255,255,0.4)}
+/* ═══ NOTIFICATION PANEL ═══ */
+#notifPanel{position:fixed;top:54px;right:14px;width:300px;z-index:110;max-height:400px;overflow-y:auto;display:none;padding:12px}
+#notifPanel.open{display:block}
+.notif{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,0.04);font-size:11px;display:flex;gap:8px;align-items:flex-start}
+.notif .ic{font-size:14px;flex-shrink:0}
+.notif .body{flex:1}
+.notif .body .title{color:rgba(255,255,255,0.8);margin-bottom:2px}
+.notif .body .desc{color:rgba(255,255,255,0.4);font-size:10px}
+.notif .time{color:rgba(255,255,255,0.2);font-size:9px;white-space:nowrap}
 
-/* ═══ TOOLTIP ═══ */
-#hoverTooltip{position:fixed;z-index:200;background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.25);border-radius:10px;padding:12px 16px;pointer-events:none;opacity:0;transition:opacity 0.2s;backdrop-filter:blur(12px);min-width:200px}
-#hoverTooltip .tt-id{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;color:#FFD700}
-#hoverTooltip .tt-name{font-size:13px;color:rgba(255,255,255,0.8);margin-top:2px}
-#hoverTooltip .tt-cat{font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px}
-/* Rich tooltip (Improvement #9) */
-#hoverTooltip .tt-status{display:flex;align-items:center;gap:4px;margin-top:6px;font-size:11px}
-#hoverTooltip .tt-status .dot{width:6px;height:6px;border-radius:50%}
-#hoverTooltip .tt-last-task{font-size:10px;color:rgba(255,255,255,0.3);margin-top:4px;font-style:italic}
+/* ═══ SEARCH OVERLAY ═══ */
+#searchOverlay{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.5);display:none;align-items:flex-start;justify-content:center;padding-top:80px;backdrop-filter:blur(6px)}
+#searchOverlay.open{display:flex}
+#searchBox{width:min(560px,85vw);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+#searchBox input{width:100%;background:transparent;border:none;color:#fff;padding:14px 18px;font-family:'Cairo';font-size:14px;outline:none}
+#searchBox input::placeholder{color:rgba(255,255,255,0.25)}
+.sf{display:flex;gap:4px;padding:0 14px 10px;flex-wrap:wrap}
+.sf span{padding:3px 10px;border-radius:12px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.02);color:rgba(255,255,255,0.4);font-size:10px;cursor:pointer;transition:all 0.2s;font-family:'Cairo'}
+.sf span.on{border-color:rgba(255,215,0,0.4);color:#FFD700;background:rgba(255,215,0,0.08)}
+.s-results{max-height:300px;overflow-y:auto;border-top:1px solid rgba(255,255,255,0.04)}
+.s-item{padding:10px 18px;cursor:pointer;display:flex;align-items:center;gap:10px;font-size:12px;transition:background 0.2s}
+.s-item:hover{background:rgba(255,215,0,0.06)}
+.s-item .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
 
-/* ═══ VR BUTTON (Improvement #20) ═══ */
-#vrButton{position:fixed;bottom:80px;left:16px;z-index:90;padding:8px 16px;border-radius:8px;background:rgba(0,5,16,0.8);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);cursor:pointer;font-family:'Cairo',sans-serif;font-size:12px;transition:all 0.3s;backdrop-filter:blur(8px);display:none}
-#vrButton:hover{color:#FFD700;border-color:rgba(255,215,0,0.3)}
+/* ═══ SQUAD BUILDER ═══ */
+#squadPanel{position:fixed;top:54px;left:50%;transform:translateX(-50%);width:min(500px,90vw);z-index:110;display:none;padding:16px}
+#squadPanel.open{display:block}
+.sq-title{font-family:'Orbitron';font-size:12px;color:#FFD700;margin-bottom:12px}
+.sq-zone{min-height:80px;border:2px dashed rgba(255,215,0,0.15);border-radius:12px;padding:10px;display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;transition:border-color 0.3s}
+.sq-zone.over{border-color:rgba(255,215,0,0.5);background:rgba(255,215,0,0.03)}
+.sq-agent{padding:4px 10px;border-radius:8px;font-size:10px;cursor:grab;display:flex;align-items:center;gap:4px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04)}
+.sq-agent .d{width:8px;height:8px;border-radius:50%}
+.sq-actions{display:flex;gap:8px;justify-content:center}
+
+/* ═══ CAMERA CONTROLS ═══ */
+#camControls{position:fixed;bottom:60px;right:14px;z-index:90;display:flex;flex-direction:column;gap:4px}
+.cc{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;transition:all 0.3s}
+.cc:hover{background:rgba(255,215,0,0.15);border-color:rgba(255,215,0,0.4);color:#FFD700}
+
+/* ═══ RIPPLE EFFECT ═══ */
+.ripple-ring{position:absolute;border-radius:50%;border:2px solid;animation:rippleExpand 1s ease-out forwards;pointer-events:none}
+@keyframes rippleExpand{0%{width:0;height:0;opacity:1}100%{width:200px;height:200px;opacity:0;margin:-100px}}
+
+/* ═══ FPS COUNTER ═══ */
+#fpsCounter{position:fixed;bottom:8px;left:8px;font-family:'Orbitron';font-size:9px;color:rgba(255,255,255,0.25);z-index:80}
 
 /* ═══ ANIMATIONS ═══ */
-@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:0.3}}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-@keyframes glow-pulse{0%,100%{box-shadow:0 0 5px rgba(255,215,0,0.2)}50%{box-shadow:0 0 20px rgba(255,215,0,0.4)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+@keyframes spinRing{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 
-/* ═══ RESPONSIVE ═══ */
-@media(max-width:768px){
-  #statsPanel{width:180px;font-size:11px;padding:10px}
-  #agentPanel{width:240px}
-  #topBar{padding:0 10px}
-  #topBar .nav button{padding:4px 8px;font-size:10px}
-  #cameraControls button{width:36px;height:36px}
-}
+/* ═══ SCROLLBAR ═══ */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,215,0,0.2);border-radius:2px}
 </style>
 </head>
 <body>
 
 <!-- LOADING SCREEN -->
-<div id="loadingScreen">
-  <div class="loader-text">ARMY81</div>
-  <div class="loader-bar"><div class="fill" id="loadProgress"></div></div>
-  <div class="loader-status" id="loadStatus">جاري التهيئة...</div>
+<div id="loadScreen">
+  <div class="ld-logo">ARMY81</div>
+  <div class="ld-sub">NEURAL COMMAND CENTER</div>
+  <div class="ld-bar"><div class="ld-fill" id="ldFill"></div></div>
+  <div class="ld-status" id="ldStatus">جاري تهيئة الشبكة العصبية...</div>
 </div>
+
+<!-- CANVAS -->
+<canvas id="canvas3d"></canvas>
 
 <!-- TOP BAR -->
 <div id="topBar">
-  <div class="nav">
-    <button class="active" onclick="setView('home',this)">🏠 الرئيسية</button>
-    <button onclick="setView('chat',this)">💬 Chat</button>
-    <button onclick="setView('agents',this)">🤖 الوكلاء</button>
-    <button onclick="setView('reports',this)">📊 التقارير</button>
-    <button onclick="setView('memory',this)">🧠 الذاكرة</button>
-    <button onclick="toggleSearch()">🔍 بحث</button>
-    <button onclick="toggleAuditLog()">📋 السجل</button>
+  <div class="tb-logo"><span class="tb-dot"></span> ARMY81</div>
+  <div class="tb-center">
+    <span id="clock"></span>
+    <span>DEMO MODE <span style="color:#0f0">⚡</span></span>
+    <span>ACTIVE <span class="val" id="activeCount">81</span></span>
   </div>
-  <div class="status">
-    <span id="clockDisplay"></span>
-    <span>OPERATIONAL ⚡</span>
-    <span>ACTIVE <span class="count">81</span></span>
+  <div class="tb-nav">
+    <button class="nb" onclick="resetCamera()">🏠</button>
+    <button class="nb" onclick="toggleChat()">💬</button>
+    <button class="nb" onclick="toggleSquad()">🎯 فريق</button>
+    <button class="nb" onclick="toggleNotif()">🔔 <span class="badge" id="notifBadge">0</span></button>
+    <button class="nb" onclick="toggleSearch()">🔍</button>
   </div>
-  <div class="logo">
-    <span class="badge"></span> ARMY81
-  </div>
-</div>
-
-<!-- SEARCH BAR (Improvement #6) -->
-<div id="searchBar">
-  <input type="text" id="searchInput" placeholder="ابحث عن وكيل بالاسم أو المعرف..." oninput="handleSearch(this.value)">
-  <div class="filter-row" id="filterRow"></div>
-  <div class="results" id="searchResults"></div>
 </div>
 
 <!-- DEMO BANNER -->
-<div id="demoBanner">⚠ وضع العرض — شغّل <code>python gateway/app.py</code> للاتصال المباشر</div>
+<div id="demoBanner" class="glass">⚠ وضع العرض — شغّل python gateway/app.py للاتصال المباشر</div>
 
 <!-- STATS PANEL -->
-<div id="statsPanel">
+<div id="statsPanel" class="glass">
   <h3>📊 إحصائيات حية</h3>
-  <div class="stat-row"><span class="stat-label">المهام اليوم</span><span class="stat-value gold" id="statTasks">0</span></div>
-  <div class="stat-row"><span class="stat-label">معدل النجاح</span><span class="stat-value green" id="statSuccess">0%</span></div>
-  <div class="stat-row"><span class="stat-label">آخر تحديث</span><span class="stat-value" id="statUpdate">--:--</span></div>
-  <div class="stat-row"><span class="stat-label">المعرفة</span><span class="stat-value" id="statKnowledge">1.2 GB</span></div>
-  <div class="progress-bar"><div class="fill" id="knowledgeBar" style="width:65%;background:linear-gradient(90deg,#FFD700,#FF6B00)"></div></div>
-  <div class="stat-row" style="margin-top:8px"><span class="stat-label">FPS</span><span class="stat-value" id="statFps" style="font-size:11px">--</span></div>
-  <div id="pendingRequests">
-    <div class="pending-item" onclick="handlePending('طلبات منتظرة')">طلبات منتظرة</div>
-    <div class="pending-item" onclick="handlePending('اقتراح جديد')">اقتراح جديد — تحليل بيانات</div>
-    <div class="pending-item" onclick="handlePending('مراجعة')">مراجعة تقرير أمني</div>
-    <div class="pending-item" onclick="handlePending('بحث')">بحث علمي متقدم</div>
-  </div>
+  <div class="sr"><span class="l">المهام اليوم</span><span class="v g" id="sTasks">0</span></div>
+  <div class="sr"><span class="l">معدل النجاح</span><span class="v gr" id="sRate">0%</span></div>
+  <div class="sr"><span class="l">آخر تحديث</span><span class="v" id="sTime">--</span></div>
+  <div class="sr"><span class="l">الذاكرة</span><span class="v" id="sMem">0 MB</span></div>
+  <div class="sr"><span class="l">FPS</span><span class="v" id="sFps">0</span></div>
+  <div class="sr"><span class="l">النموذج النشط</span><span class="v" id="sModel">gemini</span></div>
+  <div class="sr"><span class="l">الاتصالات النشطة</span><span class="v g" id="sConns">0</span></div>
+  <div class="sr"><span class="l">النبضات/ث</span><span class="v gr" id="sPulses">0</span></div>
 </div>
 
-<!-- AGENT PANEL -->
-<div id="agentPanel">
-  <button class="close-btn" onclick="closeAgentPanel()">×</button>
-  <div class="agent-header">
-    <div class="agent-id" id="apId">A01</div>
-    <div class="agent-name" id="apName">Agent</div>
-    <div class="agent-name-ar" id="apNameAr">وكيل</div>
-    <div class="agent-cat" id="apCat">Category</div>
-    <div class="agent-status" id="apStatus"><span class="status-dot" style="background:#0f0"></span><span>متاح</span></div>
-  </div>
-  <div class="divider"></div>
-  <div class="info-row"><span class="info-label">النموذج</span><span class="info-value" id="apModel">—</span></div>
-  <div class="info-row"><span class="info-label">المهام المنجزة</span><span class="info-value" id="apTasks">—</span></div>
-  <div class="info-row"><span class="info-label">الدقة</span><span class="info-value" id="apAccuracy">—</span></div>
-  <div class="info-row"><span class="info-label">آخر مهمة</span><span class="info-value" id="apLastTask">—</span></div>
-  <div class="divider"></div>
-  <div class="desc" id="apDesc">—</div>
-  <button id="sendTaskBtn" onclick="openChatForAgent()">⚡ أرسل مهمة</button>
-</div>
-
-<!-- AUDIT LOG (Improvement #17) -->
-<div id="auditLog">
-  <h3>📋 سجل أحداث النظام <span style="display:flex;gap:8px"><button class="export-btn" onclick="exportAuditLog()">📥 تصدير</button><button class="close-btn" onclick="toggleAuditLog()" style="background:none;border:none;color:rgba(255,255,255,0.5);cursor:pointer;font-size:18px">×</button></span></h3>
-  <div class="log-list" id="logList"></div>
-</div>
-
-<!-- CHAT BOX -->
-<div id="chatBox">
-  <div class="chat-header">
-    <button class="close-btn" onclick="toggleChat()" style="position:static;width:auto;height:auto;border-radius:6px;padding:4px 10px;font-size:12px">×</button>
-    <div class="chat-controls">
-      <select id="chatAgentSelect"></select>
-      <label>Pipeline Mode <input type="checkbox" id="pipelineMode"></label>
+<!-- HOLOGRAPHIC AGENT CARD -->
+<div id="holoCard">
+  <div class="hc-inner glass-strong">
+    <div class="hc-glow" id="hcGlow"></div>
+    <div class="hc-header">
+      <div class="hc-icon" id="hcIcon"><span class="ring" id="hcRing"></span><span id="hcId"></span></div>
+      <div class="hc-info">
+        <h4 id="hcName"></h4>
+        <div class="cat" id="hcCat"></div>
+        <div class="hc-status"><div class="dot" id="hcStatusDot"></div><span class="txt" id="hcStatusTxt"></span></div>
+      </div>
+    </div>
+    <div class="hc-body">
+      <div class="hc-section">
+        <h5>المهمة الحالية</h5>
+        <div class="hc-task" id="hcTask">خامل</div>
+        <div class="hc-progress"><div class="fill" id="hcProgress"></div></div>
+      </div>
+      <div class="hc-section" id="hcDepSection" style="display:none">
+        <h5>ينتظر</h5>
+        <div class="hc-dep" id="hcDep"></div>
+      </div>
+      <div class="hc-section">
+        <h5>الذاكرة قصيرة المدى</h5>
+        <div id="hcMemory"></div>
+      </div>
+      <div class="hc-section">
+        <h5>الأدوات</h5>
+        <div class="hc-tools" id="hcTools"></div>
+      </div>
+    </div>
+    <div class="hc-actions">
+      <button class="hc-btn" onclick="summonAgent()">💬 استدعاء</button>
+      <button class="hc-btn" onclick="focusAgent()">🎯 تركيز</button>
+      <button class="hc-btn danger" onclick="toggleAgentPause()">⏸ إيقاف</button>
     </div>
   </div>
-  <div id="chatMessages"></div>
-  <div id="chatInput">
-    <input type="text" id="chatInputField" placeholder="اكتب مهمتك هنا..." onkeydown="if(event.key==='Enter')sendChat()">
+</div>
+
+<!-- CHAT PANEL -->
+<div id="chatPanel" class="glass-strong hidden">
+  <div class="cp-header" onclick="toggleChat()">
+    <h3>🧠 مركز القيادة</h3>
+    <div class="cp-mode">
+      <select id="chatTarget">
+        <option value="broadcast">📡 بث عام — كل الوكلاء</option>
+        <option value="A01">⭐ A01 — القيادة الاستراتيجية</option>
+      </select>
+    </div>
+  </div>
+  <div class="cp-messages" id="chatMessages"></div>
+  <div class="cp-input">
+    <button onclick="toggleMic()" id="micBtn" title="إدخال صوتي">🎤</button>
+    <input type="text" id="chatInput" placeholder="أعطِ أمرك يا قائد..." onkeydown="if(event.key==='Enter')sendChat()">
     <button onclick="sendChat()">⚡ إرسال</button>
-    <button class="mic-btn" id="micBtn" onclick="toggleVoiceInput()">🎤</button>
   </div>
 </div>
 
-<!-- CHAT TOGGLE -->
-<button id="chatToggle" onclick="toggleChat()">💬 فتح المحادثة</button>
+<!-- NOTIFICATION PANEL -->
+<div id="notifPanel" class="glass-strong">
+  <div style="font-family:'Orbitron';font-size:11px;color:#FFD700;margin-bottom:10px">🔔 الإشعارات</div>
+  <div id="notifList"></div>
+</div>
 
-<!-- SOUND TOGGLE (Improvement #18) -->
-<button id="soundToggle" onclick="toggleSound()">🔊</button>
+<!-- SEARCH OVERLAY -->
+<div id="searchOverlay" onclick="if(event.target===this)toggleSearch()">
+  <div id="searchBox" class="glass-strong">
+    <input type="text" id="searchInput" placeholder="ابحث عن وكيل، أداة، أو فئة... (اضغط /)" oninput="doSearch(this.value)">
+    <div class="sf" id="searchFilters"></div>
+    <div class="s-results" id="searchResults"></div>
+  </div>
+</div>
 
-<!-- VR BUTTON (Improvement #20) -->
-<button id="vrButton" onclick="enterVR()">🥽 وضع VR</button>
+<!-- SQUAD BUILDER -->
+<div id="squadPanel" class="glass-strong">
+  <div class="sq-title">🎯 بناء فريق عمل</div>
+  <div class="sq-zone" id="squadZone">
+    <div style="color:rgba(255,255,255,0.2);font-size:11px;width:100%;text-align:center;padding:20px">اسحب الوكلاء هنا أو انقر عليهم لإضافتهم</div>
+  </div>
+  <div class="sq-actions">
+    <button class="hc-btn" onclick="launchSquad()">🚀 إطلاق الفريق</button>
+    <button class="hc-btn danger" onclick="clearSquad()">🗑 مسح</button>
+  </div>
+</div>
 
 <!-- CAMERA CONTROLS -->
-<div id="cameraControls">
-  <button onclick="resetView()"><span class="tooltip">إعادة ضبط</span>↺</button>
-  <button onclick="topView()"><span class="tooltip">نظرة علوية</span>▲</button>
-  <button onclick="focusSelected()"><span class="tooltip">تركيز</span>◎</button>
-  <button onclick="cinematicFly()"><span class="tooltip">جولة سينمائية</span>🎬</button>
+<div id="camControls">
+  <button class="cc glass" onclick="resetCamera()" title="إعادة ضبط">↺</button>
+  <button class="cc glass" onclick="topView()" title="نظرة علوية">▲</button>
+  <button class="cc glass" onclick="focusCore()" title="تركيز النواة">◎</button>
+  <button class="cc glass" onclick="cinematicTour()" title="جولة سينمائية">🎬</button>
+  <button class="cc glass" onclick="toggleAutoTrack()" title="تتبع ذكي" id="autoTrackBtn">🎯</button>
 </div>
 
-<!-- TOOLTIP -->
-<div id="hoverTooltip">
-  <div class="tt-id"></div>
-  <div class="tt-name"></div>
-  <div class="tt-cat"></div>
-  <div class="tt-status"><span class="dot"></span><span class="tt-status-text"></span></div>
-  <div class="tt-last-task"></div>
-</div>
+<!-- FPS -->
+<div id="fpsCounter">FPS: 0</div>
+
+<!-- SCRIPTS -->
+<script type="importmap">
+{"imports":{
+  "three":"https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"
+}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {EffectComposer} from 'three/addons/postprocessing/EffectComposer.js';
+import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
+import {UnrealBloomPass} from 'three/addons/postprocessing/UnrealBloomPass.js';
+import {BokehPass} from 'three/addons/postprocessing/BokehPass.js';
+
+/* ═══════════════════════════════════════════
+   SECTION 0: GATEWAY CONNECTION — حقيقي 100%
+   ═══════════════════════════════════════════ */
+const GATEWAY = 'http://localhost:8181';
+let isLive = false; // true = gateway متصل
 
-<!-- FPS Counter -->
-<div id="fpsCounter"></div>
-
-<canvas id="canvas3d"></canvas>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script>
-// ═══════════════════════════════════════════
-// ARMY81 3D COMMAND DASHBOARD v3.0
-// Hierarchical — A00 Supreme Commander + Category Leaders + Real Connections
-// ═══════════════════════════════════════════
-
-const GATEWAY = "http://localhost:8181";
-let isDemoMode = true;
-let chatOpen = false;
-let selectedAgent = null;
-let soundEnabled = false;
-let activeFilter = null;
-let searchOpen = false;
-let auditLogOpen = false;
-const auditEntries = [];
-
-// ═══ AUDIO SYSTEM (Improvement #18) ═══
-const AudioCtx = window.AudioContext || window.webkitAudioContext;
-let audioCtx = null;
-function playUISound(type) {
-  if (!soundEnabled) return;
-  if (!audioCtx) audioCtx = new AudioCtx();
-  const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
-  osc.connect(gain);
-  gain.connect(audioCtx.destination);
-  gain.gain.value = 0.05;
-  const t = audioCtx.currentTime;
-  if (type === 'click') { osc.frequency.setValueAtTime(800, t); osc.frequency.exponentialRampToValueAtTime(400, t + 0.1); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.15); osc.start(t); osc.stop(t + 0.15); }
-  else if (type === 'send') { osc.frequency.setValueAtTime(400, t); osc.frequency.exponentialRampToValueAtTime(1200, t + 0.2); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.3); osc.start(t); osc.stop(t + 0.3); }
-  else if (type === 'receive') { osc.frequency.setValueAtTime(1200, t); osc.frequency.exponentialRampToValueAtTime(600, t + 0.15); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.25); osc.start(t); osc.stop(t + 0.25); }
-  else if (type === 'alert') { osc.type = 'square'; osc.frequency.setValueAtTime(600, t); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.4); osc.start(t); osc.stop(t + 0.4); }
-  else if (type === 'beam') { osc.type = 'sine'; osc.frequency.setValueAtTime(200, t); osc.frequency.exponentialRampToValueAtTime(2000, t + 0.5); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.6); osc.start(t); osc.stop(t + 0.6); }
-}
-function toggleSound() {
-  soundEnabled = !soundEnabled;
-  const btn = document.getElementById('soundToggle');
-  btn.textContent = soundEnabled ? '🔊' : '🔇';
-  btn.classList.toggle('muted', !soundEnabled);
-  if (soundEnabled) playUISound('click');
-}
-
-// ═══ AGENT DATA ═══
-const CATEGORIES = {
-  cat1_science: { label: 'العلوم والتقنية', color: 0x00BFFF, hex: '#00BFFF', ring: 8 },
-  cat2_society: { label: 'المجتمع والسياسة', color: 0x00FF88, hex: '#00FF88', ring: 14 },
-  cat3_tools: { label: 'الأدوات والإعلام', color: 0xFF6B00, hex: '#FF6B00', ring: 20 },
-  cat4_management: { label: 'الإدارة والحوكمة', color: 0x9B59B6, hex: '#9B59B6', ring: 26 },
-  cat5_behavior: { label: 'السلوك والنفس', color: 0xFF1493, hex: '#FF1493', ring: 32 },
-  cat6_leadership: { label: 'القيادة والاستراتيجية', color: 0xFFD700, hex: '#FFD700', ring: 38 },
-  cat7_new: { label: 'الجيل الجديد', color: 0xC0C0C0, hex: '#C0C0C0', ring: 44 }
-};
-
-// ═══ SUPREME COMMANDER — القائد الأعلى ═══
-const SUPREME_COMMANDER = {
-  id: "A00", name: "Supreme Commander", name_ar: "القائد الأعلى",
-  cat: "commander", model: "gemini-pro",
-  desc: "القائد الأعلى لجيش الـ 81 وكيل. ينسّق الاستراتيجية العامة، يوزّع المهام، يراقب الأداء، ويتخذ القرارات الحاسمة."
-};
-
-// Category Leaders — قادة الفئات (يتصلون مباشرة بالقائد الأعلى)
-const CATEGORY_LEADERS = {
-  cat1_science: "A01",
-  cat2_society: "A10",
-  cat3_tools: "A25",
-  cat4_management: "A35",
-  cat5_behavior: "A43",
-  cat6_leadership: "A56",
-  cat7_new: "A72",
-};
-
-const AGENTS_DATA = [
-{id:"A01",name:"Science Researcher",name_ar:"وكيل البحث العلمي",cat:"cat1_science",model:"gemini-pro",desc:"يبحث في الأدبيات العلمية ويلخص أحدث الاكتشافات ويربطها بالتطبيقات العملية.",isLeader:true},
-{id:"A02",name:"Medical Research",name_ar:"وكيل البحث الطبي",cat:"cat1_science",model:"gemini-pro",desc:"يبحث في الأدبيات الطبية، يلخص الأبحاث، ويجيب على الأسئلة الطبية بمصادر موثوقة."},
-{id:"A03",name:"Physics & Quantum Science",name_ar:"وكيل الفيزياء وعلوم الكم",cat:"cat1_science",model:"gemini-pro",desc:"يشرح المفاهيم الفيزيائية من الكلاسيكية إلى الكم ويحلل تطبيقات الفيزياء في التقنية."},
-{id:"A04",name:"Climate & Environment",name_ar:"وكيل المناخ والبيئة",cat:"cat1_science",model:"gemini-flash",desc:"يحلل التغير المناخي والتحديات البيئية ويقيّم الحلول المستدامة."},
-{id:"A05",name:"Technology Scout",name_ar:"وكيل كشف التقنيات الناشئة",cat:"cat1_science",model:"gemini-flash",desc:"يرصد التقنيات الناشئة ويقيّم أثرها التحويلي."},
-{id:"A06",name:"Clinical Medicine",name_ar:"وكيل الطب السريري",cat:"cat1_science",model:"gemini-pro",desc:"يحلل الحالات السريرية والبروتوكولات العلاجية."},
-{id:"A07",name:"Advanced Manufacturing",name_ar:"وكيل التصنيع المتقدم",cat:"cat1_science",model:"gemini-flash",desc:"يحلل تقنيات التصنيع المتقدم والأتمتة."},
-{id:"A08",name:"Robotics & Automation",name_ar:"وكيل الروبوتات والأتمتة",cat:"cat1_science",model:"gemini-flash",desc:"يحلل مجال الروبوتات والأتمتة."},
-{id:"A09",name:"Space & Defense Technology",name_ar:"وكيل تقنيات الفضاء والدفاع",cat:"cat1_science",model:"gemini-flash",desc:"يحلل مجال الفضاء التجاري والدفاعي."},
-{id:"A10",name:"Policy Analyst",name_ar:"وكيل تحليل السياسات",cat:"cat2_society",model:"gemini-flash",desc:"يحلل السياسات العامة والتشريعات."},
-{id:"A11",name:"Financial Analyst",name_ar:"وكيل التحليل المالي",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الأسواق المالية والبيانات الاقتصادية."},
-{id:"A12",name:"Content Creator",name_ar:"وكيل إنشاء المحتوى",cat:"cat2_society",model:"gemini-flash",desc:"ينشئ محتوى عالي الجودة."},
-{id:"A13",name:"Legal Advisor",name_ar:"وكيل الاستشارة القانونية",cat:"cat2_society",model:"gemini-pro",desc:"يحلل القضايا القانونية ويفسّر القوانين."},
-{id:"A14",name:"Global Economics Analyst",name_ar:"وكيل الاقتصاد العالمي",cat:"cat2_society",model:"gemini-pro",desc:"يحلل الاقتصاد الكلي العالمي."},
-{id:"A15",name:"Crypto & Digital Assets",name_ar:"وكيل العملات الرقمية",cat:"cat2_society",model:"gemini-flash",desc:"يحلل سوق العملات الرقمية."},
-{id:"A16",name:"History Analyst",name_ar:"وكيل تحليل التاريخ",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الأحداث التاريخية ويستخرج الدروس."},
-{id:"A17",name:"Media & Communication",name_ar:"وكيل تحليل الإعلام",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الخطاب الإعلامي ويرصد الاتجاهات."},
-{id:"A18",name:"International Law Expert",name_ar:"وكيل القانون الدولي",cat:"cat2_society",model:"gemini-pro",desc:"يحلل القانون الدولي والمعاهدات."},
-{id:"A19",name:"Arts & Culture Analyst",name_ar:"وكيل الفنون والثقافة",cat:"cat2_society",model:"gemini-flash",desc:"يحلل التعبيرات الثقافية والفنية."},
-{id:"A20",name:"Linguistics & Language",name_ar:"وكيل اللغويات",cat:"cat2_society",model:"gemini-flash",desc:"يحلل بنية اللغات وتطورها."},
-{id:"A21",name:"Advanced Mathematics",name_ar:"وكيل الرياضيات المتقدمة",cat:"cat2_society",model:"gemini-pro",desc:"يحل المسائل الرياضية المتقدمة."},
-{id:"A22",name:"Sociologist",name_ar:"وكيل علم الاجتماع",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الظواهر الاجتماعية."},
-{id:"A23",name:"Education Specialist",name_ar:"وكيل التعليم والتعلّم",cat:"cat2_society",model:"gemini-flash",desc:"يصمم تجارب التعلم."},
-{id:"A24",name:"Reverse Engineering",name_ar:"وكيل الهندسة العكسية",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الأنظمة بالهندسة العكسية."},
-{id:"A25",name:"Media Intelligence",name_ar:"وكيل الاستخبارات الإعلامية",cat:"cat3_tools",model:"gemini-flash",desc:"يرصد الأخبار يومياً من مئات المصادر."},
-{id:"A26",name:"Code Developer",name_ar:"وكيل تطوير البرمجيات",cat:"cat3_tools",model:"gemini-flash",desc:"يكتب كوداً نظيفاً ويصحح الأخطاء."},
-{id:"A27",name:"Security Analyst",name_ar:"وكيل الأمن السيبراني",cat:"cat3_tools",model:"gemini-flash",desc:"يحلل التهديدات الأمنية ويرصد الثغرات."},
-{id:"A28",name:"Translator & Localizer",name_ar:"وكيل الترجمة والتعريب",cat:"cat3_tools",model:"gemini-flash",desc:"يترجم ويُعرّب المحتوى بدقة."},
-{id:"A29",name:"Deep Media Intelligence",name_ar:"وكيل الاستخبارات العميقة",cat:"cat3_tools",model:"gemini-flash",desc:"يجمع الاستخبارات من مصادر إعلامية متعددة."},
-{id:"A30",name:"Integration Developer",name_ar:"وكيل تطوير التكاملات",cat:"cat3_tools",model:"gemini-flash",desc:"يصمم وينفذ تكاملات APIs."},
-{id:"A31",name:"Early Warning System",name_ar:"وكيل الإنذار المبكر",cat:"cat3_tools",model:"gemini-flash",desc:"يرصد إشارات التهديدات والفرص القادمة."},
-{id:"A32",name:"Open Innovation Scout",name_ar:"وكيل الابتكار المفتوح",cat:"cat3_tools",model:"gemini-flash",desc:"يكتشف الابتكارات والحلول المفتوحة المصدر."},
-{id:"A33",name:"Anti-Disinformation",name_ar:"وكيل مكافحة التضليل",cat:"cat3_tools",model:"gemini-flash",desc:"يكشف المعلومات المضللة والأخبار الكاذبة."},
-{id:"A34",name:"Computational Biology",name_ar:"وكيل الحوسبة البيولوجية",cat:"cat3_tools",model:"gemini-pro",desc:"يطبق الحوسبة على مشاكل البيولوجيا."},
-{id:"A35",name:"Data Analyst",name_ar:"وكيل تحليل البيانات",cat:"cat4_management",model:"gemini-flash",desc:"يحلل البيانات الخام ويكشف الأنماط."},
-{id:"A36",name:"Knowledge Manager",name_ar:"وكيل إدارة المعرفة",cat:"cat4_management",model:"gemini-flash",desc:"يجمع المعرفة من كل الوكلاء وينظمها."},
-{id:"A37",name:"Project Manager",name_ar:"وكيل إدارة المشاريع",cat:"cat4_management",model:"gemini-flash",desc:"يخطط المشاريع ويتتبع التقدم."},
-{id:"A38",name:"Governance Specialist",name_ar:"وكيل الحوكمة المؤسسية",cat:"cat4_management",model:"gemini-flash",desc:"يصمم أطر الحوكمة المؤسسية."},
-{id:"A39",name:"Large Organizations",name_ar:"وكيل إدارة المؤسسات الكبرى",cat:"cat4_management",model:"gemini-flash",desc:"متخصص في إدارة المنظمات الكبيرة."},
-{id:"A40",name:"Mega Projects Manager",name_ar:"وكيل المشاريع العملاقة",cat:"cat4_management",model:"gemini-pro",desc:"يدير المشاريع العملاقة متعددة السنوات."},
-{id:"A41",name:"Digital Transformation",name_ar:"وكيل التحول الرقمي",cat:"cat4_management",model:"gemini-flash",desc:"يقود رحلات التحول الرقمي."},
-{id:"A42",name:"Performance Management",name_ar:"وكيل إدارة الأداء",cat:"cat4_management",model:"gemini-flash",desc:"يصمم أنظمة قياس وتحسين الأداء."},
-{id:"A43",name:"Behavioral Psychologist",name_ar:"وكيل علم النفس السلوكي",cat:"cat5_behavior",model:"gemini-pro",desc:"يحلل السلوك البشري والدوافع الخفية."},
-{id:"A44",name:"Negotiation Expert",name_ar:"وكيل خبير التفاوض",cat:"cat5_behavior",model:"gemini-flash",desc:"يصمم استراتيجيات التفاوض."},
-{id:"A45",name:"Body Language Analyst",name_ar:"وكيل تحليل لغة الجسد",cat:"cat5_behavior",model:"gemini-flash",desc:"يقرأ الإشارات غير اللفظية."},
-{id:"A46",name:"Influence & Persuasion",name_ar:"وكيل الإقناع والتأثير",cat:"cat5_behavior",model:"gemini-flash",desc:"يصمم رسائل مؤثرة وحملات إقناع."},
-{id:"A47",name:"Emotional Intelligence",name_ar:"وكيل الذكاء العاطفي",cat:"cat5_behavior",model:"gemini-flash",desc:"يطور الوعي الذاتي والتعاطف."},
-{id:"A48",name:"Social Dynamics",name_ar:"وكيل الديناميكيات الاجتماعية",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل الديناميكيات الجماعية."},
-{id:"A49",name:"Crowd Behavior",name_ar:"وكيل سلوك الجماهير",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل سلوك الجماهير والحشود."},
-{id:"A50",name:"Behavioral Economist",name_ar:"وكيل الاقتصاد السلوكي",cat:"cat5_behavior",model:"gemini-flash",desc:"يطبق الاقتصاد السلوكي."},
-{id:"A51",name:"Conflict Resolution",name_ar:"وكيل حل النزاعات",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل النزاعات ويصمم مسارات الحل."},
-{id:"A52",name:"Leadership Psychology",name_ar:"وكيل سيكولوجية القيادة",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل أنماط القيادة وتطوير القادة."},
-{id:"A53",name:"Communication Expert",name_ar:"وكيل خبير التواصل",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل أنماط التواصل."},
-{id:"A54",name:"Decision Psychology",name_ar:"وكيل سيكولوجية القرار",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل أنماط صنع القرار."},
-{id:"A55",name:"Cultural Intelligence",name_ar:"وكيل الذكاء الثقافي",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل الفوارق الثقافية."},
-{id:"A56",name:"Strategic Commander",name_ar:"وكيل القيادة الاستراتيجية",cat:"cat6_leadership",model:"gemini-pro",desc:"القائد الأعلى. يحلل الأهداف الكبرى ويضع الخطط."},
-{id:"A57",name:"Military Strategist",name_ar:"وكيل الاستراتيجية العسكرية",cat:"cat6_leadership",model:"gemini-pro",desc:"يحلل النزاعات العسكرية والاستراتيجيات الدفاعية."},
-{id:"A58",name:"Crisis Manager",name_ar:"وكيل إدارة الأزمات",cat:"cat6_leadership",model:"gemini-pro",desc:"يدير الأزمات من لحظة اندلاعها حتى التعافي."},
-{id:"A59",name:"Innovation Leader",name_ar:"وكيل قيادة الابتكار",cat:"cat6_leadership",model:"gemini-flash",desc:"يقود ثقافة الابتكار."},
-{id:"A60",name:"Intelligence Analyst",name_ar:"وكيل تحليل الاستخبارات",cat:"cat6_leadership",model:"gemini-pro",desc:"يجمع المعلومات ويحللها لإنتاج استخبارات."},
-{id:"A61",name:"Geopolitics Expert",name_ar:"وكيل خبير الجيوسياسة",cat:"cat6_leadership",model:"gemini-pro",desc:"يحلل التحولات الجيوسياسية وموازين القوى."},
-{id:"A62",name:"Future Forecaster",name_ar:"وكيل استشراف المستقبل",cat:"cat6_leadership",model:"gemini-pro",desc:"يرصد الإشارات ويبني سيناريوهات المستقبل."},
-{id:"A63",name:"Risk Assessor",name_ar:"وكيل تقييم المخاطر",cat:"cat6_leadership",model:"gemini-flash",desc:"يقيّم المخاطر الاستراتيجية والتشغيلية."},
-{id:"A64",name:"Change Management",name_ar:"وكيل إدارة التغيير",cat:"cat6_leadership",model:"gemini-flash",desc:"يقود مبادرات التغيير المؤسسي."},
-{id:"A65",name:"Organizational Strategist",name_ar:"وكيل استراتيجي المنظمات",cat:"cat6_leadership",model:"gemini-pro",desc:"يصمم الهياكل التنظيمية."},
-{id:"A66",name:"Decision Architect",name_ar:"وكيل مهندس القرارات",cat:"cat6_leadership",model:"gemini-pro",desc:"يصمم أنظمة صنع القرار المؤسسية."},
-{id:"A67",name:"Human Connection Leader",name_ar:"وكيل قيادة التواصل الإنساني",cat:"cat6_leadership",model:"gemini-flash",desc:"يبني الثقة والتواصل الحقيقي."},
-{id:"A68",name:"Resource Allocation",name_ar:"وكيل توزيع الموارد",cat:"cat6_leadership",model:"gemini-flash",desc:"يحسّن توزيع الموارد المحدودة."},
-{id:"A69",name:"Comprehensive Evaluator",name_ar:"وكيل التقييم الشامل",cat:"cat6_leadership",model:"gemini-pro",desc:"يُجري تقييمات شاملة ومعمّقة."},
-{id:"A70",name:"Radical Innovation",name_ar:"وكيل الابتكار الجذري",cat:"cat6_leadership",model:"gemini-pro",desc:"يقود الابتكارات الجذرية."},
-{id:"A71",name:"Internal Security",name_ar:"وكيل الأمن الداخلي",cat:"cat6_leadership",model:"gemini-flash",desc:"يحمي المنظمة من المخاطر الداخلية."},
-{id:"A72",name:"Self-Evolution Monitor",name_ar:"وكيل مراقبة التطور الذاتي",cat:"cat7_new",model:"gemini-pro",desc:"يراقب أداء الوكلاء ويقترح تحسينات."},
-{id:"A73",name:"Multi-Agent Coordinator",name_ar:"وكيل تنسيق متعدد الوكلاء",cat:"cat7_new",model:"gemini-pro",desc:"ينسق العمل بين الوكلاء المتعددة."},
-{id:"A74",name:"Quality Controller",name_ar:"وكيل ضبط الجودة",cat:"cat7_new",model:"gemini-pro",desc:"يتحقق من جودة مخرجات الوكلاء."},
-{id:"A75",name:"System Optimizer",name_ar:"وكيل تحسين النظام",cat:"cat7_new",model:"gemini-flash",desc:"يحسّن أداء النظام الكلي."},
-{id:"A76",name:"Learning Aggregator",name_ar:"وكيل تجميع التعلم",cat:"cat7_new",model:"gemini-flash",desc:"يجمّع دروس التعلم من جميع الوكلاء."},
-{id:"A77",name:"Workflow Orchestrator",name_ar:"وكيل تنسيق سير العمل",cat:"cat7_new",model:"gemini-pro",desc:"يصمم وينفذ تدفقات عمل معقدة."},
-{id:"A78",name:"Dynamic Resource Allocator",name_ar:"وكيل التخصيص الديناميكي",cat:"cat7_new",model:"gemini-flash",desc:"يخصص موارد النظام ديناميكياً."},
-{id:"A79",name:"Feedback Processor",name_ar:"وكيل معالجة التغذية الراجعة",cat:"cat7_new",model:"gemini-flash",desc:"يجمع ويحلل التغذية الراجعة."},
-{id:"A80",name:"Pattern Recognizer",name_ar:"وكيل التعرف على الأنماط",cat:"cat7_new",model:"gemini-pro",desc:"يكتشف الأنماط الخفية في البيانات."},
-{id:"A81",name:"Meta-Intelligence",name_ar:"الوكيل الميتا الاستخباراتي",cat:"cat7_new",model:"gemini-pro",desc:"القائد الاستراتيجي للنظام الكامل."}
-];
-
-// Agent states (Improvement #12)
-const agentStates = {};
-AGENTS_DATA.forEach(a => {
-  agentStates[a.id] = {
-    status: Math.random() > 0.15 ? 'active' : (Math.random() > 0.5 ? 'busy' : 'idle'),
-    lastTask: ['تحليل بيانات', 'مراجعة تقرير', 'بحث متقدم', 'تنسيق مهام', 'إعداد ملخص'][Math.floor(Math.random()*5)],
-    tasks: Math.floor(Math.random() * 300 + 50),
-    accuracy: (Math.random() * 10 + 88).toFixed(0)
-  };
-});
-
-// ═══ THREE.JS SETUP ═══
-const canvas = document.getElementById('canvas3d');
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.2;
-// Shadows (Improvement #15)
-renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-
-const scene = new THREE.Scene();
-scene.fog = new THREE.FogExp2(0x000510, 0.008);
-
-const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 500);
-camera.position.set(0, 25, 50);
-
-const controls = new THREE.OrbitControls(camera, canvas);
-controls.enableDamping = true;
-controls.dampingFactor = 0.08;
-controls.maxDistance = 120;
-controls.minDistance = 5;
-// Touch support (Improvement #10)
-controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN };
-
-const raycaster = new THREE.Raycaster();
-const mouse = new THREE.Vector2();
-
-// ═══ POST-PROCESSING ═══
-const composer = new THREE.EffectComposer(renderer);
-composer.addPass(new THREE.RenderPass(scene, camera));
-const bloomPass = new THREE.UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.2, 0.5, 0.3);
-composer.addPass(bloomPass);
-
-// ═══ LIGHTING ═══
-const ambientLight = new THREE.AmbientLight(0x111122, 0.5);
-scene.add(ambientLight);
-
-const coreLight = new THREE.PointLight(0xFFD700, 2, 80);
-coreLight.castShadow = true;
-coreLight.shadow.mapSize.width = 512;
-coreLight.shadow.mapSize.height = 512;
-scene.add(coreLight);
-
-const rimLight = new THREE.DirectionalLight(0x4444ff, 0.3);
-rimLight.position.set(-30, 20, -30);
-scene.add(rimLight);
-
-// ═══ STARFIELD ═══
-const starCount = 3000;
-const starGeo = new THREE.BufferGeometry();
-const starPos = new Float32Array(starCount * 3);
-const starColors = new Float32Array(starCount * 3);
-for (let i = 0; i < starCount; i++) {
-  starPos[i*3] = (Math.random()-0.5)*400;
-  starPos[i*3+1] = (Math.random()-0.5)*400;
-  starPos[i*3+2] = (Math.random()-0.5)*400;
-  const c = Math.random()*0.5+0.5;
-  starColors[i*3] = c; starColors[i*3+1] = c; starColors[i*3+2] = c + Math.random()*0.2;
-}
-starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
-starGeo.setAttribute('color', new THREE.BufferAttribute(starColors, 3));
-const starMat = new THREE.PointsMaterial({ size: 0.5, vertexColors: true, transparent: true, opacity: 0.8 });
-const starfield = new THREE.Points(starGeo, starMat);
-scene.add(starfield);
-
-// ═══ NEBULA EFFECT (Improvement #11) ═══
-function createNebula(color, pos, scale) {
-  const nebulaGeo = new THREE.PlaneGeometry(80*scale, 80*scale);
-  const nebulaMat = new THREE.MeshBasicMaterial({
-    color: color, transparent: true, opacity: 0.015, side: THREE.DoubleSide,
-    blending: THREE.AdditiveBlending
-  });
-  const nebula = new THREE.Mesh(nebulaGeo, nebulaMat);
-  nebula.position.copy(pos);
-  nebula.rotation.set(Math.random()*Math.PI, Math.random()*Math.PI, Math.random()*Math.PI);
-  scene.add(nebula);
-  return nebula;
-}
-const nebulae = [
-  createNebula(0x4400aa, new THREE.Vector3(-80, 30, -100), 1.5),
-  createNebula(0x0044aa, new THREE.Vector3(90, -20, -80), 1.2),
-  createNebula(0xaa2200, new THREE.Vector3(0, 50, -120), 1.8)
-];
-
-// ═══ CORE — A00 SUPREME COMMANDER ═══
-const coreMat = new THREE.MeshStandardMaterial({
-  color: 0xFFD700, emissive: 0xFFD700, emissiveIntensity: 0.8,
-  metalness: 0.9, roughness: 0.1
-});
-const coreMesh = new THREE.Mesh(new THREE.IcosahedronGeometry(3, 2), coreMat);
-coreMesh.castShadow = true;
-coreMesh.userData = { agent: SUPREME_COMMANDER };
-scene.add(coreMesh);
-
-// Commander glow — أكبر وأقوى من بقية الوكلاء
-const coreGlowMat = new THREE.MeshBasicMaterial({
-  color: 0xFFD700, transparent: true, opacity: 0.12, side: THREE.BackSide
-});
-const coreGlow = new THREE.Mesh(new THREE.SphereGeometry(5, 32, 32), coreGlowMat);
-scene.add(coreGlow);
-
-// Commander wireframe shield
-const coreWireMat = new THREE.MeshBasicMaterial({ color: 0xFFD700, wireframe: true, transparent: true, opacity: 0.12 });
-const coreWire = new THREE.Mesh(new THREE.IcosahedronGeometry(4.2, 1), coreWireMat);
-scene.add(coreWire);
-
-// Commander label
-const commanderLabel = createTextSprite('A00 — القائد الأعلى', '#FFD700');
-commanderLabel.position.set(0, 5, 0);
-commanderLabel.scale.set(5, 1.25, 1);
-scene.add(commanderLabel);
-
-// Second ring — command aura
-const commandRingGeo = new THREE.RingGeometry(3.5, 3.7, 64);
-const commandRingMat = new THREE.MeshBasicMaterial({ color: 0xFFD700, transparent: true, opacity: 0.15, side: THREE.DoubleSide });
-const commandRing = new THREE.Mesh(commandRingGeo, commandRingMat);
-commandRing.rotation.x = -Math.PI / 2;
-scene.add(commandRing);
-
-// Ring guides
-Object.values(CATEGORIES).forEach(cat => {
-  const ringGeo = new THREE.RingGeometry(cat.ring - 0.05, cat.ring + 0.05, 128);
-  const ringMat = new THREE.MeshBasicMaterial({ color: cat.color, transparent: true, opacity: 0.06, side: THREE.DoubleSide });
-  const ring = new THREE.Mesh(ringGeo, ringMat);
-  ring.rotation.x = -Math.PI / 2;
-  ring.position.y = -0.5;
-  scene.add(ring);
-});
-
-// ═══ AGENTS (Using InstancedMesh concept but individual for interaction — Improvement #1 applied via LOD) ═══
-const agentMeshes = [];
-const agentLabels = [];
-const agentsByCategory = {};
-
-function createTextSprite(text, color) {
-  const c = document.createElement('canvas');
-  c.width = 256; c.height = 64;
-  const ctx = c.getContext('2d');
-  ctx.font = 'bold 28px Orbitron, Cairo, sans-serif';
-  ctx.fillStyle = color;
-  ctx.textAlign = 'center';
-  ctx.fillText(text, 128, 40);
-  const tex = new THREE.CanvasTexture(c);
-  const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, opacity: 0.8 });
-  const sprite = new THREE.Sprite(mat);
-  sprite.scale.set(3, 0.75, 1);
-  return sprite;
-}
-
-Object.keys(CATEGORIES).forEach(catKey => {
-  const cat = CATEGORIES[catKey];
-  const catAgents = AGENTS_DATA.filter(a => a.cat === catKey);
-  agentsByCategory[catKey] = catAgents;
-
-  catAgents.forEach((agent, i) => {
-    const angle = (i / catAgents.length) * Math.PI * 2;
-    const x = Math.cos(angle) * cat.ring;
-    const z = Math.sin(angle) * cat.ring;
-    const y = (Math.random() - 0.5) * 2;
-
-    const state = agentStates[agent.id];
-    const catColor = new THREE.Color(cat.color);
-
-    // Status-based appearance (Improvement #12)
-    let emissiveIntensity = 0.4;
-    let meshOpacity = 1;
-    if (state.status === 'busy') emissiveIntensity = 0.7;
-    else if (state.status === 'idle') { emissiveIntensity = 0.15; meshOpacity = 0.6; }
-
-    const mat = new THREE.MeshStandardMaterial({
-      color: cat.color, emissive: cat.color, emissiveIntensity: emissiveIntensity,
-      metalness: 0.5, roughness: 0.3, transparent: true, opacity: meshOpacity
-    });
-    const geo = new THREE.SphereGeometry(0.7, 24, 24);
-    const mesh = new THREE.Mesh(geo, mat);
-    mesh.position.set(x, y, z);
-    mesh.castShadow = true;
-    mesh.receiveShadow = true;
-    mesh.userData = { agent, angle, radius: cat.ring, baseY: y, catColor: cat.color };
-    scene.add(mesh);
-    agentMeshes.push(mesh);
-
-    // Agent glow
-    const glowMat = new THREE.MeshBasicMaterial({ color: cat.color, transparent: true, opacity: state.status === 'idle' ? 0.03 : 0.1, side: THREE.BackSide });
-    const glow = new THREE.Mesh(new THREE.SphereGeometry(0.9, 16, 16), glowMat);
-    mesh.add(glow);
-    mesh.userData.glowMat = glowMat;
-
-    // Label
-    const label = createTextSprite(agent.id, cat.hex);
-    label.position.set(x, y + 1.5, z);
-    scene.add(label);
-    agentLabels.push(label);
-  });
-});
-
-// ═══ HIERARCHICAL CONNECTION LINES ═══
-// كل وكيل متصل بقائد فئته → كل قائد متصل بالقائد الأعلى A00
-const connectionLines = [];
-const leaderMeshIndices = {}; // خريطة قائد الفئة → index في agentMeshes
-
-function createHierarchicalConnections() {
-  const corePos = new THREE.Vector3(0, 0, 0); // موقع A00
-
-  // 1. حدد قادة الفئات
-  agentMeshes.forEach((mesh, idx) => {
-    const agentId = mesh.userData.agent.id;
-    Object.entries(CATEGORY_LEADERS).forEach(([cat, leaderId]) => {
-      if (agentId === leaderId) leaderMeshIndices[cat] = idx;
-    });
-  });
-
-  // 2. وصل كل قائد فئة بالقائد الأعلى (خطوط ذهبية سميكة)
-  Object.entries(leaderMeshIndices).forEach(([cat, leaderIdx]) => {
-    const leaderMesh = agentMeshes[leaderIdx];
-    const points = [corePos.clone(), leaderMesh.position.clone()];
-    const geo = new THREE.BufferGeometry().setFromPoints(points);
-    const mat = new THREE.LineBasicMaterial({
-      color: 0xFFD700, transparent: true, opacity: 0.15,
-      blending: THREE.AdditiveBlending, linewidth: 2
-    });
-    const line = new THREE.Line(geo, mat);
-    line.userData = { from: -1, to: leaderIdx, baseOpacity: 0.15, type: 'commander' };
-    scene.add(line);
-    connectionLines.push(line);
-  });
-
-  // 3. وصل كل وكيل بقائد فئته (خطوط بلون الفئة)
-  agentMeshes.forEach((mesh, idx) => {
-    const agent = mesh.userData.agent;
-    const leaderIdx = leaderMeshIndices[agent.cat];
-    if (leaderIdx !== undefined && leaderIdx !== idx) {
-      const leaderMesh = agentMeshes[leaderIdx];
-      const points = [mesh.position.clone(), leaderMesh.position.clone()];
-      const geo = new THREE.BufferGeometry().setFromPoints(points);
-      const catColor = CATEGORIES[agent.cat] ? CATEGORIES[agent.cat].color : 0x888888;
-      const mat = new THREE.LineBasicMaterial({
-        color: catColor, transparent: true, opacity: 0.06,
-        blending: THREE.AdditiveBlending
-      });
-      const line = new THREE.Line(geo, mat);
-      line.userData = { from: idx, to: leaderIdx, baseOpacity: 0.06, type: 'hierarchy' };
-      scene.add(line);
-      connectionLines.push(line);
-    }
-  });
-
-  // 4. وصل وكلاء من فئات مختلفة يتعاونون (خطوط خفيفة — تواصل بين الفئات)
-  const crossLinks = [
-    ["A01","A04"], ["A04","A60"], ["A26","A30"], ["A35","A37"],
-    ["A56","A58"], ["A72","A81"], ["A43","A47"], ["A10","A13"],
-    ["A25","A29"], ["A57","A61"], ["A73","A74"], ["A41","A75"],
-  ];
-  crossLinks.forEach(([fromId, toId]) => {
-    const fromMesh = agentMeshes.find(m => m.userData.agent.id === fromId);
-    const toMesh = agentMeshes.find(m => m.userData.agent.id === toId);
-    if (fromMesh && toMesh) {
-      const points = [fromMesh.position.clone(), toMesh.position.clone()];
-      const geo = new THREE.BufferGeometry().setFromPoints(points);
-      const mat = new THREE.LineBasicMaterial({
-        color: 0xFFFFFF, transparent: true, opacity: 0.03,
-        blending: THREE.AdditiveBlending
-      });
-      const line = new THREE.Line(geo, mat);
-      const fromIdx = agentMeshes.indexOf(fromMesh);
-      const toIdx = agentMeshes.indexOf(toMesh);
-      line.userData = { from: fromIdx, to: toIdx, baseOpacity: 0.03, type: 'cross' };
-      scene.add(line);
-      connectionLines.push(line);
-    }
-  });
-}
-createHierarchicalConnections();
-
-// ═══ DATA FLOW PACKETS (Improvement #13) ═══
-const dataPackets = [];
-function createDataPacket(fromPos, toPos, color) {
-  const packetGeo = new THREE.SphereGeometry(0.15, 8, 8);
-  const packetMat = new THREE.MeshBasicMaterial({ color: color || 0xFFD700, transparent: true, opacity: 0.9, blending: THREE.AdditiveBlending });
-  const packet = new THREE.Mesh(packetGeo, packetMat);
-  packet.position.copy(fromPos);
-  scene.add(packet);
-  const duration = 1500 + Math.random() * 1000;
-  dataPackets.push({ mesh: packet, mat: packetMat, from: fromPos.clone(), to: toPos.clone(), startTime: Date.now(), duration });
-}
-
-// ═══ PARTICLE SYSTEM ═══
-const particleCount = 2000;
-const particleGeo = new THREE.BufferGeometry();
-const particlePositions = new Float32Array(particleCount * 3);
-const particleColors = new Float32Array(particleCount * 3);
-const particleVelocities = [];
-
-for (let i = 0; i < particleCount; i++) {
-  const angle = Math.random() * Math.PI * 2;
-  const radius = Math.random() * 40 + 5;
-  particlePositions[i*3] = Math.cos(angle) * radius;
-  particlePositions[i*3+1] = (Math.random()-0.5)*4;
-  particlePositions[i*3+2] = Math.sin(angle) * radius;
-  // Colored particles (Improvement from spec)
-  const pType = Math.random();
-  if (pType < 0.25) { particleColors[i*3]=1; particleColors[i*3+1]=1; particleColors[i*3+2]=1; }
-  else if (pType < 0.5) { particleColors[i*3]=0; particleColors[i*3+1]=0.75; particleColors[i*3+2]=1; }
-  else if (pType < 0.75) { particleColors[i*3]=0; particleColors[i*3+1]=1; particleColors[i*3+2]=0.5; }
-  else { particleColors[i*3]=1; particleColors[i*3+1]=0.85; particleColors[i*3+2]=0; }
-  particleVelocities.push({ speed: Math.random()*0.01+0.002, angle, radius, ySpeed: (Math.random()-0.5)*0.01 });
-}
-particleGeo.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
-particleGeo.setAttribute('color', new THREE.BufferAttribute(particleColors, 3));
-const particleMat = new THREE.PointsMaterial({ size: 0.3, vertexColors: true, transparent: true, opacity: 0.6, blending: THREE.AdditiveBlending, sizeAttenuation: true });
-const particleSystem = new THREE.Points(particleGeo, particleMat);
-scene.add(particleSystem);
-
-// ═══ BEAM EFFECTS ═══
-const activeBeams = [];
-function createBeam(fromPos, toPos, color, duration) {
-  const mid = fromPos.clone().add(toPos).multiplyScalar(0.5);
-  mid.y += 3;
-  const curve = new THREE.QuadraticBezierCurve3(fromPos.clone(), mid, toPos.clone());
-  const points = curve.getPoints(50);
-  const geo = new THREE.BufferGeometry().setFromPoints(points);
-  const mat = new THREE.LineBasicMaterial({ color: color || 0xFFD700, transparent: true, opacity: 1, blending: THREE.AdditiveBlending });
-  const beam = new THREE.Line(geo, mat);
-  scene.add(beam);
-  activeBeams.push({ beam, mat, startTime: Date.now(), duration: duration || 1500 });
-  playUISound('beam');
-
-  const bpCount = 20;
-  const bpGeo = new THREE.BufferGeometry();
-  const bpPos = new Float32Array(bpCount * 3);
-  for (let i = 0; i < bpCount; i++) {
-    const p = curve.getPoint(i / bpCount);
-    bpPos[i*3] = p.x + (Math.random()-0.5)*0.5;
-    bpPos[i*3+1] = p.y + (Math.random()-0.5)*0.5;
-    bpPos[i*3+2] = p.z + (Math.random()-0.5)*0.5;
-  }
-  bpGeo.setAttribute('position', new THREE.BufferAttribute(bpPos, 3));
-  const bpMat = new THREE.PointsMaterial({ color: color || 0xFFD700, size: 0.4, transparent: true, opacity: 0.8, blending: THREE.AdditiveBlending });
-  const bpSystem = new THREE.Points(bpGeo, bpMat);
-  scene.add(bpSystem);
-  activeBeams.push({ beam: bpSystem, mat: bpMat, startTime: Date.now(), duration: duration || 1500 });
-}
-
-// ═══ ENERGY WAVE ═══
-const activeWaves = [];
-function createEnergyWave(origin) {
-  const waveGeo = new THREE.RingGeometry(0.1, 0.3, 64);
-  const waveMat = new THREE.MeshBasicMaterial({ color: 0xFFD700, transparent: true, opacity: 0.8, side: THREE.DoubleSide });
-  const wave = new THREE.Mesh(waveGeo, waveMat);
-  wave.position.copy(origin);
-  wave.rotation.x = -Math.PI / 2;
-  scene.add(wave);
-  activeWaves.push({ wave, mat: waveMat, startTime: Date.now(), duration: 2000 });
-}
-
-// ═══ METEOR SHOWER (Improvement #11) ═══
-const meteors = [];
-function spawnMeteor() {
-  const geo = new THREE.CylinderGeometry(0.02, 0.1, 3, 6);
-  const mat = new THREE.MeshBasicMaterial({ color: 0xFFFFFF, transparent: true, opacity: 0.6 });
-  const meteor = new THREE.Mesh(geo, mat);
-  meteor.position.set((Math.random()-0.5)*200, 80 + Math.random()*40, (Math.random()-0.5)*200);
-  meteor.rotation.z = Math.PI / 4;
-  scene.add(meteor);
-  meteors.push({ mesh: meteor, mat, speed: 1 + Math.random()*2, startTime: Date.now() });
-}
-
-// ═══ INTERACTION ═══
-let hoveredAgent = null;
-const tooltip = document.getElementById('hoverTooltip');
-
-canvas.addEventListener('mousemove', (e) => {
-  mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
-  mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
-  raycaster.setFromCamera(mouse, camera);
-  const intersects = raycaster.intersectObjects(agentMeshes);
-
-  if (intersects.length > 0) {
-    const mesh = intersects[0].object;
-    if (hoveredAgent !== mesh) {
-      if (hoveredAgent) {
-        gsap.to(hoveredAgent.scale, { x: 1, y: 1, z: 1, duration: 0.3 });
-        hoveredAgent.material.emissiveIntensity = agentStates[hoveredAgent.userData.agent.id].status === 'idle' ? 0.15 : 0.4;
-      }
-      hoveredAgent = mesh;
-      gsap.to(mesh.scale, { x: 1.6, y: 1.6, z: 1.6, duration: 0.3 });
-      mesh.material.emissiveIntensity = 0.9;
-      canvas.style.cursor = 'pointer';
-
-      // Rich tooltip (Improvement #9)
-      const agent = mesh.userData.agent;
-      const state = agentStates[agent.id];
-      tooltip.querySelector('.tt-id').textContent = agent.id;
-      tooltip.querySelector('.tt-name').textContent = agent.name_ar;
-      tooltip.querySelector('.tt-cat').textContent = CATEGORIES[agent.cat].label;
-      tooltip.style.borderColor = CATEGORIES[agent.cat].hex;
-      const statusDot = tooltip.querySelector('.tt-status .dot');
-      const statusText = tooltip.querySelector('.tt-status-text');
-      statusDot.style.background = state.status === 'active' ? '#0f0' : (state.status === 'busy' ? '#FFD700' : '#666');
-      statusText.textContent = state.status === 'active' ? 'متاح' : (state.status === 'busy' ? 'مشغول' : 'خامل');
-      statusText.style.color = state.status === 'active' ? '#0f0' : (state.status === 'busy' ? '#FFD700' : '#666');
-      tooltip.querySelector('.tt-last-task').textContent = 'آخر مهمة: ' + state.lastTask;
-    }
-    tooltip.style.left = (e.clientX + 16) + 'px';
-    tooltip.style.top = (e.clientY - 10) + 'px';
-    tooltip.style.opacity = '1';
-  } else {
-    if (hoveredAgent) {
-      gsap.to(hoveredAgent.scale, { x: 1, y: 1, z: 1, duration: 0.3 });
-      const hState = agentStates[hoveredAgent.userData.agent.id];
-      hoveredAgent.material.emissiveIntensity = hState.status === 'idle' ? 0.15 : 0.4;
-      hoveredAgent = null;
-      canvas.style.cursor = 'default';
-    }
-    tooltip.style.opacity = '0';
-  }
-});
-
-canvas.addEventListener('click', (e) => {
-  raycaster.setFromCamera(mouse, camera);
-
-  // Check core (A00 commander) first
-  const coreHit = raycaster.intersectObject(coreMesh);
-  if (coreHit.length > 0) {
-    openAgentPanel(SUPREME_COMMANDER);
-    selectedAgent = coreMesh;
-    gsap.to(coreMat, { emissiveIntensity: 2, duration: 0.2, yoyo: true, repeat: 3 });
-    // Flash all commander lines
-    connectionLines.filter(l => l.userData.type === 'commander').forEach(l => {
-      gsap.to(l.material, { opacity: 0.6, duration: 0.3, yoyo: true, repeat: 2, onComplete: () => { l.material.opacity = l.userData.baseOpacity; }});
-    });
-    createEnergyWave(new THREE.Vector3(0, 0, 0));
-    playUISound('click');
-    addAuditEntry('select', 'A00', 'تم تحديد القائد الأعلى');
-    return;
-  }
-
-  const intersects = raycaster.intersectObjects(agentMeshes);
-  if (intersects.length > 0) {
-    const mesh = intersects[0].object;
-    openAgentPanel(mesh.userData.agent);
-    selectedAgent = mesh;
-    gsap.to(mesh.material, { emissiveIntensity: 1.5, duration: 0.15, yoyo: true, repeat: 3 });
-
-    // Flash connection to leader
-    const agentId = mesh.userData.agent.id;
-    const isLeader = Object.values(CATEGORY_LEADERS).includes(agentId);
-    if (isLeader) {
-      // Flash commander line
-      connectionLines.filter(l => l.userData.type === 'commander' && agentMeshes[l.userData.to]?.userData.agent.id === agentId)
-        .forEach(l => gsap.to(l.material, { opacity: 0.5, duration: 0.3, yoyo: true, repeat: 2, onComplete: () => { l.material.opacity = l.userData.baseOpacity; }}));
-      // Flash all subordinate lines
-      connectionLines.filter(l => l.userData.type === 'hierarchy' && l.userData.to === agentMeshes.indexOf(mesh))
-        .forEach(l => gsap.to(l.material, { opacity: 0.3, duration: 0.3, yoyo: true, repeat: 2, onComplete: () => { l.material.opacity = l.userData.baseOpacity; }}));
-    }
-
-    playUISound('click');
-    addAuditEntry('select', agentId, 'تم تحديد الوكيل');
-  }
-});
-
-// Cinematic double-click zoom (Improvement #14)
-canvas.addEventListener('dblclick', (e) => {
-  raycaster.setFromCamera(mouse, camera);
-  const intersects = raycaster.intersectObjects(agentMeshes);
-  if (intersects.length > 0) {
-    const pos = intersects[0].object.position;
-    const midPoint = camera.position.clone().add(pos).multiplyScalar(0.5);
-    midPoint.y += 10;
-    gsap.to(camera.position, {
-      x: midPoint.x, y: midPoint.y, z: midPoint.z, duration: 0.7, ease: 'power2.in',
-      onComplete: () => {
-        gsap.to(camera.position, { x: pos.x + 5, y: pos.y + 5, z: pos.z + 5, duration: 0.8, ease: 'power2.out' });
-      }
-    });
-    gsap.to(controls.target, { x: pos.x, y: pos.y, z: pos.z, duration: 1.5, ease: 'power2.inOut' });
-  }
-});
-
-// ═══ UI FUNCTIONS ═══
-function openAgentPanel(agent) {
-  const panel = document.getElementById('agentPanel');
-  const isCommander = agent.id === 'A00';
-  const state = agentStates[agent.id] || { status: 'active', tasks: 81, accuracy: '99', lastTask: 'تنسيق استراتيجي' };
-
-  document.getElementById('apId').textContent = agent.id;
-  document.getElementById('apId').style.fontSize = isCommander ? '36px' : '28px';
-  document.getElementById('apName').textContent = agent.name;
-  document.getElementById('apNameAr').textContent = agent.name_ar;
-
-  const catEl = document.getElementById('apCat');
-  if (isCommander) {
-    catEl.textContent = '⭐ القائد الأعلى — يدير 81 وكيل';
-    catEl.style.background = 'rgba(255,215,0,0.2)';
-    catEl.style.color = '#FFD700';
-    catEl.style.border = '1px solid rgba(255,215,0,0.5)';
-  } else {
-    const cat = CATEGORIES[agent.cat];
-    catEl.textContent = cat ? cat.label : agent.cat;
-    const isLeader = Object.values(CATEGORY_LEADERS).includes(agent.id);
-    catEl.textContent += isLeader ? ' 👑 قائد الفئة' : '';
-    catEl.style.background = (cat ? cat.hex : '#888') + '22';
-    catEl.style.color = cat ? cat.hex : '#888';
-    catEl.style.border = '1px solid ' + (cat ? cat.hex : '#888') + '44';
-  }
-
-  const statusEl = document.getElementById('apStatus');
-  const statusDot = statusEl.querySelector('.status-dot');
-  statusDot.style.background = state.status === 'active' ? '#0f0' : (state.status === 'busy' ? '#FFD700' : '#666');
-  statusEl.querySelector('span:last-child').textContent = state.status === 'active' ? 'متاح' : (state.status === 'busy' ? 'مشغول' : 'خامل');
-
-  document.getElementById('apModel').textContent = agent.model;
-  document.getElementById('apTasks').textContent = state.tasks;
-  document.getElementById('apAccuracy').textContent = state.accuracy + '%';
-  document.getElementById('apLastTask').textContent = state.lastTask;
-  document.getElementById('apDesc').textContent = agent.desc;
-  panel.classList.add('open');
-}
-
-function closeAgentPanel() { document.getElementById('agentPanel').classList.remove('open'); selectedAgent = null; }
-
-function toggleChat() {
-  chatOpen = !chatOpen;
-  document.getElementById('chatBox').classList.toggle('open', chatOpen);
-  document.getElementById('chatToggle').style.display = chatOpen ? 'none' : 'block';
-  playUISound('click');
-}
-
-function openChatForAgent() {
-  if (!chatOpen) toggleChat();
-  const sel = document.getElementById('chatAgentSelect');
-  const agent = document.getElementById('apId').textContent;
-  for (let i = 0; i < sel.options.length; i++) {
-    if (sel.options[i].value === agent) { sel.selectedIndex = i; break; }
-  }
-}
-
-function setView(view, btn) {
-  document.querySelectorAll('#topBar .nav button').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
-  playUISound('click');
-  if (view === 'chat') toggleChat();
-  if (view === 'agents') toggleSearch();
-}
-
-// Camera controls
-function resetView() {
-  gsap.to(camera.position, { x: 0, y: 25, z: 50, duration: 1.5, ease: 'power2.inOut' });
-  gsap.to(controls.target, { x: 0, y: 0, z: 0, duration: 1.5, ease: 'power2.inOut' });
-  playUISound('click');
-}
-function topView() {
-  gsap.to(camera.position, { x: 0, y: 70, z: 0.1, duration: 1.5, ease: 'power2.inOut' });
-  gsap.to(controls.target, { x: 0, y: 0, z: 0, duration: 1.5, ease: 'power2.inOut' });
-  playUISound('click');
-}
-function focusSelected() {
-  if (!selectedAgent) return;
-  const pos = selectedAgent.position;
-  gsap.to(controls.target, { x: pos.x, y: pos.y, z: pos.z, duration: 1.5, ease: 'power2.inOut' });
-  gsap.to(camera.position, { x: pos.x + 8, y: pos.y + 6, z: pos.z + 8, duration: 1.5, ease: 'power2.inOut' });
-  playUISound('click');
-}
-
-// Cinematic fly-through (Improvement #14)
-let cinematicActive = false;
-function cinematicFly() {
-  if (cinematicActive) return;
-  cinematicActive = true;
-  playUISound('send');
-  addAuditEntry('system', 'SYS', 'بدء الجولة السينمائية');
-  const points = [
-    { x: 0, y: 60, z: 0.1 },
-    { x: 40, y: 20, z: 40 },
-    { x: -30, y: 15, z: 30 },
-    { x: 0, y: 10, z: -50 },
-    { x: 0, y: 25, z: 50 }
-  ];
-  let step = 0;
-  function nextStep() {
-    if (step >= points.length) { cinematicActive = false; return; }
-    const p = points[step];
-    gsap.to(camera.position, { x: p.x, y: p.y, z: p.z, duration: 3, ease: 'power1.inOut', onComplete: nextStep });
-    gsap.to(controls.target, { x: 0, y: 0, z: 0, duration: 3, ease: 'power1.inOut' });
-    step++;
-  }
-  nextStep();
-}
-
-// ═══ SEARCH SYSTEM (Improvement #6) ═══
-function toggleSearch() {
-  searchOpen = !searchOpen;
-  document.getElementById('searchBar').classList.toggle('open', searchOpen);
-  if (searchOpen) {
-    document.getElementById('searchInput').focus();
-    buildFilterButtons();
-  }
-}
-function buildFilterButtons() {
-  const row = document.getElementById('filterRow');
-  row.innerHTML = '<button class="filter-btn active" onclick="setFilter(null,this)">الكل</button>';
-  Object.keys(CATEGORIES).forEach(k => {
-    row.innerHTML += `<button class="filter-btn" style="border-color:${CATEGORIES[k].hex}40" onclick="setFilter('${k}',this)">${CATEGORIES[k].label}</button>`;
-  });
-}
-function setFilter(cat, btn) {
-  activeFilter = cat;
-  document.querySelectorAll('#searchBar .filter-btn').forEach(b => b.classList.remove('active'));
-  if (btn) btn.classList.add('active');
-  // Dim/show agents based on filter (Improvement #6)
-  agentMeshes.forEach((mesh, i) => {
-    const agent = mesh.userData.agent;
-    if (!cat || agent.cat === cat) {
-      mesh.visible = true;
-      agentLabels[i].visible = true;
-    } else {
-      mesh.visible = false;
-      agentLabels[i].visible = false;
-    }
-  });
-  handleSearch(document.getElementById('searchInput').value);
-}
-function handleSearch(query) {
-  const results = document.getElementById('searchResults');
-  if (!query.trim()) { results.innerHTML = ''; results.classList.remove('has-items'); return; }
-  const q = query.toLowerCase();
-  const matches = AGENTS_DATA.filter(a => {
-    if (activeFilter && a.cat !== activeFilter) return false;
-    return a.id.toLowerCase().includes(q) || a.name.toLowerCase().includes(q) || a.name_ar.includes(query);
-  }).slice(0, 10);
-  if (matches.length === 0) { results.innerHTML = ''; results.classList.remove('has-items'); return; }
-  results.innerHTML = matches.map(a => `<div class="result-item" onclick="selectSearchResult('${a.id}')"><span class="dot" style="background:${CATEGORIES[a.cat].hex}"></span><strong>${a.id}</strong> — ${a.name_ar}</div>`).join('');
-  results.classList.add('has-items');
-}
-function selectSearchResult(agentId) {
-  const agent = AGENTS_DATA.find(a => a.id === agentId);
-  const mesh = agentMeshes.find(m => m.userData.agent.id === agentId);
-  if (agent && mesh) {
-    openAgentPanel(agent);
-    selectedAgent = mesh;
-    const pos = mesh.position;
-    gsap.to(controls.target, { x: pos.x, y: pos.y, z: pos.z, duration: 1.5, ease: 'power2.inOut' });
-    gsap.to(camera.position, { x: pos.x + 8, y: pos.y + 6, z: pos.z + 8, duration: 1.5, ease: 'power2.inOut' });
-    gsap.to(mesh.material, { emissiveIntensity: 1.5, duration: 0.15, yoyo: true, repeat: 5 });
-    // Reset filter to show all
-    setFilter(null, document.querySelector('#searchBar .filter-btn'));
-  }
-  document.getElementById('searchBar').classList.remove('open');
-  searchOpen = false;
-}
-
-// ═══ AUDIT LOG (Improvement #17) ═══
-function addAuditEntry(type, agentId, text) {
-  const time = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-  const icons = { task: '⚡', select: '👆', system: '🔧', chat: '💬', alert: '⚠', complete: '✅' };
-  auditEntries.unshift({ time, icon: icons[type] || '📌', agentId, text, type });
-  if (auditEntries.length > 200) auditEntries.pop();
-  updateAuditLogUI();
-}
-function updateAuditLogUI() {
-  const list = document.getElementById('logList');
-  if (!list) return;
-  list.innerHTML = auditEntries.slice(0, 50).map(e =>
-    `<div class="log-item"><span class="log-time">${e.time}</span><span class="log-icon">${e.icon}</span><span class="log-text"><span class="log-agent">${e.agentId}</span> ${e.text}</span></div>`
-  ).join('');
-}
-function toggleAuditLog() {
-  auditLogOpen = !auditLogOpen;
-  document.getElementById('auditLog').classList.toggle('open', auditLogOpen);
-  playUISound('click');
-}
-function exportAuditLog() {
-  const text = auditEntries.map(e => `[${e.time}] ${e.agentId}: ${e.text}`).join('\n');
-  const blob = new Blob([text], { type: 'text/plain' });
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'army81_audit_log.txt';
-  a.click();
-}
-
-// ═══ CHAT SYSTEM ═══
-function populateChatSelect() {
-  const sel = document.getElementById('chatAgentSelect');
-  sel.innerHTML = '<option value="auto">تلقائي</option>';
-  AGENTS_DATA.forEach(a => { sel.innerHTML += `<option value="${a.id}">${a.id} — ${a.name_ar}</option>`; });
-}
-populateChatSelect();
-
-function sendChat() {
-  const input = document.getElementById('chatInputField');
-  const text = input.value.trim();
-  if (!text) return;
-  const agentId = document.getElementById('chatAgentSelect').value;
-  const msgs = document.getElementById('chatMessages');
-  const now = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
-
-  msgs.innerHTML += `<div class="chat-msg user"><div class="msg-header"><span>أنت</span><span>${now}</span></div>${text}</div>`;
-  input.value = '';
-  playUISound('send');
-
-  const targetAgent = agentId === 'auto' ? AGENTS_DATA[0] : AGENTS_DATA.find(a => a.id === agentId);
-  const targetMesh = agentMeshes.find(m => m.userData.agent.id === targetAgent.id);
-
-  addAuditEntry('chat', targetAgent.id, `مهمة جديدة: "${text.substring(0, 40)}..."`);
-
-  if (targetMesh) {
-    createEnergyWave(new THREE.Vector3(0, 0, 0));
-    setTimeout(() => {
-      createBeam(new THREE.Vector3(0, 0, 0), targetMesh.position, CATEGORIES[targetAgent.cat].color);
-      gsap.to(targetMesh.material, { emissiveIntensity: 1.5, duration: 0.2, yoyo: true, repeat: 5 });
-      // Data packets (Improvement #13)
-      for (let i = 0; i < 3; i++) {
-        setTimeout(() => createDataPacket(new THREE.Vector3(0, 0, 0), targetMesh.position, CATEGORIES[targetAgent.cat].color), i * 200);
-      }
-    }, 300);
-  }
-
-  if (isDemoMode) {
-    setTimeout(() => {
-      const responses = [
-        `تم تحليل طلبك بنجاح. النتائج تشير إلى أن "${text}" يتطلب مراجعة متعمقة من عدة زوايا.`,
-        `بناءً على قاعدة المعرفة المتاحة، يمكنني تقديم تحليل شامل حول "${text}".`,
-        `تم معالجة المهمة. الخلاصة: الموضوع يحتاج تنسيقاً بين عدة وكلاء للحصول على نتيجة متكاملة.`,
-        `تحليل أولي: "${text}" — تم رصد 3 محاور رئيسية تحتاج دراسة معمقة.`
-      ];
-      const resp = responses[Math.floor(Math.random() * responses.length)];
-      const respTime = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
-      if (targetMesh) {
-        createBeam(targetMesh.position, new THREE.Vector3(0, 0, 0), CATEGORIES[targetAgent.cat].color);
-        gsap.to(coreMesh.scale, { x: 1.3, y: 1.3, z: 1.3, duration: 0.3, yoyo: true, repeat: 1 });
-        for (let i = 0; i < 3; i++) {
-          setTimeout(() => createDataPacket(targetMesh.position, new THREE.Vector3(0, 0, 0), CATEGORIES[targetAgent.cat].color), i * 200);
-        }
-      }
-      msgs.innerHTML += `<div class="chat-msg agent"><div class="msg-header"><span>${targetAgent.id} — ${targetAgent.name_ar}</span><span>${respTime}</span></div>${resp}</div>`;
-      msgs.scrollTop = msgs.scrollHeight;
-      playUISound('receive');
-      addAuditEntry('complete', targetAgent.id, 'أكمل المهمة بنجاح');
-    }, 1500 + Math.random() * 1000);
-  } else {
-    fetch(GATEWAY + '/task', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ task: text, preferred_agent: agentId === 'auto' ? null : agentId })
-    }).then(r => r.json()).then(data => {
-      const respTime = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
-      if (targetMesh) {
-        createBeam(targetMesh.position, new THREE.Vector3(0, 0, 0), CATEGORIES[targetAgent.cat].color);
-        gsap.to(coreMesh.scale, { x: 1.3, y: 1.3, z: 1.3, duration: 0.3, yoyo: true, repeat: 1 });
-      }
-      msgs.innerHTML += `<div class="chat-msg agent"><div class="msg-header"><span>${data.agent || targetAgent.id}</span><span>${respTime}</span></div>${data.response || data.result || 'تم التنفيذ'}</div>`;
-      msgs.scrollTop = msgs.scrollHeight;
-      playUISound('receive');
-      addAuditEntry('complete', data.agent || targetAgent.id, 'أكمل المهمة');
-    }).catch(() => {
-      msgs.innerHTML += `<div class="chat-msg agent" style="border-color:#ff4444"><div class="msg-header"><span>خطأ</span></div>تعذر الاتصال بالخادم</div>`;
-    });
-  }
-  msgs.scrollTop = msgs.scrollHeight;
-}
-
-// ═══ VOICE INPUT (Improvement #19) ═══
-let isRecording = false;
-let recognition = null;
-function toggleVoiceInput() {
-  const micBtn = document.getElementById('micBtn');
-  if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
-    alert('المتصفح لا يدعم التعرف على الصوت');
-    return;
-  }
-  if (isRecording) {
-    recognition.stop();
-    isRecording = false;
-    micBtn.classList.remove('recording');
-    return;
-  }
-  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-  recognition = new SpeechRecognition();
-  recognition.lang = 'ar-SA';
-  recognition.continuous = false;
-  recognition.interimResults = false;
-  recognition.onresult = (event) => {
-    const transcript = event.results[0][0].transcript;
-    document.getElementById('chatInputField').value = transcript;
-    isRecording = false;
-    micBtn.classList.remove('recording');
-    playUISound('receive');
-    addAuditEntry('system', 'MIC', `تم التعرف على الصوت: "${transcript.substring(0, 30)}..."`);
-  };
-  recognition.onerror = () => { isRecording = false; micBtn.classList.remove('recording'); };
-  recognition.onend = () => { isRecording = false; micBtn.classList.remove('recording'); };
-  recognition.start();
-  isRecording = true;
-  micBtn.classList.add('recording');
-  playUISound('alert');
-}
-
-// ═══ DRAGGABLE PANELS (Improvement #7) ═══
-function makeDraggable(el) {
-  let isDragging = false, startX, startY, origLeft, origTop;
-  el.addEventListener('mousedown', (e) => {
-    if (e.target.tagName === 'BUTTON' || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
-    isDragging = true;
-    startX = e.clientX; startY = e.clientY;
-    const rect = el.getBoundingClientRect();
-    origLeft = rect.left; origTop = rect.top;
-    el.style.transition = 'none';
-  });
-  document.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    const dx = e.clientX - startX;
-    const dy = e.clientY - startY;
-    el.style.left = (origLeft + dx) + 'px';
-    el.style.top = (origTop + dy) + 'px';
-    el.style.right = 'auto';
-    el.style.bottom = 'auto';
-  });
-  document.addEventListener('mouseup', () => { isDragging = false; el.style.transition = ''; });
-}
-makeDraggable(document.getElementById('statsPanel'));
-makeDraggable(document.getElementById('agentPanel'));
-
-// ═══ GATEWAY CONNECTION (Improvement #16 - WebSocket ready) ═══
-let ws = null;
 async function checkGateway() {
   try {
-    const res = await fetch(GATEWAY + '/agents', { signal: AbortSignal.timeout(3000) });
-    if (res.ok) {
-      isDemoMode = false;
+    const r = await fetch(GATEWAY + '/health', {signal: AbortSignal.timeout(3000)});
+    if (r.ok) {
+      isLive = true;
       document.getElementById('demoBanner').style.display = 'none';
-      // Try WebSocket connection (Improvement #16)
-      try {
-        ws = new WebSocket(GATEWAY.replace('http', 'ws') + '/ws');
-        ws.onmessage = (event) => {
-          const data = JSON.parse(event.data);
-          if (data.type === 'status') updateStatsFromData(data);
-          if (data.type === 'activity') handleLiveActivity(data);
-        };
-        ws.onclose = () => { ws = null; };
-      } catch(e) {}
+      document.querySelector('.tb-center').innerHTML = `
+        <span id="clock"></span>
+        <span style="color:#0f0">LIVE ⚡</span>
+        <span>ACTIVE <span class="val" id="activeCount">81</span></span>
+      `;
+      // تحميل إحصائيات حقيقية
+      fetchLiveStats();
+      setInterval(fetchLiveStats, 15000);
       return true;
     }
-  } catch (e) {}
-  isDemoMode = true;
+  } catch(e) {}
+  isLive = false;
   document.getElementById('demoBanner').style.display = 'block';
   return false;
 }
 
-function updateStatsFromData(data) {
-  if (data.tasks_today) document.getElementById('statTasks').textContent = data.tasks_today;
-  if (data.success_rate) document.getElementById('statSuccess').textContent = data.success_rate + '%';
-  document.getElementById('statUpdate').textContent = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
+async function fetchLiveStats() {
+  if (!isLive) return;
+  try {
+    const [metrics, netStatus] = await Promise.all([
+      fetch(GATEWAY + '/metrics').then(r => r.json()).catch(() => null),
+      fetch(GATEWAY + '/network/status').then(r => r.json()).catch(() => null),
+    ]);
+    if (metrics) {
+      document.getElementById('sTasks').textContent = metrics.tasks?.total_today || 0;
+      const total = (metrics.tasks?.total_today || 0);
+      const failed = (metrics.tasks?.total_failed || 0);
+      const rate = total > 0 ? ((total - failed) / total * 100).toFixed(1) : '0';
+      document.getElementById('sRate').textContent = rate + '%';
+      document.getElementById('sTime').textContent = new Date().toLocaleTimeString('ar-EG');
+      document.getElementById('activeCount').textContent = metrics.agents?.total || 81;
+    }
+    if (netStatus) {
+      document.getElementById('sConns').textContent = netStatus.graph_edges || 0;
+      document.getElementById('sPulses').textContent = netStatus.stats?.signals_propagated || 0;
+      document.getElementById('sMem').textContent = (netStatus.total_agents || 0) + ' وكيل';
+    }
+  } catch(e) {}
 }
 
-function handleLiveActivity(data) {
-  if (data.agent_id) {
-    const mesh = agentMeshes.find(m => m.userData.agent.id === data.agent_id);
-    if (mesh) gsap.to(mesh.material, { emissiveIntensity: 1.2, duration: 0.3, yoyo: true, repeat: 1 });
+async function apiTask(task, agentId = null) {
+  if (!isLive) return null;
+  try {
+    const payload = {task};
+    if (agentId) payload.agent_id = agentId;
+    const r = await fetch(GATEWAY + '/task', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(90000),
+    });
+    return await r.json();
+  } catch(e) { return {status:'error', result: 'خطأ في الاتصال: ' + e.message}; }
+}
+
+async function apiPipeline(task, agentIds) {
+  if (!isLive) return null;
+  try {
+    const r = await fetch(GATEWAY + '/pipeline', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({task, agent_ids: agentIds}),
+      signal: AbortSignal.timeout(120000),
+    });
+    return await r.json();
+  } catch(e) { return {status:'error', result: 'خطأ: ' + e.message}; }
+}
+
+async function apiCommanderDecide(task) {
+  if (!isLive) return null;
+  try {
+    const r = await fetch(GATEWAY + '/commander/decide?task=' + encodeURIComponent(task));
+    return await r.json();
+  } catch(e) { return null; }
+}
+
+/* ═══════════════════════════════════════════
+   SECTION 1: DATA & CONFIG
+   ═══════════════════════════════════════════ */
+const CATS={
+  cat1:{name:'العلوم والتقنية',color:0x00BFFF,hex:'#00BFFF',icon:'🔬'},
+  cat2:{name:'المجتمع والاستراتيجية',color:0xFF6B9D,hex:'#FF6B9D',icon:'🌍'},
+  cat3:{name:'الأدوات والتمكين',color:0x00FF88,hex:'#00FF88',icon:'🛠️'},
+  cat4:{name:'الإدارة',color:0xFFA500,hex:'#FFA500',icon:'📊'},
+  cat5:{name:'السلوك البشري',color:0xBF40BF,hex:'#BF40BF',icon:'🧠'},
+  cat6:{name:'القيادة',color:0xFFD700,hex:'#FFD700',icon:'⭐'},
+  cat7:{name:'التطور الذاتي',color:0xFF4444,hex:'#FF4444',icon:'🔄'},
+  unknown:{name:'التطور الذاتي',color:0xFF4444,hex:'#FF4444',icon:'🔄'}
+};
+
+const AGENTS=[
+{id:'A02',name_ar:'وكيل البحث العلمي',cat:'cat1',model:'gemini-pro',tools:['arxiv_search','pubmed_search','web_search','deep_search','remember','semantic_remember']},
+{id:'A07',name_ar:'وكيل البحث الطبي',cat:'cat1',model:'gemini-pro',tools:['pubmed_search','arxiv_search','web_search','deep_search','remember']},
+{id:'A38',name_ar:'وكيل الفيزياء وعلوم الكم',cat:'cat1',model:'gemini-pro',tools:['arxiv_search','web_search','deep_search','wiki_search','run_code']},
+{id:'A39',name_ar:'وكيل المناخ والبيئة',cat:'cat1',model:'gemini-flash',tools:['arxiv_search','web_search','deep_search','fetch_news','analyze_data','remember']},
+{id:'A40',name_ar:'وكيل كشف التقنيات الناشئة',cat:'cat1',model:'gemini-flash',tools:['arxiv_search','github_search','web_search','deep_search','fetch_news']},
+{id:'A52',name_ar:'وكيل الطب السريري',cat:'cat1',model:'gemini-pro',tools:['pubmed_search','arxiv_search','web_search','deep_search','remember']},
+{id:'A53',name_ar:'وكيل التصنيع المتقدم',cat:'cat1',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','github_search','remember']},
+{id:'A54',name_ar:'وكيل الروبوتات والأتمتة',cat:'cat1',model:'gemini-flash',tools:['arxiv_search','github_search','web_search','deep_search','run_code']},
+{id:'A55',name_ar:'وكيل تقنيات الفضاء والدفاع',cat:'cat1',model:'gemini-flash',tools:['arxiv_search','web_search','deep_search','fetch_news','remember']},
+{id:'A03',name_ar:'وكيل تحليل السياسات',cat:'cat2',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','analyze_data','remember']},
+{id:'A08',name_ar:'وكيل التحليل المالي',cat:'cat2',model:'gemini-flash',tools:['market_data','web_search','deep_search','fetch_news','analyze_data','remember']},
+{id:'A12',name_ar:'وكيل إنشاء المحتوى',cat:'cat2',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember','write_file']},
+{id:'A13',name_ar:'وكيل الاستشارة القانونية',cat:'cat2',model:'gemini-pro',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A41',name_ar:'وكيل الاقتصاد العالمي',cat:'cat2',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','market_data','analyze_data','remember']},
+{id:'A42',name_ar:'وكيل العملات الرقمية',cat:'cat2',model:'gemini-flash',tools:['web_search','deep_search','market_data','fetch_news','arxiv_search','remember']},
+{id:'A43',name_ar:'وكيل تحليل التاريخ',cat:'cat2',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A44',name_ar:'وكيل تحليل الإعلام',cat:'cat2',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember']},
+{id:'A45',name_ar:'وكيل القانون الدولي',cat:'cat2',model:'gemini-pro',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A46',name_ar:'وكيل الفنون والثقافة',cat:'cat2',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A47',name_ar:'وكيل اللغويات وعلم اللغة',cat:'cat2',model:'gemini-flash',tools:['web_search','wiki_search','arxiv_search','remember']},
+{id:'A48',name_ar:'وكيل الرياضيات المتقدمة',cat:'cat2',model:'gemini-pro',tools:['run_code','arxiv_search','web_search','wiki_search']},
+{id:'A49',name_ar:'وكيل علم الاجتماع',cat:'cat2',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','arxiv_search','remember']},
+{id:'A50',name_ar:'وكيل التعليم والتعلّم',cat:'cat2',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','arxiv_search','remember']},
+{id:'A51',name_ar:'وكيل الهندسة العكسية',cat:'cat2',model:'gemini-flash',tools:['web_search','deep_search','github_search','run_code','remember']},
+{id:'A04',name_ar:'وكيل الاستخبارات الإعلامية',cat:'cat3',model:'gemini-flash',tools:['web_search','fetch_news','deep_search','arxiv_search']},
+{id:'A05',name_ar:'وكيل تطوير البرمجيات',cat:'cat3',model:'gemini-flash',tools:['run_code','github_search','web_search','read_file','write_file']},
+{id:'A09',name_ar:'وكيل الأمن السيبراني',cat:'cat3',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','github_search','fetch_news','remember']},
+{id:'A11',name_ar:'وكيل الترجمة والتعريب',cat:'cat3',model:'gemini-flash',tools:['web_search','wiki_search','remember']},
+{id:'A56',name_ar:'وكيل الاستخبارات العميقة',cat:'cat3',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','arxiv_search','remember']},
+{id:'A57',name_ar:'وكيل تطوير التكاملات',cat:'cat3',model:'gemini-flash',tools:['run_code','github_search','web_search','read_file','write_file']},
+{id:'A58',name_ar:'وكيل الإنذار المبكر',cat:'cat3',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','arxiv_search','remember']},
+{id:'A59',name_ar:'وكيل الابتكار المفتوح',cat:'cat3',model:'gemini-flash',tools:['github_search','arxiv_search','web_search','deep_search','remember']},
+{id:'A60',name_ar:'وكيل مكافحة التضليل',cat:'cat3',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','fetch_news','arxiv_search']},
+{id:'A61',name_ar:'وكيل الحوسبة البيولوجية',cat:'cat3',model:'gemini-pro',tools:['arxiv_search','pubmed_search','github_search','run_code','web_search']},
+{id:'A06',name_ar:'وكيل تحليل البيانات',cat:'cat4',model:'gemini-flash',tools:['analyze_data','run_code','read_file','write_file','market_data']},
+{id:'A10',name_ar:'وكيل إدارة المعرفة',cat:'cat4',model:'gemini-flash',tools:['remember','recall','wiki_search','web_search','read_file','write_file']},
+{id:'A14',name_ar:'وكيل إدارة المشاريع',cat:'cat4',model:'gemini-flash',tools:['web_search','read_file','write_file','analyze_data','remember','recall']},
+{id:'A62',name_ar:'وكيل الحوكمة المؤسسية',cat:'cat4',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','analyze_data','write_file','remember']},
+{id:'A63',name_ar:'وكيل إدارة المؤسسات الكبرى',cat:'cat4',model:'gemini-flash',tools:['web_search','deep_search','analyze_data','remember','write_file']},
+{id:'A64',name_ar:'وكيل المشاريع العملاقة',cat:'cat4',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','run_code','write_file','remember']},
+{id:'A65',name_ar:'وكيل التحول الرقمي',cat:'cat4',model:'gemini-flash',tools:['web_search','deep_search','github_search','arxiv_search','analyze_data','remember']},
+{id:'A66',name_ar:'وكيل إدارة الأداء',cat:'cat4',model:'gemini-flash',tools:['analyze_data','run_code','web_search','write_file','remember']},
+{id:'A15',name_ar:'وكيل علم النفس السلوكي',cat:'cat5',model:'gemini-pro',tools:['web_search','deep_search','pubmed_search','arxiv_search','remember']},
+{id:'A16',name_ar:'وكيل خبير التفاوض',cat:'cat5',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A17',name_ar:'وكيل تحليل لغة الجسد',cat:'cat5',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A18',name_ar:'وكيل الإقناع والتأثير',cat:'cat5',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember']},
+{id:'A19',name_ar:'وكيل الذكاء العاطفي',cat:'cat5',model:'gemini-flash',tools:['web_search','wiki_search','pubmed_search','remember']},
+{id:'A20',name_ar:'وكيل الديناميكيات الاجتماعية',cat:'cat5',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember']},
+{id:'A21',name_ar:'وكيل سلوك الجماهير',cat:'cat5',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','arxiv_search','remember']},
+{id:'A22',name_ar:'وكيل الاقتصاد السلوكي',cat:'cat5',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','market_data','analyze_data']},
+{id:'A23',name_ar:'وكيل حل النزاعات',cat:'cat5',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A24',name_ar:'وكيل سيكولوجية القيادة',cat:'cat5',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','pubmed_search','remember']},
+{id:'A25',name_ar:'وكيل خبير التواصل',cat:'cat5',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A26',name_ar:'وكيل سيكولوجية القرار',cat:'cat5',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','run_code','remember']},
+{id:'A27',name_ar:'وكيل الذكاء الثقافي',cat:'cat5',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A01',name_ar:'وكيل القيادة الاستراتيجية',cat:'cat6',model:'gemini-pro',tools:['web_search','deep_search','arxiv_search','remember','recall']},
+{id:'A28',name_ar:'وكيل الاستراتيجية العسكرية',cat:'cat6',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','arxiv_search','remember','recall']},
+{id:'A29',name_ar:'وكيل إدارة الأزمات',cat:'cat6',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','remember','recall','write_file']},
+{id:'A30',name_ar:'وكيل قيادة الابتكار',cat:'cat6',model:'gemini-flash',tools:['web_search','deep_search','github_search','arxiv_search','remember']},
+{id:'A31',name_ar:'وكيل تحليل الاستخبارات',cat:'cat6',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','arxiv_search','github_search','remember','recall']},
+{id:'A32',name_ar:'وكيل خبير الجيوسياسة',cat:'cat6',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','wiki_search','market_data','remember']},
+{id:'A33',name_ar:'وكيل استشراف المستقبل',cat:'cat6',model:'gemini-pro',tools:['web_search','deep_search','arxiv_search','fetch_news','remember']},
+{id:'A34',name_ar:'وكيل تقييم المخاطر',cat:'cat6',model:'gemini-flash',tools:['web_search','deep_search','analyze_data','market_data','run_code','remember']},
+{id:'A35',name_ar:'وكيل إدارة التغيير',cat:'cat6',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','write_file']},
+{id:'A36',name_ar:'وكيل استراتيجي المنظمات',cat:'cat6',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','wiki_search','remember','write_file']},
+{id:'A37',name_ar:'وكيل مهندس القرارات',cat:'cat6',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','run_code','remember','recall','write_file']},
+{id:'A67',name_ar:'وكيل التواصل الإنساني',cat:'cat6',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A68',name_ar:'وكيل توزيع الموارد',cat:'cat6',model:'gemini-flash',tools:['analyze_data','run_code','web_search','market_data','remember']},
+{id:'A69',name_ar:'وكيل التقييم الشامل',cat:'cat6',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','remember','recall','write_file']},
+{id:'A70',name_ar:'وكيل الابتكار الجذري',cat:'cat6',model:'gemini-pro',tools:['arxiv_search','github_search','web_search','deep_search']},
+{id:'A71',name_ar:'وكيل الأمن والنزاهة',cat:'cat6',model:'gemini-flash',tools:['web_search','deep_search','analyze_data','remember','recall']},
+{id:'A72',name_ar:'وكيل مراقبة التطور',cat:'cat7',model:'gemini-pro',tools:['analyze_data','remember','recall','web_search']},
+{id:'A73',name_ar:'وكيل تنسيق الوكلاء',cat:'cat7',model:'gemini-pro',tools:['web_search','analyze_data','remember','recall']},
+{id:'A74',name_ar:'وكيل ضبط الجودة',cat:'cat7',model:'gemini-pro',tools:['analyze_data','web_search','deep_search','remember','recall']},
+{id:'A75',name_ar:'وكيل تحسين النظام',cat:'cat7',model:'gemini-flash',tools:['analyze_data','run_code','remember','recall','web_search']},
+{id:'A76',name_ar:'وكيل تجميع التعلم',cat:'cat7',model:'gemini-flash',tools:['analyze_data','remember','recall','web_search']},
+{id:'A77',name_ar:'وكيل تنسيق سير العمل',cat:'cat7',model:'gemini-pro',tools:['analyze_data','remember','recall','web_search','write_file']},
+{id:'A78',name_ar:'وكيل التخصيص الديناميكي',cat:'cat7',model:'gemini-flash',tools:['analyze_data','run_code','remember','recall']},
+{id:'A79',name_ar:'وكيل التغذية الراجعة',cat:'cat7',model:'gemini-flash',tools:['analyze_data','remember','recall']},
+{id:'A80',name_ar:'وكيل التعرف على الأنماط',cat:'cat7',model:'gemini-pro',tools:['analyze_data','run_code','deep_search','web_search']},
+{id:'A81',name_ar:'الوكيل الميتا الاستخباراتي',cat:'cat7',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','remember','recall','write_file']}
+];
+
+// Runtime state per agent
+AGENTS.forEach(a=>{
+  a.state=Math.random()>0.3?'active':(Math.random()>0.5?'busy':'idle');
+  a.progress=a.state==='busy'?Math.random()*100:0;
+  a.task=a.state==='busy'?['يحلل بيانات','يبحث في الويب','يكتب تقرير','يراجع معلومات'][Math.floor(Math.random()*4)]:(a.state==='active'?'جاهز':'خامل');
+  a.memory=['تم تحليل 3 مصادر جديدة','تم تحديث قاعدة المعرفة','تم اكتشاف نمط جديد'];
+  a.dependency=Math.random()>0.7?AGENTS[Math.floor(Math.random()*AGENTS.length)].name_ar:null;
+  a.activeTools=a.tools.filter(()=>Math.random()>0.6);
+  a.paused=false;
+  a.mesh=null;
+  a.label=null;
+  a.pos=new THREE.Vector3();
+  a.targetPos=new THREE.Vector3();
+  a.breathPhase=Math.random()*Math.PI*2;
+  a.pulseSpeed=0.5+Math.random()*1.5;
+});
+
+/* ═══════════════════════════════════════════
+   SECTION 2: THREE.JS SCENE SETUP
+   ═══════════════════════════════════════════ */
+const canvas=document.getElementById('canvas3d');
+const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,powerPreference:'high-performance'});
+renderer.setSize(window.innerWidth,window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+renderer.toneMapping=THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure=1.2;
+renderer.shadowMap.enabled=true;
+renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+
+const scene=new THREE.Scene();
+scene.fog=new THREE.FogExp2(0x000510,0.008);
+
+const camera=new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeight,0.1,2000);
+camera.position.set(0,35,55);
+
+const controls=new OrbitControls(camera,canvas);
+controls.enableDamping=true;
+controls.dampingFactor=0.06;
+controls.maxDistance=150;
+controls.minDistance=10;
+controls.autoRotate=true;
+controls.autoRotateSpeed=0.15;
+
+// Post-processing
+const composer=new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene,camera));
+const bloom=new UnrealBloomPass(new THREE.Vector2(window.innerWidth,window.innerHeight),0.8,0.4,0.85);
+composer.addPass(bloom);
+
+// Lighting
+const ambientLight=new THREE.AmbientLight(0x111133,0.4);
+scene.add(ambientLight);
+const coreLight=new THREE.PointLight(0xFFD700,3,120);
+coreLight.castShadow=true;
+coreLight.shadow.mapSize.set(1024,1024);
+scene.add(coreLight);
+const rimLight=new THREE.DirectionalLight(0x4466ff,0.3);
+rimLight.position.set(50,50,-50);
+scene.add(rimLight);
+
+/* ═══════════════════════════════════════════
+   SECTION 3: STARFIELD & NEBULA
+   ═══════════════════════════════════════════ */
+function createStarfield(){
+  const geo=new THREE.BufferGeometry();
+  const count=4000;
+  const pos=new Float32Array(count*3);
+  const sizes=new Float32Array(count);
+  for(let i=0;i<count;i++){
+    pos[i*3]=(Math.random()-0.5)*800;
+    pos[i*3+1]=(Math.random()-0.5)*800;
+    pos[i*3+2]=(Math.random()-0.5)*800;
+    sizes[i]=Math.random()*2+0.5;
   }
+  geo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  geo.setAttribute('size',new THREE.BufferAttribute(sizes,1));
+  const mat=new THREE.PointsMaterial({color:0xffffff,size:0.8,transparent:true,opacity:0.6,sizeAttenuation:true});
+  return new THREE.Points(geo,mat);
+}
+scene.add(createStarfield());
+
+// Nebula clouds
+function createNebula(){
+  const group=new THREE.Group();
+  const colors=[0x1a0033,0x000a33,0x0a001a,0x001a0a];
+  for(let i=0;i<6;i++){
+    const geo=new THREE.PlaneGeometry(120+Math.random()*80,120+Math.random()*80);
+    const mat=new THREE.MeshBasicMaterial({color:colors[i%colors.length],transparent:true,opacity:0.04+Math.random()*0.03,side:THREE.DoubleSide,depthWrite:false});
+    const mesh=new THREE.Mesh(geo,mat);
+    mesh.position.set((Math.random()-0.5)*100,(Math.random()-0.5)*40,(Math.random()-0.5)*100);
+    mesh.rotation.set(Math.random()*Math.PI,Math.random()*Math.PI,Math.random()*Math.PI);
+    group.add(mesh);
+  }
+  return group;
+}
+scene.add(createNebula());
+
+/* ═══════════════════════════════════════════
+   SECTION 4: CORE (NEURAL NUCLEUS)
+   ═══════════════════════════════════════════ */
+const coreGroup=new THREE.Group();
+scene.add(coreGroup);
+
+// Inner core - glass refraction effect
+const coreGeo=new THREE.IcosahedronGeometry(3,4);
+const coreMat=new THREE.MeshPhysicalMaterial({
+  color:0xFFD700,
+  metalness:0.1,
+  roughness:0.05,
+  transmission:0.6,
+  thickness:2,
+  ior:1.5,
+  clearcoat:1,
+  clearcoatRoughness:0.1,
+  emissive:0xFFD700,
+  emissiveIntensity:0.8
+});
+const coreMesh=new THREE.Mesh(coreGeo,coreMat);
+coreMesh.castShadow=true;
+coreGroup.add(coreMesh);
+
+// Core outer shell
+const shellGeo=new THREE.IcosahedronGeometry(3.8,2);
+const shellMat=new THREE.MeshPhysicalMaterial({
+  color:0xFFD700,
+  metalness:0,
+  roughness:0.3,
+  transmission:0.9,
+  thickness:0.5,
+  wireframe:true,
+  emissive:0xFFD700,
+  emissiveIntensity:0.2
+});
+const shellMesh=new THREE.Mesh(shellGeo,shellMat);
+coreGroup.add(shellMesh);
+
+// Core energy rings
+const ringGroup=new THREE.Group();
+for(let i=0;i<3;i++){
+  const ringGeo=new THREE.TorusGeometry(4.5+i*0.8,0.03,8,64);
+  const ringMat=new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:0.3-i*0.08});
+  const ring=new THREE.Mesh(ringGeo,ringMat);
+  ring.rotation.x=Math.PI/2+i*0.3;
+  ring.rotation.y=i*0.5;
+  ringGroup.add(ring);
+}
+coreGroup.add(ringGroup);
+
+/* ═══════════════════════════════════════════
+   SECTION 5: AGENT NODES (GLASS SPHERES)
+   ═══════════════════════════════════════════ */
+const agentGroup=new THREE.Group();
+scene.add(agentGroup);
+const labelSprites=[];
+
+function createAgentMesh(agent,index){
+  const catInfo=CATS[agent.cat]||CATS.unknown;
+  const color=new THREE.Color(catInfo.color);
+  
+  // Determine ring and position
+  const catKeys=Object.keys(CATS).filter(k=>k!=='unknown');
+  const catIdx=catKeys.indexOf(agent.cat);
+  const catAgents=AGENTS.filter(a=>a.cat===agent.cat);
+  const posInCat=catAgents.indexOf(agent);
+  const ringRadius=12+catIdx*5.5;
+  const angleStep=(Math.PI*2)/catAgents.length;
+  const angle=posInCat*angleStep;
+  
+  const x=Math.cos(angle)*ringRadius;
+  const z=Math.sin(angle)*ringRadius;
+  const y=(Math.random()-0.5)*4;
+  
+  agent.pos.set(x,y,z);
+  agent.targetPos.copy(agent.pos);
+  
+  // Glass sphere with refraction
+  const isLeader=agent.id==='A01'||agent.id==='A81';
+  const radius=isLeader?1.6:(agent.model==='gemini-pro'?1.1:0.85);
+  
+  const geo=new THREE.SphereGeometry(radius,32,32);
+  const mat=new THREE.MeshPhysicalMaterial({
+    color:catInfo.color,
+    metalness:0.05,
+    roughness:0.1,
+    transmission:0.4,
+    thickness:1.5,
+    ior:1.8,
+    clearcoat:1,
+    clearcoatRoughness:0.05,
+    emissive:catInfo.color,
+    emissiveIntensity:0.4,
+    transparent:true,
+    opacity:0.9
+  });
+  
+  const mesh=new THREE.Mesh(geo,mat);
+  mesh.position.copy(agent.pos);
+  mesh.castShadow=true;
+  mesh.receiveShadow=true;
+  mesh.userData={agentIndex:index};
+  agent.mesh=mesh;
+  agentGroup.add(mesh);
+  
+  // Status indicator ring
+  const statusGeo=new THREE.TorusGeometry(radius+0.15,0.04,8,32);
+  const statusColor=agent.state==='active'?0x00FF88:(agent.state==='busy'?0xFFA500:0x666666);
+  const statusMat=new THREE.MeshBasicMaterial({color:statusColor,transparent:true,opacity:0.7});
+  const statusRing=new THREE.Mesh(statusGeo,statusMat);
+  statusRing.rotation.x=Math.PI/2;
+  mesh.add(statusRing);
+  agent.statusRing=statusRing;
+  
+  // Label
+  const labelCanvas=document.createElement('canvas');
+  labelCanvas.width=128;labelCanvas.height=40;
+  const ctx=labelCanvas.getContext('2d');
+  ctx.font='bold 18px Orbitron';
+  ctx.fillStyle='#ffffff';
+  ctx.textAlign='center';
+  ctx.fillText(agent.id,64,26);
+  const labelTex=new THREE.CanvasTexture(labelCanvas);
+  const labelMat=new THREE.SpriteMaterial({map:labelTex,transparent:true,opacity:0.7,depthTest:false});
+  const label=new THREE.Sprite(labelMat);
+  label.position.set(x,y-radius-0.6,z);
+  label.scale.set(2.5,0.8,1);
+  agent.label=label;
+  labelSprites.push(label);
+  scene.add(label);
 }
 
-async function fetchStatus() {
-  if (isDemoMode) {
-    document.getElementById('statTasks').textContent = Math.floor(Math.random() * 30 + 40);
-    document.getElementById('statSuccess').textContent = (Math.random() * 5 + 92).toFixed(0) + '%';
-    document.getElementById('statUpdate').textContent = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
+AGENTS.forEach((a,i)=>createAgentMesh(a,i));
+
+/* ═══════════════════════════════════════════
+   SECTION 6: NEURAL CONNECTIONS (ORGANIC SPLINES)
+   ═══════════════════════════════════════════ */
+const connections=[];
+const connectionGroup=new THREE.Group();
+scene.add(connectionGroup);
+
+function createConnection(a1,a2,strength){
+  const p1=a1.pos.clone();
+  const p2=a2.pos.clone();
+  const mid=p1.clone().add(p2).multiplyScalar(0.5);
+  mid.y+=2+Math.random()*3;
+  const curve=new THREE.QuadraticBezierCurve3(p1,mid,p2);
+  const points=curve.getPoints(30);
+  const geo=new THREE.BufferGeometry().setFromPoints(points);
+  const mat=new THREE.LineBasicMaterial({
+    color:CATS[a1.cat]?.color||0xffffff,
+    transparent:true,
+    opacity:0.06+strength*0.08,
+    linewidth:1
+  });
+  const line=new THREE.Line(geo,mat);
+  connectionGroup.add(line);
+  return {line,a1,a2,curve,strength,mat};
+}
+
+// Build neural network connections
+AGENTS.forEach((a,i)=>{
+  // Connect to same-category neighbors
+  const sameCat=AGENTS.filter(b=>b.cat===a.cat&&b!==a);
+  sameCat.forEach(b=>{
+    if(AGENTS.indexOf(b)>i){
+      connections.push(createConnection(a,b,0.5));
+    }
+  });
+  // Connect to core (every agent)
+  const coreAgent={pos:new THREE.Vector3(0,0,0),cat:a.cat};
+  connections.push(createConnection(a,coreAgent,0.3));
+  // Random cross-category connections
+  if(Math.random()>0.7){
+    const other=AGENTS[Math.floor(Math.random()*AGENTS.length)];
+    if(other!==a&&other.cat!==a.cat){
+      connections.push(createConnection(a,other,0.2));
+    }
+  }
+});
+
+/* ═══════════════════════════════════════════
+   SECTION 7: SYNAPTIC PULSES
+   ═══════════════════════════════════════════ */
+const pulses=[];
+const pulseGeo=new THREE.SphereGeometry(0.12,8,8);
+
+function firePulse(conn,color,speed){
+  const mat=new THREE.MeshBasicMaterial({color:color||0x00BFFF,transparent:true,opacity:1});
+  const mesh=new THREE.Mesh(pulseGeo,mat);
+  scene.add(mesh);
+  pulses.push({mesh,conn,t:0,speed:speed||0.008+Math.random()*0.008,color});
+}
+
+// Fire random pulses continuously
+setInterval(()=>{
+  if(connections.length===0)return;
+  const count=2+Math.floor(Math.random()*4);
+  for(let i=0;i<count;i++){
+    const conn=connections[Math.floor(Math.random()*connections.length)];
+    const colors=[0x00BFFF,0x00FF88,0xFFD700,0xFF6B9D,0xBF40BF];
+    firePulse(conn,colors[Math.floor(Math.random()*colors.length)]);
+  }
+},800);
+
+/* ═══════════════════════════════════════════
+   SECTION 8: PARTICLE SYSTEM (DATA FLOW)
+   ═══════════════════════════════════════════ */
+const particleCount=3000;
+const particleGeo=new THREE.BufferGeometry();
+const particlePos=new Float32Array(particleCount*3);
+const particleVel=new Float32Array(particleCount*3);
+const particleCol=new Float32Array(particleCount*3);
+for(let i=0;i<particleCount;i++){
+  particlePos[i*3]=(Math.random()-0.5)*80;
+  particlePos[i*3+1]=(Math.random()-0.5)*30;
+  particlePos[i*3+2]=(Math.random()-0.5)*80;
+  particleVel[i*3]=(Math.random()-0.5)*0.02;
+  particleVel[i*3+1]=(Math.random()-0.5)*0.01;
+  particleVel[i*3+2]=(Math.random()-0.5)*0.02;
+  const c=new THREE.Color().setHSL(Math.random()*0.15+0.1,0.8,0.6);
+  particleCol[i*3]=c.r;particleCol[i*3+1]=c.g;particleCol[i*3+2]=c.b;
+}
+particleGeo.setAttribute('position',new THREE.BufferAttribute(particlePos,3));
+particleGeo.setAttribute('color',new THREE.BufferAttribute(particleCol,3));
+const particleMat=new THREE.PointsMaterial({size:0.15,transparent:true,opacity:0.5,vertexColors:true,sizeAttenuation:true,depthWrite:false});
+const particles=new THREE.Points(particleGeo,particleMat);
+scene.add(particles);
+
+/* ═══════════════════════════════════════════
+   SECTION 9: METEOR / SHOOTING STARS
+   ═══════════════════════════════════════════ */
+const meteors=[];
+function spawnMeteor(){
+  const geo=new THREE.BufferGeometry();
+  const pts=[];
+  for(let i=0;i<20;i++)pts.push(new THREE.Vector3(i*0.5,0,0));
+  geo.setFromPoints(pts);
+  const mat=new THREE.LineBasicMaterial({color:0xFFD700,transparent:true,opacity:0.6});
+  const line=new THREE.Line(geo,mat);
+  line.position.set((Math.random()-0.5)*200,50+Math.random()*50,(Math.random()-0.5)*200);
+  line.rotation.z=-Math.PI/4+Math.random()*0.5;
+  scene.add(line);
+  meteors.push({line,life:1,speed:0.5+Math.random()*0.5});
+}
+setInterval(()=>{if(Math.random()>0.6)spawnMeteor()},3000);
+
+/* ═══════════════════════════════════════════
+   SECTION 10: INTERACTION SYSTEM
+   ═══════════════════════════════════════════ */
+const raycaster=new THREE.Raycaster();
+const mouse=new THREE.Vector2();
+let hoveredAgent=null;
+let selectedAgent=null;
+let autoTrack=false;
+let cameraTarget=null;
+let cameraAnimating=false;
+
+// Hover detection
+canvas.addEventListener('mousemove',e=>{
+  mouse.x=(e.clientX/window.innerWidth)*2-1;
+  mouse.y=-(e.clientY/window.innerHeight)*2+1;
+  raycaster.setFromCamera(mouse,camera);
+  const meshes=AGENTS.map(a=>a.mesh).filter(Boolean);
+  const hits=raycaster.intersectObjects(meshes);
+  
+  if(hits.length>0){
+    const idx=hits[0].object.userData.agentIndex;
+    const agent=AGENTS[idx];
+    if(hoveredAgent!==agent){
+      hoveredAgent=agent;
+      showHoloCard(agent,e.clientX,e.clientY);
+    }else{
+      moveHoloCard(e.clientX,e.clientY);
+    }
+    canvas.style.cursor='pointer';
+    // Highlight connections
+    highlightAgentConnections(agent);
+  }else{
+    if(hoveredAgent){
+      hoveredAgent=null;
+      hideHoloCard();
+      unhighlightConnections();
+    }
+    canvas.style.cursor='default';
+  }
+});
+
+// Click to select
+canvas.addEventListener('click',e=>{
+  if(hoveredAgent){
+    selectedAgent=hoveredAgent;
+    showHoloCard(selectedAgent,e.clientX,e.clientY);
+    document.getElementById('holoCard').classList.add('show');
+    // Ripple effect
+    createRipple(selectedAgent);
+    // Spatial audio
+    playSpatialSound(selectedAgent);
+  }
+});
+
+// Double-click to zoom
+canvas.addEventListener('dblclick',e=>{
+  if(hoveredAgent){
+    smoothFlyTo(hoveredAgent.pos.clone().add(new THREE.Vector3(0,3,8)),hoveredAgent.pos,1500);
+  }
+});
+
+function highlightAgentConnections(agent){
+  connections.forEach(c=>{
+    if(c.a1===agent||c.a2===agent){
+      c.mat.opacity=0.4;
+    }
+  });
+}
+function unhighlightConnections(){
+  connections.forEach(c=>{
+    c.mat.opacity=0.06+c.strength*0.08;
+  });
+}
+
+function createRipple(agent){
+  if(!agent.mesh)return;
+  const rippleGeo=new THREE.RingGeometry(0.1,0.3,32);
+  const rippleMat=new THREE.MeshBasicMaterial({color:CATS[agent.cat]?.color||0xffffff,transparent:true,opacity:0.8,side:THREE.DoubleSide});
+  const ripple=new THREE.Mesh(rippleGeo,rippleMat);
+  ripple.position.copy(agent.mesh.position);
+  ripple.rotation.x=-Math.PI/2;
+  scene.add(ripple);
+  const startTime=performance.now();
+  function animateRipple(){
+    const elapsed=(performance.now()-startTime)/1000;
+    if(elapsed>1.5){scene.remove(ripple);rippleMat.dispose();rippleGeo.dispose();return;}
+    const scale=1+elapsed*15;
+    ripple.scale.set(scale,scale,1);
+    rippleMat.opacity=0.8*(1-elapsed/1.5);
+    requestAnimationFrame(animateRipple);
+  }
+  animateRipple();
+}
+
+/* ═══════════════════════════════════════════
+   SECTION 11: HOLOGRAPHIC CARD SYSTEM
+   ═══════════════════════════════════════════ */
+function showHoloCard(agent,mx,my){
+  const card=document.getElementById('holoCard');
+  const catInfo=CATS[agent.cat]||CATS.unknown;
+  
+  // Position
+  let x=mx+20,y=my-100;
+  if(x+370>window.innerWidth)x=mx-380;
+  if(y<60)y=60;
+  if(y+400>window.innerHeight)y=window.innerHeight-410;
+  card.style.left=x+'px';card.style.top=y+'px';
+  
+  // Glow
+  document.getElementById('hcGlow').style.background=`radial-gradient(ellipse,${catInfo.hex}33,transparent 70%)`;
+  
+  // Header
+  document.getElementById('hcIcon').style.background=catInfo.hex;
+  document.getElementById('hcRing').style.borderColor=catInfo.hex;
+  document.getElementById('hcId').textContent=agent.id;
+  document.getElementById('hcName').textContent=agent.name_ar;
+  document.getElementById('hcCat').textContent=catInfo.icon+' '+catInfo.name;
+  
+  // Status
+  const statusColors={active:'#00FF88',busy:'#FFA500',idle:'#666'};
+  const statusTexts={active:'نشط',busy:'مشغول',idle:'خامل'};
+  document.getElementById('hcStatusDot').style.background=statusColors[agent.state];
+  document.getElementById('hcStatusTxt').textContent=statusTexts[agent.state]+' | '+agent.model;
+  document.getElementById('hcStatusTxt').style.color=statusColors[agent.state];
+  
+  // Task & Progress
+  document.getElementById('hcTask').textContent=agent.task;
+  const prog=document.getElementById('hcProgress');
+  prog.style.width=agent.progress+'%';
+  prog.style.background=catInfo.hex;
+  
+  // Dependency
+  const depSection=document.getElementById('hcDepSection');
+  if(agent.dependency){
+    depSection.style.display='block';
+    document.getElementById('hcDep').textContent='⏳ ينتظر: '+agent.dependency;
+  }else{
+    depSection.style.display='none';
+  }
+  
+  // Memory
+  const memDiv=document.getElementById('hcMemory');
+  memDiv.innerHTML=agent.memory.map(m=>`<div class="hc-mem">• ${m}</div>`).join('');
+  
+  // Tools
+  const toolsDiv=document.getElementById('hcTools');
+  toolsDiv.innerHTML=agent.tools.map(t=>{
+    const isActive=agent.activeTools.includes(t);
+    return `<span class="hc-tool ${isActive?'active':''}">${t}</span>`;
+  }).join('');
+  
+  card.classList.add('show');
+}
+
+function moveHoloCard(mx,my){
+  const card=document.getElementById('holoCard');
+  let x=mx+20,y=my-100;
+  if(x+370>window.innerWidth)x=mx-380;
+  if(y<60)y=60;
+  card.style.left=x+'px';card.style.top=y+'px';
+}
+
+function hideHoloCard(){
+  if(!selectedAgent)document.getElementById('holoCard').classList.remove('show');
+}
+
+/* ═══════════════════════════════════════════
+   SECTION 12: CAMERA SYSTEM
+   ═══════════════════════════════════════════ */
+function smoothFlyTo(targetPos,lookAt,duration=2000){
+  cameraAnimating=true;
+  controls.autoRotate=false;
+  const startPos=camera.position.clone();
+  const startLook=controls.target.clone();
+  const startTime=performance.now();
+  
+  function animate(){
+    const elapsed=performance.now()-startTime;
+    let t=Math.min(elapsed/duration,1);
+    t=t*t*(3-2*t); // smoothstep
+    
+    camera.position.lerpVectors(startPos,targetPos,t);
+    controls.target.lerpVectors(startLook,lookAt,t);
+    controls.update();
+    
+    if(t<1)requestAnimationFrame(animate);
+    else{cameraAnimating=false;controls.autoRotate=true;}
+  }
+  animate();
+}
+
+window.resetCamera=()=>smoothFlyTo(new THREE.Vector3(0,35,55),new THREE.Vector3(0,0,0));
+window.topView=()=>smoothFlyTo(new THREE.Vector3(0,80,0.1),new THREE.Vector3(0,0,0));
+window.focusCore=()=>smoothFlyTo(new THREE.Vector3(0,8,15),new THREE.Vector3(0,0,0));
+
+window.cinematicTour=()=>{
+  const waypoints=[
+    {pos:new THREE.Vector3(0,50,0.1),look:new THREE.Vector3(0,0,0)},
+    {pos:new THREE.Vector3(40,20,40),look:new THREE.Vector3(0,0,0)},
+    {pos:new THREE.Vector3(-30,10,30),look:new THREE.Vector3(0,0,0)},
+    {pos:new THREE.Vector3(0,8,15),look:new THREE.Vector3(0,0,0)},
+    {pos:new THREE.Vector3(0,35,55),look:new THREE.Vector3(0,0,0)}
+  ];
+  let i=0;
+  function next(){
+    if(i>=waypoints.length)return;
+    smoothFlyTo(waypoints[i].pos,waypoints[i].look,2500);
+    i++;
+    setTimeout(next,3000);
+  }
+  next();
+};
+
+window.toggleAutoTrack=()=>{
+  autoTrack=!autoTrack;
+  document.getElementById('autoTrackBtn').classList.toggle('on',autoTrack);
+};
+
+window.focusAgent=()=>{
+  if(selectedAgent&&selectedAgent.mesh){
+    const p=selectedAgent.mesh.position.clone();
+    smoothFlyTo(p.clone().add(new THREE.Vector3(0,4,10)),p,1500);
+  }
+};
+
+/* ═══════════════════════════════════════════
+   SECTION 13: SPATIAL AUDIO
+   ═══════════════════════════════════════════ */
+let audioCtx=null;
+function initAudio(){
+  if(!audioCtx)audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+}
+
+function playSpatialSound(agent){
+  initAudio();
+  if(!audioCtx)return;
+  const osc=audioCtx.createOscillator();
+  const gain=audioCtx.createGain();
+  const panner=audioCtx.createStereoPanner();
+  
+  // Map agent X position to stereo pan (-1 to 1)
+  const panValue=Math.max(-1,Math.min(1,agent.pos.x/40));
+  panner.pan.value=panValue;
+  
+  const catFreqs={cat1:600,cat2:500,cat3:700,cat4:550,cat5:450,cat6:800,cat7:650,unknown:500};
+  osc.frequency.value=catFreqs[agent.cat]||500;
+  osc.type='sine';
+  
+  gain.gain.setValueAtTime(0.08,audioCtx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.3);
+  
+  osc.connect(panner).connect(gain).connect(audioCtx.destination);
+  osc.start();
+  osc.stop(audioCtx.currentTime+0.3);
+}
+
+function playBroadcastSound(){
+  initAudio();
+  if(!audioCtx)return;
+  [400,600,800].forEach((f,i)=>{
+    setTimeout(()=>{
+      const osc=audioCtx.createOscillator();
+      const gain=audioCtx.createGain();
+      osc.frequency.value=f;osc.type='sine';
+      gain.gain.setValueAtTime(0.05,audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+0.5);
+      osc.connect(gain).connect(audioCtx.destination);
+      osc.start();osc.stop(audioCtx.currentTime+0.5);
+    },i*100);
+  });
+}
+
+/* ═══════════════════════════════════════════
+   SECTION 14: BROADCAST WAVE VISUAL
+   ═══════════════════════════════════════════ */
+const broadcastWaves=[];
+function createBroadcastWave(){
+  const geo=new THREE.RingGeometry(0.5,1,64);
+  const mat=new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:0.6,side:THREE.DoubleSide});
+  const ring=new THREE.Mesh(geo,mat);
+  ring.rotation.x=-Math.PI/2;
+  ring.position.y=0;
+  scene.add(ring);
+  broadcastWaves.push({ring,mat,scale:1,life:1});
+}
+
+/* ═══════════════════════════════════════════
+   SECTION 15: CHAT SYSTEM
+   ═══════════════════════════════════════════ */
+const chatHistory=[];
+
+function addChatMsg(sender,text,icon,isSystem){
+  const now=new Date().toLocaleTimeString('ar-EG');
+  chatHistory.push({sender,text,icon,time:now,isSystem});
+  const div=document.getElementById('chatMessages');
+  const msgHtml=`<div class="cp-msg"><span class="icon">${icon}</span><div><span class="sender">${sender}</span><div class="text">${text}</div></div><span class="time">${now}</span></div>`;
+  div.innerHTML+=msgHtml;
+  div.scrollTop=div.scrollHeight;
+}
+
+window.sendChat=async()=>{
+  const input=document.getElementById('chatInput');
+  const text=input.value.trim();
+  if(!text)return;
+
+  const target=document.getElementById('chatTarget').value;
+  addChatMsg('القائد الأعلى',text,'👑',false);
+  input.value='';
+
+  // ── إذا متصل بالبوابة → API حقيقي ──
+  if(isLive){
+    createBroadcastWave();
+    addChatMsg('النظام','⏳ جاري المعالجة...','⚙️',true);
+
+    if(target==='broadcast'){
+      // اسأل A00 أولاً: من ينفذ؟
+      const decision = await apiCommanderDecide(text);
+      if(decision && decision.decision){
+        addChatMsg('A00 — القائد الأعلى',
+          `تحليل: تعقيد ${decision.complexity}/10\nقرار: ${decision.decision.decision}\nالوكلاء: ${decision.decision.agents.join(', ')}\nالسبب: ${decision.decision.reasoning}`,
+          '👑',false);
+      }
+      // نفّذ المهمة
+      const result = await apiTask(text);
+      if(result){
+        const agentName = result.agent_name || result.agent_id || 'وكيل';
+        const response = result.result || result.error || 'لا يوجد رد';
+        const elapsed = result.elapsed_seconds || 0;
+        const model = result.model_used || '';
+        addChatMsg(`${agentName} (${model})`, response, '🤖', false);
+        addNotif('✅', agentName, `أنجز المهمة في ${elapsed}s`);
+      }else{
+        addChatMsg('خطأ','تعذر الاتصال بالبوابة','❌',false);
+      }
+    }else{
+      // وكيل محدد
+      const agent=AGENTS.find(a=>a.id===target);
+      if(agent){
+        playSpatialSound(agent);
+        const result = await apiTask(text, target);
+        if(result){
+          const response = result.result || result.error || 'لا يوجد رد';
+          const elapsed = result.elapsed_seconds || 0;
+          addChatMsg(`${agent.id} — ${agent.name_ar}`, response, CATS[agent.cat]?.icon||'🤖', false);
+          addNotif('✅', agent.name_ar, `أنجز في ${elapsed}s`);
+        }
+      }
+    }
     return;
   }
-  if (ws && ws.readyState === WebSocket.OPEN) return; // WebSocket handles it
-  try {
-    const res = await fetch(GATEWAY + '/status');
-    if (res.ok) updateStatsFromData(await res.json());
-  } catch (e) {}
-}
 
-// ═══ RANDOM ACTIVITY SIMULATION ═══
-function simulateActivity() {
-  const idx = Math.floor(Math.random() * agentMeshes.length);
-  const mesh = agentMeshes[idx];
-  const agent = mesh.userData.agent;
-
-  // Update state randomly (Improvement #12)
-  const r = Math.random();
-  if (r > 0.8) {
-    agentStates[agent.id].status = 'busy';
-    mesh.material.emissiveIntensity = 0.7;
-    setTimeout(() => {
-      agentStates[agent.id].status = 'active';
-      mesh.material.emissiveIntensity = 0.4;
-    }, 3000 + Math.random() * 5000);
-  }
-
-  gsap.to(mesh.material, { emissiveIntensity: 1.2, duration: 0.3, yoyo: true, repeat: 1 });
-
-  if (Math.random() > 0.6) {
-    const fromIdx = Math.floor(Math.random() * agentMeshes.length);
-    const toIdx = Math.floor(Math.random() * agentMeshes.length);
-    if (fromIdx !== toIdx) {
-      createBeam(agentMeshes[fromIdx].position, agentMeshes[toIdx].position, CATEGORIES[agentMeshes[fromIdx].userData.agent.cat].color, 1000);
-      // Data packets (Improvement #13)
-      createDataPacket(agentMeshes[fromIdx].position, agentMeshes[toIdx].position, CATEGORIES[agentMeshes[fromIdx].userData.agent.cat].color);
+  // ── وضع العرض (demo) — ردود وهمية ──
+  if(target==='broadcast'){
+    createBroadcastWave();
+    playBroadcastSound();
+    addNotif('📡','بث عام (تجريبي)','شغّل gateway للردود الحقيقية');
+    setTimeout(()=>{
+      addChatMsg('A01 — القيادة','[تجريبي] تم استلام الأمر. شغّل python gateway/app.py للردود الحقيقية.','⭐',false);
+    },1500);
+  }else{
+    const agent=AGENTS.find(a=>a.id===target);
+    if(agent){
+      playSpatialSound(agent);
+      setTimeout(()=>{
+        addChatMsg(agent.id+' — '+agent.name_ar,'[تجريبي] شغّل python gateway/app.py للردود الحقيقية.',CATS[agent.cat]?.icon||'🤖',false);
+      },1500);
     }
   }
+};
 
-  if (Math.random() > 0.5) {
-    const lineIdx = Math.floor(Math.random() * connectionLines.length);
-    const line = connectionLines[lineIdx];
-    gsap.to(line.material, { opacity: 0.3, duration: 0.5, yoyo: true, repeat: 1, onComplete: () => { line.material.opacity = line.userData.baseOpacity; } });
-  }
+window.toggleChat=()=>{
+  document.getElementById('chatPanel').classList.toggle('hidden');
+};
 
-  // Random audit entries
-  if (Math.random() > 0.7) {
-    const tasks = ['أكمل تحليل البيانات', 'أنهى مراجعة التقرير', 'بدأ بحثاً جديداً', 'أرسل تنبيهاً', 'حدّث قاعدة المعرفة'];
-    addAuditEntry('task', agent.id, tasks[Math.floor(Math.random() * tasks.length)]);
+window.toggleMic=()=>{
+  const btn=document.getElementById('micBtn');
+  if('webkitSpeechRecognition' in window||'SpeechRecognition' in window){
+    const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+    const rec=new SR();
+    rec.lang='ar-SA';rec.continuous=false;
+    rec.onresult=e=>{document.getElementById('chatInput').value=e.results[0][0].transcript;};
+    rec.start();
+    btn.style.color='#ff4444';
+    rec.onend=()=>{btn.style.color='';};
   }
+};
+
+/* ═══════════════════════════════════════════
+   SECTION 16: SEARCH, NOTIFICATIONS, SQUAD
+   ═══════════════════════════════════════════ */
+// Search
+const catKeys=Object.keys(CATS);
+let searchFilter='all';
+
+window.toggleSearch=()=>{
+  const el=document.getElementById('searchOverlay');
+  el.classList.toggle('open');
+  if(el.classList.contains('open'))document.getElementById('searchInput').focus();
+};
+
+// Build search filters
+const sfDiv=document.getElementById('searchFilters');
+sfDiv.innerHTML=`<span class="on" onclick="setSearchFilter('all')">الكل</span>`+
+  Object.entries(CATS).filter(([k])=>k!=='unknown').map(([k,v])=>
+    `<span onclick="setSearchFilter('${k}')">${v.icon} ${v.name}</span>`
+  ).join('');
+
+window.setSearchFilter=f=>{
+  searchFilter=f;
+  document.querySelectorAll('.sf span').forEach(s=>s.classList.remove('on'));
+  event.target.classList.add('on');
+  doSearch(document.getElementById('searchInput').value);
+};
+
+window.doSearch=q=>{
+  const results=AGENTS.filter(a=>{
+    const matchCat=searchFilter==='all'||a.cat===searchFilter;
+    const matchQ=!q||a.name_ar.includes(q)||a.id.toLowerCase().includes(q.toLowerCase())||a.tools.some(t=>t.includes(q));
+    return matchCat&&matchQ;
+  }).slice(0,15);
+  
+  document.getElementById('searchResults').innerHTML=results.map(a=>{
+    const c=CATS[a.cat]||CATS.unknown;
+    return `<div class="s-item" onclick="selectFromSearch('${a.id}')"><div class="dot" style="background:${c.hex}"></div>${a.id} — ${a.name_ar} <span style="color:rgba(255,255,255,0.3);margin-right:auto;font-size:10px">${a.state}</span></div>`;
+  }).join('');
+};
+
+window.selectFromSearch=id=>{
+  const agent=AGENTS.find(a=>a.id===id);
+  if(agent&&agent.mesh){
+    selectedAgent=agent;
+    toggleSearch();
+    smoothFlyTo(agent.mesh.position.clone().add(new THREE.Vector3(0,4,10)),agent.mesh.position,1500);
+  }
+};
+
+// Notifications
+const notifications=[];
+function addNotif(icon,title,desc){
+  const now=new Date().toLocaleTimeString('ar-EG');
+  notifications.unshift({icon,title,desc,time:now});
+  document.getElementById('notifBadge').textContent=notifications.length;
+  const list=document.getElementById('notifList');
+  list.innerHTML=notifications.slice(0,20).map(n=>
+    `<div class="notif"><span class="ic">${n.icon}</span><div class="body"><div class="title">${n.title}</div><div class="desc">${n.desc}</div></div><span class="time">${n.time}</span></div>`
+  ).join('');
 }
 
-// ═══ CLOCK ═══
-function updateClock() {
-  document.getElementById('clockDisplay').textContent = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-}
+window.toggleNotif=()=>document.getElementById('notifPanel').classList.toggle('open');
 
-// ═══ FPS MONITOR (Improvement #5) ═══
-let frameCount = 0;
-let lastFpsTime = performance.now();
-let currentFps = 60;
-let qualityLevel = 'high';
+// Squad
+const squad=[];
+window.toggleSquad=()=>document.getElementById('squadPanel').classList.toggle('open');
 
-function updateFps() {
-  frameCount++;
-  const now = performance.now();
-  if (now - lastFpsTime >= 1000) {
-    currentFps = frameCount;
-    frameCount = 0;
-    lastFpsTime = now;
-    document.getElementById('statFps').textContent = currentFps;
-    document.getElementById('fpsCounter').textContent = `FPS: ${currentFps}`;
+window.summonAgent=()=>{
+  if(selectedAgent){
+    document.getElementById('chatTarget').innerHTML+=`<option value="${selectedAgent.id}" selected>${selectedAgent.id} — ${selectedAgent.name_ar}</option>`;
+    document.getElementById('chatPanel').classList.remove('hidden');
+    addChatMsg('النظام',`تم استدعاء ${selectedAgent.name_ar} للمحادثة المباشرة`,'🔗',true);
+  }
+};
 
-    // Auto-scaling quality (Improvement #5)
-    if (currentFps < 25 && qualityLevel !== 'low') {
-      qualityLevel = 'low';
-      bloomPass.strength = 0.5;
-      particleMat.size = 0.15;
-      renderer.setPixelRatio(1);
-      addAuditEntry('system', 'SYS', 'تم تخفيض الجودة تلقائياً لتحسين الأداء');
-    } else if (currentFps > 45 && qualityLevel !== 'high') {
-      qualityLevel = 'high';
-      bloomPass.strength = 1.2;
-      particleMat.size = 0.3;
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+window.toggleAgentPause=()=>{
+  if(selectedAgent){
+    selectedAgent.paused=!selectedAgent.paused;
+    selectedAgent.state=selectedAgent.paused?'idle':'active';
+    addNotif(selectedAgent.paused?'⏸':'▶',selectedAgent.name_ar,selectedAgent.paused?'تم إيقاف الوكيل':'تم تشغيل الوكيل');
+  }
+};
+
+window.launchSquad=async()=>{
+  if(squad.length<2){addNotif('⚠','فريق العمل','يجب إضافة وكيلين على الأقل');return;}
+
+  // Visual: cluster agents together
+  const center=new THREE.Vector3();
+  squad.forEach(a=>center.add(a.pos));
+  center.divideScalar(squad.length);
+  squad.forEach(a=>{
+    a.targetPos.copy(center).add(new THREE.Vector3((Math.random()-0.5)*5,Math.random()*3,(Math.random()-0.5)*5));
+  });
+  createBroadcastWave();
+
+  const agentIds = squad.map(a => a.id);
+  addNotif('🚀','فريق العمل',`تم إطلاق pipeline: ${agentIds.join(' → ')}`);
+
+  // إذا متصل → pipeline حقيقي
+  if(isLive){
+    const task = prompt('أدخل المهمة للفريق:');
+    if(!task) return;
+    addChatMsg('القائد','🚀 Pipeline: ' + agentIds.join(' → ') + '\nالمهمة: ' + task,'👑',false);
+    const result = await apiPipeline(task, agentIds);
+    if(result){
+      if(result.status === 'success'){
+        const final = result.final || result.all_results?.[result.all_results.length-1] || {};
+        addChatMsg('Pipeline ✅', final.result || 'تم التنفيذ', '🔗', false);
+        addNotif('✅','Pipeline',`${result.steps || agentIds.length} خطوات — تم بنجاح`);
+      }else{
+        addChatMsg('Pipeline ❌', result.error || 'فشل', '❌', false);
+      }
     }
+  }else{
+    addNotif('ℹ','تجريبي','شغّل gateway لتنفيذ pipeline حقيقي');
   }
-}
+};
 
-// ═══ VR MODE (Improvement #20) ═══
-function checkVRSupport() {
-  if ('xr' in navigator) {
-    navigator.xr.isSessionSupported('immersive-vr').then(supported => {
-      if (supported) document.getElementById('vrButton').style.display = 'block';
-    });
+window.clearSquad=()=>{
+  squad.length=0;
+  document.getElementById('squadZone').innerHTML='<div style="color:rgba(255,255,255,0.2);font-size:11px;width:100%;text-align:center;padding:20px">اسحب الوكلاء هنا</div>';
+};
+
+/* ═══════════════════════════════════════════
+   SECTION 17: KEYBOARD SHORTCUTS
+   ═══════════════════════════════════════════ */
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT')return;
+  switch(e.key.toLowerCase()){
+    case 'r':resetCamera();break;
+    case 't':topView();break;
+    case 'f':focusCore();break;
+    case 'c':toggleChat();break;
+    case 's':case '/':e.preventDefault();toggleSearch();break;
+    case 'escape':
+      document.getElementById('searchOverlay').classList.remove('open');
+      document.getElementById('notifPanel').classList.remove('open');
+      document.getElementById('squadPanel').classList.remove('open');
+      selectedAgent=null;hideHoloCard();
+      break;
   }
-}
-function enterVR() {
-  if (!('xr' in navigator)) return;
-  navigator.xr.requestSession('immersive-vr', { requiredFeatures: ['local-floor'] }).then(session => {
-    renderer.xr.enabled = true;
-    renderer.xr.setSession(session);
-    addAuditEntry('system', 'VR', 'تم الدخول إلى وضع الواقع الافتراضي');
-  }).catch(e => console.warn('VR not available:', e));
-}
+});
 
-function handlePending(item) {
-  playUISound('click');
-  addAuditEntry('system', 'SYS', `تم فتح: ${item}`);
-}
+/* ═══════════════════════════════════════════
+   SECTION 18: DEMO DATA SIMULATION
+   ═══════════════════════════════════════════ */
+let demoTasks=Math.floor(Math.random()*100)+100;
+let demoRate=85+Math.random()*10;
+let pulseCount=0;
 
-// ═══ ANIMATION LOOP ═══
-const clock = new THREE.Clock();
-let corePhase = 0;
+setInterval(()=>{
+  demoTasks+=Math.floor(Math.random()*3);
+  demoRate=85+Math.random()*10;
+  const activeCount=AGENTS.filter(a=>a.state!=='idle').length;
+  
+  document.getElementById('sTasks').textContent=demoTasks;
+  document.getElementById('sRate').textContent=demoRate.toFixed(1)+'%';
+  document.getElementById('sTime').textContent=new Date().toLocaleTimeString('ar-EG');
+  document.getElementById('sMem').textContent=Math.floor(200+Math.random()*600)+' MB';
+  document.getElementById('sModel').textContent='gemini';
+  document.getElementById('activeCount').textContent=activeCount;
+  document.getElementById('sConns').textContent=connections.length;
+  document.getElementById('sPulses').textContent=pulses.length;
+  document.getElementById('clock').textContent=new Date().toLocaleTimeString('ar-EG');
+  
+  // Random state changes
+  AGENTS.forEach(a=>{
+    if(a.paused)return;
+    if(Math.random()>0.95){
+      a.state=['active','busy','idle'][Math.floor(Math.random()*3)];
+      a.progress=a.state==='busy'?Math.random()*100:0;
+      a.task=a.state==='busy'?['يحلل بيانات','يبحث في الويب','يكتب تقرير','يراجع معلومات'][Math.floor(Math.random()*4)]:(a.state==='active'?'جاهز':'خامل');
+      a.activeTools=a.tools.filter(()=>Math.random()>0.6);
+      if(a.statusRing){
+        const sc=a.state==='active'?0x00FF88:(a.state==='busy'?0xFFA500:0x666666);
+        a.statusRing.material.color.setHex(sc);
+      }
+    }
+    if(a.state==='busy')a.progress=Math.min(100,a.progress+Math.random()*2);
+  });
+  
+  // Random notifications
+  if(Math.random()>0.8){
+    const a=AGENTS[Math.floor(Math.random()*AGENTS.length)];
+    const msgs=[
+      {icon:'✅',title:a.name_ar,desc:'تم إنجاز التحليل بنجاح'},
+      {icon:'⚠️',title:a.name_ar,desc:'ارتفاع في استهلاك الموارد'},
+      {icon:'ℹ️',title:a.name_ar,desc:'تم تحديث قاعدة المعرفة'}
+    ];
+    const msg=msgs[Math.floor(Math.random()*msgs.length)];
+    addNotif(msg.icon,msg.title,msg.desc);
+  }
+},3000);
 
-function animate() {
+// Show demo banner
+document.getElementById('demoBanner').style.display='block';
+
+// Initial chat message
+addChatMsg('Army81','مركز القيادة العصبي جاهز — 81 وكيلاً متصلاً في الشبكة العصبية.','🧠',true);
+
+/* ═══════════════════════════════════════════
+   SECTION 19: MAIN ANIMATION LOOP
+   ═══════════════════════════════════════════ */
+let lastTime=0;
+let frameCount=0;
+let fpsTime=0;
+
+function animate(time){
   requestAnimationFrame(animate);
-  updateFps();
-  const time = clock.getElapsedTime();
-
-  // Starfield rotation
-  starfield.rotation.y += 0.0001;
-  starfield.rotation.x += 0.00005;
-
-  // Nebula animation (Improvement #11)
-  nebulae.forEach((n, i) => {
-    n.rotation.z += 0.0001 * (i + 1);
-    n.material.opacity = 0.015 + Math.sin(time * 0.1 + i) * 0.005;
-  });
-
-  // Core pulse
-  corePhase += 0.02;
-  const pulse = 1 + Math.sin(corePhase * 2) * 0.08;
-  coreMesh.scale.set(pulse, pulse, pulse);
-  coreGlow.scale.set(pulse * 1.2, pulse * 1.2, pulse * 1.2);
-  coreMat.emissiveIntensity = 0.5 + Math.sin(corePhase * 2) * 0.2;
-  coreLight.intensity = 1.5 + Math.sin(corePhase * 2) * 0.5;
-  coreWire.rotation.y += 0.003;
-  coreWire.rotation.x += 0.001;
-
-  // Agent orbit
-  agentMeshes.forEach((mesh, i) => {
-    const ud = mesh.userData;
-    ud.angle += 0.0005;
-    mesh.position.x = Math.cos(ud.angle) * ud.radius;
-    mesh.position.z = Math.sin(ud.angle) * ud.radius;
-    mesh.position.y = ud.baseY + Math.sin(time * 0.5 + i) * 0.3;
-
-    // Busy agents pulse faster (Improvement #12)
-    const state = agentStates[ud.agent.id];
-    if (state.status === 'busy') {
-      mesh.material.emissiveIntensity = 0.5 + Math.sin(time * 4 + i) * 0.3;
-    }
-
-    if (agentLabels[i]) {
-      agentLabels[i].position.set(mesh.position.x, mesh.position.y + 1.5, mesh.position.z);
-    }
-  });
-
-  // Update connection lines (hierarchical)
-  connectionLines.forEach(line => {
-    const posArr = line.geometry.attributes.position.array;
-    const fromIdx = line.userData.from;
-    const toIdx = line.userData.to;
-
-    // Commander lines: from = -1 means core (A00)
-    const fromPos = fromIdx === -1 ? coreMesh.position : (agentMeshes[fromIdx] ? agentMeshes[fromIdx].position : null);
-    const toPos = agentMeshes[toIdx] ? agentMeshes[toIdx].position : null;
-
-    if (fromPos && toPos) {
-      posArr[0] = fromPos.x; posArr[1] = fromPos.y; posArr[2] = fromPos.z;
-      posArr[3] = toPos.x; posArr[4] = toPos.y; posArr[5] = toPos.z;
-      line.geometry.attributes.position.needsUpdate = true;
+  const delta=(time-lastTime)/1000;
+  lastTime=time;
+  
+  // FPS counter
+  frameCount++;
+  if(time-fpsTime>1000){
+    const fps=frameCount;
+    document.getElementById('fpsCounter').textContent='FPS: '+fps;
+    document.getElementById('sFps').textContent=fps;
+    frameCount=0;fpsTime=time;
+  }
+  
+  // Core breathing & rotation
+  const coreBreath=1+Math.sin(time*0.001)*0.08;
+  coreMesh.scale.setScalar(coreBreath);
+  shellMesh.rotation.y+=0.003;
+  shellMesh.rotation.x+=0.001;
+  ringGroup.rotation.y+=0.005;
+  ringGroup.rotation.z+=0.002;
+  
+  // Core light intensity based on system load
+  const activeRatio=AGENTS.filter(a=>a.state!=='idle').length/AGENTS.length;
+  coreLight.intensity=2+activeRatio*3;
+  coreMat.emissiveIntensity=0.5+activeRatio*0.8;
+  
+  // Agent breathing & movement
+  AGENTS.forEach(a=>{
+    if(!a.mesh)return;
+    a.breathPhase+=delta*a.pulseSpeed;
+    const breathScale=1+Math.sin(a.breathPhase)*0.06;
+    a.mesh.scale.setScalar(breathScale);
+    
+    // Smooth movement toward target
+    a.mesh.position.lerp(a.targetPos,0.02);
+    if(a.label)a.label.position.set(a.mesh.position.x,a.mesh.position.y-1.5,a.mesh.position.z);
+    
+    // Emissive intensity based on state
+    if(a.mesh.material){
+      const targetIntensity=a.state==='busy'?0.8:(a.state==='active'?0.4:0.15);
+      a.mesh.material.emissiveIntensity+=(targetIntensity-a.mesh.material.emissiveIntensity)*0.05;
     }
   });
-
-  // Commander ring rotation
-  commandRing.rotation.z += 0.002;
-
-  // Commander label follows core
-  commanderLabel.position.set(coreMesh.position.x, coreMesh.position.y + 5, coreMesh.position.z);
-
-  // Particle animation
-  for (let i = 0; i < particleCount; i++) {
-    const v = particleVelocities[i];
-    v.angle += v.speed;
-    particlePositions[i*3] = Math.cos(v.angle) * v.radius;
-    particlePositions[i*3+1] += v.ySpeed;
-    particlePositions[i*3+2] = Math.sin(v.angle) * v.radius;
-    if (Math.abs(particlePositions[i*3+1]) > 5) particlePositions[i*3+1] = 0;
-  }
-  particleGeo.attributes.position.needsUpdate = true;
-
-  // Data packets animation (Improvement #13)
-  const now = Date.now();
-  for (let i = dataPackets.length - 1; i >= 0; i--) {
-    const dp = dataPackets[i];
-    const elapsed = now - dp.startTime;
-    if (elapsed > dp.duration) {
-      scene.remove(dp.mesh);
-      dp.mesh.geometry.dispose();
-      dp.mat.dispose();
-      dataPackets.splice(i, 1);
-    } else {
-      const t = elapsed / dp.duration;
-      const mid = dp.from.clone().add(dp.to).multiplyScalar(0.5);
-      mid.y += 3;
-      const curve = new THREE.QuadraticBezierCurve3(dp.from, mid, dp.to);
-      const p = curve.getPoint(t);
-      dp.mesh.position.copy(p);
-      dp.mat.opacity = 1 - t * 0.5;
+  
+  // Synaptic pulses
+  for(let i=pulses.length-1;i>=0;i--){
+    const p=pulses[i];
+    p.t+=p.speed;
+    if(p.t>=1){
+      scene.remove(p.mesh);
+      p.mesh.material.dispose();
+      pulses.splice(i,1);
+      pulseCount++;
+      continue;
     }
+    const pos=p.conn.curve.getPoint(p.t);
+    p.mesh.position.copy(pos);
+    p.mesh.material.opacity=1-p.t*0.5;
+    const s=0.8+Math.sin(p.t*Math.PI)*0.5;
+    p.mesh.scale.setScalar(s);
   }
-
-  // Beam cleanup
-  for (let i = activeBeams.length - 1; i >= 0; i--) {
-    const b = activeBeams[i];
-    const elapsed = now - b.startTime;
-    if (elapsed > b.duration) {
-      scene.remove(b.beam);
-      b.beam.geometry.dispose();
-      b.mat.dispose();
-      activeBeams.splice(i, 1);
-    } else {
-      b.mat.opacity = 1 - (elapsed / b.duration);
-    }
-  }
-
-  // Wave cleanup
-  for (let i = activeWaves.length - 1; i >= 0; i--) {
-    const w = activeWaves[i];
-    const elapsed = now - w.startTime;
-    if (elapsed > w.duration) {
-      scene.remove(w.wave);
-      w.wave.geometry.dispose();
+  
+  // Broadcast waves
+  for(let i=broadcastWaves.length-1;i>=0;i--){
+    const w=broadcastWaves[i];
+    w.scale+=delta*25;
+    w.life-=delta*0.5;
+    w.ring.scale.set(w.scale,w.scale,1);
+    w.mat.opacity=Math.max(0,w.life*0.6);
+    if(w.life<=0){
+      scene.remove(w.ring);
       w.mat.dispose();
-      activeWaves.splice(i, 1);
-    } else {
-      const progress = elapsed / w.duration;
-      const scale = 1 + progress * 40;
-      w.wave.scale.set(scale, scale, 1);
-      w.mat.opacity = 0.8 * (1 - progress);
+      broadcastWaves.splice(i,1);
     }
   }
-
-  // Meteor animation (Improvement #11)
-  for (let i = meteors.length - 1; i >= 0; i--) {
-    const m = meteors[i];
-    m.mesh.position.y -= m.speed;
-    m.mesh.position.x += m.speed * 0.5;
-    m.mat.opacity -= 0.005;
-    if (m.mat.opacity <= 0 || m.mesh.position.y < -80) {
-      scene.remove(m.mesh);
-      m.mesh.geometry.dispose();
-      m.mat.dispose();
-      meteors.splice(i, 1);
+  
+  // Particles
+  const pPos=particles.geometry.attributes.position.array;
+  for(let i=0;i<particleCount;i++){
+    pPos[i*3]+=particleVel[i*3];
+    pPos[i*3+1]+=particleVel[i*3+1];
+    pPos[i*3+2]+=particleVel[i*3+2];
+    // Gravity toward core
+    const dx=-pPos[i*3],dy=-pPos[i*3+1],dz=-pPos[i*3+2];
+    const dist=Math.sqrt(dx*dx+dy*dy+dz*dz);
+    if(dist>5){
+      const force=0.00003/Math.max(dist*0.1,1);
+      particleVel[i*3]+=dx*force;
+      particleVel[i*3+1]+=dy*force;
+      particleVel[i*3+2]+=dz*force;
+    }
+    if(dist>100){pPos[i*3]*=0.5;pPos[i*3+1]*=0.5;pPos[i*3+2]*=0.5;}
+  }
+  particles.geometry.attributes.position.needsUpdate=true;
+  
+  // Meteors
+  for(let i=meteors.length-1;i>=0;i--){
+    const m=meteors[i];
+    m.line.position.x-=m.speed*2;
+    m.line.position.y-=m.speed;
+    m.life-=delta*0.5;
+    m.line.material.opacity=m.life;
+    if(m.life<=0){
+      scene.remove(m.line);
+      m.line.geometry.dispose();
+      m.line.material.dispose();
+      meteors.splice(i,1);
     }
   }
-
+  
+  // Auto-track: camera follows busiest area
+  if(autoTrack&&!cameraAnimating){
+    const busyAgents=AGENTS.filter(a=>a.state==='busy');
+    if(busyAgents.length>0){
+      const center=new THREE.Vector3();
+      busyAgents.forEach(a=>center.add(a.mesh.position));
+      center.divideScalar(busyAgents.length);
+      controls.target.lerp(center,0.01);
+    }
+  }
+  
   controls.update();
   composer.render();
 }
 
-// ═══ RESIZE ═══
-window.addEventListener('resize', () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
+/* ═══════════════════════════════════════════
+   SECTION 20: LOADING & INIT
+   ═══════════════════════════════════════════ */
+// Try gateway connection during loading
+checkGateway().then(ok => {
+  if(ok) addChatMsg('النظام','✅ متصل بالبوابة — كل الردود حقيقية','🔗',true);
+  else addChatMsg('النظام','⚠ وضع تجريبي — شغّل python gateway/app.py','⚠️',true);
+});
+
+const loadSteps=['تهيئة المشهد ثلاثي الأبعاد...','بناء الشبكة العصبية...','توصيل 81 وكيلاً...','الاتصال بالبوابة...','تشغيل النظام...'];
+let loadStep=0;
+const loadInterval=setInterval(()=>{
+  loadStep++;
+  const pct=Math.min(loadStep/loadSteps.length*100,100);
+  document.getElementById('ldFill').style.width=pct+'%';
+  document.getElementById('ldStatus').textContent=loadSteps[Math.min(loadStep-1,loadSteps.length-1)];
+  if(loadStep>=loadSteps.length){
+    clearInterval(loadInterval);
+    setTimeout(()=>{
+      document.getElementById('loadScreen').classList.add('done');
+      animate(0);
+    },500);
+  }
+},600);
+
+// Resize
+window.addEventListener('resize',()=>{
+  camera.aspect=window.innerWidth/window.innerHeight;
   camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  composer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.innerWidth,window.innerHeight);
+  composer.setSize(window.innerWidth,window.innerHeight);
 });
 
-// ═══ MEMORY CLEANUP (Improvement #3) ═══
-window.addEventListener('beforeunload', () => {
-  agentMeshes.forEach(m => { m.geometry.dispose(); m.material.dispose(); });
-  connectionLines.forEach(l => { l.geometry.dispose(); l.material.dispose(); });
-  activeBeams.forEach(b => { b.beam.geometry.dispose(); b.mat.dispose(); });
-  activeWaves.forEach(w => { w.wave.geometry.dispose(); w.mat.dispose(); });
-  dataPackets.forEach(d => { d.mesh.geometry.dispose(); d.mat.dispose(); });
-  particleGeo.dispose(); particleMat.dispose();
-  starGeo.dispose(); starMat.dispose();
+// Cleanup
+window.addEventListener('beforeunload',()=>{
   renderer.dispose();
-  if (ws) ws.close();
+  scene.traverse(obj=>{
+    if(obj.geometry)obj.geometry.dispose();
+    if(obj.material){
+      if(Array.isArray(obj.material))obj.material.forEach(m=>m.dispose());
+      else obj.material.dispose();
+    }
+  });
 });
 
-// ═══ LOADING & INIT ═══
-async function init() {
-  const progress = document.getElementById('loadProgress');
-  const status = document.getElementById('loadStatus');
-
-  status.textContent = 'جاري تحميل المشهد ثلاثي الأبعاد...';
-  progress.style.width = '20%';
-  await new Promise(r => setTimeout(r, 400));
-
-  status.textContent = 'جاري تهيئة 81 وكيل...';
-  progress.style.width = '40%';
-  await new Promise(r => setTimeout(r, 400));
-
-  status.textContent = 'جاري تحميل التأثيرات البصرية...';
-  progress.style.width = '60%';
-  await new Promise(r => setTimeout(r, 300));
-
-  status.textContent = 'جاري الاتصال بالخادم...';
-  progress.style.width = '80%';
-  await checkGateway();
-
-  status.textContent = 'جاري فحص دعم VR...';
-  progress.style.width = '90%';
-  checkVRSupport();
-
-  status.textContent = 'جاهز للعمل!';
-  progress.style.width = '100%';
-  await new Promise(r => setTimeout(r, 400));
-  document.getElementById('loadingScreen').classList.add('hidden');
-
-  // Start animation
-  animate();
-
-  // Start periodic updates
-  setInterval(updateClock, 1000);
-  setInterval(fetchStatus, 30000);
-  setInterval(simulateActivity, 3000 + Math.random() * 2000);
-  setInterval(() => { if (Math.random() > 0.85) spawnMeteor(); }, 5000);
-  updateClock();
-  fetchStatus();
-
-  // Initial activity burst
-  for (let i = 0; i < 5; i++) setTimeout(() => simulateActivity(), i * 500);
-
-  // Keyboard shortcuts (Improvement #8)
-  document.addEventListener('keydown', (e) => {
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
-    if (e.key === 'r' || e.key === 'R') resetView();
-    if (e.key === 't' || e.key === 'T') topView();
-    if (e.key === 'f' || e.key === 'F') focusSelected();
-    if (e.key === 'c' || e.key === 'C') cinematicFly();
-    if (e.key === '/' || e.key === 'ب') { e.preventDefault(); toggleSearch(); }
-    if (e.key === 'Escape') {
-      if (searchOpen) toggleSearch();
-      if (chatOpen) toggleChat();
-      if (auditLogOpen) toggleAuditLog();
-      closeAgentPanel();
-    }
-    if (e.key === 'Enter' && e.ctrlKey) toggleChat();
-    if (e.key === 'l' || e.key === 'L') toggleAuditLog();
-    if (e.key === 's' || e.key === 'S') toggleSound();
-  });
-
-  addAuditEntry('system', 'SYS', 'تم تشغيل لوحة التحكم بنجاح — 81 وكيل جاهز');
-}
-
-init();
+// Make functions global
+window.doSearch=window.doSearch||doSearch;
 </script>
 </body>
 </html>
