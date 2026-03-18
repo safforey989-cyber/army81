@@ -1,0 +1,1431 @@
+{
+  "timestamp": "2026-03-18T18:43:49.261476",
+  "total_agents": 81,
+  "summary": {
+    "excellent": 81,
+    "good": 0,
+    "needs_improvement": 0,
+    "critical": 0
+  },
+  "categories": {
+    "cat1_science": {
+      "agents": 9,
+      "total_tasks": 0,
+      "total_score": 900,
+      "issues": 9,
+      "avg_score": 100.0
+    },
+    "cat2_society": {
+      "agents": 15,
+      "total_tasks": 0,
+      "total_score": 1500,
+      "issues": 15,
+      "avg_score": 100.0
+    },
+    "cat3_tools": {
+      "agents": 10,
+      "total_tasks": 0,
+      "total_score": 1000,
+      "issues": 10,
+      "avg_score": 100.0
+    },
+    "cat4_management": {
+      "agents": 8,
+      "total_tasks": 0,
+      "total_score": 800,
+      "issues": 8,
+      "avg_score": 100.0
+    },
+    "cat5_behavior": {
+      "agents": 13,
+      "total_tasks": 0,
+      "total_score": 1300,
+      "issues": 13,
+      "avg_score": 100.0
+    },
+    "cat6_leadership": {
+      "agents": 16,
+      "total_tasks": 0,
+      "total_score": 1600,
+      "issues": 16,
+      "avg_score": 100.0
+    },
+    "cat7_new": {
+      "agents": 10,
+      "total_tasks": 0,
+      "total_score": 1000,
+      "issues": 10,
+      "avg_score": 100.0
+    }
+  },
+  "weakest_agents": [],
+  "best_agents": [
+    {
+      "agent_id": "A02",
+      "name": "وكيل البحث العلمي",
+      "category": "cat1_science",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A07",
+      "name": "وكيل البحث الطبي",
+      "category": "cat1_science",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A38",
+      "name": "وكيل الفيزياء وعلوم الكم",
+      "category": "cat1_science",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A39",
+      "name": "وكيل المناخ والبيئة",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A40",
+      "name": "وكيل كشف التقنيات الناشئة",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A52",
+      "name": "وكيل الطب السريري",
+      "category": "cat1_science",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A53",
+      "name": "وكيل التصنيع المتقدم",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A54",
+      "name": "وكيل الروبوتات والأتمتة",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A55",
+      "name": "وكيل تقنيات الفضاء والدفاع",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A03",
+      "name": "وكيل تحليل السياسات",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    }
+  ],
+  "all_evaluations": [
+    {
+      "agent_id": "A02",
+      "name": "وكيل البحث العلمي",
+      "category": "cat1_science",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A07",
+      "name": "وكيل البحث الطبي",
+      "category": "cat1_science",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A38",
+      "name": "وكيل الفيزياء وعلوم الكم",
+      "category": "cat1_science",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A39",
+      "name": "وكيل المناخ والبيئة",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A40",
+      "name": "وكيل كشف التقنيات الناشئة",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A52",
+      "name": "وكيل الطب السريري",
+      "category": "cat1_science",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A53",
+      "name": "وكيل التصنيع المتقدم",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A54",
+      "name": "وكيل الروبوتات والأتمتة",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A55",
+      "name": "وكيل تقنيات الفضاء والدفاع",
+      "category": "cat1_science",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A03",
+      "name": "وكيل تحليل السياسات",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A08",
+      "name": "وكيل التحليل المالي",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A12",
+      "name": "وكيل إنشاء المحتوى",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A13",
+      "name": "وكيل الاستشارة القانونية",
+      "category": "cat2_society",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A41",
+      "name": "وكيل الاقتصاد العالمي",
+      "category": "cat2_society",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A42",
+      "name": "وكيل العملات الرقمية والأصول",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A43",
+      "name": "وكيل تحليل التاريخ",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A44",
+      "name": "وكيل تحليل الإعلام والتواصل",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A45",
+      "name": "وكيل القانون الدولي",
+      "category": "cat2_society",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A46",
+      "name": "وكيل الفنون والثقافة",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A47",
+      "name": "وكيل اللغويات وعلم اللغة",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A48",
+      "name": "وكيل الرياضيات المتقدمة",
+      "category": "cat2_society",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A49",
+      "name": "وكيل علم الاجتماع",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A50",
+      "name": "وكيل التعليم والتعلّم",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A51",
+      "name": "وكيل الهندسة العكسية",
+      "category": "cat2_society",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A04",
+      "name": "وكيل الاستخبارات الإعلامية",
+      "category": "cat3_tools",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A05",
+      "name": "وكيل تطوير البرمجيات",
+      "category": "cat3_tools",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A09",
+      "name": "وكيل تحليل الأمن السيبراني",
+      "category": "cat3_tools",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A11",
+      "name": "وكيل الترجمة والتعريب",
+      "category": "cat3_tools",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A56",
+      "name": "وكيل الاستخبارات الإعلامية العميقة",
+      "category": "cat3_tools",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A57",
+      "name": "وكيل تطوير التكاملات",
+      "category": "cat3_tools",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A58",
+      "name": "وكيل الإنذار المبكر",
+      "category": "cat3_tools",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A59",
+      "name": "وكيل الابتكار المفتوح",
+      "category": "cat3_tools",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A60",
+      "name": "وكيل مكافحة التضليل",
+      "category": "cat3_tools",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A61",
+      "name": "وكيل الحوسبة البيولوجية",
+      "category": "cat3_tools",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A06",
+      "name": "وكيل تحليل البيانات",
+      "category": "cat4_management",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A10",
+      "name": "وكيل إدارة المعرفة",
+      "category": "cat4_management",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 6,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A14",
+      "name": "وكيل إدارة المشاريع",
+      "category": "cat4_management",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 6,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A62",
+      "name": "وكيل الحوكمة المؤسسية",
+      "category": "cat4_management",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A63",
+      "name": "وكيل إدارة المؤسسات الكبرى",
+      "category": "cat4_management",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A64",
+      "name": "وكيل إدارة المشاريع العملاقة",
+      "category": "cat4_management",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A65",
+      "name": "وكيل التحول الرقمي",
+      "category": "cat4_management",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A66",
+      "name": "وكيل إدارة الأداء",
+      "category": "cat4_management",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A15",
+      "name": "وكيل علم النفس السلوكي",
+      "category": "cat5_behavior",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A16",
+      "name": "وكيل خبير التفاوض",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A17",
+      "name": "وكيل تحليل لغة الجسد",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A18",
+      "name": "وكيل الإقناع والتأثير",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A19",
+      "name": "وكيل الذكاء العاطفي",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A20",
+      "name": "وكيل الديناميكيات الاجتماعية",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A21",
+      "name": "وكيل تحليل سلوك الجماهير",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A22",
+      "name": "وكيل الاقتصاد السلوكي",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A23",
+      "name": "وكيل حل النزاعات",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A24",
+      "name": "وكيل سيكولوجية القيادة",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A25",
+      "name": "وكيل خبير التواصل",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A26",
+      "name": "وكيل سيكولوجية القرار",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A27",
+      "name": "وكيل الذكاء الثقافي",
+      "category": "cat5_behavior",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A01",
+      "name": "وكيل القيادة الاستراتيجية",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A28",
+      "name": "وكيل الاستراتيجية العسكرية",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A29",
+      "name": "وكيل إدارة الأزمات",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A30",
+      "name": "وكيل قيادة الابتكار",
+      "category": "cat6_leadership",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A31",
+      "name": "وكيل تحليل الاستخبارات",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A32",
+      "name": "وكيل خبير الجيوسياسة",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A33",
+      "name": "وكيل استشراف المستقبل",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 6,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A34",
+      "name": "وكيل تقييم المخاطر",
+      "category": "cat6_leadership",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A35",
+      "name": "وكيل إدارة التغيير",
+      "category": "cat6_leadership",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A36",
+      "name": "وكيل استراتيجي المنظمات",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A37",
+      "name": "وكيل مهندس القرارات",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 6,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A67",
+      "name": "وكيل قيادة التواصل الإنساني",
+      "category": "cat6_leadership",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A68",
+      "name": "وكيل استراتيجية توزيع الموارد",
+      "category": "cat6_leadership",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A69",
+      "name": "وكيل التقييم الشامل",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A70",
+      "name": "وكيل الابتكار الجذري",
+      "category": "cat6_leadership",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 3,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A71",
+      "name": "وكيل الأمن الداخلي والنزاهة",
+      "category": "cat6_leadership",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A72",
+      "name": "وكيل مراقبة التطور الذاتي",
+      "category": "cat7_new",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 6,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A73",
+      "name": "وكيل تنسيق متعدد الوكلاء",
+      "category": "cat7_new",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 6,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A74",
+      "name": "وكيل ضبط الجودة",
+      "category": "cat7_new",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A75",
+      "name": "وكيل تحسين النظام",
+      "category": "cat7_new",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A76",
+      "name": "وكيل تجميع التعلم",
+      "category": "cat7_new",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 6,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A77",
+      "name": "وكيل تنسيق سير العمل",
+      "category": "cat7_new",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A78",
+      "name": "وكيل التخصيص الديناميكي للموارد",
+      "category": "cat7_new",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A79",
+      "name": "وكيل معالجة التغذية الراجعة",
+      "category": "cat7_new",
+      "model": "gemini-flash",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 5,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A80",
+      "name": "وكيل التعرف على الأنماط",
+      "category": "cat7_new",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 4,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    },
+    {
+      "agent_id": "A81",
+      "name": "الوكيل الميتا الاستخباراتي",
+      "category": "cat7_new",
+      "model": "gemini-pro",
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "success_rate": 0,
+      "tools_count": 7,
+      "score": 100,
+      "status": "excellent",
+      "issues": [
+        "بيانات غير كافية (0 مهام فقط)"
+      ]
+    }
+  ]
+}
