@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Army81 — Live Neural Dashboard v9</title>
+<title>Army81 — Live Neural Dashboard v14</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cairo:wght@300;400;700&display=swap');
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -102,7 +102,7 @@ body{background:#000208;overflow:hidden;font-family:'Cairo',sans-serif;color:#e0
 
 <!-- TOP BAR -->
 <div id="topBar">
-  <div class="logo">ARMY81 <span>LIVE v9</span></div>
+  <div class="logo">ARMY81 <span>LIVE v14</span></div>
   <div class="top-stats">
     <div class="stat"><span class="label">مهام</span><span class="val" id="sTasks">0</span></div>
     <div class="stat"><span class="label">نجاح</span><span class="val" id="sSuccess">0%</span></div>
@@ -543,14 +543,81 @@ function startLivePolling(){
     }).catch(function(){});
   },1500);
 
-  // Poll gateway status every 5 seconds
+  // Poll gateway status + real memory every 5 seconds
   setInterval(function(){
     fetch(GW+'/status').then(function(r){return r.json();}).then(function(d){
       document.getElementById('gwMode').textContent='LIVE';
+      // v14: Real memory stats
+      if(d.memory){
+        var mem=d.memory;
+        var total=mem.episodic+mem.swarm_agents*50+(mem.core_interactions||0)*10;
+        var mbEst=Math.max(1,Math.round(total/100));
+        document.getElementById('sMemory').textContent=mbEst+' MB';
+        // Update stats panel
+        var sp=document.getElementById('statsPanel');
+        if(sp && !sp.querySelector('.mem-real')){
+          var div=document.createElement('div');div.className='mem-real';
+          div.innerHTML='<div class="s-row"><span class="s-label">حلقات (Episodic)</span><span class="s-val">'+mem.episodic+'</span></div>'
+            +'<div class="s-row"><span class="s-label">وكلاء بذاكرة</span><span class="s-val" style="color:#BF00FF;">'+mem.swarm_agents+'</span></div>'
+            +'<div class="s-row"><span class="s-label">تفاعلات النواة</span><span class="s-val" style="color:#FF6EC7;">'+(mem.core_interactions||0)+'</span></div>'
+            +'<div class="s-row"><span class="s-label">قرارات جماعية</span><span class="s-val gold">'+(mem.core_decisions||0)+'</span></div>'
+            +'<div class="s-row"><span class="s-label">معرفة مشتركة</span><span class="s-val green">'+(mem.core_knowledge||0)+'</span></div>';
+          sp.appendChild(div);
+        } else if(sp){
+          var existing=sp.querySelector('.mem-real');
+          if(existing) existing.innerHTML='<div class="s-row"><span class="s-label">حلقات (Episodic)</span><span class="s-val">'+mem.episodic+'</span></div>'
+            +'<div class="s-row"><span class="s-label">وكلاء بذاكرة</span><span class="s-val" style="color:#BF00FF;">'+mem.swarm_agents+'</span></div>'
+            +'<div class="s-row"><span class="s-label">تفاعلات النواة</span><span class="s-val" style="color:#FF6EC7;">'+(mem.core_interactions||0)+'</span></div>'
+            +'<div class="s-row"><span class="s-label">قرارات جماعية</span><span class="s-val gold">'+(mem.core_decisions||0)+'</span></div>'
+            +'<div class="s-row"><span class="s-label">معرفة مشتركة</span><span class="s-val green">'+(mem.core_knowledge||0)+'</span></div>';
+        }
+      }
+      // Update agent count
+      if(d.router && d.router.total_agents){
+        document.getElementById('sConn').textContent=d.router.total_agents;
+      }
     }).catch(function(){
       document.getElementById('gwMode').textContent='LOST';
     });
   },5000);
+
+  // Poll swarm memory stats every 10 seconds
+  setInterval(function(){
+    fetch(GW+'/memory/swarm/stats').then(function(r){return r.json();}).then(function(d){
+      if(d.agents_with_memory){
+        // Update memory rings for agents that have memories
+        var agentStats=d.agent_stats||{};
+        Object.keys(agentStats).forEach(function(aid){
+          var ag=AGENTS.find(function(a){return a.id===aid;});
+          if(ag){
+            var stats=agentStats[aid];
+            ag.memory=Math.max(ag.memory,(stats.known_agents||0)*10+(stats.interactions||0)*5);
+            ag.knowledge=Math.min(100,ag.knowledge+Math.min(5,(stats.interactions||0)));
+          }
+        });
+      }
+    }).catch(function(){});
+  },10000);
+
+  // Poll network intelligence every 15 seconds
+  setInterval(function(){
+    fetch(GW+'/network/health').then(function(r){return r.json();}).then(function(d){
+      if(d.total_connections){
+        document.getElementById('sConn').textContent=d.total_connections;
+      }
+      // Strengthen visual bonds for strongest connections
+      if(d.strongest_bonds){
+        d.strongest_bonds.forEach(function(bond){
+          var a1=AGENTS.find(function(a){return a.id===bond.agents[0];});
+          var a2=AGENTS.find(function(a){return a.id===bond.agents[1];});
+          if(a1&&a2){
+            var conn=connections.find(function(c){return(c.from===a1&&c.to===a2)||(c.from===a2&&c.to===a1);});
+            if(conn){conn.line.material.opacity=Math.min(0.5,bond.weight);conn.brightTime=30;}
+          }
+        });
+      }
+    }).catch(function(){});
+  },15000);
 
   // Check for proposals every 15 seconds
   setInterval(function(){
@@ -573,8 +640,14 @@ function processSwarmEvent(evt){
     return;
   }
   if(t==='swarm_completed'){
-    logEvent('success','🏁','سرب','انتهت الجلسة — '+d.total_events+' حدث');
+    var memStats=d.memory_stats||{};
+    var memMsg='انتهت الجلسة — '+d.total_events+' حدث';
+    if(memStats.agents_with_memory) memMsg+=' | 🧠 '+memStats.agents_with_memory+' وكيل بنى ذاكرة | '+( memStats.total_interactions||0)+' تفاعل';
+    logEvent('success','🏁','سرب',memMsg);
     swarmRunning=false;
+    // Show in chat
+    var msgs=document.getElementById('chatMessages');
+    if(msgs) msgs.innerHTML+='<div class="chat-msg system" style="background:rgba(57,255,20,0.08);border-color:#39FF14;">🏁 <b>انتهت جلسة السرب</b><br>'+memMsg+'</div>';
     return;
   }
   if(t==='agent_message'){
@@ -613,7 +686,14 @@ function processSwarmEvent(evt){
     });
   }
   else if(t==='memory_saved'){
-    EventBus.emit(EVT.MEMORY_SAVED,{agentId:from,amount:d.amount||3,size:10,topic:d.topic||'معرفة'});
+    var memType=d.type||'knowledge';
+    var memAmount=d.agents_remembered||d.amount||3;
+    EventBus.emit(EVT.MEMORY_SAVED,{agentId:from,amount:memAmount,size:memAmount*5,topic:d.topic||memType});
+    if(memType==='introduction'){
+      logEvent('memory','🤝',from+' ↔ '+(to||''), 'تعارف وبناء ذاكرة');
+    } else if(memType==='collaboration'){
+      logEvent('memory','🧠',from, 'حفظ تعاون — '+memAmount+' وكلاء');
+    }
   }
   else if(t==='proposals_ready'){
     logEvent('command','👑','القائد A01','📋 اقتراحات جاهزة تنتظر موافقتك');
