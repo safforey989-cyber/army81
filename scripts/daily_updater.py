@@ -396,14 +396,55 @@ def start_scheduler():
         replace_existing=True,
     )
 
+    # ── v7: 24/7 Continuous Training ──────────────────────
+    # كل 4 ساعات — دورة تدريب كاملة (486 مهمة/يوم)
+    scheduler.add_job(
+        _run_training_cycle,
+        'interval', hours=4,
+        id="training_cycle",
+        name="24/7 Training Cycle",
+        replace_existing=True,
+    )
+
+    # كل 2 ساعة — مراقبة أداء
+    scheduler.add_job(
+        _run_performance_monitor,
+        'interval', hours=2,
+        id="performance_monitor",
+        name="Performance Monitor",
+        replace_existing=True,
+    )
+
+    # كل 6 ساعات — تدريب جماعي (multi-agent drill)
+    scheduler.add_job(
+        _run_multi_agent_drill,
+        'interval', hours=6,
+        id="multi_agent_drill",
+        name="Multi-Agent Drill",
+        replace_existing=True,
+    )
+
+    # كل 12 ساعة — مزامنة الذاكرة المحلية → السحابة
+    scheduler.add_job(
+        _run_cloud_sync,
+        'interval', hours=12,
+        id="cloud_sync",
+        name="Cloud Memory Sync",
+        replace_existing=True,
+    )
+
     scheduler.start()
-    logger.info("Scheduler v5 started:")
-    logger.info("  1:00 AM daily  → Self Builder Discovery")
-    logger.info("  2:00 AM daily  → Intelligence Update")
-    logger.info("  3:00 AM daily  → Knowledge Distillation")
-    logger.info("  4:00 AM Sunday → Memory Compression")
-    logger.info("  5:00 AM Sunday → Evolution Cycle")
-    logger.info("  6:00 AM Sunday → Self Assessment")
+    logger.info("Scheduler v7 started — 24/7 Training Active:")
+    logger.info("  Every 2h    → Performance Monitor")
+    logger.info("  Every 4h    → Training Cycle (81 agents)")
+    logger.info("  Every 6h    → Multi-Agent Drill")
+    logger.info("  Every 12h   → Cloud Memory Sync")
+    logger.info("  1:00 AM     → Self Builder Discovery")
+    logger.info("  2:00 AM     → Intelligence Update")
+    logger.info("  3:00 AM     → Knowledge Distillation")
+    logger.info("  4:00 AM Sun → Memory Compression")
+    logger.info("  5:00 AM Sun → Evolution Cycle")
+    logger.info("  6:00 AM Sun → Self Assessment")
     logger.info("Press Ctrl+C to stop.")
 
     try:
@@ -413,6 +454,55 @@ def start_scheduler():
     except (KeyboardInterrupt, SystemExit):
         logger.info("Scheduler stopped.")
         scheduler.shutdown()
+
+
+def _run_training_cycle():
+    """كل 4 ساعات — دورة تدريب كاملة"""
+    logger.info("=== 24/7 Training Cycle Started ===")
+    try:
+        from core.continuous_trainer import get_continuous_trainer
+        trainer = get_continuous_trainer()
+        result = trainer.train_cycle(max_agents=81)
+        logger.info(f"Training complete: {result['passed']}/{result['trained']} passed")
+    except Exception as e:
+        logger.error(f"Training cycle error: {e}")
+
+
+def _run_performance_monitor():
+    """كل 2 ساعة — مراقبة أداء"""
+    logger.info("=== Performance Monitor ===")
+    try:
+        from core.continuous_trainer import get_continuous_trainer
+        trainer = get_continuous_trainer()
+        result = trainer.performance_monitor()
+        if result.get("alerts"):
+            logger.warning(f"Performance alerts: {len(result['alerts'])} agents")
+    except Exception as e:
+        logger.error(f"Performance monitor error: {e}")
+
+
+def _run_multi_agent_drill():
+    """كل 6 ساعات — تدريب جماعي"""
+    logger.info("=== Multi-Agent Drill ===")
+    try:
+        from core.continuous_trainer import get_continuous_trainer
+        trainer = get_continuous_trainer()
+        result = trainer.multi_agent_drill()
+        logger.info(f"Drill complete: {result}")
+    except Exception as e:
+        logger.error(f"Multi-agent drill error: {e}")
+
+
+def _run_cloud_sync():
+    """كل 12 ساعة — مزامنة الذاكرة"""
+    logger.info("=== Cloud Memory Sync ===")
+    try:
+        from memory.cloud_memory import get_cloud_memory
+        cm = get_cloud_memory()
+        result = cm.sync_local_to_cloud()
+        logger.info(f"Cloud sync: {result}")
+    except Exception as e:
+        logger.error(f"Cloud sync error: {e}")
 
 
 def _run_self_builder_discovery():

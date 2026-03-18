@@ -286,7 +286,49 @@ async def a2a_status():
 
 @app.get("/health")
 async def health():
-    return {"status": "healthy", "agents": len(router.agents), "version": "6.0.0"}
+    return {"status": "healthy", "agents": len(router.agents), "version": "7.0.0"}
+
+# ── v7: Training Endpoints ───────────────────────
+@app.get("/training/status")
+async def training_status():
+    """حالة التدريب المستمر"""
+    try:
+        from core.continuous_trainer import get_continuous_trainer
+        t = get_continuous_trainer(router)
+        return t.status()
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/training/leaderboard")
+async def training_leaderboard():
+    """ترتيب الوكلاء بالأداء"""
+    try:
+        from core.scenario_engine import get_scenario_engine
+        se = get_scenario_engine()
+        return {"leaderboard": se.get_leaderboard()}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/training/levels")
+async def training_levels():
+    """مستويات كل الوكلاء"""
+    try:
+        from core.continuous_trainer import get_continuous_trainer
+        t = get_continuous_trainer(router)
+        return {"levels": t.get_all_levels()}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/training/trigger")
+async def training_trigger():
+    """تشغيل دورة تدريب يدوياً"""
+    try:
+        from core.continuous_trainer import get_continuous_trainer
+        t = get_continuous_trainer(router)
+        result = t.train_cycle(max_agents=10)  # أول 10 فقط عند التشغيل اليدوي
+        return result
+    except Exception as e:
+        return {"error": str(e)}
 
 # ── v6: Cloud Memory + Execution Engine ──────────
 @app.get("/cloud/status")

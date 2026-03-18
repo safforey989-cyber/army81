@@ -1,0 +1,244 @@
+{
+  "version": "1.0",
+  "total_scenarios": 210,
+  "categories": {
+    "cat1_science": {
+      "easy": [
+        {"id": "S001", "task": "لخص آخر 3 تطورات في مجال الذكاء الاصطناعي التوليدي", "min_words": 100, "criteria": ["accuracy", "recency"]},
+        {"id": "S002", "task": "اشرح الفرق بين Machine Learning و Deep Learning بأمثلة", "min_words": 80, "criteria": ["clarity", "examples"]},
+        {"id": "S003", "task": "ما هي أهم 5 تطبيقات للروبوتات في الصناعة الحديثة؟", "min_words": 100, "criteria": ["completeness"]},
+        {"id": "S004", "task": "لخص آلية عمل لقاحات mRNA", "min_words": 80, "criteria": ["accuracy", "clarity"]},
+        {"id": "S005", "task": "اشرح مبدأ الحوسبة الكمومية ببساطة", "min_words": 80, "criteria": ["clarity", "accuracy"]},
+        {"id": "S006", "task": "ما هي تقنية CRISPR وكيف تعمل؟", "min_words": 80, "criteria": ["accuracy"]},
+        {"id": "S007", "task": "اذكر 5 اكتشافات فلكية حديثة مع شرح موجز لكل منها", "min_words": 100, "criteria": ["accuracy", "recency"]},
+        {"id": "S008", "task": "ما الفرق بين الطاقة الشمسية وطاقة الرياح من حيث الكفاءة؟", "min_words": 80, "criteria": ["comparison", "data"]},
+        {"id": "S009", "task": "اشرح كيف يعمل نموذج Transformer في معالجة اللغة", "min_words": 100, "criteria": ["technical_accuracy"]},
+        {"id": "S010", "task": "ما هي النانوتكنولوجي وأبرز تطبيقاتها الطبية؟", "min_words": 80, "criteria": ["accuracy", "applications"]}
+      ],
+      "medium": [
+        {"id": "S011", "task": "قارن بين GPT-4 و Gemini 2.0 و Claude 4 من حيث القدرات والقيود والاستخدامات المثلى", "min_words": 200, "criteria": ["comparison", "depth", "balance"]},
+        {"id": "S012", "task": "حلل تأثير الذكاء الاصطناعي على الأبحاث الدوائية مع ذكر 3 أمثلة حقيقية", "min_words": 200, "criteria": ["examples", "analysis"]},
+        {"id": "S013", "task": "اكتب تقريراً عن مستقبل الحوسبة الكمومية في التشفير خلال العقد القادم", "min_words": 250, "criteria": ["depth", "predictions", "evidence"]},
+        {"id": "S014", "task": "حلل المخاطر الصحية المحتملة للهندسة الوراثية البشرية وقدم توصيات", "min_words": 200, "criteria": ["analysis", "recommendations"]},
+        {"id": "S015", "task": "قارن بين 3 تقنيات لتخزين الطاقة المتجددة وحدد الأنسب للمنطقة العربية", "min_words": 200, "criteria": ["comparison", "context"]},
+        {"id": "S016", "task": "اشرح كيف يمكن للذكاء الاصطناعي تحسين التشخيص الطبي مع ذكر الحدود الأخلاقية", "min_words": 200, "criteria": ["technical", "ethical"]},
+        {"id": "S017", "task": "حلل آخر 5 أبحاث على arXiv في مجال multi-agent systems واستخرج الاتجاهات", "min_words": 250, "criteria": ["research_quality", "synthesis"]},
+        {"id": "S018", "task": "اكتب مراجعة علمية مصغرة عن تطور تقنيات تعلم التعزيز في 2025-2026", "min_words": 200, "criteria": ["academic_quality"]},
+        {"id": "S019", "task": "صمم بروتوكول بحثي لدراسة تأثير النوم على الذاكرة طويلة المدى", "min_words": 200, "criteria": ["methodology", "feasibility"]},
+        {"id": "S020", "task": "حلل الفجوة بين الأبحاث الأكاديمية والتطبيق الصناعي في مجال الروبوتات", "min_words": 200, "criteria": ["analysis", "solutions"]}
+      ],
+      "hard": [
+        {"id": "S021", "task": "صمم نظام ذكاء اصطناعي متكامل لإدارة مستشفى ذكي: البنية، المكونات، النماذج المستخدمة، التكامل مع الأنظمة الحالية، خطة التنفيذ على 3 مراحل", "min_words": 500, "criteria": ["architecture", "feasibility", "completeness", "innovation"]},
+        {"id": "S022", "task": "اكتب ورقة بحثية مصغرة عن: كيف يمكن لأنظمة multi-agent تحسين اكتشاف الأدوية؟ تشمل: مقدمة، منهجية مقترحة، نتائج متوقعة، مراجع", "min_words": 500, "criteria": ["academic_rigor", "novelty", "methodology"]},
+        {"id": "S023", "task": "حلل 3 سيناريوهات مستقبلية للحوسبة الكمومية (متفائل/واقعي/متشائم) مع تأثيرها على: التشفير، الأدوية، المناخ، الذكاء الاصطناعي", "min_words": 500, "criteria": ["scenario_quality", "depth", "interconnections"]},
+        {"id": "S024", "task": "صمم خارطة طريق لتطوير AGI آمن: المراحل التقنية، التحديات الأخلاقية، آليات الحوكمة، المعايير الدولية المطلوبة", "min_words": 500, "criteria": ["comprehensiveness", "realism", "safety"]},
+        {"id": "S025", "task": "اكتب تحليلاً معمقاً: لماذا فشلت 80% من مشاريع AI في الإنتاج؟ حلل 5 أسباب رئيسية مع أمثلة حقيقية وحلول عملية", "min_words": 400, "criteria": ["evidence", "analysis", "solutions"]},
+        {"id": "S026", "task": "صمم تجربة علمية كاملة لاختبار فرضية: هل يمكن للذكاء الاصطناعي أن يبتكر فرضيات علمية جديدة؟ المنهجية، العينة، المقاييس، التحليل", "min_words": 400, "criteria": ["experimental_design", "rigor"]},
+        {"id": "S027", "task": "قارن بين 5 أطر عمل لبناء وكلاء AI (LangGraph, CrewAI, AutoGen, Agno, OpenAI Agents) من 10 معايير تقنية", "min_words": 500, "criteria": ["technical_depth", "balance", "criteria_quality"]},
+        {"id": "S028", "task": "حلل كيف يمكن دمج البيولوجيا التركيبية مع الذكاء الاصطناعي لحل أزمة المضادات الحيوية العالمية", "min_words": 400, "criteria": ["interdisciplinary", "innovation"]},
+        {"id": "S029", "task": "صمم نظام إنذار مبكر للأوبئة يعتمد على AI + بيانات الأقمار الصناعية + وسائل التواصل الاجتماعي", "min_words": 400, "criteria": ["system_design", "data_integration"]},
+        {"id": "S030", "task": "اكتب تقييماً شاملاً لحالة أبحاث fusion energy في 2026: التقدم، العوائق، الجدوى الاقتصادية، الأفق الزمني", "min_words": 400, "criteria": ["comprehensiveness", "realism"]}
+      ]
+    },
+    "cat2_society": {
+      "easy": [
+        {"id": "S031", "task": "لخص أهم 5 أحداث جيوسياسية في 2026", "min_words": 100, "criteria": ["recency", "accuracy"]},
+        {"id": "S032", "task": "اشرح مفهوم التضخم الاقتصادي وأسبابه الرئيسية", "min_words": 80, "criteria": ["clarity"]},
+        {"id": "S033", "task": "ما هي حقوق الإنسان الأساسية في القانون الدولي؟", "min_words": 80, "criteria": ["accuracy"]},
+        {"id": "S034", "task": "لخص تاريخ الاتحاد الأوروبي في 200 كلمة", "min_words": 80, "criteria": ["conciseness"]},
+        {"id": "S035", "task": "اشرح الفرق بين الديمقراطية المباشرة والتمثيلية", "min_words": 80, "criteria": ["clarity", "examples"]},
+        {"id": "S036", "task": "ما هي العملات الرقمية وكيف تختلف عن العملات التقليدية؟", "min_words": 80, "criteria": ["clarity"]},
+        {"id": "S037", "task": "لخص تأثير جائحة كوفيد على الاقتصاد العالمي", "min_words": 100, "criteria": ["data", "analysis"]},
+        {"id": "S038", "task": "اشرح مفهوم العولمة ومزاياها وعيوبها", "min_words": 100, "criteria": ["balance"]},
+        {"id": "S039", "task": "ما هي أهم المنظمات الدولية وأدوارها؟", "min_words": 100, "criteria": ["completeness"]},
+        {"id": "S040", "task": "اشرح مفهوم السيادة الوطنية في القانون الدولي", "min_words": 80, "criteria": ["accuracy"]}
+      ],
+      "medium": [
+        {"id": "S041", "task": "حلل تأثير الذكاء الاصطناعي على سوق العمل العالمي: الوظائف المهددة، الوظائف الجديدة، استراتيجيات التكيف", "min_words": 250, "criteria": ["analysis", "data", "solutions"]},
+        {"id": "S042", "task": "قارن بين النظام الاقتصادي الأمريكي والصيني مع تحليل نقاط القوة والضعف", "min_words": 200, "criteria": ["comparison", "depth"]},
+        {"id": "S043", "task": "حلل أزمة الطاقة العالمية وتأثيرها على الدول النامية مع اقتراح 5 حلول", "min_words": 200, "criteria": ["analysis", "solutions"]},
+        {"id": "S044", "task": "اكتب تحليلاً قانونياً عن تنظيم الذكاء الاصطناعي: مقارنة بين النهج الأوروبي والأمريكي والصيني", "min_words": 250, "criteria": ["legal_accuracy", "comparison"]},
+        {"id": "S045", "task": "حلل ظاهرة التضليل الإعلامي الرقمي وأثرها على الديمقراطيات مع أدوات المكافحة", "min_words": 200, "criteria": ["analysis", "solutions"]},
+        {"id": "S046", "task": "قيّم تأثير العقوبات الاقتصادية كأداة سياسية: 3 حالات دراسية مع النتائج", "min_words": 200, "criteria": ["case_studies", "evidence"]},
+        {"id": "S047", "task": "حلل مستقبل العملات الرقمية للبنوك المركزية (CBDC) وتأثيرها على النظام المالي", "min_words": 200, "criteria": ["depth", "predictions"]},
+        {"id": "S048", "task": "اكتب تقريراً عن أزمة الهجرة العالمية: الأسباب، التحديات، الحلول المقترحة", "min_words": 200, "criteria": ["comprehensiveness"]},
+        {"id": "S049", "task": "حلل تأثير تغير المناخ على الأمن الغذائي العالمي مع خريطة المناطق الأكثر تأثراً", "min_words": 200, "criteria": ["data", "geographical_analysis"]},
+        {"id": "S050", "task": "قارن بين 3 نماذج للحوكمة الرقمية في العالم وحدد الأنسب للدول العربية", "min_words": 200, "criteria": ["comparison", "context"]}
+      ],
+      "hard": [
+        {"id": "S051", "task": "اكتب تقريراً استخباراتياً شاملاً عن مستقبل النظام العالمي في 2030: توازن القوى، التحالفات الجديدة، نقاط الصراع المحتملة، السيناريوهات الثلاثة", "min_words": 500, "criteria": ["depth", "scenarios", "evidence"]},
+        {"id": "S052", "task": "صمم استراتيجية اقتصادية متكاملة لدولة عربية للتحول من اقتصاد النفط: 5 محاور، جدول زمني 10 سنوات، مؤشرات أداء", "min_words": 500, "criteria": ["strategy", "feasibility", "metrics"]},
+        {"id": "S053", "task": "حلل أزمة جيوسياسية معقدة (اختر واحدة حالية) من 6 زوايا: عسكرية، اقتصادية، قانونية، إعلامية، تقنية، إنسانية", "min_words": 500, "criteria": ["multi_dimensional", "depth"]},
+        {"id": "S054", "task": "صمم نظاماً قانونياً دولياً لحوكمة الذكاء الاصطناعي يشمل: المبادئ، الآليات، التنفيذ، العقوبات، حالات الطوارئ", "min_words": 500, "criteria": ["legal_quality", "feasibility"]},
+        {"id": "S055", "task": "اكتب تحليلاً استراتيجياً: كيف ستتغير موازين القوى العالمية مع تطور AGI؟ حلل التأثير على 10 دول رئيسية", "min_words": 500, "criteria": ["strategic_depth", "country_analysis"]},
+        {"id": "S056", "task": "صمم خطة شاملة لمكافحة الفقر في أفريقيا باستخدام التكنولوجيا: التعليم الرقمي، الخدمات المالية، الزراعة الذكية، الصحة عن بعد", "min_words": 500, "criteria": ["comprehensiveness", "innovation", "feasibility"]},
+        {"id": "S057", "task": "حلل 5 حروب سيبرانية حقيقية وقعت 2020-2026: الأطراف، الأساليب، النتائج، الدروس المستفادة", "min_words": 400, "criteria": ["case_studies", "analysis"]},
+        {"id": "S058", "task": "اكتب مسودة اتفاقية دولية لمنع استخدام AI في الأسلحة ذاتية التشغيل: 20 مادة قانونية", "min_words": 400, "criteria": ["legal_quality", "completeness"]},
+        {"id": "S059", "task": "صمم نموذجاً لتقييم مخاطر الاستثمار في 10 أسواق ناشئة مع مصفوفة المخاطر وتوصيات", "min_words": 400, "criteria": ["financial_analysis", "methodology"]},
+        {"id": "S060", "task": "حلل ظاهرة صعود الشعبوية عالمياً: الأسباب العميقة، الأنماط المشتركة، السيناريوهات المستقبلية", "min_words": 400, "criteria": ["depth", "patterns"]}
+      ]
+    },
+    "cat3_tools": {
+      "easy": [
+        {"id": "S061", "task": "اكتب دالة Python تحسب الأعداد الأولية حتى N", "min_words": 30, "criteria": ["correctness", "efficiency"]},
+        {"id": "S062", "task": "اشرح الفرق بين REST API و GraphQL مع أمثلة", "min_words": 80, "criteria": ["clarity", "examples"]},
+        {"id": "S063", "task": "اكتب script بسيط يجمع أخبار من RSS feed", "min_words": 30, "criteria": ["correctness", "functionality"]},
+        {"id": "S064", "task": "اشرح كيف يعمل Docker بأبسط طريقة", "min_words": 80, "criteria": ["clarity"]},
+        {"id": "S065", "task": "اكتب regex يستخرج كل عناوين البريد الإلكتروني من نص", "min_words": 20, "criteria": ["correctness"]},
+        {"id": "S066", "task": "ما هي أهم 5 ثغرات أمنية في تطبيقات الويب (OWASP)؟", "min_words": 100, "criteria": ["accuracy"]},
+        {"id": "S067", "task": "اكتب دالة تحول JSON إلى CSV", "min_words": 30, "criteria": ["correctness"]},
+        {"id": "S068", "task": "اشرح مفهوم CI/CD بأمثلة عملية", "min_words": 80, "criteria": ["clarity", "examples"]},
+        {"id": "S069", "task": "اكتب كود يتصل بـ API ويجلب البيانات", "min_words": 30, "criteria": ["correctness"]},
+        {"id": "S070", "task": "ترجم هذا النص من العربية للإنجليزية بدقة: 'الذكاء الاصطناعي يغير العالم'", "min_words": 10, "criteria": ["accuracy"]}
+      ],
+      "medium": [
+        {"id": "S071", "task": "صمم API كامل لنظام إدارة مهام: CRUD + authentication + rate limiting. اكتب المواصفات + كود FastAPI", "min_words": 300, "criteria": ["design", "code_quality", "completeness"]},
+        {"id": "S072", "task": "حلل ثغرة أمنية في كود Python مُعطى واقترح الإصلاح:\ndef login(user, pwd):\n  query = f'SELECT * FROM users WHERE name=\"{user}\" AND pass=\"{pwd}\"'\n  return db.execute(query)", "min_words": 150, "criteria": ["vulnerability_detection", "fix_quality"]},
+        {"id": "S073", "task": "اكتب web scraper يجمع أسعار المنتجات من 3 مواقع مختلفة ويقارنها", "min_words": 200, "criteria": ["code_quality", "robustness"]},
+        {"id": "S074", "task": "صمم pipeline لمعالجة البيانات: يقرأ CSV، ينظف البيانات، يحلل الأنماط، يولّد تقرير PDF", "min_words": 200, "criteria": ["architecture", "code"]},
+        {"id": "S075", "task": "اكتب نظام تنبيهات يراقب API خارجي كل 5 دقائق ويرسل إشعار عند تغير", "min_words": 200, "criteria": ["reliability", "code_quality"]},
+        {"id": "S076", "task": "حلل 3 أخبار تقنية حالية وحدد: الحقيقة، المبالغة، التأثير الفعلي", "min_words": 200, "criteria": ["critical_analysis"]},
+        {"id": "S077", "task": "اكتب اختبارات وحدة شاملة لدالة تحليل النصوص العربية", "min_words": 150, "criteria": ["test_coverage", "edge_cases"]},
+        {"id": "S078", "task": "صمم Dockerfile + docker-compose لتطبيق يتكون من: API + DB + Redis + Nginx", "min_words": 200, "criteria": ["correctness", "best_practices"]},
+        {"id": "S079", "task": "اكتب أداة CLI تحلل git log وتولّد تقرير عن: المساهمين، الملفات الأكثر تغييراً، الأنماط الزمنية", "min_words": 200, "criteria": ["functionality", "code"]},
+        {"id": "S080", "task": "ابحث عن أحدث 5 مكتبات Python في مجال AI agents واكتب مقارنة تقنية", "min_words": 200, "criteria": ["research", "comparison"]}
+      ],
+      "hard": [
+        {"id": "S081", "task": "صمم وابنِ نظام RAG كامل: document ingestion + vector embeddings + semantic search + LLM response generation. اكتب الكود الكامل مع التوثيق", "min_words": 500, "criteria": ["architecture", "code_quality", "documentation"]},
+        {"id": "S082", "task": "اكتب تقريراً أمنياً شاملاً عن نظام Army81: تحليل كل نقاط الدخول، الثغرات المحتملة، التوصيات الأمنية بأولوية", "min_words": 500, "criteria": ["thoroughness", "expertise"]},
+        {"id": "S083", "task": "صمم نظام monitoring كامل لـ 81 وكيل: metrics collection, alerting, dashboards, anomaly detection. اكتب البنية + الكود الأساسي", "min_words": 500, "criteria": ["architecture", "completeness"]},
+        {"id": "S084", "task": "اكتب مترجم لغة برمجة مصغرة (mini language) بـ Python: lexer + parser + evaluator يدعم: متغيرات، شروط، حلقات، دوال", "min_words": 400, "criteria": ["correctness", "design"]},
+        {"id": "S085", "task": "صمم نظام كشف أخبار مزيفة متعدد المراحل: NLP analysis + source verification + credibility scoring + explanation", "min_words": 400, "criteria": ["methodology", "innovation"]},
+        {"id": "S086", "task": "حلل بنية 3 أنظمة مفتوحة المصدر كبيرة (Linux kernel, Kubernetes, TensorFlow) واستخرج أنماط التصميم المشتركة", "min_words": 400, "criteria": ["depth", "patterns"]},
+        {"id": "S087", "task": "اكتب نظام auto-scaling يراقب load ويضيف/يزيل instances تلقائياً مع خوارزمية تنبؤية", "min_words": 400, "criteria": ["algorithm", "code"]},
+        {"id": "S088", "task": "صمم بروتوكول تواصل مشفر end-to-end بين وكلاء AI: key exchange, encryption, authentication, message routing", "min_words": 400, "criteria": ["security", "protocol_design"]},
+        {"id": "S089", "task": "ابنِ أداة تحليل أداء شامل لنظام Python: profiling, bottleneck detection, optimization suggestions مع كود", "min_words": 400, "criteria": ["technical_depth", "code"]},
+        {"id": "S090", "task": "صمم نظام distributed task queue يدعم: priorities, retries, dead letter queue, monitoring — بدون استخدام Celery", "min_words": 400, "criteria": ["architecture", "correctness"]}
+      ]
+    },
+    "cat4_management": {
+      "easy": [
+        {"id": "S091", "task": "اكتب خطة مشروع بسيطة: الأهداف، المراحل، الجدول الزمني", "min_words": 100, "criteria": ["structure"]},
+        {"id": "S092", "task": "حلل بيانات مبيعات بسيطة واستخرج 3 insights", "min_words": 80, "criteria": ["analysis"]},
+        {"id": "S093", "task": "اشرح مصفوفة SWOT مع مثال تطبيقي", "min_words": 100, "criteria": ["clarity", "example"]},
+        {"id": "S094", "task": "صمم KPIs لفريق خدمة عملاء", "min_words": 80, "criteria": ["relevance"]},
+        {"id": "S095", "task": "اكتب وصف وظيفي لمدير مشاريع تقنية", "min_words": 100, "criteria": ["completeness"]},
+        {"id": "S096", "task": "اشرح منهجية Agile مقابل Waterfall", "min_words": 100, "criteria": ["comparison"]},
+        {"id": "S097", "task": "صمم جدول اجتماعات أسبوعي لفريق من 10 أشخاص", "min_words": 80, "criteria": ["practicality"]},
+        {"id": "S098", "task": "اكتب تقرير أداء شهري مصغر لمشروع", "min_words": 100, "criteria": ["structure"]},
+        {"id": "S099", "task": "حدد 5 مخاطر رئيسية لمشروع تطوير برمجي", "min_words": 80, "criteria": ["relevance"]},
+        {"id": "S100", "task": "صمم نموذج تقييم أداء موظف سنوي", "min_words": 100, "criteria": ["completeness"]}
+      ],
+      "medium": [
+        {"id": "S101", "task": "صمم خطة تحول رقمي لشركة تقليدية: التشخيص، الأولويات، الميزانية، الجدول الزمني، مقاييس النجاح", "min_words": 250, "criteria": ["comprehensiveness", "feasibility"]},
+        {"id": "S102", "task": "حلل بيانات أداء 20 موظف واقترح خطة تحسين للأضعف 5 مع KPIs قابلة للقياس", "min_words": 200, "criteria": ["analysis", "actionability"]},
+        {"id": "S103", "task": "صمم نظام حوكمة لمنظمة غير ربحية: الهيكل التنظيمي، السياسات، آليات الرقابة", "min_words": 200, "criteria": ["governance_quality"]},
+        {"id": "S104", "task": "اكتب دراسة جدوى لمشروع تطبيق موبايل: السوق، المنافسين، التكاليف، الإيرادات المتوقعة", "min_words": 250, "criteria": ["analysis", "financial"]},
+        {"id": "S105", "task": "صمم خطة إدارة أزمات لشركة تقنية: السيناريوهات، فرق الاستجابة، بروتوكولات التواصل", "min_words": 200, "criteria": ["preparedness"]}
+      ],
+      "hard": [
+        {"id": "S106", "task": "صمم استراتيجية شاملة لتأسيس شركة AI في المنطقة العربية: دراسة السوق، نموذج الأعمال، التمويل، الفريق، التوسع على 5 سنوات", "min_words": 500, "criteria": ["strategy", "market_analysis", "financial_model"]},
+        {"id": "S107", "task": "اكتب تقريراً تحليلياً: أفضل 10 ممارسات لإدارة فرق AI عن بعد مع حالات دراسية من شركات حقيقية", "min_words": 400, "criteria": ["best_practices", "case_studies"]},
+        {"id": "S108", "task": "صمم نظام تخطيط موارد مؤسسة (ERP) مبسّط لمصنع: الوحدات، التكامل، قواعد البيانات، واجهات المستخدم", "min_words": 500, "criteria": ["system_design", "completeness"]},
+        {"id": "S109", "task": "حلل مشروعاً فاشلاً (اختر مثالاً حقيقياً): الأسباب الجذرية، نقاط الانحراف، ماذا كان يمكن فعله بشكل مختلف", "min_words": 400, "criteria": ["root_cause", "lessons"]},
+        {"id": "S110", "task": "صمم برنامج تدريب 12 شهراً لتأهيل 50 شخصاً للعمل في مجال الذكاء الاصطناعي: المنهج، المراحل، التقييم، الشهادات", "min_words": 400, "criteria": ["curriculum", "progression"]}
+      ]
+    },
+    "cat5_behavior": {
+      "easy": [
+        {"id": "S111", "task": "اشرح نظرية ماسلو للحاجات مع أمثلة معاصرة", "min_words": 100, "criteria": ["accuracy", "examples"]},
+        {"id": "S112", "task": "ما هي أهم 5 تحيزات معرفية وكيف تؤثر على القرارات؟", "min_words": 100, "criteria": ["accuracy"]},
+        {"id": "S113", "task": "اشرح مفهوم الذكاء العاطفي وأبعاده الخمسة", "min_words": 100, "criteria": ["clarity"]},
+        {"id": "S114", "task": "ما هي استراتيجيات التفاوض الأساسية؟", "min_words": 80, "criteria": ["completeness"]},
+        {"id": "S115", "task": "اشرح الفرق بين الدافع الداخلي والخارجي", "min_words": 80, "criteria": ["clarity", "examples"]},
+        {"id": "S116", "task": "ما هي مراحل تكوين الفريق (Tuckman)؟", "min_words": 80, "criteria": ["accuracy"]},
+        {"id": "S117", "task": "اشرح ظاهرة التنافر المعرفي مع مثال عملي", "min_words": 80, "criteria": ["accuracy", "example"]},
+        {"id": "S118", "task": "ما هي أساليب الإقناع الستة لتشالديني؟", "min_words": 100, "criteria": ["completeness"]},
+        {"id": "S119", "task": "اشرح تأثير الهالة في تقييم الأشخاص", "min_words": 80, "criteria": ["accuracy"]},
+        {"id": "S120", "task": "ما هي مهارات الاستماع الفعال؟", "min_words": 80, "criteria": ["completeness"]}
+      ],
+      "medium": [
+        {"id": "S121", "task": "حلل ديناميكيات فريق عمل متعدد الثقافات: التحديات، استراتيجيات التواصل، بناء الثقة، حل الخلافات", "min_words": 200, "criteria": ["depth", "cultural_awareness"]},
+        {"id": "S122", "task": "صمم برنامج تدريبي للذكاء العاطفي لمديرين: 6 وحدات، تمارين عملية، مقاييس تقدم", "min_words": 200, "criteria": ["structure", "practicality"]},
+        {"id": "S123", "task": "حلل سلوك المستهلك الرقمي: كيف تؤثر التحيزات المعرفية على قرارات الشراء عبر الإنترنت", "min_words": 200, "criteria": ["psychology", "digital_context"]},
+        {"id": "S124", "task": "صمم استراتيجية تفاوض لصفقة تجارية معقدة بين طرفين لهما أهداف متعارضة", "min_words": 200, "criteria": ["strategy", "realism"]},
+        {"id": "S125", "task": "حلل كيف يمكن استخدام الاقتصاد السلوكي لتحسين الادخار الوطني: 5 nudges مع أدلة", "min_words": 200, "criteria": ["evidence", "innovation"]}
+      ],
+      "hard": [
+        {"id": "S126", "task": "صمم نظاماً نفسياً متكاملاً لتقييم وتطوير القادة: 10 أبعاد، أدوات قياس، برنامج تطوير 12 شهراً، مقاييس نجاح", "min_words": 500, "criteria": ["psychological_rigor", "comprehensiveness"]},
+        {"id": "S127", "task": "حلل كيف يمكن للذكاء الاصطناعي محاكاة التعاطف البشري: الإمكانيات، القيود، المخاطر الأخلاقية، التطبيقات العملية", "min_words": 400, "criteria": ["depth", "ethics"]},
+        {"id": "S128", "task": "اكتب تحليلاً لسيكولوجية القرارات الجماعية: لماذا تفشل اللجان؟ 5 ظواهر نفسية مع حلول تنظيمية", "min_words": 400, "criteria": ["academic_quality", "solutions"]},
+        {"id": "S129", "task": "صمم نظام إنذار مبكر لاكتشاف الاحتراق الوظيفي باستخدام تحليل سلوكي: المؤشرات، الخوارزمية، التدخلات", "min_words": 400, "criteria": ["innovation", "methodology"]},
+        {"id": "S130", "task": "حلل تأثير وسائل التواصل الاجتماعي على الصحة النفسية للمراهقين: البيانات، الآليات، التدخلات المقترحة", "min_words": 400, "criteria": ["evidence", "interventions"]}
+      ]
+    },
+    "cat6_leadership": {
+      "easy": [
+        {"id": "S131", "task": "اشرح الفرق بين القيادة والإدارة مع أمثلة", "min_words": 100, "criteria": ["clarity"]},
+        {"id": "S132", "task": "ما هي صفات القائد الاستراتيجي الناجح؟", "min_words": 100, "criteria": ["completeness"]},
+        {"id": "S133", "task": "اشرح مصفوفة Eisenhower لإدارة الأولويات", "min_words": 80, "criteria": ["clarity", "example"]},
+        {"id": "S134", "task": "ما هي مراحل اتخاذ القرار الاستراتيجي؟", "min_words": 80, "criteria": ["structure"]},
+        {"id": "S135", "task": "اشرح نموذج Porter للقوى الخمسة مع مثال", "min_words": 100, "criteria": ["accuracy", "example"]},
+        {"id": "S136", "task": "ما هي أنواع المخاطر الاستراتيجية؟", "min_words": 80, "criteria": ["completeness"]},
+        {"id": "S137", "task": "اشرح مفهوم الميزة التنافسية المستدامة", "min_words": 80, "criteria": ["clarity"]},
+        {"id": "S138", "task": "ما هي عناصر الرؤية الاستراتيجية الفعالة؟", "min_words": 80, "criteria": ["accuracy"]},
+        {"id": "S139", "task": "اشرح كيف يدير القائد الأزمات", "min_words": 100, "criteria": ["structure"]},
+        {"id": "S140", "task": "ما الفرق بين التخطيط الاستراتيجي والتشغيلي؟", "min_words": 80, "criteria": ["clarity"]}
+      ],
+      "medium": [
+        {"id": "S141", "task": "حلل قرار استراتيجي مشهور (مثل شراء Microsoft لـ LinkedIn أو استثمار SoftBank في AI) من كل الزوايا", "min_words": 250, "criteria": ["analysis", "multi_angle"]},
+        {"id": "S142", "task": "صمم خطة إدارة أزمة لشركة تعرضت لتسريب بيانات 10 مليون عميل: الاستجابة الفورية، التواصل، الإصلاح، المنع", "min_words": 250, "criteria": ["crisis_management", "completeness"]},
+        {"id": "S143", "task": "اكتب تقييم مخاطر شامل لدخول سوق جديد: 10 مخاطر مع احتمالية وتأثير واستراتيجية تخفيف", "min_words": 200, "criteria": ["risk_analysis", "methodology"]},
+        {"id": "S144", "task": "حلل استراتيجيات 3 شركات تقنية رائدة وحدد الأنماط المشتركة للنجاح", "min_words": 250, "criteria": ["pattern_recognition", "depth"]},
+        {"id": "S145", "task": "صمم نظام صنع قرار جماعي يجمع بين الذكاء البشري والاصطناعي: العملية، الأدوار، آليات التصويت", "min_words": 200, "criteria": ["innovation", "feasibility"]}
+      ],
+      "hard": [
+        {"id": "S146", "task": "أنت قائد عسكري: حلل ساحة معركة معقدة (اختر سيناريو تاريخي) واعد خطة عمل بديلة كان يمكن أن تغير النتيجة. تشمل: التحليل، البدائل، التبرير الاستراتيجي", "min_words": 500, "criteria": ["strategic_thinking", "historical_accuracy", "creativity"]},
+        {"id": "S147", "task": "صمم مركز عمليات استخباراتي متكامل (Intelligence Operations Center): البنية، الأنظمة، العمليات، الكوادر، التقنيات، بروتوكولات الأمن", "min_words": 500, "criteria": ["comprehensiveness", "realism"]},
+        {"id": "S148", "task": "اكتب تقييماً استراتيجياً شاملاً: هل يمكن لنظام AI مثل Army81 أن يتفوق على فريق استشاري بشري من 20 شخص؟ قارن في 10 أبعاد", "min_words": 500, "criteria": ["objectivity", "depth", "evidence"]},
+        {"id": "S149", "task": "صمم استراتيجية أمن قومي رقمي لدولة: الأصول الحرجة، التهديدات، الدفاعات، القدرات الهجومية، التحالفات، الميزانية", "min_words": 500, "criteria": ["strategic_quality", "comprehensiveness"]},
+        {"id": "S150", "task": "حلل 5 حالات تاريخية لانهيار قيادات/إمبراطوريات واستخرج 10 دروس عالمية للقيادة المعاصرة", "min_words": 500, "criteria": ["historical_analysis", "lessons"]}
+      ]
+    },
+    "cat7_new": {
+      "easy": [
+        {"id": "S151", "task": "اشرح مفهوم التعلم الذاتي للأنظمة الذكية", "min_words": 80, "criteria": ["clarity"]},
+        {"id": "S152", "task": "ما هي مقاييس جودة الوكيل الذكي؟", "min_words": 80, "criteria": ["completeness"]},
+        {"id": "S153", "task": "اشرح الفرق بين Single Agent و Multi-Agent Systems", "min_words": 80, "criteria": ["clarity"]},
+        {"id": "S154", "task": "ما هي أنماط تنسيق الوكلاء (sequential, parallel, hierarchical)؟", "min_words": 80, "criteria": ["accuracy"]},
+        {"id": "S155", "task": "اشرح مفهوم ضبط الجودة في أنظمة AI", "min_words": 80, "criteria": ["clarity"]},
+        {"id": "S156", "task": "ما هي المقاييس الأساسية لأداء نظام متعدد الوكلاء؟", "min_words": 80, "criteria": ["completeness"]},
+        {"id": "S157", "task": "اشرح مفهوم التطور الذاتي الآمن في AI", "min_words": 80, "criteria": ["accuracy"]},
+        {"id": "S158", "task": "ما هي أهم التحديات في بناء أنظمة وكلاء متعددة؟", "min_words": 80, "criteria": ["completeness"]},
+        {"id": "S159", "task": "اشرح مفهوم knowledge distillation بين النماذج", "min_words": 80, "criteria": ["technical_accuracy"]},
+        {"id": "S160", "task": "ما هو constitutional AI وكيف يضمن السلامة؟", "min_words": 80, "criteria": ["accuracy"]}
+      ],
+      "medium": [
+        {"id": "S161", "task": "صمم نظام تقييم أداء ذاتي لـ Army81: المقاييس، الخوارزمية، العتبات، آلية التحسين التلقائي", "min_words": 250, "criteria": ["system_design", "metrics"]},
+        {"id": "S162", "task": "حلل كيف يمكن لنظام multi-agent أن يتعلم من أخطائه: آليات الاكتشاف، التصحيح، المنع", "min_words": 200, "criteria": ["methodology"]},
+        {"id": "S163", "task": "صمم بروتوكول تواصل بين وكلاء AI يضمن: الكفاءة، الأمان، عدم فقد المعلومات", "min_words": 200, "criteria": ["protocol_design"]},
+        {"id": "S164", "task": "اكتب تحليلاً مقارناً بين Army81 و Manus و OpenClaw: القدرات، البنية، نقاط القوة والضعف", "min_words": 250, "criteria": ["objectivity", "depth"]},
+        {"id": "S165", "task": "صمم آلية لاكتشاف ومنع التدهور التدريجي في أداء الوكلاء (drift detection)", "min_words": 200, "criteria": ["methodology", "algorithm"]}
+      ],
+      "hard": [
+        {"id": "S166", "task": "صمم الجيل القادم من Army81 (v10): البنية، القدرات الجديدة، آليات التعلم، التكامل مع أنظمة خارجية، خارطة طريق 12 شهراً", "min_words": 500, "criteria": ["vision", "feasibility", "innovation"]},
+        {"id": "S167", "task": "اكتب ورقة بيضاء: كيف يمكن لنظام 81 وكيل أن يصل لأداء يتفوق على إنسان خبير في كل مجال؟ التحديات والحلول", "min_words": 500, "criteria": ["academic_quality", "realism"]},
+        {"id": "S168", "task": "صمم نظام meta-learning يسمح لـ Army81 بتعلم كيف يتعلم: تتبع استراتيجيات التعلم الناجحة، تكييف المنهجية، تحسين سرعة التعلم", "min_words": 500, "criteria": ["innovation", "methodology"]},
+        {"id": "S169", "task": "حلل: هل يمكن لنظام AI ذاتي التطور أن يصبح AGI؟ المسار التقني، العوائق، المخاطر، الإطار الأخلاقي المطلوب", "min_words": 500, "criteria": ["depth", "philosophical_rigor"]},
+        {"id": "S170", "task": "صمم نظام 'وعي ذاتي' لـ Army81: ما المعلومات التي يجب أن يعرفها النظام عن نفسه، كيف يراقب حالته، كيف يقرر التغيير", "min_words": 500, "criteria": ["innovation", "self_awareness"]}
+      ]
+    }
+  },
+  "multi_agent_scenarios": [
+    {"id": "M001", "task": "حلل أزمة اقتصادية وهمية: انهيار عملة رقمية أثر على 3 اقتصادات. يتعاون: A11(مالي) + A13(قانوني) + A58(أزمات) + A60(استخبارات)", "agents": ["A11", "A13", "A58", "A60"], "min_words": 800, "criteria": ["collaboration", "multi_perspective"]},
+    {"id": "M002", "task": "صمم مدينة ذكية: A01(استراتيجية) يخطط, A26(برمجة) يبني النظام, A04(بيئة) يحلل الاستدامة, A35(بيانات) يصمم البنية", "agents": ["A01", "A26", "A04", "A35"], "min_words": 800, "criteria": ["integration", "completeness"]},
+    {"id": "M003", "task": "تحقيق صحفي: A25(إعلام) يجمع المعلومات, A33(مكافحة تضليل) يتحقق, A13(قانون) يراجع, A12(محتوى) يكتب التقرير", "agents": ["A25", "A33", "A13", "A12"], "min_words": 600, "criteria": ["accuracy", "collaboration"]},
+    {"id": "M004", "task": "إطلاق منتج AI: A37(مشاريع) يخطط, A26(برمجة) يبني, A74(جودة) يختبر, A12(محتوى) يسوّق", "agents": ["A37", "A26", "A74", "A12"], "min_words": 600, "criteria": ["coordination", "quality"]},
+    {"id": "M005", "task": "استجابة لكارثة طبيعية: A58(أزمات) يقود, A06(طبي) يخطط الاستجابة الطبية, A35(بيانات) يحلل, A53(تواصل) ينسق", "agents": ["A58", "A06", "A35", "A53"], "min_words": 600, "criteria": ["speed", "coordination"]},
+    {"id": "M006", "task": "تأسيس جامعة رقمية: A23(تعليم) يصمم المنهج, A41(رقمي) يبني المنصة, A38(حوكمة) يضع السياسات, A01(استراتيجية) يخطط", "agents": ["A23", "A41", "A38", "A01"], "min_words": 600, "criteria": ["innovation", "feasibility"]},
+    {"id": "M007", "task": "تحليل تهديد سيبراني: A27(أمن) يحلل الثغرة, A60(استخبارات) يحدد المصدر, A71(أمن داخلي) يحمي, A26(برمجة) يبني الحل", "agents": ["A27", "A60", "A71", "A26"], "min_words": 600, "criteria": ["technical_depth", "speed"]},
+    {"id": "M008", "task": "إعادة هيكلة شركة: A65(منظمات) يصمم الهيكل, A42(أداء) يقيّم, A64(تغيير) يخطط الانتقال, A47(ذكاء عاطفي) يدير التواصل", "agents": ["A65", "A42", "A64", "A47"], "min_words": 600, "criteria": ["strategy", "human_factor"]},
+    {"id": "M009", "task": "بناء Army81 v8: A72(تطور) يقيّم الحالة, A75(تحسين) يقترح, A74(جودة) يختبر, A81(ميتا) يشرف على الكل", "agents": ["A72", "A75", "A74", "A81"], "min_words": 600, "criteria": ["self_improvement", "innovation"]},
+    {"id": "M010", "task": "مفاوضات دولية معقدة: A16(تفاوض) يقود, A61(جيوسياسة) يحلل, A18(قانون دولي) يراجع, A55(ذكاء ثقافي) ينصح بالبعد الثقافي", "agents": ["A16", "A61", "A18", "A55"], "min_words": 600, "criteria": ["negotiation_quality", "cultural_awareness"]}
+  ]
+}
