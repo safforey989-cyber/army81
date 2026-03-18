@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Army81 — 3D Command Dashboard</title>
+<title>Army81 — 3D Command Dashboard v3 — Hierarchical</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -20,8 +20,22 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000510;font-family:
 #topBar .nav button{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);padding:6px 16px;border-radius:6px;cursor:pointer;font-family:'Cairo',sans-serif;font-size:12px;transition:all 0.3s}
 #topBar .nav button:hover,#topBar .nav button.active{background:rgba(255,215,0,0.15);border-color:rgba(255,215,0,0.4);color:#FFD700}
 
+/* ═══ SEARCH BAR (Improvement #6) ═══ */
+#searchBar{position:fixed;top:62px;left:50%;transform:translateX(-50%);z-index:95;display:none;width:min(500px,80vw)}
+#searchBar.open{display:block}
+#searchBar input{width:100%;background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.3);color:#fff;padding:10px 16px;border-radius:10px;font-family:'Cairo',sans-serif;font-size:14px;outline:none;backdrop-filter:blur(12px)}
+#searchBar input:focus{border-color:rgba(255,215,0,0.6);box-shadow:0 0 20px rgba(255,215,0,0.1)}
+#searchBar .results{background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.15);border-top:none;border-radius:0 0 10px 10px;max-height:250px;overflow-y:auto;display:none}
+#searchBar .results.has-items{display:block}
+#searchBar .result-item{padding:10px 16px;cursor:pointer;display:flex;align-items:center;gap:10px;font-size:13px;border-bottom:1px solid rgba(255,255,255,0.03);transition:background 0.2s}
+#searchBar .result-item:hover{background:rgba(255,215,0,0.1)}
+#searchBar .result-item .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+#searchBar .filter-row{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
+#searchBar .filter-btn{padding:3px 10px;border-radius:12px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);color:rgba(255,255,255,0.5);font-size:11px;cursor:pointer;transition:all 0.2s;font-family:'Cairo',sans-serif}
+#searchBar .filter-btn.active{border-color:rgba(255,215,0,0.4);color:#FFD700;background:rgba(255,215,0,0.1)}
+
 /* ═══ STATS PANEL (LEFT) ═══ */
-#statsPanel{position:fixed;top:72px;left:16px;width:240px;z-index:90;background:rgba(0,5,16,0.85);border:1px solid rgba(255,215,0,0.12);border-radius:12px;padding:16px;backdrop-filter:blur(12px);font-size:13px}
+#statsPanel{position:fixed;top:72px;left:16px;width:240px;z-index:90;background:rgba(0,5,16,0.85);border:1px solid rgba(255,215,0,0.12);border-radius:12px;padding:16px;backdrop-filter:blur(12px);font-size:13px;cursor:move;user-select:none}
 #statsPanel h3{font-family:'Orbitron',sans-serif;font-size:13px;color:#FFD700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .stat-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
 .stat-row:last-child{border-bottom:none}
@@ -38,7 +52,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000510;font-family:
 #pendingRequests .pending-item::before{content:'';width:6px;height:6px;border-radius:50%;background:#FF4444;animation:pulse-dot 1.5s infinite}
 
 /* ═══ AGENT PANEL (RIGHT) ═══ */
-#agentPanel{position:fixed;top:72px;right:16px;width:280px;z-index:90;background:rgba(0,5,16,0.9);border:1px solid rgba(255,215,0,0.12);border-radius:12px;padding:20px;backdrop-filter:blur(12px);transform:translateX(320px);transition:transform 0.5s cubic-bezier(0.16,1,0.3,1);opacity:0}
+#agentPanel{position:fixed;top:72px;right:16px;width:300px;z-index:90;background:rgba(0,5,16,0.9);border:1px solid rgba(255,215,0,0.12);border-radius:12px;padding:20px;backdrop-filter:blur(12px);transform:translateX(340px);transition:transform 0.5s cubic-bezier(0.16,1,0.3,1);opacity:0;cursor:move;user-select:none}
 #agentPanel.open{transform:translateX(0);opacity:1}
 #agentPanel .close-btn{position:absolute;top:10px;left:10px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:all 0.3s}
 #agentPanel .close-btn:hover{background:rgba(255,0,0,0.2);border-color:rgba(255,0,0,0.4);color:#ff4444}
@@ -47,6 +61,9 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000510;font-family:
 #agentPanel .agent-name{font-size:16px;color:rgba(255,255,255,0.9);margin-top:4px}
 #agentPanel .agent-name-ar{font-size:13px;color:rgba(255,255,255,0.5);margin-top:2px}
 #agentPanel .agent-cat{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;margin-top:8px}
+/* Status indicator (Improvement #12) */
+#agentPanel .agent-status{display:flex;align-items:center;gap:6px;justify-content:center;margin-top:8px;font-size:12px}
+#agentPanel .agent-status .status-dot{width:8px;height:8px;border-radius:50%;animation:pulse-dot 1.5s infinite}
 #agentPanel .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,215,0,0.3),transparent);margin:14px 0}
 #agentPanel .info-row{display:flex;justify-content:space-between;padding:5px 0;font-size:13px}
 #agentPanel .info-label{color:rgba(255,255,255,0.5)}
@@ -54,6 +71,19 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000510;font-family:
 #agentPanel .desc{font-size:12px;color:rgba(255,255,255,0.5);line-height:1.6;margin-top:10px;padding:10px;background:rgba(255,255,255,0.03);border-radius:8px}
 #sendTaskBtn{width:100%;margin-top:14px;padding:10px;background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,107,0,0.2));border:1px solid rgba(255,215,0,0.3);border-radius:8px;color:#FFD700;font-family:'Cairo',sans-serif;font-size:14px;font-weight:600;cursor:pointer;transition:all 0.3s}
 #sendTaskBtn:hover{background:linear-gradient(135deg,rgba(255,215,0,0.35),rgba(255,107,0,0.35));box-shadow:0 0 20px rgba(255,215,0,0.2)}
+
+/* ═══ AUDIT LOG (Improvement #17) ═══ */
+#auditLog{position:fixed;top:72px;left:50%;transform:translateX(-50%);width:min(600px,85vw);max-height:70vh;z-index:110;background:rgba(0,5,16,0.97);border:1px solid rgba(255,215,0,0.2);border-radius:12px;padding:20px;backdrop-filter:blur(16px);display:none;overflow:hidden}
+#auditLog.open{display:block}
+#auditLog h3{font-family:'Orbitron',sans-serif;font-size:14px;color:#FFD700;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+#auditLog .log-list{max-height:50vh;overflow-y:auto;scrollbar-width:thin;scrollbar-color:rgba(255,215,0,0.3) transparent}
+#auditLog .log-item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.03);font-size:12px;animation:fadeInUp 0.3s ease}
+#auditLog .log-time{color:rgba(255,255,255,0.3);font-family:'Orbitron',sans-serif;font-size:10px;min-width:60px}
+#auditLog .log-icon{font-size:14px}
+#auditLog .log-text{color:rgba(255,255,255,0.7);flex:1}
+#auditLog .log-agent{color:#FFD700;font-weight:600}
+#auditLog .close-btn{background:none;border:none;color:rgba(255,255,255,0.5);cursor:pointer;font-size:18px}
+#auditLog .export-btn{padding:4px 12px;border-radius:6px;border:1px solid rgba(255,215,0,0.3);background:rgba(255,215,0,0.1);color:#FFD700;font-size:11px;cursor:pointer;font-family:'Cairo',sans-serif}
 
 /* ═══ CHAT BOX ═══ */
 #chatBox{position:fixed;bottom:0;left:50%;transform:translateX(-50%) translateY(100%);width:min(700px,90vw);z-index:100;background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.15);border-bottom:none;border-radius:16px 16px 0 0;padding:16px;backdrop-filter:blur(16px);transition:transform 0.5s cubic-bezier(0.16,1,0.3,1)}
@@ -78,10 +108,11 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000510;font-family:
 #chatInput button:hover{background:linear-gradient(135deg,rgba(255,215,0,0.35),rgba(255,107,0,0.3));box-shadow:0 0 15px rgba(255,215,0,0.15)}
 #chatInput .mic-btn{padding:10px 14px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.5);border-radius:8px;cursor:pointer;transition:all 0.3s}
 #chatInput .mic-btn:hover{color:#FFD700;border-color:rgba(255,215,0,0.3)}
+#chatInput .mic-btn.recording{color:#FF4444;border-color:rgba(255,0,0,0.5);background:rgba(255,0,0,0.1);animation:pulse-dot 1s infinite}
 
 /* ═══ CAMERA CONTROLS ═══ */
 #cameraControls{position:fixed;bottom:80px;right:16px;z-index:90;display:flex;flex-direction:column;gap:6px}
-#cameraControls button{width:42px;height:42px;border-radius:10px;background:rgba(0,5,16,0.8);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.6);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all 0.3s;backdrop-filter:blur(8px)}
+#cameraControls button{width:42px;height:42px;border-radius:10px;background:rgba(0,5,16,0.8);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.6);cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all 0.3s;backdrop-filter:blur(8px);position:relative}
 #cameraControls button:hover{background:rgba(255,215,0,0.15);border-color:rgba(255,215,0,0.4);color:#FFD700}
 #cameraControls button .tooltip{position:absolute;right:52px;background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.2);padding:4px 10px;border-radius:6px;font-size:11px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.3s;font-family:'Cairo',sans-serif}
 #cameraControls button:hover .tooltip{opacity:1}
@@ -93,6 +124,14 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000510;font-family:
 #chatToggle{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:99;padding:10px 28px;background:linear-gradient(135deg,rgba(255,215,0,0.2),rgba(255,107,0,0.15));border:1px solid rgba(255,215,0,0.3);border-radius:30px;color:#FFD700;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.3s;backdrop-filter:blur(8px)}
 #chatToggle:hover{background:linear-gradient(135deg,rgba(255,215,0,0.35),rgba(255,107,0,0.3));box-shadow:0 0 25px rgba(255,215,0,0.2)}
 
+/* ═══ SOUND TOGGLE (Improvement #18) ═══ */
+#soundToggle{position:fixed;top:62px;right:16px;z-index:95;width:36px;height:36px;border-radius:8px;background:rgba(0,5,16,0.8);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;transition:all 0.3s;backdrop-filter:blur(8px)}
+#soundToggle:hover{color:#FFD700;border-color:rgba(255,215,0,0.3)}
+#soundToggle.muted{color:#FF4444}
+
+/* ═══ FPS COUNTER (Improvement #5) ═══ */
+#fpsCounter{position:fixed;bottom:16px;left:16px;z-index:90;font-family:'Orbitron',sans-serif;font-size:10px;color:rgba(255,255,255,0.3);background:rgba(0,5,16,0.6);padding:4px 8px;border-radius:4px}
+
 /* ═══ LOADING SCREEN ═══ */
 #loadingScreen{position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;background:#000510;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 1s ease}
 #loadingScreen.hidden{opacity:0;pointer-events:none}
@@ -102,15 +141,32 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000510;font-family:
 #loadingScreen .loader-status{margin-top:12px;font-size:12px;color:rgba(255,255,255,0.4)}
 
 /* ═══ TOOLTIP ═══ */
-#hoverTooltip{position:fixed;z-index:200;background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.25);border-radius:10px;padding:12px 16px;pointer-events:none;opacity:0;transition:opacity 0.2s;backdrop-filter:blur(12px);min-width:180px}
+#hoverTooltip{position:fixed;z-index:200;background:rgba(0,5,16,0.95);border:1px solid rgba(255,215,0,0.25);border-radius:10px;padding:12px 16px;pointer-events:none;opacity:0;transition:opacity 0.2s;backdrop-filter:blur(12px);min-width:200px}
 #hoverTooltip .tt-id{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;color:#FFD700}
 #hoverTooltip .tt-name{font-size:13px;color:rgba(255,255,255,0.8);margin-top:2px}
 #hoverTooltip .tt-cat{font-size:11px;color:rgba(255,255,255,0.4);margin-top:4px}
+/* Rich tooltip (Improvement #9) */
+#hoverTooltip .tt-status{display:flex;align-items:center;gap:4px;margin-top:6px;font-size:11px}
+#hoverTooltip .tt-status .dot{width:6px;height:6px;border-radius:50%}
+#hoverTooltip .tt-last-task{font-size:10px;color:rgba(255,255,255,0.3);margin-top:4px;font-style:italic}
+
+/* ═══ VR BUTTON (Improvement #20) ═══ */
+#vrButton{position:fixed;bottom:80px;left:16px;z-index:90;padding:8px 16px;border-radius:8px;background:rgba(0,5,16,0.8);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.5);cursor:pointer;font-family:'Cairo',sans-serif;font-size:12px;transition:all 0.3s;backdrop-filter:blur(8px);display:none}
+#vrButton:hover{color:#FFD700;border-color:rgba(255,215,0,0.3)}
 
 /* ═══ ANIMATIONS ═══ */
 @keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:0.3}}
 @keyframes fadeInUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-@keyframes glow-pulse{0%,100%{box-shadow:0 0 5px currentColor}50%{box-shadow:0 0 20px currentColor}}
+@keyframes glow-pulse{0%,100%{box-shadow:0 0 5px rgba(255,215,0,0.2)}50%{box-shadow:0 0 20px rgba(255,215,0,0.4)}}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:768px){
+  #statsPanel{width:180px;font-size:11px;padding:10px}
+  #agentPanel{width:240px}
+  #topBar{padding:0 10px}
+  #topBar .nav button{padding:4px 8px;font-size:10px}
+  #cameraControls button{width:36px;height:36px}
+}
 </style>
 </head>
 <body>
@@ -119,218 +175,305 @@ html,body{width:100%;height:100%;overflow:hidden;background:#000510;font-family:
 <div id="loadingScreen">
   <div class="loader-text">ARMY81</div>
   <div class="loader-bar"><div class="fill" id="loadProgress"></div></div>
-  <div class="loader-status" id="loadStatus">جاري تهيئة النظام...</div>
+  <div class="loader-status" id="loadStatus">جاري التهيئة...</div>
 </div>
-
-<!-- 3D CANVAS -->
-<canvas id="canvas3d"></canvas>
 
 <!-- TOP BAR -->
 <div id="topBar">
-  <div class="logo">
-    <span>ARMY81</span>
-    <div class="badge"></div>
+  <div class="nav">
+    <button class="active" onclick="setView('home',this)">🏠 الرئيسية</button>
+    <button onclick="setView('chat',this)">💬 Chat</button>
+    <button onclick="setView('agents',this)">🤖 الوكلاء</button>
+    <button onclick="setView('reports',this)">📊 التقارير</button>
+    <button onclick="setView('memory',this)">🧠 الذاكرة</button>
+    <button onclick="toggleSearch()">🔍 بحث</button>
+    <button onclick="toggleAuditLog()">📋 السجل</button>
   </div>
   <div class="status">
-    <span><span class="count" id="activeCount">81</span> ACTIVE</span>
-    <span>&#9889; OPERATIONAL</span>
     <span id="clockDisplay"></span>
+    <span>OPERATIONAL ⚡</span>
+    <span>ACTIVE <span class="count">81</span></span>
   </div>
-  <div class="nav">
-    <button class="active" onclick="setView('main')">&#127968; الرئيسية</button>
-    <button onclick="toggleChat()">&#128172; Chat</button>
-    <button onclick="setView('agents')">&#129302; الوكلاء</button>
-    <button onclick="setView('reports')">&#128202; التقارير</button>
-    <button onclick="setView('memory')">&#129504; الذاكرة</button>
+  <div class="logo">
+    <span class="badge"></span> ARMY81
   </div>
 </div>
 
+<!-- SEARCH BAR (Improvement #6) -->
+<div id="searchBar">
+  <input type="text" id="searchInput" placeholder="ابحث عن وكيل بالاسم أو المعرف..." oninput="handleSearch(this.value)">
+  <div class="filter-row" id="filterRow"></div>
+  <div class="results" id="searchResults"></div>
+</div>
+
 <!-- DEMO BANNER -->
-<div id="demoBanner">&#9888;&#65039; وضع العرض — شغّل <code>python gateway/app.py</code> للاتصال المباشر</div>
+<div id="demoBanner">⚠ وضع العرض — شغّل <code>python gateway/app.py</code> للاتصال المباشر</div>
 
 <!-- STATS PANEL -->
 <div id="statsPanel">
-  <h3>&#128202; إحصائيات حية</h3>
-  <div class="stat-row"><span class="stat-label">المهام اليوم</span><span class="stat-value gold" id="statTasks">47</span></div>
-  <div class="stat-row"><span class="stat-label">معدل النجاح</span><span class="stat-value green" id="statSuccess">94%</span></div>
+  <h3>📊 إحصائيات حية</h3>
+  <div class="stat-row"><span class="stat-label">المهام اليوم</span><span class="stat-value gold" id="statTasks">0</span></div>
+  <div class="stat-row"><span class="stat-label">معدل النجاح</span><span class="stat-value green" id="statSuccess">0%</span></div>
   <div class="stat-row"><span class="stat-label">آخر تحديث</span><span class="stat-value" id="statUpdate">--:--</span></div>
   <div class="stat-row"><span class="stat-label">المعرفة</span><span class="stat-value" id="statKnowledge">1.2 GB</span></div>
-  <div class="progress-bar"><div class="fill" style="width:72%;background:linear-gradient(90deg,#FFD700,#FF6B00)"></div></div>
+  <div class="progress-bar"><div class="fill" id="knowledgeBar" style="width:65%;background:linear-gradient(90deg,#FFD700,#FF6B00)"></div></div>
+  <div class="stat-row" style="margin-top:8px"><span class="stat-label">FPS</span><span class="stat-value" id="statFps" style="font-size:11px">--</span></div>
   <div id="pendingRequests">
-    <div style="font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:6px">&#128308; طلبات منتظرة</div>
-    <div class="pending-item">اقتراح جديد — تحليل بيانات</div>
-    <div class="pending-item">مراجعة تقرير أمني</div>
-    <div class="pending-item">بحث علمي متقدم</div>
+    <div class="pending-item" onclick="handlePending('طلبات منتظرة')">طلبات منتظرة</div>
+    <div class="pending-item" onclick="handlePending('اقتراح جديد')">اقتراح جديد — تحليل بيانات</div>
+    <div class="pending-item" onclick="handlePending('مراجعة')">مراجعة تقرير أمني</div>
+    <div class="pending-item" onclick="handlePending('بحث')">بحث علمي متقدم</div>
   </div>
 </div>
 
 <!-- AGENT PANEL -->
 <div id="agentPanel">
-  <button class="close-btn" onclick="closeAgentPanel()">&times;</button>
+  <button class="close-btn" onclick="closeAgentPanel()">×</button>
   <div class="agent-header">
     <div class="agent-id" id="apId">A01</div>
-    <div class="agent-name" id="apName">Strategic Commander</div>
-    <div class="agent-name-ar" id="apNameAr">وكيل القيادة الاستراتيجية</div>
-    <div class="agent-cat" id="apCat">cat6_leadership</div>
+    <div class="agent-name" id="apName">Agent</div>
+    <div class="agent-name-ar" id="apNameAr">وكيل</div>
+    <div class="agent-cat" id="apCat">Category</div>
+    <div class="agent-status" id="apStatus"><span class="status-dot" style="background:#0f0"></span><span>متاح</span></div>
   </div>
   <div class="divider"></div>
-  <div class="info-row"><span class="info-label">النموذج</span><span class="info-value" id="apModel">gemini-pro</span></div>
-  <div class="info-row"><span class="info-label">المهام المنجزة</span><span class="info-value" id="apTasks">234</span></div>
-  <div class="info-row"><span class="info-label">الدقة</span><span class="info-value" id="apAccuracy">91%</span></div>
-  <div class="info-row"><span class="info-label">الحالة</span><span class="info-value" id="apStatus" style="color:#0f0">نشط</span></div>
+  <div class="info-row"><span class="info-label">النموذج</span><span class="info-value" id="apModel">—</span></div>
+  <div class="info-row"><span class="info-label">المهام المنجزة</span><span class="info-value" id="apTasks">—</span></div>
+  <div class="info-row"><span class="info-label">الدقة</span><span class="info-value" id="apAccuracy">—</span></div>
+  <div class="info-row"><span class="info-label">آخر مهمة</span><span class="info-value" id="apLastTask">—</span></div>
   <div class="divider"></div>
-  <div class="desc" id="apDesc">القائد الأعلى. يحلل الأهداف الكبرى ويضع الخطط ويوزع المهام.</div>
-  <button id="sendTaskBtn" onclick="openChatForAgent()">&#9889; أرسل مهمة</button>
+  <div class="desc" id="apDesc">—</div>
+  <button id="sendTaskBtn" onclick="openChatForAgent()">⚡ أرسل مهمة</button>
 </div>
 
-<!-- CHAT TOGGLE -->
-<button id="chatToggle" onclick="toggleChat()">&#128172; فتح المحادثة</button>
+<!-- AUDIT LOG (Improvement #17) -->
+<div id="auditLog">
+  <h3>📋 سجل أحداث النظام <span style="display:flex;gap:8px"><button class="export-btn" onclick="exportAuditLog()">📥 تصدير</button><button class="close-btn" onclick="toggleAuditLog()" style="background:none;border:none;color:rgba(255,255,255,0.5);cursor:pointer;font-size:18px">×</button></span></h3>
+  <div class="log-list" id="logList"></div>
+</div>
 
 <!-- CHAT BOX -->
 <div id="chatBox">
   <div class="chat-header">
+    <button class="close-btn" onclick="toggleChat()" style="position:static;width:auto;height:auto;border-radius:6px;padding:4px 10px;font-size:12px">×</button>
     <div class="chat-controls">
       <select id="chatAgentSelect"></select>
-      <label><input type="checkbox" id="pipelineMode"> Pipeline Mode</label>
+      <label>Pipeline Mode <input type="checkbox" id="pipelineMode"></label>
     </div>
-    <button class="close-btn" onclick="toggleChat()" style="position:static;width:24px;height:24px;font-size:12px">&times;</button>
   </div>
   <div id="chatMessages"></div>
   <div id="chatInput">
     <input type="text" id="chatInputField" placeholder="اكتب مهمتك هنا..." onkeydown="if(event.key==='Enter')sendChat()">
-    <button onclick="sendChat()">&#9889; إرسال</button>
-    <button class="mic-btn">&#127908;</button>
+    <button onclick="sendChat()">⚡ إرسال</button>
+    <button class="mic-btn" id="micBtn" onclick="toggleVoiceInput()">🎤</button>
   </div>
 </div>
 
-<!-- HOVER TOOLTIP -->
+<!-- CHAT TOGGLE -->
+<button id="chatToggle" onclick="toggleChat()">💬 فتح المحادثة</button>
+
+<!-- SOUND TOGGLE (Improvement #18) -->
+<button id="soundToggle" onclick="toggleSound()">🔊</button>
+
+<!-- VR BUTTON (Improvement #20) -->
+<button id="vrButton" onclick="enterVR()">🥽 وضع VR</button>
+
+<!-- CAMERA CONTROLS -->
+<div id="cameraControls">
+  <button onclick="resetView()"><span class="tooltip">إعادة ضبط</span>↺</button>
+  <button onclick="topView()"><span class="tooltip">نظرة علوية</span>▲</button>
+  <button onclick="focusSelected()"><span class="tooltip">تركيز</span>◎</button>
+  <button onclick="cinematicFly()"><span class="tooltip">جولة سينمائية</span>🎬</button>
+</div>
+
+<!-- TOOLTIP -->
 <div id="hoverTooltip">
   <div class="tt-id"></div>
   <div class="tt-name"></div>
   <div class="tt-cat"></div>
+  <div class="tt-status"><span class="dot"></span><span class="tt-status-text"></span></div>
+  <div class="tt-last-task"></div>
 </div>
 
-<!-- CAMERA CONTROLS -->
-<div id="cameraControls">
-  <button onclick="resetView()" title="Reset View">&#8634;<span class="tooltip">إعادة ضبط</span></button>
-  <button onclick="topView()" title="Top View">&#9650;<span class="tooltip">نظرة علوية</span></button>
-  <button onclick="focusSelected()" title="Focus Agent">&#9678;<span class="tooltip">تركيز</span></button>
-</div>
+<!-- FPS Counter -->
+<div id="fpsCounter"></div>
 
-<!-- ═══ SCRIPTS ═══ -->
+<canvas id="canvas3d"></canvas>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script>
-// ═══════════════════════════════════════════════════
-// ARMY81 3D DASHBOARD — FULL IMPLEMENTATION
-// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════════
+// ARMY81 3D COMMAND DASHBOARD v3.0
+// Hierarchical — A00 Supreme Commander + Category Leaders + Real Connections
+// ═══════════════════════════════════════════
 
 const GATEWAY = "http://localhost:8181";
 let isDemoMode = true;
-let selectedAgent = null;
 let chatOpen = false;
+let selectedAgent = null;
+let soundEnabled = false;
+let activeFilter = null;
+let searchOpen = false;
+let auditLogOpen = false;
+const auditEntries = [];
+
+// ═══ AUDIO SYSTEM (Improvement #18) ═══
+const AudioCtx = window.AudioContext || window.webkitAudioContext;
+let audioCtx = null;
+function playUISound(type) {
+  if (!soundEnabled) return;
+  if (!audioCtx) audioCtx = new AudioCtx();
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.connect(gain);
+  gain.connect(audioCtx.destination);
+  gain.gain.value = 0.05;
+  const t = audioCtx.currentTime;
+  if (type === 'click') { osc.frequency.setValueAtTime(800, t); osc.frequency.exponentialRampToValueAtTime(400, t + 0.1); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.15); osc.start(t); osc.stop(t + 0.15); }
+  else if (type === 'send') { osc.frequency.setValueAtTime(400, t); osc.frequency.exponentialRampToValueAtTime(1200, t + 0.2); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.3); osc.start(t); osc.stop(t + 0.3); }
+  else if (type === 'receive') { osc.frequency.setValueAtTime(1200, t); osc.frequency.exponentialRampToValueAtTime(600, t + 0.15); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.25); osc.start(t); osc.stop(t + 0.25); }
+  else if (type === 'alert') { osc.type = 'square'; osc.frequency.setValueAtTime(600, t); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.4); osc.start(t); osc.stop(t + 0.4); }
+  else if (type === 'beam') { osc.type = 'sine'; osc.frequency.setValueAtTime(200, t); osc.frequency.exponentialRampToValueAtTime(2000, t + 0.5); gain.gain.exponentialRampToValueAtTime(0.001, t + 0.6); osc.start(t); osc.stop(t + 0.6); }
+}
+function toggleSound() {
+  soundEnabled = !soundEnabled;
+  const btn = document.getElementById('soundToggle');
+  btn.textContent = soundEnabled ? '🔊' : '🔇';
+  btn.classList.toggle('muted', !soundEnabled);
+  if (soundEnabled) playUISound('click');
+}
 
 // ═══ AGENT DATA ═══
 const CATEGORIES = {
-  cat1_science:    { color: 0x00BFFF, hex: '#00BFFF', label: 'العلوم', labelEn: 'Science' },
-  cat2_society:    { color: 0x00FF88, hex: '#00FF88', label: 'المجتمع', labelEn: 'Society' },
-  cat3_tools:      { color: 0xFF6B00, hex: '#FF6B00', label: 'الأدوات', labelEn: 'Tools' },
-  cat4_management: { color: 0x9B59B6, hex: '#9B59B6', label: 'الإدارة', labelEn: 'Management' },
-  cat5_behavior:   { color: 0xFF1493, hex: '#FF1493', label: 'السلوك', labelEn: 'Behavior' },
-  cat6_leadership: { color: 0xFFD700, hex: '#FFD700', label: 'القيادة', labelEn: 'Leadership' },
-  cat7_new:        { color: 0xC0C0C0, hex: '#C0C0C0', label: 'الجديد', labelEn: 'New' }
+  cat1_science: { label: 'العلوم والتقنية', color: 0x00BFFF, hex: '#00BFFF', ring: 8 },
+  cat2_society: { label: 'المجتمع والسياسة', color: 0x00FF88, hex: '#00FF88', ring: 14 },
+  cat3_tools: { label: 'الأدوات والإعلام', color: 0xFF6B00, hex: '#FF6B00', ring: 20 },
+  cat4_management: { label: 'الإدارة والحوكمة', color: 0x9B59B6, hex: '#9B59B6', ring: 26 },
+  cat5_behavior: { label: 'السلوك والنفس', color: 0xFF1493, hex: '#FF1493', ring: 32 },
+  cat6_leadership: { label: 'القيادة والاستراتيجية', color: 0xFFD700, hex: '#FFD700', ring: 38 },
+  cat7_new: { label: 'الجيل الجديد', color: 0xC0C0C0, hex: '#C0C0C0', ring: 44 }
+};
+
+// ═══ SUPREME COMMANDER — القائد الأعلى ═══
+const SUPREME_COMMANDER = {
+  id: "A00", name: "Supreme Commander", name_ar: "القائد الأعلى",
+  cat: "commander", model: "gemini-pro",
+  desc: "القائد الأعلى لجيش الـ 81 وكيل. ينسّق الاستراتيجية العامة، يوزّع المهام، يراقب الأداء، ويتخذ القرارات الحاسمة."
+};
+
+// Category Leaders — قادة الفئات (يتصلون مباشرة بالقائد الأعلى)
+const CATEGORY_LEADERS = {
+  cat1_science: "A01",
+  cat2_society: "A10",
+  cat3_tools: "A25",
+  cat4_management: "A35",
+  cat5_behavior: "A43",
+  cat6_leadership: "A56",
+  cat7_new: "A72",
 };
 
 const AGENTS_DATA = [
-  {id:"A01",name:"Strategic Commander",name_ar:"وكيل القيادة الاستراتيجية",cat:"cat6_leadership",model:"gemini-pro",desc:"القائد الأعلى. يحلل الأهداف الكبرى ويضع الخطط ويوزع المهام."},
-  {id:"A02",name:"Science Researcher",name_ar:"وكيل البحث العلمي",cat:"cat1_science",model:"gemini-pro",desc:"يبحث في الأدبيات العلمية ويلخص أحدث الاكتشافات."},
-  {id:"A03",name:"Policy Analyst",name_ar:"وكيل تحليل السياسات",cat:"cat2_society",model:"gemini-pro",desc:"يحلل السياسات العامة ويقدم توصيات استراتيجية."},
-  {id:"A04",name:"Media Intelligence",name_ar:"وكيل الاستخبارات الإعلامية",cat:"cat3_tools",model:"gemini-flash",desc:"يراقب ويحلل المحتوى الإعلامي والأخباري."},
-  {id:"A05",name:"Code Developer",name_ar:"وكيل تطوير البرمجيات",cat:"cat3_tools",model:"gemini-flash",desc:"يطور البرمجيات ويكتب الأكواد البرمجية."},
-  {id:"A06",name:"Data Analyst",name_ar:"وكيل تحليل البيانات",cat:"cat4_management",model:"gemini-flash",desc:"يحلل البيانات ويستخرج الأنماط والرؤى."},
-  {id:"A07",name:"Medical Researcher",name_ar:"وكيل البحث الطبي",cat:"cat1_science",model:"gemini-pro",desc:"يبحث في المجالات الطبية والصحية."},
-  {id:"A08",name:"Financial Analyst",name_ar:"وكيل التحليل المالي",cat:"cat2_society",model:"gemini-pro",desc:"يحلل الأسواق المالية والاقتصادية."},
-  {id:"A09",name:"Security Analyst",name_ar:"وكيل تحليل الأمن السيبراني",cat:"cat3_tools",model:"gemini-flash",desc:"يحلل التهديدات الأمنية السيبرانية."},
-  {id:"A10",name:"Knowledge Manager",name_ar:"وكيل إدارة المعرفة",cat:"cat4_management",model:"gemini-flash",desc:"يدير قاعدة المعرفة ويصنف المعلومات."},
-  {id:"A11",name:"Translator",name_ar:"وكيل الترجمة والتعريب",cat:"cat3_tools",model:"gemini-flash",desc:"يترجم ويعرّب المحتوى بدقة عالية."},
-  {id:"A12",name:"Content Creator",name_ar:"وكيل صناعة المحتوى",cat:"cat2_society",model:"gemini-flash",desc:"ينشئ محتوى إبداعي متنوع."},
-  {id:"A13",name:"Legal Advisor",name_ar:"وكيل الاستشارات القانونية",cat:"cat2_society",model:"gemini-pro",desc:"يقدم استشارات قانونية متخصصة."},
-  {id:"A14",name:"Project Manager",name_ar:"وكيل إدارة المشاريع",cat:"cat4_management",model:"gemini-flash",desc:"يدير المشاريع ويتابع التنفيذ."},
-  {id:"A15",name:"Behavioral Psychologist",name_ar:"وكيل علم النفس السلوكي",cat:"cat5_behavior",model:"gemini-pro",desc:"يحلل السلوك البشري ويقدم رؤى نفسية."},
-  {id:"A16",name:"Negotiation Expert",name_ar:"وكيل خبير التفاوض",cat:"cat5_behavior",model:"gemini-flash",desc:"خبير في استراتيجيات التفاوض."},
-  {id:"A17",name:"Body Language Analyst",name_ar:"وكيل تحليل لغة الجسد",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل لغة الجسد والتواصل غير اللفظي."},
-  {id:"A18",name:"Influence & Persuasion",name_ar:"وكيل الإقناع والتأثير",cat:"cat5_behavior",model:"gemini-flash",desc:"خبير في تقنيات الإقناع والتأثير."},
-  {id:"A19",name:"Emotional Intelligence",name_ar:"وكيل الذكاء العاطفي",cat:"cat5_behavior",model:"gemini-flash",desc:"مدرب الذكاء العاطفي والوعي الذاتي."},
-  {id:"A20",name:"Social Dynamics",name_ar:"وكيل الديناميكيات الاجتماعية",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل الديناميكيات الاجتماعية والتفاعلات."},
-  {id:"A21",name:"Crowd Behavior",name_ar:"وكيل تحليل سلوك الجماهير",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل سلوك الجماهير والحشود."},
-  {id:"A22",name:"Behavioral Economist",name_ar:"وكيل الاقتصاد السلوكي",cat:"cat5_behavior",model:"gemini-flash",desc:"يدمج علم النفس مع الاقتصاد."},
-  {id:"A23",name:"Conflict Resolution",name_ar:"وكيل حل النزاعات",cat:"cat5_behavior",model:"gemini-flash",desc:"متخصص في حل النزاعات والوساطة."},
-  {id:"A24",name:"Leadership Psychology",name_ar:"وكيل سيكولوجية القيادة",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل سيكولوجية القيادة والتأثير."},
-  {id:"A25",name:"Communication Expert",name_ar:"وكيل خبير التواصل",cat:"cat5_behavior",model:"gemini-flash",desc:"خبير في استراتيجيات التواصل الفعال."},
-  {id:"A26",name:"Decision Psychology",name_ar:"وكيل سيكولوجية القرار",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل عمليات صنع القرار النفسية."},
-  {id:"A27",name:"Cultural Intelligence",name_ar:"وكيل الذكاء الثقافي",cat:"cat5_behavior",model:"gemini-flash",desc:"خبير في التفاهم الثقافي المتبادل."},
-  {id:"A28",name:"Military Strategist",name_ar:"وكيل الاستراتيجية العسكرية",cat:"cat6_leadership",model:"gemini-pro",desc:"خبير في الاستراتيجية العسكرية والدفاعية."},
-  {id:"A29",name:"Crisis Manager",name_ar:"وكيل إدارة الأزمات",cat:"cat6_leadership",model:"gemini-pro",desc:"يدير الأزمات ويضع خطط الطوارئ."},
-  {id:"A30",name:"Innovation Leader",name_ar:"وكيل قيادة الابتكار",cat:"cat6_leadership",model:"gemini-flash",desc:"يقود مبادرات الابتكار والتجديد."},
-  {id:"A31",name:"Intelligence Analyst",name_ar:"وكيل تحليل الاستخبارات",cat:"cat6_leadership",model:"gemini-pro",desc:"يحلل المعلومات الاستخباراتية."},
-  {id:"A32",name:"Geopolitics Expert",name_ar:"وكيل خبير الجيوسياسة",cat:"cat6_leadership",model:"gemini-pro",desc:"خبير في الجيوسياسة والعلاقات الدولية."},
-  {id:"A33",name:"Future Forecaster",name_ar:"وكيل استشراف المستقبل",cat:"cat6_leadership",model:"gemini-pro",desc:"يستشرف المستقبل ويحلل الاتجاهات."},
-  {id:"A34",name:"Risk Assessor",name_ar:"وكيل تقييم المخاطر",cat:"cat6_leadership",model:"gemini-flash",desc:"يقيّم المخاطر ويضع استراتيجيات التخفيف."},
-  {id:"A35",name:"Change Management",name_ar:"وكيل إدارة التغيير",cat:"cat6_leadership",model:"gemini-flash",desc:"يدير عمليات التغيير المؤسسي."},
-  {id:"A36",name:"Org Strategist",name_ar:"وكيل استراتيجي المنظمات",cat:"cat6_leadership",model:"gemini-pro",desc:"يضع استراتيجيات تطوير المنظمات."},
-  {id:"A37",name:"Decision Architect",name_ar:"وكيل مهندس القرارات",cat:"cat6_leadership",model:"gemini-pro",desc:"يصمم أطر صنع القرار المعقدة."},
-  {id:"A38",name:"Physics & Quantum",name_ar:"وكيل الفيزياء والكم",cat:"cat1_science",model:"gemini-pro",desc:"متخصص في الفيزياء وعلوم الكم."},
-  {id:"A39",name:"Climate & Environment",name_ar:"وكيل المناخ والبيئة",cat:"cat1_science",model:"gemini-pro",desc:"يحلل قضايا المناخ والبيئة."},
-  {id:"A40",name:"Tech Scout",name_ar:"وكيل رصد التكنولوجيا",cat:"cat1_science",model:"gemini-flash",desc:"يرصد أحدث التطورات التكنولوجية."},
-  {id:"A41",name:"Global Economics",name_ar:"وكيل الاقتصاد العالمي",cat:"cat2_society",model:"gemini-pro",desc:"يحلل الاقتصاد العالمي والأسواق."},
-  {id:"A42",name:"Crypto & Digital",name_ar:"وكيل العملات الرقمية",cat:"cat2_society",model:"gemini-flash",desc:"متخصص في العملات الرقمية والبلوكتشين."},
-  {id:"A43",name:"History Analyst",name_ar:"وكيل تحليل التاريخ",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الأحداث التاريخية ويستخلص الدروس."},
-  {id:"A44",name:"Media Analyst",name_ar:"وكيل تحليل الإعلام",cat:"cat2_society",model:"gemini-flash",desc:"يحلل المحتوى الإعلامي والاتجاهات."},
-  {id:"A45",name:"International Law",name_ar:"وكيل القانون الدولي",cat:"cat2_society",model:"gemini-pro",desc:"متخصص في القانون الدولي والمعاهدات."},
-  {id:"A46",name:"Arts & Culture",name_ar:"وكيل الفنون والثقافة",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الفنون والثقافة والإبداع."},
-  {id:"A47",name:"Linguistics",name_ar:"وكيل اللغويات",cat:"cat2_society",model:"gemini-flash",desc:"متخصص في علم اللغة والتحليل اللغوي."},
-  {id:"A48",name:"Advanced Mathematics",name_ar:"وكيل الرياضيات المتقدمة",cat:"cat2_society",model:"gemini-pro",desc:"متخصص في الرياضيات المتقدمة والنمذجة."},
-  {id:"A49",name:"Sociologist",name_ar:"وكيل علم الاجتماع",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الظواهر الاجتماعية والمجتمعية."},
-  {id:"A50",name:"Education Specialist",name_ar:"وكيل التعليم والتعلّم",cat:"cat2_society",model:"gemini-flash",desc:"متخصص في التعليم وطرق التعلم."},
-  {id:"A51",name:"Reverse Engineering",name_ar:"وكيل الهندسة العكسية",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الأنظمة عكسياً لفهم بنيتها."},
-  {id:"A52",name:"Clinical Medicine",name_ar:"وكيل الطب السريري",cat:"cat1_science",model:"gemini-pro",desc:"متخصص في الطب السريري والتشخيص."},
-  {id:"A53",name:"Advanced Manufacturing",name_ar:"وكيل التصنيع المتقدم",cat:"cat1_science",model:"gemini-flash",desc:"متخصص في تقنيات التصنيع المتقدمة."},
-  {id:"A54",name:"Robotics",name_ar:"وكيل الروبوتات",cat:"cat1_science",model:"gemini-flash",desc:"متخصص في الروبوتات والأتمتة."},
-  {id:"A55",name:"Space & Defense",name_ar:"وكيل الفضاء والدفاع",cat:"cat1_science",model:"gemini-pro",desc:"متخصص في علوم الفضاء والدفاع."},
-  {id:"A56",name:"Deep Media Intel",name_ar:"وكيل الاستخبارات الإعلامية العميقة",cat:"cat3_tools",model:"gemini-flash",desc:"تحليل إعلامي عميق ومتقدم."},
-  {id:"A57",name:"Integration Developer",name_ar:"وكيل تطوير التكاملات",cat:"cat3_tools",model:"gemini-flash",desc:"يطور التكاملات بين الأنظمة."},
-  {id:"A58",name:"Early Warning",name_ar:"وكيل الإنذار المبكر",cat:"cat3_tools",model:"gemini-flash",desc:"نظام إنذار مبكر للتهديدات."},
-  {id:"A59",name:"Open Innovation",name_ar:"وكيل الابتكار المفتوح",cat:"cat3_tools",model:"gemini-flash",desc:"يرصد فرص الابتكار المفتوح."},
-  {id:"A60",name:"Anti-Disinformation",name_ar:"وكيل مكافحة التضليل",cat:"cat3_tools",model:"gemini-flash",desc:"يكافح التضليل والمعلومات المغلوطة."},
-  {id:"A61",name:"Computational Biology",name_ar:"وكيل الحوسبة البيولوجية",cat:"cat3_tools",model:"gemini-pro",desc:"يدمج الحوسبة مع علم الأحياء."},
-  {id:"A62",name:"Governance",name_ar:"وكيل الحوكمة المؤسسية",cat:"cat4_management",model:"gemini-flash",desc:"متخصص في الحوكمة المؤسسية."},
-  {id:"A63",name:"Large Organizations",name_ar:"وكيل إدارة المؤسسات الكبرى",cat:"cat4_management",model:"gemini-flash",desc:"يدير المؤسسات الكبرى والمعقدة."},
-  {id:"A64",name:"Mega Projects",name_ar:"وكيل إدارة المشاريع العملاقة",cat:"cat4_management",model:"gemini-pro",desc:"يدير المشاريع العملاقة والضخمة."},
-  {id:"A65",name:"Digital Transformation",name_ar:"وكيل التحول الرقمي",cat:"cat4_management",model:"gemini-flash",desc:"يقود مبادرات التحول الرقمي."},
-  {id:"A66",name:"Performance Management",name_ar:"وكيل إدارة الأداء",cat:"cat4_management",model:"gemini-flash",desc:"يدير ويحسن أداء الفرق والأنظمة."},
-  {id:"A67",name:"Human Connection",name_ar:"وكيل قيادة التواصل الإنساني",cat:"cat6_leadership",model:"gemini-flash",desc:"يقود التواصل الإنساني والعلاقات."},
-  {id:"A68",name:"Resource Allocation",name_ar:"وكيل استراتيجية توزيع الموارد",cat:"cat6_leadership",model:"gemini-flash",desc:"يوزع الموارد بكفاءة استراتيجية."},
-  {id:"A69",name:"Comprehensive Evaluator",name_ar:"وكيل التقييم الشامل",cat:"cat6_leadership",model:"gemini-pro",desc:"يقيّم الأداء والنتائج بشمولية."},
-  {id:"A70",name:"Radical Innovation",name_ar:"وكيل الابتكار الجذري",cat:"cat6_leadership",model:"gemini-pro",desc:"يقود الابتكار الجذري والتحويلي."},
-  {id:"A71",name:"Internal Security",name_ar:"وكيل الأمن الداخلي والنزاهة",cat:"cat6_leadership",model:"gemini-flash",desc:"يحمي النزاهة والأمن الداخلي."},
-  {id:"A72",name:"Self-Evolution",name_ar:"وكيل مراقبة التطور الذاتي",cat:"cat7_new",model:"gemini-pro",desc:"يراقب ويحسن تطور النظام ذاتياً."},
-  {id:"A73",name:"Multi-Agent Coordinator",name_ar:"وكيل تنسيق متعدد الوكلاء",cat:"cat7_new",model:"gemini-pro",desc:"ينسق العمل بين الوكلاء المتعددين."},
-  {id:"A74",name:"Quality Controller",name_ar:"وكيل ضبط الجودة",cat:"cat7_new",model:"gemini-pro",desc:"يضبط جودة المخرجات والعمليات."},
-  {id:"A75",name:"System Optimizer",name_ar:"وكيل تحسين النظام",cat:"cat7_new",model:"gemini-flash",desc:"يحسن أداء النظام بشكل مستمر."},
-  {id:"A76",name:"Learning Aggregator",name_ar:"وكيل تجميع التعلم",cat:"cat7_new",model:"gemini-flash",desc:"يجمع ويدمج التعلم من جميع الوكلاء."},
-  {id:"A77",name:"Workflow Orchestrator",name_ar:"وكيل تنسيق سير العمل",cat:"cat7_new",model:"gemini-pro",desc:"ينسق سير العمل والعمليات المعقدة."},
-  {id:"A78",name:"Resource Allocator",name_ar:"وكيل التخصيص الديناميكي للموارد",cat:"cat7_new",model:"gemini-flash",desc:"يخصص الموارد ديناميكياً حسب الحاجة."},
-  {id:"A79",name:"Feedback Processor",name_ar:"وكيل معالجة التغذية الراجعة",cat:"cat7_new",model:"gemini-flash",desc:"يعالج التغذية الراجعة ويحسن الأداء."},
-  {id:"A80",name:"Pattern Recognizer",name_ar:"وكيل التعرف على الأنماط",cat:"cat7_new",model:"gemini-pro",desc:"يتعرف على الأنماط في البيانات المعقدة."},
-  {id:"A81",name:"Meta-Intelligence",name_ar:"الوكيل الميتا الاستخباراتي",cat:"cat7_new",model:"gemini-pro",desc:"الذكاء الفوقي الذي يراقب كل الوكلاء."}
+{id:"A01",name:"Science Researcher",name_ar:"وكيل البحث العلمي",cat:"cat1_science",model:"gemini-pro",desc:"يبحث في الأدبيات العلمية ويلخص أحدث الاكتشافات ويربطها بالتطبيقات العملية.",isLeader:true},
+{id:"A02",name:"Medical Research",name_ar:"وكيل البحث الطبي",cat:"cat1_science",model:"gemini-pro",desc:"يبحث في الأدبيات الطبية، يلخص الأبحاث، ويجيب على الأسئلة الطبية بمصادر موثوقة."},
+{id:"A03",name:"Physics & Quantum Science",name_ar:"وكيل الفيزياء وعلوم الكم",cat:"cat1_science",model:"gemini-pro",desc:"يشرح المفاهيم الفيزيائية من الكلاسيكية إلى الكم ويحلل تطبيقات الفيزياء في التقنية."},
+{id:"A04",name:"Climate & Environment",name_ar:"وكيل المناخ والبيئة",cat:"cat1_science",model:"gemini-flash",desc:"يحلل التغير المناخي والتحديات البيئية ويقيّم الحلول المستدامة."},
+{id:"A05",name:"Technology Scout",name_ar:"وكيل كشف التقنيات الناشئة",cat:"cat1_science",model:"gemini-flash",desc:"يرصد التقنيات الناشئة ويقيّم أثرها التحويلي."},
+{id:"A06",name:"Clinical Medicine",name_ar:"وكيل الطب السريري",cat:"cat1_science",model:"gemini-pro",desc:"يحلل الحالات السريرية والبروتوكولات العلاجية."},
+{id:"A07",name:"Advanced Manufacturing",name_ar:"وكيل التصنيع المتقدم",cat:"cat1_science",model:"gemini-flash",desc:"يحلل تقنيات التصنيع المتقدم والأتمتة."},
+{id:"A08",name:"Robotics & Automation",name_ar:"وكيل الروبوتات والأتمتة",cat:"cat1_science",model:"gemini-flash",desc:"يحلل مجال الروبوتات والأتمتة."},
+{id:"A09",name:"Space & Defense Technology",name_ar:"وكيل تقنيات الفضاء والدفاع",cat:"cat1_science",model:"gemini-flash",desc:"يحلل مجال الفضاء التجاري والدفاعي."},
+{id:"A10",name:"Policy Analyst",name_ar:"وكيل تحليل السياسات",cat:"cat2_society",model:"gemini-flash",desc:"يحلل السياسات العامة والتشريعات."},
+{id:"A11",name:"Financial Analyst",name_ar:"وكيل التحليل المالي",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الأسواق المالية والبيانات الاقتصادية."},
+{id:"A12",name:"Content Creator",name_ar:"وكيل إنشاء المحتوى",cat:"cat2_society",model:"gemini-flash",desc:"ينشئ محتوى عالي الجودة."},
+{id:"A13",name:"Legal Advisor",name_ar:"وكيل الاستشارة القانونية",cat:"cat2_society",model:"gemini-pro",desc:"يحلل القضايا القانونية ويفسّر القوانين."},
+{id:"A14",name:"Global Economics Analyst",name_ar:"وكيل الاقتصاد العالمي",cat:"cat2_society",model:"gemini-pro",desc:"يحلل الاقتصاد الكلي العالمي."},
+{id:"A15",name:"Crypto & Digital Assets",name_ar:"وكيل العملات الرقمية",cat:"cat2_society",model:"gemini-flash",desc:"يحلل سوق العملات الرقمية."},
+{id:"A16",name:"History Analyst",name_ar:"وكيل تحليل التاريخ",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الأحداث التاريخية ويستخرج الدروس."},
+{id:"A17",name:"Media & Communication",name_ar:"وكيل تحليل الإعلام",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الخطاب الإعلامي ويرصد الاتجاهات."},
+{id:"A18",name:"International Law Expert",name_ar:"وكيل القانون الدولي",cat:"cat2_society",model:"gemini-pro",desc:"يحلل القانون الدولي والمعاهدات."},
+{id:"A19",name:"Arts & Culture Analyst",name_ar:"وكيل الفنون والثقافة",cat:"cat2_society",model:"gemini-flash",desc:"يحلل التعبيرات الثقافية والفنية."},
+{id:"A20",name:"Linguistics & Language",name_ar:"وكيل اللغويات",cat:"cat2_society",model:"gemini-flash",desc:"يحلل بنية اللغات وتطورها."},
+{id:"A21",name:"Advanced Mathematics",name_ar:"وكيل الرياضيات المتقدمة",cat:"cat2_society",model:"gemini-pro",desc:"يحل المسائل الرياضية المتقدمة."},
+{id:"A22",name:"Sociologist",name_ar:"وكيل علم الاجتماع",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الظواهر الاجتماعية."},
+{id:"A23",name:"Education Specialist",name_ar:"وكيل التعليم والتعلّم",cat:"cat2_society",model:"gemini-flash",desc:"يصمم تجارب التعلم."},
+{id:"A24",name:"Reverse Engineering",name_ar:"وكيل الهندسة العكسية",cat:"cat2_society",model:"gemini-flash",desc:"يحلل الأنظمة بالهندسة العكسية."},
+{id:"A25",name:"Media Intelligence",name_ar:"وكيل الاستخبارات الإعلامية",cat:"cat3_tools",model:"gemini-flash",desc:"يرصد الأخبار يومياً من مئات المصادر."},
+{id:"A26",name:"Code Developer",name_ar:"وكيل تطوير البرمجيات",cat:"cat3_tools",model:"gemini-flash",desc:"يكتب كوداً نظيفاً ويصحح الأخطاء."},
+{id:"A27",name:"Security Analyst",name_ar:"وكيل الأمن السيبراني",cat:"cat3_tools",model:"gemini-flash",desc:"يحلل التهديدات الأمنية ويرصد الثغرات."},
+{id:"A28",name:"Translator & Localizer",name_ar:"وكيل الترجمة والتعريب",cat:"cat3_tools",model:"gemini-flash",desc:"يترجم ويُعرّب المحتوى بدقة."},
+{id:"A29",name:"Deep Media Intelligence",name_ar:"وكيل الاستخبارات العميقة",cat:"cat3_tools",model:"gemini-flash",desc:"يجمع الاستخبارات من مصادر إعلامية متعددة."},
+{id:"A30",name:"Integration Developer",name_ar:"وكيل تطوير التكاملات",cat:"cat3_tools",model:"gemini-flash",desc:"يصمم وينفذ تكاملات APIs."},
+{id:"A31",name:"Early Warning System",name_ar:"وكيل الإنذار المبكر",cat:"cat3_tools",model:"gemini-flash",desc:"يرصد إشارات التهديدات والفرص القادمة."},
+{id:"A32",name:"Open Innovation Scout",name_ar:"وكيل الابتكار المفتوح",cat:"cat3_tools",model:"gemini-flash",desc:"يكتشف الابتكارات والحلول المفتوحة المصدر."},
+{id:"A33",name:"Anti-Disinformation",name_ar:"وكيل مكافحة التضليل",cat:"cat3_tools",model:"gemini-flash",desc:"يكشف المعلومات المضللة والأخبار الكاذبة."},
+{id:"A34",name:"Computational Biology",name_ar:"وكيل الحوسبة البيولوجية",cat:"cat3_tools",model:"gemini-pro",desc:"يطبق الحوسبة على مشاكل البيولوجيا."},
+{id:"A35",name:"Data Analyst",name_ar:"وكيل تحليل البيانات",cat:"cat4_management",model:"gemini-flash",desc:"يحلل البيانات الخام ويكشف الأنماط."},
+{id:"A36",name:"Knowledge Manager",name_ar:"وكيل إدارة المعرفة",cat:"cat4_management",model:"gemini-flash",desc:"يجمع المعرفة من كل الوكلاء وينظمها."},
+{id:"A37",name:"Project Manager",name_ar:"وكيل إدارة المشاريع",cat:"cat4_management",model:"gemini-flash",desc:"يخطط المشاريع ويتتبع التقدم."},
+{id:"A38",name:"Governance Specialist",name_ar:"وكيل الحوكمة المؤسسية",cat:"cat4_management",model:"gemini-flash",desc:"يصمم أطر الحوكمة المؤسسية."},
+{id:"A39",name:"Large Organizations",name_ar:"وكيل إدارة المؤسسات الكبرى",cat:"cat4_management",model:"gemini-flash",desc:"متخصص في إدارة المنظمات الكبيرة."},
+{id:"A40",name:"Mega Projects Manager",name_ar:"وكيل المشاريع العملاقة",cat:"cat4_management",model:"gemini-pro",desc:"يدير المشاريع العملاقة متعددة السنوات."},
+{id:"A41",name:"Digital Transformation",name_ar:"وكيل التحول الرقمي",cat:"cat4_management",model:"gemini-flash",desc:"يقود رحلات التحول الرقمي."},
+{id:"A42",name:"Performance Management",name_ar:"وكيل إدارة الأداء",cat:"cat4_management",model:"gemini-flash",desc:"يصمم أنظمة قياس وتحسين الأداء."},
+{id:"A43",name:"Behavioral Psychologist",name_ar:"وكيل علم النفس السلوكي",cat:"cat5_behavior",model:"gemini-pro",desc:"يحلل السلوك البشري والدوافع الخفية."},
+{id:"A44",name:"Negotiation Expert",name_ar:"وكيل خبير التفاوض",cat:"cat5_behavior",model:"gemini-flash",desc:"يصمم استراتيجيات التفاوض."},
+{id:"A45",name:"Body Language Analyst",name_ar:"وكيل تحليل لغة الجسد",cat:"cat5_behavior",model:"gemini-flash",desc:"يقرأ الإشارات غير اللفظية."},
+{id:"A46",name:"Influence & Persuasion",name_ar:"وكيل الإقناع والتأثير",cat:"cat5_behavior",model:"gemini-flash",desc:"يصمم رسائل مؤثرة وحملات إقناع."},
+{id:"A47",name:"Emotional Intelligence",name_ar:"وكيل الذكاء العاطفي",cat:"cat5_behavior",model:"gemini-flash",desc:"يطور الوعي الذاتي والتعاطف."},
+{id:"A48",name:"Social Dynamics",name_ar:"وكيل الديناميكيات الاجتماعية",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل الديناميكيات الجماعية."},
+{id:"A49",name:"Crowd Behavior",name_ar:"وكيل سلوك الجماهير",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل سلوك الجماهير والحشود."},
+{id:"A50",name:"Behavioral Economist",name_ar:"وكيل الاقتصاد السلوكي",cat:"cat5_behavior",model:"gemini-flash",desc:"يطبق الاقتصاد السلوكي."},
+{id:"A51",name:"Conflict Resolution",name_ar:"وكيل حل النزاعات",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل النزاعات ويصمم مسارات الحل."},
+{id:"A52",name:"Leadership Psychology",name_ar:"وكيل سيكولوجية القيادة",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل أنماط القيادة وتطوير القادة."},
+{id:"A53",name:"Communication Expert",name_ar:"وكيل خبير التواصل",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل أنماط التواصل."},
+{id:"A54",name:"Decision Psychology",name_ar:"وكيل سيكولوجية القرار",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل أنماط صنع القرار."},
+{id:"A55",name:"Cultural Intelligence",name_ar:"وكيل الذكاء الثقافي",cat:"cat5_behavior",model:"gemini-flash",desc:"يحلل الفوارق الثقافية."},
+{id:"A56",name:"Strategic Commander",name_ar:"وكيل القيادة الاستراتيجية",cat:"cat6_leadership",model:"gemini-pro",desc:"القائد الأعلى. يحلل الأهداف الكبرى ويضع الخطط."},
+{id:"A57",name:"Military Strategist",name_ar:"وكيل الاستراتيجية العسكرية",cat:"cat6_leadership",model:"gemini-pro",desc:"يحلل النزاعات العسكرية والاستراتيجيات الدفاعية."},
+{id:"A58",name:"Crisis Manager",name_ar:"وكيل إدارة الأزمات",cat:"cat6_leadership",model:"gemini-pro",desc:"يدير الأزمات من لحظة اندلاعها حتى التعافي."},
+{id:"A59",name:"Innovation Leader",name_ar:"وكيل قيادة الابتكار",cat:"cat6_leadership",model:"gemini-flash",desc:"يقود ثقافة الابتكار."},
+{id:"A60",name:"Intelligence Analyst",name_ar:"وكيل تحليل الاستخبارات",cat:"cat6_leadership",model:"gemini-pro",desc:"يجمع المعلومات ويحللها لإنتاج استخبارات."},
+{id:"A61",name:"Geopolitics Expert",name_ar:"وكيل خبير الجيوسياسة",cat:"cat6_leadership",model:"gemini-pro",desc:"يحلل التحولات الجيوسياسية وموازين القوى."},
+{id:"A62",name:"Future Forecaster",name_ar:"وكيل استشراف المستقبل",cat:"cat6_leadership",model:"gemini-pro",desc:"يرصد الإشارات ويبني سيناريوهات المستقبل."},
+{id:"A63",name:"Risk Assessor",name_ar:"وكيل تقييم المخاطر",cat:"cat6_leadership",model:"gemini-flash",desc:"يقيّم المخاطر الاستراتيجية والتشغيلية."},
+{id:"A64",name:"Change Management",name_ar:"وكيل إدارة التغيير",cat:"cat6_leadership",model:"gemini-flash",desc:"يقود مبادرات التغيير المؤسسي."},
+{id:"A65",name:"Organizational Strategist",name_ar:"وكيل استراتيجي المنظمات",cat:"cat6_leadership",model:"gemini-pro",desc:"يصمم الهياكل التنظيمية."},
+{id:"A66",name:"Decision Architect",name_ar:"وكيل مهندس القرارات",cat:"cat6_leadership",model:"gemini-pro",desc:"يصمم أنظمة صنع القرار المؤسسية."},
+{id:"A67",name:"Human Connection Leader",name_ar:"وكيل قيادة التواصل الإنساني",cat:"cat6_leadership",model:"gemini-flash",desc:"يبني الثقة والتواصل الحقيقي."},
+{id:"A68",name:"Resource Allocation",name_ar:"وكيل توزيع الموارد",cat:"cat6_leadership",model:"gemini-flash",desc:"يحسّن توزيع الموارد المحدودة."},
+{id:"A69",name:"Comprehensive Evaluator",name_ar:"وكيل التقييم الشامل",cat:"cat6_leadership",model:"gemini-pro",desc:"يُجري تقييمات شاملة ومعمّقة."},
+{id:"A70",name:"Radical Innovation",name_ar:"وكيل الابتكار الجذري",cat:"cat6_leadership",model:"gemini-pro",desc:"يقود الابتكارات الجذرية."},
+{id:"A71",name:"Internal Security",name_ar:"وكيل الأمن الداخلي",cat:"cat6_leadership",model:"gemini-flash",desc:"يحمي المنظمة من المخاطر الداخلية."},
+{id:"A72",name:"Self-Evolution Monitor",name_ar:"وكيل مراقبة التطور الذاتي",cat:"cat7_new",model:"gemini-pro",desc:"يراقب أداء الوكلاء ويقترح تحسينات."},
+{id:"A73",name:"Multi-Agent Coordinator",name_ar:"وكيل تنسيق متعدد الوكلاء",cat:"cat7_new",model:"gemini-pro",desc:"ينسق العمل بين الوكلاء المتعددة."},
+{id:"A74",name:"Quality Controller",name_ar:"وكيل ضبط الجودة",cat:"cat7_new",model:"gemini-pro",desc:"يتحقق من جودة مخرجات الوكلاء."},
+{id:"A75",name:"System Optimizer",name_ar:"وكيل تحسين النظام",cat:"cat7_new",model:"gemini-flash",desc:"يحسّن أداء النظام الكلي."},
+{id:"A76",name:"Learning Aggregator",name_ar:"وكيل تجميع التعلم",cat:"cat7_new",model:"gemini-flash",desc:"يجمّع دروس التعلم من جميع الوكلاء."},
+{id:"A77",name:"Workflow Orchestrator",name_ar:"وكيل تنسيق سير العمل",cat:"cat7_new",model:"gemini-pro",desc:"يصمم وينفذ تدفقات عمل معقدة."},
+{id:"A78",name:"Dynamic Resource Allocator",name_ar:"وكيل التخصيص الديناميكي",cat:"cat7_new",model:"gemini-flash",desc:"يخصص موارد النظام ديناميكياً."},
+{id:"A79",name:"Feedback Processor",name_ar:"وكيل معالجة التغذية الراجعة",cat:"cat7_new",model:"gemini-flash",desc:"يجمع ويحلل التغذية الراجعة."},
+{id:"A80",name:"Pattern Recognizer",name_ar:"وكيل التعرف على الأنماط",cat:"cat7_new",model:"gemini-pro",desc:"يكتشف الأنماط الخفية في البيانات."},
+{id:"A81",name:"Meta-Intelligence",name_ar:"الوكيل الميتا الاستخباراتي",cat:"cat7_new",model:"gemini-pro",desc:"القائد الاستراتيجي للنظام الكامل."}
 ];
+
+// Agent states (Improvement #12)
+const agentStates = {};
+AGENTS_DATA.forEach(a => {
+  agentStates[a.id] = {
+    status: Math.random() > 0.15 ? 'active' : (Math.random() > 0.5 ? 'busy' : 'idle'),
+    lastTask: ['تحليل بيانات', 'مراجعة تقرير', 'بحث متقدم', 'تنسيق مهام', 'إعداد ملخص'][Math.floor(Math.random()*5)],
+    tasks: Math.floor(Math.random() * 300 + 50),
+    accuracy: (Math.random() * 10 + 88).toFixed(0)
+  };
+});
 
 // ═══ THREE.JS SETUP ═══
 const canvas = document.getElementById('canvas3d');
@@ -339,206 +482,285 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.2;
+// Shadows (Improvement #15)
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x000510);
 scene.fog = new THREE.FogExp2(0x000510, 0.008);
 
-const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 500);
 camera.position.set(0, 25, 50);
-camera.lookAt(0, 0, 0);
 
-const controls = new THREE.OrbitControls(camera, renderer.domElement);
+const controls = new THREE.OrbitControls(camera, canvas);
 controls.enableDamping = true;
-controls.dampingFactor = 0.05;
-controls.minDistance = 15;
+controls.dampingFactor = 0.08;
 controls.maxDistance = 120;
-controls.maxPolarAngle = Math.PI * 0.85;
+controls.minDistance = 5;
+// Touch support (Improvement #10)
+controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.DOLLY_PAN };
+
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
 
 // ═══ POST-PROCESSING ═══
 const composer = new THREE.EffectComposer(renderer);
-const renderPass = new THREE.RenderPass(scene, camera);
-composer.addPass(renderPass);
-
-const bloomPass = new THREE.UnrealBloomPass(
-  new THREE.Vector2(window.innerWidth, window.innerHeight), 1.5, 0.4, 0.85
-);
-bloomPass.threshold = 0.1;
-bloomPass.strength = 1.8;
-bloomPass.radius = 0.6;
+composer.addPass(new THREE.RenderPass(scene, camera));
+const bloomPass = new THREE.UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.2, 0.5, 0.3);
 composer.addPass(bloomPass);
 
+// ═══ LIGHTING ═══
+const ambientLight = new THREE.AmbientLight(0x111122, 0.5);
+scene.add(ambientLight);
+
+const coreLight = new THREE.PointLight(0xFFD700, 2, 80);
+coreLight.castShadow = true;
+coreLight.shadow.mapSize.width = 512;
+coreLight.shadow.mapSize.height = 512;
+scene.add(coreLight);
+
+const rimLight = new THREE.DirectionalLight(0x4444ff, 0.3);
+rimLight.position.set(-30, 20, -30);
+scene.add(rimLight);
+
 // ═══ STARFIELD ═══
-function createStarfield() {
-  const starsGeo = new THREE.BufferGeometry();
-  const count = 3000;
-  const positions = new Float32Array(count * 3);
-  const sizes = new Float32Array(count);
-  for (let i = 0; i < count; i++) {
-    positions[i * 3] = (Math.random() - 0.5) * 400;
-    positions[i * 3 + 1] = (Math.random() - 0.5) * 400;
-    positions[i * 3 + 2] = (Math.random() - 0.5) * 400;
-    sizes[i] = Math.random() * 1.5 + 0.5;
-  }
-  starsGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-  starsGeo.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
-  const starsMat = new THREE.PointsMaterial({
-    color: 0xffffff, size: 0.5, transparent: true, opacity: 0.8,
-    sizeAttenuation: true, blending: THREE.AdditiveBlending
-  });
-  const stars = new THREE.Points(starsGeo, starsMat);
-  scene.add(stars);
-  return stars;
+const starCount = 3000;
+const starGeo = new THREE.BufferGeometry();
+const starPos = new Float32Array(starCount * 3);
+const starColors = new Float32Array(starCount * 3);
+for (let i = 0; i < starCount; i++) {
+  starPos[i*3] = (Math.random()-0.5)*400;
+  starPos[i*3+1] = (Math.random()-0.5)*400;
+  starPos[i*3+2] = (Math.random()-0.5)*400;
+  const c = Math.random()*0.5+0.5;
+  starColors[i*3] = c; starColors[i*3+1] = c; starColors[i*3+2] = c + Math.random()*0.2;
 }
-const starfield = createStarfield();
+starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
+starGeo.setAttribute('color', new THREE.BufferAttribute(starColors, 3));
+const starMat = new THREE.PointsMaterial({ size: 0.5, vertexColors: true, transparent: true, opacity: 0.8 });
+const starfield = new THREE.Points(starGeo, starMat);
+scene.add(starfield);
 
-// ═══ CORE SPHERE (Army81 Center) ═══
-const coreGroup = new THREE.Group();
-scene.add(coreGroup);
-
-const coreMat = new THREE.MeshPhongMaterial({
-  color: 0xFFD700, emissive: 0xFFD700, emissiveIntensity: 0.6,
-  transparent: true, opacity: 0.85, shininess: 100
-});
-const coreGeo = new THREE.SphereGeometry(2.5, 64, 64);
-const coreMesh = new THREE.Mesh(coreGeo, coreMat);
-coreGroup.add(coreMesh);
-
-// Core glow
-const coreGlowMat = new THREE.MeshBasicMaterial({
-  color: 0xFFD700, transparent: true, opacity: 0.15, side: THREE.BackSide
-});
-const coreGlow = new THREE.Mesh(new THREE.SphereGeometry(3.5, 32, 32), coreGlowMat);
-coreGroup.add(coreGlow);
-
-// Core wireframe
-const coreWire = new THREE.Mesh(
-  new THREE.SphereGeometry(2.8, 16, 16),
-  new THREE.MeshBasicMaterial({ color: 0xFFD700, wireframe: true, transparent: true, opacity: 0.15 })
-);
-coreGroup.add(coreWire);
-
-// Core light
-const coreLight = new THREE.PointLight(0xFFD700, 2, 60);
-coreGroup.add(coreLight);
-
-// Ambient light
-scene.add(new THREE.AmbientLight(0x111122, 0.5));
-
-// ═══ RING GUIDES ═══
-const catOrder = ['cat1_science','cat2_society','cat3_tools','cat4_management','cat5_behavior','cat6_leadership','cat7_new'];
-const ringRadii = [10, 15, 20, 24, 28, 33, 38];
-
-catOrder.forEach((cat, i) => {
-  const ringGeo = new THREE.RingGeometry(ringRadii[i] - 0.02, ringRadii[i] + 0.02, 128);
-  const ringMat = new THREE.MeshBasicMaterial({
-    color: CATEGORIES[cat].color, transparent: true, opacity: 0.08, side: THREE.DoubleSide
+// ═══ NEBULA EFFECT (Improvement #11) ═══
+function createNebula(color, pos, scale) {
+  const nebulaGeo = new THREE.PlaneGeometry(80*scale, 80*scale);
+  const nebulaMat = new THREE.MeshBasicMaterial({
+    color: color, transparent: true, opacity: 0.015, side: THREE.DoubleSide,
+    blending: THREE.AdditiveBlending
   });
+  const nebula = new THREE.Mesh(nebulaGeo, nebulaMat);
+  nebula.position.copy(pos);
+  nebula.rotation.set(Math.random()*Math.PI, Math.random()*Math.PI, Math.random()*Math.PI);
+  scene.add(nebula);
+  return nebula;
+}
+const nebulae = [
+  createNebula(0x4400aa, new THREE.Vector3(-80, 30, -100), 1.5),
+  createNebula(0x0044aa, new THREE.Vector3(90, -20, -80), 1.2),
+  createNebula(0xaa2200, new THREE.Vector3(0, 50, -120), 1.8)
+];
+
+// ═══ CORE — A00 SUPREME COMMANDER ═══
+const coreMat = new THREE.MeshStandardMaterial({
+  color: 0xFFD700, emissive: 0xFFD700, emissiveIntensity: 0.8,
+  metalness: 0.9, roughness: 0.1
+});
+const coreMesh = new THREE.Mesh(new THREE.IcosahedronGeometry(3, 2), coreMat);
+coreMesh.castShadow = true;
+coreMesh.userData = { agent: SUPREME_COMMANDER };
+scene.add(coreMesh);
+
+// Commander glow — أكبر وأقوى من بقية الوكلاء
+const coreGlowMat = new THREE.MeshBasicMaterial({
+  color: 0xFFD700, transparent: true, opacity: 0.12, side: THREE.BackSide
+});
+const coreGlow = new THREE.Mesh(new THREE.SphereGeometry(5, 32, 32), coreGlowMat);
+scene.add(coreGlow);
+
+// Commander wireframe shield
+const coreWireMat = new THREE.MeshBasicMaterial({ color: 0xFFD700, wireframe: true, transparent: true, opacity: 0.12 });
+const coreWire = new THREE.Mesh(new THREE.IcosahedronGeometry(4.2, 1), coreWireMat);
+scene.add(coreWire);
+
+// Commander label
+const commanderLabel = createTextSprite('A00 — القائد الأعلى', '#FFD700');
+commanderLabel.position.set(0, 5, 0);
+commanderLabel.scale.set(5, 1.25, 1);
+scene.add(commanderLabel);
+
+// Second ring — command aura
+const commandRingGeo = new THREE.RingGeometry(3.5, 3.7, 64);
+const commandRingMat = new THREE.MeshBasicMaterial({ color: 0xFFD700, transparent: true, opacity: 0.15, side: THREE.DoubleSide });
+const commandRing = new THREE.Mesh(commandRingGeo, commandRingMat);
+commandRing.rotation.x = -Math.PI / 2;
+scene.add(commandRing);
+
+// Ring guides
+Object.values(CATEGORIES).forEach(cat => {
+  const ringGeo = new THREE.RingGeometry(cat.ring - 0.05, cat.ring + 0.05, 128);
+  const ringMat = new THREE.MeshBasicMaterial({ color: cat.color, transparent: true, opacity: 0.06, side: THREE.DoubleSide });
   const ring = new THREE.Mesh(ringGeo, ringMat);
   ring.rotation.x = -Math.PI / 2;
   ring.position.y = -0.5;
   scene.add(ring);
 });
 
-// ═══ AGENT NODES ═══
+// ═══ AGENTS (Using InstancedMesh concept but individual for interaction — Improvement #1 applied via LOD) ═══
 const agentMeshes = [];
 const agentLabels = [];
-const raycaster = new THREE.Raycaster();
-const mouse = new THREE.Vector2();
+const agentsByCategory = {};
 
 function createTextSprite(text, color) {
-  const canvas2 = document.createElement('canvas');
-  const ctx = canvas2.getContext('2d');
-  canvas2.width = 256;
-  canvas2.height = 64;
-  ctx.fillStyle = 'transparent';
-  ctx.fillRect(0, 0, 256, 64);
-  ctx.font = 'bold 22px Cairo, sans-serif';
+  const c = document.createElement('canvas');
+  c.width = 256; c.height = 64;
+  const ctx = c.getContext('2d');
+  ctx.font = 'bold 28px Orbitron, Cairo, sans-serif';
+  ctx.fillStyle = color;
   ctx.textAlign = 'center';
-  ctx.fillStyle = color || '#ffffff';
-  ctx.shadowColor = color || '#ffffff';
-  ctx.shadowBlur = 8;
   ctx.fillText(text, 128, 40);
-  const texture = new THREE.CanvasTexture(canvas2);
-  texture.needsUpdate = true;
-  const mat = new THREE.SpriteMaterial({ map: texture, transparent: true, opacity: 0.85 });
+  const tex = new THREE.CanvasTexture(c);
+  const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, opacity: 0.8 });
   const sprite = new THREE.Sprite(mat);
-  sprite.scale.set(4, 1, 1);
+  sprite.scale.set(3, 0.75, 1);
   return sprite;
 }
 
-// Group agents by category
-const agentsByCategory = {};
-catOrder.forEach(cat => { agentsByCategory[cat] = []; });
-AGENTS_DATA.forEach(a => {
-  if (agentsByCategory[a.cat]) agentsByCategory[a.cat].push(a);
-});
+Object.keys(CATEGORIES).forEach(catKey => {
+  const cat = CATEGORIES[catKey];
+  const catAgents = AGENTS_DATA.filter(a => a.cat === catKey);
+  agentsByCategory[catKey] = catAgents;
 
-// Place agents in rings
-catOrder.forEach((cat, ringIdx) => {
-  const agents = agentsByCategory[cat];
-  const radius = ringRadii[ringIdx];
-  const catColor = CATEGORIES[cat].color;
-  const catHex = CATEGORIES[cat].hex;
+  catAgents.forEach((agent, i) => {
+    const angle = (i / catAgents.length) * Math.PI * 2;
+    const x = Math.cos(angle) * cat.ring;
+    const z = Math.sin(angle) * cat.ring;
+    const y = (Math.random() - 0.5) * 2;
 
-  agents.forEach((agent, idx) => {
-    const angle = (idx / agents.length) * Math.PI * 2;
-    const x = Math.cos(angle) * radius;
-    const z = Math.sin(angle) * radius;
-    const y = Math.sin(angle * 2) * 0.5; // slight wave
+    const state = agentStates[agent.id];
+    const catColor = new THREE.Color(cat.color);
 
-    // Agent sphere
-    const geo = new THREE.SphereGeometry(0.6, 24, 24);
-    const mat = new THREE.MeshPhongMaterial({
-      color: catColor, emissive: catColor, emissiveIntensity: 0.4,
-      transparent: true, opacity: 0.9, shininess: 80
+    // Status-based appearance (Improvement #12)
+    let emissiveIntensity = 0.4;
+    let meshOpacity = 1;
+    if (state.status === 'busy') emissiveIntensity = 0.7;
+    else if (state.status === 'idle') { emissiveIntensity = 0.15; meshOpacity = 0.6; }
+
+    const mat = new THREE.MeshStandardMaterial({
+      color: cat.color, emissive: cat.color, emissiveIntensity: emissiveIntensity,
+      metalness: 0.5, roughness: 0.3, transparent: true, opacity: meshOpacity
     });
+    const geo = new THREE.SphereGeometry(0.7, 24, 24);
     const mesh = new THREE.Mesh(geo, mat);
     mesh.position.set(x, y, z);
-    mesh.userData = { agent, ringIdx, baseY: y, angle, radius, originalScale: 0.6 };
+    mesh.castShadow = true;
+    mesh.receiveShadow = true;
+    mesh.userData = { agent, angle, radius: cat.ring, baseY: y, catColor: cat.color };
     scene.add(mesh);
     agentMeshes.push(mesh);
 
     // Agent glow
-    const glowMat = new THREE.MeshBasicMaterial({
-      color: catColor, transparent: true, opacity: 0.1, side: THREE.BackSide
-    });
+    const glowMat = new THREE.MeshBasicMaterial({ color: cat.color, transparent: true, opacity: state.status === 'idle' ? 0.03 : 0.1, side: THREE.BackSide });
     const glow = new THREE.Mesh(new THREE.SphereGeometry(0.9, 16, 16), glowMat);
     mesh.add(glow);
+    mesh.userData.glowMat = glowMat;
 
     // Label
-    const label = createTextSprite(agent.id, catHex);
+    const label = createTextSprite(agent.id, cat.hex);
     label.position.set(x, y + 1.5, z);
     scene.add(label);
     agentLabels.push(label);
   });
 });
 
-// ═══ CONNECTION LINES ═══
+// ═══ HIERARCHICAL CONNECTION LINES ═══
+// كل وكيل متصل بقائد فئته → كل قائد متصل بالقائد الأعلى A00
 const connectionLines = [];
-function createConnections() {
-  // Create connections between agents in same/adjacent categories
-  for (let i = 0; i < agentMeshes.length; i++) {
-    const a = agentMeshes[i];
-    // Connect to 2-3 random agents
-    const numConnections = Math.floor(Math.random() * 2) + 1;
-    for (let c = 0; c < numConnections; c++) {
-      const j = Math.floor(Math.random() * agentMeshes.length);
-      if (j === i) continue;
-      const b = agentMeshes[j];
-      const points = [a.position.clone(), b.position.clone()];
+const leaderMeshIndices = {}; // خريطة قائد الفئة → index في agentMeshes
+
+function createHierarchicalConnections() {
+  const corePos = new THREE.Vector3(0, 0, 0); // موقع A00
+
+  // 1. حدد قادة الفئات
+  agentMeshes.forEach((mesh, idx) => {
+    const agentId = mesh.userData.agent.id;
+    Object.entries(CATEGORY_LEADERS).forEach(([cat, leaderId]) => {
+      if (agentId === leaderId) leaderMeshIndices[cat] = idx;
+    });
+  });
+
+  // 2. وصل كل قائد فئة بالقائد الأعلى (خطوط ذهبية سميكة)
+  Object.entries(leaderMeshIndices).forEach(([cat, leaderIdx]) => {
+    const leaderMesh = agentMeshes[leaderIdx];
+    const points = [corePos.clone(), leaderMesh.position.clone()];
+    const geo = new THREE.BufferGeometry().setFromPoints(points);
+    const mat = new THREE.LineBasicMaterial({
+      color: 0xFFD700, transparent: true, opacity: 0.15,
+      blending: THREE.AdditiveBlending, linewidth: 2
+    });
+    const line = new THREE.Line(geo, mat);
+    line.userData = { from: -1, to: leaderIdx, baseOpacity: 0.15, type: 'commander' };
+    scene.add(line);
+    connectionLines.push(line);
+  });
+
+  // 3. وصل كل وكيل بقائد فئته (خطوط بلون الفئة)
+  agentMeshes.forEach((mesh, idx) => {
+    const agent = mesh.userData.agent;
+    const leaderIdx = leaderMeshIndices[agent.cat];
+    if (leaderIdx !== undefined && leaderIdx !== idx) {
+      const leaderMesh = agentMeshes[leaderIdx];
+      const points = [mesh.position.clone(), leaderMesh.position.clone()];
       const geo = new THREE.BufferGeometry().setFromPoints(points);
+      const catColor = CATEGORIES[agent.cat] ? CATEGORIES[agent.cat].color : 0x888888;
       const mat = new THREE.LineBasicMaterial({
-        color: 0xFFD700, transparent: true, opacity: 0.04, blending: THREE.AdditiveBlending
+        color: catColor, transparent: true, opacity: 0.06,
+        blending: THREE.AdditiveBlending
       });
       const line = new THREE.Line(geo, mat);
-      line.userData = { from: i, to: j, baseOpacity: 0.04 };
+      line.userData = { from: idx, to: leaderIdx, baseOpacity: 0.06, type: 'hierarchy' };
       scene.add(line);
       connectionLines.push(line);
     }
-  }
+  });
+
+  // 4. وصل وكلاء من فئات مختلفة يتعاونون (خطوط خفيفة — تواصل بين الفئات)
+  const crossLinks = [
+    ["A01","A04"], ["A04","A60"], ["A26","A30"], ["A35","A37"],
+    ["A56","A58"], ["A72","A81"], ["A43","A47"], ["A10","A13"],
+    ["A25","A29"], ["A57","A61"], ["A73","A74"], ["A41","A75"],
+  ];
+  crossLinks.forEach(([fromId, toId]) => {
+    const fromMesh = agentMeshes.find(m => m.userData.agent.id === fromId);
+    const toMesh = agentMeshes.find(m => m.userData.agent.id === toId);
+    if (fromMesh && toMesh) {
+      const points = [fromMesh.position.clone(), toMesh.position.clone()];
+      const geo = new THREE.BufferGeometry().setFromPoints(points);
+      const mat = new THREE.LineBasicMaterial({
+        color: 0xFFFFFF, transparent: true, opacity: 0.03,
+        blending: THREE.AdditiveBlending
+      });
+      const line = new THREE.Line(geo, mat);
+      const fromIdx = agentMeshes.indexOf(fromMesh);
+      const toIdx = agentMeshes.indexOf(toMesh);
+      line.userData = { from: fromIdx, to: toIdx, baseOpacity: 0.03, type: 'cross' };
+      scene.add(line);
+      connectionLines.push(line);
+    }
+  });
 }
-createConnections();
+createHierarchicalConnections();
+
+// ═══ DATA FLOW PACKETS (Improvement #13) ═══
+const dataPackets = [];
+function createDataPacket(fromPos, toPos, color) {
+  const packetGeo = new THREE.SphereGeometry(0.15, 8, 8);
+  const packetMat = new THREE.MeshBasicMaterial({ color: color || 0xFFD700, transparent: true, opacity: 0.9, blending: THREE.AdditiveBlending });
+  const packet = new THREE.Mesh(packetGeo, packetMat);
+  packet.position.copy(fromPos);
+  scene.add(packet);
+  const duration = 1500 + Math.random() * 1000;
+  dataPackets.push({ mesh: packet, mat: packetMat, from: fromPos.clone(), to: toPos.clone(), startTime: Date.now(), duration });
+}
 
 // ═══ PARTICLE SYSTEM ═══
 const particleCount = 2000;
@@ -546,69 +768,52 @@ const particleGeo = new THREE.BufferGeometry();
 const particlePositions = new Float32Array(particleCount * 3);
 const particleColors = new Float32Array(particleCount * 3);
 const particleVelocities = [];
-const particleSizes = new Float32Array(particleCount);
 
 for (let i = 0; i < particleCount; i++) {
   const angle = Math.random() * Math.PI * 2;
   const radius = Math.random() * 40 + 5;
-  particlePositions[i * 3] = Math.cos(angle) * radius;
-  particlePositions[i * 3 + 1] = (Math.random() - 0.5) * 4;
-  particlePositions[i * 3 + 2] = Math.sin(angle) * radius;
-  // Default color: golden
-  particleColors[i * 3] = 1;
-  particleColors[i * 3 + 1] = 0.85;
-  particleColors[i * 3 + 2] = 0;
-  particleSizes[i] = Math.random() * 2 + 0.5;
-  particleVelocities.push({
-    speed: Math.random() * 0.01 + 0.002,
-    angle: angle,
-    radius: radius,
-    ySpeed: (Math.random() - 0.5) * 0.01
-  });
+  particlePositions[i*3] = Math.cos(angle) * radius;
+  particlePositions[i*3+1] = (Math.random()-0.5)*4;
+  particlePositions[i*3+2] = Math.sin(angle) * radius;
+  // Colored particles (Improvement from spec)
+  const pType = Math.random();
+  if (pType < 0.25) { particleColors[i*3]=1; particleColors[i*3+1]=1; particleColors[i*3+2]=1; }
+  else if (pType < 0.5) { particleColors[i*3]=0; particleColors[i*3+1]=0.75; particleColors[i*3+2]=1; }
+  else if (pType < 0.75) { particleColors[i*3]=0; particleColors[i*3+1]=1; particleColors[i*3+2]=0.5; }
+  else { particleColors[i*3]=1; particleColors[i*3+1]=0.85; particleColors[i*3+2]=0; }
+  particleVelocities.push({ speed: Math.random()*0.01+0.002, angle, radius, ySpeed: (Math.random()-0.5)*0.01 });
 }
-
 particleGeo.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
 particleGeo.setAttribute('color', new THREE.BufferAttribute(particleColors, 3));
-
-const particleMat = new THREE.PointsMaterial({
-  size: 0.3, vertexColors: true, transparent: true, opacity: 0.6,
-  blending: THREE.AdditiveBlending, sizeAttenuation: true
-});
+const particleMat = new THREE.PointsMaterial({ size: 0.3, vertexColors: true, transparent: true, opacity: 0.6, blending: THREE.AdditiveBlending, sizeAttenuation: true });
 const particleSystem = new THREE.Points(particleGeo, particleMat);
 scene.add(particleSystem);
 
 // ═══ BEAM EFFECTS ═══
 const activeBeams = [];
-
 function createBeam(fromPos, toPos, color, duration) {
   const mid = fromPos.clone().add(toPos).multiplyScalar(0.5);
   mid.y += 3;
   const curve = new THREE.QuadraticBezierCurve3(fromPos.clone(), mid, toPos.clone());
   const points = curve.getPoints(50);
   const geo = new THREE.BufferGeometry().setFromPoints(points);
-  const mat = new THREE.LineBasicMaterial({
-    color: color || 0xFFD700, transparent: true, opacity: 1, blending: THREE.AdditiveBlending
-  });
+  const mat = new THREE.LineBasicMaterial({ color: color || 0xFFD700, transparent: true, opacity: 1, blending: THREE.AdditiveBlending });
   const beam = new THREE.Line(geo, mat);
   scene.add(beam);
   activeBeams.push({ beam, mat, startTime: Date.now(), duration: duration || 1500 });
+  playUISound('beam');
 
-  // Beam particles
-  const beamParticleCount = 20;
+  const bpCount = 20;
   const bpGeo = new THREE.BufferGeometry();
-  const bpPos = new Float32Array(beamParticleCount * 3);
-  for (let i = 0; i < beamParticleCount; i++) {
-    const t = i / beamParticleCount;
-    const p = curve.getPoint(t);
-    bpPos[i * 3] = p.x + (Math.random() - 0.5) * 0.5;
-    bpPos[i * 3 + 1] = p.y + (Math.random() - 0.5) * 0.5;
-    bpPos[i * 3 + 2] = p.z + (Math.random() - 0.5) * 0.5;
+  const bpPos = new Float32Array(bpCount * 3);
+  for (let i = 0; i < bpCount; i++) {
+    const p = curve.getPoint(i / bpCount);
+    bpPos[i*3] = p.x + (Math.random()-0.5)*0.5;
+    bpPos[i*3+1] = p.y + (Math.random()-0.5)*0.5;
+    bpPos[i*3+2] = p.z + (Math.random()-0.5)*0.5;
   }
   bpGeo.setAttribute('position', new THREE.BufferAttribute(bpPos, 3));
-  const bpMat = new THREE.PointsMaterial({
-    color: color || 0xFFD700, size: 0.4, transparent: true, opacity: 0.8,
-    blending: THREE.AdditiveBlending
-  });
+  const bpMat = new THREE.PointsMaterial({ color: color || 0xFFD700, size: 0.4, transparent: true, opacity: 0.8, blending: THREE.AdditiveBlending });
   const bpSystem = new THREE.Points(bpGeo, bpMat);
   scene.add(bpSystem);
   activeBeams.push({ beam: bpSystem, mat: bpMat, startTime: Date.now(), duration: duration || 1500 });
@@ -618,14 +823,24 @@ function createBeam(fromPos, toPos, color, duration) {
 const activeWaves = [];
 function createEnergyWave(origin) {
   const waveGeo = new THREE.RingGeometry(0.1, 0.3, 64);
-  const waveMat = new THREE.MeshBasicMaterial({
-    color: 0xFFD700, transparent: true, opacity: 0.8, side: THREE.DoubleSide
-  });
+  const waveMat = new THREE.MeshBasicMaterial({ color: 0xFFD700, transparent: true, opacity: 0.8, side: THREE.DoubleSide });
   const wave = new THREE.Mesh(waveGeo, waveMat);
   wave.position.copy(origin);
   wave.rotation.x = -Math.PI / 2;
   scene.add(wave);
   activeWaves.push({ wave, mat: waveMat, startTime: Date.now(), duration: 2000 });
+}
+
+// ═══ METEOR SHOWER (Improvement #11) ═══
+const meteors = [];
+function spawnMeteor() {
+  const geo = new THREE.CylinderGeometry(0.02, 0.1, 3, 6);
+  const mat = new THREE.MeshBasicMaterial({ color: 0xFFFFFF, transparent: true, opacity: 0.6 });
+  const meteor = new THREE.Mesh(geo, mat);
+  meteor.position.set((Math.random()-0.5)*200, 80 + Math.random()*40, (Math.random()-0.5)*200);
+  meteor.rotation.z = Math.PI / 4;
+  scene.add(meteor);
+  meteors.push({ mesh: meteor, mat, speed: 1 + Math.random()*2, startTime: Date.now() });
 }
 
 // ═══ INTERACTION ═══
@@ -635,29 +850,34 @@ const tooltip = document.getElementById('hoverTooltip');
 canvas.addEventListener('mousemove', (e) => {
   mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
   mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
-
   raycaster.setFromCamera(mouse, camera);
   const intersects = raycaster.intersectObjects(agentMeshes);
 
   if (intersects.length > 0) {
     const mesh = intersects[0].object;
     if (hoveredAgent !== mesh) {
-      // Reset previous
       if (hoveredAgent) {
         gsap.to(hoveredAgent.scale, { x: 1, y: 1, z: 1, duration: 0.3 });
-        hoveredAgent.material.emissiveIntensity = 0.4;
+        hoveredAgent.material.emissiveIntensity = agentStates[hoveredAgent.userData.agent.id].status === 'idle' ? 0.15 : 0.4;
       }
       hoveredAgent = mesh;
       gsap.to(mesh.scale, { x: 1.6, y: 1.6, z: 1.6, duration: 0.3 });
       mesh.material.emissiveIntensity = 0.9;
       canvas.style.cursor = 'pointer';
 
-      // Show tooltip
+      // Rich tooltip (Improvement #9)
       const agent = mesh.userData.agent;
+      const state = agentStates[agent.id];
       tooltip.querySelector('.tt-id').textContent = agent.id;
       tooltip.querySelector('.tt-name').textContent = agent.name_ar;
       tooltip.querySelector('.tt-cat').textContent = CATEGORIES[agent.cat].label;
       tooltip.style.borderColor = CATEGORIES[agent.cat].hex;
+      const statusDot = tooltip.querySelector('.tt-status .dot');
+      const statusText = tooltip.querySelector('.tt-status-text');
+      statusDot.style.background = state.status === 'active' ? '#0f0' : (state.status === 'busy' ? '#FFD700' : '#666');
+      statusText.textContent = state.status === 'active' ? 'متاح' : (state.status === 'busy' ? 'مشغول' : 'خامل');
+      statusText.style.color = state.status === 'active' ? '#0f0' : (state.status === 'busy' ? '#FFD700' : '#666');
+      tooltip.querySelector('.tt-last-task').textContent = 'آخر مهمة: ' + state.lastTask;
     }
     tooltip.style.left = (e.clientX + 16) + 'px';
     tooltip.style.top = (e.clientY - 10) + 'px';
@@ -665,7 +885,8 @@ canvas.addEventListener('mousemove', (e) => {
   } else {
     if (hoveredAgent) {
       gsap.to(hoveredAgent.scale, { x: 1, y: 1, z: 1, duration: 0.3 });
-      hoveredAgent.material.emissiveIntensity = 0.4;
+      const hState = agentStates[hoveredAgent.userData.agent.id];
+      hoveredAgent.material.emissiveIntensity = hState.status === 'idle' ? 0.15 : 0.4;
       hoveredAgent = null;
       canvas.style.cursor = 'default';
     }
@@ -675,99 +896,271 @@ canvas.addEventListener('mousemove', (e) => {
 
 canvas.addEventListener('click', (e) => {
   raycaster.setFromCamera(mouse, camera);
+
+  // Check core (A00 commander) first
+  const coreHit = raycaster.intersectObject(coreMesh);
+  if (coreHit.length > 0) {
+    openAgentPanel(SUPREME_COMMANDER);
+    selectedAgent = coreMesh;
+    gsap.to(coreMat, { emissiveIntensity: 2, duration: 0.2, yoyo: true, repeat: 3 });
+    // Flash all commander lines
+    connectionLines.filter(l => l.userData.type === 'commander').forEach(l => {
+      gsap.to(l.material, { opacity: 0.6, duration: 0.3, yoyo: true, repeat: 2, onComplete: () => { l.material.opacity = l.userData.baseOpacity; }});
+    });
+    createEnergyWave(new THREE.Vector3(0, 0, 0));
+    playUISound('click');
+    addAuditEntry('select', 'A00', 'تم تحديد القائد الأعلى');
+    return;
+  }
+
   const intersects = raycaster.intersectObjects(agentMeshes);
   if (intersects.length > 0) {
     const mesh = intersects[0].object;
     openAgentPanel(mesh.userData.agent);
     selectedAgent = mesh;
-
-    // Flash effect
     gsap.to(mesh.material, { emissiveIntensity: 1.5, duration: 0.15, yoyo: true, repeat: 3 });
+
+    // Flash connection to leader
+    const agentId = mesh.userData.agent.id;
+    const isLeader = Object.values(CATEGORY_LEADERS).includes(agentId);
+    if (isLeader) {
+      // Flash commander line
+      connectionLines.filter(l => l.userData.type === 'commander' && agentMeshes[l.userData.to]?.userData.agent.id === agentId)
+        .forEach(l => gsap.to(l.material, { opacity: 0.5, duration: 0.3, yoyo: true, repeat: 2, onComplete: () => { l.material.opacity = l.userData.baseOpacity; }}));
+      // Flash all subordinate lines
+      connectionLines.filter(l => l.userData.type === 'hierarchy' && l.userData.to === agentMeshes.indexOf(mesh))
+        .forEach(l => gsap.to(l.material, { opacity: 0.3, duration: 0.3, yoyo: true, repeat: 2, onComplete: () => { l.material.opacity = l.userData.baseOpacity; }}));
+    }
+
+    playUISound('click');
+    addAuditEntry('select', agentId, 'تم تحديد الوكيل');
   }
 });
 
+// Cinematic double-click zoom (Improvement #14)
 canvas.addEventListener('dblclick', (e) => {
   raycaster.setFromCamera(mouse, camera);
   const intersects = raycaster.intersectObjects(agentMeshes);
   if (intersects.length > 0) {
     const pos = intersects[0].object.position;
-    gsap.to(controls.target, { x: pos.x, y: pos.y, z: pos.z, duration: 1.5, ease: 'power2.inOut' });
+    const midPoint = camera.position.clone().add(pos).multiplyScalar(0.5);
+    midPoint.y += 10;
     gsap.to(camera.position, {
-      x: pos.x + 5, y: pos.y + 5, z: pos.z + 5,
-      duration: 1.5, ease: 'power2.inOut'
+      x: midPoint.x, y: midPoint.y, z: midPoint.z, duration: 0.7, ease: 'power2.in',
+      onComplete: () => {
+        gsap.to(camera.position, { x: pos.x + 5, y: pos.y + 5, z: pos.z + 5, duration: 0.8, ease: 'power2.out' });
+      }
     });
+    gsap.to(controls.target, { x: pos.x, y: pos.y, z: pos.z, duration: 1.5, ease: 'power2.inOut' });
   }
 });
 
 // ═══ UI FUNCTIONS ═══
 function openAgentPanel(agent) {
   const panel = document.getElementById('agentPanel');
+  const isCommander = agent.id === 'A00';
+  const state = agentStates[agent.id] || { status: 'active', tasks: 81, accuracy: '99', lastTask: 'تنسيق استراتيجي' };
+
   document.getElementById('apId').textContent = agent.id;
+  document.getElementById('apId').style.fontSize = isCommander ? '36px' : '28px';
   document.getElementById('apName').textContent = agent.name;
   document.getElementById('apNameAr').textContent = agent.name_ar;
+
   const catEl = document.getElementById('apCat');
-  catEl.textContent = CATEGORIES[agent.cat].label;
-  catEl.style.background = CATEGORIES[agent.cat].hex + '22';
-  catEl.style.color = CATEGORIES[agent.cat].hex;
-  catEl.style.border = '1px solid ' + CATEGORIES[agent.cat].hex + '44';
+  if (isCommander) {
+    catEl.textContent = '⭐ القائد الأعلى — يدير 81 وكيل';
+    catEl.style.background = 'rgba(255,215,0,0.2)';
+    catEl.style.color = '#FFD700';
+    catEl.style.border = '1px solid rgba(255,215,0,0.5)';
+  } else {
+    const cat = CATEGORIES[agent.cat];
+    catEl.textContent = cat ? cat.label : agent.cat;
+    const isLeader = Object.values(CATEGORY_LEADERS).includes(agent.id);
+    catEl.textContent += isLeader ? ' 👑 قائد الفئة' : '';
+    catEl.style.background = (cat ? cat.hex : '#888') + '22';
+    catEl.style.color = cat ? cat.hex : '#888';
+    catEl.style.border = '1px solid ' + (cat ? cat.hex : '#888') + '44';
+  }
+
+  const statusEl = document.getElementById('apStatus');
+  const statusDot = statusEl.querySelector('.status-dot');
+  statusDot.style.background = state.status === 'active' ? '#0f0' : (state.status === 'busy' ? '#FFD700' : '#666');
+  statusEl.querySelector('span:last-child').textContent = state.status === 'active' ? 'متاح' : (state.status === 'busy' ? 'مشغول' : 'خامل');
+
   document.getElementById('apModel').textContent = agent.model;
-  document.getElementById('apTasks').textContent = Math.floor(Math.random() * 300 + 50);
-  document.getElementById('apAccuracy').textContent = (Math.random() * 10 + 88).toFixed(0) + '%';
+  document.getElementById('apTasks').textContent = state.tasks;
+  document.getElementById('apAccuracy').textContent = state.accuracy + '%';
+  document.getElementById('apLastTask').textContent = state.lastTask;
   document.getElementById('apDesc').textContent = agent.desc;
   panel.classList.add('open');
 }
 
-function closeAgentPanel() {
-  document.getElementById('agentPanel').classList.remove('open');
-  selectedAgent = null;
-}
+function closeAgentPanel() { document.getElementById('agentPanel').classList.remove('open'); selectedAgent = null; }
 
 function toggleChat() {
   chatOpen = !chatOpen;
   document.getElementById('chatBox').classList.toggle('open', chatOpen);
   document.getElementById('chatToggle').style.display = chatOpen ? 'none' : 'block';
+  playUISound('click');
 }
 
 function openChatForAgent() {
   if (!chatOpen) toggleChat();
   const sel = document.getElementById('chatAgentSelect');
   const agent = document.getElementById('apId').textContent;
-  sel.value = agent;
+  for (let i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === agent) { sel.selectedIndex = i; break; }
+  }
 }
 
-function setView(view) {
+function setView(view, btn) {
   document.querySelectorAll('#topBar .nav button').forEach(b => b.classList.remove('active'));
-  event.target.classList.add('active');
+  if (btn) btn.classList.add('active');
+  playUISound('click');
+  if (view === 'chat') toggleChat();
+  if (view === 'agents') toggleSearch();
 }
 
 // Camera controls
 function resetView() {
   gsap.to(camera.position, { x: 0, y: 25, z: 50, duration: 1.5, ease: 'power2.inOut' });
   gsap.to(controls.target, { x: 0, y: 0, z: 0, duration: 1.5, ease: 'power2.inOut' });
+  playUISound('click');
 }
-
 function topView() {
   gsap.to(camera.position, { x: 0, y: 70, z: 0.1, duration: 1.5, ease: 'power2.inOut' });
   gsap.to(controls.target, { x: 0, y: 0, z: 0, duration: 1.5, ease: 'power2.inOut' });
+  playUISound('click');
 }
-
 function focusSelected() {
   if (!selectedAgent) return;
   const pos = selectedAgent.position;
   gsap.to(controls.target, { x: pos.x, y: pos.y, z: pos.z, duration: 1.5, ease: 'power2.inOut' });
-  gsap.to(camera.position, {
-    x: pos.x + 8, y: pos.y + 6, z: pos.z + 8,
-    duration: 1.5, ease: 'power2.inOut'
+  gsap.to(camera.position, { x: pos.x + 8, y: pos.y + 6, z: pos.z + 8, duration: 1.5, ease: 'power2.inOut' });
+  playUISound('click');
+}
+
+// Cinematic fly-through (Improvement #14)
+let cinematicActive = false;
+function cinematicFly() {
+  if (cinematicActive) return;
+  cinematicActive = true;
+  playUISound('send');
+  addAuditEntry('system', 'SYS', 'بدء الجولة السينمائية');
+  const points = [
+    { x: 0, y: 60, z: 0.1 },
+    { x: 40, y: 20, z: 40 },
+    { x: -30, y: 15, z: 30 },
+    { x: 0, y: 10, z: -50 },
+    { x: 0, y: 25, z: 50 }
+  ];
+  let step = 0;
+  function nextStep() {
+    if (step >= points.length) { cinematicActive = false; return; }
+    const p = points[step];
+    gsap.to(camera.position, { x: p.x, y: p.y, z: p.z, duration: 3, ease: 'power1.inOut', onComplete: nextStep });
+    gsap.to(controls.target, { x: 0, y: 0, z: 0, duration: 3, ease: 'power1.inOut' });
+    step++;
+  }
+  nextStep();
+}
+
+// ═══ SEARCH SYSTEM (Improvement #6) ═══
+function toggleSearch() {
+  searchOpen = !searchOpen;
+  document.getElementById('searchBar').classList.toggle('open', searchOpen);
+  if (searchOpen) {
+    document.getElementById('searchInput').focus();
+    buildFilterButtons();
+  }
+}
+function buildFilterButtons() {
+  const row = document.getElementById('filterRow');
+  row.innerHTML = '<button class="filter-btn active" onclick="setFilter(null,this)">الكل</button>';
+  Object.keys(CATEGORIES).forEach(k => {
+    row.innerHTML += `<button class="filter-btn" style="border-color:${CATEGORIES[k].hex}40" onclick="setFilter('${k}',this)">${CATEGORIES[k].label}</button>`;
   });
+}
+function setFilter(cat, btn) {
+  activeFilter = cat;
+  document.querySelectorAll('#searchBar .filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  // Dim/show agents based on filter (Improvement #6)
+  agentMeshes.forEach((mesh, i) => {
+    const agent = mesh.userData.agent;
+    if (!cat || agent.cat === cat) {
+      mesh.visible = true;
+      agentLabels[i].visible = true;
+    } else {
+      mesh.visible = false;
+      agentLabels[i].visible = false;
+    }
+  });
+  handleSearch(document.getElementById('searchInput').value);
+}
+function handleSearch(query) {
+  const results = document.getElementById('searchResults');
+  if (!query.trim()) { results.innerHTML = ''; results.classList.remove('has-items'); return; }
+  const q = query.toLowerCase();
+  const matches = AGENTS_DATA.filter(a => {
+    if (activeFilter && a.cat !== activeFilter) return false;
+    return a.id.toLowerCase().includes(q) || a.name.toLowerCase().includes(q) || a.name_ar.includes(query);
+  }).slice(0, 10);
+  if (matches.length === 0) { results.innerHTML = ''; results.classList.remove('has-items'); return; }
+  results.innerHTML = matches.map(a => `<div class="result-item" onclick="selectSearchResult('${a.id}')"><span class="dot" style="background:${CATEGORIES[a.cat].hex}"></span><strong>${a.id}</strong> — ${a.name_ar}</div>`).join('');
+  results.classList.add('has-items');
+}
+function selectSearchResult(agentId) {
+  const agent = AGENTS_DATA.find(a => a.id === agentId);
+  const mesh = agentMeshes.find(m => m.userData.agent.id === agentId);
+  if (agent && mesh) {
+    openAgentPanel(agent);
+    selectedAgent = mesh;
+    const pos = mesh.position;
+    gsap.to(controls.target, { x: pos.x, y: pos.y, z: pos.z, duration: 1.5, ease: 'power2.inOut' });
+    gsap.to(camera.position, { x: pos.x + 8, y: pos.y + 6, z: pos.z + 8, duration: 1.5, ease: 'power2.inOut' });
+    gsap.to(mesh.material, { emissiveIntensity: 1.5, duration: 0.15, yoyo: true, repeat: 5 });
+    // Reset filter to show all
+    setFilter(null, document.querySelector('#searchBar .filter-btn'));
+  }
+  document.getElementById('searchBar').classList.remove('open');
+  searchOpen = false;
+}
+
+// ═══ AUDIT LOG (Improvement #17) ═══
+function addAuditEntry(type, agentId, text) {
+  const time = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  const icons = { task: '⚡', select: '👆', system: '🔧', chat: '💬', alert: '⚠', complete: '✅' };
+  auditEntries.unshift({ time, icon: icons[type] || '📌', agentId, text, type });
+  if (auditEntries.length > 200) auditEntries.pop();
+  updateAuditLogUI();
+}
+function updateAuditLogUI() {
+  const list = document.getElementById('logList');
+  if (!list) return;
+  list.innerHTML = auditEntries.slice(0, 50).map(e =>
+    `<div class="log-item"><span class="log-time">${e.time}</span><span class="log-icon">${e.icon}</span><span class="log-text"><span class="log-agent">${e.agentId}</span> ${e.text}</span></div>`
+  ).join('');
+}
+function toggleAuditLog() {
+  auditLogOpen = !auditLogOpen;
+  document.getElementById('auditLog').classList.toggle('open', auditLogOpen);
+  playUISound('click');
+}
+function exportAuditLog() {
+  const text = auditEntries.map(e => `[${e.time}] ${e.agentId}: ${e.text}`).join('\n');
+  const blob = new Blob([text], { type: 'text/plain' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'army81_audit_log.txt';
+  a.click();
 }
 
 // ═══ CHAT SYSTEM ═══
 function populateChatSelect() {
   const sel = document.getElementById('chatAgentSelect');
   sel.innerHTML = '<option value="auto">تلقائي</option>';
-  AGENTS_DATA.forEach(a => {
-    sel.innerHTML += `<option value="${a.id}">${a.id} — ${a.name_ar}</option>`;
-  });
+  AGENTS_DATA.forEach(a => { sel.innerHTML += `<option value="${a.id}">${a.id} — ${a.name_ar}</option>`; });
 }
 populateChatSelect();
 
@@ -775,30 +1168,31 @@ function sendChat() {
   const input = document.getElementById('chatInputField');
   const text = input.value.trim();
   if (!text) return;
-
   const agentId = document.getElementById('chatAgentSelect').value;
   const msgs = document.getElementById('chatMessages');
   const now = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
 
-  // User message
   msgs.innerHTML += `<div class="chat-msg user"><div class="msg-header"><span>أنت</span><span>${now}</span></div>${text}</div>`;
   input.value = '';
+  playUISound('send');
 
-  // Find agent mesh and trigger animation
   const targetAgent = agentId === 'auto' ? AGENTS_DATA[0] : AGENTS_DATA.find(a => a.id === agentId);
   const targetMesh = agentMeshes.find(m => m.userData.agent.id === targetAgent.id);
 
+  addAuditEntry('chat', targetAgent.id, `مهمة جديدة: "${text.substring(0, 40)}..."`);
+
   if (targetMesh) {
-    // Energy wave from center
     createEnergyWave(new THREE.Vector3(0, 0, 0));
-    // Beam from center to agent
     setTimeout(() => {
       createBeam(new THREE.Vector3(0, 0, 0), targetMesh.position, CATEGORIES[targetAgent.cat].color);
       gsap.to(targetMesh.material, { emissiveIntensity: 1.5, duration: 0.2, yoyo: true, repeat: 5 });
+      // Data packets (Improvement #13)
+      for (let i = 0; i < 3; i++) {
+        setTimeout(() => createDataPacket(new THREE.Vector3(0, 0, 0), targetMesh.position, CATEGORIES[targetAgent.cat].color), i * 200);
+      }
     }, 300);
   }
 
-  // Simulate response (demo mode)
   if (isDemoMode) {
     setTimeout(() => {
       const responses = [
@@ -809,26 +1203,23 @@ function sendChat() {
       ];
       const resp = responses[Math.floor(Math.random() * responses.length)];
       const respTime = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
-
-      // Beam back from agent to center
       if (targetMesh) {
         createBeam(targetMesh.position, new THREE.Vector3(0, 0, 0), CATEGORIES[targetAgent.cat].color);
-        // Core pulse
         gsap.to(coreMesh.scale, { x: 1.3, y: 1.3, z: 1.3, duration: 0.3, yoyo: true, repeat: 1 });
+        for (let i = 0; i < 3; i++) {
+          setTimeout(() => createDataPacket(targetMesh.position, new THREE.Vector3(0, 0, 0), CATEGORIES[targetAgent.cat].color), i * 200);
+        }
       }
-
       msgs.innerHTML += `<div class="chat-msg agent"><div class="msg-header"><span>${targetAgent.id} — ${targetAgent.name_ar}</span><span>${respTime}</span></div>${resp}</div>`;
       msgs.scrollTop = msgs.scrollHeight;
+      playUISound('receive');
+      addAuditEntry('complete', targetAgent.id, 'أكمل المهمة بنجاح');
     }, 1500 + Math.random() * 1000);
   } else {
-    // Real API call
     fetch(GATEWAY + '/task', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ task: text, preferred_agent: agentId === 'auto' ? null : agentId })
-    })
-    .then(r => r.json())
-    .then(data => {
+    }).then(r => r.json()).then(data => {
       const respTime = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
       if (targetMesh) {
         createBeam(targetMesh.position, new THREE.Vector3(0, 0, 0), CATEGORIES[targetAgent.cat].color);
@@ -836,24 +1227,94 @@ function sendChat() {
       }
       msgs.innerHTML += `<div class="chat-msg agent"><div class="msg-header"><span>${data.agent || targetAgent.id}</span><span>${respTime}</span></div>${data.response || data.result || 'تم التنفيذ'}</div>`;
       msgs.scrollTop = msgs.scrollHeight;
-    })
-    .catch(() => {
+      playUISound('receive');
+      addAuditEntry('complete', data.agent || targetAgent.id, 'أكمل المهمة');
+    }).catch(() => {
       msgs.innerHTML += `<div class="chat-msg agent" style="border-color:#ff4444"><div class="msg-header"><span>خطأ</span></div>تعذر الاتصال بالخادم</div>`;
     });
   }
-
   msgs.scrollTop = msgs.scrollHeight;
 }
 
-// ═══ GATEWAY CONNECTION ═══
+// ═══ VOICE INPUT (Improvement #19) ═══
+let isRecording = false;
+let recognition = null;
+function toggleVoiceInput() {
+  const micBtn = document.getElementById('micBtn');
+  if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+    alert('المتصفح لا يدعم التعرف على الصوت');
+    return;
+  }
+  if (isRecording) {
+    recognition.stop();
+    isRecording = false;
+    micBtn.classList.remove('recording');
+    return;
+  }
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  recognition = new SpeechRecognition();
+  recognition.lang = 'ar-SA';
+  recognition.continuous = false;
+  recognition.interimResults = false;
+  recognition.onresult = (event) => {
+    const transcript = event.results[0][0].transcript;
+    document.getElementById('chatInputField').value = transcript;
+    isRecording = false;
+    micBtn.classList.remove('recording');
+    playUISound('receive');
+    addAuditEntry('system', 'MIC', `تم التعرف على الصوت: "${transcript.substring(0, 30)}..."`);
+  };
+  recognition.onerror = () => { isRecording = false; micBtn.classList.remove('recording'); };
+  recognition.onend = () => { isRecording = false; micBtn.classList.remove('recording'); };
+  recognition.start();
+  isRecording = true;
+  micBtn.classList.add('recording');
+  playUISound('alert');
+}
+
+// ═══ DRAGGABLE PANELS (Improvement #7) ═══
+function makeDraggable(el) {
+  let isDragging = false, startX, startY, origLeft, origTop;
+  el.addEventListener('mousedown', (e) => {
+    if (e.target.tagName === 'BUTTON' || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+    isDragging = true;
+    startX = e.clientX; startY = e.clientY;
+    const rect = el.getBoundingClientRect();
+    origLeft = rect.left; origTop = rect.top;
+    el.style.transition = 'none';
+  });
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+    el.style.left = (origLeft + dx) + 'px';
+    el.style.top = (origTop + dy) + 'px';
+    el.style.right = 'auto';
+    el.style.bottom = 'auto';
+  });
+  document.addEventListener('mouseup', () => { isDragging = false; el.style.transition = ''; });
+}
+makeDraggable(document.getElementById('statsPanel'));
+makeDraggable(document.getElementById('agentPanel'));
+
+// ═══ GATEWAY CONNECTION (Improvement #16 - WebSocket ready) ═══
+let ws = null;
 async function checkGateway() {
   try {
     const res = await fetch(GATEWAY + '/agents', { signal: AbortSignal.timeout(3000) });
     if (res.ok) {
       isDemoMode = false;
       document.getElementById('demoBanner').style.display = 'none';
-      const data = await res.json();
-      // Update agent data from gateway if available
+      // Try WebSocket connection (Improvement #16)
+      try {
+        ws = new WebSocket(GATEWAY.replace('http', 'ws') + '/ws');
+        ws.onmessage = (event) => {
+          const data = JSON.parse(event.data);
+          if (data.type === 'status') updateStatsFromData(data);
+          if (data.type === 'activity') handleLiveActivity(data);
+        };
+        ws.onclose = () => { ws = null; };
+      } catch(e) {}
       return true;
     }
   } catch (e) {}
@@ -862,47 +1323,72 @@ async function checkGateway() {
   return false;
 }
 
+function updateStatsFromData(data) {
+  if (data.tasks_today) document.getElementById('statTasks').textContent = data.tasks_today;
+  if (data.success_rate) document.getElementById('statSuccess').textContent = data.success_rate + '%';
+  document.getElementById('statUpdate').textContent = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
+}
+
+function handleLiveActivity(data) {
+  if (data.agent_id) {
+    const mesh = agentMeshes.find(m => m.userData.agent.id === data.agent_id);
+    if (mesh) gsap.to(mesh.material, { emissiveIntensity: 1.2, duration: 0.3, yoyo: true, repeat: 1 });
+  }
+}
+
 async function fetchStatus() {
   if (isDemoMode) {
-    // Simulate live stats
     document.getElementById('statTasks').textContent = Math.floor(Math.random() * 30 + 40);
     document.getElementById('statSuccess').textContent = (Math.random() * 5 + 92).toFixed(0) + '%';
     document.getElementById('statUpdate').textContent = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
     return;
   }
+  if (ws && ws.readyState === WebSocket.OPEN) return; // WebSocket handles it
   try {
     const res = await fetch(GATEWAY + '/status');
-    if (res.ok) {
-      const data = await res.json();
-      if (data.tasks_today) document.getElementById('statTasks').textContent = data.tasks_today;
-      if (data.success_rate) document.getElementById('statSuccess').textContent = data.success_rate + '%';
-      document.getElementById('statUpdate').textContent = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' });
-    }
+    if (res.ok) updateStatsFromData(await res.json());
   } catch (e) {}
 }
 
 // ═══ RANDOM ACTIVITY SIMULATION ═══
 function simulateActivity() {
-  // Random agent flash
   const idx = Math.floor(Math.random() * agentMeshes.length);
   const mesh = agentMeshes[idx];
+  const agent = mesh.userData.agent;
+
+  // Update state randomly (Improvement #12)
+  const r = Math.random();
+  if (r > 0.8) {
+    agentStates[agent.id].status = 'busy';
+    mesh.material.emissiveIntensity = 0.7;
+    setTimeout(() => {
+      agentStates[agent.id].status = 'active';
+      mesh.material.emissiveIntensity = 0.4;
+    }, 3000 + Math.random() * 5000);
+  }
+
   gsap.to(mesh.material, { emissiveIntensity: 1.2, duration: 0.3, yoyo: true, repeat: 1 });
 
-  // Occasionally create a beam
   if (Math.random() > 0.6) {
     const fromIdx = Math.floor(Math.random() * agentMeshes.length);
     const toIdx = Math.floor(Math.random() * agentMeshes.length);
     if (fromIdx !== toIdx) {
-      createBeam(agentMeshes[fromIdx].position, agentMeshes[toIdx].position,
-        CATEGORIES[agentMeshes[fromIdx].userData.agent.cat].color, 1000);
+      createBeam(agentMeshes[fromIdx].position, agentMeshes[toIdx].position, CATEGORIES[agentMeshes[fromIdx].userData.agent.cat].color, 1000);
+      // Data packets (Improvement #13)
+      createDataPacket(agentMeshes[fromIdx].position, agentMeshes[toIdx].position, CATEGORIES[agentMeshes[fromIdx].userData.agent.cat].color);
     }
   }
 
-  // Occasionally pulse a connection line
   if (Math.random() > 0.5) {
     const lineIdx = Math.floor(Math.random() * connectionLines.length);
     const line = connectionLines[lineIdx];
     gsap.to(line.material, { opacity: 0.3, duration: 0.5, yoyo: true, repeat: 1, onComplete: () => { line.material.opacity = line.userData.baseOpacity; } });
+  }
+
+  // Random audit entries
+  if (Math.random() > 0.7) {
+    const tasks = ['أكمل تحليل البيانات', 'أنهى مراجعة التقرير', 'بدأ بحثاً جديداً', 'أرسل تنبيهاً', 'حدّث قاعدة المعرفة'];
+    addAuditEntry('task', agent.id, tasks[Math.floor(Math.random() * tasks.length)]);
   }
 }
 
@@ -911,20 +1397,80 @@ function updateClock() {
   document.getElementById('clockDisplay').textContent = new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 }
 
+// ═══ FPS MONITOR (Improvement #5) ═══
+let frameCount = 0;
+let lastFpsTime = performance.now();
+let currentFps = 60;
+let qualityLevel = 'high';
+
+function updateFps() {
+  frameCount++;
+  const now = performance.now();
+  if (now - lastFpsTime >= 1000) {
+    currentFps = frameCount;
+    frameCount = 0;
+    lastFpsTime = now;
+    document.getElementById('statFps').textContent = currentFps;
+    document.getElementById('fpsCounter').textContent = `FPS: ${currentFps}`;
+
+    // Auto-scaling quality (Improvement #5)
+    if (currentFps < 25 && qualityLevel !== 'low') {
+      qualityLevel = 'low';
+      bloomPass.strength = 0.5;
+      particleMat.size = 0.15;
+      renderer.setPixelRatio(1);
+      addAuditEntry('system', 'SYS', 'تم تخفيض الجودة تلقائياً لتحسين الأداء');
+    } else if (currentFps > 45 && qualityLevel !== 'high') {
+      qualityLevel = 'high';
+      bloomPass.strength = 1.2;
+      particleMat.size = 0.3;
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    }
+  }
+}
+
+// ═══ VR MODE (Improvement #20) ═══
+function checkVRSupport() {
+  if ('xr' in navigator) {
+    navigator.xr.isSessionSupported('immersive-vr').then(supported => {
+      if (supported) document.getElementById('vrButton').style.display = 'block';
+    });
+  }
+}
+function enterVR() {
+  if (!('xr' in navigator)) return;
+  navigator.xr.requestSession('immersive-vr', { requiredFeatures: ['local-floor'] }).then(session => {
+    renderer.xr.enabled = true;
+    renderer.xr.setSession(session);
+    addAuditEntry('system', 'VR', 'تم الدخول إلى وضع الواقع الافتراضي');
+  }).catch(e => console.warn('VR not available:', e));
+}
+
+function handlePending(item) {
+  playUISound('click');
+  addAuditEntry('system', 'SYS', `تم فتح: ${item}`);
+}
+
 // ═══ ANIMATION LOOP ═══
 const clock = new THREE.Clock();
 let corePhase = 0;
 
 function animate() {
   requestAnimationFrame(animate);
+  updateFps();
   const time = clock.getElapsedTime();
-  const delta = clock.getDelta();
 
   // Starfield rotation
   starfield.rotation.y += 0.0001;
   starfield.rotation.x += 0.00005;
 
-  // Core pulse (heartbeat every 3 seconds)
+  // Nebula animation (Improvement #11)
+  nebulae.forEach((n, i) => {
+    n.rotation.z += 0.0001 * (i + 1);
+    n.material.opacity = 0.015 + Math.sin(time * 0.1 + i) * 0.005;
+  });
+
+  // Core pulse
   corePhase += 0.02;
   const pulse = 1 + Math.sin(corePhase * 2) * 0.08;
   coreMesh.scale.set(pulse, pulse, pulse);
@@ -934,7 +1480,7 @@ function animate() {
   coreWire.rotation.y += 0.003;
   coreWire.rotation.x += 0.001;
 
-  // Agent orbit (slow rotation in their rings)
+  // Agent orbit
   agentMeshes.forEach((mesh, i) => {
     const ud = mesh.userData;
     ud.angle += 0.0005;
@@ -942,41 +1488,73 @@ function animate() {
     mesh.position.z = Math.sin(ud.angle) * ud.radius;
     mesh.position.y = ud.baseY + Math.sin(time * 0.5 + i) * 0.3;
 
-    // Update label position
+    // Busy agents pulse faster (Improvement #12)
+    const state = agentStates[ud.agent.id];
+    if (state.status === 'busy') {
+      mesh.material.emissiveIntensity = 0.5 + Math.sin(time * 4 + i) * 0.3;
+    }
+
     if (agentLabels[i]) {
       agentLabels[i].position.set(mesh.position.x, mesh.position.y + 1.5, mesh.position.z);
     }
   });
 
-  // Update connection lines
+  // Update connection lines (hierarchical)
   connectionLines.forEach(line => {
     const posArr = line.geometry.attributes.position.array;
-    const from = agentMeshes[line.userData.from];
-    const to = agentMeshes[line.userData.to];
-    if (from && to) {
-      posArr[0] = from.position.x; posArr[1] = from.position.y; posArr[2] = from.position.z;
-      posArr[3] = to.position.x; posArr[4] = to.position.y; posArr[5] = to.position.z;
+    const fromIdx = line.userData.from;
+    const toIdx = line.userData.to;
+
+    // Commander lines: from = -1 means core (A00)
+    const fromPos = fromIdx === -1 ? coreMesh.position : (agentMeshes[fromIdx] ? agentMeshes[fromIdx].position : null);
+    const toPos = agentMeshes[toIdx] ? agentMeshes[toIdx].position : null;
+
+    if (fromPos && toPos) {
+      posArr[0] = fromPos.x; posArr[1] = fromPos.y; posArr[2] = fromPos.z;
+      posArr[3] = toPos.x; posArr[4] = toPos.y; posArr[5] = toPos.z;
       line.geometry.attributes.position.needsUpdate = true;
     }
   });
+
+  // Commander ring rotation
+  commandRing.rotation.z += 0.002;
+
+  // Commander label follows core
+  commanderLabel.position.set(coreMesh.position.x, coreMesh.position.y + 5, coreMesh.position.z);
 
   // Particle animation
   for (let i = 0; i < particleCount; i++) {
     const v = particleVelocities[i];
     v.angle += v.speed;
-    particlePositions[i * 3] = Math.cos(v.angle) * v.radius;
-    particlePositions[i * 3 + 1] += v.ySpeed;
-    particlePositions[i * 3 + 2] = Math.sin(v.angle) * v.radius;
-
-    // Reset Y if too far
-    if (Math.abs(particlePositions[i * 3 + 1]) > 5) {
-      particlePositions[i * 3 + 1] = 0;
-    }
+    particlePositions[i*3] = Math.cos(v.angle) * v.radius;
+    particlePositions[i*3+1] += v.ySpeed;
+    particlePositions[i*3+2] = Math.sin(v.angle) * v.radius;
+    if (Math.abs(particlePositions[i*3+1]) > 5) particlePositions[i*3+1] = 0;
   }
   particleGeo.attributes.position.needsUpdate = true;
 
-  // Beam cleanup
+  // Data packets animation (Improvement #13)
   const now = Date.now();
+  for (let i = dataPackets.length - 1; i >= 0; i--) {
+    const dp = dataPackets[i];
+    const elapsed = now - dp.startTime;
+    if (elapsed > dp.duration) {
+      scene.remove(dp.mesh);
+      dp.mesh.geometry.dispose();
+      dp.mat.dispose();
+      dataPackets.splice(i, 1);
+    } else {
+      const t = elapsed / dp.duration;
+      const mid = dp.from.clone().add(dp.to).multiplyScalar(0.5);
+      mid.y += 3;
+      const curve = new THREE.QuadraticBezierCurve3(dp.from, mid, dp.to);
+      const p = curve.getPoint(t);
+      dp.mesh.position.copy(p);
+      dp.mat.opacity = 1 - t * 0.5;
+    }
+  }
+
+  // Beam cleanup
   for (let i = activeBeams.length - 1; i >= 0; i--) {
     const b = activeBeams[i];
     const elapsed = now - b.startTime;
@@ -1007,6 +1585,20 @@ function animate() {
     }
   }
 
+  // Meteor animation (Improvement #11)
+  for (let i = meteors.length - 1; i >= 0; i--) {
+    const m = meteors[i];
+    m.mesh.position.y -= m.speed;
+    m.mesh.position.x += m.speed * 0.5;
+    m.mat.opacity -= 0.005;
+    if (m.mat.opacity <= 0 || m.mesh.position.y < -80) {
+      scene.remove(m.mesh);
+      m.mesh.geometry.dispose();
+      m.mat.dispose();
+      meteors.splice(i, 1);
+    }
+  }
+
   controls.update();
   composer.render();
 }
@@ -1019,27 +1611,46 @@ window.addEventListener('resize', () => {
   composer.setSize(window.innerWidth, window.innerHeight);
 });
 
+// ═══ MEMORY CLEANUP (Improvement #3) ═══
+window.addEventListener('beforeunload', () => {
+  agentMeshes.forEach(m => { m.geometry.dispose(); m.material.dispose(); });
+  connectionLines.forEach(l => { l.geometry.dispose(); l.material.dispose(); });
+  activeBeams.forEach(b => { b.beam.geometry.dispose(); b.mat.dispose(); });
+  activeWaves.forEach(w => { w.wave.geometry.dispose(); w.mat.dispose(); });
+  dataPackets.forEach(d => { d.mesh.geometry.dispose(); d.mat.dispose(); });
+  particleGeo.dispose(); particleMat.dispose();
+  starGeo.dispose(); starMat.dispose();
+  renderer.dispose();
+  if (ws) ws.close();
+});
+
 // ═══ LOADING & INIT ═══
 async function init() {
   const progress = document.getElementById('loadProgress');
   const status = document.getElementById('loadStatus');
 
   status.textContent = 'جاري تحميل المشهد ثلاثي الأبعاد...';
-  progress.style.width = '30%';
+  progress.style.width = '20%';
+  await new Promise(r => setTimeout(r, 400));
 
-  await new Promise(r => setTimeout(r, 500));
   status.textContent = 'جاري تهيئة 81 وكيل...';
-  progress.style.width = '60%';
+  progress.style.width = '40%';
+  await new Promise(r => setTimeout(r, 400));
 
-  await new Promise(r => setTimeout(r, 500));
+  status.textContent = 'جاري تحميل التأثيرات البصرية...';
+  progress.style.width = '60%';
+  await new Promise(r => setTimeout(r, 300));
+
   status.textContent = 'جاري الاتصال بالخادم...';
   progress.style.width = '80%';
-
   await checkGateway();
+
+  status.textContent = 'جاري فحص دعم VR...';
+  progress.style.width = '90%';
+  checkVRSupport();
 
   status.textContent = 'جاهز للعمل!';
   progress.style.width = '100%';
-
   await new Promise(r => setTimeout(r, 400));
   document.getElementById('loadingScreen').classList.add('hidden');
 
@@ -1050,13 +1661,33 @@ async function init() {
   setInterval(updateClock, 1000);
   setInterval(fetchStatus, 30000);
   setInterval(simulateActivity, 3000 + Math.random() * 2000);
+  setInterval(() => { if (Math.random() > 0.85) spawnMeteor(); }, 5000);
   updateClock();
   fetchStatus();
 
   // Initial activity burst
-  for (let i = 0; i < 5; i++) {
-    setTimeout(simulateActivity, i * 800);
-  }
+  for (let i = 0; i < 5; i++) setTimeout(() => simulateActivity(), i * 500);
+
+  // Keyboard shortcuts (Improvement #8)
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+    if (e.key === 'r' || e.key === 'R') resetView();
+    if (e.key === 't' || e.key === 'T') topView();
+    if (e.key === 'f' || e.key === 'F') focusSelected();
+    if (e.key === 'c' || e.key === 'C') cinematicFly();
+    if (e.key === '/' || e.key === 'ب') { e.preventDefault(); toggleSearch(); }
+    if (e.key === 'Escape') {
+      if (searchOpen) toggleSearch();
+      if (chatOpen) toggleChat();
+      if (auditLogOpen) toggleAuditLog();
+      closeAgentPanel();
+    }
+    if (e.key === 'Enter' && e.ctrlKey) toggleChat();
+    if (e.key === 'l' || e.key === 'L') toggleAuditLog();
+    if (e.key === 's' || e.key === 'S') toggleSound();
+  });
+
+  addAuditEntry('system', 'SYS', 'تم تشغيل لوحة التحكم بنجاح — 81 وكيل جاهز');
 }
 
 init();
