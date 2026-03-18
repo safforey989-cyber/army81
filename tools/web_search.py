@@ -12,21 +12,96 @@ logger = logging.getLogger("army81.tools.search")
 
 def web_search(query: str, num_results: int = 5) -> str:
     """
-    بحث على الإنترنت باستخدام Serper API أو Google CSE
-    يرجع النتائج كنص منسّق
+    بحث على الإنترنت — ترتيب الأولوية:
+    1. LangSearch (أعمق — يعطي محتوى كامل)
+    2. Serper (أسرع — Google results)
+    3. Google CSE (بديل)
     """
-    # جرب Serper أولاً (أسهل وأسرع)
+    # 1. LangSearch أولاً (بحث عميق مع محتوى)
+    langsearch_key = os.getenv("LANGSEARCH_API_KEY", "")
+    if langsearch_key:
+        result = _search_langsearch(query, num_results, langsearch_key)
+        if result and "خطأ" not in result:
+            return result
+
+    # 2. Serper (أسرع)
     serper_key = os.getenv("SERPER_API_KEY", "")
     if serper_key:
         return _search_serper(query, num_results, serper_key)
 
-    # بديل: Google Custom Search
+    # 3. Google Custom Search
     google_key = os.getenv("GOOGLE_API_KEY", "")
     cse_id = os.getenv("GOOGLE_CSE_ID", "")
     if google_key and cse_id:
         return _search_google_cse(query, num_results, google_key, cse_id)
 
-    return "خطأ: لا يوجد مفتاح API للبحث. أضف SERPER_API_KEY أو GOOGLE_CSE_ID في .env"
+    return "خطأ: لا يوجد مفتاح API للبحث. أضف LANGSEARCH_API_KEY أو SERPER_API_KEY في .env"
+
+
+def _search_langsearch(query: str, num: int, api_key: str) -> str:
+    """
+    بحث عبر LangSearch API — يعطي محتوى كامل للصفحات
+    أفضل للوكلاء لأنه يوفر سياقاً أعمق
+    """
+    url = "https://api.langsearch.com/v1/web-search"
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+    payload = {
+        "query": query,
+        "count": min(num, 10),
+    }
+
+    try:
+        resp = requests.post(url, headers=headers, json=payload, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+
+        results = []
+        # LangSearch response: data.webPages.value[]
+        web_pages = data.get("data", {})
+        if isinstance(web_pages, dict):
+            items = web_pages.get("webPages", {}).get("value", [])
+        else:
+            items = data.get("results", [])
+
+        for item in items[:num]:
+            title = item.get("name", item.get("title", ""))
+            snippet = item.get("snippet", item.get("summary", ""))
+            link = item.get("url", item.get("link", ""))
+            # LangSearch يعطي محتوى أطول — اقتطع بذكاء
+            if len(snippet) > 500:
+                snippet = snippet[:500] + "..."
+            results.append(
+                f"**{title}**\n"
+                f"{snippet}\n"
+                f"المصدر: {link}"
+            )
+
+        if not results:
+            return "لم تُوجد نتائج من LangSearch"
+
+        return "\n\n---\n\n".join(results)
+
+    except requests.exceptions.HTTPError as e:
+        logger.warning(f"LangSearch HTTP error: {e}")
+        return f"خطأ LangSearch: {e}"
+    except Exception as e:
+        logger.warning(f"LangSearch error: {e}")
+        return f"خطأ في LangSearch: {e}"
+
+
+def deep_search(query: str, num_results: int = 5) -> str:
+    """
+    بحث عميق — يستخدم LangSearch للحصول على محتوى كامل
+    مخصص للوكلاء الذين يحتاجون سياقاً غنياً (A04, A60, A01)
+    """
+    langsearch_key = os.getenv("LANGSEARCH_API_KEY", "")
+    if langsearch_key:
+        return _search_langsearch(query, num_results, langsearch_key)
+    # fallback
+    return web_search(query, num_results)
 
 
 def _search_serper(query: str, num: int, api_key: str) -> str:

@@ -43,12 +43,12 @@ def build_tools_registry() -> Dict[str, Tool]:
         parameters={"topic": "الموضوع", "lang": "اللغة (ar/en)"}
     )
 
-    # Tavily — بحث مُحسَّن للوكلاء
-    if os.getenv("TAVILY_API_KEY"):
+    # LangSearch / Tavily — بحث عميق للوكلاء
+    if os.getenv("LANGSEARCH_API_KEY") or os.getenv("TAVILY_API_KEY"):
         registry["deep_search"] = Tool(
             name="deep_search",
-            description="بحث عميق مع تلخيص تلقائي — أفضل من web_search للمهام المعقدة",
-            func=_lazy_import("tools.tavily_search", "deep_search"),
+            description="بحث عميق مع محتوى كامل — أفضل من web_search للمهام المعقدة (LangSearch/Tavily)",
+            func=_lazy_import("tools.web_search", "deep_search"),
             parameters={"query": "سؤال أو موضوع"}
         )
 
