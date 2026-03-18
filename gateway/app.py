@@ -277,6 +277,137 @@ async def a2a_status():
 async def health():
     return {"status": "healthy", "agents": len(router.agents), "version": "2.1.0"}
 
+# ── Metrics & Knowledge Endpoints ────────────────────────
+@app.get("/metrics")
+async def get_metrics():
+    """إحصائيات حقيقية من قاعدة البيانات"""
+    metrics = {
+        "timestamp": datetime.now().isoformat(),
+        "agents": {
+            "total": len(router.agents),
+            "by_category": router._count_by_category(),
+            "top_performers": [],
+        },
+        "tasks": {
+            "total_today": sum(a.stats.get("tasks_done",0) for a in router.agents.values()),
+            "total_failed": sum(a.stats.get("tasks_failed",0) for a in router.agents.values()),
+            "success_rate": 0,
+        },
+        "memory": {},
+        "knowledge": {},
+    }
+
+    total = metrics["tasks"]["total_today"] + metrics["tasks"]["total_failed"]
+    if total > 0:
+        metrics["tasks"]["success_rate"] = round(
+            metrics["tasks"]["total_today"] / total * 100, 1
+        )
+
+    # أفضل الوكلاء
+    agents_list = sorted(
+        router.agents.values(),
+        key=lambda a: a.stats.get("tasks_done", 0),
+        reverse=True
+    )
+    metrics["agents"]["top_performers"] = [
+        {"id": a.agent_id, "name": a.name_ar,
+         "tasks": a.stats.get("tasks_done",0),
+         "category": a.category}
+        for a in agents_list[:5]
+    ]
+
+    # إحصائيات Chroma
+    try:
+        import chromadb
+        client = chromadb.PersistentClient(path="workspace/chroma_db")
+        collections = client.list_collections()
+        metrics["memory"]["chroma_collections"] = len(collections)
+        metrics["memory"]["total_documents"] = sum(c.count() for c in collections)
+    except:
+        metrics["memory"]["chroma_collections"] = 0
+
+    # إحصائيات المعرفة
+    from pathlib import Path as _Path
+    knowledge_dir = _Path("workspace/knowledge")
+    if knowledge_dir.exists():
+        all_files = list(knowledge_dir.rglob("*.txt"))
+        metrics["knowledge"]["files"] = len(all_files)
+        metrics["knowledge"]["size_mb"] = round(
+            sum(f.stat().st_size for f in all_files) / 1024 / 1024, 2
+        )
+
+    return metrics
+
+@app.get("/agents/{agent_id}/history")
+async def agent_history(agent_id: str, limit: int = 20):
+    """تاريخ مهام وكيل معين"""
+    if agent_id not in router.agents:
+        raise HTTPException(404, "Agent not found")
+    agent = router.agents[agent_id]
+    return {
+        "agent_id": agent_id,
+        "stats": agent.stats,
+        "recent_tasks": list(agent.short_term_memory)[-limit:] if hasattr(agent, 'short_term_memory') else []
+    }
+
+@app.get("/knowledge/status")
+async def knowledge_status():
+    """حالة قاعدة المعرفة"""
+    status = {"collections": [], "total_docs": 0, "knowledge_files": 0}
+    try:
+        import chromadb
+        client = chromadb.PersistentClient(path="workspace/chroma_db")
+        for c in client.list_collections():
+            count = c.count()
+            status["collections"].append({"name": c.name, "count": count})
+            status["total_docs"] += count
+    except:
+        pass
+
+    from pathlib import Path as _Path
+    knowledge_dir = _Path("workspace/knowledge")
+    if knowledge_dir.exists():
+        status["knowledge_files"] = len(list(knowledge_dir.rglob("*.txt")))
+
+    return status
+
+@app.post("/feedback")
+async def submit_feedback(agent_id: str, task: str, rating: int, comment: str = ""):
+    """تقييم رد وكيل"""
+    from pathlib import Path as _Path
+    feedback_file = _Path("workspace/feedback.jsonl")
+    feedback_file.parent.mkdir(parents=True, exist_ok=True)
+    entry = {
+        "timestamp": datetime.now().isoformat(),
+        "agent_id": agent_id,
+        "task_preview": task[:100],
+        "rating": rating,
+        "comment": comment
+    }
+    with open(feedback_file, "a", encoding="utf-8") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    return {"status": "recorded", "rating": rating}
+
+@app.get("/reports/latest")
+async def latest_report():
+    """آخر تقرير يومي"""
+    from pathlib import Path as _Path
+    reports_dir = _Path("workspace/reports")
+    if not reports_dir.exists():
+        return {"error": "No reports yet"}
+
+    reports = sorted(reports_dir.glob("*.md"), reverse=True)
+    if not reports:
+        return {"error": "No reports found"}
+
+    latest = reports[0]
+    return {
+        "filename": latest.name,
+        "date": latest.stem,
+        "content": latest.read_text(encoding="utf-8"),
+        "size": latest.stat().st_size
+    }
+
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn

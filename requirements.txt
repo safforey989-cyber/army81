@@ -17,3 +17,7 @@ apscheduler>=3.10.0
 # Phase 4 — CrewAI + Streamlit Dashboard
 crewai>=0.80.0
 streamlit>=1.30.0
+
+# Phase 5 — Dashboard v3.0 + Knowledge
+plotly>=5.18.0
+pandas>=2.1.0
