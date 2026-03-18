@@ -48,6 +48,7 @@ class SmartRouter:
         self.agents: Dict[str, object] = {}
         self.history: List[Dict] = []
         self.stats = {"total": 0, "by_category": {}, "by_agent": {}}
+        self.neural_net = None  # v5: يُعيّن من gateway startup
 
     def register(self, agent):
         """تسجيل وكيل"""
@@ -84,7 +85,11 @@ class SmartRouter:
                 return {"status": "error", "result": f"لا وكلاء في الفئة {category}"}
             result = agent.run(task, context)
 
-        # 3. توجيه تلقائي
+        # 3. توجيه تلقائي — عبر القائد الأعلى إذا متاح (v5)
+        elif self.neural_net:
+            result_dict = self.neural_net.route_through_commander(task, context)
+            self._log(task, result_dict, time.time() - start)
+            return result_dict
         else:
             agent = self._auto_select(task)
             result = agent.run(task, context)

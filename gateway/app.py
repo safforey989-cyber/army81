@@ -119,6 +119,17 @@ class A2AChainRequest(BaseModel):
 @app.on_event("startup")
 async def startup():
     count, errors = load_all_agents()
+
+    # v5: تفعيل الشبكة العصبية
+    try:
+        from core.neural_network import get_neural_network
+        neural_net = get_neural_network(router)
+        neural_net.register_agents(router.agents)
+        router.neural_net = neural_net
+        logger.info(f"Neural Network active — {neural_net.status()['graph_edges']} connections")
+    except Exception as e:
+        logger.warning(f"Neural Network not available: {e}")
+
     logger.info(f"Army81 started — {count} agents ready, {errors} errors")
 
 @app.get("/")
@@ -275,7 +286,42 @@ async def a2a_status():
 
 @app.get("/health")
 async def health():
-    return {"status": "healthy", "agents": len(router.agents), "version": "2.1.0"}
+    return {"status": "healthy", "agents": len(router.agents), "version": "3.0.0"}
+
+# ── v5: Neural Network Endpoints ─────────────────
+@app.get("/network/status")
+async def network_status():
+    """حالة الشبكة العصبية"""
+    if not router.neural_net:
+        return {"status": "not_initialized", "message": "الشبكة العصبية غير مفعّلة"}
+    return router.neural_net.status()
+
+@app.get("/network/graph")
+async def network_graph():
+    """خريطة اتصالات الشبكة العصبية"""
+    if not router.neural_net:
+        return {"error": "الشبكة العصبية غير مفعّلة"}
+    return router.neural_net.get_graph()
+
+@app.get("/network/signals")
+async def network_signals():
+    """آخر الإشارات العصبية"""
+    if not router.neural_net:
+        return {"signals": []}
+    return {"signals": router.neural_net.get_recent_signals(30)}
+
+@app.get("/commander/decide")
+async def commander_decide(task: str):
+    """A00 يحلل مهمة ويقرر بدون تنفيذ"""
+    if not router.neural_net:
+        return {"error": "الشبكة العصبية غير مفعّلة"}
+    complexity = router.neural_net._compute_complexity(task)
+    decision = router.neural_net._commander_decide(task, complexity, {})
+    return {
+        "task": task,
+        "complexity": complexity,
+        "decision": decision,
+    }
 
 # ── Metrics & Knowledge Endpoints ────────────────────────
 @app.get("/metrics")

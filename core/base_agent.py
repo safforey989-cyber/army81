@@ -138,6 +138,10 @@ class BaseAgent:
         self.distillation = KnowledgeDistillation() if _KD_AVAILABLE else None
         self.adapter = Army81Adapter() if _AA_AVAILABLE else None
 
+        # ── v5: الشبكة العصبية + المهارات ──────────────────
+        self.neural_net = None  # يُعيّن من NeuralNetwork.register_agents()
+        self._skill_memory = None  # lazy
+
         logger.info(f"Agent ready: {self.agent_id} ({self.name_ar})")
 
     @property
@@ -145,6 +149,17 @@ class BaseAgent:
         if self._llm is None:
             self._llm = LLMClient(self.model_alias)
         return self._llm
+
+    @property
+    def skill_memory(self):
+        """AutoSkill + MemSkill adapter (lazy)"""
+        if self._skill_memory is None:
+            try:
+                from core.skill_memory_adapter import get_skill_memory_adapter
+                self._skill_memory = get_skill_memory_adapter()
+            except Exception:
+                pass
+        return self._skill_memory
 
     def run(self, task: str, context: Dict = None) -> AgentResult:
         """تنفيذ مهمة — النقطة الرئيسية (v3)"""
@@ -166,12 +181,32 @@ class BaseAgent:
                 examples = self.distillation.get_examples_for_student(
                     self._classify_task(task), self.model_alias, k=3)
 
-            # B: أثرِ الـ system prompt
+            # B-v5: مهارات AutoSkill قبل المهمة
+            skill_ctx = ""
+            if self.skill_memory:
+                try:
+                    skill_ctx = self.skill_memory.before_task(self.agent_id, task)
+                except Exception:
+                    pass
+
+            # B-v5: إشارات الشبكة العصبية
+            neural_ctx = ""
+            if self.neural_net:
+                try:
+                    neural_ctx = self.neural_net.format_signals_for_prompt(self.agent_id)
+                except Exception:
+                    pass
+
+            # C: أثرِ الـ system prompt
             enriched_system = self.system_prompt
             if memory_ctx:
                 enriched_system += f"\n\n{memory_ctx}"
             if examples:
                 enriched_system += f"\n\n## أمثلة ناجحة مشابهة:\n{examples}"
+            if skill_ctx:
+                enriched_system += f"\n\n{skill_ctx}"
+            if neural_ctx:
+                enriched_system += f"\n\n{neural_ctx}"
 
             # C: ابنِ الرسائل
             messages = self._build_messages(task, context)
@@ -206,6 +241,21 @@ class BaseAgent:
                 self.collective.contribute(
                     self.agent_id, result_text[:500],
                     topic=self._classify_task(task))
+
+            # G-v5: AutoSkill بعد المهمة — استخرج مهارة
+            if self.skill_memory:
+                try:
+                    self.skill_memory.after_task(
+                        self.agent_id, task, result_text, True, 7)
+                except Exception:
+                    pass
+
+            # H-v5: انشر إشارة عبر الشبكة العصبية
+            if self.neural_net:
+                try:
+                    self.neural_net.after_task_propagate(self.agent_id, result)
+                except Exception:
+                    pass
 
             # تحديث الإحصائيات
             elapsed = round(time.time() - start, 2)
