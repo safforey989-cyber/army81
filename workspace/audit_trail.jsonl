@@ -6,3 +6,7 @@
 {"timestamp": "2026-03-18T01:11:18.119938", "agent_id": "TEST", "action": "change_model", "rule_violated": "لا تغيير يرفع التكلفة أكثر من 20%"}
 {"timestamp": "2026-03-18T01:11:18.119938", "agent_id": "AUDIT_TEST", "action": "modify_core", "rule_violated": "لا تعديل على ملفات core/ بدون موافقة"}
 {"timestamp": "2026-03-18T01:11:18.814787", "agent_id": "TEST_EVOL", "action": "update_system_prompt", "rule_violated": "كل تغيير في system_prompt يحتاج اختبار 3 مهام أولاً"}
+{"timestamp": "2026-03-18T18:42:56.490926", "agent_id": "TEST", "action": "modify_core", "rule_violated": "لا تعديل على ملفات core/ بدون موافقة"}
+{"timestamp": "2026-03-18T18:42:56.491052", "agent_id": "TEST", "action": "change_model", "rule_violated": "لا تغيير يرفع التكلفة أكثر من 20%"}
+{"timestamp": "2026-03-18T18:42:56.491136", "agent_id": "AUDIT_TEST", "action": "modify_core", "rule_violated": "لا تعديل على ملفات core/ بدون موافقة"}
+{"timestamp": "2026-03-18T18:42:56.503594", "agent_id": "TEST_EVOL", "action": "update_system_prompt", "rule_violated": "كل تغيير في system_prompt يحتاج اختبار 3 مهام أولاً"}
