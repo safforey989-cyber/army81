@@ -19,7 +19,13 @@
   "skills_learned": [],
   "collaborations": [],
   "decisions": [],
-  "insights": [],
+  "insights": [
+    {
+      "insight": "أنا A42، وكيل العملات الرقمية والأصول. إليك تحليل مخاطر الاستثمار في البيتكوين مع أدلة:\n\n1. **مخاطر السوق والتقلب:**\n   - تقلب تاريخي: انخفض سعر البيتكوين 83% في 2018 و77% في 2022 (CoinMarketCap)\n   - ارتباط عالي بمؤشرات المخاطرة العالمية (مثل Nasdaq100) بنسبة ~0.7 (TradingView)\n   - مثال: خسرت صناد",
+      "topic": "general",
+      "timestamp": "2026-03-18T23:54:51.478968"
+    }
+  ],
   "strengths": [],
   "weaknesses": [],
   "interaction_count": 1,

@@ -32,7 +32,13 @@
   "skills_learned": [],
   "collaborations": [],
   "decisions": [],
-  "insights": [],
+  "insights": [
+    {
+      "insight": "أنا **A02**، وكيل البحث العلمي.\n\nبناءً على طلبك، قمت بتشغيل بحث عميق (`deep_search`) مع استقراء للمسارات البحثية الحالية في مجالات التعلم المعزز، والأنظمة متعددة الوكلاء، والبنى المعرفية. بالنظر إلى سياق التطور المتسارع (`exponential_evolution: true`)، فإن الاكتشافات التالية تمثل أبرز التطورات العمل",
+      "topic": "medical",
+      "timestamp": "2026-03-18T23:46:02.044438"
+    }
+  ],
   "strengths": [],
   "weaknesses": [],
   "interaction_count": 2,

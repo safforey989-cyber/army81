@@ -19,7 +19,13 @@
   "skills_learned": [],
   "collaborations": [],
   "decisions": [],
-  "insights": [],
+  "insights": [
+    {
+      "insight": "A15 هنا، وكيل علم النفس السلوكي. بناء نظام التقييم يتطلب تكاملاً مع وكلاء آخرين:\n\n**المقاييس المقترحة:**\n1. **الدقة المعرفية** (Cognitive Precision): نسبة الإجابات المدعومة بمراجع علمية\n2. **مرونة التعاون** (Collaborative Fluency): عدد الإحالات الصحيحة لوكلاء آخرين\n3. **الالتزام الأخلاقي** (Ethical ",
+      "topic": "code",
+      "timestamp": "2026-03-18T23:53:23.456384"
+    }
+  ],
   "strengths": [],
   "weaknesses": [],
   "interaction_count": 1,
