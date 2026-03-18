@@ -1,0 +1,40 @@
+{
+  "agent_id": "A78",
+  "created_at": "2026-03-18T21:41:36.147033",
+  "known_agents": {
+    "A20": {
+      "name": "وكيل الديناميكيات الاجتماعية",
+      "specialty": "يحلل الديناميكيات الجماعية والشبكات الاجتماعية وآليات التأثير في المجتمعات.",
+      "first_met": "2026-03-18T21:41:36.147033",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل الديناميكيات الاجتماعية",
+          "timestamp": "2026-03-18T21:41:36.147033"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A34": {
+      "name": "وكيل تقييم المخاطر",
+      "specialty": "يقيّم المخاطر الاستراتيجية والتشغيلية ويصمم أطر إدارة المخاطر المؤسسية.",
+      "first_met": "2026-03-18T21:58:06.813609",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل تقييم المخاطر",
+          "timestamp": "2026-03-18T21:58:06.813609"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [],
+  "decisions": [],
+  "insights": [],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 2,
+  "last_active": "2026-03-18T21:58:06.813609"
+}

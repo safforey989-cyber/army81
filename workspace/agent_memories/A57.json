@@ -1,0 +1,59 @@
+{
+  "agent_id": "A57",
+  "created_at": "2026-03-18T21:52:24.933624",
+  "known_agents": {
+    "A56": {
+      "name": "وكيل الاستخبارات الإعلامية العميقة",
+      "specialty": "يجمع الاستخبارات من مصادر إعلامية متعددة ويحلل الأنماط والروايات الكبرى.",
+      "first_met": "2026-03-18T21:52:24.934625",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل الاستخبارات الإعلامية العميقة",
+          "timestamp": "2026-03-18T21:52:24.934625"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A10": {
+      "name": "وكيل إدارة المعرفة",
+      "specialty": "يجمع المعرفة من كل الوكلاء، ينظمها، ويجعلها قابلة للاسترجاع.",
+      "first_met": "2026-03-18T22:01:50.154426",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-18T22:01:50.154426"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A30": {
+      "name": "وكيل قيادة الابتكار",
+      "specialty": "يقود ثقافة الابتكار ويصمم أنظمة الإبداع المؤسسي ويحوّل الأفكار إلى واقع.",
+      "first_met": "2026-03-18T22:01:50.157666",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-18T22:01:50.157666"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [],
+  "decisions": [],
+  "insights": [
+    {
+      "insight": "ERROR: 404 Client Error: Not Found for url: http://localhost:11434/api/chat",
+      "topic": "collaboration",
+      "timestamp": "2026-03-18T22:01:50.152408"
+    }
+  ],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 3,
+  "last_active": "2026-03-18T22:01:50.157666"
+}

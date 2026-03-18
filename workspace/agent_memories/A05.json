@@ -14,6 +14,123 @@
       ],
       "trust_score": 0.55,
       "collaboration_count": 1
+    },
+    "A11": {
+      "name": "وكيل الترجمة والتعريب",
+      "specialty": "يترجم ويُعرّب المحتوى بدقة، مع مراعاة السياق الثقافي والتقني.",
+      "first_met": "2026-03-18T21:50:01.671754",
+      "interactions": [
+        {
+          "summary": "شاركني معرفة عن cat3_tools",
+          "timestamp": "2026-03-18T21:50:01.671754"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A70": {
+      "name": "وكيل الابتكار الجذري",
+      "specialty": "يقود الابتكارات الجذرية التي تُعيد تعريف الصناعات وتخلق قيمة غير مسبوقة.",
+      "first_met": "2026-03-18T21:50:01.677258",
+      "interactions": [
+        {
+          "summary": "شاركني معرفة عن cat3_tools",
+          "timestamp": "2026-03-18T21:50:01.677258"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A08": {
+      "name": "وكيل التحليل المالي",
+      "specialty": "يحلل الأسواق المالية، يقرأ البيانات الاقتصادية، ويقيّم المخاطر والفرص.",
+      "first_met": "2026-03-18T21:50:01.683274",
+      "interactions": [
+        {
+          "summary": "شاركني معرفة عن cat3_tools",
+          "timestamp": "2026-03-18T21:50:01.683274"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A62": {
+      "name": "وكيل الحوكمة المؤسسية",
+      "specialty": "يصمم أطر الحوكمة المؤسسية ويضمن الامتثال والشفافية والمساءلة.",
+      "first_met": "2026-03-18T21:50:11.259856",
+      "interactions": [
+        {
+          "summary": "شاركني معرفة عن cat3_tools",
+          "timestamp": "2026-03-18T21:50:11.259856"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A47": {
+      "name": "وكيل اللغويات وعلم اللغة",
+      "specialty": "يحلل بنية اللغات وتطورها وتأثير اللغة على الفكر والمجتمع والتواصل.",
+      "first_met": "2026-03-18T21:50:11.264861",
+      "interactions": [
+        {
+          "summary": "شاركني معرفة عن cat3_tools",
+          "timestamp": "2026-03-18T21:50:11.264861"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A32": {
+      "name": "وكيل خبير الجيوسياسة",
+      "specialty": "يحلل التحولات الجيوسياسية وموازين القوى الدولية وتأثيرها على القرارات الاستراتيجية.",
+      "first_met": "2026-03-18T21:50:11.269865",
+      "interactions": [
+        {
+          "summary": "شاركني معرفة عن cat3_tools",
+          "timestamp": "2026-03-18T21:50:11.269865"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A56": {
+      "name": "وكيل الاستخبارات الإعلامية العميقة",
+      "specialty": "يجمع الاستخبارات من مصادر إعلامية متعددة ويحلل الأنماط والروايات الكبرى.",
+      "first_met": "2026-03-18T21:52:24.932643",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل الاستخبارات الإعلامية العميقة",
+          "timestamp": "2026-03-18T21:52:24.932643"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A06": {
+      "name": "وكيل تحليل البيانات",
+      "specialty": "يحلل البيانات الخام، يكشف الأنماط، ويحوّل الأرقام إلى قرارات.",
+      "first_met": "2026-03-18T21:59:39.471332",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-18T21:59:39.471332"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A21": {
+      "name": "وكيل تحليل سلوك الجماهير",
+      "specialty": "يحلل سلوك الجماهير والحشود والحركات الجماعية ويتوقع مآلاتها.",
+      "first_met": "2026-03-18T21:59:39.476333",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-18T21:59:39.476333"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [],
@@ -35,10 +152,25 @@
       "insight": "يجب إضافة rate limiting لكل API",
       "topic": "security",
       "timestamp": "2026-03-18T21:06:51.465512"
+    },
+    {
+      "insight": "ERROR: 404 Client Error: Not Found for url: http://localhost:11434/api/chat",
+      "topic": "cat3_tools",
+      "timestamp": "2026-03-18T21:50:01.666738"
+    },
+    {
+      "insight": "ERROR: 404 Client Error: Not Found for url: http://localhost:11434/api/chat",
+      "topic": "cat3_tools",
+      "timestamp": "2026-03-18T21:50:11.256859"
+    },
+    {
+      "insight": "ERROR: 404 Client Error: Not Found for url: http://localhost:11434/api/chat",
+      "topic": "collaboration",
+      "timestamp": "2026-03-18T21:59:39.465072"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 1,
-  "last_active": "2026-03-18T21:06:51.462511"
+  "interaction_count": 10,
+  "last_active": "2026-03-18T21:59:39.476333"
 }

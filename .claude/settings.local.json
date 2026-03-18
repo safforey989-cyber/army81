@@ -54,7 +54,17 @@
       "Bash(ls agents/*/*.json)",
       "Bash(find . -name *.py -not -path ./__pycache__/* -not -path ./.git/* -exec cat {} +)",
       "Bash(wc -l core/*.py)",
-      "Bash(wc -l memory/*.py)"
+      "Bash(wc -l memory/*.py)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''gateway/app.py'', doraise=True\\); print\\(''✅ Syntax OK''\\)\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''decisions: {len\\(d.get\\(collective_decisions,[]\\)\\)}, knowledge: {len\\(d.get\\(shared_knowledge,[]\\)\\)}, interactions: {d.get\\(network_state,{}\\).get\\(total_interactions,0\\)}''''\\)\")",
+      "Bash(python -c \"import sqlite3; c=sqlite3.connect\\(''''workspace/episodic_memory.db''''\\); print\\(f''''episodes: {c.execute\\(SELECT COUNT\\(*\\) FROM episodes\\).fetchone\\(\\)[0]}''''\\)\")",
+      "Bash(curl.exe -s http://localhost:8181/memory/swarm/stats)",
+      "Bash(python -c \"import py_compile; py_compile.compile\\(''gateway/app.py'', doraise=True\\); print\\(''✅ OK''\\)\")",
+      "Bash(python -c \"from core.hyper_swarm import HyperSwarm; h=HyperSwarm\\(\\); print\\(''✅ HyperSwarm OK''\\)\")",
+      "Bash(curl.exe -s http://localhost:8181/swarm/status)",
+      "Bash(find agents:*)",
+      "Bash(ls tools/*.py)",
+      "Bash(Get-Process python:*)"
     ]
   }
 }

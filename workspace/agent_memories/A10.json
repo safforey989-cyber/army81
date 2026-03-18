@@ -1,0 +1,40 @@
+{
+  "agent_id": "A10",
+  "created_at": "2026-03-18T21:54:38.612187",
+  "known_agents": {
+    "A62": {
+      "name": "وكيل الحوكمة المؤسسية",
+      "specialty": "يصمم أطر الحوكمة المؤسسية ويضمن الامتثال والشفافية والمساءلة.",
+      "first_met": "2026-03-18T21:54:38.613207",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل الحوكمة المؤسسية",
+          "timestamp": "2026-03-18T21:54:38.613207"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A57": {
+      "name": "وكيل تطوير التكاملات",
+      "specialty": "يصمم وينفذ تكاملات APIs والأنظمة ويبني pipelines البيانات والأتمتة.",
+      "first_met": "2026-03-18T22:01:50.154426",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل تطوير التكاملات",
+          "timestamp": "2026-03-18T22:01:50.154426"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [],
+  "decisions": [],
+  "insights": [],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 2,
+  "last_active": "2026-03-18T22:01:50.154426"
+}

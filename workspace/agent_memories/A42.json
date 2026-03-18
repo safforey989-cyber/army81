@@ -1,0 +1,27 @@
+{
+  "agent_id": "A42",
+  "created_at": "2026-03-18T21:49:05.159705",
+  "known_agents": {
+    "A13": {
+      "name": "وكيل الاستشارة القانونية",
+      "specialty": "يحلل القضايا القانونية، يفسّر القوانين، ويقدم مشورة قانونية توعوية.",
+      "first_met": "2026-03-18T21:49:05.159705",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل الاستشارة القانونية",
+          "timestamp": "2026-03-18T21:49:05.159705"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [],
+  "decisions": [],
+  "insights": [],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 1,
+  "last_active": "2026-03-18T21:49:05.159705"
+}

@@ -1,0 +1,40 @@
+{
+  "agent_id": "A30",
+  "created_at": "2026-03-18T21:40:30.191602",
+  "known_agents": {
+    "A16": {
+      "name": "وكيل خبير التفاوض",
+      "specialty": "يصمم استراتيجيات التفاوض، يحلل مواقف الأطراف، ويقود للوصول لاتفاقيات مُرضية.",
+      "first_met": "2026-03-18T21:40:30.191602",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل خبير التفاوض",
+          "timestamp": "2026-03-18T21:40:30.191602"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A57": {
+      "name": "وكيل تطوير التكاملات",
+      "specialty": "يصمم وينفذ تكاملات APIs والأنظمة ويبني pipelines البيانات والأتمتة.",
+      "first_met": "2026-03-18T22:01:50.157666",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل تطوير التكاملات",
+          "timestamp": "2026-03-18T22:01:50.157666"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [],
+  "decisions": [],
+  "insights": [],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 2,
+  "last_active": "2026-03-18T22:01:50.157666"
+}

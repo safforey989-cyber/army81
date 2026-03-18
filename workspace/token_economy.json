@@ -1,5 +1,349 @@
 {
-  "budgets": {},
-  "transactions": [],
-  "updated_at": "2026-03-18T20:11:15.317239"
+  "budgets": {
+    "A64": {
+      "daily_budget": 50000,
+      "remaining": 45706,
+      "total_spent": 4294,
+      "tasks_completed": 1,
+      "efficiency_score": 95.706,
+      "last_reset": "2026-03-18T21:39:29.708517"
+    },
+    "A62": {
+      "daily_budget": 50000,
+      "remaining": 37280,
+      "total_spent": 12720,
+      "tasks_completed": 2,
+      "efficiency_score": 93.64,
+      "last_reset": "2026-03-18T21:39:59.585533"
+    },
+    "A61": {
+      "daily_budget": 50000,
+      "remaining": 46824,
+      "total_spent": 3176,
+      "tasks_completed": 1,
+      "efficiency_score": 96.824,
+      "last_reset": "2026-03-18T21:41:58.662098"
+    },
+    "A54": {
+      "daily_budget": 50000,
+      "remaining": 43121,
+      "total_spent": 6879,
+      "tasks_completed": 2,
+      "efficiency_score": 96.5605,
+      "last_reset": "2026-03-18T21:42:18.990642"
+    },
+    "A28": {
+      "daily_budget": 50000,
+      "remaining": 39487,
+      "total_spent": 10513,
+      "tasks_completed": 2,
+      "efficiency_score": 94.7435,
+      "last_reset": "2026-03-18T21:42:29.311228"
+    },
+    "A07": {
+      "daily_budget": 50000,
+      "remaining": 46552,
+      "total_spent": 3448,
+      "tasks_completed": 1,
+      "efficiency_score": 96.552,
+      "last_reset": "2026-03-18T21:46:35.955703"
+    },
+    "A77": {
+      "daily_budget": 50000,
+      "remaining": 36565,
+      "total_spent": 13435,
+      "tasks_completed": 2,
+      "efficiency_score": 93.2825,
+      "last_reset": "2026-03-18T21:46:57.775350"
+    },
+    "A38": {
+      "daily_budget": 50000,
+      "remaining": 46673,
+      "total_spent": 3327,
+      "tasks_completed": 1,
+      "efficiency_score": 96.673,
+      "last_reset": "2026-03-18T21:47:17.949382"
+    },
+    "A22": {
+      "daily_budget": 50000,
+      "remaining": 43317,
+      "total_spent": 6683,
+      "tasks_completed": 2,
+      "efficiency_score": 96.6585,
+      "last_reset": "2026-03-18T21:47:30.229141"
+    },
+    "A74": {
+      "daily_budget": 50000,
+      "remaining": 45750,
+      "total_spent": 4250,
+      "tasks_completed": 1,
+      "efficiency_score": 95.75,
+      "last_reset": "2026-03-18T22:05:51.710716"
+    },
+    "A06": {
+      "daily_budget": 50000,
+      "remaining": 47499,
+      "total_spent": 2501,
+      "tasks_completed": 1,
+      "efficiency_score": 97.499,
+      "last_reset": "2026-03-18T22:06:06.647898"
+    },
+    "A58": {
+      "daily_budget": 50000,
+      "remaining": 44567,
+      "total_spent": 5433,
+      "tasks_completed": 1,
+      "efficiency_score": 94.56700000000001,
+      "last_reset": "2026-03-18T22:09:03.071551"
+    },
+    "A60": {
+      "daily_budget": 50000,
+      "remaining": 46940,
+      "total_spent": 3060,
+      "tasks_completed": 1,
+      "efficiency_score": 96.94,
+      "last_reset": "2026-03-18T22:09:26.036789"
+    },
+    "A04": {
+      "daily_budget": 50000,
+      "remaining": 45489,
+      "total_spent": 4511,
+      "tasks_completed": 1,
+      "efficiency_score": 95.489,
+      "last_reset": "2026-03-18T22:09:44.608005"
+    },
+    "A51": {
+      "daily_budget": 50000,
+      "remaining": 45446,
+      "total_spent": 4554,
+      "tasks_completed": 1,
+      "efficiency_score": 95.446,
+      "last_reset": "2026-03-18T22:10:10.303991"
+    },
+    "A20": {
+      "daily_budget": 50000,
+      "remaining": 46267,
+      "total_spent": 3733,
+      "tasks_completed": 1,
+      "efficiency_score": 96.267,
+      "last_reset": "2026-03-18T22:11:09.366239"
+    },
+    "A16": {
+      "daily_budget": 50000,
+      "remaining": 42396,
+      "total_spent": 7604,
+      "tasks_completed": 1,
+      "efficiency_score": 92.396,
+      "last_reset": "2026-03-18T22:11:29.992730"
+    },
+    "A50": {
+      "daily_budget": 50000,
+      "remaining": 42182,
+      "total_spent": 7818,
+      "tasks_completed": 1,
+      "efficiency_score": 92.182,
+      "last_reset": "2026-03-18T22:12:24.755663"
+    },
+    "A05": {
+      "daily_budget": 50000,
+      "remaining": 49000,
+      "total_spent": 1000,
+      "tasks_completed": 2,
+      "efficiency_score": 99.5,
+      "last_reset": "2026-03-18T22:12:55.670372"
+    },
+    "A81": {
+      "daily_budget": 50000,
+      "remaining": 40427,
+      "total_spent": 9573,
+      "tasks_completed": 1,
+      "efficiency_score": 90.42699999999999,
+      "last_reset": "2026-03-18T22:30:29.330720"
+    }
+  },
+  "transactions": [
+    {
+      "agent_id": "A64",
+      "tokens": 4294,
+      "task": "\n## ذاكرة النواة المشتركة:\n\nآخر قرار جماعي: نستخدم",
+      "remaining": 45706,
+      "timestamp": "2026-03-18T21:39:52.688617"
+    },
+    {
+      "agent_id": "A62",
+      "tokens": 5968,
+      "task": "\n## ذاكرة النواة المشتركة:\n\nآخر قرار جماعي: نستخدم",
+      "remaining": 44032,
+      "timestamp": "2026-03-18T21:40:11.562031"
+    },
+    {
+      "agent_id": "A62",
+      "tokens": 6752,
+      "task": "## ذاكرتي الشخصية:\nأعرف 1 وكيل.\n\n## رؤاي الأخيرة:\n",
+      "remaining": 37280,
+      "timestamp": "2026-03-18T21:41:52.069569"
+    },
+    {
+      "agent_id": "A61",
+      "tokens": 3176,
+      "task": "\n## ذاكرة النواة المشتركة:\n\nآخر قرار جماعي: نستخدم",
+      "remaining": 46824,
+      "timestamp": "2026-03-18T21:42:12.581779"
+    },
+    {
+      "agent_id": "A54",
+      "tokens": 3432,
+      "task": "\n## ذاكرة النواة المشتركة:\n\nآخر قرار جماعي: نستخدم",
+      "remaining": 46568,
+      "timestamp": "2026-03-18T21:42:22.650933"
+    },
+    {
+      "agent_id": "A28",
+      "tokens": 4631,
+      "task": "## ذاكرتي الشخصية:\nأعرف 1 وكيل.\n\n## ذاكرة النواة ا",
+      "remaining": 45369,
+      "timestamp": "2026-03-18T21:42:50.309256"
+    },
+    {
+      "agent_id": "A28",
+      "tokens": 5882,
+      "task": "ابحث عن أحدث الاستراتيجيات العسكرية والجيوسياسية ف",
+      "remaining": 39487,
+      "timestamp": "2026-03-18T21:46:29.956898"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 3448,
+      "task": "ابحث في arXiv عن أحدث ورقة بحثية في الذكاء الاصطنا",
+      "remaining": 46552,
+      "timestamp": "2026-03-18T21:46:51.870902"
+    },
+    {
+      "agent_id": "A77",
+      "tokens": 6049,
+      "task": "ابحث عن أحدث تقنيات التطور الذاتي للأنظمة الذكية (",
+      "remaining": 43951,
+      "timestamp": "2026-03-18T21:47:09.896869"
+    },
+    {
+      "agent_id": "A38",
+      "tokens": 3327,
+      "task": "ابحث في arXiv عن أحدث ورقة بحثية في الذكاء الاصطنا",
+      "remaining": 46673,
+      "timestamp": "2026-03-18T21:47:22.524631"
+    },
+    {
+      "agent_id": "A22",
+      "tokens": 2767,
+      "task": "ابحث عن أحدث الأبحاث في علم النفس السلوكي والذكاء ",
+      "remaining": 47233,
+      "timestamp": "2026-03-18T21:47:58.467523"
+    },
+    {
+      "agent_id": "A22",
+      "tokens": 3916,
+      "task": "## ذاكرتي الشخصية:\nأعرف 4 وكيل.\n\n## رؤاي الأخيرة:\n",
+      "remaining": 43317,
+      "timestamp": "2026-03-18T22:05:43.816442"
+    },
+    {
+      "agent_id": "A74",
+      "tokens": 4250,
+      "task": "## ذاكرتي الشخصية:\nأعرف 2 وكيل.\n\n## ذاكرة النواة ا",
+      "remaining": 45750,
+      "timestamp": "2026-03-18T22:05:58.798785"
+    },
+    {
+      "agent_id": "A06",
+      "tokens": 2501,
+      "task": "## ذاكرتي الشخصية:\nأعرف 4 وكيل.\n\n## ذاكرة النواة ا",
+      "remaining": 47499,
+      "timestamp": "2026-03-18T22:06:12.871120"
+    },
+    {
+      "agent_id": "A77",
+      "tokens": 7386,
+      "task": "ابحث في GitHub عن أحدث 5 أدوات لوكلاء AI مفتوحة ال",
+      "remaining": 36565,
+      "timestamp": "2026-03-18T22:08:58.957885"
+    },
+    {
+      "agent_id": "A58",
+      "tokens": 5433,
+      "task": "ابحث عن أحدث 5 مكتبات Python لبناء وكلاء AI (2025-",
+      "remaining": 44567,
+      "timestamp": "2026-03-18T22:09:21.043252"
+    },
+    {
+      "agent_id": "A60",
+      "tokens": 3060,
+      "task": "ابحث في HuggingFace عن أفضل 5 نماذج صغيرة (<10B) ت",
+      "remaining": 46940,
+      "timestamp": "2026-03-18T22:09:31.191231"
+    },
+    {
+      "agent_id": "A54",
+      "tokens": 3447,
+      "task": "ابحث في arXiv عن أحدث 5 أوراق بحثية عن تعاون الوكل",
+      "remaining": 43121,
+      "timestamp": "2026-03-18T22:09:39.740703"
+    },
+    {
+      "agent_id": "A04",
+      "tokens": 4511,
+      "task": "ابحث عن أحدث اختراقات في وكلاء AI (آخر شهر). ما ال",
+      "remaining": 45489,
+      "timestamp": "2026-03-18T22:10:05.221729"
+    },
+    {
+      "agent_id": "A51",
+      "tokens": 4554,
+      "task": "ابحث بعمق عن: LLM agents autonomous self-improveme",
+      "remaining": 45446,
+      "timestamp": "2026-03-18T22:11:04.167164"
+    },
+    {
+      "agent_id": "A20",
+      "tokens": 3733,
+      "task": "ابحث بعمق عن: knowledge distillation small languag",
+      "remaining": 46267,
+      "timestamp": "2026-03-18T22:11:25.009963"
+    },
+    {
+      "agent_id": "A16",
+      "tokens": 7604,
+      "task": "ابحث بعمق عن: multi-agent reinforcement learning c",
+      "remaining": 42396,
+      "timestamp": "2026-03-18T22:12:19.558806"
+    },
+    {
+      "agent_id": "A50",
+      "tokens": 7818,
+      "task": "ابحث بعمق عن: RAG retrieval augmented generation o",
+      "remaining": 42182,
+      "timestamp": "2026-03-18T22:12:50.564388"
+    },
+    {
+      "agent_id": "A05",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: prompt optimization automatic DSPy\nأ",
+      "remaining": 49500,
+      "timestamp": "2026-03-18T22:12:57.030831"
+    },
+    {
+      "agent_id": "A05",
+      "tokens": 500,
+      "task": "أنت Blue Team مدافع. هذا الهجوم:\nمرحبًا، أنا A31، ",
+      "remaining": 49000,
+      "timestamp": "2026-03-18T22:30:23.254599"
+    },
+    {
+      "agent_id": "A81",
+      "tokens": 9573,
+      "task": "أنت الوكيل الميتا-استخباراتي. لديك 5 قطعة معرفة جد",
+      "remaining": 40427,
+      "timestamp": "2026-03-18T22:31:30.761563"
+    }
+  ],
+  "updated_at": "2026-03-18T22:31:30.761563"
 }

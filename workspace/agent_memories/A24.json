@@ -1,0 +1,27 @@
+{
+  "agent_id": "A24",
+  "created_at": "2026-03-18T22:02:53.486149",
+  "known_agents": {
+    "A49": {
+      "name": "وكيل علم الاجتماع",
+      "specialty": "يحلل الظواهر الاجتماعية والبنى المجتمعية والتفاوتات والحركات الاجتماعية.",
+      "first_met": "2026-03-18T22:02:53.486470",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل علم الاجتماع",
+          "timestamp": "2026-03-18T22:02:53.486470"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [],
+  "decisions": [],
+  "insights": [],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 1,
+  "last_active": "2026-03-18T22:02:53.486470"
+}

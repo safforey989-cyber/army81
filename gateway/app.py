@@ -1214,6 +1214,106 @@ def run_swarm_session(duration_minutes: int, topic: str):
 # Swarm Memory Endpoints (v12)
 # ═══════════════════════════════════════════════════════════
 
+@app.get("/memory/stats")
+def memory_stats_full():
+    """إحصائيات شاملة لكل أنظمة الذاكرة"""
+    import sqlite3, os
+    stats = {
+        "episodic": {"episodes": 0, "agents_with_data": 0, "success_rate": 0},
+        "chroma": {"collections": 0, "total_documents": 0, "details": {}},
+        "agent_memories": {"total_files": 0, "total_interactions": 0},
+        "core_memory": {"decisions": 0, "interactions": 0, "knowledge": 0},
+        "cloud": {"status": "unknown"},
+        "total_memory_size_mb": 0,
+    }
+
+    # 1. Episodic Memory (SQLite)
+    try:
+        db_path = os.path.join("workspace", "episodic_memory.db")
+        if os.path.exists(db_path):
+            c = sqlite3.connect(db_path)
+            stats["episodic"]["episodes"] = c.execute("SELECT COUNT(*) FROM episodes").fetchone()[0]
+            stats["episodic"]["agents_with_data"] = c.execute("SELECT COUNT(DISTINCT agent_id) FROM episodes").fetchone()[0]
+            total = c.execute("SELECT COUNT(*) FROM episodes").fetchone()[0]
+            success = c.execute("SELECT COUNT(*) FROM episodes WHERE success=1").fetchone()[0]
+            stats["episodic"]["success_rate"] = round(success/max(total,1)*100, 1)
+            stats["episodic"]["recent"] = [
+                {"agent": r[0], "task": r[1][:60], "success": bool(r[2]), "rating": r[3]}
+                for r in c.execute("SELECT agent_id, task_summary, success, rating FROM episodes ORDER BY created_at DESC LIMIT 5").fetchall()
+            ]
+            c.close()
+    except Exception as e:
+        stats["episodic"]["error"] = str(e)
+
+    # 2. Chroma (Semantic Memory)
+    try:
+        import chromadb
+        client = chromadb.PersistentClient(path="workspace/chroma_db")
+        cols = client.list_collections()
+        stats["chroma"]["collections"] = len(cols)
+        total_docs = 0
+        for col in cols:
+            count = col.count()
+            total_docs += count
+            stats["chroma"]["details"][col.name] = count
+        stats["chroma"]["total_documents"] = total_docs
+    except Exception as e:
+        stats["chroma"]["error"] = str(e)
+
+    # 3. Agent Individual Memories
+    try:
+        mem_dir = os.path.join("workspace", "agent_memories")
+        if os.path.exists(mem_dir):
+            files = [f for f in os.listdir(mem_dir) if f.endswith(".json")]
+            stats["agent_memories"]["total_files"] = len(files)
+            total_int = 0
+            for f in files[:81]:
+                try:
+                    import json
+                    with open(os.path.join(mem_dir, f)) as fh:
+                        data = json.load(fh)
+                        total_int += len(data.get("interactions", []))
+                except:
+                    pass
+            stats["agent_memories"]["total_interactions"] = total_int
+    except Exception as e:
+        stats["agent_memories"]["error"] = str(e)
+
+    # 4. Core Memory
+    try:
+        core_path = os.path.join("workspace", "core_memory.json")
+        if os.path.exists(core_path):
+            import json
+            with open(core_path) as f:
+                cm = json.load(f)
+            stats["core_memory"]["decisions"] = len(cm.get("collective_decisions", []))
+            stats["core_memory"]["interactions"] = cm.get("network_state", {}).get("total_interactions", 0)
+            stats["core_memory"]["knowledge"] = len(cm.get("shared_knowledge", []))
+            stats["core_memory"]["rules"] = len(cm.get("emergent_rules", []))
+            stats["core_memory"]["goals"] = len(cm.get("active_goals", []))
+    except Exception as e:
+        stats["core_memory"]["error"] = str(e)
+
+    # 5. Cloud Memory
+    try:
+        from memory.cloud_memory import CloudMemory
+        cloud = CloudMemory()
+        stats["cloud"]["status"] = "connected" if cloud.supabase else "disconnected"
+    except:
+        stats["cloud"]["status"] = "not_configured"
+
+    # 6. Total disk size
+    try:
+        total = 0
+        for root, dirs, files in os.walk("workspace"):
+            for f in files:
+                total += os.path.getsize(os.path.join(root, f))
+        stats["total_memory_size_mb"] = round(total / 1024 / 1024, 2)
+    except:
+        pass
+
+    return stats
+
 @app.get("/memory/swarm/stats")
 def swarm_memory_stats():
     """إحصائيات ذاكرة السرب"""

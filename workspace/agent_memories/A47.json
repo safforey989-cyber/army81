@@ -1,0 +1,27 @@
+{
+  "agent_id": "A47",
+  "created_at": "2026-03-18T21:50:11.264861",
+  "known_agents": {
+    "A05": {
+      "name": "وكيل تطوير البرمجيات",
+      "specialty": "يكتب كوداً نظيفاً، يصحح الأخطاء، ويحلل الكود الموجود بعين خبير.",
+      "first_met": "2026-03-18T21:50:11.266860",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل تطوير البرمجيات",
+          "timestamp": "2026-03-18T21:50:11.266860"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [],
+  "decisions": [],
+  "insights": [],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 1,
+  "last_active": "2026-03-18T21:50:11.266860"
+}

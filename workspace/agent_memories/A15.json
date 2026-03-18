@@ -1,0 +1,27 @@
+{
+  "agent_id": "A15",
+  "created_at": "2026-03-18T21:47:10.854021",
+  "known_agents": {
+    "A77": {
+      "name": "وكيل تنسيق سير العمل",
+      "specialty": "يصمم وينفذ ويراقب تدفقات عمل معقدة متعددة الوكلاء لإنجاز مهام ضخمة.",
+      "first_met": "2026-03-18T21:47:10.855018",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل تنسيق سير العمل",
+          "timestamp": "2026-03-18T21:47:10.855018"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
+  "skills_learned": [],
+  "collaborations": [],
+  "decisions": [],
+  "insights": [],
+  "strengths": [],
+  "weaknesses": [],
+  "interaction_count": 1,
+  "last_active": "2026-03-18T21:47:10.855018"
+}
