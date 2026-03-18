@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## [4.1.0] — 2026-03-18 — التحقق الشامل + تثبيت التبعيات
+
+### ما تم
+- **التحقق الكامل من معمارية v3** — كل المكونات تعمل بشكل صحيح:
+  - SmartQueue: rate limiting + fallback chain (5/5 اختبارات)
+  - HierarchicalMemory L1-L4: working + episodic + semantic + compressed (6/6 اختبارات)
+  - ConstitutionalGuardrails: 5 قواعد حماية + سجل مخالفات (3/3 اختبارات)
+  - CollectiveMemory: مشاركة معرفة بين 81 وكيل (3/3 اختبارات)
+  - KnowledgeDistillation: Flash يتعلم من Pro (4/4 اختبارات)
+  - Army81Adapter: اختيار المحرك التلقائي (2/2 اختبارات)
+  - SafeEvolution: تطور ذاتي + rollback (4/4 اختبارات)
+  - BaseAgent v3: تكامل كامل مع كل المكونات (2/2 اختبارات)
+- **107 اختبار ناجح** (7 core + 29 v3 + 12 agents + 22 phase2 + 37 phase3)
+- **تثبيت التبعيات**: fastapi, langgraph, chromadb, apscheduler وكل المكتبات المطلوبة
+- **Chroma ONNX model**: تحميل all-MiniLM-L6-v2 للبحث الدلالي
+
 ## [4.0.0] — 2026-03-18 — الترقية الشاملة الكاملة
 
 ### الإضافات الرئيسية

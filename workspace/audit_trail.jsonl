@@ -10,3 +10,11 @@
 {"timestamp": "2026-03-18T01:39:52.705987", "agent_id": "TEST", "action": "change_model", "rule_violated": "لا تغيير يرفع التكلفة أكثر من 20%"}
 {"timestamp": "2026-03-18T01:39:52.705987", "agent_id": "AUDIT_TEST", "action": "modify_core", "rule_violated": "لا تعديل على ملفات core/ بدون موافقة"}
 {"timestamp": "2026-03-18T01:39:53.308014", "agent_id": "TEST_EVOL", "action": "update_system_prompt", "rule_violated": "كل تغيير في system_prompt يحتاج اختبار 3 مهام أولاً"}
+{"timestamp": "2026-03-18T19:51:23.113477", "agent_id": "TEST", "action": "modify_core", "rule_violated": "لا تعديل على ملفات core/ بدون موافقة"}
+{"timestamp": "2026-03-18T19:51:23.113588", "agent_id": "TEST", "action": "change_model", "rule_violated": "لا تغيير يرفع التكلفة أكثر من 20%"}
+{"timestamp": "2026-03-18T19:51:23.113667", "agent_id": "AUDIT_TEST", "action": "modify_core", "rule_violated": "لا تعديل على ملفات core/ بدون موافقة"}
+{"timestamp": "2026-03-18T19:51:23.124109", "agent_id": "TEST_EVOL", "action": "update_system_prompt", "rule_violated": "كل تغيير في system_prompt يحتاج اختبار 3 مهام أولاً"}
+{"timestamp": "2026-03-18T19:52:35.270098", "agent_id": "TEST", "action": "modify_core", "rule_violated": "لا تعديل على ملفات core/ بدون موافقة"}
+{"timestamp": "2026-03-18T19:52:35.270310", "agent_id": "TEST", "action": "change_model", "rule_violated": "لا تغيير يرفع التكلفة أكثر من 20%"}
+{"timestamp": "2026-03-18T19:52:35.270444", "agent_id": "AUDIT_TEST", "action": "modify_core", "rule_violated": "لا تعديل على ملفات core/ بدون موافقة"}
+{"timestamp": "2026-03-18T19:52:36.218479", "agent_id": "TEST_EVOL", "action": "update_system_prompt", "rule_violated": "كل تغيير في system_prompt يحتاج اختبار 3 مهام أولاً"}
