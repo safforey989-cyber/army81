@@ -159,7 +159,27 @@ async def get_agent(agent_id: str):
 
 @app.post("/task")
 async def run_task(req: TaskRequest):
-    """تنفيذ مهمة — التوجيه التلقائي"""
+    """تنفيذ مهمة — يكتشف الأوامر تلقائياً قبل التوجيه"""
+    # v8: كشف الأوامر (تدريب، اكتشاف، تطوير...)
+    try:
+        from core.command_parser import parse_command, execute_command
+        parsed = parse_command(req.task)
+        if parsed:
+            handler, params = parsed
+            result = execute_command(handler, params, router)
+            return {
+                "status": result.get("status", "success"),
+                "result": result.get("result", ""),
+                "command": handler,
+                "agent_name": "نظام الأوامر",
+                "agent_id": "SYS",
+                "model_used": "command_parser",
+                "elapsed_seconds": 0,
+            }
+    except Exception:
+        pass
+
+    # توجيه عادي للوكلاء
     return router.route(
         task=req.task,
         agent_id=req.agent_id,

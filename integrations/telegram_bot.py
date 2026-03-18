@@ -161,7 +161,10 @@ class TelegramBot:
         elif text.startswith("/agent_"):
             self._cmd_agent_direct(text)
         else:
-            self.route_to_agent(text)
+            # v8: كشف أوامر النظام أولاً (تدريب، اكتشاف، تطوير...)
+            handled = self._try_system_command(text)
+            if not handled:
+                self.route_to_agent(text)
 
     def process_callback(self, callback: Dict):
         """معالجة ضغطة زر (موافقة/رفض)"""
@@ -280,16 +283,30 @@ class TelegramBot:
     def _cmd_help(self):
         self.send_message(
             "📖 *مساعدة Army81 Bot*\n\n"
-            "*أوامر:*\n"
-            "/start — رسالة ترحيب\n"
+            "*أوامر النظام:*\n"
             "/status — حالة النظام\n"
             "/pending — طلبات تنتظر موافقتك\n"
             "/report — آخر تقرير يومي\n"
             "/agents — قائمة الوكلاء\n\n"
-            "*محادثة مع وكيل محدد:*\n"
-            "`/agent_A04 ما أخبار الذكاء الاصطناعي؟`\n\n"
-            "*محادثة عامة:*\n"
-            "أرسل أي سؤال وسيوجّه للوكيل المناسب تلقائياً"
+            "*أوامر التدريب (اكتب مباشرة):*\n"
+            "`درّب A04` — تدريب وكيل محدد\n"
+            "`درّب الكل` — دورة تدريب كاملة\n"
+            "`تدريب مكثف A01` — 5 مهام متتالية\n"
+            "`تدريب جماعي` — سيناريو تعاوني\n"
+            "`ترتيب` — أفضل الوكلاء\n"
+            "`مستويات` — مستويات الكل\n"
+            "`مستوى A04` — مستوى وكيل\n\n"
+            "*أوامر الذكاء:*\n"
+            "`اكتشف` — اكتشاف معرفة جديدة\n"
+            "`تقييم` — تقييم ذاتي\n"
+            "`طوّر` — دورة تطور ذاتي\n"
+            "`زامن` — مزامنة سحابية\n"
+            "`شبكة` — حالة الشبكة العصبية\n"
+            "`حالة التدريب` — إحصائيات\n"
+            "`سيناريو علوم صعب` — سيناريو محدد\n\n"
+            "*محادثة:*\n"
+            "`/agent_A04 سؤالك`\n"
+            "أو أرسل أي سؤال مباشرة"
         )
 
     def _cmd_agent_direct(self, text: str):
@@ -318,6 +335,25 @@ class TelegramBot:
             )
         except Exception as e:
             self.send_message(f"❌ خطأ: {e}")
+
+    def _try_system_command(self, text: str) -> bool:
+        """v8: يحاول تنفيذ أمر نظام (تدريب/اكتشاف/تطوير)"""
+        try:
+            from core.command_parser import parse_command, execute_command
+            parsed = parse_command(text)
+            if not parsed:
+                return False
+
+            handler, params = parsed
+            self.send_message(f"⚙️ جاري تنفيذ: {handler}...")
+
+            result = execute_command(handler, params)
+            response = result.get("result", "تم")
+            self.send_message(response)
+            return True
+        except Exception as e:
+            logger.debug(f"Command parse error: {e}")
+            return False
 
     def route_to_agent(self, task: str):
         """يرسل المهمة للوكيل المناسب تلقائياً"""
