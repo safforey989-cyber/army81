@@ -4,7 +4,7 @@
   "name_ar": "وكيل إدارة الأزمات",
   "category": "cat6_leadership",
   "description": "يدير الأزمات من لحظة اندلاعها حتى التعافي ويبني أنظمة الاستجابة الاستباقية.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "web_search",
     "deep_search",

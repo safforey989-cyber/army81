@@ -4,7 +4,7 @@
   "name_ar": "وكيل تحليل الأمن السيبراني",
   "category": "cat3_tools",
   "description": "يحلل التهديدات الأمنية، يرصد الثغرات، ويقدم توصيات الحماية.",
-  "model": "gemini-flash",
+  "model": "mistral-small",
   "tools": [
     "web_search",
     "deep_search",

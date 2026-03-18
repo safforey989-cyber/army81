@@ -4,7 +4,7 @@
   "name_ar": "وكيل تحليل سلوك الجماهير",
   "category": "cat5_behavior",
   "description": "يحلل سلوك الجماهير والحشود والحركات الجماعية ويتوقع مآلاتها.",
-  "model": "gemini-pro",
+  "model": "deepseek-r1",
   "tools": [
     "web_search",
     "deep_search",

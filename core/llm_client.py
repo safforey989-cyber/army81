@@ -13,21 +13,39 @@ logger = logging.getLogger("army81.llm")
 # النماذج الحقيقية — OpenRouter يدعم 200+ نموذج
 # ======================================================
 REAL_MODELS = {
-    # Gemini عبر OpenRouter (verified model IDs 2026-03-18)
+    # ═══ Gemini — Google (OpenRouter) ═══
     "gemini-flash":  {"provider": "openrouter", "model": "google/gemini-2.0-flash-001",    "tier": "free",  "rpm": 60},
     "gemini-fast":   {"provider": "openrouter", "model": "google/gemini-2.5-flash-lite",   "tier": "free",  "rpm": 60},
     "gemini-pro":    {"provider": "openrouter", "model": "google/gemini-2.5-pro",           "tier": "paid",  "rpm": 20},
     "gemini-think":  {"provider": "openrouter", "model": "google/gemini-2.5-flash",         "tier": "free",  "rpm": 10},
 
-    # Claude عبر OpenRouter (verified model IDs 2026-03-18)
+    # ═══ Claude — Anthropic (OpenRouter) ═══
     "claude-fast":   {"provider": "openrouter", "model": "anthropic/claude-haiku-4.5",     "tier": "paid",  "rpm": 60},
     "claude-smart":  {"provider": "openrouter", "model": "anthropic/claude-sonnet-4.6",    "tier": "paid",  "rpm": 50},
 
-    # نماذج مجانية عبر OpenRouter
-    "llama-free":    {"provider": "openrouter", "model": "meta-llama/llama-3.2-3b-instruct:free", "tier": "free", "rpm": 20},
-    "qwen-free":     {"provider": "openrouter", "model": "qwen/qwen-2.5-7b-instruct:free",       "tier": "free", "rpm": 20},
+    # ═══ DeepSeek — تفكير عميق (OpenRouter) ═══
+    "deepseek-r1":   {"provider": "openrouter", "model": "deepseek/deepseek-r1",           "tier": "paid",  "rpm": 20},
+    "deepseek-chat": {"provider": "openrouter", "model": "deepseek/deepseek-chat",         "tier": "free",  "rpm": 30},
+    "deepseek-v3":   {"provider": "openrouter", "model": "deepseek/deepseek-chat-v3-0324:free", "tier": "free", "rpm": 30},
 
-    # Ollama — محلي مجاني (fallback)
+    # ═══ Meta Llama (OpenRouter) ═══
+    "llama-free":    {"provider": "openrouter", "model": "meta-llama/llama-3.2-3b-instruct:free", "tier": "free", "rpm": 20},
+    "llama-70b":     {"provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct:free", "tier": "free", "rpm": 10},
+
+    # ═══ Qwen — Alibaba (OpenRouter) ═══
+    "qwen-free":     {"provider": "openrouter", "model": "qwen/qwen-2.5-7b-instruct:free",       "tier": "free", "rpm": 20},
+    "qwen-coder":    {"provider": "openrouter", "model": "qwen/qwen-2.5-coder-32b-instruct:free", "tier": "free", "rpm": 15},
+
+    # ═══ Mistral (OpenRouter) ═══
+    "mistral-small": {"provider": "openrouter", "model": "mistralai/mistral-small-3.1-24b-instruct:free", "tier": "free", "rpm": 20},
+
+    # ═══ Microsoft Phi (OpenRouter) ═══
+    "phi-mini":      {"provider": "openrouter", "model": "microsoft/phi-4-mini-instruct:free",    "tier": "free", "rpm": 20},
+
+    # ═══ Perplexity — بحث مباشر ═══
+    "perplexity":    {"provider": "perplexity", "model": "sonar",                                  "tier": "paid", "rpm": 20},
+
+    # ═══ Ollama — محلي (fallback) ═══
     "local-small":   {"provider": "ollama", "model": "llama3.2:3b",     "tier": "free", "rpm": 999},
     "local-medium":  {"provider": "ollama", "model": "qwen2.5:7b",      "tier": "free", "rpm": 999},
     "local-coder":   {"provider": "ollama", "model": "qwen2.5-coder:7b","tier": "free", "rpm": 999},
@@ -35,12 +53,17 @@ REAL_MODELS = {
 
 TASK_TO_MODEL = {
     "simple":   "gemini-flash",
-    "research": "gemini-pro",
-    "code":     "gemini-flash",
+    "research": "deepseek-r1",
+    "code":     "qwen-coder",
     "critical": "claude-smart",
     "fast":     "gemini-flash",
+    "analysis": "deepseek-chat",
+    "strategy": "claude-smart",
+    "medical":  "gemini-pro",
+    "financial":"gemini-pro",
+    "search":   "perplexity",
     "local":    "local-medium",
-    "free":     "llama-free",
+    "free":     "llama-70b",
 }
 
 OPENROUTER_BASE = "https://openrouter.ai/api/v1"
@@ -64,6 +87,7 @@ class LLMClient:
         self.openrouter_key = os.getenv("OPENROUTER_API_KEY", "")
         self.gemini_key = os.getenv("GOOGLE_API_KEY", "")
         self.anthropic_key = os.getenv("ANTHROPIC_API_KEY", "")
+        self.perplexity_key = os.getenv("PERPLEXITY_API_KEY", "")
         self.ollama_url = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
     def chat(self, messages: List[Dict], temperature: float = 0.7,
@@ -72,6 +96,8 @@ class LLMClient:
         try:
             if self.provider == "openrouter":
                 result = self._chat_openrouter(messages, temperature, max_tokens)
+            elif self.provider == "perplexity":
+                result = self._chat_perplexity(messages, temperature, max_tokens)
             elif self.provider == "gemini":
                 result = self._chat_gemini(messages, temperature, max_tokens)
             elif self.provider == "anthropic":
@@ -169,6 +195,26 @@ class LLMClient:
             tokens = data.get("usage", {}).get("input_tokens", 0) + data.get("usage", {}).get("output_tokens", 0)
             return {"content": text, "model": self.model, "tokens": tokens}
         except Exception as e:
+            return {"content": f"ERROR: {e}", "model": self.model, "tokens": 0}
+
+    def _chat_perplexity(self, messages, temperature, max_tokens):
+        """Perplexity Sonar — بحث + إجابة مع استشهادات"""
+        if not self.perplexity_key:
+            return {"content": "ERROR: PERPLEXITY_API_KEY not set", "tokens": 0}
+        headers = {"Authorization": f"Bearer {self.perplexity_key}", "Content-Type": "application/json"}
+        payload = {"model": self.model, "messages": messages, "temperature": temperature, "max_tokens": max_tokens}
+        try:
+            resp = req_lib.post("https://api.perplexity.ai/chat/completions", headers=headers, json=payload, timeout=60)
+            resp.raise_for_status()
+            data = resp.json()
+            content = data["choices"][0]["message"]["content"]
+            citations = data.get("citations", [])
+            if citations:
+                content += "\n\nالمصادر:\n" + "\n".join(f"• {c}" for c in citations[:5] if isinstance(c, str))
+            tokens = data.get("usage", {}).get("total_tokens", 0)
+            return {"content": content, "model": self.model, "tokens": tokens}
+        except Exception as e:
+            logger.error(f"Perplexity error: {e}")
             return {"content": f"ERROR: {e}", "model": self.model, "tokens": 0}
 
     def _chat_ollama(self, messages, temperature, max_tokens):

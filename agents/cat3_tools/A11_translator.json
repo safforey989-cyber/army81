@@ -4,7 +4,7 @@
   "name_ar": "وكيل الترجمة والتعريب",
   "category": "cat3_tools",
   "description": "يترجم ويُعرّب المحتوى بدقة، مع مراعاة السياق الثقافي والتقني.",
-  "model": "gemini-flash",
+  "model": "llama-70b",
   "tools": [
     "web_search",
     "wiki_search",

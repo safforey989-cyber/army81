@@ -4,7 +4,7 @@
   "name_ar": "وكيل تطوير البرمجيات",
   "category": "cat3_tools",
   "description": "يكتب كوداً نظيفاً، يصحح الأخطاء، ويحلل الكود الموجود بعين خبير.",
-  "model": "gemini-flash",
+  "model": "qwen-coder",
   "tools": [
     "run_code",
     "github_search",

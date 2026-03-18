@@ -4,7 +4,7 @@
   "name_ar": "وكيل تحليل السياسات",
   "category": "cat2_society",
   "description": "يحلل السياسات العامة والتشريعات ويقيّم أثرها الاجتماعي والاقتصادي.",
-  "model": "gemini-flash",
+  "model": "deepseek-chat",
   "tools": [
     "web_search",
     "deep_search",

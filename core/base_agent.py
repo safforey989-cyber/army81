@@ -209,8 +209,21 @@ class BaseAgent:
                 except Exception:
                     pass
 
+            # B-v9: عقدة الوعي — الوكيل يدرك حالته في الشبكة
+            consciousness_ctx = ""
+            try:
+                from core.consciousness import get_consciousness
+                cn = get_consciousness()
+                # router متاح عبر neural_net
+                _router = getattr(self.neural_net, 'router', None) if self.neural_net else None
+                consciousness_ctx = cn.generate(self.agent_id, task, _router)
+            except Exception:
+                pass
+
             # C: أثرِ الـ system prompt
             enriched_system = self.system_prompt
+            if consciousness_ctx:
+                enriched_system = consciousness_ctx + "\n\n" + enriched_system
             if memory_ctx:
                 enriched_system += f"\n\n{memory_ctx}"
             if examples:

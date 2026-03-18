@@ -4,7 +4,7 @@
   "name_ar": "وكيل سيكولوجية القرار",
   "category": "cat5_behavior",
   "description": "يحلل أنماط صنع القرار والتحيزات المعرفية ويصمم أطر القرار الرشيد.",
-  "model": "qwen-free",
+  "model": "qwen-coder",
   "tools": [
     "web_search",
     "deep_search",

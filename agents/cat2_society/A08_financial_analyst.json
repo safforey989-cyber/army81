@@ -4,7 +4,7 @@
   "name_ar": "وكيل التحليل المالي",
   "category": "cat2_society",
   "description": "يحلل الأسواق المالية، يقرأ البيانات الاقتصادية، ويقيّم المخاطر والفرص.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "market_data",
     "web_search",

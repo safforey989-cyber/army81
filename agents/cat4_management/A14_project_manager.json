@@ -4,7 +4,7 @@
   "name_ar": "وكيل إدارة المشاريع",
   "category": "cat4_management",
   "description": "يخطط المشاريع، يتتبع التقدم، يحل العقبات، ويضمن التسليم في الوقت.",
-  "model": "gemini-pro",
+  "model": "deepseek-chat",
   "tools": [
     "web_search",
     "read_file",

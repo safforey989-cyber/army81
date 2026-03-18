@@ -4,7 +4,7 @@
   "name_ar": "وكيل البحث الطبي",
   "category": "cat1_science",
   "description": "يبحث في الأدبيات الطبية، يلخص الأبحاث، ويجيب على الأسئلة الطبية بمصادر موثوقة.",
-  "model": "gemini-flash",
+  "model": "gemini-pro",
   "tools": [
     "pubmed_search",
     "arxiv_search",

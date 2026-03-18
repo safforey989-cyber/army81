@@ -4,7 +4,7 @@
   "name_ar": "وكيل الديناميكيات الاجتماعية",
   "category": "cat5_behavior",
   "description": "يحلل الديناميكيات الجماعية والشبكات الاجتماعية وآليات التأثير في المجتمعات.",
-  "model": "llama-free",
+  "model": "llama-70b",
   "tools": [
     "web_search",
     "deep_search",

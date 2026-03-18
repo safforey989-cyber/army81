@@ -37,7 +37,7 @@ def test_llm_for_task():
     c = LLMClient.for_task("simple")
     assert c is not None
     c2 = LLMClient.for_task("code")
-    assert c2.alias in ("local-coder", "gemini-flash")
+    assert c2.alias in ("local-coder", "gemini-flash", "qwen-coder", "qwen-free")
 
 test("استيراد LLMClient وNماذج حقيقية", test_llm_import)
 test("اختيار نموذج حسب المهمة", test_llm_for_task)
