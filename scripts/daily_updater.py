@@ -234,7 +234,48 @@ def run_daily_update():
     }
 
     logger.info(f"=== Daily Update Complete in {elapsed:.1f}s: {summary} ===")
+
+    # v5: إرسال التقرير عبر Telegram
+    _send_telegram_daily_report(summary, all_items)
+
     return summary
+
+
+def _send_telegram_daily_report(summary: dict, all_items: list):
+    """إرسال ملخص التحديث اليومي عبر Telegram"""
+    try:
+        from core.human_interface import get_human_interface
+        hi = get_human_interface()
+
+        completed_lines = []
+        if summary["arxiv"]:
+            completed_lines.append(f"📚 {summary['arxiv']} أبحاث من arXiv")
+        if summary["github"]:
+            completed_lines.append(f"🐙 {summary['github']} مستودعات من GitHub")
+        if summary["news"]:
+            completed_lines.append(f"📰 {summary['news']} أخبار")
+
+        report = {
+            "completed": "\n".join(completed_lines) or "لم يُجمع شيء",
+            "improvements": f"حُفظ {summary['saved_to_chroma']} عنصر في الذاكرة",
+            "pending_count": len(hi.get_pending()),
+            "key_finding": _extract_key_finding(all_items),
+        }
+        hi.send_daily_report(report)
+    except Exception as e:
+        logger.warning(f"Telegram daily report failed: {e}")
+
+
+def _extract_key_finding(items: list) -> str:
+    """استخراج أهم اكتشاف من العناصر المجمّعة"""
+    if not items:
+        return "لا اكتشافات اليوم"
+    # أول عنصر كملخص
+    first = items[0]
+    content = first.get("content", "")
+    if len(content) > 200:
+        content = content[:200] + "..."
+    return f"[{first.get('source', '?')}] {content}"
 
 
 # ── v3: دوال الجدولة الجديدة ───────────────────────────────
@@ -337,12 +378,32 @@ def start_scheduler():
         replace_existing=True,
     )
 
+    # v5: 1:00 صباحاً يومياً — اكتشاف معرفة جديدة (SelfBuilder)
+    scheduler.add_job(
+        _run_self_builder_discovery,
+        'cron', hour=1, minute=0,
+        id="self_builder_discovery",
+        name="Self Builder - Daily Discovery",
+        replace_existing=True,
+    )
+
+    # v5: كل أحد 6:00 صباحاً — التقييم الذاتي الأسبوعي
+    scheduler.add_job(
+        _run_weekly_self_assessment,
+        'cron', day_of_week='sun', hour=6,
+        id="weekly_self_assessment",
+        name="Weekly Self Assessment",
+        replace_existing=True,
+    )
+
     scheduler.start()
-    logger.info("Scheduler v3 started:")
+    logger.info("Scheduler v5 started:")
+    logger.info("  1:00 AM daily  → Self Builder Discovery")
     logger.info("  2:00 AM daily  → Intelligence Update")
     logger.info("  3:00 AM daily  → Knowledge Distillation")
     logger.info("  4:00 AM Sunday → Memory Compression")
     logger.info("  5:00 AM Sunday → Evolution Cycle")
+    logger.info("  6:00 AM Sunday → Self Assessment")
     logger.info("Press Ctrl+C to stop.")
 
     try:
@@ -352,6 +413,42 @@ def start_scheduler():
     except (KeyboardInterrupt, SystemExit):
         logger.info("Scheduler stopped.")
         scheduler.shutdown()
+
+
+def _run_self_builder_discovery():
+    """1:00 صباحاً — اكتشاف معرفة جديدة"""
+    logger.info("=== Self Builder Discovery Started ===")
+    try:
+        from core.self_builder import SelfBuilder
+        builder = SelfBuilder()
+        result = builder.discover_and_add_knowledge()
+        logger.info(f"Discovery complete: {len(result.get('github', []))} repos found")
+
+        # إرسال تنبيه Telegram إذا وُجد شيء مهم
+        from core.human_interface import get_human_interface
+        hi = get_human_interface()
+        repos = result.get("github", [])
+        if repos:
+            hi.notify(
+                "اكتشافات جديدة",
+                f"وجدت {len(repos)} مستودعات مفيدة على GitHub. "
+                f"اكتب /pending لمراجعتها.",
+                urgency="normal",
+            )
+    except Exception as e:
+        logger.error(f"Self builder discovery error: {e}")
+
+
+def _run_weekly_self_assessment():
+    """كل أحد 6:00 صباحاً — التقييم الذاتي"""
+    logger.info("=== Weekly Self Assessment Started ===")
+    try:
+        from core.self_builder import SelfBuilder
+        builder = SelfBuilder()
+        report = builder.weekly_self_assessment()
+        logger.info(f"Self assessment complete: {len(report.get('knowledge_gaps', []))} gaps")
+    except Exception as e:
+        logger.error(f"Self assessment error: {e}")
 
 
 # ── Entry Point ───────────────────────────────────────────

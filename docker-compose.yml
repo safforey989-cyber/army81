@@ -40,3 +40,16 @@ services:
     command: python scripts/daily_updater.py --schedule
     volumes:
       - ./workspace:/app/workspace
+
+  telegram_bot:
+    build: .
+    env_file: .env
+    depends_on:
+      - gateway
+    restart: always
+    command: python integrations/telegram_bot.py
+    environment:
+      - GATEWAY_URL=http://gateway:8181
+    volumes:
+      - ./workspace:/app/workspace
+      - ./agents:/app/agents
