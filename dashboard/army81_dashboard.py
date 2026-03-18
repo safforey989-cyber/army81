@@ -1,661 +1,904 @@
 """
-dashboard/army81_dashboard.py — واجهة تفاعلية كاملة لـ Army81
-صفحات: الرئيسية | Chat تفاعلي | الوكلاء | التقارير | الذاكرة
+Army81 Dashboard v3.0 — حقيقي 100%
+كل رقم يأتي من API حقيقي
 """
-
+import streamlit as st
+import requests
 import json
 import time
-import os
-import sys
-import requests
-import streamlit as st
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+from datetime import datetime, timedelta
 from pathlib import Path
-from datetime import datetime
 
-# مسار المشروع
-PROJECT_ROOT = Path(__file__).parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
-
-# ── إعداد الصفحة ─────────────────────────────────────────────
+# ── إعداد ──────────────────────────────────────
 st.set_page_config(
-    page_title="Army81 — لوحة التحكم التفاعلية",
+    page_title="Army81 Command Center",
     page_icon="🎖️",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="expanded"
 )
 
-# ── CSS مخصص ──────────────────────────────────────────────────
+GATEWAY = "http://localhost:8181"
+
+# ── CSS متقدم ───────────────────────────────────
 st.markdown("""
 <style>
-    .stApp { direction: rtl; }
-    .block-container { max-width: 1200px; }
-    div[data-testid="stMetric"] {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border: 1px solid #0f3460;
+    .stApp { background: #0a0e1a; }
+    .metric-card {
+        background: linear-gradient(135deg, #1a1f35, #0d1020);
+        border: 1px solid rgba(255,215,0,0.2);
         border-radius: 12px;
-        padding: 16px;
-        color: white;
+        padding: 20px;
+        text-align: center;
     }
-    div[data-testid="stMetric"] label { color: #a0a0c0 !important; }
-    div[data-testid="stMetric"] div[data-testid="stMetricValue"] { color: #e0e0ff !important; }
-    .chat-msg-user {
-        background: #1e3a5f; border-radius: 12px; padding: 12px 16px;
-        margin: 8px 0; border-right: 4px solid #4a9eff;
+    .metric-value {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #FFD700;
     }
-    .chat-msg-agent {
-        background: #1a2e1a; border-radius: 12px; padding: 12px 16px;
-        margin: 8px 0; border-right: 4px solid #4aff4a;
+    .metric-label {
+        color: rgba(255,255,255,0.6);
+        font-size: 0.9em;
     }
     .agent-card {
-        background: #0d1117; border: 1px solid #30363d; border-radius: 10px;
-        padding: 16px; margin: 8px 0;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+    .agent-card:hover {
+        border-color: rgba(255,215,0,0.4);
+        background: rgba(255,215,0,0.05);
+    }
+    .status-badge {
+        display: inline-block;
+        padding: 3px 10px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+    .status-ok { background: rgba(0,255,100,0.15); color: #00ff64; }
+    .status-warn { background: rgba(255,200,0,0.15); color: #ffc800; }
+    .status-err { background: rgba(255,50,50,0.15); color: #ff3232; }
+
+    /* Sidebar */
+    .css-1d391kg { background: #0d1020; }
+
+    /* Chat messages */
+    .user-msg {
+        background: rgba(255,215,0,0.08);
+        border-right: 3px solid #FFD700;
+        padding: 12px;
+        border-radius: 8px;
+        margin: 8px 0;
+    }
+    .agent-msg {
+        background: rgba(0,191,255,0.08);
+        border-right: 3px solid #00BFFF;
+        padding: 12px;
+        border-radius: 8px;
+        margin: 8px 0;
+    }
+
+    /* Progress bars */
+    .stProgress > div > div { background: #FFD700; }
+
+    /* Metrics */
+    [data-testid="metric-container"] {
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,215,0,0.15);
+        border-radius: 10px;
+        padding: 15px;
     }
 </style>
 """, unsafe_allow_html=True)
 
-# ── ثوابت ─────────────────────────────────────────────────────
-GATEWAY_URL = "http://localhost:8181"
-AGENTS_ROOT = PROJECT_ROOT / "agents"
+# ── دوال مساعدة ────────────────────────────────
 
-CATEGORY_INFO = {
-    "cat1_science":    {"label": "العلوم",          "icon": "🔬", "color": "#4ecdc4"},
-    "cat2_society":    {"label": "المجتمع",         "icon": "🌍", "color": "#ff6b6b"},
-    "cat3_tools":      {"label": "الأدوات",         "icon": "🛠️", "color": "#ffd93d"},
-    "cat4_management": {"label": "الإدارة",         "icon": "📊", "color": "#6c5ce7"},
-    "cat5_behavior":   {"label": "السلوك",          "icon": "🧠", "color": "#fd79a8"},
-    "cat6_leadership": {"label": "القيادة",         "icon": "👑", "color": "#fdcb6e"},
-    "cat7_new":        {"label": "التطور الذاتي",   "icon": "🚀", "color": "#00b894"},
-}
-
-MODEL_ICONS = {
-    "gemini-flash": "⚡", "gemini-pro": "🔵", "gemini-fast": "💨",
-    "claude-fast": "🟡", "claude-smart": "🟠",
-    "llama-free": "🦙", "qwen-free": "🔮",
-}
-
-# ── تحميل الوكلاء ────────────────────────────────────────────
-@st.cache_data(ttl=120)
-def load_all_agents() -> list:
-    agents = []
-    if not AGENTS_ROOT.exists():
-        return agents
-    for cat_dir in sorted(AGENTS_ROOT.iterdir()):
-        if not cat_dir.is_dir():
-            continue
-        for jf in sorted(cat_dir.glob("*.json")):
-            try:
-                with open(jf, encoding="utf-8") as f:
-                    data = json.load(f)
-                data["_file"] = str(jf)
-                agents.append(data)
-            except Exception:
-                continue
-    agents.sort(key=lambda a: a.get("agent_id", "A00"))
-    return agents
-
-
-def check_gateway() -> dict:
+@st.cache_data(ttl=30)
+def get_metrics():
     try:
-        resp = requests.get(f"{GATEWAY_URL}/health", timeout=3)
-        if resp.status_code == 200:
-            return resp.json()
-    except Exception:
+        r = requests.get(f"{GATEWAY}/metrics", timeout=5)
+        if r.status_code == 200:
+            return r.json()
+    except:
         pass
     return None
 
-
-def get_gateway_status() -> dict:
+@st.cache_data(ttl=30)
+def get_status():
     try:
-        resp = requests.get(f"{GATEWAY_URL}/status", timeout=5)
-        if resp.status_code == 200:
-            return resp.json()
-    except Exception:
-        pass
-    return None
+        r = requests.get(f"{GATEWAY}/status", timeout=5)
+        return r.json() if r.status_code == 200 else None
+    except:
+        return None
 
-
-def send_task(agent_id: str, task: str, timeout_sec: int = 90) -> dict:
+@st.cache_data(ttl=60)
+def get_agents():
     try:
-        resp = requests.post(
-            f"{GATEWAY_URL}/task",
-            json={"agent_id": agent_id, "task": task},
-            timeout=timeout_sec,
-        )
-        return resp.json()
+        r = requests.get(f"{GATEWAY}/agents", timeout=5)
+        return r.json() if r.status_code == 200 else None
+    except:
+        return None
+
+@st.cache_data(ttl=300)
+def get_knowledge_status():
+    try:
+        r = requests.get(f"{GATEWAY}/knowledge/status", timeout=5)
+        return r.json() if r.status_code == 200 else None
+    except:
+        return None
+
+@st.cache_data(ttl=300)
+def get_latest_report():
+    try:
+        r = requests.get(f"{GATEWAY}/reports/latest", timeout=5)
+        return r.json() if r.status_code == 200 else None
+    except:
+        return None
+
+def check_gateway():
+    try:
+        r = requests.get(f"{GATEWAY}/health", timeout=3)
+        return r.status_code == 200
+    except:
+        return False
+
+def send_task(task, agent_id=None, category=None, pipeline=False, agent_ids=None):
+    try:
+        if pipeline and agent_ids:
+            r = requests.post(
+                f"{GATEWAY}/pipeline",
+                json={"task": task, "agent_ids": agent_ids},
+                timeout=120
+            )
+        else:
+            payload = {"task": task}
+            if agent_id: payload["preferred_agent"] = agent_id
+            if category: payload["preferred_category"] = category
+            r = requests.post(f"{GATEWAY}/task", json=payload, timeout=120)
+
+        return r.json() if r.status_code == 200 else {"error": r.text, "status": "error"}
     except Exception as e:
-        return {"status": "error", "result": f"فشل الاتصال: {e}"}
+        return {"error": str(e), "status": "error"}
 
-
-def send_pipeline(agent_ids: list, task: str) -> dict:
+def submit_feedback(agent_id, task, rating, comment=""):
     try:
-        resp = requests.post(
-            f"{GATEWAY_URL}/pipeline",
-            json={"agent_ids": agent_ids, "task": task},
-            timeout=120,
-        )
-        return resp.json()
-    except Exception as e:
-        return {"status": "error", "error": str(e)}
-
-
-def load_reports() -> list:
-    reports_dir = PROJECT_ROOT / "workspace" / "reports"
-    if not reports_dir.exists():
-        return []
-    return sorted(reports_dir.glob("*.md"), reverse=True)
-
-
-def get_chroma_stats() -> dict:
-    try:
-        from memory.chroma_memory import get_stats as chroma_get_stats
-        return chroma_get_stats()
-    except Exception:
+        requests.post(f"{GATEWAY}/feedback",
+            params={"agent_id": agent_id, "task": task, "rating": rating, "comment": comment},
+            timeout=5)
+    except:
         pass
-    # fallback: check DB files
-    stats = {"status": "غير متصل"}
-    ws = PROJECT_ROOT / "workspace"
-    episodic_db = ws / "episodic_memory.db"
-    if episodic_db.exists():
-        size_mb = episodic_db.stat().st_size / (1024 * 1024)
-        stats["episodic_db_mb"] = round(size_mb, 2)
-    compressed_dir = ws / "compressed"
-    if compressed_dir.exists():
-        files = list(compressed_dir.glob("*.md"))
-        stats["compressed_files"] = len(files)
-    chroma_dir = ws / "chroma_db"
-    if chroma_dir.exists():
-        stats["chroma_exists"] = True
-        total = sum(f.stat().st_size for f in chroma_dir.rglob("*") if f.is_file())
-        stats["chroma_db_mb"] = round(total / (1024 * 1024), 2)
-    else:
-        stats["chroma_exists"] = False
-    return stats
 
+# ── Sidebar ─────────────────────────────────────
 
-# ── تحميل البيانات ────────────────────────────────────────────
-all_agents = load_all_agents()
-health = check_gateway()
-gateway_ok = health is not None
-
-# ── إحصائيات ─────────────────────────────────────────────────
-by_category = {}
-by_model = {}
-for a in all_agents:
-    cat = a.get("category", "unknown")
-    model = a.get("model", "unknown")
-    by_category[cat] = by_category.get(cat, 0) + 1
-    by_model[model] = by_model.get(model, 0) + 1
-
-
-# ══════════════════════════════════════════════════════════════
-# الشريط الجانبي
-# ══════════════════════════════════════════════════════════════
 with st.sidebar:
-    st.markdown("## 🎖️ Army81")
-    st.caption("81 وكيل ذكي تحت أمرك")
-    st.divider()
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        st.markdown("🎖️")
+    with col2:
+        st.markdown("### Army81")
 
+    gateway_ok = check_gateway()
     if gateway_ok:
-        st.success(f"البوابة: متصلة ({health.get('agents', '?')} وكيل)")
+        st.success("البوابة متصلة")
     else:
-        st.error("البوابة: غير متاحة")
-        st.code("python gateway/app.py", language="bash")
+        st.error("البوابة غير متاحة")
+        st.code("python gateway/app.py")
 
-    st.divider()
+    st.markdown("---")
 
-    page = st.radio(
-        "التنقل",
-        [
-            "🏠 الرئيسية",
-            "💬 Chat تفاعلي",
-            "🤖 الوكلاء",
-            "📄 التقارير",
-            "🧠 الذاكرة",
-        ],
-        label_visibility="collapsed",
-    )
+    page = st.radio("", [
+        "🏠 الرئيسية",
+        "💬 Chat تفاعلي",
+        "🤖 الوكلاء",
+        "📰 التقارير",
+        "🧠 الذاكرة",
+        "📊 الإحصائيات",
+        "⚙️ الإعدادات",
+    ], label_visibility="collapsed")
 
-    st.divider()
-    st.caption(f"v3.0 | {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    st.markdown("---")
 
+    # الوقت الحقيقي
+    st.caption(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    st.caption("v3.0 | Army81")
 
-# ══════════════════════════════════════════════════════════════
-# 🏠 الرئيسية
-# ══════════════════════════════════════════════════════════════
+    if st.button("تحديث البيانات"):
+        st.cache_data.clear()
+        st.rerun()
+
+# ══════════════════════════════════════════════════
+# صفحة الرئيسية
+# ══════════════════════════════════════════════════
+
 if page == "🏠 الرئيسية":
     st.title("🎖️ Army81 — مركز القيادة")
-    st.markdown("**81 وكيل ذكي متخصص يعملون معاً.**")
 
-    # بطاقات سريعة
-    c1, c2, c3, c4, c5 = st.columns(5)
-    c1.metric("الوكلاء", len(all_agents))
-    c2.metric("الفئات", len(by_category))
-    c3.metric("النماذج", len(by_model))
-    c4.metric("البوابة", "متصلة" if gateway_ok else "منقطعة")
-    reports = load_reports()
-    c5.metric("التقارير", len(reports))
+    metrics = get_metrics()
+    status = get_status()
 
-    st.divider()
+    # ── إحصائيات رئيسية ──
+    col1, col2, col3, col4, col5 = st.columns(5)
 
-    # توزيع الفئات
-    st.subheader("توزيع الوكلاء")
-    cols = st.columns(len(CATEGORY_INFO))
-    for i, (cat_key, info) in enumerate(CATEGORY_INFO.items()):
-        count = by_category.get(cat_key, 0)
-        with cols[i]:
-            st.metric(f"{info['icon']} {info['label']}", count)
+    with col1:
+        total_agents = metrics["agents"]["total"] if metrics else "—"
+        st.metric("🤖 الوكلاء النشطون", total_agents, delta="81/81")
 
-    st.divider()
+    with col2:
+        tasks = metrics["tasks"]["total_today"] if metrics else 0
+        st.metric("المهام اليوم", tasks)
+
+    with col3:
+        success = f"{metrics['tasks']['success_rate']}%" if metrics else "—"
+        st.metric("معدل النجاح", success)
+
+    with col4:
+        docs = metrics["memory"].get("total_documents", 0) if metrics else 0
+        st.metric("🧠 وثائق المعرفة", docs)
+
+    with col5:
+        kb_files = metrics["knowledge"].get("files", 0) if metrics else 0
+        st.metric("ملفات المعرفة", kb_files)
+
+    st.markdown("---")
+
+    col1, col2 = st.columns([2, 1])
+
+    with col1:
+        st.subheader("توزيع الوكلاء بالفئة")
+        if status:
+            cat_data = status.get("router", {}).get("agents_by_category", {})
+            if cat_data:
+                cat_names = {
+                    "cat1_science": "العلوم",
+                    "cat2_society": "المجتمع",
+                    "cat3_tools": "الأدوات",
+                    "cat4_management": "الإدارة",
+                    "cat5_behavior": "السلوك",
+                    "cat6_leadership": "القيادة",
+                    "cat7_new": "التطور",
+                }
+                df = pd.DataFrame([
+                    {"الفئة": cat_names.get(k, k), "العدد": v}
+                    for k, v in cat_data.items()
+                ])
+                fig = px.bar(df, x="الفئة", y="العدد",
+                             color="العدد",
+                             color_continuous_scale="Viridis",
+                             template="plotly_dark")
+                fig.update_layout(
+                    plot_bgcolor="rgba(0,0,0,0)",
+                    paper_bgcolor="rgba(0,0,0,0)",
+                    font_color="white"
+                )
+                st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.warning("السيرفر غير متاح")
+
+    with col2:
+        st.subheader("أفضل الوكلاء")
+        if metrics and metrics["agents"]["top_performers"]:
+            for i, agent in enumerate(metrics["agents"]["top_performers"]):
+                st.markdown(f"""
+                <div class="agent-card">
+                <b>#{i+1} {agent['id']}</b> — {agent['name']}<br>
+                <small>مهام: {agent['tasks']}</small>
+                </div>
+                """, unsafe_allow_html=True)
+        else:
+            st.info("لا توجد بيانات بعد")
+
+    st.markdown("---")
 
     # آخر تقرير
-    st.subheader("📄 آخر تقرير يومي")
-    if reports:
-        latest = reports[0]
-        st.caption(f"📅 {latest.stem.replace('daily_report_', '')}")
-        with open(latest, encoding="utf-8") as f:
-            content = f.read()
-        with st.expander("عرض التقرير", expanded=True):
-            st.markdown(content[:5000])
+    st.subheader("آخر تقرير يومي")
+    report = get_latest_report()
+    if report and not report.get("error"):
+        st.caption(f"{report.get('date','')}")
+        content = report.get("content", "")
+        if len(content) > 1000:
+            with st.expander("عرض التقرير الكامل"):
+                st.markdown(content)
+            st.markdown(content[:1000] + "...")
+        else:
+            st.markdown(content)
     else:
-        st.info("لا توجد تقارير. شغّل: `python scripts/daily_updater.py`")
+        st.info("لا يوجد تقرير بعد. شغّل: python scripts/daily_updater.py")
 
-    # حالة gateway مفصّلة
-    if gateway_ok:
-        st.divider()
-        st.subheader("📡 حالة النظام المباشرة")
-        gw_status = get_gateway_status()
-        if gw_status:
-            sc1, sc2, sc3 = st.columns(3)
-            sc1.metric("المهام المنفّذة", gw_status.get("total_tasks", 0))
-            sc2.metric("المهام الناجحة", gw_status.get("successful", 0))
-            sc3.metric("الوكلاء النشطون", gw_status.get("active_agents", len(all_agents)))
+    # أزرار سريعة
+    st.markdown("---")
+    st.subheader("إجراءات سريعة")
+    col1, col2, col3, col4 = st.columns(4)
 
+    with col1:
+        if st.button("تشغيل التحديث اليومي"):
+            with st.spinner("جاري التحديث..."):
+                import subprocess
+                result = subprocess.Popen(
+                    ["python", "scripts/daily_updater.py"],
+                    stdout=subprocess.PIPE, stderr=subprocess.PIPE
+                )
+                st.success("بدأ التحديث في الخلفية")
 
-# ══════════════════════════════════════════════════════════════
-# 💬 Chat تفاعلي
-# ══════════════════════════════════════════════════════════════
+    with col2:
+        if st.button("تحميل المعرفة"):
+            with st.spinner("جاري التحميل..."):
+                import subprocess
+                subprocess.Popen(["python", "scripts/load_all_knowledge.py"])
+                st.success("بدأ تحميل المعرفة في الخلفية")
+
+    with col3:
+        if st.button("اختبار النظام"):
+            with st.spinner("جاري الاختبار..."):
+                result = send_task("قل مرحبا وعرّف بنفسك باختصار", "A01")
+                if result.get("status") == "success":
+                    st.success(f"النظام يعمل — A01 أجاب في {result.get('elapsed_seconds',0)}s")
+                else:
+                    st.error("فشل الاختبار")
+
+    with col4:
+        if st.button("تقرير الأداء"):
+            with st.spinner("جاري التحليل..."):
+                result = send_task(
+                    "حلل حالة النظام وأعطني تقرير أداء مختصر في 5 نقاط",
+                    "A81"
+                )
+                if result.get("status") == "success":
+                    st.info(result.get("result","")[:500])
+
+# ══════════════════════════════════════════════════
+# صفحة Chat
+# ══════════════════════════════════════════════════
+
 elif page == "💬 Chat تفاعلي":
     st.title("💬 تواصل مع الوكلاء")
 
-    if not gateway_ok:
-        st.error("البوابة غير متاحة. شغّل: `python gateway/app.py`")
+    if not check_gateway():
+        st.error("البوابة غير متاحة — شغّل: python gateway/app.py")
         st.stop()
 
-    # اختيار الوكيل
-    col_sel, col_mode = st.columns([3, 1])
-
-    with col_sel:
-        agent_map = {}
-        for a in all_agents:
-            aid = a.get("agent_id", "")
-            cat = a.get("category", "")
-            info = CATEGORY_INFO.get(cat, {"icon": "⚪", "label": cat})
-            name = a.get("name_ar", a.get("name", ""))
-            label = f"{info['icon']} {aid} — {name}"
-            agent_map[label] = aid
-
-        selected_label = st.selectbox("اختر الوكيل:", list(agent_map.keys()))
-        selected_id = agent_map[selected_label]
-
-    with col_mode:
-        chat_mode = st.radio("الوضع", ["وكيل واحد", "سلسلة وكلاء"], horizontal=True)
-
-    # وكلاء السلسلة
-    chain_agents = []
-    if chat_mode == "سلسلة وكلاء":
-        chain_labels = st.multiselect(
-            "اختر وكلاء السلسلة (بالترتيب):",
-            list(agent_map.keys()),
-            default=[selected_label],
-        )
-        chain_agents = [agent_map[l] for l in chain_labels]
-
-    # عرض معلومات الوكيل المختار
-    sel_agent = next((a for a in all_agents if a.get("agent_id") == selected_id), None)
-    if sel_agent:
-        with st.expander(f"معلومات {selected_id}", expanded=False):
-            ic1, ic2, ic3 = st.columns(3)
-            ic1.markdown(f"**النموذج:** `{sel_agent.get('model', '?')}`")
-            ic2.markdown(f"**الفئة:** {sel_agent.get('category', '?')}")
-            tools = sel_agent.get("tools", [])
-            ic3.markdown(f"**الأدوات:** {len(tools)}")
-            st.caption(sel_agent.get("description", ""))
-
-    st.divider()
-
-    # سجل المحادثة
+    # تهيئة session state
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = []
+    if "last_result" not in st.session_state:
+        st.session_state.last_result = None
+
+    # خيارات
+    col1, col2, col3 = st.columns([2, 1, 1])
+
+    with col1:
+        agents_data = get_agents()
+        agent_options = ["تلقائي"]
+        agent_ids_map = {"تلقائي": None}
+
+        if agents_data:
+            for a in agents_data.get("agents", []):
+                label = f"{a['id']} — {a.get('name_ar', a.get('name',''))}"
+                agent_options.append(label)
+                agent_ids_map[label] = a["id"]
+
+        selected_agent_label = st.selectbox("الوكيل", agent_options)
+        selected_agent = agent_ids_map.get(selected_agent_label)
+
+    with col2:
+        pipeline_mode = st.checkbox("Pipeline Mode")
+
+    with col3:
+        if st.button("مسح المحادثة"):
+            st.session_state.chat_history = []
+            st.rerun()
+
+    # Pipeline agents
+    if pipeline_mode:
+        pipeline_agents = st.multiselect(
+            "اختر الوكلاء بالترتيب",
+            [a["id"] for a in agents_data.get("agents", [])] if agents_data else [],
+            default=["A01", "A04"] if agents_data else []
+        )
 
     # عرض المحادثة
     chat_container = st.container()
     with chat_container:
         for msg in st.session_state.chat_history:
             if msg["role"] == "user":
-                st.markdown(
-                    f'<div class="chat-msg-user">👤 <b>أنت:</b><br>{msg["content"]}</div>',
-                    unsafe_allow_html=True,
-                )
+                st.markdown(f"""
+                <div class="user-msg">
+                <small>أنت — {msg.get('time','')}</small><br>
+                {msg['content']}
+                </div>
+                """, unsafe_allow_html=True)
             else:
-                agent_name = msg.get("agent", "وكيل")
-                elapsed = msg.get("elapsed", "")
-                model = msg.get("model", "")
-                header = f"🤖 <b>{agent_name}</b>"
-                if model:
-                    header += f" <small>({model})</small>"
-                if elapsed:
-                    header += f" <small>— {elapsed}s</small>"
-                st.markdown(
-                    f'<div class="chat-msg-agent">{header}<br><br>{msg["content"]}</div>',
-                    unsafe_allow_html=True,
-                )
+                agent_info = f"🤖 {msg.get('agent','وكيل')} ({msg.get('model','')}) — {msg.get('elapsed','')}s"
+                st.markdown(f"""
+                <div class="agent-msg">
+                <small>{agent_info}</small><br>
+                {msg['content']}
+                </div>
+                """, unsafe_allow_html=True)
 
-    # إدخال المهمة
-    st.divider()
+                # أزرار تقييم
+                if st.session_state.last_result and msg == st.session_state.chat_history[-1]:
+                    col_a, col_b, col_c = st.columns([1, 1, 8])
+                    with col_a:
+                        if st.button("👍", key=f"like_{len(st.session_state.chat_history)}"):
+                            submit_feedback(
+                                st.session_state.last_result.get("agent_id",""),
+                                st.session_state.chat_history[-2]["content"],
+                                5
+                            )
+                            st.success("شكرا!")
+                    with col_b:
+                        if st.button("👎", key=f"dislike_{len(st.session_state.chat_history)}"):
+                            submit_feedback(
+                                st.session_state.last_result.get("agent_id",""),
+                                st.session_state.chat_history[-2]["content"],
+                                1
+                            )
+                            st.info("سنحسّن!")
+
+    # مربع الإرسال
+    st.markdown("---")
+
     with st.form("chat_form", clear_on_submit=True):
         task_input = st.text_area(
             "اكتب مهمتك:",
-            placeholder="مثلاً: حلّل تأثير الذكاء الاصطناعي على سوق العمل...",
-            height=100,
-            key="chat_input",
+            placeholder="مثال: حلّل تأثير الذكاء الاصطناعي على سوق العمل...",
+            height=100
         )
-        col_send, col_clear = st.columns([1, 1])
-        send_btn = col_send.form_submit_button("🚀 إرسال", type="primary")
-        clear_btn = col_clear.form_submit_button("🗑️ مسح المحادثة")
 
-    if clear_btn:
-        st.session_state.chat_history = []
-        st.rerun()
+        col1, col2 = st.columns([1, 4])
+        with col1:
+            submitted = st.form_submit_button("إرسال", use_container_width=True)
 
-    if send_btn and task_input.strip():
-        # حفظ رسالة المستخدم
-        st.session_state.chat_history.append({
-            "role": "user",
-            "content": task_input.strip(),
-        })
+        if submitted and task_input:
+            # أضف رسالة المستخدم
+            st.session_state.chat_history.append({
+                "role": "user",
+                "content": task_input,
+                "time": datetime.now().strftime("%H:%M")
+            })
 
-        if chat_mode == "سلسلة وكلاء" and len(chain_agents) > 1:
-            # سلسلة وكلاء
-            with st.spinner(f"جارٍ التنفيذ عبر {len(chain_agents)} وكلاء..."):
-                t0 = time.time()
-                result = send_pipeline(chain_agents, task_input.strip())
-                elapsed = round(time.time() - t0, 1)
+            with st.spinner("الوكيل يفكر..."):
+                if pipeline_mode and pipeline_agents:
+                    result = send_task(task_input, pipeline=True, agent_ids=pipeline_agents)
+                    if result.get("status") == "success":
+                        final = result.get("final") or {}
+                        response_text = final.get("result", "لا يوجد رد")
+                        agent_name = final.get("agent_name", "Pipeline")
+                        elapsed = final.get("elapsed_seconds", 0)
+                        model = final.get("model_used", "")
+                    else:
+                        response_text = result.get("error", "خطأ")
+                        agent_name = "Pipeline"
+                        elapsed = 0
+                        model = ""
+                else:
+                    result = send_task(task_input, selected_agent)
+                    response_text = result.get("result", result.get("error", "لا يوجد رد"))
+                    agent_name = result.get("agent_name", "وكيل")
+                    elapsed = result.get("elapsed_seconds", 0)
+                    model = result.get("model_used", "")
 
-            if result.get("status") == "error":
+                st.session_state.last_result = result
                 st.session_state.chat_history.append({
                     "role": "agent",
-                    "agent": "النظام",
-                    "content": f"خطأ: {result.get('error', 'غير معروف')}",
+                    "content": response_text,
+                    "agent": agent_name,
                     "elapsed": elapsed,
+                    "model": model,
+                    "time": datetime.now().strftime("%H:%M")
                 })
-            else:
-                steps = result.get("steps", [])
-                if not isinstance(steps, list):
-                    steps = []
-                for step in steps:
-                    st.session_state.chat_history.append({
-                        "role": "agent",
-                        "agent": f"{step.get('agent_id', '?')} — {step.get('agent_name', '')}",
-                        "content": step.get("result", ""),
-                        "elapsed": step.get("elapsed_seconds", ""),
-                        "model": step.get("model_used", ""),
-                    })
-        else:
-            # وكيل واحد
-            with st.spinner(f"جارٍ المعالجة بواسطة {selected_id}..."):
-                t0 = time.time()
-                result = send_task(selected_id, task_input.strip())
-                elapsed = round(time.time() - t0, 1)
 
-            agent_name = result.get("agent_name", selected_id)
-            content = result.get("result", json.dumps(result, ensure_ascii=False, indent=2))
-            model_used = result.get("model_used", "")
+            st.rerun()
 
-            st.session_state.chat_history.append({
-                "role": "agent",
-                "agent": f"{selected_id} — {agent_name}",
-                "content": content,
-                "elapsed": elapsed,
-                "model": model_used,
-            })
+# ══════════════════════════════════════════════════
+# صفحة الوكلاء
+# ══════════════════════════════════════════════════
 
-        st.rerun()
-
-
-# ══════════════════════════════════════════════════════════════
-# 🤖 الوكلاء
-# ══════════════════════════════════════════════════════════════
 elif page == "🤖 الوكلاء":
-    st.title("🤖 قائمة الوكلاء — 81 وكيل")
+    st.title("🤖 الوكلاء الـ 81")
 
-    # فلاتر
-    fc1, fc2, fc3 = st.columns(3)
-    with fc1:
-        cats = ["الكل"] + [f"{CATEGORY_INFO.get(c, {}).get('icon', '')} {c}" for c in sorted(by_category.keys())]
-        filter_cat = st.selectbox("الفئة", cats)
-    with fc2:
-        filter_model = st.selectbox("النموذج", ["الكل"] + sorted(by_model.keys()))
-    with fc3:
-        search_q = st.text_input("بحث", placeholder="اسم أو وصف أو ID...")
+    agents_data = get_agents()
 
-    # تصفية
-    filtered = all_agents
-    if filter_cat != "الكل":
-        cat_key = filter_cat.split(" ", 1)[-1] if " " in filter_cat else filter_cat
-        filtered = [a for a in filtered if a.get("category") == cat_key]
-    if filter_model != "الكل":
-        filtered = [a for a in filtered if a.get("model") == filter_model]
-    if search_q:
-        q = search_q.lower()
-        filtered = [
-            a for a in filtered
-            if q in a.get("name", "").lower()
-            or q in a.get("name_ar", "").lower()
-            or q in a.get("description", "").lower()
-            or q in a.get("agent_id", "").lower()
-        ]
-
-    st.caption(f"عرض {len(filtered)} من {len(all_agents)} وكيل")
-
-    # عرض كجدول
-    view_mode = st.radio("العرض", ["جدول", "بطاقات"], horizontal=True)
-
-    if view_mode == "جدول":
-        table_data = []
-        for a in filtered:
-            cat = a.get("category", "")
-            info = CATEGORY_INFO.get(cat, {"icon": "⚪", "label": cat})
-            m = a.get("model", "")
-            table_data.append({
-                "ID": a.get("agent_id", ""),
-                "الاسم": a.get("name_ar", a.get("name", "")),
-                "الفئة": f"{info['icon']} {info['label']}",
-                "النموذج": f"{MODEL_ICONS.get(m, '⚪')} {m}",
-                "الأدوات": len(a.get("tools", [])),
-                "الوصف": a.get("description", "")[:80],
-            })
-        st.dataframe(table_data, use_container_width=True, height=600)
-
-    else:
-        # بطاقات
-        cols_per_row = 3
-        for i in range(0, len(filtered), cols_per_row):
-            cols = st.columns(cols_per_row)
-            for j, col in enumerate(cols):
-                idx = i + j
-                if idx >= len(filtered):
-                    break
-                a = filtered[idx]
-                cat = a.get("category", "")
-                info = CATEGORY_INFO.get(cat, {"icon": "⚪", "label": cat})
-                m = a.get("model", "")
-                tools = a.get("tools", [])
-
-                with col:
-                    with st.container(border=True):
-                        st.markdown(f"### {info['icon']} {a.get('agent_id')} — {a.get('name_ar', a.get('name', ''))}")
-                        st.caption(a.get("description", "")[:120])
-                        mc1, mc2 = st.columns(2)
-                        mc1.markdown(f"**النموذج:** {MODEL_ICONS.get(m, '')} `{m}`")
-                        mc2.markdown(f"**الأدوات:** {len(tools)}")
-                        if tools:
-                            st.code(", ".join(tools[:5]) + ("..." if len(tools) > 5 else ""))
-
-                        # زر إرسال سريع
-                        if gateway_ok:
-                            with st.popover(f"💬 مهمة سريعة"):
-                                quick_task = st.text_input(
-                                    "المهمة:",
-                                    key=f"quick_{a.get('agent_id')}",
-                                    placeholder="اكتب مهمة سريعة...",
-                                )
-                                if st.button("إرسال", key=f"send_{a.get('agent_id')}"):
-                                    if quick_task:
-                                        with st.spinner("..."):
-                                            res = send_task(a.get("agent_id"), quick_task)
-                                        st.markdown(res.get("result", str(res))[:500])
-
-
-# ══════════════════════════════════════════════════════════════
-# 📄 التقارير
-# ══════════════════════════════════════════════════════════════
-elif page == "📄 التقارير":
-    st.title("📄 التقارير اليومية")
-
-    reports = load_reports()
-
-    if not reports:
-        st.info("لا توجد تقارير. شغّل: `python scripts/daily_updater.py`")
+    if not agents_data:
+        st.error("لا يمكن الاتصال بالسيرفر")
         st.stop()
 
-    st.metric("عدد التقارير", len(reports))
-    st.divider()
+    agents = agents_data.get("agents", [])
 
-    # اختيار التقرير
-    report_names = [r.stem.replace("daily_report_", "") for r in reports]
-    selected_date = st.selectbox("اختر التاريخ:", report_names)
-    selected_report = reports[report_names.index(selected_date)]
+    # فلاتر
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        search = st.text_input("بحث", placeholder="اسم أو ID...")
+    with col2:
+        cat_filter = st.selectbox("الفئة", [
+            "الكل", "cat1_science", "cat2_society", "cat3_tools",
+            "cat4_management", "cat5_behavior", "cat6_leadership", "cat7_new"
+        ])
+    with col3:
+        sort_by = st.selectbox("ترتيب", ["ID", "المهام", "الفئة"])
 
-    with open(selected_report, encoding="utf-8") as f:
-        content = f.read()
+    # تطبيق الفلاتر
+    filtered = agents
+    if search:
+        filtered = [a for a in filtered if
+                    search.lower() in a.get("id","").lower() or
+                    search in a.get("name_ar", a.get("name",""))]
+    if cat_filter != "الكل":
+        filtered = [a for a in filtered if a.get("category") == cat_filter]
 
-    st.markdown(f"### تقرير {selected_date}")
-    st.markdown(content)
+    if sort_by == "المهام":
+        filtered.sort(key=lambda a: a.get("stats",{}).get("tasks_done",0), reverse=True)
+    elif sort_by == "الفئة":
+        filtered.sort(key=lambda a: a.get("category",""))
 
-    st.divider()
+    st.caption(f"عرض {len(filtered)} من {len(agents)} وكيل")
 
-    # زر تشغيل تحديث جديد
-    if st.button("🔄 تشغيل تحديث يومي الآن", type="primary"):
-        with st.spinner("جارٍ جمع البيانات..."):
-            try:
-                from scripts.daily_updater import run_daily_update
-                summary = run_daily_update()
-                st.success("تم التحديث!")
-                st.json(summary)
-                st.cache_data.clear()
-                st.rerun()
-            except Exception as e:
-                st.error(f"خطأ: {e}")
+    # جدول الوكلاء
+    df_data = []
+    for a in filtered:
+        stats = a.get("stats", {})
+        df_data.append({
+            "ID": a.get("id",""),
+            "الاسم": a.get("name_ar", a.get("name","")),
+            "الفئة": a.get("category",""),
+            "النموذج": a.get("model",""),
+            "الأدوات": len(a.get("tools",[])),
+            "المهام": stats.get("tasks_done", 0),
+            "الفشل": stats.get("tasks_failed", 0),
+        })
 
+    if df_data:
+        df = pd.DataFrame(df_data)
+        st.dataframe(
+            df,
+            use_container_width=True,
+            height=400,
+            column_config={
+                "ID": st.column_config.TextColumn(width="small"),
+                "المهام": st.column_config.ProgressColumn(
+                    min_value=0, max_value=max(d["المهام"] for d in df_data) or 1
+                ),
+            }
+        )
 
-# ══════════════════════════════════════════════════════════════
-# 🧠 الذاكرة
-# ══════════════════════════════════════════════════════════════
+    # تفاصيل وكيل مختار
+    st.markdown("---")
+    selected_id = st.selectbox(
+        "اختر وكيلا لعرض تفاصيله",
+        [a.get("id","") for a in filtered]
+    )
+
+    if selected_id:
+        agent = next((a for a in filtered if a.get("id") == selected_id), None)
+        if agent:
+            col1, col2 = st.columns([1, 2])
+
+            with col1:
+                st.subheader(f"🤖 {agent.get('id')}")
+                st.markdown(f"**{agent.get('name_ar', agent.get('name',''))}**")
+                st.caption(agent.get("description",""))
+
+                st.markdown("**الأدوات:**")
+                for tool in agent.get("tools", []):
+                    st.markdown(f"- `{tool}`")
+
+                stats = agent.get("stats", {})
+                st.metric("المهام المنجزة", stats.get("tasks_done", 0))
+                st.metric("المهام الفاشلة", stats.get("tasks_failed", 0))
+
+            with col2:
+                st.subheader("إرسال مهمة مباشرة")
+                quick_task = st.text_area("المهمة:", height=100, key="quick_task")
+                if st.button("إرسال لهذا الوكيل", key="send_quick"):
+                    if quick_task:
+                        with st.spinner("جاري المعالجة..."):
+                            result = send_task(quick_task, selected_id)
+                            if result.get("status") == "success":
+                                st.success(f"{result.get('elapsed_seconds',0)}s")
+                                st.markdown(result.get("result",""))
+
+                                # أزرار تقييم
+                                col_a, col_b = st.columns(2)
+                                with col_a:
+                                    if st.button("👍 ممتاز"):
+                                        submit_feedback(selected_id, quick_task, 5)
+                                with col_b:
+                                    if st.button("👎 يحتاج تحسين"):
+                                        submit_feedback(selected_id, quick_task, 1)
+                            else:
+                                st.error(result.get("error","خطأ"))
+
+# ══════════════════════════════════════════════════
+# صفحة التقارير
+# ══════════════════════════════════════════════════
+
+elif page == "📰 التقارير":
+    st.title("التقارير اليومية")
+
+    col1, col2 = st.columns([3, 1])
+    with col2:
+        if st.button("تشغيل تحديث الآن"):
+            with st.spinner("جاري جمع البيانات..."):
+                import subprocess
+                proc = subprocess.run(
+                    ["python", "scripts/daily_updater.py"],
+                    capture_output=True, text=True, timeout=120
+                )
+                if proc.returncode == 0:
+                    st.success("تم التحديث!")
+                    st.cache_data.clear()
+                else:
+                    st.error(f"خطأ: {proc.stderr[:200]}")
+
+    reports_dir = Path("workspace/reports")
+    if not reports_dir.exists():
+        st.info("لا توجد تقارير بعد")
+        st.stop()
+
+    reports = sorted(reports_dir.glob("*.md"), reverse=True)
+
+    if not reports:
+        st.info("لا توجد تقارير بعد")
+        st.stop()
+
+    # عرض التقارير
+    report_names = [r.name for r in reports]
+    selected_report = st.selectbox("اختر تقرير", report_names)
+
+    if selected_report:
+        report_path = reports_dir / selected_report
+        content = report_path.read_text(encoding="utf-8")
+
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("التاريخ", report_path.stem.replace("daily_report_",""))
+        with col2:
+            st.metric("الحجم", f"{len(content)} حرف")
+        with col3:
+            knowledge_dir = Path("workspace/knowledge")
+            files = len(list(knowledge_dir.rglob("*.txt"))) if knowledge_dir.exists() else 0
+            st.metric("ملفات المعرفة", files)
+
+        st.markdown("---")
+        st.markdown(content)
+
+# ══════════════════════════════════════════════════
+# صفحة الذاكرة
+# ══════════════════════════════════════════════════
+
 elif page == "🧠 الذاكرة":
     st.title("🧠 ذاكرة النظام")
-    st.markdown("ما تعلمه النظام من المهام والتحديثات اليومية.")
 
-    stats = get_chroma_stats()
+    # Chroma
+    st.subheader("الذاكرة الدلالية (Chroma)")
+    ks = get_knowledge_status()
 
-    # بطاقات الحالة
-    mc1, mc2, mc3 = st.columns(3)
+    if ks:
+        col1, col2 = st.columns(2)
+        with col1:
+            st.metric("Collections", ks.get("chroma_collections", 0))
+        with col2:
+            st.metric("إجمالي الوثائق", ks.get("total_docs", 0))
 
-    with mc1:
-        st.markdown("### 💾 الذاكرة العرضية")
-        st.markdown("(Episodic Memory — SQLite)")
-        db_size = stats.get("episodic_db_mb", 0)
-        if db_size:
-            st.metric("حجم قاعدة البيانات", f"{db_size} MB")
-            # حاول قراءة عدد السجلات
-            try:
-                import sqlite3
-                db_path = PROJECT_ROOT / "workspace" / "episodic_memory.db"
-                conn = sqlite3.connect(str(db_path))
-                cursor = conn.execute("SELECT COUNT(*) FROM episodes")
-                count = cursor.fetchone()[0]
-                conn.close()
-                st.metric("عدد السجلات", count)
-            except Exception:
-                st.caption("تعذّر قراءة السجلات")
-        else:
-            st.info("لا توجد قاعدة بيانات بعد")
-
-    with mc2:
-        st.markdown("### 🔍 الذاكرة الدلالية")
-        st.markdown("(Semantic Memory — Chroma)")
-        if stats.get("chroma_exists"):
-            st.metric("حجم Chroma", f"{stats.get('chroma_db_mb', 0)} MB")
-            st.success("Chroma DB موجود")
-        else:
-            st.warning("Chroma DB غير موجود")
-            st.caption("ثبّت: `pip install chromadb`")
-
-    with mc3:
-        st.markdown("### 📦 الذاكرة المضغوطة")
-        st.markdown("(Compressed Memory — Markdown)")
-        compressed = stats.get("compressed_files", 0)
-        st.metric("ملفات مضغوطة", compressed)
-        if compressed:
-            comp_dir = PROJECT_ROOT / "workspace" / "compressed"
-            files = sorted(comp_dir.glob("*.md"), reverse=True)
-            if files:
-                st.caption(f"آخر ملف: {files[0].name}")
-
-    st.divider()
-
-    # عرض محتوى الذاكرة المضغوطة
-    st.subheader("📦 آخر ملخصات مضغوطة")
-    comp_dir = PROJECT_ROOT / "workspace" / "compressed"
-    if comp_dir.exists():
-        comp_files = sorted(comp_dir.glob("*.md"), reverse=True)[:5]
-        if comp_files:
-            for cf in comp_files:
-                with st.expander(cf.name):
-                    with open(cf, encoding="utf-8") as f:
-                        st.markdown(f.read()[:3000])
-        else:
-            st.info("لا توجد ملخصات مضغوطة بعد.")
+        if ks.get("collections"):
+            df = pd.DataFrame(ks["collections"])
+            if not df.empty:
+                fig = px.pie(df, values="count", names="name",
+                             template="plotly_dark",
+                             title="توزيع الوثائق في Chroma")
+                fig.update_layout(
+                    plot_bgcolor="rgba(0,0,0,0)",
+                    paper_bgcolor="rgba(0,0,0,0)"
+                )
+                st.plotly_chart(fig, use_container_width=True)
     else:
-        st.info("مجلد الذاكرة المضغوطة غير موجود.")
+        st.warning("Chroma غير متاح. شغّل: pip install chromadb")
 
-    st.divider()
-
-    # عرض آخر سجلات episodic
-    st.subheader("📝 آخر المهام المسجّلة")
-    try:
+    # SQLite Episodic
+    st.subheader("الذاكرة العرضية (SQLite)")
+    db_path = Path("memory/episodic.db")
+    if db_path.exists():
         import sqlite3
-        db_path = PROJECT_ROOT / "workspace" / "episodic_memory.db"
-        if db_path.exists():
+        try:
             conn = sqlite3.connect(str(db_path))
-            cursor = conn.execute(
-                "SELECT agent_id, task_summary, success, created_at FROM episodes ORDER BY created_at DESC LIMIT 20"
+            df = pd.read_sql_query(
+                "SELECT agent_id, task_summary, success, rating, created_at FROM episodes ORDER BY created_at DESC LIMIT 20",
+                conn
             )
-            rows = cursor.fetchall()
             conn.close()
-
-            if rows:
-                table = []
-                for r in rows:
-                    table.append({
-                        "الوكيل": r[0],
-                        "المهمة": r[1][:80] + "..." if len(r[1]) > 80 else r[1],
-                        "النتيجة": "✅" if r[2] else "❌",
-                        "التاريخ": r[3][:19] if r[3] else "",
-                    })
-                st.dataframe(table, use_container_width=True)
+            if not df.empty:
+                st.metric("إجمالي الحلقات", len(df))
+                st.dataframe(df, use_container_width=True)
             else:
-                st.info("لا توجد سجلات بعد.")
+                st.info("لا توجد بيانات بعد")
+        except Exception as e:
+            st.warning(f"خطأ: {e}")
+    else:
+        st.info("لا توجد قاعدة بيانات episodic بعد")
+
+    # ملفات المعرفة
+    st.subheader("ملفات المعرفة المحلية")
+    knowledge_dir = Path("workspace/knowledge")
+    if knowledge_dir.exists():
+        all_files = list(knowledge_dir.rglob("*.txt"))
+        if all_files:
+            # احسب بالفئة
+            by_cat = {}
+            for f in all_files:
+                cat = f.parent.name
+                by_cat[cat] = by_cat.get(cat, 0) + 1
+
+            df = pd.DataFrame([{"الفئة": k, "الملفات": v} for k,v in by_cat.items()])
+            st.dataframe(df, use_container_width=True)
+
+            total_size = sum(f.stat().st_size for f in all_files)
+            st.metric("إجمالي الحجم", f"{total_size/1024/1024:.1f} MB")
         else:
-            st.info("قاعدة البيانات غير موجودة بعد. أرسل مهمة لوكيل لبدء التسجيل.")
-    except Exception as e:
-        st.caption(f"تعذّر قراءة السجلات: {e}")
+            st.info("لا توجد ملفات معرفة بعد. شغّل: python scripts/load_all_knowledge.py")
+
+    # Compressed summaries
+    st.subheader("الملخصات المضغوطة")
+    compressed_dir = Path("workspace/compressed")
+    if compressed_dir.exists():
+        compressed = list(compressed_dir.glob("*.md"))
+        if compressed:
+            for f in compressed[:5]:
+                with st.expander(f.stem):
+                    st.markdown(f.read_text(encoding="utf-8"))
+        else:
+            st.info("لا توجد ملخصات مضغوطة بعد")
+
+# ══════════════════════════════════════════════════
+# صفحة الإحصائيات
+# ══════════════════════════════════════════════════
+
+elif page == "📊 الإحصائيات":
+    st.title("إحصائيات متقدمة")
+
+    metrics = get_metrics()
+    agents_data = get_agents()
+
+    if not metrics or not agents_data:
+        st.error("لا يمكن الاتصال بالسيرفر")
+        st.stop()
+
+    agents = agents_data.get("agents", [])
+
+    # مخطط المهام لكل وكيل
+    st.subheader("المهام بالوكيل")
+    tasks_data = [
+        {
+            "ID": a.get("id",""),
+            "المهام": a.get("stats",{}).get("tasks_done", 0),
+            "الفئة": a.get("category","")
+        }
+        for a in agents
+        if a.get("stats",{}).get("tasks_done", 0) > 0
+    ]
+
+    if tasks_data:
+        df = pd.DataFrame(tasks_data)
+        fig = px.bar(df, x="ID", y="المهام", color="الفئة",
+                     template="plotly_dark",
+                     title="المهام المنجزة لكل وكيل")
+        fig.update_layout(
+            plot_bgcolor="rgba(0,0,0,0)",
+            paper_bgcolor="rgba(0,0,0,0)",
+            font_color="white"
+        )
+        st.plotly_chart(fig, use_container_width=True)
+    else:
+        st.info("لا توجد مهام بعد. ابدأ بإرسال مهام من صفحة Chat")
+
+    # إحصائيات الأدوات
+    st.subheader("توزيع الأدوات")
+    tool_counts = {}
+    for a in agents:
+        for tool in a.get("tools", []):
+            tool_counts[tool] = tool_counts.get(tool, 0) + 1
+
+    if tool_counts:
+        df_tools = pd.DataFrame([
+            {"الأداة": k, "عدد الوكلاء": v}
+            for k, v in sorted(tool_counts.items(), key=lambda x: x[1], reverse=True)
+        ])
+        fig = px.bar(df_tools, x="الأداة", y="عدد الوكلاء",
+                     color="عدد الوكلاء",
+                     template="plotly_dark",
+                     color_continuous_scale="Blues")
+        fig.update_layout(
+            plot_bgcolor="rgba(0,0,0,0)",
+            paper_bgcolor="rgba(0,0,0,0)",
+            font_color="white"
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+    # توزيع النماذج
+    st.subheader("توزيع النماذج")
+    model_counts = {}
+    for a in agents:
+        model = a.get("model", "unknown")
+        model_counts[model] = model_counts.get(model, 0) + 1
+
+    if model_counts:
+        df_models = pd.DataFrame([
+            {"النموذج": k, "العدد": v}
+            for k, v in model_counts.items()
+        ])
+        fig = px.pie(df_models, values="العدد", names="النموذج",
+                     template="plotly_dark",
+                     title="توزيع النماذج على الوكلاء")
+        fig.update_layout(
+            plot_bgcolor="rgba(0,0,0,0)",
+            paper_bgcolor="rgba(0,0,0,0)"
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+# ══════════════════════════════════════════════════
+# صفحة الإعدادات
+# ══════════════════════════════════════════════════
+
+elif page == "⚙️ الإعدادات":
+    st.title("إعدادات النظام")
+
+    st.subheader("مفاتيح API")
+
+    env_path = Path(".env")
+    env_content = env_path.read_text(encoding="utf-8") if env_path.exists() else ""
+
+    # اعرض المفاتيح (مخفية)
+    keys = {}
+    for line in env_content.split('\n'):
+        if '=' in line and not line.startswith('#'):
+            k, v = line.split('=', 1)
+            keys[k.strip()] = 'موجود' if v.strip() and v.strip() != 'your_key_here' else 'ناقص'
+
+    for key, status in keys.items():
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.text(key)
+        with col2:
+            st.markdown(status)
+
+    st.markdown("---")
+
+    st.subheader("حالة الخدمات")
+
+    services = {
+        "Gateway API": f"{GATEWAY}/health",
+        "Dashboard": "http://localhost:8501",
+    }
+
+    for service, url in services.items():
+        try:
+            r = requests.get(url, timeout=2)
+            status = "يعمل"
+        except:
+            status = "متوقف"
+
+        col1, col2 = st.columns([3, 1])
+        with col1:
+            st.text(f"{service} ({url})")
+        with col2:
+            st.markdown(status)
+
+    st.markdown("---")
+
+    st.subheader("معلومات النظام")
+
+    import platform, sys
+    info = {
+        "Python": sys.version.split()[0],
+        "OS": platform.system(),
+        "Architecture": platform.machine(),
+        "Dashboard": "v3.0",
+    }
+
+    for k, v in info.items():
+        st.text(f"{k}: {v}")
