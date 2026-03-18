@@ -1,0 +1,31 @@
+Source: pubmed
+Query: artificial intelligence clinical diagnosis
+Date: 2026-03-18
+
+A lightweight and robust method for electrocardiogram anomaly detection and localization using multi-scale masked autoencoder.
+Electrocardiogram (ECG) analysis is crucial for diagnosing cardiovascular conditions. While traditional classification models require large volumes of labeled data across multiple disease categories, anomaly detection offers a flexible alternative by identifying deviations from normal patterns-an approach particularly valuable given the rarity and diversity of cardiac conditions. However, existing anomaly detection methods often rely on R-peak detection or heartbeat segmentation, which increases
+PubMed: 41843891
+
+---
+
+Rectal Cancer Radiotherapy Response Prediction: Retrospective Study of Development of a Deep Learning-Based Radiomics Model.
+Background: Radiotherapy (RT) is a cornerstone of multimodal treatment for rectal cancer (RC); yet, substantial interindividual variability in treatment response persists. Deep learning (DL)-based radiomics offers potential for pre-RT response prediction to support personalized decision-making., Objective: This study aimed to develop and compare multiple DL radiomics models for predicting RT response in RC, with emphasis on the performance and clinical utility of Transformer architectures., Meth
+PubMed: 41843889
+
+---
+
+Smartphone Cardiac Rehabilitation, Assisted Self-Management (SCRAM) Versus Usual Care: Multicenter Randomized Controlled Trial.
+Accessibility barriers contribute to low participation in center-based cardiac rehabilitation. We developed an innovative, comprehensive, dual-phase telerehabilitation program to address this gap (Smartphone Cardiac Rehabilitation, Assisted Self-Management; SCRAM).
+PubMed: 41843837
+
+---
+
+Patient Perceptions of Artificial Intelligence in Orthopaedic Surgery: Identifying Potential Barriers to Acceptance and Disparities With Implementation.
+Despite growing enthusiasm for artificial intelligence (AI) implementation in orthopaedic care, patient attitudes toward AI adoption remain unexplored. This study assesses patient perceptions of AI integration in diagnosis, treatment, and patient communication in orthopaedic surgery.
+PubMed: 41843814
+
+---
+
+Accuracy of Diagnosis and Anticipation of Future Treatment in Pediatric Peripelvic Infections: The Role of Multisurgeon Review and Implications for Future Machine Learning Algorithms.
+MRI is commonly used to evaluate pelvic musculoskeletal infections. Limited "quick" MRI protocols enable timely imaging without intravenous contrast or sedation. This study examines the consistency of interpretation among pediatric orthopaedic surgeons when using quick versus full, contrast-enhanced MRI scans in cases of peripelvic musculoskeletal infection and explores these findings to inform future development and design of machine learning algorithms.
+PubMed: 41843807

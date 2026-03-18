@@ -1,0 +1,7 @@
+Source: wiki
+Query: Synthetic_biology
+Date: 2026-03-18
+
+Synthetic biology
+
+Synthetic biology (SynBio) is a multidisciplinary field of science that focuses on living systems and organisms. It applies engineering principles to develop new biological parts, devices, and systems or to redesign existing systems found in nature.

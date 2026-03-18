@@ -1,0 +1,7 @@
+Source: wiki
+Query: Strategic_management
+Date: 2026-03-18
+
+Strategic management
+
+In the field of management, strategic management involves the formulation and implementation of the major goals and initiatives taken by an organization's managers on behalf of stakeholders, based on consideration of resources and an assessment of the internal and external environments in which the organization operates. Strategic management provides overall direction to an enterprise and involves specifying the organization's objectives, developing policies and plans to achieve those objectives, and then allocating resources to implement the plans. Academics and practicing managers have developed numerous models and frameworks to assist in strategic decision-making in the context of complex environments and competitive dynamics. Strategic management is not static in nature; the models can include a feedback loop to monitor execution and to inform the next round of planning.

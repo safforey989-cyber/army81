@@ -1,0 +1,413 @@
+{
+  "A04_retrieve": {
+    "agent_id": "A04",
+    "type": "retrieve",
+    "usage_count": 1,
+    "total_reward": 0.8,
+    "avg_reward": 0.8,
+    "recent_rewards": [
+      0.8
+    ],
+    "last_used": "2026-03-18T14:18:53.692212"
+  },
+  "A04_insert": {
+    "agent_id": "A04",
+    "type": "insert",
+    "usage_count": 1,
+    "total_reward": 0.9,
+    "avg_reward": 0.9,
+    "recent_rewards": [
+      0.9
+    ],
+    "last_used": "2026-03-18T14:18:53.692212"
+  },
+  "A01_summarize": {
+    "agent_id": "A01",
+    "type": "summarize",
+    "usage_count": 1,
+    "total_reward": 0.7,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7
+    ],
+    "last_used": "2026-03-18T14:18:53.693213"
+  },
+  "A01_retrieve": {
+    "agent_id": "A01",
+    "type": "retrieve",
+    "usage_count": 8,
+    "total_reward": 4.0,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "last_used": "2026-03-18T19:26:25.477387"
+  },
+  "A01_insert": {
+    "agent_id": "A01",
+    "type": "insert",
+    "usage_count": 8,
+    "total_reward": 5.6000000000000005,
+    "avg_reward": 0.7000000000000001,
+    "recent_rewards": [
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ],
+    "last_used": "2026-03-18T19:27:09.559409"
+  },
+  "A42_retrieve": {
+    "agent_id": "A42",
+    "type": "retrieve",
+    "usage_count": 4,
+    "total_reward": 2.0,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "last_used": "2026-03-18T17:21:22.763335"
+  },
+  "A42_insert": {
+    "agent_id": "A42",
+    "type": "insert",
+    "usage_count": 4,
+    "total_reward": 2.8,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ],
+    "last_used": "2026-03-18T17:21:26.598990"
+  },
+  "A56_retrieve": {
+    "agent_id": "A56",
+    "type": "retrieve",
+    "usage_count": 1,
+    "total_reward": 0.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5
+    ],
+    "last_used": "2026-03-18T15:34:07.855001"
+  },
+  "A56_insert": {
+    "agent_id": "A56",
+    "type": "insert",
+    "usage_count": 1,
+    "total_reward": 0.7,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7
+    ],
+    "last_used": "2026-03-18T15:34:16.630629"
+  },
+  "A08_retrieve": {
+    "agent_id": "A08",
+    "type": "retrieve",
+    "usage_count": 1,
+    "total_reward": 0.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5
+    ],
+    "last_used": "2026-03-18T15:38:19.210192"
+  },
+  "A08_insert": {
+    "agent_id": "A08",
+    "type": "insert",
+    "usage_count": 1,
+    "total_reward": 0.7,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7
+    ],
+    "last_used": "2026-03-18T15:38:32.330097"
+  },
+  "A09_retrieve": {
+    "agent_id": "A09",
+    "type": "retrieve",
+    "usage_count": 5,
+    "total_reward": 2.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "last_used": "2026-03-18T18:05:55.341509"
+  },
+  "A09_insert": {
+    "agent_id": "A09",
+    "type": "insert",
+    "usage_count": 5,
+    "total_reward": 3.5,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ],
+    "last_used": "2026-03-18T18:06:05.225491"
+  },
+  "A81_retrieve": {
+    "agent_id": "A81",
+    "type": "retrieve",
+    "usage_count": 1,
+    "total_reward": 0.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5
+    ],
+    "last_used": "2026-03-18T15:43:50.421107"
+  },
+  "A81_insert": {
+    "agent_id": "A81",
+    "type": "insert",
+    "usage_count": 1,
+    "total_reward": 0.7,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7
+    ],
+    "last_used": "2026-03-18T15:44:05.332250"
+  },
+  "A38_retrieve": {
+    "agent_id": "A38",
+    "type": "retrieve",
+    "usage_count": 5,
+    "total_reward": 2.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "last_used": "2026-03-18T18:01:15.179276"
+  },
+  "A38_insert": {
+    "agent_id": "A38",
+    "type": "insert",
+    "usage_count": 5,
+    "total_reward": 3.5,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ],
+    "last_used": "2026-03-18T18:01:25.465231"
+  },
+  "A47_retrieve": {
+    "agent_id": "A47",
+    "type": "retrieve",
+    "usage_count": 1,
+    "total_reward": 0.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5
+    ],
+    "last_used": "2026-03-18T17:24:33.331546"
+  },
+  "A47_insert": {
+    "agent_id": "A47",
+    "type": "insert",
+    "usage_count": 1,
+    "total_reward": 0.7,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7
+    ],
+    "last_used": "2026-03-18T17:24:42.636314"
+  },
+  "A57_retrieve": {
+    "agent_id": "A57",
+    "type": "retrieve",
+    "usage_count": 3,
+    "total_reward": 1.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "last_used": "2026-03-18T17:31:10.633759"
+  },
+  "A57_insert": {
+    "agent_id": "A57",
+    "type": "insert",
+    "usage_count": 3,
+    "total_reward": 2.0999999999999996,
+    "avg_reward": 0.6999999999999998,
+    "recent_rewards": [
+      0.7,
+      0.7,
+      0.7
+    ],
+    "last_used": "2026-03-18T17:31:24.339583"
+  },
+  "A19_retrieve": {
+    "agent_id": "A19",
+    "type": "retrieve",
+    "usage_count": 4,
+    "total_reward": 2.0,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "last_used": "2026-03-18T17:43:44.949953"
+  },
+  "A19_insert": {
+    "agent_id": "A19",
+    "type": "insert",
+    "usage_count": 4,
+    "total_reward": 2.8,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ],
+    "last_used": "2026-03-18T17:43:57.823275"
+  },
+  "A54_retrieve": {
+    "agent_id": "A54",
+    "type": "retrieve",
+    "usage_count": 1,
+    "total_reward": 0.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5
+    ],
+    "last_used": "2026-03-18T17:34:04.546784"
+  },
+  "A54_insert": {
+    "agent_id": "A54",
+    "type": "insert",
+    "usage_count": 1,
+    "total_reward": 0.7,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7
+    ],
+    "last_used": "2026-03-18T17:34:09.502509"
+  },
+  "A02_retrieve": {
+    "agent_id": "A02",
+    "type": "retrieve",
+    "usage_count": 1,
+    "total_reward": 0.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5
+    ],
+    "last_used": "2026-03-18T17:37:03.422730"
+  },
+  "A02_insert": {
+    "agent_id": "A02",
+    "type": "insert",
+    "usage_count": 1,
+    "total_reward": 0.7,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7
+    ],
+    "last_used": "2026-03-18T17:37:20.837254"
+  },
+  "A10_retrieve": {
+    "agent_id": "A10",
+    "type": "retrieve",
+    "usage_count": 1,
+    "total_reward": 0.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5
+    ],
+    "last_used": "2026-03-18T17:38:49.202614"
+  },
+  "A10_insert": {
+    "agent_id": "A10",
+    "type": "insert",
+    "usage_count": 1,
+    "total_reward": 0.7,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7
+    ],
+    "last_used": "2026-03-18T17:39:22.369088"
+  },
+  "A05_retrieve": {
+    "agent_id": "A05",
+    "type": "retrieve",
+    "usage_count": 2,
+    "total_reward": 1.0,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5,
+      0.5
+    ],
+    "last_used": "2026-03-18T18:03:11.598298"
+  },
+  "A05_insert": {
+    "agent_id": "A05",
+    "type": "insert",
+    "usage_count": 2,
+    "total_reward": 1.4,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7,
+      0.7
+    ],
+    "last_used": "2026-03-18T18:03:22.542427"
+  },
+  "A07_retrieve": {
+    "agent_id": "A07",
+    "type": "retrieve",
+    "usage_count": 1,
+    "total_reward": 0.5,
+    "avg_reward": 0.5,
+    "recent_rewards": [
+      0.5
+    ],
+    "last_used": "2026-03-18T18:58:43.504002"
+  },
+  "A07_insert": {
+    "agent_id": "A07",
+    "type": "insert",
+    "usage_count": 1,
+    "total_reward": 0.7,
+    "avg_reward": 0.7,
+    "recent_rewards": [
+      0.7
+    ],
+    "last_used": "2026-03-18T18:58:47.807489"
+  }
+}

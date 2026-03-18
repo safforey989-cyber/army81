@@ -1,0 +1,13 @@
+Source: github
+Query: self-improving agents
+Date: 2026-03-18
+
+Stars:21641 letta-ai/letta: Letta is the platform for building stateful agents: AI with advanced memory that can learn and self-improve over time.
+Stars:9560 aden-hive/hive: Outcome driven agent development framework that evolves
+Stars:1910 jennyzzt/dgm: Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents
+Stars:1759 OS-Copilot/OS-Copilot: An self-improving embodied conversational agent seamlessly integrated into the operating system to automate our daily tasks. 
+Stars:1008 metauto-ai/GPTSwarm: 🐝  The First Self-Improving Agentic Solution
+Stars:832 chrisworsey55/atlas-gic: ATLAS by General Intelligence Capital — Self-improving AI trading agents using Karpathy-style autoresearch
+Stars:800 oliveirabruno01/babyagi-asi: BabyAGI: an Autonomous and Self-Improving agent, or BASI
+Stars:614 greyhaven-ai/autocontext: a recursive self-improving harness designed to help your agents (and future iterations of those agents) succeed on any task
+Stars:539 adolfousier/opencrabs: The self-hosted AI agent. Self-improving. Fully autonomous. Single binary. Built with Ratatui

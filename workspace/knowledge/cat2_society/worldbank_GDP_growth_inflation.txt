@@ -1,0 +1,14 @@
+Source: worldbank
+Query: GDP growth inflation
+Date: 2026-03-18
+
+Africa Eastern and Southern: 1242693542929.85
+Africa Western and Central: 736384961061.523
+Arab World: 3735881442514.35
+Caribbean small states: 90344593407.0487
+Central Europe and the Baltics: 2462005273603.48
+Early-demographic dividend: 15808304487948.1
+East Asia & Pacific: 32017179839273
+East Asia & Pacific (excluding high income): 22260810771875.1
+East Asia & Pacific (IDA & IBRD countries): 22233362919728.4
+Euro area: 16485444160371

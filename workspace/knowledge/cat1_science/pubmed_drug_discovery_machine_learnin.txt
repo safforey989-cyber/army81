@@ -1,0 +1,31 @@
+Source: pubmed
+Query: drug discovery machine learning
+Date: 2026-03-18
+
+Enhancing cancer drug discovery: QSAR modeling with machine learning and chemical representations.
+Accurately predicting the bioactivity of small molecules against cancer therapeutic targets remains a significant challenge at the intersection of cheminformatics and drug discovery. This study comprehensively evaluates chemical representations, including AtomPair Counts (APC),Avalon (AVN), Extended-Connectivity Fingerprint diameter 4 (ECFP4), Extended-Connectivity Fingerprint diameter 6 (ECFP6), Feature-based Morgan 2 (FM2), Feature-based Morgan 3 (FM3), Mol2Vec (M2V), Molecular ACCess System (
+PubMed: 41843628
+
+---
+
+Machine learning-driven drug discovery for the management of TNBC: focus on IDO1 and TDO targets.
+Tryptophan catabolism through the kynurenine pathway produces the oncometabolite kynurenine, which is strongly implicated in cancers such as triple-negative breast cancer (TNBC). The enzymes indoleamine 2,3-dioxygenase (IDO1) and tryptophan 2,3-dioxygenase (TDO) drive this pathway and promote an immunosuppressive tumour microenvironment, making them an attractive therapeutic target. However, no approved drug currently inhibits both enzymes simultaneously. In this study, we employed a machine lea
+PubMed: 41842844
+
+---
+
+Innovative integration of molecular docking and machine learning for drug discovery: from virtual screening to nanomolar inhibitors.
+This review highlights our group's systematic approach to integrating molecular docking, pharmacophore modeling, and machine learning methodologies for the rational discovery of bioactive leads. We describe innovative strategies including docking-based data augmentation, ligand-receptor contact fingerprints, genetic algorithm-guided feature selection, and SHAP-based model interpretation. These approaches have enabled the discovery of nanomolar inhibitors against multiple therapeutic targets incl
+PubMed: 41841313
+
+---
+
+Drug repurposing in oncology: Bridging computational discovery to clinical application.
+Drug repurposing, the identification of new therapeutic applications for existing drugs, has emerged as a pragmatic and cost-efficient strategy to accelerate oncology drug discovery. Faced with rising development costs, protracted timelines, and high attrition rates associated with traditional de novo drug development, repurposing leverages known pharmacokinetics, safety profiles, and manufacturing processes to expedite clinical translation. This review synthesizes current advances in computatio
+PubMed: 41839763
+
+---
+
+Computational discovery of marine natural phytochemicals as novel SIRT7 inhibitors for cancer treatment.
+With cancer causing over 10 million deaths annually, identifying novel therapeutic targets is crucial. SIRT7 is a NAD-dependent deacetylase that regulates oncogenic pathways, making it a promising therapeutic target. However, no approved medications currently exist against SIRT7, and available inhibitors exhibit limited efficacy alongside significant toxicity. Therefore, this study explores marine biodiversity as a source of SIRT7 inhibitors. Molecular docking screening of SIRT7 identified four 
+PubMed: 41839676

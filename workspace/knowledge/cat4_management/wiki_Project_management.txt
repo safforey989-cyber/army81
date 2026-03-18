@@ -1,0 +1,7 @@
+Source: wiki
+Query: Project_management
+Date: 2026-03-18
+
+Project management
+
+Project management is the process of supervising the work of a team to achieve all project goals within the given constraints. This information is usually described in project documentation, created at the beginning of the development process. The primary constraints are scope, time and budget. The secondary challenge is to optimize the allocation of necessary inputs and apply them to meet predefined objectives.

@@ -1,0 +1,31 @@
+Source: arxiv
+Query: medical AI diagnosis treatment 2025
+Date: 2026-03-18
+
+[2026-03-17] Efficient Reasoning on the Edge
+Large language models (LLMs) with chain-of-thought reasoning achieve state-of-the-art performance across complex problem-solving tasks, but their verbose reasoning traces and large context requirements make them impractical for edge deployment. These challenges include high token generation costs, large KV-cache footprints, and inefficiencies when distilling reasoning capabilities into smaller models for mobile devices. Existing approaches often rely on distilling reasoning traces from larger models into smaller models, which are verbose and stylistically redundant, undesirable for on-device i
+URL: http://arxiv.org/abs/2603.16867v1
+
+---
+
+[2026-03-17] Chronos: Temporal-Aware Conversational Agents with Structured Event Retrieval for Long-Term Memory
+Recent advances in Large Language Models (LLMs) have enabled conversational AI agents to engage in extended multi-turn interactions spanning weeks or months. However, existing memory systems struggle to reason over temporally grounded facts and preferences that evolve across months of interaction and lack effective retrieval strategies for multi-hop, time-sensitive queries over long dialogue histories. We introduce Chronos, a novel temporal-aware memory framework that decomposes raw dialogue into subject-verb-object event tuples with resolved datetime ranges and entity aliases, indexing them i
+URL: http://arxiv.org/abs/2603.16862v1
+
+---
+
+[2026-03-17] An assessment of data-centric methods for label noise identification in remote sensing data sets
+Label noise in the sense of incorrect labels is present in many real-world data sets and is known to severely limit the generalizability of deep learning models. In the field of remote sensing, however, automated treatment of label noise in data sets has received little attention to date. In particular, there is a lack of systematic analysis of the performance of data-centric methods that not only cope with label noise but also explicitly identify and isolate noisy labels. In this paper, we examine three such methods and evaluate their behavior under different label noise assumptions. To do th
+URL: http://arxiv.org/abs/2603.16835v1
+
+---
+
+[2026-03-17] Semiparametric Inference under Dual Positivity Boundaries:Nested Identification with Administrative Censoring and Confounded Treatment
+When a long-term outcome is administratively censored for a substantial fraction of a study cohort while a short-term intermediate variable remains broadly available, the target causal parameter can be identified through a nested functional that integrates the outcome regression over the conditional intermediate distribution, avoiding inverse censoring weights entirely. In observational studies where treatment is also confounded, this nested identification creates a semiparametric structure with two distinct positivity boundaries -- one from the censoring mechanism and one from the treatment a
+URL: http://arxiv.org/abs/2603.16833v1
+
+---
+
+[2026-03-17] Conditional Distributional Treatment Effects: Doubly Robust Estimation and Testing
+Beyond conditional average treatment effects, treatments may impact the entire outcome distribution in covariate-dependent ways, for example, by altering the variance or tail risks for specific subpopulations. We propose a novel estimand to capture such conditional distributional treatment effects, and develop a doubly robust estimator that is minimax optimal in the local asymptotic sense. Using this, we develop a test for the global homogeneity of conditional potential outcome distributions that accommodates discrepancies beyond the maximum mean discrepancy (MMD), has provably valid type 1 er
+URL: http://arxiv.org/abs/2603.16829v1

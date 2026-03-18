@@ -1,0 +1,31 @@
+Source: arxiv
+Query: misinformation detection deep learning
+Date: 2026-03-18
+
+[2026-03-17] Efficient Reasoning on the Edge
+Large language models (LLMs) with chain-of-thought reasoning achieve state-of-the-art performance across complex problem-solving tasks, but their verbose reasoning traces and large context requirements make them impractical for edge deployment. These challenges include high token generation costs, large KV-cache footprints, and inefficiencies when distilling reasoning capabilities into smaller models for mobile devices. Existing approaches often rely on distilling reasoning traces from larger models into smaller models, which are verbose and stylistically redundant, undesirable for on-device i
+URL: http://arxiv.org/abs/2603.16867v1
+
+---
+
+[2026-03-17] ManiTwin: Scaling Data-Generation-Ready Digital Object Dataset to 100K
+Learning in simulation provides a useful foundation for scaling robotic manipulation capabilities. However, this paradigm often suffers from a lack of data-generation-ready digital assets, in both scale and diversity. In this work, we present ManiTwin, an automated and efficient pipeline for generating data-generation-ready digital object twins. Our pipeline transforms a single image into simulation-ready and semantically annotated 3D asset, enabling large-scale robotic manipulation data generation. Using this pipeline, we construct ManiTwin-100K, a dataset containing 100K high-quality annotat
+URL: http://arxiv.org/abs/2603.16866v1
+
+---
+
+[2026-03-17] SparkVSR: Interactive Video Super-Resolution via Sparse Keyframe Propagation
+Video Super-Resolution (VSR) aims to restore high-quality video frames from low-resolution (LR) estimates, yet most existing VSR approaches behave like black boxes at inference time: users cannot reliably correct unexpected artifacts, but instead can only accept whatever the model produces. In this paper, we propose a novel interactive VSR framework dubbed SparkVSR that makes sparse keyframes a simple and expressive control signal. Specifically, users can first super-resolve or optionally a small set of keyframes using any off-the-shelf image super-resolution (ISR) model, then SparkVSR propaga
+URL: http://arxiv.org/abs/2603.16864v1
+
+---
+
+[2026-03-17] New benchmarks for direct detection of freeze-in dark matter in vector portal models
+We investigate the freeze-in of MeV-scale fermionic dark matter (DM) that couples to the Standard Model via a new vector mediator to assess the potential that future direct detection experiments have to observe new physics in either the DM or neutrino sectors. We study the minimal kinetic mixing dark photon of a secluded $U(1)_D$ as well as gauge bosons of the anomaly-free $U(1)_{L_i-L_j}$, with $i,j=e,μ,τ$, and $U(1)_{B-L}$ gauge extensions, exploring the impact of low reheating temperatures on the DM production rates. For the ultralight dark photon scenario, we show that current experimental
+URL: http://arxiv.org/abs/2603.16863v1
+
+---
+
+[2026-03-17] MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation
+A prevailing view in robot learning is that simulation alone is not enough; effective sim-to-real transfer is widely believed to require at least some real-world data collection or task-specific fine-tuning to bridge the gap between simulated and physical environments. We challenge that assumption. With sufficiently large-scale and diverse simulated synthetic training data, we show that zero-shot transfer to the real world is not only possible, but effective for both static and mobile manipulation. We introduce MolmoBot-Engine, a fully open-source pipeline for procedural data generation across
+URL: http://arxiv.org/abs/2603.16861v1

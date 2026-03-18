@@ -1,0 +1,7 @@
+Source: wiki
+Query: Digital_transformation
+Date: 2026-03-18
+
+Digital transformation
+
+Digital transformation (DT) is the process of adoption and implementation of digital technology by an organization in order to create new or modify existing products, services and operations by the means of translating business processes into a digital format.

@@ -1,0 +1,31 @@
+Source: news
+Query: cybersecurity threats 2025
+Date: 2026-03-18
+
+AI Transformation at Risk: APIs Emerge as the Primary Attack Surface, Akamai Research Finds
+Cybercriminals follow enterprise AI investment, exploiting APIs as the fastest path to scale, disruption, and profit Cybercriminals follow enterprise AI investment, exploiting APIs as the fastest path to scale, disruption, and profit
+2026-03-17
+
+---
+
+Kaspersky to double down on India investments; mulls regional hub status
+In an interview with PTI, Adrian Hia, Managing Director, Kaspersky (APAC), said the company is considering basing its marketing, business development, and cloud operations in India to serve both local and regional customers.
+2026-03-17
+
+---
+
+Global expansion of HAVN’s integrated cultural tourism marketing : seeking key partners
+Founded in Canada in 1987, HAVN has always focused on innovation and efficiency, offering its clients professional promotional solutions for the touri...
+2026-03-17
+
+---
+
+NATO Allies and Indo-Pacific Partners deepen cyber defence cooperation
+On Monday (16 March), the Cyber Champions Summit was held in Prague, Czechia. NATO Allies, along with partners Australia, Japan, New Zealand and the Republic of Korea agreed to further develop cyber defence cooperation, including through enhanced expert level…
+2026-03-17
+
+---
+
+AI use cases for security analysts
+AI is transforming the cybersecurity landscape for both threat actors and defenders. Learn how AI is being used on both sides of the battle with practical tips to help your security team up-level its AI use.
+2026-03-17

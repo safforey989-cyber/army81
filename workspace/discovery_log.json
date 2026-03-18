@@ -1,0 +1,38 @@
+[
+  {
+    "github": [
+      {
+        "name": "MetaGPT",
+        "full_name": "FoundationAgents/MetaGPT",
+        "stars": 65422,
+        "description": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
+        "score": 0.7,
+        "url": "https://github.com/FoundationAgents/MetaGPT"
+      },
+      {
+        "name": "openai-agents-python",
+        "full_name": "openai/openai-agents-python",
+        "stars": 20086,
+        "description": "A lightweight, powerful framework for multi-agent workflows",
+        "score": 0.7,
+        "url": "https://github.com/openai/openai-agents-python"
+      },
+      {
+        "name": "camel",
+        "full_name": "camel-ai/camel",
+        "stars": 16399,
+        "description": "🐫 CAMEL: The first and the best multi-agent framework. Finding the Scaling Law of Agents. https://www.camel-ai.org",
+        "score": 0.7,
+        "url": "https://github.com/camel-ai/camel"
+      }
+    ],
+    "pypi": [
+      {
+        "name": "langchain",
+        "description": "Building applications with LLMs through composability",
+        "version": "1.2.12"
+      }
+    ],
+    "timestamp": "2026-03-18T13:58:07.933640"
+  }
+]

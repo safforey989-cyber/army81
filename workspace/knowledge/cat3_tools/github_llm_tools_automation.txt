@@ -1,0 +1,13 @@
+Source: github
+Query: llm tools automation
+Date: 2026-03-18
+
+Stars:7522 0x4m4/hexstrike-ai: HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug boun
+Stars:7082 iflytek/astron-rpa: Agent-ready RPA suite with out-of-the-box automation tools. Built for individuals and enterprises.
+Stars:6261 josStorer/RWKV-Runner: A RWKV management and startup tool, full automation, only 8MB. And provides an interface compatible with the OpenAI API. RWKV is a large language model that is fully open source and available for comm
+Stars:3077 heilcheng/awesome-agent-skills: A curated list of skills, tools, tutorials, and capabilities for AI coding agents (Claude, Codex, Antigravity, Copilot, VS Code)
+Stars:2510 av/harbor: One command brings a complete pre-wired LLM stack with hundreds of services to explore.
+Stars:1203 eracle/OpenOutreach: Linkedin Automation Tool: Describe your product. Define your target market. The AI finds the leads for you.
+Stars:901 kardolus/chatgpt-cli: ChatGPT CLI is a powerful, multi-provider command-line interface for working with modern LLMs. It supports OpenAI, Azure, Perplexity, LLaMA, and more, with features like streaming, interactive chat, p
+Stars:770 kossakovsky/n8n-install: 🚀 Self-hosted AI automation platform. Deploy n8n, Ollama, Flowise, RAG, Supabase & 30+ tools with one command. Auto HTTPS. Free Zapier/Make alternative.
+Stars:677 rnadigital/agentcloud: Agent Cloud is like having your own GPT builder with a bunch extra goodies. The GUI features 1) RAG pipeline which can natively embed 260+ datasources 2) Create Conversational apps (like GPTs) 3) Crea

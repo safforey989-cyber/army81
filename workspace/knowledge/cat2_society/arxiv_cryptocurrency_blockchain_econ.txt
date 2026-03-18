@@ -1,0 +1,32 @@
+Source: arxiv
+Query: cryptocurrency blockchain economics 2025
+Date: 2026-03-18
+
+[2026-03-17] GeMA: Learning Latent Manifold Frontiers for Benchmarking Complex Systems
+Benchmarking the performance of complex systems such as rail networks, renewable generation assets and national economies is central to transport planning, regulation and macroeconomic analysis. Classical frontier methods, notably Data Envelopment Analysis (DEA) and Stochastic Frontier Analysis (SFA), estimate an efficient frontier in the observed input-output space and define efficiency as distance to this frontier, but rely on restrictive assumptions on the production set and only indirectly address heterogeneity and scale effects.
+  We propose Geometric Manifold Analysis (GeMA), a latent ma
+URL: http://arxiv.org/abs/2603.16729v1
+
+---
+
+[2026-03-17] Diameter Computation on (Random) Geometric Graphs
+We present an algorithm that computes the diameter of random geometric graphs (RGGs) with expected average degree $Θ(n^δ)$ for constant $δ\in(0,1)$ in $\tilde{O}(n^{\frac{3}{2}(1+δ)} +n^{2 - \frac{5}{3}δ})$ time, asymptotically almost surely. This brings the running time down to $\tilde{O}(n^{\frac{33}{19}})\approx \tilde{O}(n^{1.737})$ for average degree $Θ(n^{3/19})$. To the best of our knowledge, this constitutes the first such bound for RGGs and for a substantial range of average degrees, it is notably smaller than the recent bound of $O^*(n^{2-1/18}) \approx O^*(n^{1.944})$ by Chan et al.
+URL: http://arxiv.org/abs/2603.16684v1
+
+---
+
+[2026-03-17] Machines acquire scientific taste from institutional traces
+Artificial intelligence matches or exceeds human performance on tasks with verifiable answers, from protein folding to Olympiad mathematics. Yet the capacity that most governs scientific advance is not reasoning but taste: the ability to judge which untested ideas deserve pursuit, exercised daily by editors and funders but never successfully articulated, taught, or automated. Here we show that fine-tuning language models on journal publication decisions recovers evaluative judgment inaccessible to both frontier models and human expertise. Using a held-out benchmark of research pitches in manag
+URL: http://arxiv.org/abs/2603.16659v1
+
+---
+
+[2026-03-17] When AI Navigates the Fog of War
+Can AI reason about a war before its trajectory becomes historically obvious? Analyzing this capability is difficult because retrospective geopolitical prediction is heavily confounded by training-data leakage. We address this challenge through a temporally grounded case study of the early stages of the 2026 Middle East conflict, which unfolded after the training cutoff of current frontier models. We construct 11 critical temporal nodes, 42 node-specific verifiable questions, and 5 general exploratory questions, requiring models to reason only from information that would have been publicly ava
+URL: http://arxiv.org/abs/2603.16642v1
+
+---
+
+[2026-03-17] Optimal Radio Resource Management for ISAC Under Imperfect Information: A Resource Economy-Driven Perspective
+This work investigates the radio resource management (RRM) design for downlink integrated sensing and communications (ISAC) systems, jointly optimizing timeslot allocation, beam adaptation, functionality selection, and user-target pairing, with the goal of economizing resource consumption under imperfect information. Timeslot allocation assigns a number of discrete channel uses to targets and users, while beam adaptation selects transmit and receive beams with suitable directions, power levels, and beamwidths. Functionality selection determines whether each timeslot is used for sensing, commun
+URL: http://arxiv.org/abs/2603.16632v1

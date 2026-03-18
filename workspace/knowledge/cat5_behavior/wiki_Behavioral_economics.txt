@@ -1,0 +1,7 @@
+Source: wiki
+Query: Behavioral_economics
+Date: 2026-03-18
+
+Behavioral economics
+
+Behavioral economics is the study of the psychological factors involved in the decisions of individuals or institutions, and how these decisions deviate from those implied by traditional economic theory.

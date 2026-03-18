@@ -1,0 +1,31 @@
+Source: pubmed
+Query: neuroscience brain computer interface
+Date: 2026-03-18
+
+Restoring rapid natural bimanual typing with a neuroprosthesis after paralysis.
+Here, recognizing keyboard typing as a familiar, high information rate communication paradigm, we developed an intracortical brain-computer interface (iBCI) typing neuroprosthesis providing bimanual QWERTY keyboard functionality for people with paralysis. Typing with this iBCI involves only attempted finger movements, which are decoded accurately with as few as 30 calibration sentences. Sentence decoding is improved using a 5-gram language model. This typing neuroprosthesis performed well for tw
+PubMed: 41840138
+
+---
+
+MedIntelliCare: neurodynamic-inspired AI for medical decision support by integrating retrieval-augmented generation with multimodal cognitive processing.
+MedIntelliCare is an AI-powered medical assistant designed to enhance diagnostic accuracy, reduce cognitive load on healthcare professionals, and integrate real-time medical data. While current AI-driven medical systems focus on information retrieval and response generation, MedIntelliCare leverages Retrieval-Augmented Generation (RAG) combined with principles from neural computation and decision-making processes. This study explores the system's ability to simulate biologically inspired informa
+PubMed: 41836195
+
+---
+
+A Feasibility Study of Navigating Emotional States Using Real-Time Representational Similarity Analysis fMRI Neurofeedback.
+Real-time functional magnetic resonance imaging neurofeedback (rt-fMRI-NF) is a promising noninvasive brain computer interface (BCI) technique for enhancing self-regulation of affective brain states. However, conventional univariate rt-fMRI-NF approaches struggle to discriminate distributed neural patterns underlying distinct emotions. This study implemented an rt-fMRI semantic neurofeedback (rt-fMRI-sNF) paradigm incorporating real-time representational similarity analysis (rt-RSA) to enable na
+PubMed: 41834064
+
+---
+
+A neurofeedback-guided EEG and BCI framework for personalized attention rehabilitation in ADHD.
+The integration of game-based cognitive training with electroencephalography (EEG)-based brain-computer interaction (BCI) has demonstrated potential for enhancing attention among individuals with attention-deficit hyperactivity disorder (ADHD). However, existing systems often lack adaptive difficulty regulation and rely solely on single-modal assessments, thereby limiting personalization and sustained engagement. This study developed and assessed an adaptive, multi-task EEG-BCI training system t
+PubMed: 41831590
+
+---
+
+3D-Printable, Honeycomb-Inspired Tissue-Like Bioelectrodes for Patient-Specific Neural Interface.
+The unique gyral patterns of the human brain demand patient-specific neural interfaces to achieve precise neuromodulation, mitigate adverse tissue responses, and optimize therapeutic efficacy and safety. One-size-fits-all, conventional rigid electrocorticography (ECoG) electrodes, standardized for mass production through lithographic techniques, exhibit limited conformability to the brain's heterogeneous cortical topography. This mechanical mismatch results in poor electrode-tissue contact, sign
+PubMed: 41830336

@@ -1,0 +1,7 @@
+Source: wiki
+Query: Demographics
+Date: 2026-03-18
+
+Demography
+
+Demography is the statistical study of human populations: their size, composition, and how they change through the interplay of fertility (births), mortality (deaths), and migration.

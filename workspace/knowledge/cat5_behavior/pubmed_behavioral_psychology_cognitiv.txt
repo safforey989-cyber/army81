@@ -1,0 +1,31 @@
+Source: pubmed
+Query: behavioral psychology cognitive bias
+Date: 2026-03-18
+
+Pigmented paravenous retinochoroidal atrophy (PPRCA): a systematic review.
+Pigmented paravenous retinochoroidal atrophy (PPRCA) is a rare, poorly understood chorioretinal disorder characterised by perivenous atrophy and pigment clumping. This systematic review aimed to synthesise the current evidence on its clinical features, diagnostic modalities, and management strategies, while identifying knowledge gaps and opportunities for future consensus guidelines.
+PubMed: 41843216
+
+---
+
+Investigating the impact of migraine on short-term and working memory: a systematic review and meta-analysis.
+To conduct a systematic review and meta-analysis on past research to ascertain the impact that experiencing migraines has on memory. Specifically, this research explores the short-term and working memory domains and where possible delineates between verbal and visual memory.
+PubMed: 41843171
+
+---
+
+Assessing the impact of a tennis-themed sports video game on physical literacy and participation on physical activities among university students: A cluster randomized controlled trial study protocol.
+Physical literacy (PL) is a multidimensional construct encompassing motivation, confidence, physical competence, knowledge, and understanding, which is essential for fostering lifelong physical activity. University students represent a critical stage for PL development, yet many experience a decline in physical activity and an increase in sedentary behavior after high school. Sports video games (SVGs), though traditionally sedentary, have shown potential to enhance motivation and cognitive engag
+PubMed: 41838628
+
+---
+
+Alcohol drinking sex-dependently regulates interleukin-1 pro-inflammatory signaling in the prefrontal cortex of mice and rhesus macaques.
+Alcohol use disorder (AUD) causes executive dysfunction, leading to reduced treatment adherence, worse clinical outcomes, and relapse. Current medications do not address these symptoms. Targeting the neuroimmune interleukin-1 (IL-1) system has potential, but its mechanistic role in prefrontal cortex (PFC) dysfunction is unclear. Here we investigated how chronic alcohol consumption shifts IL-1 regulation of the rodent and non-human primate PFC. We found that alcohol drinking decreased reference m
+PubMed: 41833757
+
+---
+
+Immediate reward bias in adolescent non-suicidal self-injury: Evidence from delay and probability discounting tasks.
+Non-suicidal self-injury (NSSI) constitutes a major public health concern among adolescents. Although impulsivity is a recognized risk factor, its specific role in value-based decision-making remains elusive. This study examined delay and probability discounting patterns in adolescents with NSSI compared to healthy controls across both gain and loss domains, identifying specific decision-making alterations associated with self-injurious behavior.
+PubMed: 41833610

@@ -1,0 +1,31 @@
+Source: pubmed
+Query: emotional intelligence social behavior
+Date: 2026-03-18
+
+Individualised Empowerment in Secondary Cardiac Rehabilitation in Patients With Coronary Heart Disease: A Qualitative Study.
+Young and middle-aged patients with coronary heart disease who have undergone percutaneous coronary intervention often find it difficult to participate in secondary cardiac rehabilitation. This study examines patient experiences in cardiac rehabilitation using health empowerment theory as a framework. Purposive sampling was used to collect data through semi-structured interviews, which were analysed using Colaizzi's phenomenological approach. Five themes emerged from the data: (1) Personal growt
+PubMed: 41840759
+
+---
+
+Assessing the impact of a tennis-themed sports video game on physical literacy and participation on physical activities among university students: A cluster randomized controlled trial study protocol.
+Physical literacy (PL) is a multidimensional construct encompassing motivation, confidence, physical competence, knowledge, and understanding, which is essential for fostering lifelong physical activity. University students represent a critical stage for PL development, yet many experience a decline in physical activity and an increase in sedentary behavior after high school. Sports video games (SVGs), though traditionally sedentary, have shown potential to enhance motivation and cognitive engag
+PubMed: 41838628
+
+---
+
+Associations Among Minority Stress, Relaxation and Tension-Reduction Motives, and Cannabis Use Among a Sample of Sexual and Gender Minority Adults in Oklahoma.
+Despite well-documented cannabis use disparities among sexual and gender minority (SGM; vs heterosexual and/or cisgender) adults, less is known regarding associations of minority stressors, cannabis use motives, and cannabis use outcomes among SGM individuals.
+PubMed: 41837570
+
+---
+
+Defending victimized peers in unique ways: Profiles and transitions in defending strategies and their associations with youth social-emotional adjustment.
+Bystanders can use various strategies to combat bullying and help their victimized peers. This three-wave longitudinal study used latent transition analysis to examine the stability and change in youth's engagement in multiple defending strategies (i.e., defending profiles) and their associations with social-emotional adjustment. Participants were 1259 Chinese youth (M
+PubMed: 41833438
+
+---
+
+'They're eating our pets!': When disgust and perceived cruelty combine to heighten prejudice.
+Accusations that foreigners are 'eating pets' tap into deep fears of impurity and cruelty. Despite the dark history of such moralized disgust and evidence that purity- and harm-based emotions can intensify bias, little experimental work has directly tested how these processes jointly shape prejudice. Across two main-text experiments and one supplemental replication (N = 2710, United States), we tested whether hostility is greatest when cultural outgroups are portrayed as consuming meat that elic
+PubMed: 41823360

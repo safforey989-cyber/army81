@@ -1,0 +1,31 @@
+Source: arxiv
+Query: crisis management systems
+Date: 2026-03-18
+
+[2026-03-17] Prescribed-Time Distributed Generalized Nash Equilibrium Seeking
+This paper proposes the first fully distributed algorithm for finding the Generalized Nash Equilibrium (GNE) of a non-cooperative game with shared coupling constraints and general cost coupling at a user-prescribed finite time T. As a foundation, a centralized gradient-based prescribed-time convergence result is established for the GNE problem, extending the optimization Lyapunov function framework to gradient dynamics, the only known realization among existing alternatives that naturally decomposes into per-agent computations. Building on this, a fully distributed architecture is designed in 
+URL: http://arxiv.org/abs/2603.16865v1
+
+---
+
+[2026-03-17] Chronos: Temporal-Aware Conversational Agents with Structured Event Retrieval for Long-Term Memory
+Recent advances in Large Language Models (LLMs) have enabled conversational AI agents to engage in extended multi-turn interactions spanning weeks or months. However, existing memory systems struggle to reason over temporally grounded facts and preferences that evolve across months of interaction and lack effective retrieval strategies for multi-hop, time-sensitive queries over long dialogue histories. We introduce Chronos, a novel temporal-aware memory framework that decomposes raw dialogue into subject-verb-object event tuples with resolved datetime ranges and entity aliases, indexing them i
+URL: http://arxiv.org/abs/2603.16862v1
+
+---
+
+[2026-03-17] Lifting the fog - a case for non-reversible "lifted" Markov chains
+Phase transitions appear all over science, and are familiar from everyday life, as water boiling, sugar melting into caramel or as nematic molecules turning smectic in liquid-crystal displays. The dynamics of phase transitions can be extremely slow, as for example when fog in winter does not lift, that is when the coarsening takes much time from many tiny water droplets to fewer but larger rain drops that feel the pull of gravity. The dynamics of phase transitions is relevant also for the performance of computer algorithms. In the ubiquitous Metropolis Monte Carlo algorithm, the mixing dynamic
+URL: http://arxiv.org/abs/2603.16855v1
+
+---
+
+[2026-03-17] Koopman Lifted Finite Memory Identification via Truncated Grunwald Letnikov Kernels
+We propose a data-driven linear modeling framework for controlled nonlinear hereditary systems that combines Koopman lifting with a truncated Grunwald-Letnikov memory term. The key idea is to model nonlinear state dependence through a lifted observable representation while imposing history dependence directly in the lifted coordinates through fixed fractional-difference weights. This preserves linearity in the lifted state-transition and input matrices, yielding a memory-compensated regression that can be identified from input-state data by least squares and extending standard Koopman-based id
+URL: http://arxiv.org/abs/2603.16851v1
+
+---
+
+[2026-03-17] Unifying Optimization and Dynamics to Parallelize Sequential Computation: A Guide to Parallel Newton Methods for Breaking Sequential Bottlenecks
+Massively parallel hardware (GPUs) and long sequence data have made parallel algorithms essential for machine learning at scale. Yet dynamical systems, like recurrent neural networks and Markov chain Monte Carlo, were thought to suffer from sequential bottlenecks. Recent work showed that dynamical systems can in fact be parallelized across the sequence length by reframing their evaluation as a system of nonlinear equations, which can be solved with Newton's method using a parallel associative scan. However, these parallel Newton methods struggled with limitations, primarily inefficiency, insta
+URL: http://arxiv.org/abs/2603.16850v1

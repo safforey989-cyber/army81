@@ -1,0 +1,31 @@
+Source: pubmed
+Query: body language nonverbal communication
+Date: 2026-03-18
+
+Learning technical gestures by medical students: development and contribution of a written procedural document associated with a video.
+To develop procedural documents of three gestures taught in endocrinology and to assess their contribution in the procedural learning of students.
+PubMed: 41832661
+
+---
+
+Personalized Wrist-Forearm Static Gesture Recognition Using the Vicara Kai Controller and Convolutional Neural Network.
+Predefined, user-independent gesture sets do not account for individual differences in movement patterns and physical limitations. This study presents a personalized wrist-forearm static gesture recognition system for human-computer interaction (HCI) using the Vicara Kai
+PubMed: 41829661
+
+---
+
+An Intelligent Real-Time System for Sentence-Level Recognition of Continuous Saudi Sign Language Using Landmark-Based Temporal Modeling.
+A persistent challenge for Deaf and Hard-of-Hearing individuals is the communication gap between sign language users and the hearing community, particularly in regions with limited automated translation resources. In Saudi Arabia, this gap is amplified by the reliance on Saudi Sign Language (SSL) and the scarcity of real-time, sentence-level translation systems. This paper presents a real-time system for sentence-level recognition of continuous SSL and direct mapping to natural spoken Arabic. Th
+PubMed: 41829612
+
+---
+
+Lightweight Visual Dynamic Gesture Recognition System Based on CNN-LSTM-DSA.
+Addressing the challenges of large-scale gesture recognition models, high computational complexity, and inefficient deployment on embedded devices, this study designs and implements a visual dynamic gesture recognition system based on a lightweight CNN-LSTM-DSA model. The system captures user hand images via a camera, extracts 21 keypoint 3D coordinates using MediaPipe, and employs a lightweight hybrid model to perform spatial and temporal feature modeling on keypoint sequences, achieving high-p
+PubMed: 41829520
+
+---
+
+Variation in Interactive Gestures by Visual Occlusion and Topic Complexity: Evidence for a Subconscious Theory of Gesture.
+Gestures are often categorized into types: iconics, metaphorics, and pantomimes (having representational relationships with spoken semantics), deictics (i.e., pointing), emblems (having their own conventional meaning), and beats (temporally coinciding with spoken content for emphasis). These originate from research often involving unnaturalistic paradigms where participants' gestures during responses (e.g., retelling a narrative) are recorded. Approaching these types implicitly requires a stance
+PubMed: 41808304
