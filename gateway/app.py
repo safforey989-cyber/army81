@@ -1431,6 +1431,67 @@ def find_team(task_type: str):
         return {"error": str(e)}
 
 
+# ═══════════════════════════════════════════════════════════
+# Hyper Evolution Swarm (v16)
+# ═══════════════════════════════════════════════════════════
+
+@app.post("/hyper/start")
+async def start_hyper_swarm(request: Request):
+    """السرب الخارق — استنساخ + اختراع + تقطير + معارك"""
+    global swarm_active, swarm_session_id, swarm_events
+    data = await request.json()
+    duration = data.get("duration_hours", 2)
+
+    if swarm_active:
+        return {"status": "already_running"}
+
+    swarm_active = True
+    swarm_session_id = f"hyper_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    swarm_events = []
+
+    def run_agent_fn(agent_id, task):
+        agent = router.agents.get(agent_id)
+        if agent:
+            r = agent.run(task, context={"hyper_swarm": True})
+            return {"result": r.result, "tokens": r.tokens_used}
+        return {"result": "Agent not found"}
+
+    def bg():
+        global swarm_active
+        try:
+            from core.hyper_swarm import HyperSwarm
+            hs = HyperSwarm()
+            agents_list = list(router.agents.values())
+            hs.run_hyper_session(agents_list, run_agent_fn, add_swarm_event, duration)
+        except Exception as e:
+            logger.error(f"Hyper swarm error: {e}")
+            add_swarm_event("error", "SYSTEM", data={"error": str(e)[:200]})
+        finally:
+            swarm_active = False
+
+    import threading
+    threading.Thread(target=bg, daemon=True).start()
+
+    return {"status": "started", "session_id": swarm_session_id, "mode": "hyper",
+            "duration_hours": duration, "phases": 6}
+
+@app.get("/hyper/stats")
+def hyper_stats():
+    """إحصائيات السرب الخارق"""
+    report_dir = Path("workspace/hyper_evolution")
+    if not report_dir.exists():
+        return {"sessions": 0}
+    reports = sorted(report_dir.glob("*.json"), reverse=True)
+    if reports:
+        try:
+            latest = json.loads(reports[0].read_text(encoding="utf-8"))
+            return {"sessions": len(reports), "latest": latest.get("stats", {}),
+                    "last_run": latest.get("end", "")}
+        except Exception:
+            pass
+    return {"sessions": len(reports)}
+
+
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn
