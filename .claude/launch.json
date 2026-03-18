@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Army81 Gateway (FastAPI)",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["gateway/app.py"],
+      "port": 8181
+    }
+  ]
+}

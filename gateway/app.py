@@ -893,6 +893,74 @@ def run_swarm_session(duration_minutes: int, topic: str):
     logger.info(f"Swarm session completed — {round_num} rounds, {len(swarm_events)} events")
 
 
+# ═══════════════════════════════════════════════════════════
+# Evolution Engine Endpoints (v11)
+# ═══════════════════════════════════════════════════════════
+
+_evolution_engine = None
+
+def get_evolution_engine():
+    global _evolution_engine
+    if _evolution_engine is None:
+        try:
+            from core.awakening_protocol import MasterEvolutionEngine
+            _evolution_engine = MasterEvolutionEngine()
+        except Exception as e:
+            logger.warning(f"Evolution engine not available: {e}")
+    return _evolution_engine
+
+@app.get("/evolution/stats")
+def evolution_stats():
+    engine = get_evolution_engine()
+    if not engine:
+        return {"error": "Evolution engine not initialized"}
+    return engine.get_full_stats()
+
+@app.post("/evolution/daily")
+def run_daily_evolution():
+    engine = get_evolution_engine()
+    if not engine:
+        return {"error": "Evolution engine not initialized"}
+    import threading
+    def run():
+        try:
+            engine.run_daily_cycle()
+        except Exception as e:
+            logger.error(f"Daily evolution error: {e}")
+    threading.Thread(target=run, daemon=True).start()
+    return {"status": "started", "message": "Daily evolution cycle started in background"}
+
+@app.post("/evolution/weekly")
+def run_weekly_evolution():
+    engine = get_evolution_engine()
+    if not engine:
+        return {"error": "Evolution engine not initialized"}
+    import threading
+    def run():
+        try:
+            engine.run_weekly_cycle()
+        except Exception as e:
+            logger.error(f"Weekly evolution error: {e}")
+    threading.Thread(target=run, daemon=True).start()
+    return {"status": "started", "message": "Weekly evolution cycle started in background"}
+
+@app.post("/evolution/awakening")
+def run_awakening():
+    engine = get_evolution_engine()
+    if not engine:
+        return {"error": "Evolution engine not initialized"}
+    if "awakening" in engine.components:
+        import threading
+        def run():
+            try:
+                engine.components["awakening"].run_awakening(engine.components)
+            except Exception as e:
+                logger.error(f"Awakening error: {e}")
+        threading.Thread(target=run, daemon=True).start()
+        return {"status": "started"}
+    return {"error": "Awakening component not available"}
+
+
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn
