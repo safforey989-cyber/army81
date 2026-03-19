@@ -85,6 +85,72 @@ def send_telegram_report():
         logger.warning(f"Telegram report failed: {e}")
 
 
+def run_adversarial_test():
+    """Layer 3: اختبار عدائي — A74 ينقد آخر 10 إجابات"""
+    import json
+    from pathlib import Path
+    logger.info("⚔️ Running adversarial quality test...")
+
+    try:
+        # جلب آخر 10 حلقات من الذاكرة
+        import sqlite3
+        db = Path("workspace/episodic_memory.db")
+        if not db.exists():
+            return
+
+        conn = sqlite3.connect(str(db))
+        rows = conn.execute(
+            "SELECT agent_id, task_summary, result_summary FROM episodes "
+            "ORDER BY created_at DESC LIMIT 10"
+        ).fetchall()
+        conn.close()
+
+        if not rows:
+            return
+
+        # A74 (ضبط الجودة) ينقد كل إجابة
+        critiques = []
+        for agent_id, task, result in rows:
+            if not result or len(result) < 50:
+                continue
+            critique_task = f"""كناقد جودة، حلّل هذه الإجابة:
+
+السؤال: {task[:200]}
+الإجابة: {result[:500]}
+
+اكتب نقداً موجزاً (3 أسطر):
+1. ما الصحيح؟
+2. ما الخطأ المحتمل؟
+3. كيف تُحسَّن؟"""
+
+            try:
+                r = requests.post(f"{GATEWAY}/task", json={
+                    "task": critique_task,
+                    "preferred_agent": "A74"
+                }, timeout=60)
+                if r.ok:
+                    critique = r.json().get("result", "")
+                    critiques.append({
+                        "agent": agent_id,
+                        "task": task[:100],
+                        "critique": critique[:500],
+                        "timestamp": datetime.now().isoformat()
+                    })
+            except Exception:
+                pass
+
+        # حفظ النقد
+        if critiques:
+            log_dir = Path("workspace/adversarial_log")
+            log_dir.mkdir(parents=True, exist_ok=True)
+            log_file = log_dir / f"adversarial_{datetime.now().strftime('%Y%m%d_%H%M')}.json"
+            log_file.write_text(json.dumps(critiques, ensure_ascii=False, indent=2), encoding="utf-8")
+            logger.info(f"📝 Adversarial test: {len(critiques)} critiques saved")
+
+    except Exception as e:
+        logger.warning(f"Adversarial test failed: {e}")
+
+
 def main():
     logger.info("🧬 Army81 Evolution Runner starting...")
 
@@ -110,9 +176,14 @@ def main():
             # أرسل تقرير
             send_telegram_report()
 
-        # استراحة قبل الدورة التالية
-        logger.info(f"😴 Resting {PAUSE_HOURS}h before next cycle...")
-        time.sleep(PAUSE_HOURS * 3600)
+            # Layer 3: اختبار عدائي كل 3 دورات
+            if cycle % 3 == 0:
+                run_adversarial_test()
+
+        # استراحة أقصر لمضاعفة السرعة (ساعة بدل 4)
+        rest = max(1, PAUSE_HOURS - cycle)  # تتناقص مع كل دورة
+        logger.info(f"😴 Resting {rest}h before next cycle...")
+        time.sleep(rest * 3600)
 
 
 if __name__ == "__main__":
