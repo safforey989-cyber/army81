@@ -16,6 +16,14 @@ import requests
 from datetime import datetime
 from pathlib import Path
 
+# تحميل .env دائماً
+try:
+    from dotenv import load_dotenv
+    load_dotenv(override=True)
+except ImportError:
+    pass
+
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [army81.knowledge] %(levelname)s: %(message)s')

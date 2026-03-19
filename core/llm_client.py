@@ -7,6 +7,13 @@ import logging
 from typing import List, Dict, Optional
 import requests as req_lib
 
+# تحميل .env دائماً — حتى عند التشغيل خارج Gateway
+try:
+    from dotenv import load_dotenv
+    load_dotenv(override=True)
+except ImportError:
+    pass
+
 logger = logging.getLogger("army81.llm")
 
 # ======================================================

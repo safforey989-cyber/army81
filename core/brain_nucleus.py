@@ -45,6 +45,13 @@ from typing import Dict, List, Optional
 
 logger = logging.getLogger("army81.brain")
 
+# تحميل .env دائماً
+try:
+    from dotenv import load_dotenv
+    load_dotenv(override=True)
+except ImportError:
+    pass
+
 WORKSPACE = Path(os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..", "workspace")
 ))

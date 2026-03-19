@@ -13,6 +13,14 @@ from dataclasses import dataclass, field
 
 from core.llm_client import LLMClient
 
+# تحميل .env دائماً
+try:
+    from dotenv import load_dotenv
+    load_dotenv(override=True)
+except ImportError:
+    pass
+
+
 # ── v3 imports (lazy للتحميل السريع) ──────────────────────────
 try:
     from memory.hierarchical_memory import HierarchicalMemory

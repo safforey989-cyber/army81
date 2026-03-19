@@ -37,6 +37,14 @@ from pathlib import Path
 from datetime import datetime
 from typing import Dict, List, Optional
 
+# تحميل .env دائماً
+try:
+    from dotenv import load_dotenv
+    load_dotenv(override=True)
+except ImportError:
+    pass
+
+
 logger = logging.getLogger("army81.unified_evolution")
 
 WORKSPACE = Path(os.path.abspath(
