@@ -47,3 +47,4 @@ Thumbs.db
 # ملفات مؤقتة
 tmp/
 temp/
+.claude/settings.local.json
