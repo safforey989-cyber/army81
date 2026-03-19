@@ -18,18 +18,18 @@
     },
     "A61": {
       "daily_budget": 50000,
-      "remaining": 46824,
-      "total_spent": 3176,
-      "tasks_completed": 1,
-      "efficiency_score": 96.824,
+      "remaining": 11114,
+      "total_spent": 38886,
+      "tasks_completed": 8,
+      "efficiency_score": 95.13925,
       "last_reset": "2026-03-18T21:41:58.662098"
     },
     "A54": {
       "daily_budget": 50000,
-      "remaining": 39816,
-      "total_spent": 10184,
-      "tasks_completed": 3,
-      "efficiency_score": 96.60533333333333,
+      "remaining": 21562,
+      "total_spent": 28438,
+      "tasks_completed": 8,
+      "efficiency_score": 96.44525,
       "last_reset": "2026-03-18T21:42:18.990642"
     },
     "A28": {
@@ -42,50 +42,50 @@
     },
     "A07": {
       "daily_budget": 50000,
-      "remaining": 46552,
-      "total_spent": 3448,
-      "tasks_completed": 1,
-      "efficiency_score": 96.552,
+      "remaining": 42565,
+      "total_spent": 7435,
+      "tasks_completed": 2,
+      "efficiency_score": 96.2825,
       "last_reset": "2026-03-18T21:46:35.955703"
     },
     "A77": {
       "daily_budget": 50000,
-      "remaining": 36565,
-      "total_spent": 13435,
-      "tasks_completed": 2,
-      "efficiency_score": 93.2825,
+      "remaining": 8388,
+      "total_spent": 41612,
+      "tasks_completed": 5,
+      "efficiency_score": 91.6776,
       "last_reset": "2026-03-18T21:46:57.775350"
     },
     "A38": {
       "daily_budget": 50000,
-      "remaining": 39703,
-      "total_spent": 10297,
-      "tasks_completed": 3,
-      "efficiency_score": 96.56766666666667,
+      "remaining": 22088,
+      "total_spent": 27912,
+      "tasks_completed": 5,
+      "efficiency_score": 94.4176,
       "last_reset": "2026-03-18T21:47:17.949382"
     },
     "A22": {
       "daily_budget": 50000,
-      "remaining": 43317,
-      "total_spent": 6683,
-      "tasks_completed": 2,
-      "efficiency_score": 96.6585,
+      "remaining": 38597,
+      "total_spent": 11403,
+      "tasks_completed": 3,
+      "efficiency_score": 96.199,
       "last_reset": "2026-03-18T21:47:30.229141"
     },
     "A74": {
       "daily_budget": 50000,
-      "remaining": 36603,
-      "total_spent": 13397,
-      "tasks_completed": 2,
-      "efficiency_score": 93.3015,
+      "remaining": 3401,
+      "total_spent": 46599,
+      "tasks_completed": 6,
+      "efficiency_score": 92.2335,
       "last_reset": "2026-03-18T22:05:51.710716"
     },
     "A06": {
       "daily_budget": 50000,
-      "remaining": 43555,
-      "total_spent": 6445,
-      "tasks_completed": 2,
-      "efficiency_score": 96.7775,
+      "remaining": 39119,
+      "total_spent": 10881,
+      "tasks_completed": 3,
+      "efficiency_score": 96.373,
       "last_reset": "2026-03-18T22:06:06.647898"
     },
     "A58": {
@@ -98,18 +98,18 @@
     },
     "A60": {
       "daily_budget": 50000,
-      "remaining": 46940,
-      "total_spent": 3060,
-      "tasks_completed": 1,
-      "efficiency_score": 96.94,
+      "remaining": 31249,
+      "total_spent": 18751,
+      "tasks_completed": 4,
+      "efficiency_score": 95.31225,
       "last_reset": "2026-03-18T22:09:26.036789"
     },
     "A04": {
       "daily_budget": 50000,
-      "remaining": 45489,
-      "total_spent": 4511,
-      "tasks_completed": 1,
-      "efficiency_score": 95.489,
+      "remaining": 41446,
+      "total_spent": 8554,
+      "tasks_completed": 2,
+      "efficiency_score": 95.723,
       "last_reset": "2026-03-18T22:09:44.608005"
     },
     "A51": {
@@ -122,10 +122,10 @@
     },
     "A20": {
       "daily_budget": 50000,
-      "remaining": 42649,
-      "total_spent": 7351,
-      "tasks_completed": 2,
-      "efficiency_score": 96.3245,
+      "remaining": 46267,
+      "total_spent": 3733,
+      "tasks_completed": 1,
+      "efficiency_score": 96.267,
       "last_reset": "2026-03-18T22:11:09.366239"
     },
     "A16": {
@@ -138,66 +138,66 @@
     },
     "A50": {
       "daily_budget": 50000,
-      "remaining": 42182,
-      "total_spent": 7818,
-      "tasks_completed": 1,
-      "efficiency_score": 92.182,
+      "remaining": 23142,
+      "total_spent": 26858,
+      "tasks_completed": 3,
+      "efficiency_score": 91.04733333333334,
       "last_reset": "2026-03-18T22:12:24.755663"
     },
     "A05": {
       "daily_budget": 50000,
-      "remaining": 47000,
-      "total_spent": 3000,
-      "tasks_completed": 6,
+      "remaining": 46500,
+      "total_spent": 3500,
+      "tasks_completed": 7,
       "efficiency_score": 99.5,
       "last_reset": "2026-03-18T22:12:55.670372"
     },
     "A81": {
       "daily_budget": 50000,
-      "remaining": 30913,
-      "total_spent": 19087,
-      "tasks_completed": 2,
-      "efficiency_score": 90.4565,
+      "remaining": 982,
+      "total_spent": 49018,
+      "tasks_completed": 5,
+      "efficiency_score": 90.1964,
       "last_reset": "2026-03-18T22:30:29.330720"
     },
     "A02": {
       "daily_budget": 50000,
-      "remaining": 42630,
-      "total_spent": 7370,
-      "tasks_completed": 1,
-      "efficiency_score": 92.63,
+      "remaining": 28399,
+      "total_spent": 21601,
+      "tasks_completed": 3,
+      "efficiency_score": 92.79966666666667,
       "last_reset": "2026-03-18T23:45:21.182216"
     },
     "A75": {
       "daily_budget": 50000,
-      "remaining": 40630,
-      "total_spent": 9370,
-      "tasks_completed": 1,
-      "efficiency_score": 90.63,
+      "remaining": 22010,
+      "total_spent": 27990,
+      "tasks_completed": 3,
+      "efficiency_score": 90.67,
       "last_reset": "2026-03-18T23:46:06.663825"
     },
     "A39": {
       "daily_budget": 50000,
-      "remaining": 45023,
-      "total_spent": 4977,
-      "tasks_completed": 1,
-      "efficiency_score": 95.023,
+      "remaining": 37437,
+      "total_spent": 12563,
+      "tasks_completed": 2,
+      "efficiency_score": 93.7185,
       "last_reset": "2026-03-18T23:47:49.147776"
     },
     "A79": {
       "daily_budget": 50000,
-      "remaining": 12020,
-      "total_spent": 37980,
-      "tasks_completed": 4,
-      "efficiency_score": 90.505,
+      "remaining": 2339,
+      "total_spent": 47661,
+      "tasks_completed": 5,
+      "efficiency_score": 90.4678,
       "last_reset": "2026-03-18T23:48:13.582209"
     },
     "A72": {
       "daily_budget": 50000,
-      "remaining": 31867,
-      "total_spent": 18133,
-      "tasks_completed": 2,
-      "efficiency_score": 90.9335,
+      "remaining": 22713,
+      "total_spent": 27287,
+      "tasks_completed": 3,
+      "efficiency_score": 90.90433333333334,
       "last_reset": "2026-03-19T00:06:56.741920"
     },
     "A80": {
@@ -210,10 +210,10 @@
     },
     "A53": {
       "daily_budget": 50000,
-      "remaining": 40402,
-      "total_spent": 9598,
-      "tasks_completed": 2,
-      "efficiency_score": 95.201,
+      "remaining": 4602,
+      "total_spent": 45398,
+      "tasks_completed": 7,
+      "efficiency_score": 93.51457142857143,
       "last_reset": "2026-03-18T22:25:21.776470"
     },
     "A36": {
@@ -226,18 +226,18 @@
     },
     "A73": {
       "daily_budget": 50000,
-      "remaining": 40671,
-      "total_spent": 9329,
-      "tasks_completed": 1,
-      "efficiency_score": 90.67099999999999,
+      "remaining": 19714,
+      "total_spent": 30286,
+      "tasks_completed": 3,
+      "efficiency_score": 89.90466666666667,
       "last_reset": "2026-03-19T00:46:51.834993"
     },
     "A78": {
       "daily_budget": 50000,
-      "remaining": 27558,
-      "total_spent": 22442,
-      "tasks_completed": 2,
-      "efficiency_score": 88.779,
+      "remaining": 4419,
+      "total_spent": 45581,
+      "tasks_completed": 4,
+      "efficiency_score": 88.60475,
       "last_reset": "2026-03-19T00:47:23.746582"
     },
     "A18": {
@@ -250,10 +250,10 @@
     },
     "A66": {
       "daily_budget": 50000,
-      "remaining": 45249,
-      "total_spent": 4751,
-      "tasks_completed": 1,
-      "efficiency_score": 95.249,
+      "remaining": 40109,
+      "total_spent": 9891,
+      "tasks_completed": 2,
+      "efficiency_score": 95.0545,
       "last_reset": "2026-03-19T01:12:44.436702"
     },
     "A45": {
@@ -282,43 +282,187 @@
     },
     "A10": {
       "daily_budget": 50000,
-      "remaining": 43883,
-      "total_spent": 6117,
-      "tasks_completed": 1,
-      "efficiency_score": 93.883,
+      "remaining": 36565,
+      "total_spent": 13435,
+      "tasks_completed": 2,
+      "efficiency_score": 93.2825,
       "last_reset": "2026-03-19T01:58:14.323231"
     },
-    "A11": {
+    "A31": {
       "daily_budget": 50000,
-      "remaining": 41853,
-      "total_spent": 8147,
+      "remaining": 41738,
+      "total_spent": 8262,
       "tasks_completed": 2,
-      "efficiency_score": 95.9265,
-      "last_reset": "2026-03-19T01:59:04.710245"
+      "efficiency_score": 95.869,
+      "last_reset": "2026-03-19T01:59:25.500014"
     },
-    "A13": {
+    "A01": {
       "daily_budget": 50000,
-      "remaining": 44139,
-      "total_spent": 5861,
-      "tasks_completed": 1,
-      "efficiency_score": 94.139,
-      "last_reset": "2026-03-19T02:08:47.275588"
+      "remaining": 2084,
+      "total_spent": 47916,
+      "tasks_completed": 4,
+      "efficiency_score": 88.021,
+      "last_reset": "2026-03-19T01:59:46.971325"
     },
-    "A24": {
+    "A41": {
       "daily_budget": 50000,
-      "remaining": 40779,
-      "total_spent": 9221,
+      "remaining": 35594,
+      "total_spent": 14406,
+      "tasks_completed": 3,
+      "efficiency_score": 95.19800000000001,
+      "last_reset": "2026-03-19T02:03:59.386020"
+    },
+    "A52": {
+      "daily_budget": 50000,
+      "remaining": 37308,
+      "total_spent": 12692,
+      "tasks_completed": 3,
+      "efficiency_score": 95.76933333333334,
+      "last_reset": "2026-03-19T02:39:54.751690"
+    },
+    "A55": {
+      "daily_budget": 50000,
+      "remaining": 30383,
+      "total_spent": 19617,
+      "tasks_completed": 3,
+      "efficiency_score": 93.461,
+      "last_reset": "2026-03-19T02:42:55.048852"
+    },
+    "A59": {
+      "daily_budget": 50000,
+      "remaining": 38015,
+      "total_spent": 11985,
+      "tasks_completed": 3,
+      "efficiency_score": 96.005,
+      "last_reset": "2026-03-19T02:45:17.706608"
+    },
+    "A40": {
+      "daily_budget": 50000,
+      "remaining": 41981,
+      "total_spent": 8019,
       "tasks_completed": 2,
-      "efficiency_score": 95.3895,
-      "last_reset": "2026-03-19T02:09:23.325450"
+      "efficiency_score": 95.9905,
+      "last_reset": "2026-03-19T02:58:03.268464"
+    },
+    "A76": {
+      "daily_budget": 50000,
+      "remaining": 3904,
+      "total_spent": 46096,
+      "tasks_completed": 4,
+      "efficiency_score": 88.476,
+      "last_reset": "2026-03-19T03:00:08.138426"
     },
     "A68": {
       "daily_budget": 50000,
-      "remaining": 30961,
-      "total_spent": 19039,
+      "remaining": 38811,
+      "total_spent": 11189,
+      "tasks_completed": 2,
+      "efficiency_score": 94.4055,
+      "last_reset": "2026-03-19T03:02:42.455877"
+    },
+    "A71": {
+      "daily_budget": 50000,
+      "remaining": 43498,
+      "total_spent": 6502,
+      "tasks_completed": 1,
+      "efficiency_score": 93.498,
+      "last_reset": "2026-03-19T03:03:39.259216"
+    },
+    "A03": {
+      "daily_budget": 50000,
+      "remaining": 45369,
+      "total_spent": 4631,
+      "tasks_completed": 1,
+      "efficiency_score": 95.369,
+      "last_reset": "2026-03-19T03:04:13.760811"
+    },
+    "A26": {
+      "daily_budget": 50000,
+      "remaining": 44728,
+      "total_spent": 5272,
+      "tasks_completed": 1,
+      "efficiency_score": 94.728,
+      "last_reset": "2026-03-19T03:04:45.258323"
+    },
+    "A49": {
+      "daily_budget": 50000,
+      "remaining": 42450,
+      "total_spent": 7550,
+      "tasks_completed": 1,
+      "efficiency_score": 92.45,
+      "last_reset": "2026-03-19T03:07:03.536418"
+    },
+    "A25": {
+      "daily_budget": 50000,
+      "remaining": 41350,
+      "total_spent": 8650,
+      "tasks_completed": 2,
+      "efficiency_score": 95.675,
+      "last_reset": "2026-03-19T03:07:46.996743"
+    },
+    "A69": {
+      "daily_budget": 50000,
+      "remaining": 44947,
+      "total_spent": 5053,
+      "tasks_completed": 1,
+      "efficiency_score": 94.947,
+      "last_reset": "2026-03-19T03:22:43.450221"
+    },
+    "A56": {
+      "daily_budget": 50000,
+      "remaining": 45012,
+      "total_spent": 4988,
+      "tasks_completed": 1,
+      "efficiency_score": 95.012,
+      "last_reset": "2026-03-19T03:29:11.945836"
+    },
+    "A09": {
+      "daily_budget": 50000,
+      "remaining": 46375,
+      "total_spent": 3625,
+      "tasks_completed": 1,
+      "efficiency_score": 96.375,
+      "last_reset": "2026-03-19T03:34:00.651328"
+    },
+    "A17": {
+      "daily_budget": 50000,
+      "remaining": 34135,
+      "total_spent": 15865,
       "tasks_completed": 3,
-      "efficiency_score": 93.65366666666667,
-      "last_reset": "2026-03-19T02:10:51.476810"
+      "efficiency_score": 94.71166666666667,
+      "last_reset": "2026-03-19T03:34:16.839426"
+    },
+    "A42": {
+      "daily_budget": 50000,
+      "remaining": 33836,
+      "total_spent": 16164,
+      "tasks_completed": 3,
+      "efficiency_score": 94.612,
+      "last_reset": "2026-03-19T03:15:39.187588"
+    },
+    "A13": {
+      "daily_budget": 50000,
+      "remaining": 44130,
+      "total_spent": 5870,
+      "tasks_completed": 1,
+      "efficiency_score": 94.13,
+      "last_reset": "2026-03-19T03:23:58.535124"
+    },
+    "A12": {
+      "daily_budget": 50000,
+      "remaining": 29478,
+      "total_spent": 20522,
+      "tasks_completed": 2,
+      "efficiency_score": 89.739,
+      "last_reset": "2026-03-19T03:24:12.791164"
+    },
+    "A37": {
+      "daily_budget": 50000,
+      "remaining": 38086,
+      "total_spent": 11914,
+      "tasks_completed": 15,
+      "efficiency_score": 99.20573333333333,
+      "last_reset": "2026-03-19T03:27:08.650492"
     }
   },
   "transactions": [
@@ -750,75 +894,789 @@
       "timestamp": "2026-03-19T01:58:48.685515"
     },
     {
-      "agent_id": "A11",
-      "tokens": 3702,
-      "task": "ابحث بعمق عن: AI agent memory optimization cycle 4",
-      "remaining": 46298,
-      "timestamp": "2026-03-19T01:59:31.641116"
+      "agent_id": "A10",
+      "tokens": 7318,
+      "task": "قارن بين RAG و Fine-tuning: متى نستخدم كل واحد؟",
+      "remaining": 36565,
+      "timestamp": "2026-03-19T01:59:21.450680"
     },
     {
-      "agent_id": "A11",
-      "tokens": 4445,
-      "task": "لخّص مفهوم الذكاء الاصطناعي في 3 جمل",
-      "remaining": 41853,
-      "timestamp": "2026-03-19T02:08:42.876968"
+      "agent_id": "A31",
+      "tokens": 3884,
+      "task": "حلل أمنياً تطبيق ويب يستخدم JWT + OAuth2. ما الثغر",
+      "remaining": 46116,
+      "timestamp": "2026-03-19T01:59:31.739606"
     },
     {
-      "agent_id": "A13",
-      "tokens": 5861,
-      "task": "حلّل مخاطر الاستثمار في البيتكوين مع أدلة",
-      "remaining": 44139,
-      "timestamp": "2026-03-19T02:09:20.416360"
+      "agent_id": "A31",
+      "tokens": 4378,
+      "task": "صمم خطة استجابة لحادث اختراق بيانات 100K مستخدم",
+      "remaining": 41738,
+      "timestamp": "2026-03-19T01:59:42.875786"
     },
     {
-      "agent_id": "A24",
-      "tokens": 4592,
-      "task": "حلّل مخاطر الاستثمار في البيتكوين مع أدلة",
-      "remaining": 45408,
-      "timestamp": "2026-03-19T02:09:39.779291"
+      "agent_id": "A01",
+      "tokens": 8487,
+      "task": "ضع خطة استراتيجية لشركة AI ناشئة تدخل السوق العربي",
+      "remaining": 41513,
+      "timestamp": "2026-03-19T02:01:06.975004"
     },
     {
-      "agent_id": "A24",
-      "tokens": 4629,
-      "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
-      "remaining": 40779,
-      "timestamp": "2026-03-19T02:10:19.144522"
+      "agent_id": "A01",
+      "tokens": 12792,
+      "task": "حلل SWOT لتوسع شركة تقنية من الخليج إلى أفريقيا",
+      "remaining": 28721,
+      "timestamp": "2026-03-19T02:02:34.728115"
     },
     {
-      "agent_id": "A20",
-      "tokens": 3618,
-      "task": "اكتب مقالاً علمياً عن الحوسبة الكمومية بالعربية ال",
-      "remaining": 42649,
-      "timestamp": "2026-03-19T02:10:48.454496"
+      "agent_id": "A01",
+      "tokens": 16990,
+      "task": "صمم خطة إدارة أزمة لشركة تواجه خرق بيانات ضخم",
+      "remaining": 11731,
+      "timestamp": "2026-03-19T02:03:55.371274"
     },
     {
-      "agent_id": "A68",
-      "tokens": 4348,
-      "task": "اكتب مقالاً علمياً عن الحوسبة الكمومية بالعربية ال",
-      "remaining": 45652,
-      "timestamp": "2026-03-19T02:11:08.563374"
+      "agent_id": "A41",
+      "tokens": 3961,
+      "task": "حلل جدوى استثمار $500K في مشروع blockchain في الشر",
+      "remaining": 46039,
+      "timestamp": "2026-03-19T02:04:32.398675"
     },
     {
-      "agent_id": "A68",
-      "tokens": 7654,
-      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
-      "remaining": 37998,
-      "timestamp": "2026-03-19T02:26:46.110396"
+      "agent_id": "A41",
+      "tokens": 5042,
+      "task": "قارن بين 3 استراتيجيات تحوط ضد التضخم في 2026",
+      "remaining": 40997,
+      "timestamp": "2026-03-19T02:05:28.393550"
     },
     {
-      "agent_id": "A68",
-      "tokens": 7037,
-      "task": "لخّص مفهوم الذكاء الاصطناعي في 3 جمل",
-      "remaining": 30961,
-      "timestamp": "2026-03-19T02:37:03.279611"
+      "agent_id": "A41",
+      "tokens": 5403,
+      "task": "إذا كان A > B و B > C و C > D، وكان D = 5، فما أقل",
+      "remaining": 35594,
+      "timestamp": "2026-03-19T02:38:51.804743"
+    },
+    {
+      "agent_id": "A52",
+      "tokens": 4116,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 45884,
+      "timestamp": "2026-03-19T02:40:17.359389"
+    },
+    {
+      "agent_id": "A39",
+      "tokens": 7586,
+      "task": "ابحث بعمق عن: multi-agent collaboration breakthrou",
+      "remaining": 37437,
+      "timestamp": "2026-03-19T02:41:02.692941"
+    },
+    {
+      "agent_id": "A81",
+      "tokens": 9919,
+      "task": "ابحث بعمق عن: knowledge distillation efficient met",
+      "remaining": 20994,
+      "timestamp": "2026-03-19T02:42:16.658985"
+    },
+    {
+      "agent_id": "A77",
+      "tokens": 9560,
+      "task": "ابحث بعمق عن: self-improving AI systems recursive\n",
+      "remaining": 27005,
+      "timestamp": "2026-03-19T02:42:51.226621"
+    },
+    {
+      "agent_id": "A55",
+      "tokens": 4555,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 45445,
+      "timestamp": "2026-03-19T02:43:06.864259"
+    },
+    {
+      "agent_id": "A55",
+      "tokens": 7936,
+      "task": "ابحث بعمق عن: tool-augmented language models\n\nأعطن",
+      "remaining": 37509,
+      "timestamp": "2026-03-19T02:45:09.116194"
+    },
+    {
+      "agent_id": "A05",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: graph neural networks knowledge repr",
+      "remaining": 46500,
+      "timestamp": "2026-03-19T02:45:13.974189"
+    },
+    {
+      "agent_id": "A59",
+      "tokens": 3616,
+      "task": "ابحث بعمق عن: prompt engineering automation DSPy\n\n",
+      "remaining": 46384,
+      "timestamp": "2026-03-19T02:45:30.607489"
+    },
+    {
+      "agent_id": "A79",
+      "tokens": 9681,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 2339,
+      "timestamp": "2026-03-19T02:57:58.880111"
+    },
+    {
+      "agent_id": "A40",
+      "tokens": 4078,
+      "task": "ابحث بعمق عن: multi-agent collaboration breakthrou",
+      "remaining": 45922,
+      "timestamp": "2026-03-19T02:58:20.764254"
+    },
+    {
+      "agent_id": "A74",
+      "tokens": 9500,
+      "task": "ابحث بعمق عن: knowledge distillation efficient met",
+      "remaining": 27103,
+      "timestamp": "2026-03-19T02:58:53.092397"
+    },
+    {
+      "agent_id": "A74",
+      "tokens": 13744,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 13359,
+      "timestamp": "2026-03-19T02:59:38.541643"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 3987,
+      "task": "ابحث بعمق عن: AI agent memory optimization cycle 5",
+      "remaining": 42565,
+      "timestamp": "2026-03-19T03:00:04.355681"
+    },
+    {
+      "agent_id": "A76",
+      "tokens": 8999,
+      "task": "ابحث بعمق عن: model merging techniques March 2026\n",
+      "remaining": 41001,
+      "timestamp": "2026-03-19T03:00:36.751581"
+    },
+    {
+      "agent_id": "A76",
+      "tokens": 13697,
+      "task": "ابحث بعمق عن: tool-augmented language models\n\nأعطن",
+      "remaining": 27304,
+      "timestamp": "2026-03-19T03:01:40.836045"
     },
     {
       "agent_id": "A38",
-      "tokens": 3488,
-      "task": "حلّل مخاطر الاستثمار في البيتكوين مع أدلة",
-      "remaining": 39703,
-      "timestamp": "2026-03-19T02:37:07.778237"
+      "tokens": 7478,
+      "task": "ابحث بعمق عن: graph neural networks knowledge repr",
+      "remaining": 35713,
+      "timestamp": "2026-03-19T03:02:05.937336"
+    },
+    {
+      "agent_id": "A68",
+      "tokens": 5996,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 44004,
+      "timestamp": "2026-03-19T03:03:09.521298"
+    },
+    {
+      "agent_id": "A77",
+      "tokens": 10290,
+      "task": "ادرس هذا الحل من خبير (وكيل استراتيجية توزيع الموا",
+      "remaining": 16715,
+      "timestamp": "2026-03-19T03:03:35.599665"
+    },
+    {
+      "agent_id": "A71",
+      "tokens": 6502,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 43498,
+      "timestamp": "2026-03-19T03:04:11.478363"
+    },
+    {
+      "agent_id": "A03",
+      "tokens": 4631,
+      "task": "ادرس هذا الحل من خبير (وكيل الأمن الداخلي والنزاهة",
+      "remaining": 45369,
+      "timestamp": "2026-03-19T03:04:41.519916"
+    },
+    {
+      "agent_id": "A26",
+      "tokens": 5272,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 44728,
+      "timestamp": "2026-03-19T03:04:55.295606"
+    },
+    {
+      "agent_id": "A06",
+      "tokens": 4436,
+      "task": "ادرس هذا الحل من خبير (وكيل سيكولوجية القرار) وأعد",
+      "remaining": 39119,
+      "timestamp": "2026-03-19T03:05:22.012420"
+    },
+    {
+      "agent_id": "A01",
+      "tokens": 9647,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 2084,
+      "timestamp": "2026-03-19T03:06:28.683821"
+    },
+    {
+      "agent_id": "A50",
+      "tokens": 10134,
+      "task": "ادرس هذا الحل من خبير (وكيل القيادة الاستراتيجية) ",
+      "remaining": 32048,
+      "timestamp": "2026-03-19T03:06:59.740642"
+    },
+    {
+      "agent_id": "A49",
+      "tokens": 7550,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 42450,
+      "timestamp": "2026-03-19T03:07:45.103569"
+    },
+    {
+      "agent_id": "A25",
+      "tokens": 4859,
+      "task": "ادرس هذا الحل من خبير (وكيل علم الاجتماع) وأعد كتا",
+      "remaining": 45141,
+      "timestamp": "2026-03-19T03:07:57.387434"
+    },
+    {
+      "agent_id": "A81",
+      "tokens": 10158,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 10836,
+      "timestamp": "2026-03-19T03:08:58.459711"
+    },
+    {
+      "agent_id": "A72",
+      "tokens": 9154,
+      "task": "ادرس هذا الحل من خبير (الوكيل الميتا الاستخباراتي)",
+      "remaining": 22713,
+      "timestamp": "2026-03-19T03:09:28.146447"
+    },
+    {
+      "agent_id": "A61",
+      "tokens": 3736,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 43088,
+      "timestamp": "2026-03-19T03:10:41.022974"
+    },
+    {
+      "agent_id": "A61",
+      "tokens": 4426,
+      "task": "ابحث بعمق عن: tool-augmented language models\n\nأعطن",
+      "remaining": 38662,
+      "timestamp": "2026-03-19T03:15:03.311788"
+    },
+    {
+      "agent_id": "A75",
+      "tokens": 9337,
+      "task": "ابحث بعمق عن: graph neural networks knowledge repr",
+      "remaining": 31293,
+      "timestamp": "2026-03-19T03:15:36.241599"
+    },
+    {
+      "agent_id": "A52",
+      "tokens": 3985,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 41899,
+      "timestamp": "2026-03-19T03:17:50.059489"
+    },
+    {
+      "agent_id": "A76",
+      "tokens": 9601,
+      "task": "ابحث بعمق عن: multi-agent collaboration breakthrou",
+      "remaining": 17703,
+      "timestamp": "2026-03-19T03:18:31.508619"
+    },
+    {
+      "agent_id": "A76",
+      "tokens": 13799,
+      "task": "ابحث بعمق عن: graph neural networks knowledge repr",
+      "remaining": 3904,
+      "timestamp": "2026-03-19T03:22:05.940317"
+    },
+    {
+      "agent_id": "A75",
+      "tokens": 9283,
+      "task": "ابحث بعمق عن: prompt engineering automation DSPy\n\n",
+      "remaining": 22010,
+      "timestamp": "2026-03-19T03:22:39.593144"
+    },
+    {
+      "agent_id": "A69",
+      "tokens": 5053,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 44947,
+      "timestamp": "2026-03-19T03:24:51.099955"
+    },
+    {
+      "agent_id": "A22",
+      "tokens": 4720,
+      "task": "ادرس هذا الحل من خبير (وكيل التقييم الشامل) وأعد ك",
+      "remaining": 38597,
+      "timestamp": "2026-03-19T03:25:25.294123"
+    },
+    {
+      "agent_id": "A81",
+      "tokens": 9854,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 982,
+      "timestamp": "2026-03-19T03:26:44.911512"
+    },
+    {
+      "agent_id": "A74",
+      "tokens": 9458,
+      "task": "ابحث بعمق عن: multi-agent collaboration breakthrou",
+      "remaining": 3901,
+      "timestamp": "2026-03-19T03:27:26.821427"
+    },
+    {
+      "agent_id": "A38",
+      "tokens": 7482,
+      "task": "ابحث بعمق عن: self-improving AI systems recursive\n",
+      "remaining": 28231,
+      "timestamp": "2026-03-19T03:28:31.395626"
+    },
+    {
+      "agent_id": "A54",
+      "tokens": 3938,
+      "task": "ابحث بعمق عن: AI agent memory optimization cycle 5",
+      "remaining": 35878,
+      "timestamp": "2026-03-19T03:29:07.389992"
+    },
+    {
+      "agent_id": "A56",
+      "tokens": 4988,
+      "task": "ابحث بعمق عن: model merging techniques March 2026\n",
+      "remaining": 45012,
+      "timestamp": "2026-03-19T03:29:27.817835"
+    },
+    {
+      "agent_id": "A52",
+      "tokens": 4591,
+      "task": "ابحث بعمق عن: reinforcement learning from AI feedb",
+      "remaining": 37308,
+      "timestamp": "2026-03-19T03:30:11.439397"
+    },
+    {
+      "agent_id": "A78",
+      "tokens": 9397,
+      "task": "ابحث بعمق عن: tool-augmented language models\n\nأعطن",
+      "remaining": 18161,
+      "timestamp": "2026-03-19T03:30:44.721788"
+    },
+    {
+      "agent_id": "A78",
+      "tokens": 13742,
+      "task": "ابحث بعمق عن: graph neural networks knowledge repr",
+      "remaining": 4419,
+      "timestamp": "2026-03-19T03:33:56.761418"
+    },
+    {
+      "agent_id": "A09",
+      "tokens": 3625,
+      "task": "ابحث بعمق عن: prompt engineering automation DSPy\n\n",
+      "remaining": 46375,
+      "timestamp": "2026-03-19T03:34:13.118217"
+    },
+    {
+      "agent_id": "A17",
+      "tokens": 4755,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 45245,
+      "timestamp": "2026-03-19T03:34:37.893436"
+    },
+    {
+      "agent_id": "A17",
+      "tokens": 5073,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 40172,
+      "timestamp": "2026-03-19T03:40:15.742152"
+    },
+    {
+      "agent_id": "A17",
+      "tokens": 6037,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 34135,
+      "timestamp": "2026-03-19T04:20:22.087723"
+    },
+    {
+      "agent_id": "A53",
+      "tokens": 5321,
+      "task": "لخّص مفهوم الذكاء الاصطناعي في 3 جمل",
+      "remaining": 35081,
+      "timestamp": "2026-03-19T04:21:09.836408"
+    },
+    {
+      "agent_id": "A53",
+      "tokens": 4586,
+      "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
+      "remaining": 30495,
+      "timestamp": "2026-03-19T04:27:13.728461"
+    },
+    {
+      "agent_id": "A53",
+      "tokens": 7912,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 22583,
+      "timestamp": "2026-03-19T04:44:18.718494"
+    },
+    {
+      "agent_id": "A53",
+      "tokens": 10402,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 12181,
+      "timestamp": "2026-03-19T04:45:44.535332"
+    },
+    {
+      "agent_id": "A59",
+      "tokens": 3636,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 42748,
+      "timestamp": "2026-03-19T04:48:43.308847"
+    },
+    {
+      "agent_id": "A59",
+      "tokens": 4733,
+      "task": "ابحث بعمق عن: multi-agent collaboration breakthrou",
+      "remaining": 38015,
+      "timestamp": "2026-03-19T04:49:04.036941"
+    },
+    {
+      "agent_id": "A60",
+      "tokens": 5027,
+      "task": "ابحث بعمق عن: knowledge distillation efficient met",
+      "remaining": 41913,
+      "timestamp": "2026-03-19T04:49:25.562372"
+    },
+    {
+      "agent_id": "A60",
+      "tokens": 6595,
+      "task": "ابحث بعمق عن: AI agent memory optimization cycle 7",
+      "remaining": 35318,
+      "timestamp": "2026-03-19T04:50:53.521870"
+    },
+    {
+      "agent_id": "A02",
+      "tokens": 7468,
+      "task": "ابحث بعمق عن: model merging techniques March 2026\n",
+      "remaining": 35162,
+      "timestamp": "2026-03-19T04:51:39.554941"
+    },
+    {
+      "agent_id": "A40",
+      "tokens": 3941,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 41981,
+      "timestamp": "2026-03-19T02:54:50.326054"
+    },
+    {
+      "agent_id": "A53",
+      "tokens": 7579,
+      "task": "ابحث بعمق عن: multi-agent collaboration breakthrou",
+      "remaining": 4602,
+      "timestamp": "2026-03-19T02:55:36.446689"
+    },
+    {
+      "agent_id": "A54",
+      "tokens": 3827,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 32051,
+      "timestamp": "2026-03-19T02:56:34.553077"
+    },
+    {
+      "agent_id": "A54",
+      "tokens": 3586,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 28465,
+      "timestamp": "2026-03-19T02:56:45.320326"
+    },
+    {
+      "agent_id": "A54",
+      "tokens": 3971,
+      "task": "ابحث بعمق عن: AI agent memory optimization cycle 7",
+      "remaining": 24494,
+      "timestamp": "2026-03-19T02:56:50.355811"
+    },
+    {
+      "agent_id": "A38",
+      "tokens": 6143,
+      "task": "ابحث بعمق عن: model merging techniques March 2026\n",
+      "remaining": 22088,
+      "timestamp": "2026-03-19T02:57:08.287909"
+    },
+    {
+      "agent_id": "A55",
+      "tokens": 7126,
+      "task": "ابحث بعمق عن: reinforcement learning from AI feedb",
+      "remaining": 30383,
+      "timestamp": "2026-03-19T02:57:51.588232"
+    },
+    {
+      "agent_id": "A61",
+      "tokens": 3501,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 35161,
+      "timestamp": "2026-03-19T02:58:29.095885"
+    },
+    {
+      "agent_id": "A61",
+      "tokens": 3649,
+      "task": "ابحث بعمق عن: tool-augmented language models\n\nأعطن",
+      "remaining": 31512,
+      "timestamp": "2026-03-19T02:58:30.588028"
+    },
+    {
+      "agent_id": "A61",
+      "tokens": 5472,
+      "task": "ابحث بعمق عن: graph neural networks knowledge repr",
+      "remaining": 26040,
+      "timestamp": "2026-03-19T03:00:05.202182"
+    },
+    {
+      "agent_id": "A61",
+      "tokens": 7700,
+      "task": "ابحث بعمق عن: neural architecture search efficient",
+      "remaining": 18340,
+      "timestamp": "2026-03-19T03:14:34.079038"
+    },
+    {
+      "agent_id": "A66",
+      "tokens": 5140,
+      "task": "ادرس هذا الحل من خبير (وكيل إدارة الأزمات) وأعد كت",
+      "remaining": 40109,
+      "timestamp": "2026-03-19T03:15:37.727959"
+    },
+    {
+      "agent_id": "A42",
+      "tokens": 3918,
+      "task": "ادرس هذا الحل من خبير (وكيل تقنيات الفضاء والدفاع)",
+      "remaining": 46082,
+      "timestamp": "2026-03-19T03:15:48.045598"
+    },
+    {
+      "agent_id": "A42",
+      "tokens": 5370,
+      "task": "ادرس هذا الحل من خبير (وكيل القيادة الاستراتيجية) ",
+      "remaining": 40712,
+      "timestamp": "2026-03-19T03:22:45.866059"
+    },
+    {
+      "agent_id": "A42",
+      "tokens": 6876,
+      "task": "ادرس هذا الحل من خبير (وكيل إدارة المؤسسات الكبرى)",
+      "remaining": 33836,
+      "timestamp": "2026-03-19T03:23:43.578759"
+    },
+    {
+      "agent_id": "A13",
+      "tokens": 5870,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 44130,
+      "timestamp": "2026-03-19T03:24:10.962791"
+    },
+    {
+      "agent_id": "A12",
+      "tokens": 7850,
+      "task": "ادرس هذا الحل من خبير (وكيل الاستشارة القانونية) و",
+      "remaining": 42150,
+      "timestamp": "2026-03-19T03:24:32.705640"
+    },
+    {
+      "agent_id": "A12",
+      "tokens": 12672,
+      "task": "ادرس هذا الحل من خبير (وكيل قيادة الابتكار) وأعد ك",
+      "remaining": 29478,
+      "timestamp": "2026-03-19T03:27:02.191662"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 4914,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 45086,
+      "timestamp": "2026-03-19T03:27:17.971631"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 44586,
+      "timestamp": "2026-03-19T03:35:14.850217"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "ضع خطة 90 يوماً لبناء شركة AI ناشئة بميزانية 10000",
+      "remaining": 44086,
+      "timestamp": "2026-03-19T03:44:22.404877"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
+      "remaining": 43586,
+      "timestamp": "2026-03-19T03:44:28.489812"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 43086,
+      "timestamp": "2026-03-19T04:13:24.754534"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 42586,
+      "timestamp": "2026-03-19T04:33:26.560720"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 42086,
+      "timestamp": "2026-03-19T04:39:10.284882"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
+      "remaining": 41586,
+      "timestamp": "2026-03-19T05:08:26.245372"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "ترجم هذا النص للإنجليزية والفرنسية: الذكاء الاصطنا",
+      "remaining": 41086,
+      "timestamp": "2026-03-19T05:14:27.579707"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 40586,
+      "timestamp": "2026-03-19T05:56:33.417905"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "إذا كان A > B و B > C و C > D، وكان D = 5، فما أقل",
+      "remaining": 40086,
+      "timestamp": "2026-03-19T06:06:51.726016"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "حلّل ثغرات نظام يستخدم JWT tokens بدون expiry",
+      "remaining": 39586,
+      "timestamp": "2026-03-19T06:17:40.450756"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 39086,
+      "timestamp": "2026-03-19T06:28:15.819194"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 38586,
+      "timestamp": "2026-03-19T08:05:51.977816"
+    },
+    {
+      "agent_id": "A37",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 38086,
+      "timestamp": "2026-03-19T08:14:15.577062"
+    },
+    {
+      "agent_id": "A74",
+      "tokens": 500,
+      "task": "اشرح الفرق بين Single Agent و Multi-Agent Systems",
+      "remaining": 3401,
+      "timestamp": "2026-03-19T08:14:55.057224"
+    },
+    {
+      "agent_id": "A04",
+      "tokens": 4043,
+      "task": "ابحث بعمق عن: multi-agent collaboration breakthrou",
+      "remaining": 41446,
+      "timestamp": "2026-03-19T08:19:38.614062"
+    },
+    {
+      "agent_id": "A02",
+      "tokens": 6763,
+      "task": "ابحث بعمق عن: self-improving AI systems recursive\n",
+      "remaining": 28399,
+      "timestamp": "2026-03-19T08:21:21.234856"
+    },
+    {
+      "agent_id": "A60",
+      "tokens": 4069,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 31249,
+      "timestamp": "2026-03-19T08:21:37.378344"
+    },
+    {
+      "agent_id": "A54",
+      "tokens": 2932,
+      "task": "ابحث بعمق عن: model merging techniques March 2026\n",
+      "remaining": 21562,
+      "timestamp": "2026-03-19T08:22:14.956527"
+    },
+    {
+      "agent_id": "A73",
+      "tokens": 8330,
+      "task": "ابحث بعمق عن: reinforcement learning from AI feedb",
+      "remaining": 32341,
+      "timestamp": "2026-03-19T08:22:46.046830"
+    },
+    {
+      "agent_id": "A73",
+      "tokens": 12627,
+      "task": "ابحث بعمق عن: neural architecture search efficient",
+      "remaining": 19714,
+      "timestamp": "2026-03-19T08:27:46.019780"
+    },
+    {
+      "agent_id": "A77",
+      "tokens": 8327,
+      "task": "ابحث بعمق عن: continual learning catastrophic forg",
+      "remaining": 8388,
+      "timestamp": "2026-03-19T08:28:14.941322"
+    },
+    {
+      "agent_id": "A68",
+      "tokens": 5193,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 38811,
+      "timestamp": "2026-03-19T08:28:42.630835"
+    },
+    {
+      "agent_id": "A50",
+      "tokens": 8906,
+      "task": "ادرس هذا الحل من خبير (وكيل استراتيجية توزيع الموا",
+      "remaining": 23142,
+      "timestamp": "2026-03-19T08:29:12.247777"
+    },
+    {
+      "agent_id": "A61",
+      "tokens": 7226,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 11114,
+      "timestamp": "2026-03-19T08:31:55.375732"
+    },
+    {
+      "agent_id": "A25",
+      "tokens": 3791,
+      "task": "ادرس هذا الحل من خبير (وكيل الحوسبة البيولوجية) وأ",
+      "remaining": 41350,
+      "timestamp": "2026-03-19T08:32:01.254160"
     }
   ],
-  "updated_at": "2026-03-19T02:37:07.778237"
+  "updated_at": "2026-03-19T08:32:01.254189"
 }

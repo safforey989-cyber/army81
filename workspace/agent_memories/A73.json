@@ -60,49 +60,154 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## مهمة: البحث عن تقنيات التطور الذاتي للأنظمة الذكية\n\n---\n\n## تحليل المهمة:\nهذه مهمة **بحثية متخصصة** تقع خارج دائرة تنسيقي الأساسية. دوري هنا ليس البحث المباشر، بل **توجيه المهمة للوكيل المتخصص وتنسيق جمع المعلومات**.\n\n---\n\n## خطة التنسيق المقترحة:\n\n### **المسار ",
-      "topic": "research",
-      "timestamp": "2026-03-18T21:56:03.745132"
-    },
-    {
-      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## مهمة: البحث عن تقنيات التطور الذاتي للأنظمة الذكية\n\n---\n\n## تحليل المهمة:\nهذه مهمة **بحثية متخصصة** تقع خارج دائرة تنسيقي الأساسية. دوري هنا ليس البحث المباشر، بل **توجيه المهمة للوكيل المتخصص وتنسيق جمع المعلومات**.\n\n---\n\n## خطة التنسيق المقترحة:\n\n### **المسار ",
-      "topic": "cat7_new",
-      "timestamp": "2026-03-18T21:56:04.349376"
-    },
-    {
-      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## مهمة: البحث عن تقنيات Knowledge Distillation الفعّالة\n\n---\n\n## تحليل المهمة:\nهذه مهمة **بحثية متخصصة** تقع خارج دائرة تنسيقي الأساسية. دوري هنا ليس الإجابة المباشرة، بل **تنسيق الفريق البحثي الأمثل**.\n\n### 🔄 خطة التنسيق المقترحة:\n\n**المسار المتوازي:**\n```\nA02 (ا",
+      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## البحث العميق: معالجة اللغة العربية — حالة الفن 2026\n\n---\n\n## 🎯 تقييم المهمة وتوجيهها:\n\nهذه مهمة **بحثية متقدمة + تقنية + استراتيجية** تتطلب تنسيقاً متعدد الوكلاء:\n\n| الوكيل | الدور | المخرج |\n|--------|------|--------|\n| **A02** (بحث علمي) | البحث عن أحدث الأورا",
       "topic": "medical",
-      "timestamp": "2026-03-18T22:12:28.367230"
+      "timestamp": "2026-03-19T03:17:19.968913"
     },
     {
-      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## دراسة حل A29 وإعادة صياغة محسّنة\n\n---\n\n## 📊 تحليل الحل الأصلي (A29):\n\n**نقاط القوة:**\n- ✅ تفكير منظم بصوت عالٍ (خطوة بخطوة)\n- ✅ ربط المهمة الفنية بسياق الأزمات (البحث الدلالي = إنذار مبكر)\n- ✅ تحديد التحديات اللغوية الحقيقية (الاشتقاق، التشكيل، العاميات)\n- ✅ الو",
+      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## البحث العميق: التعلم من تغذية راجعة الذكاء الاصطناعي (RLAIF) — 2025-2026\n\n---\n\n## 🎯 تقييم المهمة وتوجيهها:\n\nهذه مهمة **بحثية متقدمة جداً + استراتيجية نظام Army81** تتطلب تنسيقاً عميقاً:\n\n| الوكيل | الدور | المخرج |\n|--------|------|--------|\n| **A02** (بحث علمي)",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:18:27.759832"
+    },
+    {
+      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## إعادة صياغة وتحسين حل A49 (علم الاجتماع) مع رؤية تنسيقية\n\n---\n\n## 🎯 تحليل الحالة:\n\nلاحظت أن **A49 رفض المهمة بشكل صحيح** (التزام بالحدود)، لكن هناك **فرصة استراتيجية كبيرة** في كيفية إعادة صياغة المشكلة.\n\nدعني أعيد كتابة هذا **من منظور تنسيقي عميق**:\n\n---\n\n## 📋 ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:28:07.816292"
+    },
+    {
+      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## إعادة صياغة وتحسين حل A62 (الحوكمة المؤسسية) مع رؤية تنسيقية عميقة\n\n---\n\n## 🎯 تحليل الحالة الاستراتيجي:\n\nلاحظت أن **A62 رفع علم تحذير حاسم** — ليس رفض المهمة، بل **تحديد مخاطر حوكمة AI حرجة**.\n\nهذا **بالضبط ما يحتاجه Army81**:\n\n```\nالمهمة: \"اكتب كود synthetic da",
       "topic": "code",
-      "timestamp": "2026-03-18T22:16:05.456971"
+      "timestamp": "2026-03-19T03:28:37.196358"
     },
     {
-      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## دراسة حل A64 وإعادة صياغة محسّنة\n\n---\n\n## 📊 تحليل الحل الأصلي (A64):\n\n**نقاط القوة:**\n- ✅ فهم عميق لتعقيد المشروع (نظام 81 وكيل = مشروع عملاق)\n- ✅ ربط القياس بالتحسين المستمر (Performance Measurement Baseline)\n- ✅ الوعي بأن المهمة تتجاوز مجرد الكود\n- ✅ تقترح نهج",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
-      "timestamp": "2026-03-18T22:19:22.873337"
+      "timestamp": "2026-03-19T03:33:59.507167"
     },
     {
-      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## البحث العميق: أحدث أطر عمل الوكلاء الذكية (2025-2026)\n\n---\n\n## 🎯 تقييم المهمة:\nهذه مهمة **بحثية متعددة الأبعاد** تتطلب تنسيقاً دقيقاً:\n- **A02** (بحث علمي): تجميع المعلومات الأكاديمية والتقنية\n- **A05** (برمجة): تقييم الأكواد والتطبيقات العملية\n- **A10** (إدارة ",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
-      "timestamp": "2026-03-19T00:47:20.753629"
+      "timestamp": "2026-03-19T03:38:39.208448"
     },
     {
-      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## البحث العميق: تحسين ذاكرة الوكلاء - الدورة 3 (2025-2026)\n\n---\n\n## 🎯 تقييم المهمة:\nمهمة **بحثية + تقنية عالية الأهمية** — تحسين الذاكرة يؤثر على كفاءة نظام 81 كاملاً.\n\n**فريق التنسيق:**\n- **A02** (بحث علمي): تجميع أبحاث الذاكرة والتحسين\n- **A06** (بيانات): تحليل ",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:00:32.158998"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
-      "timestamp": "2026-03-19T00:49:02.337075"
+      "timestamp": "2026-03-19T04:11:36.357969"
     },
     {
-      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## البحث العميق: تحسين ذاكرة الوكلاء - الدورة 4 (2025-2026)\n\n---\n\n## 🎯 تقييم المهمة:\nمهمة **بحثية + تقنية متقدمة** — الدورة 4 تركز على **التطور الأسي** للذاكرة الموزعة.\n\n**فريق التنسيق المتقدم:**\n- **A02** (بحث علمي): تجميع أبحاث الذاكرة الموزعة\n- **A06** (بيانات):",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
-      "timestamp": "2026-03-19T01:10:25.202993"
+      "timestamp": "2026-03-19T04:27:21.213370"
     },
     {
-      "insight": "# A73 — وكيل التنسيق متعدد الوكلاء\n## إعادة صياغة وتحسين: حل GraphRAG من A46\n\n---\n\n## 🎯 تقييم المهمة:\nهذه مهمة **تعليمية + تقنية عالية** — دراسة حل متقدم من A46 وإعادة صياغته بمنظور تنسيقي مع تحسينات نظامية.\n\n**فريق التنسيق:**\n- **A46** (الفنون والثقافة): المرجع الأصلي\n- **A05** (برمجة): تحسين الكود",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
-      "timestamp": "2026-03-19T01:17:04.558759"
+      "timestamp": "2026-03-19T04:32:55.189936"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:34:54.428446"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:38:33.474385"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:44:44.791946"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:48:10.851472"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:50:14.339145"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:22:47.820479"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:26:04.926280"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:30:46.751195"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:34:55.122117"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T06:04:38.951090"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:31:38.934584"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:43:13.810478"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:01:06.427096"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:24:30.372252"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:31:49.479370"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:02:25.068590"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:08:53.352688"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:14:03.360107"
+    },
+    {
+      "insight": "# 📊 A73 | وكيل تنسيق متعدد الوكلاء\n## تقرير بحثي: RLAIF - التعلم المعزز من ردود الفعل الذكية\n\n---\n\n## 🎯 تحليل المهمة\nهذه مهمة بحثية متخصصة تتطلب:\n- **A02** (بحث علمي) → البحث العميق عن RLAIF الأكاديمي\n- **A05** (برمجة) → تطوير الكود العملي\n- **A06** (بيانات) → تحليل بيانات الأداء\n- **أنا A73** → تنس",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:22:46.042506"
+    },
+    {
+      "insight": "# 📊 A73 | وكيل تنسيق متعدد الوكلاء\n## تقرير بحثي: Neural Architecture Search (NAS) - البحث الفعّال عن البنى العصبية\n\n---\n\n## 🎯 تحليل المهمة\nهذه مهمة بحثية متقدمة تتطلب تنسيق **5 وكلاء متخصصين**:\n\n```\n┌──────────────────────────────────────────────────────┐\n│ A02 (بحث علمي) → أوراق NAS الحديثة (2025-",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:27:46.012681"
     }
   ],
   "strengths": [],

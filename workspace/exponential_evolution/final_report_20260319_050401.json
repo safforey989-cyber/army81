@@ -1,0 +1,23 @@
+{
+  "total_cycles": 8,
+  "total_hours": 2.13,
+  "final_multiplier": 24.05,
+  "total_experiments": 65,
+  "total_knowledge": 85,
+  "total_skills": 85,
+  "total_distillations": 55,
+  "total_battles": 21,
+  "total_inventions": 12,
+  "golden_rules": [
+    "أمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id='A29', agen",
+    "AgentResult(agent_id='A81', agent_name='الوكيل الميتا الاستخباراتي', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 5 (المضاعف: 2.9x).\\n\\nلديك 15 قطعة م",
+    "أمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id='A34', agen",
+    "أمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id='A34', agen",
+    "أمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id='A29', agen",
+    "AgentResult(agent_id='A81', agent_name='الوكيل الميتا الاستخباراتي', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 6 (المضاعف: 5.8x).\\n\\nلديك 15 قطعة م",
+    "أمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id='A62', agen",
+    "أمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id='A62', agen",
+    "أمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id='A05', agen",
+    "AgentResult(agent_id='A81', agent_name='الوكيل الميتا الاستخباراتي', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 7 (المضاعف: 11.8x).\\n\\nلديك 15 قطعة "
+  ]
+}

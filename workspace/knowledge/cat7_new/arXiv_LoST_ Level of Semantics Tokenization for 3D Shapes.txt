@@ -1,0 +1,5 @@
+Title: LoST: Level of Semantics Tokenization for 3D Shapes
+Source: arXiv
+Date: 2026-03-19T02:55:09.972705
+
+Tokenization is a fundamental technique in the generative modeling of various modalities. In particular, it plays a critical role in autoregressive (AR) models, which have recently emerged as a compelling option for 3D generation. However, optimal tokenization of 3D shapes remains an open question. State-of-the-art (SOTA) methods primarily rely on geometric level-of-detail (LoD) hierarchies, originally designed for rendering and compression. These spatial hierarchies are often token-inefficient 

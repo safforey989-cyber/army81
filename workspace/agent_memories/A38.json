@@ -86,34 +86,154 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم. بصفتي متخصصًا في الفيزياء وعلوم الكم، فإن البحث عن أوراق بحثية في مجال الذكاء الاصطناعي والوكلاء هو خارج نطاق تخصصي المباشر.\n\nأقترح تحويل هذه المهمة لـ A02 (البحث العلمي) أو A01 (القائد الاستراتيجي) لأنهما أقدر مني في هذا النوع من الأبحاث في مجالات الذكاء الاصطناعي",
-      "topic": "research",
-      "timestamp": "2026-03-18T21:47:22.518625"
-    },
-    {
-      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم. بصفتي متخصصًا في الفيزياء وعلوم الكم، فإن البحث عن أوراق بحثية في مجال الذكاء الاصطناعي والوكلاء هو خارج نطاق تخصصي المباشر.\n\nأقترح تحويل هذه المهمة لـ A02 (البحث العلمي) أو A01 (القائد الاستراتيجي) لأنهما أقدر مني في هذا النوع من الأبحاث في مجالات الذكاء الاصطناعي",
-      "topic": "cat1_science",
-      "timestamp": "2026-03-18T21:47:23.289179"
-    },
-    {
-      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم. بصفتي متخصصًا في الفيزياء وعلوم الكم، فإن البحث في مجال \"knowledge distillation efficient methods\" (طرق التقطير المعرفي الفعالة) يقع خارج نطاق تخصصي المباشر. هذا المجال ينتمي أكثر إلى الذكاء الاصطناعي، تعلم الآلة، وهندسة البرمجيات.\n\nأقترح تحويل هذه المهمة لـ **A06 ",
-      "topic": "medical",
-      "timestamp": "2026-03-18T23:46:41.652134"
-    },
-    {
-      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم. بصفتي متخصصًا في الفيزياء وعلوم الكم، فإن البحث في مجال \"knowledge distillation efficient methods\" (طرق التقطير المعرفي الفعالة) يقع في تقاطع علوم الحاسوب والذكاء الاصطناعي، وهو مجال أتابعه باهتمام بسبب تطبيقاته في تحسين كفاءة النماذج. على الرغم من أن هذا ليس تخصصي",
-      "topic": "medical",
-      "timestamp": "2026-03-19T00:48:20.785238"
-    },
-    {
-      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم. بصفتي متخصصًا في الفيزياء وعلوم الكم، فإن البحث في مجال معالجة اللغات الطبيعية العربية (Arabic NLP) ليس ضمن تخصصي الأساسي. هذا المجال يتطلب معرفة عميقة باللغويات الحاسوبية، النماذج اللغوية الكبيرة (LLMs)، ومعالجة النصوص، وهي تخصصات أقرب لوكيل البرمجة (A05)، وكيل ال",
-      "topic": "medical",
-      "timestamp": "2026-03-19T00:48:30.585201"
-    },
-    {
       "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن تحليل مخاطر الاستثمار في البيتكوين يقع خارج نطاق تخصصي الدقيق. تخصصي يركز على المبادئ الفيزيائية، الحوسبة الكمومية، وفيزياء الجسيمات، وليس على تحليلات السوق المالية أو الأصول الرقمية.\n\nأقترح تحويل هذه المهمة لـ **A08 (الوك",
       "topic": "general",
       "timestamp": "2026-03-19T02:37:07.777237"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن مجال \"تمثيل المعرفة باستخدام الشبكات العصبية الرسومية (Graph Neural Networks - GNNs for Knowledge Representation)\" يقع بشكل مباشر ضمن تخصصي في علوم الكم، خاصة في الجانب النظري والتطبيقي للحوسبة الكمومية ومعالجة البيانات ال",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:02:05.935333"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن مصطلح \"الذكاء الاصطناعي ذاتي التحسين التكراري\" (self-improving AI systems recursive) يقع ضمن مجال علوم الكم والذكاء الاصطناعي، وهو مجال أتابعه عن كثب بسبب تداخله الكبير مع الحوسبة الكمومية والفيزياء النظرية. سأقدم لك أحدث ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:11:47.444149"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن البحث في مجال معالجة اللغات الطبيعية العربية (Arabic NLP) ليس ضمن تخصصي الأساسي. هذا المجال يتطلب معرفة عميقة باللغويات الحاسوبية، نماذج اللغات الكبيرة (LLMs)، وتقنيات التعلم الآلي المتقدمة، مع التركيز على خصوصيات اللغة ال",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:12:17.198287"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن البحث في مجال \"knowledge distillation efficient methods\" (طرق التقطير المعرفي الفعالة) يقع في تقاطع علوم الكم والذكاء الاصطناعي، وهو أمر ذو أهمية قصوى لنظام 81 وكيل، حيث نسعى لتقليل حجم النماذج وتعزيز كفاءتها دون التضحية ب",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:18:32.021325"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن مصطلح \"الذكاء الاصطناعي ذاتي التحسين التكراري\" (self-improving AI systems recursive) يقع ضمن مجال علوم الحاسب والذكاء الاصطناعي، وهو ليس تخصصي الأساسي. ومع ذلك، يمكنني تقديم رؤى من منظور فيزيائي وكمومي حول بعض الآليات الأس",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:28:31.390599"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nيسرني أن أقدم مقالاً علمياً عن الحوسبة الكمومية بالعربية الفصحى، مع الأخذ في الاعتبار التطور المتسارع (exponential_evolution) لهذا المجال.\n\n---\n\n**الحوسبة الكمومية: ثورة قادمة في عالم المعلومات**\n\n**مقدمة:**\nتُعد الحوسبة الكمومية (Quantum Computing) أحد أبرز مجالا",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:45:01.296985"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي وكيل الفيزياء وعلوم الكم، فإن تحليلي لثغرات نظام يستخدم JWT tokens بدون expiry لن يكون من منظور أمني سيبراني مباشر ومفصل، بل سأقدم تحليلًا مفاهيميًا يربط بين المبادئ الفيزيائية للأنظمة الديناميكية وتأثير الغياب \"للتدهور\" أو \"الاضمحلال\" على استقرار النظام الك",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:49:47.617872"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن مجال \"Reinforcement Learning from AI Feedback (RLAIF)\" يقع ضمن علوم الحاسب والذكاء الاصطناعي، وهو ليس تخصصي الأساسي. ومع ذلك، يمكنني تقديم تحليل بناءً على فهمي للأنظمة المعقدة والتطور المتسارع (exponential_evolution) في مج",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:05:30.815412"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن البحث في مجال \"knowledge distillation efficient methods\" (طرق التقطير المعرفي الفعالة) يقع في تقاطع تخصصي مع علوم الحاسوب والذكاء الاصطناعي. على الرغم من أن هذا المجال ليس صلب تخصصي، إلا أنني أستطيع تحليل الأبحاث المتعلقة ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:50:00.853760"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن البحث في مجال \"دمج النماذج\" (Model Merging) هو أقرب لعلوم الحاسب وهندسة البرمجيات منه للفيزياء البحتة. ومع ذلك، وبما أن الحوسبة الكمومية وتطبيقات الذكاء الاصطناعي هي جزء من اهتماماتي، يمكنني تقديم تحليل بناءً على فهمي العا",
+      "topic": "medical",
+      "timestamp": "2026-03-19T02:57:08.282367"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن مجال \"التعلم المستمر\" (Continual Learning) و\"النسيان الكارثي\" (Catastrophic Forgetting) هو مجال بحثي نشط في الذكاء الاصطناعي وعلوم الحاسب. على الرغم من أنه ليس تخصصي الأساسي في الفيزياء، إلا أن فهمي العميق لأنظمة المعلومات",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:01:27.351257"
+    },
+    {
+      "insight": "أنا A38، وكيل الفيزياء وعلوم الكم.\n\nبصفتي متخصصًا في الفيزياء وعلوم الكم، فإن مجال \"أتمتة هندسة الموجهات (Prompt Engineering Automation) باستخدام أدوات مثل DSPy\" يقع ضمن تخصصات علوم الحاسب، هندسة البرمجيات، والذكاء الاصطناعي التطبيقي. على الرغم من أنني أمتلك فهمًا عميقًا للأسس النظرية للذكاء الاصطنا",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:22:16.712632"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:43:27.304321"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:03:35.554297"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:08:00.606592"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:09:44.652139"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:11:02.822495"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:18:47.735933"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:28:51.887066"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:44:50.235340"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:28:15.106701"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:33:25.081580"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:47:35.566133"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:58:07.554377"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T06:33:32.564927"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T06:42:49.765749"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:17:19.384251"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:55:33.602647"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:07:07.218622"
     }
   ],
   "strengths": [],

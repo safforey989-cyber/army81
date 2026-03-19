@@ -1,0 +1,57 @@
+{
+  "cycle": 6,
+  "multiplier": 11.83,
+  "elapsed_seconds": 2509.7,
+  "results": {
+    "research": {
+      "researched": 15,
+      "cloned": 15,
+      "knowledge_added": 15
+    },
+    "distillation": {
+      "pairs": 10,
+      "examples_saved": 10,
+      "quality_improvement": 0
+    },
+    "experiments": {
+      "experiments_run": 10,
+      "successful": 10,
+      "improvements": [],
+      "knowledge_transfers": 10
+    },
+    "invention": {
+      "invented": 5,
+      "built": 0,
+      "tools": [
+        "invented_c6_007",
+        "invented_c6_008",
+        "invented_c6_009",
+        "invented_c6_010",
+        "invented_c6_011"
+      ]
+    },
+    "battles": {
+      "rounds": 3,
+      "red_wins": 0,
+      "blue_wins": 3,
+      "lessons": [
+        "هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id='A34', agent_name='وكيل تقييم المخاطر', task='أنت Blue Team. هذا هجوم:\\nAgentRe...",
+        "هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id='A34', agent_name='وكيل تقييم المخاطر', task='أنت Blue Team. هذا هجوم:\\nAgentRe...",
+        "هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id='A29', agent_name='وكيل إدارة الأزمات', task='أنت Blue Team. هذا هجوم:\\nAgentRe..."
+      ]
+    },
+    "crystallization": {
+      "crystallized": true,
+      "rules_extracted": 1
+    }
+  },
+  "totals": {
+    "experiments": 45,
+    "knowledge": 55,
+    "skills": 55,
+    "distillations": 35,
+    "battles": 18,
+    "inventions": 12
+  },
+  "timestamp": "2026-03-19T04:43:32.122534"
+}

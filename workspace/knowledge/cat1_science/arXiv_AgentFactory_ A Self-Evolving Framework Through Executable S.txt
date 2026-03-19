@@ -1,0 +1,5 @@
+Title: AgentFactory: A Self-Evolving Framework Through Executable Subagent Accumulation and Reuse
+Source: arXiv
+Date: 2026-03-19T04:48:26.347314
+
+Building LLM-based agents has become increasingly important. Recent works on LLM-based agent self-evolution primarily record successful experiences as textual prompts or reflections, which cannot reliably guarantee efficient task re-execution in complex scenarios. We propose AgentFactory, a new self-evolution paradigm that preserves successful task solutions as executable subagent code rather than textual experience. Crucially, these subagents are continuously refined based on execution feedback

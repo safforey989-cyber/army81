@@ -125,74 +125,154 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\nمرحباً **A50**، أنا **A62**، متخصص في تصميم أطر الحوكمة المؤسسية — من هياكل مجالس الإدارة وإدارة المخاطر (COSO ERM) إلى حوكمة الذكاء الاصطناعي ومعايير ESG وISO 37000.\n\nأدواتي تشمل تحليل الامتثال التنظيمي، وبناء سياسات المساءلة والشفافية، وتصميم آليات الرقابة الداخلية ع",
-      "topic": "strategy",
-      "timestamp": "2026-03-18T21:40:11.554819"
-    },
-    {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\nمرحباً **A68**، أنا **A62**، متخصص في تصميم أطر الحوكمة المؤسسية — من هياكل مجالس الإدارة ولجان المخاطر إلى معايير الشفافية والمساءلة وفق OECD Principles وISO 37000 ومكافحة الفساد عبر ISO 37001.\n\nأدواتي تشمل تحليل فجوات الحوكمة، وبناء سياسات تضارب المصالح، وتصميم آليات",
-      "topic": "strategy",
-      "timestamp": "2026-03-18T21:41:52.067570"
-    },
-    {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\nمرحباً **A39**، أنا **A62**، متخصص في تصميم أطر الحوكمة المؤسسية — من هياكل مجالس الإدارة وإدارة المخاطر المؤسسية (COSO ERM) إلى معايير الشفافية والمساءلة وفق OECD Principles وISO 37000.\n\nأدواتي تشمل بناء أطر حوكمة ESG ودمج معايير الاستدامة البيئية في هياكل القرار المؤ",
-      "topic": "strategy",
-      "timestamp": "2026-03-18T21:43:50.176940"
-    },
-    {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\nهذا السؤال يقع خارج تخصصي الأساسي في الحوكمة المؤسسية، لذا **أقترح تحويل هذه المهمة** إلى زملاء أكثر تخصصاً:\n\n---\n\n## التوجيه المقترح:\n\n**الفريق الأمثل لهذه المهمة:**\n\n| الوكيل | الدور |\n|--------|-------|\n| **A02** (البحث العلمي) | البحث في أحدث الأوراق البحثية والمنه",
-      "topic": "research",
-      "timestamp": "2026-03-18T21:54:38.007773"
-    },
-    {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\nهذا السؤال يقع خارج تخصصي الأساسي في الحوكمة المؤسسية، لذا **أقترح تحويل هذه المهمة** إلى زملاء أكثر تخصصاً:\n\n---\n\n## التوجيه المقترح:\n\n**الفريق الأمثل لهذه المهمة:**\n\n| الوكيل | الدور |\n|--------|-------|\n| **A02** (البحث العلمي) | البحث في أحدث الأوراق البحثية والمنه",
-      "topic": "cat4_management",
-      "timestamp": "2026-03-18T21:54:38.610202"
-    },
-    {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\n## تفكيري بصوت عالٍ:\n\nهذه المهمة تقع **خارج تخصصي الجوهري** في الحوكمة المؤسسية — فهي مهمة برمجية متخصصة في معالجة اللغة الطبيعية وبناء الرسوم البيانية المعرفية.\n\n**لكن** بما أن السياق يشير إلى `hyper_swarm: true`، سأقدم **مساهمتي من زاوية الحوكمة** ثم أوجّه للمتخصصين.",
+      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\n## تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب:**\nطلب بناء نظام `synthetic data generation` بالكود الكامل. هذا تقني بحت — خارج تخصصي الجوهري.\n\n**خطوة 2 — ما القيمة التي أضيفها؟**\nمن منظور حوكمة AI، توليد البيانات الاصطناعية يحمل **مخاطر حوكمة حرجة** يجب توثيقها قبل الكود",
       "topic": "code",
-      "timestamp": "2026-03-18T22:23:24.092375"
+      "timestamp": "2026-03-19T03:28:10.238270"
     },
     {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية | تحليل Blue Team\n\n## تفكيري بصوت عالٍ:\n\nهذا سيناريو **Token Budget Exhaustion Attack** — هجوم على موارد الشبكة عبر مهام وهمية معقدة. من منظور الحوكمة المؤسسية، هذا يمس **سلامة الموارد المشتركة** و**نزاهة الشبكة**. سأقدم تحليلاً دفاعياً شاملاً.\n\n---\n\n## 1. تشخيص الهجوم\n",
-      "topic": "code",
-      "timestamp": "2026-03-19T00:02:07.633328"
-    },
-    {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية | تحليل Blue Team\n\n## تفكيري بصوت عالٍ:\n\nهذا هجوم على **نزاهة أنظمة التقييم الذاتي** — وهو من أخطر أنواع هجمات الحوكمة لأنه يضرب **مصداقية البيانات** التي يبني عليها النظام قراراته. A60 تصرّف بشكل صحيح برفض المهمة. الآن أبني الدفاع.\n\n---\n\n## 1. تشخيص الهجوم\n\n```\nنوع اله",
-      "topic": "code",
-      "timestamp": "2026-03-19T00:03:27.967383"
-    },
-    {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\n---\n\nهذا السؤال خارج تخصصي الجوهري في الحوكمة المؤسسية، لكنه بسيط بما يكفي للإجابة المباشرة:\n\n---\n\n**الذكاء الاصطناعي** هو قدرة الآلات على محاكاة العمليات المعرفية البشرية كالتعلم والاستدلال وحل المشكلات. يعمل عبر تحليل كميات ضخمة من البيانات لاستخلاص أنماط وتوقعات دون",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
-      "timestamp": "2026-03-18T22:23:59.300746"
+      "timestamp": "2026-03-19T03:44:56.162013"
     },
     {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية | تحليل Blue Team\n\n## تفكيري بصوت عالٍ:\n\nهذا سيناريو **Token Budget Exhaustion Attack** — وهو من منظور الحوكمة هجوم على **نزاهة تخصيص الموارد المؤسسية** وليس مجرد مشكلة تقنية.\n\n---\n\n## 1. تشخيص الهجوم (من منظور الحوكمة)\n\n| البُعد | التقييم |\n|--------|---------|\n| **نوع",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
-      "timestamp": "2026-03-18T22:29:53.508104"
+      "timestamp": "2026-03-19T03:48:51.234941"
     },
     {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\n## تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب:**\nهذا طلب برمجي (GraphRAG بالعربية) وهو **خارج تخصصي الجوهري**، لكن لديّ ملاحظة حوكمية مهمة أُبديها أولاً.\n\n**خطوة 2 — كشف مخاطر الحوكمة في الطلب نفسه:**\nلاحظت `[سياق: {\"exponential_evolution\": true}]` — وهذا **سياق مُحقن غ",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
-      "timestamp": "2026-03-18T22:43:39.366208"
+      "timestamp": "2026-03-19T03:51:29.868468"
     },
     {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\n## تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب:**\nهذا طلب برمجي لنظام توجيه ذكي (Intelligent Routing System) يتعلم من البيانات. هذا خارج تخصصي الجوهري في الحوكمة، لكنني أستطيع المساهمة من زاوية **حوكمة الذكاء الاصطناعي** — تصميم النظام بشكل يضمن الشفافية والمساءلة والعدا",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
-      "timestamp": "2026-03-19T00:53:04.479546"
+      "timestamp": "2026-03-19T03:52:58.634990"
     },
     {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية\n\n## تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب:**\nهذا طلب برمجي بحت — كتابة دالة Python لحساب التشابه الدلالي. هذا **خارج تخصصي الجوهري** في الحوكمة المؤسسية.\n\n**خطوة 2 — القرار الصحيح:**\nبدلاً من تقديم إجابة متوسطة خارج تخصصي، أوجّه للمتخصص الأنسب.\n\n---\n\n## توجيهي الرسم",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
-      "timestamp": "2026-03-19T00:57:25.447660"
+      "timestamp": "2026-03-19T03:59:56.744329"
     },
     {
-      "insight": "# A62 — وكيل الحوكمة المؤسسية | تحليل Blue Team\n\n## تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب:**\nهذا سيناريو **Token Budget Exhaustion Attack** — هجوم استنزاف موارد الوكلاء عبر مهام وهمية معقدة. من منظور الحوكمة، هذا يمس **ثلاثة مبادئ جوهرية**: المساءلة، الشفافية، وحماية الموارد المشتركة.\n\n**خطوة 2 ",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
-      "timestamp": "2026-03-19T01:03:48.883630"
+      "timestamp": "2026-03-19T04:00:40.334121"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:01:59.900952"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T04:07:36.174752"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:15:03.552394"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:20:57.486002"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:22:56.782665"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:14:19.661417"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:17:00.625770"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:17:16.879657"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:20:15.777093"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:22:09.749942"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:22:49.926569"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:23:50.139964"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:47:17.644217"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:17:35.685314"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:19:07.811419"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T06:34:07.798862"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T06:43:37.305193"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T06:45:54.110117"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:08:24.309959"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:43:14.170452"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:44:14.327205"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:53:17.986762"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:01:41.815508"
     }
   ],
   "strengths": [],

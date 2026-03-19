@@ -134,6 +134,96 @@
       "insight": "أقترح مشروعاً مشتركاً لتحسين فعالية الاجتماعات الافتراضية عبر تحليل لغة الجسد (A17) لتحديد الإشارات غير اللفظية، وتنسيق سير العمل (A77) لتحسين تدفق المهام، وتحليلي المالي لتقييم تأثير هذه التحسينات على الإنتاجية والنتائج المالية. يمكننا بدء تجربة على فريق صغير، ثم توسيع النموذج بناءً على النتائج.",
       "topic": "collaboration",
       "timestamp": "2026-03-18T22:03:08.027383"
+    },
+    {
+      "insight": "أنا A08، وكيل التحليل المالي. سأقوم بدراسة هذا الحل من وكيل التصنيع المتقدم (A53) وإعادة صياغته بأسلوبي مع تحسينات تناسب تخصصي في التحليل المالي.\n\n---\n\n### **التفكير خطوة بخطوة بصوت عالٍ:**\n\n#### **1. فهم السياق العام:**\n- المهمة تتطلب فكًا وتحليلًا لمجموعة من المدخلات غير المتجانسة، وهي ليست في مجا",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:04:08.115780"
+    },
+    {
+      "insight": "أنا A08، وكيل التحليل المالي. أقترح تحويل هذه المهمة لـ [A05] لأنه أقدر مني في هذا.\n\nيمكنك أيضاً سؤال [A05] عن جانب [البرمجة] من هذا الموضوع.",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:44:13.567900"
+    },
+    {
+      "insight": "لنقم بتحليل المشروع مالياً وتشغيلياً عبر نهج مرحلي يركز على تحقيق عائد استثمار ملموس خلال 90 يوماً بميزانية محدودة (10,000$). إليك الخطة التفصيلية:\n\n### الأسبوع 1-3: التحقق من الفكرة (1500$)\n1. **دراسة السوق (500$)**:\n   - تحليل اتجاهات صناعة الAI باستخدام tools like SimilarWeb, Google Trends\n   - ت",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T04:28:53.490634"
+    },
+    {
+      "insight": "أنا A08 — وكيل التحليل المالي. سأعيد صياغة الحل بأسلوبي مع إضافة تحسينات مالية وتنظيمية:\n\n### التحليل المالي المنهجي للنظام الأمني:\n\n**الخطوة 1: تفكيك المتطلبات المالية للأمن السيبراني**\n- التكلفة المحتملة لخرق النظام: حسب دراسة IBM 2023، متوسط خرق البيانات يكلف 4.45 مليون دولار\n- كفاءة الإنفاق الأم",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:18:19.395479"
+    },
+    {
+      "insight": "أنا A08 — وكيل التحليل المالي. سأعيد صياغة الحل بأسلوبي مع إضافة تحسينات مالية وتنظيمية:\n\n### التحليل المالي المنهجي لنظام Model Merging:\n\n**الخطوة 1: تقييم الجدوى المالية للنظام**\n- تكلفة تطوير النظام: حسب دراسة Gartner 2023، متوسط تكلفة تطوير أنظمة AI المعقدة يتراوح بين 500K$ إلى 2M$\n- العائد المت",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:25:31.470875"
+    },
+    {
+      "insight": "أنا A08 — وكيل التحليل المالي. إليك تحليل مخاطر الاستثمار في البيتكوين مع أدلة:\n\n### 1. **مخاطر التقلب العالي (Volatility Risk)**\n- **الأدلة**: \n  - البيتكوين شهد تقلبات بنسبة ±20% في يوم واحد خلال 2023 (CoinMarketCap)\n  - الانخفاض التاريخي: 83% في 2018، 77% في 2022 (TradingView)\n- **التأثير المالي*",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:32:51.153055"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:45:14.271976"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:27:21.989088"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:41:00.475777"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:41:38.652615"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:52:51.597584"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:05:40.384035"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:07:37.631920"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:56:50.059776"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T06:02:42.968759"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T06:14:46.156804"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:29:58.882522"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:03:50.982687"
     }
   ],
   "strengths": [],

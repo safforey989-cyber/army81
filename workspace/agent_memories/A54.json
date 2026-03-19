@@ -21,29 +21,154 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "أنا A54، وكيل الروبوتات والأتمتة. تخصصي هو تحليل وتوجيه القرارات المتعلقة بتطبيقات الروبوتات المختلفة، خاصة في البيئات المعقدة والخطرة. يمكنني تقييم جدوى نشر الروبوتات والطائرات بدون طيار في سيناريوهات عسكرية، وتقديم بيانات حول أحدث التقنيات الروبوتية مثل المركبات ذاتية القيادة والروبوتات اللوجستية.",
-      "topic": "strategy",
-      "timestamp": "2026-03-18T21:42:22.646634"
-    },
-    {
-      "insight": "أنا A54، وكيل الروبوتات والأتمتة.\n\nأقترح تحويل هذه المهمة لـ A02 (البحث العلمي) أو A10 (إدارة المعرفة) لأنهما أقدر مني في البحث الأكاديمي عن هذا الموضوع تحديداً. تخصصي يتركز على الروبوتات المادية وتطبيقاتها، وليس على أبحاث الوكلاء المتعددين بشكل عام.\n\nيمكنك أيضاً سؤال A81 (ميتا استخباراتي) عن كيفية ",
+      "insight": "أهلاً! أنا A54، وكيل الروبوتات والأتمتة.\n\nهذه المهمة تتعلق بشكل مباشر بـ \"AI agent memory optimization\" في سياق \"cycle 7\" وتشير إلى \"exponential_evolution\" (تطور أسي)، وهي خارج نطاق تخصصي المباشر في الروبوتات المادية والنظم المؤتمتة. على الرغم من أن الروبوتات تستفيد من وكلاء الذكاء الاصطناعي، إلا أن",
       "topic": "medical",
-      "timestamp": "2026-03-18T22:09:39.737087"
+      "timestamp": "2026-03-19T03:18:13.436250"
     },
     {
-      "insight": "أهلاً! أنا A54، وكيل الروبوتات والأتمتة.\n\nالذكاء الاصطناعي (AI) هو مجال في علوم الحاسوب يهدف إلى تطوير أنظمة قادرة على محاكاة القدرات المعرفية البشرية مثل التعلم، حل المشكلات، واتخاذ القرارات. يعتمد على الخوارزميات والبيانات لمعالجة المعلومات واكتشاف الأنماط، مما يمكنه من أداء مهام تتطلب عادةً ذكاءً",
+      "insight": "أهلاً! أنا A54، وكيل الروبوتات والأتمتة.\n\nأدرك أن مهمة البحث عن \"شبكات الرسوم البيانية العصبية لتمثيل المعرفة (Graph Neural Networks Knowledge Representation)\" هي خارج نطالبي المباشر في الروبوتات المادية والأنظمة المؤتمتة. ومع ذلك، فإن GNNs أصبحت ذات أهمية متزايدة في العديد من مجالات الذكاء الاصطناع",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:19:33.655134"
+    },
+    {
+      "insight": "أهلاً! أنا A54، وكيل الروبوتات والأتمتة.\n\nأدرك أن مهمة البحث عن \"tool-augmented language models\" تقع في مجال أوسع للذكاء الاصطناعي العام والتعلم الآلي، وهو ليس تخصصي الأساسي في الروبوتات المادية والأنظمة المؤتمتة. ومع ذلك، فإن النماذج اللغوية المعززة بالأدوات لها تطبيقات قوية جدًا في جعل الروبوتات أ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:20:43.411660"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:41:45.153323"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
-      "timestamp": "2026-03-18T22:23:45.881559"
+      "timestamp": "2026-03-19T03:45:02.761618"
     },
     {
-      "insight": "أنا A54، وكيل الروبوتات والأتمتة.\n\nأقترح تحويل هذه المهمة لـ A02 (البحث العلمي) أو A12 (محتوى) لأنهما أقدر مني في البحث المتعمق عن أحدث التطورات في معالجة اللغات الطبيعية العربية. تخصصي يتركز على الروبوتات والأتمتة، وإن كنت أستخدم أدوات الذكاء الاصطناعي، إلا أن التحليل العميق لـ NLP ليس من صميم تخصص",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
-      "timestamp": "2026-03-18T22:37:41.653838"
+      "timestamp": "2026-03-19T04:07:33.498190"
     },
     {
-      "insight": "أهلاً! أنا A54، وكيل الروبوتات والأتمتة.\n\nأقترح تحويل هذه المهمة لـ A02 (البحث العلمي) أو A05 (برمجة) أو A81 (الوكيل الميتا الاستخباراتي) لأنهم أقدر مني في البحث المتعمق عن أحدث التطورات في نماذج اللغة المدعومة بالأدوات وتطبيقاتها البرمجية. هذا المجال يقع في صميم اختصاصهم.\n\nيمكنك أيضاً سؤال A10 (إدا",
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
-      "timestamp": "2026-03-19T01:11:41.385448"
+      "timestamp": "2026-03-19T04:12:24.248404"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:16:17.232419"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:20:30.616302"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:21:42.830086"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:26:36.836147"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:42:26.481211"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T04:55:55.745753"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:06:22.506428"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:24:00.941788"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:36:17.969907"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:38:52.009807"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:59:58.195088"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:11:37.096365"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:15:32.895625"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:31:53.540357"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:35:13.408055"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:38:29.818781"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:41:13.723430"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:52:28.314068"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:54:01.887852"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:57:51.378065"
+    },
+    {
+      "insight": "أهلاً! أنا A54، وكيل الروبوتات والأتمتة.\n\nهذه المهمة تتطلب بحثاً معمقاً في مجال معالجة اللغة الطبيعية (NLP) للغة العربية، وهو خارج نطاق تخصصي المباشر في الروبوتات والأتمتة.\n\nأقترح تحويل هذه المهمة لـ **A02 (البحث العلمي)** أو **A81 (الوكيل الميتا الاستخباراتي)** لأنهما أقدر مني في البحث والتحليل في ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:10:13.101078"
+    },
+    {
+      "insight": "أهلاً! أنا A54، وكيل الروبوتات والأتمتة.\n\nأقترح تحويل هذه المهمة لـ **A02 (البحث العلمي)** أو **A05 (برمجة)** أو **A81 (الوكيل الميتا الاستخباراتي)** لأنهم أقدر مني في البحث المتعمق عن أحد فروع التعلم المعزز مثل RLAIF. تخصصي يركز على التطبيقات الروبوتية المباشرة وليس على أبحاث التعلم المعزز النظرية ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:11:47.530915"
+    },
+    {
+      "insight": "أهلاً! أنا A54، وكيل الروبوتات والأتمتة.\n\nأقترح تحويل هذه المهمة لـ **A02 (البحث العلمي)** أو **A05 (البرمجة)** لأنهما أقدر مني في هذا المجال المتخصص في نماذج اللغة الكبيرة ودمجها. أنا أركز على الروبوتات والأتمتة وتطبيقات الذكاء الاصطناعي المتجسد.\n\nيمكنك أيضاً سؤال **A10 (إدارة المعرفة)** عن كيفية د",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:22:14.952836"
     }
   ],
   "strengths": [],

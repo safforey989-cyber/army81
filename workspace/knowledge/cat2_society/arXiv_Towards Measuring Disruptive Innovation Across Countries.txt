@@ -1,0 +1,5 @@
+Title: Towards Measuring Disruptive Innovation Across Countries
+Source: arXiv
+Date: 2026-03-19T04:48:52.601227
+
+The CD index is a widely used measure of disruptive inventions. Most studies compute it using USPTO data. This creates a puzzle because the US appears less disruptive than European and Asian countries. We show that this largely stems from missing international citations. Using a global citation network, we quantify and correct this bias. The disruptiveness advantage of non-US inventors drops by 64% to 148% of the US baseline mean. The US emerges as a disruption leader over Europe, with Asia's ad

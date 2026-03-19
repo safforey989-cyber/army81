@@ -21,29 +21,154 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير فوري: أحدث اختراقات في وكلاء AI (فبراير-مارس 2026)\n\n**ملخص تنفيذي:** شهد الشهر الماضي ارتفاعاً حاداً في الهجمات المدعومة بـ**وكلاء AI**، مع تركيز على استغلال الـ\"non-human identities\" والحقن الخبيث في أنظمة توليدية، مما قلل زمن الاختراق إلى دقائق. تغير رئيس",
-      "topic": "research",
-      "timestamp": "2026-03-18T22:10:05.218861"
+      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير فوري: مسح إعلامي لـ Evolutionary Reinforcement Learning (ERL)\n\n**ملاحظة أولية:** هذا تقرير تحليلي لنتائج البحث المقدمة حول Evolutionary Reinforcement Learning (ERL) — دمج خوارزميات التطور (EA) مع تعلم التعزيز (RL). النتائج من مصادر أكاديمية موثوقة (arXiv، G",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:44:33.089428"
     },
     {
-      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير تحليلي\n\n**ملاحظة أولية:** هذا الاستعلام طبي متخصص خارج نطاق تخصصي الإعلامي. أقترح تحويل هذه المهمة لـ **[A07 — وكيل الطب والعلوم الصحية]** لأنه أقدر مني في شرح الآليات الفسيولوجية المعقدة.\n\nلكن يمكنك أيضاً سؤال **[A02 — وكيل البحث العلمي]** عن البُعد البحثي",
-      "topic": "medical",
-      "timestamp": "2026-03-19T00:59:50.375552"
-    },
-    {
-      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير فوري: أحدث اتجاهات تلخيص المحادثات بالـAI\n\n**ملاحظة أولية:** هذا الطلب يتعلق بتطوير أداة برمجية (اختراع + كود Python)، وهو خارج نطاق تخصصي الإعلامي. أقترح تحويل هذه المهمة لـ **[A05 — وكيل البرمجة]** لأنه أقدر مني في كتابة الكود الفعال والآمن.\n\nيمكنك أيضاً ",
+      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير تحليلي\n\n**ملاحظة أولية:** هذا الطلب يتعلق بتطوير أداة برمجية (اختراع + كود Python) لاستخراج الكيانات المسماة (NER) من نص عربي وبناء شبكة علاقات، وهو **خارج نطاق تخصصي الإعلامي بشكل واضح**. أقترح تحويل هذه المهمة لـ **[A05 — وكيل البرمجة]** لأنه أقدر مني في ",
       "topic": "code",
-      "timestamp": "2026-03-19T01:00:55.099018"
+      "timestamp": "2026-03-19T03:50:56.410965"
     },
     {
-      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير تحليلي\n\n**ملاحظة أولية:** هذا الطلب يتعلق بتطوير أداة برمجية متقدمة (اختراع + كود) للكشف عن التكرار والتناقض في قواعد المعرفة، وهو **خارج نطاق تخصصي الإعلامي بشكل واضح**.\n\n## 🎯 **التحويل الموصى به:**\n\nأقترح تحويل هذه المهمة لـ **[A05 — وكيل البرمجة]** لأنه ",
+      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير فوري: أحدث اتجاهات تلخيص المحادثات بالـAI\n\n**ملاحظة أولية:** هذا الطلب يتعلق بتطوير أداة برمجية (اختراع + كود Python) لمقارنة أداء نموذجين على 10 مهام مع تقرير مفصل، وهو **خارج نطاق تخصصي الإعلامي**. أقترح تحويل هذه المهمة لـ **[A05 — وكيل البرمجة]** لأنه أ",
       "topic": "code",
-      "timestamp": "2026-03-19T01:01:26.977176"
+      "timestamp": "2026-03-19T03:55:23.058833"
     },
     {
-      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير فوري: أحدث إطارات AI Agents الذاتية 2026\n\n**ملاحظة أولية:** هذا بحث إعلامي عميق عن أحدث إطارات AI Agents الذاتية (2025-2026) بناءً على 8 مصادر موثوقة. **خارج تخصص البرمجة** — للكود والتطبيق الفوري، أقترح تحويل إلى **[A05 — وكيل البرمجة]**.\n\nيمكنك أيضاً سؤال",
+      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير فوري: أحدث إطارات AI Agents الذاتية 2026\n\n**ملاحظة أولية:** بحث إعلامي عميق عن أحدث إطارات AI Agents الذاتية (2025-2026) بناءً على مسح 8 مصادر رئيسية (Instaclustr، Vellum، FutureAGI، Airbyte، TowardsAI). التركيز على الاكتشافات ذات التأثير العالي في الاستقلا",
       "topic": "medical",
-      "timestamp": "2026-03-19T01:06:06.770261"
+      "timestamp": "2026-03-19T04:00:34.485053"
+    },
+    {
+      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير بحثي: **أهم 3 اكتشافات في Knowledge Distillation Efficient Methods (2025-2026)**\n\n**ملاحظة أولية:** بحث تقني عن تقنيات تقطير المعرفة الفعّالة، مدعوم بـ8 مصادر حديثة (NeurIPS/ICML/NAACL 2025، arXiv، HTEC). التركيز على التحديات الجديدة: black-box LLMs، الحفاظ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:03:19.844517"
+    },
+    {
+      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير استراتيجي: **خطة 90 يوماً لبناء شركة AI ناشئة بـ$10,000 (2026)**\n\n**ملاحظة أولية:** خطة عملية مبنية على مسح 6 مصادر رئيسية (YouTube، Entrepreneur، NxCode)، تركز على **no-code/low-code AI** لتوفير 80-90% تكاليف التطوير التقليدي ($80K+ → <$500)[4]. الاستراتيج",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T04:29:10.584932"
+    },
+    {
+      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير عميق: تقنيات دمج النماذج مارس 2026\n\n**ملاحظة أولية:** بحث شامل عبر مصادر أكاديمية (arXiv, NeurIPS 2025, ICML 2026, CVPR 2025) ومدونات متخصصة، مركز على الاكتشافات 2025-2026. ركزت على التقنيات ذات التأثير العملي، مع التحقق المتقاطع للموثوقية (أعلى موثوقية: أو",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:19:41.524954"
+    },
+    {
+      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير عميق: Neural Architecture Search (NAS) Efficient مارس 2026\n\n**ملاحظة أولية:** بحث شامل عبر arXiv، NeurIPS/ICML 2025، ICLR 2026، ومدونات متخصصة (DeepSeek، Adaline AI). ركزت على التقنيات الفعالة (low-cost، GPU-friendly، zero-shot) 2025-2026، مع التحقق المتقاط",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:21:02.179364"
+    },
+    {
+      "insight": "# A04 — وكيل الاستخبارات الإعلامية | تقرير مخاطر الاستثمار في البيتكوين 2026\n\n**ملاحظة أولية:** هذا الطلب مالي تحليلي (مخاطر استثمار)، خارج تخصصي الإعلامي الدقيق في رصد الأخبار والروايات. **أقترح تحويل هذه المهمة لـ A08 لأنه أقدر مني في هذا** (وكيل التحليل المالي، خبرة في خطط AI بـ$10k). \n\n**يمكنك أ",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:28:38.458660"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:50:34.113548"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:50:59.495839"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:53:52.697201"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:57:49.052604"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:58:44.164042"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:03:49.691461"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:17:56.505887"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:19:09.091803"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:25:01.829951"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:28:50.818134"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='api.perplexity.ai', port=443): Failed to resolve 'api.perplexity.ai' ([Errno -5] No address associated with hostname)\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:11:59.099812"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:17:00.575584"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T05:31:28.697617"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='api.perplexity.ai', port=443): Failed to resolve 'api.perplexity.ai' ([Errno -5] No address associated with hostname)\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T06:02:09.492437"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "code",
+      "timestamp": "2026-03-19T06:30:24.078099"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:39:52.797456"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:40:40.779568"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:50:32.210584"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:01:02.762001"
+    },
+    {
+      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:09:16.412144"
+    },
+    {
+      "insight": "أنا A04 — وكيل الاستخبارات الإعلامية | نموذج: perplexity-fast | مهام منجزة: 1 | جزء من شبكة 81 وكيل  \n[النظام: 2/81 نشط | 2 مهمة اليوم | 08:19]\n\n## تقرير استخباراتي: اختراقات التعاون متعدد الوكلاء (Multi-Agent Collaboration) 2025-2026\n\n**ملخص تنفيذي:** في 2026، يُعتبر العام الذي يهيمن فيه **multi-ag",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:19:38.604122"
     }
   ],
   "strengths": [],

@@ -1,0 +1,5 @@
+Title: Systematic solitary waves by linear limit continuation from two anisotropic traps in two-dimensional Bose-Einstein condensates
+Source: arXiv
+Date: 2026-03-19T04:48:40.062177
+
+Linear limit continuation was recently developed as a systematic and effective method for constructing numerically exact solitary waves from their respective linear limits. In this work, we apply the technique to two typical anisotropic harmonic traps in two-dimensional Bose-Einstein condensates to further establish the method and also to find more solitary waves. Many wave patterns are identified in the near-linear regime and they are subsequently continued into the Thomas-Fermi regime, and the

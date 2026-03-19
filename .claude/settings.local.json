@@ -80,7 +80,24 @@
       "Bash(tasklist)",
       "Bash(curl.exe -s https://api.telegram.org/bot8578999841:AAF-8rTH4oqo4yJLfq0uGqbFjprmJYFyOGE/getMe)",
       "Bash(ls -lt workspace/exponential_evolution/*.json)",
-      "Bash(ls -lt workspace/experiments/*.json)"
+      "Bash(ls -lt workspace/experiments/*.json)",
+      "Bash(python -c \"import json,sys; print\\(json.dumps\\(json.load\\(sys.stdin\\),indent=2,ensure_ascii=False\\)[:800]\\)\")",
+      "Bash(curl.exe -s http://localhost:8181/memory/stats)",
+      "Bash(python -c \"import json,sys; print\\(json.dumps\\(json.load\\(sys.stdin\\),indent=2,ensure_ascii=False\\)[:500]\\)\")",
+      "Bash(curl.exe -s http://localhost:8181/evolution/stats)",
+      "Bash(python -c \"import json,sys; print\\(json.dumps\\(json.load\\(sys.stdin\\),indent=2,ensure_ascii=False\\)[:600]\\)\")",
+      "Bash(python -c \"import json,sys; print\\(json.dumps\\(json.load\\(sys.stdin\\),indent=2,ensure_ascii=False\\)[:400]\\)\")",
+      "Bash(curl.exe -s http://localhost:8181/network/health)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Active: {d.get\\(\"\"active\"\"\\)}, Events: {d.get\\(\"\"total_events\"\"\\)}''''\\)\")",
+      "Bash(tasklist /FI \"IMAGENAME eq python.exe\" /FO TABLE)",
+      "Bash(curl.exe -s http://localhost:8181/swarm/events?since=0)",
+      "Bash(taskkill //PID 40260 //F)",
+      "Bash(findstr :8181.*LISTEN)",
+      "Bash(curl.exe -s http://localhost:8181/agents)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Agents: {len\\(d.get\\(\"\"agents\"\",[]\\)\\)}''''\\); print\\(json.dumps\\(d.get\\(''''agents'''',[]\\)[0],indent=2,ensure_ascii=False\\)[:300]\\)\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); evts=d.get\\(''''events'''',[]\\); print\\(f''''Events: {len\\(evts\\)}''''\\); [print\\(f''''  {e[\"\"event_type\"\"]:20s} {e[\"\"from_agent\"\"]:6s}''''\\) for e in evts[-5:]]\")",
+      "Bash(curl.exe -s --connect-timeout 3 http://localhost:8181/health)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d,indent=2,ensure_ascii=False\\)\\)\")"
     ]
   }
 }

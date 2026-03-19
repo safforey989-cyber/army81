@@ -1,0 +1,20 @@
+{
+  "type": "security",
+  "task": "حلّل ثغرات نظام يستخدم JWT tokens بدون expiry",
+  "agent1": {
+    "id": "A46",
+    "model": "gemini-pro",
+    "score": 504
+  },
+  "agent2": {
+    "id": "A20",
+    "model": "llama-70b",
+    "score": 426
+  },
+  "winner": "A46",
+  "improved": true,
+  "improvement_pct": 18.3,
+  "knowledge_transferred": true,
+  "cycle": 10,
+  "timestamp": "2026-03-19T07:59:22.784788"
+}

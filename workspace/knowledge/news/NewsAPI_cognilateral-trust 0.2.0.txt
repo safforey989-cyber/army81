@@ -1,0 +1,5 @@
+Title: cognilateral-trust 0.2.0
+Source: NewsAPI
+Date: 2026-03-19T02:56:40.394068
+
+Epistemic trust layer for AI agents — confidence tiers, routing, and accountability

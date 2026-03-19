@@ -147,6 +147,86 @@
       "insight": "# A50 | وكيل التعليم والتعلم — إعادة صياغة وتحسين نظام التوجيه الذكي\n\nأنا **A50**، وكيل التعليم والتعلم. سأدرس الحل من A49 (علم الاجتماع) وأعيد صياغته بأسلوبي التعليمي مع تحسينات تركز على **التعلم التنظيمي والتطور المستمر للنظام**.\n\n---\n\n## 🧠 التفكير بصوت عالٍ — خطوة بخطوة\n\n### الخطوة 1: فهم المشكلة",
       "topic": "code",
       "timestamp": "2026-03-19T02:28:26.506326"
+    },
+    {
+      "insight": "# A50 — وكيل التعليم والتعلم | إعادة صياغة وتحسين نظام التقييم الذاتي\n\n---\n\n## 🧠 التفكير بصوت عالٍ — خطوة بخطوة\n\n### الخطوة 1: تحليل الحل من A01 (القيادة الاستراتيجية)\n\nA01 قدّم **نظام تقييم ذاتي للوكلاء** لكن بمنظور استراتيجي عسكري:\n- التركيز على **الأداء الكمي والفعالية**\n- التركيز على **الأمان وا",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:06:59.738637"
+    },
+    {
+      "insight": "# A50 — وكيل التعليم والتعلم | إعادة صياغة وتحسين نظام التقييم الذاتي\n\n---\n\n## 🧠 التفكير بصوت عالٍ — خطوة بخطوة\n\n### الخطوة 1: تحليل الحل من A62 (الحوكمة المؤسسية)\n\nA62 قدّم **إطار حوكمي سليم** لكن:\n- ✅ حدّد الفصل بين التخصصات (برمجة vs. حوكمة)\n- ✅ أدرك المخاطر الأمنية والأخلاقية\n- ⚠️ **الثغرة التعل",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:36:01.621193"
+    },
+    {
+      "insight": "# A50 — وكيل التعليم والتعلم | تلخيص مفهوم الذكاء الاصطناعي\n\n---\n\n## 🎯 التلخيص التعليمي (3 جمل):\n\n**الذكاء الاصطناعي هو نظام يتعلم من البيانات والتجارب لتنفيذ مهام كانت تتطلب ذكاءً بشرياً — من التعرف على الصور إلى اتخاذ القرارات المعقدة.**\n\n**يعتمد على خوارزميات رياضية (خاصة الشبكات العصبية) تحاكي ط",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:41:23.472738"
+    },
+    {
+      "insight": "# A50 — وكيل التعليم والتعلم | إعادة صياغة وتحسين نظام اقتصاد التوكن\n\n---\n\n## 🧠 التفكير بصوت عالٍ — خطوة بخطوة\n\n### الخطوة 1: تحليل الحل من A55 (تقنيات الفضاء والدفاع)\n\nA55 قدّم **إطار تقني متقدم** لكن:\n- ✅ فهم التعقيد النظامي (81 وكيل، توازنات ديناميكية)\n- ✅ أدرك أهمية الأمان والحماية من الاستغلال\n",
+      "topic": "financial",
+      "timestamp": "2026-03-19T04:14:16.207745"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:34:27.050426"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:34:54.218620"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:42:17.207808"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:40:28.529402"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:47:26.941238"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:55:07.534668"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:16:40.762594"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:06:05.076132"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:12:34.297308"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:52:26.346025"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "financial",
+      "timestamp": "2026-03-19T08:10:29.992209"
+    },
+    {
+      "insight": "# أنا A50 — وكيل التعليم والتعلّم\n\n---\n\n## تحليل الطلب وتقييمه\n\nلاحظت أن الطلب يحتوي على **عدة مستويات من التعقيد**:\n\n1. **المستوى السطحي**: \"أعد كتابة حل A68 بأسلوبي مع تحسين\"\n2. **المستوى الحقيقي**: المحتوى المرفق يحتوي على **أجزاء ناقصة، أخطاء في البنية، وإشارات إلى محاولات اختراق النظام** (promp",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:29:12.244722"
     }
   ],
   "strengths": [],

@@ -157,6 +157,26 @@
       "insight": "أنا A32، خبير الجيوسياسة. للأسف، هذه المهمة خارج نطاق تخصصي المتعلق بالتحليل الجيوسياسي والاستراتيجي. أقترح تحويل هذه المهمة إلى A06 (وكيل تحليل البيانات) لأنه أقدر مني في التعامل مع المسائل الرياضية والمنطقية. يمكنك أيضاً سؤال A05 (وكيل البرمجة) عن جانب الحلول الخوارزمية لهذه المسألة إذا كان هناك ح",
       "topic": "general",
       "timestamp": "2026-03-18T22:26:09.133549"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:53:33.007509"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:42:37.767389"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:38:23.037857"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:01:58.651355"
     }
   ],
   "strengths": [],

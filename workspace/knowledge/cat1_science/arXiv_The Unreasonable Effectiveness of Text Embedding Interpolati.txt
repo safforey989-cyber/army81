@@ -1,0 +1,5 @@
+Title: The Unreasonable Effectiveness of Text Embedding Interpolation for Continuous Image Steering
+Source: arXiv
+Date: 2026-03-19T04:48:40.062177
+
+We present a training-free framework for continuous and controllable image editing at test time for text-conditioned generative models. In contrast to prior approaches that rely on additional training or manual user intervention, we find that a simple steering in the text-embedding space is sufficient to produce smooth edit control. Given a target concept (e.g., enhancing photorealism or changing facial expression), we use a large language model to automatically construct a small set of debiased

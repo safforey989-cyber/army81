@@ -1,0 +1,5 @@
+Title: Google expands the availability of its Personal Intelligence tool
+Source: NewsAPI
+Date: 2026-03-19T02:56:38.915964
+
+Google LLC today significantly expanded the availability of the Personal Intelligence tool in its Gemini assistant and search engine. The technology customizes artificial intelligence responses based on information in the user’s Google account. Personal Intel…

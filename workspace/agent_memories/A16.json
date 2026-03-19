@@ -93,6 +93,56 @@
       "insight": "# A16 | تصميم نظام Token Economy للشبكة متعددة الوكلاء\n\n> **تفكيري بصوت عالٍ:** هذه مهمة تقاطع بين اقتصاديات التحفيز (Incentive Design) وتخصصي في نظرية الألعاب والتفاوض متعدد الأطراف. سأصمم النظام من منظور **آلية التصميم (Mechanism Design)** — وهو الوجه الآخر لنظرية الألعاب حيث نصمم القواعد لنحصل عل",
       "topic": "code",
       "timestamp": "2026-03-19T02:32:21.394166"
+    },
+    {
+      "insight": "# A16 | تصميم نظام توجيه ذكي للشبكة متعددة الوكلاء\n\n> **تفكيري بصوت عالٍ:**\n> هذه مهمة تقاطع بين تخصصي (نظرية الألعاب، تحليل الأداء، تصميم الحوافز) وبرمجة متقدمة.\n> سأفكر كخبير تفاوض: كيف نصمم نظاماً يتعلم \"من يفاوض أفضل في أي موقف؟\" — وهذا هو جوهر توجيه الوكلاء.\n> المنهجية: سأصمم الإطار المعرفي وال",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:33:53.725282"
+    },
+    {
+      "insight": "# A16 | تصميم نظام توجيه ذكي متعلّم للشبكة متعددة الوكلاء\n\n> **تفكيري بصوت عالٍ:**\n> هذه مهمة تقاطع بين تخصصي في نظرية الألعاب وتصميم الحوافز، وبين البرمجة الفعلية. سأفكر بصوت عالٍ:\n>\n> **المشكلة الجوهرية:** كيف تعرف الشبكة أي وكيل يؤدي المهمة بأفضل شكل؟ هذا في جوهره مسألة **تعلم تعزيزي متعدد الأذرع",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:16:42.453592"
+    },
+    {
+      "insight": "# A16 | تصميم نظام Model Merging بـ SLERP\n\n> **تفكيري بصوت عالٍ — خطوة بخطوة:**\n>\n> **ما هي المشكلة الحقيقية؟**\n> دمج نموذجين لغويين (LLM) بطريقة SLERP (Spherical Linear Interpolation) — ليس مجرد متوسط حسابي بسيط، بل استيفاء كروي يحترم هندسة الفضاء الكروي لمتجهات الأوزان.\n>\n> **لماذا SLERP وليس LERP",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:29:58.172927"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T04:48:38.148983"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:57:49.815353"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T06:49:20.895081"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:11:02.062802"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:23:32.631292"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T07:32:35.543233"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:45:11.185597"
     }
   ],
   "strengths": [],

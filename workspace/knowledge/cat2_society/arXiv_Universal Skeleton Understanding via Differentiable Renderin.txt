@@ -1,0 +1,5 @@
+Title: Universal Skeleton Understanding via Differentiable Rendering and MLLMs
+Source: arXiv
+Date: 2026-03-19T04:48:47.751926
+
+Multimodal large language models (MLLMs) exhibit strong visual-language reasoning, yet remain confined to their native modalities and cannot directly process structured, non-visual data such as human skeletons. Existing methods either compress skeleton dynamics into lossy feature vectors for text alignment, or quantize motion into discrete tokens that generalize poorly across heterogeneous skeleton formats. We present SkeletonLLM, which achieves universal skeleton understanding by translating ar

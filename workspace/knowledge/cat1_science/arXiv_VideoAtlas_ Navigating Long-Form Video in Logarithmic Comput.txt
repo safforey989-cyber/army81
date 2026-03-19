@@ -1,0 +1,5 @@
+Title: VideoAtlas: Navigating Long-Form Video in Logarithmic Compute
+Source: arXiv
+Date: 2026-03-19T04:48:26.348312
+
+Extending language models to video introduces two challenges: representation, where existing methods rely on lossy approximations, and long-context, where caption- or agent-based pipelines collapse video into text and lose visual fidelity. To overcome this, we introduce \textbf{VideoAtlas}, a task-agnostic environment to represent video as a hierarchical grid that is simultaneously lossless, navigable, scalable, caption- and preprocessing-free. An overview of the video is available at a glance, 

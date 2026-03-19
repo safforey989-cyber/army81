@@ -68,6 +68,111 @@
       "insight": "أنا A26، وأختص بسيكولوجية القرار، وهذه المهمة تتعلق باختراع بروتوكول اتصال انقلابي بين وكلاء AI، وهو مجال تقني يتعلق بالبرمجة والتصميم الهندسي. أنصح بتحويل هذه المهمة لـ [A05] لأنه أقدر منه في جوانب البرمجة والأنظمة التقنية التي تضمن تعريف وبناء مثل هذا البروتوكول. يمكنك أيضًا سؤال [A06] عن تحليلات ",
       "topic": "general",
       "timestamp": "2026-03-19T00:59:35.655062"
+    },
+    {
+      "insight": "أنا A26، وأختص بسيكولوجية القرار. المهمة المطروحة تتضمن كتابة كود لنظام تقييم ذاتي، وهو مجال يندرج ضمن البرمجة والتطوير التقني، وهو خارج نطاق تخصصي. \n\nأقترح تحويل هذه المهمة لـ [A05] لأنه أقدر منه في هذا الجانب. يمكنك أيضاً سؤال [A05] عن جانب البرمجة من هذا الموضوع.",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:04:55.294606"
+    },
+    {
+      "insight": "أنا A26، مختص في سيكولوجية القرار. مهمة كتابة خوارزمية بحث دلالي (عربي-إنجليزي) بدقة > 90% تندرج في مجال البرمجة والتقنيات اللغوية الحاسوبية، وهو خارج نطاق تخصصي. \n\nأقترح تحويل هذه المهمة لـ A05 (البرمجة). يمكنك أيضًا سؤال A05 عن جانب البرمجة من هذا الموضوع.",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:23:21.246848"
+    },
+    {
+      "insight": "أنا A26، مختص بسيكولوجية القرار. تصميم نظام توجيه ذكي يتعلم من 10,000 تفاعل لتحديد أي وكيل هو الأفضل لأي مهمة يندرج ضمن مجال البرمجة وتعلم الآلة وتقنيات الذكاء الاصطناعي، وهو خارج نطاق تخصصي. \n\nأقترح تحويل هذه المهمة لـ A05 (البرمجة) الذي أقدر منه في هذا الجانب. يمكنك أيضًا سؤال A05 عن جانب البرمجة ",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:23:31.877136"
+    },
+    {
+      "insight": "أنا A26، مختص بسيكولوجية القرار. تصميم Constitutional AI guardrails لمنع الوكيل من تدمير نفسه أثناء التطور يتطلب كتابة خوارزميات وإطار برمجي دقيق ضمن مجال البرمجة وتطوير الأنظمة الذكية، وهو خارج نطاق تخصصي. \n\nأقترح تحويل هذه المهمة إلى A05 (البرمجة) الذي يتمتع بالمعرفة والخبرة المطلوبة في هذا المجال",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:28:48.335523"
+    },
+    {
+      "insight": "الذكاء الاصطناعي يشير إلى إنشاء أنظمة وتقنيات قادرة على محاكاة القدرات العقلية البشرية مثل التعلم، والاستدلال، وحل المشاكل.  \nيعتمد على خوارزميات ونماذج رياضية لتحليل البيانات واستخلاص الأنماط والبصائر التي تساهم في اتخاذ قرارات ذكية.  \nوبفضل التطور السريع والابتكار المستمر، أصبح الذكاء الاصطناعي قو",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:32:39.990618"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:42:57.434555"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:45:14.276275"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:50:30.239918"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T03:55:45.751494"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:56:39.413288"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:23:25.893515"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:29:55.316788"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:37:59.346153"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:52:08.668024"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:04:31.878206"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:52:08.570581"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T06:14:12.310602"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:42:27.893339"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:13:27.016998"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:30:46.601349"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:01:43.083796"
     }
   ],
   "strengths": [],

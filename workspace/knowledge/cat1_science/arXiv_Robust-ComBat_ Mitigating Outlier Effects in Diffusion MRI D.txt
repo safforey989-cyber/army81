@@ -1,0 +1,5 @@
+Title: Robust-ComBat: Mitigating Outlier Effects in Diffusion MRI Data Harmonization
+Source: arXiv
+Date: 2026-03-19T04:48:35.182134
+
+Harmonization methods such as ComBat and its variants are widely used to mitigate diffusion MRI (dMRI) site-specific biases. However, ComBat assumes that subject distributions exhibit a Gaussian profile. In practice, patients with neurological disorders often present diffusion metrics that deviate markedly from those of healthy controls, introducing pathological outliers that distort site-effect estimation. This problem is particularly challenging in clinical practice as most patients undergoing

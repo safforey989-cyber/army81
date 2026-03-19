@@ -1,0 +1,5 @@
+Title: A practical artificial intelligence framework for legal age estimation using clavicle computed tomography scans
+Source: arXiv
+Date: 2026-03-19T04:48:35.182134
+
+Legal age estimation plays a critical role in forensic and medico-legal contexts, where decisions must be supported by accurate, robust, and reproducible methods with explicit uncertainty quantification. While prior artificial intelligence (AI)-based approaches have primarily focused on hand radiographs or dental imaging, clavicle computed tomography (CT) scans remain underexplored despite their documented effectiveness for legal age estimation. In this work, we present an interpretable, multi-s

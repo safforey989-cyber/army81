@@ -1,0 +1,5 @@
+Title: Workers' Incentives and the Optimal Taxation of AI
+Source: arXiv
+Date: 2026-03-19T04:48:52.599598
+
+We characterize the optimal tax policy in an economy with human manual and cognitive labor, physical capital, and artificial intelligence (AI). Extending the dynamic taxation setup of Slavik and Yazici (2014), we find that it is optimal to start taxing AI when cognitive workers start to consider switching to manual jobs. This threshold may be crossed once AI becomes sufficiently capable in substituting humans across cognitive tasks.

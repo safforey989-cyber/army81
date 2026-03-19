@@ -1,0 +1,20 @@
+{
+  "type": "speed",
+  "task": "لخّص مفهوم الذكاء الاصطناعي في 3 جمل",
+  "agent1": {
+    "id": "A03",
+    "model": "deepseek-chat",
+    "score": 862
+  },
+  "agent2": {
+    "id": "A72",
+    "model": "claude-fast",
+    "score": 1423
+  },
+  "winner": "A72",
+  "improved": true,
+  "improvement_pct": 65.1,
+  "knowledge_transferred": true,
+  "cycle": 6,
+  "timestamp": "2026-03-19T04:26:45.681199"
+}

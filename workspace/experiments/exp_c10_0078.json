@@ -1,0 +1,20 @@
+{
+  "type": "coding",
+  "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
+  "agent1": {
+    "id": "A45",
+    "model": "claude-smart",
+    "score": 424
+  },
+  "agent2": {
+    "id": "A11",
+    "model": "qwen-72b",
+    "score": 465
+  },
+  "winner": "A11",
+  "improved": true,
+  "improvement_pct": 9.7,
+  "knowledge_transferred": true,
+  "cycle": 10,
+  "timestamp": "2026-03-19T07:49:40.840220"
+}

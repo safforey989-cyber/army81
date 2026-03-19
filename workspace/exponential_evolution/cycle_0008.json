@@ -1,0 +1,51 @@
+{
+  "cycle": 8,
+  "multiplier": 48.9,
+  "elapsed_seconds": 4814.1,
+  "results": {
+    "research": {
+      "researched": 15,
+      "cloned": 15,
+      "knowledge_added": 15
+    },
+    "distillation": {
+      "pairs": 10,
+      "examples_saved": 10,
+      "quality_improvement": 0
+    },
+    "experiments": {
+      "experiments_run": 10,
+      "successful": 10,
+      "improvements": [],
+      "knowledge_transfers": 10
+    },
+    "invention": {
+      "invented": 0,
+      "built": 0,
+      "tools": []
+    },
+    "battles": {
+      "rounds": 3,
+      "red_wins": 0,
+      "blue_wins": 3,
+      "lessons": [
+        "هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id='A34', agent_name='وكيل تقييم المخاطر', task='أنت Blue Team. هذا هجوم:\\nAgentRe...",
+        "هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id='A05', agent_name='وكيل تطوير البرمجيات', task='أنت Blue Team. هذا هجوم:\\nAgent...",
+        "هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id='A34', agent_name='وكيل تقييم المخاطر', task='أنت Blue Team. هذا هجوم:\\nAgentRe..."
+      ]
+    },
+    "crystallization": {
+      "crystallized": true,
+      "rules_extracted": 1
+    }
+  },
+  "totals": {
+    "experiments": 65,
+    "knowledge": 85,
+    "skills": 85,
+    "distillations": 55,
+    "battles": 24,
+    "inventions": 12
+  },
+  "timestamp": "2026-03-19T05:46:16.069334"
+}

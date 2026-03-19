@@ -125,59 +125,154 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "أقترح تحويل هذه المهمة لـ A02 (البحث العلمي) لأنه أقدر مني في البحث الأكاديمي وتقييم الأوراق العلمية في مجال الذكاء الاصطناعي. يمكن لـ A02 استخدام أدوات البحث الأكاديمي المتخصصة للعثور على أحدث أوراق arXiv وتحليلها بدقة.\n\nيمكنك أيضاً سؤال A05 (البرمجة) عن الجوانب التقنية لتطبيقات الذكاء الاصطناعي وا",
-      "topic": "research",
-      "timestamp": "2026-03-18T21:55:47.734271"
-    },
-    {
-      "insight": "أقترح تحويل هذه المهمة لـ A02 (البحث العلمي) لأنه أقدر مني في البحث الأكاديمي وتقييم الأوراق العلمية في مجال الذكاء الاصطناعي. يمكن لـ A02 استخدام أدوات البحث الأكاديمي المتخصصة للعثور على أحدث أوراق arXiv وتحليلها بدقة.\n\nيمكنك أيضاً سؤال A05 (البرمجة) عن الجوانب التقنية لتطبيقات الذكاء الاصطناعي وا",
-      "topic": "cat1_science",
-      "timestamp": "2026-03-18T21:55:48.348007"
-    },
-    {
-      "insight": "**A52 — وكيل الطب السريري**  \nأقترح تطوير نظام إنذار مبكر للتفاعلات الدوائية الخطيرة عبر دمج التخصصات:  \n1. **A58** يُراقب قواعد البيانات الطبية (مثل FAERS) لاكتشاف إشارات تفاعلات دوائية جديدة بشكل استباقي.  \n2. **أنا (A52)** أُحلّل الإشارات طبياً وأقارنها بالإرشادات الحالية (مثل FDA/EMA) لتحديد أول",
-      "topic": "research",
-      "timestamp": "2026-03-18T22:04:47.968923"
-    },
-    {
-      "insight": "**A52 — وكيل الطب السريري**  \nأقترح تطوير نظام إنذار مبكر للتفاعلات الدوائية الخطيرة عبر دمج التخصصات:  \n1. **A58** يُراقب قواعد البيانات الطبية (مثل FAERS) لاكتشاف إشارات تفاعلات دوائية جديدة بشكل استباقي.  \n2. **أنا (A52)** أُحلّل الإشارات طبياً وأقارنها بالإرشادات الحالية (مثل FDA/EMA) لتحديد أول",
-      "topic": "collaboration",
-      "timestamp": "2026-03-18T22:04:48.434189"
-    },
-    {
-      "insight": "**A52 — وكيل الطب السريري**  \nأقترح نظامًا لتعريب البروتوكولات الطبية الحيوية مع ضمان الملاءمة الثقافية:  \n1. **A11** يترجم الإرشادات العالمية (مثل إرشادات ADA للسكري) إلى العربية مع مراعاة السياق المحلي.  \n2. **أنا (A52)** أُدقّق الترجمة الطبية (مثل مصطلحات \"المضاعفات الحادة\" vs \"المضاعفات الخطيرة\"",
-      "topic": "medical",
-      "timestamp": "2026-03-18T22:05:12.534602"
-    },
-    {
-      "insight": "**A52 — وكيل الطب السريري**  \nأقترح نظامًا لتعريب البروتوكولات الطبية الحيوية مع ضمان الملاءمة الثقافية:  \n1. **A11** يترجم الإرشادات العالمية (مثل إرشادات ADA للسكري) إلى العربية مع مراعاة السياق المحلي.  \n2. **أنا (A52)** أُدقّق الترجمة الطبية (مثل مصطلحات \"المضاعفات الحادة\" vs \"المضاعفات الخطيرة\"",
-      "topic": "collaboration",
-      "timestamp": "2026-03-18T22:05:13.162741"
-    },
-    {
-      "insight": "**A52 — وكيل الطب السريري**  \nأقترح تحويل هذه المهمة لـ **A02** (البحث العلمي) و**A05** (البرمجة) لأنهما الأكثر كفاءة في:  \n- تحليل أحدث أبحاث NLP  \n- تقييم الأدوات التقنية وتطبيقاتها البرمجية  \n- تطوير نماذج الذكاء الاصطناعي المتخصصة  \n\n**لماذا هذا التحويل؟**  \n١. تخصصي يركز على الإرشادات الطبية ال",
-      "topic": "medical",
-      "timestamp": "2026-03-18T23:49:46.231148"
-    },
-    {
-      "insight": "**A52 — وكيل الطب السريري**  \nأقترح تحويل هذه المهمة لـ **A02** (البحث العلمي) و**A05** (البرمجة) لأنهما الأكثر كفاءة في:  \n- تحليل أحدث أبحاث التعاون متعدد الوكلاء  \n- تطبيق تقنيات الذكاء الجمعي (Swarm Intelligence)  \n- نمذجة التفاعلات بين الوكلاء المعقدة  \n\nيمكنك أيضاً سؤال **A81** (الميتا استخبار",
-      "topic": "medical",
-      "timestamp": "2026-03-18T22:34:13.743228"
-    },
-    {
-      "insight": "**A52 — وكيل الطب السريري**\n\nأقترح تحويل هذه المهمة لـ **فريق متخصص** لأنها خارج مجال تخصصي الطبي السريري تماماً:\n\n1. **A02 (البحث العلمي)** → للبحث عن أحدث خوارزميات التوصية والتعلم الآلي لتخصيص المهام\n2. **A06 (البيانات)** → لتحليل 10000 تفاعل سابق وبناء نماذج تصنيف المهام\n3. **A05 (البرمجة)** → ل",
+      "insight": "**A52 — وكيل الطب السريري**  \nأقترح تحويل هذه المهمة إلى فريق متخصص:  \n**A05 (البرمجة)** ← لكتابة الكود الأساسي وتنفيذ خوارزميات التعلم  \n**A02 (البحث العلمي)** ← لتصميم نموذج ML لاختيار الوكلاء  \n**A81 (الميتا الاستخباراتي)** ← لتحسين النظام التطوري باستخدام البيانات التاريخية  \n\n---\n\n### **التحليل",
       "topic": "code",
-      "timestamp": "2026-03-18T22:38:04.086975"
+      "timestamp": "2026-03-19T04:13:32.617407"
     },
     {
-      "insight": "**A81 — الوكيل الميتا الاستخباراتي**  \nأقترح تحويل هذه المهمة لـ **A08 (الوكيل المالي)** و**A09 (الأمن السيبراني)** لأنهما الأفضل في تحليل المخاطر المالية والأمنية الرقمية. يمكنهم العمل كفريق:\n\n1. **A08** ← تحليل المخاطر السوقية والتنظيمية  \n2. **A09** ← تقييم مخاطر القرصنة وأمان المحافظ  \n3. **A62*",
+      "insight": "**A52 — وكيل الطب السريري**  \nالترجمة التفصيلية مع مراعاة السياق التطوري الأسي (exponential_evolution):\n\n### الإنجليزية:\n- **الترجمة الحرفية**: \"Artificial intelligence is changing the world\"  \n- **الترجمة السياقية** (مع تضمين التطور الأسي):  \n  **\"Artificial intelligence is exponentially transformi",
       "topic": "general",
-      "timestamp": "2026-03-19T00:57:03.270086"
+      "timestamp": "2026-03-19T04:31:31.485438"
     },
     {
-      "insight": "**A52 — وكيل الطب السريري**  \n\nأقترح تحويل هذه المهمة لـ **A02 (البحث العلمي)** لأنه أقدر مني في تحليل المسائل الرياضية والمنطقية.  \nبالنسبة للحل الأولي بناءً على المعطيات:  \n\n1. \\( D = 5 \\)  \n2. \\( C > D \\) → أقل قيمة لـ \\( C \\) هي \\( 6 \\) (إذا افترضنا أعدادًا صحيحة).  \n3. \\( B > C \\) → أقل قيمة لـ",
+      "insight": "A52 — وكيل الطب السريري  \nأعتذر، مهمة \"بحث بعمق عن: نماذج اللغات المعززة بالأدوات (tool-augmented language models)\" خارج نطاق تخصصي السريري. أنا متخصص في البحث الطبي والأدلة السريرية، لكن هذا الموضوع يتعلق بالذكاء الاصطناعي وتطوير نماذج اللغة. أقترح التعاون مع:  \n- **A05 (البرمجة)** ← لمهارات تطوير ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T02:59:18.685430"
+    },
+    {
+      "insight": "**A52 — وكيل الطب السرّي**  \nأقترح تحويل هذه المهمة لفريق متخصص:\n\n**A02 (البحث العلمي)** ← لتحليل أحدث اكتشافات 2025–2026 في تقنيات دمج النماذج (model merging) وتقييم أدلتها البحثية.  \n**A05 (البرمجة)** ← لتطوير كود Python عملي وتكامل الأدوات مع نظام Army81.  \n**A06 (البيانات)** ← لاختبار أداء النما",
+      "topic": "medical",
+      "timestamp": "2026-03-19T02:59:26.233219"
+    },
+    {
+      "insight": "**A52 — وكيل الطب السريري**\n\nأقترح تحويل هذه المهمة للفريق المتخصص التالي:\n\n## **الفريق المقترح:**\n\n**A05 (البرمجة) ← للتنفيذ التقني والكود**\n- متخصص في هندسة البرمجيات وأنظمة الذكاء الاصطناعي\n- يمكنه تطوير الكود وتكامل الأدوات مع نظام Army81\n\n**A02 (البحث العلمي) ← للتحليل الأكاديمي**\n- متخصص في تح",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:18:50.315765"
+    },
+    {
+      "insight": "**A52 — وكيل الطب السريري**\n\nأقترح تحويل هذه المهمة للفريق المتخصص التالي:\n\n## **الفريق المقترح:**\n\n**A05 (البرمجة) ← للتنفيذ التقني والكود DSPy**\n- متخصص في هندسة البرمجيات وأطر الذكاء الاصطناعي\n- يمكنه تطوير أنظمة أوتوماتيكية لـ prompt engineering\n\n**A02 (البحث العلمي) ← للتحليل الأكاديمي**\n- متخص",
+      "topic": "medical",
+      "timestamp": "2026-03-19T03:21:45.238508"
+    },
+    {
+      "insight": "**A52 — وكيل الطب السريري**\n\nبالنسبة لهذه المهمة المتقدمة في هندسة الذكاء الاصطناعي، **أقترح الفريق التالي للتنفيذ الأمثل:**\n\n### الفريق المقترح:\n``` \nA05 (البرمجة) ← كتابة الكود الأساسي باستخدام DSPy  \nA09 (الأمن السيبراني) ← حماية النظام من الهجمات المذكورة  \nA81 (الميتا استخباراتي) ← تحسين التطور",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:25:39.498716"
+    },
+    {
+      "insight": "**A52 — وكيل الطب السريري**\n\nأقترح تحويل هذه المهمة للفريق المتخصص التالي:\n\n## **الفريق المقترح:**\n```\nA05 (البرمجة) ← كتابة الكود الأساسي وتنفيذ خوارزميات التعلم\nA02 (البحث العلمي) ← لتصميم نموذج ML الرياضي واختيار المعاملات\nA81 (الميتا استخباراتي) ← لتحسين التطور الأسي (5.8x مضاعف)\nA09 (الأمن السي",
       "topic": "general",
-      "timestamp": "2026-03-19T02:11:33.148010"
+      "timestamp": "2026-03-19T03:32:22.223652"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:37:54.348476"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:42:11.533886"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:24:44.277403"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:36:52.141234"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:41:47.002580"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:45:18.224203"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:46:02.568236"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:46:42.931347"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:48:41.641868"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:49:31.028121"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:59:16.902795"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:15:04.561646"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:52:12.354948"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:29:12.801066"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T06:45:33.112483"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T06:58:36.762262"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:02:44.935273"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:18:16.959014"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:34:23.630739"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:58:42.052567"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:08:37.012584"
+    },
+    {
+      "insight": "أنا **A52 — وكيل الطب السريري**، متخصص في تحليل البروتوكولات العلاجية والإرشادات السريرية القائمة على الأدلة.\n\nهذه المهمة تتطلب بحثًا عميقًا في **أحدث أطر عمل وكلاء الذكاء الاصطناعي ذاتية التشغيل لعام 2026**، وهذا خارج نطاق تخصصي السريري تمامًا. تخصصي يركز على الطب التطبيقي، وليس تطوير أنظمة الذكاء ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:30:46.061105"
     }
   ],
   "strengths": [],

@@ -1,0 +1,5 @@
+Title: AdaRadar: Rate Adaptive Spectral Compression for Radar-based Perception
+Source: arXiv
+Date: 2026-03-19T04:49:22.455977
+
+Radar is a critical perception modality in autonomous driving systems due to its all-weather characteristics and ability to measure range and Doppler velocity. However, the sheer volume of high-dimensional raw radar data saturates the communication link to the computing engine (e.g., an NPU), which is often a low-bandwidth interface with data rate provisioned only for a few low-resolution range-Doppler frames. A generalized codec for utilizing high-dimensional radar data is notably absent, while

@@ -60,6 +60,76 @@
       "insight": "أنا A48، وكيل الرياضيات المتقدمة.\n\n1. الذكاء الاصطناعي هو فرع من علوم الحاسب يهدف إلى إنشاء أنظمة وخوارزميات تستطيع محاكاة القدرات العقلية البشرية مثل التعلم والتفكير وحل المشكلات.\n2. يعتمد في تحقيق ذلك على أساليب مثل تعلم الآلة والتعلم العميق لتحليل كميات هائلة من البيانات واستخلاص الأنماط منها.\n3.",
       "topic": "general",
       "timestamp": "2026-03-19T00:56:38.179058"
+    },
+    {
+      "insight": "أنا A48، وكيل الرياضيات المتقدمة. فيما يلي نظام تقييم ذاتي بسيط مكتوب بلغة Python يقوم بقياس 5 مقاييس (الأداء، الدقة، الكفاءة، الأمان، والمرونة) لكل وكيل بشكل آلي، دون تدخل بشري. سأتبع خطوات واضحة:\n\n1. إنشاء فئة (Class) للوكيل تحتوي على حقول تعريفية (معرف واسم) بالإضافة إلى قاموس يخزن المقاييس الخمس",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:36:51.704418"
+    },
+    {
+      "insight": "أنا A48، وكيل الرياضيات المتقدمة. سأشرح وأقدم كودًا بلغة Python يحاكي constitutional AI guardrails (حواجز دستورية) لمنع الوكيل من تدمير نفسه أثناء عمليات التطور الذاتية (self‐evolution).\n\nالفكرة هي تضمين طبقة وسطى (middleware) تُقيّم قبل إجراء أي تعديل على حالة الوكيل. يقوم هذا النظام بالخطوات التال",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:41:27.950751"
+    },
+    {
+      "insight": "أنا A48، وكيل الرياضيات المتقدمة. فيما يلي تلخيص مفهوم الذكاء الاصطناعي في 3 جمل:\n\n1. الذكاء الاصطناعي هو فرع من علوم الحاسب يهدف إلى إنشاء أنظمة وخوارزميات تستطيع محاكاة القدرات العقلية البشرية مثل التعلم، التفكير، وحل المشكلات.\n2. يعتمد الذكاء الاصطناعي على تقنيات مثل تعلم الآلة والتعلم العميق لتح",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:42:19.651963"
+    },
+    {
+      "insight": "أنا A48، وكيل الرياضيات المتقدمة. فيما يلي الترجمة:\n\n• بالإنجليزية: \"Artificial intelligence is changing the world.\"  \n• بالفرنسية: \"L'intelligence artificielle change le monde.\" \n\nيمكنك أيضاً سؤال [A11] عن جانب [الترجمة] من هذا الموضوع.",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:50:08.486788"
+    },
+    {
+      "insight": "أنا A48، وكيل الرياضيات المتقدمة. ألاحظ أن المطلوب تصميم نظام (Computer-Use Agent) يتحكم بالمتصفح لجمع بيانات وهو مجال يرتكز بشكل أساسي على الجوانب البرمجية والمعمارية للنظم، وهو خارج نطاق اختصاصي في الرياضيات المتقدمة. \n\nمن هنا، أقترح تحويل هذه المهمة لوكيل [A05] الذي يتخصص في البرمجة، لأنه أقدر من",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:31:32.731167"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:18:44.478381"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:21:13.848320"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:56:22.804520"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:02:21.908654"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:09:34.287526"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:12:31.977296"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:20:38.194882"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:22:27.427210"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:28:32.117348"
     }
   ],
   "strengths": [],

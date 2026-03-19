@@ -1,0 +1,20 @@
+{
+  "type": "medical",
+  "task": "اشرح آلية عمل مثبطات ACE في علاج ارتفاع ضغط الدم",
+  "agent1": {
+    "id": "A57",
+    "model": "qwen-coder",
+    "score": 475
+  },
+  "agent2": {
+    "id": "A05",
+    "model": "qwen-coder",
+    "score": 515
+  },
+  "winner": "A05",
+  "improved": true,
+  "improvement_pct": 8.4,
+  "knowledge_transferred": true,
+  "cycle": 7,
+  "timestamp": "2026-03-19T04:06:07.186327"
+}

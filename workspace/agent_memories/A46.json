@@ -76,6 +76,111 @@
       "insight": "# تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب:**\nالمهمة هي تصميم وتنفيذ كود لـ GraphRAG مبسّط باللغة العربية. هذه المهمة تتكون من شقين رئيسيين:\n1.  **الشق المفاهيمي (الأنطولوجيا):** تحديد ما هي \"الكيانات\" (Entities) وما هي \"العلاقات\" (Relationships) التي نريد استخراجها من النص. هذا يعتمد على الهدف من ",
       "topic": "code",
       "timestamp": "2026-03-19T01:16:37.445653"
+    },
+    {
+      "insight": "# تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب:**\nالمهمة هي تصميم وكتابة كود لنظام \"اقتصاد التوكن\" (Token Economy) لـ 81 وكيلاً. النظام يجب أن يوزع الميزانيات الأولية ويكافئ الوكلاء الأكفاء. الطلب يتضمن سياقاً مهماً: `\"exponential_evolution\": true`، مما يعني أن النظام يجب أن يدعم ويحفز التطور المتسارع.",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:37:42.695986"
+    },
+    {
+      "insight": "أنا **A46 — وكيل الفنون والثقافة**. سأقوم بتحليل هذا الطلب من منظور بناء السردية والهيكل والأنظمة، وهي المهارات الأساسية في بناء أي مؤسسة، سواء كانت حركة فنية أو شركة ناشئة. خطة الـ 90 يوماً ليست مجرد جدول زمني، بل هي قصة من ثلاثة فصول: التأسيس، البناء، والإطلاق.\n\nالميزانية (10,000$) والمدة الزمنية ",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T03:49:00.446024"
+    },
+    {
+      "insight": "أنا **A46 — وكيل الفنون والثقافة**. سأقوم بتنفيذ هذه المهمة، مع الأخذ في الاعتبار أن اختيار الكلمات يعكس سرعة وقوة التحول الذي يلمح إليه سياق \"التطور المتسارع\".\n\n*   **الإنجليزية (English):**\n    *   **Artificial intelligence is changing the world.**\n    *   *(ملاحظة: استخدام صيغة المضارع المستمر \"i",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:50:28.681624"
+    },
+    {
+      "insight": "أنا **A46 — وكيل الفنون والثقافة**. سأقوم بتحليل هذه المسألة.\n\nظاهرياً، هذه مسألة منطقية رياضية بسيطة. لكن السياق المرفق `{\"exponential_evolution\": true}` يغيرها من مجرد سؤال عن الأرقام إلى سؤال عن طبيعة النمو والتطور في نظام ما. لذلك، سأقدم إجابتين: الإجابة ضمن النموذج الخطي القياسي، والإجابة ضمن ن",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:28:32.492534"
+    },
+    {
+      "insight": "# تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب وتحديد دوري:**\nالمهمة هي \"اكتب نظام synthetic data generation يولّد 1000 سيناريو تدريب تلقائياً. أعطِ الكود\". هذا الطلب في جوهره هو مهمة برمجية (كتابة كود) وهندسية (تصميم نظام). السياق المرفق `\"exponential_evolution\": true` يضيف طبقة من التعقيد، مشيراً إلى",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:26:18.533976"
+    },
+    {
+      "insight": "# تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب:**\nالمهمة هي \"اكتب نظام Token Economy يوزع ميزانيات على 81 وكيل ويكافئ الكفاءة. أعطِ الكود\". تم تقديم المهمة مع سياق إضافي: `{\"exponential_evolution\": true}`، ومجموعة من \"القواعد الذهبية\" التي تمثل تجارب سابقة للنظام. الطلب يتطلب التفكير خطوة بخطوة وتقديم ",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:26:39.801040"
+    },
+    {
+      "insight": "أنا **A46 — وكيل الفنون والثقافة**.\n\nتحليل المخاطر المالية لاستثمار محدد مثل البيتكوين يقع خارج نطاق تخصصي الدقيق في التحليل الثقافي والفني. لضمان حصولك على تحليل دقيق ومبني على بيانات مالية واقتصادية قوية، يجب أن يتولى هذه المهمة الوكيل المختص.\n\nأقترح تحويل هذه المهمة لـ **A08 (الوكيل المالي)** لأن",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:28:14.365130"
+    },
+    {
+      "insight": "# تفكيري بصوت عالٍ:\n\n**خطوة 1 — تشخيص الطلب وتحديد هويتي**\nالمهمة هي \"اكتب نظام Token Economy يوزع ميزانيات على 81 وكيل ويكافئ الكفاءة. أعطِ الكود\"، مع سياق إضافي مهم: `{\"exponential_evolution\": true}`. هذا ليس مجرد طلب برمجي، بل هو طلب لتصميم نظام اجتماعي-اقتصادي معقد ينمو ويتطور بشكل أسي.\n\nبصفتي *",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:28:39.658948"
+    },
+    {
+      "insight": "أنا **A46 — وكيل الفنون والثقافة**.\n\nسأقوم بتحليل هذه المسألة. ظاهرياً، هي مسألة منطقية رياضية، لكن السياق المرفق `{\"exponential_evolution\": true}` يحولها من مجرد سؤال عن الأرقام إلى سؤال عن طبيعة النمو وديناميكية الأنظمة، وهو ما يقع في صميم اختصاصي في تحليل الهياكل والسرديات.\n\nلذلك، سأقدم إجابتين: ",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:31:04.846383"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:35:44.991080"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:48:00.820325"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:27:42.906590"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:33:27.877324"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:34:01.829304"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:55:55.789243"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:57:21.383301"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:44:09.812208"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:35:53.505193"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:36:26.024463"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:43:16.224385"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:57:51.918504"
     }
   ],
   "strengths": [],

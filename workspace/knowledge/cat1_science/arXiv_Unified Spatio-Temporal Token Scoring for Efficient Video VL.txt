@@ -1,0 +1,5 @@
+Title: Unified Spatio-Temporal Token Scoring for Efficient Video VLMs
+Source: arXiv
+Date: 2026-03-19T04:48:21.354357
+
+Token pruning is essential for enhancing the computational efficiency of vision-language models (VLMs), particularly for video-based tasks where temporal redundancy is prevalent. Prior approaches typically prune tokens either (1) within the vision transformer (ViT) exclusively for unimodal perception tasks such as action recognition and object segmentation, without adapting to downstream vision-language tasks; or (2) only within the LLM while leaving the ViT output intact, often requiring comple

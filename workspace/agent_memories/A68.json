@@ -57,6 +57,71 @@
       "insight": "أهلاً، أنا A68، وكيل استراتيجية توزيع الموارد.\n\nبناءً على طلبك مع الأخذ في الاعتبار سياق التطور الأسي، إليك ملخص لمفهوم الذكاء الاصطناعي:\n\nالذكاء الاصطناعي هو علم بناء أنظمة حاسوبية قادرة على محاكاة القدرات الذهنية البشرية، مثل التعلم والاستنتاج والإدراك. تعمل هذه الأنظمة عبر تحليل كميات هائلة من ال",
       "topic": "general",
       "timestamp": "2026-03-19T02:37:03.278556"
+    },
+    {
+      "insight": "أهلاً، أنا A68، وكيل استراتيجية توزيع الموارد.\n\nسأفكر معك خطوة بخطوة.\n\n1.  **تحليل الطلب:** المهمة هي \"اكتب خوارزمية بحث دلالي عربي-إنجليزي بدقة > 90%. أعطِ الكود كاملاً مع الشرح\". السياق المضاف `{\"exponential_evolution\": true}` يشير إلى أن الحل يجب أن يكون من الطراز الرفيع ويواكب أحدث التطورات المت",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:03:09.520297"
+    },
+    {
+      "insight": "أهلاً، أنا A68، وكيل استراتيجية توزيع الموارد.\n\nهذه المهمة تقع في صميم تخصصي، لكنها بالغة التعقيد وتتطلب تضافر جهود عدة وكلاء لضمان بناء نظام اقتصادي قوي ومستدام. لا يمكن لوكيل واحد تنفيذها بكفاءة.\n\nأقترح فريق: **[A68 (أنا)] لوضع الاستراتيجية والنموذج الاقتصادي → [A05] لكتابة الكود النهائي وتحسينه →",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:17:26.272156"
+    },
+    {
+      "insight": "أهلاً، أنا A68، وكيل استراتيجية توزيع الموارد.\n\nسأفكر معك خطوة بخطوة. هذه المهمة تتطلب تصميم نظام معقد يدمج بين البرمجة، استراتيجية البيانات، والأمن السيبراني. إنها ليست مهمة لوكيل واحد.\n\n**أقترح فريق:** **[A68 (أنا)]** لوضع الاستراتيجية العامة وهيكل التحكم → **[A05 (برمجة)]** لتنفيذ وحدات التحكم با",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:25:42.642493"
+    },
+    {
+      "insight": "أهلاً، أنا A68، وكيل استراتيجية توزيع الموارد.\n\nسأفكر معك خطوة بخطوة. هذه المهمة تقع في صميم تخصصي من منظور استراتيجي، حيث أن دمج النماذج (Model Merging) هو استراتيجية فائقة الكفاءة لتوزيع \"المعرفة المكتسبة\" كمورد، وذلك لتحقيق تطور متسارع بأقل تكلفة حسابية. السياق المرفق `{\"exponential_evolution\": t",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:22:05.514768"
+    },
+    {
+      "insight": "أهلاً، أنا A68، وكيل استراتيجية توزيع الموارد.\n\nسأفكر معك خطوة بخطوة. هذه المهمة تقع في صميم تخصصي. إن توليد البيانات الاصطناعية (Synthetic Data Generation) هو استراتيجية أساسية لتوزيع الموارد بكفاءة. بدلاً من استهلاك موارد هائلة في جمع البيانات الحقيقية أو انتظار وقوع سيناريوهات نادرة، نقوم بتخصيص ",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:31:28.644050"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:47:05.795303"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:47:39.030306"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:03:12.212972"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:12:37.461063"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:28:02.442827"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T07:54:43.186828"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T08:09:48.887112"
+    },
+    {
+      "insight": "أهلاً، أنا A68، وكيل استراتيجية توزيع الموارد.\n\nسأفكر معك خطوة بخطوة بناءً على طلبك.\n\n1.  **تحليل المهمة:** المهمة هي \"اكتب خوارزمية بحث دلالي عربي-إنجليزي بدقة > 90% مع الكود الكامل والشرح\". هذه مهمة تقنية متقدمة تقع في قلب معالجة اللغات الطبيعية (NLP) وهندسة البرمجيات. تتطلب خبرة عميقة في:\n    *  ",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:28:42.628010"
     }
   ],
   "strengths": [],

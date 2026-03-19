@@ -1,0 +1,5 @@
+Title: Stronger core results with multidimensional prices
+Source: arXiv
+Date: 2026-03-19T04:48:52.602259
+
+We study one-sided matchings with endowments in the absence of money. It is well-known that a competitive equilibrium may not always exist and that the strong core may be empty in this setting [Hylland and Zeckhauser, 1979]. We propose a generalization of competitive equilibria that associates each item with a multi-dimensional price. We show that this solution concept always exists and resides within the rejective core [Konovalov, 2005]. Rejective core stability is strictly stronger than weak c

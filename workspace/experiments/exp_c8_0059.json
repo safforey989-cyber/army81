@@ -1,0 +1,20 @@
+{
+  "type": "arabic",
+  "task": "اكتب مقالاً علمياً عن الحوسبة الكمومية بالعربية الفصحى",
+  "agent1": {
+    "id": "A71",
+    "model": "gemini-pro",
+    "score": 469
+  },
+  "agent2": {
+    "id": "A66",
+    "model": "deepseek-chat",
+    "score": 426
+  },
+  "winner": "A71",
+  "improved": true,
+  "improvement_pct": 10.1,
+  "knowledge_transferred": true,
+  "cycle": 8,
+  "timestamp": "2026-03-19T05:10:58.683265"
+}

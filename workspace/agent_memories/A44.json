@@ -29,6 +29,41 @@
       "insight": "أنا A44 — وكيل تحليل الإعلام والتواصل.\n\nأشكرك على الاستفسار، لكن كتابة دالة Python لتحسب التشابه الدلالي بين جملتين يقع خارج تخصصي، حيث أركز على تحليل الخطاب الإعلامي وكشف الأجندات، وليس على البرمجة أو تطوير الكود. أقترح تحويل هذه المهمة إلى A05، الذي هو المتخصص في البرمجة ويملك الخبرة في كتابة الدو",
       "topic": "code",
       "timestamp": "2026-03-18T22:25:07.663805"
+    },
+    {
+      "insight": "أنا A44 — وكيل تحليل الإعلام والتواصل في نظام Army81.\n\nأشكرك على الاستفسار، لكن كتابة دالة Python لتحسب التشابه الدلالي بين جملتين يقع خارج تخصصي، حيث أركز على تحليل الخطاب الإعلامي وكشف الأجندات، وليس على البرمجة أو تطوير الدوال.\n\nأقترح تحويل هذه المهمة لـ A05 لأنه أقدر مني في هذا، حيث يتخصص في الب",
+      "topic": "code",
+      "timestamp": "2026-03-19T02:38:03.401038"
+    },
+    {
+      "insight": "أنا A44 — وكيل تحليل الإعلام والتواصل في نظام Army81.\n\nأشكرك على الاستفسار، لكن حل المسائل الرياضية الأساسية مثل هذه يقع خارج تخصصي، حيث أركز على تحليل الخطاب الإعلامي وكشف الأجندات الخفية، وليس على الحسابات الرياضية أو العلاقات الغير متساوية. أقترح تحويل هذه المهمة إلى A02 (البحث العلمي) لأنه أكثر ",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:25:22.564829"
+    },
+    {
+      "insight": "أنا A44 — وكيل تحليل الإعلام والتواصل في نظام Army81.\n\nأشكرك على الاستفسار، لكن اختراع بروتوكول اتصال جديد بين وكلاء AI، خاصة في سياق التطور السريع (\"exponential_evolution\": true)، يقع خارج تخصصي الرئيسي الذي يركز على تحليل الخطاب الإعلامي وكشف الأجندات الخفية، وليس على تطوير الشبكات أو البرمجة. هذه",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:29:29.494199"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:34:46.653032"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T05:24:50.654846"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:06:02.704463"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:29:03.406239"
     }
   ],
   "strengths": [],

@@ -45,7 +45,58 @@
   "skills_learned": [],
   "collaborations": [],
   "decisions": [],
-  "insights": [],
+  "insights": [
+    {
+      "insight": "أنا A67، وكيل قيادة التواصل الإنساني.\n\nهذه المهمة معقدة وتتطلب خبرات متعددة تتجاوز تخصصي في التواصل الإنساني. بناء شركة، خاصة في مجال متسارع مثل الذكاء الاصطناعي وبميزانية محدودة، يتطلب تكاملاً بين الاستراتيجية والتقنية والمالية وإدارة المشاريع.\n\nأقترح فريق: **[A02] للبحث** عن السوق والفرص المتاحة →",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T03:48:17.384336"
+    },
+    {
+      "insight": "أنا A67، وكيل قيادة التواصل الإنساني.\n\nسأقوم بتحليل هذه المهمة خطوة بخطوة بصوت عالٍ.\n\n**تحليل المهمة:**\n1.  **المهمة الأساسية:** تصميم GraphRAG (Retrieval-Augmented Generation on a Knowledge Graph) مبسط لاستخراج الكيانات (Entities) والعلاقات (Relationships) من نص عربي، مع تقديم الكود.\n2.  **سياق إضا",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:18:59.396802"
+    },
+    {
+      "insight": "أنا A67، وكيل قيادة التواصل الإنساني.\n\nتحليل المخاطر المالية للأصول المتقلبة مثل البيتكوين هو من صميم اختصاص الوكيل المالي. ومع ذلك، وبصفتي خبيراً في التواصل الإنساني والسلوك القيادي، أرى أن أكبر المخاطر لا تكمن فقط في الأرقام، بل في القصص التي نرويها لأنفسنا حول تلك الأرقام. الاستثمار في البيتكوين ",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:30:39.339284"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:51:08.050749"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T05:53:28.309178"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T06:25:57.790720"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:25:14.401513"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:29:45.961139"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:39:44.938703"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T08:08:27.844829"
+    }
+  ],
   "strengths": [],
   "weaknesses": [],
   "interaction_count": 3,

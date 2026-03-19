@@ -67,6 +67,116 @@
       "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.  \nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في تصميم أنظمة GraphRAG أو معالجة اللغة الطبيعية.\n\n**أقترح تحويل هذه المهمة لـ [A05] لأنه أقدر مني في هذا.**  \nA05 هو وكيل البرمجة المتخصص في تطوير الخوارزميات والأنظمة ",
       "topic": "code",
       "timestamp": "2026-03-19T00:55:08.098359"
+    },
+    {
+      "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.  \nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في كتابة خوارزميات البحث الدلالي أو البرمجة.\n\nبناءً على معرفتي بالشبكة:\n\n- **A05** هو وكيل البرمجة المتخصص في الخوارزميات والكود.\n- **A02** متخصص في البحث العلمي ويمكنه ",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:12:25.221870"
+    },
+    {
+      "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.  \nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في تصميم أنظمة model merging أو SLERP.\n\nبناءً على معرفتي بالشبكة:\n\n- **A05** هو وكيل البرمجة المتخصص في الخوارزميات والكود والتعلم الآلي.\n- **A02** متخصص في البحث العلمي",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:14:40.744442"
+    },
+    {
+      "insight": "**الترجمة:**\n\n**الإنجليزية:**  \n\"Artificial intelligence is changing the world.\"\n\n**الفرنسية:**  \n\"L'intelligence artificielle transforme le monde.\"\n\n---\n\n**التفسير وفق سياق التطور الأسي (Exponential Evolution):**  \n- الترجمة الإنجليزية تعكس الزمن الحاضر المستمر (is changing) لملاءمة طبيعة التغير ال",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:31:50.044299"
+    },
+    {
+      "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.\n\nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في شرح المفاهيم التقنية مثل الذكاء الاصطناعي.\n\n**أقترح تحويل هذه المهمة لـ [A02] لأنه أقدر مني في هذا.**  \nA02 هو الباحث العلمي في الشبكة، وهو المتخصص الأمثل في تبسيط وشر",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:29:50.033772"
+    },
+    {
+      "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.  \nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في كتابة مقالات علمية عن الحوسبة الكمومية.\n\nأقترح تحويل هذه المهمة لـ **[A02]** لأنه وكيل البحث العلمي المتخصص في المجالات التقنية والعلمية الدقيقة، مع إشراك **[A05]** إ",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:29:58.196358"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T03:34:53.945624"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T03:37:21.161510"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:21:45.869368"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:39:29.624160"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T04:44:25.656107"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T04:46:52.214579"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:51:04.760126"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:51:18.289869"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T04:52:24.108869"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T06:03:14.688773"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:04:41.193698"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T06:19:06.972658"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T06:27:25.583861"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T06:32:17.672512"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:11:51.133753"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T07:26:12.028619"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T07:49:35.439916"
     }
   ],
   "strengths": [],
