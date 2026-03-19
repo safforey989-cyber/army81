@@ -143,6 +143,13 @@ async def startup():
 
     logger.info(f"Army81 started — {count} agents ready, {errors} errors")
 
+    # v20: Voice Interface
+    try:
+        from integrations.voice_interface import register_voice_endpoints
+        register_voice_endpoints(app)
+    except Exception as e:
+        logger.warning(f"Voice interface not available: {e}")
+
 @app.get("/")
 async def root():
     return {
