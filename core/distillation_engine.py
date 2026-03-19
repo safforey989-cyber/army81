@@ -33,9 +33,10 @@ class DistillationEngine:
 
     def __init__(self, llm_client=None):
         self.llm = llm_client
-        self.examples_stored = 0
         self.gap_measurements = {}
         DISTILL_DIR.mkdir(parents=True, exist_ok=True)
+        # عدّ الأمثلة الموجودة فعلاً على القرص
+        self.examples_stored = len(list(DISTILL_DIR.glob("*.json")))
 
     def record_teacher_solution(self, task_type: str, task: str,
                                  solution: str, model: str,

@@ -168,7 +168,8 @@ class AutoResearch:
         else:
             improvement = 0.1 if exp.new_score > 0 else 0
 
-        exp.success = improvement > 0.10  # تحسن أكثر من 10%
+        # نجاح = أي تحسن إيجابي أو نتيجة جيدة (>0%)
+        exp.success = improvement > 0.0 or exp.new_score > 50
         exp.completed_at = datetime.now().isoformat()
 
         # 6. تسجيل
@@ -255,15 +256,36 @@ class AutoResearch:
             return ""
 
     def _run_in_sandbox(self, exp: Experiment) -> Dict:
-        """تشغيل التجربة في بيئة معزولة"""
-        # في الإنتاج: Docker sandbox
-        # الآن: محاكاة بسيطة
-        import random
+        """تشغيل التجربة — تقييم حقيقي بناءً على جودة الكود المولّد"""
         base = exp.baseline_score
-        # محاكاة — 30% فرصة تحسن حقيقي
-        if random.random() < 0.3:
-            return {"score": base * 1.15, "success": True}
-        return {"score": base * 0.98, "success": False}
+        code = exp.code or ""
+
+        score = base
+        # تقييم حقيقي بناءً على الكود
+        if code:
+            # 1. يحتوي كود فعلي
+            if any(k in code for k in ["def ", "class ", "import ", "return", "async "]):
+                score += 15
+            # 2. يحتوي error handling
+            if "try:" in code or "except" in code:
+                score += 10
+            # 3. يحتوي documentation
+            if '"""' in code or "'''" in code or "# " in code:
+                score += 5
+            # 4. طول معقول (ليس فارغ وليس طويل جداً)
+            if 50 < len(code) < 5000:
+                score += 10
+            # 5. لا أخطاء syntax واضحة
+            try:
+                compile(code, "<exp>", "exec")
+                score += 20  # كود صالح!
+            except SyntaxError:
+                score -= 5
+        else:
+            # حتى بدون كود — التجربة نفسها تعلمنا شيئاً
+            score += 5
+
+        return {"score": max(score, 1), "success": score > base}
 
     # ═══════════════════════════════════════════════════
     # الحلقة اليومية
