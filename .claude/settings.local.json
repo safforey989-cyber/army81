@@ -69,7 +69,18 @@
       "Bash(curl.exe -s http://localhost:8181/training/status)",
       "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d,indent=2,ensure_ascii=False\\)[:500]\\)\")",
       "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d,indent=2,ensure_ascii=False\\)[:2000]\\)\")",
-      "Bash(docker --version)"
+      "Bash(docker --version)",
+      "Bash(taskkill //PID 44948 //F)",
+      "Bash(taskkill //PID 14164 //F)",
+      "Bash(taskkill //PID 41108 //F)",
+      "Bash(curl.exe -s http://localhost:8181/health)",
+      "Bash(curl.exe -s http://localhost:8181/status)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Agents: {d.get\\(\"\"router\"\",{}\\).get\\(\"\"total_agents\"\",0\\)}/81''''\\); print\\(f''''Tasks processed: {d.get\\(\"\"router\"\",{}\\).get\\(\"\"tasks_processed\"\",0\\)}''''\\); print\\(f''''Neural Network: {d.get\\(\"\"neural_network\"\",\"\"N/A\"\"\\)}''''\\)\")",
+      "Bash(curl.exe -s http://localhost:8181/evolution/exponential/stats)",
+      "Bash(tasklist)",
+      "Bash(curl.exe -s https://api.telegram.org/bot8578999841:AAF-8rTH4oqo4yJLfq0uGqbFjprmJYFyOGE/getMe)",
+      "Bash(ls -lt workspace/exponential_evolution/*.json)",
+      "Bash(ls -lt workspace/experiments/*.json)"
     ]
   }
 }

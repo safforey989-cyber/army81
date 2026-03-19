@@ -167,6 +167,11 @@
       "insight": "ERROR: 404 Client Error: Not Found for url: http://localhost:11434/api/chat",
       "topic": "collaboration",
       "timestamp": "2026-03-18T21:59:39.465072"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-18T22:35:17.948751"
     }
   ],
   "strengths": [],

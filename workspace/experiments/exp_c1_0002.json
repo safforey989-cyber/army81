@@ -13,5 +13,8 @@
   },
   "winner": "A42",
   "cycle": 1,
-  "timestamp": "2026-03-18T23:55:09.200009"
+  "timestamp": "2026-03-18T23:55:09.200009",
+  "improved": true,
+  "improvement_pct": 152.5,
+  "knowledge_transferred": true
 }

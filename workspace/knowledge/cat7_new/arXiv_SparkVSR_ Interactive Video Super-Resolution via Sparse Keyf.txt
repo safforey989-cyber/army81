@@ -1,0 +1,5 @@
+Title: SparkVSR: Interactive Video Super-Resolution via Sparse Keyframe Propagation
+Source: arXiv
+Date: 2026-03-18T22:11:21.737016
+
+Video Super-Resolution (VSR) aims to restore high-quality video frames from low-resolution (LR) estimates, yet most existing VSR approaches behave like black boxes at inference time: users cannot reliably correct unexpected artifacts, but instead can only accept whatever the model produces. In this paper, we propose a novel interactive VSR framework dubbed SparkVSR that makes sparse keyframes a simple and expressive control signal. Specifically, users can first super-resolve or optionally a smal

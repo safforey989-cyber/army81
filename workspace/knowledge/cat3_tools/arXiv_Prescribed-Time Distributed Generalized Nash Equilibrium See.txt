@@ -1,0 +1,5 @@
+Title: Prescribed-Time Distributed Generalized Nash Equilibrium Seeking
+Source: arXiv
+Date: 2026-03-18T22:11:13.751283
+
+This paper proposes the first fully distributed algorithm for finding the Generalized Nash Equilibrium (GNE) of a non-cooperative game with shared coupling constraints and general cost coupling at a user-prescribed finite time T. As a foundation, a centralized gradient-based prescribed-time convergence result is established for the GNE problem, extending the optimization Lyapunov function framework to gradient dynamics, the only known realization among existing alternatives that naturally decomp

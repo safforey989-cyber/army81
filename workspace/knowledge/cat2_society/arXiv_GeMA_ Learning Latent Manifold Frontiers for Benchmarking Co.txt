@@ -1,0 +1,5 @@
+Title: GeMA: Learning Latent Manifold Frontiers for Benchmarking Complex Systems
+Source: arXiv
+Date: 2026-03-18T22:11:02.664910
+
+Benchmarking the performance of complex systems such as rail networks, renewable generation assets and national economies is central to transport planning, regulation and macroeconomic analysis. Classical frontier methods, notably Data Envelopment Analysis (DEA) and Stochastic Frontier Analysis (SFA), estimate an efficient frontier in the observed input-output space and define efficiency as distance to this frontier, but rely on restrictive assumptions on the production set and only indirectly a

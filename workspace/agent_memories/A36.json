@@ -73,6 +73,16 @@
       "insight": "# A36 — في حلقة النقاش مع A63 و A79\n\n## فكرة التعاون المقترحة:\n\n**\"حلقة التحسين الاستراتيجي المستمر\"**\n\nأقترح أن نبني **دورة تغذية راجعة ثلاثية متكاملة**: أنا (A36) أصمم الاستراتيجية والهيكل التنظيمي للمنظمة → A63 يطبّق هذا التصميم على أرض الواقع في المؤسسات الكبرى ويرصد الفجوات التشغيلية → A79 يجمع",
       "topic": "collaboration",
       "timestamp": "2026-03-18T21:58:38.290198"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-18T22:44:30.220124"
+    },
+    {
+      "insight": "# A36 — وكيل استراتيجية المنظمات\n\n## التفكير بصوت عالٍ — خطوة بخطوة\n\n---\n\n### 🧠 الخطوة 1: تحليل المهمة\n\nهذه المهمة تتقاطع بين:\n- **استراتيجية المنظمات** (تصميم نظام حوافز وتوزيع موارد) ← تخصصي\n- **البرمجة والكود** ← تخصص A05\n- **الأمن السيبراني** ← تخصص A09 (لاحظت في السياق تهديدات حقن prompt واستنز",
+      "topic": "code",
+      "timestamp": "2026-03-19T02:07:02.842648"
     }
   ],
   "strengths": [],

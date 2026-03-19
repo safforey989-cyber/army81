@@ -5,7 +5,8 @@
       "name": "Army81 Gateway (FastAPI)",
       "runtimeExecutable": "python",
       "runtimeArgs": ["gateway/app.py"],
-      "port": 8181
+      "port": 8181,
+      "autoPort": false
     }
   ]
 }

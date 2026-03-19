@@ -1,0 +1,5 @@
+Title: SegviGen: Repurposing 3D Generative Model for Part Segmentation
+Source: arXiv
+Date: 2026-03-18T22:10:26.275999
+
+We introduce SegviGen, a framework that repurposes native 3D generative models for 3D part segmentation. Existing pipelines either lift strong 2D priors into 3D via distillation or multi-view mask aggregation, often suffering from cross-view inconsistency and blurred boundaries, or explore native 3D discriminative segmentation, which typically requires large-scale annotated 3D data and substantial training resources. In contrast, SegviGen leverages the structured priors encoded in pretrained 3D 

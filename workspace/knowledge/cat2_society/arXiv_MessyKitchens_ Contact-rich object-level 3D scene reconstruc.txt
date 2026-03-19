@@ -1,0 +1,5 @@
+Title: MessyKitchens: Contact-rich object-level 3D scene reconstruction
+Source: arXiv
+Date: 2026-03-18T22:11:06.676201
+
+Monocular 3D scene reconstruction has recently seen significant progress. Powered by the modern neural architectures and large-scale data, recent methods achieve high performance in depth estimation from a single image. Meanwhile, reconstructing and decomposing common scenes into individual 3D objects remains a hard challenge due to the large variety of objects, frequent occlusions and complex object relations. Notably, beyond shape and pose estimation of individual objects, applications in robo

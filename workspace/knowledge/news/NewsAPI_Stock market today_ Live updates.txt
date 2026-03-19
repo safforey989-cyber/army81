@@ -1,0 +1,5 @@
+Title: Stock market today: Live updates
+Source: NewsAPI
+Date: 2026-03-18T22:11:39.823135
+
+The three major averages posted back-to-back gains on Tuesday, even as oil prices ended the session higher. Traders are now awaiting the Fed's policy decision.

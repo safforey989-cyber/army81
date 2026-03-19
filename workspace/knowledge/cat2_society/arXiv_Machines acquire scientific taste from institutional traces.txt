@@ -1,0 +1,5 @@
+Title: Machines acquire scientific taste from institutional traces
+Source: arXiv
+Date: 2026-03-18T22:11:02.672143
+
+Artificial intelligence matches or exceeds human performance on tasks with verifiable answers, from protein folding to Olympiad mathematics. Yet the capacity that most governs scientific advance is not reasoning but taste: the ability to judge which untested ideas deserve pursuit, exercised daily by editors and funders but never successfully articulated, taught, or automated. Here we show that fine-tuning language models on journal publication decisions recovers evaluative judgment inaccessible 

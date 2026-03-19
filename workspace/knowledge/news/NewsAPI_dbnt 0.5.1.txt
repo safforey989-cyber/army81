@@ -1,0 +1,5 @@
+Title: dbnt 0.5.1
+Source: NewsAPI
+Date: 2026-03-18T22:11:46.950596
+
+Universal feedback protocol and learning system for AI agents. Turn corrections into persistent, weighted rules.

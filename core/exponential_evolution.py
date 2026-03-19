@@ -255,6 +255,48 @@ class ExponentialEvolution:
     # المراحل التفصيلية
     # ═══════════════════════════════════════════════════
 
+    def _smart_score(self, text: str, task_type: str, metric: str) -> int:
+        """تقييم ذكي متعدد الأبعاد — بدل مجرد طول النص"""
+        if not text or text.startswith("ERROR"):
+            return 0
+        score = 0
+        # 1. الطول الأساسي (مع حد أعلى)
+        score += min(len(text), 2000) * 0.3
+        # 2. التنظيم (عناوين، قوائم، أرقام)
+        if any(c in text for c in ['#', '##', '###']):
+            score += 150
+        numbered = sum(1 for c in ['1.', '2.', '3.', '4.', '5.'] if c in text)
+        score += numbered * 40
+        bullets = text.count('•') + text.count('-') + text.count('*')
+        score += min(bullets, 10) * 20
+        # 3. العمق (كلمات تقنية حسب النوع)
+        depth_keywords = {
+            "medical": ["آلية", "مستقبلات", "بروتين", "خلية", "enzyme", "receptor", "pathway"],
+            "coding": ["def ", "class ", "return", "import", "function", "algorithm"],
+            "security": ["ثغرة", "CVE", "injection", "XSS", "authentication", "encryption"],
+            "financial": ["ROI", "مخاطر", "تحليل", "سوق", "استثمار", "عائد"],
+            "reasoning": ["إذاً", "لذلك", "بالتالي", "therefore", "hence", "conclusion"],
+            "strategy": ["مرحلة", "خطة", "هدف", "مؤشر", "KPI", "milestone"],
+        }
+        for kw in depth_keywords.get(task_type, []):
+            if kw in text.lower():
+                score += 50
+        # 4. اللغة العربية
+        arabic_chars = sum(1 for c in text if '\u0600' <= c <= '\u06FF')
+        if arabic_chars > len(text) * 0.3:
+            score += 100  # يحتوي عربي حقيقي
+        # 5. لا تكرار (جودة)
+        words = text.split()
+        if len(words) > 10:
+            unique_ratio = len(set(words)) / len(words)
+            score += int(unique_ratio * 200)
+        # 6. أمثلة وأدلة
+        evidence_keywords = ["مثال", "دراسة", "بحث", "وفقاً", "example", "study", "according"]
+        for kw in evidence_keywords:
+            if kw in text.lower():
+                score += 30
+        return max(int(score), 1)  # حد أدنى 1 إذا أنتج نص
+
     def _phase_research_clone(self, agents, run_fn, emit_fn, ops_count) -> Dict:
         """البحث في كل المصادر + استنساخ المفيد"""
         logger.info(f"🔍 Research & Clone — {ops_count} operations")
@@ -453,12 +495,34 @@ class ExponentialEvolution:
                 self.total_experiments += 1
                 results["experiments_run"] += 1
 
-                # قيّم النتائج
-                score1 = len(t1) if t1 and not t1.startswith("ERROR") else 0
-                score2 = len(t2) if t2 and not t2.startswith("ERROR") else 0
+                # قيّم النتائج بتقييم ذكي متعدد الأبعاد
+                score1 = self._smart_score(t1, exp["type"], exp.get("metric", "length"))
+                score2 = self._smart_score(t2, exp["type"], exp.get("metric", "length"))
 
-                winner = a1.agent_id if score1 > score2 else a2.agent_id
+                winner = a1.agent_id if score1 >= score2 else a2.agent_id
+                loser = a2.agent_id if score1 >= score2 else a1.agent_id
+                win_score = max(score1, score2)
+                lose_score = min(score1, score2)
+                improved = win_score > 0  # نجح إذا أنتج إجابة حقيقية
+                improvement_pct = round((win_score - lose_score) / max(lose_score, 1) * 100, 1)
+
                 results["successful"] += 1
+
+                # ─── نقل معرفة الفائز للخاسر (التعلم الحقيقي) ───
+                if improved and win_score > 100:
+                    try:
+                        from memory.hierarchical_memory import HierarchicalMemory
+                        hm = HierarchicalMemory()
+                        winner_response = t1 if score1 >= score2 else t2
+                        # احفظ حل الفائز كدرس للخاسر
+                        hm.L2.record(loser, f"تعلمت من {winner}: {exp['task'][:50]}",
+                                    f"الحل الأفضل: {winner_response[:300]}", True, 9)
+                        # سجّل نجاح الفائز
+                        hm.L2.record(winner, exp["task"][:80], winner_response[:200], True, 9)
+                        results.setdefault("knowledge_transfers", 0)
+                        results["knowledge_transfers"] = results.get("knowledge_transfers", 0) + 1
+                    except Exception:
+                        pass
 
                 # سجّل التجربة
                 exp_data = {
@@ -467,6 +531,9 @@ class ExponentialEvolution:
                     "agent1": {"id": a1.agent_id, "model": a1.model_alias, "score": score1},
                     "agent2": {"id": a2.agent_id, "model": a2.model_alias, "score": score2},
                     "winner": winner,
+                    "improved": improved,
+                    "improvement_pct": improvement_pct,
+                    "knowledge_transferred": improved and win_score > 100,
                     "cycle": self.cycle_count,
                     "timestamp": datetime.now().isoformat(),
                 }

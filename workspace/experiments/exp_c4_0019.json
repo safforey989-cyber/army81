@@ -1,0 +1,20 @@
+{
+  "type": "quality",
+  "task": "حلّل مخاطر الاستثمار في البيتكوين مع أدلة",
+  "agent1": {
+    "id": "A13",
+    "model": "claude-smart",
+    "score": 2769
+  },
+  "agent2": {
+    "id": "A24",
+    "model": "gemini-pro",
+    "score": 752
+  },
+  "winner": "A13",
+  "cycle": 4,
+  "timestamp": "2026-03-19T02:09:40.548671",
+  "improved": true,
+  "improvement_pct": 268.2,
+  "knowledge_transferred": true
+}

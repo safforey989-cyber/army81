@@ -1,0 +1,5 @@
+Title: Lifting the fog - a case for non-reversible "lifted" Markov chains
+Source: arXiv
+Date: 2026-03-18T22:10:54.994829
+
+Phase transitions appear all over science, and are familiar from everyday life, as water boiling, sugar melting into caramel or as nematic molecules turning smectic in liquid-crystal displays. The dynamics of phase transitions can be extremely slow, as for example when fog in winter does not lift, that is when the coarsening takes much time from many tiny water droplets to fewer but larger rain drops that feel the pull of gravity. The dynamics of phase transitions is relevant also for the perfor

@@ -13,5 +13,8 @@
   },
   "winner": "A70",
   "cycle": 1,
-  "timestamp": "2026-03-18T23:56:05.745692"
+  "timestamp": "2026-03-18T23:56:05.745692",
+  "improved": true,
+  "improvement_pct": 390.4,
+  "knowledge_transferred": true
 }

@@ -1,0 +1,20 @@
+{
+  "type": "quality",
+  "task": "حلّل مخاطر الاستثمار في البيتكوين مع أدلة",
+  "agent1": {
+    "id": "A56",
+    "model": "perplexity-fast",
+    "score": 1176
+  },
+  "agent2": {
+    "id": "A52",
+    "model": "deepseek-r1",
+    "score": 678
+  },
+  "winner": "A56",
+  "cycle": 3,
+  "timestamp": "2026-03-19T00:57:03.953837",
+  "improved": true,
+  "improvement_pct": 73.5,
+  "knowledge_transferred": true
+}

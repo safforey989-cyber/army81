@@ -1,0 +1,5 @@
+Title: Chronos: Temporal-Aware Conversational Agents with Structured Event Retrieval for Long-Term Memory
+Source: arXiv
+Date: 2026-03-18T22:10:40.739149
+
+Recent advances in Large Language Models (LLMs) have enabled conversational AI agents to engage in extended multi-turn interactions spanning weeks or months. However, existing memory systems struggle to reason over temporally grounded facts and preferences that evolve across months of interaction and lack effective retrieval strategies for multi-hop, time-sensitive queries over long dialogue histories. We introduce Chronos, a novel temporal-aware memory framework that decomposes raw dialogue int

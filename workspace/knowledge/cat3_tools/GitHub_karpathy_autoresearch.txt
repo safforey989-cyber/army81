@@ -1,0 +1,5 @@
+Title: karpathy/autoresearch
+Source: GitHub
+Date: 2026-03-18T22:11:49.718425
+
+AI agents running research on single-GPU nanochat training automatically

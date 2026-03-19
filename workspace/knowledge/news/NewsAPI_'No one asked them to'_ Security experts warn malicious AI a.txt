@@ -1,0 +1,5 @@
+Title: 'No one asked them to': Security experts warn malicious AI agents can team up to launch cyberattacks
+Source: NewsAPI
+Date: 2026-03-18T22:11:39.820408
+
+AI agents which perform normal office tasks can also autonomously exploit systems, bypass protections, and exfiltrate sensitive data inside simulated networks.

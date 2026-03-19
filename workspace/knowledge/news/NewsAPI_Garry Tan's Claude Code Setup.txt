@@ -1,0 +1,5 @@
+Title: Garry Tan's Claude Code Setup
+Source: NewsAPI
+Date: 2026-03-18T22:11:42.726653
+
+Use Garry Tan's exact Claude Code setup: 10 opinionated tools that serve as CEO, Eng Manager, Release Manager, Doc Engineer, and QA - garrytan/gstack

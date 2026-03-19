@@ -1,0 +1,5 @@
+Title: When AI Navigates the Fog of War
+Source: arXiv
+Date: 2026-03-18T22:11:02.675306
+
+Can AI reason about a war before its trajectory becomes historically obvious? Analyzing this capability is difficult because retrospective geopolitical prediction is heavily confounded by training-data leakage. We address this challenge through a temporally grounded case study of the early stages of the 2026 Middle East conflict, which unfolded after the training cutoff of current frontier models. We construct 11 critical temporal nodes, 42 node-specific verifiable questions, and 5 general explo

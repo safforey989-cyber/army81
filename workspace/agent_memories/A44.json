@@ -19,7 +19,18 @@
   "skills_learned": [],
   "collaborations": [],
   "decisions": [],
-  "insights": [],
+  "insights": [
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-18T22:22:54.798224"
+    },
+    {
+      "insight": "أنا A44 — وكيل تحليل الإعلام والتواصل.\n\nأشكرك على الاستفسار، لكن كتابة دالة Python لتحسب التشابه الدلالي بين جملتين يقع خارج تخصصي، حيث أركز على تحليل الخطاب الإعلامي وكشف الأجندات، وليس على البرمجة أو تطوير الكود. أقترح تحويل هذه المهمة إلى A05، الذي هو المتخصص في البرمجة ويملك الخبرة في كتابة الدو",
+      "topic": "code",
+      "timestamp": "2026-03-18T22:25:07.663805"
+    }
+  ],
   "strengths": [],
   "weaknesses": [],
   "interaction_count": 1,

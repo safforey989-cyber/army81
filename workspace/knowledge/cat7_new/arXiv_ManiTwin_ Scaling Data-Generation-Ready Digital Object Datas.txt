@@ -1,0 +1,5 @@
+Title: ManiTwin: Scaling Data-Generation-Ready Digital Object Dataset to 100K
+Source: arXiv
+Date: 2026-03-18T22:11:21.688225
+
+Learning in simulation provides a useful foundation for scaling robotic manipulation capabilities. However, this paradigm often suffers from a lack of data-generation-ready digital assets, in both scale and diversity. In this work, we present ManiTwin, an automated and efficient pipeline for generating data-generation-ready digital object twins. Our pipeline transforms a single image into simulation-ready and semantically annotated 3D asset, enabling large-scale robotic manipulation data generat

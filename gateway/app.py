@@ -1580,16 +1580,21 @@ def hyper_stats():
     """إحصائيات السرب الخارق"""
     report_dir = Path("workspace/hyper_evolution")
     if not report_dir.exists():
-        return {"sessions": 0}
-    reports = sorted(report_dir.glob("*.json"), reverse=True)
-    if reports:
-        try:
-            latest = json.loads(reports[0].read_text(encoding="utf-8"))
-            return {"sessions": len(reports), "latest": latest.get("stats", {}),
-                    "last_run": latest.get("end", "")}
-        except Exception:
-            pass
-    return {"sessions": len(reports)}
+        return {"sessions": 0, "latest": {}, "last_run": ""}
+    reports = sorted(report_dir.glob("hyper_*.json"), reverse=True)
+    if not reports:
+        return {"sessions": 0, "latest": {}, "last_run": ""}
+    try:
+        latest = json.loads(reports[0].read_text(encoding="utf-8"))
+        return {
+            "sessions": len(reports),
+            "latest": latest.get("stats", latest.get("phases", {})),
+            "phases": latest.get("phases", {}),
+            "last_run": latest.get("end", latest.get("start", "")),
+            "elapsed": latest.get("elapsed_seconds", 0),
+        }
+    except Exception as e:
+        return {"sessions": len(reports), "error": str(e)}
 
 # ═══════════════════════════════════════════════════
 # التطور الأُسّي — Exponential Evolution
