@@ -973,7 +973,35 @@ function startReal(){
           var fromA=AGENTS.find(function(a){return a.id===from;});
           var toA=AGENTS.find(function(a){return a.id===to;});
 
-          if(type==='agent_message'||type==='discussion'){
+          if(type==='research_done'||type==='research_complete'){
+            if(fromA){EventBus.emit(EVT.TASK_ASSIGNED,{agentId:from,task:data.topic||'بحث'});
+              EventBus.emit(EVT.SPIDER_CRAWL,{agentId:from,source:data.topic||'arXiv',pages:1,type:'paper'});
+              setTimeout(function(){EventBus.emit(EVT.TASK_COMPLETED,{agentId:from});EventBus.emit(EVT.MEMORY_SAVED,{agentId:from,amount:5,size:data.length||100,topic:data.topic||'بحث'});},1500+Math.random()*2000);
+              EVO.spiders.pages++;EVO.spiders.papers++;}
+          }
+          else if(type==='distillation'||type==='distill_done'||type==='distill_saved'){
+            EventBus.emit(EVT.DISTILL_START,{teacher:data.teacher||'Pro',student:data.student||'Flash'});
+            setTimeout(function(){EventBus.emit(EVT.DISTILL_COMPLETE,{improve:data.improve||2});},2500);
+          }
+          else if(type==='experiment'||type==='experiment_done'||type==='experiment_result'){
+            EventBus.emit(EVT.EXPERIMENT_START,{agentId:from,hypothesis:data.type||'تجربة'});
+            setTimeout(function(){EventBus.emit(EVT.EXPERIMENT_END,{agentId:from,success:true,improve:data.improvement_pct||3,hypothesis:data.type||''});},2000);
+          }
+          else if(type==='battle'||type==='battle_done'||type==='battle_round'){
+            var ids=AGENTS.map(function(a){return a.id;}).sort(function(){return Math.random()-0.5;});
+            EventBus.emit(EVT.SELFPLAY_ROUND,{red:ids.slice(0,4),blue:ids.slice(4,8),challenge:data.challenge||'معركة'});
+            setTimeout(function(){EventBus.emit(EVT.SELFPLAY_RESULT,{winner:data.winner||'red',lesson:data.lesson||'تحسين'});},4000);
+          }
+          else if(type==='invention'||type==='skill_created'||type==='skill_cloned'){
+            EventBus.emit(EVT.SKILL_ACQUIRED,{skill:data.name||'أداة جديدة'});
+            addCodeLine('feat: invented '+( data.name||'tool'),'fn');
+            EVO.openHands.commits++;EVO.skills++;
+          }
+          else if(type==='cycle_started'){
+            logEvent('evolution','🔄','دورة','بدأت الدورة '+(data.cycle||''));
+            AGENTS.forEach(function(a){if(Math.random()>0.5){a.state='busy';a.mesh.material.emissiveIntensity=0.8;setTimeout(function(){a.state='active';a.mesh.material.emissiveIntensity=0.4;},5000+Math.random()*5000);}});
+          }
+          else if(type==='agent_message'||type==='discussion'){
             if(fromA&&toA)EventBus.emit(EVT.AGENT_MESSAGE,{fromId:from,toId:to});
             if(fromA){EventBus.emit(EVT.TASK_ASSIGNED,{agentId:from,task:data.message||data.topic||'تواصل'});
               setTimeout(function(){EventBus.emit(EVT.TASK_COMPLETED,{agentId:from});},2000+Math.random()*3000);}
@@ -1002,10 +1030,16 @@ function startReal(){
             addCodeLine('feat: auto-added '+( data.name||'skill'),'fn');
             EVO.openHands.commits++;
           }
+          else if(type==='crystallization'){
+            EventBus.emit(EVT.MEMORY_SAVED,{agentId:from,amount:20,size:50,topic:'تبلور ذاكرة'});
+            logEvent('memory','💎','تبلور',data.rules_count+' قاعدة ذهبية');
+          }
           else if(type==='cycle_completed'){
             EventBus.emit(EVT.AWAKENING,{});
             EventBus.emit(EVT.MODEL_MERGE,{improve:data.multiplier||2});
             logEvent('evolution','🔄','دورة','مضاعف: '+(data.multiplier||'?')+'x — دورة '+(data.cycle||''));
+            // تفعيل كل الوكلاء بصرياً عند إكمال دورة
+            AGENTS.forEach(function(a){a.evolution=Math.min(100,a.evolution+5);a.growthTarget+=0.02;createEvoWave(a);});
           }
           else if(type==='evolution_started'){
             logEvent('evolution','🚀','تطور','بدأ بمضاعف '+(data.starting_multiplier||1)+'x');
