@@ -1743,6 +1743,57 @@ async def brain_prepare_training():
         return {"error": str(e)}
 
 
+# ── Unified Evolution Endpoints ──────────────────────────
+
+@app.get("/unified/status")
+def unified_status():
+    """حالة التطور الموحّد والذاكرة الأم"""
+    try:
+        from core.unified_evolution import get_unified_engine
+        return get_unified_engine().status()
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/unified/mother-memory")
+def mother_memory():
+    """الذاكرة الموحّدة — ذاكرة الأم"""
+    try:
+        from core.unified_evolution import get_unified_engine
+        engine = get_unified_engine()
+        return {
+            "status": engine.mother.status(),
+            "golden_rules": engine.mother.state.get("golden_rules", [])[-10:],
+            "consciousness": engine.mother.state.get("consciousness_notes", [])[-5:],
+            "top_skills": dict(list(engine.mother.state.get("skill_registry", {}).items())[:20]),
+        }
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/unified/run-cycle")
+async def run_unified_cycle():
+    """تشغيل دورة تطور موحّدة"""
+    try:
+        from core.unified_evolution import get_unified_engine
+        engine = get_unified_engine()
+        agents_list = list(router.agents.values())
+
+        def run_fn(agent_id, task):
+            agent = router.agents.get(agent_id)
+            if agent:
+                return agent.run(task, context={})
+            return {"result": "Agent not found"}
+
+        import threading
+        t = threading.Thread(
+            target=engine.run_unified_cycle,
+            args=(agents_list, run_fn, add_swarm_event, 8, 4, 2),
+            daemon=True)
+        t.start()
+        return {"status": "started", "phases": 5}
+    except Exception as e:
+        return {"error": str(e)}
+
+
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn

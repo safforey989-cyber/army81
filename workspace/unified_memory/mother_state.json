@@ -1,0 +1,6006 @@
+{
+  "version": 1,
+  "total_absorptions": 191,
+  "golden_rules": [],
+  "domain_expertise": {
+    "unknown": {
+      "best_agents": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16",
+        "A17",
+        "A18",
+        "A19",
+        "A20",
+        "A21",
+        "A22",
+        "A23",
+        "A24",
+        "A25",
+        "A26",
+        "A27",
+        "A28",
+        "A29",
+        "A30",
+        "A31",
+        "A32",
+        "A33",
+        "A34",
+        "A35",
+        "A36",
+        "A37",
+        "A38",
+        "A39",
+        "A40",
+        "A41",
+        "A42",
+        "A43",
+        "A44",
+        "A45",
+        "A46",
+        "A47",
+        "A48",
+        "A49",
+        "A50",
+        "A51",
+        "A52",
+        "A53",
+        "A54",
+        "A55",
+        "A56",
+        "A57",
+        "A58",
+        "A59",
+        "A60",
+        "A61",
+        "A62",
+        "A63",
+        "A64",
+        "A65",
+        "A66",
+        "A67",
+        "A68",
+        "A69",
+        "A70",
+        "A71",
+        "A72",
+        "A73",
+        "A74",
+        "A75",
+        "A76",
+        "A77",
+        "A78",
+        "A79",
+        "A80",
+        "A81"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat9_execution": {
+      "best_agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat10_engineering": {
+      "best_agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat11_creative": {
+      "best_agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat12_finance": {
+      "best_agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat13_osint": {
+      "best_agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat14_health": {
+      "best_agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat15_legal": {
+      "best_agents": [
+        "A152",
+        "A153",
+        "A154",
+        "A155",
+        "A156",
+        "A157",
+        "A158",
+        "A159",
+        "A160",
+        "A161"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat16_education": {
+      "best_agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat17_cosmic": {
+      "best_agents": [
+        "A172",
+        "A173",
+        "A174",
+        "A175",
+        "A176",
+        "A177",
+        "A178",
+        "A179",
+        "A180",
+        "A181",
+        "A182",
+        "A183",
+        "A184",
+        "A185",
+        "A186",
+        "A187",
+        "A188",
+        "A189",
+        "A190",
+        "A191"
+      ],
+      "confidence": 0,
+      "lessons": []
+    },
+    "cat8_evolution": {
+      "best_agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "confidence": 0,
+      "lessons": []
+    }
+  },
+  "collaboration_map": {},
+  "skill_registry": {
+    "Twitter": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "E2B Cookbook": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Image": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "workflow_builder": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "GitHub": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Paper": {
+      "agents": [
+        "A100",
+        "A101",
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "api_designer": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "scheduler_setup": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Website": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Tweet": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "deployment_script": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "e2b": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Hugging Face": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "function-calling": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Discord": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "database_designer": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "docs": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "web version of this list": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Web": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "AIWaves Inc.": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Awesome SDKs for AI Agents": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "MovieLens-1M": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "hello@e2b.dev": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "GitHub Repository": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Paul Gauthier": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "eumemic": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Discord Invite": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Code Interpreter SDK": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "Documentation": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "form": {
+      "agents": [
+        "A100",
+        "A101",
+        "A92",
+        "A93",
+        "A94",
+        "A95",
+        "A96",
+        "A97",
+        "A98",
+        "A99"
+      ],
+      "quality": 0
+    },
+    "test_generator": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "Ppaer": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "code_reviewer": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "License: MIT": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111",
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Star History Chart": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "refactoring_plan": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "link": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "paper": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "🌐 Openwork - Open Browser Automation Agent": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "Made With Love": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "architecture_reviewer": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "Awesome": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111",
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "debug_assistant": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "🎙️ OpenSource Voice Dictation Agent (like Wispr Flow": {
+      "agents": [
+        "A102",
+        "A103",
+        "A104",
+        "A105",
+        "A106",
+        "A107",
+        "A108",
+        "A109",
+        "A110",
+        "A111"
+      ],
+      "quality": 0
+    },
+    "The Next Token of Progress: 4 Unlocks on the Generative AI Horizon | Andreessen Horowitz": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "2309.07930] Generative AI": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "AI Index Report 2023 – Artificial Intelligence Index": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "AI Timeline": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "A Brief History of Generative AI - DATAVERSITY": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Generative AI in a nutshell": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Emerging Trends in Generative AI Research: A Selection of Recent Papers": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Who Owns the Generative AI Platform? | Andreessen Horowitz": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "GenAI Prism Infographic by Brian Solis": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Generative AI exists because of the transformer": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "2310.07127] An HCI-Centric Survey and Taxonomy of Human-Generative-AI Interactions": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The Generative AI Timeline": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "FirstMark | 2024 MAD (ML/AI/Data) Landscape": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The landscape of generative AI landscape reports | by Ramsri Goutham | Jan, 2023 | Medium": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "AI Roadmap] 2024": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Generative AI Timeline from January 2023 to July 2023": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "2024 AI Timeline": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The Story of AI Winters and What it Teaches Us Today": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Early days of AI - by Elad Gil": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "There Would Have Been No LLMs Without This (episode#3 in the History series)": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Generative AI for Beginners: Part 1 — Introduction to AI | by Raja Gupta | Medium": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The Building Blocks of Generative AI | by Jonathan Shriftman | Medium": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Timeline of AI and language models": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Generative AI with Cohere: Part 1 - Model Prompting": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "What's the big deal with Generative AI? Is it the future or the present?": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "LLM Visualization": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Agents Marketplace": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Generative AI Iceberg": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Large Language Models and Where to Use Them: Part 1": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Toward General Design Principles for Generative AI Applications": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The Four Wars of the AI Stack (Dec 2023 Recap)": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "A Simple Guide To The History Of Generative AI | Bernard Marr": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "60+ Generative AI Terms You Must Know By Heart": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The economic potential of generative AI: The next productivity frontier": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "A survey of Generative AI Applications | arxiv": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Cartography of generative AI": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The Rise of Generative AI Large Language Models (LLMs)": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The rise of generative AI: A timeline of triumphs, hiccups and hype | CIO Dive": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Brief History In Time: Decoding the Evolution of Generative AI | LinkedIn": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Timeline of AI forecasts - AI Digest": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The state of AI in 2023: Generative AI’s breakout year | McKinsey": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Paper Digest - ChatGPT": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "2310.04438] A Brief History of Prompt: Leveraging Language Models": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "A Survey of Large Language Models": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The architecture of today's LLM applications - The GitHub Blog": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "A jargon-free explanation of how AI large language models work | Ars Technica": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Large Language Models and Where to Use Them: Part 2": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "Generative AI with Cohere: Part 2 - Use Case Ideation": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "The AI Timeline (@TheAITimeline) / X": {
+      "agents": [
+        "A112",
+        "A113",
+        "A114",
+        "A115",
+        "A116",
+        "A117",
+        "A118",
+        "A119",
+        "A120",
+        "A121"
+      ],
+      "quality": 0
+    },
+    "tf_deep_rl_trader": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Hands-on LLMs: Train and Deploy a Real-time Financial Advisor": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "deep_rl_trader": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "AI in Finance": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "FinRL": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Personae": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "nofx": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "MACD + RSI + ADX Strategy (ChatGPT-powered) by TradeSmart": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy, 2020": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Ten Financial Applications of Machine Learning, 2018": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "ATLAS": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Use chatgpt to adjust strategy parameters": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Advanced-Deep-Trading": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Nof1": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "MarS": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "MLSys-NYU-2022": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "InvicTrade": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "AutomatedStockTrading-DeepQ-Learning": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "AI Hedge Fund": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "portfolio_optimizer": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "FinGPT": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "trading-rl": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Build Financial Software with Generative AI": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Reinforcement Learning for Trading, 1994": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Dragon-Kings, Black Swans and the Prediction of Crises Didier Sornette": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Train and Deploy a Serverless API to predict crypto prices": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "TradingAgents": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "risk_calculator": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Machine Learning for Trading": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Financial Statement Analysis with Large Language Models": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Quantitative-Trading": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "financial_modeler": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "stockpredictionai": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Financial AI in Practice": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Ensemble-Strategy": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "gym-trading": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Investing for Programmers": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "PIXIU": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "QuantResearch": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "FinRpt": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "ChatGPT Strategy by OctoBot": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "stock_analyzer": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "crypto_analyzer": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Brownian Motion in the Stock Market Osborne, 1959": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Udacity: Artificial Intelligence for Trading": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Financial Trading as a Game: A Deep Reinforcement Learning Approach": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Mastering Python for Finance": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "AgentFund": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "KeepRule": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "NYU: Overview of Advanced Methods of Reinforcement Learning in Finance": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Advances in Financial Machine Learning": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "The Theory of Speculation L. Bachelier, 1900": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "FinRobot": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "trading-gym": {
+      "agents": [
+        "A122",
+        "A123",
+        "A124",
+        "A125",
+        "A126",
+        "A127",
+        "A128",
+        "A129",
+        "A130",
+        "A131"
+      ],
+      "quality": 0
+    },
+    "Eniro (Sweden)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Ask": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "DorkGPT": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Walla (Israel)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Gerdoo (Iran)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "social_analyzer": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Qwant": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "news_verifier": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Parseek (Iran)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "spmedia": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "leak_monitor": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Bing": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Onet.pl (Poland)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Orange (France)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "SAPO (Portugal)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Search.com": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "SearchDorks": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Myallsearch": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Phind": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Baidu (China)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Aol": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Etools": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Daum (South Korea)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Google Hacking Database (GHDB)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Seznam(Czech Republic)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Open-source intelligence (OSINT)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Najdi (Slovenia)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Goodsearch": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Yandex (Russia)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "i-inteligence's": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "All-in-One": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Wolfram Alpha": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "AllTheInternet": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Impersonal.me": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Yahoo! Search": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Zarebin (Iran)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "YOU": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "DorkGenius": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "FaganFinder": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Goofram": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Naver (South Korea)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Google Search": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "entity_profiler": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "jivoi EK_": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Perplexity": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Instya": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "iZito": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "domain_recon": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Mojeek": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Goo (Japan)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "SoGou (China)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Lycos": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Search.ch (Switzerland)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Brave": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "Alleba (Philippines)": {
+      "agents": [
+        "A132",
+        "A133",
+        "A134",
+        "A135",
+        "A136",
+        "A137",
+        "A138",
+        "A139",
+        "A140",
+        "A141"
+      ],
+      "quality": 0
+    },
+    "ITK": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Drishti": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Kheops": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Cottage Med": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Bahmni": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "genomic_interpreter": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "FreeMedForms EMR": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "OpenEHR": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "symptom_analyzer": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Medplum": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "OpenMRS": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "OpenEMR": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Horos": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Ozone HIS": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "OpenClinic": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Dicoogle": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "InVesalius": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Continuity of Care Document": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "SMART on FHIR": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Ripple": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "OHDSI OMOP Common Data Model": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "3D Slicer": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Kaapana": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "HospitalRun": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "OpenScribe": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "EHRServer": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "dcm4che": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "OpenEyes": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Fiji": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Open mHealth": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "DICOM Server": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "DICOM Web Viewer": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "EHRBase": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "GNUmed": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "HL7 Version 2": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "GNU Health": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "research_reviewer": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "treatment_planner": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Akello": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "LibreHealth EHR": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "drug_interaction": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "openMAXIMS": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "FHIR": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "ITK-SNAP": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "open-eObs": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Odoo Medical": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "LibreHealth Radiology": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "MedinTux": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Open Hospital": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "OSCAR EMR": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "HOSxP": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "ERPNext": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "Cornerstone": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "DICOM Standards Browser": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "DICOMcloud": {
+      "agents": [
+        "A142",
+        "A143",
+        "A144",
+        "A145",
+        "A146",
+        "A147",
+        "A148",
+        "A149",
+        "A150",
+        "A151"
+      ],
+      "quality": 0
+    },
+    "dispute_resolver": {
+      "agents": [
+        "A152",
+        "A153",
+        "A154",
+        "A155",
+        "A156",
+        "A157",
+        "A158",
+        "A159",
+        "A160",
+        "A161"
+      ],
+      "quality": 0
+    },
+    "ip_advisor": {
+      "agents": [
+        "A152",
+        "A153",
+        "A154",
+        "A155",
+        "A156",
+        "A157",
+        "A158",
+        "A159",
+        "A160",
+        "A161"
+      ],
+      "quality": 0
+    },
+    "compliance_checker": {
+      "agents": [
+        "A152",
+        "A153",
+        "A154",
+        "A155",
+        "A156",
+        "A157",
+        "A158",
+        "A159",
+        "A160",
+        "A161"
+      ],
+      "quality": 0
+    },
+    "contract_analyzer": {
+      "agents": [
+        "A152",
+        "A153",
+        "A154",
+        "A155",
+        "A156",
+        "A157",
+        "A158",
+        "A159",
+        "A160",
+        "A161"
+      ],
+      "quality": 0
+    },
+    "legal_researcher": {
+      "agents": [
+        "A152",
+        "A153",
+        "A154",
+        "A155",
+        "A156",
+        "A157",
+        "A158",
+        "A159",
+        "A160",
+        "A161"
+      ],
+      "quality": 0
+    },
+    "TinyML and Efficient Deep Learning Computing - Massachusetts Institute of Technology": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "ChatGPT Prompt Engineering for Developers - DeepLearning.AI": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "curriculum_builder": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Artificial Intelligence for Beginners - Microsoft": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Learn Prompting": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion - fast.ai": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Learn the fundamentals of generative AI for real-world applications - AWS x DeepLearning.AI": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "6.S191: Introduction to Deep Learning - Massachusetts Institute of Technology": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "11-777: MultiModal Machine Learning (Fall 2022) - Carnegie Mellon University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Generative AI learning path - Google Cloud": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "CS25: Transformers United V2 - Stanford University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "feedback_writer": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "How Diffusion Models Work - DeepLearning.AI": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "CS324 - Advances in Foundation Models - Stanford University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Practical AI for Teachers and Students - Wharton School": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "AI for Everyone - Andrew Ng": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Lecture Series: An interesting topic every week on the fundamentals of art - Niji Academy": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Finetuning Large Language Models - DeepLearning.AI": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Prompt Engineering Guide - DAIR.AI": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Neural Networks/Deep Learning - StatQuest": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "CS224N: Natural Language Processing with Deep Learning - Stanford University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Deep Learning Lecture Series 2020 - DeepMind x University College London": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "CS25: Transformers United V3 - Stanford University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Practical Deep Learning for Coders - fast.ai": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "11-877: Advanced Topics in MultiModal Machine Learning (Fall 2022) - Carnegie Mellon University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "AI-Sys-Sp22 Machine Learning Systems - University of California, Berkeley": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "LLM Bootcamp - The Full Stack": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "LangChain AI Handbook - James Briggs and Francisco Ingham": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "COS 597G (Fall 2022): Understanding Large Language Models - Princeton University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "learning_path": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "lesson_planner": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "CS 601.471/671 NLP: Self-supervised Models - Johns Hopkins University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Hugging Face Diffusion Models Course": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "LangChain: Chat with Your Data - DeepLearning.AI": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Neural Networks: Zero to Hero - Andrej Karpathy": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Reinforcement Learning Lecture Series 2021 - DeepMind x University College London": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Prompt Engineering for ChatGPT - Vanderbilt University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "AI-Systems (LLM Edition) 294-162": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "CS11-711 Advanced Natural Language Processing - Carnegie Mellon University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Neural Networks - 3Blue1Brown": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "CS224S: Spoken Language Processing - Stanford University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Hugging Face Audio Course": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Tutorial on MultiModal Machine Learning (ICML 2023) - Carnegie Mellon University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "11-667: Large Language Models Methods and Applications - Carnegie Mellon University": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "GitHub Repo stars": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Deep Learning Specialization - Andrew Ng": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "quiz_generator": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "CSCI-GA.3033-102 Special Topic - Learning with Large Language and Vision Models": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "CS11-711 Advanced Natural Language Processing": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Speech and Language Processing - Dan Jurafsky and James H. Martin": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "Building Systems with the ChatGPT API - DeepLearning.AI": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "LangChain for LLM Application Development - DeepLearning.AI": {
+      "agents": [
+        "A162",
+        "A163",
+        "A164",
+        "A165",
+        "A166",
+        "A167",
+        "A168",
+        "A169",
+        "A170",
+        "A171"
+      ],
+      "quality": 0
+    },
+    "consciousness_explorer": {
+      "agents": [
+        "A172",
+        "A173",
+        "A174",
+        "A175",
+        "A176",
+        "A177",
+        "A178",
+        "A179",
+        "A180",
+        "A181",
+        "A182",
+        "A183",
+        "A184",
+        "A185",
+        "A186",
+        "A187",
+        "A188",
+        "A189",
+        "A190",
+        "A191"
+      ],
+      "quality": 0
+    },
+    "quantum_simulator": {
+      "agents": [
+        "A172",
+        "A173",
+        "A174",
+        "A175",
+        "A176",
+        "A177",
+        "A178",
+        "A179",
+        "A180",
+        "A181",
+        "A182",
+        "A183",
+        "A184",
+        "A185",
+        "A186",
+        "A187",
+        "A188",
+        "A189",
+        "A190",
+        "A191"
+      ],
+      "quality": 0
+    },
+    "frequency_analyzer": {
+      "agents": [
+        "A172",
+        "A173",
+        "A174",
+        "A175",
+        "A176",
+        "A177",
+        "A178",
+        "A179",
+        "A180",
+        "A181",
+        "A182",
+        "A183",
+        "A184",
+        "A185",
+        "A186",
+        "A187",
+        "A188",
+        "A189",
+        "A190",
+        "A191"
+      ],
+      "quality": 0
+    },
+    "gematria_calculator": {
+      "agents": [
+        "A172",
+        "A173",
+        "A174",
+        "A175",
+        "A176",
+        "A177",
+        "A178",
+        "A179",
+        "A180",
+        "A181",
+        "A182",
+        "A183",
+        "A184",
+        "A185",
+        "A186",
+        "A187",
+        "A188",
+        "A189",
+        "A190",
+        "A191"
+      ],
+      "quality": 0
+    },
+    "sacred_geometry_finder": {
+      "agents": [
+        "A172",
+        "A173",
+        "A174",
+        "A175",
+        "A176",
+        "A177",
+        "A178",
+        "A179",
+        "A180",
+        "A181",
+        "A182",
+        "A183",
+        "A184",
+        "A185",
+        "A186",
+        "A187",
+        "A188",
+        "A189",
+        "A190",
+        "A191"
+      ],
+      "quality": 0
+    },
+    "Bloom": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "GPT-J-6B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Zephyr 7B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "h2oGPT": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "OA-Pythia-12B-SFT-8": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "LWM-Text-Chat-128K": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "GPT-NEOX-20B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Qwen1.5-32B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "OpenHermes-7B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "synthetic_generator": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "jais-30b-v1": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "chatglm2-6b": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "MPT-7B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "fastchat-t5-3b-v1.0": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "UL2 & Flan-UL2": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "dolly-v2-12b": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Solar-10.7B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "OLMo 1B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "StableLM-Alpha": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Amber": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Mixtral-8x22B-v0.1": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "RedPajama-INCITE": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "FLOR-760M": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Mistral-7B-v0.2": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "MPT-30B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "distillation_pipeline": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "T5 & Flan-T5": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "chatglm3-6b": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Skywork-13B-Base": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "dlite-v2-1_5b": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "OpenLM 1B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "model_evaluator": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "deepseek-llm-7b-base": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Jamba-v0.1": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "chatglm-6b": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "open_llama_3b": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "yalm-100b": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "jais-30b-v3": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "prompt_optimizer": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "jais-13b": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "xgen-7b-4k-base": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Qwen1.5-MoE-A2.7B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Mistral-7B-v0.1": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "mamba-7b-rw": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "LLaMA 2 Weights": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Qwen1.5-7B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "benchmark_creator": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Falcon-180B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "RWKV, ChatRWKV": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Cerebras-GPT": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Gemma 7B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Mixtral-8x7B-v0.1": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "phi-2 2.7B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "pythia 70M - 12B": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    },
+    "Grok-1": {
+      "agents": [
+        "A82",
+        "A83",
+        "A84",
+        "A85",
+        "A86",
+        "A87",
+        "A88",
+        "A89",
+        "A90",
+        "A91"
+      ],
+      "quality": 0
+    }
+  },
+  "knowledge_graph": {},
+  "evolution_history": [],
+  "consciousness_notes": [],
+  "created_at": "2026-03-19T15:35:11.449502"
+}

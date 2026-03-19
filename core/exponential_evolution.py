@@ -210,6 +210,22 @@ class ExponentialEvolution:
             except Exception as e:
                 logger.error(f"Crystallization phase error: {e}")
 
+            # ═══ المرحلة 7: التطور الموحّد — تحسين فردي + تنسيق + تقطير ═══
+            try:
+                from core.unified_evolution import get_unified_engine
+                unified = get_unified_engine()
+                r = unified.run_unified_cycle(
+                    agents_list, run_agent_fn, emit_fn,
+                    agents_to_improve=min(cycle_ops + 3, 15),
+                    mentoring_pairs=min(cycle_ops, 5),
+                    team_problems=min(cycle_ops // 2, 3)
+                )
+                cycle_results["unified"] = r
+                logger.info(f"🌐 Unified: improved={r.get('agents_improved',0)}, skills={r.get('skills_learned',0)}, teams={r.get('team_solutions',0)}")
+            except Exception as e:
+                logger.error(f"Unified evolution phase error: {e}")
+                cycle_results["unified"] = {"error": str(e)}
+
             # ─── مضاعف ذكي — يعتمد على الأداء الحقيقي ───
             self.multiplier = self._compute_smart_multiplier(cycle_results)
 
