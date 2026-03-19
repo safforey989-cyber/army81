@@ -84,6 +84,25 @@ REAL_MODELS = {
     # ══════════════════════════════
     # Ollama محلي (fallback مجاني)
     # ══════════════════════════════
+    # ══════════════════════════════
+    # نماذج مجانية عملاقة (OpenRouter FREE)
+    # ══════════════════════════════
+    "hermes-405b-free":   {"provider": "openrouter", "model": "nousresearch/hermes-3-llama-3.1-405b:free",    "tier": "free", "cost": 0.0, "strengths": ["reasoning", "complex", "huge"]},
+    "nemotron-120b-free": {"provider": "openrouter", "model": "nvidia/nemotron-3-super-120b-a12b:free",       "tier": "free", "cost": 0.0, "strengths": ["reasoning", "science", "huge"]},
+    "llama-70b-free":     {"provider": "openrouter", "model": "meta-llama/llama-3.3-70b-instruct:free",       "tier": "free", "cost": 0.0, "strengths": ["reasoning", "general", "free"]},
+    "gemma-27b-free":     {"provider": "openrouter", "model": "google/gemma-3-27b-it:free",                   "tier": "free", "cost": 0.0, "strengths": ["reasoning", "science", "free"]},
+    "mistral-24b-free":   {"provider": "openrouter", "model": "mistralai/mistral-small-3.1-24b-instruct:free","tier": "free", "cost": 0.0, "strengths": ["coding", "multilingual", "free"]},
+    "minimax-free":       {"provider": "openrouter", "model": "minimax/minimax-m2.5:free",                    "tier": "free", "cost": 0.0, "strengths": ["reasoning", "long_context", "free"]},
+    "gpt-oss-120b-free":  {"provider": "openrouter", "model": "openai/gpt-oss-120b:free",                    "tier": "free", "cost": 0.0, "strengths": ["reasoning", "general", "free"]},
+    "qwen3-coder-free":   {"provider": "openrouter", "model": "qwen/qwen3-coder:free",                       "tier": "free", "cost": 0.0, "strengths": ["coding", "quality", "free"]},
+    "qwen3-80b-free":     {"provider": "openrouter", "model": "qwen/qwen3-next-80b-a3b-instruct:free",       "tier": "free", "cost": 0.0, "strengths": ["reasoning", "arabic", "free"]},
+    "nemotron-30b-free":  {"provider": "openrouter", "model": "nvidia/nemotron-3-nano-30b-a3b:free",          "tier": "free", "cost": 0.0, "strengths": ["speed", "reasoning", "free"]},
+    "glm-free":           {"provider": "openrouter", "model": "z-ai/glm-4.5-air:free",                       "tier": "free", "cost": 0.0, "strengths": ["reasoning", "chinese", "free"]},
+    "step-flash-free":    {"provider": "openrouter", "model": "stepfun/step-3.5-flash:free",                  "tier": "free", "cost": 0.0, "strengths": ["speed", "general", "free"]},
+    "trinity-free":       {"provider": "openrouter", "model": "arcee-ai/trinity-large-preview:free",          "tier": "free", "cost": 0.0, "strengths": ["reasoning", "general", "free"]},
+    # ══════════════════════════════
+    # Ollama محلي
+    # ══════════════════════════════
     "local-small":     {"provider": "ollama", "model": "llama3.2:3b",        "tier": "local", "cost": 0.0, "strengths": ["offline", "free", "private"]},
     "local-medium":    {"provider": "ollama", "model": "qwen2.5:7b",         "tier": "local", "cost": 0.0, "strengths": ["offline", "free", "arabic"]},
     "local-coder":     {"provider": "ollama", "model": "qwen2.5-coder:7b",   "tier": "local", "cost": 0.0, "strengths": ["coding", "offline", "free"]},
@@ -101,23 +120,23 @@ REAL_MODELS = {
     "cloud-qwen3-coder":{"provider": "ollama", "model": "qwen3-coder:480b-cloud","tier": "premium","cost": 0.0, "strengths": ["coding", "quality"]},
 }
 
-# خريطة التخصصات → أفضل نماذج (بالترتيب)
+# خريطة التخصصات → أفضل نماذج (نماذج مجانية عملاقة أولاً)
 TASK_MODEL_MAP = {
-    "coding":         ["qwen-coder", "codestral", "claude-smart", "deepseek-chat"],
-    "medical":        ["deepseek-r1", "gemini-think", "o3-mini", "claude-smart"],
-    "legal":          ["claude-smart", "gpt4o", "mistral-large", "deepseek-r1"],
-    "financial":      ["deepseek-chat", "gpt4o", "mistral-large", "gemini-pro"],
-    "arabic":         ["qwen-72b", "gemini-flash", "claude-fast", "qwen-free"],
-    "science":        ["deepseek-r1", "o3-mini", "gemini-think", "claude-smart"],
-    "strategy":       ["claude-smart", "gpt4o", "gemini-pro", "grok-3"],
-    "current_events": ["perplexity", "grok-3", "perplexity-fast"],
-    "creative":       ["claude-opus", "gpt4o", "gemini-pro"],
-    "fast_simple":    ["gemini-flash", "gpt4o-mini", "qwen-free", "llama-free"],
-    "math":           ["o3-mini", "deepseek-r1", "gemini-think"],
-    "security":       ["deepseek-r1", "claude-smart", "gemini-pro"],
-    "behavior":       ["claude-smart", "gemini-pro", "deepseek-r1"],
-    "leadership":     ["claude-opus", "gpt4o", "gemini-pro"],
-    "research":       ["gemini-pro", "deepseek-r1", "perplexity"],
+    "coding":         ["qwen3-coder-free", "mistral-24b-free", "local-coder14b", "qwen-coder"],
+    "medical":        ["hermes-405b-free", "nemotron-120b-free", "gemma-27b-free", "local-qwen14b"],
+    "legal":          ["hermes-405b-free", "llama-70b-free", "nemotron-120b-free", "local-qwen14b"],
+    "financial":      ["nemotron-120b-free", "llama-70b-free", "minimax-free", "local-qwen3"],
+    "arabic":         ["qwen3-80b-free", "minimax-free", "local-qwen3", "gemma-27b-free"],
+    "science":        ["nemotron-120b-free", "hermes-405b-free", "gemma-27b-free", "local-qwen14b"],
+    "strategy":       ["hermes-405b-free", "nemotron-120b-free", "llama-70b-free", "local-qwen14b"],
+    "current_events": ["step-flash-free", "minimax-free", "trinity-free", "local-qwen3"],
+    "creative":       ["hermes-405b-free", "minimax-free", "gemma-27b-free", "local-qwen3"],
+    "fast_simple":    ["nemotron-30b-free", "step-flash-free", "gemma-27b-free", "local-qwen3"],
+    "math":           ["nemotron-120b-free", "hermes-405b-free", "qwen3-80b-free", "local-qwen14b"],
+    "security":       ["nemotron-120b-free", "mistral-24b-free", "llama-70b-free", "local-qwen14b"],
+    "behavior":       ["hermes-405b-free", "gemma-27b-free", "minimax-free", "local-qwen3"],
+    "leadership":     ["hermes-405b-free", "nemotron-120b-free", "llama-70b-free", "local-qwen14b"],
+    "research":       ["nemotron-120b-free", "hermes-405b-free", "minimax-free", "local-qwen14b"],
 }
 
 # Legacy mapping (backwards compatibility)
@@ -160,14 +179,16 @@ class LLMClient:
         self.perplexity_key = os.getenv("PERPLEXITY_API_KEY", "")
         self.ollama_url = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
-    # سلسلة الـ fallback الذكية — Ollama المحلي أولاً ثم Cloud
+    # سلسلة الـ fallback — نماذج مجانية عملاقة أولاً
     FALLBACK_CHAIN = [
-        "local-medium",     # Ollama qwen2.5:7b — مجاني ومحلي
-        "local-small",      # Ollama llama3.2:3b — مجاني ومحلي
-        "local-coder",      # Ollama qwen2.5-coder:7b — مجاني ومحلي
-        "gemini-flash",     # OpenRouter — أسرع وأرخص
-        "deepseek-chat",    # OpenRouter — ذكي ورخيص
-        "llama-free",       # OpenRouter — مجاني
+        "nemotron-120b-free",  # NVIDIA 120B — مجاني وعملاق
+        "hermes-405b-free",    # 405B — أكبر نموذج مجاني
+        "llama-70b-free",      # Meta 70B — مجاني
+        "gemma-27b-free",      # Google 27B — مجاني
+        "mistral-24b-free",    # Mistral 24B — مجاني
+        "qwen3-coder-free",    # Qwen3 Coder — مجاني
+        "local-qwen3",         # Ollama qwen3:8b — محلي
+        "local-qwen14b",       # Ollama qwen2.5:14b — محلي
     ]
 
     def chat(self, messages: List[Dict], temperature: float = 0.7,
