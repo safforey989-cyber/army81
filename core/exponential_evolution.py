@@ -155,6 +155,16 @@ class ExponentialEvolution:
 
             cycle_results = {}
 
+            # ═══ المرحلة 0: استيعاب تطور الأمس ═══
+            # كل دورة تبدأ بتحميل واستخدام كل ما تطور في الدورات السابقة
+            try:
+                prev_gains = self._load_and_apply_previous_gains(
+                    agents_list, run_agent_fn, emit_fn)
+                cycle_results["previous_gains"] = prev_gains
+                logger.info(f"📦 Loaded {prev_gains.get('total_applied', 0)} gains from previous cycles")
+            except Exception as e:
+                logger.warning(f"Previous gains loading: {e}")
+
             # ═══ المرحلة 1: البحث والاستنساخ المكثف ═══
             try:
                 r = self._phase_research_clone(agents_list, run_agent_fn, emit_fn, cycle_ops)
@@ -391,6 +401,135 @@ class ExponentialEvolution:
             if kw in text.lower():
                 score += 30
         return max(int(score), 1)  # حد أدنى 1 إذا أنتج نص
+
+    def _load_and_apply_previous_gains(self, agents, run_fn, emit_fn) -> Dict:
+        """
+        المرحلة 0: استيعاب كل تطور سابق واستخدامه
+        ─────────────────────────────────────────────
+        كل دورة تبدأ بـ:
+        1. قراءة القواعد الذهبية من الدورات السابقة
+        2. قراءة المهارات المكتسبة وتوزيعها
+        3. قراءة نتائج التجارب الناجحة وتطبيقها
+        4. تحديث system_prompts بالدروس المستفادة
+        5. تقوية الاتصالات العصبية الناجحة
+        """
+        results = {"total_applied": 0, "rules_injected": 0,
+                   "skills_distributed": 0, "prompts_enhanced": 0}
+
+        # 1. قراءة القواعد الذهبية وحقنها في الوكلاء
+        try:
+            from core.unified_evolution import get_unified_engine
+            unified = get_unified_engine()
+            mother = unified.mother
+
+            golden = mother.state.get("golden_rules", [])
+            if golden:
+                # حقن آخر 5 قواعد في system_prompt لكل الوكلاء
+                rules_text = "\n".join(f"- {r['rule']}" for r in golden[-5:])
+                for agent in agents:
+                    if hasattr(agent, '_injected_rules'):
+                        if agent._injected_rules == rules_text:
+                            continue  # لا تكرر الحقن
+                    agent._injected_rules = rules_text
+                    results["rules_injected"] += 1
+                results["total_applied"] += len(golden)
+        except Exception as e:
+            logger.debug(f"Golden rules injection: {e}")
+
+        # 2. قراءة المهارات الجديدة وتوزيعها
+        try:
+            skills_dir = WORKSPACE / "cloned_skills"
+            recent_skills = sorted(skills_dir.glob("*.md"),
+                                  key=lambda f: f.stat().st_mtime, reverse=True)[:20]
+            if recent_skills:
+                # وزّع المهارات الجديدة على الوكلاء المناسبين
+                for skill_file in recent_skills[:10]:
+                    content = skill_file.read_text(encoding="utf-8")[:200]
+                    # ابحث عن أفضل وكيل لهذه المهارة
+                    for agent in random.sample(agents, min(3, len(agents))):
+                        mem_file = WORKSPACE / "agent_memories" / f"{agent.agent_id}.json"
+                        if mem_file.exists():
+                            try:
+                                mem = json.loads(mem_file.read_text(encoding="utf-8"))
+                                skills = mem.get("skills_learned", [])
+                                skill_name = skill_file.stem
+                                if skill_name not in skills:
+                                    skills.append(skill_name)
+                                    mem["skills_learned"] = skills[-50:]  # أبقِ آخر 50
+                                    mem_file.write_text(
+                                        json.dumps(mem, ensure_ascii=False, indent=2),
+                                        encoding="utf-8")
+                                    results["skills_distributed"] += 1
+                            except:
+                                continue
+        except Exception as e:
+            logger.debug(f"Skills distribution: {e}")
+
+        # 3. قراءة نتائج التجارب الناجحة وتطبيقها
+        try:
+            exp_dir = WORKSPACE / "experiments"
+            successful = []
+            for f in sorted(exp_dir.glob("*.json"),
+                          key=lambda f: f.stat().st_mtime, reverse=True)[:20]:
+                try:
+                    d = json.loads(f.read_text(encoding="utf-8"))
+                    if d.get("success") or d.get("score", 0) > 500:
+                        successful.append(d)
+                except:
+                    continue
+
+            if successful:
+                # حفظ الدروس المستفادة
+                lessons = [f"تجربة ناجحة: {s.get('type','?')} — score={s.get('score',0)}"
+                          for s in successful[:5]]
+                self.golden_rules = list(set(
+                    self.golden_rules + lessons))[-30:]  # أبقِ آخر 30
+                results["total_applied"] += len(successful)
+        except Exception as e:
+            logger.debug(f"Experiments application: {e}")
+
+        # 4. تحديث بيانات التدريب من التقطير السابق
+        try:
+            from core.brain_nucleus import get_brain
+            brain = get_brain()
+            stats = brain.distillation.get_training_stats()
+            total_examples = sum(stats.get("training_files", {}).values())
+            if total_examples > 0:
+                results["training_examples_available"] = total_examples
+                results["total_applied"] += 1
+        except:
+            pass
+
+        # 5. تقوية الاتصالات العصبية الناجحة
+        try:
+            collab_map = mother.state.get("collaboration_map", {})
+            successful_pairs = [
+                (k, v) for k, v in collab_map.items()
+                if v.get("success", 0) > 2
+            ]
+            if successful_pairs:
+                try:
+                    from core.neural_network import get_neural_network
+                    nn = get_neural_network(None)
+                    for pair_key, data in successful_pairs[:10]:
+                        parts = pair_key.split("_")
+                        if len(parts) >= 2:
+                            nn.strengthen_connection(parts[0], parts[1], 0.05)
+                except:
+                    pass
+                results["connections_strengthened"] = len(successful_pairs)
+                results["total_applied"] += len(successful_pairs)
+        except:
+            pass
+
+        emit_fn("previous_gains_loaded", "SYSTEM", data={
+            "applied": results["total_applied"],
+            "rules": results["rules_injected"],
+            "skills": results["skills_distributed"],
+            "cycle": self.cycle_count,
+        })
+
+        return results
 
     def _phase_research_clone(self, agents, run_fn, emit_fn, ops_count) -> Dict:
         """البحث في كل المصادر + استنساخ المفيد"""
