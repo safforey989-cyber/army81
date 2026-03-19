@@ -157,6 +157,14 @@ async def startup():
     except Exception as e:
         logger.warning(f"Resilience layer not available: {e}")
 
+    # v27: Brain Nucleus — Qwen3-8B as central brain
+    try:
+        from core.brain_nucleus import get_brain
+        brain = get_brain()
+        logger.info(f"🧠 Brain Nucleus: {brain.status()['nucleus_model']} | Ollama: {brain.ollama.is_available()}")
+    except Exception as e:
+        logger.warning(f"Brain Nucleus not available: {e}")
+
 @app.get("/")
 async def root():
     return {
@@ -1664,6 +1672,73 @@ def exponential_stats():
         from core.exponential_evolution import ExponentialEvolution
         evo = ExponentialEvolution()
         return evo.get_stats()
+    except Exception as e:
+        return {"error": str(e)}
+
+
+# ── Brain Nucleus Endpoints ──────────────────────────────
+
+@app.get("/brain/status")
+def brain_status():
+    """حالة الدماغ المركزي"""
+    try:
+        from core.brain_nucleus import get_brain
+        return get_brain().status()
+    except Exception as e:
+        return {"error": str(e), "available": False}
+
+@app.post("/brain/think")
+async def brain_think(request: Request):
+    """التفكير المركزي عبر Qwen3-8B"""
+    try:
+        from core.brain_nucleus import get_brain
+        data = await request.json()
+        query = data.get("query", "")
+        context = data.get("context", "")
+        return get_brain().think(query, context)
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/brain/distill")
+async def brain_distill(request: Request):
+    """تقطير معرفة من نموذج كبير إلى Qwen3-8B"""
+    try:
+        from core.brain_nucleus import get_brain
+        data = await request.json()
+        domain = data.get("domain", "reasoning")
+        task = data.get("task", "")
+        return get_brain().distillation.distill_from_teacher(domain, task)
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/brain/distill-cycle")
+async def brain_distill_cycle():
+    """دورة تقطير كاملة — كل المجالات"""
+    try:
+        from core.brain_nucleus import get_brain
+        brain = get_brain()
+        import threading
+        t = threading.Thread(target=brain.distill_cycle, args=(2,), daemon=True)
+        t.start()
+        return {"status": "started", "domains": list(brain.distillation.TEACHER_MODELS.keys())}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/brain/training-stats")
+def brain_training_stats():
+    """إحصائيات بيانات التدريب"""
+    try:
+        from core.brain_nucleus import get_brain
+        return get_brain().distillation.get_training_stats()
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.post("/brain/prepare-training")
+async def brain_prepare_training():
+    """تحضير بيانات التدريب بصيغة Alpaca/ChatML"""
+    try:
+        from core.brain_nucleus import get_brain
+        return get_brain().prepare_for_training()
     except Exception as e:
         return {"error": str(e)}
 

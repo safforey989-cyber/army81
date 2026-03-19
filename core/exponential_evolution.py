@@ -532,6 +532,15 @@ class ExponentialEvolution:
                         "problem": problem[:60],
                     })
 
+                    # v27: Feed Brain Nucleus — تغذية الدماغ المركزي
+                    try:
+                        from core.brain_nucleus import get_brain
+                        brain = get_brain()
+                        domain = "coding" if "كود" in problem or "خوارزمية" in problem else "reasoning"
+                        brain.distillation.distill_from_teacher(domain, problem)
+                    except Exception:
+                        pass  # Brain not available, continue
+
             except Exception as e:
                 logger.warning(f"Distillation failed: {e}")
 
