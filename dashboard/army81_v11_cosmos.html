@@ -683,26 +683,90 @@ function startDemo(){
   var codeMessages=['fix: improve router latency','feat: add new tool wrapper','refactor: memory compression','fix: rate limit handler','feat: GraphRAG integration','chore: update dependencies'];
   var cuaUrls=['arxiv.org/abs/2503.xxxxx','github.com/trending/python','huggingface.co/models','reddit.com/r/LocalLLaMA','paperswithcode.com/sota'];
 
-  setInterval(function(){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];if(a.state==='idle'&&Math.random()>0.35)EventBus.emit(EVT.TASK_ASSIGNED,{agentId:a.id,task:tasks[Math.floor(Math.random()*tasks.length)]});},3500);
-  setInterval(function(){AGENTS.filter(function(a){return a.state==='busy';}).forEach(function(a){a.progress=Math.min(100,a.progress+Math.random()*12);if(a.progress>=100){if(Math.random()>0.08)EventBus.emit(EVT.TASK_COMPLETED,{agentId:a.id});else EventBus.emit(EVT.TASK_FAILED,{agentId:a.id});}});},2800);
-  setInterval(function(){var busy=AGENTS.filter(function(a){return a.state!=='idle';});if(busy.length>0){var a=busy[Math.floor(Math.random()*busy.length)];EventBus.emit(EVT.TOOL_USED,{agentId:a.id,tool:a.tools[Math.floor(Math.random()*a.tools.length)]});}},3000);
-  setInterval(function(){if(Math.random()>0.65){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)],b=AGENTS[Math.floor(Math.random()*AGENTS.length)];if(a!==b)EventBus.emit(EVT.AGENT_MESSAGE,{fromId:a.id,toId:b.id});}},4000);
-  setInterval(function(){if(Math.random()>0.65){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.MEMORY_SAVED,{agentId:a.id,amount:Math.random()*4+1,size:Math.random()*15+5,topic:topics[Math.floor(Math.random()*topics.length)]});}},3500);
-  setInterval(function(){if(Math.random()>0.35){var devAgents=AGENTS.filter(function(x){return x.cat==='cat7_new';});var a=devAgents[Math.floor(Math.random()*devAgents.length)];if(a&&a.state==='idle'){EventBus.emit(EVT.EXPERIMENT_START,{agentId:a.id,hypothesis:hypotheses[Math.floor(Math.random()*hypotheses.length)]});setTimeout(function(){var success=Math.random()>0.3;EventBus.emit(EVT.EXPERIMENT_END,{agentId:a.id,success:success,improve:success?(Math.random()*7+0.5):-(Math.random()*2.5),hypothesis:hypotheses[Math.floor(Math.random()*hypotheses.length)]});},3500+Math.random()*5000);}}},4500);
-  setInterval(function(){if(Math.random()>0.55){var teachers=['GPT-5','Claude-4','Gemini-2.5'];var students=['Qwen-8B','Gemma-3-4B','Mistral-7B'];EventBus.emit(EVT.DISTILL_START,{teacher:teachers[Math.floor(Math.random()*3)],student:students[Math.floor(Math.random()*3)]});setTimeout(function(){EventBus.emit(EVT.DISTILL_COMPLETE,{improve:Math.random()*2.5+0.3});},5000+Math.random()*4000);}},7000);
-  setInterval(function(){if(Math.random()>0.4){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];var sources=['arXiv:2503.xxxxx','github.com/trending','HuggingFace/models','Reddit/r/ML','Papers With Code'];EventBus.emit(EVT.SPIDER_CRAWL,{agentId:a.id,source:sources[Math.floor(Math.random()*sources.length)],pages:Math.floor(Math.random()*5+1),type:['paper','skill','page'][Math.floor(Math.random()*3)]});setTimeout(function(){if(a.state==='crawling')a.state='idle';},2500);}},3500);
-  setInterval(function(){if(Math.random()>0.82)EventBus.emit(EVT.MODEL_MERGE,{improve:Math.random()*4+1});},14000);
-  setInterval(function(){if(Math.random()>0.75){var skills=['SQL Analysis','PDF Parsing','Voice Synthesis','Image Understanding','Code Review','API Integration','Data Viz','Web Scraping'];EventBus.emit(EVT.SKILL_ACQUIRED,{skill:skills[Math.floor(Math.random()*skills.length)]});}},10000);
-  setInterval(function(){if(Math.random()>0.5&&!EVO.selfPlay.currentRound){var allIds=AGENTS.map(function(a){return a.id;}).sort(function(){return Math.random()-0.5;});EventBus.emit(EVT.SELFPLAY_ROUND,{red:allIds.slice(0,4),blue:allIds.slice(4,8),challenge:challenges[Math.floor(Math.random()*challenges.length)]});setTimeout(function(){EventBus.emit(EVT.SELFPLAY_RESULT,{winner:Math.random()>0.5?'red':'blue',lesson:['تحسين guardrails','تعزيز reasoning','تحسين robustness'][Math.floor(Math.random()*3)]});EVO.selfPlay.currentRound=null;},5000+Math.random()*5000);}},8000);
-  setInterval(function(){if(Math.random()>0.6)EventBus.emit(EVT.CODE_COMMIT,{message:codeMessages[Math.floor(Math.random()*codeMessages.length)],lines:Math.floor(Math.random()*50+5),bugFix:Math.random()>0.6});},9000);
-  setInterval(function(){if(Math.random()>0.55)EventBus.emit(EVT.CUA_BROWSE,{url:cuaUrls[Math.floor(Math.random()*cuaUrls.length)],action:['Extracting...','Reading...','Downloading...'][Math.floor(Math.random()*3)],status:'نشط'});},6000);
-  setInterval(function(){if(Math.random()>0.5){var a=AGENTS.filter(function(x){return x.cat==='cat1_science';})[Math.floor(Math.random()*9)];if(a){var count=Math.floor(Math.random()*20+5);EventBus.emit(EVT.SYNTH_GENERATE,{agentId:a.id,topic:topics[Math.floor(Math.random()*topics.length)],count:count,correct:Math.floor(count*0.7+Math.random()*count*0.3)});}}},5000);
-  setInterval(function(){if(Math.random()>0.7){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.DSPY_OPTIMIZE,{agentId:a.id,improve:Math.random()*5+0.5});}},11000);
+  // ═══ REAL API POLLER — بيانات حقيقية من Gateway ═══
+  var API='http://localhost:8181',realSince=0,realConnected=false,realMode=false;
+  function pollReal(){
+    // 1. جلب أحداث السرب الحقيقية
+    fetch(API+'/swarm/events?since='+realSince).then(function(r){return r.json();}).then(function(d){
+      if(!realConnected){realConnected=true;realMode=true;logEvent('system','🟢','API','متصل بالنظام الحقيقي');}
+      var evts=d.events||[];
+      if(evts.length>0)realSince=d.next_since||realSince;
+      evts.forEach(function(e){
+        var type=e.event_type,from=e.from_agent||'',data=e.data||{};
+        var fromA=AGENTS.find(function(a){return a.id===from;});
+        if(type==='research_done'||type==='research_complete'){
+          if(fromA){EventBus.emit(EVT.TASK_ASSIGNED,{agentId:from,task:data.topic||'بحث'});
+            EventBus.emit(EVT.SPIDER_CRAWL,{agentId:from,source:data.topic||'arXiv',pages:1,type:'paper'});
+            setTimeout(function(){EventBus.emit(EVT.TASK_COMPLETED,{agentId:from});EventBus.emit(EVT.MEMORY_SAVED,{agentId:from,amount:5,size:data.length||100,topic:data.topic||'بحث'});},1500+Math.random()*2000);
+            EVO.spiders.pages++;EVO.spiders.papers++;}
+        } else if(type==='distillation'||type==='distill_done'){
+          EventBus.emit(EVT.DISTILL_START,{teacher:data.teacher||'Pro',student:data.student||'Flash'});
+          setTimeout(function(){EventBus.emit(EVT.DISTILL_COMPLETE,{improve:data.improve||2});},2500);
+        } else if(type==='experiment'||type==='experiment_done'){
+          EventBus.emit(EVT.EXPERIMENT_START,{agentId:from,hypothesis:data.type||'تجربة'});
+          setTimeout(function(){EventBus.emit(EVT.EXPERIMENT_END,{agentId:from,success:true,improve:data.improvement_pct||3,hypothesis:data.type||''});},2000);
+        } else if(type==='battle'||type==='battle_done'){
+          var ids=AGENTS.map(function(a){return a.id;}).sort(function(){return Math.random()-0.5;});
+          EventBus.emit(EVT.SELFPLAY_ROUND,{red:ids.slice(0,4),blue:ids.slice(4,8),challenge:data.challenge||'معركة'});
+          setTimeout(function(){EventBus.emit(EVT.SELFPLAY_RESULT,{winner:data.winner||'red',lesson:data.lesson||'تحسين'});},4000);
+        } else if(type==='invention'||type==='skill_created'){
+          EventBus.emit(EVT.SKILL_ACQUIRED,{skill:data.name||'أداة جديدة'});
+          EVO.openHands.commits++;EVO.skills++;
+        } else if(type==='crystallization'){
+          EventBus.emit(EVT.MEMORY_SAVED,{agentId:from,amount:20,size:50,topic:'تبلور ذاكرة'});
+        } else if(type==='cycle_started'){
+          logEvent('evolution','🔄','دورة','بدأت الدورة '+(data.cycle||''));
+          AGENTS.forEach(function(a){if(Math.random()>0.5){a.state='busy';a.mesh.material.emissiveIntensity=0.8;setTimeout(function(){a.state='active';a.mesh.material.emissiveIntensity=0.4;},5000+Math.random()*5000);}});
+        } else if(type==='cycle_completed'){
+          EventBus.emit(EVT.AWAKENING,{});
+          EventBus.emit(EVT.MODEL_MERGE,{improve:data.multiplier||2});
+          AGENTS.forEach(function(a){a.evolution=Math.min(100,a.evolution+5);a.growthTarget+=0.02;});
+        } else if(type==='evolution_started'){
+          logEvent('system','🧬','تطور','بدأ التطور الأُسّي — مضاعف '+(data.starting_multiplier||1)+'x');
+        } else if(type==='agent_message'){
+          if(fromA){var toA=AGENTS.find(function(a){return a.id===e.to_agent;});
+            if(toA)EventBus.emit(EVT.AGENT_MESSAGE,{fromId:from,toId:e.to_agent});}
+        }
+      });
+    }).catch(function(){
+      if(realConnected){realConnected=false;logEvent('system','🔴','API','انقطع الاتصال');}
+    });
+    // 2. جلب إحصائيات الذاكرة
+    fetch(API+'/memory/stats').then(function(r){return r.json();}).then(function(d){
+      var ep=d.episodic||{};EVO.memory=(ep.episodes||0)/1024;
+      document.querySelectorAll('[data-stat="memory"]').forEach(function(el){el.textContent=(ep.episodes||0)+' حلقة';});
+    }).catch(function(){});
+    // 3. جلب إحصائيات التطور
+    fetch(API+'/evolution/stats').then(function(r){return r.json();}).then(function(d){
+      var c=d.components||{};
+      var ar=c.auto_research||{};EVO.autoResearch.today=ar.total_experiments||0;EVO.autoResearch.successRate=Math.round((ar.success_rate||0)*100);
+      var sp=c.self_play||{};EVO.selfPlay.redWins=sp.red_wins||0;EVO.selfPlay.blueWins=sp.blue_wins||0;
+      var dist=c.distillation||{};EVO.distillation.lessons=dist.examples_stored||0;
+    }).catch(function(){});
+  }
+  setInterval(pollReal,3000);
+  pollReal();
+  // ═══ FALLBACK SIMULATION — يعمل فقط إذا لم يتصل API ═══
+  setInterval(function(){if(realMode)return;var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];if(a.state==='idle'&&Math.random()>0.35)EventBus.emit(EVT.TASK_ASSIGNED,{agentId:a.id,task:tasks[Math.floor(Math.random()*tasks.length)]});},3500);
+  setInterval(function(){AGENTS.filter(function(a){return a.state==='busy';}).forEach(function(a){a.progress=Math.min(100,a.progress+Math.random()*12);if(a.progress>=100){if(Math.random()>0.08)EventBus.emit(EVT.TASK_COMPLETED,{agentId:a.id});else EventBus.emit(EVT.TASK_FAILED,{agentId:a.id});}});},2800);/* progress bar always runs */
+  setInterval(function(){if(realMode)return;var busy=AGENTS.filter(function(a){return a.state!=='idle';});if(busy.length>0){var a=busy[Math.floor(Math.random()*busy.length)];EventBus.emit(EVT.TOOL_USED,{agentId:a.id,tool:a.tools[Math.floor(Math.random()*a.tools.length)]});}},3000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.65){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)],b=AGENTS[Math.floor(Math.random()*AGENTS.length)];if(a!==b)EventBus.emit(EVT.AGENT_MESSAGE,{fromId:a.id,toId:b.id});}},4000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.65){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.MEMORY_SAVED,{agentId:a.id,amount:Math.random()*4+1,size:Math.random()*15+5,topic:topics[Math.floor(Math.random()*topics.length)]});}},3500);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.35){var devAgents=AGENTS.filter(function(x){return x.cat==='cat7_new';});var a=devAgents[Math.floor(Math.random()*devAgents.length)];if(a&&a.state==='idle'){EventBus.emit(EVT.EXPERIMENT_START,{agentId:a.id,hypothesis:hypotheses[Math.floor(Math.random()*hypotheses.length)]});setTimeout(function(){var success=Math.random()>0.3;EventBus.emit(EVT.EXPERIMENT_END,{agentId:a.id,success:success,improve:success?(Math.random()*7+0.5):-(Math.random()*2.5),hypothesis:hypotheses[Math.floor(Math.random()*hypotheses.length)]});},3500+Math.random()*5000);}}},4500);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.55){var teachers=['GPT-5','Claude-4','Gemini-2.5'];var students=['Qwen-8B','Gemma-3-4B','Mistral-7B'];EventBus.emit(EVT.DISTILL_START,{teacher:teachers[Math.floor(Math.random()*3)],student:students[Math.floor(Math.random()*3)]});setTimeout(function(){EventBus.emit(EVT.DISTILL_COMPLETE,{improve:Math.random()*2.5+0.3});},5000+Math.random()*4000);}},7000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.4){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];var sources=['arXiv:2503.xxxxx','github.com/trending','HuggingFace/models','Reddit/r/ML','Papers With Code'];EventBus.emit(EVT.SPIDER_CRAWL,{agentId:a.id,source:sources[Math.floor(Math.random()*sources.length)],pages:Math.floor(Math.random()*5+1),type:['paper','skill','page'][Math.floor(Math.random()*3)]});setTimeout(function(){if(a.state==='crawling')a.state='idle';},2500);}},3500);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.82)EventBus.emit(EVT.MODEL_MERGE,{improve:Math.random()*4+1});},14000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.75){var skills=['SQL Analysis','PDF Parsing','Voice Synthesis','Image Understanding','Code Review','API Integration','Data Viz','Web Scraping'];EventBus.emit(EVT.SKILL_ACQUIRED,{skill:skills[Math.floor(Math.random()*skills.length)]});}},10000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.5&&!EVO.selfPlay.currentRound){var allIds=AGENTS.map(function(a){return a.id;}).sort(function(){return Math.random()-0.5;});EventBus.emit(EVT.SELFPLAY_ROUND,{red:allIds.slice(0,4),blue:allIds.slice(4,8),challenge:challenges[Math.floor(Math.random()*challenges.length)]});setTimeout(function(){EventBus.emit(EVT.SELFPLAY_RESULT,{winner:Math.random()>0.5?'red':'blue',lesson:['تحسين guardrails','تعزيز reasoning','تحسين robustness'][Math.floor(Math.random()*3)]});EVO.selfPlay.currentRound=null;},5000+Math.random()*5000);}},8000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.6)EventBus.emit(EVT.CODE_COMMIT,{message:codeMessages[Math.floor(Math.random()*codeMessages.length)],lines:Math.floor(Math.random()*50+5),bugFix:Math.random()>0.6});},9000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.55)EventBus.emit(EVT.CUA_BROWSE,{url:cuaUrls[Math.floor(Math.random()*cuaUrls.length)],action:['Extracting...','Reading...','Downloading...'][Math.floor(Math.random()*3)],status:'نشط'});},6000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.5){var a=AGENTS.filter(function(x){return x.cat==='cat1_science';})[Math.floor(Math.random()*9)];if(a){var count=Math.floor(Math.random()*20+5);EventBus.emit(EVT.SYNTH_GENERATE,{agentId:a.id,topic:topics[Math.floor(Math.random()*topics.length)],count:count,correct:Math.floor(count*0.7+Math.random()*count*0.3)});}}},5000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.7){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.DSPY_OPTIMIZE,{agentId:a.id,improve:Math.random()*5+0.5});}},11000);
   setInterval(function(){if(EVO.synth.scenarios>50){EVO.synth.batches++;logEvent('evolution','Q','QLoRA','Batch #'+EVO.synth.batches);}},20000);
-  setInterval(function(){if(clusters.length<3&&Math.random()>0.55){var cat=Object.keys(CATS)[Math.floor(Math.random()*7)];var ca=AGENTS.filter(function(a){return a.cat===cat;}).sort(function(){return Math.random()-0.5;}).slice(0,3+Math.floor(Math.random()*3));var cid='cl_'+Date.now();EventBus.emit(EVT.CLUSTER_FORMED,{agentIds:ca.map(function(a){return a.id;}),clusterId:cid});setTimeout(function(){EventBus.emit(EVT.CLUSTER_DISSOLVED,{clusterId:cid});},7000+Math.random()*6000);}},9000);
+  setInterval(function(){if(realMode)return;if(clusters.length<3&&Math.random()>0.55){var cat=Object.keys(CATS)[Math.floor(Math.random()*7)];var ca=AGENTS.filter(function(a){return a.cat===cat;}).sort(function(){return Math.random()-0.5;}).slice(0,3+Math.floor(Math.random()*3));var cid='cl_'+Date.now();EventBus.emit(EVT.CLUSTER_FORMED,{agentIds:ca.map(function(a){return a.id;}),clusterId:cid});setTimeout(function(){EventBus.emit(EVT.CLUSTER_DISSOLVED,{clusterId:cid});},7000+Math.random()*6000);}},9000);
   setInterval(function(){var busy=AGENTS.filter(function(a){return a.state!=='idle';}).length;EventBus.emit(EVT.CORE_LOAD_CHANGE,{load:busy/AGENTS.length});},2000);
   setInterval(function(){EventBus.emit(EVT.AWAKENING,{});},45000);
-  setInterval(function(){if(Math.random()>0.9){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.API_ERROR,{agentId:a.id,error:'Timeout'});}},10000);
+  setInterval(function(){if(realMode)return;if(Math.random()>0.9){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.API_ERROR,{agentId:a.id,error:'Timeout'});}},10000);
 }
 startDemo();
 
