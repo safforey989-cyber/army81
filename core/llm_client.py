@@ -141,34 +141,72 @@ class LLMClient:
         self.perplexity_key = os.getenv("PERPLEXITY_API_KEY", "")
         self.ollama_url = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
+    # سلسلة الـ fallback الذكية — إذا فشل نموذج ينتقل للتالي
+    FALLBACK_CHAIN = [
+        "gemini-flash",     # أسرع وأرخص
+        "deepseek-chat",    # ذكي ورخيص
+        "qwen-free",        # مجاني
+        "llama-free",       # مجاني
+        "deepseek-r1-free", # مجاني مع تفكير عميق
+    ]
+
     def chat(self, messages: List[Dict], temperature: float = 0.7,
-             max_tokens: int = 4096) -> Dict:
-        """إرسال رسائل والحصول على رد"""
-        try:
-            if self.provider == "openrouter":
-                result = self._chat_openrouter(messages, temperature, max_tokens)
-            elif self.provider == "perplexity":
-                result = self._chat_perplexity(messages, temperature, max_tokens)
-            elif self.provider == "gemini":
-                result = self._chat_gemini(messages, temperature, max_tokens)
-            elif self.provider == "anthropic":
-                result = self._chat_anthropic(messages, temperature, max_tokens)
-            elif self.provider == "ollama":
-                result = self._chat_ollama(messages, temperature, max_tokens)
-            else:
-                result = {"content": f"ERROR: Unknown provider {self.provider}", "tokens": 0}
+             max_tokens: int = 4096, _retry: int = 0) -> Dict:
+        """إرسال رسائل والحصول على رد — مع retry و fallback تلقائي"""
+        import time
 
-            # fallback لـ ollama إذا فشل OpenRouter
-            if result.get("content", "").startswith("ERROR:") and self.provider == "openrouter":
-                logger.warning(f"OpenRouter failed, trying ollama fallback")
-                fallback = LLMClient("local-medium")
-                return fallback.chat(messages, temperature, max_tokens)
+        # حد أقصى 3 محاولات
+        max_retries = 3
 
-            return result
+        for attempt in range(max_retries):
+            try:
+                if self.provider == "openrouter":
+                    result = self._chat_openrouter(messages, temperature, max_tokens)
+                elif self.provider == "perplexity":
+                    result = self._chat_perplexity(messages, temperature, max_tokens)
+                elif self.provider == "gemini":
+                    result = self._chat_gemini(messages, temperature, max_tokens)
+                elif self.provider == "anthropic":
+                    result = self._chat_anthropic(messages, temperature, max_tokens)
+                elif self.provider == "ollama":
+                    result = self._chat_ollama(messages, temperature, max_tokens)
+                else:
+                    result = {"content": f"ERROR: Unknown provider {self.provider}", "tokens": 0}
 
-        except Exception as e:
-            logger.error(f"LLM error [{self.alias}]: {e}")
-            return {"content": f"ERROR: {e}", "model": self.model, "tokens": 0}
+                # نجاح — أعد النتيجة
+                if not result.get("content", "").startswith("ERROR"):
+                    return result
+
+                # فشل — log وأعد المحاولة
+                logger.warning(f"[{self.alias}] Attempt {attempt+1}/{max_retries} failed: {result['content'][:100]}")
+
+            except Exception as e:
+                logger.warning(f"[{self.alias}] Attempt {attempt+1}/{max_retries} exception: {e}")
+                result = {"content": f"ERROR: {e}", "model": self.model, "tokens": 0}
+
+            # انتظر قبل إعادة المحاولة (exponential backoff)
+            if attempt < max_retries - 1:
+                wait = min(4 * (2 ** attempt), 30)
+                time.sleep(wait)
+
+        # كل المحاولات فشلت — جرّب سلسلة الـ fallback
+        if _retry == 0:  # فقط في المحاولة الأولى
+            for fallback_alias in self.FALLBACK_CHAIN:
+                if fallback_alias == self.alias:
+                    continue  # لا تعيد نفس النموذج
+                try:
+                    logger.info(f"🔄 Fallback: {self.alias} → {fallback_alias}")
+                    fb = LLMClient(fallback_alias)
+                    fb_result = fb.chat(messages, temperature, max_tokens, _retry=1)
+                    if not fb_result.get("content", "").startswith("ERROR"):
+                        fb_result["fallback_from"] = self.alias
+                        fb_result["fallback_to"] = fallback_alias
+                        return fb_result
+                except Exception:
+                    continue
+
+        logger.error(f"❌ All attempts and fallbacks failed for [{self.alias}]")
+        return {"content": f"ERROR: All {max_retries} attempts failed for {self.alias}", "model": self.model, "tokens": 0}
 
     def _chat_openrouter(self, messages, temperature, max_tokens):
         """OpenRouter — يدعم 200+ نموذج بمفتاح واحد"""

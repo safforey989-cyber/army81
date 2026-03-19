@@ -1,0 +1,162 @@
+[
+  {
+    "id": "exp_c10_0076",
+    "type": "speed",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c10_0077",
+    "type": "quality",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c10_0078",
+    "type": "coding",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c10_0079",
+    "type": "arabic",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c10_0080",
+    "type": "reasoning",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c10_0081",
+    "type": "creativity",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c10_0082",
+    "type": "medical",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c10_0083",
+    "type": "strategy",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c10_0084",
+    "type": "security",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c10_0085",
+    "type": "multilingual",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c10"
+  },
+  {
+    "id": "exp_c11_0086",
+    "type": "speed",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  },
+  {
+    "id": "exp_c11_0087",
+    "type": "quality",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  },
+  {
+    "id": "exp_c11_0088",
+    "type": "coding",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  },
+  {
+    "id": "exp_c11_0089",
+    "type": "arabic",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  },
+  {
+    "id": "exp_c11_0090",
+    "type": "reasoning",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  },
+  {
+    "id": "exp_c11_0091",
+    "type": "creativity",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  },
+  {
+    "id": "exp_c11_0092",
+    "type": "medical",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  },
+  {
+    "id": "exp_c11_0093",
+    "type": "strategy",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  },
+  {
+    "id": "exp_c11_0094",
+    "type": "security",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  },
+  {
+    "id": "exp_c11_0095",
+    "type": "multilingual",
+    "agent": "",
+    "score": 0,
+    "success": false,
+    "cycle": "c11"
+  }
+]
