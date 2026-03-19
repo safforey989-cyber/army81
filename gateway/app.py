@@ -150,6 +150,13 @@ async def startup():
     except Exception as e:
         logger.warning(f"Voice interface not available: {e}")
 
+    # v23: Resilience Layer
+    try:
+        from core.resilience import register_resilience_endpoints
+        register_resilience_endpoints(app)
+    except Exception as e:
+        logger.warning(f"Resilience layer not available: {e}")
+
 @app.get("/")
 async def root():
     return {
