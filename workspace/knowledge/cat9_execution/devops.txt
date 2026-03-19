@@ -1,0 +1,4 @@
+# devops
+# Category: cat9_execution
+
+Seed knowledge for devops topic.

@@ -1,0 +1,4 @@
+# video_editing
+# Category: cat11_creative
+
+Seed knowledge for video_editing topic.

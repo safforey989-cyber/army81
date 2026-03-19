@@ -1,0 +1,4 @@
+# synthetic_data
+# Category: cat8_evolution
+
+Seed knowledge for synthetic_data topic.

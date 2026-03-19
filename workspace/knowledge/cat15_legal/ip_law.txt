@@ -1,0 +1,4 @@
+# ip_law
+# Category: cat15_legal
+
+Seed knowledge for ip_law topic.

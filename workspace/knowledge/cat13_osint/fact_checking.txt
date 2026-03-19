@@ -1,0 +1,4 @@
+# fact_checking
+# Category: cat13_osint
+
+Seed knowledge for fact_checking topic.

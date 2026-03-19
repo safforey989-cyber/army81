@@ -1,0 +1,4 @@
+# n8n_workflows
+# Category: cat9_execution
+
+Seed knowledge for n8n_workflows topic.

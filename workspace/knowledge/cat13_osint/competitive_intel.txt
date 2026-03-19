@@ -1,0 +1,4 @@
+# competitive_intel
+# Category: cat13_osint
+
+Seed knowledge for competitive_intel topic.

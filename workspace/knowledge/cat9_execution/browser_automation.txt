@@ -1,0 +1,4 @@
+# browser_automation
+# Category: cat9_execution
+
+Seed knowledge for browser_automation topic.

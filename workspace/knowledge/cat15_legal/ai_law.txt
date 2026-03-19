@@ -1,0 +1,4 @@
+# ai_law
+# Category: cat15_legal
+
+Seed knowledge for ai_law topic.

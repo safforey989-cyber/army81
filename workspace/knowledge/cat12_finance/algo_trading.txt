@@ -1,0 +1,4 @@
+# algo_trading
+# Category: cat12_finance
+
+Seed knowledge for algo_trading topic.

@@ -1,0 +1,4 @@
+# desktop_control
+# Category: cat9_execution
+
+Seed knowledge for desktop_control topic.

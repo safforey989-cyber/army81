@@ -1,0 +1,4 @@
+# gematria
+# Category: cat17_cosmic
+
+Seed knowledge for gematria topic.

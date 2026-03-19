@@ -1,0 +1,4 @@
+# drug_discovery
+# Category: cat14_health
+
+Seed knowledge for drug_discovery topic.

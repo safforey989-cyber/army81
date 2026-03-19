@@ -1,0 +1,4 @@
+# adaptive_learning
+# Category: cat16_education
+
+Seed knowledge for adaptive_learning topic.

@@ -1,0 +1,4 @@
+# clinical_trials
+# Category: cat14_health
+
+Seed knowledge for clinical_trials topic.

@@ -1,0 +1,4 @@
+# blockchain
+# Category: cat12_finance
+
+Seed knowledge for blockchain topic.

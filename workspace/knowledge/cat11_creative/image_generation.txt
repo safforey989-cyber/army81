@@ -1,0 +1,4 @@
+# image_generation
+# Category: cat11_creative
+
+Seed knowledge for image_generation topic.

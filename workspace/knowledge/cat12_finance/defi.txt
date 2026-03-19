@@ -1,0 +1,4 @@
+# defi
+# Category: cat12_finance
+
+Seed knowledge for defi topic.

@@ -1,0 +1,4 @@
+# curriculum
+# Category: cat16_education
+
+Seed knowledge for curriculum topic.

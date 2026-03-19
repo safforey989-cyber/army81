@@ -1,0 +1,4 @@
+# special_ed
+# Category: cat16_education
+
+Seed knowledge for special_ed topic.

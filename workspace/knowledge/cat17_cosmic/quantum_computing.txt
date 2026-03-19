@@ -1,0 +1,4 @@
+# quantum_computing
+# Category: cat17_cosmic
+
+Seed knowledge for quantum_computing topic.

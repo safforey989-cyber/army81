@@ -1,0 +1,4 @@
+# diagnostics
+# Category: cat14_health
+
+Seed knowledge for diagnostics topic.

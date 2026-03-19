@@ -1,0 +1,4 @@
+# frequency_science
+# Category: cat17_cosmic
+
+Seed knowledge for frequency_science topic.

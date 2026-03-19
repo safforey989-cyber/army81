@@ -1,0 +1,4 @@
+# architecture
+# Category: cat10_engineering
+
+Seed knowledge for architecture topic.

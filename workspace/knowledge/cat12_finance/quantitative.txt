@@ -1,0 +1,4 @@
+# quantitative
+# Category: cat12_finance
+
+Seed knowledge for quantitative topic.

@@ -1,0 +1,4 @@
+# genomics
+# Category: cat14_health
+
+Seed knowledge for genomics topic.

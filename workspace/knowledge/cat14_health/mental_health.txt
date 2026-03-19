@@ -1,0 +1,4 @@
+# mental_health
+# Category: cat14_health
+
+Seed knowledge for mental_health topic.

@@ -1,0 +1,4 @@
+# gamification
+# Category: cat16_education
+
+Seed knowledge for gamification topic.
