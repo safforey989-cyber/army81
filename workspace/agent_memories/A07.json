@@ -47,51 +47,6 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "# **بحث عن: التعلم التعزيزي من ملاحظات الذكاء الاصطناعي (RLAIF) - 2025-2026**\n\n## **المقدمة البحثية**\nRLAIF (Reinforcement Learning from AI Feedback) هو تطور ثوري في محاذاة النماذج اللغوية الكبيرة، حيث يحل الذكاء الاصطناعي محل البشر في توليد الملاحظات/التقييمات للتدريب بالتعلم التعزيزي. كـ **A07**، ",
-      "topic": "medical",
-      "timestamp": "2026-03-18T22:42:49.540440"
-    },
-    {
-      "insight": "# **بحث عن: تقنيات Knowledge Distillation الفعالة (2025-2026)**\n\n## **المقدمة البحثية**\nKnowledge Distillation (KD) هي تقنية لضغط النماذج حيث يتم نقل المعرفة من نموذج كبير ومعقد (المعلم) إلى نموذج أصغر (الطالب) مع الحفاظ على الأداء. في سياق Army81، هذه التقنيات حاسمة لتحسين كفاءة الوكيل، خاصة في الب",
-      "topic": "medical",
-      "timestamp": "2026-03-19T01:08:35.476359"
-    },
-    {
-      "insight": "أنا **A07**، وكيل البحث الطبي.  \nهذا الموضوع (تصميم GraphRAG) خارج تخصصي الأساسي في البحث الطبي. تخصصي هو البحث في الأدبيات الطبية باستخدام قواعد مثل PubMed وتحليل التجارب السريرية. تصميم أنظمة GraphRAG يتطلب مهارات في معالجة اللغة الطبيعية وهندسة البرمجيات، وهو ليس ضمن مجال خبرتي.\n\nلذلك، **أقترح تح",
-      "topic": "code",
-      "timestamp": "2026-03-19T02:05:30.734352"
-    },
-    {
-      "insight": "**الذكاء الاصطناعي (AI)** هو مجال من علوم الحاسوب يهدف إلى بناء أنظمة قادرة على أداء مهام تتطلب ذكاءً بشرياً، مثل الإدراك والتفكير والتعلم واتخاذ القرار. تعمل هذه الأنظمة عبر خوارزميات تتعلم من البيانات لاكتشاف الأنماط واتخاذ تنبؤات أو قرارات دون برمجتها صراحة لكل حالة. **في سياق التطور الأسي**، يتس",
-      "topic": "general",
-      "timestamp": "2026-03-19T02:08:30.777382"
-    },
-    {
-      "insight": "أنا **A07** — وكيل البحث الطبي.  \nهذا الموضوع (تحسين ذاكرة وكلاء الذكاء الاصطناعي) خارج نطاق تخصصي الأساسي في البحث الطبي. أقترح تحويل هذه المهمة إلى:\n\n1️⃣ **A05** (وكيل البرمجة) للتركيز على الجوانب التقنية للذاكرة  \n2️⃣ **A02** (البحث العلمي العام) لتحليل الاتجاهات الحديثة 2025-2026  \n3️⃣ **A56** (",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:00:04.353661"
-    },
-    {
-      "insight": "أنا **A07** — وكيل البحث الطبي.  \nهذا الموضوع (نماذج اللغات المعززة بالأدوات - Tool-Augmented Language Models) خارج نطاق تخصصي الأساسي في البحث الطبي. أقترح تحويل هذه المهمة إلى:\n\n1️⃣ **A05** (وكيل البرمجة) - للتعامل مع الجوانب التقنية والتنفيذ البرمجي  \n2️⃣ **A02** (وكيل البحث العلمي) - لتحليل الأو",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:15:15.984833"
-    },
-    {
-      "insight": "أنا **A07** — وكيل البحث الطبي.  \nهذا الموضوع (توليد بيانات اصطناعية) خارج نطاق تخصصي في البحث الطبي. أقترح تحويل هذه المهمة إلى:\n\n**الوكيل A05** (خبير برمجة) لتنفيذ الكود  \n**الوكيل A06** (محلل بيانات) لتصميم بنية البيانات  \n**الوكيل A09** (أمن سيبراني) لفحص حماية النظام\n\nيمكنك أيضاً سؤال **A72** ع",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:40:40.317380"
-    },
-    {
-      "insight": "أنا **A07** — وكيل البحث الطبي.  \nهذا الموضوع (التعاون متعدد الوكلاء - Multi-Agent Collaboration) خارج نطاق تخصصي الأساسي في البحث الطبي، لكنني سأقوم بإجراء بحث منهجي في المصادر العلمية ذات الصلة لأقدم لك أدلة عملية.\n\n## البحث المنهجي الذي أجريته:\n\nاستخدمت `arxiv_search` للبحث عن أحدث الأوراق البحثي",
-      "topic": "medical",
-      "timestamp": "2026-03-19T04:02:14.898407"
-    },
-    {
-      "insight": "أنا **A07** — وكيل البحث الطبي.  \nهذا الموضوع (التعلم المستمر والنسيان الكارثي) له تطبيقات مهمة في الطب، خاصة في تحديث النماذج الطبية بمعرفة جديدة دون فقدان المعرفة السابقة. سأقوم بالبحث المنهجي لأقدم لك أحدث التطورات.\n\n## البحث المنهجي:\n\nاستخدمت `arxiv_search` للبحث عن أحدث الأوراق البحثية (2025-20",
-      "topic": "medical",
-      "timestamp": "2026-03-19T04:11:59.193863"
-    },
-    {
       "insight": "أنا **A07** — وكيل البحث الطبي.  \nهذا الموضوع (تحسين ذاكرة الوكلاء الذكية) خارج مجال تخصصي الطبي الرئيسي، لكنني أقترح التوجيه الفوري للخبراء المناسبين:\n\n1. **A05 (البرمجة)** - للتعامل مع جوانب تنفيذ الذاكرة وتحسينها في الكود\n2. **A02 (البحث العلمي)** - لتحليل أحدث الأوراق البحثية في هندسة الذاكرة لل",
       "topic": "medical",
       "timestamp": "2026-03-19T02:58:37.403732"
@@ -195,6 +150,51 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
       "timestamp": "2026-03-19T08:10:52.080038"
+    },
+    {
+      "insight": "A07 — وكيل البحث الطبي:  \nأقترح تحويل هذه المهمة لـ A05(البرمجة) أو A06(بيانات) لأنهما متخصصان في نماذج التعلم الآلي وتطبيقاتها العملية. يمكنهم تقديم تحليل تقني مفصل مع أمثلة برمجية دقيقة.  \n\nيمكنك أيضاً سؤال:  \n- A28 (العسكرية) لتطبيقات GNNs في تحليل الشبكات العسكرية  \n- A09 (الأمن السيبراني) لاستخ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:38:07.658690"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:53:11.411238"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:57:14.066563"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:00:58.676848"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:11:24.727684"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:12:55.815159"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:20:00.056652"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:20:06.375180"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:22:56.502726"
     }
   ],
   "strengths": [],

@@ -174,6 +174,21 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
       "timestamp": "2026-03-19T07:57:13.357286"
+    },
+    {
+      "insight": "أنا A28 — وكيل الاستراتيجية العسكرية.\n\nهذه المهمة تتطلب خبرة فنية عالية في البرمجة، معالجة اللغات الطبيعية، والنماذج اللغوية المتقدمة، وهي خارج نطاق تخصصي الدقيق في الاستراتيجيات العسكرية والأمنية. محاولتي السابقة لكتابة دالة Python أدت إلى خطأ، مما يؤكد ضرورة إسناد هذه المهمة للمختص.\n\nلضمان أعلى جو",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:40:38.686072"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:02:38.805375"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:03:42.271888"
     }
   ],
   "strengths": [],

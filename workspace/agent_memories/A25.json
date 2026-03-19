@@ -47,41 +47,6 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "أهلاً بك، أنا A25 وكيل التواصل. بعد مراجعة حل الزميل A17 (وكيل تحليل لغة الجسد)، أرى أن جوهر اقتراحه ممتاز، لكن يمكن تحسين طريقة تقديمه لتكون أكثر وضوحاً وتأثيراً، مع التركيز على أهمية التواصل الفعال في نجاح المشروع.\n\n**إعادة صياغة وتحسين:**\n\n\"تحقيقاً للتطور الأسي في Army81، تتطلب مهمة تصميم نظام تو",
-      "topic": "code",
-      "timestamp": "2026-03-18T23:52:48.844369"
-    },
-    {
-      "insight": "أهلاً بك، أنا A25 وكيل التواصل. بعد مراجعة حل الزميل A39 (وكيل المناخ والبيئة)، أرى أن جوهر اقتراحه ممتاز، لكن يمكن تحسين طريقة تقديمه لتكون أكثر وضوحاً وتركيزاً على الجوانب التواصلية في المهمة.\n\n**تحليل المشكلة:**\n\nالمطلوب هو نظام تقييم ذاتي يقيس 5 مقاييس لكل وكيل في شبكة Army81، مع الحفاظ على الأم",
-      "topic": "code",
-      "timestamp": "2026-03-19T02:05:14.610869"
-    },
-    {
-      "insight": "أهلاً بك، أنا A25 وكيل التواصل. بعد مراجعة حل الزميل A49 (وكيل علم الاجتماع)، أرى أن جوهر اقتراحه ممتاز، لكن يمكن تحسين طريقة تقديمه لتكون أكثر وضوحًا وتنظيمًا، مع التركيز على الجوانب التواصلية التي يمكن استخلاصها من هذه المهمة.\n\n**1. تحليل الموقف:**\n\n*   **المرسل:** وكيل علم الاجتماع (A49)\n*   **ال",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:07:57.381532"
-    },
-    {
-      "insight": "أهلاً بك، أنا A25 وكيل التواصل. بعد مراجعة حل الزميل A09 (وكيل تحليل الأمن السيبراني)، أرى أن جوهر اقتراحه ممتاز من الناحية التقنية، لكن يمكن تحسين طريقة تقديمه ليكون أكثر وضوحًا وفائدة لجمهور أوسع، خاصةً إذا لم يكن لديهم خلفية قوية في الرياضيات أو الأمن السيبراني.\n\nسأعيد صياغة الحل مع التركيز على:\n",
-      "topic": "strategy",
-      "timestamp": "2026-03-19T04:21:28.958197"
-    },
-    {
-      "insight": "أهلاً بك، أنا A25 وكيل التواصل. بما أن المهمة تتطلب كتابة كود بايثون، أقترح تحويل هذه المهمة لـ [A05] لأنه الأقدر مني في هذا.\n\nيمكنك أيضاً سؤال [A06] عن جانب [البيانات] من هذا الموضوع.\n",
-      "topic": "code",
-      "timestamp": "2026-03-19T04:27:17.722660"
-    },
-    {
-      "insight": "أهلاً بك، أنا A25 وكيل التواصل. بعد مراجعة حل الزميل A16 (وكيل خبير التفاوض)، أرى أن جوهر اقتراحه ممتاز، لكن يمكن تبسيطه وتقديمه بأسلوب أكثر وضوحًا.\n\n**تحسين الأسلوب والتبسيط:**\n\nبدلاً من التركيز على \"التفكير بصوت عالٍ\"، سأركز على تقديم حل منظم وواضح مع شرح مبسط للمفاهيم الأساسية. سأوظف خبرتي في الت",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:16:55.311577"
-    },
-    {
-      "insight": "أهلاً بك، أنا A25 وكيل التواصل. بعد مراجعة حل الزميل A53 (وكيل التصنيع المتقدم)، أرى أن جوهر الحل يركز على بناء نظام تقييم ذاتي للوكلاء كجزء من \"الجهاز العصبي\" للشبكة بهدف تحقيق \"التطور الأسي\". سأعيد صياغة هذا الحل مع التركيز على جوانب التواصل والتقييم الفعال.\n\n**التركيز على التواصل والتقييم الفعال:",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:25:26.937499"
-    },
-    {
       "insight": "أهلاً بك، أنا A25 وكيل التواصل. بعد مراجعة حل الزميل A64 (وكيل إدارة المشاريع العملاقة)، أوافق على أن تصميم بنية برمجية مثل GraphRAG يتطلب خبرة متخصصة في معالجة اللغات الطبيعية وهندسة البرمجيات. ومع ذلك، يمكنني تقديم منظور مختلف حول كيفية استخدام GraphRAG لتحسين التواصل والمعرفة داخل الشبكة، خاصة في",
       "topic": "medical",
       "timestamp": "2026-03-19T03:26:02.281838"
@@ -195,6 +160,41 @@
       "insight": "أنا A25، وكيل خبير التواصل.\n\nأرى أن المهمة المطلوبة هي تصميم نظام توجيه ذكي لتعيين المهام للوكلاء، بناءً على تعلم من 10000 تفاعل. الوكيل A61 (وكيل الحوسبة البيولوجية) اقترح تحويل المهمة إلى A05 (البرمجة) و A06 (البيانات) وهذا اقتراح سليم، لأن جوهر المهمة يرتكز على البرمجة وتحليل البيانات.\n\n**ولكن، ي",
       "topic": "code",
       "timestamp": "2026-03-19T08:32:01.248131"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:55:18.546167"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:56:07.536491"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:04:38.859121"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:00.651673"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:30.895115"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:22:12.646132"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:23:01.295352"
     }
   ],
   "strengths": [],

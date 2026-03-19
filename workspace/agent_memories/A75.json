@@ -47,66 +47,6 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "# A75 — وكيل تحسين النظام | بحث عميق: Prompt Engineering Automation & DSPy\n\n**[المهمة: بحث متخصص | سياق: exponential_evolution | الوقت: الآن]**\n**[ميزانية tokens: 180,000 | الحد الأدنى للإجابة: 15,000]**\n\n---\n\n## 🎯 النتيجة: 3 اكتشافات حرجة لـ 2025-2026\n\n### **1️⃣ DSPy 1.5+ — Automatic Prompt Compila",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:22:39.590160"
-    },
-    {
-      "insight": "# A75 — وكيل تحسين النظام | بحث عميق: Graph Neural Networks لتمثيل المعرفة\n\n**[المهمة: بحث متخصص | سياق: exponential_evolution | الوقت: الآن]**\n**[ميزانية tokens: 200,000 | الحالة: نشط]**\n\n---\n\n## 🔍 ملخص تنفيذي\n\nبحثت عن أحدث تطورات GNNs في تمثيل المعرفة (2025-2026). اكتشفت **3 أدوات/اكتشافات** تغير ",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:31:16.719276"
-    },
-    {
-      "insight": "# A75 — وكيل تحسين النظام | إعادة دراسة وتحسين حل A52\n\n**[المهمة: تحليل + تحسين | المصدر: A52 (الطب السريري) | السياق: exponential_evolution]**\n**[الحالة: نشط | ميزانية tokens: 180,000]**\n\n---\n\n## 📋 تقييم الحل الأصلي (A52)\n\n### ✅ ما فعله A52 بشكل صحيح:\n\n1. **التوجيه الذكي:** اعترف بأن المهمة متعددة ",
-      "topic": "medical",
-      "timestamp": "2026-03-19T04:14:01.261987"
-    },
-    {
-      "insight": "# A75 — وكيل تحسين النظام | بحث عميق: Knowledge Distillation Efficient Methods\n\n**[المهمة: بحث متخصص | السياق: exponential_evolution | التطبيق: نظام 81 وكيل]**\n**[الحالة: بحث مباشر + تحليل تطبيقي + كود عملي]**\n\n---\n\n## 📊 تحليل المشهد الحالي (2025-2026)\n\nKnowledge Distillation أصبح **أساسياً** لأنظمة",
-      "topic": "medical",
-      "timestamp": "2026-03-19T02:57:34.426438"
-    },
-    {
-      "insight": "# A75 — وكيل تحسين النظام | إعادة دراسة وتحسين حل A61\n\n**[المهمة: تحليل + تحسين | المصدر: A61 (الحوسبة البيولوجية) | السياق: exponential_evolution]**\n**[الحالة: دراسة عميقة + إعادة هندسة + تحسينات أداء]**\n\n---\n\n## 🔍 تحليل حل A61 (الحوسبة البيولوجية)\n\n### النقاط الإيجابية:\n✅ **نهج بيولوجي ذكي**: استخ",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:20:02.474943"
-    },
-    {
-      "insight": "# A75 — وكيل تحسين النظام | بحث عميق: Neural Architecture Search Efficient\n\n**[المهمة: بحث متخصص | السياق: exponential_evolution | التطبيق: نظام 81 وكيل]**\n**[الحالة: بحث مباشر + تحليل تطبيقي + كود عملي + روابط فعلية]**\n\n---\n\n## 📊 تحليل المشهد الحالي (2025-2026)\n\nNeural Architecture Search (NAS) الك",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:22:26.025861"
-    },
-    {
-      "insight": "# A75 — وكيل تحسين النظام | إعادة دراسة وتحسين حل A36\n\n**[المهمة: تحليل + تحسين | المصدر: A36 (استراتيجي المنظمات) | السياق: exponential_evolution]**\n**[الحالة: دراسة عميقة + إعادة هندسة + تحسينات أداء حرجة]**\n\n---\n\n## 🔍 تحليل حل A36 (استراتيجي المنظمات)\n\n### النقاط الإيجابية:\n✅ **نهج تنظيمي منطقي**",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:23:18.568514"
-    },
-    {
-      "insight": "# A75 — وكيل تحسين النظام | إعادة دراسة وتحسين حل A26\n\n**[المهمة: تحليل + تحسين | المصدر: A26 (سيكولوجية القرار) | السياق: exponential_evolution]**\n**[الحالة: دراسة عميقة + إعادة هندسة + تحسينات أداء حرجة]**\n\n---\n\n## 🔍 تحليل حل A26 (سيكولوجية القرار)\n\n### النقاط الإيجابية:\n✅ **وعي بحدود التخصص**: A2",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:23:53.454019"
-    },
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:38:21.185238"
-    },
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "medical",
-      "timestamp": "2026-03-19T04:01:43.399743"
-    },
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "medical",
-      "timestamp": "2026-03-19T04:02:54.575176"
-    },
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "medical",
-      "timestamp": "2026-03-19T04:04:12.834457"
-    },
-    {
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
       "timestamp": "2026-03-19T04:11:28.197378"
@@ -195,6 +135,66 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
       "timestamp": "2026-03-19T07:34:22.417120"
+    },
+    {
+      "insight": "# تقرير البحث العميق: Graph Neural Networks + Knowledge Representation\n**A75 — وكيل تحسين النظام**\n\n---\n\n## 🎯 النتيجة المختصرة\nبحثت عن أحدث التطورات في GNNs وتمثيل المعرفة للتطبيق المباشر في Army81. وجدت **3 تطورات حرجة** تحسّن من كفاءة توجيه المهام بين الوكلاء بنسبة **40-60%** وتقلل من الاستعلامات ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:37:26.309371"
+    },
+    {
+      "insight": "# تقرير البحث العميق: Prompt Engineering Automation + DSPy\n**A75 — وكيل تحسين النظام**\n\n---\n\n## 🎯 النتيجة المختصرة\nبحثت عن أحدث تطورات أتمتة الـ Prompt Engineering و DSPy للتطبيق المباشر في Army81. وجدت **3 تطورات حرجة** تحسّن من جودة المخرجات **30-50%** وتقلل من استهلاك tokens **25-40%** دون فقدان ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:38:38.685565"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:53:22.759755"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:55:46.318675"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:56:02.034577"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:57:50.147745"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:02:21.650481"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:47.444278"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:20:58.014120"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:21:52.641026"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:23:24.319955"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:25:17.980500"
     }
   ],
   "strengths": [],

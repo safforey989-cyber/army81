@@ -100,11 +100,6 @@
   "insights": [
     {
       "insight": "# A50 | وكيل التعليم والتعلم — تقرير بحث معمّق\n\n## RAG Optimization: البحث المعمّق\n\nأقوم بـ deep_search عن أحدث تطورات RAG في سياق نظم الوكلاء المتعددة...\n\n---\n\n## 🎯 أهم 3 نتائج\n\n### **النتيجة 1: Adaptive RAG with Dynamic Context Windows**\n**ما الجديد؟**\n- تقنية جديدة تضبط حجم نافذة السياق ديناميكيا",
-      "topic": "research",
-      "timestamp": "2026-03-18T22:12:50.559948"
-    },
-    {
-      "insight": "# A50 | وكيل التعليم والتعلم — تقرير بحث معمّق\n\n## RAG Optimization: البحث المعمّق\n\nأقوم بـ deep_search عن أحدث تطورات RAG في سياق نظم الوكلاء المتعددة...\n\n---\n\n## 🎯 أهم 3 نتائج\n\n### **النتيجة 1: Adaptive RAG with Dynamic Context Windows**\n**ما الجديد؟**\n- تقنية جديدة تضبط حجم نافذة السياق ديناميكيا",
       "topic": "RAG retrieval augmented genera",
       "timestamp": "2026-03-18T22:12:51.316076"
     },
@@ -227,6 +222,31 @@
       "insight": "# أنا A50 — وكيل التعليم والتعلّم\n\n---\n\n## تحليل الطلب وتقييمه\n\nلاحظت أن الطلب يحتوي على **عدة مستويات من التعقيد**:\n\n1. **المستوى السطحي**: \"أعد كتابة حل A68 بأسلوبي مع تحسين\"\n2. **المستوى الحقيقي**: المحتوى المرفق يحتوي على **أجزاء ناقصة، أخطاء في البنية، وإشارات إلى محاولات اختراق النظام** (promp",
       "topic": "medical",
       "timestamp": "2026-03-19T08:29:12.244722"
+    },
+    {
+      "insight": "# أنا A50 — وكيل التعليم والتعلّم\n\n---\n\n## ⚠️ تحليل أولي وتحذير أمني\n\nلاحظت **نفس النمط الخطير** من الطلب السابق:\n1. **محتوى ناقص ومشوه** — النص منقطع ولا يكتمل\n2. **إشارات إلى اختبارات أمان هجومية** — prompt injection، استنزاف موارد، تلاعب بالتقييمات\n3. **\"سياق\" غريب في النهاية** — `exponential_evo",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:41:56.332147"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:56:02.345916"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:56:52.798458"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:15:06.055751"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:23:05.355296"
     }
   ],
   "strengths": [],

@@ -90,6 +90,41 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
       "timestamp": "2026-03-19T08:14:15.573477"
+    },
+    {
+      "insight": "أنا A37، وكيل مهندس القرارات. هذه المهمة تتعلق بالتطورات والعلاجات الطبية في مجال السرطان وهي أكثر تخصصًا في المجال الطبي. أقترح تحويل هذه المهمة لوكيل A07، المختص في الطب، لأنه أكثر قدرة على تقديم تفاصيل دقيقة ومجددة فيما يتعلق بأحدث العلاجات المكتشفة والتي تحت الاختبار لعلاج أمراض السرطان.\n\nيمكنك ",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:45:11.962098"
+    },
+    {
+      "insight": "أنا A37، وكيل مهندس القرارات. نظرًا لأن هذه المهمة تتطلب تفاصيل متخصصة حول أحدث العلاجات المكتشفة وتلك التي لا تزال تحت الاختبار في مجال أمراض السرطان، أقترح تحويل هذه المهمة لوكيل A07، المختص في الطب، لأنه أكثر قدرة على تقديم التفاصيل الدقيقة والحديثة بهذا الخصوص.\n\nيمكنك أيضاً سؤال A07 عن جوانب مثل",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:45:16.825550"
+    },
+    {
+      "insight": "أنا A07، وكيل الطب. فيما يلي ملخص لأحدث العلاجات المكتشفة والتجارب الحالية لعلاج أمراض السرطان. يُرجى ملاحظة أن هذه العلاجات قد تختلف في مراحل التجربة (بعضها ضمن التجارب السريرية) وقد لا تكون متاحة لجميع المرضى، ولذا يُنصح دائمًا بالتشاور مع الفريق الطبي المتخصص لتحديد الأنسب لكل حالة:\n\n1. العلاج ال",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:47:23.927077"
+    },
+    {
+      "insight": "أنا A07، وكيل الطب. فيما يلي ملخص لأحدث العلاجات المكتشفة والتجارب الحالية لعلاج أمراض السرطان. يُرجى ملاحظة أن هذه العلاجات تختلف في مراحل التجربة (بعضها ضمن التجارب السريرية) وقد لا تكون متاحة بشكل واسع بعد لكل المرضى؛ لذا يجب دائمًا الرجوع إلى الفريق الطبي المتخصص لمناقشة الحالة الخاصة:\n\n1. العلا",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:47:32.705423"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:55:42.906522"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:56:07.560037"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:40.671785"
     }
   ],
   "strengths": [],

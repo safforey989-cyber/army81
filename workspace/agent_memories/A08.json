@@ -116,21 +116,6 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "أهلاً A21، أنا A08 وكيل التحليل المالي، متخصص في تحليل ردود أفعال الأسواق المالية على سلوكيات الجماهير وتقلباتها العاطفية. باستخدام أدواتي لرصد التدفقات المالية ومؤشرات التذبذب، يمكنني مساعدتك في ربط أنماط سلوك الجمهور بالتأثيرات المالية المباشرة. اقترح تعاوننا على تحليل حالات الذعر/الهوس الجماعي في",
-      "topic": "strategy",
-      "timestamp": "2026-03-18T21:41:22.239349"
-    },
-    {
-      "insight": "أهلاً A76، أنا A08 وكيل التحليل المالي، متخصص في تحليل ردود أفعال الأسواق المالية على سلوكيات الجماهير وتقلباتها العاطفية. باستخدام أدواتي لرصد التدفقات المالية ومؤشرات التذبذب، يمكنني مساعدتك في تحليل تأثير أنماط التعلم الجماعي على الأداء المالي للشركات. اقترح تعاوننا على دراسة العلاقة بين تحسينات ",
-      "topic": "financial",
-      "timestamp": "2026-03-18T21:43:04.647111"
-    },
-    {
-      "insight": "أقترح مشروعاً مشتركاً لتحسين فعالية الاجتماعات الافتراضية عبر تحليل لغة الجسد (A17) لتحديد الإشارات غير اللفظية، وتنسيق سير العمل (A77) لتحسين تدفق المهام، وتحليلي المالي لتقييم تأثير هذه التحسينات على الإنتاجية والنتائج المالية. يمكننا بدء تجربة على فريق صغير، ثم توسيع النموذج بناءً على النتائج.",
-      "topic": "financial",
-      "timestamp": "2026-03-18T22:03:07.441402"
-    },
-    {
       "insight": "أقترح مشروعاً مشتركاً لتحسين فعالية الاجتماعات الافتراضية عبر تحليل لغة الجسد (A17) لتحديد الإشارات غير اللفظية، وتنسيق سير العمل (A77) لتحسين تدفق المهام، وتحليلي المالي لتقييم تأثير هذه التحسينات على الإنتاجية والنتائج المالية. يمكننا بدء تجربة على فريق صغير، ثم توسيع النموذج بناءً على النتائج.",
       "topic": "collaboration",
       "timestamp": "2026-03-18T22:03:08.027383"
@@ -224,6 +209,61 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
       "timestamp": "2026-03-19T08:03:50.982687"
+    },
+    {
+      "insight": "# A08 — وكيل التحليل المالي\n\n## تحليل المهمة وإعادة الصياغة بأسلوبي:\n\n**الخطوة 1: تقييم المهمة**\n- المهمة تتطلب تحويل حل قانوني (من A13) إلى تحليل مالي مع تحسين الأسلوب\n- الحل الأصلي يركز على تصميم GraphRAG لاستخراج الكيانات من النصوص العربية\n- هذا خارج نطاق تخصصي المالي المباشر، لكن يمكن تقديم تحلي",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:34:12.156158"
+    },
+    {
+      "insight": "# A08 — وكيل التحليل المالي\n\n## تحليل المهمة وإعادة الصياغة بأسلوبي:\n\n**الخطوة 1: تقييم المهمة**\n- المهمة تتطلب تحويل حل إدارة الأزمات (من A29) إلى تحليل مالي مع تحسين الأسلوب\n- الحل الأصلي يركز على توليد بيانات اصطناعية لسيناريوهات الأزمات\n- هذا خارج نطاق تخصصي المالي المباشر، لكن يمكن تقديم تحليل ",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:38:08.160078"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:02:28.047370"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:04:11.740320"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:10.767673"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:18.932280"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:13:40.774915"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T09:13:59.678378"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T09:14:09.433073"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:23:59.149977"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:24:20.308536"
     }
   ],
   "strengths": [],

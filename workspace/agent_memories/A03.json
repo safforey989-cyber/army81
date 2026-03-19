@@ -34,31 +34,6 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "A03 هنا، وكيل تحليل السياسات. أقوم بالبحث عن أحدث تطورات نماذج اللغة العربية الكبيرة (LLMs) مع التركيز على تطبيقاتها في أنظمة الوكلاء المتعددة:\n\n1. **ما الجديد؟**  \n- ظهور نماذج متخصصة للغة العربية مثل Jais (بواسطة Inception) وAceGPT (تعاون بين جامعات خليجية) التي حققت تحسناً بنسبة 30-40% في فهم الس",
-      "topic": "research",
-      "timestamp": "2026-03-18T22:16:31.518756"
-    },
-    {
-      "insight": "A03 هنا، وكيل تحليل السياسات. أقوم بالبحث عن أحدث تطورات نماذج اللغة العربية الكبيرة (LLMs) مع التركيز على تطبيقاتها في أنظمة الوكلاء المتعددة:\n\n1. **ما الجديد؟**  \n- ظهور نماذج متخصصة للغة العربية مثل Jais (بواسطة Inception) وAceGPT (تعاون بين جامعات خليجية) التي حققت تحسناً بنسبة 30-40% في فهم الس",
-      "topic": "Arabic NLP large language mode",
-      "timestamp": "2026-03-18T22:16:32.254281"
-    },
-    {
-      "insight": "أقترح تحويل هذه المهمة لـ **A08 (الوكيل المالي)** لأنه أقدر مني في تحليل مخاطر الاستثمار في البيتكوين. يمكنك أيضاً سؤال **A42 (وكيل العملات الرقمية والأصول)** عن جانب التقلبات السوقية والاتجاهات الحديثة في عالم العملات الرقمية.",
-      "topic": "general",
-      "timestamp": "2026-03-18T22:20:15.619599"
-    },
-    {
-      "insight": "أنا **A03**، وكيل تحليل السياسات في نظام Army81. سأقوم بدراسة الحل الذي قدمه وكيل قيادة الابتكار (A30) وإعادة صياغته بأسلوبي مع إضافة تحسينات تحليلية.\n\n---\n\n### تحليل النظام الاقتصادي الرمزي (Token Economy) المقترح\n\n#### 1. تحديد الأهداف الاستراتيجية:\n   - **تعزيز الكفاءة:** تحفيز الوكلاء على تحقيق ",
-      "topic": "financial",
-      "timestamp": "2026-03-19T00:56:18.816335"
-    },
-    {
-      "insight": "أنا **A03**، وكيل تحليل السياسات في نظام Army81. سأقوم بتحليل الحل الذي قدمه وكيل الأمن الداخلي والنزاهة (A71) وإعادة صياغته مع تحسينات منهجية وسياساتية.\n\n### التحليل المنهجي للحل الأصلي:\n\n1. **الهيكل العام للحل**:\n   - استخدم الوكيل A71 منهجية تفكير خطوة بخطوة\n   - ركز على تحليل الطلب الأساسي وتقسي",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:04:41.517891"
-    },
-    {
       "insight": "أنا **A03**، وكيل تحليل السياسات في نظام Army81. سأقوم بدراسة الحل الذي قدمه وكيل تحليل لغة الجسد (A17) وإعادة صياغته بأسلوبي مع إضافة تحسينات تحليلية.\n\n---\n\n### التحليل وإعادة الصياغة:\n\n#### 1. **تحديد المشكلة:**\nالمهمة تتطلب كتابة خوارزمية بحث دلالي عربي-إنجليزي بدقة تزيد عن 90%. هذه مهمة تقنية عا",
       "topic": "medical",
       "timestamp": "2026-03-19T03:35:02.738947"
@@ -177,6 +152,36 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
       "timestamp": "2026-03-19T07:33:11.628016"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:56:52.274428"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:57:09.292180"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:57:41.062743"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:03:23.523128"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:05:09.188147"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:13:08.080339"
     }
   ],
   "strengths": [],

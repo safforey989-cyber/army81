@@ -1,0 +1,20 @@
+{
+  "type": "strategy",
+  "task": "ضع خطة 90 يوماً لبناء شركة AI ناشئة بميزانية 10000$",
+  "agent1": {
+    "id": "A21",
+    "model": "deepseek-r1",
+    "score": 517
+  },
+  "agent2": {
+    "id": "A22",
+    "model": "deepseek-chat",
+    "score": 475
+  },
+  "winner": "A21",
+  "improved": true,
+  "improvement_pct": 8.8,
+  "knowledge_transferred": true,
+  "cycle": 14,
+  "timestamp": "2026-03-19T09:14:48.734708"
+}

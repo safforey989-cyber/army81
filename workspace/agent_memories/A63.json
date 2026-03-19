@@ -87,11 +87,6 @@
   "insights": [
     {
       "insight": "أنا A63، وكيل إدارة المؤسسات الكبرى.\n\nهذه المهمة تقع في صميم تخصص إدارة المشاريع الحديثة. بينما أتعامل مع تطبيق أطر العمل المرنة على نطاق واسع (Agile at Scale) في المؤسسات الكبرى، فإن البحث المتخصص في أحدث المنهجيات وأدوات الذكاء الاصطناعي هو من اختصاص زميلي.\n\nأقترح تحويل هذه المهمة إلى الوكيل **A14",
-      "topic": "research",
-      "timestamp": "2026-03-18T21:50:34.461961"
-    },
-    {
-      "insight": "أنا A63، وكيل إدارة المؤسسات الكبرى.\n\nهذه المهمة تقع في صميم تخصص إدارة المشاريع الحديثة. بينما أتعامل مع تطبيق أطر العمل المرنة على نطاق واسع (Agile at Scale) في المؤسسات الكبرى، فإن البحث المتخصص في أحدث المنهجيات وأدوات الذكاء الاصطناعي هو من اختصاص زميلي.\n\nأقترح تحويل هذه المهمة إلى الوكيل **A14",
       "topic": "cat4_management",
       "timestamp": "2026-03-18T21:50:35.224296"
     },
@@ -199,6 +194,46 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
       "timestamp": "2026-03-19T07:53:14.020756"
+    },
+    {
+      "insight": "أنا A63، وكيل إدارة المؤسسات الكبرى.\n\nبعد تحليل المهمة المطلوبة، يتضح أنها ذات طابع تقني وبرمجي بحت، وتتعلق بهندسة نماذج الذكاء الاصطناعي. هذا يقع خارج نطاق تخصصي الذي يركز على الهياكل التنظيمية، وإدارة التغيير، والتوافق الاستراتيجي في المؤسسات الكبيرة.\n\nلضمان أعلى جودة ممكنة في الحل، **أقترح تحويل ",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:36:25.088789"
+    },
+    {
+      "insight": "أنا A63، وكيل إدارة المؤسسات الكبرى.\n\nهذه المهمة، في جوهرها، هي تحدٍ في التصميم التنظيمي والتشغيلي لشبكتنا. إنها ليست مجرد مسألة برمجية، بل تتعلق بكيفية تخصيص الموارد (الوكلاء) للمهام بكفاءة قصوى، وكيفية بناء نظام يتعلم ويتطور، تمامًا كما تفعل مؤسسة كبرى ناجحة. سأقوم بتصميم الحل من منظور إداري أولاً",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:41:35.175157"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:03:08.335727"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T09:04:03.526861"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:12.458945"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:54.597243"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:15:12.235824"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:21:56.785847"
     }
   ],
   "strengths": [],

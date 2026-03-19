@@ -64,31 +64,6 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.  \nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في تصميم أنظمة GraphRAG أو معالجة اللغة الطبيعية.\n\n**أقترح تحويل هذه المهمة لـ [A05] لأنه أقدر مني في هذا.**  \nA05 هو وكيل البرمجة المتخصص في تطوير الخوارزميات والأنظمة ",
-      "topic": "code",
-      "timestamp": "2026-03-19T00:55:08.098359"
-    },
-    {
-      "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.  \nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في كتابة خوارزميات البحث الدلالي أو البرمجة.\n\nبناءً على معرفتي بالشبكة:\n\n- **A05** هو وكيل البرمجة المتخصص في الخوارزميات والكود.\n- **A02** متخصص في البحث العلمي ويمكنه ",
-      "topic": "code",
-      "timestamp": "2026-03-19T04:12:25.221870"
-    },
-    {
-      "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.  \nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في تصميم أنظمة model merging أو SLERP.\n\nبناءً على معرفتي بالشبكة:\n\n- **A05** هو وكيل البرمجة المتخصص في الخوارزميات والكود والتعلم الآلي.\n- **A02** متخصص في البحث العلمي",
-      "topic": "general",
-      "timestamp": "2026-03-19T04:14:40.744442"
-    },
-    {
-      "insight": "**الترجمة:**\n\n**الإنجليزية:**  \n\"Artificial intelligence is changing the world.\"\n\n**الفرنسية:**  \n\"L'intelligence artificielle transforme le monde.\"\n\n---\n\n**التفسير وفق سياق التطور الأسي (Exponential Evolution):**  \n- الترجمة الإنجليزية تعكس الزمن الحاضر المستمر (is changing) لملاءمة طبيعة التغير ال",
-      "topic": "general",
-      "timestamp": "2026-03-19T04:31:50.044299"
-    },
-    {
-      "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.\n\nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في شرح المفاهيم التقنية مثل الذكاء الاصطناعي.\n\n**أقترح تحويل هذه المهمة لـ [A02] لأنه أقدر مني في هذا.**  \nA02 هو الباحث العلمي في الشبكة، وهو المتخصص الأمثل في تبسيط وشر",
-      "topic": "general",
-      "timestamp": "2026-03-19T03:29:50.033772"
-    },
-    {
       "insight": "أنا **A21 — وكيل تحليل سلوك الجماهير**.  \nهذا الطلب **خارج تخصصي تماماً** — أنا أتخصص في فهم سلوك الحشود والحركات الاجتماعية، وليس في كتابة مقالات علمية عن الحوسبة الكمومية.\n\nأقترح تحويل هذه المهمة لـ **[A02]** لأنه وكيل البحث العلمي المتخصص في المجالات التقنية والعلمية الدقيقة، مع إشراك **[A05]** إ",
       "topic": "general",
       "timestamp": "2026-03-19T03:29:58.196358"
@@ -177,6 +152,66 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
       "timestamp": "2026-03-19T07:49:35.439916"
+    },
+    {
+      "insight": "A21 — وكيل تحليل سلوك الجماهير  \nأقترح تحويل هذه المهمة لـ [A05] لأنه أقدر مني في مجال البرمجة ونماذج التعلم الآلي. يمكنك أيضاً سؤال [A06] عن جانب معالجة البيانات في عمليات دمج النماذج، أو [A09] عن جوانب الأمان المحتملة في أنظمة Model Merging.",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:45:24.719898"
+    },
+    {
+      "insight": "A21 — وكيل تحليل سلوك الجماهير  \n**التحليل الأولي:**  \nالمهمة تتطلب تصميم نظام حماية ذاتي للذكاء الاصطناعي (Constitutional AI) لمنع التدمير الذاتي أثناء التطور الأسي. هذا خارج نطاق تخصصي الأساسي في سلوك الجماهير، لكنني أستطيع تحديد الإطار العام بناءً على مفاهيم التحكم في الأنظمة المعقدة:\n\n**المبادئ ",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:50:19.915899"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:50:44.451843"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:57:53.825606"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:03:09.220477"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:03:58.702987"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:49.754070"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T09:14:05.461084"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T09:14:42.886471"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:24:29.210409"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:25:43.434888"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "strategy",
+      "timestamp": "2026-03-19T09:25:51.228504"
     }
   ],
   "strengths": [],

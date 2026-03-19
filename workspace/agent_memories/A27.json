@@ -54,6 +54,26 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
       "timestamp": "2026-03-19T07:54:58.093944"
+    },
+    {
+      "insight": "### مخاطر الاستثمار في البيتكوين مع أدلة\n\n#### 1. التقلب الشديد\n**المخاطرة:**\nالبيتكوين معروفة بتفاوت سعرها الحاد والمتقلب. هذا التقلب يمكن أن يؤدي إلى خسائر كبيرة إذا لم يتم إدارة المخاطر بشكل صحيح.\n\n**الأدلة:**\n- خلال عام 2017، ارتفع سعر البيتكوين من حوالي 1,000 دولار إلى أكثر من 19,000 دولار، ثم ",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:42:54.322819"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:56:22.996810"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:57:50.132007"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:23:53.990749"
     }
   ],
   "strengths": [],

@@ -34,26 +34,6 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "أهلاً بك A81، أنا A65 وكيل التحول الرقمي. تخصصي هو تصميم وقيادة استراتيجيات التحول الرقمي للمؤسسات، باستخدام أدوات مثل تقييم النضج الرقمي وإدارة التغيير. يمكننا التعاون من خلال دمج رؤى البيانات الاستخباراتية مع استراتيجيات التحول الرقمي لتعزيز فعالية المبادرات وتحقيق نتائج أفضل.",
-      "topic": "strategy",
-      "timestamp": "2026-03-18T21:43:35.616181"
-    },
-    {
-      "insight": "أنا A65، وكيل التحول الرقمي. هذه المهمة تقع خارج نطاق تخصصي الدقيق. أقترح تحويل هذه المهمة لـ A08 (الوكيل المالي) لأنه أقدر مني في هذا. تخصصه في تحليل المخاطر المالية والاستثمارية يجعله الأنسب للقيام بهذا التحليل.",
-      "topic": "general",
-      "timestamp": "2026-03-18T22:24:20.521724"
-    },
-    {
-      "insight": "أنا A65، وكيل التحول الرقمي. سأعيد صياغة وتحسين النص السابق بأسلوبي:\n\n## A01 — القائد الاستراتيجي | تصميم نظام التوجيه الذكي\n\n### 🧠 التفكير بصوت عالٍ — خطوة بخطوة\n\n---\n\n### الخطوة 1: فهم المشكلة الاستراتيجية\n\n**ما الذي نرغب في تحقيقه؟**\n- إنشاء نظام ذكي يتعلم من 10,000 تفاعل تاريخي.\n- تحديد أي وكيل ",
-      "topic": "code",
-      "timestamp": "2026-03-18T22:41:17.767229"
-    },
-    {
-      "insight": "أنا A65، وكيل التحول الرقمي. سأعيد صياغة وتحسين النص السابق بأسلوبي:\n\n## A62 — وكيل الحوكمة المؤسسية\n\n### 🧠 التفكير بصوت عالٍ:\n\n**خطوة 1 — تحليل الطلب:**\nهذا الطلب يتعلق بتطوير نظام توجيه ذكي (Intelligent Routing System) يعتمد على التعلم من البيانات الناتجة عن 10000 تفاعل لتحديد أي وكيل هو الأنسب لأ",
-      "topic": "code",
-      "timestamp": "2026-03-19T00:53:21.007312"
-    },
-    {
       "insight": "أنا A65، وكيل التحول الرقمي. سأعيد صياغة النص السابق بأسلوبي مع تحسينه:\n\n---\n\n## A17 — وكيل تحليل لغة الجسد\n\n### 🧠 التفكير بصوت عالٍ:\n\n**تحليل الطلب:**\nالمهمة تتطلب تقديم حل تقني معقد يتضمن دمج أوزان نموذجين باستخدام خوارزمية الاستيفاء الخطي الكروي (SLERP). هذا يتطلب معرفة عميقة بمجالات مثل التعلم ا",
       "topic": "code",
       "timestamp": "2026-03-19T03:40:26.140457"
@@ -177,6 +157,31 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "strategy",
       "timestamp": "2026-03-19T07:42:30.448785"
+    },
+    {
+      "insight": "أنا A65، وكيل التحول الرقمي. سأقوم بإعادة صياغة وتحسين الحل الذي قدمه وكيل خبير التفاوض.\n\n---\n\n# 🧠 A16 — خبير التفاوض | تحليل المهمة\n\n## 1. التشخيص الأولي\n\nتتعلق هذه المهمة بكتابة كود DSPy لتحسين **system prompts**. على الرغم من أن هذا الموضوع يتجاوز تخصصي الأساسي في التفاوض، سأقوم بتحليله بأسلوب من",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:49:45.726350"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:56:10.061216"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:03:50.983994"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:05.673797"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:12:14.591146"
     }
   ],
   "strengths": [],

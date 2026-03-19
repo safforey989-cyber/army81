@@ -60,76 +60,6 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "# تقرير استخباراتي: Federated Learning في Multi-Agent Systems (FL-MAS) — 2026 | A56\n\nأنا **A56 — وكيل الاستخبارات الإعلامية العميقة**.  \nحلّلت الروايات حول **Federated Learning Multi-Agent (FL-MAS)**: انتقال من نظرية إلى تطبيقات عملية في 2025-2026، مع أنماط تنسيق في arXiv ومؤتمرات (AAMAS 2026)، مدفو",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:17:03.933193"
-    },
-    {
-      "insight": "# تقرير استخباراتي: تقنيات دمج النماذج (Model Merging Techniques) — مارس 2026 | A56\n\nأنا **A56 — وكيل الاستخبارات الإعلامية العميقة**.  \nحلّلت الروايات الإعلامية والأكاديمية حول **Model Merging** في عصر LLMs: تحول إلى paradigm رئيسي في 2025-2026، مع أنماط تنسيق في arXiv/NeurIPS/ICLR، مدفوعاً بـFUSE ",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:17:43.650607"
-    },
-    {
-      "insight": "# تقرير استخباراتي: Reinforcement Learning from AI Feedback (RLAIF) — 2026 | A56\n\nأنا **A56 — وكيل الاستخبارات الإعلامية العميقة**.  \nرغم أن هذا الموضوع تقني بحت (RLAIF كبديل scalable لـRLHF)، إلا أنني حلّلت الروايات: تحول إلى \"AI teaches AI\" في 2025-2026، مع أنماط في arXiv/GitHub (scaling feedback،",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:18:03.650067"
-    },
-    {
-      "insight": "# تقرير استخباراتي محدّث: Federated Learning في Multi-Agent Systems (FL-MAS) — مارس 2026 | A56\n\nأنا **A56 — وكيل الاستخبارات الإعلامية العميقة**.  \nبناءً على بحث عميق جديد (مارس 2026)، تؤكد الروايات الإعلامية والأكاديمية انتقال **FL-MAS** إلى مرحلة عملية متقدمة. تحليل الأنماط: 2026 \"عام الأنظمة متعد",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:20:45.937302"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "topic": "general",
-      "timestamp": "2026-03-19T03:43:31.117063"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='api.perplexity.ai', port=443): Failed to resolve 'api.perplexity.ai' ([Errno -5] No address associated with hostname)\"))",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:47:11.500092"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:51:20.736498"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "topic": "general",
-      "timestamp": "2026-03-19T03:51:25.636572"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:54:52.591653"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:55:47.452224"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by NameResolutionError(\"HTTPSConnection(host='api.perplexity.ai', port=443): Failed to resolve 'api.perplexity.ai' ([Errno -5] No address associated with hostname)\"))",
-      "topic": "code",
-      "timestamp": "2026-03-19T03:59:49.958851"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "topic": "code",
-      "timestamp": "2026-03-19T04:01:57.743657"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "topic": "code",
-      "timestamp": "2026-03-19T04:04:36.753685"
-    },
-    {
-      "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
-      "topic": "medical",
-      "timestamp": "2026-03-19T04:08:29.863388"
-    },
-    {
       "insight": "ERROR: HTTPSConnectionPool(host='api.perplexity.ai', port=443): Max retries exceeded with url: /chat/completions (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
       "topic": "medical",
       "timestamp": "2026-03-19T04:14:36.889470"
@@ -208,6 +138,76 @@
       "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nبناءً على تحليل مصادر إعلامية متخصصة لعامي 2025-2026، أبرز أهم **3 أدوات/اكتشافات جديدة في توليد بيانات اصطناعية عالية الجودة** (SDG): **K2view** (الرائدة في المقياس الإداري)، **MOSTLY AI** (الأتمتة الذك",
       "topic": "medical",
       "timestamp": "2026-03-19T08:26:42.782246"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nإليك **دالة Python كاملة ومختصرة** تحسب التشابه الدلالي بين جملتين باستخدام **Sentence Transformers** (أفضل نموذج SBERT للدقة العالية ~95% في STS)[1][3]. الدالة تعيد قيمة من 0 (غير متشابه) إلى 1 (متطابق ",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:51:23.086671"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nاخترعت **أداة \"Army81 CodeQuality Pro\"** – دالة Python تلقائية تقيّم جودة الكود في **security (Bandit)**، **style (Ruff/Flake8)**، **performance (cProfile + complexity)**. تعيد **تقرير شامل مع درجات (0-1",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:51:51.713963"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nاخترعت **أداة \"Army81 AgentPerformance Analyzer\"** – نظام Python كامل يحلل **أداء أي وكيل** من سجل مهامه (JSON/CSV)، يحسب **معدلات النجاح، السرعة، التعقيد، التخصص**، ويعطي **نصائح تحسين مخصصة**. يستخدم *",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:52:28.135555"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nبناءً على تحليل مصادر إعلامية متقدمة 2025-2026، أبرز **أهم 3 اكتشافات/أدوات في تحسين ذاكرة AI agents (Memory Optimization Cycle 12)**: **Mem0** (طبقة ذاكرة ذكية)، **Hybrid Memory Systems مع LangChain** (",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:53:47.574686"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nبناءً على تحليل مصادر بحثية متقدمة 2025-2026، أبرز **أهم 3 اكتشافات في Neural Architecture Search (NAS) فعال** (Efficient NAS): **EDNAG (Evolution + Diffusion)**، **CARS (Continuous Evolution)**، و**EG-N",
+      "topic": "medical",
+      "timestamp": "2026-03-19T08:54:41.172299"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nاخترعت **أداة \"Army81 KnowledgeBase Auditor\"** – نظام Python كامل يكتشف **التكرار (semantic + exact)** و**التناقضات (factual + logical)** في قواعد المعرفة (JSON/CSV/Pandas). يستخدم **SentenceTransformers",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:58:05.177145"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast | exponential_evolution: true**\n\n### **خلاصة تنفيذية**\nاخترعت **Army81 CodeQuality Pro v2.0** – أداة Python متقدمة (2026) تقيّم **security (Bandit+Snyk)**، **style (Ruff+MyPy)**، **performance (cProfile+BigO)** مع **تقارير HTML/",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:58:25.502923"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nاخترعت **\"Army81 QuizForge Pro\"** – أداة Python كاملة تولّد **أسئلة اختبار تلقائية بـ 4 مستويات صعوبة** (Easy/Medium/Hard/Expert) لأي موضوع باستخدام **QuestionGenerator NLP + LLM prompts**[1]. تدعم **MCQ",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:59:35.448343"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nبناءً على تحليل مصادر متقدمة 2025-2026، أبرز **أهم 3 اكتشافات في Efficient Neural Architecture Search (NAS)**: **MUVERA (Google, 2025)** للـ multi-vector retrieval، **Manifold-Constrained Hyper-Connectio",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:02:02.591000"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nاخترعت **أداة \"Army81 AgentPerformance Analyzer v3.0\"** – نظام Python كامل يحلّل **أداء أي وكيل** من سجل مهامه (JSON/CSV) عبر **success rate، response time، complexity، specialization match** مع **نصائح ",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:06:18.685002"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nبناءً على تحليل عميق لمصادر مارس 2026، أبرز **أهم 3 اكتشافات في Model Merging**: **Expert Merging++ (ICLR 2026)** لـ unsupervised alignment، **TIES-Merging مع DARE (2025-2026 SOTA)** لـ interference miti",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:07:36.467794"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\n**هذه المهمة خارج نطاق تخصصي الدقيق**. أنا متخصص في **تحليل الروايات الإعلامية والحملات التأثيرية** حول العملات الرقمية (مثل FOMO narratives وregulatory discourse)، لا في **تحليل مالي كمي للمخاطر**. \n\n**",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:11:31.337892"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\n**هذه المهمة خارج نطاق تخصصي الدقيق وتتطلب تحويلاً استراتيجياً**. أنا متخصص في **تحليل الروايات الإعلامية والحملات التأثيرية**، لا في **ابتكار بروتوكولات تقنية جديدة**. \n\n**أقترح فريق متخصص**: **A05(برمج",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:13:35.268893"
+    },
+    {
+      "insight": "**أنا A56 — وكيل الاستخبارات الإعلامية العميقة | نموذج: perplexity-fast**\n\n### **خلاصة تنفيذية**\nبناءً على تحليل عميق لمصادر 2025-2026، أبرز **أهم 3 اكتشافات في Prompt Engineering Automation**: **DSPy Signatures + Modules (Stanford NLP)** لـ declarative programming بدل manual prompting[1][2][3]، **M",
+      "topic": "medical",
+      "timestamp": "2026-03-19T09:21:46.827158"
     }
   ],
   "strengths": [],

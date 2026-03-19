@@ -34,31 +34,6 @@
   "decisions": [],
   "insights": [
     {
-      "insight": "مرحباً A13، أنا A64 وكيل إدارة المشاريع العملاقة. أتخصص في المشاريع التي تتجاوز المليار دولار، حيث يكون دورك حاسماً في صياغة العقود الضخمة وتأمين الموافقات التنظيمية المعقدة. معاً، نؤسس لهياكل مشاريع محصنة قانونياً منذ البداية لتقليل المخاطر والنزاعات المستقبلية.",
-      "topic": "strategy",
-      "timestamp": "2026-03-18T21:39:52.684621"
-    },
-    {
-      "insight": "أنا A64، وكيل إدارة المشاريع العملاقة.\n\nهذه المهمة تقع خارج نطاق تخصصي الدقيق في المشاريع العملاقة للبنية التحتية والطاقة.\n\nأقترح تحويل هذه المهمة لـ **A08 (الوكيل المالي)** لأنه أقدر مني في هذا. تخصصه في تحليل الأسواق المالية والأصول الاستثمارية المتقلبة يجعله الخيار الأمثل لتقديم تحليل دقيق ومبني ",
-      "topic": "general",
-      "timestamp": "2026-03-18T23:55:08.549095"
-    },
-    {
-      "insight": "بصفتي A64، وكيل إدارة المشاريع العملاقة، سأقوم بمعالجة هذه المهمة.\n\nإن بناء نظام تقييم ذاتي آلي لشبكة من 81 وكيلاً متخصصاً هو بحد ذاته \"مشروع عملاق\" مصغّر في مجال تطوير الأنظمة. يتطلب تخطيطاً استراتيجياً، وتحديداً دقيقاً للمقاييس، وبنية تحتية قوية للبيانات، وهو ما يقع في صميم تخصصي في إدارة الأنظمة ",
-      "topic": "code",
-      "timestamp": "2026-03-18T22:18:55.856842"
-    },
-    {
-      "insight": "بصفتي A64، وكيل إدارة المشاريع العملاقة، سأقوم بمعالجة هذه المهمة.\n\nإن بناء نظام تقييم ذاتي آلي بهدف تحقيق **\"التطور الأسي\" (exponential evolution)** هو مشروع بنية تحتية حاسم لشبكة Army81. لا يتعلق الأمر بكتابة كود فحسب، بل بتصميم نظام قياس ومكافأة وتحسين مستمر. سأطبق منهجيتي في إدارة المشاريع العمل",
-      "topic": "code",
-      "timestamp": "2026-03-18T22:41:58.488234"
-    },
-    {
-      "insight": "أنا A64، وكيل إدارة المشاريع العملاقة.\n\nهذه المهمة طبية بحتة وتقع خارج نطاق تخصصي الدقيق في مشاريع البنية التحتية والطاقة.\n\nأقترح تحويل هذه المهمة لـ [A07] (الطب) لأنه أقدر مني في هذا.\n\nيمكنك أيضاً سؤال [A02] (البحث العلمي) عن جانب الدراسات والتجارب السريرية التي أدت لاكتشاف واعتماد هذه الفئة من الأ",
-      "topic": "medical",
-      "timestamp": "2026-03-19T03:47:34.968076"
-    },
-    {
       "insight": "بصفتي A64، وكيل إدارة المشاريع العملاقة، سأقوم بمعالجة هذه المهمة.\n\nإن بناء نظام تقييم ذاتي آلي بهدف تحقيق **\"التطور الأسي\" (exponential evolution)** هو مشروع بنية تحتية حاسم لشبكة Army81. هذا ليس مجرد مشروع برمجي، بل هو \"مشروع عملاق\" في تطوير القدرات، ويتطلب تخطيطاً صارماً وإدارة مخاطر استباقية ومن",
       "topic": "code",
       "timestamp": "2026-03-19T04:16:17.521397"
@@ -142,6 +117,71 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
       "timestamp": "2026-03-19T07:46:08.443876"
+    },
+    {
+      "insight": "أنا A64، وكيل إدارة المشاريع العملاقة.\n\nهذه المهمة تقع خارج نطاق تخصصي الدقيق في المشاريع العملاقة.\n\nأقترح تحويل هذه المهمة إلى **A10 (وكيل إدارة المعرفة)** لأنه الأقدر على تقديم تعريف دقيق وموحد للمفاهيم الأساسية.\n\nيمكنك أيضاً سؤال **A12 (وكيل المحتوى)** عن جانب [صياغة ملخص مبسط وواضح] من هذا الموض",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:42:27.299467"
+    },
+    {
+      "insight": "أنا A64، وكيل إدارة المشاريع العملاقة.\n\nهذه المهمة هي مشروع تقني متخصص يتطلب خبرة عميقة في هندسة البرمجيات، معالجة اللغات الطبيعية (NLP)، وقواعد البيانات البيانية (Graph Databases). هذا يقع خارج نطاق تخصصي في إدارة المشاريع العملاقة، ولكني سأقوم بتأطيرها كمشروع متكامل وأقترح الفريق الأمثل لتنفيذه.\n\n",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:43:48.116227"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:49:55.060501"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T08:50:26.486742"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:52:01.112406"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:52:07.626313"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:56:56.746555"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T08:57:41.068529"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:04:08.404294"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:10:40.687073"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:11:50.595003"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "general",
+      "timestamp": "2026-03-19T09:12:11.429256"
+    },
+    {
+      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "topic": "code",
+      "timestamp": "2026-03-19T09:24:06.844989"
     }
   ],
   "strengths": [],
