@@ -6,14 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "ITK",
-    "Drishti",
-    "Kheops",
-    "Cottage Med",
-    "Bahmni",
-    "genomic_interpreter",
-    "FreeMedForms EMR",
-    "OpenEHR",
     "symptom_analyzer",
     "Medplum",
     "OpenMRS",
@@ -60,7 +52,10 @@
     "ERPNext",
     "Cornerstone",
     "DICOM Standards Browser",
-    "DICOMcloud"
+    "DICOMcloud",
+    "research_c15_530b0845",
+    "research_c24_7d6f469b",
+    "research_c24_530b0845"
   ],
   "knowledge_topics": [],
   "performance": {

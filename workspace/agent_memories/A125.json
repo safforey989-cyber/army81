@@ -6,12 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "tf_deep_rl_trader",
-    "Hands-on LLMs: Train and Deploy a Real-time Financial Advisor",
-    "deep_rl_trader",
-    "AI in Finance",
-    "FinRL",
-    "Personae",
     "nofx",
     "MACD + RSI + ADX Strategy (ChatGPT-powered) by TradeSmart",
     "Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy, 2020",
@@ -60,7 +54,8 @@
     "Advances in Financial Machine Learning",
     "The Theory of Speculation L. Bachelier, 1900",
     "FinRobot",
-    "trading-gym"
+    "trading-gym",
+    "research_c24_d8388cb6"
   ],
   "knowledge_topics": [],
   "performance": {

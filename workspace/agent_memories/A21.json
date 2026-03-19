@@ -59,7 +59,12 @@
       "collaboration_count": 1
     }
   },
-  "skills_learned": [],
+  "skills_learned": [
+    "skill_A130_679",
+    "skill_A69_315",
+    "research_c24_6e47fb84",
+    "research_c24_7959ea21"
+  ],
   "collaborations": [],
   "decisions": [],
   "insights": [

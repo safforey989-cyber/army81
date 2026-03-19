@@ -107,7 +107,25 @@
       "Bash(python scripts/generate_191_agents.py)",
       "Bash(python scripts/cleanup_data.py)",
       "Bash(taskkill //PID 25444 //F)",
-      "Bash(taskkill //PID 27804 //F)"
+      "Bash(taskkill //PID 27804 //F)",
+      "Bash(python scripts/load_knowledge_seeds.py)",
+      "Bash(ls workspace/agent_memories/*.json)",
+      "Bash(python -c \"import sqlite3; c=sqlite3.connect\\(''''workspace/episodic_memory.db''''\\); print\\(c.execute\\(''''SELECT COUNT\\(*\\) FROM episodes''''\\).fetchone\\(\\)[0],''''episodes''''\\); c.close\\(\\)\")",
+      "Bash(python -c \"import chromadb; c=chromadb.PersistentClient\\(path=''''workspace/chroma_db''''\\); cols=c.list_collections\\(\\); total=sum\\(x.count\\(\\) for x in cols\\); print\\(f''''{len\\(cols\\)} collections, {total} docs''''\\)\")",
+      "Bash(mkdir -p workspace/reference_docs)",
+      "Bash(cp \"C:/Users/saffo/OneDrive/Desktop/ARMY81_DEEP_SCIENCES_ENCYCLOPEDIA.md\" workspace/reference_docs/)",
+      "Bash(cp \"C:/Users/saffo/OneDrive/Desktop/ARMY81_100_NEW_AGENTS_PROPOSAL.md\" workspace/reference_docs/)",
+      "Bash(cp \"C:/Users/saffo/OneDrive/Desktop/\"*شامل* workspace/reference_docs/ai_research_2026.md)",
+      "Bash(python scripts/load_web_skills.py)",
+      "Bash(curl.exe -s http://localhost:11434/api/tags)",
+      "Bash(pip list:*)",
+      "Bash(ls -la dashboard/*.html)",
+      "Bash(python -c \"import json,sys; print\\(''''status: OK''''\\)\")",
+      "Bash(sed -i 's/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/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/' .env)",
+      "Bash(sed -i 's/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/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/' .env)",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Agents: {d.get\\(\"\"agents_count\"\",0\\)}''''\\)\")",
+      "Bash(taskkill //IM python.exe //F)",
+      "Bash(find . -name *.py -not -path ./.git/* -not -path ./*pycache* -exec cat {} +)"
     ]
   }
 }

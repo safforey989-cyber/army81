@@ -1,0 +1,5 @@
+Title: Data-driven p-norms for estimating transmission loss coefficients in power systems
+Source: NewsAPI
+Date: 2026-03-19T16:18:39.040463
+
+This research introduces a novel convex methodology for estimating transmission loss coefficients (B-coefficients) in power systems using a data-driven approach based on power system measurements. To enhance estimation accuracy and practical relevance, the mo…

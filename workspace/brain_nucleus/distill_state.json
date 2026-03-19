@@ -1,0 +1,12 @@
+{
+  "distill_count": 20,
+  "domains_trained": [
+    "science",
+    "strategy",
+    "arabic",
+    "medical",
+    "reasoning",
+    "coding"
+  ],
+  "last_updated": "2026-03-20T00:42:23.588004"
+}

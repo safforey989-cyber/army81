@@ -1,0 +1,5 @@
+Title: Show HN: Ibkr-CLI – A local-first Interactive Brokers CLI built for AI agents
+Source: NewsAPI
+Date: 2026-03-19T16:18:45.912629
+
+Hi HN,Interactive Brokers is arguably the most comprehensive and powerful brokerage out there, but let's be honest: using their official client software (TWS) feels like traveling back to 1998. It's notoriously clunky, resource-heavy, and definitely doesn't f…

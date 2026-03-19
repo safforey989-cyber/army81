@@ -85,7 +85,11 @@
       "collaboration_count": 1
     }
   },
-  "skills_learned": [],
+  "skills_learned": [
+    "research_c15_992c7317",
+    "research_c15_e634931f",
+    "skill_A189_861"
+  ],
   "collaborations": [],
   "decisions": [],
   "insights": [

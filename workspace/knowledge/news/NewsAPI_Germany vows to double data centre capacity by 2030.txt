@@ -1,0 +1,5 @@
+Title: Germany vows to double data centre capacity by 2030
+Source: NewsAPI
+Date: 2026-03-19T16:42:16.069041
+
+Germany on Wednesday pledged to double its data centre capacity by 2030 as Europe's top economy looks on nervously at the power of American tech giants. "By 2030, we aim to at least double our data centre capacity and quadruple our capacity for artificial int…

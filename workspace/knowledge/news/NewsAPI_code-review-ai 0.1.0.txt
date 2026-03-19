@@ -1,0 +1,5 @@
+Title: code-review-ai 0.1.0
+Source: NewsAPI
+Date: 2026-03-19T16:42:22.190486
+
+Multi-agent code review CLI powered by LLMs. Runs specialized agents in parallel to review GitHub PRs or local diffs.

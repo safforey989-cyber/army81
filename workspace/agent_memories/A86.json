@@ -6,16 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Bloom",
-    "GPT-J-6B",
-    "Zephyr 7B",
-    "h2oGPT",
-    "OA-Pythia-12B-SFT-8",
-    "LWM-Text-Chat-128K",
-    "GPT-NEOX-20B",
-    "Qwen1.5-32B",
-    "OpenHermes-7B",
-    "synthetic_generator",
     "jais-30b-v1",
     "chatglm2-6b",
     "MPT-7B",
@@ -60,7 +50,12 @@
     "Mixtral-8x7B-v0.1",
     "phi-2 2.7B",
     "pythia 70M - 12B",
-    "Grok-1"
+    "Grok-1",
+    "research_c15_992c7317",
+    "research_c15_d8388cb6",
+    "skill_A64_8760",
+    "skill_A130_679",
+    "research_c24_638db236"
   ],
   "knowledge_topics": [],
   "performance": {

@@ -6,13 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Eniro (Sweden)",
-    "Ask",
-    "DorkGPT",
-    "Walla (Israel)",
-    "Gerdoo (Iran)",
-    "social_analyzer",
-    "Qwant",
     "news_verifier",
     "Parseek (Iran)",
     "spmedia",
@@ -60,7 +53,9 @@
     "Lycos",
     "Search.ch (Switzerland)",
     "Brave",
-    "Alleba (Philippines)"
+    "Alleba (Philippines)",
+    "research_c15_992c7317",
+    "skill_A69_315"
   ],
   "knowledge_topics": [],
   "performance": {

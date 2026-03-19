@@ -1,0 +1,5 @@
+Title: Google rerouted hundreds of flights to cut climate-warming contrails
+Source: NewsAPI
+Date: 2026-03-19T16:42:16.068042
+
+A weather-forecasting AI was used to recommend routes for American Airlines flights between the US and Europe to reduce the formation of contrails, which contribute to global warming
