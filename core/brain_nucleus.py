@@ -314,7 +314,7 @@ class DistillationPipeline:
             "input": "",
             "output": teacher_text,
             "domain": domain,
-            "teacher": teacher_model,
+            "teacher": teacher_source,
             "quality_gap": result.get("quality_gap", 1.0),
             "timestamp": datetime.now().isoformat(),
         }
@@ -333,7 +333,7 @@ class DistillationPipeline:
         result["training_file"] = str(domain_file)
 
         logger.info(
-            f"🎓 Distilled [{domain}] from {teacher_model} → "
+            f"🎓 Distilled [{domain}] from {teacher_source} → "
             f"gap={result.get('quality_gap', '?')} | total={self.distill_count}"
         )
         return result
