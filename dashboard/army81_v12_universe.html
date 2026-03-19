@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Army81 — Universe of Autonomous Intelligence</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:'Segoe UI',Tahoma,sans-serif;overflow:hidden;width:100vw;height:100vh}
+#canvas3d{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1}
+
+/* Top Stats Bar */
+#topBar{position:fixed;top:0;left:0;right:0;height:44px;background:linear-gradient(180deg,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%);z-index:10;display:flex;align-items:center;justify-content:center;gap:28px;font-size:12px;padding:0 20px}
+.stat{display:flex;align-items:center;gap:6px;opacity:0.85}
+.stat .dot{width:7px;height:7px;border-radius:50%}
+.stat .val{font-weight:700;font-size:13px}
+
+/* Evolution Panel - Right */
+#evoPanel{position:fixed;top:50px;right:10px;width:260px;max-height:calc(100vh - 100px);background:rgba(0,0,0,0.75);border:1px solid rgba(255,255,255,0.08);border-radius:12px;z-index:10;overflow-y:auto;padding:12px;backdrop-filter:blur(8px)}
+#evoPanel::-webkit-scrollbar{width:3px}
+#evoPanel::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:3px}
+#evoPanel h3{font-size:11px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;margin:10px 0 6px;text-align:center}
+#evoPanel h3:first-child{margin-top:0}
+.evo-item{display:flex;justify-content:space-between;align-items:center;padding:5px 8px;border-radius:6px;margin:2px 0;font-size:11px;background:rgba(255,255,255,0.03)}
+.evo-item .label{color:rgba(255,255,255,0.6)}
+.evo-item .value{font-weight:700;font-size:12px}
+
+/* Left Panel - Experiments */
+#leftPanel{position:fixed;top:50px;left:10px;width:260px;max-height:calc(100vh - 100px);background:rgba(0,0,0,0.75);border:1px solid rgba(255,255,255,0.08);border-radius:12px;z-index:10;overflow:hidden;backdrop-filter:blur(8px);display:none}
+#leftPanel .tabs{display:flex;border-bottom:1px solid rgba(255,255,255,0.08)}
+#leftPanel .tab{flex:1;padding:8px 4px;text-align:center;font-size:10px;cursor:pointer;color:rgba(255,255,255,0.4);border-bottom:2px solid transparent;transition:all 0.3s}
+#leftPanel .tab.active{color:#fff;border-bottom-color:#FFD700}
+#leftPanel .tab-content{display:none;padding:10px;max-height:calc(100vh - 150px);overflow-y:auto}
+#leftPanel .tab-content.active{display:block}
+#leftPanel .tab-content::-webkit-scrollbar{width:3px}
+#leftPanel .tab-content::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:3px}
+.exp-item{padding:6px 8px;border-radius:6px;margin:3px 0;font-size:10px;background:rgba(255,255,255,0.03);border-right:3px solid}
+.exp-item .exp-name{color:rgba(255,255,255,0.8);font-weight:600}
+.exp-item .exp-result{font-weight:700;font-size:11px}
+.arena-round{padding:5px 8px;margin:2px 0;border-radius:6px;font-size:10px;background:rgba(255,255,255,0.03)}
+
+/* Bottom Timeline */
+#timeline{position:fixed;bottom:0;left:0;right:0;height:50px;background:linear-gradient(0deg,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0) 100%);z-index:10;display:flex;align-items:center;padding:0 20px;gap:4px}
+#timeline .phase{flex:1;height:6px;border-radius:3px;position:relative;cursor:pointer;transition:all 0.3s}
+#timeline .phase:hover{height:10px}
+#timeline .phase .phase-label{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);font-size:9px;white-space:nowrap;opacity:0;transition:opacity 0.3s}
+#timeline .phase:hover .phase-label{opacity:1}
+#timeline .day-counter{position:absolute;right:20px;bottom:16px;font-size:11px;color:rgba(255,255,255,0.6)}
+
+/* Controls */
+#controls{position:fixed;bottom:60px;left:50%;transform:translateX(-50%);z-index:10;display:flex;gap:6px}
+.ctrl-btn{padding:6px 14px;border-radius:20px;border:1px solid rgba(255,255,255,0.15);background:rgba(0,0,0,0.6);color:rgba(255,255,255,0.7);font-size:10px;cursor:pointer;transition:all 0.3s;backdrop-filter:blur(4px)}
+.ctrl-btn:hover,.ctrl-btn.active{background:rgba(255,215,0,0.15);border-color:rgba(255,215,0,0.4);color:#FFD700}
+
+/* Agent Card */
+#agentCard{position:fixed;z-index:20;background:rgba(0,0,0,0.9);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:14px;min-width:240px;display:none;pointer-events:none;backdrop-filter:blur(12px)}
+#agentCard .ac-id{font-size:18px;font-weight:800}
+#agentCard .ac-name{font-size:13px;color:rgba(255,255,255,0.9);margin:2px 0}
+#agentCard .ac-cat{font-size:10px;color:rgba(255,255,255,0.4);margin-bottom:8px}
+#agentCard .ac-stats{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+#agentCard .ac-stat{font-size:10px;padding:3px 6px;border-radius:4px;background:rgba(255,255,255,0.05)}
+#agentCard .ac-stat span{font-weight:700;float:left}
+
+/* Event Log */
+#eventLog{position:fixed;top:50px;left:10px;width:260px;max-height:calc(100vh - 100px);background:rgba(0,0,0,0.75);border:1px solid rgba(255,255,255,0.08);border-radius:12px;z-index:10;overflow-y:auto;padding:10px;display:none;backdrop-filter:blur(8px)}
+#eventLog::-webkit-scrollbar{width:3px}
+#eventLog::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:3px}
+.log-entry{padding:4px 8px;margin:2px 0;border-radius:4px;font-size:10px;border-right:2px solid;background:rgba(255,255,255,0.02)}
+
+/* Loading */
+#loading{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center}
+#loading h1{font-size:28px;font-weight:200;letter-spacing:8px;margin-bottom:20px;background:linear-gradient(90deg,#FFD700,#FF6B35,#FFD700);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#loading .bar{width:300px;height:3px;background:rgba(255,255,255,0.1);border-radius:2px;overflow:hidden}
+#loading .bar .fill{height:100%;width:0;background:linear-gradient(90deg,#FFD700,#FF6B35);border-radius:2px;transition:width 0.3s}
+#loading .status{margin-top:12px;font-size:11px;color:rgba(255,255,255,0.4)}
+</style>
+</head>
+<body>
+
+<!-- 3D Canvas Container -->
+<div id="canvas3d"></div>
+
+<!-- Loading Screen -->
+<div id="loading">
+  <h1>ARMY81 UNIVERSE</h1>
+  <div class="bar"><div class="fill" id="loadFill"></div></div>
+  <div class="status" id="loadStatus">Initializing quantum core...</div>
+</div>
+
+<!-- Top Stats Bar -->
+<div id="topBar">
+  <div class="stat"><div class="dot" style="background:#FFD700"></div><span>Agents</span><span class="val" id="sAgents">81</span></div>
+  <div class="stat"><div class="dot" style="background:#00FF88"></div><span>Active</span><span class="val" id="sActive">0</span></div>
+  <div class="stat"><div class="dot" style="background:#FF6B35"></div><span>Experiments</span><span class="val" id="sExperiments">0</span></div>
+  <div class="stat"><div class="dot" style="background:#00BFFF"></div><span>Distillations</span><span class="val" id="sDistill">0</span></div>
+  <div class="stat"><div class="dot" style="background:#FF69B4"></div><span>Skills</span><span class="val" id="sSkills">0</span></div>
+  <div class="stat"><div class="dot" style="background:#9B59B6"></div><span>Knowledge</span><span class="val" id="sKnowledge">0</span></div>
+  <div class="stat"><div class="dot" style="background:#2ECC71"></div><span>Merges</span><span class="val" id="sMerges">0</span></div>
+  <div class="stat"><div class="dot" style="background:#E74C3C"></div><span>Arena</span><span class="val" id="sArena">0</span></div>
+  <div class="stat"><div class="dot" style="background:#1ABC9C"></div><span>Day</span><span class="val" id="sDay">1</span></div>
+  <div class="stat"><div class="dot" style="background:#FFF"></div><span>FPS</span><span class="val" id="sFPS">0</span></div>
+</div>
+
+<!-- Evolution Panel Right -->
+<div id="evoPanel">
+  <h3>AutoResearch Loop</h3>
+  <div class="evo-item"><span class="label">Today's Experiments</span><span class="value" id="eExpToday" style="color:#FF6B35">0</span></div>
+  <div class="evo-item"><span class="label">Success Rate</span><span class="value" id="eSuccessRate" style="color:#2ECC71">0%</span></div>
+  <div class="evo-item"><span class="label">Best Improvement</span><span class="value" id="eBestImprove" style="color:#FFD700">+0%</span></div>
+  <h3>Knowledge Distillation</h3>
+  <div class="evo-item"><span class="label">Teacher → Student</span><span class="value" id="eTeacher" style="color:#00BFFF">GPT-5</span></div>
+  <div class="evo-item"><span class="label">Lessons Done</span><span class="value" id="eLessons" style="color:#00BFFF">0</span></div>
+  <div class="evo-item"><span class="label">Student Accuracy</span><span class="value" id="eStudentAcc" style="color:#2ECC71">0%</span></div>
+  <h3>Self-Play Arena</h3>
+  <div class="evo-item"><span class="label">Red Team Wins</span><span class="value" id="eRedWins" style="color:#E74C3C">0</span></div>
+  <div class="evo-item"><span class="label">Blue Team Wins</span><span class="value" id="eBlueWins" style="color:#3498DB">0</span></div>
+  <div class="evo-item"><span class="label">Security Score</span><span class="value" id="eSecScore" style="color:#FFD700">0</span></div>
+  <h3>Web Spiders</h3>
+  <div class="evo-item"><span class="label">Pages Crawled</span><span class="value" id="ePages" style="color:#2ECC71">0</span></div>
+  <div class="evo-item"><span class="label">New Skills</span><span class="value" id="eNewSkills" style="color:#FF69B4">0</span></div>
+  <div class="evo-item"><span class="label">Papers Absorbed</span><span class="value" id="ePapers" style="color:#9B59B6">0</span></div>
+  <h3>Model Merging</h3>
+  <div class="evo-item"><span class="label">Merges Done</span><span class="value" id="eMerges" style="color:#FF6B35">0</span></div>
+  <div class="evo-item"><span class="label">Current Model</span><span class="value" id="eModel" style="color:#FFD700;font-size:9px">Army81-v1</span></div>
+  <h3>GraphRAG</h3>
+  <div class="evo-item"><span class="label">Entities</span><span class="value" id="eEntities" style="color:#00BFFF">0</span></div>
+  <div class="evo-item"><span class="label">Relations</span><span class="value" id="eRelations" style="color:#9B59B6">0</span></div>
+  <div class="evo-item"><span class="label">Inferences</span><span class="value" id="eInferences" style="color:#2ECC71">0</span></div>
+  <h3>Token Economy</h3>
+  <div class="evo-item"><span class="label">Budget</span><span class="value" id="eBudget" style="color:#FFD700">1000</span></div>
+  <div class="evo-item"><span class="label">Consumed</span><span class="value" id="eConsumed" style="color:#E74C3C">0</span></div>
+  <div class="evo-item"><span class="label">Efficiency</span><span class="value" id="eEfficiency" style="color:#2ECC71">100%</span></div>
+  <h3>DSPy Optimization</h3>
+  <div class="evo-item"><span class="label">Prompts Optimized</span><span class="value" id="eDSPy" style="color:#FF69B4">0</span></div>
+  <div class="evo-item"><span class="label">Avg Improvement</span><span class="value" id="eDSPyImprove" style="color:#2ECC71">+0%</span></div>
+</div>
+
+<!-- Left Panel -->
+<div id="leftPanel">
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('experiments')">Experiments</div>
+    <div class="tab" onclick="switchTab('arena')">Arena</div>
+    <div class="tab" onclick="switchTab('code')">Code</div>
+    <div class="tab" onclick="switchTab('log')">Log</div>
+  </div>
+  <div class="tab-content active" id="tc-experiments"></div>
+  <div class="tab-content" id="tc-arena"></div>
+  <div class="tab-content" id="tc-code"></div>
+  <div class="tab-content" id="tc-log"></div>
+</div>
+
+<!-- Controls -->
+<div id="controls">
+  <div class="ctrl-btn active" onclick="setView('network')">Network</div>
+  <div class="ctrl-btn" onclick="setView('evolution')">Evolution</div>
+  <div class="ctrl-btn" onclick="setView('distill')">Distill</div>
+  <div class="ctrl-btn" onclick="setView('arena')">Arena</div>
+  <div class="ctrl-btn" onclick="setView('graphrag')">GraphRAG</div>
+  <div class="ctrl-btn" onclick="togglePanel('leftPanel')">Experiments</div>
+  <div class="ctrl-btn" onclick="triggerAwakening()">Awakening</div>
+  <div class="ctrl-btn" onclick="resetCamera()">Reset</div>
+</div>
+
+<!-- Bottom Timeline -->
+<div id="timeline">
+  <span class="day-counter" id="dayCounter">Day 1 / 90</span>
+</div>
+
+<!-- Agent Card -->
+<div id="agentCard">
+  <div class="ac-id" id="acId"></div>
+  <div class="ac-name" id="acName"></div>
+  <div class="ac-cat" id="acCat"></div>
+  <div class="ac-stats" id="acStats"></div>
+</div>
+
+<!-- Three.js r128 -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+<script>
+// ============================================================
+// ARMY81 UNIVERSE — FULL 3D DASHBOARD
+// ============================================================
+
+// === AGENT DATA (all 81 agents) ===
+const CATEGORIES = {
+  cat1_science: { name: 'Science & Research', nameAr: 'العلوم والبحث', color: 0x00FFCC, shape: 'icosahedron', agents: [
+    {id:'A02',name:'Science Researcher',nameAr:'وكيل البحث العلمي'},{id:'A07',name:'Medical Research',nameAr:'وكيل البحث الطبي'},
+    {id:'A38',name:'Physics & Quantum',nameAr:'وكيل الفيزياء والكم'},{id:'A39',name:'Climate & Environment',nameAr:'وكيل المناخ والبيئة'},
+    {id:'A40',name:'Tech Scout',nameAr:'وكيل استكشاف التقنية'},{id:'A52',name:'Clinical Medicine',nameAr:'وكيل الطب السريري'},
+    {id:'A53',name:'Advanced Manufacturing',nameAr:'وكيل التصنيع المتقدم'},{id:'A54',name:'Robotics',nameAr:'وكيل الروبوتات'},
+    {id:'A55',name:'Space & Defense',nameAr:'وكيل الفضاء والدفاع'}
+  ]},
+  cat2_society: { name: 'Society & Analysis', nameAr: 'المجتمع والتحليل', color: 0xFF69B4, shape: 'dodecahedron', agents: [
+    {id:'A03',name:'Policy Analyst',nameAr:'وكيل تحليل السياسات'},{id:'A08',name:'Financial Analyst',nameAr:'وكيل التحليل المالي'},
+    {id:'A12',name:'Content Creator',nameAr:'وكيل صناعة المحتوى'},{id:'A13',name:'Legal Advisor',nameAr:'وكيل المستشار القانوني'},
+    {id:'A41',name:'Global Economics',nameAr:'وكيل الاقتصاد العالمي'},{id:'A42',name:'Crypto & Digital',nameAr:'وكيل الكريبتو والرقمي'},
+    {id:'A43',name:'History Analyst',nameAr:'وكيل تحليل التاريخ'},{id:'A44',name:'Media Analyst',nameAr:'وكيل تحليل الإعلام'},
+    {id:'A45',name:'International Law',nameAr:'وكيل القانون الدولي'},{id:'A46',name:'Arts & Culture',nameAr:'وكيل الفنون والثقافة'},
+    {id:'A47',name:'Linguistics',nameAr:'وكيل اللسانيات'},{id:'A48',name:'Advanced Math',nameAr:'وكيل الرياضيات المتقدمة'},
+    {id:'A49',name:'Sociology',nameAr:'وكيل علم الاجتماع'},{id:'A50',name:'Education Specialist',nameAr:'وكيل التعليم'},
+    {id:'A51',name:'Reverse Engineering',nameAr:'وكيل الهندسة العكسية'}
+  ]},
+  cat3_tools: { name: 'Tools & Intelligence', nameAr: 'الأدوات والاستخبارات', color: 0x00BFFF, shape: 'octahedron', agents: [
+    {id:'A04',name:'Media Intelligence',nameAr:'وكيل الاستخبارات الإعلامية'},{id:'A05',name:'Code Developer',nameAr:'وكيل تطوير الكود'},
+    {id:'A09',name:'Security Analyst',nameAr:'وكيل تحليل الأمن'},{id:'A11',name:'Translator',nameAr:'وكيل الترجمة'},
+    {id:'A56',name:'Deep Media Intel',nameAr:'وكيل الاستخبارات العميقة'},{id:'A57',name:'Integration Dev',nameAr:'وكيل تطوير التكامل'},
+    {id:'A58',name:'Early Warning',nameAr:'وكيل الإنذار المبكر'},{id:'A59',name:'Open Innovation',nameAr:'وكيل الابتكار المفتوح'},
+    {id:'A60',name:'Anti-Disinfo',nameAr:'وكيل مكافحة التضليل'},{id:'A61',name:'Computational Bio',nameAr:'وكيل الأحياء الحاسوبية'}
+  ]},
+  cat4_management: { name: 'Management', nameAr: 'الإدارة', color: 0xFFD700, shape: 'box', agents: [
+    {id:'A06',name:'Data Analyst',nameAr:'وكيل تحليل البيانات'},{id:'A10',name:'Knowledge Manager',nameAr:'وكيل إدارة المعرفة'},
+    {id:'A14',name:'Project Manager',nameAr:'وكيل إدارة المشاريع'},{id:'A62',name:'Governance',nameAr:'وكيل الحوكمة'},
+    {id:'A63',name:'Large Organizations',nameAr:'وكيل المنظمات الكبرى'},{id:'A64',name:'Mega Projects',nameAr:'وكيل المشاريع العملاقة'},
+    {id:'A65',name:'Digital Transformation',nameAr:'وكيل التحول الرقمي'},{id:'A66',name:'Performance Mgmt',nameAr:'وكيل إدارة الأداء'}
+  ]},
+  cat5_behavior: { name: 'Behavior & Psychology', nameAr: 'السلوك وعلم النفس', color: 0xBB86FC, shape: 'torus', agents: [
+    {id:'A15',name:'Psychologist',nameAr:'وكيل علم النفس'},{id:'A16',name:'Negotiation Expert',nameAr:'وكيل التفاوض'},
+    {id:'A17',name:'Body Language',nameAr:'وكيل لغة الجسد'},{id:'A18',name:'Influence & Persuasion',nameAr:'وكيل التأثير والإقناع'},
+    {id:'A19',name:'Emotional Intelligence',nameAr:'وكيل الذكاء العاطفي'},{id:'A20',name:'Social Dynamics',nameAr:'وكيل الديناميكا الاجتماعية'},
+    {id:'A21',name:'Crowd Behavior',nameAr:'وكيل سلوك الجماهير'},{id:'A22',name:'Behavioral Economics',nameAr:'وكيل الاقتصاد السلوكي'},
+    {id:'A23',name:'Conflict Resolution',nameAr:'وكيل حل النزاعات'},{id:'A24',name:'Leadership Psychology',nameAr:'وكيل سيكولوجية القيادة'},
+    {id:'A25',name:'Communication Expert',nameAr:'وكيل التواصل'},{id:'A26',name:'Decision Psychology',nameAr:'وكيل سيكولوجية القرار'},
+    {id:'A27',name:'Cultural Intelligence',nameAr:'وكيل الذكاء الثقافي'}
+  ]},
+  cat6_leadership: { name: 'Leadership & Strategy', nameAr: 'القيادة والاستراتيجية', color: 0xFF6B35, shape: 'cone', agents: [
+    {id:'A01',name:'Strategic Commander',nameAr:'القائد الاستراتيجي'},{id:'A28',name:'Military Strategist',nameAr:'وكيل الاستراتيجية العسكرية'},
+    {id:'A29',name:'Crisis Manager',nameAr:'وكيل إدارة الأزمات'},{id:'A30',name:'Innovation Leader',nameAr:'وكيل قيادة الابتكار'},
+    {id:'A31',name:'Intelligence Analyst',nameAr:'وكيل تحليل الاستخبارات'},{id:'A32',name:'Geopolitics Expert',nameAr:'وكيل الجيوسياسة'},
+    {id:'A33',name:'Future Forecaster',nameAr:'وكيل استشراف المستقبل'},{id:'A34',name:'Risk Assessor',nameAr:'وكيل تقييم المخاطر'},
+    {id:'A35',name:'Change Management',nameAr:'وكيل إدارة التغيير'},{id:'A36',name:'Org Strategist',nameAr:'وكيل الاستراتيجية التنظيمية'},
+    {id:'A37',name:'Decision Architect',nameAr:'وكيل هندسة القرار'},{id:'A67',name:'Human Connection',nameAr:'وكيل الترابط الإنساني'},
+    {id:'A68',name:'Resource Allocation',nameAr:'وكيل تخصيص الموارد'},{id:'A69',name:'Comprehensive Eval',nameAr:'وكيل التقييم الشامل'},
+    {id:'A70',name:'Radical Innovation',nameAr:'وكيل الابتكار الجذري'},{id:'A71',name:'Internal Security',nameAr:'وكيل الأمن الداخلي'}
+  ]},
+  cat7_new: { name: 'Meta & Evolution', nameAr: 'الميتا والتطور', color: 0xE0E0E0, shape: 'sphere_wire', agents: [
+    {id:'A72',name:'Self Evolution',nameAr:'وكيل التطور الذاتي'},{id:'A73',name:'Multi-Agent Coordinator',nameAr:'وكيل تنسيق الوكلاء'},
+    {id:'A74',name:'Quality Controller',nameAr:'وكيل ضبط الجودة'},{id:'A75',name:'System Optimizer',nameAr:'وكيل تحسين النظام'},
+    {id:'A76',name:'Learning Aggregator',nameAr:'وكيل تجميع التعلم'},{id:'A77',name:'Workflow Orchestrator',nameAr:'وكيل تنسيق سير العمل'},
+    {id:'A78',name:'Resource Allocator',nameAr:'وكيل تخصيص الموارد'},{id:'A79',name:'Feedback Processor',nameAr:'وكيل معالجة التغذية الراجعة'},
+    {id:'A80',name:'Pattern Recognizer',nameAr:'وكيل التعرف على الأنماط'},{id:'A81',name:'Meta Intelligence',nameAr:'الوكيل الميتا الاستخباراتي'}
+  ]}
+};
+
+// === GLOBALS ===
+let scene, camera, renderer, controls;
+let agentMeshes = [], connectionLines = [], labelSprites = [];
+let coreSun, coreGlow, dnaHelixes = [];
+let clock = new THREE.Clock();
+let frameCount = 0, fps = 0, lastFPSTime = 0;
+let currentView = 'network';
+let simDay = 1, simHour = 0;
+let mouseVec = new THREE.Vector2(-999, -999);
+let raycaster = new THREE.Raycaster();
+let hoveredAgent = null;
+
+// Evolution state
+let evoState = {
+  experiments: 0, successRate: 50, bestImprove: 0,
+  distillLessons: 0, studentAcc: 45,
+  redWins: 0, blueWins: 0, secScore: 60,
+  pagesCrawled: 0, newSkills: 0, papersAbsorbed: 0,
+  merges: 0, entities: 0, relations: 0, inferences: 0,
+  budget: 1000, consumed: 0, dspyOptimized: 0, dspyImprove: 0,
+  totalActive: 0
+};
+
+// === LOADING ===
+let loadProgress = 0;
+function updateLoading(pct, msg) {
+  loadProgress = pct;
+  document.getElementById('loadFill').style.width = pct + '%';
+  document.getElementById('loadStatus').textContent = msg;
+}
+
+// === INIT ===
+function init() {
+  updateLoading(10, 'Creating universe...');
+  
+  // Scene
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x020208);
+  scene.fog = new THREE.FogExp2(0x020208, 0.003);
+  
+  // Camera
+  camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 2000);
+  camera.position.set(0, 60, 150);
+  
+  // Renderer - NO bloom, direct render for guaranteed visibility
+  renderer = new THREE.WebGLRenderer({
+    antialias: true,
+    preserveDrawingBuffer: true,
+    alpha: false
+  });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setClearColor(0x020208, 1);
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.2;
+  document.getElementById('canvas3d').appendChild(renderer.domElement);
+  
+  // Controls
+  controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.05;
+  controls.minDistance = 20;
+  controls.maxDistance = 500;
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 0.3;
+  
+  updateLoading(20, 'Igniting central sun...');
+  createStarfield();
+  createNebulae();
+  createCoreSun();
+  
+  updateLoading(40, 'Spawning 81 agents...');
+  createAgents();
+  
+  updateLoading(60, 'Weaving neural network...');
+  createNeuralConnections();
+  
+  updateLoading(80, 'Adding lights...');
+  createLights();
+  createTimeline();
+  
+  updateLoading(95, 'Activating consciousness...');
+  
+  // Events
+  window.addEventListener('resize', onResize);
+  window.addEventListener('mousemove', onMouseMove);
+  
+  // Start
+  setTimeout(() => {
+    updateLoading(100, 'Universe online.');
+    setTimeout(() => {
+      document.getElementById('loading').style.opacity = '0';
+      setTimeout(() => document.getElementById('loading').style.display = 'none', 500);
+    }, 400);
+    animate();
+  }, 300);
+}
+
+// === STARFIELD ===
+function createStarfield() {
+  const geo = new THREE.BufferGeometry();
+  const count = 3000;
+  const pos = new Float32Array(count * 3);
+  const sizes = new Float32Array(count);
+  for (let i = 0; i < count; i++) {
+    const r = 300 + Math.random() * 700;
+    const theta = Math.random() * Math.PI * 2;
+    const phi = Math.acos(2 * Math.random() - 1);
+    pos[i*3] = r * Math.sin(phi) * Math.cos(theta);
+    pos[i*3+1] = r * Math.sin(phi) * Math.sin(theta);
+    pos[i*3+2] = r * Math.cos(phi);
+    sizes[i] = 0.5 + Math.random() * 2;
+  }
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  geo.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+  const mat = new THREE.PointsMaterial({ color: 0xFFFFFF, size: 1.2, sizeAttenuation: true, transparent: true, opacity: 0.7 });
+  scene.add(new THREE.Points(geo, mat));
+}
+
+// === NEBULAE ===
+function createNebulae() {
+  const nebulaColors = [0x1a0030, 0x001a33, 0x0d1a00];
+  nebulaColors.forEach((col, i) => {
+    const geo = new THREE.SphereGeometry(80 + i * 30, 16, 16);
+    const mat = new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.04, side: THREE.BackSide });
+    const mesh = new THREE.Mesh(geo, mat);
+    mesh.position.set(Math.cos(i * 2.1) * 100, (i - 1) * 40, Math.sin(i * 2.1) * 100);
+    scene.add(mesh);
+  });
+}
+
+// === CORE SUN ===
+function createCoreSun() {
+  // Main sun sphere
+  const sunGeo = new THREE.SphereGeometry(6, 48, 48);
+  const sunMat = new THREE.MeshBasicMaterial({ color: 0xFFD700 });
+  coreSun = new THREE.Mesh(sunGeo, sunMat);
+  scene.add(coreSun);
+  
+  // Inner glow
+  const glowGeo = new THREE.SphereGeometry(8, 32, 32);
+  const glowMat = new THREE.MeshBasicMaterial({ color: 0xFFAA00, transparent: true, opacity: 0.25, side: THREE.BackSide });
+  coreGlow = new THREE.Mesh(glowGeo, glowMat);
+  scene.add(coreGlow);
+  
+  // Outer corona
+  const coronaGeo = new THREE.SphereGeometry(12, 32, 32);
+  const coronaMat = new THREE.MeshBasicMaterial({ color: 0xFF6B35, transparent: true, opacity: 0.08, side: THREE.BackSide });
+  scene.add(new THREE.Mesh(coronaGeo, coronaMat));
+  
+  // Solar flares (6 rings)
+  for (let i = 0; i < 6; i++) {
+    const ringGeo = new THREE.TorusGeometry(9 + i * 1.5, 0.15, 8, 64);
+    const ringMat = new THREE.MeshBasicMaterial({ color: 0xFFD700, transparent: true, opacity: 0.15 - i * 0.02 });
+    const ring = new THREE.Mesh(ringGeo, ringMat);
+    ring.rotation.x = Math.random() * Math.PI;
+    ring.rotation.y = Math.random() * Math.PI;
+    ring.userData = { rotSpeed: 0.002 + Math.random() * 0.005, axis: i % 3 };
+    coreSun.add(ring);
+  }
+  
+  // DNA Double Helix around sun
+  createDNAHelix();
+  
+  // "ARMY81" label on sun
+  const sunLabel = createTextSprite('ARMY81 CORE', '#FFD700', 48, true);
+  sunLabel.position.set(0, 14, 0);
+  sunLabel.scale.set(16, 4, 1);
+  scene.add(sunLabel);
+}
+
+// === DNA HELIX ===
+function createDNAHelix() {
+  const helixR = 10;
+  const helixH = 20;
+  const turns = 3;
+  const points1 = [], points2 = [];
+  for (let t = 0; t < 1; t += 0.01) {
+    const angle = t * turns * Math.PI * 2;
+    const y = (t - 0.5) * helixH;
+    points1.push(new THREE.Vector3(Math.cos(angle) * helixR, y, Math.sin(angle) * helixR));
+    points2.push(new THREE.Vector3(Math.cos(angle + Math.PI) * helixR, y, Math.sin(angle + Math.PI) * helixR));
+  }
+  const mat1 = new THREE.LineBasicMaterial({ color: 0x00FFCC, transparent: true, opacity: 0.4 });
+  const mat2 = new THREE.LineBasicMaterial({ color: 0xFF69B4, transparent: true, opacity: 0.4 });
+  const line1 = new THREE.Line(new THREE.BufferGeometry().setFromPoints(points1), mat1);
+  const line2 = new THREE.Line(new THREE.BufferGeometry().setFromPoints(points2), mat2);
+  const dnaGroup = new THREE.Group();
+  dnaGroup.add(line1, line2);
+  
+  // Cross bridges
+  for (let t = 0; t < 1; t += 0.05) {
+    const angle = t * turns * Math.PI * 2;
+    const y = (t - 0.5) * helixH;
+    const p1 = new THREE.Vector3(Math.cos(angle) * helixR, y, Math.sin(angle) * helixR);
+    const p2 = new THREE.Vector3(Math.cos(angle + Math.PI) * helixR, y, Math.sin(angle + Math.PI) * helixR);
+    const bridgeMat = new THREE.LineBasicMaterial({ color: 0xFFFFFF, transparent: true, opacity: 0.15 });
+    dnaGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([p1, p2]), bridgeMat));
+  }
+  
+  dnaGroup.userData = { type: 'dna' };
+  dnaHelixes.push(dnaGroup);
+  scene.add(dnaGroup);
+}
+
+// === CREATE AGENTS ===
+function createAgents() {
+  const catKeys = Object.keys(CATEGORIES);
+  const ringRadii = [30, 48, 65, 80, 95, 110, 125];
+  
+  catKeys.forEach((catKey, catIdx) => {
+    const cat = CATEGORIES[catKey];
+    const ringR = ringRadii[catIdx];
+    const agentCount = cat.agents.length;
+    
+    cat.agents.forEach((agentData, agentIdx) => {
+      const angle = (agentIdx / agentCount) * Math.PI * 2 + catIdx * 0.3;
+      const yOffset = (Math.random() - 0.5) * 20;
+      const rVariation = ringR + (Math.random() - 0.5) * 15;
+      
+      const x = Math.cos(angle) * rVariation;
+      const z = Math.sin(angle) * rVariation;
+      const y = yOffset;
+      
+      // Create agent mesh based on category shape
+      const size = 1.5 + Math.random() * 1.2;
+      let geo;
+      switch(cat.shape) {
+        case 'icosahedron': geo = new THREE.IcosahedronGeometry(size, 1); break;
+        case 'dodecahedron': geo = new THREE.DodecahedronGeometry(size, 0); break;
+        case 'octahedron': geo = new THREE.OctahedronGeometry(size, 0); break;
+        case 'box': geo = new THREE.BoxGeometry(size*1.4, size*1.4, size*1.4); break;
+        case 'torus': geo = new THREE.TorusGeometry(size, size*0.4, 12, 24); break;
+        case 'cone': geo = new THREE.ConeGeometry(size, size*2.5, 6); break;
+        case 'sphere_wire': geo = new THREE.IcosahedronGeometry(size, 2); break;
+        default: geo = new THREE.SphereGeometry(size, 16, 16);
+      }
+      
+      const color = new THREE.Color(cat.color);
+      const mat = new THREE.MeshPhongMaterial({
+        color: color,
+        emissive: color.clone().multiplyScalar(0.3),
+        shininess: 80,
+        transparent: true,
+        opacity: 0.9,
+        wireframe: cat.shape === 'sphere_wire'
+      });
+      
+      const mesh = new THREE.Mesh(geo, mat);
+      mesh.position.set(x, y, z);
+      
+      // Glow halo
+      const haloGeo = new THREE.SphereGeometry(size * 1.8, 16, 16);
+      const haloMat = new THREE.MeshBasicMaterial({ color: cat.color, transparent: true, opacity: 0.06, side: THREE.BackSide });
+      const halo = new THREE.Mesh(haloGeo, haloMat);
+      mesh.add(halo);
+      
+      // Wireframe overlay for non-wireframe shapes
+      if (cat.shape !== 'sphere_wire') {
+        const wireGeo = geo.clone();
+        const wireMat = new THREE.MeshBasicMaterial({ color: 0xFFFFFF, transparent: true, opacity: 0.08, wireframe: true });
+        mesh.add(new THREE.Mesh(wireGeo, wireMat));
+      }
+      
+      // Store agent data
+      mesh.userData = {
+        agentId: agentData.id,
+        name: agentData.name,
+        nameAr: agentData.nameAr,
+        category: catKey,
+        categoryName: cat.name,
+        categoryNameAr: cat.nameAr,
+        catColor: cat.color,
+        basePos: new THREE.Vector3(x, y, z),
+        orbitAngle: angle,
+        orbitR: rVariation,
+        orbitSpeed: 0.0003 + Math.random() * 0.0005,
+        orbitY: y,
+        size: size,
+        knowledge: Math.random() * 30,
+        evolution: Math.random() * 20,
+        tasks: Math.floor(Math.random() * 10),
+        status: Math.random() > 0.6 ? 'active' : 'idle',
+        pulsePhase: Math.random() * Math.PI * 2,
+        baseScale: 1
+      };
+      
+      scene.add(mesh);
+      agentMeshes.push(mesh);
+      
+      // Create label sprite
+      const label = createTextSprite(agentData.id + '\n' + agentData.nameAr, '#' + color.getHexString(), 28);
+      label.position.set(x, y + size * 2.5, z);
+      label.scale.set(10, 5, 1);
+      label.userData = { agentMesh: mesh, offsetY: size * 2.5 };
+      scene.add(label);
+      labelSprites.push(label);
+    });
+  });
+}
+
+// === TEXT SPRITE HELPER ===
+function createTextSprite(text, color, fontSize, bold) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 512;
+  canvas.height = 256;
+  const ctx = canvas.getContext('2d');
+  
+  ctx.clearRect(0, 0, 512, 256);
+  
+  const lines = text.split('\n');
+  const weight = bold ? '800' : '600';
+  ctx.font = weight + ' ' + fontSize + 'px Segoe UI, Arial, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  
+  // Shadow
+  ctx.shadowColor = 'rgba(0,0,0,0.8)';
+  ctx.shadowBlur = 6;
+  
+  lines.forEach((line, i) => {
+    if (i === 0) {
+      ctx.fillStyle = color;
+      ctx.font = weight + ' ' + fontSize + 'px Segoe UI, Arial, sans-serif';
+    } else {
+      ctx.fillStyle = 'rgba(255,255,255,0.85)';
+      ctx.font = '400 ' + (fontSize * 0.7) + 'px Segoe UI, Arial, sans-serif';
+    }
+    ctx.fillText(line, 256, 100 + i * (fontSize * 1.2));
+  });
+  
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.needsUpdate = true;
+  const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false });
+  return new THREE.Sprite(mat);
+}
+
+// === NEURAL CONNECTIONS ===
+function createNeuralConnections() {
+  // Connect agents within same category and across categories
+  for (let i = 0; i < agentMeshes.length; i++) {
+    for (let j = i + 1; j < agentMeshes.length; j++) {
+      const dist = agentMeshes[i].position.distanceTo(agentMeshes[j].position);
+      const sameCat = agentMeshes[i].userData.category === agentMeshes[j].userData.category;
+      
+      // Connect if close enough or same category
+      if ((sameCat && dist < 80) || (!sameCat && dist < 50)) {
+        const points = [];
+        const p1 = agentMeshes[i].position.clone();
+        const p2 = agentMeshes[j].position.clone();
+        
+        // Curved connection via bezier
+        const mid = p1.clone().add(p2).multiplyScalar(0.5);
+        mid.y += (Math.random() - 0.5) * 10;
+        
+        const curve = new THREE.QuadraticBezierCurve3(p1, mid, p2);
+        const curvePoints = curve.getPoints(10);
+        
+        const geo = new THREE.BufferGeometry().setFromPoints(curvePoints);
+        const opacity = sameCat ? 0.18 : 0.08;
+        const mat = new THREE.LineBasicMaterial({
+          color: 0xFFFFFF,
+          transparent: true,
+          opacity: opacity,
+          linewidth: 1
+        });
+        
+        const line = new THREE.Line(geo, mat);
+        line.userData = {
+          agent1: i,
+          agent2: j,
+          baseOpacity: opacity,
+          pulsePhase: Math.random() * Math.PI * 2,
+          sameCat: sameCat,
+          active: false,
+          activeTimer: 0
+        };
+        
+        scene.add(line);
+        connectionLines.push(line);
+      }
+    }
+  }
+}
+
+// === LIGHTS ===
+function createLights() {
+  // Strong ambient
+  scene.add(new THREE.AmbientLight(0x404060, 0.8));
+  
+  // Sun point light
+  const sunLight = new THREE.PointLight(0xFFD700, 2, 300);
+  sunLight.position.set(0, 0, 0);
+  scene.add(sunLight);
+  
+  // Directional lights from multiple angles
+  const dir1 = new THREE.DirectionalLight(0xFFFFFF, 0.5);
+  dir1.position.set(50, 100, 50);
+  scene.add(dir1);
+  
+  const dir2 = new THREE.DirectionalLight(0x4488FF, 0.3);
+  dir2.position.set(-50, -50, -50);
+  scene.add(dir2);
+  
+  // Hemisphere light
+  scene.add(new THREE.HemisphereLight(0x444488, 0x222244, 0.4));
+}
+
+// === TIMELINE ===
+function createTimeline() {
+  const timeline = document.getElementById('timeline');
+  const phases = [
+    { name: 'Absorption', color: '#00BFFF', days: 18 },
+    { name: 'Distillation', color: '#9B59B6', days: 18 },
+    { name: 'Merging', color: '#FF6B35', days: 18 },
+    { name: 'Specialization', color: '#2ECC71', days: 18 },
+    { name: 'Transcendence', color: '#FFD700', days: 18 }
+  ];
+  
+  phases.forEach((p, i) => {
+    const div = document.createElement('div');
+    div.className = 'phase';
+    div.style.background = simDay > i * 18 ? p.color : 'rgba(255,255,255,0.1)';
+    div.style.opacity = simDay > i * 18 ? '1' : '0.3';
+    div.innerHTML = '<span class="phase-label" style="color:' + p.color + '">' + p.name + '</span>';
+    timeline.insertBefore(div, timeline.lastElementChild);
+  });
+}
+
+// === UI FUNCTIONS ===
+function switchTab(tabName) {
+  document.querySelectorAll('#leftPanel .tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('#leftPanel .tab-content').forEach(t => t.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('tc-' + tabName).classList.add('active');
+}
+
+function togglePanel(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === 'none' ? 'block' : 'block';
+  if (el.style.display === 'block' && el.style.display !== 'none') {
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+  // Simple toggle
+  if (el.style.display === 'none' || el.style.display === '') {
+    el.style.display = 'block';
+  } else {
+    el.style.display = 'none';
+  }
+}
+
+function setView(view) {
+  currentView = view;
+  document.querySelectorAll('.ctrl-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+
+function resetCamera() {
+  camera.position.set(0, 60, 150);
+  controls.target.set(0, 0, 0);
+}
+
+function triggerAwakening() {
+  // Visual awakening pulse
+  const steps = ['Merging code...', 'Updating weights...', 'Crystallizing memory...', 'Self-Play results...', 'DSPy optimization...', 'Budget reallocation...', 'Writing report...'];
+  let stepIdx = 0;
+  const interval = setInterval(() => {
+    if (stepIdx >= steps.length) { clearInterval(interval); return; }
+    addLogEntry('awakening', steps[stepIdx], '#FFD700');
+    stepIdx++;
+  }, 800);
+  
+  // Pulse all connections
+  connectionLines.forEach(c => {
+    c.userData.active = true;
+    c.userData.activeTimer = 180;
+  });
+}
+
+function addLogEntry(type, text, color) {
+  const tc = document.getElementById('tc-log');
+  const div = document.createElement('div');
+  div.className = 'log-entry';
+  div.style.borderRightColor = color;
+  div.innerHTML = '<span style="color:' + color + '">[' + type.toUpperCase() + ']</span> ' + text;
+  tc.insertBefore(div, tc.firstChild);
+  if (tc.children.length > 50) tc.removeChild(tc.lastChild);
+}
+
+// === MOUSE ===
+function onMouseMove(e) {
+  mouseVec.x = (e.clientX / window.innerWidth) * 2 - 1;
+  mouseVec.y = -(e.clientY / window.innerHeight) * 2 + 1;
+}
+
+function onResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+// === SIMULATION ===
+function updateSimulation() {
+  simHour += 0.02;
+  if (simHour >= 24) {
+    simHour = 0;
+    simDay = Math.min(simDay + 1, 90);
+    document.getElementById('dayCounter').textContent = 'Day ' + simDay + ' / 90';
+  }
+  
+  // Random events
+  if (Math.random() < 0.01) {
+    // New experiment
+    evoState.experiments++;
+    const success = Math.random() > 0.4;
+    const improve = success ? (Math.random() * 8).toFixed(1) : -(Math.random() * 3).toFixed(1);
+    evoState.bestImprove = Math.max(evoState.bestImprove, parseFloat(improve));
+    evoState.successRate = Math.round((evoState.experiments > 0 ? 55 + Math.random() * 20 : 50));
+    
+    const expNames = ['Chain-of-Thought', 'SLERP merge', 'QLoRA fine-tune', 'Self-Play round', 'Reranker test', 'MoE routing', 'GraphRAG query', 'DSPy optimize', 'Tool clone', 'Memory compress'];
+    const expName = expNames[Math.floor(Math.random() * expNames.length)];
+    
+    addLogEntry('experiment', expName + ' → ' + (success ? '+' : '') + improve + '%', success ? '#2ECC71' : '#E74C3C');
+    
+    // Activate random connection
+    if (connectionLines.length > 0) {
+      const ci = Math.floor(Math.random() * connectionLines.length);
+      connectionLines[ci].userData.active = true;
+      connectionLines[ci].userData.activeTimer = 120;
+    }
+  }
+  
+  if (Math.random() < 0.005) {
+    evoState.distillLessons++;
+    evoState.studentAcc = Math.min(95, evoState.studentAcc + Math.random() * 0.5);
+    addLogEntry('distill', 'Lesson #' + evoState.distillLessons + ' — Student accuracy: ' + evoState.studentAcc.toFixed(1) + '%', '#00BFFF');
+  }
+  
+  if (Math.random() < 0.008) {
+    evoState.pagesCrawled += Math.floor(Math.random() * 20 + 5);
+    if (Math.random() > 0.7) {
+      evoState.newSkills++;
+      addLogEntry('spider', 'New skill acquired! Total: ' + evoState.newSkills, '#FF69B4');
+    }
+    if (Math.random() > 0.8) {
+      evoState.papersAbsorbed++;
+      addLogEntry('spider', 'Paper absorbed from arXiv. Total: ' + evoState.papersAbsorbed, '#9B59B6');
+    }
+  }
+  
+  if (Math.random() < 0.003) {
+    const redWin = Math.random() > 0.5;
+    if (redWin) evoState.redWins++; else evoState.blueWins++;
+    evoState.secScore = Math.min(100, 60 + evoState.blueWins * 2);
+    addLogEntry('arena', (redWin ? 'Red' : 'Blue') + ' Team wins! Score: ' + evoState.secScore, redWin ? '#E74C3C' : '#3498DB');
+  }
+  
+  if (Math.random() < 0.002) {
+    evoState.merges++;
+    addLogEntry('merge', 'Model merge #' + evoState.merges + ' — Army81-v' + evoState.merges, '#FF6B35');
+  }
+  
+  // GraphRAG growth
+  evoState.entities += Math.random() < 0.05 ? 1 : 0;
+  evoState.relations += Math.random() < 0.03 ? 1 : 0;
+  evoState.inferences += Math.random() < 0.02 ? 1 : 0;
+  
+  // Token economy
+  evoState.consumed += Math.random() * 0.1;
+  
+  // DSPy
+  if (Math.random() < 0.004) {
+    evoState.dspyOptimized++;
+    evoState.dspyImprove = Math.min(40, evoState.dspyImprove + Math.random() * 2);
+    addLogEntry('dspy', 'Prompt optimized! Avg improvement: +' + evoState.dspyImprove.toFixed(1) + '%', '#FF69B4');
+  }
+  
+  // Update agent states
+  evoState.totalActive = 0;
+  agentMeshes.forEach(m => {
+    if (Math.random() < 0.005) m.userData.status = m.userData.status === 'active' ? 'idle' : 'active';
+    if (m.userData.status === 'active') {
+      evoState.totalActive++;
+      m.userData.knowledge += 0.01;
+      m.userData.evolution += 0.005;
+      m.userData.tasks += Math.random() < 0.01 ? 1 : 0;
+    }
+  });
+  
+  // Update UI
+  updateUI();
+}
+
+function updateUI() {
+  document.getElementById('sActive').textContent = evoState.totalActive;
+  document.getElementById('sExperiments').textContent = evoState.experiments;
+  document.getElementById('sDistill').textContent = evoState.distillLessons;
+  document.getElementById('sSkills').textContent = evoState.newSkills;
+  document.getElementById('sKnowledge').textContent = evoState.entities;
+  document.getElementById('sMerges').textContent = evoState.merges;
+  document.getElementById('sArena').textContent = evoState.redWins + evoState.blueWins;
+  document.getElementById('sDay').textContent = simDay;
+  document.getElementById('sFPS').textContent = fps;
+  
+  document.getElementById('eExpToday').textContent = evoState.experiments;
+  document.getElementById('eSuccessRate').textContent = evoState.successRate + '%';
+  document.getElementById('eBestImprove').textContent = '+' + evoState.bestImprove.toFixed(1) + '%';
+  document.getElementById('eLessons').textContent = evoState.distillLessons;
+  document.getElementById('eStudentAcc').textContent = evoState.studentAcc.toFixed(1) + '%';
+  document.getElementById('eRedWins').textContent = evoState.redWins;
+  document.getElementById('eBlueWins').textContent = evoState.blueWins;
+  document.getElementById('eSecScore').textContent = evoState.secScore;
+  document.getElementById('ePages').textContent = evoState.pagesCrawled;
+  document.getElementById('eNewSkills').textContent = evoState.newSkills;
+  document.getElementById('ePapers').textContent = evoState.papersAbsorbed;
+  document.getElementById('eMerges').textContent = evoState.merges;
+  document.getElementById('eModel').textContent = 'Army81-v' + Math.max(1, evoState.merges);
+  document.getElementById('eEntities').textContent = evoState.entities;
+  document.getElementById('eRelations').textContent = evoState.relations;
+  document.getElementById('eInferences').textContent = evoState.inferences;
+  document.getElementById('eBudget').textContent = evoState.budget;
+  document.getElementById('eConsumed').textContent = Math.floor(evoState.consumed);
+  document.getElementById('eEfficiency').textContent = Math.max(0, 100 - Math.floor(evoState.consumed / evoState.budget * 100)) + '%';
+  document.getElementById('eDSPy').textContent = evoState.dspyOptimized;
+  document.getElementById('eDSPyImprove').textContent = '+' + evoState.dspyImprove.toFixed(1) + '%';
+}
+
+// === ANIMATE ===
+function animate() {
+  requestAnimationFrame(animate);
+  
+  const time = clock.getElapsedTime();
+  const delta = clock.getDelta();
+  frameCount++;
+  
+  if (time - lastFPSTime >= 1) {
+    fps = frameCount;
+    frameCount = 0;
+    lastFPSTime = time;
+  }
+  
+  controls.update();
+  
+  // Update simulation every 5 frames for better performance
+  if (frameCount % 5 === 0) updateSimulation();
+  
+  // === SUN ANIMATION ===
+  const sunScale = 1 + Math.sin(time * 0.5) * 0.05 + (simDay / 90) * 0.3;
+  coreSun.scale.setScalar(sunScale);
+  coreGlow.scale.setScalar(sunScale * 1.3 + Math.sin(time * 0.8) * 0.1);
+  coreSun.rotation.y += 0.002;
+  
+  // Sun rings
+  coreSun.children.forEach(child => {
+    if (child.userData.rotSpeed) {
+      const axis = child.userData.axis;
+      if (axis === 0) child.rotation.x += child.userData.rotSpeed;
+      else if (axis === 1) child.rotation.y += child.userData.rotSpeed;
+      else child.rotation.z += child.userData.rotSpeed;
+    }
+  });
+  
+  // DNA rotation
+  dnaHelixes.forEach(dna => { dna.rotation.y += 0.003; });
+  
+  // === AGENT ANIMATION ===
+  agentMeshes.forEach((mesh, i) => {
+    const ud = mesh.userData;
+    
+    // Orbital movement
+    ud.orbitAngle += ud.orbitSpeed;
+    const newX = Math.cos(ud.orbitAngle) * ud.orbitR;
+    const newZ = Math.sin(ud.orbitAngle) * ud.orbitR;
+    const newY = ud.orbitY + Math.sin(time * 0.3 + i) * 2;
+    mesh.position.set(newX, newY, newZ);
+    
+    // Self rotation
+    mesh.rotation.y += 0.005;
+    mesh.rotation.x += 0.002;
+    
+    // Pulse based on status
+    const pulse = 1 + Math.sin(time * 2 + ud.pulsePhase) * (ud.status === 'active' ? 0.08 : 0.03);
+    
+    // Evolution scale: agents grow with knowledge and evolution
+    const evoScale = ud.baseScale + (ud.knowledge / 100) * 0.3 + (ud.evolution / 100) * 0.3;
+    mesh.scale.setScalar(pulse * evoScale);
+    
+    // Active agents glow brighter
+    if (mesh.material.emissive) {
+      const intensity = ud.status === 'active' ? 0.5 : 0.2;
+      mesh.material.emissiveIntensity = intensity + Math.sin(time * 3 + i) * 0.1;
+    }
+    
+    // Update label position
+    if (labelSprites[i]) {
+      labelSprites[i].position.set(newX, newY + ud.size * 2.5 * evoScale, newZ);
+      
+      // Fade labels by distance
+      const dist = camera.position.distanceTo(mesh.position);
+      const labelOpacity = Math.max(0, Math.min(1, 1 - (dist - 30) / 150));
+      labelSprites[i].material.opacity = labelOpacity;
+    }
+  });
+  
+  // === CONNECTION ANIMATION (optimized: update positions every 10 frames) ===
+  const updateConnPositions = (frameCount % 10 === 0);
+  connectionLines.forEach(conn => {
+    const ud = conn.userData;
+    
+    // Breathing pulse
+    const breathe = 0.7 + Math.sin(time * 1.5 + ud.pulsePhase) * 0.3;
+    let opacity = ud.baseOpacity * breathe;
+    
+    // Active flash
+    if (ud.active && ud.activeTimer > 0) {
+      ud.activeTimer--;
+      opacity = Math.min(0.8, opacity + 0.5 * (ud.activeTimer / 120));
+      if (ud.activeTimer <= 0) ud.active = false;
+    }
+    
+    // Evolution boost
+    const evoBoost = 1 + (simDay / 90) * 0.5;
+    conn.material.opacity = opacity * evoBoost;
+    
+    // Update positions only every 10 frames for performance
+    if (updateConnPositions) {
+      const a1 = agentMeshes[ud.agent1];
+      const a2 = agentMeshes[ud.agent2];
+      if (a1 && a2) {
+        const p1 = a1.position;
+        const p2 = a2.position;
+        const midX = (p1.x + p2.x) * 0.5;
+        const midY = (p1.y + p2.y) * 0.5 + 3;
+        const midZ = (p1.z + p2.z) * 0.5;
+        const mid = new THREE.Vector3(midX, midY, midZ);
+        const curve = new THREE.QuadraticBezierCurve3(p1.clone(), mid, p2.clone());
+        const pts = curve.getPoints(10);
+        conn.geometry.setFromPoints(pts);
+        conn.geometry.attributes.position.needsUpdate = true;
+      }
+    }
+  });
+  
+  // === RAYCASTER (hover) ===
+  if (frameCount % 5 === 0) {
+    raycaster.setFromCamera(mouseVec, camera);
+    const intersects = raycaster.intersectObjects(agentMeshes);
+    
+    if (intersects.length > 0) {
+      const agent = intersects[0].object;
+      if (hoveredAgent !== agent) {
+        hoveredAgent = agent;
+        showAgentCard(agent);
+      }
+    } else {
+      if (hoveredAgent) {
+        hoveredAgent = null;
+        document.getElementById('agentCard').style.display = 'none';
+      }
+    }
+  }
+  
+  // === RENDER ===
+  renderer.render(scene, camera);
+}
+
+function showAgentCard(mesh) {
+  const ud = mesh.userData;
+  const card = document.getElementById('agentCard');
+  
+  const screenPos = mesh.position.clone().project(camera);
+  const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
+  const y = (-screenPos.y * 0.5 + 0.5) * window.innerHeight;
+  
+  card.style.left = Math.min(x + 20, window.innerWidth - 260) + 'px';
+  card.style.top = Math.min(y - 40, window.innerHeight - 200) + 'px';
+  card.style.display = 'block';
+  
+  document.getElementById('acId').textContent = ud.agentId;
+  document.getElementById('acId').style.color = '#' + new THREE.Color(ud.catColor).getHexString();
+  document.getElementById('acName').textContent = ud.nameAr;
+  document.getElementById('acCat').textContent = ud.categoryNameAr + ' — ' + ud.categoryName;
+  
+  document.getElementById('acStats').innerHTML = 
+    '<div class="ac-stat">Knowledge <span>' + ud.knowledge.toFixed(0) + '</span></div>' +
+    '<div class="ac-stat">Evolution <span>' + ud.evolution.toFixed(0) + '</span></div>' +
+    '<div class="ac-stat">Tasks <span>' + ud.tasks + '</span></div>' +
+    '<div class="ac-stat">Status <span style="color:' + (ud.status === 'active' ? '#2ECC71' : '#888') + '">' + ud.status + '</span></div>';
+}
+
+// === KEYBOARD SHORTCUTS ===
+document.addEventListener('keydown', e => {
+  switch(e.key.toLowerCase()) {
+    case 'r': resetCamera(); break;
+    case 't': camera.position.set(0, 200, 0); controls.target.set(0, 0, 0); break;
+    case 'f': camera.position.set(0, 15, 30); controls.target.set(0, 0, 0); break;
+    case 'a': togglePanel('leftPanel'); break;
+    case 'w': triggerAwakening(); break;
+    case '1': setView('network'); break;
+    case '2': setView('evolution'); break;
+    case '3': setView('distill'); break;
+    case '4': setView('arena'); break;
+    case '5': setView('graphrag'); break;
+  }
+});
+
+// === START ===
+init();
+</script>
+</body>
+</html>
