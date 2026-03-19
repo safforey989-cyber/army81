@@ -84,9 +84,21 @@ REAL_MODELS = {
     # ══════════════════════════════
     # Ollama محلي (fallback مجاني)
     # ══════════════════════════════
-    "local-small":     {"provider": "ollama", "model": "llama3.2:3b",      "tier": "local", "cost": 0.0, "strengths": ["offline", "free", "private"]},
-    "local-medium":    {"provider": "ollama", "model": "qwen2.5:7b",       "tier": "local", "cost": 0.0, "strengths": ["offline", "free", "arabic"]},
-    "local-coder":     {"provider": "ollama", "model": "qwen2.5-coder:7b", "tier": "local", "cost": 0.0, "strengths": ["coding", "offline", "free"]},
+    "local-small":     {"provider": "ollama", "model": "llama3.2:3b",        "tier": "local", "cost": 0.0, "strengths": ["offline", "free", "private"]},
+    "local-medium":    {"provider": "ollama", "model": "qwen2.5:7b",         "tier": "local", "cost": 0.0, "strengths": ["offline", "free", "arabic"]},
+    "local-coder":     {"provider": "ollama", "model": "qwen2.5-coder:7b",   "tier": "local", "cost": 0.0, "strengths": ["coding", "offline", "free"]},
+    "local-qwen3":     {"provider": "ollama", "model": "qwen3:8b",           "tier": "local", "cost": 0.0, "strengths": ["reasoning", "arabic", "free"]},
+    "local-qwen14b":   {"provider": "ollama", "model": "qwen2.5:14b",        "tier": "local", "cost": 0.0, "strengths": ["reasoning", "arabic", "quality"]},
+    "local-coder14b":  {"provider": "ollama", "model": "qwen2.5-coder:14b",  "tier": "local", "cost": 0.0, "strengths": ["coding", "quality", "free"]},
+    "local-deepseek":  {"provider": "ollama", "model": "deepseek-coder:6.7b","tier": "local", "cost": 0.0, "strengths": ["coding", "reasoning", "free"]},
+    "local-llama":     {"provider": "ollama", "model": "llama3:8b",          "tier": "local", "cost": 0.0, "strengths": ["general", "free"]},
+    # Ollama Cloud models
+    "cloud-qwen3-80b":  {"provider": "ollama", "model": "qwen3-next:80b",     "tier": "smart",   "cost": 0.0, "strengths": ["reasoning", "arabic", "quality"]},
+    "cloud-deepseek":   {"provider": "ollama", "model": "deepseek-v3.1:671b-cloud", "tier": "premium", "cost": 0.0, "strengths": ["reasoning", "coding"]},
+    "cloud-minimax":    {"provider": "ollama", "model": "minimax-m2.5:cloud",  "tier": "smart",   "cost": 0.0, "strengths": ["reasoning", "multilingual"]},
+    "cloud-kimi":       {"provider": "ollama", "model": "kimi-k2.5:cloud",    "tier": "smart",   "cost": 0.0, "strengths": ["reasoning", "long_context"]},
+    "cloud-glm":        {"provider": "ollama", "model": "glm-5:cloud",        "tier": "smart",   "cost": 0.0, "strengths": ["reasoning", "chinese"]},
+    "cloud-qwen3-coder":{"provider": "ollama", "model": "qwen3-coder:480b-cloud","tier": "premium","cost": 0.0, "strengths": ["coding", "quality"]},
 }
 
 # خريطة التخصصات → أفضل نماذج (بالترتيب)
@@ -148,13 +160,14 @@ class LLMClient:
         self.perplexity_key = os.getenv("PERPLEXITY_API_KEY", "")
         self.ollama_url = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
-    # سلسلة الـ fallback الذكية — إذا فشل نموذج ينتقل للتالي
+    # سلسلة الـ fallback الذكية — Ollama المحلي أولاً ثم Cloud
     FALLBACK_CHAIN = [
-        "gemini-flash",     # أسرع وأرخص
-        "deepseek-chat",    # ذكي ورخيص
-        "qwen-free",        # مجاني
-        "llama-free",       # مجاني
-        "deepseek-r1-free", # مجاني مع تفكير عميق
+        "local-medium",     # Ollama qwen2.5:7b — مجاني ومحلي
+        "local-small",      # Ollama llama3.2:3b — مجاني ومحلي
+        "local-coder",      # Ollama qwen2.5-coder:7b — مجاني ومحلي
+        "gemini-flash",     # OpenRouter — أسرع وأرخص
+        "deepseek-chat",    # OpenRouter — ذكي ورخيص
+        "llama-free",       # OpenRouter — مجاني
     ]
 
     def chat(self, messages: List[Dict], temperature: float = 0.7,

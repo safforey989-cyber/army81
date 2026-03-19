@@ -167,18 +167,30 @@ class DistillationPipeline:
     لأنه يجمع أفضل ما في كل النماذج.
     """
 
-    # أزواج المعلم-الطالب
+    # أزواج المعلم-الطالب — محلي أولاً، cloud كـ fallback
+    TEACHER_MODELS_LOCAL = {
+        "reasoning": "qwen2.5:14b",       # أكبر نموذج محلي
+        "coding": "qwen2.5-coder:14b",    # متخصص بالكود
+        "medical": "qwen2.5:14b",         # 14B للطب
+        "strategy": "qwen2.5:14b",        # استراتيجية
+        "arabic": "qwen3:8b",             # Qwen3 للعربية
+        "science": "qwen2.5:14b",         # علوم
+        "creative": "qwen2.5:14b",        # إبداع
+        "legal": "qwen2.5:14b",           # قانون
+        "financial": "qwen2.5:14b",       # مالية
+        "security": "deepseek-coder:6.7b",# أمن
+    }
     TEACHER_MODELS = {
-        "reasoning": "deepseek-r1",      # تفكير عميق
-        "coding": "claude-smart",         # برمجة
-        "medical": "gemini-pro",          # طب
-        "strategy": "gpt4o",              # استراتيجية
-        "arabic": "qwen-72b",            # عربية
-        "science": "deepseek-r1",         # علوم
-        "creative": "claude-opus",        # إبداع
-        "legal": "claude-smart",          # قانون
-        "financial": "deepseek-chat",     # مالية
-        "security": "gemini-pro",         # أمن
+        "reasoning": "deepseek-r1",
+        "coding": "claude-smart",
+        "medical": "gemini-pro",
+        "strategy": "gpt4o",
+        "arabic": "qwen-72b",
+        "science": "deepseek-r1",
+        "creative": "claude-opus",
+        "legal": "claude-smart",
+        "financial": "deepseek-chat",
+        "security": "gemini-pro",
     }
 
     def __init__(self):
@@ -217,42 +229,62 @@ class DistillationPipeline:
         4. اختبر Qwen3 على نفس المهمة
         5. احسب الفجوة
         """
-        teacher_model = self.TEACHER_MODELS.get(domain, "gemini-pro")
+        # جرّب المعلم المحلي أولاً، ثم cloud
+        local_model = self.TEACHER_MODELS_LOCAL.get(domain, "qwen2.5:14b")
+        cloud_model = self.TEACHER_MODELS.get(domain, "gemini-pro")
         result = {"domain": domain, "task": task[:100], "success": False}
 
-        # 1. استدعاء المعلم
-        try:
-            from core.llm_client import LLMClient
-            teacher = LLMClient(teacher_model)
-            teacher_prompt = f"""أجب على هذه المهمة بالتفصيل مع شرح خطوات تفكيرك:
+        # 1. استدعاء المعلم — محلي أولاً
+        teacher_text = ""
+        teacher_source = ""
 
-<thinking>
-فكّر خطوة بخطوة قبل الإجابة
-</thinking>
+        # محاولة 1: Ollama المحلي (مجاني وسريع)
+        try:
+            local_teacher = OllamaClient(local_model)
+            if local_teacher.is_available():
+                teacher_prompt_local = f"""أجب بالتفصيل مع خطوات التفكير:
 
 المهمة: {task}
 
 أعطني:
-1. خطوات التفكير بالتفصيل
+1. خطوات التفكير
 2. الإجابة النهائية
-3. البديهيات أو القواعد التي اعتمدت عليها"""
+3. القواعد التي اعتمدت عليها"""
 
-            teacher_response = teacher.chat([
-                {"role": "system", "content": f"أنت خبير في {domain}. أجب بالعربية."},
-                {"role": "user", "content": teacher_prompt}
-            ])
-            teacher_text = teacher_response.get("content", "")
+                t_resp = local_teacher.generate(
+                    prompt=teacher_prompt_local,
+                    system=f"أنت خبير في {domain}. فكّر بعمق وأجب بالعربية.",
+                    temperature=0.4, max_tokens=2048)
 
-            if not teacher_text or teacher_text.startswith("ERROR"):
-                result["error"] = "Teacher failed"
-                return result
-
-            result["teacher_response"] = teacher_text[:500]
-            result["teacher_model"] = teacher_model
-            result["teacher_tokens"] = teacher_response.get("tokens", 0)
-
+                if t_resp.get("success") and len(t_resp.get("content", "")) > 100:
+                    teacher_text = t_resp["content"]
+                    teacher_source = f"ollama/{local_model}"
+                    result["teacher_model"] = teacher_source
+                    result["teacher_response"] = teacher_text[:500]
+                    logger.info(f"🎓 Local teacher [{local_model}] answered ({len(teacher_text)} chars)")
         except Exception as e:
-            result["error"] = f"Teacher error: {e}"
+            logger.debug(f"Local teacher failed: {e}")
+
+        # محاولة 2: Cloud (إذا المحلي فشل)
+        if not teacher_text:
+            try:
+                from core.llm_client import LLMClient
+                teacher = LLMClient(cloud_model)
+                teacher_response = teacher.chat([
+                    {"role": "system", "content": f"أنت خبير في {domain}. أجب بالعربية."},
+                    {"role": "user", "content": f"أجب بالتفصيل مع خطوات التفكير:\n\n{task}"}
+                ])
+                teacher_text = teacher_response.get("content", "")
+                if teacher_text and not teacher_text.startswith("ERROR"):
+                    teacher_source = f"cloud/{cloud_model}"
+                    result["teacher_model"] = teacher_source
+                    result["teacher_response"] = teacher_text[:500]
+            except Exception as e:
+                logger.debug(f"Cloud teacher failed: {e}")
+
+        # إذا كل المعلمين فشلوا
+        if not teacher_text or len(teacher_text) < 50:
+            result["error"] = "All teachers failed (local + cloud)"
             return result
 
         # 2. اختبار Qwen3 على نفس المهمة
