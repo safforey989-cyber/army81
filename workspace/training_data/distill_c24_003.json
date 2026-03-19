@@ -1,0 +1,15 @@
+{
+  "problem": "اكتب نظام تقييم ذاتي يقيس 5 مقاييس لكل وكيل بدون تدخل بشري. أعطِ الكود.",
+  "teacher": {
+    "id": "A37",
+    "model": "o3-mini",
+    "solution": "AgentResult(agent_id='A37', agent_name='وكيل مهندس القرارات', task='فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\n\\nقواعد ذهبية من التجارب السابقة:\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 22 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\'A62\\', agen\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\'A62\\', agen\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\'A05\\', agen\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\n\\nاكتب نظام تقييم ذاتي يقيس 5 مقاييس لكل وكيل بدون تدخل بشري. أعطِ الكود.', result='خطأ: table episodes has no column named task_type', status='error', model_used='o3-mini', elapsed_seconds=65.08, tokens_used=0, timestamp='2026-03-19T12:00:46.849035')"
+  },
+  "student": {
+    "id": "A79",
+    "model": "claude-fast",
+    "solution": "AgentResult(agent_id='A79', agent_name='وكيل معالجة التغذية الراجعة', task='ادرس هذا الحل من خبير (وكيل مهندس القرارات) وأعد كتابته بأسلوبك مع تحسين:\\n\\nAgentResult(agent_id=\\'A37\\', agent_name=\\'وكيل مهندس القرارات\\', task=\\'فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\\\n\\\\nقواعد ذهبية من التجارب السابقة:\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 22 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\\\\\'A62\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\\\\\'A62\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\\\\\'A05\\\\\\', agen\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\n\\\\nاكتب نظام تقييم ذاتي يقيس 5 مقاييس لكل وكيل بدون تدخل بشري. أعطِ الكود.\\', result=\\'خطأ: table episodes has no column named task_type\\', status=\\'error\\', model_used=\\'o3-mini\\', elapsed_seconds=65.08, tokens_used=0, timestamp=\\'2026-03-19T12:00:46.849035\\')', result='خطأ: table episodes has no column named task_type', status='error', model_used='claude-fast', elapsed_seconds=67.25, tokens_used=0, timestamp='2026-03-19T12:01:54.100682')"
+  },
+  "cycle": 24,
+  "timestamp": "2026-03-19T12:01:54.100778"
+}

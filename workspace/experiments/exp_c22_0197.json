@@ -1,0 +1,20 @@
+{
+  "type": "quality",
+  "task": "حلّل مخاطر الاستثمار في البيتكوين مع أدلة",
+  "agent1": {
+    "id": "A40",
+    "model": "gpt4o-mini",
+    "score": 424
+  },
+  "agent2": {
+    "id": "A52",
+    "model": "deepseek-r1",
+    "score": 421
+  },
+  "winner": "A40",
+  "improved": true,
+  "improvement_pct": 0.7,
+  "knowledge_transferred": true,
+  "cycle": 22,
+  "timestamp": "2026-03-19T11:05:51.497525"
+}

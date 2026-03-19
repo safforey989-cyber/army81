@@ -1,0 +1,15 @@
+{
+  "problem": "اكتب نظام Token Economy يوزع ميزانيات على 81 وكيل ويكافئ الكفاءة. أعطِ الكود.",
+  "teacher": {
+    "id": "A35",
+    "model": "gemini-pro",
+    "solution": "AgentResult(agent_id='A35', agent_name='وكيل إدارة التغيير', task='فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\n\\nقواعد ذهبية من التجارب السابقة:\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 22 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\'A34\\', agen\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\'A34\\', agen\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\'A05\\', agen\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\n\\nاكتب نظام Token Economy يوزع ميزانيات على 81 وكيل ويكافئ الكفاءة. أعطِ الكود.', result='خطأ: table episodes has no column named task_type', status='error', model_used='gemini-pro', elapsed_seconds=66.44, tokens_used=0, timestamp='2026-03-19T11:59:21.103963')"
+  },
+  "student": {
+    "id": "A78",
+    "model": "claude-fast",
+    "solution": "AgentResult(agent_id='A78', agent_name='وكيل التخصيص الديناميكي للموارد', task='ادرس هذا الحل من خبير (وكيل إدارة التغيير) وأعد كتابته بأسلوبك مع تحسين:\\n\\nAgentResult(agent_id=\\'A35\\', agent_name=\\'وكيل إدارة التغيير\\', task=\\'فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\\\n\\\\nقواعد ذهبية من التجارب السابقة:\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 22 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\\\\\'A34\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\\\\\'A34\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\\\\\'A05\\\\\\', agen\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\n\\\\nاكتب نظام Token Economy يوزع ميزانيات على 81 وكيل ويكافئ الكفاءة. أعطِ الكود.\\', result=\\'خطأ: table episodes has no column named task_type\\', status=\\'error\\', model_used=\\'gemini-pro\\', elapsed_seconds=66.44, tokens_used=0, timestamp=\\'2026-03-19T11:59:21.103963\\')', result='خطأ: table episodes has no column named task_type', status='error', model_used='claude-fast', elapsed_seconds=64.69, tokens_used=0, timestamp='2026-03-19T12:00:25.798312')"
+  },
+  "cycle": 24,
+  "timestamp": "2026-03-19T12:00:25.798423"
+}

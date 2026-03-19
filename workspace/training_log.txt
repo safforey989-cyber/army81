@@ -2662,3 +2662,891 @@
 2026-03-19 09:27:19,402 [Army81.Training] ============================================================
 2026-03-19 09:27:19,405 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
 2026-03-19 09:27:19,405 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:28:24,501 [Army81.Training] ============================================================
+2026-03-19 09:28:24,501 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:28:24,502 [Army81.Training]   البدء: 2026-03-19 09:28:24
+2026-03-19 09:28:24,502 [Army81.Training] ============================================================
+2026-03-19 09:28:24,504 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:28:24,504 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:29:28,495 [Army81.Training] ============================================================
+2026-03-19 09:29:28,495 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:29:28,495 [Army81.Training]   البدء: 2026-03-19 09:29:28
+2026-03-19 09:29:28,496 [Army81.Training] ============================================================
+2026-03-19 09:29:28,499 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:29:28,499 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:30:32,368 [Army81.Training] ============================================================
+2026-03-19 09:30:32,368 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:30:32,368 [Army81.Training]   البدء: 2026-03-19 09:30:32
+2026-03-19 09:30:32,368 [Army81.Training] ============================================================
+2026-03-19 09:30:32,371 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:30:32,371 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:31:36,432 [Army81.Training] ============================================================
+2026-03-19 09:31:36,434 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:31:36,435 [Army81.Training]   البدء: 2026-03-19 09:31:36
+2026-03-19 09:31:36,437 [Army81.Training] ============================================================
+2026-03-19 09:31:36,440 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:31:36,440 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:32:40,427 [Army81.Training] ============================================================
+2026-03-19 09:32:40,428 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:32:40,428 [Army81.Training]   البدء: 2026-03-19 09:32:40
+2026-03-19 09:32:40,428 [Army81.Training] ============================================================
+2026-03-19 09:32:40,433 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:32:40,433 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:33:44,478 [Army81.Training] ============================================================
+2026-03-19 09:33:44,478 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:33:44,478 [Army81.Training]   البدء: 2026-03-19 09:33:44
+2026-03-19 09:33:44,479 [Army81.Training] ============================================================
+2026-03-19 09:33:44,481 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:33:44,482 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:34:48,401 [Army81.Training] ============================================================
+2026-03-19 09:34:48,402 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:34:48,402 [Army81.Training]   البدء: 2026-03-19 09:34:48
+2026-03-19 09:34:48,402 [Army81.Training] ============================================================
+2026-03-19 09:34:48,405 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:34:48,405 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:35:52,452 [Army81.Training] ============================================================
+2026-03-19 09:35:52,452 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:35:52,452 [Army81.Training]   البدء: 2026-03-19 09:35:52
+2026-03-19 09:35:52,453 [Army81.Training] ============================================================
+2026-03-19 09:35:52,456 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:35:52,456 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:36:56,370 [Army81.Training] ============================================================
+2026-03-19 09:36:56,371 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:36:56,371 [Army81.Training]   البدء: 2026-03-19 09:36:56
+2026-03-19 09:36:56,371 [Army81.Training] ============================================================
+2026-03-19 09:36:56,373 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:36:56,373 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:38:00,403 [Army81.Training] ============================================================
+2026-03-19 09:38:00,403 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:38:00,404 [Army81.Training]   البدء: 2026-03-19 09:38:00
+2026-03-19 09:38:00,404 [Army81.Training] ============================================================
+2026-03-19 09:38:00,406 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:38:00,407 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:39:04,321 [Army81.Training] ============================================================
+2026-03-19 09:39:04,322 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:39:04,322 [Army81.Training]   البدء: 2026-03-19 09:39:04
+2026-03-19 09:39:04,322 [Army81.Training] ============================================================
+2026-03-19 09:39:04,324 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:39:04,325 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:40:08,370 [Army81.Training] ============================================================
+2026-03-19 09:40:08,370 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:40:08,371 [Army81.Training]   البدء: 2026-03-19 09:40:08
+2026-03-19 09:40:08,371 [Army81.Training] ============================================================
+2026-03-19 09:40:08,374 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:40:08,374 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:41:12,405 [Army81.Training] ============================================================
+2026-03-19 09:41:12,405 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:41:12,405 [Army81.Training]   البدء: 2026-03-19 09:41:12
+2026-03-19 09:41:12,405 [Army81.Training] ============================================================
+2026-03-19 09:41:12,408 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:41:12,408 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:42:16,436 [Army81.Training] ============================================================
+2026-03-19 09:42:16,436 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:42:16,437 [Army81.Training]   البدء: 2026-03-19 09:42:16
+2026-03-19 09:42:16,437 [Army81.Training] ============================================================
+2026-03-19 09:42:16,440 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:42:16,441 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:43:20,481 [Army81.Training] ============================================================
+2026-03-19 09:43:20,481 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:43:20,482 [Army81.Training]   البدء: 2026-03-19 09:43:20
+2026-03-19 09:43:20,482 [Army81.Training] ============================================================
+2026-03-19 09:43:20,485 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:43:20,486 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:44:24,589 [Army81.Training] ============================================================
+2026-03-19 09:44:24,590 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:44:24,590 [Army81.Training]   البدء: 2026-03-19 09:44:24
+2026-03-19 09:44:24,591 [Army81.Training] ============================================================
+2026-03-19 09:44:24,594 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:44:24,595 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:45:28,595 [Army81.Training] ============================================================
+2026-03-19 09:45:28,595 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:45:28,595 [Army81.Training]   البدء: 2026-03-19 09:45:28
+2026-03-19 09:45:28,595 [Army81.Training] ============================================================
+2026-03-19 09:45:28,598 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:45:28,598 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:46:32,604 [Army81.Training] ============================================================
+2026-03-19 09:46:32,604 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:46:32,604 [Army81.Training]   البدء: 2026-03-19 09:46:32
+2026-03-19 09:46:32,604 [Army81.Training] ============================================================
+2026-03-19 09:46:32,607 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:46:32,607 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:47:36,832 [Army81.Training] ============================================================
+2026-03-19 09:47:36,833 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:47:36,833 [Army81.Training]   البدء: 2026-03-19 09:47:36
+2026-03-19 09:47:36,833 [Army81.Training] ============================================================
+2026-03-19 09:47:36,839 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:47:36,839 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:48:40,775 [Army81.Training] ============================================================
+2026-03-19 09:48:40,775 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:48:40,776 [Army81.Training]   البدء: 2026-03-19 09:48:40
+2026-03-19 09:48:40,776 [Army81.Training] ============================================================
+2026-03-19 09:48:40,778 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:48:40,778 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:49:44,897 [Army81.Training] ============================================================
+2026-03-19 09:49:44,898 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:49:44,898 [Army81.Training]   البدء: 2026-03-19 09:49:44
+2026-03-19 09:49:44,898 [Army81.Training] ============================================================
+2026-03-19 09:49:44,901 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:49:44,901 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:50:48,871 [Army81.Training] ============================================================
+2026-03-19 09:50:48,872 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:50:48,872 [Army81.Training]   البدء: 2026-03-19 09:50:48
+2026-03-19 09:50:48,872 [Army81.Training] ============================================================
+2026-03-19 09:50:48,874 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:50:48,874 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:51:52,901 [Army81.Training] ============================================================
+2026-03-19 09:51:52,901 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:51:52,901 [Army81.Training]   البدء: 2026-03-19 09:51:52
+2026-03-19 09:51:52,901 [Army81.Training] ============================================================
+2026-03-19 09:51:52,904 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:51:52,905 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:52:56,891 [Army81.Training] ============================================================
+2026-03-19 09:52:56,892 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:52:56,892 [Army81.Training]   البدء: 2026-03-19 09:52:56
+2026-03-19 09:52:56,892 [Army81.Training] ============================================================
+2026-03-19 09:52:56,895 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:52:56,895 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:54:00,929 [Army81.Training] ============================================================
+2026-03-19 09:54:00,930 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:54:00,930 [Army81.Training]   البدء: 2026-03-19 09:54:00
+2026-03-19 09:54:00,930 [Army81.Training] ============================================================
+2026-03-19 09:54:00,933 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:54:00,934 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:55:04,895 [Army81.Training] ============================================================
+2026-03-19 09:55:04,896 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:55:04,896 [Army81.Training]   البدء: 2026-03-19 09:55:04
+2026-03-19 09:55:04,896 [Army81.Training] ============================================================
+2026-03-19 09:55:04,898 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:55:04,898 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:56:08,931 [Army81.Training] ============================================================
+2026-03-19 09:56:08,931 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:56:08,931 [Army81.Training]   البدء: 2026-03-19 09:56:08
+2026-03-19 09:56:08,932 [Army81.Training] ============================================================
+2026-03-19 09:56:08,935 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:56:08,935 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:57:12,964 [Army81.Training] ============================================================
+2026-03-19 09:57:12,964 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:57:12,965 [Army81.Training]   البدء: 2026-03-19 09:57:12
+2026-03-19 09:57:12,965 [Army81.Training] ============================================================
+2026-03-19 09:57:12,967 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:57:12,968 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:58:16,921 [Army81.Training] ============================================================
+2026-03-19 09:58:16,922 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:58:16,922 [Army81.Training]   البدء: 2026-03-19 09:58:16
+2026-03-19 09:58:16,922 [Army81.Training] ============================================================
+2026-03-19 09:58:16,924 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:58:16,924 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 09:59:20,975 [Army81.Training] ============================================================
+2026-03-19 09:59:20,975 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 09:59:20,975 [Army81.Training]   البدء: 2026-03-19 09:59:20
+2026-03-19 09:59:20,975 [Army81.Training] ============================================================
+2026-03-19 09:59:20,978 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 09:59:20,979 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:00:24,994 [Army81.Training] ============================================================
+2026-03-19 10:00:24,995 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:00:24,995 [Army81.Training]   البدء: 2026-03-19 10:00:24
+2026-03-19 10:00:24,995 [Army81.Training] ============================================================
+2026-03-19 10:00:24,997 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:00:24,997 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:01:28,999 [Army81.Training] ============================================================
+2026-03-19 10:01:29,000 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:01:29,000 [Army81.Training]   البدء: 2026-03-19 10:01:29
+2026-03-19 10:01:29,001 [Army81.Training] ============================================================
+2026-03-19 10:01:29,004 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:01:29,005 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:02:33,069 [Army81.Training] ============================================================
+2026-03-19 10:02:33,070 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:02:33,070 [Army81.Training]   البدء: 2026-03-19 10:02:33
+2026-03-19 10:02:33,070 [Army81.Training] ============================================================
+2026-03-19 10:02:33,073 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:02:33,074 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:03:37,126 [Army81.Training] ============================================================
+2026-03-19 10:03:37,126 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:03:37,126 [Army81.Training]   البدء: 2026-03-19 10:03:37
+2026-03-19 10:03:37,126 [Army81.Training] ============================================================
+2026-03-19 10:03:37,129 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:03:37,129 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:04:41,123 [Army81.Training] ============================================================
+2026-03-19 10:04:41,124 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:04:41,124 [Army81.Training]   البدء: 2026-03-19 10:04:41
+2026-03-19 10:04:41,124 [Army81.Training] ============================================================
+2026-03-19 10:04:41,127 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:04:41,127 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:05:45,196 [Army81.Training] ============================================================
+2026-03-19 10:05:45,197 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:05:45,197 [Army81.Training]   البدء: 2026-03-19 10:05:45
+2026-03-19 10:05:45,197 [Army81.Training] ============================================================
+2026-03-19 10:05:45,199 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:05:45,200 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:06:49,177 [Army81.Training] ============================================================
+2026-03-19 10:06:49,177 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:06:49,177 [Army81.Training]   البدء: 2026-03-19 10:06:49
+2026-03-19 10:06:49,178 [Army81.Training] ============================================================
+2026-03-19 10:06:49,180 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:06:49,180 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:07:53,364 [Army81.Training] ============================================================
+2026-03-19 10:07:53,364 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:07:53,365 [Army81.Training]   البدء: 2026-03-19 10:07:53
+2026-03-19 10:07:53,365 [Army81.Training] ============================================================
+2026-03-19 10:07:53,368 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:07:53,368 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:08:57,381 [Army81.Training] ============================================================
+2026-03-19 10:08:57,381 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:08:57,381 [Army81.Training]   البدء: 2026-03-19 10:08:57
+2026-03-19 10:08:57,381 [Army81.Training] ============================================================
+2026-03-19 10:08:57,383 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:08:57,383 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:10:01,456 [Army81.Training] ============================================================
+2026-03-19 10:10:01,456 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:10:01,457 [Army81.Training]   البدء: 2026-03-19 10:10:01
+2026-03-19 10:10:01,457 [Army81.Training] ============================================================
+2026-03-19 10:10:01,459 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:10:01,463 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:11:05,549 [Army81.Training] ============================================================
+2026-03-19 10:11:05,549 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:11:05,549 [Army81.Training]   البدء: 2026-03-19 10:11:05
+2026-03-19 10:11:05,550 [Army81.Training] ============================================================
+2026-03-19 10:11:05,554 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:11:05,554 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:12:09,681 [Army81.Training] ============================================================
+2026-03-19 10:12:09,681 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:12:09,681 [Army81.Training]   البدء: 2026-03-19 10:12:09
+2026-03-19 10:12:09,681 [Army81.Training] ============================================================
+2026-03-19 10:12:09,683 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:12:09,684 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:13:13,811 [Army81.Training] ============================================================
+2026-03-19 10:13:13,811 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:13:13,811 [Army81.Training]   البدء: 2026-03-19 10:13:13
+2026-03-19 10:13:13,812 [Army81.Training] ============================================================
+2026-03-19 10:13:13,814 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:13:13,814 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:14:17,879 [Army81.Training] ============================================================
+2026-03-19 10:14:17,879 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:14:17,879 [Army81.Training]   البدء: 2026-03-19 10:14:17
+2026-03-19 10:14:17,879 [Army81.Training] ============================================================
+2026-03-19 10:14:17,882 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:14:17,882 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:15:21,991 [Army81.Training] ============================================================
+2026-03-19 10:15:21,991 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:15:21,991 [Army81.Training]   البدء: 2026-03-19 10:15:21
+2026-03-19 10:15:21,992 [Army81.Training] ============================================================
+2026-03-19 10:15:21,995 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:15:21,995 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:16:26,083 [Army81.Training] ============================================================
+2026-03-19 10:16:26,083 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:16:26,084 [Army81.Training]   البدء: 2026-03-19 10:16:26
+2026-03-19 10:16:26,084 [Army81.Training] ============================================================
+2026-03-19 10:16:26,086 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:16:26,087 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:17:30,422 [Army81.Training] ============================================================
+2026-03-19 10:17:30,423 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:17:30,423 [Army81.Training]   البدء: 2026-03-19 10:17:30
+2026-03-19 10:17:30,424 [Army81.Training] ============================================================
+2026-03-19 10:17:30,427 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:17:30,428 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:18:34,570 [Army81.Training] ============================================================
+2026-03-19 10:18:34,571 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:18:34,571 [Army81.Training]   البدء: 2026-03-19 10:18:34
+2026-03-19 10:18:34,572 [Army81.Training] ============================================================
+2026-03-19 10:18:34,576 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:18:34,577 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:19:38,839 [Army81.Training] ============================================================
+2026-03-19 10:19:38,840 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:19:38,840 [Army81.Training]   البدء: 2026-03-19 10:19:38
+2026-03-19 10:19:38,841 [Army81.Training] ============================================================
+2026-03-19 10:19:38,844 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:19:38,844 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:20:43,114 [Army81.Training] ============================================================
+2026-03-19 10:20:43,114 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:20:43,115 [Army81.Training]   البدء: 2026-03-19 10:20:43
+2026-03-19 10:20:43,115 [Army81.Training] ============================================================
+2026-03-19 10:20:43,119 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:20:43,119 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:21:47,203 [Army81.Training] ============================================================
+2026-03-19 10:21:47,203 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:21:47,203 [Army81.Training]   البدء: 2026-03-19 10:21:47
+2026-03-19 10:21:47,204 [Army81.Training] ============================================================
+2026-03-19 10:21:47,206 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:21:47,206 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:22:51,284 [Army81.Training] ============================================================
+2026-03-19 10:22:51,285 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:22:51,285 [Army81.Training]   البدء: 2026-03-19 10:22:51
+2026-03-19 10:22:51,286 [Army81.Training] ============================================================
+2026-03-19 10:22:51,290 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:22:51,291 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:23:55,456 [Army81.Training] ============================================================
+2026-03-19 10:23:55,456 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:23:55,457 [Army81.Training]   البدء: 2026-03-19 10:23:55
+2026-03-19 10:23:55,457 [Army81.Training] ============================================================
+2026-03-19 10:23:55,462 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:23:55,463 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:24:59,531 [Army81.Training] ============================================================
+2026-03-19 10:24:59,531 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:24:59,531 [Army81.Training]   البدء: 2026-03-19 10:24:59
+2026-03-19 10:24:59,531 [Army81.Training] ============================================================
+2026-03-19 10:24:59,534 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:24:59,535 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:26:03,722 [Army81.Training] ============================================================
+2026-03-19 10:26:03,722 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:26:03,723 [Army81.Training]   البدء: 2026-03-19 10:26:03
+2026-03-19 10:26:03,723 [Army81.Training] ============================================================
+2026-03-19 10:26:03,725 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:26:03,726 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:27:07,870 [Army81.Training] ============================================================
+2026-03-19 10:27:07,870 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:27:07,871 [Army81.Training]   البدء: 2026-03-19 10:27:07
+2026-03-19 10:27:07,871 [Army81.Training] ============================================================
+2026-03-19 10:27:07,874 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:27:07,874 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:28:11,346 [Army81.Training] ============================================================
+2026-03-19 10:28:11,347 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:28:11,347 [Army81.Training]   البدء: 2026-03-19 10:28:11
+2026-03-19 10:28:11,347 [Army81.Training] ============================================================
+2026-03-19 10:28:11,351 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:28:11,352 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:29:14,315 [Army81.Training] ============================================================
+2026-03-19 10:29:14,315 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:29:14,316 [Army81.Training]   البدء: 2026-03-19 10:29:14
+2026-03-19 10:29:14,316 [Army81.Training] ============================================================
+2026-03-19 10:29:14,323 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:29:14,323 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:30:18,624 [Army81.Training] ============================================================
+2026-03-19 10:30:18,625 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:30:18,625 [Army81.Training]   البدء: 2026-03-19 10:30:18
+2026-03-19 10:30:18,625 [Army81.Training] ============================================================
+2026-03-19 10:30:18,628 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:30:18,629 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:31:22,139 [Army81.Training] ============================================================
+2026-03-19 10:31:22,140 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:31:22,141 [Army81.Training]   البدء: 2026-03-19 10:31:22
+2026-03-19 10:31:22,141 [Army81.Training] ============================================================
+2026-03-19 10:31:22,144 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:31:22,144 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:32:27,092 [Army81.Training] ============================================================
+2026-03-19 10:32:27,092 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:32:27,093 [Army81.Training]   البدء: 2026-03-19 10:32:27
+2026-03-19 10:32:27,093 [Army81.Training] ============================================================
+2026-03-19 10:32:27,096 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:32:27,097 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:33:30,898 [Army81.Training] ============================================================
+2026-03-19 10:33:30,899 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:33:30,899 [Army81.Training]   البدء: 2026-03-19 10:33:30
+2026-03-19 10:33:30,899 [Army81.Training] ============================================================
+2026-03-19 10:33:30,902 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:33:30,902 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:34:34,052 [Army81.Training] ============================================================
+2026-03-19 10:34:34,052 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:34:34,052 [Army81.Training]   البدء: 2026-03-19 10:34:34
+2026-03-19 10:34:34,052 [Army81.Training] ============================================================
+2026-03-19 10:34:34,054 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:34:34,055 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:35:38,038 [Army81.Training] ============================================================
+2026-03-19 10:35:38,039 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:35:38,040 [Army81.Training]   البدء: 2026-03-19 10:35:38
+2026-03-19 10:35:38,040 [Army81.Training] ============================================================
+2026-03-19 10:35:38,043 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:35:38,043 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:36:42,039 [Army81.Training] ============================================================
+2026-03-19 10:36:42,039 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:36:42,040 [Army81.Training]   البدء: 2026-03-19 10:36:42
+2026-03-19 10:36:42,040 [Army81.Training] ============================================================
+2026-03-19 10:36:42,042 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:36:42,042 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:37:45,939 [Army81.Training] ============================================================
+2026-03-19 10:37:45,939 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:37:45,940 [Army81.Training]   البدء: 2026-03-19 10:37:45
+2026-03-19 10:37:45,940 [Army81.Training] ============================================================
+2026-03-19 10:37:45,942 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:37:45,942 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:38:49,896 [Army81.Training] ============================================================
+2026-03-19 10:38:49,896 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:38:49,896 [Army81.Training]   البدء: 2026-03-19 10:38:49
+2026-03-19 10:38:49,896 [Army81.Training] ============================================================
+2026-03-19 10:38:49,899 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:38:49,899 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:39:53,889 [Army81.Training] ============================================================
+2026-03-19 10:39:53,889 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:39:53,889 [Army81.Training]   البدء: 2026-03-19 10:39:53
+2026-03-19 10:39:53,889 [Army81.Training] ============================================================
+2026-03-19 10:39:53,892 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:39:53,893 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:40:57,949 [Army81.Training] ============================================================
+2026-03-19 10:40:57,949 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:40:57,950 [Army81.Training]   البدء: 2026-03-19 10:40:57
+2026-03-19 10:40:57,956 [Army81.Training] ============================================================
+2026-03-19 10:40:57,958 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:40:57,958 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:42:01,984 [Army81.Training] ============================================================
+2026-03-19 10:42:01,984 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:42:01,985 [Army81.Training]   البدء: 2026-03-19 10:42:01
+2026-03-19 10:42:01,985 [Army81.Training] ============================================================
+2026-03-19 10:42:01,989 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:42:01,989 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:43:05,891 [Army81.Training] ============================================================
+2026-03-19 10:43:05,891 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:43:05,892 [Army81.Training]   البدء: 2026-03-19 10:43:05
+2026-03-19 10:43:05,892 [Army81.Training] ============================================================
+2026-03-19 10:43:05,894 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:43:05,894 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:44:09,886 [Army81.Training] ============================================================
+2026-03-19 10:44:09,887 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:44:09,887 [Army81.Training]   البدء: 2026-03-19 10:44:09
+2026-03-19 10:44:09,887 [Army81.Training] ============================================================
+2026-03-19 10:44:09,890 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:44:09,890 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:45:13,887 [Army81.Training] ============================================================
+2026-03-19 10:45:13,887 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:45:13,887 [Army81.Training]   البدء: 2026-03-19 10:45:13
+2026-03-19 10:45:13,888 [Army81.Training] ============================================================
+2026-03-19 10:45:13,890 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:45:13,890 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:46:17,943 [Army81.Training] ============================================================
+2026-03-19 10:46:17,944 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:46:17,944 [Army81.Training]   البدء: 2026-03-19 10:46:17
+2026-03-19 10:46:17,945 [Army81.Training] ============================================================
+2026-03-19 10:46:17,947 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:46:17,947 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:47:21,986 [Army81.Training] ============================================================
+2026-03-19 10:47:21,986 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:47:21,987 [Army81.Training]   البدء: 2026-03-19 10:47:21
+2026-03-19 10:47:21,987 [Army81.Training] ============================================================
+2026-03-19 10:47:21,989 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:47:21,990 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:48:26,049 [Army81.Training] ============================================================
+2026-03-19 10:48:26,049 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:48:26,049 [Army81.Training]   البدء: 2026-03-19 10:48:26
+2026-03-19 10:48:26,049 [Army81.Training] ============================================================
+2026-03-19 10:48:26,053 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:48:26,053 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:49:30,679 [Army81.Training] ============================================================
+2026-03-19 10:49:31,898 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:49:31,898 [Army81.Training]   البدء: 2026-03-19 10:49:31
+2026-03-19 10:49:31,899 [Army81.Training] ============================================================
+2026-03-19 10:49:31,904 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:49:31,904 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:50:35,986 [Army81.Training] ============================================================
+2026-03-19 10:50:35,987 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:50:35,987 [Army81.Training]   البدء: 2026-03-19 10:50:35
+2026-03-19 10:50:35,987 [Army81.Training] ============================================================
+2026-03-19 10:50:35,991 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:50:35,991 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:51:39,967 [Army81.Training] ============================================================
+2026-03-19 10:51:39,967 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:51:39,968 [Army81.Training]   البدء: 2026-03-19 10:51:39
+2026-03-19 10:51:39,968 [Army81.Training] ============================================================
+2026-03-19 10:51:39,970 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:51:39,970 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:52:43,997 [Army81.Training] ============================================================
+2026-03-19 10:52:43,997 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:52:43,998 [Army81.Training]   البدء: 2026-03-19 10:52:43
+2026-03-19 10:52:43,998 [Army81.Training] ============================================================
+2026-03-19 10:52:44,012 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:52:44,013 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:53:48,043 [Army81.Training] ============================================================
+2026-03-19 10:53:48,043 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:53:48,044 [Army81.Training]   البدء: 2026-03-19 10:53:48
+2026-03-19 10:53:48,044 [Army81.Training] ============================================================
+2026-03-19 10:53:48,046 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:53:48,046 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:54:52,139 [Army81.Training] ============================================================
+2026-03-19 10:54:52,139 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:54:52,140 [Army81.Training]   البدء: 2026-03-19 10:54:52
+2026-03-19 10:54:52,140 [Army81.Training] ============================================================
+2026-03-19 10:54:52,142 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:54:52,143 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:55:56,190 [Army81.Training] ============================================================
+2026-03-19 10:55:56,191 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:55:56,191 [Army81.Training]   البدء: 2026-03-19 10:55:56
+2026-03-19 10:55:56,191 [Army81.Training] ============================================================
+2026-03-19 10:55:56,194 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:55:56,194 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:57:00,232 [Army81.Training] ============================================================
+2026-03-19 10:57:00,232 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:57:00,232 [Army81.Training]   البدء: 2026-03-19 10:57:00
+2026-03-19 10:57:00,233 [Army81.Training] ============================================================
+2026-03-19 10:57:00,235 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:57:00,236 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:58:04,295 [Army81.Training] ============================================================
+2026-03-19 10:58:04,296 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:58:04,296 [Army81.Training]   البدء: 2026-03-19 10:58:04
+2026-03-19 10:58:04,296 [Army81.Training] ============================================================
+2026-03-19 10:58:04,299 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:58:04,299 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 10:59:08,390 [Army81.Training] ============================================================
+2026-03-19 10:59:08,390 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 10:59:08,390 [Army81.Training]   البدء: 2026-03-19 10:59:08
+2026-03-19 10:59:08,391 [Army81.Training] ============================================================
+2026-03-19 10:59:08,394 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 10:59:08,394 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:00:12,636 [Army81.Training] ============================================================
+2026-03-19 11:00:12,636 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:00:12,636 [Army81.Training]   البدء: 2026-03-19 11:00:12
+2026-03-19 11:00:12,637 [Army81.Training] ============================================================
+2026-03-19 11:00:12,640 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:00:12,640 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:01:16,746 [Army81.Training] ============================================================
+2026-03-19 11:01:16,746 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:01:16,747 [Army81.Training]   البدء: 2026-03-19 11:01:16
+2026-03-19 11:01:16,747 [Army81.Training] ============================================================
+2026-03-19 11:01:16,750 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:01:16,750 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:02:20,830 [Army81.Training] ============================================================
+2026-03-19 11:02:20,831 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:02:20,831 [Army81.Training]   البدء: 2026-03-19 11:02:20
+2026-03-19 11:02:20,831 [Army81.Training] ============================================================
+2026-03-19 11:02:20,834 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:02:20,834 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:03:24,821 [Army81.Training] ============================================================
+2026-03-19 11:03:24,821 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:03:24,822 [Army81.Training]   البدء: 2026-03-19 11:03:24
+2026-03-19 11:03:24,822 [Army81.Training] ============================================================
+2026-03-19 11:03:24,825 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:03:24,825 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:04:28,995 [Army81.Training] ============================================================
+2026-03-19 11:04:28,996 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:04:28,997 [Army81.Training]   البدء: 2026-03-19 11:04:28
+2026-03-19 11:04:28,997 [Army81.Training] ============================================================
+2026-03-19 11:04:29,001 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:04:29,002 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:05:33,281 [Army81.Training] ============================================================
+2026-03-19 11:05:33,282 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:05:33,282 [Army81.Training]   البدء: 2026-03-19 11:05:33
+2026-03-19 11:05:33,282 [Army81.Training] ============================================================
+2026-03-19 11:05:33,286 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:05:33,286 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:06:37,591 [Army81.Training] ============================================================
+2026-03-19 11:06:37,592 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:06:37,592 [Army81.Training]   البدء: 2026-03-19 11:06:37
+2026-03-19 11:06:37,593 [Army81.Training] ============================================================
+2026-03-19 11:06:37,596 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:06:37,597 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:07:41,730 [Army81.Training] ============================================================
+2026-03-19 11:07:41,731 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:07:41,731 [Army81.Training]   البدء: 2026-03-19 11:07:41
+2026-03-19 11:07:41,732 [Army81.Training] ============================================================
+2026-03-19 11:07:41,736 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:07:41,736 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:08:45,880 [Army81.Training] ============================================================
+2026-03-19 11:08:45,880 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:08:45,880 [Army81.Training]   البدء: 2026-03-19 11:08:45
+2026-03-19 11:08:45,880 [Army81.Training] ============================================================
+2026-03-19 11:08:45,883 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:08:45,883 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:09:50,706 [Army81.Training] ============================================================
+2026-03-19 11:09:50,707 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:09:50,707 [Army81.Training]   البدء: 2026-03-19 11:09:50
+2026-03-19 11:09:50,708 [Army81.Training] ============================================================
+2026-03-19 11:09:50,712 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:09:50,712 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:10:54,955 [Army81.Training] ============================================================
+2026-03-19 11:10:54,956 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:10:54,956 [Army81.Training]   البدء: 2026-03-19 11:10:54
+2026-03-19 11:10:54,956 [Army81.Training] ============================================================
+2026-03-19 11:10:54,962 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:10:54,962 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:11:59,250 [Army81.Training] ============================================================
+2026-03-19 11:11:59,251 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:11:59,251 [Army81.Training]   البدء: 2026-03-19 11:11:59
+2026-03-19 11:11:59,252 [Army81.Training] ============================================================
+2026-03-19 11:11:59,257 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:11:59,257 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:13:03,445 [Army81.Training] ============================================================
+2026-03-19 11:13:03,446 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:13:03,447 [Army81.Training]   البدء: 2026-03-19 11:13:03
+2026-03-19 11:13:03,448 [Army81.Training] ============================================================
+2026-03-19 11:13:03,454 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:13:03,455 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:14:06,515 [Army81.Training] ============================================================
+2026-03-19 11:14:06,517 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:14:06,517 [Army81.Training]   البدء: 2026-03-19 11:14:06
+2026-03-19 11:14:06,518 [Army81.Training] ============================================================
+2026-03-19 11:14:06,521 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:14:06,522 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:15:12,033 [Army81.Training] ============================================================
+2026-03-19 11:15:12,033 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:15:12,033 [Army81.Training]   البدء: 2026-03-19 11:15:12
+2026-03-19 11:15:12,034 [Army81.Training] ============================================================
+2026-03-19 11:15:12,039 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:15:12,040 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:16:15,040 [Army81.Training] ============================================================
+2026-03-19 11:16:15,040 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:16:15,040 [Army81.Training]   البدء: 2026-03-19 11:16:15
+2026-03-19 11:16:15,041 [Army81.Training] ============================================================
+2026-03-19 11:16:15,047 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:16:15,048 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:17:20,141 [Army81.Training] ============================================================
+2026-03-19 11:17:20,142 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:17:20,142 [Army81.Training]   البدء: 2026-03-19 11:17:20
+2026-03-19 11:17:20,143 [Army81.Training] ============================================================
+2026-03-19 11:17:20,147 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:17:20,147 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:18:24,320 [Army81.Training] ============================================================
+2026-03-19 11:18:24,320 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:18:24,321 [Army81.Training]   البدء: 2026-03-19 11:18:24
+2026-03-19 11:18:24,321 [Army81.Training] ============================================================
+2026-03-19 11:18:24,325 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:18:24,325 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:19:28,516 [Army81.Training] ============================================================
+2026-03-19 11:19:28,516 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:19:28,517 [Army81.Training]   البدء: 2026-03-19 11:19:28
+2026-03-19 11:19:28,517 [Army81.Training] ============================================================
+2026-03-19 11:19:28,522 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:19:28,523 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:20:32,642 [Army81.Training] ============================================================
+2026-03-19 11:20:32,643 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:20:32,643 [Army81.Training]   البدء: 2026-03-19 11:20:32
+2026-03-19 11:20:32,644 [Army81.Training] ============================================================
+2026-03-19 11:20:32,646 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:20:32,646 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:21:36,865 [Army81.Training] ============================================================
+2026-03-19 11:21:36,865 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:21:36,866 [Army81.Training]   البدء: 2026-03-19 11:21:36
+2026-03-19 11:21:36,867 [Army81.Training] ============================================================
+2026-03-19 11:21:36,873 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:21:36,873 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:22:41,013 [Army81.Training] ============================================================
+2026-03-19 11:22:41,014 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:22:41,014 [Army81.Training]   البدء: 2026-03-19 11:22:41
+2026-03-19 11:22:41,015 [Army81.Training] ============================================================
+2026-03-19 11:22:41,018 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:22:41,019 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:23:45,221 [Army81.Training] ============================================================
+2026-03-19 11:23:45,222 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:23:45,223 [Army81.Training]   البدء: 2026-03-19 11:23:45
+2026-03-19 11:23:45,223 [Army81.Training] ============================================================
+2026-03-19 11:23:45,227 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:23:45,228 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:24:49,495 [Army81.Training] ============================================================
+2026-03-19 11:24:49,497 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:24:49,497 [Army81.Training]   البدء: 2026-03-19 11:24:49
+2026-03-19 11:24:49,498 [Army81.Training] ============================================================
+2026-03-19 11:24:49,506 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:24:49,506 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:25:53,694 [Army81.Training] ============================================================
+2026-03-19 11:25:53,695 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:25:53,695 [Army81.Training]   البدء: 2026-03-19 11:25:53
+2026-03-19 11:25:53,695 [Army81.Training] ============================================================
+2026-03-19 11:25:53,698 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:25:53,699 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:26:57,822 [Army81.Training] ============================================================
+2026-03-19 11:26:57,822 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:26:57,823 [Army81.Training]   البدء: 2026-03-19 11:26:57
+2026-03-19 11:26:57,823 [Army81.Training] ============================================================
+2026-03-19 11:26:57,826 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:26:57,827 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:28:02,056 [Army81.Training] ============================================================
+2026-03-19 11:28:02,056 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:28:02,057 [Army81.Training]   البدء: 2026-03-19 11:28:02
+2026-03-19 11:28:02,057 [Army81.Training] ============================================================
+2026-03-19 11:28:02,060 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:28:02,060 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:29:06,225 [Army81.Training] ============================================================
+2026-03-19 11:29:06,225 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:29:06,226 [Army81.Training]   البدء: 2026-03-19 11:29:06
+2026-03-19 11:29:06,226 [Army81.Training] ============================================================
+2026-03-19 11:29:06,230 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:29:06,231 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:30:10,445 [Army81.Training] ============================================================
+2026-03-19 11:30:10,446 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:30:10,447 [Army81.Training]   البدء: 2026-03-19 11:30:10
+2026-03-19 11:30:10,447 [Army81.Training] ============================================================
+2026-03-19 11:30:10,451 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:30:10,452 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:31:14,733 [Army81.Training] ============================================================
+2026-03-19 11:31:14,733 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:31:14,734 [Army81.Training]   البدء: 2026-03-19 11:31:14
+2026-03-19 11:31:14,735 [Army81.Training] ============================================================
+2026-03-19 11:31:14,739 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:31:14,740 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:32:19,002 [Army81.Training] ============================================================
+2026-03-19 11:32:19,003 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:32:19,003 [Army81.Training]   البدء: 2026-03-19 11:32:19
+2026-03-19 11:32:19,003 [Army81.Training] ============================================================
+2026-03-19 11:32:19,006 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:32:19,007 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:33:23,216 [Army81.Training] ============================================================
+2026-03-19 11:33:23,217 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:33:23,217 [Army81.Training]   البدء: 2026-03-19 11:33:23
+2026-03-19 11:33:23,217 [Army81.Training] ============================================================
+2026-03-19 11:33:23,223 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:33:23,223 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:34:27,438 [Army81.Training] ============================================================
+2026-03-19 11:34:27,439 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:34:27,440 [Army81.Training]   البدء: 2026-03-19 11:34:27
+2026-03-19 11:34:27,440 [Army81.Training] ============================================================
+2026-03-19 11:34:27,443 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:34:27,444 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:35:31,680 [Army81.Training] ============================================================
+2026-03-19 11:35:31,680 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:35:31,681 [Army81.Training]   البدء: 2026-03-19 11:35:31
+2026-03-19 11:35:31,682 [Army81.Training] ============================================================
+2026-03-19 11:35:31,688 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:35:31,688 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:36:35,963 [Army81.Training] ============================================================
+2026-03-19 11:36:35,964 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:36:35,964 [Army81.Training]   البدء: 2026-03-19 11:36:35
+2026-03-19 11:36:35,964 [Army81.Training] ============================================================
+2026-03-19 11:36:35,969 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:36:35,969 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:37:40,198 [Army81.Training] ============================================================
+2026-03-19 11:37:40,198 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:37:40,199 [Army81.Training]   البدء: 2026-03-19 11:37:40
+2026-03-19 11:37:40,199 [Army81.Training] ============================================================
+2026-03-19 11:37:40,205 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:37:40,205 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:38:44,565 [Army81.Training] ============================================================
+2026-03-19 11:38:44,565 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:38:44,565 [Army81.Training]   البدء: 2026-03-19 11:38:44
+2026-03-19 11:38:44,566 [Army81.Training] ============================================================
+2026-03-19 11:38:44,574 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:38:44,575 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:39:48,833 [Army81.Training] ============================================================
+2026-03-19 11:39:48,834 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:39:48,834 [Army81.Training]   البدء: 2026-03-19 11:39:48
+2026-03-19 11:39:48,834 [Army81.Training] ============================================================
+2026-03-19 11:39:48,838 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:39:48,838 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:40:54,056 [Army81.Training] ============================================================
+2026-03-19 11:40:54,058 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:40:54,058 [Army81.Training]   البدء: 2026-03-19 11:40:54
+2026-03-19 11:40:54,059 [Army81.Training] ============================================================
+2026-03-19 11:40:54,064 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:40:54,065 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:41:57,326 [Army81.Training] ============================================================
+2026-03-19 11:41:57,327 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:41:57,328 [Army81.Training]   البدء: 2026-03-19 11:41:57
+2026-03-19 11:41:57,328 [Army81.Training] ============================================================
+2026-03-19 11:41:57,332 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:41:57,333 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:43:02,567 [Army81.Training] ============================================================
+2026-03-19 11:43:02,568 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:43:02,568 [Army81.Training]   البدء: 2026-03-19 11:43:02
+2026-03-19 11:43:02,569 [Army81.Training] ============================================================
+2026-03-19 11:43:02,574 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:43:02,574 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:44:06,187 [Army81.Training] ============================================================
+2026-03-19 11:44:06,188 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:44:06,189 [Army81.Training]   البدء: 2026-03-19 11:44:06
+2026-03-19 11:44:06,189 [Army81.Training] ============================================================
+2026-03-19 11:44:06,201 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:44:06,202 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:45:10,829 [Army81.Training] ============================================================
+2026-03-19 11:45:10,829 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:45:10,830 [Army81.Training]   البدء: 2026-03-19 11:45:10
+2026-03-19 11:45:10,830 [Army81.Training] ============================================================
+2026-03-19 11:45:10,836 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:45:10,838 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:46:15,211 [Army81.Training] ============================================================
+2026-03-19 11:46:15,211 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:46:15,212 [Army81.Training]   البدء: 2026-03-19 11:46:15
+2026-03-19 11:46:15,212 [Army81.Training] ============================================================
+2026-03-19 11:46:15,218 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:46:15,218 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:47:20,610 [Army81.Training] ============================================================
+2026-03-19 11:47:20,611 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:47:20,611 [Army81.Training]   البدء: 2026-03-19 11:47:20
+2026-03-19 11:47:20,612 [Army81.Training] ============================================================
+2026-03-19 11:47:20,616 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:47:20,616 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:48:24,039 [Army81.Training] ============================================================
+2026-03-19 11:48:24,040 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:48:24,040 [Army81.Training]   البدء: 2026-03-19 11:48:24
+2026-03-19 11:48:24,041 [Army81.Training] ============================================================
+2026-03-19 11:48:24,046 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:48:24,047 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:49:29,308 [Army81.Training] ============================================================
+2026-03-19 11:49:29,309 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:49:29,310 [Army81.Training]   البدء: 2026-03-19 11:49:29
+2026-03-19 11:49:29,311 [Army81.Training] ============================================================
+2026-03-19 11:49:29,316 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:49:29,317 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:50:32,946 [Army81.Training] ============================================================
+2026-03-19 11:50:32,946 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:50:32,947 [Army81.Training]   البدء: 2026-03-19 11:50:32
+2026-03-19 11:50:32,951 [Army81.Training] ============================================================
+2026-03-19 11:50:32,962 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:50:32,965 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:51:37,488 [Army81.Training] ============================================================
+2026-03-19 11:51:37,489 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:51:37,489 [Army81.Training]   البدء: 2026-03-19 11:51:37
+2026-03-19 11:51:37,490 [Army81.Training] ============================================================
+2026-03-19 11:51:37,496 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:51:37,496 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:52:41,855 [Army81.Training] ============================================================
+2026-03-19 11:52:41,855 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:52:41,856 [Army81.Training]   البدء: 2026-03-19 11:52:41
+2026-03-19 11:52:41,857 [Army81.Training] ============================================================
+2026-03-19 11:52:41,861 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:52:41,862 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:53:46,278 [Army81.Training] ============================================================
+2026-03-19 11:53:46,279 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:53:46,280 [Army81.Training]   البدء: 2026-03-19 11:53:46
+2026-03-19 11:53:46,280 [Army81.Training] ============================================================
+2026-03-19 11:53:46,287 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:53:46,288 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:54:50,752 [Army81.Training] ============================================================
+2026-03-19 11:54:50,754 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:54:50,755 [Army81.Training]   البدء: 2026-03-19 11:54:50
+2026-03-19 11:54:50,756 [Army81.Training] ============================================================
+2026-03-19 11:54:50,762 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:54:50,762 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:55:55,205 [Army81.Training] ============================================================
+2026-03-19 11:55:55,207 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:55:55,208 [Army81.Training]   البدء: 2026-03-19 11:55:55
+2026-03-19 11:55:55,208 [Army81.Training] ============================================================
+2026-03-19 11:55:55,214 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:55:55,215 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:56:59,625 [Army81.Training] ============================================================
+2026-03-19 11:56:59,626 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:56:59,626 [Army81.Training]   البدء: 2026-03-19 11:56:59
+2026-03-19 11:56:59,627 [Army81.Training] ============================================================
+2026-03-19 11:56:59,633 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:56:59,633 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:58:04,122 [Army81.Training] ============================================================
+2026-03-19 11:58:04,124 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:58:04,125 [Army81.Training]   البدء: 2026-03-19 11:58:04
+2026-03-19 11:58:04,125 [Army81.Training] ============================================================
+2026-03-19 11:58:04,134 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:58:04,134 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 11:59:08,544 [Army81.Training] ============================================================
+2026-03-19 11:59:08,544 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 11:59:08,545 [Army81.Training]   البدء: 2026-03-19 11:59:08
+2026-03-19 11:59:08,545 [Army81.Training] ============================================================
+2026-03-19 11:59:08,551 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 11:59:08,552 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 12:00:11,675 [Army81.Training] ============================================================
+2026-03-19 12:00:11,677 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 12:00:11,678 [Army81.Training]   البدء: 2026-03-19 12:00:11
+2026-03-19 12:00:11,678 [Army81.Training] ============================================================
+2026-03-19 12:00:11,684 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 12:00:11,685 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 12:01:17,887 [Army81.Training] ============================================================
+2026-03-19 12:01:17,888 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 12:01:17,888 [Army81.Training]   البدء: 2026-03-19 12:01:17
+2026-03-19 12:01:17,891 [Army81.Training] ============================================================
+2026-03-19 12:01:17,897 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 12:01:17,898 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 12:02:20,974 [Army81.Training] ============================================================
+2026-03-19 12:02:20,974 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 12:02:20,974 [Army81.Training]   البدء: 2026-03-19 12:02:20
+2026-03-19 12:02:20,975 [Army81.Training] ============================================================
+2026-03-19 12:02:20,980 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 12:02:20,981 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 12:03:24,782 [Army81.Training] ============================================================
+2026-03-19 12:03:24,783 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 12:03:24,784 [Army81.Training]   البدء: 2026-03-19 12:03:24
+2026-03-19 12:03:24,784 [Army81.Training] ============================================================
+2026-03-19 12:03:24,788 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 12:03:24,789 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 12:04:28,889 [Army81.Training] ============================================================
+2026-03-19 12:04:28,890 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 12:04:28,890 [Army81.Training]   البدء: 2026-03-19 12:04:28
+2026-03-19 12:04:28,891 [Army81.Training] ============================================================
+2026-03-19 12:04:28,896 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 12:04:28,896 [Army81.Training] شغّل: python gateway/app.py
+2026-03-19 12:05:31,878 [Army81.Training] ============================================================
+2026-03-19 12:05:31,879 [Army81.Training]   🎖️ Army81 — دورة التدريب الذاتي 24 ساعة
+2026-03-19 12:05:31,885 [Army81.Training]   البدء: 2026-03-19 12:05:31
+2026-03-19 12:05:31,886 [Army81.Training] ============================================================
+2026-03-19 12:05:31,893 [Army81.Training] ❌ Gateway غير متاح: HTTPConnectionPool(host='localhost', port=8181): Max retries exceeded with url: /health (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8181): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-19 12:05:31,895 [Army81.Training] شغّل: python gateway/app.py

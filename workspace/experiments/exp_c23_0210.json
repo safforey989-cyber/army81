@@ -1,0 +1,20 @@
+{
+  "type": "reasoning",
+  "task": "إذا كان A > B و B > C و C > D، وكان D = 5، فما أقل قيمة ممكنة لـ A؟",
+  "agent1": {
+    "id": "A45",
+    "model": "claude-smart",
+    "score": 413
+  },
+  "agent2": {
+    "id": "A76",
+    "model": "claude-fast",
+    "score": 453
+  },
+  "winner": "A76",
+  "improved": true,
+  "improvement_pct": 9.7,
+  "knowledge_transferred": true,
+  "cycle": 23,
+  "timestamp": "2026-03-19T11:50:20.876458"
+}

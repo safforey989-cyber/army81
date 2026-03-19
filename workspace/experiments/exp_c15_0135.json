@@ -2,19 +2,19 @@
   "type": "multilingual",
   "task": "ترجم هذا النص للإنجليزية والفرنسية: الذكاء الاصطناعي يغير العالم",
   "agent1": {
-    "id": "A67",
-    "model": "gemini-pro",
-    "score": 471
+    "id": "A08",
+    "model": "deepseek-chat",
+    "score": 469
   },
   "agent2": {
-    "id": "A15",
-    "model": "deepseek-r1",
-    "score": 470
+    "id": "A42",
+    "model": "deepseek-chat",
+    "score": 472
   },
-  "winner": "A67",
+  "winner": "A42",
   "improved": true,
-  "improvement_pct": 0.2,
+  "improvement_pct": 0.6,
   "knowledge_transferred": true,
   "cycle": 15,
-  "timestamp": "2026-03-19T09:26:33.456606"
+  "timestamp": "2026-03-19T09:35:54.691640"
 }

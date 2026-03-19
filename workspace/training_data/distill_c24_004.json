@@ -1,0 +1,15 @@
+{
+  "problem": "صمّم GraphRAG مبسّط يستخرج كيانات وعلاقات من نص عربي. أعطِ الكود.",
+  "teacher": {
+    "id": "A21",
+    "model": "deepseek-r1",
+    "solution": "AgentResult(agent_id='A21', agent_name='وكيل تحليل سلوك الجماهير', task='فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\n\\nقواعد ذهبية من التجارب السابقة:\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 22 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\'A62\\', agen\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\'A62\\', agen\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\'A05\\', agen\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\n\\nصمّم GraphRAG مبسّط يستخرج كيانات وعلاقات من نص عربي. أعطِ الكود.', result='خطأ: table episodes has no column named task_type', status='error', model_used='deepseek-r1', elapsed_seconds=66.38, tokens_used=0, timestamp='2026-03-19T12:03:02.485640')"
+  },
+  "student": {
+    "id": "A25",
+    "model": "gemini-flash",
+    "solution": "AgentResult(agent_id='A25', agent_name='وكيل خبير التواصل', task='ادرس هذا الحل من خبير (وكيل تحليل سلوك الجماهير) وأعد كتابته بأسلوبك مع تحسين:\\n\\nAgentResult(agent_id=\\'A21\\', agent_name=\\'وكيل تحليل سلوك الجماهير\\', task=\\'فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\\\n\\\\nقواعد ذهبية من التجارب السابقة:\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 22 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\\\\\'A62\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\\\\\'A62\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\\\\\'A05\\\\\\', agen\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\n\\\\nصمّم GraphRAG مبسّط يستخرج كيانات وعلاقات من نص عربي. أعطِ الكود.\\', result=\\'خطأ: table episodes has no column named task_type\\', status=\\'error\\', model_used=\\'deepseek-r1\\', elapsed_seconds=66.38, tokens_used=0, timestamp=\\'2026-03-19T12:03:02.485640\\')', result='خطأ: table episodes has no column named task_type', status='error', model_used='gemini-flash', elapsed_seconds=64.75, tokens_used=0, timestamp='2026-03-19T12:04:07.236090')"
+  },
+  "cycle": 24,
+  "timestamp": "2026-03-19T12:04:07.236207"
+}

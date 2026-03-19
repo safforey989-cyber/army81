@@ -18,18 +18,18 @@
     },
     "A61": {
       "daily_budget": 50000,
-      "remaining": 18340,
-      "total_spent": 31660,
-      "tasks_completed": 7,
-      "efficiency_score": 95.47714285714285,
+      "remaining": 11114,
+      "total_spent": 38886,
+      "tasks_completed": 8,
+      "efficiency_score": 95.13925,
       "last_reset": "2026-03-18T21:41:58.662098"
     },
     "A54": {
       "daily_budget": 50000,
-      "remaining": 24494,
-      "total_spent": 25506,
-      "tasks_completed": 7,
-      "efficiency_score": 96.35628571428572,
+      "remaining": 21562,
+      "total_spent": 28438,
+      "tasks_completed": 8,
+      "efficiency_score": 96.44525,
       "last_reset": "2026-03-18T21:42:18.990642"
     },
     "A28": {
@@ -42,18 +42,18 @@
     },
     "A07": {
       "daily_budget": 50000,
-      "remaining": 42565,
-      "total_spent": 7435,
-      "tasks_completed": 2,
-      "efficiency_score": 96.2825,
+      "remaining": 11036,
+      "total_spent": 38964,
+      "tasks_completed": 59,
+      "efficiency_score": 99.33959322033898,
       "last_reset": "2026-03-18T21:46:35.955703"
     },
     "A77": {
       "daily_budget": 50000,
-      "remaining": 16715,
-      "total_spent": 33285,
-      "tasks_completed": 4,
-      "efficiency_score": 91.67875000000001,
+      "remaining": 8388,
+      "total_spent": 41612,
+      "tasks_completed": 5,
+      "efficiency_score": 91.6776,
       "last_reset": "2026-03-18T21:46:57.775350"
     },
     "A38": {
@@ -82,34 +82,34 @@
     },
     "A06": {
       "daily_budget": 50000,
-      "remaining": 39119,
-      "total_spent": 10881,
-      "tasks_completed": 3,
-      "efficiency_score": 96.373,
+      "remaining": 34820,
+      "total_spent": 15180,
+      "tasks_completed": 4,
+      "efficiency_score": 96.205,
       "last_reset": "2026-03-18T22:06:06.647898"
     },
     "A58": {
       "daily_budget": 50000,
-      "remaining": 44567,
-      "total_spent": 5433,
-      "tasks_completed": 1,
-      "efficiency_score": 94.56700000000001,
+      "remaining": 36873,
+      "total_spent": 13127,
+      "tasks_completed": 2,
+      "efficiency_score": 93.4365,
       "last_reset": "2026-03-18T22:09:03.071551"
     },
     "A60": {
       "daily_budget": 50000,
-      "remaining": 35318,
-      "total_spent": 14682,
-      "tasks_completed": 3,
-      "efficiency_score": 95.106,
+      "remaining": 31249,
+      "total_spent": 18751,
+      "tasks_completed": 4,
+      "efficiency_score": 95.31225,
       "last_reset": "2026-03-18T22:09:26.036789"
     },
     "A04": {
       "daily_budget": 50000,
-      "remaining": 426,
-      "total_spent": 49574,
-      "tasks_completed": 9,
-      "efficiency_score": 94.49177777777777,
+      "remaining": 41446,
+      "total_spent": 8554,
+      "tasks_completed": 2,
+      "efficiency_score": 95.723,
       "last_reset": "2026-03-18T22:09:44.608005"
     },
     "A51": {
@@ -138,10 +138,10 @@
     },
     "A50": {
       "daily_budget": 50000,
-      "remaining": 32048,
-      "total_spent": 17952,
-      "tasks_completed": 2,
-      "efficiency_score": 91.024,
+      "remaining": 23142,
+      "total_spent": 26858,
+      "tasks_completed": 3,
+      "efficiency_score": 91.04733333333334,
       "last_reset": "2026-03-18T22:12:24.755663"
     },
     "A05": {
@@ -162,26 +162,26 @@
     },
     "A02": {
       "daily_budget": 50000,
-      "remaining": 35162,
-      "total_spent": 14838,
-      "tasks_completed": 2,
-      "efficiency_score": 92.581,
+      "remaining": 28399,
+      "total_spent": 21601,
+      "tasks_completed": 3,
+      "efficiency_score": 92.79966666666667,
       "last_reset": "2026-03-18T23:45:21.182216"
     },
     "A75": {
       "daily_budget": 50000,
-      "remaining": 22010,
-      "total_spent": 27990,
-      "tasks_completed": 3,
-      "efficiency_score": 90.67,
+      "remaining": 13783,
+      "total_spent": 36217,
+      "tasks_completed": 4,
+      "efficiency_score": 90.94575,
       "last_reset": "2026-03-18T23:46:06.663825"
     },
     "A39": {
       "daily_budget": 50000,
-      "remaining": 37437,
-      "total_spent": 12563,
-      "tasks_completed": 2,
-      "efficiency_score": 93.7185,
+      "remaining": 30578,
+      "total_spent": 19422,
+      "tasks_completed": 3,
+      "efficiency_score": 93.526,
       "last_reset": "2026-03-18T23:47:49.147776"
     },
     "A79": {
@@ -226,10 +226,10 @@
     },
     "A73": {
       "daily_budget": 50000,
-      "remaining": 40671,
-      "total_spent": 9329,
-      "tasks_completed": 1,
-      "efficiency_score": 90.67099999999999,
+      "remaining": 19714,
+      "total_spent": 30286,
+      "tasks_completed": 3,
+      "efficiency_score": 89.90466666666667,
       "last_reset": "2026-03-19T00:46:51.834993"
     },
     "A78": {
@@ -322,18 +322,18 @@
     },
     "A55": {
       "daily_budget": 50000,
-      "remaining": 30383,
-      "total_spent": 19617,
-      "tasks_completed": 3,
-      "efficiency_score": 93.461,
+      "remaining": 25969,
+      "total_spent": 24031,
+      "tasks_completed": 4,
+      "efficiency_score": 93.99225,
       "last_reset": "2026-03-19T02:42:55.048852"
     },
     "A59": {
       "daily_budget": 50000,
-      "remaining": 38015,
-      "total_spent": 11985,
-      "tasks_completed": 3,
-      "efficiency_score": 96.005,
+      "remaining": 34908,
+      "total_spent": 15092,
+      "tasks_completed": 4,
+      "efficiency_score": 96.227,
       "last_reset": "2026-03-19T02:45:17.706608"
     },
     "A40": {
@@ -354,10 +354,10 @@
     },
     "A68": {
       "daily_budget": 50000,
-      "remaining": 44004,
-      "total_spent": 5996,
-      "tasks_completed": 1,
-      "efficiency_score": 94.004,
+      "remaining": 38811,
+      "total_spent": 11189,
+      "tasks_completed": 2,
+      "efficiency_score": 94.4055,
       "last_reset": "2026-03-19T03:02:42.455877"
     },
     "A71": {
@@ -394,10 +394,10 @@
     },
     "A25": {
       "daily_budget": 50000,
-      "remaining": 45141,
-      "total_spent": 4859,
-      "tasks_completed": 1,
-      "efficiency_score": 95.141,
+      "remaining": 41350,
+      "total_spent": 8650,
+      "tasks_completed": 2,
+      "efficiency_score": 95.675,
       "last_reset": "2026-03-19T03:07:46.996743"
     },
     "A69": {
@@ -1608,54 +1608,516 @@
       "timestamp": "2026-03-19T08:19:38.614062"
     },
     {
-      "agent_id": "A04",
-      "tokens": 5814,
+      "agent_id": "A02",
+      "tokens": 6763,
+      "task": "ابحث بعمق عن: self-improving AI systems recursive\n",
+      "remaining": 28399,
+      "timestamp": "2026-03-19T08:21:21.234856"
+    },
+    {
+      "agent_id": "A60",
+      "tokens": 4069,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 31249,
+      "timestamp": "2026-03-19T08:21:37.378344"
+    },
+    {
+      "agent_id": "A54",
+      "tokens": 2932,
+      "task": "ابحث بعمق عن: model merging techniques March 2026\n",
+      "remaining": 21562,
+      "timestamp": "2026-03-19T08:22:14.956527"
+    },
+    {
+      "agent_id": "A73",
+      "tokens": 8330,
+      "task": "ابحث بعمق عن: reinforcement learning from AI feedb",
+      "remaining": 32341,
+      "timestamp": "2026-03-19T08:22:46.046830"
+    },
+    {
+      "agent_id": "A73",
+      "tokens": 12627,
       "task": "ابحث بعمق عن: neural architecture search efficient",
-      "remaining": 35632,
-      "timestamp": "2026-03-19T08:39:52.865509"
+      "remaining": 19714,
+      "timestamp": "2026-03-19T08:27:46.019780"
     },
     {
-      "agent_id": "A04",
-      "tokens": 6746,
-      "task": "اكتب مقالاً علمياً عن الحوسبة الكمومية بالعربية ال",
-      "remaining": 28886,
-      "timestamp": "2026-03-19T08:50:51.835522"
+      "agent_id": "A77",
+      "tokens": 8327,
+      "task": "ابحث بعمق عن: continual learning catastrophic forg",
+      "remaining": 8388,
+      "timestamp": "2026-03-19T08:28:14.941322"
     },
     {
-      "agent_id": "A04",
-      "tokens": 8523,
+      "agent_id": "A68",
+      "tokens": 5193,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 38811,
+      "timestamp": "2026-03-19T08:28:42.630835"
+    },
+    {
+      "agent_id": "A50",
+      "tokens": 8906,
+      "task": "ادرس هذا الحل من خبير (وكيل استراتيجية توزيع الموا",
+      "remaining": 23142,
+      "timestamp": "2026-03-19T08:29:12.247777"
+    },
+    {
+      "agent_id": "A61",
+      "tokens": 7226,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 11114,
+      "timestamp": "2026-03-19T08:31:55.375732"
+    },
+    {
+      "agent_id": "A25",
+      "tokens": 3791,
+      "task": "ادرس هذا الحل من خبير (وكيل الحوسبة البيولوجية) وأ",
+      "remaining": 41350,
+      "timestamp": "2026-03-19T08:32:01.254160"
+    },
+    {
+      "agent_id": "A39",
+      "tokens": 6859,
+      "task": "ابحث بعمق عن: self-improving AI systems recursive\n",
+      "remaining": 30578,
+      "timestamp": "2026-03-19T08:33:20.120735"
+    },
+    {
+      "agent_id": "A58",
+      "tokens": 7694,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 36873,
+      "timestamp": "2026-03-19T08:34:21.989458"
+    },
+    {
+      "agent_id": "A59",
+      "tokens": 3107,
+      "task": "ابحث بعمق عن: AI agent memory optimization cycle 1",
+      "remaining": 34908,
+      "timestamp": "2026-03-19T08:34:38.613861"
+    },
+    {
+      "agent_id": "A06",
+      "tokens": 4299,
+      "task": "ادرس هذا الحل من خبير (وكيل الحوسبة البيولوجية) وأ",
+      "remaining": 34820,
+      "timestamp": "2026-03-19T08:36:06.805344"
+    },
+    {
+      "agent_id": "A55",
+      "tokens": 4414,
+      "task": "ابحث بعمق عن: tool-augmented language models\n\nأعطن",
+      "remaining": 25969,
+      "timestamp": "2026-03-19T08:36:51.701490"
+    },
+    {
+      "agent_id": "A75",
+      "tokens": 8227,
+      "task": "ابحث بعمق عن: graph neural networks knowledge repr",
+      "remaining": 13783,
+      "timestamp": "2026-03-19T08:37:26.314448"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 3529,
+      "task": "ابحث بعمق عن: graph neural networks knowledge repr",
+      "remaining": 39036,
+      "timestamp": "2026-03-19T08:38:07.662333"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 38536,
+      "timestamp": "2026-03-19T08:53:11.415452"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 38036,
+      "timestamp": "2026-03-19T08:57:14.070536"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 37536,
+      "timestamp": "2026-03-19T09:00:58.683432"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 37036,
+      "timestamp": "2026-03-19T09:11:24.732283"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
+      "remaining": 36536,
+      "timestamp": "2026-03-19T09:12:55.819980"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: model merging techniques March 2026\n",
+      "remaining": 36036,
+      "timestamp": "2026-03-19T09:20:00.317901"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: reinforcement learning from AI feedb",
+      "remaining": 35536,
+      "timestamp": "2026-03-19T09:20:06.378468"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 35036,
+      "timestamp": "2026-03-19T09:22:56.507543"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 34536,
+      "timestamp": "2026-03-19T09:30:42.226784"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 34036,
+      "timestamp": "2026-03-19T09:31:38.807532"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "لخّص مفهوم الذكاء الاصطناعي في 3 جمل",
+      "remaining": 33536,
+      "timestamp": "2026-03-19T09:44:48.560123"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
+      "remaining": 33036,
+      "timestamp": "2026-03-19T09:45:24.744202"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "اشرح آلية عمل مثبطات ACE في علاج ارتفاع ضغط الدم",
+      "remaining": 32536,
+      "timestamp": "2026-03-19T09:48:35.996773"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "حلّل ثغرات نظام يستخدم JWT tokens بدون expiry",
+      "remaining": 32036,
+      "timestamp": "2026-03-19T09:50:59.240182"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "حلّل مخاطر الاستثمار في البيتكوين مع أدلة",
+      "remaining": 31536,
+      "timestamp": "2026-03-19T09:55:16.751344"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
+      "remaining": 31036,
+      "timestamp": "2026-03-19T09:55:30.952821"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 30536,
+      "timestamp": "2026-03-19T09:58:13.807347"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: Arabic NLP state of art 2026\n\nأعطني:",
+      "remaining": 30036,
+      "timestamp": "2026-03-19T10:01:17.536086"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: reinforcement learning from AI feedb",
+      "remaining": 29536,
+      "timestamp": "2026-03-19T10:02:08.718662"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 29036,
+      "timestamp": "2026-03-19T10:02:43.946482"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 28536,
+      "timestamp": "2026-03-19T10:04:40.883037"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 28036,
+      "timestamp": "2026-03-19T10:05:11.048017"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: neural architecture search efficient",
+      "remaining": 27536,
+      "timestamp": "2026-03-19T10:06:05.368750"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "اخترع بروتوكول اتصال جديد بين وكلاء AI لم يُخترع م",
+      "remaining": 27036,
+      "timestamp": "2026-03-19T10:07:53.737127"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: self-improving AI systems recursive\n",
+      "remaining": 26536,
+      "timestamp": "2026-03-19T10:12:14.878605"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 26036,
+      "timestamp": "2026-03-19T10:21:02.506426"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "اخترع بروتوكول اتصال جديد بين وكلاء AI لم يُخترع م",
+      "remaining": 25536,
+      "timestamp": "2026-03-19T10:21:06.043001"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 25036,
+      "timestamp": "2026-03-19T10:21:10.634881"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: self-improving AI systems recursive\n",
+      "remaining": 24536,
+      "timestamp": "2026-03-19T10:25:41.863783"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 24036,
+      "timestamp": "2026-03-19T10:33:48.241266"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: self-improving AI systems recursive\n",
+      "remaining": 23536,
+      "timestamp": "2026-03-19T10:33:49.299350"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 23036,
+      "timestamp": "2026-03-19T10:34:37.249923"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: tool-augmented language models\n\nأعطن",
+      "remaining": 22536,
+      "timestamp": "2026-03-19T10:34:37.286099"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: latest AI agent frameworks 2026 auto",
+      "remaining": 22036,
+      "timestamp": "2026-03-19T10:35:26.668674"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
+      "remaining": 21536,
+      "timestamp": "2026-03-19T10:40:05.128919"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "حلّل ثغرات نظام يستخدم JWT tokens بدون expiry",
+      "remaining": 21036,
+      "timestamp": "2026-03-19T10:43:50.570848"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 20536,
+      "timestamp": "2026-03-19T10:47:15.950191"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: neural architecture search efficient",
+      "remaining": 20036,
+      "timestamp": "2026-03-19T10:49:23.410619"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 19536,
+      "timestamp": "2026-03-19T10:49:26.870349"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: model merging techniques March 2026\n",
+      "remaining": 19036,
+      "timestamp": "2026-03-19T10:56:12.291031"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: self-improving AI systems recursive\n",
+      "remaining": 18536,
+      "timestamp": "2026-03-19T10:56:38.575520"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 18036,
+      "timestamp": "2026-03-19T10:57:59.191129"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
       "task": "ابحث بعمق عن: synthetic data generation high quali",
-      "remaining": 20363,
-      "timestamp": "2026-03-19T08:55:49.635871"
+      "remaining": 17536,
+      "timestamp": "2026-03-19T11:00:33.826524"
     },
     {
-      "agent_id": "A04",
-      "tokens": 9083,
-      "task": "اخترع أداة تولّد أسئلة اختبار تلقائياً لأي موضوع ب",
-      "remaining": 11280,
-      "timestamp": "2026-03-19T08:57:36.102530"
-    },
-    {
-      "agent_id": "A04",
-      "tokens": 9854,
-      "task": "اخترع أداة تكتشف التكرار والتناقض في قاعدة معرفة. ",
-      "remaining": 1426,
-      "timestamp": "2026-03-19T08:59:11.599825"
-    },
-    {
-      "agent_id": "A04",
+      "agent_id": "A07",
       "tokens": 500,
-      "task": "اخترع أداة تكتشف التكرار والتناقض في قاعدة معرفة. ",
-      "remaining": 926,
-      "timestamp": "2026-03-19T09:16:45.515988"
+      "task": "اكتب دالة Python تحسب التشابه الدلالي بين جملتين",
+      "remaining": 17036,
+      "timestamp": "2026-03-19T11:02:20.757082"
     },
     {
-      "agent_id": "A04",
+      "agent_id": "A07",
       "tokens": 500,
-      "task": "اخترع أداة Python تحلّل أداء أي وكيل من سجل مهامه ",
-      "remaining": 426,
-      "timestamp": "2026-03-19T09:27:41.682966"
+      "task": "إذا كان A > B و B > C و C > D، وكان D = 5، فما أقل",
+      "remaining": 16536,
+      "timestamp": "2026-03-19T11:02:58.674218"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: multi-agent collaboration breakthrou",
+      "remaining": 16036,
+      "timestamp": "2026-03-19T11:07:31.599030"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: tool-augmented language models\n\nأعطن",
+      "remaining": 15536,
+      "timestamp": "2026-03-19T11:08:50.654078"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 15036,
+      "timestamp": "2026-03-19T11:11:40.530276"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: synthetic data generation high quali",
+      "remaining": 14536,
+      "timestamp": "2026-03-19T11:15:51.972217"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 14036,
+      "timestamp": "2026-03-19T11:25:18.165844"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 13536,
+      "timestamp": "2026-03-19T11:36:47.927905"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "إذا كان A > B و B > C و C > D، وكان D = 5، فما أقل",
+      "remaining": 13036,
+      "timestamp": "2026-03-19T11:36:49.699177"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\n\n",
+      "remaining": 12536,
+      "timestamp": "2026-03-19T11:38:29.059898"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: AI agent memory optimization cycle 2",
+      "remaining": 12036,
+      "timestamp": "2026-03-19T11:50:22.539905"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: tool-augmented language models\n\nأعطن",
+      "remaining": 11536,
+      "timestamp": "2026-03-19T11:51:16.708007"
+    },
+    {
+      "agent_id": "A07",
+      "tokens": 500,
+      "task": "ابحث بعمق عن: continual learning catastrophic forg",
+      "remaining": 11036,
+      "timestamp": "2026-03-19T11:53:17.681413"
     }
   ],
-  "updated_at": "2026-03-19T09:27:41.682984"
+  "updated_at": "2026-03-19T11:53:17.681439"
 }

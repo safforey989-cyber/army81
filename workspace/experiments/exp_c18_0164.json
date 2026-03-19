@@ -1,0 +1,20 @@
+{
+  "type": "security",
+  "task": "حلّل ثغرات نظام يستخدم JWT tokens بدون expiry",
+  "agent1": {
+    "id": "A04",
+    "model": "perplexity-fast",
+    "score": 1332
+  },
+  "agent2": {
+    "id": "A11",
+    "model": "qwen-72b",
+    "score": 464
+  },
+  "winner": "A04",
+  "improved": true,
+  "improvement_pct": 187.1,
+  "knowledge_transferred": true,
+  "cycle": 18,
+  "timestamp": "2026-03-19T10:07:56.074318"
+}

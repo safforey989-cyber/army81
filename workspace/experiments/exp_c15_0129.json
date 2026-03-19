@@ -2,19 +2,19 @@
   "type": "arabic",
   "task": "اكتب مقالاً علمياً عن الحوسبة الكمومية بالعربية الفصحى",
   "agent1": {
-    "id": "A75",
-    "model": "claude-fast",
-    "score": 465
+    "id": "A58",
+    "model": "grok-mini",
+    "score": 466
   },
   "agent2": {
-    "id": "A01",
-    "model": "claude-smart",
-    "score": 508
+    "id": "A71",
+    "model": "gemini-pro",
+    "score": 468
   },
-  "winner": "A01",
+  "winner": "A71",
   "improved": true,
-  "improvement_pct": 9.2,
+  "improvement_pct": 0.4,
   "knowledge_transferred": true,
   "cycle": 15,
-  "timestamp": "2026-03-19T09:25:24.258605"
+  "timestamp": "2026-03-19T09:34:42.266318"
 }

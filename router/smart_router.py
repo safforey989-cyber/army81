@@ -38,6 +38,57 @@ ROUTING_MAP = {
         "استراتيجية", "رؤية", "تنسيق", "أولويات", "نزاع", "تقييم شامل",
         "strategy", "vision", "coordination", "priority", "evaluation"
     ],
+    # === v25: 10 فئات جديدة ===
+    "cat8_evolution": [
+        "تقطير", "تطور ذاتي", "دمج نماذج", "بيانات اصطناعية", "تحسين خوارزمي",
+        "استنساخ", "تبلور", "graphrag", "تكاثر",
+        "distillation", "evolution", "finetune", "qlora", "synthetic", "mergekit"
+    ],
+    "cat9_execution": [
+        "تنفيذ", "أتمتة", "متصفح", "سطح مكتب", "جدولة", "خادم",
+        "قاعدة بيانات", "شراء", "حساب",
+        "automation", "browser", "desktop", "devops", "scheduler", "n8n"
+    ],
+    "cat10_engineering": [
+        "هندسة برمجيات", "مراجعة كود", "باغ", "اختبار", "فرونت", "باك إند",
+        "نشر مستمر", "توثيق", "github",
+        "engineering", "code review", "bug", "test", "frontend", "backend", "cicd"
+    ],
+    "cat11_creative": [
+        "إبداع", "صورة", "فيديو", "صوت", "تصميم", "موسيقى", "رسوم متحركة",
+        "سيناريو", "عرض تقديمي", "هوية بصرية",
+        "creative", "image", "video", "voice", "design", "music", "3d", "brand"
+    ],
+    "cat12_finance": [
+        "تداول", "بلوكشين", "عقد ذكي", "ديفاي", "كمي", "رموز",
+        "مشاعر سوق", "تدقيق مالي", "تمويل جماعي", "ضرائب",
+        "trading", "blockchain", "defi", "quant", "tokenomics", "audit", "crypto"
+    ],
+    "cat13_osint": [
+        "استخبارات مفتوحة", "ويب عميق", "تحقق", "تتبع أصول", "براءات",
+        "تسريبات", "منافسة", "استخراج بيانات",
+        "osint", "deep web", "fact check", "tracking", "patent", "competitive"
+    ],
+    "cat14_health": [
+        "دواء جديد", "جينوم", "تشخيص طبي", "أشعة", "تجارب سريرية",
+        "صحة نفسية", "وباء", "تغذية", "تكنولوجيا حيوية",
+        "drug discovery", "genomic", "diagnosis", "radiology", "clinical", "epidemic"
+    ],
+    "cat15_legal": [
+        "عقد قانوني", "ملكية فكرية", "امتثال", "تحكيم", "جريمة إلكترونية",
+        "قانون ذكاء اصطناعي", "هجرة", "عقارات",
+        "contract", "intellectual property", "compliance", "arbitration", "cyber law"
+    ],
+    "cat16_education": [
+        "منهج", "تعليم", "تدريب", "تقييم أداء", "لغات", "مهني",
+        "صعوبات تعلم", "إرشاد", "ألعاب تعليمية",
+        "curriculum", "tutor", "training", "evaluation", "language", "edtech"
+    ],
+    "cat17_cosmic": [
+        "كوني", "نواة", "توجيه كمي", "طاقة", "محاكاة عوالم", "وعي",
+        "فيزياء كم", "ضوئي", "تردد", "جُمَّل", "أرشيف", "شفرات", "هندسة مقدسة",
+        "cosmic", "quantum", "frequency", "gematria", "sacred geometry", "dream"
+    ],
 }
 
 

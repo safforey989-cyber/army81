@@ -278,6 +278,17 @@ CATEGORY_TOOLS = {
     "cat4_management": ["web_search", "analyze_data", "read_file", "write_file", "remember"],
     "cat5_behavior": ["web_search", "deep_search", "wiki_search", "research"],
     "cat6_leadership": ["web_search", "deep_search", "research", "market_data", "remember", "recall"],
+    "cat7_new":          ["analyze_data", "remember", "recall", "semantic_remember", "semantic_recall", "web_search"],
+    "cat8_evolution":    ["analyze_data", "remember", "recall", "semantic_remember", "semantic_recall", "web_search", "run_code"],
+    "cat9_execution":    ["run_code", "web_search", "read_file", "write_file", "github_search"],
+    "cat10_engineering": ["run_code", "github_search", "read_file", "write_file", "web_search", "deep_search"],
+    "cat11_creative":    ["web_search", "deep_search", "remember", "semantic_remember", "wiki_search"],
+    "cat12_finance":     ["market_data", "web_search", "analyze_data", "deep_search", "remember"],
+    "cat13_osint":       ["web_search", "deep_search", "analyze_data", "remember", "semantic_recall"],
+    "cat14_health":      ["pubmed_search", "arxiv_search", "web_search", "deep_search", "remember"],
+    "cat15_legal":       ["web_search", "deep_search", "wiki_search", "remember", "semantic_remember"],
+    "cat16_education":   ["web_search", "wiki_search", "deep_search", "remember", "semantic_remember"],
+    "cat17_cosmic":      ["web_search", "deep_search", "arxiv_search", "remember", "semantic_remember", "analyze_data"],
 }
 
 

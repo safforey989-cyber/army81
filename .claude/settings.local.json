@@ -97,7 +97,17 @@
       "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f''''Agents: {len\\(d.get\\(\"\"agents\"\",[]\\)\\)}''''\\); print\\(json.dumps\\(d.get\\(''''agents'''',[]\\)[0],indent=2,ensure_ascii=False\\)[:300]\\)\")",
       "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); evts=d.get\\(''''events'''',[]\\); print\\(f''''Events: {len\\(evts\\)}''''\\); [print\\(f''''  {e[\"\"event_type\"\"]:20s} {e[\"\"from_agent\"\"]:6s}''''\\) for e in evts[-5:]]\")",
       "Bash(curl.exe -s --connect-timeout 3 http://localhost:8181/health)",
-      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d,indent=2,ensure_ascii=False\\)\\)\")"
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d,indent=2,ensure_ascii=False\\)\\)\")",
+      "Bash(python -m pytest tests/test_system.py -v --tb=short)",
+      "Bash(for cat:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/saffo/army81/$cat/**)",
+      "Bash(xargs -I {} basename {} .json)",
+      "Bash(ls C:/Users/saffo/army81/agents/cat1_science/*.json)",
+      "Bash(python scripts/generate_191_agents.py)",
+      "Bash(python scripts/cleanup_data.py)",
+      "Bash(taskkill //PID 25444 //F)",
+      "Bash(taskkill //PID 27804 //F)"
     ]
   }
 }

@@ -1,0 +1,20 @@
+{
+  "type": "speed",
+  "task": "لخّص مفهوم الذكاء الاصطناعي في 3 جمل",
+  "agent1": {
+    "id": "A34",
+    "model": "deepseek-r1",
+    "score": 459
+  },
+  "agent2": {
+    "id": "A68",
+    "model": "gemini-pro",
+    "score": 464
+  },
+  "winner": "A68",
+  "improved": true,
+  "improvement_pct": 1.1,
+  "knowledge_transferred": true,
+  "cycle": 18,
+  "timestamp": "2026-03-19T10:05:48.929551"
+}

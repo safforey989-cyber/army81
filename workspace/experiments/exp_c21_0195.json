@@ -1,0 +1,20 @@
+{
+  "type": "multilingual",
+  "task": "ترجم هذا النص للإنجليزية والفرنسية: الذكاء الاصطناعي يغير العالم",
+  "agent1": {
+    "id": "A45",
+    "model": "claude-smart",
+    "score": 469
+  },
+  "agent2": {
+    "id": "A10",
+    "model": "gemini-pro",
+    "score": 469
+  },
+  "winner": "A45",
+  "improved": true,
+  "improvement_pct": 0.0,
+  "knowledge_transferred": true,
+  "cycle": 21,
+  "timestamp": "2026-03-19T10:55:23.651754"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "security",
+  "task": "حلّل ثغرات نظام يستخدم JWT tokens بدون expiry",
+  "agent1": {
+    "id": "A54",
+    "model": "gemini-think",
+    "score": 465
+  },
+  "agent2": {
+    "id": "A14",
+    "model": "deepseek-chat",
+    "score": 424
+  },
+  "winner": "A54",
+  "improved": true,
+  "improvement_pct": 9.7,
+  "knowledge_transferred": true,
+  "cycle": 22,
+  "timestamp": "2026-03-19T11:08:30.055917"
+}

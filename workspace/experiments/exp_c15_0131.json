@@ -2,19 +2,19 @@
   "type": "creativity",
   "task": "اخترع بروتوكول اتصال جديد بين وكلاء AI لم يُخترع من قبل",
   "agent1": {
-    "id": "A61",
-    "model": "deepseek-r1",
-    "score": 428
+    "id": "A67",
+    "model": "gemini-pro",
+    "score": 469
   },
   "agent2": {
-    "id": "A52",
-    "model": "deepseek-r1",
-    "score": 466
+    "id": "A04",
+    "model": "perplexity-fast",
+    "score": 1374
   },
-  "winner": "A52",
+  "winner": "A04",
   "improved": true,
-  "improvement_pct": 8.9,
+  "improvement_pct": 193.0,
   "knowledge_transferred": true,
   "cycle": 15,
-  "timestamp": "2026-03-19T09:25:39.837675"
+  "timestamp": "2026-03-19T09:35:13.251502"
 }
