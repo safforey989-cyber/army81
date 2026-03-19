@@ -210,8 +210,8 @@ class ExponentialEvolution:
             except Exception as e:
                 logger.error(f"Crystallization phase error: {e}")
 
-            # ─── مضاعفة المُضاعِف ───
-            self.multiplier = min(self.multiplier * 1.3, 20.0)  # حد أقصى 20x
+            # ─── مضاعف ذكي — يعتمد على الأداء الحقيقي ───
+            self.multiplier = self._compute_smart_multiplier(cycle_results)
 
             # ─── حفظ الحالة ───
             self._save_state()
@@ -254,6 +254,85 @@ class ExponentialEvolution:
     # ═══════════════════════════════════════════════════
     # المراحل التفصيلية
     # ═══════════════════════════════════════════════════
+
+    def _compute_smart_multiplier(self, cycle_results: Dict) -> float:
+        """
+        المضاعف الذكي — يُحسب من الأداء الحقيقي وليس رقم ثابت
+        كلما نجح النظام أكثر → multiplier أعلى
+        كلما فشل → يبطئ ويحسّن قبل التضاعف
+        """
+        score = 1.0  # الأساس
+
+        # 1. نسبة نجاح التجارب (0-0.5)
+        exp = cycle_results.get("experiments", {})
+        exp_total = exp.get("experiments_run", 0)
+        exp_success = exp.get("successful", 0)
+        if exp_total > 0:
+            success_rate = exp_success / exp_total
+            score += success_rate * 0.5  # حد أقصى +0.5
+        else:
+            score += 0.1  # لم تُجرَ تجارب = تقدّم بطيء
+
+        # 2. نقل المعرفة (0-0.3) — هل الفائز علّم الخاسر؟
+        transfers = exp.get("knowledge_transfers", 0)
+        score += min(transfers * 0.06, 0.3)
+
+        # 3. القواعد الذهبية من الدماغ المشترك (0-0.3)
+        try:
+            brain_path = Path("workspace/shared_brain.json")
+            if brain_path.exists():
+                brain = json.loads(brain_path.read_text(encoding="utf-8"))
+                rules = len(brain.get("golden_rules", []))
+                score += min(rules * 0.02, 0.3)
+        except Exception:
+            pass
+
+        # 4. عمق الذاكرة المتراكمة (0-0.4)
+        try:
+            import sqlite3
+            db = Path("workspace/episodic_memory.db")
+            if db.exists():
+                conn = sqlite3.connect(str(db))
+                episodes = conn.execute("SELECT COUNT(*) FROM episodes").fetchone()[0]
+                conn.close()
+                # كل 200 حلقة = +0.1 (حد 0.4)
+                score += min(episodes / 2000, 0.4)
+        except Exception:
+            pass
+
+        # 5. المهارات المستنسخة (0-0.2)
+        skills_dir = Path("workspace/cloned_skills")
+        if skills_dir.exists():
+            skills = len(list(skills_dir.glob("*")))
+            score += min(skills * 0.005, 0.2)
+
+        # 6. جودة المعارك (0-0.2)
+        battles = cycle_results.get("battles", {})
+        battle_rounds = battles.get("rounds", 0)
+        if battle_rounds > 0:
+            score += min(battle_rounds * 0.05, 0.2)
+
+        # 7. التقطير (0-0.2)
+        distill = cycle_results.get("distillation", {})
+        distill_count = distill.get("examples_saved", 0)
+        score += min(distill_count * 0.03, 0.2)
+
+        # ─── حساب المضاعف النهائي ───
+        # score يتراوح من 1.0 إلى 3.1
+        new_multiplier = self.multiplier * (score / 1.5)  # تطبيع
+
+        # حدود الأمان
+        new_multiplier = max(new_multiplier, 1.0)   # لا ينزل عن 1
+        new_multiplier = min(new_multiplier, 50.0)   # حد أقصى 50x
+
+        # إذا فشلت أكثر من 50% من التجارب → تراجع
+        if exp_total > 0 and (exp_success / exp_total) < 0.5:
+            new_multiplier = max(self.multiplier * 0.8, 1.0)
+            logger.warning(f"⚠️ Success rate low ({exp_success}/{exp_total}) — multiplier reduced to {new_multiplier:.1f}x")
+        else:
+            logger.info(f"📈 Smart multiplier: {self.multiplier:.1f}x → {new_multiplier:.1f}x (score: {score:.2f})")
+
+        return round(new_multiplier, 2)
 
     def _smart_score(self, text: str, task_type: str, metric: str) -> int:
         """تقييم ذكي متعدد الأبعاد — بدل مجرد طول النص"""
