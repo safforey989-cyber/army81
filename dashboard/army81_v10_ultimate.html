@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Army81 — Ultimate Self-Evolving System v10</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cairo:wght@300;400;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#000208;overflow:hidden;font-family:'Cairo',sans-serif;color:#e0e0e0;direction:rtl;}
+#canvas3d{position:fixed;top:0;left:0;z-index:1;}
+
+/* TOP BAR */
+#topBar{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:5px 12px;background:rgba(0,2,8,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,107,107,0.2);}
+#topBar .logo{font-family:'Orbitron';font-weight:900;font-size:17px;color:#FFD700;text-shadow:0 0 20px rgba(255,215,0,0.5);}
+#topBar .logo .ver{color:#FF6B6B;font-size:9px;margin-right:6px;letter-spacing:1px;}
+#topBar .logo .pulse-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#39FF14;margin-right:6px;animation:livePulse 1s infinite;}
+@keyframes livePulse{0%,100%{box-shadow:0 0 4px #39FF14;}50%{box-shadow:0 0 12px #39FF14,0 0 24px #39FF14;}}
+.top-stats{display:flex;gap:8px;font-size:9px;font-family:'Orbitron';}
+.top-stats .stat{display:flex;align-items:center;gap:2px;padding:2px 6px;border-radius:4px;background:rgba(255,255,255,0.02);}
+.top-stats .stat .label{color:#555;}
+.top-stats .stat .val{color:#00FFFF;font-weight:700;}
+.top-stats .stat .val.warn{color:#FFD700;}
+.top-stats .stat .val.hot{color:#FF6B6B;}
+.toolbar{display:flex;gap:4px;flex-wrap:wrap;}
+.toolbar button{background:rgba(0,255,255,0.04);border:1px solid rgba(0,255,255,0.12);color:#bbb;padding:3px 8px;border-radius:6px;cursor:pointer;font-size:9px;font-family:'Cairo';transition:all 0.3s;}
+.toolbar button:hover,.toolbar button.active{background:rgba(0,255,255,0.15);border-color:#00FFFF;color:#fff;box-shadow:0 0 10px rgba(0,255,255,0.2);}
+.toolbar button.danger{border-color:rgba(255,107,107,0.3);}
+.toolbar button.danger:hover{background:rgba(255,107,107,0.15);border-color:#FF6B6B;box-shadow:0 0 10px rgba(255,107,107,0.2);}
+
+/* EVOLUTION TIMELINE */
+#evoTimeline{position:fixed;bottom:0;left:0;right:0;z-index:100;background:rgba(0,2,8,0.94);backdrop-filter:blur(16px);border-top:1px solid rgba(255,107,107,0.15);padding:5px 14px;}
+.evo-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:3px;}
+.evo-title{font-family:'Orbitron';font-size:9px;color:#FF6B6B;}
+.evo-day-label{font-family:'Orbitron';font-size:8px;color:#FFD700;}
+.evo-bar{width:100%;height:5px;background:rgba(255,255,255,0.03);border-radius:3px;overflow:hidden;position:relative;}
+.evo-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,#FF6B6B,#FFD700,#39FF14,#00FFFF,#BF00FF);transition:width 1s;position:relative;}
+.evo-fill::after{content:'';position:absolute;right:-1px;top:-3px;width:8px;height:11px;background:#fff;border-radius:50%;box-shadow:0 0 8px #fff,0 0 16px #00FFFF;}
+.evo-phases{display:flex;justify-content:space-between;margin-top:2px;font-size:7px;color:#444;}
+.evo-phases span.active{color:#FFD700;font-weight:700;}
+.evo-phases span.done{color:#39FF14;}
+
+/* RIGHT PANEL - محرك التطور */
+#evoPanel{position:fixed;top:40px;right:8px;z-index:90;background:rgba(0,2,12,0.94);backdrop-filter:blur(18px);border:1px solid rgba(255,107,107,0.12);border-radius:12px;padding:10px;width:250px;max-height:calc(100vh - 90px);overflow-y:auto;scrollbar-width:thin;scrollbar-color:rgba(255,107,107,0.2) transparent;}
+#evoPanel::-webkit-scrollbar{width:3px;}
+#evoPanel::-webkit-scrollbar-thumb{background:rgba(255,107,107,0.3);border-radius:3px;}
+#evoPanel h3{font-family:'Orbitron';font-size:10px;color:#FF6B6B;margin-bottom:6px;text-align:center;border-bottom:1px solid rgba(255,107,107,0.08);padding-bottom:4px;}
+.evo-section{margin-bottom:6px;padding:6px;background:rgba(255,255,255,0.015);border-radius:6px;border:1px solid rgba(255,255,255,0.02);}
+.evo-section-title{font-family:'Orbitron';font-size:8px;color:#777;margin-bottom:4px;display:flex;align-items:center;gap:3px;}
+.evo-section-title .dot{width:5px;height:5px;border-radius:50%;animation:dotPulse 1.5s infinite;}
+@keyframes dotPulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.6);}}
+.evo-metric{display:flex;justify-content:space-between;padding:1px 0;font-size:9px;}
+.evo-metric .m-label{color:#666;}
+.evo-metric .m-val{font-family:'Orbitron';font-size:8px;font-weight:700;}
+.evo-mini-bar{width:100%;height:2px;background:rgba(255,255,255,0.03);border-radius:1px;margin:2px 0;overflow:hidden;}
+.evo-mini-fill{height:100%;border-radius:1px;transition:width 0.5s;}
+
+/* LEFT PANEL - AutoResearch + Self-Play */
+#leftPanel{position:fixed;top:40px;left:8px;z-index:90;background:rgba(0,2,12,0.94);backdrop-filter:blur(18px);border:1px solid rgba(0,191,255,0.12);border-radius:12px;padding:10px;width:270px;max-height:calc(100vh - 90px);overflow-y:auto;scrollbar-width:thin;display:none;}
+#leftPanel h3{font-family:'Orbitron';font-size:10px;color:#00BFFF;margin-bottom:6px;text-align:center;}
+.panel-tabs{display:flex;gap:3px;margin-bottom:6px;}
+.panel-tabs button{flex:1;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);color:#777;padding:3px;border-radius:4px;cursor:pointer;font-size:8px;font-family:'Orbitron';transition:all 0.3s;}
+.panel-tabs button.active{background:rgba(0,191,255,0.1);border-color:#00BFFF;color:#00BFFF;}
+.tab-content{display:none;}
+.tab-content.active{display:block;}
+
+/* Experiment items */
+.exp-item{display:flex;gap:4px;padding:4px 5px;margin-bottom:2px;border-radius:5px;border-right:2px solid;font-size:9px;animation:expSlide 0.3s ease-out;}
+.exp-item.success{border-color:#39FF14;background:rgba(57,255,20,0.03);}
+.exp-item.fail{border-color:#FF3366;background:rgba(255,51,102,0.03);}
+.exp-item.running{border-color:#00BFFF;background:rgba(0,191,255,0.03);}
+.exp-body{flex:1;min-width:0;}
+.exp-title{font-size:8px;color:#aaa;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.exp-metric{font-family:'Orbitron';font-size:7px;}
+.exp-metric.up{color:#39FF14;}.exp-metric.down{color:#FF3366;}
+@keyframes expSlide{from{opacity:0;transform:translateX(15px);}to{opacity:1;transform:translateX(0);}}
+
+/* Self-Play Arena */
+.arena-box{padding:6px;background:rgba(255,255,255,0.02);border-radius:6px;margin-bottom:4px;}
+.arena-header{display:flex;justify-content:space-between;font-family:'Orbitron';font-size:8px;margin-bottom:4px;}
+.arena-red{color:#FF3366;}.arena-blue{color:#00BFFF;}
+.arena-score{display:flex;justify-content:center;gap:8px;font-family:'Orbitron';font-size:14px;font-weight:900;margin:4px 0;}
+.arena-vs{color:#555;font-size:10px;}
+.arena-bar{height:4px;background:rgba(255,255,255,0.04);border-radius:2px;overflow:hidden;display:flex;}
+.arena-bar .red-fill{background:linear-gradient(90deg,#FF3366,#FF6B6B);transition:width 0.5s;}
+.arena-bar .blue-fill{background:linear-gradient(90deg,#00BFFF,#39FF14);transition:width 0.5s;}
+.arena-log{max-height:80px;overflow-y:auto;font-size:8px;color:#888;scrollbar-width:thin;}
+
+/* OpenHands Panel */
+.code-panel{padding:6px;background:rgba(0,0,0,0.3);border-radius:6px;font-family:'Courier New',monospace;font-size:8px;color:#39FF14;max-height:100px;overflow-y:auto;scrollbar-width:thin;line-height:1.4;}
+.code-line{padding:1px 0;}
+.code-line .ln{color:#444;margin-left:8px;}
+.code-line .kw{color:#FF6EC7;}.code-line .fn{color:#00BFFF;}.code-line .str{color:#FFD700;}.code-line .cm{color:#555;}
+
+/* CUA Browser Panel */
+.cua-panel{padding:6px;background:rgba(255,255,255,0.02);border-radius:6px;}
+.cua-browser{width:100%;height:60px;background:#111;border-radius:4px;border:1px solid rgba(255,255,255,0.05);position:relative;overflow:hidden;}
+.cua-url{width:100%;padding:2px 6px;background:rgba(0,0,0,0.5);font-size:7px;color:#aaa;border-bottom:1px solid rgba(255,255,255,0.05);font-family:'Orbitron';}
+.cua-cursor{position:absolute;width:6px;height:6px;border-radius:50%;background:#FF6B6B;box-shadow:0 0 8px #FF6B6B;transition:all 0.3s;z-index:5;}
+.cua-content{padding:4px;font-size:6px;color:#666;}
+
+/* EVENT LOG */
+#eventLog{position:fixed;top:40px;left:8px;z-index:89;width:270px;max-height:55vh;background:rgba(0,2,12,0.92);backdrop-filter:blur(14px);border:1px solid rgba(0,255,255,0.1);border-radius:10px;padding:8px;overflow-y:auto;font-size:10px;scrollbar-width:thin;display:none;}
+#eventLog h3{font-family:'Orbitron';font-size:10px;color:#00FFFF;margin-bottom:6px;text-align:center;}
+.event-item{display:flex;gap:4px;padding:4px 5px;margin-bottom:3px;border-radius:5px;border-left:2px solid;animation:evSlide 0.3s ease-out;font-size:9px;}
+.event-item.task{border-color:#00FFFF;background:rgba(0,255,255,0.03);}
+.event-item.success{border-color:#39FF14;background:rgba(57,255,20,0.03);}
+.event-item.error{border-color:#FF3366;background:rgba(255,51,102,0.03);}
+.event-item.data{border-color:#FFD700;background:rgba(255,215,0,0.03);}
+.event-item.memory{border-color:#BF00FF;background:rgba(191,0,255,0.03);}
+.event-item.command{border-color:#FFD700;background:rgba(255,215,0,0.04);}
+.event-item.evolution{border-color:#FF6B6B;background:rgba(255,107,107,0.04);}
+.event-item.distill{border-color:#00BFFF;background:rgba(0,191,255,0.03);}
+.event-item.spider{border-color:#39FF14;background:rgba(57,255,20,0.03);}
+.event-item.selfplay{border-color:#FF6EC7;background:rgba(255,110,199,0.03);}
+.event-item.code{border-color:#BF00FF;background:rgba(191,0,255,0.03);}
+.event-item.cua{border-color:#FFD700;background:rgba(255,215,0,0.03);}
+.event-item.synth{border-color:#00FFFF;background:rgba(0,255,255,0.03);}
+.ev-body{flex:1;min-width:0;}
+.ev-title{font-weight:700;font-size:9px;color:#bbb;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ev-desc{font-size:8px;color:#777;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ev-time{font-family:'Orbitron';font-size:7px;color:#444;min-width:40px;text-align:left;}
+@keyframes evSlide{from{opacity:0;transform:translateX(-15px);}to{opacity:1;transform:translateX(0);}}
+
+/* VIEW MODES */
+#viewModes{position:fixed;bottom:42px;left:50%;transform:translateX(-50%);z-index:90;display:flex;gap:3px;background:rgba(0,2,12,0.88);backdrop-filter:blur(12px);border:1px solid rgba(0,255,255,0.1);border-radius:16px;padding:3px 6px;}
+#viewModes button{background:none;border:1px solid rgba(255,255,255,0.06);color:#666;padding:2px 8px;border-radius:12px;cursor:pointer;font-size:8px;font-family:'Cairo';transition:all 0.3s;}
+#viewModes button.active{background:rgba(0,255,255,0.12);border-color:#00FFFF;color:#00FFFF;}
+
+/* CHAT */
+#chatBox{display:none;position:fixed;bottom:70px;right:8px;z-index:95;width:320px;max-height:45vh;background:rgba(0,2,12,0.94);backdrop-filter:blur(16px);border:1px solid rgba(255,215,0,0.15);border-radius:12px;overflow:hidden;}
+#chatBox h3{font-family:'Orbitron';font-size:11px;color:#FFD700;padding:8px 12px;border-bottom:1px solid rgba(255,215,0,0.08);text-align:center;}
+#chatMessages{padding:8px;max-height:200px;overflow-y:auto;font-size:10px;scrollbar-width:thin;}
+.chat-msg{padding:5px 8px;margin-bottom:4px;border-radius:6px;font-size:10px;}
+.chat-msg.user{background:rgba(0,255,255,0.06);border:1px solid rgba(0,255,255,0.1);text-align:right;}
+.chat-msg.system{background:rgba(255,215,0,0.04);border:1px solid rgba(255,215,0,0.08);font-size:9px;color:#999;}
+#chatInput{width:100%;padding:7px 10px;background:rgba(0,0,0,0.4);border:none;border-top:1px solid rgba(255,215,0,0.08);color:#e0e0e0;font-family:'Cairo';font-size:11px;outline:none;}
+#chatTarget{width:100%;padding:3px 6px;background:rgba(0,0,0,0.3);border:none;border-top:1px solid rgba(255,215,0,0.04);color:#999;font-size:9px;font-family:'Cairo';outline:none;}
+
+/* AGENT CARD */
+#agentCard{position:fixed;z-index:200;pointer-events:none;opacity:0;transform:translateY(8px);transition:opacity 0.2s,transform 0.2s;background:rgba(0,2,15,0.96);backdrop-filter:blur(20px);border:1px solid rgba(0,255,255,0.15);border-radius:12px;padding:12px;width:300px;box-shadow:0 0 25px rgba(0,255,255,0.08);}
+#agentCard.show{opacity:1;transform:translateY(0);}
+.card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid rgba(0,255,255,0.08);}
+.card-id{font-family:'Orbitron';font-size:13px;font-weight:900;}
+.card-name{font-size:11px;color:#999;}
+.card-state{font-size:9px;padding:2px 7px;border-radius:8px;font-family:'Orbitron';}
+.card-state.busy{background:rgba(255,165,0,0.15);color:#FFA500;}
+.card-state.active{background:rgba(57,255,20,0.15);color:#39FF14;}
+.card-state.idle{background:rgba(100,100,100,0.15);color:#777;}
+.card-state.error{background:rgba(255,51,102,0.15);color:#FF3366;}
+.card-state.evolving{background:rgba(255,107,107,0.15);color:#FF6B6B;}
+.card-state.training{background:rgba(0,191,255,0.15);color:#00BFFF;}
+.card-state.crawling{background:rgba(57,255,20,0.15);color:#39FF14;}
+.card-state.coding{background:rgba(191,0,255,0.15);color:#BF00FF;}
+.card-state.attacking{background:rgba(255,51,102,0.15);color:#FF3366;}
+.card-state.defending{background:rgba(0,191,255,0.15);color:#00BFFF;}
+.card-state.browsing{background:rgba(255,215,0,0.15);color:#FFD700;}
+.card-section{margin-bottom:6px;}
+.card-section-title{font-size:8px;color:#555;font-family:'Orbitron';margin-bottom:3px;}
+.card-bar{height:3px;background:rgba(255,255,255,0.04);border-radius:2px;overflow:hidden;margin-bottom:4px;}
+.card-bar-fill{height:100%;border-radius:2px;transition:width 0.5s;}
+.card-bar-fill.progress{background:linear-gradient(90deg,#00FFFF,#39FF14);}
+.card-bar-fill.knowledge{background:linear-gradient(90deg,#FF6EC7,#BF00FF);}
+.card-bar-fill.evolution{background:linear-gradient(90deg,#FF6B6B,#FFD700);}
+.card-bar-fill.synth{background:linear-gradient(90deg,#00BFFF,#00FFFF);}
+.tool-tag{display:inline-block;padding:1px 5px;margin:1px;border-radius:3px;font-size:7px;background:rgba(0,255,255,0.06);border:1px solid rgba(0,255,255,0.1);color:#999;}
+.tool-tag.active-tool{background:rgba(57,255,20,0.12);border-color:#39FF14;color:#39FF14;}
+
+/* DAILY AWAKENING */
+#awakeningOverlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,0.88);display:none;align-items:center;justify-content:center;flex-direction:column;}
+#awakeningOverlay.active{display:flex;}
+#awakeningOverlay h2{font-family:'Orbitron';font-size:22px;color:#FF6B6B;margin-bottom:8px;text-shadow:0 0 25px rgba(255,107,107,0.4);}
+.aw-step{font-size:11px;color:#666;margin:3px 0;transition:all 0.4s;}
+.aw-step.active{color:#FFD700;font-weight:700;text-shadow:0 0 10px rgba(255,215,0,0.3);}
+.aw-step.done{color:#39FF14;}
+
+/* LOADING */
+#loadScreen{position:fixed;inset:0;z-index:9999;background:#000208;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 1s;}
+#loadScreen.done{opacity:0;pointer-events:none;}
+#loadScreen h1{font-family:'Orbitron';font-size:34px;color:#FFD700;text-shadow:0 0 35px rgba(255,215,0,0.4);margin-bottom:3px;}
+#loadScreen p{font-family:'Orbitron';font-size:10px;color:#FF6B6B;letter-spacing:3px;}
+#loadScreen .sub{font-size:8px;color:#444;letter-spacing:2px;margin-top:2px;}
+#loadBar{width:280px;height:2px;background:rgba(255,255,255,0.04);border-radius:1px;margin-top:16px;overflow:hidden;}
+#ldFill{height:100%;width:0;background:linear-gradient(90deg,#FF6B6B,#FFD700,#39FF14,#00FFFF);border-radius:1px;transition:width 0.3s;}
+#ldStatus{margin-top:8px;font-size:10px;color:#555;font-family:'Cairo';}
+.glow-line{width:180px;height:1px;background:linear-gradient(90deg,transparent,#FF6B6B,#FFD700,transparent);margin:8px 0;}
+#fpsCounter{position:fixed;bottom:44px;left:4px;z-index:90;font-family:'Orbitron';font-size:8px;color:#39FF14;opacity:0.5;}
+
+/* GraphRAG Overlay */
+#graphOverlay{position:fixed;top:40px;left:50%;transform:translateX(-50%);z-index:85;background:rgba(0,2,12,0.9);backdrop-filter:blur(14px);border:1px solid rgba(255,110,199,0.15);border-radius:10px;padding:8px 12px;display:none;min-width:200px;text-align:center;}
+#graphOverlay h4{font-family:'Orbitron';font-size:9px;color:#FF6EC7;margin-bottom:4px;}
+#graphOverlay canvas{border-radius:6px;border:1px solid rgba(255,255,255,0.03);}
+
+/* DSPy Optimization */
+.dspy-panel{padding:4px;background:rgba(255,255,255,0.02);border-radius:4px;margin-top:4px;}
+.dspy-agent{display:flex;justify-content:space-between;font-size:8px;padding:1px 0;}
+.dspy-agent .name{color:#888;}.dspy-agent .score{font-family:'Orbitron';font-size:7px;}
+.dspy-agent .score.up{color:#39FF14;}.dspy-agent .score.down{color:#FF3366;}
+</style>
+</head>
+<body>
+<canvas id="canvas3d"></canvas>
+
+<!-- TOP BAR -->
+<div id="topBar">
+  <div class="logo">ARMY81 <span class="pulse-dot"></span><span class="ver">ULTIMATE SELF-EVOLVING v10</span></div>
+  <div class="top-stats">
+    <div class="stat"><span class="label">يوم</span><span class="val" id="evoDay">1</span><span class="label">/90</span></div>
+    <div class="stat"><span class="label">تجارب</span><span class="val" id="sExperiments">0</span></div>
+    <div class="stat"><span class="label">تقطير</span><span class="val" id="sDistill">0</span></div>
+    <div class="stat"><span class="label">مهارات</span><span class="val" id="sSkills">16</span></div>
+    <div class="stat"><span class="label">معرفة</span><span class="val" id="sKnowledge">0 GB</span></div>
+    <div class="stat"><span class="label">بيانات</span><span class="val" id="sSynth">0</span></div>
+    <div class="stat"><span class="label">نماذج</span><span class="val" id="sModels">3</span></div>
+    <div class="stat"><span class="label">كود</span><span class="val" id="sCommits">0</span></div>
+    <div class="stat"><span class="label">وكلاء</span><span class="val" id="sAgentCount">81</span></div>
+    <div class="stat"><span class="label">نشط</span><span class="val hot" id="activeCount">0</span></div>
+    <div class="stat"><span class="label">FPS</span><span class="val" id="sFps">0</span></div>
+  </div>
+  <div class="toolbar">
+    <button onclick="toggleLeftPanel()" id="lpBtn">تجارب</button>
+    <button onclick="toggleLog()" id="logBtn">سجل</button>
+    <button onclick="toggleChat()">قيادة</button>
+    <button onclick="triggerAwakening()" class="danger">يقظة</button>
+    <button onclick="resetCam()">ضبط</button>
+    <button onclick="topView()">علوي</button>
+    <button onclick="focusCore()">نواة</button>
+    <button onclick="cinematic()">سينمائي</button>
+  </div>
+</div>
+
+<!-- EVOLUTION PANEL (RIGHT) -->
+<div id="evoPanel">
+  <h3>محرك التطور الذاتي</h3>
+  
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#FF6B6B;"></span> AutoResearch Loop</div>
+    <div class="evo-metric"><span class="m-label">تجارب اليوم</span><span class="m-val" style="color:#FF6B6B;" id="expToday">0</span></div>
+    <div class="evo-metric"><span class="m-label">نسبة النجاح</span><span class="m-val" style="color:#39FF14;" id="expSuccess">0%</span></div>
+    <div class="evo-metric"><span class="m-label">أفضل تحسين</span><span class="m-val" style="color:#FFD700;" id="expBest">+0%</span></div>
+    <div class="evo-mini-bar"><div class="evo-mini-fill" id="expBar" style="width:0;background:#FF6B6B;"></div></div>
+  </div>
+
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#00BFFF;"></span> Knowledge Distillation</div>
+    <div class="evo-metric"><span class="m-label">المعلم</span><span class="m-val" style="color:#00BFFF;" id="teacherModel">GPT-5</span></div>
+    <div class="evo-metric"><span class="m-label">الطالب</span><span class="m-val" style="color:#39FF14;" id="studentModel">Qwen-8B</span></div>
+    <div class="evo-metric"><span class="m-label">دروس</span><span class="m-val" style="color:#FFD700;" id="distillLessons">0</span></div>
+    <div class="evo-metric"><span class="m-label">تحسن</span><span class="m-val" style="color:#39FF14;" id="distillImprove">+0%</span></div>
+    <div class="evo-mini-bar"><div class="evo-mini-fill" id="distillBar" style="width:0;background:linear-gradient(90deg,#00BFFF,#39FF14);"></div></div>
+  </div>
+
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#FF6EC7;"></span> Self-Play Arena</div>
+    <div class="evo-metric"><span class="m-label">جولات</span><span class="m-val" style="color:#FF6EC7;" id="arenaRounds">0</span></div>
+    <div class="evo-metric"><span class="m-label">Red Team</span><span class="m-val" style="color:#FF3366;" id="arenaRed">0</span></div>
+    <div class="evo-metric"><span class="m-label">Blue Team</span><span class="m-val" style="color:#00BFFF;" id="arenaBlue">0</span></div>
+    <div class="evo-mini-bar"><div class="evo-mini-fill" id="arenaBar" style="width:50%;background:linear-gradient(90deg,#FF3366,#00BFFF);"></div></div>
+  </div>
+
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#39FF14;"></span> Web Spiders + CUA</div>
+    <div class="evo-metric"><span class="m-label">صفحات</span><span class="m-val" style="color:#39FF14;" id="spiderPages">0</span></div>
+    <div class="evo-metric"><span class="m-label">أبحاث</span><span class="m-val" style="color:#BF00FF;" id="spiderPapers">0</span></div>
+    <div class="evo-metric"><span class="m-label">CUA جلسات</span><span class="m-val" style="color:#FFD700;" id="cuaSessions">0</span></div>
+  </div>
+
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#FFD700;"></span> Model Merging</div>
+    <div class="evo-metric"><span class="m-label">دمج</span><span class="m-val" style="color:#FFD700;" id="mergeCount">0</span></div>
+    <div class="evo-metric"><span class="m-label">النموذج</span><span class="m-val" style="color:#FF6EC7;" id="currentMerge">Army81-v1</span></div>
+    <div class="evo-metric"><span class="m-label">تحسن</span><span class="m-val" style="color:#39FF14;" id="mergeImprove">+0%</span></div>
+  </div>
+
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#BF00FF;"></span> OpenHands Code</div>
+    <div class="evo-metric"><span class="m-label">Commits</span><span class="m-val" style="color:#BF00FF;" id="codeCommits">0</span></div>
+    <div class="evo-metric"><span class="m-label">أسطر جديدة</span><span class="m-val" style="color:#39FF14;" id="codeLines">0</span></div>
+    <div class="evo-metric"><span class="m-label">Bugs مصلحة</span><span class="m-val" style="color:#FFD700;" id="codeBugs">0</span></div>
+  </div>
+
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#00FFFF;"></span> Synthetic Data</div>
+    <div class="evo-metric"><span class="m-label">سيناريوهات</span><span class="m-val" style="color:#00FFFF;" id="synthScenarios">0</span></div>
+    <div class="evo-metric"><span class="m-label">حلول صحيحة</span><span class="m-val" style="color:#39FF14;" id="synthCorrect">0</span></div>
+    <div class="evo-metric"><span class="m-label">QLoRA batches</span><span class="m-val" style="color:#FFD700;" id="synthBatches">0</span></div>
+  </div>
+
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#FF6EC7;"></span> GraphRAG</div>
+    <div class="evo-metric"><span class="m-label">كيانات</span><span class="m-val" style="color:#FF6EC7;" id="graphEntities">0</span></div>
+    <div class="evo-metric"><span class="m-label">علاقات</span><span class="m-val" style="color:#00FFFF;" id="graphRelations">0</span></div>
+    <div class="evo-metric"><span class="m-label">استنتاجات</span><span class="m-val" style="color:#FFD700;" id="graphInferences">0</span></div>
+  </div>
+
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#BF00FF;"></span> Token Economy</div>
+    <div class="evo-metric"><span class="m-label">ميزانية</span><span class="m-val" style="color:#FFD700;" id="tokenBudget">1M</span></div>
+    <div class="evo-metric"><span class="m-label">مستهلك</span><span class="m-val" style="color:#FF6B6B;" id="tokenUsed">0</span></div>
+    <div class="evo-metric"><span class="m-label">كفاءة</span><span class="m-val" style="color:#39FF14;" id="tokenEfficiency">100%</span></div>
+    <div class="evo-mini-bar"><div class="evo-mini-fill" id="tokenBar" style="width:0;background:linear-gradient(90deg,#39FF14,#FFD700,#FF6B6B);"></div></div>
+  </div>
+
+  <div class="evo-section">
+    <div class="evo-section-title"><span class="dot" style="background:#FFD700;"></span> DSPy Optimization</div>
+    <div class="evo-metric"><span class="m-label">Prompts محسنة</span><span class="m-val" style="color:#FFD700;" id="dspyOptimized">0</span></div>
+    <div class="evo-metric"><span class="m-label">متوسط التحسن</span><span class="m-val" style="color:#39FF14;" id="dspyAvgImprove">+0%</span></div>
+  </div>
+</div>
+
+<!-- LEFT PANEL -->
+<div id="leftPanel">
+  <h3>مختبر التطور</h3>
+  <div class="panel-tabs">
+    <button class="active" onclick="switchTab('experiments')">تجارب</button>
+    <button onclick="switchTab('arena')">ساحة</button>
+    <button onclick="switchTab('code')">كود</button>
+    <button onclick="switchTab('cua')">CUA</button>
+  </div>
+  <div class="tab-content active" id="tab-experiments"><div id="expItems"></div></div>
+  <div class="tab-content" id="tab-arena">
+    <div class="arena-box">
+      <div class="arena-header"><span class="arena-red">RED TEAM</span><span class="arena-blue">BLUE TEAM</span></div>
+      <div class="arena-score"><span class="arena-red" id="redScore">0</span><span class="arena-vs">VS</span><span class="arena-blue" id="blueScore">0</span></div>
+      <div class="arena-bar"><div class="red-fill" id="redBar" style="width:50%"></div><div class="blue-fill" id="blueBar" style="width:50%"></div></div>
+    </div>
+    <div class="arena-log" id="arenaLog"></div>
+  </div>
+  <div class="tab-content" id="tab-code">
+    <div class="code-panel" id="codePanel">
+      <div class="code-line"><span class="ln">1</span> <span class="cm"># OpenHands Auto-Coder</span></div>
+      <div class="code-line"><span class="ln">2</span> <span class="cm"># Waiting for tasks...</span></div>
+    </div>
+  </div>
+  <div class="tab-content" id="tab-cua">
+    <div class="cua-panel">
+      <div class="cua-browser">
+        <div class="cua-url" id="cuaUrl">about:blank</div>
+        <div class="cua-cursor" id="cuaCursor" style="top:30px;left:50px;"></div>
+        <div class="cua-content" id="cuaContent">CUA Browser Idle</div>
+      </div>
+      <div style="font-size:8px;color:#666;margin-top:3px;text-align:center;" id="cuaStatus">في انتظار المهام...</div>
+    </div>
+  </div>
+</div>
+
+<!-- EVENT LOG -->
+<div id="eventLog"><h3>سجل الأحداث الحية</h3><div id="eventItems"></div></div>
+
+<!-- VIEW MODES -->
+<div id="viewModes">
+  <button class="active" onclick="setView('neural')">الشبكة</button>
+  <button onclick="setView('evolution')">التطور</button>
+  <button onclick="setView('distillation')">التقطير</button>
+  <button onclick="setView('selfplay')">الساحة</button>
+  <button onclick="setView('knowledge')">المعرفة</button>
+  <button onclick="setView('graph')">GraphRAG</button>
+</div>
+
+<!-- EVOLUTION TIMELINE -->
+<div id="evoTimeline">
+  <div class="evo-header">
+    <span class="evo-title">مسار التطور الذاتي — 90 يوم</span>
+    <span class="evo-day-label" id="evoTimelineDay">اليوم 1 / 90</span>
+  </div>
+  <div class="evo-bar"><div class="evo-fill" id="evoFill" style="width:1.1%"></div></div>
+  <div class="evo-phases">
+    <span class="active" id="ph1">الاستيعاب</span>
+    <span id="ph2">التقطير</span>
+    <span id="ph3">الدمج</span>
+    <span id="ph4">التخصص</span>
+    <span id="ph5">التفوق</span>
+  </div>
+</div>
+
+<!-- CHAT -->
+<div id="chatBox">
+  <h3>مركز القيادة</h3>
+  <select id="chatTarget"><option value="all">بث عام — جميع الوكلاء</option></select>
+  <div id="chatMessages"></div>
+  <input id="chatInput" placeholder="أدخل الأمر..." onkeydown="if(event.key==='Enter')sendCmd()">
+</div>
+
+<!-- AGENT CARD -->
+<div id="agentCard">
+  <div class="card-header"><div><span class="card-id" id="cardId">A01</span><div class="card-name" id="cardName">وكيل</div></div><span class="card-state idle" id="cardState">خامل</span></div>
+  <div class="card-section"><div class="card-section-title">النشاط</div><div id="cardActivity" style="font-size:10px;color:#bbb;">لا يوجد</div></div>
+  <div class="card-section"><div class="card-section-title">التقدم</div><div class="card-bar"><div class="card-bar-fill progress" id="cardProgress" style="width:0"></div></div></div>
+  <div class="card-section"><div class="card-section-title">المعرفة</div><div class="card-bar"><div class="card-bar-fill knowledge" id="cardKnowledge" style="width:0"></div></div></div>
+  <div class="card-section"><div class="card-section-title">التطور</div><div class="card-bar"><div class="card-bar-fill evolution" id="cardEvolution" style="width:0"></div></div></div>
+  <div class="card-section"><div class="card-section-title">بيانات اصطناعية</div><div class="card-bar"><div class="card-bar-fill synth" id="cardSynth" style="width:0"></div></div></div>
+  <div class="card-section"><div class="card-section-title">الأدوات</div><div id="cardTools" style="line-height:1.6;"></div></div>
+  <div class="card-section"><div class="card-section-title">آخر إجراء</div><div id="cardLastAction" style="font-size:9px;color:#777;">لا يوجد</div></div>
+</div>
+
+<!-- DAILY AWAKENING -->
+<div id="awakeningOverlay">
+  <h2>حلقة اليقظة اليومية</h2>
+  <div class="aw-step" id="aw1">1. دمج كود AutoResearch الجديد</div>
+  <div class="aw-step" id="aw2">2. تحديث أوزان النماذج (QLoRA)</div>
+  <div class="aw-step" id="aw3">3. تبلور الذاكرة (Memory Crystallization)</div>
+  <div class="aw-step" id="aw4">4. دمج نتائج Self-Play Arena</div>
+  <div class="aw-step" id="aw5">5. تحسين Prompts عبر DSPy</div>
+  <div class="aw-step" id="aw6">6. إعادة توزيع الميزانيات</div>
+  <div class="aw-step" id="aw7">7. كتابة تقرير التطور اليومي</div>
+</div>
+
+<!-- LOADING -->
+<div id="loadScreen">
+  <h1>ARMY81</h1>
+  <p>ULTIMATE SELF-EVOLVING SYSTEM</p>
+  <div class="sub">v10 — Autonomous Intelligence Engine</div>
+  <div class="glow-line"></div>
+  <div id="loadBar"><div id="ldFill"></div></div>
+  <div id="ldStatus">تهيئة النظام...</div>
+</div>
+<div id="fpsCounter">FPS: 0</div>
+
+<!-- THREE.JS r128 -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+</body>
+</html>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   ARMY81 — ULTIMATE SELF-EVOLVING SYSTEM v10
+   Autonomous Intelligence Engine — 20 Mechanisms Visualized
+   ═══════════════════════════════════════════════════════════════ */
+
+const CATS={
+  cat1_science:{name:'العلوم',color:0x00FFFF,neon:'#00FFFF'},
+  cat2_society:{name:'المجتمع',color:0xFF00FF,neon:'#FF00FF'},
+  cat3_tools:{name:'الأدوات',color:0x39FF14,neon:'#39FF14'},
+  cat4_management:{name:'الإدارة',color:0xFFD700,neon:'#FFD700'},
+  cat5_behavior:{name:'السلوك',color:0xBF00FF,neon:'#BF00FF'},
+  cat6_leadership:{name:'القيادة',color:0xFF6EC7,neon:'#FF6EC7'},
+  cat7_new:{name:'التطوير',color:0xFF6B6B,neon:'#FF6B6B'}
+};
+
+const AGENTS=[
+{id:'A02',name_ar:'وكيل البحث العلمي',cat:'cat1_science',model:'gemini-pro',tools:['arxiv_search','pubmed_search','web_search','deep_search','remember','semantic_remember']},
+{id:'A07',name_ar:'وكيل البحث الطبي',cat:'cat1_science',model:'gemini-pro',tools:['pubmed_search','arxiv_search','web_search','deep_search','remember']},
+{id:'A38',name_ar:'وكيل الفيزياء',cat:'cat1_science',model:'gemini-pro',tools:['arxiv_search','web_search','deep_search','wiki_search','run_code']},
+{id:'A39',name_ar:'وكيل المناخ',cat:'cat1_science',model:'gemini-flash',tools:['arxiv_search','web_search','deep_search','fetch_news','analyze_data','remember']},
+{id:'A40',name_ar:'وكيل التقنيات الناشئة',cat:'cat1_science',model:'gemini-flash',tools:['arxiv_search','github_search','web_search','deep_search','fetch_news','semantic_remember']},
+{id:'A52',name_ar:'وكيل الطب السريري',cat:'cat1_science',model:'gemini-pro',tools:['pubmed_search','arxiv_search','web_search','deep_search','remember']},
+{id:'A53',name_ar:'وكيل التصنيع المتقدم',cat:'cat1_science',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','github_search','remember']},
+{id:'A54',name_ar:'وكيل الفضاء',cat:'cat1_science',model:'gemini-flash',tools:['arxiv_search','web_search','deep_search','wiki_search','remember']},
+{id:'A55',name_ar:'وكيل علوم المواد',cat:'cat1_science',model:'gemini-flash',tools:['arxiv_search','web_search','deep_search','remember']},
+{id:'A03',name_ar:'وكيل تحليل السياسات',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','analyze_data','remember']},
+{id:'A08',name_ar:'وكيل التحليل المالي',cat:'cat2_society',model:'gemini-flash',tools:['market_data','web_search','deep_search','fetch_news','analyze_data','remember']},
+{id:'A12',name_ar:'وكيل إنشاء المحتوى',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember','write_file']},
+{id:'A13',name_ar:'وكيل الاستشارة القانونية',cat:'cat2_society',model:'gemini-pro',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A41',name_ar:'وكيل الاقتصاد العالمي',cat:'cat2_society',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','market_data','analyze_data','remember']},
+{id:'A42',name_ar:'وكيل العملات الرقمية',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','market_data','fetch_news','arxiv_search','remember']},
+{id:'A43',name_ar:'وكيل التاريخ',cat:'cat2_society',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember','semantic_remember']},
+{id:'A44',name_ar:'وكيل الإعلام',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember']},
+{id:'A45',name_ar:'وكيل القانون الدولي',cat:'cat2_society',model:'gemini-pro',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A46',name_ar:'وكيل الفنون',cat:'cat2_society',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A47',name_ar:'وكيل اللغويات',cat:'cat2_society',model:'gemini-flash',tools:['web_search','wiki_search','arxiv_search','remember']},
+{id:'A48',name_ar:'وكيل الرياضيات',cat:'cat2_society',model:'gemini-pro',tools:['run_code','arxiv_search','web_search','wiki_search']},
+{id:'A49',name_ar:'وكيل الاجتماع',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','arxiv_search','remember']},
+{id:'A50',name_ar:'وكيل التعليم',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','arxiv_search','remember']},
+{id:'A51',name_ar:'وكيل الهندسة العكسية',cat:'cat2_society',model:'gemini-flash',tools:['web_search','deep_search','github_search','run_code','remember']},
+{id:'A04',name_ar:'وكيل الاستخبارات الإعلامية',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','fetch_news','deep_search','arxiv_search']},
+{id:'A05',name_ar:'وكيل تطوير البرمجيات',cat:'cat3_tools',model:'gemini-flash',tools:['run_code','github_search','web_search','read_file','write_file']},
+{id:'A09',name_ar:'وكيل الأمن السيبراني',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','github_search','fetch_news','remember']},
+{id:'A11',name_ar:'وكيل الترجمة',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','wiki_search','remember']},
+{id:'A56',name_ar:'وكيل الاستخبارات العميقة',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','arxiv_search','remember','semantic_remember']},
+{id:'A57',name_ar:'وكيل التكاملات',cat:'cat3_tools',model:'gemini-flash',tools:['run_code','github_search','web_search','read_file','write_file']},
+{id:'A58',name_ar:'وكيل الإنذار المبكر',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','arxiv_search','remember']},
+{id:'A59',name_ar:'وكيل الابتكار المفتوح',cat:'cat3_tools',model:'gemini-flash',tools:['github_search','arxiv_search','web_search','deep_search','remember']},
+{id:'A60',name_ar:'وكيل مكافحة التضليل',cat:'cat3_tools',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','fetch_news','arxiv_search']},
+{id:'A61',name_ar:'وكيل الحوسبة البيولوجية',cat:'cat3_tools',model:'gemini-pro',tools:['arxiv_search','pubmed_search','github_search','run_code','web_search']},
+{id:'A06',name_ar:'وكيل تحليل البيانات',cat:'cat4_management',model:'gemini-flash',tools:['analyze_data','run_code','read_file','write_file','market_data']},
+{id:'A10',name_ar:'وكيل إدارة المعرفة',cat:'cat4_management',model:'gemini-flash',tools:['remember','recall','wiki_search','web_search','read_file','write_file']},
+{id:'A14',name_ar:'وكيل إدارة المشاريع',cat:'cat4_management',model:'gemini-flash',tools:['web_search','read_file','write_file','analyze_data','remember','recall']},
+{id:'A62',name_ar:'وكيل الحوكمة',cat:'cat4_management',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','analyze_data','write_file','remember']},
+{id:'A63',name_ar:'وكيل المؤسسات',cat:'cat4_management',model:'gemini-flash',tools:['web_search','deep_search','analyze_data','remember','write_file']},
+{id:'A64',name_ar:'وكيل المشاريع العملاقة',cat:'cat4_management',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','run_code','write_file','remember']},
+{id:'A65',name_ar:'وكيل التحول الرقمي',cat:'cat4_management',model:'gemini-flash',tools:['web_search','deep_search','github_search','arxiv_search','analyze_data','remember']},
+{id:'A66',name_ar:'وكيل إدارة الأداء',cat:'cat4_management',model:'gemini-flash',tools:['analyze_data','run_code','web_search','write_file','remember']},
+{id:'A15',name_ar:'وكيل علم النفس',cat:'cat5_behavior',model:'gemini-pro',tools:['web_search','deep_search','wiki_search','pubmed_search','remember']},
+{id:'A16',name_ar:'وكيل التفاوض',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A17',name_ar:'وكيل لغة الجسد',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A18',name_ar:'وكيل الإقناع',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember']},
+{id:'A19',name_ar:'وكيل الذكاء العاطفي',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','wiki_search','pubmed_search','remember']},
+{id:'A20',name_ar:'وكيل الديناميكيات',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','wiki_search','remember']},
+{id:'A21',name_ar:'وكيل سلوك الجماهير',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','fetch_news','arxiv_search','remember']},
+{id:'A22',name_ar:'وكيل الاقتصاد السلوكي',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','market_data','analyze_data']},
+{id:'A23',name_ar:'وكيل حل النزاعات',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A24',name_ar:'وكيل سيكولوجية القيادة',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','pubmed_search','remember']},
+{id:'A25',name_ar:'وكيل التواصل',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A26',name_ar:'وكيل سيكولوجية القرار',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','arxiv_search','run_code','remember']},
+{id:'A27',name_ar:'وكيل الذكاء الثقافي',cat:'cat5_behavior',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','recall']},
+{id:'A01',name_ar:'القائد الاستراتيجي',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','arxiv_search','remember','recall']},
+{id:'A28',name_ar:'وكيل الاستراتيجية العسكرية',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','arxiv_search','remember','recall']},
+{id:'A29',name_ar:'وكيل إدارة الأزمات',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','remember','recall','write_file']},
+{id:'A30',name_ar:'وكيل قيادة الابتكار',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','deep_search','github_search','arxiv_search','remember']},
+{id:'A31',name_ar:'وكيل الاستخبارات',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','arxiv_search','github_search','remember','recall']},
+{id:'A32',name_ar:'وكيل الجيوسياسة',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','fetch_news','wiki_search','market_data','remember']},
+{id:'A33',name_ar:'وكيل استشراف المستقبل',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','arxiv_search','fetch_news','remember','semantic_remember']},
+{id:'A34',name_ar:'وكيل تقييم المخاطر',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','deep_search','analyze_data','market_data','run_code','remember']},
+{id:'A35',name_ar:'وكيل إدارة التغيير',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','deep_search','wiki_search','remember','write_file']},
+{id:'A36',name_ar:'وكيل استراتيجي المنظمات',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','wiki_search','remember','write_file']},
+{id:'A37',name_ar:'وكيل مهندس القرارات',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','run_code','remember','recall','write_file']},
+{id:'A67',name_ar:'وكيل التواصل الإنساني',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','wiki_search','deep_search','remember']},
+{id:'A68',name_ar:'وكيل توزيع الموارد',cat:'cat6_leadership',model:'gemini-flash',tools:['analyze_data','run_code','web_search','market_data','remember']},
+{id:'A69',name_ar:'وكيل التقييم الشامل',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','remember','recall','write_file']},
+{id:'A70',name_ar:'وكيل التخطيط طويل المدى',cat:'cat6_leadership',model:'gemini-pro',tools:['web_search','deep_search','arxiv_search','analyze_data','remember','write_file']},
+{id:'A71',name_ar:'وكيل الأمن والنزاهة',cat:'cat6_leadership',model:'gemini-flash',tools:['web_search','deep_search','analyze_data','remember','recall']},
+{id:'A72',name_ar:'وكيل مراقبة التطور',cat:'cat7_new',model:'gemini-pro',tools:['analyze_data','remember','recall','semantic_remember','semantic_recall','web_search']},
+{id:'A73',name_ar:'وكيل تنسيق الوكلاء',cat:'cat7_new',model:'gemini-pro',tools:['web_search','analyze_data','remember','recall','semantic_remember','semantic_recall']},
+{id:'A74',name_ar:'وكيل ضبط الجودة',cat:'cat7_new',model:'gemini-pro',tools:['analyze_data','web_search','deep_search','remember','recall']},
+{id:'A75',name_ar:'وكيل تحسين النظام',cat:'cat7_new',model:'gemini-flash',tools:['analyze_data','run_code','remember','recall','web_search']},
+{id:'A76',name_ar:'وكيل تجميع التعلم',cat:'cat7_new',model:'gemini-flash',tools:['semantic_remember','semantic_recall','analyze_data','remember','recall','web_search']},
+{id:'A77',name_ar:'وكيل سير العمل',cat:'cat7_new',model:'gemini-pro',tools:['analyze_data','remember','recall','web_search','write_file']},
+{id:'A78',name_ar:'وكيل التخصيص الديناميكي',cat:'cat7_new',model:'gemini-flash',tools:['analyze_data','run_code','remember','recall']},
+{id:'A79',name_ar:'وكيل التغذية الراجعة',cat:'cat7_new',model:'gemini-flash',tools:['analyze_data','semantic_remember','semantic_recall','remember','recall']},
+{id:'A80',name_ar:'وكيل الأنماط',cat:'cat7_new',model:'gemini-pro',tools:['analyze_data','run_code','semantic_recall','deep_search','web_search']},
+{id:'A81',name_ar:'الميتا الاستخباراتي',cat:'cat7_new',model:'gemini-pro',tools:['web_search','deep_search','analyze_data','semantic_remember','semantic_recall','remember','recall','write_file']}
+];
+
+AGENTS.forEach(function(a){a.state='idle';a.progress=0;a.knowledge=Math.random()*40+10;a.evolution=Math.random()*10;a.memory=0;a.memoryItems=[];a.taskCount=0;a.successCount=0;a.errorCount=0;a.currentTask=null;a.activeTools=[];a.lastAction='لا يوجد';a.shakeIntensity=0;a.glitchTime=0;a.currentGrowth=1;a.growthTarget=1;a.deepThinkTime=0;a.prevPos={x:0,y:0,z:0};a.trails=[];a.memRings=[];a.evoLevel=0;a.distillCount=0;a.synthData=0;a.team=null;});
+
+var sel=document.getElementById('chatTarget');
+AGENTS.forEach(function(a){var o=document.createElement('option');o.value=a.id;o.textContent=a.id+' — '+a.name_ar;sel.appendChild(o);});
+
+/* ═══ EVOLUTION STATE v10 ═══ */
+var EVO={
+  day:1,maxDays:90,
+  experiments:{total:0,success:0,today:0,bestImprove:0},
+  distillation:{lessons:0,improve:0,teacher:'GPT-5',student:'Qwen-8B',active:false},
+  spiders:{pages:0,skills:0,papers:0},
+  merging:{count:0,currentModel:'Army81-v1',improve:0},
+  tokens:{budget:1000000,used:0,efficiency:100},
+  graph:{entities:0,relations:0,inferences:0},
+  models:['Qwen-8B','Gemma-3','Mistral-7B'],
+  skills:16,knowledgeGB:0,
+  phase:1,
+  // NEW v10
+  selfPlay:{rounds:0,redWins:0,blueWins:0,currentRound:null},
+  openHands:{commits:0,lines:0,bugs:0},
+  cua:{sessions:0,pagesVisited:0,currentUrl:''},
+  synth:{scenarios:0,correct:0,batches:0},
+  dspy:{optimized:0,avgImprove:0,totalImprove:0}
+};
+
+/* ═══ EVENT BUS ═══ */
+var EVT={TASK_ASSIGNED:'task_assigned',TASK_COMPLETED:'task_completed',TASK_FAILED:'task_failed',TOOL_USED:'tool_used',AGENT_MESSAGE:'agent_message',MEMORY_SAVED:'memory_saved',API_ERROR:'api_error',RATE_LIMIT:'rate_limit',COMMAND_SENT:'command_sent',CORE_LOAD_CHANGE:'core_load',CLUSTER_FORMED:'cluster_formed',CLUSTER_DISSOLVED:'cluster_dissolved',
+  EXPERIMENT_START:'exp_start',EXPERIMENT_END:'exp_end',DISTILL_START:'distill_start',DISTILL_COMPLETE:'distill_complete',SPIDER_CRAWL:'spider_crawl',MODEL_MERGE:'model_merge',SKILL_ACQUIRED:'skill_acquired',AWAKENING:'awakening',EVO_MILESTONE:'evo_milestone',
+  // NEW v10
+  SELFPLAY_ROUND:'selfplay_round',SELFPLAY_RESULT:'selfplay_result',CODE_COMMIT:'code_commit',CUA_BROWSE:'cua_browse',SYNTH_GENERATE:'synth_generate',DSPY_OPTIMIZE:'dspy_optimize',AGENT_BREED:'agent_breed'
+};
+var EventBus={_h:{},on:function(e,f){if(!this._h[e])this._h[e]=[];this._h[e].push(f);},emit:function(e,d){if(this._h[e])this._h[e].forEach(function(f){try{f(d);}catch(err){console.error(err);}});}};
+
+/* ═══ THREE.JS SETUP ═══ */
+var canvas=document.getElementById('canvas3d');
+var renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
+renderer.setSize(window.innerWidth,window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;
+var scene=new THREE.Scene();scene.fog=new THREE.FogExp2(0x000208,0.006);
+var camera=new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeight,0.1,500);
+camera.position.set(0,30,55);
+var controls=new THREE.OrbitControls(camera,canvas);
+controls.enableDamping=true;controls.dampingFactor=0.06;controls.autoRotate=true;controls.autoRotateSpeed=0.15;controls.maxDistance=150;controls.minDistance=5;
+
+var composer=new THREE.EffectComposer(renderer);
+composer.addPass(new THREE.RenderPass(scene,camera));
+var bloom=new THREE.UnrealBloomPass(new THREE.Vector2(window.innerWidth,window.innerHeight),1.2,0.5,0.3);
+composer.addPass(bloom);
+
+/* ═══ NEBULA ═══ */
+var nebGroup=new THREE.Group();scene.add(nebGroup);
+for(var i=0;i<1200;i++){var s=new THREE.Mesh(new THREE.SphereGeometry(0.03+Math.random()*0.06,4,4),new THREE.MeshBasicMaterial({color:new THREE.Color().setHSL(Math.random(),0.5,0.3+Math.random()*0.3),transparent:true,opacity:0.15+Math.random()*0.2}));var r=60+Math.random()*80,th=Math.random()*Math.PI*2,ph=Math.random()*Math.PI;s.position.set(r*Math.sin(ph)*Math.cos(th),r*Math.cos(ph)*0.3,r*Math.sin(ph)*Math.sin(th));nebGroup.add(s);}
+
+/* ═══ CORE REACTOR + DNA ═══ */
+var coreMat=new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:0.95});
+var coreInner=new THREE.Mesh(new THREE.IcosahedronGeometry(1.8,2),coreMat);scene.add(coreInner);
+var coreGlow=new THREE.Mesh(new THREE.SphereGeometry(3,16,16),new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:0.08,blending:THREE.AdditiveBlending}));scene.add(coreGlow);
+var coreLight=new THREE.PointLight(0xFFD700,3,60);scene.add(coreLight);
+var coreRings=[];
+for(var i=0;i<4;i++){var ring=new THREE.Mesh(new THREE.TorusGeometry(2.5+i*0.8,0.02,8,64),new THREE.MeshBasicMaterial({color:[0xFF6B6B,0x00FFFF,0x39FF14,0xBF00FF][i],transparent:true,opacity:0.25,blending:THREE.AdditiveBlending}));ring.rotation.x=Math.random()*Math.PI;ring.rotation.y=Math.random()*Math.PI;scene.add(ring);coreRings.push(ring);}
+var coreLoadVal=0,coreTargetSpeed=0.003;
+
+// DNA Double Helix
+var dnaGroup=new THREE.Group();scene.add(dnaGroup);
+for(var i=0;i<40;i++){var angle=i*0.3;var y=-6+i*0.3;
+  var s1=new THREE.Mesh(new THREE.SphereGeometry(0.08,6,6),new THREE.MeshBasicMaterial({color:0xFF6B6B,transparent:true,opacity:0.6,blending:THREE.AdditiveBlending}));
+  s1.position.set(Math.cos(angle)*2.5,y,Math.sin(angle)*2.5);dnaGroup.add(s1);
+  var s2=new THREE.Mesh(new THREE.SphereGeometry(0.08,6,6),new THREE.MeshBasicMaterial({color:0x00BFFF,transparent:true,opacity:0.6,blending:THREE.AdditiveBlending}));
+  s2.position.set(Math.cos(angle+Math.PI)*2.5,y,Math.sin(angle+Math.PI)*2.5);dnaGroup.add(s2);
+  if(i%3===0){var bridge=new THREE.Mesh(new THREE.CylinderGeometry(0.015,0.015,5,4),new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:0.2}));bridge.position.set(0,y,0);bridge.rotation.z=Math.PI/2;bridge.rotation.y=angle;dnaGroup.add(bridge);}
+}
+
+/* ═══ SELF-PLAY ARENA SPHERES ═══ */
+var redTeamOrb=new THREE.Mesh(new THREE.IcosahedronGeometry(2,1),new THREE.MeshBasicMaterial({color:0xFF3366,transparent:true,opacity:0,wireframe:true}));
+redTeamOrb.position.set(-20,0,0);scene.add(redTeamOrb);
+var blueTeamOrb=new THREE.Mesh(new THREE.IcosahedronGeometry(2,1),new THREE.MeshBasicMaterial({color:0x00BFFF,transparent:true,opacity:0,wireframe:true}));
+blueTeamOrb.position.set(20,0,0);scene.add(blueTeamOrb);
+var arenaBeam=new THREE.Mesh(new THREE.CylinderGeometry(0.03,0.03,40,4),new THREE.MeshBasicMaterial({color:0xFF6EC7,transparent:true,opacity:0}));
+arenaBeam.rotation.z=Math.PI/2;arenaBeam.position.set(0,0,0);scene.add(arenaBeam);
+
+/* ═══ DISTILLATION SETUP ═══ */
+var distillBeamGroup=new THREE.Group();distillBeamGroup.visible=false;scene.add(distillBeamGroup);
+var teacherOrb=new THREE.Mesh(new THREE.SphereGeometry(2,16,16),new THREE.MeshBasicMaterial({color:0x00BFFF,transparent:true,opacity:0.3,wireframe:true}));teacherOrb.position.set(-15,8,0);distillBeamGroup.add(teacherOrb);
+var studentOrb=new THREE.Mesh(new THREE.SphereGeometry(1.5,16,16),new THREE.MeshBasicMaterial({color:0x39FF14,transparent:true,opacity:0.3,wireframe:true}));studentOrb.position.set(15,8,0);distillBeamGroup.add(studentOrb);
+var teacherLabel=new THREE.Mesh(new THREE.RingGeometry(2.5,2.6,32),new THREE.MeshBasicMaterial({color:0x00BFFF,transparent:true,opacity:0.2,side:THREE.DoubleSide}));teacherLabel.position.copy(teacherOrb.position);distillBeamGroup.add(teacherLabel);
+var studentLabel=new THREE.Mesh(new THREE.RingGeometry(2,2.1,32),new THREE.MeshBasicMaterial({color:0x39FF14,transparent:true,opacity:0.2,side:THREE.DoubleSide}));studentLabel.position.copy(studentOrb.position);distillBeamGroup.add(studentLabel);
+var distillParticles=[];
+
+/* ═══ GATEWAYS ═══ */
+var gateways=[
+  {name:'arXiv',pos:new THREE.Vector3(0,35,0),color:0xFF6B6B},
+  {name:'GitHub',pos:new THREE.Vector3(30,25,0),color:0x39FF14},
+  {name:'HuggingFace',pos:new THREE.Vector3(-30,25,0),color:0xFFD700},
+  {name:'Web',pos:new THREE.Vector3(0,25,30),color:0x00FFFF},
+  {name:'Reddit',pos:new THREE.Vector3(0,25,-30),color:0xFF6EC7}
+];
+gateways.forEach(function(g){
+  var m=new THREE.Mesh(new THREE.OctahedronGeometry(0.6,0),new THREE.MeshBasicMaterial({color:g.color,transparent:true,opacity:0.4,blending:THREE.AdditiveBlending}));
+  m.position.copy(g.pos);scene.add(m);g.mesh=m;
+  var glow=new THREE.Mesh(new THREE.SphereGeometry(1.2,8,8),new THREE.MeshBasicMaterial({color:g.color,transparent:true,opacity:0.06,blending:THREE.AdditiveBlending}));
+  glow.position.copy(g.pos);scene.add(glow);
+});
+
+/* ═══ AGENTS 3D ═══ */
+var catKeys=Object.keys(CATS);var catCounts={};catKeys.forEach(function(k){catCounts[k]=0;});
+AGENTS.forEach(function(a){catCounts[a.cat]=(catCounts[a.cat]||0)+1;});
+var catOffsets={};catKeys.forEach(function(k){catOffsets[k]=0;});
+
+AGENTS.forEach(function(a){
+  var ci=catKeys.indexOf(a.cat);var count=catCounts[a.cat];var idx=catOffsets[a.cat]++;
+  var ringR=8+ci*4.5;var angle=(idx/count)*Math.PI*2+ci*0.5;
+  var x=ringR*Math.cos(angle);var z=ringR*Math.sin(angle);var y=(Math.random()-0.5)*4;
+  a.pos={x:x,y:y,z:z};a.basePos={x:x,y:y,z:z};
+  var geos=[new THREE.IcosahedronGeometry(0.5,0),new THREE.OctahedronGeometry(0.5,0),new THREE.BoxGeometry(0.7,0.7,0.7),new THREE.TetrahedronGeometry(0.55,0),new THREE.DodecahedronGeometry(0.45,0),new THREE.SphereGeometry(0.5,8,8),new THREE.ConeGeometry(0.4,0.8,6)];
+  var mat=new THREE.MeshBasicMaterial({color:CATS[a.cat].color,transparent:true,opacity:0.85});
+  mat.emissive=new THREE.Color(CATS[a.cat].color);mat.emissiveIntensity=0.3;
+  a.mesh=new THREE.Mesh(geos[ci],mat);a.mesh.position.set(x,y,z);scene.add(a.mesh);
+  a.statusRing=new THREE.Mesh(new THREE.RingGeometry(0.7,0.75,16),new THREE.MeshBasicMaterial({color:0x444444,transparent:true,opacity:0.3,side:THREE.DoubleSide,blending:THREE.AdditiveBlending}));
+  a.statusRing.position.set(x,y,z);scene.add(a.statusRing);
+  a.auraMesh=new THREE.Mesh(new THREE.SphereGeometry(0.8,8,8),new THREE.MeshBasicMaterial({color:CATS[a.cat].color,transparent:true,opacity:0,blending:THREE.AdditiveBlending}));
+  a.auraMesh.position.set(x,y,z);scene.add(a.auraMesh);
+  a.evoRing=new THREE.Mesh(new THREE.TorusGeometry(0.9,0.02,8,24),new THREE.MeshBasicMaterial({color:0xFF6B6B,transparent:true,opacity:0,blending:THREE.AdditiveBlending}));
+  a.evoRing.position.set(x,y,z);scene.add(a.evoRing);
+});
+
+/* ═══ CONNECTIONS ═══ */
+var connections=[];var maxConn=650;
+for(var i=0;i<maxConn;i++){
+  var a=AGENTS[Math.floor(Math.random()*AGENTS.length)],b=AGENTS[Math.floor(Math.random()*AGENTS.length)];
+  if(a===b)continue;
+  var mid=new THREE.Vector3((a.pos.x+b.pos.x)/2,(a.pos.y+b.pos.y)/2+2,(a.pos.z+b.pos.z)/2);
+  var curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(a.pos.x,a.pos.y,a.pos.z),mid,new THREE.Vector3(b.pos.x,b.pos.y,b.pos.z));
+  var pts=curve.getPoints(20);var geo=new THREE.BufferGeometry().setFromPoints(pts);
+  var baseOp=0.015+Math.random()*0.02;
+  var mat=new THREE.LineBasicMaterial({color:a.cat===b.cat?CATS[a.cat].color:0x333355,transparent:true,opacity:baseOp});
+  var line=new THREE.Line(geo,mat);scene.add(line);
+  connections.push({from:a,to:b,line:line,curve:curve,baseOp:baseOp,brightTime:0});
+}
+
+/* ═══ ANIMATION ARRAYS ═══ */
+var pulses=[],shockwaves=[],dataFetches=[],dataStreams=[],deepThinkers=[],taskIcons=[],heartbeats=[],evoWaves=[],spiderTrails=[],motionTrails=[],extBeams=[],storms=[],clusters=[],selfPlayBolts=[];
+var eventLogVisible=false,leftPanelVisible=false,currentView='neural',currentTab='experiments';
+
+/* ═══ LOGGING ═══ */
+function logEvent(type,icon,title,desc){
+  var el=document.getElementById('eventItems');if(!el)return;
+  var now=new Date();var time=now.getHours().toString().padStart(2,'0')+':'+now.getMinutes().toString().padStart(2,'0')+':'+now.getSeconds().toString().padStart(2,'0');
+  el.innerHTML='<div class="event-item '+type+'"><div class="ev-body"><div class="ev-title">'+icon+' '+title+'</div><div class="ev-desc">'+desc+'</div></div><div class="ev-time">'+time+'</div></div>'+el.innerHTML;
+  if(el.children.length>60)el.removeChild(el.lastChild);
+}
+
+function logExperiment(status,title,improve){
+  var el=document.getElementById('expItems');if(!el)return;
+  var cls=status==='success'?'success':status==='fail'?'fail':'running';
+  var metricCls=improve>0?'up':'down';
+  el.innerHTML='<div class="exp-item '+cls+'"><div class="exp-body"><div class="exp-title">'+title+'</div><div class="exp-metric '+metricCls+'">'+(improve>0?'+':'')+improve.toFixed(1)+'%</div></div></div>'+el.innerHTML;
+  if(el.children.length>25)el.removeChild(el.lastChild);
+}
+
+function logArena(msg){
+  var el=document.getElementById('arenaLog');if(!el)return;
+  el.innerHTML='<div style="padding:1px 0;border-bottom:1px solid rgba(255,255,255,0.02);">'+msg+'</div>'+el.innerHTML;
+  if(el.children.length>20)el.removeChild(el.lastChild);
+}
+
+function addCodeLine(text,type){
+  var el=document.getElementById('codePanel');if(!el)return;
+  var ln=el.children.length+1;
+  el.innerHTML+='<div class="code-line"><span class="ln">'+ln+'</span> <span class="'+type+'">'+text+'</span></div>';
+  el.scrollTop=el.scrollHeight;
+  if(el.children.length>30)el.removeChild(el.firstChild);
+}
+
+/* ═══ VISUAL EFFECTS ═══ */
+function createEvoWave(agent){
+  var w=new THREE.Mesh(new THREE.RingGeometry(0.1,0.4,24),new THREE.MeshBasicMaterial({color:0xFF6B6B,transparent:true,opacity:0.5,side:THREE.DoubleSide,blending:THREE.AdditiveBlending}));
+  w.position.copy(agent.mesh.position);w.lookAt(camera.position);scene.add(w);evoWaves.push({mesh:w,scale:1,life:1});
+}
+
+function addMemoryRing(agent){
+  if(agent.memRings.length>=5)return;
+  var r=new THREE.Mesh(new THREE.TorusGeometry(0.6+agent.memRings.length*0.15,0.015,6,24),new THREE.MeshBasicMaterial({color:new THREE.Color().setHSL(Math.random(),0.8,0.5),transparent:true,opacity:0.3,blending:THREE.AdditiveBlending}));
+  r.position.copy(agent.mesh.position);r.rotation.set(Math.random()*Math.PI,Math.random()*Math.PI,0);scene.add(r);agent.memRings.push(r);
+}
+
+function createDataStream(from,to,count){
+  var mid=new THREE.Vector3((from.pos.x+to.pos.x)/2,(from.pos.y+to.pos.y)/2+4,(from.pos.z+to.pos.z)/2);
+  var curve=new THREE.QuadraticBezierCurve3(new THREE.Vector3(from.mesh.position.x,from.mesh.position.y,from.mesh.position.z),mid,new THREE.Vector3(to.mesh.position.x,to.mesh.position.y,to.mesh.position.z));
+  var particles=[];
+  for(var i=0;i<(count||3);i++){var p=new THREE.Mesh(new THREE.SphereGeometry(0.04,4,4),new THREE.MeshBasicMaterial({color:CATS[from.cat].color,transparent:true,opacity:0.7,blending:THREE.AdditiveBlending}));p.userData.t=i/count;scene.add(p);particles.push(p);}
+  dataStreams.push({curve:curve,particles:particles,life:120});
+}
+
+function createSpiderTrail(agent,gateway){
+  var start=agent.mesh.position.clone();var end=gateway.pos.clone();
+  var mid=new THREE.Vector3((start.x+end.x)/2,(start.y+end.y)/2+8,(start.z+end.z)/2);
+  var curve=new THREE.QuadraticBezierCurve3(start,mid,end);
+  var spider=new THREE.Mesh(new THREE.OctahedronGeometry(0.12,0),new THREE.MeshBasicMaterial({color:0x39FF14,transparent:true,opacity:1,blending:THREE.AdditiveBlending}));
+  spider.position.copy(start);scene.add(spider);
+  spiderTrails.push({mesh:spider,curve:curve,t:0,speed:0.008});
+}
+
+function createSelfPlayBolt(){
+  var pts=[];var steps=15;
+  for(var i=0;i<=steps;i++){var t=i/steps;var x=-20+t*40;var y=(Math.random()-0.5)*4;var z=(Math.random()-0.5)*4;pts.push(new THREE.Vector3(x,y,z));}
+  var geo=new THREE.BufferGeometry().setFromPoints(pts);
+  var bolt=new THREE.Line(geo,new THREE.LineBasicMaterial({color:0xFF6EC7,transparent:true,opacity:0.8,blending:THREE.AdditiveBlending}));
+  scene.add(bolt);selfPlayBolts.push({line:bolt,life:1});
+}
+
+function createDistillFlow(){
+  for(var i=0;i<8;i++){
+    var curve=new THREE.QuadraticBezierCurve3(teacherOrb.position.clone().add(new THREE.Vector3((Math.random()-0.5)*2,(Math.random()-0.5)*2,(Math.random()-0.5)*2)),new THREE.Vector3(0,8+(Math.random()-0.5)*3,0),studentOrb.position.clone().add(new THREE.Vector3((Math.random()-0.5)*2,(Math.random()-0.5)*2,(Math.random()-0.5)*2)));
+    var p=new THREE.Mesh(new THREE.SphereGeometry(0.08,6,6),new THREE.MeshBasicMaterial({color:0x00BFFF,transparent:true,opacity:0.7,blending:THREE.AdditiveBlending}));
+    scene.add(p);distillParticles.push({mesh:p,curve:curve,t:Math.random(),speed:0.004+Math.random()*0.003});
+  }
+}
+
+function createDeepThink(agent){
+  if(agent.deepThinkObj)return;
+  var group=new THREE.Group();var rings=[];
+  for(var i=0;i<3;i++){var r=new THREE.Mesh(new THREE.TorusGeometry(1+i*0.4,0.02,8,32),new THREE.MeshBasicMaterial({color:0x00BFFF,transparent:true,opacity:0.4,blending:THREE.AdditiveBlending}));group.add(r);rings.push(r);}
+  group.position.copy(agent.mesh.position).add(new THREE.Vector3(0,2,0));
+  scene.add(group);agent.deepThinkObj={group:group,rings:rings,time:0,solved:false};deepThinkers.push(agent);
+}
+function solveDeepThink(agent){if(agent.deepThinkObj)agent.deepThinkObj.solved=true;}
+
+function createExtBeam(agent,color){
+  var beam=new THREE.Mesh(new THREE.CylinderGeometry(0.015,0.015,40,4),new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:0.3,blending:THREE.AdditiveBlending}));
+  beam.position.set(agent.mesh.position.x,agent.mesh.position.y+20,agent.mesh.position.z);scene.add(beam);
+  var particles=[];
+  for(var i=0;i<6;i++){var p=new THREE.Mesh(new THREE.SphereGeometry(0.03,4,4),new THREE.MeshBasicMaterial({color:color,transparent:true,opacity:0.7,blending:THREE.AdditiveBlending}));p.position.set(agent.mesh.position.x,agent.mesh.position.y+40-i*5,agent.mesh.position.z);p.userData.speed=0.12+Math.random()*0.08;scene.add(p);particles.push(p);}
+  extBeams.push({beam:beam,particles:particles,agent:agent,life:150});
+}
+
+function createTaskIcon(agent,taskName){
+  removeTaskIcon(agent);
+  var type=taskName.indexOf('بحث')>=0?'research':taskName.indexOf('تقطير')>=0?'distill':taskName.indexOf('هجوم')>=0||taskName.indexOf('دفاع')>=0?'arena':taskName.indexOf('كود')>=0?'code':'analysis';
+  var colors={research:0x00FFFF,analysis:0x39FF14,distill:0x00BFFF,arena:0xFF6EC7,code:0xBF00FF};
+  var geos={research:new THREE.TorusGeometry(0.4,0.06,8,16),distill:new THREE.ConeGeometry(0.3,0.6,6),arena:new THREE.OctahedronGeometry(0.4,0),code:new THREE.BoxGeometry(0.5,0.5,0.5),analysis:new THREE.IcosahedronGeometry(0.4,0)};
+  var icon=new THREE.Mesh(geos[type]||geos.analysis,new THREE.MeshBasicMaterial({color:colors[type]||0x00FFFF,transparent:true,opacity:0.5,blending:THREE.AdditiveBlending}));
+  icon.position.set(agent.mesh.position.x,agent.mesh.position.y+1.8,agent.mesh.position.z);scene.add(icon);agent.taskIcon=icon;taskIcons.push({mesh:icon,agent:agent});
+}
+function removeTaskIcon(agent){if(agent.taskIcon){scene.remove(agent.taskIcon);agent.taskIcon=null;taskIcons=taskIcons.filter(function(t){return t.agent!==agent;});}}
+
+/* ═══ EVENT HANDLERS ═══ */
+EventBus.on(EVT.TASK_ASSIGNED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.state='busy';a.currentTask=d.task;a.progress=0;a.shakeIntensity=0.08;a.deepThinkTime=0;a.mesh.material.emissiveIntensity=1;a.statusRing.material.color.setHex(0xFFA500);createTaskIcon(a,d.task);logEvent('task','⚡',a.name_ar,'بدأ: '+d.task);});
+
+EventBus.on(EVT.TASK_COMPLETED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.state='active';a.currentTask=null;a.progress=100;a.shakeIntensity=0;a.successCount++;a.taskCount++;a.mesh.material.emissiveIntensity=0.4;a.statusRing.material.color.setHex(0x39FF14);removeTaskIcon(a);if(a.deepThinkObj)solveDeepThink(a);a.growthTarget=a.currentGrowth+0.015;createEvoWave(a);
+  var sw=new THREE.Mesh(new THREE.RingGeometry(0.1,0.25,24),new THREE.MeshBasicMaterial({color:0x39FF14,transparent:true,opacity:0.6,side:THREE.DoubleSide,blending:THREE.AdditiveBlending}));sw.position.copy(a.mesh.position);sw.lookAt(camera.position);scene.add(sw);shockwaves.push({mesh:sw,scale:1,life:1});
+  logEvent('success','✓',a.name_ar,'أنجز المهمة');});
+
+EventBus.on(EVT.TASK_FAILED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.state='idle';a.currentTask=null;a.shakeIntensity=0;a.errorCount++;a.taskCount++;a.glitchTime=60;removeTaskIcon(a);if(a.deepThinkObj)solveDeepThink(a);logEvent('error','✗',a.name_ar,'فشل');});
+
+var toolGW={web_search:3,deep_search:3,github_search:1,arxiv_search:0,fetch_news:4};
+var internetTools=['web_search','deep_search','github_search','arxiv_search','fetch_news'];
+EventBus.on(EVT.TOOL_USED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.activeTools.push(d.tool);a.lastAction=d.tool;setTimeout(function(){a.activeTools=a.activeTools.filter(function(t){return t!==d.tool;});},2500);
+  var gwIdx=toolGW[d.tool];if(gwIdx!==undefined&&gateways[gwIdx]){var g=gateways[gwIdx];var p=new THREE.Mesh(new THREE.SphereGeometry(0.08,6,6),new THREE.MeshBasicMaterial({color:g.color,transparent:true,opacity:0.7,blending:THREE.AdditiveBlending}));p.position.copy(a.mesh.position);scene.add(p);dataFetches.push({mesh:p,start:a.mesh.position.clone(),target:g.pos.clone(),t:0,speed:0.01});}
+  if(internetTools.indexOf(d.tool)>=0)createExtBeam(a,gateways[gwIdx]?gateways[gwIdx].color:0x00FFFF);
+  EVO.tokens.used+=Math.floor(Math.random()*400+80);});
+
+EventBus.on(EVT.AGENT_MESSAGE,function(d){var from=AGENTS.find(function(x){return x.id===d.fromId;}),to=AGENTS.find(function(x){return x.id===d.toId;});if(!from||!to)return;
+  var conn=connections.find(function(c){return(c.from===from&&c.to===to)||(c.from===to&&c.to===from);});
+  var curve=conn?conn.curve:new THREE.QuadraticBezierCurve3(new THREE.Vector3(from.pos.x,from.pos.y,from.pos.z),new THREE.Vector3((from.pos.x+to.pos.x)/2,(from.pos.y+to.pos.y)/2+3,(from.pos.z+to.pos.z)/2),new THREE.Vector3(to.pos.x,to.pos.y,to.pos.z));
+  if(conn){conn.line.material.opacity=0.35;conn.brightTime=50;}
+  var pM=new THREE.Mesh(new THREE.SphereGeometry(0.1,8,8),new THREE.MeshBasicMaterial({color:CATS[from.cat].color,transparent:true,opacity:0.9}));scene.add(pM);
+  var gl=new THREE.Mesh(new THREE.SphereGeometry(0.3,6,6),new THREE.MeshBasicMaterial({color:CATS[from.cat].color,transparent:true,opacity:0.25,blending:THREE.AdditiveBlending}));scene.add(gl);
+  pulses.push({mesh:pM,glow:gl,curve:curve,t:0,speed:0.008+Math.random()*0.005});
+  createDataStream(from,to,3);});
+
+EventBus.on(EVT.MEMORY_SAVED,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.memory+=d.size||5;a.knowledge=Math.min(100,a.knowledge+(d.amount||2));a.growthTarget=a.currentGrowth+0.02;addMemoryRing(a);EVO.knowledgeGB+=0.001;logEvent('memory','M',a.name_ar,'حفظ: '+d.topic);});
+
+EventBus.on(EVT.API_ERROR,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;a.errorCount++;a.glitchTime=50;a.statusRing.material.color.setHex(0xFF3366);logEvent('error','!',a.name_ar,'خطأ: '+d.error);});
+
+EventBus.on(EVT.RATE_LIMIT,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;var st=new THREE.Mesh(new THREE.SphereGeometry(1.5,8,8),new THREE.MeshBasicMaterial({color:0xFF0000,transparent:true,opacity:0.12,blending:THREE.AdditiveBlending}));st.position.set(a.pos.x,a.pos.y+2,a.pos.z);scene.add(st);storms.push({mesh:st,agent:a,life:1,lt:0});logEvent('error','!',a.name_ar,'Rate Limit');});
+
+EventBus.on(EVT.COMMAND_SENT,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(!a)return;
+  var wave=new THREE.Mesh(new THREE.SphereGeometry(0.4,16,16),new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:0.5,blending:THREE.AdditiveBlending}));wave.position.set(0,0,0);scene.add(wave);shockwaves.push({mesh:wave,scale:0.5,life:1});
+  logEvent('command','C',a.name_ar,'أمر: '+d.command);});
+
+EventBus.on(EVT.CLUSTER_FORMED,function(d){var agents=d.agentIds.map(function(id){return AGENTS.find(function(a){return a.id===id;});}).filter(Boolean);if(agents.length<2)return;var center={x:0,y:0,z:0};agents.forEach(function(a){center.x+=a.pos.x;center.y+=a.pos.y;center.z+=a.pos.z;});center.x/=agents.length;center.y/=agents.length;center.z/=agents.length;agents.forEach(function(a){a.clusterTarget={x:center.x+(a.pos.x-center.x)*0.4,y:center.y+(a.pos.y-center.y)*0.4,z:center.z+(a.pos.z-center.z)*0.4};});clusters.push({agents:agents,center:center,life:1,id:d.clusterId||Math.random()});
+  for(var i=0;i<agents.length-1;i++)createDataStream(agents[i],agents[i+1],5);});
+EventBus.on(EVT.CLUSTER_DISSOLVED,function(d){var idx=clusters.findIndex(function(c){return c.id===d.clusterId;});if(idx>=0){clusters[idx].agents.forEach(function(a){a.clusterTarget=null;});clusters.splice(idx,1);}});
+
+// v9 Events
+EventBus.on(EVT.EXPERIMENT_START,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(a){a.state='evolving';a.statusRing.material.color.setHex(0xFF6B6B);a.mesh.material.emissiveIntensity=1.3;}EVO.experiments.today++;EVO.experiments.total++;logExperiment('running',d.hypothesis||'تجربة',0);logEvent('evolution','E',(a?a.name_ar:'النظام'),'تجربة: '+(d.hypothesis||''));});
+
+EventBus.on(EVT.EXPERIMENT_END,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(a){a.state='active';a.mesh.material.emissiveIntensity=0.4;createEvoWave(a);}if(d.success){EVO.experiments.success++;if(d.improve>EVO.experiments.bestImprove)EVO.experiments.bestImprove=d.improve;}logExperiment(d.success?'success':'fail',d.hypothesis||'تجربة',d.improve||0);logEvent(d.success?'evolution':'error',d.success?'+':'-',(a?a.name_ar:'النظام'),(d.improve>0?'+':'')+((d.improve||0).toFixed(1))+'%');});
+
+EventBus.on(EVT.DISTILL_START,function(d){distillBeamGroup.visible=true;EVO.distillation.active=true;createDistillFlow();logEvent('distill','D','التقطير',d.teacher+' → '+d.student);});
+EventBus.on(EVT.DISTILL_COMPLETE,function(d){EVO.distillation.lessons++;EVO.distillation.improve+=d.improve||0.5;AGENTS.forEach(function(a){a.knowledge=Math.min(100,a.knowledge+0.2);});logEvent('distill','G','التقطير','+'+(d.improve||0.5).toFixed(1)+'%');});
+
+EventBus.on(EVT.SPIDER_CRAWL,function(d){var a=AGENTS.find(function(x){return x.id===d.agentId;});if(a){a.state='crawling';a.statusRing.material.color.setHex(0x39FF14);}var gw=gateways[Math.floor(Math.random()*gateways.length)];if(a)createSpiderTrail(a,gw);EVO.spiders.pages+=d.pages||1;if(d.type==='paper')EVO.spiders.papers++;if(d.type==='skill'){EVO.spiders.skills++;EVO.skills++;}logEvent('spider','S',(a?a.name_ar:'عنكبوت'),d.source||'');});
+
+EventBus.on(EVT.MODEL_MERGE,function(d){EVO.merging.count++;EVO.merging.improve+=d.improve||1;EVO.merging.currentModel='Army81-v'+(EVO.merging.count+1);
+  var sw=new THREE.Mesh(new THREE.RingGeometry(0.1,0.8,32),new THREE.MeshBasicMaterial({color:0xFFD700,transparent:true,opacity:0.7,side:THREE.DoubleSide,blending:THREE.AdditiveBlending}));sw.position.set(0,0,0);sw.lookAt(camera.position);scene.add(sw);shockwaves.push({mesh:sw,scale:1,life:1});
+  logEvent('evolution','M','دمج','نموذج: '+EVO.merging.currentModel);});
+
+EventBus.on(EVT.SKILL_ACQUIRED,function(d){EVO.skills++;logEvent('evolution','S','مهارة',d.skill||'جديدة');});
+EventBus.on(EVT.AWAKENING,function(d){EVO.day++;if(EVO.day<=18)EVO.phase=1;else if(EVO.day<=36)EVO.phase=2;else if(EVO.day<=54)EVO.phase=3;else if(EVO.day<=72)EVO.phase=4;else EVO.phase=5;EVO.experiments.today=0;EVO.tokens.used=0;logEvent('evolution','Y','يقظة','اليوم '+EVO.day+'/90');});
+EventBus.on(EVT.CORE_LOAD_CHANGE,function(d){coreLoadVal=d.load;coreTargetSpeed=0.003+d.load*0.025;});
+
+// ═══ NEW v10 EVENT HANDLERS ═══
+EventBus.on(EVT.SELFPLAY_ROUND,function(d){
+  EVO.selfPlay.rounds++;EVO.selfPlay.currentRound=d;
+  var redAgents=d.red.map(function(id){return AGENTS.find(function(a){return a.id===id;});}).filter(Boolean);
+  var blueAgents=d.blue.map(function(id){return AGENTS.find(function(a){return a.id===id;});}).filter(Boolean);
+  redAgents.forEach(function(a){a.state='attacking';a.team='red';a.statusRing.material.color.setHex(0xFF3366);a.mesh.material.emissiveIntensity=1.2;});
+  blueAgents.forEach(function(a){a.state='defending';a.team='blue';a.statusRing.material.color.setHex(0x00BFFF);a.mesh.material.emissiveIntensity=1.2;});
+  createSelfPlayBolt();
+  logArena('<span style="color:#FF3366">Red</span> vs <span style="color:#00BFFF">Blue</span> — '+d.challenge);
+  logEvent('selfplay','VS','ساحة',d.challenge);
+});
+
+EventBus.on(EVT.SELFPLAY_RESULT,function(d){
+  if(d.winner==='red')EVO.selfPlay.redWins++;else EVO.selfPlay.blueWins++;
+  AGENTS.filter(function(a){return a.team;}).forEach(function(a){a.state='active';a.team=null;a.mesh.material.emissiveIntensity=0.4;a.evolution=Math.min(100,a.evolution+0.5);});
+  logArena('فائز: <span style="color:'+(d.winner==='red'?'#FF3366':'#00BFFF')+'">'+(d.winner==='red'?'RED':'BLUE')+'</span> — '+d.lesson);
+  logEvent('selfplay',d.winner==='red'?'R':'B','نتيجة',d.lesson);
+});
+
+EventBus.on(EVT.CODE_COMMIT,function(d){
+  EVO.openHands.commits++;EVO.openHands.lines+=d.lines||10;if(d.bugFix)EVO.openHands.bugs++;
+  addCodeLine(d.message||'git commit','fn');
+  if(d.file)addCodeLine('  '+d.file,'str');
+  logEvent('code','C','OpenHands',d.message||'commit');
+});
+
+EventBus.on(EVT.CUA_BROWSE,function(d){
+  EVO.cua.sessions++;EVO.cua.pagesVisited++;EVO.cua.currentUrl=d.url||'';
+  document.getElementById('cuaUrl').textContent=d.url||'browsing...';
+  document.getElementById('cuaContent').textContent=d.action||'Loading...';
+  document.getElementById('cuaStatus').textContent=d.status||'نشط';
+  var cursor=document.getElementById('cuaCursor');cursor.style.left=Math.random()*80+'%';cursor.style.top=(20+Math.random()*30)+'px';
+  logEvent('cua','B','CUA',d.url||'browse');
+});
+
+EventBus.on(EVT.SYNTH_GENERATE,function(d){
+  EVO.synth.scenarios+=d.count||1;if(d.correct)EVO.synth.correct+=d.correct;
+  var a=AGENTS.find(function(x){return x.id===d.agentId;});if(a)a.synthData+=d.count||1;
+  logEvent('synth','D','بيانات',d.topic+' ('+d.count+' سيناريو)');
+});
+
+EventBus.on(EVT.DSPY_OPTIMIZE,function(d){
+  EVO.dspy.optimized++;EVO.dspy.totalImprove+=d.improve||0;EVO.dspy.avgImprove=EVO.dspy.totalImprove/EVO.dspy.optimized;
+  var a=AGENTS.find(function(x){return x.id===d.agentId;});
+  logEvent('evolution','P','DSPy',(a?a.name_ar:'وكيل')+' +'+(d.improve||0).toFixed(1)+'%');
+});
+
+/* ═══ DEMO SIMULATOR v10 ═══ */
+function startDemo(){
+  var tasks=['تحليل بيانات','بحث علمي','تقطير معرفة','تطور ذاتي','مسح أمني','تقرير استراتيجي','تدريب نموذج','دمج مهارات','زحف ويب','تحسين كود','هجوم Red Team','دفاع Blue Team','توليد بيانات','تحسين prompt'];
+  var topics=['الذكاء الاصطناعي','الأمن السيبراني','الاقتصاد','الجيوسياسة','علم النفس','التكنولوجيا الحيوية','التعلم العميق','الروبوتات'];
+  var hypotheses=['تحسين prompt بـ DSPy','دمج Qwen+Gemma بـ SLERP','تقليص Llama-70B إلى 8B','GraphRAG للاستنتاج','Fine-tune عربي','تحسين RAG بـ Reranker','Self-Play Red vs Blue','Chain-of-Thought','MoE routing','LoRA rank tuning'];
+  var challenges=['اختراق prompt injection','كشف hallucination','تجاوز guardrails','تحسين latency','اختبار edge cases','تحدي reasoning','اختبار multilingual','تحدي math'];
+  var codeMessages=['fix: improve router latency','feat: add new tool wrapper','refactor: memory compression','fix: rate limit handler','feat: GraphRAG integration','chore: update dependencies','fix: agent communication bug','feat: DSPy optimizer'];
+  var cuaUrls=['arxiv.org/abs/2503.xxxxx','github.com/trending/python','huggingface.co/models','reddit.com/r/LocalLLaMA','paperswithcode.com/sota'];
+
+  setInterval(function(){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];if(a.state==='idle'&&Math.random()>0.25)EventBus.emit(EVT.TASK_ASSIGNED,{agentId:a.id,task:tasks[Math.floor(Math.random()*tasks.length)]});},2200);
+
+  setInterval(function(){AGENTS.filter(function(a){return a.state==='busy';}).forEach(function(a){a.progress=Math.min(100,a.progress+Math.random()*12);if(a.progress>=100){if(Math.random()>0.08)EventBus.emit(EVT.TASK_COMPLETED,{agentId:a.id});else EventBus.emit(EVT.TASK_FAILED,{agentId:a.id});}});},2800);
+
+  setInterval(function(){var busy=AGENTS.filter(function(a){return a.state!=='idle';});if(busy.length>0){var a=busy[Math.floor(Math.random()*busy.length)];EventBus.emit(EVT.TOOL_USED,{agentId:a.id,tool:a.tools[Math.floor(Math.random()*a.tools.length)]});}},1800);
+
+  setInterval(function(){if(Math.random()>0.55){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)],b=AGENTS[Math.floor(Math.random()*AGENTS.length)];if(a!==b)EventBus.emit(EVT.AGENT_MESSAGE,{fromId:a.id,toId:b.id});}},2500);
+
+  setInterval(function(){if(Math.random()>0.65){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.MEMORY_SAVED,{agentId:a.id,amount:Math.random()*4+1,size:Math.random()*15+5,topic:topics[Math.floor(Math.random()*topics.length)]});}},3500);
+
+  // AutoResearch
+  setInterval(function(){if(Math.random()>0.35){var devAgents=AGENTS.filter(function(x){return x.cat==='cat7_new';});var a=devAgents[Math.floor(Math.random()*devAgents.length)];if(a&&a.state==='idle'){EventBus.emit(EVT.EXPERIMENT_START,{agentId:a.id,hypothesis:hypotheses[Math.floor(Math.random()*hypotheses.length)]});setTimeout(function(){var success=Math.random()>0.3;EventBus.emit(EVT.EXPERIMENT_END,{agentId:a.id,success:success,improve:success?(Math.random()*7+0.5):-(Math.random()*2.5),hypothesis:hypotheses[Math.floor(Math.random()*hypotheses.length)]});},3500+Math.random()*5000);}}},4500);
+
+  // Distillation
+  setInterval(function(){if(Math.random()>0.55){var teachers=['GPT-5','Claude-4','Gemini-2.5'];var students=['Qwen-8B','Gemma-3-4B','Mistral-7B'];EventBus.emit(EVT.DISTILL_START,{teacher:teachers[Math.floor(Math.random()*3)],student:students[Math.floor(Math.random()*3)]});setTimeout(function(){EventBus.emit(EVT.DISTILL_COMPLETE,{improve:Math.random()*2.5+0.3});},5000+Math.random()*4000);}},7000);
+
+  // Spider crawls
+  setInterval(function(){if(Math.random()>0.4){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];var sources=['arXiv:2503.xxxxx','github.com/trending','HuggingFace/models','Reddit/r/ML','Papers With Code'];EventBus.emit(EVT.SPIDER_CRAWL,{agentId:a.id,source:sources[Math.floor(Math.random()*sources.length)],pages:Math.floor(Math.random()*5+1),type:['paper','skill','page'][Math.floor(Math.random()*3)]});setTimeout(function(){if(a.state==='crawling')a.state='idle';},2500);}},3500);
+
+  // Model merging
+  setInterval(function(){if(Math.random()>0.82)EventBus.emit(EVT.MODEL_MERGE,{improve:Math.random()*4+1});},14000);
+
+  // Skills
+  setInterval(function(){if(Math.random()>0.75){var skills=['SQL Analysis','PDF Parsing','Voice Synthesis','Image Understanding','Code Review','API Integration','Data Viz','Web Scraping'];EventBus.emit(EVT.SKILL_ACQUIRED,{skill:skills[Math.floor(Math.random()*skills.length)]});}},10000);
+
+  // ═══ NEW v10 EVENTS ═══
+
+  // Self-Play Arena
+  setInterval(function(){if(Math.random()>0.5&&!EVO.selfPlay.currentRound){
+    var allIds=AGENTS.map(function(a){return a.id;}).sort(function(){return Math.random()-0.5;});
+    var red=allIds.slice(0,4);var blue=allIds.slice(4,8);
+    EventBus.emit(EVT.SELFPLAY_ROUND,{red:red,blue:blue,challenge:challenges[Math.floor(Math.random()*challenges.length)]});
+    setTimeout(function(){var winner=Math.random()>0.5?'red':'blue';var lessons=['تحسين guardrails','تعزيز reasoning','تحسين robustness','تحديث safety filters','تحسين edge case handling'];EventBus.emit(EVT.SELFPLAY_RESULT,{winner:winner,lesson:lessons[Math.floor(Math.random()*lessons.length)]});EVO.selfPlay.currentRound=null;},5000+Math.random()*5000);
+  }},8000);
+
+  // OpenHands Code
+  setInterval(function(){if(Math.random()>0.6){var files=['core/llm_client.py','router/smart_router.py','tools/registry.py','memory/hierarchical_memory.py','core/base_agent.py','workflows/langgraph_flows.py'];EventBus.emit(EVT.CODE_COMMIT,{message:codeMessages[Math.floor(Math.random()*codeMessages.length)],file:files[Math.floor(Math.random()*files.length)],lines:Math.floor(Math.random()*50+5),bugFix:Math.random()>0.6});}},9000);
+
+  // CUA Browse
+  setInterval(function(){if(Math.random()>0.55){var actions=['Extracting data...','Reading paper...','Downloading model...','Scraping results...','Clicking button...'];EventBus.emit(EVT.CUA_BROWSE,{url:cuaUrls[Math.floor(Math.random()*cuaUrls.length)],action:actions[Math.floor(Math.random()*actions.length)],status:'نشط'});}},6000);
+
+  // Synthetic Data
+  setInterval(function(){if(Math.random()>0.5){var a=AGENTS.filter(function(x){return x.cat==='cat1_science';})[Math.floor(Math.random()*9)];if(a){var count=Math.floor(Math.random()*20+5);EventBus.emit(EVT.SYNTH_GENERATE,{agentId:a.id,topic:topics[Math.floor(Math.random()*topics.length)],count:count,correct:Math.floor(count*0.7+Math.random()*count*0.3)});}}},5000);
+
+  // DSPy Optimization
+  setInterval(function(){if(Math.random()>0.7){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.DSPY_OPTIMIZE,{agentId:a.id,improve:Math.random()*5+0.5});}},11000);
+
+  // QLoRA batches
+  setInterval(function(){if(EVO.synth.scenarios>50){EVO.synth.batches++;logEvent('evolution','Q','QLoRA','Batch #'+EVO.synth.batches+' ('+Math.min(EVO.synth.correct,100)+' samples)');}},20000);
+
+  // Clusters
+  setInterval(function(){if(clusters.length<3&&Math.random()>0.55){var cat=Object.keys(CATS)[Math.floor(Math.random()*7)];var ca=AGENTS.filter(function(a){return a.cat===cat;}).sort(function(){return Math.random()-0.5;}).slice(0,3+Math.floor(Math.random()*3));var cid='cl_'+Date.now();EventBus.emit(EVT.CLUSTER_FORMED,{agentIds:ca.map(function(a){return a.id;}),clusterId:cid});setTimeout(function(){EventBus.emit(EVT.CLUSTER_DISSOLVED,{clusterId:cid});},7000+Math.random()*6000);}},9000);
+
+  setInterval(function(){var busy=AGENTS.filter(function(a){return a.state!=='idle';}).length;EventBus.emit(EVT.CORE_LOAD_CHANGE,{load:busy/AGENTS.length});},2000);
+
+  setInterval(function(){EventBus.emit(EVT.AWAKENING,{});},45000);
+
+  setInterval(function(){if(Math.random()>0.9){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)];EventBus.emit(EVT.API_ERROR,{agentId:a.id,error:'Timeout'});}},10000);
+}
+// ═══ REAL API MODE — connects to Gateway ═══
+var API='http://localhost:8181',apiConnected=false,lastEventIdx=0;
+function startReal(){
+  fetch(API+'/health').then(function(r){return r.json();}).then(function(d){
+    apiConnected=true;
+    logEvent('success','✓','النظام','متصل بالخلفية — بيانات حقيقية');
+    setInterval(function(){
+      fetch(API+'/swarm/events?since='+lastEventIdx).then(function(r){return r.json();}).then(function(d){
+        if(!d.events)return;
+        d.events.forEach(function(evt){
+          var from=evt.from_agent,to=evt.to_agent,data=evt.data||{},type=evt.event_type;
+          if(type==='agent_message'){EventBus.emit(EVT.AGENT_MESSAGE,{fromId:from,toId:to});EventBus.emit(EVT.TASK_ASSIGNED,{agentId:from,task:data.message||'تواصل'});}
+          else if(type==='task_completed'){EventBus.emit(EVT.TASK_COMPLETED,{agentId:from});EventBus.emit(EVT.MEMORY_SAVED,{agentId:from,amount:3,size:10,topic:data.phase||'مهمة'});}
+          else if(type==='task_failed'){EventBus.emit(EVT.TASK_FAILED,{agentId:from});}
+          else if(type==='cluster_formed'){EventBus.emit(EVT.CLUSTER_FORMED,{agentIds:data.agents||[from,to],clusterId:'cl_'+Date.now()});}
+          else if(type==='experiment'){EventBus.emit(EVT.EXPERIMENT_END,{agentId:from,success:true,improve:data.score_diff||2,hypothesis:data.type||'تجربة'});}
+          else if(type==='cycle_completed'){EventBus.emit(EVT.AWAKENING,{});logEvent('evolution','C','دورة','مضاعف: '+(data.multiplier||'?')+'x');}
+        });
+        lastEventIdx=d.next_since||lastEventIdx;
+      }).catch(function(){});
+    },2000);
+    setInterval(function(){
+      fetch(API+'/evolution/stats').then(function(r){return r.json();}).then(function(d){
+        if(d.exponential){var ex=d.exponential;EVO.experiments.total=ex.total_experiments||0;EVO.skills=ex.total_skills||0;EVO.distillation.lessons=ex.total_distillations||0;EVO.selfPlay.rounds=ex.total_battles||0;}
+      }).catch(function(){});
+      fetch(API+'/memory/stats').then(function(r){return r.json();}).then(function(d){
+        EVO.knowledgeGB=((d.episodic||0)+(d.chroma_docs||0))/300;
+      }).catch(function(){});
+    },8000);
+  }).catch(function(){logEvent('error','!','النظام','الخلفية غير متاحة — وضع العرض');startDemo();});
+}
+setInterval(function(){if(Math.random()>0.7){var a=AGENTS[Math.floor(Math.random()*AGENTS.length)],b=AGENTS[Math.floor(Math.random()*AGENTS.length)];if(a!==b)EventBus.emit(EVT.AGENT_MESSAGE,{fromId:a.id,toId:b.id});}},3000);
+startReal();
+
+/* ═══ UI FUNCTIONS ═══ */
+var chatVis=false;
+function toggleChat(){chatVis=!chatVis;document.getElementById('chatBox').style.display=chatVis?'block':'none';}
+function toggleLog(){eventLogVisible=!eventLogVisible;document.getElementById('eventLog').style.display=eventLogVisible?'block':'none';if(eventLogVisible){document.getElementById('leftPanel').style.display='none';leftPanelVisible=false;}}
+function toggleLeftPanel(){leftPanelVisible=!leftPanelVisible;document.getElementById('leftPanel').style.display=leftPanelVisible?'block':'none';if(leftPanelVisible){document.getElementById('eventLog').style.display='none';eventLogVisible=false;}}
+function switchTab(tab){currentTab=tab;document.querySelectorAll('.tab-content').forEach(function(t){t.classList.remove('active');});document.getElementById('tab-'+tab).classList.add('active');document.querySelectorAll('.panel-tabs button').forEach(function(b){b.classList.remove('active');});document.querySelectorAll('.panel-tabs button').forEach(function(b){if(b.textContent.indexOf(tab==='experiments'?'تجارب':tab==='arena'?'ساحة':tab==='code'?'كود':'CUA')>=0)b.classList.add('active');});}
+function setView(v){currentView=v;distillBeamGroup.visible=(v==='distillation');
+  var showArena=(v==='selfplay');redTeamOrb.material.opacity=showArena?0.15:0;blueTeamOrb.material.opacity=showArena?0.15:0;arenaBeam.material.opacity=showArena?0.1:0;
+  document.querySelectorAll('#viewModes button').forEach(function(b){b.classList.remove('active');});
+  var labels={'neural':'الشبكة','evolution':'التطور','distillation':'التقطير','selfplay':'الساحة','knowledge':'المعرفة','graph':'GraphRAG'};
+  document.querySelectorAll('#viewModes button').forEach(function(b){if(b.textContent===labels[v])b.classList.add('active');});}
+function sendCmd(){var input=document.getElementById('chatInput');var msg=input.value.trim();if(!msg)return;var target=document.getElementById('chatTarget').value;var msgs=document.getElementById('chatMessages');msgs.innerHTML+='<div class="chat-msg user">'+msg+'</div>';input.value='';
+  if(target==='all'){AGENTS.forEach(function(a){EventBus.emit(EVT.COMMAND_SENT,{agentId:a.id,command:msg});});msgs.innerHTML+='<div class="chat-msg system">بث لـ 81 وكيل</div>';}
+  else{EventBus.emit(EVT.COMMAND_SENT,{agentId:target,command:msg});var a=AGENTS.find(function(x){return x.id===target;});msgs.innerHTML+='<div class="chat-msg system">أمر → '+(a?a.name_ar:target)+'</div>';
+    if(apiConnected){fetch(API+'/task',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({task:msg,preferred_agent:target!=='all'?target:undefined})}).then(function(r){return r.json();}).then(function(d){msgs.innerHTML+='<div class="chat-msg system" style="color:#39FF14;">🤖 '+(d.agent_name||'وكيل')+': '+(d.result||'').substring(0,500)+'</div>';msgs.scrollTop=msgs.scrollHeight;EventBus.emit(EVT.TASK_COMPLETED,{agentId:d.agent_id||target});}).catch(function(e){msgs.innerHTML+='<div class="chat-msg system" style="color:#FF3366;">❌ '+e+'</div>';});}
+    else{setTimeout(function(){EventBus.emit(EVT.TASK_ASSIGNED,{agentId:target,task:msg});},1000);}}
+  msgs.scrollTop=msgs.scrollHeight;}
+function resetCam(){controls.autoRotate=true;controls.autoRotateSpeed=0.15;camera.position.set(0,30,55);controls.target.set(0,0,0);}
+function topView(){controls.autoRotate=false;camera.position.set(0,75,0.1);controls.target.set(0,0,0);}
+function focusCore(){controls.autoRotate=false;camera.position.set(0,5,12);controls.target.set(0,0,0);}
+function cinematic(){controls.autoRotate=true;controls.autoRotateSpeed=1.5;setTimeout(function(){controls.autoRotateSpeed=0.15;},12000);}
+
+function triggerAwakening(){
+  var overlay=document.getElementById('awakeningOverlay');overlay.classList.add('active');
+  var steps=['aw1','aw2','aw3','aw4','aw5','aw6','aw7'];var idx=0;
+  function nextStep(){if(idx>=steps.length){setTimeout(function(){overlay.classList.remove('active');steps.forEach(function(s){document.getElementById(s).className='aw-step';});EventBus.emit(EVT.AWAKENING,{});},800);return;}
+    if(idx>0)document.getElementById(steps[idx-1]).className='aw-step done';
+    document.getElementById(steps[idx]).className='aw-step active';idx++;setTimeout(nextStep,1200);}
+  nextStep();
+}
+
+/* ═══ HOVER CARD ═══ */
+var raycaster=new THREE.Raycaster();var mouse=new THREE.Vector2();
+canvas.addEventListener('mousemove',function(e){
+  mouse.x=(e.clientX/window.innerWidth)*2-1;mouse.y=-(e.clientY/window.innerHeight)*2+1;
+  raycaster.setFromCamera(mouse,camera);
+  var hits=raycaster.intersectObjects(AGENTS.map(function(a){return a.mesh;}).filter(Boolean));
+  var card=document.getElementById('agentCard');
+  if(hits.length>0){var a=AGENTS.find(function(x){return x.mesh===hits[0].object;});if(a){card.classList.add('show');card.style.left=Math.min(e.clientX+12,window.innerWidth-320)+'px';card.style.top=Math.min(e.clientY-8,window.innerHeight-280)+'px';document.getElementById('cardId').textContent=a.id;document.getElementById('cardId').style.color=CATS[a.cat].neon;document.getElementById('cardName').textContent=a.name_ar;var st=document.getElementById('cardState');var stMap={busy:'مشغول',active:'نشط',evolving:'يتطور',crawling:'يزحف',training:'يتدرب',coding:'يبرمج',attacking:'يهاجم',defending:'يدافع',browsing:'يتصفح',idle:'خامل'};st.textContent=a.glitchTime>0?'خطأ':(stMap[a.state]||'خامل');st.className='card-state '+(a.glitchTime>0?'error':a.state);document.getElementById('cardActivity').textContent=a.currentTask||a.lastAction;document.getElementById('cardProgress').style.width=a.progress+'%';document.getElementById('cardKnowledge').style.width=a.knowledge+'%';document.getElementById('cardEvolution').style.width=a.evolution+'%';document.getElementById('cardSynth').style.width=Math.min(100,a.synthData)+'%';document.getElementById('cardTools').innerHTML=a.tools.map(function(t){return '<span class="tool-tag '+(a.activeTools.indexOf(t)>=0?'active-tool':'')+'">'+t+'</span>';}).join('');document.getElementById('cardLastAction').textContent=a.lastAction;}}
+  else card.classList.remove('show');
+});
+
+/* ═══ HEARTBEAT ═══ */
+var heartbeatTimer=0;
+function createHeartbeat(){
+  var w=new THREE.Mesh(new THREE.RingGeometry(0.1,0.4,24),new THREE.MeshBasicMaterial({color:0xFF6B6B,transparent:true,opacity:0.25,side:THREE.DoubleSide,blending:THREE.AdditiveBlending}));
+  w.position.set(0,0,0);w.lookAt(camera.position);scene.add(w);heartbeats.push({mesh:w,scale:0.5,life:1});
+}
+
+/* ═══ ANIMATION LOOP ═══ */
+var lastTime=0,frameCount=0,fps=0;
+function animate(time){
+  requestAnimationFrame(animate);
+  var delta=(time-lastTime)/1000;lastTime=time;
+  frameCount++;if(frameCount%30===0){fps=Math.round(1/Math.max(delta,0.001));document.getElementById('sFps').textContent=fps;document.getElementById('fpsCounter').textContent='FPS: '+fps;}
+  controls.update();nebGroup.rotation.y+=0.0001;
+
+  // Core
+  coreInner.rotation.y+=coreTargetSpeed*2;
+  coreInner.scale.setScalar(THREE.MathUtils.lerp(coreInner.scale.x,1+coreLoadVal*0.25,0.04));
+  coreRings.forEach(function(r,i){r.rotation.x+=coreTargetSpeed*(i+1);r.rotation.z+=coreTargetSpeed*0.6*(i+1);});
+  dnaGroup.rotation.y+=0.004;
+  var evoHue=0.0+EVO.phase*0.15;coreMat.color.setHSL(evoHue%1,1,0.5);coreMat.emissive=coreMat.color;coreLight.intensity=2+coreLoadVal*3;
+
+  heartbeatTimer++;if(heartbeatTimer>=180){heartbeatTimer=0;createHeartbeat();}
+
+  // Self-Play Arena visuals
+  if(currentView==='selfplay'){
+    redTeamOrb.rotation.y+=0.01;blueTeamOrb.rotation.y-=0.01;
+    redTeamOrb.scale.setScalar(1+EVO.selfPlay.redWins*0.02);
+    blueTeamOrb.scale.setScalar(1+EVO.selfPlay.blueWins*0.02);
+  }
+
+  // Self-Play Bolts
+  for(var i=selfPlayBolts.length-1;i>=0;i--){var sb=selfPlayBolts[i];sb.life-=0.015;sb.line.material.opacity=sb.life*0.6;if(sb.life<=0){scene.remove(sb.line);selfPlayBolts.splice(i,1);}}
+
+  // Distillation
+  if(currentView==='distillation'){teacherOrb.rotation.y+=0.008;studentOrb.rotation.y+=0.012;studentOrb.scale.setScalar(1+EVO.distillation.improve*0.008);}
+  for(var i=distillParticles.length-1;i>=0;i--){var dp=distillParticles[i];dp.t+=dp.speed;if(dp.t>1)dp.t=0;dp.mesh.position.copy(dp.curve.getPoint(dp.t));dp.mesh.material.opacity=0.4+Math.sin(dp.t*Math.PI)*0.4;dp.mesh.material.color.setHSL(0.55-dp.t*0.2,1,0.6);if(!distillBeamGroup.visible){scene.remove(dp.mesh);distillParticles.splice(i,1);}}
+
+  // Agents
+  AGENTS.forEach(function(a){
+    if(!a.mesh)return;
+    if(a.shakeIntensity>0){a.mesh.position.x+=((Math.random()-0.5)*a.shakeIntensity);a.mesh.position.z+=((Math.random()-0.5)*a.shakeIntensity);}
+    else if(a.clusterTarget){a.mesh.position.x=THREE.MathUtils.lerp(a.mesh.position.x,a.clusterTarget.x,0.02);a.mesh.position.y=THREE.MathUtils.lerp(a.mesh.position.y,a.clusterTarget.y,0.02);a.mesh.position.z=THREE.MathUtils.lerp(a.mesh.position.z,a.clusterTarget.z,0.02);}
+    else{a.mesh.position.x=THREE.MathUtils.lerp(a.mesh.position.x,a.basePos.x,0.025);a.mesh.position.y=THREE.MathUtils.lerp(a.mesh.position.y,a.basePos.y,0.025);a.mesh.position.z=THREE.MathUtils.lerp(a.mesh.position.z,a.basePos.z,0.025);}
+    var rotSpeed=a.state==='busy'?0.015:a.state==='evolving'?0.03:a.state==='attacking'?0.04:a.state==='defending'?0.035:0.002;
+    a.mesh.rotation.y+=rotSpeed;
+    if(a.state==='evolving'||a.state==='attacking')a.mesh.rotation.x+=0.008;
+    if(a.state==='busy'&&a.progress<25){a.deepThinkTime++;if(a.deepThinkTime>120)createDeepThink(a);}else a.deepThinkTime=0;
+    if(a.glitchTime>0){a.glitchTime--;a.mesh.material.emissiveIntensity=Math.random()>0.5?1.3:0.05;a.mesh.material.color.setHex(Math.random()>0.5?0xFF3366:0x0033FF);if(a.glitchTime<=0){a.mesh.material.color.setHex(CATS[a.cat].color);a.mesh.material.emissiveIntensity=0.3;a.statusRing.material.color.setHex(0x444444);}}
+    a.currentGrowth=THREE.MathUtils.lerp(a.currentGrowth,a.growthTarget,0.008);
+    var vScale=currentView==='knowledge'?(0.5+(a.knowledge/100)*1.4):currentView==='evolution'?(0.5+(a.evolution/100)*1.4):currentView==='selfplay'&&a.team?(a.team==='red'?1.3:1.3):1;
+    a.mesh.scale.setScalar(a.currentGrowth*vScale);
+    if(a.statusRing){a.statusRing.position.copy(a.mesh.position);a.statusRing.rotation.z+=0.004;}
+    if(a.auraMesh){a.auraMesh.position.copy(a.mesh.position);var tOp=a.state==='busy'?0.15:a.state==='evolving'?0.3:a.state==='attacking'?0.25:a.state==='defending'?0.25:a.state==='active'?0.06:0;a.auraMesh.material.opacity=THREE.MathUtils.lerp(a.auraMesh.material.opacity,tOp,0.04);a.auraMesh.scale.setScalar(a.currentGrowth*1.2);if(a.state==='attacking')a.auraMesh.material.color.setHex(0xFF3366);else if(a.state==='defending')a.auraMesh.material.color.setHex(0x00BFFF);else if(a.state==='evolving')a.auraMesh.material.color.setHex(0xFF6B6B);else a.auraMesh.material.color.setHex(CATS[a.cat].color);}
+    if(a.evoRing){a.evoRing.position.copy(a.mesh.position);a.evoRing.rotation.z+=0.008;a.evoRing.material.opacity=THREE.MathUtils.lerp(a.evoRing.material.opacity,a.state==='evolving'?0.4:a.evoLevel>15?0.1:0,0.025);}
+    a.memRings.forEach(function(r,i){r.position.copy(a.mesh.position);r.rotation.z+=0.002*(i+1);r.rotation.x+=0.001*(i+1);});
+    if(a.state==='idle'&&a.shakeIntensity===0&&a.glitchTime===0)a.mesh.material.emissiveIntensity=THREE.MathUtils.lerp(a.mesh.material.emissiveIntensity,0.25,0.015);
+  });
+
+  connections.forEach(function(c){if(c.brightTime>0){c.brightTime--;c.line.material.opacity=THREE.MathUtils.lerp(c.line.material.opacity,c.baseOp,0.025);}});
+  for(var i=pulses.length-1;i>=0;i--){var p=pulses[i];p.t+=p.speed;if(p.t>=1){scene.remove(p.mesh);if(p.glow)scene.remove(p.glow);pulses.splice(i,1);continue;}var pos=p.curve.getPoint(p.t);p.mesh.position.copy(pos);p.mesh.material.opacity=1-p.t*0.4;if(p.glow){p.glow.position.copy(pos);p.glow.material.opacity=(1-p.t)*0.25;}}
+  for(var i=shockwaves.length-1;i>=0;i--){var sw=shockwaves[i];sw.scale+=0.12;sw.life-=0.018;sw.mesh.scale.setScalar(sw.scale);sw.mesh.material.opacity=sw.life*0.5;if(sw.life<=0){scene.remove(sw.mesh);shockwaves.splice(i,1);}}
+  for(var i=dataFetches.length-1;i>=0;i--){var d=dataFetches[i];d.t+=d.speed;if(d.t>=1){scene.remove(d.mesh);dataFetches.splice(i,1);continue;}d.mesh.position.lerpVectors(d.start,d.target,d.t);d.mesh.material.opacity=1-d.t*0.3;}
+  for(var i=dataStreams.length-1;i>=0;i--){var ds=dataStreams[i];ds.life--;var op=Math.min(1,ds.life/50)*0.6;ds.particles.forEach(function(p){p.userData.t+=0.004+Math.random()*0.002;if(p.userData.t>1)p.userData.t=0;p.position.copy(ds.curve.getPoint(p.userData.t));p.material.opacity=op;});if(ds.life<=0){ds.particles.forEach(function(p){scene.remove(p);});dataStreams.splice(i,1);}}
+  for(var i=deepThinkers.length-1;i>=0;i--){var a=deepThinkers[i];if(!a.deepThinkObj)continue;var dt=a.deepThinkObj;dt.time+=0.015;dt.group.position.copy(a.mesh.position).add(new THREE.Vector3(0,1.8,0));
+    if(dt.solved){dt.rings.forEach(function(r){r.material.opacity-=0.015;r.scale.multiplyScalar(1.04);});if(dt.rings[0].material.opacity<=0){scene.remove(dt.group);a.deepThinkObj=null;deepThinkers.splice(i,1);}}
+    else{var spd=1+dt.time*0.4;dt.rings.forEach(function(r,ri){r.rotation.z+=0.015*spd*(ri+1);r.scale.setScalar(1+Math.sin(dt.time*2)*0.08);});}}
+  taskIcons.forEach(function(ti){if(ti.mesh){ti.mesh.position.set(ti.agent.mesh.position.x,ti.agent.mesh.position.y+1.8,ti.agent.mesh.position.z);ti.mesh.rotation.y+=0.015;}});
+  for(var i=heartbeats.length-1;i>=0;i--){var h=heartbeats[i];h.scale+=0.35;h.life-=0.007;h.mesh.scale.setScalar(h.scale);h.mesh.material.opacity=h.life*0.25;h.mesh.lookAt(camera.position);if(h.life<=0){scene.remove(h.mesh);heartbeats.splice(i,1);}}
+  for(var i=evoWaves.length-1;i>=0;i--){var ew=evoWaves[i];ew.scale+=0.15;ew.life-=0.012;ew.mesh.scale.setScalar(ew.scale);ew.mesh.material.opacity=ew.life*0.4;ew.mesh.lookAt(camera.position);if(ew.life<=0){scene.remove(ew.mesh);evoWaves.splice(i,1);}}
+  for(var i=spiderTrails.length-1;i>=0;i--){var st=spiderTrails[i];st.t+=st.speed;if(st.t>=1){scene.remove(st.mesh);spiderTrails.splice(i,1);continue;}st.mesh.position.copy(st.curve.getPoint(st.t));st.mesh.material.opacity=1-st.t*0.3;}
+  for(var i=extBeams.length-1;i>=0;i--){var eb=extBeams[i];eb.life--;eb.beam.material.opacity=Math.min(0.3,eb.life/50)*0.3;eb.particles.forEach(function(p){p.position.y-=p.userData.speed;if(p.position.y<eb.agent.mesh.position.y)p.position.y=eb.agent.mesh.position.y+40;p.material.opacity*=0.99;});if(eb.life<=0){scene.remove(eb.beam);eb.particles.forEach(function(p){scene.remove(p);});extBeams.splice(i,1);}}
+  for(var i=storms.length-1;i>=0;i--){var s=storms[i];s.life-=0.004;s.mesh.material.opacity=s.life*0.12;s.lt++;if(s.life<=0){scene.remove(s.mesh);storms.splice(i,1);}}
+
+  // ═══ UPDATE UI ═══
+  if(frameCount%50===0){
+    document.getElementById('sExperiments').textContent=EVO.experiments.total;
+    document.getElementById('sDistill').textContent=EVO.distillation.lessons;
+    document.getElementById('sSkills').textContent=EVO.skills;
+    document.getElementById('sKnowledge').textContent=EVO.knowledgeGB.toFixed(1)+' GB';
+    document.getElementById('sSynth').textContent=EVO.synth.scenarios;
+    document.getElementById('sModels').textContent=EVO.models.length;
+    document.getElementById('sCommits').textContent=EVO.openHands.commits;
+    document.getElementById('activeCount').textContent=AGENTS.filter(function(a){return a.state!=='idle';}).length;
+    document.getElementById('evoDay').textContent=EVO.day;
+
+    document.getElementById('expToday').textContent=EVO.experiments.today;
+    document.getElementById('expSuccess').textContent=EVO.experiments.total>0?Math.round(EVO.experiments.success/EVO.experiments.total*100)+'%':'0%';
+    document.getElementById('expBest').textContent='+'+EVO.experiments.bestImprove.toFixed(1)+'%';
+    document.getElementById('expBar').style.width=Math.min(100,EVO.experiments.today*8)+'%';
+    document.getElementById('distillLessons').textContent=EVO.distillation.lessons;
+    document.getElementById('distillImprove').textContent='+'+EVO.distillation.improve.toFixed(1)+'%';
+    document.getElementById('distillBar').style.width=Math.min(100,EVO.distillation.improve*4)+'%';
+    document.getElementById('arenaRounds').textContent=EVO.selfPlay.rounds;
+    document.getElementById('arenaRed').textContent=EVO.selfPlay.redWins;
+    document.getElementById('arenaBlue').textContent=EVO.selfPlay.blueWins;
+    var total=EVO.selfPlay.redWins+EVO.selfPlay.blueWins;
+    if(total>0){document.getElementById('redBar').style.width=(EVO.selfPlay.redWins/total*100)+'%';document.getElementById('blueBar').style.width=(EVO.selfPlay.blueWins/total*100)+'%';document.getElementById('redScore').textContent=EVO.selfPlay.redWins;document.getElementById('blueScore').textContent=EVO.selfPlay.blueWins;}
+    document.getElementById('arenaBar').style.width=total>0?(EVO.selfPlay.redWins/total*100)+'%':'50%';
+    document.getElementById('spiderPages').textContent=EVO.spiders.pages;
+    document.getElementById('spiderPapers').textContent=EVO.spiders.papers;
+    document.getElementById('cuaSessions').textContent=EVO.cua.sessions;
+    document.getElementById('mergeCount').textContent=EVO.merging.count;
+    document.getElementById('currentMerge').textContent=EVO.merging.currentModel;
+    document.getElementById('mergeImprove').textContent='+'+EVO.merging.improve.toFixed(1)+'%';
+    document.getElementById('codeCommits').textContent=EVO.openHands.commits;
+    document.getElementById('codeLines').textContent=EVO.openHands.lines;
+    document.getElementById('codeBugs').textContent=EVO.openHands.bugs;
+    document.getElementById('synthScenarios').textContent=EVO.synth.scenarios;
+    document.getElementById('synthCorrect').textContent=EVO.synth.correct;
+    document.getElementById('synthBatches').textContent=EVO.synth.batches;
+    document.getElementById('graphEntities').textContent=EVO.graph.entities;
+    document.getElementById('graphRelations').textContent=EVO.graph.relations;
+    document.getElementById('graphInferences').textContent=EVO.graph.inferences;
+    EVO.graph.entities+=Math.floor(Math.random()*2);EVO.graph.relations+=Math.floor(Math.random()*4);EVO.graph.inferences+=Math.floor(Math.random()*1.5);
+    document.getElementById('tokenUsed').textContent=(EVO.tokens.used/1000).toFixed(0)+'K';
+    EVO.tokens.efficiency=Math.max(0,100-EVO.tokens.used/EVO.tokens.budget*100);
+    document.getElementById('tokenEfficiency').textContent=Math.round(EVO.tokens.efficiency)+'%';
+    document.getElementById('tokenBar').style.width=Math.min(100,EVO.tokens.used/EVO.tokens.budget*100)+'%';
+    document.getElementById('dspyOptimized').textContent=EVO.dspy.optimized;
+    document.getElementById('dspyAvgImprove').textContent='+'+EVO.dspy.avgImprove.toFixed(1)+'%';
+
+    document.getElementById('evoTimelineDay').textContent='اليوم '+EVO.day+' / 90';
+    document.getElementById('evoFill').style.width=(EVO.day/90*100)+'%';
+    ['ph1','ph2','ph3','ph4','ph5'].forEach(function(id,idx){var el=document.getElementById(id);if(idx+1<EVO.phase)el.className='done';else if(idx+1===EVO.phase)el.className='active';else el.className='';});
+  }
+
+  composer.render();
+}
+
+/* ═══ LOADING ═══ */
+var loadSteps=['تهيئة محرك التطور الذاتي v10...','بناء الشبكة العصبية ('+connections.length+' اتصال)...','تفعيل حلقة AutoResearch...','تهيئة Self-Play Arena...','تفعيل OpenHands Auto-Coder...','تهيئة CUA Browser Agent...','تفعيل Synthetic Data Generator...','تهيئة DSPy Optimizer...','تفعيل عناكب الويب المعرفية...','تهيئة GraphRAG Engine...','تفعيل اقتصاد الرموز...','تهيئة حلقة اليقظة اليومية...','تفعيل الحمض النووي التطوري...','جاهز للتطور المستقل!'];
+var loadStep=0;
+function advLoad(){if(loadStep>=loadSteps.length){document.getElementById('loadScreen').classList.add('done');setTimeout(function(){document.getElementById('loadScreen').style.display='none';},1200);animate(0);
+  logEvent('evolution','A','النظام','Army81 v10 Ultimate — جاهز');
+  logEvent('evolution','R','AutoResearch','حلقة التجارب نشطة');
+  logEvent('selfplay','VS','Self-Play','ساحة المناظرة جاهزة');
+  logEvent('code','C','OpenHands','مهندس البرمجيات نشط');
+  logEvent('cua','B','CUA','متصفح الوكلاء جاهز');
+  logEvent('synth','D','Synthetic','مولد البيانات نشط');
+  logEvent('distill','D','DSPy','محسن الأوامر جاهز');
+  return;}document.getElementById('ldFill').style.width=((loadStep+1)/loadSteps.length*100)+'%';document.getElementById('ldStatus').textContent=loadSteps[loadStep];loadStep++;setTimeout(advLoad,280);}
+advLoad();
+
+window.addEventListener('resize',function(){camera.aspect=window.innerWidth/window.innerHeight;camera.updateProjectionMatrix();renderer.setSize(window.innerWidth,window.innerHeight);composer.setSize(window.innerWidth,window.innerHeight);});
+
+window.addEventListener('keydown',function(e){if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT')return;switch(e.key.toLowerCase()){case 'r':resetCam();break;case 't':topView();break;case 'f':focusCore();break;case 'c':toggleChat();break;case 'l':toggleLog();break;case 'a':toggleLeftPanel();break;case 'w':triggerAwakening();break;case 'escape':document.getElementById('chatBox').style.display='none';chatVis=false;document.getElementById('eventLog').style.display='none';eventLogVisible=false;document.getElementById('leftPanel').style.display='none';leftPanelVisible=false;break;case '1':setView('neural');break;case '2':setView('evolution');break;case '3':setView('distillation');break;case '4':setView('selfplay');break;case '5':setView('knowledge');break;case '6':setView('graph');break;}});
+</script>
