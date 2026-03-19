@@ -181,16 +181,16 @@ class DistillationPipeline:
         "security": "deepseek-coder:6.7b",# أمن
     }
     TEACHER_MODELS = {
-        "reasoning": "deepseek-r1",
-        "coding": "claude-smart",
-        "medical": "gemini-pro",
-        "strategy": "gpt4o",
-        "arabic": "qwen-72b",
-        "science": "deepseek-r1",
-        "creative": "claude-opus",
-        "legal": "claude-smart",
-        "financial": "deepseek-chat",
-        "security": "gemini-pro",
+        "reasoning": "nemotron-120b-free",   # 120B مجاني — أقوى تفكير
+        "coding": "qwen-coder",             # 32B مجاني — كود متخصص
+        "medical": "hermes-405b-free",       # 405B مجاني — طب وعلوم
+        "strategy": "llama-70b-free",        # 70B مجاني — استراتيجية
+        "arabic": "gemma-27b-free",          # 27B مجاني — لغات
+        "science": "nemotron-120b-free",     # 120B مجاني — علوم
+        "creative": "mistral-24b-free",      # 24B مجاني — إبداع
+        "legal": "llama-70b-free",           # 70B مجاني — قانون
+        "financial": "gemma-27b-free",       # 27B مجاني — مالية
+        "security": "qwen-coder",            # 32B مجاني — أمن وكود
     }
 
     def __init__(self):
