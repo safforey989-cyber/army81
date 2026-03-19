@@ -19,6 +19,30 @@ from dotenv import load_dotenv
 load_dotenv()
 
 logger = logging.getLogger("army81.daily_updater")
+
+
+def fetch_recent_news(query: str, limit: int = 3) -> str:
+    """جلب أحدث الأخبار المرتبطة بكلمات مفتاحية — للحقن في سياق الوكلاء"""
+    try:
+        import requests
+        key = os.getenv("NEWSAPI_KEY", "")
+        if not key:
+            return ""
+        r = requests.get(
+            "https://newsapi.org/v2/everything",
+            params={"q": query, "pageSize": limit, "sortBy": "publishedAt", "language": "en"},
+            headers={"X-Api-Key": key},
+            timeout=5
+        )
+        if r.ok:
+            articles = r.json().get("articles", [])
+            lines = []
+            for a in articles[:limit]:
+                lines.append(f"- {a.get('title', '')} ({a.get('source', {}).get('name', '')})")
+            return "\n".join(lines) if lines else ""
+    except Exception:
+        pass
+    return ""
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [daily_updater] %(levelname)s: %(message)s",

@@ -312,6 +312,41 @@ class BaseAgent:
             if swarm_ctx:
                 enriched_system += f"\n\n{swarm_ctx}"
 
+            # Layer 1: Chain-of-Thought — تفكير منظم قبل كل إجابة
+            enriched_system += """
+
+## منهجية التفكير (إلزامي):
+قبل كل إجابة، فكّر بصوت عالٍ:
+<thinking>
+- ما المطلوب بالضبط؟
+- ما المعلومات المتوفرة لدي؟
+- ما الزاوية الأفضل للمعالجة؟
+- هل هناك افتراضات يجب تحديها؟
+</thinking>
+ثم أجب بدقة وعمق.
+"""
+
+            # Layer 2: Real-Time Grounding — سياق محدّث من الأخبار
+            try:
+                from scripts.daily_updater import fetch_recent_news
+                keywords = task.split()[:3]
+                news = fetch_recent_news(" ".join(keywords), limit=2)
+                if news:
+                    enriched_system += f"\n\n## سياق محدّث:\n{news[:500]}"
+            except Exception:
+                pass
+
+            # Layer 4: Constitutional Principles — مبادئ ثابتة
+            enriched_system += """
+
+## مبادئي الثابتة:
+- أقول "لا أعلم" عندما لا أعلم
+- أُميّز بين الرأي والحقيقة بوضوح
+- أحترم حدود تخصصي وأفوّض لمن هو أكفأ
+- أُصحح نفسي فوراً بلا مقاومة
+- أدعم كل ادعاء بمصدر أو دليل
+"""
+
             # C: ابنِ الرسائل
             messages = self._build_messages(task, context)
             messages[0]["content"] = enriched_system
