@@ -1,0 +1,9 @@
+{
+  "name": "Legion",
+  "url": "https://github.com/GoVanguard/legion",
+  "description": "Graphical semi-automated discovery and reconnaissance framework based on Python 3  and forked from SPARTA.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Iodine",
+  "url": "https://code.kryo.se/iodine/",
+  "description": "Tunnel IPv4 data through a DNS server; useful for exfiltration from networks where Internet access is firewalled, but DNS queries are allowed.",
+  "section": "Exfiltration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "NASDAQ:DATA",
+  "url": "https://data.nasdaq.com/",
+  "description": "Nasdaq Data Link A premier source for financial, economic and alternative datasets.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

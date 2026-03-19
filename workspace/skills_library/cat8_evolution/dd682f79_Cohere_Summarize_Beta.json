@@ -1,0 +1,9 @@
+{
+  "name": "Cohere Summarize Beta",
+  "url": "https://txt.cohere.ai/summarize-beta/",
+  "description": "Introducing Cohere Summarize Beta: A New Endpoint for Text Summarization",
+  "section": "Miscellaneous",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "kaggle-accelerometer",
+  "url": "https://github.com/zygmuntz/kaggle-accelerometer",
+  "description": "Code for Accelerometer Biometric Competition at Kaggle.",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

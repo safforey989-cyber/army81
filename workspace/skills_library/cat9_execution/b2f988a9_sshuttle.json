@@ -1,0 +1,9 @@
+{
+  "name": "sshuttle",
+  "url": "https://github.com/sshuttle/sshuttle",
+  "description": "Poor man's VPN. `LGPL-2.1` `Python`",
+  "section": "VPN",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

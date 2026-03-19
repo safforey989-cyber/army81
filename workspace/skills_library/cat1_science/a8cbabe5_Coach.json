@@ -1,0 +1,9 @@
+{
+  "name": "Coach",
+  "url": "https://github.com/NervanaSystems/coach",
+  "description": "Reinforcement Learning Coach by Intel® AI Lab enables easy experimentation with state of the art Reinforcement Learning algorithms",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

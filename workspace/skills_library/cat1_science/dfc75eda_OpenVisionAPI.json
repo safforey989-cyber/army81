@@ -1,0 +1,9 @@
+{
+  "name": "OpenVisionAPI",
+  "url": "https://github.com/openvisionapi",
+  "description": "Open source computer vision API based on open source models.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

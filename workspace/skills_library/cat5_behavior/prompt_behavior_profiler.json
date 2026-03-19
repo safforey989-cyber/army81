@@ -1,0 +1,7 @@
+{
+  "name": "behavior_profiler",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل الملف السلوكي لـ {person/group}. حدد الأنماط، الدوافع، ونقاط الضعف.",
+  "category": "cat5_behavior",
+  "source": "built_in"
+}

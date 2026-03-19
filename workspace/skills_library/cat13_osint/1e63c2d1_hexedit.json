@@ -1,0 +1,9 @@
+{
+  "name": "hexedit",
+  "url": "https://github.com/pixel/hexedit",
+  "description": "Simple, fast, console-based hex editor.",
+  "section": "Hex Editors",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

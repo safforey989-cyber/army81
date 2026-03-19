@@ -1,0 +1,9 @@
+{
+  "name": "Cockpit",
+  "url": "https://cockpit-project.org/",
+  "description": "Web-based graphical interface for servers. ([Source Code](https://github.com/cockpit-project/cockpit)) `LGPL-2.1` `C`",
+  "section": "Control Panels",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

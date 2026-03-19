@@ -1,0 +1,9 @@
+{
+  "name": "OpenRAIL-M v1",
+  "url": "https://www.bigcode-project.org/docs/pages/model-license/",
+  "description": ": Allows royalty-free access and flexible downstream use and sharing of the model and modifications of it, and comes with a set of use restrictions (see [Attachment A](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement))",
+  "section": "What do the licences mean?",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

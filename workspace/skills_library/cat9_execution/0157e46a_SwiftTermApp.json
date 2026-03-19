@@ -1,0 +1,9 @@
+{
+  "name": "SwiftTermApp",
+  "url": "https://github.com/migueldeicaza/SwiftTermApp",
+  "description": ": Terminal emulator and SSH client",
+  "section": "Terminal",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

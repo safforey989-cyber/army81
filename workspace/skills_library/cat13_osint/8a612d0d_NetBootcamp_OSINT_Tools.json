@@ -1,0 +1,9 @@
+{
+  "name": "NetBootcamp OSINT Tools",
+  "url": "http://netbootcamp.org/osinttools/",
+  "description": "Collection of OSINT links and custom Web interfaces to other services.",
+  "section": "OSINT Online Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

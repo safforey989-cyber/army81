@@ -1,0 +1,9 @@
+{
+  "name": "MLX",
+  "url": "https://github.com/ml-explore/mlx",
+  "description": "MLX is an array framework for machine learning on Apple silicon, developed by Apple machine learning research.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

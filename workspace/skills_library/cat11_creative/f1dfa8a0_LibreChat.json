@@ -1,0 +1,9 @@
+{
+  "name": "LibreChat",
+  "url": "https://librechat.ai/",
+  "description": "LibreChat is a free and open-source chat interface for assistant AIs. [#opensource](https://github.com/danny-avila/LibreChat).",
+  "section": "Custom interfaces",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "weaviate/Verba",
+  "url": "https://github.com/weaviate/Verba",
+  "description": ": Retrieval Augmented Generation (RAG) chatbot powered by Weaviate",
+  "section": "Retrieval-Augmented Generation (RAG)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

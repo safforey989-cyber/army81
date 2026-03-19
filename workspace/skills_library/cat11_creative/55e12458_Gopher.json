@@ -1,0 +1,9 @@
+{
+  "name": "Gopher",
+  "url": "https://www.deepmind.com/blog/language-modelling-at-scale-gopher-ethical-considerations-and-retrieval",
+  "description": "Gopher by DeepMind is a 280 billion parameter language model.",
+  "section": "Models",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

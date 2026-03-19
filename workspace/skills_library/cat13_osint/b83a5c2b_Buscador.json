@@ -1,0 +1,9 @@
+{
+  "name": "Buscador",
+  "url": "https://inteltechniques.com/buscador/",
+  "description": "GNU/Linux virtual machine that is pre-configured for online investigators.",
+  "section": "Operating System Distributions",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

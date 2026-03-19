@@ -1,0 +1,9 @@
+{
+  "name": "wifi-arsenal",
+  "url": "https://github.com/0x90/wifi-arsenal",
+  "description": "Resources for Wi-Fi Pentesting.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

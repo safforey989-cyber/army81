@@ -1,0 +1,9 @@
+{
+  "name": "Inferno",
+  "url": "https://inferno-framework.github.io",
+  "description": "providing testing tools for the FHIR",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

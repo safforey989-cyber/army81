@@ -1,0 +1,9 @@
+{
+  "name": "Datamol",
+  "url": "https://github.com/datamol-io/datamol",
+  "description": "Molecular Manipulation Made Easy. A light Python wrapper build on top of RDKit.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

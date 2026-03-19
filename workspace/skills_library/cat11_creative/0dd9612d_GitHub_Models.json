@@ -1,0 +1,9 @@
+{
+  "name": "GitHub Models",
+  "url": "https://github.com/marketplace/models",
+  "description": "Find and experiment with AI models to develop a generative AI application.",
+  "section": "Playgrounds",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

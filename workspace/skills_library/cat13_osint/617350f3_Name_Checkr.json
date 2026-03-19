@@ -1,0 +1,9 @@
+{
+  "name": "Name Checkr",
+  "url": "http://www.namecheckr.com",
+  "description": "checks a domain and username across many platforms.",
+  "section": "[↑](#-table-of-contents) Username Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

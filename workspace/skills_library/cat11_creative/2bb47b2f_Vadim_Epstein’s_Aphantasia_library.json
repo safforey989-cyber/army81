@@ -1,0 +1,9 @@
+{
+  "name": "Vadim Epstein’s Aphantasia library",
+  "url": "https://github.com/eps696/aphantasia",
+  "description": ": CLIP + FFT/DWT/RGB = text to image/video",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Imagen",
+  "url": "https://imagen.research.google/",
+  "description": ": Google's Text-to-Image Diffusion Models",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

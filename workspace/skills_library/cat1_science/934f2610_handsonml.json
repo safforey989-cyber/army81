@@ -1,0 +1,9 @@
+{
+  "name": "handsonml",
+  "url": "https://github.com/ageron/handson-ml",
+  "description": "Fundamentals of machine learning in python.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

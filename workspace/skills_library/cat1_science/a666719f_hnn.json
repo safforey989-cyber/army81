@@ -1,0 +1,9 @@
+{
+  "name": "hnn",
+  "url": "https://github.com/alpmestan/HNN",
+  "description": "Haskell Neural Network library.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

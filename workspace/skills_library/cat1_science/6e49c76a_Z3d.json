@@ -1,0 +1,9 @@
+{
+  "name": "Z3d",
+  "url": "https://github.com/NathanEpstein/Z3d",
+  "description": "Easily make interactive 3d plots built on Three.js **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Ronin",
+  "url": "https://ronin-rb.dev",
+  "description": "Free and Open Source Ruby Toolkit for Security Research and Development, providing many different libraries and commands for a variety of security tasks, such as recon, vulnerability scanning, exploit development, exploitation, post-exploitation, and more.",
+  "section": "Multi-paradigm Frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

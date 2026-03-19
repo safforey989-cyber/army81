@@ -1,0 +1,9 @@
+{
+  "name": "Google Search",
+  "url": "https://www.google.com",
+  "description": "Most popular search engine.",
+  "section": "[↑](#-table-of-contents) General Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

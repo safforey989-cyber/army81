@@ -1,0 +1,9 @@
+{
+  "name": "Agenta",
+  "url": "https://github.com/agenta-ai/agenta",
+  "description": "Easily build, version, evaluate and deploy your LLM-powered apps.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

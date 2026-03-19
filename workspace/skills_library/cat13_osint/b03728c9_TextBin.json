@@ -1,0 +1,9 @@
+{
+  "name": "TextBin",
+  "url": "https://textbin.net/",
+  "description": "Secure pastebin where you can paste and store any type of text or code snippets online and share it with your friends.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

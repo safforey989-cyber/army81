@@ -1,0 +1,9 @@
+{
+  "name": "ChemicalX",
+  "url": "https://github.com/AstraZeneca/chemicalx",
+  "description": "| A PyTorch based deep learning library for drug pair scoring.  |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

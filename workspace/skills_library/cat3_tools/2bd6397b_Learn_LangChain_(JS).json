@@ -1,0 +1,9 @@
+{
+  "name": "Learn LangChain (JS)",
+  "url": "https://github.com/iparesh18/Learn-LangChain",
+  "description": "](https://github.com/iparesh18/Learn-LangChain) – A structured, example-driven LangChain JS learning repository covering prompts, chains, tools, embeddings, RAG, agents, Puppeteer scraping, and LangGraph-based multi-agent workflows.",
+  "section": "Notebooks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

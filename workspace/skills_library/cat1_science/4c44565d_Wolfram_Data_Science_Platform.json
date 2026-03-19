@@ -1,0 +1,9 @@
+{
+  "name": "Wolfram Data Science Platform",
+  "url": "https://www.wolfram.com/data-science-platform/",
+  "description": "| Take numerical, textual, image, GIS or other data and give it the Wolfram treatment, carrying out a full spectrum of data science analysis and visualization and automatically generate rich interactive reports—all powered by the revolutionary knowledge-based Wolfram Language. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

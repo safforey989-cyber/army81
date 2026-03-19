@@ -1,0 +1,9 @@
+{
+  "name": "yase",
+  "url": "https://github.com/PPACI/yase",
+  "description": "Transcode sentence (or other sequence) to list of word vector.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

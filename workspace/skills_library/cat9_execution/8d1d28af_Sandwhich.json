@@ -1,0 +1,9 @@
+{
+  "name": "Sandwhich",
+  "url": "https://github.com/MotionMobs/Sandwhich",
+  "description": ": Solve the sandwich debate by determining if the picture you've taken is a sandwich using machine learning",
+  "section": "Flutter",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

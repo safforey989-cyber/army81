@@ -1,0 +1,9 @@
+{
+  "name": "ggplot2",
+  "url": "https://ggplot2.tidyverse.org/",
+  "description": "Tool from data_science",
+  "section": "Visualization Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

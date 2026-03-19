@@ -1,0 +1,9 @@
+{
+  "name": "Subscribe to the newsletter",
+  "url": "https://awesomelangchain.substack.com/",
+  "description": "** to stay informed about the Awesome LangChain. We send a couple of emails per month about the articles, videos, projects, and tools that grabbed our attention",
+  "section": "🦜🔗 Awesome LangChain [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![GitHub Repo stars](https://img.shields.io/github/stars/kyrolabs/awesome-langchain?style=social)",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

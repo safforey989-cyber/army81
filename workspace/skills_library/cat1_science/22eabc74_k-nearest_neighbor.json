@@ -1,0 +1,9 @@
+{
+  "name": "k-nearest neighbor",
+  "url": "https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm",
+  "description": "Tool from data_science",
+  "section": "Supervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

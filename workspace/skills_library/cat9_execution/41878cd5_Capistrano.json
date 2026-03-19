@@ -1,0 +1,9 @@
+{
+  "name": "Capistrano",
+  "url": "https://capistranorb.com/",
+  "description": "Deploy your application to any number of machines simultaneously, in sequence or as a rolling set via SSH (rake based). ([Source Code](https://github.com/capistrano/capistrano)) `MIT` `Ruby`",
+  "section": "Deployment Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

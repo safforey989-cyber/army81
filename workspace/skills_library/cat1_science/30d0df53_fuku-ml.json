@@ -1,0 +1,9 @@
+{
+  "name": "fuku-ml",
+  "url": "https://github.com/fukuball/fuku-ml",
+  "description": "Simple machine learning library, including Perceptron, Regression, Support Vector Machine, Decision Tree and more, it's easy to use and easy to learn for beginners.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

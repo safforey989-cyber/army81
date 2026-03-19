@@ -1,0 +1,9 @@
+{
+  "name": "Stanford POS Tagger",
+  "url": "https://nlp.stanford.edu/software/tagger.shtml",
+  "description": "A Part-Of-Speech Tagger (POS Tagger).",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

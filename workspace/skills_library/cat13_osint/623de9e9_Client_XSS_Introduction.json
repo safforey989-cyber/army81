@@ -1,0 +1,9 @@
+{
+  "name": "Client XSS Introduction",
+  "url": "https://domgo.at/cxss/intro",
+  "description": "Comprehensive introduction to client-side cross-site scripting (XSS) attacks.",
+  "section": "Online Penetration Testing Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

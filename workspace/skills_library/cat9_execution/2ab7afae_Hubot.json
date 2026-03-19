@@ -1,0 +1,9 @@
+{
+  "name": "Hubot",
+  "url": "https://hubot.github.com/",
+  "description": "A customizable, life embetterment robot. ([Source Code](https://github.com/hubotio/hubot)) `MIT` `Nodejs`",
+  "section": "ChatOps",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

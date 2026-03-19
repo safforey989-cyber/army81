@@ -1,0 +1,9 @@
+{
+  "name": "plasma",
+  "url": "https://github.com/joelpx/plasma",
+  "description": "Interactive disassembler for x86/ARM/MIPS. Generates indented pseudo-code with colored syntax code.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

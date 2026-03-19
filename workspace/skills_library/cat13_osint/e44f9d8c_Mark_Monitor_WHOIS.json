@@ -1,0 +1,9 @@
+{
+  "name": "Mark Monitor WHOIS",
+  "url": "https://whois-webform.markmonitor.com/whois/",
+  "description": "Displays domain registration information.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

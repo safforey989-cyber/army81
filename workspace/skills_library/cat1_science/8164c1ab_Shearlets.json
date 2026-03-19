@@ -1,0 +1,9 @@
+{
+  "name": "Shearlets",
+  "url": "https://www3.math.tu-berlin.de/numerik/www.shearlab.org/software",
+  "description": "MATLAB code for shearlet transform.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

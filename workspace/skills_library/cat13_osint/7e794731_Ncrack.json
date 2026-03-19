@@ -1,0 +1,9 @@
+{
+  "name": "Ncrack",
+  "url": "https://nmap.org/ncrack/",
+  "description": "High-speed network authentication cracking tool built to help companies secure their networks by proactively testing all their hosts and networking devices for poor passwords.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

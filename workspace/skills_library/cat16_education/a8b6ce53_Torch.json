@@ -1,0 +1,9 @@
+{
+  "name": "Torch",
+  "url": "https://github.com/torch/torch7/wiki/Cheatsheet",
+  "description": "deep learning library (implemented in Lua) for exercises and assignments. Topics include: logistic regression, back-propagation, convolutional neural networks, max-margin learning, siamese networks, recurrent neural networks, LSTMs, hand-writing with recurrent neural networks, variational autoencode",
+  "section": "Machine Learning",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

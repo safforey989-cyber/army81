@@ -1,0 +1,9 @@
+{
+  "name": "WebNN",
+  "url": "https://webnn.dev",
+  "description": "A new web standard that allows web apps and frameworks to accelerate deep neural networks with on-device hardware such as GPUs, CPUs, or purpose-built AI accelerators.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

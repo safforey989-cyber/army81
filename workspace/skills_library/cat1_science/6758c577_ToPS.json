@@ -1,0 +1,9 @@
+{
+  "name": "ToPS",
+  "url": "https://github.com/ayoshiaki/tops",
+  "description": "This is an object-oriented framework that facilitates the integration of probabilistic models for sequences over a user defined alphabet. **[Deprecated]**",
+  "section": "Sequence Analysis",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

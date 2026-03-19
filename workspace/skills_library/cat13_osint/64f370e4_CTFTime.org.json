@@ -1,0 +1,9 @@
+{
+  "name": "CTFTime.org",
+  "url": "https://ctftime.org/",
+  "description": "Directory of upcoming and archive of past Capture The Flag (CTF) competitions with links to challenge writeups.",
+  "section": "Conferences and Events",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

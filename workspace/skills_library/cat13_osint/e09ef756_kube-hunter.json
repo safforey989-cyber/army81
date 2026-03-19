@@ -1,0 +1,9 @@
+{
+  "name": "kube-hunter",
+  "url": "https://kube-hunter.aquasec.com/",
+  "description": "Open-source tool that runs a set of tests (\"hunters\") for security issues in Kubernetes clusters from either outside (\"attacker's view\") or inside a cluster.",
+  "section": "Network Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

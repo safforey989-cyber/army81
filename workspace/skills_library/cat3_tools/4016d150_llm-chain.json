@@ -1,0 +1,9 @@
+{
+  "name": "llm-chain",
+  "url": "https://github.com/sobelio/llm-chain",
+  "description": ": is a powerful rust crate for building chains in LLMs allowing you to summarise text and complete complex tasks. ![GitHub Repo stars](https://img.shields.io/github/stars/sobelio/llm-chain?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

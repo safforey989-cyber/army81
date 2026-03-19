@@ -1,0 +1,9 @@
+{
+  "name": "RedELK",
+  "url": "https://github.com/outflanknl/RedELK",
+  "description": "Track and alarm about Blue Team activities while providing better usability in long term offensive operations.",
+  "section": "Collaboration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

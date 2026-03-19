@@ -1,0 +1,9 @@
+{
+  "name": "Fruta",
+  "url": "https://developer.apple.com/documentation/appclip/fruta-building-a-feature-rich-app-with-swiftui",
+  "description": ": Create a shared codebase to build a multiplatform app that offers widgets and an App Clip - WWDC 2020 and WWDC 2021 sample code by Apple",
+  "section": "Widget",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

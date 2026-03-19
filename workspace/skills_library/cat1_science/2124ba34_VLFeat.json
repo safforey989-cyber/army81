@@ -1,0 +1,9 @@
+{
+  "name": "VLFeat",
+  "url": "http://www.vlfeat.org/",
+  "description": "VLFeat is an open and portable library of computer vision algorithms, which has a Matlab toolbox.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

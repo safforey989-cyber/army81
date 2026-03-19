@@ -1,0 +1,9 @@
+{
+  "name": "EthTradingAlgorithm",
+  "url": "https://github.com/Philipid3s/EthTradingAlgorithm",
+  "description": "Ethereum trading algorithm using Python 3.5 and the library ZipLine.",
+  "section": "Technical Analysis",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

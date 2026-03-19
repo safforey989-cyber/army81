@@ -1,0 +1,9 @@
+{
+  "name": "Odoo Medical",
+  "url": "https://github.com/OCA/vertical-medical",
+  "description": "Universal Health and Hospital Information System.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

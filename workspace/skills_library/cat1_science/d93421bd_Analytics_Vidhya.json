@@ -1,0 +1,9 @@
+{
+  "name": "Analytics Vidhya",
+  "url": "https://www.analyticsvidhya.com/",
+  "description": "A full-fledged website about data science and analytics study material.",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

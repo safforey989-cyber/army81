@@ -1,0 +1,9 @@
+{
+  "name": "cuML",
+  "url": "https://github.com/rapidsai/cuml",
+  "description": "Tool from data_science",
+  "section": "General Machine Learning Packages",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

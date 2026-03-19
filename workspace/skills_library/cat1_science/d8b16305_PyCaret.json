@@ -1,0 +1,9 @@
+{
+  "name": "PyCaret",
+  "url": "https://github.com/pycaret/pycaret",
+  "description": "An open-source, low-code machine learning library in Python that automates machine learning workflows.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "VLC",
+  "url": "https://github.com/videolan/vlc",
+  "description": ": Media Player",
+  "section": "Apple TV",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

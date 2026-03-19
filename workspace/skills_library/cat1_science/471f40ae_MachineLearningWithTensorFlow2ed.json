@@ -1,0 +1,9 @@
+{
+  "name": "MachineLearningWithTensorFlow2ed",
+  "url": "https://www.manning.com/books/machine-learning-with-tensorflow-second-edition",
+  "description": "a book on general purpose machine learning techniques regression, classification, unsupervised clustering, reinforcement learning, auto encoders, convolutional neural networks, RNNs, LSTMs, using TensorFlow 1.14.1.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

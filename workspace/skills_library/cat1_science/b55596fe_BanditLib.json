@@ -1,0 +1,9 @@
+{
+  "name": "BanditLib",
+  "url": "https://github.com/jkomiyama/banditlib",
+  "description": "A simple Multi-armed Bandit library. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

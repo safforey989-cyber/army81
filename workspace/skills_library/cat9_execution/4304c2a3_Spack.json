@@ -1,0 +1,9 @@
+{
+  "name": "Spack",
+  "url": "https://spack.io/",
+  "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers. ([Source Code](https://github.com/spack/spack)) `MIT/Apache-2.0` `Python`",
+  "section": "Build and software organization tools",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

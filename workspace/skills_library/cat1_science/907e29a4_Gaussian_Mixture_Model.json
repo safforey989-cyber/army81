@@ -1,0 +1,9 @@
+{
+  "name": "Gaussian Mixture Model",
+  "url": "https://github.com/lukapopijac/gaussian-mixture-model",
+  "description": "Unsupervised machine learning with multivariate Gaussian mixture model.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

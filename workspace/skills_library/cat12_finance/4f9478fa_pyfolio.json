@@ -1,0 +1,9 @@
+{
+  "name": "pyfolio",
+  "url": "https://github.com/quantopian/pyfolio",
+  "description": "Portfolio and risk analytics in Python.",
+  "section": "Research Tools",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

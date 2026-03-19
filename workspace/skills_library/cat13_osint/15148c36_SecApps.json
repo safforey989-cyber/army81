@@ -1,0 +1,9 @@
+{
+  "name": "SecApps",
+  "url": "https://secapps.com/",
+  "description": "In-browser web application security testing suite.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

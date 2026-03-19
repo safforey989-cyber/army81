@@ -1,0 +1,9 @@
+{
+  "name": "rVMI",
+  "url": "https://github.com/fireeye/rVMI",
+  "description": "Debugger on steroids; inspect userspace processes, kernel drivers, and preboot environments in a single tool.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

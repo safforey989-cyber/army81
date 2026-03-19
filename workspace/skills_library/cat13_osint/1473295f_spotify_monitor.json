@@ -1,0 +1,9 @@
+{
+  "name": "spotify_monitor",
+  "url": "https://github.com/misiektoja/spotify_monitor",
+  "description": "Tool for real-time tracking of Spotify friends' listening activity including detection when user gets online & offline, played songs, its duration, skipped songs, with optional auto-play, email alerts, CSV logging, session stats and more",
+  "section": "[↑](#-table-of-contents) Music Streaming Services",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

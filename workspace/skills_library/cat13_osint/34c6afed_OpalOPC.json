@@ -1,0 +1,9 @@
+{
+  "name": "OpalOPC",
+  "url": "https://opalopc.com/",
+  "description": "Commercial OPC UA vulnerability assessment tool, sold by Molemmat.",
+  "section": "Industrial Control and SCADA Systems",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

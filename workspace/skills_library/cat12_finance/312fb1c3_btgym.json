@@ -1,0 +1,9 @@
+{
+  "name": "btgym",
+  "url": "https://github.com/Kismuz/btgym",
+  "description": "Scalable, event-driven, deep-learning-friendly backtesting library.",
+  "section": "GYM Environment",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

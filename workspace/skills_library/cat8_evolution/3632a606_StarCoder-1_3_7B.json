@@ -1,0 +1,9 @@
+{
+  "name": "StarCoder-1|3|7B",
+  "url": "https://huggingface.co/collections/bigcode/%E2%AD%90-starcoder-64f9bd5740eb5daaeb81dbec",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

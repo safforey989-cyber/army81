@@ -1,0 +1,9 @@
+{
+  "name": "vectara/hallucination-leaderboard",
+  "url": "https://github.com/vectara/hallucination-leaderboard",
+  "description": ": \"leaderboard Comparing LLM Performance at Producing Hallucinations when Summarizing Short Documents\"",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "xgboost-node",
+  "url": "https://github.com/nuanio/xgboost-node",
+  "description": "Run XGBoost model and make predictions in Node.js.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

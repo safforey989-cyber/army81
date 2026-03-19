@@ -1,0 +1,9 @@
+{
+  "name": "LangChain Docs",
+  "url": "https://langchain.readthedocs.io/en/latest/#",
+  "description": ": Python library that helps building applications with LLMs through composability",
+  "section": "LangChain",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

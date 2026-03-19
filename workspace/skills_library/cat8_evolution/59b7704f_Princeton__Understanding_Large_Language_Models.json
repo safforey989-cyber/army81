@@ -1,0 +1,9 @@
+{
+  "name": "Princeton: Understanding Large Language Models",
+  "url": "https://www.cs.princeton.edu/courses/archive/fall22/cos597G/",
+  "description": "Tool from llm_techniques",
+  "section": "LLM Tutorials and Courses",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

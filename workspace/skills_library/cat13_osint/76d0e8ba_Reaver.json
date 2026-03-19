@@ -1,0 +1,9 @@
+{
+  "name": "Reaver",
+  "url": "https://code.google.com/archive/p/reaver-wps",
+  "description": "Brute force attack against WiFi Protected Setup.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

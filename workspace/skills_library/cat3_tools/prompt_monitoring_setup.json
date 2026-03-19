@@ -1,0 +1,7 @@
+{
+  "name": "monitoring_setup",
+  "type": "prompt_pattern",
+  "prompt_template": "أنشئ نظام مراقبة لـ {service}. Alerts, dashboards, logging.",
+  "category": "cat3_tools",
+  "source": "built_in"
+}

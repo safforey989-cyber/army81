@@ -1,0 +1,9 @@
+{
+  "name": "Theano",
+  "url": "https://github.com/Theano/Theano/",
+  "description": "Optimizing GPU-meta-programming code generating array oriented optimizing math compiler in Python.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

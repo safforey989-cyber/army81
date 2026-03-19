@@ -1,0 +1,9 @@
+{
+  "name": "CPM-Bee-1|2|5|10B",
+  "url": "https://huggingface.co/collections/openbmb/cpm-bee-65d491cc84fc93350d789361",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

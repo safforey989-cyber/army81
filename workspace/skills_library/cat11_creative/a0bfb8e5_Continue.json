@@ -1,0 +1,9 @@
+{
+  "name": "Continue",
+  "url": "https://www.continue.dev/",
+  "description": "Open-source AI code assistant. Connect any model and any context to create custom autocomplete and chat experiences inside the IDE. [#opensource](https://github.com/continuedev/continue)",
+  "section": "Coding Assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

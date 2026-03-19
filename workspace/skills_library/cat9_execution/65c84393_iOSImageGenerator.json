@@ -1,0 +1,9 @@
+{
+  "name": "iOSImageGenerator",
+  "url": "https://github.com/mizadi/iOSImageGenerator",
+  "description": ": Generate images from text prompts using ImagePlayground",
+  "section": "Photo",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

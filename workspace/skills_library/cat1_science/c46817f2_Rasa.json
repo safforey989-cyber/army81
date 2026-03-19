@@ -1,0 +1,9 @@
+{
+  "name": "Rasa",
+  "url": "https://github.com/RasaHQ/rasa",
+  "description": "A \"machine learning framework to automate text-and voice-based conversations.\"",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

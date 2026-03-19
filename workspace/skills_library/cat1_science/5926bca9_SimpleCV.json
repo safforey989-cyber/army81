@@ -1,0 +1,9 @@
+{
+  "name": "SimpleCV",
+  "url": "http://simplecv.org/",
+  "description": "An open source computer vision framework that gives access to several high-powered computer vision libraries, such as OpenCV. Written on Python and runs on Mac, Windows, and Ubuntu Linux.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

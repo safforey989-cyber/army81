@@ -1,0 +1,9 @@
+{
+  "name": "AForge.NET",
+  "url": "http://www.aforgenet.com/framework/",
+  "description": "Open source C# framework for developers and researchers in the fields of Computer Vision and Artificial Intelligence. Development has now shifted to GitHub.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

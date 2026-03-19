@@ -1,0 +1,9 @@
+{
+  "name": "tf-quant-finance",
+  "url": "https://github.com/google/tf-quant-finance",
+  "description": "High-performance TensorFlow library for quantitative finance.",
+  "section": "Framework",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

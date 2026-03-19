@@ -1,0 +1,9 @@
+{
+  "name": "DataMelt",
+  "url": "https://jwork.org/dmelt/",
+  "description": "Mathematics software for numeric computation, statistics, symbolic calculations, data analysis and data visualization.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

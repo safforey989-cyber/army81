@@ -1,0 +1,9 @@
+{
+  "name": "sslstrip2",
+  "url": "https://github.com/LeonardoNve/sslstrip2",
+  "description": "SSLStrip version to defeat HSTS.",
+  "section": "Web Exploitation",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

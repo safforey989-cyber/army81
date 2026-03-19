@@ -1,0 +1,9 @@
+{
+  "name": "SIP Calculator",
+  "url": "https://github.com/tirupati17/sip-calculator-swift",
+  "description": ": Calculate the future value of SIP (Systematic Investment Plan) payments",
+  "section": "Calculator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

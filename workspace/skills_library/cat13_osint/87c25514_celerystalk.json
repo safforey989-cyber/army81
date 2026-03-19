@@ -1,0 +1,9 @@
+{
+  "name": "celerystalk",
+  "url": "https://github.com/sethsec/celerystalk",
+  "description": "Asynchronous enumeration and vulnerability scanner that \"runs all the tools on all the hosts\" in a configurable manner.",
+  "section": "Network Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

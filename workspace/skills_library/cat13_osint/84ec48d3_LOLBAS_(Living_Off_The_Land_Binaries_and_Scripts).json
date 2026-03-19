@@ -1,0 +1,9 @@
+{
+  "name": "LOLBAS (Living Off The Land Binaries and Scripts)",
+  "url": "https://lolbas-project.github.io/",
+  "description": "](https://lolbas-project.github.io/) - Documents binaries, scripts, and libraries that can be used for \"Living Off The Land\" techniques, i.e., binaries that can be used by an attacker to perform actions beyond their original purpose.",
+  "section": "Privilege Escalation Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

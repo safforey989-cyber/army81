@@ -1,0 +1,9 @@
+{
+  "name": "chatglm2-6b",
+  "url": "https://huggingface.co/THUDM/chatglm2-6b",
+  "description": "| [ChatGLM2-6B](https://zhipuai.cn/en/news/72), [Github](https://github.com/THUDM/ChatGLM2-6B) | 6 | [32k](https://huggingface.co/THUDM/chatglm2-6b/blob/main/config.json) | [Custom](https://huggingface.co/THUDM/chatglm2-6b/blob/main/MODEL_LICENSE) Free with some usage restriction (might require regi",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

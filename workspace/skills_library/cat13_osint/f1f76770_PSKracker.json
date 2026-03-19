@@ -1,0 +1,9 @@
+{
+  "name": "PSKracker",
+  "url": "https://github.com/soxrok2212/PSKracker",
+  "description": "Collection of WPA/WPA2/WPS default algorithms, password generators, and PIN generators written in C.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

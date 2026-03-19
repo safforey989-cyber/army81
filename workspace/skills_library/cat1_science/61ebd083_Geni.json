@@ -1,0 +1,9 @@
+{
+  "name": "Geni",
+  "url": "https://github.com/zero-one-group/geni",
+  "description": "a Clojure dataframe library that runs on Apache Spark",
+  "section": "Data Analysis",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

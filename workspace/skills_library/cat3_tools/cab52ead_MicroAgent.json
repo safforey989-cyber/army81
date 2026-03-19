@@ -1,0 +1,9 @@
+{
+  "name": "MicroAgent",
+  "url": "https://github.com/aymenfurter/microagents",
+  "description": ": Agents Capable of Self-Editing Their Prompts / Python Code ![GitHub Repo stars](https://img.shields.io/github/stars/aymenfurter/microagents?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Haroopad",
+  "url": "http://pad.haroopress.com/",
+  "description": "Markdown editor with live preview. ([Source Code](https://github.com/rhiokim/haroopad)) `GPL-3.0` `JavaScript`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Pomerium",
+  "url": "https://www.pomerium.io/",
+  "description": "An identity and context aware access-proxy inspired by BeyondCorp. ([Source Code](https://github.com/pomerium/pomerium)) `Apache-2.0` `Docker/Go`",
+  "section": "Identity Management - Tools and web interfaces",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

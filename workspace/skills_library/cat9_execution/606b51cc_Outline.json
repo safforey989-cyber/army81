@@ -1,0 +1,9 @@
+{
+  "name": "Outline",
+  "url": "https://github.com/OutlineFoundation/outline-apps",
+  "description": ": VPN designed for use with Outline Server, compatible Shadowsocks",
+  "section": "Security",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

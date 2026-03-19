@@ -1,0 +1,9 @@
+{
+  "name": "Flappy Fly-Bird",
+  "url": "https://github.com/eleev/flappy-fly-bird",
+  "description": ": A clone of Flappy Bird using SpriteKit and GameplayKit",
+  "section": "Clone",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

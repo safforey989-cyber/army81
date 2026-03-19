@@ -1,0 +1,9 @@
+{
+  "name": "WiGLE",
+  "url": "https://wigle.net/",
+  "description": "Wi-fi \"wardriving\" database. Contains a global map containing crowdsourced information on the location, name, and other properties of wi-fi networks. Software available to download to contribute data to the public infoset.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

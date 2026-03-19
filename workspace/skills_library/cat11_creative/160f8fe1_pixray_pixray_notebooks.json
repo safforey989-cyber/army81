@@ -1,0 +1,9 @@
+{
+  "name": "pixray/pixray_notebooks",
+  "url": "https://github.com/pixray/pixray_notebooks",
+  "description": ": pixray demo notebooks",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "rom1504/clip-retrieval",
+  "url": "https://github.com/rom1504/clip-retrieval",
+  "description": ": Easily compute CLIP embeddings and build a CLIP retrieval system with them",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "MXnet for Deep Learning, in Perl",
+  "url": "https://github.com/apache/incubator-mxnet/tree/master/perl-package",
+  "description": ",",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

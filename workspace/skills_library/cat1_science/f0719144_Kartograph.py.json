@@ -1,0 +1,9 @@
+{
+  "name": "Kartograph.py",
+  "url": "https://github.com/kartograph/kartograph.py",
+  "description": "Rendering beautiful SVG maps in Python.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

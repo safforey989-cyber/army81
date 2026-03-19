@@ -1,0 +1,9 @@
+{
+  "name": "spaCy",
+  "url": "https://spacy.io/",
+  "description": "| A performant natural language processing toolkit |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

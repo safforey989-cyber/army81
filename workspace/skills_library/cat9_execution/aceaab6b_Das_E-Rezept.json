@@ -1,0 +1,9 @@
+{
+  "name": "Das E-Rezept",
+  "url": "https://github.com/gematik/E-Rezept-App-iOS",
+  "description": ": Electronic prescription",
+  "section": "Health",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

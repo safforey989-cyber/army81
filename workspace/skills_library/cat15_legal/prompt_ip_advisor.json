@@ -1,0 +1,7 @@
+{
+  "name": "ip_advisor",
+  "type": "prompt_pattern",
+  "prompt_template": "قيّم الملكية الفكرية لـ {asset}. براءات، علامات تجارية، حماية.",
+  "category": "cat15_legal",
+  "source": "built_in"
+}

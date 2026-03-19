@@ -1,0 +1,9 @@
+{
+  "name": "llama.cpp",
+  "url": "https://github.com/ggerganov/llama.cpp",
+  "description": "LLM inference in C/C++.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

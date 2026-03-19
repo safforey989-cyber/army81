@@ -1,0 +1,9 @@
+{
+  "name": "friTap",
+  "url": "https://github.com/fkie-cad/friTap",
+  "description": "Intercept SSL/TLS connections with frida; Allows TLS key extraction and decryption of TLS payload as PCAP in real time.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Promptify",
+  "url": "https://github.com/promptslab/Promptify",
+  "description": ": Prompt Engineering | Use GPT or other prompt based models to get structured output. ![GitHub Repo stars](https://img.shields.io/github/stars/promptslab/Promptify?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

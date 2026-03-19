@@ -1,0 +1,9 @@
+{
+  "name": "Kroki",
+  "url": "https://kroki.io",
+  "description": "API for generating diagrams from textual descriptions. ([Source Code](https://github.com/yuzutech/kroki)) `MIT` `Java`",
+  "section": "Diagramming",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

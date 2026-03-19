@@ -1,0 +1,9 @@
+{
+  "name": "OpenWearables",
+  "url": "https://github.com/the-momentum/open-wearables",
+  "description": "Self-hosted platform to unify wearable health data through one AI-ready API.",
+  "section": "Integration",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

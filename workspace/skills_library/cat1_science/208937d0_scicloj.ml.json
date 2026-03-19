@@ -1,0 +1,9 @@
+{
+  "name": "scicloj.ml",
+  "url": "https://github.com/scicloj/scicloj.ml",
+  "description": "A idiomatic Clojure machine learning library based on tech.ml.dataset with a unique approach for immutable data processing pipelines.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

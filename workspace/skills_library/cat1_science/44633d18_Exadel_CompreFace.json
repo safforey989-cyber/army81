@@ -1,0 +1,9 @@
+{
+  "name": "Exadel CompreFace",
+  "url": "https://github.com/exadel-inc/CompreFace",
+  "description": "face recognition system that can be easily integrated into any system without prior machine learning skills. CompreFace provides REST API for face recognition, face verification, face detection, face mask detection, landmark detection, age, and gender recognition and is easily deployed with docker.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Google HCLS Data Harmonization",
+  "url": "https://github.com/GoogleCloudPlatform/healthcare-data-harmonization",
+  "description": "an engine that converts data of one structure to another",
+  "section": "Integration",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

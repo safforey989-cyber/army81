@@ -1,0 +1,9 @@
+{
+  "name": "Auto_ViML",
+  "url": "https://github.com/AutoViML/Auto_ViML",
+  "description": "> Automatically Build Variant Interpretable ML models fast! Auto_ViML is pronounced \"auto vimal\", is a comprehensive and scalable Python AutoML toolkit with imbalanced handling, ensembling, stacking and built-in feature selection. Featured in <a href=\"https://towardsdatascience.com/why-automl-is-an-",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

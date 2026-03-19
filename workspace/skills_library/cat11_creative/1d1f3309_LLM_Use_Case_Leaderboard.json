@@ -1,0 +1,9 @@
+{
+  "name": "LLM Use Case Leaderboard",
+  "url": "https://llmleaderboard.goml.io",
+  "description": ": a leaderboard that features LLM use cases.",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Bcbio",
+  "url": "https://github.com/bcbio/bcbio-nextgen",
+  "description": "Validated, scalable, community developed variant calling, RNA-seq and small RNA analysis.",
+  "section": "Bioinformatics",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

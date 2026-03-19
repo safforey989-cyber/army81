@@ -1,0 +1,9 @@
+{
+  "name": "Thruk",
+  "url": "https://www.thruk.org/",
+  "description": "Multibackend monitoring web interface with support for Naemon, Nagios, Icinga and Shinken. ([Source Code](https://github.com/sni/Thruk)) `GPL-1.0` `Perl`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Shadowserver",
+  "url": "https://dashboard.shadowserver.org/",
+  "description": "Dashboard with global statistics on cyber threats collected by the Shadowserver Foundation.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

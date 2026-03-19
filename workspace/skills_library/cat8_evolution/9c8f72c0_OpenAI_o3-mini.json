@@ -1,0 +1,9 @@
+{
+  "name": "OpenAI o3-mini",
+  "url": "https://openai.com/index/openai-o3-mini/",
+  "description": "Pushing the frontier of cost-effective reasoning.",
+  "section": "Trending LLM Projects",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

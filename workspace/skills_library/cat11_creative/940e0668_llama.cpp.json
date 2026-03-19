@@ -1,0 +1,9 @@
+{
+  "name": "llama.cpp",
+  "url": "https://github.com/ggml-org/llama.cpp",
+  "description": "Inference of Meta's LLaMA model (and others) in pure C/C++. #opensource",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

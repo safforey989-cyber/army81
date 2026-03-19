@@ -1,0 +1,9 @@
+{
+  "name": "Align your Latents",
+  "url": "https://research.nvidia.com/labs/toronto-ai/VideoLDM/",
+  "description": ": high-resolution video synthesis with latent diffusion models [[arxiv]](https://arxiv.org/abs/2304.08818)",
+  "section": "Video and Animation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

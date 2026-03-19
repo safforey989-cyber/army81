@@ -1,0 +1,9 @@
+{
+  "name": "Worldwide OSINT Tools Map",
+  "url": "https://cipher387.github.io/osintmap/",
+  "description": "A global map of databases and OSINT sources by applicable location.",
+  "section": "[↑](#-table-of-contents) Geospatial Research and Mapping Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "BTFM: Blue Team Field Manual by Alan J White & Ben Clark, 2017",
+  "url": "https://www.amazon.de/Blue-Team-Field-Manual-BTFM/dp/154101636X",
+  "description": "Tool from pentest_tools",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

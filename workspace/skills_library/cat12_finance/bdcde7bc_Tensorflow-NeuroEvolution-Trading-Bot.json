@@ -1,0 +1,9 @@
+{
+  "name": "Tensorflow-NeuroEvolution-Trading-Bot",
+  "url": "https://github.com/SC4RECOIN/Tensorflow-NeuroEvolution-Trading-Bot",
+  "description": "A population model that trade cyrpto and breed and mutate iteratively.",
+  "section": "Crypto Currencies Strategies",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

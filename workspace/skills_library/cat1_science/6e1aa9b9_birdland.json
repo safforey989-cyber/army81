@@ -1,0 +1,9 @@
+{
+  "name": "birdland",
+  "url": "https://github.com/rlouf/birdland",
+  "description": "A recommendation library in Go.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

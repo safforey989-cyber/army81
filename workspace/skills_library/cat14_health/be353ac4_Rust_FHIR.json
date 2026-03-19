@@ -1,0 +1,9 @@
+{
+  "name": "Rust FHIR",
+  "url": "https://github.com/itsbalamurali/rust-fhir",
+  "description": "Rust SDK for HL7 FHIR",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "MEDIC Client Registry RI",
+  "url": "https://github.com/MohawkMEDIC/client-registry",
+  "description": "The Mohawk College MARC-HI/MEDIC Client Registry EMPI Implementation.",
+  "section": "EMPI",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

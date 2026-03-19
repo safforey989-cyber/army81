@@ -1,0 +1,9 @@
+{
+  "name": "Zero Day Initiative",
+  "url": "http://zerodayinitiative.com/advisories/published/",
+  "description": "Bug bounty program with publicly accessible archive of published security advisories, operated by TippingPoint.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "YOLOv8",
+  "url": "https://github.com/ultralytics/ultralytics",
+  "description": "Ultralytics' YOLOv8 implementation with C++ support for real-time object detection and tracking, optimized for edge devices.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

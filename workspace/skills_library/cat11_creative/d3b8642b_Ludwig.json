@@ -1,0 +1,9 @@
+{
+  "name": "Ludwig",
+  "url": "https://github.com/ludwig-ai/ludwig",
+  "description": "A low-code framework for building custom AI models like LLMs and other deep neural networks. [#opensource](https://github.com/ludwig-ai/ludwig)",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

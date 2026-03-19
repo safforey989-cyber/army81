@@ -1,0 +1,9 @@
+{
+  "name": "ClearML",
+  "url": "https://github.com/clearml/clearml",
+  "description": "Auto-Magical CI/CD to streamline your AI workload. Experiment Management, Data Management, Pipeline, Orchestration, Scheduling & Serving in one MLOps/LLMOps solution.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "OpenBMB/ChatDev",
+  "url": "https://github.com/OpenBMB/ChatDev",
+  "description": ": create customized software using natural language idea (through llm-powered multi-agent collaboration)",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Atom Community",
+  "url": "https://github.com/atom-community/atom",
+  "description": "A fork of [atom](https://github.com/atom/atom) A hackable text editor from Github. `MIT` `JavaScript`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "pagodo",
+  "url": "https://github.com/opsdisk/pagodo",
+  "description": "Automate Google Hacking Database scraping.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

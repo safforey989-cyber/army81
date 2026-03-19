@@ -1,0 +1,9 @@
+{
+  "name": "TahoeLAFS",
+  "url": "https://tahoe-lafs.org/trac/tahoe-lafs",
+  "description": "Secure, decentralized, fault-tolerant, peer-to-peer distributed data store and distributed file system. ([Source Code](https://github.com/tahoe-lafs/tahoe-lafs)) `GPL-2.0` `Python`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Apache Zeppelin",
+  "url": "https://zeppelin.apache.org/",
+  "description": "| Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala and more  |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

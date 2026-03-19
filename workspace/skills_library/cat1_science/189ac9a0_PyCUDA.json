@@ -1,0 +1,9 @@
+{
+  "name": "PyCUDA",
+  "url": "https://mathema.tician.de/software/pycuda/",
+  "description": "Python interface to CUDA",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

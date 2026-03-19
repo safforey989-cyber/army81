@@ -1,0 +1,9 @@
+{
+  "name": "yoheinakajima/babyagi",
+  "url": "https://github.com/yoheinakajima/babyagi",
+  "description": ": an AI-powered task management system that uses OpenAI and Pinecone APIs to create, prioritize, and execute tasks",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

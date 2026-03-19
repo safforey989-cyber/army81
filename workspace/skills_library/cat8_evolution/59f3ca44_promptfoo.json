@@ -1,0 +1,9 @@
+{
+  "name": "promptfoo",
+  "url": "https://github.com/typpo/promptfoo",
+  "description": "Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

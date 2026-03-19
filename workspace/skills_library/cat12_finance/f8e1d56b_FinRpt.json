@@ -1,0 +1,9 @@
+{
+  "name": "FinRpt",
+  "url": "https://arxiv.org/abs/2511.07322",
+  "description": "Dataset, Evaluation System and LLM-based Multi-agent Framework for Equity Research Report Generation.",
+  "section": "LLMs",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

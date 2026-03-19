@@ -1,0 +1,9 @@
+{
+  "name": "pkuseg-python",
+  "url": "https://github.com/lancopku/pkuseg-python",
+  "description": "A better version of Jieba, developed by Peking University.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Cloud Container Attack Tool (CCAT)",
+  "url": "https://rhinosecuritylabs.com/aws/cloud-container-attack-tool/",
+  "description": "](https://rhinosecuritylabs.com/aws/cloud-container-attack-tool/) - Tool for testing security of container environments.",
+  "section": "Cloud Platform Attack Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Asymmetrik FHIR API Server",
+  "url": "https://github.com/bluehalo/node-fhir-server-core",
+  "description": "A secure REST implementation for the HL7 FHIR Specification.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

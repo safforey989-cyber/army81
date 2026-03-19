@@ -1,0 +1,9 @@
+{
+  "name": "MONAI",
+  "url": "https://github.com/Project-MONAI/MONAI",
+  "description": "AI Toolkit for Healthcare Imaging.",
+  "section": "Machine learning",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

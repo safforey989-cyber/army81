@@ -1,0 +1,9 @@
+{
+  "name": "ehrapy",
+  "url": "https://github.com/theislab/ehrapy/",
+  "description": "Electronic Health Record analysis in Python.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

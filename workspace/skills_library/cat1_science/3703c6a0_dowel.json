@@ -1,0 +1,9 @@
+{
+  "name": "dowel",
+  "url": "https://github.com/rlworkgroup/dowel",
+  "description": "A little logger for machine learning research. Output any object to the terminal, CSV, TensorBoard, text logs on disk, and more with just one call to `logger.log()`.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "stable-baselines3",
+  "url": "https://github.com/DLR-RM/stable-baselines3",
+  "description": "PyTorch implementations of Stable Baselines (deep) reinforcement learning algorithms.",
+  "section": "Reinforcement learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

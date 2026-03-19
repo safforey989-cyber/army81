@@ -1,0 +1,9 @@
+{
+  "name": "Apache Flink",
+  "url": "https://flink.apache.org/",
+  "description": "| A platform for efficient, distributed, general-purpose data processing. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "lifelines",
+  "url": "https://github.com/CamDavidsonPilon/lifelines",
+  "description": "lifelines is a complete survival analysis library, written in pure Python",
+  "section": "Python Survival Analysis",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

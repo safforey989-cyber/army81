@@ -1,0 +1,9 @@
+{
+  "name": "Spiceworks Community",
+  "url": "https://community.spiceworks.com/start",
+  "description": "General enterprise IT news and small articles.",
+  "section": "Communities / Forums",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Transformer",
+  "url": "https://www.tensorflow.org/text/tutorials/transformer",
+  "description": "Tool from data_science",
+  "section": "Deep Learning architectures",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

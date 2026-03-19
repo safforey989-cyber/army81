@@ -1,0 +1,9 @@
+{
+  "name": "skbayes",
+  "url": "https://github.com/AmazaspShumik/sklearn-bayes",
+  "description": "Python package for Bayesian Machine Learning with scikit-learn API.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

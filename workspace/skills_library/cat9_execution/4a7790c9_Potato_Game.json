@@ -1,0 +1,9 @@
+{
+  "name": "Potato Game",
+  "url": "https://github.com/mick-schroeder/PotatoGame",
+  "description": ": Relaxing physics-based puzzle game where players tilt the board to move emojis and merge matching ones until they create a potato",
+  "section": "Game",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

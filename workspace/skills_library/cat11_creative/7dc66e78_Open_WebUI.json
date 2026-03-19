@@ -1,0 +1,9 @@
+{
+  "name": "Open WebUI",
+  "url": "https://github.com/open-webui/open-webui",
+  "description": "An extensible, feature-rich, and user-friendly self-hosted AI platform designed to operate entirely offline. #opensource",
+  "section": "Local LLM Deployment",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "eds-scikit",
+  "url": "https://github.com/aphp/eds-scikit",
+  "description": "a tool to assist data scientists working on the AP-HP's Clinical Data Warehouse. It is specifically targeted for OMOP-standardized data.",
+  "section": "Data",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

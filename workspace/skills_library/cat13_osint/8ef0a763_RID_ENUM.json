@@ -1,0 +1,9 @@
+{
+  "name": "RID_ENUM",
+  "url": "https://github.com/trustedsec/ridenum",
+  "description": "Python script that can enumerate all users from a Windows Domain Controller and crack those user's passwords using brute-force.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

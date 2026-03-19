@@ -1,0 +1,9 @@
+{
+  "name": "Octave",
+  "url": "https://www.gnu.org/software/octave/",
+  "description": "| GNU Octave is a high-level interpreted language, primarily intended for numerical computations.(Free Matlab) |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ggplot",
+  "url": "https://github.com/yhat/ggpy",
+  "description": "Same API as ggplot2 for R. **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

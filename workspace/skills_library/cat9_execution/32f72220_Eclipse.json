@@ -1,0 +1,9 @@
+{
+  "name": "Eclipse",
+  "url": "https://www.eclipse.org/",
+  "description": "IDE written in Java with an extensible plug-in system. ([Source Code](https://git.eclipse.org/c/)) `EPL-1.0` `Java`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

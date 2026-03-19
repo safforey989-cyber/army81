@@ -1,0 +1,9 @@
+{
+  "name": "Machine Learning Module",
+  "url": "https://github.com/josephmisiti/machine-learning-module",
+  "description": "Class on machine w/ PDF, lectures, code",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

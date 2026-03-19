@@ -1,0 +1,9 @@
+{
+  "name": "Cohere AI",
+  "url": "https://docs.cohere.ai/",
+  "description": ": a way to integrate state-of-the-art language models to applications",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

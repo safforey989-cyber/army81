@@ -1,0 +1,9 @@
+{
+  "name": "Cortical.io",
+  "url": "https://www.cortical.io/",
+  "description": "Retina: an API performing complex NLP operations (disambiguation, classification, streaming text filtering, etc...) as quickly and intuitively as the brain.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

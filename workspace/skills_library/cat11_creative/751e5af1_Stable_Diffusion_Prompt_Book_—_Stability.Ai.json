@@ -1,0 +1,9 @@
+{
+  "name": "Stable Diffusion Prompt Book — Stability.Ai",
+  "url": "https://stability.ai/sdv2-prompt-book",
+  "description": ": prompt book for Stable Diffusion v2.0 and v2.1 released by Stability.AI",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

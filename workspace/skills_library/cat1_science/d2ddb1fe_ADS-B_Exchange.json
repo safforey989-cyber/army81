@@ -1,0 +1,9 @@
+{
+  "name": "ADS-B Exchange",
+  "url": "https://www.adsbexchange.com/data-samples/",
+  "description": "Specific datasets for aircraft and Automatic Dependent Surveillance-Broadcast (ADS-B) sources.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

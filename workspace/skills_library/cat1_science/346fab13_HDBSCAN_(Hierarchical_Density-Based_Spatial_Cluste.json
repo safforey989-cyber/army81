@@ -1,0 +1,9 @@
+{
+  "name": "HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise)",
+  "url": "https://en.wikipedia.org/wiki/DBSCAN#HDBSCAN",
+  "description": "](https://en.wikipedia.org/wiki/DBSCAN#HDBSCAN)",
+  "section": "Modern Data Mining Algorithms",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

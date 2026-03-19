@@ -1,0 +1,9 @@
+{
+  "name": "Stableboost",
+  "url": "https://stableboost.ai/",
+  "description": "Stableboost is a Stable Diffusion WebUI that lets you quickly generate a lot of images so you can find the perfect ones.",
+  "section": "Stable Diffusion resources",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

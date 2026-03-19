@@ -1,0 +1,9 @@
+{
+  "name": "Fluttergram",
+  "url": "https://github.com/mdanics/fluttergram",
+  "description": ": Instagram clone using Flutter, Firebase, Firestore",
+  "section": "Flutter",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Hooey webprint",
+  "url": "http://www.hooeeywebprint.com.s3-website-us-east-1.amazonaws.com/download.html",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Offline Browsing",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

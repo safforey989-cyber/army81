@@ -1,0 +1,9 @@
+{
+  "name": "SmartThing",
+  "url": "https://github.com/der1598c/SmartThing",
+  "description": ": Remote control through Mqtt and ESP8266, combined with Homebridge",
+  "section": "Home",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

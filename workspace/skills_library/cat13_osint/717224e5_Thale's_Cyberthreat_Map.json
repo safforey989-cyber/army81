@@ -1,0 +1,9 @@
+{
+  "name": "Thale's Cyberthreat Map",
+  "url": "https://cds.thalesgroup.com/en/cyberthreat/hitmap",
+  "description": "Discover cybersecurity trends with Thales' Cyberthreat map. Explore targeted areas, frequent attacks, affected sectors, and prevalent malware.",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

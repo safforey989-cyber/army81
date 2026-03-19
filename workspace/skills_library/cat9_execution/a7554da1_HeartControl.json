@@ -1,0 +1,9 @@
+{
+  "name": "HeartControl",
+  "url": "https://github.com/thomaspaulmann/HeartControl",
+  "description": ": Continuous heart rate measurement during workouts",
+  "section": "Apple Watch",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

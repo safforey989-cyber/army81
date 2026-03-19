@@ -1,0 +1,9 @@
+{
+  "name": "Pictory",
+  "url": "https://pictory.ai/",
+  "description": "Pictory's powerful AI enables you to create and edit professional quality videos using text.",
+  "section": "Video",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

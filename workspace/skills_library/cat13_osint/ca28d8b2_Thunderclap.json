@@ -1,0 +1,9 @@
+{
+  "name": "Thunderclap",
+  "url": "https://thunderclap.io/",
+  "description": "Open source I/O security research platform for auditing physical DMA-enabled hardware peripheral ports.",
+  "section": "Physical Access Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

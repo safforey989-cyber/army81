@@ -1,0 +1,9 @@
+{
+  "name": "iperf",
+  "url": "https://github.com/ndfred/iperf-ios",
+  "description": ": Run an iperf3 client, including reverse mode & multiple streams selection",
+  "section": "Developer",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

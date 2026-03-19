@@ -1,0 +1,9 @@
+{
+  "name": "Thunderbird Email",
+  "url": "https://github.com/thunderbird/thunderbird-ios",
+  "description": "Tool from mobile_apps",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

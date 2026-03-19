@@ -1,0 +1,9 @@
+{
+  "name": "neural-dream",
+  "url": "https://github.com/ProGamerGov/neural-dream",
+  "description": "A PyTorch implementation of DeepDream.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

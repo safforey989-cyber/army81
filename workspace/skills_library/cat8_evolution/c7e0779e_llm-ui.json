@@ -1,0 +1,9 @@
+{
+  "name": "llm-ui",
+  "url": "https://github.com/llm-ui-kit/llm-ui",
+  "description": "A React library for building LLM UIs.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Epieos Tools",
+  "url": "https://tools.epieos.com",
+  "description": "Collection of OSINT tools for email investigations.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

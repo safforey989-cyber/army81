@@ -1,0 +1,9 @@
+{
+  "name": "LifeGame",
+  "url": "https://github.com/YusukeHosonuma/SwiftUI-LifeGame",
+  "description": ": Conway's Game of Life",
+  "section": "SwiftUI",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

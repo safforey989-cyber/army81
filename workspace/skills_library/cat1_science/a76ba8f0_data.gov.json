@@ -1,0 +1,9 @@
+{
+  "name": "data.gov",
+  "url": "https://catalog.data.gov/dataset",
+  "description": "The home of the U.S. Government's open data",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

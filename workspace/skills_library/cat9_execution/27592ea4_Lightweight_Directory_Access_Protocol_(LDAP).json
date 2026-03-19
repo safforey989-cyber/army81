@@ -1,0 +1,9 @@
+{
+  "name": "Lightweight Directory Access Protocol (LDAP)",
+  "url": "https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol",
+  "description": "](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol) is an open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services over an Internet Protocol (IP) network.",
+  "section": "Identity Management - LDAP",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

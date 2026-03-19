@@ -1,0 +1,9 @@
+{
+  "name": "cadvisor",
+  "url": "https://github.com/google/cadvisor",
+  "description": "Analyzes resource usage and performance characteristics of running containers. `Apache-2.0` `Go`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

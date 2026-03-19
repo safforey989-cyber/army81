@@ -1,0 +1,9 @@
+{
+  "name": "Contributing Guidelines",
+  "url": "CONTRIBUTING.md",
+  "description": ". Please check the [Contributing Guidelines](CONTRIBUTING.md) for more details. This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).",
+  "section": "Awesome Penetration Testing [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

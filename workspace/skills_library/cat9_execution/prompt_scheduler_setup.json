@@ -1,0 +1,7 @@
+{
+  "name": "scheduler_setup",
+  "type": "prompt_pattern",
+  "prompt_template": "أنشئ جدول مهام لـ {tasks}. تكرار، أولوية، تبعيات، إعادة محاولة.",
+  "category": "cat9_execution",
+  "source": "built_in"
+}

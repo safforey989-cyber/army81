@@ -1,0 +1,9 @@
+{
+  "name": "sim",
+  "url": "https://sim.ai",
+  "description": "Sim Studio's interface is a lightweight, intuitive way to quickly build and deploy LLMs that connect with your favorite tools.",
+  "section": "Workflow",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

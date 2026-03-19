@@ -1,0 +1,9 @@
+{
+  "name": "open-solution-home-credit",
+  "url": "https://github.com/neptune-ml/open-solution-home-credit",
+  "description": "> source code and [experiments results](https://app.neptune.ml/neptune-ml/Home-Credit-Default-Risk) for [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk).",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

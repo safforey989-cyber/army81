@@ -1,0 +1,9 @@
+{
+  "name": "Imagine by Magic Studio",
+  "url": "https://magicstudio.com/imagine",
+  "description": "A tool by Magic Studio that let's you express yourself by just describing what's on your mind.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

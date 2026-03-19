@@ -1,0 +1,9 @@
+{
+  "name": "OHDSI OMOP Common Data Model",
+  "url": "https://www.ohdsi.org/data-standardization/",
+  "description": "Standardized data model for many healthcare concepts, awesome Github presence including scripts for many major relational databases.",
+  "section": "Specifications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "NetNewsWire",
+  "url": "https://github.com/Ranchero-Software/NetNewsWire",
+  "description": ": Feed reader that supports RSS, Atom, JSON Feed, and RSS-in-JSON formats",
+  "section": "RSS",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

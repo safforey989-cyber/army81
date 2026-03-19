@@ -1,0 +1,9 @@
+{
+  "name": "Python 835 Parser",
+  "url": "https://github.com/keironstoddart/edi-835-parser",
+  "description": "A simple-to-use Python interface to EDI 835 Health Care Claim Payment and Remittance Advice files.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

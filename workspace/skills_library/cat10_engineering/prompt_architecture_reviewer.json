@@ -1,0 +1,7 @@
+{
+  "name": "architecture_reviewer",
+  "type": "prompt_pattern",
+  "prompt_template": "راجع معمارية {system}. Scalability, maintainability, security.",
+  "category": "cat10_engineering",
+  "source": "built_in"
+}

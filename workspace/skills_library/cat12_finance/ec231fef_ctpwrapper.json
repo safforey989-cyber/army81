@@ -1,0 +1,9 @@
+{
+  "name": "ctpwrapper",
+  "url": "https://github.com/nooperpudd/ctpwrapper",
+  "description": "Shanghai future exchange CTP api.",
+  "section": "Exchange API",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

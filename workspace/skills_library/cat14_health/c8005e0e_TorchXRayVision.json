@@ -1,0 +1,9 @@
+{
+  "name": "TorchXRayVision",
+  "url": "https://github.com/mlmed/torchxrayvision",
+  "description": "A library for chest X-ray datasets and models. Including pre-trained models.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

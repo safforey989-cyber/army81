@@ -1,0 +1,9 @@
+{
+  "name": "rustlearn",
+  "url": "https://github.com/maciejkula/rustlearn",
+  "description": "a machine learning framework featuring logistic regression, support vector machines, decision trees and random forests.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

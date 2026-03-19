@@ -1,0 +1,9 @@
+{
+  "name": "Docker Swarm",
+  "url": "https://docs.docker.com/engine/swarm/",
+  "description": "Manage cluster of Docker Engines. ([Source Code](https://github.com/moby/swarmkit)) `Apache-2.0` `Go`",
+  "section": "Software Containers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

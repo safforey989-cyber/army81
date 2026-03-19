@@ -1,0 +1,9 @@
+{
+  "name": "Remote Desktop",
+  "url": "https://en.wikipedia.org/wiki/Remote_desktop_software",
+  "description": "client software.",
+  "section": "Remote Desktop Clients",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

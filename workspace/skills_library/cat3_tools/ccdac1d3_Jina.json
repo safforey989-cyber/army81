@@ -1,0 +1,9 @@
+{
+  "name": "Jina",
+  "url": "https://github.com/jina-ai/langchain-serve",
+  "description": ": Langchain Apps on Production with Jina ![GitHub Repo stars](https://img.shields.io/github/stars/jina-ai/langchain-serve?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

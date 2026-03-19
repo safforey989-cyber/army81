@@ -1,0 +1,9 @@
+{
+  "name": "OpenCreator",
+  "url": "https://opencreator.io",
+  "description": "All-in-one AI workspace for video creation with text-to-video, image-to-video conversion, multi-language support, collaborative editing, and direct publishing to major platforms.",
+  "section": "Video",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

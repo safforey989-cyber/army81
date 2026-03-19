@@ -1,0 +1,9 @@
+{
+  "name": "CAMEL",
+  "url": "https://www.camel-ai.org/",
+  "description": "First LLM Multi-agent framework.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DotDotPwn",
+  "url": "https://dotdotpwn.blogspot.com/",
+  "description": "Directory traversal fuzzer.",
+  "section": "Web path discovery and bruteforcing tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DNSControl",
+  "url": "https://stackexchange.github.io/dnscontrol/",
+  "description": "Synchronize your DNS to multiple providers from a simple DSL. ([Source Code](https://github.com/StackExchange/dnscontrol)) `MIT` `Go/Docker`",
+  "section": "DNS - Control Panels & Domain Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

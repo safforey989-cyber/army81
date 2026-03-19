@@ -1,0 +1,9 @@
+{
+  "name": "Stanford Temporal Tagger",
+  "url": "https://nlp.stanford.edu/software/sutime.shtml",
+  "description": "SUTime is a library for recognizing and normalizing time expressions.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

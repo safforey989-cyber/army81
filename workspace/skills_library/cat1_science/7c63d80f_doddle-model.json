@@ -1,0 +1,9 @@
+{
+  "name": "doddle-model",
+  "url": "https://github.com/picnicml/doddle-model",
+  "description": "An in-memory machine learning library built on top of Breeze. It provides immutable objects and exposes its functionality through a scikit-learn-like API.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

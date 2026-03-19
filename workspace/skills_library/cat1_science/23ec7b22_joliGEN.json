@@ -1,0 +1,9 @@
+{
+  "name": "joliGEN",
+  "url": "https://github.com/jolibrain/joliGEN",
+  "description": "Generative AI Image Toolset with GANs and Diffusion for Real-World Applications.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

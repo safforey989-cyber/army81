@@ -1,0 +1,9 @@
+{
+  "name": "chatgpt-shroud",
+  "url": "https://github.com/guyShilo/chatgpt-shroud",
+  "description": "A Chrome extension for OpenAI's ChatGPT, enhancing user privacy by enabling easy hiding and unhiding of chat history. Ideal for privacy during screen shares.",
+  "section": "Miscellaneous",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

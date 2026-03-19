@@ -1,0 +1,9 @@
+{
+  "name": "codegen2 1B-16B",
+  "url": "https://github.com/salesforce/CodeGen2",
+  "description": "| [CodeGen2: Lessons for Training LLMs on Programming and Natural Languages](https://arxiv.org/abs/2305.02309) | 1 - 16 | [2048](https://arxiv.org/abs/2305.02309) | [Apache 2.0](https://github.com/salesforce/CodeGen2/blob/main/LICENSE)|                                                                ",
+  "section": "Open LLMs for code",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

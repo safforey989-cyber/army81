@@ -1,0 +1,9 @@
+{
+  "name": "Fridax",
+  "url": "https://github.com/NorthwaveNL/fridax",
+  "description": "Read variables and intercept/hook functions in Xamarin/Mono JIT and AOT compiled iOS/Android applications.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

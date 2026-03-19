@@ -1,0 +1,9 @@
+{
+  "name": "deepseek-llm-7b-base",
+  "url": "https://huggingface.co/deepseek-ai/deepseek-llm-7b-base",
+  "description": ", [deepseek-llm-7b-chat](https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat), [deepseek-llm-67b-base](https://huggingface.co/deepseek-ai/deepseek-llm-67b-base), [deepseek-llm-67b-chat](https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat) | [Introducing DeepSeek LLM](https://github.com/deep",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

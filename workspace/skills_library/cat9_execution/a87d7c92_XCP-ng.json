@@ -1,0 +1,9 @@
+{
+  "name": "XCP-ng",
+  "url": "https://www.xcp-ng.org/",
+  "description": "Virtualization platform based on Xen Source and Citrix® Hypervisor (formerly XenServer). ([Source Code](https://github.com/xcp-ng)) `GPL-2.0` `C`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

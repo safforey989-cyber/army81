@@ -1,0 +1,9 @@
+{
+  "name": "Node HL7",
+  "url": "https://github.com/MatthewVita/node-hl7-complete",
+  "description": "Node module that is bridged with the Java Hapi HL7 library.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

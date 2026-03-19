@@ -1,0 +1,9 @@
+{
+  "name": "NannyML",
+  "url": "https://bit.ly/nannyml-github-machinelearning",
+  "description": ": Python library capable of fully capturing the impact of data drift on performance. Allows estimation of post-deployment model performance without access to targets.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

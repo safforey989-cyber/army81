@@ -1,0 +1,9 @@
+{
+  "name": "MathEval",
+  "url": "https://matheval.ai",
+  "description": "a comprehensive benchmarking platform designed to evaluate large models' mathematical abilities across 20 fields and nearly 30,000 math problems.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

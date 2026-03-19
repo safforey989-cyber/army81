@@ -1,0 +1,9 @@
+{
+  "name": "RWKV-v4|5|6",
+  "url": "https://huggingface.co/RWKV",
+  "description": "minicpm-2b-65d48bf958302b9fd25b698f)",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

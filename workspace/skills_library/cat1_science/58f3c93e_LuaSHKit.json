@@ -1,0 +1,9 @@
+{
+  "name": "LuaSHKit",
+  "url": "https://github.com/ocallaco/LuaSHkit",
+  "description": "A Lua wrapper around the Locality sensitive hashing library SHKit **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

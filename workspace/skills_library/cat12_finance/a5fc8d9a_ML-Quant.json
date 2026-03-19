@@ -1,0 +1,9 @@
+{
+  "name": "ML-Quant",
+  "url": "https://www.ml-quant.com/",
+  "description": "Quant resources from ArXiv (sanity), SSRN, RePec, Journals, Podcasts, Videos, and Blogs.",
+  "section": "Research Tools",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Neurolink",
+  "url": "https://github.com/juspay/neurolink",
+  "description": "Enterprise-grade LLM integration framework for building production-ready AI applications with built-in hallucination prevention, RAG, and MCP support.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

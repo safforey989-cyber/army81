@@ -1,0 +1,9 @@
+{
+  "name": "YouTube Summary with ChatGPT",
+  "url": "https://chrome.google.com/webstore/detail/youtube-summary-with-chat/nmmicjeknamkfloonkhhcjmomieiodli",
+  "description": "Use ChatGPT to summarize YouTube videos.",
+  "section": "ChatGPT extensions",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

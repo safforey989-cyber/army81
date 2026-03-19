@@ -1,0 +1,9 @@
+{
+  "name": "promptfoo",
+  "url": "https://github.com/promptfoo/promptfoo",
+  "description": "Open-source LLM evaluation and red teaming framework. Test prompts, models, agents, and RAG pipelines. Run adversarial attacks (jailbreaks, prompt injection) and integrate security testing into CI/CD.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

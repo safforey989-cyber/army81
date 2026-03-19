@@ -1,0 +1,9 @@
+{
+  "name": "LKYDeepNN",
+  "url": "https://github.com/mosdeo/LKYDeepNN",
+  "description": "A header-only C++11 Neural Network library. Low dependency, native traditional chinese document.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

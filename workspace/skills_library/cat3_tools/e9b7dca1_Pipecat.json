@@ -1,0 +1,9 @@
+{
+  "name": "Pipecat",
+  "url": "https://github.com/pipecat-ai/pipecat",
+  "description": ": Open Source framework for voice and multimodal conversational AI. ![GitHub Repo stars](https://img.shields.io/github/stars/pipecat-ai/pipecat?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

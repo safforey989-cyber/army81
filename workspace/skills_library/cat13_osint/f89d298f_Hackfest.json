@@ -1,0 +1,9 @@
+{
+  "name": "Hackfest",
+  "url": "https://hackfest.ca",
+  "description": "Largest hacking conference in Canada.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

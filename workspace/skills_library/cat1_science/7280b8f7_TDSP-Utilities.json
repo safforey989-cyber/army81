@@ -1,0 +1,9 @@
+{
+  "name": "TDSP-Utilities",
+  "url": "https://github.com/Azure/Azure-TDSP-Utilities",
+  "description": "Two data science utilities in R from Microsoft: 1) Interactive Data Exploration, Analysis, and Reporting (IDEAR) ; 2) Automated Modelling and Reporting (AMR).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

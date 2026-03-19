@@ -1,0 +1,9 @@
+{
+  "name": "Enterprise Miner",
+  "url": "https://www.sas.com/en_us/software/enterprise-miner.html",
+  "description": "Data mining and machine learning that creates deployable models using a GUI or code.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

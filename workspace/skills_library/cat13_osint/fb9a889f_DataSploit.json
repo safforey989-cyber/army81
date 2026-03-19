@@ -1,0 +1,9 @@
+{
+  "name": "DataSploit",
+  "url": "https://github.com/upgoingstar/datasploit",
+  "description": "OSINT visualizer utilizing Shodan, Censys, Clearbit, EmailHunter, FullContact, and Zoomeye behind the scenes.",
+  "section": "Open Sources Intelligence (OSINT)",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

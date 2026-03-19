@@ -1,0 +1,9 @@
+{
+  "name": "LiteLLM",
+  "url": "https://www.litellm.ai/",
+  "description": ": a proxy server to manage auth, loadbalancing, and spend tracking across 100+ LLMs, all in the OpenAI format",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

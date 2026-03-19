@@ -1,0 +1,9 @@
+{
+  "name": "Serge",
+  "url": "https://github.com/serge-chat/serge",
+  "description": "a chat interface crafted with llama.cpp for running Alpaca models. No API keys, entirely self-hosted!",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

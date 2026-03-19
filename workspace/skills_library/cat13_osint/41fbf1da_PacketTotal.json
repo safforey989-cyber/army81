@@ -1,0 +1,9 @@
+{
+  "name": "PacketTotal",
+  "url": "https://packettotal.com/",
+  "description": "Simple, free, high-quality packet capture file analysis facilitating the quick detection of network-borne malware (using Zeek and Suricata IDS signatures under the hood).",
+  "section": "Open Sources Intelligence (OSINT)",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

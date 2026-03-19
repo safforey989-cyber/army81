@@ -1,0 +1,9 @@
+{
+  "name": "AI Gateway",
+  "url": "https://github.com/Portkey-AI/gateway",
+  "description": "Gateway streamlines requests to 100+ open & closed source models with a unified API. It is also production-ready with support for caching, fallbacks, retries, timeouts, loadbalancing, and can be edge-deployed for minimum latency.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

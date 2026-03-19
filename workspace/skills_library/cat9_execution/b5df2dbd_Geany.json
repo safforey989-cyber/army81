@@ -1,0 +1,9 @@
+{
+  "name": "Geany",
+  "url": "https://www.geany.org/",
+  "description": "GTK2 text editor. ([Source Code](https://github.com/geany/geany)) `GPL-2.0` `C/C++`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "FHIR Server for Azure",
+  "url": "https://github.com/Microsoft/fhir-server",
+  "description": "A .NET Core implementation of the FHIR standard.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

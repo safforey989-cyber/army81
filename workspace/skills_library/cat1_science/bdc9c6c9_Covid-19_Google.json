@@ -1,0 +1,9 @@
+{
+  "name": "Covid-19 Google",
+  "url": "https://github.com/google-research/open-covid-19-data",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

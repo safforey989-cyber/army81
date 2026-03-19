@@ -1,0 +1,9 @@
+{
+  "name": "spotify_profile_monitor",
+  "url": "https://github.com/misiektoja/spotify_profile_monitor",
+  "description": "Tool for real-time tracking of Spotify users' activities and profile changes, including playlists, with support for email alerts, CSV logging, showing media in the terminal, detection of profile picture changes and more",
+  "section": "[↑](#-table-of-contents) Music Streaming Services",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

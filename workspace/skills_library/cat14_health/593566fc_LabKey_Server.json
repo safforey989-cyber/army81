@@ -1,0 +1,9 @@
+{
+  "name": "LabKey Server",
+  "url": "https://www.labkey.com/products-services/labkey-server/",
+  "description": "Platform for Translational Research.",
+  "section": "Research",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

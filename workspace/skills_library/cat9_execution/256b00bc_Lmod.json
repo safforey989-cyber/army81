@@ -1,0 +1,9 @@
+{
+  "name": "Lmod",
+  "url": "https://www.tacc.utexas.edu/research-development/tacc-projects/lmod",
+  "description": "Lmod is a Lua based module system that easily handles the MODULEPATH Hierarchical problem. ([Source Code](https://github.com/TACC/Lmod)) `MIT` `Lua`",
+  "section": "Build and software organization tools",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

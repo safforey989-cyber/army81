@@ -1,0 +1,9 @@
+{
+  "name": "NewsApiApp",
+  "url": "https://github.com/SchwiftyUI/NewsApiApp",
+  "description": ": News app with image caching and infinite loading",
+  "section": "News API",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

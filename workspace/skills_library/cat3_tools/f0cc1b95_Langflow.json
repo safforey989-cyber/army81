@@ -1,0 +1,9 @@
+{
+  "name": "Langflow",
+  "url": "https://github.com/logspace-ai/langflow",
+  "description": ": LangFlow is a UI for LangChain ![GitHub Repo stars](https://img.shields.io/github/stars/logspace-ai/langflow?style=social)",
+  "section": "Low-code",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

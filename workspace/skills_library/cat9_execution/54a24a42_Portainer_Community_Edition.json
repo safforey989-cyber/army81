@@ -1,0 +1,9 @@
+{
+  "name": "Portainer Community Edition",
+  "url": "https://www.portainer.io/",
+  "description": "Simple management UI for Docker. ([Source Code](https://github.com/portainer/portainer)) `Zlib` `Go`",
+  "section": "Software Containers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

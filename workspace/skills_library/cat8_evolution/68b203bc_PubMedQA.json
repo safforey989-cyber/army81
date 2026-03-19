@@ -1,0 +1,9 @@
+{
+  "name": "PubMedQA",
+  "url": "https://pubmedqa.github.io",
+  "description": "a biomedical question-answering benchmark designed for answering research-related questions using PubMed abstracts.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

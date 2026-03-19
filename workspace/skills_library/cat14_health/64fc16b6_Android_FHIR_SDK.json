@@ -1,0 +1,9 @@
+{
+  "name": "Android FHIR SDK",
+  "url": "https://github.com/google/android-fhir",
+  "description": "The Android FHIR SDK",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

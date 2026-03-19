@@ -1,0 +1,9 @@
+{
+  "name": "LLM Comparison/Test",
+  "url": "https://www.reddit.com/r/LocalLLaMA/comments/17fhp9k/huge_llm_comparisontest_39_models_tested_7b70b/",
+  "description": ": 39 models tested (7B-70B + ChatGPT/GPT-4)",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

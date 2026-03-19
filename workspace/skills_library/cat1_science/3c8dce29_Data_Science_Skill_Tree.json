@@ -1,0 +1,9 @@
+{
+  "name": "Data Science Skill Tree",
+  "url": "https://labex.io/skilltrees/data-science",
+  "description": "Tool from data_science",
+  "section": "MOOC's",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

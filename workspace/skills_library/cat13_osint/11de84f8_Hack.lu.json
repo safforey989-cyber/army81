@@ -1,0 +1,9 @@
+{
+  "name": "Hack.lu",
+  "url": "https://hack.lu/",
+  "description": "Annual conference held in Luxembourg.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

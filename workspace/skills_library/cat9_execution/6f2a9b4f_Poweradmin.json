@@ -1,0 +1,9 @@
+{
+  "name": "Poweradmin",
+  "url": "https://www.poweradmin.org/",
+  "description": "Web-based DNS control panel for PowerDNS server. ([Source Code](https://github.com/poweradmin/poweradmin)) `GPL-3.0` `PHP`",
+  "section": "DNS - Control Panels & Domain Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

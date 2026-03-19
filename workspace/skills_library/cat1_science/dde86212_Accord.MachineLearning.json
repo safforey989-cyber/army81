@@ -1,0 +1,9 @@
+{
+  "name": "Accord.MachineLearning",
+  "url": "https://www.nuget.org/packages/Accord.MachineLearning/",
+  "description": "Support Vector Machines, Decision Trees, Naive Bayesian models, K-means, Gaussian Mixture models and general algorithms such as Ransac, Cross-validation and Grid-Search for machine-learning applications. This package is part of the Accord.NET Framework.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

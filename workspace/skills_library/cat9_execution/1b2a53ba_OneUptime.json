@@ -1,0 +1,9 @@
+{
+  "name": "OneUptime",
+  "url": "https://oneuptime.com",
+  "description": "A comprehensive solution for monitoring and managing your online services. ([Source Code](https://github.com/oneuptime/oneuptime)) `Apache-2.0` `Docker`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

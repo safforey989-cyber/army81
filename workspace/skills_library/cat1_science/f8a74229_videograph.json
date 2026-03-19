@@ -1,0 +1,9 @@
+{
+  "name": "videograph",
+  "url": "https://github.com/clementfarabet/videograph",
+  "description": "A video/graph library for Torch. This package provides routines to construct graphs on videos, segment them, build trees out of them, and convert them back to videos. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

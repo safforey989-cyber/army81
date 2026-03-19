@@ -1,0 +1,9 @@
+{
+  "name": "Mixtral-8x7B",
+  "url": "https://mistral.ai/news/mixtral-of-experts/",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

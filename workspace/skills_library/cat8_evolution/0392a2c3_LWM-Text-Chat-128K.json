@@ -1,0 +1,9 @@
+{
+  "name": "LWM-Text-Chat-128K",
+  "url": "https://huggingface.co/LargeWorldModel/LWM-Text-Chat-128K",
+  "description": ", [LWM-Text-Chat-256K](https://huggingface.co/LargeWorldModel/LWM-Text-Chat-256K), [LWM-Text-Chat-512K](https://huggingface.co/LargeWorldModel/LWM-Text-Chat-512K), [LWM-Text-Chat-1M](https://huggingface.co/LargeWorldModel/LWM-Text-Chat-1M), [LWM-Text-128K](https://huggingface.co/LargeWorldModel/LWM-",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

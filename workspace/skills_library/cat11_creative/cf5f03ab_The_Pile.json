@@ -1,0 +1,9 @@
+{
+  "name": "The Pile",
+  "url": "https://pile.eleuther.ai",
+  "description": ": a leaderboard of The Pile benchmark.",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

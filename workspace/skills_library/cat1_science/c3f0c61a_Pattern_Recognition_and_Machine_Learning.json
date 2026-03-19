@@ -1,0 +1,9 @@
+{
+  "name": "Pattern Recognition and Machine Learning",
+  "url": "https://github.com/PRML/PRMLT",
+  "description": "This package contains the matlab implementation of the algorithms described in the book Pattern Recognition and Machine Learning by C. Bishop.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

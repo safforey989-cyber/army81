@@ -1,0 +1,9 @@
+{
+  "name": "chatglm3-6b",
+  "url": "https://huggingface.co/THUDM/chatglm3-6b",
+  "description": ", [chatglm3-6b-base](https://huggingface.co/THUDM/chatglm3-6b-base), [chatglm3-6b-32k](https://huggingface.co/THUDM/chatglm3-6b-32k), [chatglm3-6b-128k](https://huggingface.co/THUDM/chatglm3-6b-128k) | [ChatGLM3](https://github.com/THUDM/ChatGLM3/blob/main/README_en.md) | 6 | [8192](https://huggingf",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

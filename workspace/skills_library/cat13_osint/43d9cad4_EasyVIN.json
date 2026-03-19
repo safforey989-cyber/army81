@@ -1,0 +1,9 @@
+{
+  "name": "EasyVIN",
+  "url": "https://t.me/EasyVINbot",
+  "description": "Cheap VIN/plate history check.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

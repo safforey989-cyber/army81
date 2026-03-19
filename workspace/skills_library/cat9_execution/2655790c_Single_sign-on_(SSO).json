@@ -1,0 +1,9 @@
+{
+  "name": "Single sign-on (SSO)",
+  "url": "https://en.wikipedia.org/wiki/Single_sign-on",
+  "description": "](https://en.wikipedia.org/wiki/Single_sign-on) is an authentication scheme that allows a user to log in with a single ID to any of several related, yet independent, software systems.",
+  "section": "Identity Management - Single Sign-On (SSO)",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

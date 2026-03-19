@@ -1,0 +1,9 @@
+{
+  "name": "binwalk",
+  "url": "https://github.com/devttys0/binwalk",
+  "description": "Fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

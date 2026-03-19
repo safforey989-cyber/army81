@@ -1,0 +1,9 @@
+{
+  "name": "Okrolearn",
+  "url": "https://github.com/Okerew/okrolearn",
+  "description": ": A python machine learning library created to combine powefull data analasys features with tensors and machine learning components, while maintaining support for other libraries.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

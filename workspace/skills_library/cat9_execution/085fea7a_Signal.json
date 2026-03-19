@@ -1,0 +1,9 @@
+{
+  "name": "Signal",
+  "url": "https://github.com/signalapp/Signal-iOS",
+  "description": ": Free, world-wide, private messaging & phone calls",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

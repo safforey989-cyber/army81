@@ -1,0 +1,9 @@
+{
+  "name": "FHIR",
+  "url": "https://www.hl7.org/fhir/",
+  "description": "Fast Health Interoperability Resources.",
+  "section": "Specifications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

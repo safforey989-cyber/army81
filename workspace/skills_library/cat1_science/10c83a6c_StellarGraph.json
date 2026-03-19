@@ -1,0 +1,9 @@
+{
+  "name": "StellarGraph",
+  "url": "https://github.com/stellargraph/stellargraph",
+  "description": ": Machine Learning on Graphs, a Python library for machine learning on graph-structured (network-structured) data.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

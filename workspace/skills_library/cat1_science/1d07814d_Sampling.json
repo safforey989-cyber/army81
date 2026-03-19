@@ -1,0 +1,9 @@
+{
+  "name": "Sampling",
+  "url": "https://github.com/lindahua/Sampling.jl",
+  "description": "Basic sampling algorithms for Julia.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Yandex Wordstat",
+  "url": "https://wordstat.yandex.com",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Keywords Discovery and Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

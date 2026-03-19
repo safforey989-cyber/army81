@@ -1,0 +1,9 @@
+{
+  "name": "UK COVID-19 Statistics",
+  "url": "https://github.com/atrinh0/covid19",
+  "description": ": Track cases & deaths with local notifications and widgets",
+  "section": "SwiftUI",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ONNX-Scala",
+  "url": "https://github.com/EmergentOrder/onnx-scala",
+  "description": "An ONNX (Open Neural Network eXchange) API and backend for typeful, functional deep learning in Scala (3).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

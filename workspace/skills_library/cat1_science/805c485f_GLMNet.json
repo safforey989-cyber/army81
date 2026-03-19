@@ -1,0 +1,9 @@
+{
+  "name": "GLMNet",
+  "url": "https://github.com/simonster/GLMNet.jl",
+  "description": "Julia wrapper for fitting Lasso/ElasticNet GLM models using glmnet.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

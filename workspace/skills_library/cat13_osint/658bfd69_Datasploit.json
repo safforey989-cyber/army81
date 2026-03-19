@@ -1,0 +1,9 @@
+{
+  "name": "Datasploit",
+  "url": "https://github.com/DataSploit/datasploit",
+  "description": "Tool to perform various OSINT techniques on usernames, emails addresses, and domains.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "RsaCtfTool",
+  "url": "https://github.com/Ganapati/RsaCtfTool",
+  "description": "Decrypt data enciphered using weak RSA keys, and recover private keys from public keys using a variety of automated attacks.",
+  "section": "CTF Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

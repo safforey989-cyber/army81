@@ -1,0 +1,9 @@
+{
+  "name": "Wispr Flow",
+  "url": "https://wisprflow.ai/",
+  "description": "Flow makes writing quick with seamless voice dictation for any application on your computer.",
+  "section": "Speech-to-text",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

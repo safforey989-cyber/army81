@@ -1,0 +1,9 @@
+{
+  "name": "LAIKA",
+  "url": "https://www.writewithlaika.com/",
+  "description": "LAIKA trains an artificial intelligence on your own writing to create a personalised creative partner-in-crime.",
+  "section": "Writing assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

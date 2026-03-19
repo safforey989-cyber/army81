@@ -1,0 +1,9 @@
+{
+  "name": "Mattermost",
+  "url": "https://github.com/mattermost/mattermost-mobile",
+  "description": ": Secure messaging platform for DevOps teams",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

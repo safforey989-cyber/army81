@@ -1,0 +1,9 @@
+{
+  "name": "SARSA (State-Action-Reward-State-Action) algorithm",
+  "url": "https://en.wikipedia.org/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action",
+  "description": "algorithm](https://en.wikipedia.org/wiki/State%E2%80%93action%E2%80%93reward%E2%80%93state%E2%80%93action)",
+  "section": "Reinforcement Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

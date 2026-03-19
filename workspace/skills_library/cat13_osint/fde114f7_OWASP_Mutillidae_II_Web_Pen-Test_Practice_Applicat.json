@@ -1,0 +1,9 @@
+{
+  "name": "OWASP Mutillidae II Web Pen-Test Practice Application",
+  "url": "https://hub.docker.com/r/citizenstig/nowasp/",
+  "description": "`docker pull citizenstig/nowasp`.",
+  "section": "Intentionally Vulnerable Systems as Docker Containers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

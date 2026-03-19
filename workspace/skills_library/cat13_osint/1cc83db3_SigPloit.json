@@ -1,0 +1,9 @@
+{
+  "name": "SigPloit",
+  "url": "https://github.com/SigPloiter/SigPloit",
+  "description": "Signaling security testing framework dedicated to telecom security for researching vulnerabilites in the signaling protocols used in mobile (cellular phone) operators.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

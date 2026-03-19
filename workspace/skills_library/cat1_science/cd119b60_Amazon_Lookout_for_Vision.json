@@ -1,0 +1,9 @@
+{
+  "name": "Amazon Lookout for Vision",
+  "url": "https://aws.amazon.com/lookout-for-vision/",
+  "description": "| Spot product defects using computer vision to automate quality inspection. Identify missing product components, vehicle and structure damage, and irregularities for comprehensive quality control.|",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

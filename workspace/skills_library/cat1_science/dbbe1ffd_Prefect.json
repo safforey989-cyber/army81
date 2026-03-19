@@ -1,0 +1,9 @@
+{
+  "name": "Prefect",
+  "url": "https://github.com/PrefectHQ/prefect",
+  "description": "| Workflow management system for modern data stacks |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "danielmiessler/fabric",
+  "url": "https://github.com/danielmiessler/fabric",
+  "description": ": fabric is an open-source framework for augmenting humans using AI. It provides a modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere.",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

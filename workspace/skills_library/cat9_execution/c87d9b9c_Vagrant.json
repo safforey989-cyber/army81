@@ -1,0 +1,9 @@
+{
+  "name": "Vagrant",
+  "url": "https://www.vagrantup.com/",
+  "description": "Tool for building complete development environments. ([Source Code](https://github.com/hashicorp/vagrant)) `BUSL-1.1` `Ruby`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

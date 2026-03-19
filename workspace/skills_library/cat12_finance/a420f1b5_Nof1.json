@@ -1,0 +1,9 @@
+{
+  "name": "Nof1",
+  "url": "https://thenof1.com/",
+  "description": "Benchmark designed to measure AI's investing abilities. Each model is given $10,000 of real money, in real markets, with identical prompts and input data.",
+  "section": "LLMs",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

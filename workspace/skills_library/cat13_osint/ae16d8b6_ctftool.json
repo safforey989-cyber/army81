@@ -1,0 +1,9 @@
+{
+  "name": "ctftool",
+  "url": "https://github.com/taviso/ctftool",
+  "description": "Interactive Collaborative Translation Framework (CTF) exploration tool capable of launching cross-session edit session attacks.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

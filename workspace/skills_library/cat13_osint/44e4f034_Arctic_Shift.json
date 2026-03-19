@@ -1,0 +1,9 @@
+{
+  "name": "Arctic Shift",
+  "url": "https://github.com/ArthurHeitmann/arctic_shift",
+  "description": "A tool for accessing and interacting with large dumps of Reddit data, offering an API and web interface for research and moderation purposes.",
+  "section": "[↑](#-table-of-contents) Reddit",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

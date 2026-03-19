@@ -1,0 +1,9 @@
+{
+  "name": "smbmap",
+  "url": "https://github.com/ShawnDEvans/smbmap",
+  "description": "Handy SMB enumeration tool.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

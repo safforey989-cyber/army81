@@ -1,0 +1,9 @@
+{
+  "name": "Telepahty",
+  "url": "https://github.com/proseltd/Telepathy-Community",
+  "description": "Telepathy is a tool that archives Telegram chats and analyzes communication patterns within the app. By providing insights into user interactions, message frequency, and content trends, Telepathy helps investigators understand the dynamics and relationships within Telegram groups and channels.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Scanpy",
+  "url": "https://scanpy.readthedocs.io/",
+  "description": "Single-cell RNA-seq analysis library in Python.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

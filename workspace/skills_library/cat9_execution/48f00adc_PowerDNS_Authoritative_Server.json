@@ -1,0 +1,9 @@
+{
+  "name": "PowerDNS Authoritative Server",
+  "url": "https://doc.powerdns.com/authoritative/",
+  "description": "Versatile nameserver which supports a large number of backends. ([Source Code](https://github.com/PowerDNS/pdns)) `GPL-2.0` `C++`",
+  "section": "DNS - Servers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

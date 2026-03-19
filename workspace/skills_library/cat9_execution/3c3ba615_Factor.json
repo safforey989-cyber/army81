@@ -1,0 +1,9 @@
+{
+  "name": "Factor",
+  "url": "https://www.factor.io/",
+  "description": "Programmatically define and run workflows to connect configuration management, source code management, build, continuous integration, continuous deployment and communication tools. ([Source Code](https://github.com/factor-io/factor)) `MIT` `Ruby`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "IbPy",
+  "url": "https://github.com/blampe/IbPy",
+  "description": "Python API for the Interactive Brokers on-line trading system.",
+  "section": "Exchange API",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

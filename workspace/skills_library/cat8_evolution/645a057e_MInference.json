@@ -1,0 +1,9 @@
+{
+  "name": "MInference",
+  "url": "https://github.com/microsoft/MInference",
+  "description": "To speed up Long-context LLMs' inference, approximate and dynamic sparse calculate the attention, which reduces inference latency by up to 10x for pre-filling on an A100 while maintaining accuracy.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

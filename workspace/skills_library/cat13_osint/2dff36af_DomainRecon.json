@@ -1,0 +1,9 @@
+{
+  "name": "DomainRecon",
+  "url": "https://kriztalz.sh/domain-recon/",
+  "description": "Retrieve DNS records, subdomains, SSL certificates and WHOIS / RDAP data for a given website.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

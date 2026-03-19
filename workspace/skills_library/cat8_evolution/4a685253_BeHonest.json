@@ -1,0 +1,9 @@
+{
+  "name": "BeHonest",
+  "url": "https://gair-nlp.github.io/BeHonest/#leaderboard",
+  "description": "A pioneering benchmark specifically designed to assess honesty in LLMs comprehensively.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

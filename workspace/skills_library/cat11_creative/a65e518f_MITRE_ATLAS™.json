@@ -1,0 +1,9 @@
+{
+  "name": "MITRE ATLAS™",
+  "url": "https://atlas.mitre.org/",
+  "description": ": knowledge base of adversary tactics and techniques based on real-world attack observations and realistic demonstrations from AI red teams and security groups, modeled after the MITRE ATT&CK® framework.",
+  "section": "Attacks on LLMs",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

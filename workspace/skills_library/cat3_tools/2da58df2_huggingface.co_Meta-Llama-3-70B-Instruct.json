@@ -1,0 +1,9 @@
+{
+  "name": "huggingface.co/Meta-Llama-3-70B-Instruct",
+  "url": "https://huggingface.co/chat/models/meta-llama/Meta-Llama-3-70B-Instruct",
+  "description": "|[GitHub](https://github.com/meta-llama/llama3) ![GitHub Repo stars](https://img.shields.io/github/stars/meta-llama/llama3?style=social)| Free |",
+  "section": "Open Source LLMs",
+  "topic": "ai_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

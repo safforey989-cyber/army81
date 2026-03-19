@@ -1,0 +1,9 @@
+{
+  "name": "ChatGPT Langchain",
+  "url": "https://huggingface.co/spaces/JavaFXpert/Chat-GPT-LangChain",
+  "description": ": ChatGPT clone using langchain on Huggingface",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

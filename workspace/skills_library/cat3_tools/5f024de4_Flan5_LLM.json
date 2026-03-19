@@ -1,0 +1,9 @@
+{
+  "name": "Flan5 LLM",
+  "url": "https://colab.research.google.com/drive/1AVh9dOsG9DKzfK7gOFrJuitPIcLPqlbO?usp=sharing",
+  "description": ": PDF QA using LangChain for chain of thought and multi-task instructions, Flan5 on HuggingFace",
+  "section": "Notebooks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

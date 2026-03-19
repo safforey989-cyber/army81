@@ -1,0 +1,9 @@
+{
+  "name": "OpenHIM",
+  "url": "http://openhim.org/",
+  "description": "Health information mediator.",
+  "section": "Integration",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

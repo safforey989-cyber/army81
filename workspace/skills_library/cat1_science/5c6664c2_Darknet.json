@@ -1,0 +1,9 @@
+{
+  "name": "Darknet",
+  "url": "https://github.com/pjreddie/darknet",
+  "description": "Darknet is an open source neural network framework written in C and CUDA. It is fast, easy to install, and supports CPU and GPU computation.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

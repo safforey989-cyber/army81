@@ -1,0 +1,9 @@
+{
+  "name": "LeoFS",
+  "url": "https://leo-project.net",
+  "description": "Highly available, distributed, replicated eventually consistent object/blob store. ([Source Code](https://github.com/leo-project/leofs)) `Apache-2.0` `Erlang`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

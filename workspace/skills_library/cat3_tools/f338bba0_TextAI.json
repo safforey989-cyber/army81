@@ -1,0 +1,9 @@
+{
+  "name": "TextAI",
+  "url": "https://github.com/neuml/txtai",
+  "description": ": 💡 All-in-one open-source embeddings database for semantic search, LLM orchestration and language model workflows. ![GitHub Repo stars](https://img.shields.io/github/stars/neuml/txtai?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

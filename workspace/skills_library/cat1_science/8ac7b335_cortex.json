@@ -1,0 +1,9 @@
+{
+  "name": "cortex",
+  "url": "https://github.com/originrose/cortex",
+  "description": "Neural networks, regression and feature learning in Clojure.",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

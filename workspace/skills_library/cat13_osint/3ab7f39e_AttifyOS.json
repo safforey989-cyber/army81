@@ -1,0 +1,9 @@
+{
+  "name": "AttifyOS",
+  "url": "https://github.com/adi0x90/attifyos",
+  "description": "GNU/Linux distribution focused on tools useful during Internet of Things (IoT) security assessments.",
+  "section": "Operating System Distributions",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Weights & Biases",
+  "url": "https://wandb.ai/site/solutions/llmops",
+  "description": "A paid product for tracking model training and prompt engineering experiments.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

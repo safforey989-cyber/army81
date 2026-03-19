@@ -1,0 +1,9 @@
+{
+  "name": "Twine RSS Reader",
+  "url": "https://github.com/msasikanth/twine",
+  "description": "Tool from mobile_apps",
+  "section": "RSS",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

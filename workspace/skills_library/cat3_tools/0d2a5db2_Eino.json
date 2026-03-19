@@ -1,0 +1,9 @@
+{
+  "name": "Eino",
+  "url": "https://github.com/cloudwego/eino",
+  "description": ": Eino provides a Golang AI application development framework with various component integrations and the ability to orchestrate Chains and Graphs similar to LangChain and LangGraph. ![GitHub Repo stars](https://img.shields.io/github/stars/cloudwego/eino?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

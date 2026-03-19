@@ -1,0 +1,9 @@
+{
+  "name": "Midjourney",
+  "url": "https://www.midjourney.com/",
+  "description": "Midjourney is an independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species.",
+  "section": "Models",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

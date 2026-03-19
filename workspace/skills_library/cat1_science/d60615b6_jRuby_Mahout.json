@@ -1,0 +1,9 @@
+{
+  "name": "jRuby Mahout",
+  "url": "https://github.com/vasinov/jruby_mahout",
+  "description": "JRuby Mahout is a gem that unleashes the power of Apache Mahout in the world of JRuby. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

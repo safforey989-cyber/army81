@@ -1,0 +1,9 @@
+{
+  "name": "Open Hospital",
+  "url": "https://sourceforge.net/projects/openhospital/",
+  "description": "Electronic Medical Record software for underprivileged rural hospitals.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "create-t3-turbo-ai",
+  "url": "https://github.com/zckly/create-t3-turbo-ai",
+  "description": ": t3 based, Langchain-friendly boilerplate for building type-safe, full-stack, LLM-powered web apps with Nextjs and Prisma ![GitHub Repo stars](https://img.shields.io/github/stars/zckly/create-t3-turbo-ai?style=social)",
+  "section": "Templates",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

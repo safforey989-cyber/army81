@@ -1,0 +1,9 @@
+{
+  "name": "OpenAI Cookbook",
+  "url": "https://github.com/openai/openai-cookbook",
+  "description": "Examples and guides for using the OpenAI API.",
+  "section": "Learning resources",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

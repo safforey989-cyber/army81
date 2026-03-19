@@ -1,0 +1,9 @@
+{
+  "name": "Kaitai Struct",
+  "url": "http://kaitai.io/",
+  "description": "File formats and network protocols dissection language and web IDE, generating parsers in C++, C#, Java, JavaScript, Perl, PHP, Python, Ruby.",
+  "section": "File Format Analysis Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Chronos Authenticator 2FA",
+  "url": "https://github.com/joeldavidw/Chronos",
+  "description": "Tool from mobile_apps",
+  "section": "Password",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

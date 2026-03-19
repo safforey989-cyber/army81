@@ -1,0 +1,9 @@
+{
+  "name": "Hex Fiend",
+  "url": "http://ridiculousfish.com/hexfiend/",
+  "description": "Fast, open source, hex editor for macOS with support for viewing  binary diffs.",
+  "section": "Hex Editors",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

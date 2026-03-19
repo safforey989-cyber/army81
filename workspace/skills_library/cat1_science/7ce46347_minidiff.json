@@ -1,0 +1,9 @@
+{
+  "name": "minidiff",
+  "url": "https://github.com/ahoynodnarb/minidiff",
+  "description": "A slightly larger, somewhat feature-complete, PyTorch-inspired, NumPy implementation of a tensor reverse-mode automatic differentiation engine.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Promptfoo",
+  "url": "https://github.com/promptfoo/promptfoo",
+  "description": ": Test your prompts. Evaluate and compare LLM outputs, catch regressions, and improve prompt quality. ![GitHub Repo stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

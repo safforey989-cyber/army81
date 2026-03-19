@@ -1,0 +1,9 @@
+{
+  "name": "Local GPT",
+  "url": "https://github.com/PromtEngineer/localGPT",
+  "description": ": Inspired on Private GPT with the GPT4ALL model replaced with the Vicuna-7B model and using the InstructorEmbeddings instead of LlamaEmbeddings ![GitHub Repo stars](https://img.shields.io/github/stars/PromtEngineer/localGPT?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "OnionScan",
+  "url": "https://github.com/s-rah/onionscan",
+  "description": "Free and open source tool for investigating the Dark Web. Its main goal is to help researchers and investigators monitor and track Dark Web sites.",
+  "section": "[↑](#-table-of-contents) Threat Intelligence",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Spark Notebook",
+  "url": "http://spark-notebook.io",
+  "description": "Interactive and Reactive Data Science using Scala and Spark.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

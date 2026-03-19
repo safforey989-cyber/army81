@@ -1,0 +1,9 @@
+{
+  "name": "AudioLDM",
+  "url": "https://audioldm.github.io/",
+  "description": ": Text-to-Audio Generation with Latent Diffusion Models - Speech Research",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "paper_summarizer",
+  "type": "prompt_pattern",
+  "prompt_template": "لخص هذه الورقة البحثية في 5 نقاط رئيسية: {paper}",
+  "category": "cat1_science",
+  "source": "built_in"
+}

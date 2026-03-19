@@ -1,0 +1,9 @@
+{
+  "name": "Book GPT",
+  "url": "https://github.com/fraserxu/book-gpt",
+  "description": ": drop a book, start asking question. ![GitHub Repo stars](https://img.shields.io/github/stars/fraserxu/book-gpt?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

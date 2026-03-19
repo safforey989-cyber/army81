@@ -1,0 +1,9 @@
+{
+  "name": "Sentiment Analysis",
+  "url": "https://www.sas.com/en_us/software/sentiment-analysis.html",
+  "description": "Extract sentiment from text using a GUI.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

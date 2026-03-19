@@ -1,0 +1,9 @@
+{
+  "name": "Switzerland - SwissCovid",
+  "url": "https://github.com/SwissCovid/swisscovid-app-ios",
+  "description": ": COVID-19 tracing using the Decentralised Privacy-Preserving Proximity Tracing (DP-3T or DP3T)",
+  "section": "Contact Tracing",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

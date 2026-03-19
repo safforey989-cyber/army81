@@ -1,0 +1,9 @@
+{
+  "name": "aadinternals",
+  "url": "https://aadinternals.com/osint",
+  "description": "Provides tools and insights for advanced analysis and security testing of Azure Active Directory (AAD) and Microsoft 365.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

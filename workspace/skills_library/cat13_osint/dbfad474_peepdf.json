@@ -1,0 +1,9 @@
+{
+  "name": "peepdf",
+  "url": "https://eternal-todo.com/tools/peepdf-pdf-analysis-tool",
+  "description": "Python tool to explore PDF files in order to find out if the file can be harmful or not.",
+  "section": "File Format Analysis Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

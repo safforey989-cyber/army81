@@ -1,0 +1,9 @@
+{
+  "name": "250k+ Job Postings",
+  "url": "https://aws.amazon.com/marketplace/pp/prodview-p2554p3tczbes",
+  "description": "An expanding dataset of historical job postings from Luxembourg from 2020 to today. Free with 250k+ job postings hosted on AWS Data Exchange.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

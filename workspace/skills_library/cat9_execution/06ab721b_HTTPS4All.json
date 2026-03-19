@@ -1,0 +1,9 @@
+{
+  "name": "HTTPS4All",
+  "url": "https://github.com/bouk/HTTPS4All",
+  "description": ": Port of HTTPS Everywhere to force (most) links to use HTTPS",
+  "section": "Extension",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

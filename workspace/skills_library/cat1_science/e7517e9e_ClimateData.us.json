@@ -1,0 +1,9 @@
+{
+  "name": "ClimateData.us",
+  "url": "https://www.climatedata.us/",
+  "description": "(related: [U.S. Climate Resilience Toolkit](https://toolkit.climate.gov/))",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

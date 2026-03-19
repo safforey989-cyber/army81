@@ -1,0 +1,9 @@
+{
+  "name": "Fiji",
+  "url": "https://imagej.net/software/fiji/",
+  "description": "Open-source platform for biological-image analysis.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

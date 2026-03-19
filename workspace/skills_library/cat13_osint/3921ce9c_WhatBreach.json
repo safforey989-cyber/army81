@@ -1,0 +1,9 @@
+{
+  "name": "WhatBreach",
+  "url": "https://github.com/Ekultek/WhatBreach",
+  "description": "Search email addresses and discover all known breaches that this email has been seen in, and download the breached database if it is publicly available.",
+  "section": "Email search and analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

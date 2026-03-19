@@ -1,0 +1,9 @@
+{
+  "name": "Bandlets",
+  "url": "http://www.cmap.polytechnique.fr/~peyre/download/",
+  "description": "MATLAB code for bandlet transform.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

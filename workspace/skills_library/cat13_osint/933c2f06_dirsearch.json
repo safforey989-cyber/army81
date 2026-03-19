@@ -1,0 +1,9 @@
+{
+  "name": "dirsearch",
+  "url": "https://github.com/maurosoria/dirsearch",
+  "description": "Web path scanner.",
+  "section": "Web path discovery and bruteforcing tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

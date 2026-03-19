@@ -1,0 +1,9 @@
+{
+  "name": "Pink Gorilla Notebook",
+  "url": "https://github.com/pink-gorilla/gorilla-notebook",
+  "description": "A Clojure/Clojurescript notebook application/-library based on Gorilla-REPL",
+  "section": "Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

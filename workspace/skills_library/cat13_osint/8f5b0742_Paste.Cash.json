@@ -1,0 +1,9 @@
+{
+  "name": "Paste.Cash",
+  "url": "https://www.paste.cash/",
+  "description": "Paste.CASH Is a privacy respected and encrypted pastebin hosted by Cash Hosting. Every paste are encrypted using 256 bits AES.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

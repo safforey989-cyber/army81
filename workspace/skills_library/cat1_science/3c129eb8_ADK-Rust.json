@@ -1,0 +1,9 @@
+{
+  "name": "ADK-Rust",
+  "url": "https://github.com/zavora-ai/adk-rust",
+  "description": "Production-ready AI agent development kit for Rust with model-agnostic design (Gemini, OpenAI, Anthropic), multiple agent types (LLM, Graph, Workflow), MCP support, and built-in telemetry.",
+  "section": "Frameworks",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

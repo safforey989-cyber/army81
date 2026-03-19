@@ -1,0 +1,9 @@
+{
+  "name": "openHAB",
+  "url": "https://github.com/openhab/openhab-ios",
+  "description": ": Vendor & technology agnostic home automation",
+  "section": "Home",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

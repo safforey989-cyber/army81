@@ -1,0 +1,9 @@
+{
+  "name": "/r/SysAdmin",
+  "url": "https://www.reddit.com/r/sysadmin/",
+  "description": "Tool from sysadmin_tools",
+  "section": "Communities / Forums",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

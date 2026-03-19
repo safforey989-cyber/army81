@@ -1,0 +1,9 @@
+{
+  "name": "Restic",
+  "url": "https://restic.net/",
+  "description": "Easy, fast, verifiable, secure and efficient remote backup tool. ([Source Code](https://github.com/restic/restic)) `BSD-2-Clause` `Go`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

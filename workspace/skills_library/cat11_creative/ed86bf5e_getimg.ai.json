@@ -1,0 +1,9 @@
+{
+  "name": "getimg.ai",
+  "url": "https://getimg.ai/",
+  "description": ": Generate photo-realistic images from text using Stable Diffusion",
+  "section": "Stable Diffusion Deployed Web Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

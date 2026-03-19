@@ -1,0 +1,9 @@
+{
+  "name": "Open Web Application Security Project (OWASP)",
+  "url": "https://www.owasp.org/index.php/Main_Page",
+  "description": "](https://www.owasp.org/index.php/Main_Page) - Worldwide not-for-profit charitable organization focused on improving the security of especially Web-based and Application-layer software.",
+  "section": "Online Penetration Testing Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "matlab_bgl",
+  "url": "https://www.cs.purdue.edu/homes/dgleich/packages/matlab_bgl/",
+  "description": "MatlabBGL is a Matlab package for working with graphs.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

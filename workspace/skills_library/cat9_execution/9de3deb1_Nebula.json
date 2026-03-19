@@ -1,0 +1,9 @@
+{
+  "name": "Nebula",
+  "url": "https://github.com/slackhq/nebula",
+  "description": "A scalable p2p VPN with a focus on performance, simplicity and security. `MIT` `Go`",
+  "section": "VPN",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Kimi-VL-A3B",
+  "url": "https://huggingface.co/collections/moonshotai/kimi-vl-a3b-67f67b6ac91d3b03d382dd85",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

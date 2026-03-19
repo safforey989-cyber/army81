@@ -1,0 +1,9 @@
+{
+  "name": "RetroArch",
+  "url": "https://github.com/libretro/RetroArch",
+  "description": ": Comprehensive emulator frontend with support for NES, SNES, Gameboy, Sega Master System, Genesis, Playstation, N64, Atari Lynx & more",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

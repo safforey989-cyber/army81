@@ -1,0 +1,9 @@
+{
+  "name": "Authentik",
+  "url": "https://goauthentik.io/",
+  "description": "Flexible identity provider with support for different protocols. (OAuth 2.0, SAML, LDAP and Radius). ([Source Code](https://github.com/goauthentik/authentik)) `MIT` `Python`",
+  "section": "Identity Management - Single Sign-On (SSO)",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

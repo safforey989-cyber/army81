@@ -1,0 +1,9 @@
+{
+  "name": "KRHebbian-Algorithm",
+  "url": "https://github.com/Kalvar/ios-KRHebbian-Algorithm",
+  "description": "It is a non-supervisory and self-learning algorithm (adjust the weights) in the neural network of Machine Learning. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

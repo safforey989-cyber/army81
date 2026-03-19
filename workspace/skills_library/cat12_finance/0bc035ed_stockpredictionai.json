@@ -1,0 +1,9 @@
+{
+  "name": "stockpredictionai",
+  "url": "https://github.com/borisbanushev/stockpredictionai",
+  "description": "A complete process for predicting stock price movements.",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

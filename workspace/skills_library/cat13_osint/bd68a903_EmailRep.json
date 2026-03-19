@@ -1,0 +1,9 @@
+{
+  "name": "EmailRep",
+  "url": "https://emailrep.io",
+  "description": "Email address reputation and risk scoring service.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Image-to-Image Translation with Conditional Adversarial Networks",
+  "url": "https://github.com/williamFalcon/pix2pix-keras",
+  "description": "Implementation of image to image (pix2pix) translation from the paper by [isola et al](https://arxiv.org/pdf/1611.07004.pdf).[DEEP LEARNING]",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

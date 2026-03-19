@@ -1,0 +1,9 @@
+{
+  "name": "passivedns-client",
+  "url": "https://github.com/chrislee35/passivedns-client",
+  "description": "Library and query tool for querying several passive DNS providers.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "LlamaIndex",
+  "url": "https://www.llamaindex.ai/",
+  "description": "A data framework for building LLM applications over external data.",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

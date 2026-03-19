@@ -1,0 +1,9 @@
+{
+  "name": "Streamlit Template",
+  "url": "https://github.com/hwchase17/langchain-streamlit-template",
+  "description": ": template for how to deploy a LangChain on Streamlit ![GitHub Repo stars](https://img.shields.io/github/stars/hwchase17/langchain-streamlit-template?style=social)",
+  "section": "Templates",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

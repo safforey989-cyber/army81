@@ -1,0 +1,9 @@
+{
+  "name": "OpenWrt",
+  "url": "https://openwrt.org/",
+  "description": "A Linux-based router featuring Mesh networking, IPS via snort and AQM among many other features. ([Source Code](https://git.openwrt.org/openwrt/openwrt.git)) `GPL-2.0` `C`",
+  "section": "Router",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

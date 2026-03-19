@@ -1,0 +1,9 @@
+{
+  "name": "Wallaroo.AI",
+  "url": "https://github.com/WallarooLabs",
+  "description": "Deploy, manage, optimize any model at scale across any environment from cloud to edge. Let's you go from python notebook to inferencing in minutes.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

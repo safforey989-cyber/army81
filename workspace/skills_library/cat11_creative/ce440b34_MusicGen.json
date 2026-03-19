@@ -1,0 +1,9 @@
+{
+  "name": "MusicGen",
+  "url": "https://huggingface.co/spaces/facebook/MusicGen",
+  "description": ": Meta's tool for generating music",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

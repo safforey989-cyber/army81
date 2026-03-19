@@ -1,0 +1,9 @@
+{
+  "name": "paste.sh",
+  "url": "https://paste.sh/",
+  "description": "This is an encrypted paste site. Simply type or paste code here and share the URL. Saving is Automatic.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

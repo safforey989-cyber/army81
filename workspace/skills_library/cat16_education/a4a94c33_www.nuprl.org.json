@@ -1,0 +1,9 @@
+{
+  "name": "www.nuprl.org",
+  "url": "http://www.nuprl.org",
+  "description": "). We will also spend two weeks on constructive type theory, the language used by the Coq and Nuprl proof assistants.",
+  "section": "Misc",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

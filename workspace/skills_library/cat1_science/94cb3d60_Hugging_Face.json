@@ -1,0 +1,9 @@
+{
+  "name": "Hugging Face",
+  "url": "https://huggingface.co/",
+  "description": "| Popular open platform for sharing ML models, datasets, and collaborating on NLP and generative AI projects. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

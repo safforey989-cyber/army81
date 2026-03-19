@@ -1,0 +1,7 @@
+{
+  "name": "synthetic_generator",
+  "type": "prompt_pattern",
+  "prompt_template": "ولّد 20 مثال تدريبي لـ {task_type}. متنوعة، صعبة، واقعية.",
+  "category": "cat8_evolution",
+  "source": "built_in"
+}

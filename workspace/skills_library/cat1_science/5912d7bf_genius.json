@@ -1,0 +1,9 @@
+{
+  "name": "genius",
+  "url": "https://github.com/duanhongyi/genius",
+  "description": "A Chinese segment based on Conditional Random Field.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

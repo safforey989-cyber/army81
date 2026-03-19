@@ -1,0 +1,9 @@
+{
+  "name": "Wikipedia",
+  "url": "https://github.com/wikimedia/wikipedia-ios",
+  "description": ": Official Wikipedia app",
+  "section": "Official",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Fabric",
+  "url": "https://www.fabfile.org/",
+  "description": "Python library and cli tool for streamlining the use of SSH for application deployment or systems administration tasks. ([Source Code](https://github.com/fabric/fabric)) `BSD-2-Clause` `Python`",
+  "section": "Deployment Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "pydantic/pydantic-ai",
+  "url": "https://github.com/pydantic/pydantic-ai",
+  "description": ": Agent Framework / shim to use Pydantic with LLMs",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

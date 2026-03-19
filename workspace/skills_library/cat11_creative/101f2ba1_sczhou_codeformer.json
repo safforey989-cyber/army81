@@ -1,0 +1,9 @@
+{
+  "name": "sczhou/codeformer",
+  "url": "https://replicate.com/sczhou/codeformer",
+  "description": ": face restoration algorithm for old photos and AI-generated faces",
+  "section": "Image Restoration",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

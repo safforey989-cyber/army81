@@ -1,0 +1,9 @@
+{
+  "name": "DerbyCon",
+  "url": "https://www.derbycon.com/",
+  "description": "Annual hacker conference based in Louisville.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

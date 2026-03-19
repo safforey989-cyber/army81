@@ -1,0 +1,9 @@
+{
+  "name": "THE OIG DATASET",
+  "url": "https://laion.ai/blog/oig-dataset/",
+  "description": "| 2023/03 | [THE OIG DATASET](https://laion.ai/blog/oig-dataset/) | [OIG](https://huggingface.co/datasets/laion/OIG) | 44,000 | Apache 2.0 |",
+  "section": "Open LLM datasets for instruction-tuning",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

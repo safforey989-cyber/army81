@@ -1,0 +1,9 @@
+{
+  "name": "UFONet",
+  "url": "https://github.com/epsylon/ufonet",
+  "description": "Abuses OSI layer 7 HTTP to create/manage 'zombies' and to conduct different attacks using; `GET`/`POST`, multithreading, proxies, origin spoofing methods, cache evasion techniques, etc.",
+  "section": "DDoS Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

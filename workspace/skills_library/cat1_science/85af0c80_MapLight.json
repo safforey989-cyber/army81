@@ -1,0 +1,9 @@
+{
+  "name": "MapLight",
+  "url": "https://www.maplight.org/data-series",
+  "description": "provides a variety of data free of charge for uses that are freely available to the general public. Click on a data set below to learn more",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

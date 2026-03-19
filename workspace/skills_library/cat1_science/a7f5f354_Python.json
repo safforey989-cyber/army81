@@ -1,0 +1,9 @@
+{
+  "name": "Python",
+  "url": "https://python.org/",
+  "description": "is by far the most popular language in science, due in no small part to the ease at which it can be used and the vibrant ecosystem of user-generated packages. To install packages, there are two main methods: Pip (invoked as `pip install`), the package manager that comes bundled with Python, and [Ana",
+  "section": "Where do I Start?",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

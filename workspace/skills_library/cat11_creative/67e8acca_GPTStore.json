@@ -1,0 +1,9 @@
+{
+  "name": "GPTStore",
+  "url": "https://gptstore.ai/",
+  "description": "Find useful GPTs. Share your own GPTs.",
+  "section": "Custom assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

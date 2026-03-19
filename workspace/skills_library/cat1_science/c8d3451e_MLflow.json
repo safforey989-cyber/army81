@@ -1,0 +1,9 @@
+{
+  "name": "MLflow",
+  "url": "https://mlflow.org/",
+  "description": "| MLOps framework for managing ML models across their full lifecycle |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

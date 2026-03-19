@@ -1,0 +1,9 @@
+{
+  "name": "Attacking Large Language Models",
+  "url": "https://systemweakness.com/attacking-large-language-models-37229085d4ff",
+  "description": ": an overview of the current attack techniques on LLMs by Marcello Carboni",
+  "section": "Attacks on LLMs",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

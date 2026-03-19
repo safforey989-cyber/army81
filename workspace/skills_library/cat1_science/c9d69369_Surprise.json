@@ -1,0 +1,9 @@
+{
+  "name": "Surprise",
+  "url": "https://surpriselib.com",
+  "description": "A scikit for building and analyzing recommender systems.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "No Limit Public License",
+  "url": "https://spdx.org/licenses/NLPL.html",
+  "description": "Tool from sysadmin_tools",
+  "section": "List of Licenses",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

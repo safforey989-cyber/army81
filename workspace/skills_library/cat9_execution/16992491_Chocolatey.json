@@ -1,0 +1,9 @@
+{
+  "name": "Chocolatey",
+  "url": "https://chocolatey.org/",
+  "description": "The package manager for Windows. ([Source Code](https://github.com/chocolatey/choco)) `Apache-2.0` `C#/PowerShell`",
+  "section": "Miscellaneous",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

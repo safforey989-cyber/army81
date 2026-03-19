@@ -1,0 +1,7 @@
+{
+  "name": "api_designer",
+  "type": "prompt_pattern",
+  "prompt_template": "صمم REST API لـ {service}. Endpoints, methods, auth, rate limits.",
+  "category": "cat9_execution",
+  "source": "built_in"
+}

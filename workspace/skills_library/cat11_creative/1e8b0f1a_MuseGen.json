@@ -1,0 +1,9 @@
+{
+  "name": "MuseGen",
+  "url": "https://musegen.org",
+  "description": ": An AI music studio for lyric writing and song generation, built for creators",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

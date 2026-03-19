@@ -1,0 +1,9 @@
+{
+  "name": "OpenELM-270M",
+  "url": "https://huggingface.co/apple/OpenELM-270M",
+  "description": ", [OpenELM-270M-Instruct](https://huggingface.co/apple/OpenELM-270M-Instruct), [OpenELM-450M](https://huggingface.co/apple/OpenELM-450M), [OpenELM-450M-Instruct](https://huggingface.co/apple/OpenELM-450M-Instruct), [OpenELM-1_1B](https://huggingface.co/apple/OpenELM-1_1B), [OpenELM-1_1B-Instruct](ht",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

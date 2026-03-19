@@ -1,0 +1,9 @@
+{
+  "name": "TinEye",
+  "url": "https://tineye.com",
+  "description": "Reverse image search engine.",
+  "section": "[↑](#-table-of-contents) Image Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

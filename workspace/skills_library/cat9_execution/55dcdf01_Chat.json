@@ -1,0 +1,9 @@
+{
+  "name": "Chat",
+  "url": "https://github.com/niazoff/Chat",
+  "description": ": Leverages URLSessionWebSocketTask",
+  "section": "SwiftUI",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

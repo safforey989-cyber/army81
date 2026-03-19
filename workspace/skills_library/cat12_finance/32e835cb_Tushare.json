@@ -1,0 +1,9 @@
+{
+  "name": "Tushare",
+  "url": "https://github.com/waditu/tushare",
+  "description": "Crawling historical data of Chinese stocks.",
+  "section": "Traditional Markets",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

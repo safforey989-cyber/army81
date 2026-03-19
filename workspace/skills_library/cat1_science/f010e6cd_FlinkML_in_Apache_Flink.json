@@ -1,0 +1,9 @@
+{
+  "name": "FlinkML in Apache Flink",
+  "url": "https://ci.apache.org/projects/flink/flink-docs-master/dev/libs/ml/index.html",
+  "description": "Distributed machine learning library in Flink.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

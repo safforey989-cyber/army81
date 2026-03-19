@@ -1,0 +1,9 @@
+{
+  "name": "Hadoop Distributed Filesystem (HDFS)",
+  "url": "https://hadoop.apache.org/",
+  "description": "](https://hadoop.apache.org/) - Distributed file system that provides high-throughput access to application data. ([Source Code](https://github.com/apache/hadoop)) `Apache-2.0` `Java`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

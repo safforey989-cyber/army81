@@ -1,0 +1,9 @@
+{
+  "name": "aa419 Fake Sites Database",
+  "url": "https://db.aa419.org/fakebankslist.php",
+  "description": "The site lists fraudulent websites, such as fake banks and online scams, identified by the Artists Against 419 community.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

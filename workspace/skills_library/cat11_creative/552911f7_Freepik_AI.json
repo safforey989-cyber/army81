@@ -1,0 +1,9 @@
+{
+  "name": "Freepik AI",
+  "url": "https://www.freepik.com/ai",
+  "description": "AI-powered design tools including image generation, background removal, and creative templates.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

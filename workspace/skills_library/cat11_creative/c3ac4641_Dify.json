@@ -1,0 +1,9 @@
+{
+  "name": "Dify",
+  "url": "https://dify.ai/",
+  "description": ": LLMOps platform for creating and operating AI-native apps based on GPT-4",
+  "section": "LLMOps",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Pattern Recognition Toolbox",
+  "url": "https://github.com/covartech/PRT",
+  "description": "A complete object-oriented environment for machine learning in Matlab.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

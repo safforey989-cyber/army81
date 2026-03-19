@@ -1,0 +1,9 @@
+{
+  "name": "Metasploit Unleashed",
+  "url": "https://www.offensive-security.com/metasploit-unleashed/",
+  "description": "Free Offensive Security Metasploit course.",
+  "section": "Online Penetration Testing Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "BGPT MCP",
+  "url": "https://bgpt.pro/mcp",
+  "description": "MCP server that gives AI agents access to a database of scientific papers built from raw experimental data extracted from full-text studies. Returns 25+ structured fields per paper including methods, results, sample sizes, and quality scores. [GitHub](https://github.com/connerlambden/bgpt-mcp)",
+  "section": "Research & Knowledge Retrieval",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

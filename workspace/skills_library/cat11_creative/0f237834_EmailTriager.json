@@ -1,0 +1,9 @@
+{
+  "name": "EmailTriager",
+  "url": "https://www.emailtriager.com/",
+  "description": "Use AI to automatically draft email replies in the background.",
+  "section": "Other text generators",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

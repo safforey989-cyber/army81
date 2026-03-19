@@ -1,0 +1,9 @@
+{
+  "name": "GPT Political Compass",
+  "url": "https://colab.research.google.com/drive/1xt2IsFPGYMEQdoJFNgWNAjWGxa60VXdV",
+  "description": "Tool from langchain_tools",
+  "section": "Notebooks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

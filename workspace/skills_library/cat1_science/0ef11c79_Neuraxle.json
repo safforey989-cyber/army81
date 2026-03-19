@@ -1,0 +1,9 @@
+{
+  "name": "Neuraxle",
+  "url": "https://github.com/Neuraxio/Neuraxle",
+  "description": ": A framework providing the right abstractions to ease research, development, and deployment of your ML pipelines.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

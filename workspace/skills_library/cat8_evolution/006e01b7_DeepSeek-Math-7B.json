@@ -1,0 +1,9 @@
+{
+  "name": "DeepSeek-Math-7B",
+  "url": "https://huggingface.co/collections/deepseek-ai/deepseek-math-65f2962739da11599e441681",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

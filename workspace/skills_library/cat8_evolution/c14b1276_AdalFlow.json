@@ -1,0 +1,9 @@
+{
+  "name": "AdalFlow",
+  "url": "https://github.com/SylphAI-Inc/AdalFlow",
+  "description": "AdalFlow: The library to build&auto-optimize LLM applications.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Open Data Philly",
+  "url": "https://www.opendataphilly.org/",
+  "description": "Connecting people with data for Philadelphia",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

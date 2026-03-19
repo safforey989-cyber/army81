@@ -1,0 +1,9 @@
+{
+  "name": "figue",
+  "url": "https://code.google.com/archive/p/figue",
+  "description": "K-means, fuzzy c-means and agglomerative clustering.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

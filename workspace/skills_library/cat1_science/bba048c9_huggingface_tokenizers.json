@@ -1,0 +1,9 @@
+{
+  "name": "huggingface/tokenizers",
+  "url": "https://github.com/huggingface/tokenizers",
+  "description": "Fast State-of-the-Art Tokenizers optimized for Research and Production",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "FEDOT",
+  "url": "https://github.com/nccr-itmo/FEDOT",
+  "description": ": An AutoML framework for the automated design of composite modelling pipelines. It can handle classification, regression, and time series forecasting tasks on different types of data (including multi-modal datasets).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Bella",
+  "url": "https://github.com/kdaoudieh/Bella",
+  "description": "Pure Python post-exploitation data mining and remote administration tool for macOS.",
+  "section": "macOS Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

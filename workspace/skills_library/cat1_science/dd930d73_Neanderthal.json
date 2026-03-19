@@ -1,0 +1,9 @@
+{
+  "name": "Neanderthal",
+  "url": "https://neanderthal.uncomplicate.org/",
+  "description": "Fast Clojure Matrix Library (native CPU, GPU, OpenCL, CUDA)",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Graphir",
+  "url": "https://github.com/microsoft/graphir",
+  "description": "GraphQL interface over FHIR API",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

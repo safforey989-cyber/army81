@@ -1,0 +1,9 @@
+{
+  "name": "HCL Threat Map",
+  "url": "https://www.hcltech.com/hcl-threat-map",
+  "description": "Cyber Threat Map by HCLTech.",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

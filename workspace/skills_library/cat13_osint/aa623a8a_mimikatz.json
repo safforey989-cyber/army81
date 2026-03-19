@@ -1,0 +1,9 @@
+{
+  "name": "mimikatz",
+  "url": "http://blog.gentilkiwi.com/mimikatz",
+  "description": "Credentials extraction tool for Windows operating system.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

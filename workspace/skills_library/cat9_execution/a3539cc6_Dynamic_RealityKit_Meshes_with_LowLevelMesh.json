@@ -1,0 +1,9 @@
+{
+  "name": "Dynamic RealityKit Meshes with LowLevelMesh",
+  "url": "https://github.com/metal-by-example/metal-spatial-dynamic-mesh",
+  "description": "Tool from mobile_apps",
+  "section": "Apple Vision",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

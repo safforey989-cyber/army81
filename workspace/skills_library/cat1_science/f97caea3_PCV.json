@@ -1,0 +1,9 @@
+{
+  "name": "PCV",
+  "url": "https://github.com/jesolem/PCV",
+  "description": "Open source Python module for computer vision. **[Deprecated]**",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

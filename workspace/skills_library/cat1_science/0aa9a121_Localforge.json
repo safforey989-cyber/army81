@@ -1,0 +1,9 @@
+{
+  "name": "Localforge",
+  "url": "https://localforge.dev/",
+  "description": "– Is an [open source](https://github.com/rockbite/localforge) on-prem AI coding autonomous assistant that lives inside your repo, edits and tests files at SSD speed. Think Claude Code but with UI. plug in any LLM (OpenAI, Gemini, Ollama, etc.) and let it work for you.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

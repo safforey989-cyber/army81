@@ -1,0 +1,9 @@
+{
+  "name": "Artistic.wtf",
+  "url": "https://www.artistic.wtf/",
+  "description": ": stable diffusion GUI App",
+  "section": "Stable Diffusion Deployed Web Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

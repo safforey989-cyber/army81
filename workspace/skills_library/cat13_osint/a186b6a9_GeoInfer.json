@@ -1,0 +1,9 @@
+{
+  "name": "GeoInfer",
+  "url": "https://geoinfer.com",
+  "description": "Image geolocation tool, no EXIF data required.",
+  "section": "[↑](#-table-of-contents) Geospatial Research and Mapping Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

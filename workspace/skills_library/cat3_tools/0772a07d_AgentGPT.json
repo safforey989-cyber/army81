@@ -1,0 +1,9 @@
+{
+  "name": "AgentGPT",
+  "url": "https://github.com/reworkd/AgentGPT",
+  "description": ": AI Agents with Langchain & OpenAI (Vercel / Nextjs) ![GitHub Repo stars](https://img.shields.io/github/stars/reworkd/AgentGPT?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

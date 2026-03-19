@@ -1,0 +1,9 @@
+{
+  "name": "ShmooCon",
+  "url": "http://shmoocon.org/",
+  "description": "Annual US East coast hacker convention.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

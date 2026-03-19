@@ -1,0 +1,9 @@
+{
+  "name": "Embedbase",
+  "url": "https://github.com/different-ai/embedbase",
+  "description": ": The native Software 3.0 stack for building AI-powered applications. ![GitHub Repo stars](https://img.shields.io/github/stars/different-ai/embedbase?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

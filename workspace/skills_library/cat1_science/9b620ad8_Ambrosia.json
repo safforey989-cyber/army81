@@ -1,0 +1,9 @@
+{
+  "name": "Ambrosia",
+  "url": "https://github.com/reactorsh/ambrosia",
+  "description": "Ambrosia helps you clean up your LLM datasets using _other_ LLMs.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

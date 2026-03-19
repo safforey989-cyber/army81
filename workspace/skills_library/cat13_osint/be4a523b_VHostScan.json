@@ -1,0 +1,9 @@
+{
+  "name": "VHostScan",
+  "url": "https://github.com/codingo/VHostScan",
+  "description": "Virtual host scanner that performs reverse lookups, can be used with pivot tools, detect catch-all scenarios, aliases and dynamic default pages.",
+  "section": "Web application and resource analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

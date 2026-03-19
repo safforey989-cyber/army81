@@ -1,0 +1,9 @@
+{
+  "name": "SpecX",
+  "url": "https://specx.pro",
+  "description": "Specialized AI vision for extracting engineering specs from PDF/JPG to Excel.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

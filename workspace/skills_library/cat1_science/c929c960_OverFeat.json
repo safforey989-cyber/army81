@@ -1,0 +1,9 @@
+{
+  "name": "OverFeat",
+  "url": "https://github.com/sermanet/OverFeat",
+  "description": "A state-of-the-art generic dense feature extractor. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

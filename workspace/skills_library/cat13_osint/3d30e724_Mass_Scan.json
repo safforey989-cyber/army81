@@ -1,0 +1,9 @@
+{
+  "name": "Mass Scan",
+  "url": "https://github.com/robertdavidgraham/masscan",
+  "description": "TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

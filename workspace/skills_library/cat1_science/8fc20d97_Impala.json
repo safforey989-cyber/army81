@@ -1,0 +1,9 @@
+{
+  "name": "Impala",
+  "url": "https://github.com/cloudera/impala",
+  "description": "Real-time Query for Hadoop.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

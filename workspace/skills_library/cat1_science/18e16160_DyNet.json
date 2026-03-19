@@ -1,0 +1,9 @@
+{
+  "name": "DyNet",
+  "url": "https://github.com/clab/dynet",
+  "description": "A dynamic neural network library working well with networks that have dynamic structures that change for every training instance. Written in C++ with bindings in Python.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "API Server",
+  "url": "https://github.com/smart-on-fhir/api-server",
+  "description": "FHIR Server to support patient- and clinician-facing apps.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

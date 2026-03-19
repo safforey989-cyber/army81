@@ -1,0 +1,9 @@
+{
+  "name": "LeakCheck",
+  "url": "https://leakcheck.io/",
+  "description": "Data Breach Search Engine with 7.5B+ entries collected from more than 3000 databases. Search by e-mail, username, keyword, password or corporate domain name.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Rdiff-backup",
+  "url": "https://rdiff-backup.net/",
+  "description": "Reverse differential backup tool, over a network or locally. ([Source Code](https://github.com/rdiff-backup/rdiff-backup)) `GPL-2.0` `Python`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

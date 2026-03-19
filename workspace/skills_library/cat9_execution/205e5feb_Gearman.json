@@ -1,0 +1,9 @@
+{
+  "name": "Gearman",
+  "url": "http://gearman.org/",
+  "description": "Fast multi-language queuing/job processing platform. ([Source Code](https://github.com/gearman/gearmand)) `BSD-3-Clause` `C++`",
+  "section": "Queuing",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

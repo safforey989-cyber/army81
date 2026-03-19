@@ -1,0 +1,9 @@
+{
+  "name": "Hearth",
+  "url": "https://github.com/jembi/hearth",
+  "description": "A fast FHIR-compliant server focused on longitudinal data stores.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

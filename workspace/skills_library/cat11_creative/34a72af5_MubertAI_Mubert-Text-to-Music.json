@@ -1,0 +1,9 @@
+{
+  "name": "MubertAI/Mubert-Text-to-Music",
+  "url": "https://github.com/MubertAI/Mubert-Text-to-Music",
+  "description": ": a simple notebook demonstrating prompt-based music generation via Mubert API",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

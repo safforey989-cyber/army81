@@ -1,0 +1,9 @@
+{
+  "name": "sylkie",
+  "url": "https://dlrobertson.github.io/sylkie/",
+  "description": "Command line tool and library for testing networks for common address spoofing security vulnerabilities in IPv6 networks using the Neighbor Discovery Protocol.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DeepPavlov",
+  "url": "https://github.com/deepmipt/DeepPavlov/",
+  "description": "conversational AI library with many pre-trained Russian NLP models.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "THUDM/CogVideo",
+  "url": "https://github.com/THUDM/CogVideo",
+  "description": ": text-to-video generation",
+  "section": "Video and Animation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

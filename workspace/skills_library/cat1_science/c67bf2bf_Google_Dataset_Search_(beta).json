@@ -1,0 +1,9 @@
+{
+  "name": "Google Dataset Search (beta)",
+  "url": "https://datasetsearch.research.google.com/",
+  "description": "](https://datasetsearch.research.google.com/)",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

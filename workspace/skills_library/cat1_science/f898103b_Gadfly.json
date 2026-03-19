@@ -1,0 +1,9 @@
+{
+  "name": "Gadfly",
+  "url": "https://github.com/GiovineItalia/Gadfly.jl",
+  "description": "Crafty statistical graphics for Julia.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

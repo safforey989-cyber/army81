@@ -1,0 +1,9 @@
+{
+  "name": "2600: The Hacker Quarterly",
+  "url": "https://www.2600.com/Magazine/DigitalEditions",
+  "description": "American publication about technology and computer \"underground\" culture.",
+  "section": "Periodicals",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

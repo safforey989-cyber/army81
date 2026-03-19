@@ -1,0 +1,9 @@
+{
+  "name": "rshijack",
+  "url": "https://github.com/kpcyrd/rshijack",
+  "description": "TCP connection hijacker, Rust rewrite of `shijack`.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Patent Attorneys/Agent Search",
+  "url": "https://oedci.uspto.gov/OEDCI/",
+  "description": "Official listing of U.S. attorneys qualified to represent individuals in U.S. patent office proceedings.",
+  "section": "[↑](#-table-of-contents) Expert Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

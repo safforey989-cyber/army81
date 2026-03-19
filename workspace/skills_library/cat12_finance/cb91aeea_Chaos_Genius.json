@@ -1,0 +1,9 @@
+{
+  "name": "Chaos Genius",
+  "url": "https://github.com/chaos-genius/chaos_genius",
+  "description": "ML powered analytics engine for outlier/anomaly detection and root cause analysis..",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "gamboostLSS",
+  "url": "https://cran.r-project.org/web/packages/gamboostLSS/index.html",
+  "description": "gamboostLSS: Boosting Methods for GAMLSS.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

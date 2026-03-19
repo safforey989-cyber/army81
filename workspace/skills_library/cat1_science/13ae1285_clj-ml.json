@@ -1,0 +1,9 @@
+{
+  "name": "clj-ml",
+  "url": "https://github.com/joshuaeckroth/clj-ml/",
+  "description": "A machine learning library for Clojure built on top of Weka and friends.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

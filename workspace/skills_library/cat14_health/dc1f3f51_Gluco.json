@@ -1,0 +1,9 @@
+{
+  "name": "Gluco",
+  "url": "https://github.com/nebulabio/gluco",
+  "description": "Glucometer.",
+  "section": "Hardware",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

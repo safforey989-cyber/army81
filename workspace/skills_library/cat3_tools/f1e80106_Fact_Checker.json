@@ -1,0 +1,9 @@
+{
+  "name": "Fact Checker",
+  "url": "https://github.com/jagilley/fact-checker",
+  "description": ": fact-checking LLM outputs with langchain ![GitHub Repo stars](https://img.shields.io/github/stars/jagilley/fact-checker?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "D(HE)ater",
+  "url": "https://github.com/Balasys/dheater",
+  "description": "ater](https://github.com/Balasys/dheater) - D(HE)ater sends forged cryptographic handshake messages to enforce the Diffie-Hellman key exchange.",
+  "section": "DDoS Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

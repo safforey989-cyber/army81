@@ -1,0 +1,9 @@
+{
+  "name": "DeepLearning.scala",
+  "url": "https://deeplearning.thoughtworks.school/",
+  "description": "Creating statically typed dynamic neural networks from object-oriented & functional programming constructs.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

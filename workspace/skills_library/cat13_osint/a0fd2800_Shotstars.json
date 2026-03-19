@@ -1,0 +1,9 @@
+{
+  "name": "Shotstars",
+  "url": "https://github.com/snooppr/shotstars",
+  "description": "An advanced tool for checking GitHub repositories, with star statistics, including fake star analysis and data visualization.",
+  "section": "[↑](#-table-of-contents) GitHub",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

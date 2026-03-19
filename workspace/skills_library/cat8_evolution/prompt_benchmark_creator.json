@@ -1,0 +1,7 @@
+{
+  "name": "benchmark_creator",
+  "type": "prompt_pattern",
+  "prompt_template": "أنشئ benchmark لتقييم {capability}. 10 أسئلة متدرجة الصعوبة مع إجابات مرجعية.",
+  "category": "cat8_evolution",
+  "source": "built_in"
+}

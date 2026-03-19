@@ -1,0 +1,9 @@
+{
+  "name": "Ekoparty",
+  "url": "http://www.ekoparty.org",
+  "description": "Largest Security Conference in Latin America, held annually in Buenos Aires, Argentina.",
+  "section": "South America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

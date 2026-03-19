@@ -1,0 +1,9 @@
+{
+  "name": "REEMtree",
+  "url": "https://cran.r-project.org/web/packages/REEMtree/index.html",
+  "description": "REEMtree: Regression Trees with Random Effects for Longitudinal (Panel) Data. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

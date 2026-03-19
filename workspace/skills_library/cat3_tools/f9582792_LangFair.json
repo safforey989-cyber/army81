@@ -1,0 +1,9 @@
+{
+  "name": "LangFair",
+  "url": "https://github.com/cvs-health/langfair",
+  "description": ": LangFair is a Python library for conducting use-case-specific LLM bias and fairness assessments ![GitHub Repo stars](https://img.shields.io/github/stars/cvs-health/langfair?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

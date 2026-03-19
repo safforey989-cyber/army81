@@ -1,0 +1,9 @@
+{
+  "name": "DreamBooth",
+  "url": "https://dreambooth.github.io/",
+  "description": ": fine tuning text-to-image diffusion models for subject-driven generation",
+  "section": "Inbox: Stable Diffusion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

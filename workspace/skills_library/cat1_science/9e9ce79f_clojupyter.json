@@ -1,0 +1,9 @@
+{
+  "name": "clojupyter",
+  "url": "https://github.com/clojupyter/clojupyter",
+  "description": "A Jupyter kernel for Clojure - run Clojure code in Jupyter Lab, Notebook and Console.",
+  "section": "Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

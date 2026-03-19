@@ -1,0 +1,9 @@
+{
+  "name": "MixEval",
+  "url": "https://mixeval.github.io/#leaderboard",
+  "description": "a ground-truth-based dynamic benchmark derived from off-the-shelf benchmark mixtures, which evaluates LLMs with a highly capable model ranking (i.e., 0.96 correlation with Chatbot Arena) while running locally and quickly (6% the time and cost of running MMLU).",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

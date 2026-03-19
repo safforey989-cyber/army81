@@ -1,0 +1,9 @@
+{
+  "name": "Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs",
+  "url": "https://www.mosaicml.com/blog/mpt-7b",
+  "description": "| [dolly_hhrlhf](https://huggingface.co/datasets/mosaicml/dolly_hhrlhf) | 59 | CC BY-SA-3.0 |",
+  "section": "Open LLM datasets for instruction-tuning",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

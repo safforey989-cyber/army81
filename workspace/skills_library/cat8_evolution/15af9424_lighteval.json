@@ -1,0 +1,9 @@
+{
+  "name": "lighteval",
+  "url": "https://github.com/huggingface/lighteval",
+  "description": "a lightweight LLM evaluation suite that Hugging Face has been using internally.",
+  "section": "LLM Evaluation:",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

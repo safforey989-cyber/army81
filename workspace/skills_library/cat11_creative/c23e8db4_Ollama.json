@@ -1,0 +1,9 @@
+{
+  "name": "Ollama",
+  "url": "https://ollama.ai/",
+  "description": ": run Llama 2, Code Llama, and other models locally",
+  "section": "Running LLMs Locally",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

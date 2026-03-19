@@ -1,0 +1,9 @@
+{
+  "name": "Deep High-Resolution-Net",
+  "url": "https://github.com/leoxiaobin/deep-high-resolution-net.pytorch",
+  "description": "A PyTorch implementation of CVPR2019 paper \"Deep High-Resolution Representation Learning for Human Pose Estimation\"",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

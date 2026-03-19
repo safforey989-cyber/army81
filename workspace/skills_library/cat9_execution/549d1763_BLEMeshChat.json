@@ -1,0 +1,9 @@
+{
+  "name": "BLEMeshChat",
+  "url": "https://github.com/chrisballinger/BLEMeshChat",
+  "description": ": Chat using Bluetooth 4.0 Low Energy API (Bluetooth LE)",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

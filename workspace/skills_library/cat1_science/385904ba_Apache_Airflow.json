@@ -1,0 +1,9 @@
+{
+  "name": "Apache Airflow",
+  "url": "https://github.com/apache/airflow",
+  "description": "| Platform to programmatically author, schedule, and monitor workflows |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Llama2 Embedding Server",
+  "url": "https://github.com/Dicklesworthstone/llama_embeddings_fastapi_service",
+  "description": ": Llama2 Embeddings FastAPI Service using LangChain ![GitHub Repo stars](https://img.shields.io/github/stars/Dicklesworthstone/llama_embeddings_fastapi_service?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

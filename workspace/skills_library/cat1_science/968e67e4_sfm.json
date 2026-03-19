@@ -1,0 +1,9 @@
+{
+  "name": "sfm",
+  "url": "https://github.com/marcoscoffier/lua---sfm",
+  "description": "A bundle adjustment/structure from motion package. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Image Generator with Stable Diffusion v2",
+  "url": "https://github.com/ynagatomo/ImgGenSD2",
+  "description": "Tool from mobile_apps",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Webmin",
+  "url": "https://www.webmin.com/",
+  "description": "Web-based interface for system administration for Unix. ([Source Code](https://github.com/webmin/webmin)) `BSD-3-Clause` `Perl`",
+  "section": "Control Panels",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DET",
+  "url": "https://github.com/sensepost/DET",
+  "description": "Proof of concept to perform data exfiltration using either single or multiple channel(s) at the same time.",
+  "section": "Exfiltration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

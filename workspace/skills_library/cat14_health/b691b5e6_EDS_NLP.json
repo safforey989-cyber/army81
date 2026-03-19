@@ -1,0 +1,9 @@
+{
+  "name": "EDS_NLP",
+  "url": "https://github.com/aphp/edsnlp",
+  "description": "provides a set of spaCy components to extract information from clinical notes written in French",
+  "section": "Data",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

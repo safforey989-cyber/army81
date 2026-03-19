@@ -1,0 +1,9 @@
+{
+  "name": "jais-30b-v3",
+  "url": "https://huggingface.co/core42/jais-30b-v3",
+  "description": ", [jais-30b-chat-v3](https://huggingface.co/core42/jais-30b-chat-v3) | [Jais 30b v3](https://huggingface.co/core42/jais-30b-v3) | 30 | [8192](https://huggingface.co/core42/jais-30b-v3/blob/main/config.json) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "datasetGPT",
+  "url": "https://github.com/radi-cho/datasetGPT",
+  "description": ": A command-line interface to generate textual and conversational datasets with LLMs. ![GitHub Repo stars](https://img.shields.io/github/stars/radi-cho/datasetGPT?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

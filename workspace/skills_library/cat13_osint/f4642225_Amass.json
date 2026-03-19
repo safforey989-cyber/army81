@@ -1,0 +1,9 @@
+{
+  "name": "Amass",
+  "url": "https://github.com/owasp-amass/amass",
+  "description": "The amass tool searches Internet data sources, performs brute force subdomain enumeration, searches web archives, and uses machine learning to generate additional subdomain name guesses. DNS name resolution is performed across many public servers so the authoritative server will see the traffic comi",
+  "section": "[↑](#-table-of-contents) DNS",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

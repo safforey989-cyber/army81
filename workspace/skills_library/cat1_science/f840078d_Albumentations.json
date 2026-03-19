@@ -1,0 +1,9 @@
+{
+  "name": "Albumentations",
+  "url": "https://github.com/albumentations-team/albumentations",
+  "description": "| А fast and framework agnostic image augmentation library that implements a diverse set of augmentation techniques. Supports classification, segmentation, and detection out of the box. Was used to win a number of Deep Learning competitions at Kaggle, Topcoder and those that were a part of the CVPR ",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

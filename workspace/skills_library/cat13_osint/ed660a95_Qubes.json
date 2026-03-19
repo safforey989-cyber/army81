@@ -1,0 +1,9 @@
+{
+  "name": "Qubes",
+  "url": "https://www.qubes-os.org",
+  "description": "a security-focused desktop operating system that aims to provide security through isolation.",
+  "section": "[↑](#-table-of-contents) Privacy and Encryption Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

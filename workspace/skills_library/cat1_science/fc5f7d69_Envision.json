@@ -1,0 +1,9 @@
+{
+  "name": "Envision",
+  "url": "https://github.com/clojurewerkz/envision",
+  "description": "Clojure Data Visualisation library, based on Statistiker and D3.",
+  "section": "Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

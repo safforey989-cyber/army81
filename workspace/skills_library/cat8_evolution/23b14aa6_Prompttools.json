@@ -1,0 +1,9 @@
+{
+  "name": "Prompttools",
+  "url": "https://github.com/hegelai/prompttools",
+  "description": "Open-source Python tools for testing and evaluating models, vector DBs, and prompts.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

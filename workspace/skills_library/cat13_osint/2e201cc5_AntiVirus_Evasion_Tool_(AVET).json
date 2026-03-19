@@ -1,0 +1,9 @@
+{
+  "name": "AntiVirus Evasion Tool (AVET)",
+  "url": "https://github.com/govolution/avet",
+  "description": "](https://github.com/govolution/avet) - Post-process exploits containing executable files targeted for Windows machines to avoid being recognized by antivirus software.",
+  "section": "Anti-virus Evasion Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

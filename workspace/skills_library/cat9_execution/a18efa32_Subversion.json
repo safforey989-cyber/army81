@@ -1,0 +1,9 @@
+{
+  "name": "Subversion",
+  "url": "https://subversion.apache.org/",
+  "description": "Client-server revision control system. ([Source Code](https://svn.apache.org/repos/asf/subversion/trunk/)) `Apache-2.0` `C`",
+  "section": "Version control",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

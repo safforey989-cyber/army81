@@ -1,0 +1,9 @@
+{
+  "name": "notesjor corpus-collection",
+  "url": "https://notes.jan-oliver-ruediger.de/korpora/",
+  "description": "Free corpora (over 6 billion tokens) mostly German (both historically and in contemporary German).",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

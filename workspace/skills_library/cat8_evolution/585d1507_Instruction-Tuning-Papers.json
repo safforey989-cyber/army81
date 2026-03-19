@@ -1,0 +1,9 @@
+{
+  "name": "Instruction-Tuning-Papers",
+  "url": "https://github.com/SinclairCoder/Instruction-Tuning-Papers",
+  "description": "A trend starts from `Natrural-Instruction` (ACL 2022), `FLAN` (ICLR 2022) and `T0` (ICLR 2022).",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

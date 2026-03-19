@@ -1,0 +1,9 @@
+{
+  "name": "Lagent",
+  "url": "https://github.com/InternLM/lagent",
+  "description": ": A lightweight framework for building LLM-based agents ![GitHub Repo stars](https://img.shields.io/github/stars/InternLM/lagent?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

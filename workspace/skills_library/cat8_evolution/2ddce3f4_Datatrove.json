@@ -1,0 +1,9 @@
+{
+  "name": "Datatrove",
+  "url": "https://github.com/huggingface/datatrove",
+  "description": "Freeing data processing from scripting madness by providing a set of platform-agnostic customizable pipeline processing blocks.",
+  "section": "LLM Data",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

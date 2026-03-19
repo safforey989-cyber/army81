@@ -1,0 +1,9 @@
+{
+  "name": "Praeda",
+  "url": "http://h.foofus.net/?page_id=218",
+  "description": "Automated multi-function printer data harvester for gathering usable data during security assessments.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

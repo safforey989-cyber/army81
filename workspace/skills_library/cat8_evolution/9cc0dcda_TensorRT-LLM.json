@@ -1,0 +1,9 @@
+{
+  "name": "TensorRT-LLM",
+  "url": "https://github.com/NVIDIA/TensorRT-LLM",
+  "description": "Nvidia Framework for LLM Inference",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

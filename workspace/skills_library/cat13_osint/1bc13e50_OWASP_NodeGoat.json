@@ -1,0 +1,9 @@
+{
+  "name": "OWASP NodeGoat",
+  "url": "https://github.com/owasp/nodegoat",
+  "description": "`docker-compose build && docker-compose up`.",
+  "section": "Intentionally Vulnerable Systems as Docker Containers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

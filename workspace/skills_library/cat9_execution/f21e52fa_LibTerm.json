@@ -1,0 +1,9 @@
+{
+  "name": "LibTerm",
+  "url": "https://github.com/ColdGrub1384/LibTerm",
+  "description": ": Terminal with Python 3.7 and Lua 5.3, supports iOS 13 dark mode and multi window",
+  "section": "Terminal",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

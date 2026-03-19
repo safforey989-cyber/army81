@@ -1,0 +1,9 @@
+{
+  "name": "CertKit Certificate Search",
+  "url": "https://www.certkit.io/tools/ct-logs/",
+  "description": "Fast search for public SSL/TLS certificate records.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

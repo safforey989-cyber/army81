@@ -1,0 +1,9 @@
+{
+  "name": "NSD",
+  "url": "https://www.nlnetlabs.nl/projects/nsd/about/",
+  "description": "Authoritative DNS name server developed speed, reliability, stability and security. ([Source Code](https://github.com/NLnetLabs/nsd)) `BSD-3-Clause` `C`",
+  "section": "DNS - Servers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Red-Teaming Large Language Models | Hugging Faces",
+  "url": "https://huggingface.co/blog/red-teaming",
+  "description": ": strategies for testing LLMs against jailbreaks and attacks",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

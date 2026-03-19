@@ -1,0 +1,9 @@
+{
+  "name": "Python Data Science Handbook",
+  "url": "https://github.com/jakevdp/PythonDataScienceHandbook",
+  "description": "|Python Data Science Handbook: full text in Jupyter Notebooks|",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

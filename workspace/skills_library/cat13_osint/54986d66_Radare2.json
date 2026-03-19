@@ -1,0 +1,9 @@
+{
+  "name": "Radare2",
+  "url": "http://rada.re/r/index.html",
+  "description": "Open source, crossplatform reverse engineering framework.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

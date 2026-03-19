@@ -1,0 +1,9 @@
+{
+  "name": "kaggle insults",
+  "url": "https://github.com/amueller/kaggle_insults",
+  "description": "Kaggle Submission for \"Detecting Insults in Social Commentary\".",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

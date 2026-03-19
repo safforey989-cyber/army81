@@ -1,0 +1,9 @@
+{
+  "name": "OpenGM",
+  "url": "https://github.com/clementfarabet/lua---opengm",
+  "description": "OpenGM is a C++ library for graphical modelling, and inference. The Lua bindings provide a simple way of describing graphs, from Lua, and then optimizing them with OpenGM. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

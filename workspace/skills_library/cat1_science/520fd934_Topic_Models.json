@@ -1,0 +1,9 @@
+{
+  "name": "Topic Models",
+  "url": "https://github.com/slycoder/TopicModels.jl",
+  "description": "TopicModels for Julia. **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "CTF Field Guide",
+  "url": "https://trailofbits.github.io/ctf/",
+  "description": "Everything you need to win your next CTF competition.",
+  "section": "CTF Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

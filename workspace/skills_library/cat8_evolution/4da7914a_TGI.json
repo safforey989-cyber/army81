@@ -1,0 +1,9 @@
+{
+  "name": "TGI",
+  "url": "https://huggingface.co/docs/text-generation-inference/en/index",
+  "description": "a toolkit for deploying and serving Large Language Models (LLMs).",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

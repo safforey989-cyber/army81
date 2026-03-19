@@ -1,0 +1,9 @@
+{
+  "name": "dplyr",
+  "url": "https://www.rdocumentation.org/packages/dplyr/versions/0.7.8",
+  "description": "A data manipulation package that helps to solve the most common data manipulation problems.",
+  "section": "Data Manipulation | Data Analysis | Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

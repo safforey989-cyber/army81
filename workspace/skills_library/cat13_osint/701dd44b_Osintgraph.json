@@ -1,0 +1,9 @@
+{
+  "name": "Osintgraph",
+  "url": "https://github.com/XD-MHLOO/Osintgraph",
+  "description": "Tool that maps your target’s Instagram data and relationships in Neo4j for social network analysis.",
+  "section": "[↑](#-table-of-contents) Instagram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

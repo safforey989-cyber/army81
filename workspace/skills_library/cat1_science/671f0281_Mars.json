@@ -1,0 +1,9 @@
+{
+  "name": "Mars",
+  "url": "https://github.com/mars-project/mars",
+  "description": "A tensor-based framework for large-scale data computation which is often regarded as a parallel and distributed version of NumPy.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

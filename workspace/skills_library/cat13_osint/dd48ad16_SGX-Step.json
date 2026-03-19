@@ -1,0 +1,9 @@
+{
+  "name": "SGX-Step",
+  "url": "https://github.com/jovanbulck/sgx-step",
+  "description": "Open-source framework to facilitate side-channel attack research on Intel x86 processors in general and Intel SGX (Software Guard Extensions) platforms in particular.",
+  "section": "Side-channel Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

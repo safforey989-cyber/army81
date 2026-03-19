@@ -1,0 +1,9 @@
+{
+  "name": "LinuxForHealth FHIR Server",
+  "url": "https://github.com/LinuxForHealth/FHIR",
+  "description": "Modular Java implementation of version 4 of the HL7 FHIR specification.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

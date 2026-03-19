@@ -1,0 +1,9 @@
+{
+  "name": "gpt4all",
+  "url": "https://github.com/nomic-ai/gpt4all",
+  "description": "A chatbot trained on a massive collection of clean assistant data including code, stories and dialogue.",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

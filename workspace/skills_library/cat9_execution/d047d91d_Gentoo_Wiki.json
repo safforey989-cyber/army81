@@ -1,0 +1,9 @@
+{
+  "name": "Gentoo Wiki",
+  "url": "https://wiki.gentoo.org/",
+  "description": "Gentoo Linux Wiki with a lot in-detail description of Linux components.",
+  "section": "Websites",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

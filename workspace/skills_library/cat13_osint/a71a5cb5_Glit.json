@@ -1,0 +1,9 @@
+{
+  "name": "Glit",
+  "url": "https://github.com/shadawck/glit",
+  "description": "Retrieve all mails of users related to a git repository, a git user or a git organization.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

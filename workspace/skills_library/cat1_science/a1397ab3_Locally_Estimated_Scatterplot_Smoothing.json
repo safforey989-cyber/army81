@@ -1,0 +1,9 @@
+{
+  "name": "Locally Estimated Scatterplot Smoothing",
+  "url": "https://en.wikipedia.org/wiki/Local_regression",
+  "description": "Tool from data_science",
+  "section": "Supervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "imbalanced-ensemble",
+  "url": "https://github.com/ZhiningLiu1998/imbalanced-ensemble",
+  "description": "Python toolbox for quick implementation, modification, evaluation, and visualization of ensemble learning algorithms for class-imbalanced data. Supports out-of-the-box multi-class imbalanced (long-tailed) classification.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

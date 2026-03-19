@@ -1,0 +1,9 @@
+{
+  "name": "Twitter Text Java",
+  "url": "https://github.com/twitter/twitter-text/tree/master/java",
+  "description": "A Java implementation of Twitter's text processing library.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

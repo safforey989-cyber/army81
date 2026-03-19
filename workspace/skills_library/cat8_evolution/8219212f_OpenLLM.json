@@ -1,0 +1,9 @@
+{
+  "name": "OpenLLM",
+  "url": "https://github.com/bentoml/OpenLLM",
+  "description": "Fine-tune, serve, deploy, and monitor any open-source LLMs in production. Used in production at [BentoML](https://bentoml.com/) for LLMs-based applications.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

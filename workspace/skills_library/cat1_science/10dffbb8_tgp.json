@@ -1,0 +1,9 @@
+{
+  "name": "tgp",
+  "url": "https://cran.r-project.org/web/packages/tgp/index.html",
+  "description": "tgp: Bayesian treed Gaussian process models. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GAMBoost",
+  "url": "https://cran.r-project.org/web/packages/GAMBoost/index.html",
+  "description": "GAMBoost: Generalized linear and additive models by likelihood based boosting. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

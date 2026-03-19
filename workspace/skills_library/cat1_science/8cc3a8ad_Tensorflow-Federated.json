@@ -1,0 +1,9 @@
+{
+  "name": "Tensorflow-Federated",
+  "url": "https://www.tensorflow.org/federated",
+  "description": "A federated learning framework for machine learning and other computations on decentralized data.",
+  "section": "Federated Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

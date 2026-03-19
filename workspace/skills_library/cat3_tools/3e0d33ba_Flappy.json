@@ -1,0 +1,9 @@
+{
+  "name": "Flappy",
+  "url": "https://github.com/pleisto/flappy",
+  "description": ": Production-Ready LLM Agent SDK for Every Developer ![Github Repo stars](https://img.shields.io/github/stars/pleisto/flappy.svg?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

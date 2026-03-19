@@ -1,0 +1,9 @@
+{
+  "name": "go-galib",
+  "url": "https://github.com/thoj/go-galib",
+  "description": "Genetic Algorithms library written in Go / Golang. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

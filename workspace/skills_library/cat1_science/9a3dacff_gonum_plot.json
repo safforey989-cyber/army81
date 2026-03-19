@@ -1,0 +1,9 @@
+{
+  "name": "gonum/plot",
+  "url": "https://godoc.org/gonum.org/v1/plot",
+  "description": "A plotting library.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

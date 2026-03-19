@@ -1,0 +1,9 @@
+{
+  "name": "WellSaid",
+  "url": "https://wellsaidlabs.com/",
+  "description": "Convert text to voice in real time.",
+  "section": "Text-to-speech",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "QuillBot",
+  "url": "https://quillbot.com",
+  "description": "AI-powered paraphrasing tool.",
+  "section": "Writing assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

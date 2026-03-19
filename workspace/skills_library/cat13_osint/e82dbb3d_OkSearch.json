@@ -1,0 +1,9 @@
+{
+  "name": "OkSearch",
+  "url": "https://telegram.me/OkSearchBot",
+  "description": "Search channels, bots, groups by keyword.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

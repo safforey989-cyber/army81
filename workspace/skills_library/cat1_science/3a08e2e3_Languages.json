@@ -1,0 +1,9 @@
+{
+  "name": "Languages",
+  "url": "https://github.com/JuliaText/Languages.jl",
+  "description": "Julia package for working with various human languages",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

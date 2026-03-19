@@ -1,0 +1,9 @@
+{
+  "name": "Feast",
+  "url": "https://github.com/feast-dev/feast",
+  "description": "| A feature store for the management, discovery, and access of machine learning features. Feast provides a consistent view of feature data for both model training and model serving. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

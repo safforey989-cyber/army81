@@ -1,0 +1,9 @@
+{
+  "name": "Barcode Scanner",
+  "url": "https://github.com/hyperoslo/BarcodeScanner",
+  "description": "Tool from mobile_apps",
+  "section": "Scan",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

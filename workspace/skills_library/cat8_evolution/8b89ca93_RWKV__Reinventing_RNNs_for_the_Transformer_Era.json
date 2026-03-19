@@ -1,0 +1,9 @@
+{
+  "name": "RWKV: Reinventing RNNs for the Transformer Era",
+  "url": "https://arxiv.org/abs/2305.13048",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

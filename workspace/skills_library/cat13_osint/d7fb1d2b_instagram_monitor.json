@@ -1,0 +1,9 @@
+{
+  "name": "instagram_monitor",
+  "url": "https://github.com/misiektoja/instagram_monitor",
+  "description": "Tool for real-time tracking of Instagram users' activities and profile changes with support for email alerts, CSV logging, showing media in the terminal, anonymous story downloads and more",
+  "section": "[↑](#-table-of-contents) Instagram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

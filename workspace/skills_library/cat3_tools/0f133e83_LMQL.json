@@ -1,0 +1,9 @@
+{
+  "name": "LMQL",
+  "url": "https://github.com/eth-sri/lmql",
+  "description": ": A programming language for large language models. ![GitHub Repo stars](https://img.shields.io/github/stars/eth-sri/lmql?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

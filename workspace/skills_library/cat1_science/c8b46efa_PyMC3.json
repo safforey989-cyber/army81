@@ -1,0 +1,9 @@
+{
+  "name": "PyMC3",
+  "url": "https://docs.pymc.io/",
+  "description": "| A Python Library for Probabalistic Programming (Bayesian Inference and Machine Learning) |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

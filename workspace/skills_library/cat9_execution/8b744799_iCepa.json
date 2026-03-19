@@ -1,0 +1,9 @@
+{
+  "name": "iCepa",
+  "url": "https://github.com/iCepa/iCepa",
+  "description": ": System-wide VPN based Tor client",
+  "section": "Security",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "falcon2-11B",
+  "url": "https://huggingface.co/tiiuae/falcon-11B",
+  "description": "| [Meet Falcon 2: TII Releases New AI Model Series, Outperforming Meta’s New Llama 3](https://falconllm.tii.ae/falcon-2.html) | 11 | [8192](https://huggingface.co/tiiuae/falcon-11B#training-data) | [Custom Apache 2.0](https://falconllm-staging.tii.ae/falcon-2-terms-and-conditions.html) with mild acc",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

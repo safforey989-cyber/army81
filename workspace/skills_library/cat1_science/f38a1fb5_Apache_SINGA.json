@@ -1,0 +1,9 @@
+{
+  "name": "Apache SINGA",
+  "url": "https://singa.apache.org",
+  "description": "An Apache Incubating project for developing an open source machine learning library.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

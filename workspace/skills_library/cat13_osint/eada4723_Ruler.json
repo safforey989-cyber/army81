@@ -1,0 +1,9 @@
+{
+  "name": "Ruler",
+  "url": "https://github.com/sensepost/ruler",
+  "description": "Abuses client-side Outlook features to gain a remote shell on a Microsoft Exchange server.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

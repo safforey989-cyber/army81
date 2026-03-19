@@ -1,0 +1,9 @@
+{
+  "name": "SAS Planet",
+  "url": "http://www.sasgis.org/sasplaneta/",
+  "description": "Software used to view, download and stitch satellite images.",
+  "section": "[↑](#-table-of-contents) Geospatial Research and Mapping Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

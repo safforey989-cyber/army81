@@ -1,0 +1,9 @@
+{
+  "name": "MindSQL",
+  "url": "https://github.com/Mindinventory/MindSQL",
+  "description": "A python package for Txt-to-SQL with self hosting functionalities and RESTful APIs compatible with proprietary as well as open source LLM.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

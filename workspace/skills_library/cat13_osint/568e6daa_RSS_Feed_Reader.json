@@ -1,0 +1,9 @@
+{
+  "name": "RSS Feed Reader",
+  "url": "https://chrome.google.com/webstore/detail/rss-feed-reader/pnjaodmkngahhkoihejjehlcdlnohgmp",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Web Monitoring",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

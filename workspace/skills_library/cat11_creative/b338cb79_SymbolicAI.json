@@ -1,0 +1,9 @@
+{
+  "name": "SymbolicAI",
+  "url": "https://github.com/Xpitfire/symbolicai",
+  "description": "A neuro-symbolic framework for building applications with LLMs at the core.",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "RustScan",
+  "url": "https://github.com/rustscan/rustscan",
+  "description": "Lightweight and quick open-source port scanner designed to automatically pipe open ports into Nmap.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

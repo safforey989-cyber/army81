@@ -1,0 +1,9 @@
+{
+  "name": "SciBench",
+  "url": "https://scibench-ucla.github.io/#leaderboard",
+  "description": "benchmark designed to evaluate large language models (LLMs) on solving complex, college-level scientific problems from domains like chemistry, physics, and mathematics.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "snowflake-arctic-base",
+  "url": "https://huggingface.co/Snowflake/snowflake-arctic-base",
+  "description": ", [snowflake-arctic-instruct](https://huggingface.co/Snowflake/snowflake-arctic-instruct) | [Snowflake Arctic: The Best LLM for Enterprise AI — Efficiently Intelligent, Truly Open](https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake/) | 480 | [4096](https://hugg",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

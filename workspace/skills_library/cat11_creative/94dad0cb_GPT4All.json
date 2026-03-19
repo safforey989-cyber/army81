@@ -1,0 +1,9 @@
+{
+  "name": "GPT4All",
+  "url": "https://gpt4all.io/index.html",
+  "description": ": A free-to-use, locally running, privacy-aware chatbot. No GPU or internet is required.",
+  "section": "Running LLMs Locally",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

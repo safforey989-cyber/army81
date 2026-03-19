@@ -1,0 +1,9 @@
+{
+  "name": "Advanced Penetration Testing by Wil Allsopp, 2017",
+  "url": "https://www.amazon.com/Advanced-Penetration-Testing-Hacking-Networks/dp/1119367689/",
+  "description": "Tool from pentest_tools",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

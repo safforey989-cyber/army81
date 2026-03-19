@@ -1,0 +1,9 @@
+{
+  "name": "qtrader",
+  "url": "https://github.com/filangel/qtrader",
+  "description": "Reinforcement Learning for portfolio management.",
+  "section": "Portfolio Management",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

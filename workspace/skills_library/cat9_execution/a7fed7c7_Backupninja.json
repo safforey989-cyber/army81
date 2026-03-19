@@ -1,0 +1,9 @@
+{
+  "name": "Backupninja",
+  "url": "https://0xacab.org/liberate/backupninja",
+  "description": "Lightweight, extensible meta-backup system, provides a centralized way to configure and coordinate many different backup utilities. `GPL-2.0` `Shell`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "systematic_review",
+  "type": "prompt_pattern",
+  "prompt_template": "قم بمراجعة منهجية لـ {topic}. اجمع 10 مصادر، صنّفها، واستخرج النتائج الرئيسية.",
+  "category": "cat1_science",
+  "source": "built_in"
+}

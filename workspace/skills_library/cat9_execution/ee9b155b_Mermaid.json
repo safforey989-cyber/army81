@@ -1,0 +1,9 @@
+{
+  "name": "Mermaid",
+  "url": "https://mermaid-js.github.io/mermaid-live-editor/",
+  "description": "Javascript module with a unique, easy, shorthand syntax. Integrates into several other tools like Grafana. ([Source Code](https://github.com/mermaid-js/mermaid-live-editor)) `MIT` `Nodejs/Docker`",
+  "section": "Diagramming",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

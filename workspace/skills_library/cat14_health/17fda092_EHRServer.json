@@ -1,0 +1,9 @@
+{
+  "name": "EHRServer",
+  "url": "https://github.com/ppazos/cabolabs-ehrserver",
+  "description": "CaboLabs EHRServer.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

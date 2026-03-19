@@ -1,0 +1,9 @@
+{
+  "name": "alphaXiv",
+  "url": "https://www.alphaxiv.org",
+  "description": "Discuss, discover, and read arXiv papers.",
+  "section": "Academia",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

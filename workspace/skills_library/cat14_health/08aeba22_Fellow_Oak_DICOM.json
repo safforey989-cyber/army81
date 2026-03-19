@@ -1,0 +1,9 @@
+{
+  "name": "Fellow Oak DICOM",
+  "url": "https://github.com/fo-dicom/fo-dicom",
+  "description": "DICOM for .NET, .NET Core, Universal Windows, Android, iOS, Mono, and Unity.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

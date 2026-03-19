@@ -1,0 +1,7 @@
+{
+  "name": "financial_modeler",
+  "type": "prompt_pattern",
+  "prompt_template": "ابنِ نموذج مالي لـ {business}. Revenue, costs, projections, DCF.",
+  "category": "cat12_finance",
+  "source": "built_in"
+}

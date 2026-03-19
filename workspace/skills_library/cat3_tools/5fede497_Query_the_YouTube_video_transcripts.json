@@ -1,0 +1,9 @@
+{
+  "name": "Query the YouTube video transcripts",
+  "url": "https://colab.research.google.com/drive/1sKSTjt9cPstl_WMZ86JsgEqFG-aSAwkn?usp=sharing",
+  "description": ": Query the YouTube video transcripts, returning timestamps as sources to legitimize the answers",
+  "section": "Notebooks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

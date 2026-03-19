@@ -1,0 +1,9 @@
+{
+  "name": "Shellcode Tutorial",
+  "url": "http://www.vividmachines.com/shellcode/shellcode.html",
+  "description": "Tutorial on how to write shellcode.",
+  "section": "Shellcoding Guides and Tutorials",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

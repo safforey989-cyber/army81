@@ -1,0 +1,7 @@
+{
+  "name": "lesson_planner",
+  "type": "prompt_pattern",
+  "prompt_template": "خطط درس لـ {topic} مدة {minutes} دقيقة. نشاطات، وسائل، تقييم.",
+  "category": "cat16_education",
+  "source": "built_in"
+}

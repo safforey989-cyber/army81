@@ -1,0 +1,9 @@
+{
+  "name": "PaLM: Scaling Language Modeling with Pathways",
+  "url": "https://arxiv.org/pdf/2204.02311.pdf",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

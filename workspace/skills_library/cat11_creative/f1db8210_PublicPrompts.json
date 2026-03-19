@@ -1,0 +1,9 @@
+{
+  "name": "PublicPrompts",
+  "url": "https://publicprompts.art/",
+  "description": "A collection of free prompts for Stable Diffusion.",
+  "section": "Stable Diffusion resources",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

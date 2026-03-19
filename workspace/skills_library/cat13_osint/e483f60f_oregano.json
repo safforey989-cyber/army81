@@ -1,0 +1,9 @@
+{
+  "name": "oregano",
+  "url": "https://github.com/nametoolong/oregano",
+  "description": "Python module that runs as a machine-in-the-middle (MITM) accepting Tor client requests.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

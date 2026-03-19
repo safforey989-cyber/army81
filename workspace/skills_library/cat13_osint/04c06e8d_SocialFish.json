@@ -1,0 +1,9 @@
+{
+  "name": "SocialFish",
+  "url": "https://github.com/UndeadSec/SocialFish",
+  "description": "Social media phishing framework that can run on an Android phone or in a Docker container.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

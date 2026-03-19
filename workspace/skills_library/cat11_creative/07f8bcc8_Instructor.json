@@ -1,0 +1,9 @@
+{
+  "name": "Instructor",
+  "url": "https://jxnl.github.io/instructor/",
+  "description": ": library for structured LLM extraction in Python",
+  "section": "AI Engineering",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

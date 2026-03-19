@@ -1,0 +1,9 @@
+{
+  "name": "pyclugen",
+  "url": "https://github.com/clugen/pyclugen",
+  "description": "Multidimensional cluster generation in Python.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

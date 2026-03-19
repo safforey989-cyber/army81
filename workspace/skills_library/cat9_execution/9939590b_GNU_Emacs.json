@@ -1,0 +1,9 @@
+{
+  "name": "GNU Emacs",
+  "url": "https://www.gnu.org/software/emacs/",
+  "description": "An extensible, customizable text editor-and more. ([Source Code](https://github.com/emacs-mirror/emacs)) `GPL-3.0` `C`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

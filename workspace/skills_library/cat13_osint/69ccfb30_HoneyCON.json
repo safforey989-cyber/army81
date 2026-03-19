@@ -1,0 +1,9 @@
+{
+  "name": "HoneyCON",
+  "url": "https://honeycon.eu/",
+  "description": "Annual Security Conference in Guadalajara, Spain. Organized by the HoneySEC association.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

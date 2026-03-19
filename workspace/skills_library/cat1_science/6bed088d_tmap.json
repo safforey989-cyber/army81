@@ -1,0 +1,9 @@
+{
+  "name": "tmap",
+  "url": "https://cran.r-project.org/web/packages/tmap/vignettes/tmap-getstarted.html",
+  "description": "for visualizing geospatial data with static maps and [leaflet](https://rstudio.github.io/leaflet/) for interactive maps",
+  "section": "Data Manipulation | Data Analysis | Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

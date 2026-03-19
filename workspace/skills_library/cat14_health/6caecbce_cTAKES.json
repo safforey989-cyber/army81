@@ -1,0 +1,9 @@
+{
+  "name": "cTAKES",
+  "url": "https://ctakes.apache.org/",
+  "description": "Natural Language Processing System for extraction of information from Electronic Medical Record clinical free-text.",
+  "section": "Data",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Axolotl",
+  "url": "https://github.com/axolotl-ai-cloud/axolotl",
+  "description": "Open-source framework for fine-tuning and evaluating LLMs. It simplifies the process of experimenting with different training configurations and makes it easy to reproduce and share results, supporting features like LoRA, QLoRA, DeepSpeed, PEFT, and multi-GPU setups.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

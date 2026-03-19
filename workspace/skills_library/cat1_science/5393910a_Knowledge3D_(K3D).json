@@ -1,0 +1,9 @@
+{
+  "name": "Knowledge3D (K3D)",
+  "url": "https://github.com/danielcamposramos/Knowledge3D",
+  "description": "](https://github.com/danielcamposramos/Knowledge3D) - Sovereign GPU-native spatial AI architecture with PTX-first cognitive engine (RPN/TRM reasoning), tri-modal fusion (text/visual/audio), and 3D persistent memory (\"Houses\"). Features sub-100µs inference, procedural knowledge compression (69:1 rati",
+  "section": "Neurosymbolic AI",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

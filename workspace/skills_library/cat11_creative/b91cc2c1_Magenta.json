@@ -1,0 +1,9 @@
+{
+  "name": "Magenta",
+  "url": "https://magenta.tensorflow.org/",
+  "description": ": Music and Art Generation with Machine Intelligence",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

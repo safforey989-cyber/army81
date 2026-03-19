@@ -1,0 +1,9 @@
+{
+  "name": "FakeGithub",
+  "url": "https://github.com/tt1k/FakeGithub",
+  "description": ": Browse GitHub",
+  "section": "GitHub",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

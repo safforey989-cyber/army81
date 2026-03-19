@@ -1,0 +1,9 @@
+{
+  "name": "Cloud Native Software Landscape",
+  "url": "https://landscape.cncf.io/?group=projects-and-products&view-mode=card",
+  "description": "**",
+  "section": "Cloud Computing",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

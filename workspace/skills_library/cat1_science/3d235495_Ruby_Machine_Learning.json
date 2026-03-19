@@ -1,0 +1,9 @@
+{
+  "name": "Ruby Machine Learning",
+  "url": "https://github.com/tsycho/ruby-machine-learning",
+  "description": "Some Machine Learning algorithms, implemented in Ruby. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

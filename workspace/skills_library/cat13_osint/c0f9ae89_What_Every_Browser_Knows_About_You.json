@@ -1,0 +1,9 @@
+{
+  "name": "What Every Browser Knows About You",
+  "url": "http://webkay.robinlinus.com/",
+  "description": "Comprehensive detection page to test your own Web browser's configuration for privacy and identity leaks.",
+  "section": "Anonymity Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

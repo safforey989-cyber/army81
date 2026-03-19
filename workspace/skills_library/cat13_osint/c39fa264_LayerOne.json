@@ -1,0 +1,9 @@
+{
+  "name": "LayerOne",
+  "url": "http://www.layerone.org/",
+  "description": "Annual US security conference held every spring in Los Angeles.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

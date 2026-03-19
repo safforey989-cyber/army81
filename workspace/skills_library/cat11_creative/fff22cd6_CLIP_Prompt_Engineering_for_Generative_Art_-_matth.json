@@ -1,0 +1,9 @@
+{
+  "name": "CLIP Prompt Engineering for Generative Art - matthewmcateer.me",
+  "url": "https://matthewmcateer.me/blog/clip-prompt-engineering/",
+  "description": ": list of styles tested with Quick CLIP Guided Diffusion",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

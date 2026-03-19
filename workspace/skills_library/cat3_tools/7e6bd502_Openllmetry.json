@@ -1,0 +1,9 @@
+{
+  "name": "Openllmetry",
+  "url": "https://github.com/traceloop/openllmetry",
+  "description": ": Open-source observability for your LLM application, based on OpenTelemetry ![GitHub Repo stars](https://img.shields.io/github/stars/traceloop/openllmetry?style=social)",
+  "section": "Platforms",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "wafw00f",
+  "url": "https://github.com/EnableSecurity/wafw00f",
+  "description": "Identifies and fingerprints Web Application Firewall (WAF) products.",
+  "section": "Web application and resource analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

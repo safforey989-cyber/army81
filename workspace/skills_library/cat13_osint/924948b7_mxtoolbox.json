@@ -1,0 +1,9 @@
+{
+  "name": "mxtoolbox",
+  "url": "https://mxtoolbox.com/",
+  "description": "Free online tools to investigate/troubleshoot email server issues.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

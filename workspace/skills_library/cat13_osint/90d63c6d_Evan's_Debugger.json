@@ -1,0 +1,9 @@
+{
+  "name": "Evan's Debugger",
+  "url": "http://www.codef00.com/projects#debugger",
+  "description": "OllyDbg-like debugger for GNU/Linux.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

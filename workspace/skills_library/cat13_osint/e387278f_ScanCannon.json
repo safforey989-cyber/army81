@@ -1,0 +1,9 @@
+{
+  "name": "ScanCannon",
+  "url": "https://github.com/johnnyxmas/ScanCannon",
+  "description": "POSIX-compliant BASH script to quickly enumerate large networks by calling `masscan` to quickly identify open ports and then `nmap` to gain details on the systems/services on those ports.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

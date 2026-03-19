@@ -1,0 +1,9 @@
+{
+  "name": "Multi-Modal LangChain agents in Production",
+  "url": "https://github.com/steamship-packages/langchain-agent-production-starter",
+  "description": ": Deploy LangChain Agents and connect them to Telegram ![GitHub Repo stars](https://img.shields.io/github/stars/steamship-packages/langchain-agent-production-starter?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

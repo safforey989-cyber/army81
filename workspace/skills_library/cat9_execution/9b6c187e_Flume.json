@@ -1,0 +1,9 @@
+{
+  "name": "Flume",
+  "url": "https://flume.apache.org/",
+  "description": "Distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data. ([Source Code](https://github.com/apache/flume)) `Apache-2.0` `Java`",
+  "section": "Log Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "knn-java-library",
+  "url": "https://github.com/felipexw/knn-java-library",
+  "description": "Just a simple implementation of K-Nearest Neighbors algorithm using with a bunch of similarity measures.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

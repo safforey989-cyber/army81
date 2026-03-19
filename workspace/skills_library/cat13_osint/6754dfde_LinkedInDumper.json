@@ -1,0 +1,9 @@
+{
+  "name": "LinkedInDumper",
+  "url": "https://github.com/l4rm4nd/LinkedInDumper",
+  "description": "Script to dump/scrape/extract company employees info from LinkedIn API.",
+  "section": "[↑](#-table-of-contents) LinkedIn",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

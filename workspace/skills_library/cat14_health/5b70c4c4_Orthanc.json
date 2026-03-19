@@ -1,0 +1,9 @@
+{
+  "name": "Orthanc",
+  "url": "https://www.orthanc-server.com",
+  "description": "Lightweight DICOM server for healthcare and medical research.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

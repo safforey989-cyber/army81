@@ -1,0 +1,9 @@
+{
+  "name": "Image Raider",
+  "url": "https://www.imageraider.com",
+  "description": "is our reverse image search tool for completing individual searches. When you upload an image to this page, we'll scour the internet to find its source and all of the other pages where it has been posted.",
+  "section": "[↑](#-table-of-contents) Image Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

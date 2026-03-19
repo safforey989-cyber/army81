@@ -1,0 +1,9 @@
+{
+  "name": "Poland - ProteGO Safe",
+  "url": "https://github.com/ProteGO-Safe/ios",
+  "description": ": User daily triage and contact tracing using Exposure Notification API",
+  "section": "Contact Tracing",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Together AI",
+  "url": "https://www.together.ai/",
+  "description": "Train, fine-tune-and run inference on AI models blazing fast, at low cost, and at production scale.",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

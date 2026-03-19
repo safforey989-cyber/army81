@@ -1,0 +1,9 @@
+{
+  "name": "FHIRKit Client",
+  "url": "https://github.com/Vermonster/fhir-kit-client",
+  "description": "Node FHIR client library.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

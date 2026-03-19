@@ -1,0 +1,9 @@
+{
+  "name": "Transformers",
+  "url": "https://github.com/huggingface/transformers",
+  "description": "A deep learning library containing thousands of pre-trained models on different tasks. The goto place for anything related to Large Language Models.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

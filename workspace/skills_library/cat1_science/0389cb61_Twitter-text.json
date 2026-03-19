@@ -1,0 +1,9 @@
+{
+  "name": "Twitter-text",
+  "url": "https://github.com/twitter/twitter-text",
+  "description": "A JavaScript implementation of Twitter's text processing library.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

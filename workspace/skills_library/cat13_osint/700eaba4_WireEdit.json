@@ -1,0 +1,9 @@
+{
+  "name": "WireEdit",
+  "url": "https://wireedit.com/",
+  "description": "Full stack WYSIWYG pcap editor (requires a free license to edit packets).",
+  "section": "Network Traffic Replay and Editing Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

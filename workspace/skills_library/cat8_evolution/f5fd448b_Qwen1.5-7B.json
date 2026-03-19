@@ -1,0 +1,9 @@
+{
+  "name": "Qwen1.5-7B",
+  "url": "https://huggingface.co/Qwen/Qwen1.5-7B",
+  "description": ", [Qwen1.5-7B-Chat](https://huggingface.co/Qwen/Qwen1.5-7B-Chat), [Qwen1.5-14B](https://huggingface.co/Qwen/Qwen1.5-14B), [Qwen1.5-14B-Chat](https://huggingface.co/Qwen/Qwen1.5-14B-Chat), [Qwen1.5-72B](https://huggingface.co/Qwen/Qwen1.5-72B), [Qwen1.5-72B-Chat](https://huggingface.co/Qwen/Qwen1.5-7",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

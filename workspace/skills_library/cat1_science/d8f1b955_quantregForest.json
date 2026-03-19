@@ -1,0 +1,9 @@
+{
+  "name": "quantregForest",
+  "url": "https://cran.r-project.org/web/packages/quantregForest/index.html",
+  "description": "quantregForest: Quantile Regression Forests.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

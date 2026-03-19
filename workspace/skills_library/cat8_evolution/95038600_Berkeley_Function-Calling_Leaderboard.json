@@ -1,0 +1,9 @@
+{
+  "name": "Berkeley Function-Calling Leaderboard",
+  "url": "https://gorilla.cs.berkeley.edu/leaderboard.html",
+  "description": "evaluates LLM's ability to call external functions/tools.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

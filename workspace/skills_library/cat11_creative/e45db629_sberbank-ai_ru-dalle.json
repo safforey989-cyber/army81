@@ -1,0 +1,9 @@
+{
+  "name": "sberbank-ai/ru-dalle",
+  "url": "https://github.com/sberbank-ai/ru-dalle",
+  "description": ": Generate images from texts. In Russian.",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

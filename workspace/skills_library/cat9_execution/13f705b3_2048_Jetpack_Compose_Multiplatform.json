@@ -1,0 +1,9 @@
+{
+  "name": "2048 Jetpack Compose Multiplatform",
+  "url": "https://github.com/alexjlockwood/compose-multiplatform-2048",
+  "description": "Tool from mobile_apps",
+  "section": "Game",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

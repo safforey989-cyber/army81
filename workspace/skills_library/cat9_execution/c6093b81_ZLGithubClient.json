@@ -1,0 +1,9 @@
+{
+  "name": "ZLGithubClient",
+  "url": "https://github.com/ExistOrLive/GithubClient",
+  "description": ": Browse GitHub using its REST V3 / GraphQL V4 API",
+  "section": "GitHub",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

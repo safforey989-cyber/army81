@@ -1,0 +1,9 @@
+{
+  "name": "Veil",
+  "url": "https://www.veil-framework.com/",
+  "description": "Generate metasploit payloads that bypass common anti-virus solutions.",
+  "section": "Anti-virus Evasion Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Pastebin - Tor Link",
+  "url": "https://tor.link/paste/new",
+  "description": "Paste text to store or share with others.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

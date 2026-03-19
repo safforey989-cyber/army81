@@ -1,0 +1,9 @@
+{
+  "name": "LangChain.js",
+  "url": "https://github.com/hwchase17/langchainjs",
+  "description": ": the js brother ✨ ![GitHub Repo stars](https://img.shields.io/github/stars/hwchase17/langchainjs?style=social)",
+  "section": "LangChain Framework",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

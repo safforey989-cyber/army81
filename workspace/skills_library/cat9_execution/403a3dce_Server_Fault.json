@@ -1,0 +1,9 @@
+{
+  "name": "Server Fault",
+  "url": "https://serverfault.com/",
+  "description": "StackExchange community for system and network administrators.",
+  "section": "Communities / Forums",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

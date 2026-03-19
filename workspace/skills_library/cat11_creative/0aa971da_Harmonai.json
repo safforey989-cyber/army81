@@ -1,0 +1,9 @@
+{
+  "name": "Harmonai",
+  "url": "https://www.harmonai.org/",
+  "description": "We are a community-driven organization releasing open-source generative audio tools to make music production more accessible and fun for everyone.",
+  "section": "Music",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

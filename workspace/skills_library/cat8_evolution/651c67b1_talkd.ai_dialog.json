@@ -1,0 +1,9 @@
+{
+  "name": "talkd.ai dialog",
+  "url": "https://github.com/talkdai/dialog",
+  "description": "Simple API for deploying any RAG or LLM that you want adding plugins.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "OpenLIT",
+  "url": "https://github.com/openlit/openlit",
+  "description": "Open-source GenAI and LLM observability platform native to OpenTelemetry with traces and metrics. #opensource",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

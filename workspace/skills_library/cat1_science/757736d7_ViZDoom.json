@@ -1,0 +1,9 @@
+{
+  "name": "ViZDoom",
+  "url": "https://github.com/mwydmuch/ViZDoom",
+  "description": "ViZDoom allows developing AI bots that play Doom using only the visual information (the screen buffer). It is primarily intended for research in machine visual learning, and deep reinforcement learning, in particular.",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

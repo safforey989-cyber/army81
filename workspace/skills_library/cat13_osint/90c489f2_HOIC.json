@@ -1,0 +1,9 @@
+{
+  "name": "HOIC",
+  "url": "https://sourceforge.net/projects/high-orbit-ion-cannon/",
+  "description": "Updated version of Low Orbit Ion Cannon, has 'boosters' to get around common counter measures.",
+  "section": "DDoS Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Subreddits",
+  "url": "http://subreddits.org",
+  "description": "Discover new subreddits.",
+  "section": "[↑](#-table-of-contents) Reddit",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

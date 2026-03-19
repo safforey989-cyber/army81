@@ -1,0 +1,9 @@
+{
+  "name": "Kali Linux Tools",
+  "url": "http://tools.kali.org/tools-listing",
+  "description": "List of tools present in Kali Linux.",
+  "section": "Other Lists Online",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

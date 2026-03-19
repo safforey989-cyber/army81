@@ -1,0 +1,9 @@
+{
+  "name": "OpenEMR",
+  "url": "https://www.open-emr.org",
+  "description": "Electronic Health Records and Medical Practice Management application.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

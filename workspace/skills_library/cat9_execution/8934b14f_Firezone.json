@@ -1,0 +1,9 @@
+{
+  "name": "Firezone",
+  "url": "https://www.firezone.dev/",
+  "description": "WireGuard based VPN Server and Firewall. ([Source Code](https://github.com/firezone/firezone)) `Apache-2.0` `Docker`",
+  "section": "VPN",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

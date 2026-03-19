@@ -1,0 +1,9 @@
+{
+  "name": "OPSI",
+  "url": "https://www.opsi.org",
+  "description": "Hardware and software inventory, client management, deployment, and patching for Linux and Windows. ([Source Code](https://github.com/opsi-org/)) `GPL-3.0/AGPL-3.0` `OVF/Python`",
+  "section": "IT Asset Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

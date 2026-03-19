@@ -1,0 +1,9 @@
+{
+  "name": "Scikit-Learn",
+  "url": "https://scikit-learn.org/stable/index.html",
+  "description": "is a general-purpose data science package which implements the most popular algorithms - it also includes rich documentation, tutorials, and examples of the models it implements. Even if you prefer to write your own implementations, Scikit-Learn is a valuable reference to the nuts-and-bolts behind m",
+  "section": "Where do I Start?",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

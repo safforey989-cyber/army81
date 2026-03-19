@@ -1,0 +1,9 @@
+{
+  "name": "Lensa",
+  "url": "https://prisma-ai.com/lensa",
+  "description": "An all-in-one image editing app that includes the generation of personalized avatars using Stable Diffusion.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy, 2020",
+  "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3690996",
+  "description": "Propose an ensemble strategy that employs deep reinforcement schemes to learn a stock trading strategy by maximizing investment return.",
+  "section": "Papers",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

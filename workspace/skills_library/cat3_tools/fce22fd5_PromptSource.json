@@ -1,0 +1,9 @@
+{
+  "name": "PromptSource",
+  "url": "https://github.com/bigscience-workshop/promptsource",
+  "description": ": About Toolkit for creating, sharing and using natural language prompts. ![GitHub Repo stars](https://img.shields.io/github/stars/bigscience-workshop/promptsource?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

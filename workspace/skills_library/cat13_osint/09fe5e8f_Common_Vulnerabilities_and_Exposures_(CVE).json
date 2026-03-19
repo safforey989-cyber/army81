@@ -1,0 +1,9 @@
+{
+  "name": "Common Vulnerabilities and Exposures (CVE)",
+  "url": "https://cve.mitre.org/",
+  "description": "](https://cve.mitre.org/) - Dictionary of common names (i.e., CVE Identifiers) for publicly known security vulnerabilities.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

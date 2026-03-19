@@ -1,0 +1,9 @@
+{
+  "name": "dnschef",
+  "url": "https://github.com/iphelix/dnschef",
+  "description": "Highly configurable DNS proxy for pentesters.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

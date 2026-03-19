@@ -1,0 +1,9 @@
+{
+  "name": "Yi-VL-6B|34B",
+  "url": "https://huggingface.co/collections/01-ai/yi-vl-663f557228538eae745769f3",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

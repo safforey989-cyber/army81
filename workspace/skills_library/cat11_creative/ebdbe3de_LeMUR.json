@@ -1,0 +1,9 @@
+{
+  "name": "LeMUR",
+  "url": "https://www.assemblyai.com/blog/lemur/",
+  "description": ": a single API, enabling developers to reason over their spoken data with a few lines of code",
+  "section": "Speech-to-text (STT) and spoken content analysis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

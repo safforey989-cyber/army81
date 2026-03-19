@@ -1,0 +1,9 @@
+{
+  "name": "Home Assistant Companion",
+  "url": "https://github.com/home-assistant/iOS",
+  "description": ": Control and monitor your home from anywhere in the world",
+  "section": "Home",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

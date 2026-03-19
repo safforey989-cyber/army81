@@ -1,0 +1,9 @@
+{
+  "name": "SentencePiece",
+  "url": "https://github.com/google/sentencepiece",
+  "description": "A C++ library for unsupervised text tokenization and detokenization, widely used in modern NLP models.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

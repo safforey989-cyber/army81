@@ -1,0 +1,9 @@
+{
+  "name": "email client",
+  "url": "https://en.wikipedia.org/wiki/Email_client",
+  "description": ", email reader or, more formally, message user agent (MUA) or mail user agent is a computer program used to access and manage a user's email.",
+  "section": "Mail Clients",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

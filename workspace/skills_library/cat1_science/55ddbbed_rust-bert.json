@@ -1,0 +1,9 @@
+{
+  "name": "rust-bert",
+  "url": "https://github.com/guillaume-be/rust-bert",
+  "description": "Rust native ready-to-use NLP pipelines and transformer-based models (BERT, DistilBERT, GPT2,...)",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

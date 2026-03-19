@@ -1,0 +1,9 @@
+{
+  "name": "ChatAbstractions",
+  "url": "https://github.com/andrewnguonly/ChatAbstractions",
+  "description": ": LangChain chat model abstractions for dynamic failover, load balancing, chaos engineering, and more! ![GitHub Repo stars](https://img.shields.io/github/stars/andrewnguonly/ChatAbstractions?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

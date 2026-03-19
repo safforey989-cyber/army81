@@ -1,0 +1,9 @@
+{
+  "name": "Magic Unicorn",
+  "url": "https://github.com/trustedsec/unicorn",
+  "description": "Shellcode generator for numerous attack vectors, including Microsoft Office macros, PowerShell, HTML applications (HTA), or `certutil` (using fake certificates).",
+  "section": "Exploit Development Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

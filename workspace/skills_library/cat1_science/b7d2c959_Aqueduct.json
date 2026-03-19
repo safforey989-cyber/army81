@@ -1,0 +1,9 @@
+{
+  "name": "Aqueduct",
+  "url": "https://github.com/aqueducthq/aqueduct",
+  "description": "Aqueduct enables you to easily define, run, and manage AI & ML tasks on any cloud infrastructure.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

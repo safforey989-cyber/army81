@@ -1,0 +1,9 @@
+{
+  "name": "FreeOTP Authenticator",
+  "url": "https://github.com/freeotp/freeotp-ios",
+  "description": ": Two-Factor Authentication",
+  "section": "Password",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

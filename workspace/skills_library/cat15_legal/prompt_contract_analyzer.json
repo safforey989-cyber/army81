@@ -1,0 +1,7 @@
+{
+  "name": "contract_analyzer",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل هذا العقد: {contract}. بنود خطرة، حقوق، التزامات، ثغرات.",
+  "category": "cat15_legal",
+  "source": "built_in"
+}

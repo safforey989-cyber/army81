@@ -1,0 +1,9 @@
+{
+  "name": "Embedchain",
+  "url": "https://github.com/embedchain/embedchain",
+  "description": ": Framework to create ChatGPT like bots over your dataset",
+  "section": "LangChain",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

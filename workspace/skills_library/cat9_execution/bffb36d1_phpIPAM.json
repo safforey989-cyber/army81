@@ -1,0 +1,9 @@
+{
+  "name": "phpIPAM",
+  "url": "https://phpipam.net/",
+  "description": "Open source IP address management with PowerDNS integration. ([Source Code](https://github.com/phpipam/phpipam)) `GPL-3.0` `PHP`",
+  "section": "Network Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

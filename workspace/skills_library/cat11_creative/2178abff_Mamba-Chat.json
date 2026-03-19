@@ -1,0 +1,9 @@
+{
+  "name": "Mamba-Chat",
+  "url": "https://github.com/havenhq/mamba-chat",
+  "description": ": A chat LLM based on the state-space model architecture",
+  "section": "Mamba",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

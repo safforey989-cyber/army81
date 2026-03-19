@@ -1,0 +1,9 @@
+{
+  "name": "EBLearn",
+  "url": "http://eblearn.sourceforge.net/",
+  "description": "Eblearn is an object-oriented C++ library that implements various machine learning models **[Deprecated]**",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

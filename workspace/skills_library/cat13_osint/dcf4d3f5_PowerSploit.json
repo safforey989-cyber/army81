@@ -1,0 +1,9 @@
+{
+  "name": "PowerSploit",
+  "url": "https://github.com/PowerShellMafia/PowerSploit",
+  "description": "PowerShell Post-Exploitation Framework.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

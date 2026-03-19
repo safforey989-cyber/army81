@@ -1,0 +1,9 @@
+{
+  "name": "instruct-eval",
+  "url": "https://github.com/declare-lab/instruct-eval",
+  "description": "This repository contains code to quantitatively evaluate instruction-tuned models such as Alpaca and Flan-T5 on held-out tasks.",
+  "section": "LLM Evaluation:",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

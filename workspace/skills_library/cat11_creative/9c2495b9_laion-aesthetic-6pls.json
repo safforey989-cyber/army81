@@ -1,0 +1,9 @@
+{
+  "name": "laion-aesthetic-6pls",
+  "url": "https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/images",
+  "description": ": exploring 12 million of the 2.3 billion images used to train Stable Diffusion's image generator",
+  "section": "Datasets",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

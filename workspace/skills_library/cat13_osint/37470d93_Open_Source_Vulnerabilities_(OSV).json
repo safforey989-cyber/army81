@@ -1,0 +1,9 @@
+{
+  "name": "Open Source Vulnerabilities (OSV)",
+  "url": "https://osv.dev/",
+  "description": "](https://osv.dev/) - Database of vulnerabilities affecting open source software, queryable by project, Git commit, or version.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

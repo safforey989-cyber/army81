@@ -1,0 +1,9 @@
+{
+  "name": "This Image Does Not Exist",
+  "url": "https://thisimagedoesnotexist.com/",
+  "description": "Test your ability to tell if an image is human or computer generated.",
+  "section": "Other",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

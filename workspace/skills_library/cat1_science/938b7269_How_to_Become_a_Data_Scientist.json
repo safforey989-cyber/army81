@@ -1,0 +1,9 @@
+{
+  "name": "How to Become a Data Scientist",
+  "url": "https://www.mastersindatascience.org/careers/data-scientist/",
+  "description": "| _Data scientists are big data wranglers, gathering and analyzing large sets of structured and unstructured data. A data scientist’s role combines computer science, statistics, and mathematics. They analyze, process, and model data then interpret the results to create actionable plans for companies",
+  "section": "What is Data Science?",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

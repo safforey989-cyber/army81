@@ -1,0 +1,9 @@
+{
+  "name": "Portkey",
+  "url": "https://portkey.ai/",
+  "description": "A full-stack LLMOps platform for LLM monitoring, caching, and management.",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

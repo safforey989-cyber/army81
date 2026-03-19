@@ -1,0 +1,9 @@
+{
+  "name": "GraphQL Voyager",
+  "url": "https://graphql-kit.com/graphql-voyager/",
+  "description": "Represent any GraphQL API as an interactive graph, letting you explore data models from any Web site with a GraphQL query endpoint.",
+  "section": "Web application and resource analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

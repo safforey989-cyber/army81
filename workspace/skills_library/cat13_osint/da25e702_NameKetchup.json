@@ -1,0 +1,9 @@
+{
+  "name": "NameKetchup",
+  "url": "https://nameketchup.com",
+  "description": "checks domain name and username in popular social media sites and platforms.",
+  "section": "[↑](#-table-of-contents) Username Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

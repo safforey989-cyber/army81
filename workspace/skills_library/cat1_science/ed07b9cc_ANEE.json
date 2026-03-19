@@ -1,0 +1,9 @@
+{
+  "name": "ANEE",
+  "url": "https://github.com/abkmystery/ANEE",
+  "description": "Adaptive Neural Execution Engine for transformers. Per-token sparse inference with dynamic layer skipping, profiler-based gating, and KV-cache-safe compute reduction.",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

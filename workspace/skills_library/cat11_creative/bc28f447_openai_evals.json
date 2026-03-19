@@ -1,0 +1,9 @@
+{
+  "name": "openai/evals",
+  "url": "https://github.com/openai/evals",
+  "description": ": Evals is a framework for evaluating LLMs and LLM systems, and an open-source registry of benchmarks.",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Nightguard",
+  "url": "https://github.com/nightscout/nightguard",
+  "description": ": Display blood glucose values stored on your nightscout server",
+  "section": "Apple Watch",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

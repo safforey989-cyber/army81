@@ -1,0 +1,9 @@
+{
+  "name": "JoePenna/Dreambooth-Stable-Diffusion",
+  "url": "https://github.com/JoePenna/Dreambooth-Stable-Diffusion",
+  "description": ": Implementation of Dreambooth (https://arxiv.org/abs/2208.12242) with Stable Diffusion (tweaks focused on training faces)",
+  "section": "Inbox: Stable Diffusion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

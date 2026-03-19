@@ -1,0 +1,9 @@
+{
+  "name": "daspartho/prompt-extend",
+  "url": "https://github.com/daspartho/prompt-extend",
+  "description": ": extending stable diffusion prompts with suitable style cues using text generation",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

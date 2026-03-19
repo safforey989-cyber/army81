@@ -1,0 +1,9 @@
+{
+  "name": "Frostbyte MCP",
+  "url": "https://github.com/OzorOwn/frostbyte-mcp",
+  "description": "MCP server providing 13 data tools for AI agents: real-time crypto prices, IP geolocation, DNS lookups, web scraping to markdown, code execution, and screenshots. One API key for 40+ services.",
+  "section": "Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

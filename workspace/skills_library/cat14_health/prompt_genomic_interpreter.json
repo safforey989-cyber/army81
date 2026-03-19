@@ -1,0 +1,7 @@
+{
+  "name": "genomic_interpreter",
+  "type": "prompt_pattern",
+  "prompt_template": "فسّر نتائج جينومية: {data}. مخاطر، توصيات، طب شخصي.",
+  "category": "cat14_health",
+  "source": "built_in"
+}

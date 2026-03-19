@@ -1,0 +1,9 @@
+{
+  "name": "Youtube Channel",
+  "url": "https://www.youtube.com/channel/UCC-lyoTfSrcJzA1ab3APAgw",
+  "description": "Tool from langchain_tools",
+  "section": "LangChain Framework",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

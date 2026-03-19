@@ -1,0 +1,9 @@
+{
+  "name": "CopilotKit",
+  "url": "https://github.com/CopilotKit/CopilotKit",
+  "description": ": A framework for building custom AI Copilots 🤖 in-app AI chatbots, in-app AI Agents, & AI-powered Textareas ![GitHub Repo stars](https://img.shields.io/github/stars/CopilotKit/CopilotKit?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

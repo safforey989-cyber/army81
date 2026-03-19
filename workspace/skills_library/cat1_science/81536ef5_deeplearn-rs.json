@@ -1,0 +1,9 @@
+{
+  "name": "deeplearn-rs",
+  "url": "https://github.com/tedsta/deeplearn-rs",
+  "description": "deeplearn-rs provides simple networks that use matrix multiplication, addition, and ReLU under the MIT license.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

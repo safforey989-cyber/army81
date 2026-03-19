@@ -1,0 +1,9 @@
+{
+  "name": "EspNet",
+  "url": "https://github.com/espnet/espnet",
+  "description": "ESPnet is an end-to-end speech processing toolkit for tasks like speech recognition, translation, and enhancement, using PyTorch and Kaldi-style data processing.",
+  "section": "Speech Recognition",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "CI2Go",
+  "url": "https://github.com/ngs/ci2go",
+  "description": ": For https://circleci.com/",
+  "section": "Developer",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

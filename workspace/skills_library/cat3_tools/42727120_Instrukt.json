@@ -1,0 +1,9 @@
+{
+  "name": "Instrukt",
+  "url": "https://github.com/blob42/Instrukt",
+  "description": ": A fully-fledged AI environment in the terminal. Build, test and instruct agents. ![GitHub Repo stars](https://img.shields.io/github/stars/blob42/Instrukt?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

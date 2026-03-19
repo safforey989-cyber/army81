@@ -1,0 +1,9 @@
+{
+  "name": "Startpage",
+  "url": "https://www.startpage.com/",
+  "description": "The world’s most private search engine.",
+  "section": "[↑](#-table-of-contents) Privacy Focused Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

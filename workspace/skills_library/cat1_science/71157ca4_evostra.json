@@ -1,0 +1,9 @@
+{
+  "name": "evostra",
+  "url": "https://github.com/alirezamika/evostra",
+  "description": "A fast Evolution Strategy implementation in Python.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

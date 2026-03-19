@@ -1,0 +1,9 @@
+{
+  "name": "DeepSeek-Coder-v2-16|236B-MOE",
+  "url": "https://github.com/deepseek-ai/DeepSeek-Coder-V2",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

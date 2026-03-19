@@ -1,0 +1,9 @@
+{
+  "name": "MedinTux",
+  "url": "https://medintux.org/",
+  "description": "French Medical Practice Management System.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

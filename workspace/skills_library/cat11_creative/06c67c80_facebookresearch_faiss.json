@@ -1,0 +1,9 @@
+{
+  "name": "facebookresearch/faiss",
+  "url": "https://github.com/facebookresearch/faiss",
+  "description": ": A library for efficient similarity search and clustering of dense vectors",
+  "section": "Embeddings and Semantic Search",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

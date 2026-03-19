@@ -1,0 +1,9 @@
+{
+  "name": "W. Owen Redwood",
+  "url": "http://ww2.cs.fsu.edu/~redwood/",
+  "description": "and [Xiuwen Liu](http://www.cs.fsu.edu/~liux/). It covers a wide range of computer security topics, starting from Secure C Coding and Reverse Engineering to Penetration Testing, Exploitation and Web Application Hacking, both from the defensive and the offensive point of view.",
+  "section": "Security",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

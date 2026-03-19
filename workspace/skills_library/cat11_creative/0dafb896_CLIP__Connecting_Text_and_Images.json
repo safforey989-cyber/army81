@@ -1,0 +1,9 @@
+{
+  "name": "CLIP: Connecting Text and Images",
+  "url": "https://openai.com/blog/clip/",
+  "description": ": OpenAI's explanation on how CLIP works",
+  "section": "Papers Collection",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

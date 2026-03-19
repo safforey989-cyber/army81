@@ -1,0 +1,9 @@
+{
+  "name": "pinecone-io/canopy",
+  "url": "https://github.com/pinecone-io/canopy",
+  "description": ": Retrieval Augmented Generation (RAG) framework and context engine powered by Pinecone",
+  "section": "Retrieval-Augmented Generation (RAG)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

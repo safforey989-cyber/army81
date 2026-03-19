@@ -1,0 +1,9 @@
+{
+  "name": "Data Science Weekly",
+  "url": "https://www.datascienceweekly.org/",
+  "description": "Weekly News Blog",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

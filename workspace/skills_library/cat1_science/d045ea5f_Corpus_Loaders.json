@@ -1,0 +1,9 @@
+{
+  "name": "Corpus Loaders",
+  "url": "https://github.com/JuliaText/CorpusLoaders.jl",
+  "description": "A Julia package providing a variety of loaders for various NLP corpora.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

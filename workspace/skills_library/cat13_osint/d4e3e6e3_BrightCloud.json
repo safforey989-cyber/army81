@@ -1,0 +1,9 @@
+{
+  "name": "BrightCloud",
+  "url": "https://brightcloud.com/tools/url-ip-lookup.php",
+  "description": "Checks the reputation, category, and potential threats associated with a URL or IP address.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

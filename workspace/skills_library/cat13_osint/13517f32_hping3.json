@@ -1,0 +1,9 @@
+{
+  "name": "hping3",
+  "url": "https://github.com/antirez/hping",
+  "description": "Network tool able to send custom TCP/IP packets.",
+  "section": "Network Traffic Replay and Editing Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

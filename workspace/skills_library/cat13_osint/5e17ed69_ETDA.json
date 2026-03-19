@@ -1,0 +1,9 @@
+{
+  "name": "ETDA",
+  "url": "https://apt.etda.or.th/cgi-bin/listgroups.cgi",
+  "description": "Search for Threat Actor groups and their tools.",
+  "section": "[↑](#-threat-actor-search) Threat Actor Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

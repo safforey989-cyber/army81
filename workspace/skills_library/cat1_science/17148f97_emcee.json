@@ -1,0 +1,9 @@
+{
+  "name": "emcee",
+  "url": "https://github.com/dfm/emcee",
+  "description": "The Python ensemble sampling toolkit for affine-invariant MCMC.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "#tidytuesday",
+  "url": "https://github.com/rfordatascience/tidytuesday",
+  "description": "A weekly data project aimed at the R ecosystem.",
+  "section": "Tutorials",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

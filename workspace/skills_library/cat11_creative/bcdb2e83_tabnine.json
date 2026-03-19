@@ -1,0 +1,9 @@
+{
+  "name": "tabnine",
+  "url": "https://www.tabnine.com/",
+  "description": "Code faster with whole-line & full-function code completions.",
+  "section": "Coding Assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

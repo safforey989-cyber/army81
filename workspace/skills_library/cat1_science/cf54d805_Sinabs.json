@@ -1,0 +1,9 @@
+{
+  "name": "Sinabs",
+  "url": "https://github.com/synsense/sinabs",
+  "description": "A deep learning library for spiking neural networks which is based on PyTorch, focuses on fast training and supports inference on neuromorphic hardware.",
+  "section": "Spiking Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

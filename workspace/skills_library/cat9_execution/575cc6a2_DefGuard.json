@@ -1,0 +1,9 @@
+{
+  "name": "DefGuard",
+  "url": "https://defguard.net/",
+  "description": "True enterprise WireGuard with MFA/2FA and SSO. ([Source Code](https://github.com/DefGuard)) `Apache-2.0` `Rust`",
+  "section": "VPN",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

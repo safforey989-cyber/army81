@@ -1,0 +1,9 @@
+{
+  "name": "Tonic",
+  "url": "https://github.com/neuromorphs/tonic",
+  "description": "A library that makes downloading publicly available neuromorphic datasets a breeze and provides event-based data transformation/augmentation pipelines.",
+  "section": "Spiking Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

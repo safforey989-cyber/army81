@@ -1,0 +1,9 @@
+{
+  "name": "Delta",
+  "url": "https://github.com/rileytestut/Delta",
+  "description": ": Video game emulator for non-jailbroken devices (successor to GBA4iOS)",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

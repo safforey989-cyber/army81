@@ -1,0 +1,9 @@
+{
+  "name": "AgentVerse",
+  "url": "https://github.com/openbmb/agentverse",
+  "description": "Provides a flexible framework that simplifies the process of building custom multi-agent environments for LLMs ![GitHub Repo stars](https://img.shields.io/github/stars/openbmb/agentverse?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

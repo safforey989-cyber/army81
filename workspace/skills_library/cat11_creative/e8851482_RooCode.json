@@ -1,0 +1,9 @@
+{
+  "name": "RooCode",
+  "url": "https://github.com/RooCodeInc/Roo-Code",
+  "description": "An AI-powered autonomous coding agent integrated directly into VS Code. [#opensource](https://github.com/RooCodeInc/Roo-Code)",
+  "section": "Coding Assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

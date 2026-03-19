@@ -1,0 +1,9 @@
+{
+  "name": "Backprop",
+  "url": "https://github.com/backprop-ai/backprop",
+  "description": "Backprop makes it simple to use, finetune, and deploy state-of-the-art ML models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

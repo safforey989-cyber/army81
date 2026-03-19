@@ -1,0 +1,9 @@
+{
+  "name": "Langfuse",
+  "url": "https://langfuse.com/",
+  "description": ": Open source LLM engineering platform: Observability, metrics, evals, prompt management, playground, datasets. Integrates with LlamaIndex, Langchain, OpenAI SDK, LiteLLM, and more. [#opensource](https://github.com/langfuse/langfuse)",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

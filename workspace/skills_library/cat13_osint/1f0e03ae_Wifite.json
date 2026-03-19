@@ -1,0 +1,9 @@
+{
+  "name": "Wifite",
+  "url": "https://github.com/derv82/wifite",
+  "description": "Automated wireless attack tool.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

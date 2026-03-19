@@ -1,0 +1,9 @@
+{
+  "name": "J. Alex Halderman",
+  "url": "https://jhalderm.com/",
+  "description": "who has analyzed the security of Electronic Voting Machines in the [US](https://jhalderm.com/pub/papers/dcvoting-fc12.pdf) and [over](https://jhalderm.com/pub/papers/ivoting-ccs14.pdf) [seas](https://jhalderm.com/pub/papers/evm-ccs10.pdf).",
+  "section": "Security",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

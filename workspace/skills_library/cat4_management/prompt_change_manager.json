@@ -1,0 +1,7 @@
+{
+  "name": "change_manager",
+  "type": "prompt_pattern",
+  "prompt_template": "ضع خطة إدارة تغيير لـ {change}. شامل: التواصل، التدريب، المقاومة.",
+  "category": "cat4_management",
+  "source": "built_in"
+}

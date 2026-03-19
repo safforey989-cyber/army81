@@ -1,0 +1,9 @@
+{
+  "name": "The Data Science Handbook",
+  "url": "https://www.amazon.com/Data-Science-Handbook-Field-Cady/dp/1119092949",
+  "description": "Tool from data_science",
+  "section": "Books",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

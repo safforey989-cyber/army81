@@ -1,0 +1,9 @@
+{
+  "name": "AutomatedStockTrading-DeepQ-Learning",
+  "url": "https://github.com/sachink2010/AutomatedStockTrading-DeepQ-Learning",
+  "description": "Build a Deep Q-learning reinforcement agent model as automated trading robot.",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

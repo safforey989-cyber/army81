@@ -1,0 +1,9 @@
+{
+  "name": "Phoenix",
+  "url": "https://phoenix.arize.com",
+  "description": "Uncover insights, surface problems, monitor and fine tune your generative LLM, CV and tabular models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

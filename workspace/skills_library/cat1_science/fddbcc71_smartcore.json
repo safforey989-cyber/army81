@@ -1,0 +1,9 @@
+{
+  "name": "smartcore",
+  "url": "https://github.com/smartcorelib/smartcore",
+  "description": "\"The Most Advanced Machine Learning Library In Rust.\"",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

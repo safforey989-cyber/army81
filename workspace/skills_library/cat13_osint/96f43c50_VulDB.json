@@ -1,0 +1,9 @@
+{
+  "name": "VulDB",
+  "url": "https://vuldb.com",
+  "description": "Independent vulnerability database with user community, exploit details, and additional meta data (e.g. CPE, CVSS, CWE)",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Jupyter Notebooks",
+  "url": "https://github.com/fastai/fastai/tree/master/courses/ml1",
+  "description": "Tool from cs_courses",
+  "section": "Machine Learning",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

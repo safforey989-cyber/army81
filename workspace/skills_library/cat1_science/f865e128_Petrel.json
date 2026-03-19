@@ -1,0 +1,9 @@
+{
+  "name": "Petrel",
+  "url": "https://github.com/AirSage/Petrel",
+  "description": "Tools for writing, submitting, debugging, and monitoring Storm topologies in pure Python.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

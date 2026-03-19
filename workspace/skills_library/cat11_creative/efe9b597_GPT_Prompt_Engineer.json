@@ -1,0 +1,9 @@
+{
+  "name": "GPT Prompt Engineer",
+  "url": "https://github.com/mshumer/gpt-prompt-engineer",
+  "description": "Automated prompt engineering. It generates, tests, and ranks prompts to find the best ones.",
+  "section": "Autonomous agents",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

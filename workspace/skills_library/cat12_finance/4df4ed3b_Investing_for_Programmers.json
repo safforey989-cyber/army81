@@ -1,0 +1,9 @@
+{
+  "name": "Investing for Programmers",
+  "url": "https://www.manning.com/books/investing-for-programmers",
+  "description": "A book about maximizing your portfolio, analyzing markets, and making data-driven investment decisions using Python and generative AI",
+  "section": "Courses & Books & Blogs",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

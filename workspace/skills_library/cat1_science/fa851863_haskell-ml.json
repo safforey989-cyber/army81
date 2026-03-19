@@ -1,0 +1,9 @@
+{
+  "name": "haskell-ml",
+  "url": "https://github.com/ajtulloch/haskell-ml",
+  "description": "Haskell implementations of various ML algorithms. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

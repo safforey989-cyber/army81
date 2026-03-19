@@ -1,0 +1,9 @@
+{
+  "name": "LLM Evaluation",
+  "url": "https://llm-eval.github.io/",
+  "description": ": research on evaluation of LLMs conducted by Microsoft Research and other collaborated institutes. (Updated at: 2023/10)",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

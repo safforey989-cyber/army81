@@ -1,0 +1,9 @@
+{
+  "name": "Synthea Patient Generator",
+  "url": "https://github.com/synthetichealth/synthea",
+  "description": "Synthetic patient generator that models the medical history of synthetic patients.",
+  "section": "Data",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

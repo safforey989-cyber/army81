@@ -1,0 +1,9 @@
+{
+  "name": "OpenScribe",
+  "url": "https://github.com/sammargolis/OpenScribe",
+  "description": "Open source, local-first medical scribe platform for recording clinical encounters, transcribing audio, and generating structured draft clinical notes.",
+  "section": "Scribe",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

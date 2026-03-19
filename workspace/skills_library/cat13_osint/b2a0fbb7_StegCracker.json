@@ -1,0 +1,9 @@
+{
+  "name": "StegCracker",
+  "url": "https://github.com/Paradoxis/StegCracker",
+  "description": "Steganography brute-force utility to uncover hidden data inside files.",
+  "section": "Steganography Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

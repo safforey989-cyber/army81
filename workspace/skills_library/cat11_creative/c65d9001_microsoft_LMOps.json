@@ -1,0 +1,9 @@
+{
+  "name": "microsoft/LMOps",
+  "url": "https://github.com/microsoft/LMOps",
+  "description": ": General technology for enabling AI capabilities w/ LLMs and MLLMs",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

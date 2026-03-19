@@ -1,0 +1,9 @@
+{
+  "name": "Llama Hub",
+  "url": "https://llamahub.ai/",
+  "description": ": a repository of data loaders for LlamaIndex (GPT Index) and LangChain",
+  "section": "Embeddings and Semantic Search",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

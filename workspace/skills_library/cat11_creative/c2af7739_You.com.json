@@ -1,0 +1,9 @@
+{
+  "name": "You.com",
+  "url": "https://you.com/",
+  "description": "A search engine built on AI that provides users with a customized search experience while keeping their data 100% private.",
+  "section": "Search engines",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

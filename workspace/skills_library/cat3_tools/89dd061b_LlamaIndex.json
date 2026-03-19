@@ -1,0 +1,9 @@
+{
+  "name": "LlamaIndex",
+  "url": "https://github.com/jerryjliu/llama_index",
+  "description": ": provides a central interface to connect your LLM's with external data. ![GitHub Repo stars](https://img.shields.io/github/stars/jerryjliu/llama_index?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

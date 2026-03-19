@@ -1,0 +1,9 @@
+{
+  "name": "OLMo 1B",
+  "url": "https://huggingface.co/allenai/OLMo-1B",
+  "description": ", [OLMo 7B](https://huggingface.co/allenai/OLMo-7B), [OLMo 7B Twin 2T](https://huggingface.co/allenai/OLMo-7B-Twin-2T) | [AI2](https://blog.allenai.org/hello-olmo-a-truly-open-llm-43f7e7359222) | 1,7 | [2048](https://huggingface.co/allenai/OLMo-7B-Twin-2T/blob/main/config.json) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

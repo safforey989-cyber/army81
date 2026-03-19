@@ -1,0 +1,9 @@
+{
+  "name": "ImapSync",
+  "url": "http://imapsync.lamiral.info/",
+  "description": "Simple IMAP migration tool for copying mailboxes to other servers. ([Source Code](https://github.com/imapsync/imapsync)) `NLPL` `Perl`",
+  "section": "Mail Clients",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

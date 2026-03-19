@@ -1,0 +1,9 @@
+{
+  "name": "Alpaca",
+  "url": "https://www.getalpaca.io/",
+  "description": "Stable Diffusion Photoshop plugin.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "duplicut",
+  "url": "https://github.com/nil0x42/duplicut",
+  "description": "Quickly remove duplicates, without changing the order, and without getting OOM on huge wordlists.",
+  "section": "Hash Cracking Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "cState",
+  "url": "https://cstate.netlify.app/",
+  "description": "Static status page for hyperfast Hugo. Clean design, minimal JS, super light HTML/CSS, high customization, optional admin panel, read-only API, IE8+. ([Demo](https://cstate.mnts.lt/), [Source Code](https://github.com/cstate/cstate))",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

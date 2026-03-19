@@ -1,0 +1,9 @@
+{
+  "name": "Hybrid Recommender System",
+  "url": "https://github.com/SeniorSA/hybrid-rs-trainner",
+  "description": "A hybrid recommender system based upon scikit-learn algorithms. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

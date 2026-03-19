@@ -1,0 +1,9 @@
+{
+  "name": "YCML",
+  "url": "https://github.com/yconst/YCML",
+  "description": "A Machine Learning framework for Objective-C and Swift (OS X / iOS).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

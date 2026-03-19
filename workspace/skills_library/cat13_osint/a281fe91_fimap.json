@@ -1,0 +1,9 @@
+{
+  "name": "fimap",
+  "url": "https://github.com/kurobeats/fimap",
+  "description": "Find, prepare, audit, exploit and even Google automatically for LFI/RFI bugs.",
+  "section": "Web file inclusion tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

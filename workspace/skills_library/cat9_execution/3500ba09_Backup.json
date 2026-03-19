@@ -1,0 +1,9 @@
+{
+  "name": "Backup",
+  "url": "https://en.wikipedia.org/wiki/Backup",
+  "description": "software.",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

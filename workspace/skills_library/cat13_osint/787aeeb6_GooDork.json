@@ -1,0 +1,9 @@
+{
+  "name": "GooDork",
+  "url": "https://github.com/k3170makan/GooDork",
+  "description": "Command line Google dorking tool.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

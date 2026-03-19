@@ -1,0 +1,9 @@
+{
+  "name": "Haystack",
+  "url": "https://github.com/deepset-ai/haystack",
+  "description": ": framework for building applications with LLMs and Transformers (e.g. agents, semantic search, question-answering)",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

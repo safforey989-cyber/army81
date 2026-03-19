@@ -1,0 +1,9 @@
+{
+  "name": "GaussianMixtures",
+  "url": "https://github.com/davidavdav/GaussianMixtures.jl",
+  "description": "Large scale Gaussian Mixture Models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

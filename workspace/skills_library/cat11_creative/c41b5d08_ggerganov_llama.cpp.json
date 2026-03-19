@@ -1,0 +1,9 @@
+{
+  "name": "ggerganov/llama.cpp",
+  "url": "https://github.com/ggerganov/llama.cpp",
+  "description": ": Port of Facebook's LLaMA model in C/C++",
+  "section": "Running LLMs Locally",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

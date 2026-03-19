@@ -1,0 +1,9 @@
+{
+  "name": "RestGPT",
+  "url": "https://github.com/Yifan-Song793/RestGPT",
+  "description": ": An LLM-based autonomous agent controlling real-world applications via RESTful APIs ![GitHub Repo stars](https://img.shields.io/github/stars/Yifan-Song793/RestGPT?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

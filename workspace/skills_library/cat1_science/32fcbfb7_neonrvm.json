@@ -1,0 +1,9 @@
+{
+  "name": "neonrvm",
+  "url": "https://github.com/siavashserver/neonrvm",
+  "description": "neonrvm is an open source machine learning library based on RVM technique. It's written in C programming language and comes with Python programming language bindings.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

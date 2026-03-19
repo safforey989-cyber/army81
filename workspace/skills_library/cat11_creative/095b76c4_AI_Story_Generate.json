@@ -1,0 +1,9 @@
+{
+  "name": "AI Story Generate",
+  "url": "https://aistorygenerate.com",
+  "description": ": Generate stories using LLM with custom emotion, genre, and word count.",
+  "section": "Text-related Generative Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

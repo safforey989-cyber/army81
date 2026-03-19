@@ -1,0 +1,9 @@
+{
+  "name": "Spinning Up",
+  "url": "https://spinningup.openai.com",
+  "description": "An educational resource designed to let anyone learn to become a skilled practitioner in deep reinforcement learning",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

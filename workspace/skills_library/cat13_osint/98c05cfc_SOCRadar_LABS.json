@@ -1,0 +1,9 @@
+{
+  "name": "SOCRadar LABS",
+  "url": "https://socradar.io/labs/threat-actor/",
+  "description": "Know threat actor tactics, techniques, and past activities. Access detailed profiles and track their activities.Keep up with the latest threats and Tactics, Techniques, and Procedures (TTPs).",
+  "section": "[↑](#-threat-actor-search) Threat Actor Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

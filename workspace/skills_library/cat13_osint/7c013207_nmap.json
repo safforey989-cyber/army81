@@ -1,0 +1,9 @@
+{
+  "name": "nmap",
+  "url": "https://nmap.org/",
+  "description": "Free security scanner for network exploration & security audits.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

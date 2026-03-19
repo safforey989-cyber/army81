@@ -1,0 +1,9 @@
+{
+  "name": "cms-explorer",
+  "url": "https://code.google.com/archive/p/cms-explorer/",
+  "description": "Reveal the specific modules, plugins, components and themes that various websites powered by content management systems are running.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

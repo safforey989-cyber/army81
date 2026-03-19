@@ -1,0 +1,9 @@
+{
+  "name": "DeltaUI",
+  "url": "https://github.com/ericlewis/DeltaUI",
+  "description": ": SwiftUI + CoreData user interface for DeltaCore & Friends",
+  "section": "Core Data",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

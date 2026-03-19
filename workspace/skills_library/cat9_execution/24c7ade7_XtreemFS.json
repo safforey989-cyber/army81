@@ -1,0 +1,9 @@
+{
+  "name": "XtreemFS",
+  "url": "https://www.xtreemfs.org/",
+  "description": "Distributed, replicated and fault-tolerant file system for federated IT infrastructures.. ([Source Code](https://github.com/xtreemfs/xtreemfs)) `BSD-3-Clause` `Java`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

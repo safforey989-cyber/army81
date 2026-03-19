@@ -1,0 +1,9 @@
+{
+  "name": "Microsoft Recommenders",
+  "url": "https://github.com/Microsoft/Recommenders",
+  "description": ": Examples and best practices for building recommendation systems, provided as Jupyter notebooks. The repo contains some of the latest state of the art algorithms from Microsoft Research as well as from other companies and institutions.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

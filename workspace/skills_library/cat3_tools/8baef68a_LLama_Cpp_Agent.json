@@ -1,0 +1,9 @@
+{
+  "name": "LLama Cpp Agent",
+  "url": "https://github.com/Maximilian-Winter/llama-cpp-agent",
+  "description": ": The llama-cpp-agent framework is a tool designed for easy interaction with Large Language Models ![GitHub Repo stars](https://img.shields.io/github/stars/Maximilian-Winter/llama-cpp-agent?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

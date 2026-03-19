@@ -1,0 +1,9 @@
+{
+  "name": "tch-rs",
+  "url": "https://github.com/LaurentMazare/tch-rs",
+  "description": "Rust bindings for the C++ API of PyTorch",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

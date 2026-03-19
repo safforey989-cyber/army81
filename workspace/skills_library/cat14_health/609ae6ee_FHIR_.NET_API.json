@@ -1,0 +1,9 @@
+{
+  "name": "FHIR .NET API",
+  "url": "https://github.com/FirelyTeam/firely-net-sdk",
+  "description": "The official .NET API for HL7 FHIR.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

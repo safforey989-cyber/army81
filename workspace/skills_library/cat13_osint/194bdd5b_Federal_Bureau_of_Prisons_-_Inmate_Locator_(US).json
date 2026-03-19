@@ -1,0 +1,9 @@
+{
+  "name": "Federal Bureau of Prisons - Inmate Locator (US)",
+  "url": "http://www.bop.gov/inmateloc",
+  "description": "](http://www.bop.gov/inmateloc) - Search federal inmates incarcerated from 1982 to the present.",
+  "section": "[↑](#-table-of-contents) People Investigations",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

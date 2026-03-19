@@ -1,0 +1,9 @@
+{
+  "name": "Python HL7",
+  "url": "https://github.com/johnpaulett/python-hl7",
+  "description": "Simple library for parsing messages of HL7 version 2.x into Python objects.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

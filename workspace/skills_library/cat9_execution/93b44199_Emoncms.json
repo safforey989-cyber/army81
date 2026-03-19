@@ -1,0 +1,9 @@
+{
+  "name": "Emoncms",
+  "url": "https://github.com/emoncms/emoncms-ios",
+  "description": ": Emoncms dashboard",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

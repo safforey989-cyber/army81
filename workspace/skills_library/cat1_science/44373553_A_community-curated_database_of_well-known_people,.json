@@ -1,0 +1,9 @@
+{
+  "name": "A community-curated database of well-known people, places, and things",
+  "url": "https://developers.google.com/freebase/",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

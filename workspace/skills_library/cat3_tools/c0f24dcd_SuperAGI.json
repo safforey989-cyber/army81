@@ -1,0 +1,9 @@
+{
+  "name": "SuperAGI",
+  "url": "https://github.com/TransformerOptimus/SuperAGI",
+  "description": ": SuperAGI - A dev-first open source autonomous AI agent framework ![GitHub Repo stars](https://img.shields.io/github/stars/TransformerOptimus/SuperAGI?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "microsoft/LoRA",
+  "url": "https://github.com/microsoft/LoRA",
+  "description": ": Code for loralib, an implementation of \"LoRA: Low-Rank Adaptation of Large Language Models\"s",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

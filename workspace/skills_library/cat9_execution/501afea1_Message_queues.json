@@ -1,0 +1,9 @@
+{
+  "name": "Message queues",
+  "url": "https://en.wikipedia.org/wiki/Message_queue",
+  "description": "and [message broker](https://en.wikipedia.org/wiki/Message_broker) software, typically used for inter-process communication (IPC), or for inter-thread communication within the same process.",
+  "section": "Queuing",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

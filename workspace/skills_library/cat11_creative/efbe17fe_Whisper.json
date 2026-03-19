@@ -1,0 +1,9 @@
+{
+  "name": "Whisper",
+  "url": "https://openai.com/index/whisper/",
+  "description": "Robust speech recognition via large-scale weak supervision. [#opensource](https://github.com/openai/whisper)",
+  "section": "Speech-to-text",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

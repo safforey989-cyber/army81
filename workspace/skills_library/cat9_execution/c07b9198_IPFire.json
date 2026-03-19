@@ -1,0 +1,9 @@
+{
+  "name": "IPFire",
+  "url": "https://www.ipfire.org/",
+  "description": "Free network firewall distribution, based on the Linux operating system with easy-to-use web management console. ([Source Code](https://github.com/ipfire/ipfire-2.x)) `GPL-2.0` `Shell/PHP/Other`",
+  "section": "Router",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

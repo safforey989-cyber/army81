@@ -1,0 +1,9 @@
+{
+  "name": "urlscan",
+  "url": "https://urlscan.io/",
+  "description": "is a free service to scan and analyse websites.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "PHP-ML",
+  "url": "https://gitlab.com/php-ai/php-ml",
+  "description": "Machine Learning library for PHP. Algorithms, Cross Validation, Neural Network, Preprocessing, Feature Extraction and much more in one library.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

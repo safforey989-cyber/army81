@@ -1,0 +1,9 @@
+{
+  "name": "Alerta",
+  "url": "https://alerta.io/",
+  "description": "Distributed, scalable and flexible monitoring system. ([Source Code](https://github.com/alerta/alerta)) `Apache-2.0` `Python`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

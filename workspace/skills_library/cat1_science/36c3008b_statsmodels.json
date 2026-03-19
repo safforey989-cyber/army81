@@ -1,0 +1,9 @@
+{
+  "name": "statsmodels",
+  "url": "https://github.com/statsmodels/statsmodels",
+  "description": "Statistical modelling and econometrics in Python.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

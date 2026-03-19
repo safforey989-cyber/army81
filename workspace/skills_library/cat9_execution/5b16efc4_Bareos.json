@@ -1,0 +1,9 @@
+{
+  "name": "Bareos",
+  "url": "https://www.bareos.org/",
+  "description": "Cross-network backup solution which preserves, archives, and recovers data from all major operating systems. ([Source Code](https://github.com/bareos/bareos)) `AGPL-3.0` `C++/C`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

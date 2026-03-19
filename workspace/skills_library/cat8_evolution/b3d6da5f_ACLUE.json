@@ -1,0 +1,9 @@
+{
+  "name": "ACLUE",
+  "url": "https://github.com/isen-zhang/ACLUE",
+  "description": "an evaluation benchmark focused on ancient Chinese language comprehension.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

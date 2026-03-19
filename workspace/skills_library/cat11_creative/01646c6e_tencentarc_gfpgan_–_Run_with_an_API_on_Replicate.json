@@ -1,0 +1,9 @@
+{
+  "name": "tencentarc/gfpgan – Run with an API on Replicate",
+  "url": "https://replicate.com/tencentarc/gfpgan",
+  "description": "Tool from generative_ai",
+  "section": "Stable Diffusion Deployed Web Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

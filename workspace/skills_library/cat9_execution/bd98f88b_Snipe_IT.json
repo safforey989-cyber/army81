@@ -1,0 +1,9 @@
+{
+  "name": "Snipe IT",
+  "url": "https://snipeitapp.com/",
+  "description": "Asset & license management software. ([Source Code](https://github.com/snipe/snipe-it)) `AGPL-3.0` `PHP`",
+  "section": "IT Asset Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

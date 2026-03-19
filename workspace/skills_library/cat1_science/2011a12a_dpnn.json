@@ -1,0 +1,9 @@
+{
+  "name": "dpnn",
+  "url": "https://github.com/Element-Research/dpnn",
+  "description": "Many useful features that aren't part of the main nn package.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

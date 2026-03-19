@@ -1,0 +1,9 @@
+{
+  "name": "Map/Reduce implementations of common ML algorithms",
+  "url": "https://github.com/Yannael/BigDataAnalytics_INFOH515",
+  "description": ": Jupyter notebooks that cover how to implement from scratch different ML algorithms (ordinary least squares, gradient descent, k-means, alternating least squares), using Python NumPy, and how to then make these implementations scalable using Map/Reduce and Spark.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

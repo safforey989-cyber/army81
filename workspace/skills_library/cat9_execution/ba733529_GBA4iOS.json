@@ -1,0 +1,9 @@
+{
+  "name": "GBA4iOS",
+  "url": "https://bitbucket.org/rileytestut/gba4ios/",
+  "description": ": Gameboy, Gameboy Color & Gameboy Advance emulator",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

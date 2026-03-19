@@ -1,0 +1,9 @@
+{
+  "name": "Yi-1.5-6B",
+  "url": "https://huggingface.co/01-ai/Yi-1.5-6B",
+  "description": ", [Yi-1.5-6B-Chat](https://huggingface.co/01-ai/Yi-1.5-6B-Chat), [Yi-1.5-9B](https://huggingface.co/01-ai/Yi-1.5-9B), [Yi-1.5-9B-Chat](https://huggingface.co/01-ai/Yi-1.5-9B-Chat), [Yi-1.5-34B](https://huggingface.co/01-ai/Yi-1.5-34B), [Yi-1.5-34B-Chat](https://huggingface.co/01-ai/Yi-1.5-34B-Chat) ",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

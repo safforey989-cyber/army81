@@ -1,0 +1,9 @@
+{
+  "name": "Kedro",
+  "url": "https://github.com/kedro-org/kedro",
+  "description": "| Open-source Python framework for creating reproducible, maintainable data science code |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

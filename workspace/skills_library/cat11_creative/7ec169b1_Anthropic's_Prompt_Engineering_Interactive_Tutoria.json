@@ -1,0 +1,9 @@
+{
+  "name": "Anthropic's Prompt Engineering Interactive Tutorial",
+  "url": "https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial",
+  "description": "Tool from generative_ai",
+  "section": "Prompt Engineering",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

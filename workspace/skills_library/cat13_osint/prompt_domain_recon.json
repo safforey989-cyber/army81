@@ -1,0 +1,7 @@
+{
+  "name": "domain_recon",
+  "type": "prompt_pattern",
+  "prompt_template": "استطلاع {domain}. WHOIS, DNS, subdomains, technologies, emails.",
+  "category": "cat13_osint",
+  "source": "built_in"
+}

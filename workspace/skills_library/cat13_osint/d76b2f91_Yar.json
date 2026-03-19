@@ -1,0 +1,9 @@
+{
+  "name": "Yar",
+  "url": "https://github.com/Furduhlutur/yar",
+  "description": "Clone git repositories to search through the whole commit history in order of commit time for secrets, tokens, or passwords.",
+  "section": "Source code repository searching tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

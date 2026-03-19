@@ -1,0 +1,9 @@
+{
+  "name": "PhotoRoom",
+  "url": "https://www.photoroom.com/",
+  "description": "Create product and portrait pictures using only your phone. Remove background, change background and showcase products.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

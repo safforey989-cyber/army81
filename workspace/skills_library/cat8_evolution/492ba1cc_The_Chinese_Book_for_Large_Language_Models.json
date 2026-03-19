@@ -1,0 +1,9 @@
+{
+  "name": "The Chinese Book for Large Language Models",
+  "url": "http://aibox.ruc.edu.cn/zws/index.htm",
+  "description": "An Introductory LLM Textbook Based on [*A Survey of Large Language Models*](https://arxiv.org/abs/2303.18223).",
+  "section": "LLM Books",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Julia Data",
+  "url": "https://github.com/nfoti/JuliaData",
+  "description": "library for working with tabular data in Julia. **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

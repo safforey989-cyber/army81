@@ -1,0 +1,9 @@
+{
+  "name": "Pythia-1|1.4|2.8|6.9|12B",
+  "url": "https://github.com/EleutherAI/pythia",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

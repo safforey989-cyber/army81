@@ -1,0 +1,9 @@
+{
+  "name": "MetaDefender",
+  "url": "https://metadefender.com",
+  "description": "Threat analysis service for URLs, files, certificates, domains, and suspicious hashes.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

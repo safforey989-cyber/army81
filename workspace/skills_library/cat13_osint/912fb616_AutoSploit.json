@@ -1,0 +1,9 @@
+{
+  "name": "AutoSploit",
+  "url": "https://github.com/NullArray/AutoSploit",
+  "description": "Automated mass exploiter, which collects target by employing the Shodan.io API and programmatically chooses Metasploit exploit modules based on the Shodan query.",
+  "section": "Multi-paradigm Frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

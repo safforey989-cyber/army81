@@ -1,0 +1,9 @@
+{
+  "name": "Awesome GPT-3",
+  "url": "https://github.com/elyase/awesome-gpt3",
+  "description": "a collection of demos and articles about the [OpenAI GPT-3 API](https://openai.com/blog/openai-api/).",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

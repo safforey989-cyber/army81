@@ -1,0 +1,9 @@
+{
+  "name": "mexopencv",
+  "url": "https://kyamagu.github.io/mexopencv/",
+  "description": "Collection and a development kit of MATLAB mex functions for OpenCV library.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

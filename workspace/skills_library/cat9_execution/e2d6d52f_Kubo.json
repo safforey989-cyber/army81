@@ -1,0 +1,9 @@
+{
+  "name": "Kubo",
+  "url": "https://github.com/ipfs/kubo",
+  "description": "Implementation of IPFS, a global, versioned, peer-to-peer filesystem that seeks to connect all computing devices with the same system of files. `Apache-2.0/MIT` `Go`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

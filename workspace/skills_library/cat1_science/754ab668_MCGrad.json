@@ -1,0 +1,9 @@
+{
+  "name": "MCGrad",
+  "url": "https://github.com/facebookincubator/MCGrad/",
+  "description": "A production-ready library for multicalibration, fairness, and bias correction in machine learning models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

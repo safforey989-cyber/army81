@@ -1,0 +1,9 @@
+{
+  "name": "PigPen",
+  "url": "https://github.com/Netflix/PigPen",
+  "description": "Map-Reduce for Clojure.",
+  "section": "Data Analysis",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

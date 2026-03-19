@@ -1,0 +1,9 @@
+{
+  "name": "GauGAN2",
+  "url": "http://gaugan.org/gaugan2/",
+  "description": "GauGAN2 is a robust tool for creating photorealistic art using a combination of words and drawings since it integrates segmentation mapping, inpainting, and text-to-image production in a single model.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Podcasts",
+  "url": "https://github.com/albertopeam/Podcasts",
+  "description": ": Shows a list of podcasts that can be played, fetched from listennotes",
+  "section": "SwiftUI",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

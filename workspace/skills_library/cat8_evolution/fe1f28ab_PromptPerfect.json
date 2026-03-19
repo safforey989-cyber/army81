@@ -1,0 +1,9 @@
+{
+  "name": "PromptPerfect",
+  "url": "https://promptperfect.jina.ai/prompts",
+  "description": "A paid product for testing and improving prompts.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

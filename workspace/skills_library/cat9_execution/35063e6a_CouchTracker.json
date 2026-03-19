@@ -1,0 +1,9 @@
+{
+  "name": "CouchTracker",
+  "url": "https://github.com/pietrocaselani/CouchTracker",
+  "description": ": Keep track of your favorite TV shows & movies using Trakt",
+  "section": "Content",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

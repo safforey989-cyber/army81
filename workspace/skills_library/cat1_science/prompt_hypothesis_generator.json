@@ -1,0 +1,7 @@
+{
+  "name": "hypothesis_generator",
+  "type": "prompt_pattern",
+  "prompt_template": "بناءً على البيانات التالية: {data}، اقترح 5 فرضيات قابلة للاختبار.",
+  "category": "cat1_science",
+  "source": "built_in"
+}

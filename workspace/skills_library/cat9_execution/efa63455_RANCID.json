@@ -1,0 +1,9 @@
+{
+  "name": "RANCID",
+  "url": "https://www.shrubbery.net/rancid/",
+  "description": "Monitor network devices configuration and maintain history of changes. ([Source Code](https://github.com/haussli/rancid)) `BSD-3-Clause` `Perl/Shell`",
+  "section": "Network Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

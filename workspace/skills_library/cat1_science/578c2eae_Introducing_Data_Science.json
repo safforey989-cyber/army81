@@ -1,0 +1,9 @@
+{
+  "name": "Introducing Data Science",
+  "url": "https://www.manning.com/books/introducing-data-science",
+  "description": "Tool from data_science",
+  "section": "Books",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

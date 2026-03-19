@@ -1,0 +1,9 @@
+{
+  "name": "Wappalyzer",
+  "url": "https://www.wappalyzer.com/",
+  "description": "Wappalyzer uncovers the technologies used on websites.",
+  "section": "Web application and resource analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

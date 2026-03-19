@@ -1,0 +1,9 @@
+{
+  "name": "FHIRModels",
+  "url": "https://github.com/apple/FHIRModels",
+  "description": "FHIRModels is a Swift library for FHIR resource data models.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

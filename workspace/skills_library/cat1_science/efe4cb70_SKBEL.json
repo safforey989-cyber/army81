@@ -1,0 +1,9 @@
+{
+  "name": "SKBEL",
+  "url": "https://github.com/robinthibaut/skbel",
+  "description": ": A Python library for Bayesian Evidential Learning (BEL) in order to estimate the uncertainty of a prediction.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

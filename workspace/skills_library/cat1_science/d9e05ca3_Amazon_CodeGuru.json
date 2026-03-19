@@ -1,0 +1,9 @@
+{
+  "name": "Amazon CodeGuru",
+  "url": "https://aws.amazon.com/codeguru/",
+  "description": "| Automate code reviews and optimize application performance with ML-powered recommendations.|",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

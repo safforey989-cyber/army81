@@ -1,0 +1,9 @@
+{
+  "name": "Responder",
+  "url": "https://github.com/SpiderLabs/Responder",
+  "description": "Link-Local Multicast Name Resolution (LLMNR), NBT-NS, and mDNS poisoner.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

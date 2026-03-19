@@ -1,0 +1,9 @@
+{
+  "name": "incremental approach to compiler design",
+  "url": "http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf",
+  "description": ", this course teaches how to build a compiler in OCaml",
+  "section": "Programming Languages / Compilers",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

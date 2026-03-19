@@ -1,0 +1,9 @@
+{
+  "name": "Kaggle Stackoverflow",
+  "url": "https://github.com/zygmuntz/kaggle-stackoverflow",
+  "description": "Predicting closed questions on Stack Overflow.",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

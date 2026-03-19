@@ -1,0 +1,9 @@
+{
+  "name": "Mustango",
+  "url": "https://huggingface.co/spaces/declare-lab/mustango",
+  "description": ": \"Toward Controllable Text-to-Music Generation\"",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "The official portal for European data",
+  "url": "https://data.europa.eu/en",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "enlighten-integration",
+  "url": "https://github.com/sassoftware/enlighten-integration",
+  "description": "Example code and materials that illustrate techniques for integrating SAS with other analytics technologies in Java, PMML, Python and R.",
+  "section": "Demos and Scripts",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

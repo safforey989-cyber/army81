@@ -1,0 +1,9 @@
+{
+  "name": "Cedar",
+  "url": "https://github.com/mitre/cedar",
+  "description": "Open source tool for testing the strength of Electronic Clinical Quality Measure.",
+  "section": "Data",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

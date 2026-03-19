@@ -1,0 +1,9 @@
+{
+  "name": "Rsnapshot",
+  "url": "https://rsnapshot.org/",
+  "description": "Filesystem snapshot utility based on rsync. ([Source Code](https://github.com/rsnapshot/rsnapshot)) `GPL-2.0` `Perl`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

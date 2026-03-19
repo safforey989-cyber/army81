@@ -1,0 +1,9 @@
+{
+  "name": "VALL-E",
+  "url": "https://valle-demo.github.io/",
+  "description": ": synthesize high-quality personalized speech with only a 3-second samples",
+  "section": "Text-to-speech (TTS) and avatars",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

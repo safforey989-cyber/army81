@@ -1,0 +1,9 @@
+{
+  "name": "keras-contrib",
+  "url": "https://github.com/keras-team/keras-contrib",
+  "description": "Tool from data_science",
+  "section": "Keras Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

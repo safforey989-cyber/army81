@@ -1,0 +1,7 @@
+{
+  "name": "project_planner",
+  "type": "prompt_pattern",
+  "prompt_template": "ضع خطة مشروع لـ {project}. شامل: مراحل، مهام، موارد، مخاطر، جدول زمني.",
+  "category": "cat4_management",
+  "source": "built_in"
+}

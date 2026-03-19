@@ -1,0 +1,9 @@
+{
+  "name": "Stephen Boyd",
+  "url": "http://stanford.edu/~boyd/",
+  "description": "and [Lieven Vandenberghe](http://www.seas.ucla.edu/~vandenbe/) are currently writing. Students will use a new language called [Julia](http://julialang.org/) to do computations with matrices and vectors.",
+  "section": "Machine Learning",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

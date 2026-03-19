@@ -1,0 +1,9 @@
+{
+  "name": "tplmap",
+  "url": "https://github.com/epinna/tplmap",
+  "description": "Automatic server-side template injection and Web server takeover tool.",
+  "section": "Web injection tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

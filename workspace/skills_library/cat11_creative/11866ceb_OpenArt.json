@@ -1,0 +1,9 @@
+{
+  "name": "OpenArt",
+  "url": "https://openart.ai/",
+  "description": "Search 10M+ of prompts, and generate AI art via Stable Diffusion, DALL·E 2.",
+  "section": "Image libraries",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

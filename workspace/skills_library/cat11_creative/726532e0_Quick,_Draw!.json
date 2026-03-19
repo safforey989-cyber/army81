@@ -1,0 +1,9 @@
+{
+  "name": "Quick, Draw!",
+  "url": "https://quickdraw.withgoogle.com/",
+  "description": ": can a neural network learn to recognize doodling? A game to help NL by adding users drawing",
+  "section": "Online Tools and Applications",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

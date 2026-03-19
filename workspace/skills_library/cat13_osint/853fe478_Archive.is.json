@@ -1,0 +1,9 @@
+{
+  "name": "Archive.is",
+  "url": "http://archive.is",
+  "description": "is a website that allows you to archive a snapshot of you websites that will always remains online evenif the original page disappears.",
+  "section": "[↑](#-table-of-contents) Web History and Website Capture",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

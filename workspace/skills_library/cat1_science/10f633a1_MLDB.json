@@ -1,0 +1,9 @@
+{
+  "name": "MLDB",
+  "url": "https://mldb.ai",
+  "description": "The Machine Learning Database is a database designed for machine learning. Send it commands over a RESTful API to store data, explore it using SQL, then train machine learning models and expose them as APIs.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

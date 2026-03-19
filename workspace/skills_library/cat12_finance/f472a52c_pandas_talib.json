@@ -1,0 +1,9 @@
+{
+  "name": "pandas_talib",
+  "url": "https://github.com/femtotrader/pandas_talib",
+  "description": "A Python Pandas implementation of technical analysis indicators.",
+  "section": "TA Lib",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

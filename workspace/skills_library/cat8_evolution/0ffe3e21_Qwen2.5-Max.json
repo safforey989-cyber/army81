@@ -1,0 +1,9 @@
+{
+  "name": "Qwen2.5-Max",
+  "url": "https://qwenlm.github.io/blog/qwen2.5-max/",
+  "description": "Exploring the Intelligence of Large-scale MoE Model.",
+  "section": "Trending LLM Projects",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

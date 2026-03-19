@@ -1,0 +1,9 @@
+{
+  "name": "Public Git Archive",
+  "url": "https://github.com/src-d/datasets/tree/master/PublicGitArchive",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

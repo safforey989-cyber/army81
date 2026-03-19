@@ -1,0 +1,9 @@
+{
+  "name": "Stable Horde",
+  "url": "https://stablehorde.net/",
+  "description": "A crowdsourced distributed cluster of Stable Diffusion workers.",
+  "section": "Stable Diffusion resources",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

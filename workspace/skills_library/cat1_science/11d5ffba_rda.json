@@ -1,0 +1,9 @@
+{
+  "name": "rda",
+  "url": "https://cran.r-project.org/web/packages/rda/index.html",
+  "description": "rda: Shrunken Centroids Regularized Discriminant Analysis.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

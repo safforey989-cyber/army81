@@ -1,0 +1,9 @@
+{
+  "name": "dcm4che",
+  "url": "https://www.dcm4che.org/",
+  "description": "Clinical Image and Object Management.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

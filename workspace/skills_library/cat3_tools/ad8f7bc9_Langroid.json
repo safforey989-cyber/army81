@@ -1,0 +1,9 @@
+{
+  "name": "Langroid",
+  "url": "https://github.com/langroid/langroid",
+  "description": ": an intuitive, lightweight, extensible and principled Python framework to easily build LLM-powered applications. ![GitHub Repo stars](https://img.shields.io/github/stars/langroid/langroid?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

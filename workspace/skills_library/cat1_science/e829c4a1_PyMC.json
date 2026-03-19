@@ -1,0 +1,9 @@
+{
+  "name": "PyMC",
+  "url": "https://github.com/pymc-devs/pymc",
+  "description": "Markov Chain Monte Carlo sampling toolkit.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

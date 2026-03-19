@@ -1,0 +1,9 @@
+{
+  "name": "Poisontap",
+  "url": "https://samy.pl/poisontap/",
+  "description": "Siphons cookies, exposes internal (LAN-side) router and installs web backdoor on locked computers.",
+  "section": "Physical Access Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

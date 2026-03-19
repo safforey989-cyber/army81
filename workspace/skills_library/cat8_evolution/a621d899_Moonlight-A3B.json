@@ -1,0 +1,9 @@
+{
+  "name": "Moonlight-A3B",
+  "url": "https://huggingface.co/collections/moonshotai/moonlight-a3b-67f67b029cecfdce34f4dc23",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

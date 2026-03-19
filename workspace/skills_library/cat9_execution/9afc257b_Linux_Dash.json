@@ -1,0 +1,9 @@
+{
+  "name": "Linux Dash",
+  "url": "https://github.com/afaqurk/linux-dash",
+  "description": "A low-overhead monitoring web dashboard for a GNU/Linux machine. `MIT` `Nodejs/Go/Python/PHP`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

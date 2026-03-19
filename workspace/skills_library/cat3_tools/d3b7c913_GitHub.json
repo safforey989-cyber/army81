@@ -1,0 +1,9 @@
+{
+  "name": "GitHub",
+  "url": "https://github.com/Significant-Gravitas/Auto-GPT",
+  "description": "<br> ![GitHub Repo stars](https://img.shields.io/github/stars/Significant-Gravitas/Auto-GPT?style=social)|Free|",
+  "section": "AI Agent",
+  "topic": "ai_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

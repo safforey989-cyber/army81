@@ -1,0 +1,7 @@
+{
+  "name": "research_reviewer",
+  "type": "prompt_pattern",
+  "prompt_template": "راجع هذه الدراسة الطبية: {study}. منهجية، نتائج، قيود، تطبيقات.",
+  "category": "cat14_health",
+  "source": "built_in"
+}

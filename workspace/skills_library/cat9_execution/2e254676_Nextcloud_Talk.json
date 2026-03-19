@@ -1,0 +1,9 @@
+{
+  "name": "Nextcloud Talk",
+  "url": "https://github.com/nextcloud/talk-ios",
+  "description": ": Video & audio calls through Nextcloud",
+  "section": "Official",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

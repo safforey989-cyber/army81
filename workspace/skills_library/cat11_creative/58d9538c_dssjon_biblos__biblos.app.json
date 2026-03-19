@@ -1,0 +1,9 @@
+{
+  "name": "dssjon/biblos: biblos.app",
+  "url": "https://github.com/dssjon/biblos",
+  "description": ": example of RAG architecture using semantic search and summarization for retrieving Bible passages",
+  "section": "Retrieval-Augmented Generation (RAG)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

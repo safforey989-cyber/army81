@@ -1,0 +1,9 @@
+{
+  "name": "Brackets",
+  "url": "https://brackets.io/",
+  "description": "Code editor for web designers and front-end developers. ([Source Code](https://github.com/brackets-cont/brackets)) `MIT` `JavaScript`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

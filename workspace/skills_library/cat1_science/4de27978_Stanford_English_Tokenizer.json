@@ -1,0 +1,9 @@
+{
+  "name": "Stanford English Tokenizer",
+  "url": "https://nlp.stanford.edu/software/tokenizer.shtml",
+  "description": "Stanford Phrasal is a state-of-the-art statistical phrase-based machine translation system, written in Java.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

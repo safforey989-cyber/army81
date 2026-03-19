@@ -1,0 +1,9 @@
+{
+  "name": "Pyba",
+  "url": "https://github.com/fauvidoTechnologies/PyBrowserAutomation/",
+  "description": "A browser automation framework which requires low-code to search the web and perform OSINT using DFS and BFS modes, ideal for exploratory tasks.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

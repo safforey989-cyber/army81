@@ -1,0 +1,9 @@
+{
+  "name": "retinaface",
+  "url": "https://github.com/serengil/retinaface",
+  "description": "deep learning based cutting-edge facial detector for Python coming with facial landmarks",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "C50",
+  "url": "https://cran.r-project.org/web/packages/C50/index.html",
+  "description": "C50: C5.0 Decision Trees and Rule-Based Models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

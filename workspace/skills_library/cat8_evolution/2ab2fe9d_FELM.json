@@ -1,0 +1,9 @@
+{
+  "name": "FELM",
+  "url": "https://hkust-nlp.github.io/felm",
+  "description": "a meta-benchmark that evaluates how well factuality evaluators assess the outputs of large language models (LLMs).",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

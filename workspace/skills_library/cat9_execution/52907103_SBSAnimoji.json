@@ -1,0 +1,9 @@
+{
+  "name": "SBSAnimoji",
+  "url": "https://github.com/simonbs/SBSAnimoji",
+  "description": ": Uses Apple's private framework AvatarKit",
+  "section": "Animoji",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

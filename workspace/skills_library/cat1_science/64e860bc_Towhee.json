@@ -1,0 +1,9 @@
+{
+  "name": "Towhee",
+  "url": "https://github.com/towhee-io/towhee",
+  "description": "| A Python library that helps you encode your unstructured data into embeddings. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

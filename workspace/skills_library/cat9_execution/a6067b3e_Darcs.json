@@ -1,0 +1,9 @@
+{
+  "name": "Darcs",
+  "url": "https://darcs.net/",
+  "description": "Cross-platform version control system, like git, mercurial or svn but with a very different approach: focus on changes rather than snapshots. ([Source Code](https://darcs.net/releases/)) `GPL-2.0` `Haskell`",
+  "section": "Version control",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

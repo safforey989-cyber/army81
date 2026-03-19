@@ -1,0 +1,9 @@
+{
+  "name": "Distance",
+  "url": "https://github.com/doukremt/distance",
+  "description": "Levenshtein and Hamming distance computation. **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

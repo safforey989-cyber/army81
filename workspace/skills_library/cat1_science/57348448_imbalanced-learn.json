@@ -1,0 +1,9 @@
+{
+  "name": "imbalanced-learn",
+  "url": "https://imbalanced-learn.org/stable/",
+  "description": "Python module to perform under sampling and oversampling with various techniques.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

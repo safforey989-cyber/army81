@@ -1,0 +1,9 @@
+{
+  "name": "pandas cookbook",
+  "url": "https://github.com/jvns/pandas-cookbook",
+  "description": "Recipes for using Python's pandas library.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

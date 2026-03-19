@@ -1,0 +1,9 @@
+{
+  "name": "TuriBot",
+  "url": "https://t.me/TuriBot",
+  "description": "Resolves username from Telegram ID.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

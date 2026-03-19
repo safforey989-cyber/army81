@@ -1,0 +1,9 @@
+{
+  "name": "i-doit",
+  "url": "https://www.i-doit.org/",
+  "description": "IT Documentation and CMDB. `AGPL-3.0` `PHP`",
+  "section": "Configuration Management Database",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

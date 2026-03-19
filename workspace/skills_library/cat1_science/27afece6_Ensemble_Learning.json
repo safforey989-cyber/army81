@@ -1,0 +1,9 @@
+{
+  "name": "Ensemble Learning",
+  "url": "https://scikit-learn.org/stable/modules/ensemble.html",
+  "description": "Tool from data_science",
+  "section": "Supervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

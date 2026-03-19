@@ -1,0 +1,9 @@
+{
+  "name": "Claude Code",
+  "url": "https://code.claude.com",
+  "description": "Anthropic's agentic coding tool that lives in your terminal and helps you turn ideas into code.",
+  "section": "Autonomous agents",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Nextcloud",
+  "url": "https://github.com/nextcloud/ios",
+  "description": ": A safe home for all your data",
+  "section": "File",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

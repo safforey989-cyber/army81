@@ -1,0 +1,9 @@
+{
+  "name": "Scipy Tutorials",
+  "url": "https://github.com/Wavelets/scipy-tutorials",
+  "description": "SciPy tutorials. This is outdated, check out scipy-lecture-notes.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

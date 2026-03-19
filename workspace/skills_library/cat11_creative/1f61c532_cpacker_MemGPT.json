@@ -1,0 +1,9 @@
+{
+  "name": "cpacker/MemGPT",
+  "url": "https://github.com/cpacker/MemGPT",
+  "description": ": teaching LLMs memory management for unbounded context [[demo page]](https://memgpt.ai/) [[arxiv]](https://arxiv.org/abs/2310.08560)",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

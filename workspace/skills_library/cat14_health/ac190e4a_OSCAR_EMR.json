@@ -1,0 +1,9 @@
+{
+  "name": "OSCAR EMR",
+  "url": "https://bitbucket.org/oscaremr/oscar",
+  "description": "OSCAR McMaster Project.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

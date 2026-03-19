@@ -1,0 +1,9 @@
+{
+  "name": "go-porterstemmer",
+  "url": "https://github.com/reiver/go-porterstemmer",
+  "description": "A native Go clean room implementation of the Porter Stemming algorithm. **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

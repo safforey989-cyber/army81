@@ -1,0 +1,9 @@
+{
+  "name": "Vim",
+  "url": "https://www.vim.org",
+  "description": "A highly configurable text editor built to enable efficient editing. ([Source Code](https://github.com/vim/vim)) `Vim` `C`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

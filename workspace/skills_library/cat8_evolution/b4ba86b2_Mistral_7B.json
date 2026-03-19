@@ -1,0 +1,9 @@
+{
+  "name": "Mistral 7B",
+  "url": "https://arxiv.org/pdf/2310.06825.pdf",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

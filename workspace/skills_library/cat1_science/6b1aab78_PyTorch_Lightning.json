@@ -1,0 +1,9 @@
+{
+  "name": "PyTorch Lightning",
+  "url": "https://github.com/PyTorchLightning/pytorch-lightning",
+  "description": "The lightweight PyTorch wrapper for high-performance AI research.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

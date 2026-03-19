@@ -1,0 +1,9 @@
+{
+  "name": "Evidently",
+  "url": "https://github.com/evidentlyai/evidently",
+  "description": "An open-source framework to evaluate, test and monitor ML and LLM-powered systems.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

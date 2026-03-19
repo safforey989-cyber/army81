@@ -1,0 +1,9 @@
+{
+  "name": "WinPwn",
+  "url": "https://github.com/SecureThisShit/WinPwn",
+  "description": "Internal penetration test script to perform local and domain reconnaissance, privilege escalation and exploitation.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

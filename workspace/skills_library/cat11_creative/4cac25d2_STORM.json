@@ -1,0 +1,9 @@
+{
+  "name": "STORM",
+  "url": "https://storm.genie.stanford.edu/",
+  "description": "An LLM-powered knowledge curation system that researches a topic and generates a full-length report with citations. [#opensource](https://github.com/stanford-oval/storm/)",
+  "section": "Academia",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

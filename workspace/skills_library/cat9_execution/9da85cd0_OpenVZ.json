@@ -1,0 +1,9 @@
+{
+  "name": "OpenVZ",
+  "url": "https://openvz.org",
+  "description": "Container-based virtualization for Linux. ([Source Code](https://src.openvz.org/projects/OVZ)) `GPL-2.0` `C`",
+  "section": "Software Containers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

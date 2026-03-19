@@ -1,0 +1,9 @@
+{
+  "name": "nngraph",
+  "url": "https://github.com/torch/nngraph",
+  "description": "This package provides graphical computation for nn library in Torch7.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

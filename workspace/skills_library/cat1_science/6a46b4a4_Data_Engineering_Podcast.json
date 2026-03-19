@@ -1,0 +1,9 @@
+{
+  "name": "Data Engineering Podcast",
+  "url": "https://www.dataengineeringpodcast.com/",
+  "description": "Tool from data_science",
+  "section": "Podcasts",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

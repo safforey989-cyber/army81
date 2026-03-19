@@ -1,0 +1,9 @@
+{
+  "name": "Liger-Kernel",
+  "url": "https://github.com/linkedin/Liger-Kernel",
+  "description": "Efficient Triton Kernels for LLM Training.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "BlindElephant",
+  "url": "http://blindelephant.sourceforge.net/",
+  "description": "Web application fingerprinter.",
+  "section": "Web application and resource analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

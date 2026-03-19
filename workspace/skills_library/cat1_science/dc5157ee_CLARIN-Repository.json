@@ -1,0 +1,9 @@
+{
+  "name": "CLARIN-Repository",
+  "url": "https://lindat.mff.cuni.cz/repository/home",
+  "description": "CLARIN is a European repository for scientific datasets.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

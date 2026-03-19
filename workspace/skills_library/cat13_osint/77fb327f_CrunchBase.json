@@ -1,0 +1,9 @@
+{
+  "name": "CrunchBase",
+  "url": "http://www.crunchbase.com",
+  "description": "Business information database, with a focus on investment, acquisition, and executive data. Ancillary focus on market research and connecting founders and investors.",
+  "section": "[↑](#-table-of-contents) People Investigations",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

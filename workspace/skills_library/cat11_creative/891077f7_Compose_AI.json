@@ -1,0 +1,9 @@
+{
+  "name": "Compose AI",
+  "url": "https://www.compose.ai/",
+  "description": "Compose AI is a free Chrome extension that cuts your writing time by 40% with AI-powered autocompletion.",
+  "section": "Writing assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

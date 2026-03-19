@@ -1,0 +1,9 @@
+{
+  "name": "Luma Dream Machine",
+  "url": "https://lumalabs.ai/dream-machine",
+  "description": "An AI model that makes high quality, realistic videos fast from text and images.",
+  "section": "Video",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

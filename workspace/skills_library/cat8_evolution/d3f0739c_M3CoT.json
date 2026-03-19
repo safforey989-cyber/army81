@@ -1,0 +1,9 @@
+{
+  "name": "M3CoT",
+  "url": "https://lightchen233.github.io/m3cot.github.io/leaderboard.html",
+  "description": "a benchmark that evaluates large language models on a variety of multimodal reasoning tasks, including language, natural and social sciences, physical and social commonsense, temporal reasoning, algebra, and geometry.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

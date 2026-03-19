@@ -1,0 +1,9 @@
+{
+  "name": "Stable Audio",
+  "url": "https://stability.ai/stable-audio",
+  "description": "Stable Audio is Stability AI's first product for music and sound effect generation.",
+  "section": "Music",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

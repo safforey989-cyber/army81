@@ -1,0 +1,7 @@
+{
+  "name": "test_generator",
+  "type": "prompt_pattern",
+  "prompt_template": "اكتب unit tests لـ {function}. Edge cases, happy path, error cases.",
+  "category": "cat10_engineering",
+  "source": "built_in"
+}

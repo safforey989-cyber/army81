@@ -1,0 +1,9 @@
+{
+  "name": "R2R",
+  "url": "https://github.com/SciPhi-AI/R2R",
+  "description": ": A framework for rapid development and deployment of production-ready RAG systems ![GitHub Repo stars](https://img.shields.io/github/stars/SciPhi-AI/R2R?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

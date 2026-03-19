@@ -1,0 +1,9 @@
+{
+  "name": "exllama",
+  "url": "https://github.com/turboderp/exllama",
+  "description": "A more memory-efficient rewrite of the HF transformers implementation of Llama for use with quantized weights.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

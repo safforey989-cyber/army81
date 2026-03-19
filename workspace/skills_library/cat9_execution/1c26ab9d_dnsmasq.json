@@ -1,0 +1,9 @@
+{
+  "name": "dnsmasq",
+  "url": "https://www.thekelleys.org.uk/dnsmasq/doc.html",
+  "description": "Provides network infrastructure for small networks: DNS, DHCP, router advertisement and network boot. ([Source Code](https://thekelleys.org.uk/gitweb/?p=dnsmasq.git;a=tree)) `GPL-2.0` `C`",
+  "section": "DNS - Servers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

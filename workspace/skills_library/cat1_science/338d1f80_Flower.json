@@ -1,0 +1,9 @@
+{
+  "name": "Flower",
+  "url": "https://flower.dev/",
+  "description": "A unified approach to federated learning, analytics, and evaluation. Federate any workload, any ML framework, and any programming language.",
+  "section": "Federated Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

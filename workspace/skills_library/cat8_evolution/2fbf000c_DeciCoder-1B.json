@@ -1,0 +1,9 @@
+{
+  "name": "DeciCoder-1B",
+  "url": "https://huggingface.co/Deci/DeciCoder-1b#how-to-use",
+  "description": "| [Introducing DeciCoder: The New Gold Standard in Efficient and Accurate Code Generation](https://deci.ai/blog/decicoder-efficient-and-accurate-code-generation-llm/) | 1.1 | [2048](https://huggingface.co/Deci/DeciCoder-1b#model-architecture) | Apache 2.0 |  [DeciCoder Demo](https://huggingface.co/s",
+  "section": "Open LLMs for code",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

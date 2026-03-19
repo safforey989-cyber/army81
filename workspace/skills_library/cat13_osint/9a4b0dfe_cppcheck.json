@@ -1,0 +1,9 @@
+{
+  "name": "cppcheck",
+  "url": "http://cppcheck.sourceforge.net/",
+  "description": "Extensible C/C++ static analyzer focused on finding bugs.",
+  "section": "Static Analyzers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

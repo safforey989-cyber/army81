@@ -1,0 +1,9 @@
+{
+  "name": "caret",
+  "url": "https://topepo.github.io/caret/index.html",
+  "description": "Classification and Regression Training: Unified interface to ~150 ML algorithms in R.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

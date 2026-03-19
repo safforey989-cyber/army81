@@ -1,0 +1,9 @@
+{
+  "name": "Search Abuseipdb",
+  "url": "https://github.com/oseasfr/search-abuseipdb",
+  "description": "Tool to query IPs, ranges and ASN blocks in AbuseIPDB via API with CIDR notation.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

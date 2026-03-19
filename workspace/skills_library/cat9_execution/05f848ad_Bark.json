@@ -1,0 +1,9 @@
+{
+  "name": "Bark",
+  "url": "https://github.com/Finb/Bark",
+  "description": ": Send custom push notifications by calling an HTTP API",
+  "section": "Developer",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

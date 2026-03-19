@@ -1,0 +1,9 @@
+{
+  "name": "Hands-on LLMs: Train and Deploy a Real-time Financial Advisor",
+  "url": "https://github.com/iusztinpaul/hands-on-llms",
+  "description": "Train and deploy a real-time financial advisor chatbot with Falcon 7B and CometLLM.",
+  "section": "LLMs",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

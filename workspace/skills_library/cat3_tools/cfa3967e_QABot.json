@@ -1,0 +1,9 @@
+{
+  "name": "QABot",
+  "url": "https://github.com/hardbyte/qabot",
+  "description": ": Query local or remote files or databases with natural language queries powered by langchain and openai ![GitHub Repo stars](https://img.shields.io/github/stars/hardbyte/qabot?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

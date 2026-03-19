@@ -1,0 +1,9 @@
+{
+  "name": "T5 & Flan-T5",
+  "url": "https://github.com/google-research/t5x/blob/main/docs/models.md#flan-t5-checkpoints",
+  "description": ", [Flan-T5-xxl (HF)](https://huggingface.co/google/flan-t5-xxl)      | [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints) | 0.06 - 11       | [512](https://discuss.huggin",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

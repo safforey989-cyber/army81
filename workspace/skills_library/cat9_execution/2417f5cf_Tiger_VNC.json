@@ -1,0 +1,9 @@
+{
+  "name": "Tiger VNC",
+  "url": "https://tigervnc.org/",
+  "description": "High-performance, multi-platform VNC client and server. ([Source Code](https://github.com/TigerVNC/tigervnc)) `GPL-2.0` `C++`",
+  "section": "Remote Desktop Clients",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

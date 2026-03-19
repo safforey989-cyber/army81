@@ -1,0 +1,9 @@
+{
+  "name": "tf_deep_rl_trader",
+  "url": "https://github.com/miroblog/tf_deep_rl_trader",
+  "description": "Trading environment(OpenAI Gym) + PPO(TensorForce).",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

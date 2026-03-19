@@ -1,0 +1,9 @@
+{
+  "name": "KDevelop",
+  "url": "https://www.kdevelop.org/",
+  "description": "IDE by the people behind KDE. ([Source Code](https://invent.kde.org/kdevelop/kdevelop)) `GFDL-1.2` `C++`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

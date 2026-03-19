@@ -1,0 +1,9 @@
+{
+  "name": "Brainstorm",
+  "url": "https://github.com/IDSIA/brainstorm",
+  "description": "Fast, flexible and fun neural networks. This is the successor of PyBrain.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

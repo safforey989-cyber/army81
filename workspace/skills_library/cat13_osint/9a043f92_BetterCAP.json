@@ -1,0 +1,9 @@
+{
+  "name": "BetterCAP",
+  "url": "https://www.bettercap.org/",
+  "description": "Modular, portable and easily extensible MITM framework.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

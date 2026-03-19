@@ -1,0 +1,9 @@
+{
+  "name": "MITRE's Adversarial Tactics, Techniques & Common Knowledge (ATT&CK)",
+  "url": "https://attack.mitre.org/",
+  "description": "](https://attack.mitre.org/) - Curated knowledge base and model for cyber adversary behavior.",
+  "section": "Online Penetration Testing Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

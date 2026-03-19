@@ -1,0 +1,9 @@
+{
+  "name": "Libravatar",
+  "url": "https://www.libravatar.org/",
+  "description": "Libravatar is a service which delivers your avatar (profile picture) to other websites. ([Source Code](https://git.linux-kernel.at/oliver/ivatar/)) `AGPL-3.0` `Python`",
+  "section": "Identity Management - Tools and web interfaces",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

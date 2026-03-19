@@ -1,0 +1,9 @@
+{
+  "name": "SANS Security Training",
+  "url": "http://www.sans.org/",
+  "description": "Computer Security Training & Certification.",
+  "section": "Security Education Courses",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

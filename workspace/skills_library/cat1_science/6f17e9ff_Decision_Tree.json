@@ -1,0 +1,9 @@
+{
+  "name": "Decision Tree",
+  "url": "https://github.com/bensadeghi/DecisionTree.jl",
+  "description": "Decision Tree Classifier and Regressor.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

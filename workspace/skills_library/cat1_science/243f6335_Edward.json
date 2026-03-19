@@ -1,0 +1,9 @@
+{
+  "name": "Edward",
+  "url": "http://edwardlib.org/",
+  "description": "A library for probabilistic modelling, inference, and criticism. Built on top of TensorFlow.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

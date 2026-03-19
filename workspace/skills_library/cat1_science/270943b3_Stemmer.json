@@ -1,0 +1,9 @@
+{
+  "name": "Stemmer",
+  "url": "https://github.com/fredwu/stemmer",
+  "description": "An English (Porter2) stemming implementation in Elixir.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

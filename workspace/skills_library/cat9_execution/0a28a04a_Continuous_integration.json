@@ -1,0 +1,9 @@
+{
+  "name": "Continuous integration",
+  "url": "https://en.wikipedia.org/wiki/Continuous_integration",
+  "description": "/[deployment](https://en.wikipedia.org/wiki/Continuous_deployment) software.",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

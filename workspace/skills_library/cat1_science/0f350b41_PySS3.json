@@ -1,0 +1,9 @@
+{
+  "name": "PySS3",
+  "url": "https://github.com/sergioburdisso/pyss3",
+  "description": "Python package that implements a novel white-box machine learning model for text classification, called SS3. Since SS3 has the ability to visually explain its rationale, this package also comes with easy-to-use interactive visualizations tools ([online demos](http://tworld.io/ss3/)).",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

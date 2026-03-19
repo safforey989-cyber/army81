@@ -1,0 +1,9 @@
+{
+  "name": "Goguma IRC",
+  "url": "https://codeberg.org/emersion/goguma",
+  "description": ": Modern IRC experience with support for many IRCv3 extensions and IRC bouncers",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

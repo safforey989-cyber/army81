@@ -1,0 +1,9 @@
+{
+  "name": "Threat Actor Usernames Scrape",
+  "url": "https://github.com/spmedia/Threat-Actor-Usernames-Scrape",
+  "description": "A collection of fresh intel and 350k+ threat actor usernames scraped from various cybercrime sources & forums.",
+  "section": "[↑](#-table-of-contents) Threat Intelligence",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

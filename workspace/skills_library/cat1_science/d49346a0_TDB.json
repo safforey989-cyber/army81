@@ -1,0 +1,9 @@
+{
+  "name": "TDB",
+  "url": "https://github.com/ericjang/tdb",
+  "description": "TensorDebugger (TDB) is a visual debugger for deep learning. It features interactive, node-by-node debugging and visualization for TensorFlow.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

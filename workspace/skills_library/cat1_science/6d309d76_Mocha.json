@@ -1,0 +1,9 @@
+{
+  "name": "Mocha",
+  "url": "https://github.com/pluskid/Mocha.jl",
+  "description": "Deep Learning framework for Julia inspired by Caffe. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

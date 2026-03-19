@@ -1,0 +1,9 @@
+{
+  "name": "Memary",
+  "url": "https://github.com/kingjulio8238/memary",
+  "description": ": Longterm Memory for Autonomous Agents. ![GitHub Repo stars](https://img.shields.io/github/stars/kingjulio8238/memary?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

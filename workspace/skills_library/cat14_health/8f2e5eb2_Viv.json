@@ -1,0 +1,9 @@
+{
+  "name": "Viv",
+  "url": "https://github.com/hms-dbmi/viv",
+  "description": "multiscale visualization of high-resolution multiplexed bioimaging data on the web.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

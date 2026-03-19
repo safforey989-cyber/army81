@@ -1,0 +1,9 @@
+{
+  "name": "Dance Diffusion",
+  "url": "https://huggingface.co/spaces/harmonai/dance-diffusion",
+  "description": ": the Hugging Face Space by harmonai",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

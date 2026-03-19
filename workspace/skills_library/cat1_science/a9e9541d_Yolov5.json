@@ -1,0 +1,9 @@
+{
+  "name": "Yolov5",
+  "url": "https://github.com/ultralytics/yolov5",
+  "description": "Tool from data_science",
+  "section": "PyTorch Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

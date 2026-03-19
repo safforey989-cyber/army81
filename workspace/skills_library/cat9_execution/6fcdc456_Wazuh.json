@@ -1,0 +1,9 @@
+{
+  "name": "Wazuh",
+  "url": "https://wazuh.com/",
+  "description": "Unified XDR and SIEM protection for endpoints and cloud workloads. ([Source Code](https://github.com/wazuh/wazuh)) `GPL-2.0` `C`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

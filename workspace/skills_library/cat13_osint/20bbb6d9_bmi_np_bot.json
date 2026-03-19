@@ -1,0 +1,9 @@
+{
+  "name": "bmi_np_bot",
+  "url": "https://t.me/MNProbot",
+  "description": "Identifies phone-number operator and basic info.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

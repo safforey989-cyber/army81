@@ -1,0 +1,9 @@
+{
+  "name": "milk",
+  "url": "https://github.com/luispedro/milk",
+  "description": "Machine learning toolkit focused on supervised classification. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

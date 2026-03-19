@@ -1,0 +1,7 @@
+{
+  "name": "treatment_planner",
+  "type": "prompt_pattern",
+  "prompt_template": "ضع خطة علاجية لـ {condition}. أدوية، نمط حياة، متابعة.",
+  "category": "cat14_health",
+  "source": "built_in"
+}

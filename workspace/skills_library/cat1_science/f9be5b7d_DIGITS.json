@@ -1,0 +1,9 @@
+{
+  "name": "DIGITS",
+  "url": "https://github.com/NVIDIA/DIGITS",
+  "description": "The Deep Learning GPU Training System (DIGITS) is a web application for training deep learning models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

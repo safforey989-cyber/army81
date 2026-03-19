@@ -1,0 +1,9 @@
+{
+  "name": "Multilayer Perceptron",
+  "url": "https://en.wikipedia.org/wiki/Multilayer_perceptron",
+  "description": "Tool from data_science",
+  "section": "Deep Learning architectures",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

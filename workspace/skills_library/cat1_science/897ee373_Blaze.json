@@ -1,0 +1,9 @@
+{
+  "name": "Blaze",
+  "url": "https://github.com/blaze/blaze",
+  "description": "NumPy and Pandas interface to Big Data.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

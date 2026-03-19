@@ -1,0 +1,9 @@
+{
+  "name": "trump2cash",
+  "url": "https://github.com/maxbbraun/trump2cash",
+  "description": "A stock trading bot powered by Trump tweets.",
+  "section": "Event Drive",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

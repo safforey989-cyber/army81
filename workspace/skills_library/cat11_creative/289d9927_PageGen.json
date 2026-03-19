@@ -1,0 +1,9 @@
+{
+  "name": "PageGen",
+  "url": "https://pagegen.ai",
+  "description": "An AI Page Generator with Claude AI, React and Shadcn UI. Generate web pages from text, screenshot and templates with one click.",
+  "section": "Online Tools and Applications",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

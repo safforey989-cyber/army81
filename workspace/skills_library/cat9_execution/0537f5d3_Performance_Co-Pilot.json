@@ -1,0 +1,9 @@
+{
+  "name": "Performance Co-Pilot",
+  "url": "http://pcp.io",
+  "description": "Lightweight, distributed system performance and analysis framework. ([Source Code](https://github.com/performancecopilot/pcp)) `LGPL-2.1/GPL-2.0` `C`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

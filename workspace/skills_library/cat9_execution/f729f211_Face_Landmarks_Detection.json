@@ -1,0 +1,9 @@
+{
+  "name": "Face Landmarks Detection",
+  "url": "https://github.com/mattlawer/FaceLandmarksDetection",
+  "description": ": Find facial features such as face contour, eyes, mouth and nose in an image",
+  "section": "Sample",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

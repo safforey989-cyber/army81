@@ -1,0 +1,9 @@
+{
+  "name": "Environment Modules",
+  "url": "https://cea-hpc.github.io/modules/",
+  "description": "Environment Modules provides for the dynamic modification of a user's environment via modulefiles. ([Source Code](https://github.com/cea-hpc/modules)) `GPL-2.0` `Tcl`",
+  "section": "Build and software organization tools",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

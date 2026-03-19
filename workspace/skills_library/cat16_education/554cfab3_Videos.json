@@ -1,0 +1,9 @@
+{
+  "name": "Videos",
+  "url": "http://pdos.csail.mit.edu/6.828/2011/schedule.html",
+  "description": "Note: These are student recorded cam videos of the 2011 course. The videos  explain a lot of concepts required for the labs and assignments.",
+  "section": "Systems",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

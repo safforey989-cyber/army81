@@ -1,0 +1,9 @@
+{
+  "name": "HFT_Bitcoin",
+  "url": "https://github.com/ghgr/HFT_Bitcoin",
+  "description": "Analysis of High Frequency Trading on Bitcoin exchanges.",
+  "section": "High Frequency Trading",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

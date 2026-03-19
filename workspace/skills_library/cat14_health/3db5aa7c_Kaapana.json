@@ -1,0 +1,9 @@
+{
+  "name": "Kaapana",
+  "url": "https://github.com/kaapana/kaapana",
+  "description": "Open source toolkit for state of the art platform provisioning in the field of medical data analysis.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

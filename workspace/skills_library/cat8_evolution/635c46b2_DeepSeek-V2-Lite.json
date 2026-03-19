@@ -1,0 +1,9 @@
+{
+  "name": "DeepSeek-V2-Lite",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite",
+  "description": ", [DeepSeek-V2-Lite-Chat](https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat) | [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](https://github.com/deepseek-ai/DeepSeek-V2) | 16 | [32k](https://github.com/deepseek-ai/DeepSeek-V2) | [Custom](https://github.co",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

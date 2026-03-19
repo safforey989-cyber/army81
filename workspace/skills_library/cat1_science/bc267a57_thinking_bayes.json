@@ -1,0 +1,9 @@
+{
+  "name": "thinking bayes",
+  "url": "https://github.com/AllenDowney/ThinkBayes",
+  "description": "Book on Bayesian Analysis.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

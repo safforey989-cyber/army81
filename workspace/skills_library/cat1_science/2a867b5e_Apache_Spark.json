@@ -1,0 +1,9 @@
+{
+  "name": "Apache Spark",
+  "url": "https://spark.apache.org/",
+  "description": "| Lightning-fast cluster computing |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

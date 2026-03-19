@@ -1,0 +1,9 @@
+{
+  "name": "PhpSysInfo",
+  "url": "https://phpsysinfo.github.io/phpsysinfo/",
+  "description": "A customizable PHP script that displays information about your system nicely. ([Source Code](https://github.com/phpsysinfo/phpsysinfo)) `GPL-2.0` `PHP`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

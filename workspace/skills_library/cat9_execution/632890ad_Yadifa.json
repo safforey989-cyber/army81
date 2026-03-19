@@ -1,0 +1,9 @@
+{
+  "name": "Yadifa",
+  "url": "https://www.yadifa.eu/",
+  "description": "Clean, small, light and RFC-compliant name server implementation developed from scratch by .eu. ([Source Code](https://github.com/yadifa/yadifa)) `BSD-3-Clause` `C`",
+  "section": "DNS - Servers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Mahout",
+  "url": "https://github.com/apache/mahout",
+  "description": "Distributed machine learning.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

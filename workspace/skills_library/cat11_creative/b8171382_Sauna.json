@@ -1,0 +1,9 @@
+{
+  "name": "Sauna",
+  "url": "https://www.sauna.ai",
+  "description": "An AI assistant built for compounding context. It learns your taste, detects hidden patterns, augments your brain context and works proactively.",
+  "section": "Autonomous agents",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

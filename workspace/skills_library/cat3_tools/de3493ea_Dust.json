@@ -1,0 +1,9 @@
+{
+  "name": "Dust",
+  "url": "https://github.com/dust-tt/dust",
+  "description": ": Design and Deploy Large Language Model Apps ![GitHub Repo stars](https://img.shields.io/github/stars/dust-tt/dust?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "textacy",
+  "url": "https://github.com/chartbeat-labs/textacy",
+  "description": "higher-level NLP built on Spacy.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

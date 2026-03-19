@@ -1,0 +1,9 @@
+{
+  "name": "Mistral-7B-v0.1",
+  "url": "https://huggingface.co/mistralai/Mistral-7B-v0.1",
+  "description": ", [Mistral-7B-Instruct-v0.1](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1) | [Mistral 7B](https://mistral.ai/news/announcing-mistral-7b/) | 7 | [4096-16K with Sliding Windows](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1/blob/main/config.json)| Apache 2.0 | [Mistral Transfo",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

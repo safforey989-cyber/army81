@@ -1,0 +1,9 @@
+{
+  "name": "Headscale",
+  "url": "https://github.com/juanfont/headscale",
+  "description": "Self-hostable fork of [Tailscale](https://tailscale.com), cross-platform clients, simple to use, built-in (currently experimental) monitoring tools. `BSD-3-Clause` `Go`",
+  "section": "VPN",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

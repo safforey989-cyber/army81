@@ -1,0 +1,9 @@
+{
+  "name": "SSH MITM",
+  "url": "https://github.com/jtesta/ssh-mitm",
+  "description": "Intercept SSH connections with a proxy; all plaintext passwords and sessions are logged to disk.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

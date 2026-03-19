@@ -1,0 +1,9 @@
+{
+  "name": "Pharos AI",
+  "url": "https://conflicts.app",
+  "description": "Real-time open-source intelligence dashboard for conflict tracking with interactive geospatial visualization, multi-source RSS monitoring, and actor dossiers.",
+  "section": "[↑](#-table-of-contents) Threat Intelligence",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

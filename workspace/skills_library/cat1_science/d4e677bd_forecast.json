@@ -1,0 +1,9 @@
+{
+  "name": "forecast",
+  "url": "https://cran.r-project.org/web/packages/forecast/index.html",
+  "description": "forecast: Timeseries forecasting using ARIMA, ETS, STLM, TBATS, and neural network models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

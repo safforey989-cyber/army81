@@ -1,0 +1,9 @@
+{
+  "name": "OpenAFS",
+  "url": "https://www.openafs.org/",
+  "description": "Distributed network file system with read-only replicas and multi-OS support. ([Source Code](https://git.openafs.org/?p=openafs.git;a=summary)) `IPL-1.0` `C`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

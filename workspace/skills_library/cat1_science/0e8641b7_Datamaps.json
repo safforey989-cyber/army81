@@ -1,0 +1,9 @@
+{
+  "name": "Datamaps",
+  "url": "https://datamaps.github.io/",
+  "description": "Customizable SVG map/geo visualizations using D3.js. **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

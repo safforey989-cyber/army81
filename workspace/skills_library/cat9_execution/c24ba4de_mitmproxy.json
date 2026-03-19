@@ -1,0 +1,9 @@
+{
+  "name": "mitmproxy",
+  "url": "https://mitmproxy.org/",
+  "description": "A Python tool used for intercepting, viewing and modifying network traffic. Invaluable in troubleshooting certain problems. ([Source Code](https://github.com/mitmproxy/mitmproxy)) `MIT` `Python`",
+  "section": "Troubleshooting",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "FlowGPT",
+  "url": "https://github.com/nilooy/flowgpt",
+  "description": ": Generate diagram with AI ![GitHub Repo stars](https://img.shields.io/github/stars/nilooy/flowgpt?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Packet Storm",
+  "url": "https://packetstormsecurity.com/files/",
+  "description": "Compendium of exploits, advisories, tools, and other security-related resources aggregated from across the industry.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

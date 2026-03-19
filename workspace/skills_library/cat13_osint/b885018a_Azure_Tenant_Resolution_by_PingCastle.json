@@ -1,0 +1,9 @@
+{
+  "name": "Azure Tenant Resolution by PingCastle",
+  "url": "https://tenantresolution.pingcastle.com",
+  "description": "Search for Azure Tenant using its domain name or its ID",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

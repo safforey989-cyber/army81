@@ -1,0 +1,9 @@
+{
+  "name": "MMToM-QA",
+  "url": "https://chuanyangjin.com/mmtom-qa-leaderboard",
+  "description": "a multimodal question-answering benchmark designed to evaluate AI models' cognitive ability to understand human beliefs and goals.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

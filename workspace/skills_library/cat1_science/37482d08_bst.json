@@ -1,0 +1,9 @@
+{
+  "name": "bst",
+  "url": "https://cran.r-project.org/web/packages/bst/index.html",
+  "description": "bst: Gradient Boosting.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

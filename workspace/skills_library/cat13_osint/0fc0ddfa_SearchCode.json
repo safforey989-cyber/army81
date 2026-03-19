@@ -1,0 +1,9 @@
+{
+  "name": "SearchCode",
+  "url": "https://searchcode.com",
+  "description": "Help find real world examples of functions, API's and libraries across 10+ sources.",
+  "section": "[↑](#-table-of-contents) Code Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

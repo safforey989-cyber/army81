@@ -1,0 +1,9 @@
+{
+  "name": "SuperLim",
+  "url": "https://lab.kb.se/leaderboard/results",
+  "description": "a Swedish language understanding benchmark that evaluates natural language processing (NLP) models on various tasks such as argumentation analysis, semantic similarity, and textual entailment.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

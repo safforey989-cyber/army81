@@ -1,0 +1,9 @@
+{
+  "name": "glances",
+  "url": "https://nicolargo.github.io/glances/",
+  "description": "Open-source, cross-platform real-time monitoring tool with CLI and web dashboard interfaces and many exporting options. ([Source Code](https://github.com/nicolargo/glances)) `GPL-3.0` `Python`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "libfm",
+  "url": "https://github.com/srendle/libfm",
+  "description": "A generic approach that allows to mimic most factorization models by feature engineering.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

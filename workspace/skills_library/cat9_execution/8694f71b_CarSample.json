@@ -1,0 +1,9 @@
+{
+  "name": "CarSample",
+  "url": "https://github.com/below/CarSample",
+  "description": ": Try out CarPlay apps in the iOS Simulator without a CarPlay entitlement",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

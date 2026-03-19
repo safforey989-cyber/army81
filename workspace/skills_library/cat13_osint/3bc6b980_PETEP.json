@@ -1,0 +1,9 @@
+{
+  "name": "PETEP",
+  "url": "https://github.com/Warxim/petep",
+  "description": "Extensible TCP/UDP proxy with GUI for traffic analysis & modification with SSL/TLS support.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

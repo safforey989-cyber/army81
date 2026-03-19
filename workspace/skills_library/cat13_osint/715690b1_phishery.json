@@ -1,0 +1,9 @@
+{
+  "name": "phishery",
+  "url": "https://github.com/ryhanson/phishery",
+  "description": "TLS/SSL enabled Basic Auth credential harvester.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

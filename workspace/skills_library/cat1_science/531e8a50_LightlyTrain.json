@@ -1,0 +1,9 @@
+{
+  "name": "LightlyTrain",
+  "url": "https://github.com/lightly-ai/lightly-train",
+  "description": "Pretrain computer vision models on unlabeled data for industrial applications",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

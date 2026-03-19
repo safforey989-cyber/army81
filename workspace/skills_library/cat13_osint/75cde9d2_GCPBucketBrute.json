@@ -1,0 +1,9 @@
+{
+  "name": "GCPBucketBrute",
+  "url": "https://github.com/RhinoSecurityLabs/GCPBucketBrute",
+  "description": "Script to enumerate Google Storage buckets, determine what access you have to them, and determine if they can be privilege escalated.",
+  "section": "Cloud Platform Attack Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Regression",
+  "url": "https://en.wikipedia.org/wiki/Regression",
+  "description": "Tool from data_science",
+  "section": "Supervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

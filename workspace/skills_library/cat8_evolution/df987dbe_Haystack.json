@@ -1,0 +1,9 @@
+{
+  "name": "Haystack",
+  "url": "https://haystack.deepset.ai/",
+  "description": "an open-source NLP framework that allows you to use LLMs and transformer-based models from Hugging Face, OpenAI and Cohere to interact with your own data.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

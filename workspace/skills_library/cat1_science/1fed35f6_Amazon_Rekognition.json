@@ -1,0 +1,9 @@
+{
+  "name": "Amazon Rekognition",
+  "url": "https://aws.amazon.com/rekognition/",
+  "description": "| AWS Rekognition is a service that lets developers working with Amazon Web Services add image analysis to their applications. Catalog assets, automate workflows, and extract meaning from your media and applications.|",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

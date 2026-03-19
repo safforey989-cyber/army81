@@ -1,0 +1,9 @@
+{
+  "name": "MISP Galaxy",
+  "url": "https://www.misp-galaxy.org/360net/",
+  "description": "Known or estimated adversary groups as identified by 360.net.",
+  "section": "[↑](#-threat-actor-search) Threat Actor Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

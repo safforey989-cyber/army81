@@ -1,0 +1,9 @@
+{
+  "name": "How to evaluate a summarization task | OpenAI Cookbook",
+  "url": "https://cookbook.openai.com/examples/evaluation/how_to_eval_abstractive_summarization",
+  "description": "Tool from generative_ai",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

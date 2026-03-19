@@ -1,0 +1,9 @@
+{
+  "name": "Tensor Flow",
+  "url": "https://www.tensorflow.org/",
+  "description": "| TensorFlow is an Open Source Software Library for Machine Intelligence |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

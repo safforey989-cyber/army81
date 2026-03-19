@@ -1,0 +1,9 @@
+{
+  "name": "dspy",
+  "url": "https://github.com/stanfordnlp/dspy",
+  "description": "DSPy: The framework for programming—not prompting—foundation models.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

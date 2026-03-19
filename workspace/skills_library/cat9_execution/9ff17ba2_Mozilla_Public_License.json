@@ -1,0 +1,9 @@
+{
+  "name": "Mozilla Public License",
+  "url": "https://spdx.org/licenses/MPL-2.0.html",
+  "description": "Tool from sysadmin_tools",
+  "section": "List of Licenses",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

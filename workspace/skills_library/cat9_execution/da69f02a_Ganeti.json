@@ -1,0 +1,9 @@
+{
+  "name": "Ganeti",
+  "url": "https://www.ganeti.org/",
+  "description": "Cluster virtual server management software tool built on top of KVM and Xen. ([Source Code](https://github.com/ganeti/ganeti)) `BSD-2-Clause` `Python/Haskell`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

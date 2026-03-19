@@ -1,0 +1,9 @@
+{
+  "name": "Scale Spellbook",
+  "url": "https://scale.com/spellbook",
+  "description": "A paid product for building, comparing, and shipping language model apps.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

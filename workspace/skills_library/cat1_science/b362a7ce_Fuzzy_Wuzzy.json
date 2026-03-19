@@ -1,0 +1,9 @@
+{
+  "name": "Fuzzy Wuzzy",
+  "url": "https://github.com/seatgeek/fuzzywuzzy",
+  "description": "Fuzzy String Matching in Python.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

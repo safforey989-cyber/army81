@@ -1,0 +1,9 @@
+{
+  "name": "jais-30b-v1",
+  "url": "https://huggingface.co/core42/jais-30b-v1",
+  "description": ", [jais-30b-chat-v1](https://huggingface.co/core42/jais-30b-chat-v1) | [Jais-30B: Expanding the Horizon in Open-Source Arabic NLP](https://g42.ai/resources/publications/Jais-30B) | 30 | [2048](https://huggingface.co/core42/jais-30b-v1/blob/main/config.json) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

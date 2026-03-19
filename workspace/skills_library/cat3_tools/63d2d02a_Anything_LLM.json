@@ -1,0 +1,9 @@
+{
+  "name": "Anything LLM",
+  "url": "https://github.com/Mintplex-Labs/anything-llm",
+  "description": ": A full-stack application that turns any documents into an intelligent chatbot with a sleek UI and easier way to manage your workspaces. ![GitHub Repo stars](https://img.shields.io/github/stars/Mintplex-Labs/anything-llm?style=social)",
+  "section": "Knowledge Management",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

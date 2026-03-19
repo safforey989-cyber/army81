@@ -1,0 +1,9 @@
+{
+  "name": "Slim",
+  "url": "https://github.com/ImagingDataCommons/slim",
+  "description": "Interoperable web viewer and annotation tool for computational pathology.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

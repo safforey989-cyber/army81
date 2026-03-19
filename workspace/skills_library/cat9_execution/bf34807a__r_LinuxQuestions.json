@@ -1,0 +1,9 @@
+{
+  "name": "/r/LinuxQuestions",
+  "url": "https://www.reddit.com/r/linuxquestions",
+  "description": "Tool from sysadmin_tools",
+  "section": "Communities / Forums",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

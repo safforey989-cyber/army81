@@ -1,0 +1,9 @@
+{
+  "name": "CFEngine",
+  "url": "https://cfengine.com/",
+  "description": "Configuration management system for automated configuration and maintenance of large-scale computer systems. ([Source Code](https://github.com/cfengine/core)) `GPL-3.0` `C`",
+  "section": "Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

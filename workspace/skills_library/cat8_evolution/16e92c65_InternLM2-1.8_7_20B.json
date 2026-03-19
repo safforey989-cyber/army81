@@ -1,0 +1,9 @@
+{
+  "name": "InternLM2-1.8|7|20B",
+  "url": "https://huggingface.co/collections/internlm/internlm2-65b0ce04970888799707893c",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

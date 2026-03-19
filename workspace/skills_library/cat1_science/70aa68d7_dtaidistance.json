@@ -1,0 +1,9 @@
+{
+  "name": "dtaidistance",
+  "url": "https://github.com/wannesm/dtaidistance",
+  "description": "High performance library for time series distances (DTW) and time series clustering.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

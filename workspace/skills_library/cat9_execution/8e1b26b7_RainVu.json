@@ -1,0 +1,9 @@
+{
+  "name": "RainVu",
+  "url": "https://github.com/astraen-dev/RainVu",
+  "description": ": Log rainfall from custom gauges and visualize historical data with charts",
+  "section": "Weather",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

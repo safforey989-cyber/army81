@@ -1,0 +1,9 @@
+{
+  "name": "AudioCraft",
+  "url": "https://audiocraft.metademolab.com/",
+  "description": "A single-stop code base for generative audio needs, by Meta. Includes MusicGen for music and AudioGen for sounds. #opensource",
+  "section": "Music",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

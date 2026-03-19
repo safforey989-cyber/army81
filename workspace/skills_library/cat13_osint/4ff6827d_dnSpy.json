@@ -1,0 +1,9 @@
+{
+  "name": "dnSpy",
+  "url": "https://github.com/0xd4d/dnSpy",
+  "description": "Tool to reverse engineer .NET assemblies.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

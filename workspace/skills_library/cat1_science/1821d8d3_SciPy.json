@@ -1,0 +1,9 @@
+{
+  "name": "SciPy",
+  "url": "https://scipy.org/",
+  "description": "| SciPy works with NumPy arrays and provides efficient routines for numerical integration and optimization. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Roppers Academy Training",
+  "url": "https://www.hoppersroppers.org/training.html",
+  "description": "Free courses on computing and security fundamentals designed to train a beginner to crush their first CTF.",
+  "section": "Security Education Courses",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

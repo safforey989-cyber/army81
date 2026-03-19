@@ -1,0 +1,9 @@
+{
+  "name": "Bazel",
+  "url": "https://www.bazel.io/",
+  "description": "A fast, scalable, multi-language and extensible build system. Used by Google. ([Source Code](https://github.com/bazelbuild/bazel/)) `Apache-2.0` `Java`",
+  "section": "Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

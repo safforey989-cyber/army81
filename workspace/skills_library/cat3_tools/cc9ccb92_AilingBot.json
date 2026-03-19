@@ -1,0 +1,9 @@
+{
+  "name": "AilingBot",
+  "url": "https://github.com/ericzhang-cn/ailingbot",
+  "description": ": Quickly integrate applications built on Langchain into IM such as Slack, WeChat Work, Feishu, DingTalk.",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

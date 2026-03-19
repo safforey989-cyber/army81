@@ -1,0 +1,9 @@
+{
+  "name": "TensorZero",
+  "url": "https://www.tensorzero.com/",
+  "description": "TensorZero is an open-source framework for building production-grade LLM applications. It unifies an LLM gateway, observability, optimization, evaluations, and experimentation.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

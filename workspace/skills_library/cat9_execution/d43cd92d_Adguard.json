@@ -1,0 +1,9 @@
+{
+  "name": "Adguard",
+  "url": "https://github.com/AdguardTeam/AdguardForiOS",
+  "description": ": Adblocker and anti-tracking",
+  "section": "Content Blocking",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

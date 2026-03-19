@@ -1,0 +1,9 @@
+{
+  "name": "Keras Beginner Tutorial",
+  "url": "https://victorzhou.com/blog/keras-neural-network-tutorial/",
+  "description": "Friendly guide on using Keras to implement a simple Neural Network in Python.",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

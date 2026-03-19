@@ -1,0 +1,9 @@
+{
+  "name": "Learn the fundamentals of generative AI for real-world applications - AWS x DeepLearning.AI",
+  "url": "https://www.deeplearning.ai/courses/generative-ai-with-llms/",
+  "description": "Tool from aigc_tutorials",
+  "section": "🔧 LLMs in Practice",
+  "topic": "aigc_tutorials",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Brida",
+  "url": "https://github.com/federicodotta/Brida",
+  "description": "Burp Suite extension that, working as a bridge between Burp and Frida, lets you use and manipulate applications' own methods while tampering the traffic exchanged between the applications and their back-end services.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

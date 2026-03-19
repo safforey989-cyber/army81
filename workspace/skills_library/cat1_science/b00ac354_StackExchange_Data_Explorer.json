@@ -1,0 +1,9 @@
+{
+  "name": "StackExchange Data Explorer",
+  "url": "https://data.stackexchange.com",
+  "description": "an open source tool for running arbitrary queries against public data from the Stack Exchange network.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

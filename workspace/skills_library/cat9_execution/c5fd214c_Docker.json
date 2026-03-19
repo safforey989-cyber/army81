@@ -1,0 +1,9 @@
+{
+  "name": "Docker",
+  "url": "https://www.docker.com/",
+  "description": "Platform for developers and sysadmins to build, ship, and run distributed applications. ([Source Code](https://www.docker.com/community/open-source/)) `Apache-2.0` `Go`",
+  "section": "Software Containers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

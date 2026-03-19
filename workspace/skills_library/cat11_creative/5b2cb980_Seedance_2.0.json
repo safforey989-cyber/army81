@@ -1,0 +1,9 @@
+{
+  "name": "Seedance 2.0",
+  "url": "https://seed.bytedance.com/en/seedance2_0",
+  "description": "An image-to-video and text-to-video model developed by Niobotics ByteDance.",
+  "section": "Video",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

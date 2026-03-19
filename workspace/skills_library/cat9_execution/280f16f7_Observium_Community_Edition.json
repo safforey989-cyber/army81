@@ -1,0 +1,9 @@
+{
+  "name": "Observium Community Edition",
+  "url": "http://www.observium.org/",
+  "description": "Network monitoring and management platform that provides real-time insight into network health and performance. `QPL-1.0` `PHP`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

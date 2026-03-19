@@ -1,0 +1,9 @@
+{
+  "name": "Improving language models by retrieving from trillions of tokens",
+  "url": "https://www.deepmind.com/publications/improving-language-models-by-retrieving-from-trillions-of-tokens",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

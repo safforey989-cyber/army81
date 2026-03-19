@@ -1,0 +1,9 @@
+{
+  "name": "CloudHunter",
+  "url": "https://github.com/belane/CloudHunter",
+  "description": "Looks for AWS, Azure and Google cloud storage buckets and lists permissions for vulnerable buckets.",
+  "section": "Cloud Platform Attack Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

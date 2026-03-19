@@ -1,0 +1,9 @@
+{
+  "name": "ScribePal",
+  "url": "https://github.com/code-forge-temple/scribe-pal",
+  "description": "Chrome extension that uses local LLMs to assist with writing and drafting responses based on the context of your open tabs.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

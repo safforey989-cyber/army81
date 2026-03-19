@@ -1,0 +1,9 @@
+{
+  "name": "autograd",
+  "url": "https://github.com/twitter/torch-autograd",
+  "description": "Autograd automatically differentiates native Torch code. Inspired by the original Python version.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

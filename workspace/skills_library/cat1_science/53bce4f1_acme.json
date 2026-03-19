@@ -1,0 +1,9 @@
+{
+  "name": "acme",
+  "url": "https://deepmind.com/research/publications/Acme",
+  "description": "An Open Source Distributed Framework for Reinforcement Learning that makes build and train your agents easily.",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

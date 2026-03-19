@@ -1,0 +1,9 @@
+{
+  "name": "Linphone",
+  "url": "https://gitlab.linphone.org/BC/public/linphone-iphone",
+  "description": ": Free audio/video calls and text messaging (be reachable at any time, even if the app is closed, with a WiFi or cellular connection)",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

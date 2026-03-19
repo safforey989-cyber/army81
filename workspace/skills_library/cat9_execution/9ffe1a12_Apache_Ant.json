@@ -1,0 +1,9 @@
+{
+  "name": "Apache Ant",
+  "url": "https://ant.apache.org/",
+  "description": "Automation build tool, similar to make, a library and command-line tool whose mission is to drive processes described in build files as targets and extension points dependent upon each other. ([Source Code](https://github.com/apache/ant)) `Apache-2.0` `Java`",
+  "section": "Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

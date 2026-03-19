@@ -1,0 +1,9 @@
+{
+  "name": "Python Programming for the Humanities",
+  "url": "https://www.karsdorp.io/python-course/",
+  "description": "Course for Python programming for the Humanities, assuming no prior knowledge. Heavy focus on text processing / NLP.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

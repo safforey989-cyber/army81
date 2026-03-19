@@ -1,0 +1,9 @@
+{
+  "name": "wine-quality",
+  "url": "https://github.com/zygmuntz/wine-quality",
+  "description": "Predicting wine quality.",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Riemann",
+  "url": "https://riemann.io/",
+  "description": "Flexible and fast events processor allowing complex events/metrics analysis. ([Source Code](https://github.com/riemann/riemann)) `EPL-1.0` `Java`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

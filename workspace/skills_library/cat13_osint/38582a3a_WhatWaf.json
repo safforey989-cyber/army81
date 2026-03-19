@@ -1,0 +1,9 @@
+{
+  "name": "WhatWaf",
+  "url": "https://github.com/Ekultek/WhatWaf",
+  "description": "Detect and bypass web application firewalls and protection systems.",
+  "section": "Web application and resource analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Heart_Disease-Prediction",
+  "url": "https://github.com/ShivamChoudhary17/Heart_Disease",
+  "description": "Given clinical parameters about a patient, can we predict whether or not they have heart disease?",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

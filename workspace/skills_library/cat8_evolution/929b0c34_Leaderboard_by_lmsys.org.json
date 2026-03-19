@@ -1,0 +1,9 @@
+{
+  "name": "Leaderboard by lmsys.org",
+  "url": "https://chat.lmsys.org/?leaderboard",
+  "description": "Tool from open_source_llms",
+  "section": "Evals on open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

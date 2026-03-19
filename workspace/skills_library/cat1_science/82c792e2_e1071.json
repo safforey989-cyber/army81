@@ -1,0 +1,9 @@
+{
+  "name": "e1071",
+  "url": "https://cran.r-project.org/web/packages/e1071/index.html",
+  "description": "e1071: Misc Functions of the Department of Statistics (e1071), TU Wien",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

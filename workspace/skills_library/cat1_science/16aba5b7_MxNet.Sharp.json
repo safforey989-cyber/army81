@@ -1,0 +1,9 @@
+{
+  "name": "MxNet.Sharp",
+  "url": "https://github.com/tech-quantum/MxNet.Sharp",
+  "description": ".NET Standard bindings for Apache MxNet with Imperative, Symbolic and Gluon Interface for developing, training and deploying Machine Learning models in C#. https://mxnet.tech-quantum.com/",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

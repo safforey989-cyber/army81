@@ -1,0 +1,9 @@
+{
+  "name": "DomainMOD",
+  "url": "https://domainmod.org",
+  "description": "Manage your domains and other internet assets in a central location. ([Source Code](https://github.com/domainmod/domainmod)) `GPL-3.0` `PHP`",
+  "section": "DNS - Control Panels & Domain Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

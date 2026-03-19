@@ -1,0 +1,9 @@
+{
+  "name": "Facebook Friend List Scraper",
+  "url": "https://github.com/narkopolo/fb_friend_list_scraper",
+  "description": "Tool for scraping large Facebook friend lists without being rate-limited.",
+  "section": "[↑](#-table-of-contents) Facebook",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

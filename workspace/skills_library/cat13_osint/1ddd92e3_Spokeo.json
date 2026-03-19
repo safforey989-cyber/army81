@@ -1,0 +1,9 @@
+{
+  "name": "Spokeo",
+  "url": "http://www.spokeo.com",
+  "description": "People search. Limited free info, premium data upsell.",
+  "section": "[↑](#-table-of-contents) People Investigations",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

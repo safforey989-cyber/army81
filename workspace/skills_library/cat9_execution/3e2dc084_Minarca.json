@@ -1,0 +1,9 @@
+{
+  "name": "Minarca",
+  "url": "https://minarca.org/",
+  "description": "Client–server backup platform with a centralized web console to manage and restore Linux, Windows, and macOS backups via GUI or CLI. ([Source Code](https://gitlab.com/ikus-soft/minarca)) `AGPL-3.0` `Python`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Kubero",
+  "url": "https://www.kubero.dev/",
+  "description": "A self-hosted Heroku PaaS alternative for Kubernetes that implements GitOps. ([Demo](https://demo.kubero.dev/), [Source Code](https://github.com/kubero-dev/kubero)) `GPL-3.0` `K8S/Nodejs/Go`",
+  "section": "PaaS",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

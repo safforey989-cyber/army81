@@ -1,0 +1,9 @@
+{
+  "name": "Kiwix",
+  "url": "https://github.com/kiwix/kiwix-apple",
+  "description": ": An offline reader for Wikipedia (& many other websites)",
+  "section": "Content",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

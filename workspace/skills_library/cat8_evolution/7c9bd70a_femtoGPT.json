@@ -1,0 +1,9 @@
+{
+  "name": "femtoGPT",
+  "url": "https://github.com/keyvank/femtoGPT",
+  "description": "Pure Rust implementation of a minimal Generative Pretrained Transformer.",
+  "section": "LLM Tutorials and Courses",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

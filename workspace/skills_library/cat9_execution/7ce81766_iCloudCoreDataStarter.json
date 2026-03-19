@@ -1,0 +1,9 @@
+{
+  "name": "iCloudCoreDataStarter",
+  "url": "https://github.com/jazzychad/iCloudCoreDataStarter",
+  "description": ": Uses Core Data + iCloud syncing",
+  "section": "Sample",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

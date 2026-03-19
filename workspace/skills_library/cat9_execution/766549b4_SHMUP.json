@@ -1,0 +1,9 @@
+{
+  "name": "SHMUP",
+  "url": "https://github.com/fabiensanglard/Shmup",
+  "description": ": 3D multiplatform game written primarily in C",
+  "section": "Game",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

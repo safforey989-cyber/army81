@@ -1,0 +1,9 @@
+{
+  "name": "The Analytics Engineering Roundup",
+  "url": "https://roundup.getdbt.com/about",
+  "description": ". A newsletter about data science. [Archive](https://roundup.getdbt.com/archive).",
+  "section": "Newsletters",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Data Science at Scale with Python and Dask",
+  "url": "https://www.manning.com/books/data-science-with-python-and-dask",
+  "description": "Tool from data_science",
+  "section": "Books",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

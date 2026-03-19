@@ -1,0 +1,9 @@
+{
+  "name": "Web Application Security Assessment Report Template",
+  "url": "http://lucideus.com/pdf/stw.pdf",
+  "description": "Sample Web application security assessment reporting template provided by Lucideus.",
+  "section": "Penetration Testing Report Templates",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

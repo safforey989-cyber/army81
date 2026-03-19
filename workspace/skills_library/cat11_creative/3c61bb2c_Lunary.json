@@ -1,0 +1,9 @@
+{
+  "name": "Lunary",
+  "url": "https://lunary.ai",
+  "description": ": Open-source platform for LLM chatbots and agents: observability, prompt management, testing & more",
+  "section": "LLMOps",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

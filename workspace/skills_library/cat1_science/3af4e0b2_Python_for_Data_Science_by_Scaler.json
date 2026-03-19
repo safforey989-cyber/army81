@@ -1,0 +1,9 @@
+{
+  "name": "Python for Data Science by Scaler",
+  "url": "https://www.scaler.com/topics/course/python-for-data-science/",
+  "description": "This course is designed to empower beginners with the essential skills to excel in today's data-driven world. The comprehensive curriculum will give you a solid foundation in statistics, programming, data visualization, and machine learning.",
+  "section": "Free Courses",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

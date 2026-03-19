@@ -1,0 +1,9 @@
+{
+  "name": "Swiss Army Llama",
+  "url": "https://github.com/Dicklesworthstone/swiss_army_llama",
+  "description": "Comprehensive set of tools for working with local LLMs for various tasks.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

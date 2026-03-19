@@ -1,0 +1,9 @@
+{
+  "name": "paicehusk",
+  "url": "https://github.com/Rookii/paicehusk",
+  "description": "Golang implementation of the Paice/Husk Stemming Algorithm. *[Deprecated]*",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

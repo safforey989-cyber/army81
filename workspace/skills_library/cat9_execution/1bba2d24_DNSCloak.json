@@ -1,0 +1,9 @@
+{
+  "name": "DNSCloak",
+  "url": "https://github.com/s-s/dnscloak",
+  "description": ": Override & secure DNS queries",
+  "section": "Security",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

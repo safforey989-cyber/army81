@@ -1,0 +1,9 @@
+{
+  "name": "GitPoint",
+  "url": "https://github.com/gitpoint/git-point",
+  "description": ": GitHub app with a minimal & beautiful UI",
+  "section": "GitHub",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

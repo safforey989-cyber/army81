@@ -1,0 +1,9 @@
+{
+  "name": "Nessus",
+  "url": "https://www.tenable.com/products/nessus-vulnerability-scanner",
+  "description": "Commercial vulnerability management, configuration, and compliance assessment platform, sold by Tenable.",
+  "section": "Network Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

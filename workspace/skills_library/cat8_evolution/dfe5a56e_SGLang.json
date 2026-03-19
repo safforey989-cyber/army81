@@ -1,0 +1,9 @@
+{
+  "name": "SGLang",
+  "url": "https://github.com/sgl-project/sglang",
+  "description": "SGLang is a fast serving framework for large language models and vision language models.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

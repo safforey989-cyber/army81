@@ -1,0 +1,9 @@
+{
+  "name": "CS50",
+  "url": "https://cs50.harvard.edu/",
+  "description": "leaves off, focusing on the development of 2D and 3D interactive games. Students explore the design of such childhood games as Super Mario Bros., Legend of Zelda, and Portal in a quest to understand how video games themselves are implemented. Via lectures and hands-on projects, the course explores p",
+  "section": "Misc",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

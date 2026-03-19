@@ -1,0 +1,9 @@
+{
+  "name": "golearn",
+  "url": "https://github.com/sjwhitworth/golearn",
+  "description": "Machine learning for Go.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

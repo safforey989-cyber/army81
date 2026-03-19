@@ -1,0 +1,9 @@
+{
+  "name": "ProtonVPN",
+  "url": "https://github.com/ProtonVPN/ios-mac-app",
+  "description": "Tool from mobile_apps",
+  "section": "Security",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

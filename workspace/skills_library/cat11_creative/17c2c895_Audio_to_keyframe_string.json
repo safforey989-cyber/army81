@@ -1,0 +1,9 @@
+{
+  "name": "Audio to keyframe string",
+  "url": "https://audio-keyframe-generator.glitch.me/",
+  "description": ": this tool is used to generate strings for the keyframes of AI animation notebooks, such as [this VQGAN+CLIP Animations notebook](https://colab.research.google.com/github/chigozienri/VQGAN-CLIP-animations/blob/main/VQGAN-CLIP-animations.ipynb), using the volume of audio tracks.",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

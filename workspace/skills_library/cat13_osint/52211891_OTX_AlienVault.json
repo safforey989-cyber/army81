@@ -1,0 +1,9 @@
+{
+  "name": "OTX AlienVault",
+  "url": "https://otx.alienvault.com/",
+  "description": "Open Threat Exchange is the neighborhood watch of the global intelligence community. It enables private companies, independent security researchers, and government agencies to openly collaborate and share the latest information about emerging threats, attack methods, and malicious actors, promoting ",
+  "section": "[↑](#-table-of-contents) Threat Intelligence",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

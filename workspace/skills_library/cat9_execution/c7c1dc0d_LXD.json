@@ -1,0 +1,9 @@
+{
+  "name": "LXD",
+  "url": "https://linuxcontainers.org/lxd/",
+  "description": "Container \"hypervisor\" and a better UX for LXC. ([Source Code](https://github.com/lxc/lxd)) `Apache-2.0` `Go`",
+  "section": "Software Containers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Bless",
+  "url": "https://github.com/bwrsandman/Bless",
+  "description": "High quality, full featured, cross-platform graphical hex editor written in Gtk#.",
+  "section": "Hex Editors",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

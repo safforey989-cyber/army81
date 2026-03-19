@@ -1,0 +1,9 @@
+{
+  "name": "Backrest",
+  "url": "https://garethgeorge.github.io/backrest/",
+  "description": "Backrest is a web UI and orchestrator for restic backup. ([Source Code](https://github.com/garethgeorge/backrest)) `GPL-3.0` `Docker/Go`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

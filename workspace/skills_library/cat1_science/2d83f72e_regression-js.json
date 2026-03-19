@@ -1,0 +1,9 @@
+{
+  "name": "regression-js",
+  "url": "https://github.com/Tom-Alexander/regression-js",
+  "description": "A javascript library containing a collection of least squares fitting methods for finding a trend in a set of data.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

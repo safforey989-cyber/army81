@@ -1,0 +1,9 @@
+{
+  "name": "ReelPhish",
+  "url": "https://github.com/fireeye/ReelPhish",
+  "description": "Real-time two-factor phishing tool.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

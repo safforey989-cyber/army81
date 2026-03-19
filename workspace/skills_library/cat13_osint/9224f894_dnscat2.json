@@ -1,0 +1,9 @@
+{
+  "name": "dnscat2",
+  "url": "https://github.com/iagox86/dnscat2",
+  "description": "Tool designed to create an encrypted command and control channel over the DNS protocol, which is an effective tunnel out of almost every network.",
+  "section": "Exfiltration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

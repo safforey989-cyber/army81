@@ -1,0 +1,9 @@
+{
+  "name": "Frida",
+  "url": "https://www.frida.re/",
+  "description": "Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

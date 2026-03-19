@@ -1,0 +1,9 @@
+{
+  "name": "comet-ml/opik",
+  "url": "https://github.com/comet-ml/opik",
+  "description": ": Evaluate, test, and ship LLM applications with a suite of observability tools to calibrate language model outputs across your dev and production lifecycle.",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Errbot",
+  "url": "https://errbot.io/",
+  "description": "Plugin based chatbot designed to be easily deployable, extensible and maintainable. ([Source Code](https://github.com/errbotio/errbot)) `GPL-3.0` `Python`",
+  "section": "ChatOps",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

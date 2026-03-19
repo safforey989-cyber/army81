@@ -1,0 +1,9 @@
+{
+  "name": "LangChain Tutorials Playlist",
+  "url": "https://www.youtube.com/playlist?list=PL611FKPtL866MnlDPHvI3KwVGqCB-QJAx",
+  "description": "Tool from langchain_tools",
+  "section": "Videos Playlists",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

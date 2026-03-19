@@ -1,0 +1,9 @@
+{
+  "name": "JuiceFS",
+  "url": "https://juicefs.com/",
+  "description": "Distributed POSIX file system built on top of Redis and S3. ([Source Code](https://github.com/juicedata/juicefs)) `Apache-2.0` `Go`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

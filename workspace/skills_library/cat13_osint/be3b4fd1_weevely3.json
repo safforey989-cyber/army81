@@ -1,0 +1,9 @@
+{
+  "name": "weevely3",
+  "url": "https://github.com/epinna/weevely3",
+  "description": "Weaponized PHP-based web shell.",
+  "section": "Web shells and C2 frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

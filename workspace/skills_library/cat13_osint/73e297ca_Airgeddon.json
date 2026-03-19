@@ -1,0 +1,9 @@
+{
+  "name": "Airgeddon",
+  "url": "https://github.com/v1s1t0r1sh3r3/airgeddon",
+  "description": "Multi-use bash script for Linux systems to audit wireless networks.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

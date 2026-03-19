@@ -1,0 +1,9 @@
+{
+  "name": "Bitwarden",
+  "url": "https://github.com/bitwarden/ios",
+  "description": ": Password Manager and Authenticator",
+  "section": "Password",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DeepSeek-V2.5",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V2.5",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

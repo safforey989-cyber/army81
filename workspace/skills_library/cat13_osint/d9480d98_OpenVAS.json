@@ -1,0 +1,9 @@
+{
+  "name": "OpenVAS",
+  "url": "http://www.openvas.org/",
+  "description": "Free software implementation of the popular Nessus vulnerability assessment system.",
+  "section": "Network Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

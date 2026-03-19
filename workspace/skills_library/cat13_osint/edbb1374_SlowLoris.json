@@ -1,0 +1,9 @@
+{
+  "name": "SlowLoris",
+  "url": "https://github.com/gkbrk/slowloris",
+  "description": "DoS tool that uses low bandwidth on the attacking side.",
+  "section": "DDoS Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

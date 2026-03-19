@@ -1,0 +1,9 @@
+{
+  "name": "ModelEditingPapers",
+  "url": "https://github.com/zjunlp/ModelEditingPapers",
+  "description": "A paper & resource list on model editing for large language models.",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

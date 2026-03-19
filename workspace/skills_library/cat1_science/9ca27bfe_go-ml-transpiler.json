@@ -1,0 +1,9 @@
+{
+  "name": "go-ml-transpiler",
+  "url": "https://github.com/znly/go-ml-transpiler",
+  "description": "An open source Go transpiler for machine learning models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

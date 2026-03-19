@@ -1,0 +1,9 @@
+{
+  "name": "Lobe Chat",
+  "url": "https://github.com/lobehub/lobe-chat",
+  "description": "An open-source, extensible (Function Calling), high-performance chatbot framework ![GitHub Repo stars](https://img.shields.io/github/stars/lobehub/lobe-chat?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

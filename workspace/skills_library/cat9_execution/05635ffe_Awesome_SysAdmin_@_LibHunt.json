@@ -1,0 +1,9 @@
+{
+  "name": "Awesome SysAdmin @ LibHunt",
+  "url": "https://sysadmin.libhunt.com",
+  "description": "Your go-to SysAdmin Toolbox. Based on the list here.",
+  "section": "Websites",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GPT-3 Apps",
+  "url": "https://gpt-apps.com/",
+  "description": ": GPT-3 Powered Micro Products (ex: cat namer, poet pocket, summarize)",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

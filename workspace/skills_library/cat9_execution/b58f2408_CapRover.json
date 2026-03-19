@@ -1,0 +1,9 @@
+{
+  "name": "CapRover",
+  "url": "https://caprover.com/",
+  "description": "Build your own PaaS in a few minutes. ([Demo](https://captain.server.demo.caprover.com/#/login), [Source Code](https://github.com/caprover/caprover)) `Apache-2.0` `Docker/Nodejs`",
+  "section": "PaaS",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "FindBugs",
+  "url": "http://findbugs.sourceforge.net/",
+  "description": "Free software static analyzer to look for bugs in Java code.",
+  "section": "Static Analyzers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

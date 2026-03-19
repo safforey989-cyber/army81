@@ -1,0 +1,9 @@
+{
+  "name": "signal",
+  "url": "https://github.com/soumith/torch-signal",
+  "description": "A signal processing toolbox for Torch-7. FFT, DCT, Hilbert, cepstrums, stft.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

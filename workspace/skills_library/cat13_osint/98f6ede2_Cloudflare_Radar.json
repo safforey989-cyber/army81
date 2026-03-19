@@ -1,0 +1,9 @@
+{
+  "name": "Cloudflare Radar",
+  "url": "https://radar.cloudflare.com",
+  "description": "Internet traffic patterns, attacks, and technology trends.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "FastChat",
+  "url": "https://github.com/lm-sys/FastChat",
+  "description": "A distributed multi-model LLM serving system with web UI and OpenAI-compatible RESTful APIs.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

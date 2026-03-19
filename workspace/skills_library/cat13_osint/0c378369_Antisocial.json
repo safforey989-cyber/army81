@@ -1,0 +1,9 @@
+{
+  "name": "Antisocial",
+  "url": "https://github.com/lukeslp/antisocial",
+  "description": "Find forgotten accounts across 30+ platforms using three-tier verification: official APIs first, then browser automation, then HTTP content analysis. Reduces false positives to around 5%. Deep search mode adds 500+ platforms via the WhatsMyName database.",
+  "section": "[↑](#-table-of-contents) Username Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

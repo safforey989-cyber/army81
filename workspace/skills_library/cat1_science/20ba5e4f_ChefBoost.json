@@ -1,0 +1,9 @@
+{
+  "name": "ChefBoost",
+  "url": "https://github.com/serengil/chefboost",
+  "description": "a lightweight decision tree framework for Python with categorical feature support covering regular decision tree algorithms such as ID3, C4.5, CART, CHAID and regression tree; also some advanced bagging and boosting techniques such as gradient boosting, random forest and adaboost.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

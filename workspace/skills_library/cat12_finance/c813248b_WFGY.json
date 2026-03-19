@@ -1,0 +1,9 @@
+{
+  "name": "WFGY",
+  "url": "https://github.com/onestardao/WFGY",
+  "description": "– Open source framework for debugging and stress testing LLM agents and RAG pipelines. Includes a 16 mode failure map and long-horizon stress tests that are useful for financial research agents.",
+  "section": "Research Tools",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

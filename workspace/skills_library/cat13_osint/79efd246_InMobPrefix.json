@@ -1,0 +1,9 @@
+{
+  "name": "InMobPrefix",
+  "url": "https://github.com/hstsethi/in-mob-prefix",
+  "description": "Dataset, charts, models about mobile phone numbers prefixes in India along with their respective state, operator.",
+  "section": "[↑](#-table-of-contents) Phone Number Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

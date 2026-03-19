@@ -1,0 +1,9 @@
+{
+  "name": "Actor Framework",
+  "url": "https://en.wikipedia.org/wiki/Actor_model",
+  "description": "Tool from ai_agents",
+  "section": "Description",
+  "topic": "ai_agents",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DeepMind Lab",
+  "url": "https://github.com/deepmind/lab",
+  "description": "DeepMind Lab is a 3D learning environment based on id Software's Quake III Arena via ioquake3 and other open source software. Its primary purpose is to act as a testbed for research in artificial intelligence, especially deep reinforcement learning.",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

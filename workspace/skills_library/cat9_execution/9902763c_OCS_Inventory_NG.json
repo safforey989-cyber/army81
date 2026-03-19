@@ -1,0 +1,9 @@
+{
+  "name": "OCS Inventory NG",
+  "url": "https://ocsinventory-ng.org/",
+  "description": "Asset management and deployment solution for all devices in your IT Department. ([Source Code](https://github.com/OCSInventory-NG)) `GPL-2.0` `PHP/Perl`",
+  "section": "IT Asset Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

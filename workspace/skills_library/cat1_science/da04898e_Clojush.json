@@ -1,0 +1,9 @@
+{
+  "name": "Clojush",
+  "url": "https://github.com/lspector/Clojush",
+  "description": "The Push programming language and the PushGP genetic programming system implemented in Clojure.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

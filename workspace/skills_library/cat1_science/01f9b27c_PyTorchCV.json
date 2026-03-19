@@ -1,0 +1,9 @@
+{
+  "name": "PyTorchCV",
+  "url": "https://github.com/donnyyou/PyTorchCV",
+  "description": "A PyTorch-Based Framework for Deep Learning in Computer Vision.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

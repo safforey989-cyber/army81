@@ -1,0 +1,9 @@
+{
+  "name": "ocserv",
+  "url": "https://www.infradead.org/ocserv/",
+  "description": "Cisco AnyConnect-compatible VPN server. ([Source Code](https://gitlab.com/ocserv/ocserv)) `GPL-2.0` `C`",
+  "section": "VPN",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

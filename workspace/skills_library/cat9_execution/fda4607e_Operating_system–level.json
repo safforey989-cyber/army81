@@ -1,0 +1,9 @@
+{
+  "name": "Operating system–level",
+  "url": "https://en.wikipedia.org/wiki/OS-level_virtualization",
+  "description": "virtualization.",
+  "section": "Software Containers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

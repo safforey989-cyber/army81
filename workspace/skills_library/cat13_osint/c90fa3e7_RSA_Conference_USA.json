@@ -1,0 +1,9 @@
+{
+  "name": "RSA Conference USA",
+  "url": "https://www.rsaconference.com/",
+  "description": "Annual security conference in San Francisco, California, USA.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

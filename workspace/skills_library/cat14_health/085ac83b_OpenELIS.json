@@ -1,0 +1,9 @@
+{
+  "name": "OpenELIS",
+  "url": "https://openelis-global.org",
+  "description": "Laboratory Information System for Global Health.",
+  "section": "Laboratory",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

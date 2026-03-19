@@ -1,0 +1,9 @@
+{
+  "name": "TraceWrangler",
+  "url": "https://www.tracewrangler.com/",
+  "description": "Network capture file toolkit that can edit and merge `pcap` or `pcapng` files with batch editing features.",
+  "section": "Network Traffic Replay and Editing Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

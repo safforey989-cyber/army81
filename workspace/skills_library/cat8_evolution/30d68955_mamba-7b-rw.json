@@ -1,0 +1,9 @@
+{
+  "name": "mamba-7b-rw",
+  "url": "https://huggingface.co/TRI-ML/mamba-7b-rw",
+  "description": "| [Toyota Research Institute](https://huggingface.co/TRI-ML/mamba-7b-rw) | 7 | [unlimited(RNN), trained on 2048](https://huggingface.co/TRI-ML/mamba-7b-rw) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "penalized",
+  "url": "https://cran.r-project.org/web/packages/penalized/index.html",
+  "description": "penalized: L1 (lasso and fused lasso) and L2 (ridge) penalized estimation in GLMs and in the Cox model.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

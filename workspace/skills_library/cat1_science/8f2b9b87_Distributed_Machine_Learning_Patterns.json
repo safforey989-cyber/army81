@@ -1,0 +1,9 @@
+{
+  "name": "Distributed Machine Learning Patterns",
+  "url": "https://github.com/terrytangyuan/distributed-ml-patterns",
+  "description": "This book teaches you how to take machine learning models from your personal laptop to large distributed clusters. You’ll explore key concepts and patterns behind successful distributed machine learning systems, and learn technologies like TensorFlow, Kubernetes, Kubeflow, and Argo Workflows directl",
+  "section": "Books",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

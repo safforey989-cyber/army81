@@ -1,0 +1,9 @@
+{
+  "name": "Samoa",
+  "url": "https://samoa.incubator.apache.org/",
+  "description": "SAMOA is a framework that includes distributed machine learning for data streams with an interface to plug-in different stream processing platforms.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

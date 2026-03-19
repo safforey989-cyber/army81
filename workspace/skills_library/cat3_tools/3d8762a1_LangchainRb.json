@@ -1,0 +1,9 @@
+{
+  "name": "LangchainRb",
+  "url": "https://github.com/andreibondarev/langchainrb",
+  "description": ": Ruby Langchain ![GitHub Repo stars](https://img.shields.io/github/stars/andreibondarev/langchainrb?style=social)",
+  "section": "Ports to other languages",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "BarcodeScanner",
+  "url": "https://github.com/onl1ner/BarcodeScanner",
+  "description": ": Simple & easy way to scan both EAN8 and EAN13 barcodes",
+  "section": "Scan",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "tensorlm",
+  "url": "https://github.com/batzner/tensorlm",
+  "description": "Tool from data_science",
+  "section": "TensorFlow Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

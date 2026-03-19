@@ -1,0 +1,9 @@
+{
+  "name": "RusticSOM",
+  "url": "https://github.com/avinashshenoy97/RusticSOM",
+  "description": "A Rust library for Self Organising Maps (SOM).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

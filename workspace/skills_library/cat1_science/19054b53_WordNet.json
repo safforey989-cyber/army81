@@ -1,0 +1,9 @@
+{
+  "name": "WordNet",
+  "url": "https://github.com/JuliaText/WordNet.jl",
+  "description": "A Julia package for Princeton's WordNet",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

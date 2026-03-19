@@ -1,0 +1,9 @@
+{
+  "name": "Google NotebookLM",
+  "url": "https://notebooklm.google.com/",
+  "description": ": generate podcast episodes based on your uploaded references",
+  "section": "Podcast generators",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "mlens",
+  "url": "https://github.com/flennerhag/mlens",
+  "description": "A high performance, memory efficient, maximally parallelized ensemble learning, integrated with scikit-learn.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

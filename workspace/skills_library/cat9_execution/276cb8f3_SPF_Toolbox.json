@@ -1,0 +1,9 @@
+{
+  "name": "SPF Toolbox",
+  "url": "https://spftoolbox.com",
+  "description": "Application to look up DNS records such as SPF, MX, Whois, and more. ([Source Code](https://github.com/charlesabarnes/SPFtoolbox)) `MIT` `PHP`",
+  "section": "DNS - Control Panels & Domain Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

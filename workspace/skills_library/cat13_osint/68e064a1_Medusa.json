@@ -1,0 +1,9 @@
+{
+  "name": "Medusa",
+  "url": "https://github.com/wisk/medusa",
+  "description": "Open source, cross-platform interactive disassembler.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Vulners",
+  "url": "https://vulners.com/",
+  "description": "Security database of software vulnerabilities.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

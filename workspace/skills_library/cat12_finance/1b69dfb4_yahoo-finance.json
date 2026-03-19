@@ -1,0 +1,9 @@
+{
+  "name": "yahoo-finance",
+  "url": "https://github.com/lukaszbanasiak/yahoo-finance",
+  "description": "Python module to get stock data from Yahoo! Finance.",
+  "section": "Traditional Markets",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

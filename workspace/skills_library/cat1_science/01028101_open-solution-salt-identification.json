@@ -1,0 +1,9 @@
+{
+  "name": "open-solution-salt-identification",
+  "url": "https://github.com/neptune-ml/open-solution-salt-identification",
+  "description": "> source code and [experiments results](https://app.neptune.ml/neptune-ml/Salt-Detection) for [TGS Salt Identification Challenge](https://www.kaggle.com/c/tgs-salt-identification-challenge).",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

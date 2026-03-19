@@ -1,0 +1,9 @@
+{
+  "name": "Ops School",
+  "url": "https://www.opsschool.org",
+  "description": "Comprehensive program that will help you learn to be an operations engineer.",
+  "section": "Websites",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

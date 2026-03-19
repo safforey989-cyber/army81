@@ -1,0 +1,9 @@
+{
+  "name": "LBJava",
+  "url": "https://github.com/CogComp/lbjava",
+  "description": "Learning Based Java is a modelling language for the rapid development of software systems, offers a convenient, declarative syntax for classifier and constraint definition directly in terms of the objects in the programmer's application.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

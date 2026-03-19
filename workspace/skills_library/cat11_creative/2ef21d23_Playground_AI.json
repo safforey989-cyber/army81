@@ -1,0 +1,9 @@
+{
+  "name": "Playground AI",
+  "url": "https://playgroundai.com/",
+  "description": ": frontend for Stable Diffusion with 1000 image generations per day",
+  "section": "Stable Diffusion Deployed Web Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

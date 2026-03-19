@@ -1,0 +1,9 @@
+{
+  "name": "Hypothesis Tests",
+  "url": "https://github.com/JuliaStats/HypothesisTests.jl",
+  "description": "Hypothesis tests for Julia.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "TracerouteVisualizer",
+  "url": "https://kriztalz.sh/traceroute-visualizer/",
+  "description": "An online tool that displays your mtr / traceroute / flyingroutes output on a map for visual analysis.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

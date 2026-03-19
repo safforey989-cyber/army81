@@ -1,0 +1,9 @@
+{
+  "name": "Search_firm_bot",
+  "url": "https://t.me/Search_firm_bot",
+  "description": "Searches organizations, banks, postal codes.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

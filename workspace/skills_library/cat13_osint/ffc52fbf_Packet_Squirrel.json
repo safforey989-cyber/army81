@@ -1,0 +1,9 @@
+{
+  "name": "Packet Squirrel",
+  "url": "https://www.hak5.org/gear/packet-squirrel",
+  "description": "Ethernet multi-tool designed to enable covert remote access, painless packet captures, and secure VPN connections with the flip of a switch.",
+  "section": "Physical Access Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

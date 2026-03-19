@@ -1,0 +1,9 @@
+{
+  "name": "GoAccess",
+  "url": "https://goaccess.io/",
+  "description": "Real-time web log analyzer and interactive viewer that runs in a terminal or through the browser. ([Source Code](https://github.com/allinurl/goaccess)) `MIT` `C`",
+  "section": "Log Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

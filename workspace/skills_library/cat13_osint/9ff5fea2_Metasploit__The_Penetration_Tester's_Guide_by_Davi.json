@@ -1,0 +1,9 @@
+{
+  "name": "Metasploit: The Penetration Tester's Guide by David Kennedy et al., 2011",
+  "url": "https://nostarch.com/metasploit",
+  "description": "Tool from pentest_tools",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

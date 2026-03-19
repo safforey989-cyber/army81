@@ -1,0 +1,9 @@
+{
+  "name": "trading-rl",
+  "url": "https://github.com/Kostis-S-Z/trading-rl",
+  "description": "Deep Reinforcement Learning for Financial Trading using Price Trailing.",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "FastDatasets",
+  "url": "https://github.com/ZhuLinsen/FastDatasets",
+  "description": "A powerful tool for creating high-quality training datasets for Large Language Models",
+  "section": "LLM Data",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

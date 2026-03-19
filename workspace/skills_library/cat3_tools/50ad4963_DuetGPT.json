@@ -1,0 +1,9 @@
+{
+  "name": "DuetGPT",
+  "url": "https://github.com/kristoferlund/duet-gpt",
+  "description": ": A conversational semi-autonomous developer assistant, AI pair programming without the copypasta. ![GitHub Repo stars](https://img.shields.io/github/stars/kristoferlund/duet-gpt?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Reddit Comment Search",
+  "url": "https://redditcommentsearch.com/",
+  "description": "Analyze a reddit users by comment history.",
+  "section": "[↑](#-table-of-contents) Reddit",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

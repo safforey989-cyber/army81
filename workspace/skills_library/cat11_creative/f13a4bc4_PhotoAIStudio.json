@@ -1,0 +1,9 @@
+{
+  "name": "PhotoAIStudio",
+  "url": "https://photoaistudio.com/",
+  "description": ": a AI-powered photoshot platform with multiple styles",
+  "section": "Stable Diffusion Deployed Web Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

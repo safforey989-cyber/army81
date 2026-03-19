@@ -1,0 +1,9 @@
+{
+  "name": "CompMix",
+  "url": "https://qa.mpi-inf.mpg.de/compmix",
+  "description": "a benchmark evaluating QA methods that operate over a mixture of heterogeneous input sources (KB, text, tables, infoboxes).",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

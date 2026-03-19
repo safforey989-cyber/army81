@@ -1,0 +1,9 @@
+{
+  "name": "camenduru/stable-diffusion-webui-colab",
+  "url": "https://github.com/camenduru/stable-diffusion-webui-colab",
+  "description": ": collection of stable diffusion webui colab for different checkpoints",
+  "section": "Web UI for Stable Diffusion via Google Colab",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "MPT",
+  "url": "https://github.com/ByteSnipers/mobile-pentest-toolkit",
+  "description": "MPT (Mobile Pentest Toolkit) is a must-have solutions for your android penetration testing workflow. It allows you to automate tasks.",
+  "section": "Android Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

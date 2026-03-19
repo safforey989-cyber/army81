@@ -1,0 +1,9 @@
+{
+  "name": "empyrical",
+  "url": "https://github.com/quantopian/empyrical",
+  "description": "Common financial risk and performance metrics. Used by Zipline and pyfolio.",
+  "section": "Research Tools",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Nhost",
+  "url": "https://nhost.io/",
+  "description": "Firebase Alternative with GraphQL. Get a database and backend configured and ready in minutes. ([Source Code](https://github.com/nhost/nhost)) `MIT` `Docker/Nodejs/Go`",
+  "section": "PaaS",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

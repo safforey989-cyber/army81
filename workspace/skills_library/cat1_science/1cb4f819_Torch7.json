@@ -1,0 +1,9 @@
+{
+  "name": "Torch7",
+  "url": "http://torch.ch/",
+  "description": "Tool from ml_tools",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

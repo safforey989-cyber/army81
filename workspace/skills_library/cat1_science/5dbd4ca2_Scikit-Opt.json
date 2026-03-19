@@ -1,0 +1,9 @@
+{
+  "name": "Scikit-Opt",
+  "url": "https://github.com/guofei9987/scikit-opt",
+  "description": "Swarm Intelligence in Python (Genetic Algorithm, Particle Swarm Optimization, Simulated Annealing, Ant Colony Algorithm, Immune Algorithm, Artificial Fish Swarm Algorithm in Python)",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

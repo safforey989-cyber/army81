@@ -1,0 +1,9 @@
+{
+  "name": "Perfect TensorFlow",
+  "url": "https://github.com/PerfectlySoft/Perfect-TensorFlow",
+  "description": "Swift Language Bindings of TensorFlow. Using native TensorFlow models on both macOS / Linux.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

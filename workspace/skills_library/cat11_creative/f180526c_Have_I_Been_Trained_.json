@@ -1,0 +1,9 @@
+{
+  "name": "Have I Been Trained?",
+  "url": "https://haveibeentrained.com/",
+  "description": ": tool for searching 5.8 billion images used to train popular AI art models",
+  "section": "Datasets",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

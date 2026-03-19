@@ -1,0 +1,9 @@
+{
+  "name": "Agent-LLM",
+  "url": "https://github.com/Josh-XT/Agent-LLM",
+  "description": ": An Artificial Intelligence Automation Platform. ![GitHub Repo stars](https://img.shields.io/github/stars/Josh-XT/Agent-LLM?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

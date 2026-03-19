@@ -1,0 +1,9 @@
+{
+  "name": "Llama 3-8|70B",
+  "url": "https://llama.meta.com/llama3/",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

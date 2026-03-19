@@ -1,0 +1,9 @@
+{
+  "name": "API",
+  "url": "https://platform.deepseek.com/api_keys",
+  "description": "|[URL](https://chat.deepseek.com/)|Free/Paid|",
+  "section": "ChatGPT and other AI chatbot",
+  "topic": "ai_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

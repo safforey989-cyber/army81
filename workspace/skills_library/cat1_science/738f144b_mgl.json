@@ -1,0 +1,9 @@
+{
+  "name": "mgl",
+  "url": "https://github.com/melisgl/mgl/",
+  "description": "Neural networks (boltzmann machines, feed-forward and recurrent nets), Gaussian Processes.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

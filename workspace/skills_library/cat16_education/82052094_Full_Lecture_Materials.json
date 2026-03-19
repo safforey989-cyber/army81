@@ -1,0 +1,9 @@
+{
+  "name": "Full Lecture Materials",
+  "url": "http://datastructur.es/sp16/",
+  "description": "Lecture of Spring 2016. This website contains full matrials including video links, labs, homeworks, projects. Very good for self-learner. Also a good start for Java. And it includes some other useful resources for Java Documentation, Data Structure Resources, Git/GitHub and Java Development Resource",
+  "section": "Algorithms",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

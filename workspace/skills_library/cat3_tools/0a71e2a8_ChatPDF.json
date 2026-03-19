@@ -1,0 +1,9 @@
+{
+  "name": "ChatPDF",
+  "url": "https://github.com/akshata29/chatpdf",
+  "description": ": ChatGPT + Enterprise data with Azure OpenAI ![GitHub Repo stars](https://img.shields.io/github/stars/akshata29/chatpdf?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

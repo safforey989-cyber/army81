@@ -1,0 +1,9 @@
+{
+  "name": "Patience.ai",
+  "url": "https://www.patience.ai/",
+  "description": "Patience.ai is an app for creating images with Stable Diffusion, a cutting edge AI developed by Stability.AI.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

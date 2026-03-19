@@ -1,0 +1,9 @@
+{
+  "name": "Bahmni",
+  "url": "https://www.bahmni.org",
+  "description": "Electronic Medical Record and hospital system.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

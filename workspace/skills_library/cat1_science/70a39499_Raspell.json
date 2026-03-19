@@ -1,0 +1,9 @@
+{
+  "name": "Raspell",
+  "url": "https://sourceforge.net/projects/raspell/",
+  "description": "raspell is an interface binding for ruby. **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "paper",
+  "url": "https://arxiv.org/abs/2407.19813",
+  "description": "]",
+  "section": "Retrieval-enhanced LLMs",
+  "topic": "rag_techniques",
+  "category": "cat10_engineering",
+  "source": "github_awesome"
+}

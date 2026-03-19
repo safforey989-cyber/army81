@@ -1,0 +1,9 @@
+{
+  "name": "linfa",
+  "url": "https://github.com/rust-ml/linfa",
+  "description": "a comprehensive toolkit to build Machine Learning applications with Rust",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

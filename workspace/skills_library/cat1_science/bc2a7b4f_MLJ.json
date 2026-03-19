@@ -1,0 +1,9 @@
+{
+  "name": "MLJ",
+  "url": "https://github.com/alan-turing-institute/MLJ.jl",
+  "description": "A Julia machine learning framework.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Zato",
+  "url": "https://zato.io/en/industry/healthcare/index.html",
+  "description": "A Python-based ESB and integration platform for healthcare interoperability, automation and orchestration.",
+  "section": "Integration",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

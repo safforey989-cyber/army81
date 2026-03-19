@@ -1,0 +1,9 @@
+{
+  "name": "ZeroMQ",
+  "url": "https://zeromq.org/",
+  "description": "Lightweight queuing system. ([Source Code](https://github.com/zeromq)) `GPL-3.0` `C++`",
+  "section": "Queuing",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

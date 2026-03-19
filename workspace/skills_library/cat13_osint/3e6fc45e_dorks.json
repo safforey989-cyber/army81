@@ -1,0 +1,9 @@
+{
+  "name": "dorks",
+  "url": "https://github.com/USSCltd/dorks",
+  "description": "Google hack database automation tool.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

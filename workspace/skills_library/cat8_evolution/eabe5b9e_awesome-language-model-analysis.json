@@ -1,0 +1,9 @@
+{
+  "name": "awesome-language-model-analysis",
+  "url": "https://github.com/Furyton/awesome-language-model-analysis",
+  "description": "This paper list focuses on the theoretical or empirical analysis of language models, e.g., the learning dynamics, expressive capacity, interpretability, generalization, and other interesting topics.",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

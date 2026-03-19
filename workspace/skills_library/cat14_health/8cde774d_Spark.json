@@ -1,0 +1,9 @@
+{
+  "name": "Spark",
+  "url": "https://github.com/FirelyTeam/spark",
+  "description": "Public domain FHIR server developed in C#.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

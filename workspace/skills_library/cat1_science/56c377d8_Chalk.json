@@ -1,0 +1,9 @@
+{
+  "name": "Chalk",
+  "url": "https://github.com/scalanlp/chalk",
+  "description": "Chalk is a natural language processing library. **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

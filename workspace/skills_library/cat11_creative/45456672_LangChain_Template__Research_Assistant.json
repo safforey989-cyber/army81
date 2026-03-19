@@ -1,0 +1,9 @@
+{
+  "name": "LangChain Template: Research Assistant",
+  "url": "https://github.com/langchain-ai/langchain/tree/master/templates/research-assistant",
+  "description": "Tool from generative_ai",
+  "section": "LangChain",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

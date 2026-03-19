@@ -1,0 +1,9 @@
+{
+  "name": "FOCA (Fingerprinting Organizations with Collected Archives)",
+  "url": "https://www.elevenpaths.com/labstools/foca/",
+  "description": "](https://www.elevenpaths.com/labstools/foca/) - Automated document harvester that searches Google, Bing, and DuckDuckGo to find and extrapolate internal company organizational structures.",
+  "section": "Metadata harvesting and analysis",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

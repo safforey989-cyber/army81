@@ -1,0 +1,9 @@
+{
+  "name": "Anthropic courses",
+  "url": "https://github.com/anthropics/courses",
+  "description": "Anthropic's educational courses.",
+  "section": "Learning resources",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

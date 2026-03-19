@@ -1,0 +1,9 @@
+{
+  "name": "CompassRank",
+  "url": "https://rank.opencompass.org.cn",
+  "description": "CompassRank is dedicated to exploring the most advanced language and visual models, offering a comprehensive, objective, and neutral evaluation reference for the industry and research.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "username_to_id_bot",
+  "url": "https://t.me/username_to_id_bot",
+  "description": "Returns user/chat/channel/bot ID.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

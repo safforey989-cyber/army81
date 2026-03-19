@@ -1,0 +1,9 @@
+{
+  "name": "Model Zoo",
+  "url": "https://modelzoo.co/",
+  "description": "Discover open source deep learning code and pretrained models.",
+  "section": "Books",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "TRRespass",
+  "url": "https://github.com/vusec/trrespass",
+  "description": "Many-sided rowhammer tool suite able to reverse engineer the contents of DDR3 and DDR4 memory chips protected by Target Row Refresh mitigations.",
+  "section": "Side-channel Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

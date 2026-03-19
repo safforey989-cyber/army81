@@ -1,0 +1,9 @@
+{
+  "name": "OpenMetricLearning",
+  "url": "https://github.com/OML-Team/open-metric-learning",
+  "description": "A PyTorch-based framework to train and validate the models producing high-quality embeddings.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

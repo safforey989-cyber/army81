@@ -1,0 +1,9 @@
+{
+  "name": "cl-online-learning",
+  "url": "https://github.com/masatoi/cl-online-learning",
+  "description": "Online learning algorithms (Perceptron, AROW, SCW, Logistic Regression).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

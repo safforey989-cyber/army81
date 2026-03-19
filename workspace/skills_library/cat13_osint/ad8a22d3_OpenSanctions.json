@@ -1,0 +1,9 @@
+{
+  "name": "OpenSanctions",
+  "url": "https://www.opensanctions.org/search/",
+  "description": "Information on sanctions and public office holders.",
+  "section": "[↑](#-table-of-contents) People Investigations",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

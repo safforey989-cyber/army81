@@ -1,0 +1,9 @@
+{
+  "name": "Troopers",
+  "url": "https://www.troopers.de",
+  "description": "Annual international IT Security event with workshops held in Heidelberg, Germany.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

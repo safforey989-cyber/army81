@@ -1,0 +1,7 @@
+{
+  "name": "risk_assessor",
+  "type": "prompt_pattern",
+  "prompt_template": "قيّم مخاطر {project}. حدد الاحتمالية، التأثير، واستراتيجيات التخفيف.",
+  "category": "cat4_management",
+  "source": "built_in"
+}

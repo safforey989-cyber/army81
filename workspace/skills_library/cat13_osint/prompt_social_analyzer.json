@@ -1,0 +1,7 @@
+{
+  "name": "social_analyzer",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل حسابات {person} على السوشيال ميديا. أنماط، اهتمامات، شبكة علاقات.",
+  "category": "cat13_osint",
+  "source": "built_in"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Tribou",
+  "url": "https://tribuo.org",
+  "description": "A machine learning library written in Java by Oracle.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

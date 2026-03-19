@@ -1,0 +1,9 @@
+{
+  "name": "Microsoft KOSMOS-2",
+  "url": "https://twitter.com/mervenoyann/status/1720126908384366649",
+  "description": ": new capabilities of perceiving object descriptions (e.g., bounding boxes) and grounding text to the visual world [[HF demo]](https://huggingface.co/spaces/ydshieh/Kosmos-2) [[arxiv]](https://arxiv.org/abs/2306.14824)",
+  "section": "Multimodal Embedding Space",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

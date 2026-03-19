@@ -1,0 +1,9 @@
+{
+  "name": "Windsurf",
+  "url": "https://windsurf.com/",
+  "description": "An AI-native IDE that combines code editing with advanced AI assistance throughout the development process.",
+  "section": "Coding Assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

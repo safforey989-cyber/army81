@@ -1,0 +1,9 @@
+{
+  "name": "SikkerAPI",
+  "url": "https://www.sikkerapi.com/",
+  "description": "SikkerAPI is a free IP and threat intelligence provider, that publishes IP reputation scores, behavioral data and full attack sessions across 16+ different protocols.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

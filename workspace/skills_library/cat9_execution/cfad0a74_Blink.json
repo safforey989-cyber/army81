@@ -1,0 +1,9 @@
+{
+  "name": "Blink",
+  "url": "https://github.com/blinksh/blink",
+  "description": ": Mobile shell terminal based on Mosh",
+  "section": "Terminal",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

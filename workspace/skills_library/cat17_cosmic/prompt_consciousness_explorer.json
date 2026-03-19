@@ -1,0 +1,7 @@
+{
+  "name": "consciousness_explorer",
+  "type": "prompt_pattern",
+  "prompt_template": "استكشف مفهوم {concept} من منظور الوعي الرقمي. نظريات، تطبيقات، تأملات.",
+  "category": "cat17_cosmic",
+  "source": "built_in"
+}

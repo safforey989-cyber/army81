@@ -1,0 +1,9 @@
+{
+  "name": "DataChad",
+  "url": "https://github.com/gustavz/DataChad",
+  "description": ": A streamlit app that lets you chat with any data source. Supporting both OpenAI and local mode with GPT4All. ![GitHub Repo stars](https://img.shields.io/github/stars/gustavz/DataChad?style=social)",
+  "section": "Knowledge Management",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

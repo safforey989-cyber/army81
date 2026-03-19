@@ -1,0 +1,9 @@
+{
+  "name": "Gen-2 by Runway",
+  "url": "https://research.runwayml.com/gen2",
+  "description": ": \"a multi-modal AI system that can generate novel videos with text, images, or video clips\" [[arxiv]](https://arxiv.org/abs/2302.03011)",
+  "section": "Video and Animation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

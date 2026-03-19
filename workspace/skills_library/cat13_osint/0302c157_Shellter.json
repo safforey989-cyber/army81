@@ -1,0 +1,9 @@
+{
+  "name": "Shellter",
+  "url": "https://www.shellterproject.com/",
+  "description": "Dynamic shellcode injection tool, and the first truly dynamic PE infector ever created.",
+  "section": "Anti-virus Evasion Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

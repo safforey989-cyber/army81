@@ -1,0 +1,9 @@
+{
+  "name": "pgmpy",
+  "url": "https://github.com/pgmpy/pgmpy",
+  "description": "A python library for working with Probabilistic Graphical Models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

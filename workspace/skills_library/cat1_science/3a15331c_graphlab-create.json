@@ -1,0 +1,9 @@
+{
+  "name": "graphlab-create",
+  "url": "https://turi.com/products/create/docs/",
+  "description": "A library with various machine learning models (regression, clustering, recommender systems, graph analytics, etc.) implemented on top of a disk-backed DataFrame.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

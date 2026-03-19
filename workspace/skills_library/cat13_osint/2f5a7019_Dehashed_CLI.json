@@ -1,0 +1,9 @@
+{
+  "name": "Dehashed CLI",
+  "url": "https://github.com/hmaverickadams/DeHashed-API-Tool",
+  "description": "Command-line tool for searching breach databases via DeHashed API.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

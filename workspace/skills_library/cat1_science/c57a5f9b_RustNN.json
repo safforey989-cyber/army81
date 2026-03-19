@@ -1,0 +1,9 @@
+{
+  "name": "RustNN",
+  "url": "https://github.com/jackm321/RustNN",
+  "description": "RustNN is a feedforward neural network library. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

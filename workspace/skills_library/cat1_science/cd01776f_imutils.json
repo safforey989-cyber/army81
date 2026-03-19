@@ -1,0 +1,9 @@
+{
+  "name": "imutils",
+  "url": "https://github.com/jrosebr1/imutils",
+  "description": "A library containing Convenience functions to make basic image processing operations such as translation, rotation, resizing, skeletonization, and displaying Matplotlib images easier with OpenCV and Python.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

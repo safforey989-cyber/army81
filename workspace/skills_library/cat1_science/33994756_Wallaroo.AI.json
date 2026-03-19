@@ -1,0 +1,9 @@
+{
+  "name": "Wallaroo.AI",
+  "url": "https://wallaroo.ai/",
+  "description": "Production AI plaftorm for deploying, managing, and observing any model at scale across any environment from cloud to edge. Let's go from python notebook to inferencing in minutes.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

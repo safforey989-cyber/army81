@@ -1,0 +1,9 @@
+{
+  "name": "ROCAnalysis",
+  "url": "https://github.com/davidavdav/ROCAnalysis.jl",
+  "description": "Receiver Operating Characteristics and functions for evaluation probabilistic binary classifiers.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

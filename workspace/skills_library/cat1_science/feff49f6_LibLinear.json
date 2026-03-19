@@ -1,0 +1,9 @@
+{
+  "name": "LibLinear",
+  "url": "https://www.csie.ntu.edu.tw/~cjlin/liblinear/#download",
+  "description": "A Library for Large Linear Classification.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

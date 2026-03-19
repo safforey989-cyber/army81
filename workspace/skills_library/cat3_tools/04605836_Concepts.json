@@ -1,0 +1,9 @@
+{
+  "name": "Concepts",
+  "url": "https://docs.langchain.com/docs/",
+  "description": ": Langchain concepts doc",
+  "section": "LangChain Framework",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

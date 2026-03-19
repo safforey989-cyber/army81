@@ -1,0 +1,9 @@
+{
+  "name": "CRT Certificate Search",
+  "url": "https://crt.sh",
+  "description": "Allows you to search for public SSL/TLS certificates recorded in Certificate Transparency logs",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

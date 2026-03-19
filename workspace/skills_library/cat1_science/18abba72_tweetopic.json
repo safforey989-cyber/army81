@@ -1,0 +1,9 @@
+{
+  "name": "tweetopic",
+  "url": "https://centre-for-humanities-computing.github.io/tweetopic/",
+  "description": "Blazing fast short-text-topic-modelling for Python.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

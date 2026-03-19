@@ -1,0 +1,9 @@
+{
+  "name": "lastfm_monitor",
+  "url": "https://github.com/misiektoja/lastfm_monitor",
+  "description": "Tool for real-time tracking of Last.fm users' listening activity including detection when user gets online & offline, pauses or resumes playback, all played songs, its duration, skipped songs, with optional auto-play, email alerts, CSV logging, session stats and more",
+  "section": "[↑](#-table-of-contents) Music Streaming Services",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

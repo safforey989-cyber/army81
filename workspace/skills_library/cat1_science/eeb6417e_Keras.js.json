@@ -1,0 +1,9 @@
+{
+  "name": "Keras.js",
+  "url": "https://github.com/transcranial/keras-js",
+  "description": "Run Keras models in the browser, with GPU support provided by WebGL 2.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

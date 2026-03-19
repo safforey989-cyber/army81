@@ -1,0 +1,9 @@
+{
+  "name": "matlib",
+  "url": "https://github.com/atisharma/matlib",
+  "description": "A Clojure library of optimisation and control theory tools and convenience functions based on Neanderthal.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

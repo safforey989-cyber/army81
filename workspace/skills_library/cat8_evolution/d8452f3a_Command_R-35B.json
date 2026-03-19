@@ -1,0 +1,9 @@
+{
+  "name": "Command R-35B",
+  "url": "https://huggingface.co/CohereForAI/c4ai-command-r-v01",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

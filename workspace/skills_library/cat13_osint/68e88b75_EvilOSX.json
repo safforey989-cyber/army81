@@ -1,0 +1,9 @@
+{
+  "name": "EvilOSX",
+  "url": "https://github.com/Marten4n6/EvilOSX",
+  "description": "Modular RAT that uses numerous evasion and exfiltration techniques out-of-the-box.",
+  "section": "macOS Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

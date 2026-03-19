@@ -1,0 +1,9 @@
+{
+  "name": "Deep Diamond",
+  "url": "https://github.com/uncomplicate/deep-diamond",
+  "description": "A fast Clojure Tensor & Deep Learning library",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

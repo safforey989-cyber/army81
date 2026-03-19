@@ -1,0 +1,9 @@
+{
+  "name": "AppSecUSA",
+  "url": "https://appsecusa.org/",
+  "description": "Annual conference organized by OWASP.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

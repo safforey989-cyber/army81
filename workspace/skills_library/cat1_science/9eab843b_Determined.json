@@ -1,0 +1,9 @@
+{
+  "name": "Determined",
+  "url": "https://github.com/determined-ai/determined",
+  "description": "Scalable deep learning training platform, including integrated support for distributed training, hyperparameter tuning, experiment tracking, and model management.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

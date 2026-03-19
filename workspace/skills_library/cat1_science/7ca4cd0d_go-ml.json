@@ -1,0 +1,9 @@
+{
+  "name": "go-ml",
+  "url": "https://github.com/alonsovidales/go_ml",
+  "description": "Linear / Logistic regression, Neural Networks, Collaborative Filtering and Gaussian Multivariate Distribution. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

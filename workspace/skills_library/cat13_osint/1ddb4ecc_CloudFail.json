@@ -1,0 +1,9 @@
+{
+  "name": "CloudFail",
+  "url": "https://github.com/m0rtem/CloudFail",
+  "description": "Unmask server IP addresses hidden behind Cloudflare by searching old database records and detecting misconfigured DNS.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

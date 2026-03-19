@@ -1,0 +1,9 @@
+{
+  "name": "RSS Search Engine",
+  "url": "http://ctrlq.org/rss",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Web Monitoring",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

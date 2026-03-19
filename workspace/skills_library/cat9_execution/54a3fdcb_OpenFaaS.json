@@ -1,0 +1,9 @@
+{
+  "name": "OpenFaaS",
+  "url": "https://www.openfaas.com/",
+  "description": "Serverless Functions Made Simple for Docker & Kubernetes. ([Source Code](https://github.com/openfaas/faas)) `MIT` `Go`",
+  "section": "PaaS",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

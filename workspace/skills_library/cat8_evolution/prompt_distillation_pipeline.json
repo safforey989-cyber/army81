@@ -1,0 +1,7 @@
+{
+  "name": "distillation_pipeline",
+  "type": "prompt_pattern",
+  "prompt_template": "صمم pipeline تقطير من {teacher_model} إلى {student_model}. شامل: data selection, training, evaluation.",
+  "category": "cat8_evolution",
+  "source": "built_in"
+}

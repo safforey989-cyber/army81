@@ -1,0 +1,9 @@
+{
+  "name": "RTFM: Red Team Field Manual by Ben Clark, 2014",
+  "url": "http://www.amazon.com/Rtfm-Red-Team-Field-Manual/dp/1494295504/",
+  "description": "Tool from pentest_tools",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

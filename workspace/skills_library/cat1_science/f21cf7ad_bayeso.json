@@ -1,0 +1,9 @@
+{
+  "name": "bayeso",
+  "url": "https://github.com/jungtaekkim/bayeso",
+  "description": "A simple, but essential Bayesian optimization package, written in Python.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

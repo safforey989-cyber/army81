@@ -1,0 +1,9 @@
+{
+  "name": "ElRepo",
+  "url": "https://elrepo.org/tiki/tiki-index.php",
+  "description": "Community Repo for Enterprise Linux (RHEL, CentOS, etc).",
+  "section": "Repositories",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

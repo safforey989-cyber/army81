@@ -1,0 +1,9 @@
+{
+  "name": "Attention Is All You Need",
+  "url": "https://arxiv.org/pdf/1706.03762.pdf",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

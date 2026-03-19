@@ -1,0 +1,9 @@
+{
+  "name": "UK Phone Book",
+  "url": "https://www.ukphonebook.com/",
+  "description": "Search people in a similar way as 192.com",
+  "section": "[↑](#-table-of-contents) People Investigations",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

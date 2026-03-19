@@ -1,0 +1,9 @@
+{
+  "name": "InfiBench",
+  "url": "https://infi-coder.github.io/infibench",
+  "description": "a benchmark designed to evaluate large language models (LLMs) specifically in their ability to answer real-world coding-related questions.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

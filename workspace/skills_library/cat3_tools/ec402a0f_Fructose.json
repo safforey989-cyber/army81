@@ -1,0 +1,9 @@
+{
+  "name": "Fructose",
+  "url": "https://github.com/bananaml/fructose",
+  "description": ": Fructose is a python package to create a dependable, strongly-typed interface around an LLM call. ![GitHub Repo stars](https://img.shields.io/github/stars/bananaml/fructose?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

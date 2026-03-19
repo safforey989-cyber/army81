@@ -1,0 +1,9 @@
+{
+  "name": "ai.google.dev",
+  "url": "https://ai.google.dev/",
+  "description": "|[URL](https://gemini.google.com/) <br> |Free/Paid|",
+  "section": "ChatGPT and other AI chatbot",
+  "topic": "ai_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DEF CON Suggested Reading",
+  "url": "https://www.defcon.org/html/links/book-list.html",
+  "description": ".",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

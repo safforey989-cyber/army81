@@ -1,0 +1,9 @@
+{
+  "name": "MotherSearchBot",
+  "url": "https://t.me/MotherSearchBot",
+  "description": "Google-like Telegram search.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

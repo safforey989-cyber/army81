@@ -1,0 +1,9 @@
+{
+  "name": "PyBrain",
+  "url": "https://github.com/pybrain/pybrain",
+  "description": "Another Python Machine Learning Library.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Clinical Meteor project",
+  "url": "https://github.com/clinical-meteor",
+  "description": "Meteor for FDA, HIPAA, and HL7 compliant applications.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

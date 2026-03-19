@@ -1,0 +1,9 @@
+{
+  "name": "Quandl",
+  "url": "https://www.quandl.com/tools/api",
+  "description": "Get millions of financial and economic dataset from hundreds of publishers via a single free API.",
+  "section": "Traditional Markets",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

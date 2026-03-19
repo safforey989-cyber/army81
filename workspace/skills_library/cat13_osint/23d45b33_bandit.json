@@ -1,0 +1,9 @@
+{
+  "name": "bandit",
+  "url": "https://pypi.python.org/pypi/bandit/",
+  "description": "Security oriented static analyser for Python code.",
+  "section": "Static Analyzers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

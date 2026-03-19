@@ -1,0 +1,9 @@
+{
+  "name": "deb.sury.org",
+  "url": "https://deb.sury.org/",
+  "description": "Repository with LAMP updated packages for Debian and Ubuntu.",
+  "section": "Repositories",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

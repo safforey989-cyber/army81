@@ -1,0 +1,9 @@
+{
+  "name": "Sho",
+  "url": "https://www.microsoft.com/en-us/research/project/sho-the-net-playground-for-data/",
+  "description": "Sho is an interactive environment for data analysis and scientific computing that lets you seamlessly connect scripts (in IronPython) with compiled code (in .NET) to enable fast and flexible prototyping. The environment includes powerful and efficient libraries for linear algebra as well as data vis",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Jami",
+  "url": "https://review.jami.net/admin/repos/ring-client-ios",
+  "description": ": Decentralised text messaging, video and audio calls, file transfer, video conferencing",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

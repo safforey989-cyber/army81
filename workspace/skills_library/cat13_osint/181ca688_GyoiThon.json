@@ -1,0 +1,9 @@
+{
+  "name": "GyoiThon",
+  "url": "https://github.com/gyoisamurai/GyoiThon",
+  "description": "GyoiThon is an Intelligence Gathering tool using Machine Learning.",
+  "section": "Open Sources Intelligence (OSINT)",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "negotiation_planner",
+  "type": "prompt_pattern",
+  "prompt_template": "ضع استراتيجية تفاوض مع {party}. حدد BATNA، المصالح المشتركة، والتكتيكات.",
+  "category": "cat5_behavior",
+  "source": "built_in"
+}

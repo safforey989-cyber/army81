@@ -1,0 +1,9 @@
+{
+  "name": "Grok-1-314B-MoE",
+  "url": "https://x.ai/blog/grok-os",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

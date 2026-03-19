@@ -1,0 +1,9 @@
+{
+  "name": "jais-13b",
+  "url": "https://huggingface.co/core42/jais-13b",
+  "description": ", [jais-13b-chat](https://huggingface.co/core42/jais-13b-chat) | [Jais and Jais-chat: Arabic-Centric Foundation and Instruction-Tuned Open Generative Large Language Models](https://arxiv.org/abs/2308.16149) | 13 | [2048](https://huggingface.co/core42/jais-13b/blob/main/config.json) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "2311.05661] Prompt Engineering a Prompt Engineer",
+  "url": "https://arxiv.org/abs/2311.05661",
+  "description": ": this paper deals with the problem of \"constructing a meta-prompt that more effectively guides LLMs to perform automatic prompt engineering\"",
+  "section": "Prompt Engineering",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

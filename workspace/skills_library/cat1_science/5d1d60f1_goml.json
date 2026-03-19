@@ -1,0 +1,9 @@
+{
+  "name": "goml",
+  "url": "https://github.com/cdipaolo/goml",
+  "description": "Machine learning library written in pure Go.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

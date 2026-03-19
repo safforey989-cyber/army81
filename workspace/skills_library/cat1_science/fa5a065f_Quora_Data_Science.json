@@ -1,0 +1,9 @@
+{
+  "name": "Quora Data Science",
+  "url": "https://www.quora.com/topic/Data-Science",
+  "description": "Data Science Questions and Answers from experts",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "decision_matrix",
+  "type": "prompt_pattern",
+  "prompt_template": "ابنِ مصفوفة قرار لـ {decision}. المعايير: {criteria}. البدائل: {options}.",
+  "category": "cat6_leadership",
+  "source": "built_in"
+}

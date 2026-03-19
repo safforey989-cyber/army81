@@ -1,0 +1,9 @@
+{
+  "name": "Unbound",
+  "url": "https://nlnetlabs.nl/projects/unbound/about/",
+  "description": "Validating, recursive, and caching DNS resolver. ([Source Code](https://github.com/NLnetLabs/unbound)) `BSD-3-Clause` `C`",
+  "section": "DNS - Servers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

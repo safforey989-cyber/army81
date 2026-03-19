@@ -1,0 +1,9 @@
+{
+  "name": "Contourlets",
+  "url": "http://www.ifp.illinois.edu/~minhdo/software/contourlet_toolbox.tar",
+  "description": "MATLAB source code that implements the contourlet transform and its utility functions.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

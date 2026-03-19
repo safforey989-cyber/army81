@@ -1,0 +1,9 @@
+{
+  "name": "CLIP retrieval for laion5B",
+  "url": "https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&index=laion5B&useMclip=false",
+  "description": ": CLIP retrieval using Laion5B. \"It works by converting the text query to a CLIP embedding , then using that embedding to query a knn index of clip image embedddings\".",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

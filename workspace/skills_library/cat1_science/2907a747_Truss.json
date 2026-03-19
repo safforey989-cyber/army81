@@ -1,0 +1,9 @@
+{
+  "name": "Truss",
+  "url": "https://truss.baseten.co",
+  "description": "An open source framework for packaging and serving ML models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "The Web Application Hacker's Handbook by D. Stuttard, M. Pinto, 2011",
+  "url": "http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118026470.html",
+  "description": "Tool from pentest_tools",
+  "section": "Web Exploitation Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

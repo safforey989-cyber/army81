@@ -1,0 +1,7 @@
+{
+  "name": "crypto_analyzer",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل {crypto}. On-chain metrics, sentiment, technical analysis.",
+  "category": "cat12_finance",
+  "source": "built_in"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "NoSQLmap",
+  "url": "https://github.com/codingo/NoSQLMap",
+  "description": "Automatic NoSQL injection and database takeover tool.",
+  "section": "Web injection tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

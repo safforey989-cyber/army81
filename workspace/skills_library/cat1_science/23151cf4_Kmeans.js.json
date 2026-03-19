@@ -1,0 +1,9 @@
+{
+  "name": "Kmeans.js",
+  "url": "https://github.com/emilbayes/kMeans.js",
+  "description": "Simple JavaScript implementation of the k-means algorithm, for node.js and the browser. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

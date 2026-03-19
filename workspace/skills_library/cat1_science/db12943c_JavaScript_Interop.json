@@ -1,0 +1,9 @@
+{
+  "name": "JavaScript Interop",
+  "url": "https://clojurescript.org/reference/javascript-api",
+  "description": "ClojureScript has Native JavaScript Interop from which JavaScript's ML ecosystem can be accessed",
+  "section": "Interop",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

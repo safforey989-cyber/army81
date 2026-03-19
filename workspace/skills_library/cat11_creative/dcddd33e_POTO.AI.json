@@ -1,0 +1,9 @@
+{
+  "name": "POTO.AI",
+  "url": "https://poto.ai/",
+  "description": ": Finetune Stable Difussion model as AI Photographer to generate headshots, portrait and couple wedding photos",
+  "section": "Stable Diffusion Deployed Web Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

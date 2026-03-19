@@ -1,0 +1,9 @@
+{
+  "name": "Sourcebot",
+  "url": "https://www.sourcebot.dev/",
+  "description": "Index thousands of repos on your machine and search through them in a fast, powerful, and modern web interface.",
+  "section": "[↑](#-table-of-contents) Code Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

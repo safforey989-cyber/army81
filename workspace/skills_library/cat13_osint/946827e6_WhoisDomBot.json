@@ -1,0 +1,9 @@
+{
+  "name": "WhoisDomBot",
+  "url": "https://t.me/WhoisDomBot",
+  "description": "Whois lookup for domains/IPs + dig/trace.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

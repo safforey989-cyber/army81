@@ -1,0 +1,9 @@
+{
+  "name": "dorkbot",
+  "url": "https://github.com/utiso/dorkbot",
+  "description": "Command-line tool to scan Google (or other) search results for vulnerabilities.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

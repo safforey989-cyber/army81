@@ -1,0 +1,9 @@
+{
+  "name": "ArbitrageBot",
+  "url": "https://github.com/BatuhanUsluel/ArbitrageBot",
+  "description": "Arbitrage bot that currently works on bittrex & poloniex.",
+  "section": "Arbitrage",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "stanford-corenlp-python",
+  "url": "https://github.com/dasmith/stanford-corenlp-python",
+  "description": "Python wrapper for [Stanford CoreNLP](https://github.com/stanfordnlp/CoreNLP) **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

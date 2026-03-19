@@ -1,0 +1,9 @@
+{
+  "name": "Jina AI",
+  "url": "https://jina.ai/",
+  "description": "An easier way to build neural search in the cloud. Compatible with Jupyter Notebooks.",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

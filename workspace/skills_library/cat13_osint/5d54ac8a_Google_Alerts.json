@@ -1,0 +1,9 @@
+{
+  "name": "Google Alerts",
+  "url": "http://www.google.com/alerts",
+  "description": "A content change detection and notification service.",
+  "section": "[↑](#-table-of-contents) Web Monitoring",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

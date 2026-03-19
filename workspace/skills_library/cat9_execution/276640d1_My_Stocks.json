@@ -1,0 +1,9 @@
+{
+  "name": "My Stocks",
+  "url": "https://github.com/dkhamsing/stocks",
+  "description": ": Basic stocks tracking, supports Finnhub, Tiingo, or IEX Cloud",
+  "section": "Finance",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

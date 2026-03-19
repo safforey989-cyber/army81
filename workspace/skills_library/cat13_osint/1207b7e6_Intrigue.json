@@ -1,0 +1,9 @@
+{
+  "name": "Intrigue",
+  "url": "http://intrigue.io",
+  "description": "Automated OSINT & Attack Surface discovery framework with powerful API, UI and CLI.",
+  "section": "Open Sources Intelligence (OSINT)",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

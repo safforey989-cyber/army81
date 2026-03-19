@@ -1,0 +1,9 @@
+{
+  "name": "Swiss Cyber Storm",
+  "url": "https://www.swisscyberstorm.com/",
+  "description": "Annual security conference in Lucerne, Switzerland.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

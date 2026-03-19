@@ -1,0 +1,9 @@
+{
+  "name": "Nipe",
+  "url": "https://github.com/GouveaHeitor/nipe",
+  "description": "Script to redirect all traffic from the machine to the Tor network.",
+  "section": "Tor Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

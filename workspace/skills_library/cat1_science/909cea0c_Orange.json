@@ -1,0 +1,9 @@
+{
+  "name": "Orange",
+  "url": "https://orange.biolab.si/",
+  "description": "Open source data visualization and data analysis for novices and experts.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

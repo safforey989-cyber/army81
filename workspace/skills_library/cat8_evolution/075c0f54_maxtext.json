@@ -1,0 +1,9 @@
+{
+  "name": "maxtext",
+  "url": "https://github.com/AI-Hypercomputer/maxtext",
+  "description": "A simple, performant and scalable Jax LLM!",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

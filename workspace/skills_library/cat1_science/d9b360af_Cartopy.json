@@ -1,0 +1,9 @@
+{
+  "name": "Cartopy",
+  "url": "https://scitools.org.uk/cartopy/docs/latest/",
+  "description": "Cartopy is a Python package designed for geospatial data processing in order to produce maps and other geospatial data analyses.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

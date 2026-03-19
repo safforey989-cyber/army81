@@ -1,0 +1,9 @@
+{
+  "name": "Turbostream",
+  "url": "https://github.com/turboline-ai/turbostream",
+  "description": "| A terminal UI for experimenting with custom rule engines and selective LLM analysis on real-time data streams, without worrying about streaming infra or backpressure. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "skorch",
+  "url": "https://github.com/skorch-dev/skorch",
+  "description": "Tool from data_science",
+  "section": "PyTorch Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

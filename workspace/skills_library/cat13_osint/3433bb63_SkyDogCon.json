@@ -1,0 +1,9 @@
+{
+  "name": "SkyDogCon",
+  "url": "http://www.skydogcon.com/",
+  "description": "Technology conference in Nashville.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

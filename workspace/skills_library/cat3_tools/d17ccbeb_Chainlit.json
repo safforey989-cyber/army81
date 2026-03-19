@@ -1,0 +1,9 @@
+{
+  "name": "Chainlit",
+  "url": "https://github.com/Chainlit/chainlit",
+  "description": ": Build Python LLM apps in minutes ⚡️ ![GitHub Repo stars](https://img.shields.io/github/stars/Chainlit/chainlit?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

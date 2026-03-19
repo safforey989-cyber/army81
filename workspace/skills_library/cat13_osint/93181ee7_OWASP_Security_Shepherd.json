@@ -1,0 +1,9 @@
+{
+  "name": "OWASP Security Shepherd",
+  "url": "https://hub.docker.com/r/ismisepaul/securityshepherd/",
+  "description": "`docker pull ismisepaul/securityshepherd`.",
+  "section": "Intentionally Vulnerable Systems as Docker Containers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

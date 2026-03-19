@@ -1,0 +1,9 @@
+{
+  "name": "Beats",
+  "url": "https://www.elastic.co/beats/",
+  "description": "Single-purpose data shippers that send data from hundreds or thousands of machines and systems to Logstash or Elasticsearch. ([Source Code](https://github.com/elastic/beats)) `Apache-2.0` `Go`",
+  "section": "Metrics & Metric Collection",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

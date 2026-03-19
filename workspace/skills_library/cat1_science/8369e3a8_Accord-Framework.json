@@ -1,0 +1,9 @@
+{
+  "name": "Accord-Framework",
+  "url": "http://accord-framework.net/",
+  "description": "The Accord.NET Framework is a complete framework for building machine learning, computer vision, computer audition, signal processing and statistical applications.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

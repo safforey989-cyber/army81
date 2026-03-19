@@ -1,0 +1,9 @@
+{
+  "name": "Portabase",
+  "url": "https://portabase.io/",
+  "description": "Server dashboard tool that simplifies the backup and restoration of your database instances. ([Source Code](https://github.com/Portabase/portabase)) `Apache-2.0` `Docker`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

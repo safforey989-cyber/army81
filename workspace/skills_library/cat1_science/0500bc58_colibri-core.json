@@ -1,0 +1,9 @@
+{
+  "name": "colibri-core",
+  "url": "https://github.com/proycon/colibri-core",
+  "description": "C++ library, command line tools, and Python binding for extracting and working with basic linguistic constructions such as n-grams and skipgrams in a quick and memory-efficient way.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

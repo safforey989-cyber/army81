@@ -1,0 +1,9 @@
+{
+  "name": "stock_market_reinforcement_learning",
+  "url": "https://github.com/kh-kim/stock_market_reinforcement_learning",
+  "description": "Stock market trading OpenAI Gym environment with Deep Reinforcement Learning using Keras.",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

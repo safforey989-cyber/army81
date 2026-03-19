@@ -1,0 +1,9 @@
+{
+  "name": "LLMFlow",
+  "url": "https://github.com/stoyan-stoyanov/llmflows",
+  "description": ": Simple, Explicit and Transparent LLM Apps ![GitHub Repo stars](https://img.shields.io/github/stars/stoyan-stoyanov/llmflows?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

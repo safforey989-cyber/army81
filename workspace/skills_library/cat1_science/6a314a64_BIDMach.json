@@ -1,0 +1,9 @@
+{
+  "name": "BIDMach",
+  "url": "https://github.com/BIDData/BIDMach",
+  "description": "CPU and GPU-accelerated Machine Learning Library.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

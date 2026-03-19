@@ -1,0 +1,9 @@
+{
+  "name": "Registry Broker",
+  "url": "https://github.com/hashgraph-online/hashnet-mcp-js",
+  "description": "Universal AI agent index for discovering trading agents across Virtuals Protocol, NANDA, MCP, and other registries.",
+  "section": "Others",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

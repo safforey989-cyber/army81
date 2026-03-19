@@ -1,0 +1,9 @@
+{
+  "name": "rdetools",
+  "url": "https://cran.r-project.org/web/packages/rdetools/index.html",
+  "description": "rdetools: Relevant Dimension Estimation (RDE) in Feature Spaces. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

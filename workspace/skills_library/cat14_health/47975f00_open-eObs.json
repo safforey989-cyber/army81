@@ -1,0 +1,9 @@
+{
+  "name": "open-eObs",
+  "url": "https://openeobs.github.io/",
+  "description": "Observation and clinical assessment platform that offers a real-time view of all patients across a ward.",
+  "section": "Nursing",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

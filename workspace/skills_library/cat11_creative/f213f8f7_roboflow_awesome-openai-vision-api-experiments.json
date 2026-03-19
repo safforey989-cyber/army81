@@ -1,0 +1,9 @@
+{
+  "name": "roboflow/awesome-openai-vision-api-experiments",
+  "url": "https://github.com/roboflow/awesome-openai-vision-api-experiments",
+  "description": ": Examples showing how to use the OpenAI vision API to run inference on images, video files and webcam streams",
+  "section": "Multimodal",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

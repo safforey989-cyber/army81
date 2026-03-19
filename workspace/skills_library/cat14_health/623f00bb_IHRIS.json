@@ -1,0 +1,9 @@
+{
+  "name": "IHRIS",
+  "url": "https://www.ihris.org/toolkit-new/",
+  "description": "Health Information System for management of human resources for health.",
+  "section": "Data",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

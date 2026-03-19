@@ -1,0 +1,9 @@
+{
+  "name": "mitmproxy",
+  "url": "https://mitmproxy.org/",
+  "description": "Interactive TLS-capable intercepting HTTP proxy for penetration testers and software developers.",
+  "section": "Intercepting Web proxies",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

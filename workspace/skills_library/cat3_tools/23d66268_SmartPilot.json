@@ -1,0 +1,9 @@
+{
+  "name": "SmartPilot",
+  "url": "https://github.com/jaredkirby/SmartPilot",
+  "description": ": A Python program leveraging OpenAI's language models to generate, analyze, and select the best answer to a given question ![GitHub Repo stars](https://img.shields.io/github/stars/jaredkirby/SmartPilot?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

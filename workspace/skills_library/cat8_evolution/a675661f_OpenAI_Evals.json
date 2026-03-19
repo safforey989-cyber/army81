@@ -1,0 +1,9 @@
+{
+  "name": "OpenAI Evals",
+  "url": "https://github.com/openai/evals",
+  "description": "An open-source library for evaluating task performance of language models and prompts.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

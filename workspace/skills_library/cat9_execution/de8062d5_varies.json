@@ -1,0 +1,9 @@
+{
+  "name": "varies",
+  "url": "https://www.swebench.com/",
+  "description": "based on the model used by the agent.",
+  "section": "Description",
+  "topic": "ai_agents",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

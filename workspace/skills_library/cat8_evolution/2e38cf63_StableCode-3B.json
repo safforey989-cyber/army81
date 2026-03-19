@@ -1,0 +1,9 @@
+{
+  "name": "StableCode-3B",
+  "url": "https://huggingface.co/collections/stabilityai/stable-code-64f9dfb4ebc8a1be0a3f7650",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

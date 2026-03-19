@@ -1,0 +1,9 @@
+{
+  "name": "Full-Disclosure",
+  "url": "http://seclists.org/fulldisclosure/",
+  "description": "Public, vendor-neutral forum for detailed discussion of vulnerabilities, often publishes details before many other sources.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "NSQ",
+  "url": "https://nsq.io/",
+  "description": "A realtime distributed messaging platform. ([Source Code](https://github.com/nsqio/nsq)) `MPL-2.0` `Go`",
+  "section": "Queuing",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

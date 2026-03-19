@@ -1,0 +1,9 @@
+{
+  "name": "Merklemap",
+  "url": "https://www.merklemap.com/",
+  "description": "Discover and enumerate all subdomains associated with a website, including those not publicly advertised. Works by ingesting certificate transparency logs.",
+  "section": "[↑](#-table-of-contents) DNS",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

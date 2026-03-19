@@ -1,0 +1,9 @@
+{
+  "name": "PyStanfordDependencies",
+  "url": "https://github.com/dmcc/PyStanfordDependencies",
+  "description": "Python interface for converting Penn Treebank trees to Stanford Dependencies.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "python-zpar",
+  "url": "https://github.com/EducationalTestingService/python-zpar",
+  "description": "Python bindings for [ZPar](https://github.com/frcchang/zpar), a statistical part-of-speech-tagger, constituency parser, and dependency parser for English.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

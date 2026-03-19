@@ -1,0 +1,9 @@
+{
+  "name": "hebel",
+  "url": "https://github.com/hannes-brt/hebel",
+  "description": "GPU-Accelerated Deep Learning Library in Python. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

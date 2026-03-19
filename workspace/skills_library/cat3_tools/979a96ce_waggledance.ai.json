@@ -1,0 +1,9 @@
+{
+  "name": "waggledance.ai",
+  "url": "https://github.com/agi-merge/waggle-dance",
+  "description": ": An opinionated, concurrent system of AI Agents. It implements Plan-Validate-Solve with data and tools for general goal-solving. ![GitHub Repo stars](https://img.shields.io/github/stars/agi-merge/waggle-dance?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Qwant",
+  "url": "http://www.qwant.com",
+  "description": "French search engine that relies on Microsoft Bing.",
+  "section": "[↑](#-table-of-contents) Meta Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

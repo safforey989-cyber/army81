@@ -1,0 +1,9 @@
+{
+  "name": "LibreNMS",
+  "url": "https://www.librenms.org",
+  "description": "Fully featured network monitoring system that provides a wealth of features and device support. ([Source Code](https://github.com/librenms/librenms)) `GPL-3.0` `PHP`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

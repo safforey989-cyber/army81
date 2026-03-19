@@ -1,0 +1,9 @@
+{
+  "name": "Netzob",
+  "url": "https://github.com/netzob/netzob",
+  "description": "Reverse engineering, traffic generation and fuzzing of communication protocols.",
+  "section": "Protocol Analyzers and Sniffers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

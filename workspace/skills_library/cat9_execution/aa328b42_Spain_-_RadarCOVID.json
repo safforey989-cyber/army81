@@ -1,0 +1,9 @@
+{
+  "name": "Spain - RadarCOVID",
+  "url": "https://github.com/RadarCOVID/radar-covid-ios",
+  "description": ": RadarCOVID tracing using DP3T",
+  "section": "Contact Tracing",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

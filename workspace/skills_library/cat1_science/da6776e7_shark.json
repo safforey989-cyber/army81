@@ -1,0 +1,9 @@
+{
+  "name": "shark",
+  "url": "http://image.diku.dk/shark/sphinx_pages/build/html/index.html",
+  "description": "A fast, modular, feature-rich open-source C++ machine learning library.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "CometML",
+  "url": "https://github.com/comet-ml/comet-examples",
+  "description": ": The best-in-class MLOps platform with experiment tracking, model production monitoring, a model registry, and data lineage from training straight through to production.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

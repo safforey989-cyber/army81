@@ -1,0 +1,9 @@
+{
+  "name": "LLM Evaluation at Scale – Airtrain",
+  "url": "https://www.airtrain.ai/",
+  "description": ": no-code batch compute platform for LLM evaluation and tuning workloads",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

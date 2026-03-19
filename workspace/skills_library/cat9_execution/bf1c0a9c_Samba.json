@@ -1,0 +1,9 @@
+{
+  "name": "Samba",
+  "url": "https://www.samba.org/",
+  "description": "Active Directory and CIFS protocol implementation. ([Source Code](https://download.samba.org/pub/samba/)) `GPL-3.0` `C`",
+  "section": "Identity Management - Tools and web interfaces",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

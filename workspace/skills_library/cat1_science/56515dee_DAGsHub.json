@@ -1,0 +1,9 @@
+{
+  "name": "DAGsHub",
+  "url": "https://dagshub.com",
+  "description": "| A platform built on open source tools for data, model and pipeline management.  |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

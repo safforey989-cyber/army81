@@ -1,0 +1,9 @@
+{
+  "name": "Opal",
+  "url": "https://opal.openhealthcare.org.uk/",
+  "description": "Framework for building clinical applications.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

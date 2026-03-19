@@ -1,0 +1,9 @@
+{
+  "name": "Free Dolly: Introducing the World's First Truly Open Instruction-Tuned LLM",
+  "url": "https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm",
+  "description": "|  [databricks-dolly-15k](https://huggingface.co/datasets/databricks/databricks-dolly-15k) | 15 |  CC BY-SA-3.0 |",
+  "section": "Open LLM datasets for instruction-tuning",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Evilginx2",
+  "url": "https://github.com/kgretzky/evilginx2",
+  "description": "Standalone Machine-in-the-Middle (MitM) reverse proxy attack framework for setting up phishing pages capable of defeating most forms of 2FA security schemes.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AllGPTs",
+  "url": "https://allgpts.co/",
+  "description": ": a directory to find GPTs",
+  "section": "GPTs and Assistant API",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

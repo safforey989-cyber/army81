@@ -1,0 +1,9 @@
+{
+  "name": "rb-libsvm",
+  "url": "https://github.com/febeling/rb-libsvm",
+  "description": "Ruby language bindings for LIBSVM which is a Library for Support Vector Machines.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

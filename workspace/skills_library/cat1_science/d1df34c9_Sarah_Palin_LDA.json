@@ -1,0 +1,9 @@
+{
+  "name": "Sarah Palin LDA",
+  "url": "https://github.com/Wavelets/sarah-palin-lda",
+  "description": "Topic Modelling the Sarah Palin emails.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

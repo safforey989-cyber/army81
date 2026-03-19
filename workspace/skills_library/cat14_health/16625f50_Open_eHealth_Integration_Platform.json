@@ -1,0 +1,9 @@
+{
+  "name": "Open eHealth Integration Platform",
+  "url": "https://github.com/oehf/ipf",
+  "description": "An extension of the Apache Camel routing and mediation engine",
+  "section": "Integration",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

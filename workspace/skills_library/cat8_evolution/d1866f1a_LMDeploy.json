@@ -1,0 +1,9 @@
+{
+  "name": "LMDeploy",
+  "url": "https://github.com/InternLM/lmdeploy",
+  "description": "A high-throughput and low-latency inference and serving framework for LLMs and VLs",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

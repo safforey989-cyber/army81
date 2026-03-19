@@ -1,0 +1,9 @@
+{
+  "name": "gogeo",
+  "url": "https://github.com/golang/geo",
+  "description": "Spherical geometry in Go.",
+  "section": "Spatial analysis and geometry",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

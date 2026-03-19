@@ -1,0 +1,9 @@
+{
+  "name": "Langfuse",
+  "url": "https://github.com/langfuse/langfuse",
+  "description": "Open Source LLM Engineering Platform 🪢 Tracing, Evaluations, Prompt Management, Evaluations and Playground.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

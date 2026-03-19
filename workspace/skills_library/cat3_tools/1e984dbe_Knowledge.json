@@ -1,0 +1,9 @@
+{
+  "name": "Knowledge",
+  "url": "https://github.com/KnowledgeCanvas/knowledge",
+  "description": ": Knowledge is a tool for saving, searching, accessing, and exploring all of your favorite websites, documents and files. ![GitHub Repo stars](https://img.shields.io/github/stars/KnowledgeCanvas/knowledge?style=social)",
+  "section": "Knowledge Management",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

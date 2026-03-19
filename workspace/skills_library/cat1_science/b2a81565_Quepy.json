@@ -1,0 +1,9 @@
+{
+  "name": "Quepy",
+  "url": "https://github.com/machinalis/quepy",
+  "description": "A python framework to transform natural language questions to queries in a database query language.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

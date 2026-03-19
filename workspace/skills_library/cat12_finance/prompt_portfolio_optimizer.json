@@ -1,0 +1,7 @@
+{
+  "name": "portfolio_optimizer",
+  "type": "prompt_pattern",
+  "prompt_template": "حسّن محفظة: {assets}. Sharpe ratio, diversification, risk/return.",
+  "category": "cat12_finance",
+  "source": "built_in"
+}

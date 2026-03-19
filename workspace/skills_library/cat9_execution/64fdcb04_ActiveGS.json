@@ -1,0 +1,9 @@
+{
+  "name": "ActiveGS",
+  "url": "https://github.com/ogoguel/activegs-ios",
+  "description": ": Apple II/IIGS Emulator with in-app game browser, MFi & iCade controller support",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

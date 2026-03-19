@@ -1,0 +1,9 @@
+{
+  "name": "rnn",
+  "url": "https://github.com/Element-Research/rnn",
+  "description": "A Recurrent Neural Network library that extends Torch's nn. RNNs, LSTMs, GRUs, BRNNs, BLSTMs, etc.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

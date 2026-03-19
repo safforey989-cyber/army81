@@ -1,0 +1,9 @@
+{
+  "name": "WHOOPS!",
+  "url": "https://whoops-benchmark.github.io",
+  "description": "a benchmark dataset testing AI's ability to reason about visual commonsense through images that defy normal expectations.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

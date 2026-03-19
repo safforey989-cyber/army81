@@ -1,0 +1,9 @@
+{
+  "name": "tulipnode",
+  "url": "https://github.com/TulipCharts/tulipnode",
+  "description": "Official Node.js wrapper for Tulip Indicators. Provides over 100 technical analysis overlay and indicator functions.",
+  "section": "TA Lib",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

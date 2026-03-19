@@ -1,0 +1,9 @@
+{
+  "name": "NAYN.CO Turkish News with categories",
+  "url": "https://github.com/naynco/nayn.data",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "bpaste",
+  "url": "https://bpa.st/",
+  "description": "Welcome to bpaste, this site is a pastebin. It allows you to share code with others.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

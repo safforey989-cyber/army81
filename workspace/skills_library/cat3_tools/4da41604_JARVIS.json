@@ -1,0 +1,9 @@
+{
+  "name": "JARVIS",
+  "url": "https://github.com/hyhmrright/JARVIS",
+  "description": ": Self-hosted AI assistant platform with RAG, multi-LLM support (DeepSeek/OpenAI/Anthropic), plugin SDK, and multi-channel gateway (Slack/Discord/Telegram). Built with FastAPI and LangGraph. ![GitHub Repo stars](https://img.shields.io/github/stars/hyhmrright/JARVIS?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

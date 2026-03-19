@@ -1,0 +1,9 @@
+{
+  "name": "DetangleAI",
+  "url": "https://detangle.ai",
+  "description": ": AI-generated summaries of provided legal docs",
+  "section": "Text-related Generative Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

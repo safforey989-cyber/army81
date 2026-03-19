@@ -1,0 +1,9 @@
+{
+  "name": "tgcd",
+  "url": "http://tgcd.sourceforge.net/",
+  "description": "Simple Unix network utility to extend the accessibility of TCP/IP based network services beyond firewalls.",
+  "section": "Exfiltration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

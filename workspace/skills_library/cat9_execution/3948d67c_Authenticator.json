@@ -1,0 +1,9 @@
+{
+  "name": "Authenticator",
+  "url": "https://github.com/mattrubin/authenticator",
+  "description": ": Simple two-factor authentication with a clean UI",
+  "section": "Password",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

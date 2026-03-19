@@ -1,0 +1,9 @@
+{
+  "name": "proNet-core",
+  "url": "https://github.com/cnclabs/proNet-core",
+  "description": "A general-purpose network embedding framework: pair-wise representations optimization Network Edit.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

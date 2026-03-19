@@ -1,0 +1,9 @@
+{
+  "name": "open-r1",
+  "url": "https://github.com/huggingface/open-r1",
+  "description": "Fully open reproduction of DeepSeek-R1",
+  "section": "Trending LLM Projects",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

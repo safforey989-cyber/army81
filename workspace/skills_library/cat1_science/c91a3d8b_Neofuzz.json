@@ -1,0 +1,9 @@
+{
+  "name": "Neofuzz",
+  "url": "https://github.com/x-tabdeveloping/neofuzz",
+  "description": "Blazing fast, lightweight and customizable fuzzy and semantic text search in Python with fuzzywuzzy/thefuzz compatible API.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

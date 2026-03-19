@@ -1,0 +1,9 @@
+{
+  "name": "OWASP Zed Attack Proxy (ZAP)",
+  "url": "https://www.zaproxy.org/",
+  "description": "](https://www.zaproxy.org/) - Feature-rich, scriptable HTTP intercepting proxy and fuzzer for penetration testing web applications.",
+  "section": "Intercepting Web proxies",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

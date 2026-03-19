@@ -1,0 +1,9 @@
+{
+  "name": "DrQA",
+  "url": "https://github.com/facebookresearch/DrQA",
+  "description": "Reading Wikipedia to answer open-domain questions.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

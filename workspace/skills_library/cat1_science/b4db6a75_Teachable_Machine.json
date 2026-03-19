@@ -1,0 +1,9 @@
+{
+  "name": "Teachable Machine",
+  "url": "https://teachablemachine.withgoogle.com/",
+  "description": "Train Machine Learning models on the fly to recognize your own images, sounds, & poses.",
+  "section": "Books",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

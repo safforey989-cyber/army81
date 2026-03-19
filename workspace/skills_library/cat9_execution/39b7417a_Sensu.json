@@ -1,0 +1,9 @@
+{
+  "name": "Sensu",
+  "url": "https://sensu.io/",
+  "description": "Monitoring tool for ephemeral infrastructure and distributed applications. ([Source Code](https://github.com/sensu/sensu-go)) `MIT` `Go`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

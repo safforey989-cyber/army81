@@ -1,0 +1,9 @@
+{
+  "name": "Awesome LLM Human Preference Datasets",
+  "url": "https://github.com/PolisAI/awesome-llm-human-preference-datasets",
+  "description": "a collection of human preference datasets for LLM instruction tuning, RLHF and evaluation.",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

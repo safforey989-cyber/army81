@@ -1,0 +1,9 @@
+{
+  "name": "John the Ripper",
+  "url": "http://www.openwall.com/john/",
+  "description": "Fast password cracker.",
+  "section": "Hash Cracking Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

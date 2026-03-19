@@ -1,0 +1,9 @@
+{
+  "name": "Jan",
+  "url": "https://jan.ai/",
+  "description": "Run LLMs like Mistral or Llama2 locally and offline on your computer, or connect to remote AI APIs. [#opensource](https://github.com/janhq/jan)",
+  "section": "Local LLM Deployment",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

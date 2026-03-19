@@ -1,0 +1,9 @@
+{
+  "name": "redsnarf",
+  "url": "https://github.com/nccgroup/redsnarf",
+  "description": "Post-exploitation tool for retrieving password hashes and credentials from Windows workstations, servers, and domain controllers.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "CiteMe",
+  "url": "https://citeme.app",
+  "description": "| AI-powered academic citation generator. Searches 11+ scholarly databases (OpenAlex, PubMed, Semantic Scholar, CrossRef, SciELO) and formats references in 40+ citation styles. Available as web app, browser extension, Google Docs add-on, and public API. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

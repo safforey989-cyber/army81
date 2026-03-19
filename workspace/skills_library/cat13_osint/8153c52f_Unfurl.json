@@ -1,0 +1,9 @@
+{
+  "name": "Unfurl",
+  "url": "https://dfir.blog/unfurl/",
+  "description": "Unfurl analyzes and breaks down URLs into useful forensic components for digital investigation.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

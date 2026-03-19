@@ -1,0 +1,9 @@
+{
+  "name": "AppSec",
+  "url": "https://github.com/paragonie/awesome-appsec",
+  "description": "Resources for learning about application security.",
+  "section": "Other Lists Online",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

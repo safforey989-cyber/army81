@@ -1,0 +1,9 @@
+{
+  "name": "Open Notebook",
+  "url": "https://www.open-notebook.ai",
+  "description": "An open source implementation of NotebookLM with more flexibility and features. [#opensource](https://github.com/lfnovo/open-notebook)",
+  "section": "Productivity",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

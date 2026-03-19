@@ -1,0 +1,9 @@
+{
+  "name": "MCP Run",
+  "url": "https://docs.mcp.run/",
+  "description": ": a registry of AI tools that can be developed by anyone and used inside any AI application",
+  "section": "Model Context Protocol",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

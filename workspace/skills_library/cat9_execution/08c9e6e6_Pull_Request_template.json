@@ -1,0 +1,9 @@
+{
+  "name": "Pull Request template",
+  "url": "./.github/PULL_REQUEST_TEMPLATE.md",
+  "description": "if you wish to add software and consider [donating](https://github.com/n1trux/awesome-donations) to the FLOSS projects you use regularly. Please consider contributing to fix one of the pinned [issues](https://github.com/awesome-foss/awesome-sysadmin/issues) if your time allows.",
+  "section": "Awesome Sysadmin",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

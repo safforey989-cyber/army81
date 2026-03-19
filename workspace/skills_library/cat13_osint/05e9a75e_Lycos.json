@@ -1,0 +1,9 @@
+{
+  "name": "Lycos",
+  "url": "https://www.lycos.com",
+  "description": "A search engine for pictures, videos, news and products.",
+  "section": "[↑](#-table-of-contents) General Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

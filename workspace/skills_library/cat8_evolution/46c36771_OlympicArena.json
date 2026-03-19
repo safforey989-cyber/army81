@@ -1,0 +1,9 @@
+{
+  "name": "OlympicArena",
+  "url": "https://gair-nlp.github.io/OlympicArena/#leaderboard",
+  "description": "a benchmark for evaluating AI models across multiple academic disciplines like math, physics, chemistry, biology, and more.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

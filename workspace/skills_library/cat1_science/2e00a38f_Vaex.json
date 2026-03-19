@@ -1,0 +1,9 @@
+{
+  "name": "Vaex",
+  "url": "https://vaex.io/",
+  "description": "| Vaex is a Python library that allows you to visualize large datasets and calculate statistics at high speeds. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

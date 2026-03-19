@@ -1,0 +1,9 @@
+{
+  "name": "DuckDuckGo browser",
+  "url": "https://github.com/duckduckgo/apple-browsers",
+  "description": "Tool from mobile_apps",
+  "section": "Official",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "zou-group/textgrad",
+  "url": "https://github.com/zou-group/textgrad",
+  "description": ": Automatic \"Differentiation\" via Text, using large language models to backpropagate textual gradients.",
+  "section": "Prompt Optimizers",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

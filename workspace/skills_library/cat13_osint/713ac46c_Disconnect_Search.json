@@ -1,0 +1,9 @@
+{
+  "name": "Disconnect Search",
+  "url": "https://search.disconnect.me/",
+  "description": "Stop search engines from tracking your searches.",
+  "section": "[↑](#-table-of-contents) Privacy Focused Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

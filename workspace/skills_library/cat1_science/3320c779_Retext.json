@@ -1,0 +1,9 @@
+{
+  "name": "Retext",
+  "url": "https://github.com/retextjs/retext",
+  "description": "Extensible system for analyzing and manipulating natural language.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

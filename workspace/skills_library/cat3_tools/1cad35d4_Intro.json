@@ -1,0 +1,9 @@
+{
+  "name": "Intro",
+  "url": "docs/openclaw/README.md",
+  "description": "|[Github](https://github.com/openclaw/openclaw) ![GitHub Repo stars](https://img.shields.io/github/stars/openclaw/openclaw?style=social)|Free|",
+  "section": "AI Agent",
+  "topic": "ai_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "team_builder",
+  "type": "prompt_pattern",
+  "prompt_template": "صمم هيكل فريق لـ {mission}. حدد الأدوار، المهارات، والتسلسل القيادي.",
+  "category": "cat6_leadership",
+  "source": "built_in"
+}

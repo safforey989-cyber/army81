@@ -1,0 +1,9 @@
+{
+  "name": "GitHub Copilot",
+  "url": "https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/",
+  "description": "Announcement of Copilot, a new AI pair programmer that helps you write better code. GitHub blog, June 29, 2021.",
+  "section": "Milestones",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

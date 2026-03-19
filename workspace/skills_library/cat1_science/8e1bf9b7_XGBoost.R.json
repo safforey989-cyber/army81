@@ -1,0 +1,9 @@
+{
+  "name": "XGBoost.R",
+  "url": "https://github.com/tqchen/xgboost/tree/master/R-package",
+  "description": "R binding for eXtreme Gradient Boosting (Tree) Library.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

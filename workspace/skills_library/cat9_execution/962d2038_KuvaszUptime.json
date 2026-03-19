@@ -1,0 +1,9 @@
+{
+  "name": "KuvaszUptime",
+  "url": "https://kuvasz-uptime.dev",
+  "description": "Performant, stable uptime & SSL monitoring service with brandable status pages, IAC support, Prometheus integration and a complete REST API. ([Demo](https://kuvasz-uptime.dev/demo/), [Source Code](https://github.com/kuvasz-uptime/kuvasz)) `Apache-2.0` `Docker`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

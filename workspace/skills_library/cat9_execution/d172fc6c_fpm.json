@@ -1,0 +1,9 @@
+{
+  "name": "fpm",
+  "url": "https://fpm.readthedocs.io/en/latest/",
+  "description": "Versatile multi format package creator. ([Source Code](https://github.com/jordansissel/fpm)) `MIT` `Ruby`",
+  "section": "Packaging",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

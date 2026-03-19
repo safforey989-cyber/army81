@@ -1,0 +1,9 @@
+{
+  "name": "Zscaler Global Threat Map Dashboard",
+  "url": "https://threatlabz.zscaler.com/cloud-insights/threat-map-dashboard",
+  "description": "Illustrates those we've seen in the past 24 hours, consisting of threats detected by our antivirus engines, malware and advanced persistent threats.",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

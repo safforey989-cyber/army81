@@ -1,0 +1,9 @@
+{
+  "name": "Clusterfck",
+  "url": "https://harthur.github.io/clusterfck/",
+  "description": "Agglomerative hierarchical clustering implemented in JavaScript for Node.js and the browser. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

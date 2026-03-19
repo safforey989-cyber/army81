@@ -1,0 +1,9 @@
+{
+  "name": "Nemotron-4-340B",
+  "url": "https://huggingface.co/nvidia/Nemotron-4-340B-Instruct",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

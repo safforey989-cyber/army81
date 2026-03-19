@@ -1,0 +1,9 @@
+{
+  "name": "OpenFace",
+  "url": "https://cmusatyalab.github.io/openface/",
+  "description": "Free and open source face recognition with deep neural networks.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

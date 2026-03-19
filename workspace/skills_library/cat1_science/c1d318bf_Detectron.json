@@ -1,0 +1,9 @@
+{
+  "name": "Detectron",
+  "url": "https://github.com/facebookresearch/Detectron",
+  "description": "FAIR's software system that implements state-of-the-art object detection algorithms, including Mask R-CNN. It is written in Python and powered by the Caffe2 deep learning framework. **[Deprecated]**",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

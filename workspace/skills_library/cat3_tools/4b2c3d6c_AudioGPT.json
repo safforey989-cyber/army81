@@ -1,0 +1,9 @@
+{
+  "name": "AudioGPT",
+  "url": "https://github.com/AIGC-Audio/AudioGPT",
+  "description": ": Understanding and Generating Speech, Music, Sound, and Talking Head ![GitHub Repo stars](https://img.shields.io/github/stars/AIGC-Audio/AudioGPT?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "matplotlib",
+  "url": "https://matplotlib.org/",
+  "description": "A Python 2D plotting library.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

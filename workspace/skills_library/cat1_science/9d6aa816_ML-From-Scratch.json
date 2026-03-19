@@ -1,0 +1,9 @@
+{
+  "name": "ML-From-Scratch",
+  "url": "https://github.com/eriklindernoren/ML-From-Scratch",
+  "description": "Implementations of Machine Learning models from scratch in Python with a focus on transparency. Aims to showcase the nuts and bolts of ML in an accessible way.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

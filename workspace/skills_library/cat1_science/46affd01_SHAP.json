@@ -1,0 +1,9 @@
+{
+  "name": "SHAP",
+  "url": "https://github.com/slundberg/shap",
+  "description": "| Game theoretic approach to explain the output of any machine learning model |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

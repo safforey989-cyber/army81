@@ -1,0 +1,9 @@
+{
+  "name": "Skywork-13B-Base",
+  "url": "https://huggingface.co/Skywork/Skywork-13B-Base",
+  "description": ", [Skywork-13B-Math](https://huggingface.co/Skywork/Skywork-13B-Math) | [Skywork](https://github.com/SkyworkAI/Skywork/blob/main/README_EN.md) | 13 | [4096](https://huggingface.co/Skywork/Skywork-13B-base/blob/main/config.json) | [Custom](https://github.com/SkyworkAI/Skywork/blob/main/Skywork%20Comm",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

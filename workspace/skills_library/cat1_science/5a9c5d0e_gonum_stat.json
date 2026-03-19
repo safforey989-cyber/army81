@@ -1,0 +1,9 @@
+{
+  "name": "gonum/stat",
+  "url": "https://godoc.org/gonum.org/v1/gonum/stat",
+  "description": "A statistics library.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

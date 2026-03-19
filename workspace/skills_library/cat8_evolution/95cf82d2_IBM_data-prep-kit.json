@@ -1,0 +1,9 @@
+{
+  "name": "IBM data-prep-kit",
+  "url": "https://github.com/IBM/data-prep-kit",
+  "description": "Open-Source Toolkit for Efficient Unstructured Data Processing with Pre-built Modules and Local to Cluster Scalability.",
+  "section": "LLM Data",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

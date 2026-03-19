@@ -1,0 +1,9 @@
+{
+  "name": "numpic",
+  "url": "https://github.com/numenta/nupic",
+  "description": "Tool from ml_tools",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Health data standards",
+  "url": "https://github.com/projectcypress/health-data-standards",
+  "description": "Ruby library for generating and consuming various healthcare related formats. These include HITSP C32, QRDA Category I, and QRDA Category III.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

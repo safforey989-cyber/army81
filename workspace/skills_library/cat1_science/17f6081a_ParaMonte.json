@@ -1,0 +1,9 @@
+{
+  "name": "ParaMonte",
+  "url": "https://github.com/cdslaborg/paramonte",
+  "description": "A general-purpose library with C/C++ interface for Bayesian data analysis and visualization via serial/parallel Monte Carlo and MCMC simulations. Documentation can be found [here](https://www.cdslab.org/paramonte/).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "FinRobot",
+  "url": "https://github.com/AI4Finance-Foundation/FinRobot",
+  "description": ": An Open-Source AI Agent Platform for Financial Applications using LLMs ![GitHub Repo stars](https://img.shields.io/github/stars/AI4Finance-Foundation/FinRobot?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

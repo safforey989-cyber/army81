@@ -1,0 +1,9 @@
+{
+  "name": "scikit-image",
+  "url": "https://github.com/scikit-image/scikit-image",
+  "description": "Tool from data_science",
+  "section": "General Machine Learning Packages",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

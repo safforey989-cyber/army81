@@ -1,0 +1,9 @@
+{
+  "name": "rsyslog",
+  "url": "https://www.rsyslog.com/",
+  "description": "Rocket-fast system for log processing. ([Source Code](https://github.com/rsyslog/rsyslog)) `GPL-3.0` `C`",
+  "section": "Log Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

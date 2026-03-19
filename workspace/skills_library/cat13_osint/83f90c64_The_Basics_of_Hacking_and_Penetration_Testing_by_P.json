@@ -1,0 +1,9 @@
+{
+  "name": "The Basics of Hacking and Penetration Testing by Patrick Engebretson, 2013",
+  "url": "https://www.elsevier.com/books/the-basics-of-hacking-and-penetration-testing/engebretson/978-1-59749-655-1",
+  "description": "Tool from pentest_tools",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

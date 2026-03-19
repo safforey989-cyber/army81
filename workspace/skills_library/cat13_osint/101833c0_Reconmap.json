@@ -1,0 +1,9 @@
+{
+  "name": "Reconmap",
+  "url": "https://reconmap.com/",
+  "description": "Open-source collaboration platform for InfoSec professionals that streamlines the pentest process.",
+  "section": "Collaboration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

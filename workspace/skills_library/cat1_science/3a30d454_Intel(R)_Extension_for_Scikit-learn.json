@@ -1,0 +1,9 @@
+{
+  "name": "Intel(R) Extension for Scikit-learn",
+  "url": "https://github.com/intel/scikit-learn-intelex",
+  "description": "Extension for Scikit-learn](https://github.com/intel/scikit-learn-intelex) - A seamless way to speed up your Scikit-learn applications with no accuracy loss and code changes.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Mullvad Browser",
+  "url": "https://mullvad.net/en/browser",
+  "description": "Privacy-focused browser developed in collaboration with Tor Project.",
+  "section": "[↑](#-table-of-contents) Browsers",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

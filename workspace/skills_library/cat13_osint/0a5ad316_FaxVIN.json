@@ -1,0 +1,9 @@
+{
+  "name": "FaxVIN",
+  "url": "https://www.faxvin.com/",
+  "description": "Vehicle History Reports. A license plate lookup tool that returns info like VIN, make & model of vehicle, age, and numerous other details.",
+  "section": "[↑](#-table-of-contents) Vehicle / Automobile Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

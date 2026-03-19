@@ -1,0 +1,9 @@
+{
+  "name": "editGPT",
+  "url": "https://www.editgpt.app/",
+  "description": "Easily proofread, edit, and track changes to your content in chatGPT.",
+  "section": "ChatGPT extensions",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

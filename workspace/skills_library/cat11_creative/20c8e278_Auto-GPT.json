@@ -1,0 +1,9 @@
+{
+  "name": "Auto-GPT",
+  "url": "https://github.com/Torantulino/Auto-GPT",
+  "description": "An experimental open-source attempt to make GPT-4 fully autonomous.",
+  "section": "Autonomous agents",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

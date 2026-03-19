@@ -1,0 +1,9 @@
+{
+  "name": "Collins",
+  "url": "https://tumblr.github.io/collins/",
+  "description": "At Tumblr, it's the infrastructure source of truth and knowledge. ([Source Code](https://github.com/tumblr/collins)) `Apache-2.0` `Docker/Scala`",
+  "section": "Configuration Management Database",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

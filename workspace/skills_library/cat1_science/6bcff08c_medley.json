@@ -1,0 +1,9 @@
+{
+  "name": "medley",
+  "url": "https://www.kaggle.com/general/3661",
+  "description": "medley: Blending regression models, using a greedy stepwise approach.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

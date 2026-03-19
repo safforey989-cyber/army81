@@ -1,0 +1,9 @@
+{
+  "name": "CarbonCopy",
+  "url": "https://github.com/paranoidninja/CarbonCopy",
+  "description": "Tool that creates a spoofed certificate of any online website and signs an Executable for AV evasion.",
+  "section": "Anti-virus Evasion Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

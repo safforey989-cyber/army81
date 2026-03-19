@@ -1,0 +1,9 @@
+{
+  "name": "Indeed",
+  "url": "http://www.indeed.com",
+  "description": "is an online job searching website that gives job seekers free access to search for a job, post their resumes, and research companies.",
+  "section": "[↑](#-table-of-contents) Job Search Resources",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

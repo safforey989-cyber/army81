@@ -1,0 +1,9 @@
+{
+  "name": "xonsh shell",
+  "url": "https://github.com/xonsh/xonsh",
+  "description": "| A Python-powered shell that enables integration, management and orchestration of data science libraries mostly written in Python, allowing you to build pipelines, code and command-based workflows. It can also be used as a kernel for Jupyter Notebook.  |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

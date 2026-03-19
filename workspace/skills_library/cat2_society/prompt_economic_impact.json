@@ -1,0 +1,7 @@
+{
+  "name": "economic_impact",
+  "type": "prompt_pattern",
+  "prompt_template": "قيّم الأثر الاقتصادي لـ {decision} على المدى القصير والطويل.",
+  "category": "cat2_society",
+  "source": "built_in"
+}

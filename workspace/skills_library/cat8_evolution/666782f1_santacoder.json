@@ -1,0 +1,9 @@
+{
+  "name": "santacoder",
+  "url": "https://huggingface.co/bigcode/santacoder",
+  "description": "|[SantaCoder: don't reach for the stars!](https://arxiv.org/abs/2301.03988) | 1.1 | [2048](https://huggingface.co/bigcode/santacoder/blob/main/README.md#model-summary)                | [OpenRAIL-M v1](https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement) | [SantaCoder](https://githu",
+  "section": "Open LLMs for code",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

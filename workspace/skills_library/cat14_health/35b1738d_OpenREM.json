@@ -1,0 +1,9 @@
+{
+  "name": "OpenREM",
+  "url": "https://openrem.org/",
+  "description": "Radiation Exposure Monitoring for physicists.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "OpenLM 1B",
+  "url": "https://huggingface.co/mlfoundations/open_lm_1B",
+  "description": ", [OpenLM 7B](https://huggingface.co/mlfoundations/open_lm_7B_1.25T) | [Open LM:  a minimal but performative language modeling (LM) repository](https://github.com/mlfoundations/open_lm#pretrained-models)      | 1, 7       | [2048](https://github.com/mlfoundations/open_lm/blob/main/open_lm/model_conf",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

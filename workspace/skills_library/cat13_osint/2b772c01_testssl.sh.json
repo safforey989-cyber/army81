@@ -1,0 +1,9 @@
+{
+  "name": "testssl.sh",
+  "url": "https://github.com/drwetter/testssl.sh",
+  "description": "Command line tool which checks a server's service on any port for the support of TLS/SSL ciphers, protocols as well as some cryptographic flaws.",
+  "section": "Transport Layer Security Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

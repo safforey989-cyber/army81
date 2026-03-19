@@ -1,0 +1,9 @@
+{
+  "name": "LangChainDart",
+  "url": "https://github.com/davidmigloz/langchain_dart",
+  "description": ": Build powerful LLM-based Dart/Flutter applications. ![GitHub Repo stars](https://img.shields.io/github/stars/davidmigloz/langchain_dart?style=social)",
+  "section": "Ports to other languages",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

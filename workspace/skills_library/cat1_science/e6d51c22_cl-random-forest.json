@@ -1,0 +1,9 @@
+{
+  "name": "cl-random-forest",
+  "url": "https://github.com/masatoi/cl-random-forest",
+  "description": "Implementation of Random Forest in Common Lisp.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

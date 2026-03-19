@@ -1,0 +1,9 @@
+{
+  "name": "Loki",
+  "url": "https://grafana.com/oss/loki/",
+  "description": "Log aggregation system designed to store and query logs from all your applications and infrastructure. ([Source Code](https://github.com/grafana/loki)) `AGPL-3.0` `Go`",
+  "section": "Log Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Red teaming and model evaluations | Anthropic",
+  "url": "https://www.anthropic.com/uk-government-internal-ai-safety-policy-response/red-teaming-and-model-evaluations",
+  "description": "Tool from generative_ai",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

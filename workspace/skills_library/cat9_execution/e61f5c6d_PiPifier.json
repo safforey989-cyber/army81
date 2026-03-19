@@ -1,0 +1,9 @@
+{
+  "name": "PiPifier",
+  "url": "https://github.com/arnoappenzeller/PiPifier",
+  "description": ": Use every HTML5 video in Picture in Picture mode",
+  "section": "Safari Extension",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

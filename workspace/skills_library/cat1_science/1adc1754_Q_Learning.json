@@ -1,0 +1,9 @@
+{
+  "name": "Q Learning",
+  "url": "https://en.wikipedia.org/wiki/Q-learning",
+  "description": "Tool from data_science",
+  "section": "Reinforcement Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

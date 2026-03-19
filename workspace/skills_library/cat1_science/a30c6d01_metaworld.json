@@ -1,0 +1,9 @@
+{
+  "name": "metaworld",
+  "url": "https://github.com/rlworkgroup/metaworld",
+  "description": "An open source robotics benchmark for meta- and multi-task reinforcement learning",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

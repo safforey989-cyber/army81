@@ -1,0 +1,9 @@
+{
+  "name": "Data Science Course By IBM",
+  "url": "https://skillsbuild.org/students/course-catalog/data-science",
+  "description": "Free resources and learn what data science is and how it’s used in different industries.",
+  "section": "Free Courses",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "peCloakCapstone",
+  "url": "https://github.com/v-p-b/peCloakCapstone",
+  "description": "Multi-platform fork of the peCloak.py automated malware antivirus evasion tool.",
+  "section": "Anti-virus Evasion Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

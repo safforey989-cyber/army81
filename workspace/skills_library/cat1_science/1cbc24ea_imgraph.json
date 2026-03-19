@@ -1,0 +1,9 @@
+{
+  "name": "imgraph",
+  "url": "https://github.com/clementfarabet/lua---imgraph",
+  "description": "An image/graph library for Torch. This package provides routines to construct graphs on images, segment them, build trees out of them, and convert them back to images. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

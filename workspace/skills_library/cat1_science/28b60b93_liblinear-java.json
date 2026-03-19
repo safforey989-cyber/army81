@@ -1,0 +1,9 @@
+{
+  "name": "liblinear-java",
+  "url": "https://github.com/bwaldvogel/liblinear-java",
+  "description": "Java version of liblinear.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

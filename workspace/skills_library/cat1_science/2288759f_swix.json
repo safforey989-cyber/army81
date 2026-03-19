@@ -1,0 +1,9 @@
+{
+  "name": "swix",
+  "url": "https://github.com/stsievert/swix",
+  "description": "A bare bones library that includes a general matrix language and wraps some OpenCV for iOS development. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

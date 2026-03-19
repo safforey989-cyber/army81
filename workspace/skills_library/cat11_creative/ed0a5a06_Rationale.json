@@ -1,0 +1,9 @@
+{
+  "name": "Rationale",
+  "url": "https://rationale.jina.ai/",
+  "description": ": decision-making tool powered by the latest GPT and in-context learning",
+  "section": "Text-related Generative Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

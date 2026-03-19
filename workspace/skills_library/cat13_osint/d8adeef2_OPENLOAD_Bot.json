@@ -1,0 +1,9 @@
+{
+  "name": "OPENLOAD Bot",
+  "url": "https://t.me/OPENLOADTOPBOT",
+  "description": "Semi-automated OSINT/vuln scanning suite.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

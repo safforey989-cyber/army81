@@ -1,0 +1,9 @@
+{
+  "name": "privateGPT",
+  "url": "https://github.com/imartinez/privateGPT",
+  "description": "Ask questions to your documents without an internet connection, using the power of LLMs.",
+  "section": "Local search engines",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

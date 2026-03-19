@@ -1,0 +1,7 @@
+{
+  "name": "strategy_builder",
+  "type": "prompt_pattern",
+  "prompt_template": "ابنِ استراتيجية لـ {organization} لمدة {years} سنوات. Vision, Mission, Goals, OKRs.",
+  "category": "cat6_leadership",
+  "source": "built_in"
+}

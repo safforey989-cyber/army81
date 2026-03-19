@@ -1,0 +1,9 @@
+{
+  "name": "ooniprobe",
+  "url": "https://github.com/ooni/probe-ios",
+  "description": ": Detect internet censorship & test your network's speed",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

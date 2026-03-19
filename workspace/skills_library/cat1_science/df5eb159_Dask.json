@@ -1,0 +1,9 @@
+{
+  "name": "Dask",
+  "url": "https://dask.org/",
+  "description": "| An open source Python library to painlessly transition your analytics code to distributed computing systems (Big Data) |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

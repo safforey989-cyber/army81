@@ -1,0 +1,9 @@
+{
+  "name": "KeePassium",
+  "url": "https://github.com/keepassium/KeePassium",
+  "description": ": KeePass-compatible password manager with support for automatic database synchronization, respect to privacy and premium user experience",
+  "section": "Password",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

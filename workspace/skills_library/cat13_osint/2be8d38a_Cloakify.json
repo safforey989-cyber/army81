@@ -1,0 +1,9 @@
+{
+  "name": "Cloakify",
+  "url": "https://github.com/TryCatchHCF/Cloakify",
+  "description": "Textual steganography toolkit that converts any filetype into lists of everyday strings.",
+  "section": "Steganography Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

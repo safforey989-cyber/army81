@@ -1,0 +1,9 @@
+{
+  "name": "PyOD",
+  "url": "https://github.com/yzhao062/pyod",
+  "description": "> Python Outlier Detection, comprehensive and scalable Python toolkit for detecting outlying objects in multivariate data. Featured for Advanced models, including Neural Networks/Deep Learning and Outlier Ensembles.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

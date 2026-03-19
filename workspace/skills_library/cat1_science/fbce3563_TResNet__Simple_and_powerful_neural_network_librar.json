@@ -1,0 +1,9 @@
+{
+  "name": "TResNet: Simple and powerful neural network library for python",
+  "url": "https://github.com/zueve/neurolab",
+  "description": "Variety of supported types of Artificial Neural Network and learning algorithms.",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

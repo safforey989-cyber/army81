@@ -1,0 +1,9 @@
+{
+  "name": "InVesalius",
+  "url": "https://invesalius.github.io",
+  "description": "Open source software for reconstruction of computed tomography and magnetic ressonance images.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

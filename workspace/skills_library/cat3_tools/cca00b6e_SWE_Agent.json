@@ -1,0 +1,9 @@
+{
+  "name": "SWE Agent",
+  "url": "https://github.com/princeton-nlp/swe-agent",
+  "description": ": SWE-agent takes a GitHub issue and tries to automatically fix it, using GPT-4, or your LM of choice. ![GitHub Repo stars](https://img.shields.io/github/stars/princeton-nlp/swe-agent?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

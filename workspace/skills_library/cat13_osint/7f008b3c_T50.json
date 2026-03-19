@@ -1,0 +1,9 @@
+{
+  "name": "T50",
+  "url": "https://gitlab.com/fredericopissarra/t50/",
+  "description": "Faster network stress tool.",
+  "section": "DDoS Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

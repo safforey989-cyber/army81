@@ -1,0 +1,9 @@
+{
+  "name": "DeepSpeed",
+  "url": "https://github.com/microsoft/DeepSpeed",
+  "description": "DeepSpeed is a deep learning optimization library that makes distributed training and inference easy, efficient, and effective.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

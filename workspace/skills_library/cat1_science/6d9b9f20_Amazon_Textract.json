@@ -1,0 +1,9 @@
+{
+  "name": "Amazon Textract",
+  "url": "https://aws.amazon.com/textract/",
+  "description": "| Automatically extract printed text, handwriting, and data from any document. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

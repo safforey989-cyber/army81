@@ -1,0 +1,9 @@
+{
+  "name": "xerial",
+  "url": "https://github.com/xerial/xerial",
+  "description": "Data management utilities for Scala. **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

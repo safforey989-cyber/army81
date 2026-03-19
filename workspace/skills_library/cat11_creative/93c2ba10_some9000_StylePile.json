@@ -1,0 +1,9 @@
+{
+  "name": "some9000/StylePile",
+  "url": "https://github.com/some9000/StylePile",
+  "description": ": A helper script for AUTOMATIC1111/stable-diffusion-webui. Basically a mix and match to quickly get different results without wasting a lot of time writing prompts.",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Passepartout",
+  "url": "https://github.com/partout-io/passepartout",
+  "description": ": User-friendly OpenVPN app",
+  "section": "Security",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

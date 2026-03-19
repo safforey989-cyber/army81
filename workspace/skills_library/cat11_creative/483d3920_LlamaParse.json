@@ -1,0 +1,9 @@
+{
+  "name": "LlamaParse",
+  "url": "https://www.llamaindex.ai/blog/launching-the-first-genai-native-document-parsing-platform",
+  "description": ": GenAI-native document parsing platform by LlamaIndex",
+  "section": "Retrieval-Augmented Generation (RAG)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

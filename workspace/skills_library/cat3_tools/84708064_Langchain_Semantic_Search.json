@@ -1,0 +1,9 @@
+{
+  "name": "Langchain Semantic Search",
+  "url": "https://github.com/venuv/langchain_semantic_search",
+  "description": ": Search and indexing your own Google Drive Files using GPT3, LangChain, and Python",
+  "section": "Notebooks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

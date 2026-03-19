@@ -1,0 +1,9 @@
+{
+  "name": "Validin",
+  "url": "https://app.validin.com/",
+  "description": "Website and API to search current and historical DNS records for free",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

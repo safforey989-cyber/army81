@@ -1,0 +1,9 @@
+{
+  "name": "LangChain",
+  "url": "https://langchain.com/",
+  "description": "A framework for developing applications powered by language models.",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

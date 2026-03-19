@@ -1,0 +1,9 @@
+{
+  "name": "xRBM",
+  "url": "https://github.com/omimo/xRBM",
+  "description": "A library for Restricted Boltzmann Machine (RBM) and its conditional variants in Tensorflow.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

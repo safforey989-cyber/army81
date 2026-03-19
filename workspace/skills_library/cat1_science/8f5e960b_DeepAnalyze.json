@@ -1,0 +1,9 @@
+{
+  "name": "DeepAnalyze",
+  "url": "https://github.com/ruc-datalab/DeepAnalyze",
+  "description": "| An agentic LLM for autonomous data science, which can autonomously complete a wide range of data science tasks without human intervention. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

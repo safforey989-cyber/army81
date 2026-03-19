@@ -1,0 +1,9 @@
+{
+  "name": "EdMon",
+  "url": "https://github.com/Edraens/EdMon",
+  "description": "A command-line monitoring application helping you to check that your hosts and services are available, with notifications support. `MIT` `Java`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

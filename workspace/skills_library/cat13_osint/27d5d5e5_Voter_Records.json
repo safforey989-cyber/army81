@@ -1,0 +1,9 @@
+{
+  "name": "Voter Records",
+  "url": "https://voterrecords.com/",
+  "description": "Free political research tool to study more than 100 Million US voter records.",
+  "section": "[↑](#-table-of-contents) People Investigations",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

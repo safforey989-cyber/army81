@@ -1,0 +1,9 @@
+{
+  "name": "zenbot",
+  "url": "https://github.com/DeviaVir/zenbot",
+  "description": "Command-line crypto currency trading bot using Node.js and MongoDB.",
+  "section": "Crypto Currencies",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

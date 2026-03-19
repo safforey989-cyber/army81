@@ -1,0 +1,9 @@
+{
+  "name": "e2b",
+  "url": "https://github.com/e2b-dev/e2b",
+  "description": ". E2b is building AWS for AI agents. We help developers to deploy, test, and monitor AI agents. E2b is agnostic to your tech stack and aims to work with any tooling for building AI agents.",
+  "section": "Who's behind this?",
+  "topic": "ai_agents",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "nanotron",
+  "url": "https://github.com/huggingface/nanotron",
+  "description": "Minimalistic large language model 3D-parallelism training.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

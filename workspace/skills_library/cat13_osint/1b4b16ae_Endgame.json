@@ -1,0 +1,9 @@
+{
+  "name": "Endgame",
+  "url": "https://endgame.readthedocs.io/",
+  "description": "AWS Pentesting tool that lets you use one-liner commands to backdoor an AWS account's resources with a rogue AWS account.",
+  "section": "Cloud Platform Attack Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

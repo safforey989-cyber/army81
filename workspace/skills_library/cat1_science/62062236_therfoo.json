@@ -1,0 +1,9 @@
+{
+  "name": "therfoo",
+  "url": "https://github.com/therfoo/therfoo",
+  "description": "An embedded deep learning library for Go.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

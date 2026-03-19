@@ -1,0 +1,9 @@
+{
+  "name": "Autochain",
+  "url": "https://github.com/Forethought-Technologies/AutoChain",
+  "description": ": Build lightweight, extensible, and testable LLM Agents with AutoChain. ![GitHub Repo stars](https://img.shields.io/github/stars/Forethought-Technologies/AutoChain?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Meta Lingua",
+  "url": "https://github.com/facebookresearch/lingua",
+  "description": "a lean, efficient, and easy-to-hack codebase to research LLMs.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

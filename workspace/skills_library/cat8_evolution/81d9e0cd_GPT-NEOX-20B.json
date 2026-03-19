@@ -1,0 +1,9 @@
+{
+  "name": "GPT-NEOX-20B",
+  "url": "https://huggingface.co/EleutherAI/gpt-neox-20b",
+  "description": "| [GPT-NeoX-20B: An Open-Source Autoregressive Language Model](https://arxiv.org/abs/2204.06745) | 20 | [2048](https://huggingface.co/EleutherAI/gpt-neox-20b) | Apache 2.0 |                                                                                                                       |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

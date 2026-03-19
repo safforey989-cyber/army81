@@ -1,0 +1,9 @@
+{
+  "name": "OLMO-eval",
+  "url": "https://github.com/allenai/OLMo-Eval",
+  "description": "a repository for evaluating open language models.",
+  "section": "LLM Evaluation:",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

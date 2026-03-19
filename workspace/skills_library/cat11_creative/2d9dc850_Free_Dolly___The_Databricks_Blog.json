@@ -1,0 +1,9 @@
+{
+  "name": "Free Dolly | The Databricks Blog",
+  "url": "https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm",
+  "description": ": open source, instruction-following LLM, fine-tuned on a human-generated instruction dataset licensed for research and commercial use",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

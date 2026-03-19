@@ -1,0 +1,9 @@
+{
+  "name": "BounCA",
+  "url": "https://bounca.org/",
+  "description": "A personal SSL Key / Certificate Authority web-based tool for creating self-signed certificates. ([Source Code](https://gitlab.com/bounca/bounca/)) `Apache-2.0` `Python`",
+  "section": "Identity Management - Tools and web interfaces",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

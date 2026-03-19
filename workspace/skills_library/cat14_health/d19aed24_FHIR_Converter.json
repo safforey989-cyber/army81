@@ -1,0 +1,9 @@
+{
+  "name": "FHIR Converter",
+  "url": "https://github.com/microsoft/FHIR-Converter",
+  "description": "an open source project that enables conversion of health data from legacy formats to FHIR.",
+  "section": "Integration",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

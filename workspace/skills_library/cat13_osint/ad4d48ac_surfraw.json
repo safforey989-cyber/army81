@@ -1,0 +1,9 @@
+{
+  "name": "surfraw",
+  "url": "https://github.com/kisom/surfraw",
+  "description": "Fast UNIX command line interface to a variety of popular WWW search engines.",
+  "section": "Data Broker and Search Engine Services",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

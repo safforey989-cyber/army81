@@ -1,0 +1,9 @@
+{
+  "name": "Penetration Testing: A Hands-On Introduction to Hacking by Georgia Weidman, 2014",
+  "url": "https://nostarch.com/pentesting",
+  "description": "Tool from pentest_tools",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

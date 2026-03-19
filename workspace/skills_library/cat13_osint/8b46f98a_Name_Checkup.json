@@ -1,0 +1,9 @@
+{
+  "name": "Name Checkup",
+  "url": "https://namecheckup.com",
+  "description": "is a search tool that allows you to check the avilability of a givrn username from all over the social media. Inaddition it also sllows you to check the avilability of a given domain name.",
+  "section": "[↑](#-table-of-contents) Username Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Open LLM Leaderboard by Hugging Face",
+  "url": "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard",
+  "description": "Tool from open_source_llms",
+  "section": "Evals on open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

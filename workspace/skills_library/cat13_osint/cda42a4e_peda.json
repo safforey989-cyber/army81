@@ -1,0 +1,9 @@
+{
+  "name": "peda",
+  "url": "https://github.com/longld/peda",
+  "description": "Python Exploit Development Assistance for GDB.",
+  "section": "Exploit Development Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

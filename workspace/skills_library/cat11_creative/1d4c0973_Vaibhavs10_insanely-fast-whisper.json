@@ -1,0 +1,9 @@
+{
+  "name": "Vaibhavs10/insanely-fast-whisper",
+  "url": "https://github.com/Vaibhavs10/insanely-fast-whisper",
+  "description": ": accelerates transcription with the combination of OpenAI's Whisper Large v2, HF Transformers, Optimum, and flash attention",
+  "section": "Speech-to-text (STT) and spoken content analysis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

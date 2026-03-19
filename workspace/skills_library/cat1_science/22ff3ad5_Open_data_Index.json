@@ -1,0 +1,9 @@
+{
+  "name": "Open data Index",
+  "url": "http://index.okfn.org/",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

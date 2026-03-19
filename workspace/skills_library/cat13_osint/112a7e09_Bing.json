@@ -1,0 +1,9 @@
+{
+  "name": "Bing",
+  "url": "https://www.bing.com",
+  "description": "Microsoft´s search engine.",
+  "section": "[↑](#-table-of-contents) General Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

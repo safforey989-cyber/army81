@@ -1,0 +1,9 @@
+{
+  "name": "Fibratus",
+  "url": "https://github.com/rabbitstack/fibratus",
+  "description": "Tool for exploration and tracing of the Windows kernel.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "PubMed",
+  "url": "http://www.ncbi.nlm.nih.gov/pubmed",
+  "description": "Search more than 27 millions citations for biomedical literature from MEDLINE, life science journals, and online books.",
+  "section": "[↑](#-table-of-contents) Academic Resources and Grey Literature",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

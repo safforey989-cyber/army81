@@ -1,0 +1,9 @@
+{
+  "name": "Suno AI",
+  "url": "https://www.suno.ai/",
+  "description": ": \"make any song you can imagine\"",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

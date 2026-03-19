@@ -1,0 +1,9 @@
+{
+  "name": "ModelFusion",
+  "url": "https://github.com/lgrammel/modelfusion",
+  "description": "A TypeScript library for building apps with LLMs and other ML models (speech-to-text, text-to-speech, image generation).",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

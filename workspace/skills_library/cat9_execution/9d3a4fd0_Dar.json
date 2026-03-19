@@ -1,0 +1,9 @@
+{
+  "name": "Dar",
+  "url": "http://dar.linux.free.fr/",
+  "description": "Which stands for Disk ARchive, is a robust and rich featured archiving and backup software of the tar style. ([Source Code](https://github.com/Edrusb/DAR)) `GPL-2.0` `C++`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

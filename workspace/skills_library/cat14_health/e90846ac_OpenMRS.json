@@ -1,0 +1,9 @@
+{
+  "name": "OpenMRS",
+  "url": "https://openmrs.org",
+  "description": "Enterprise Electronic Medical Record System platform.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

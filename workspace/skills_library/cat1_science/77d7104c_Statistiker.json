@@ -1,0 +1,9 @@
+{
+  "name": "Statistiker",
+  "url": "https://github.com/clojurewerkz/statistiker",
+  "description": "Basic Machine Learning algorithms in Clojure. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

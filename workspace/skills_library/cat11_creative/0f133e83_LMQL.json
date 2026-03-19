@@ -1,0 +1,9 @@
+{
+  "name": "LMQL",
+  "url": "https://lmql.ai/",
+  "description": "LMQL is a query language for large language models.",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

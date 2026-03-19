@@ -1,0 +1,9 @@
+{
+  "name": "BIDMat",
+  "url": "https://github.com/BIDData/BIDMat",
+  "description": "CPU and GPU-accelerated matrix library intended to support large-scale exploratory data analysis.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

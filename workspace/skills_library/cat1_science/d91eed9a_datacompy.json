@@ -1,0 +1,9 @@
+{
+  "name": "datacompy",
+  "url": "https://github.com/capitalone/datacompy",
+  "description": "DataComPy is a package to compare two Pandas DataFrames.",
+  "section": "Comparison",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

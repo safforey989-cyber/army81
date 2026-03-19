@@ -1,0 +1,9 @@
+{
+  "name": "Maltego Telegram",
+  "url": "https://github.com/vognik/maltego-telegram",
+  "description": "Rich Set of Entities & Transforms for OSINT on Telegram with Maltego.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

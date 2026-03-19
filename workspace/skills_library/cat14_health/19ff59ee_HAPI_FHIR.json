@@ -1,0 +1,9 @@
+{
+  "name": "HAPI FHIR",
+  "url": "https://github.com/hapifhir/hapi-fhir",
+  "description": "Java API for HL7 FHIR Clients and Servers.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

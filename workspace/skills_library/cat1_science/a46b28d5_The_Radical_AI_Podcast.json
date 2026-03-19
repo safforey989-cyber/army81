@@ -1,0 +1,9 @@
+{
+  "name": "The Radical AI Podcast",
+  "url": "https://www.radicalai.org/",
+  "description": "Tool from data_science",
+  "section": "Podcasts",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

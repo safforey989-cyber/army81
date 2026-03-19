@@ -1,0 +1,9 @@
+{
+  "name": "openMAXIMS",
+  "url": "https://github.com/IMS-MAXIMS/openMAXIMS",
+  "description": "Full Patient Administration System designed for the NHS.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

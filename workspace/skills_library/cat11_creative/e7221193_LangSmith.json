@@ -1,0 +1,9 @@
+{
+  "name": "LangSmith",
+  "url": "https://www.langchain.com/langsmith",
+  "description": ": a developer platform for deploying LLM apps",
+  "section": "AI Engineering",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

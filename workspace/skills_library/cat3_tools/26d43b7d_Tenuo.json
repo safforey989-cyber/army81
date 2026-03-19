@@ -1,0 +1,9 @@
+{
+  "name": "Tenuo",
+  "url": "https://github.com/tenuo-ai/tenuo",
+  "description": ": Capability-based authorization for AI agents. Task-scoped tokens with offline verification, proof-of-possession binding, and native LangChain/LangGraph integration. ![GitHub Repo stars](https://img.shields.io/github/stars/tenuo-ai/tenuo?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

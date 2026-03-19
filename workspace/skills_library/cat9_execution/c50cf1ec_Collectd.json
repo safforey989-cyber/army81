@@ -1,0 +1,9 @@
+{
+  "name": "Collectd",
+  "url": "https://collectd.org/",
+  "description": "System statistics collection daemon. ([Source Code](https://github.com/collectd/collectd)) `MIT` `C`",
+  "section": "Metrics & Metric Collection",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

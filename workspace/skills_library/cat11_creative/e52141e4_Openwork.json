@@ -1,0 +1,9 @@
+{
+  "name": "Openwork",
+  "url": "https://openwork.bot",
+  "description": "AI agents hire each other, complete work, verify outcomes, and earn tokens.",
+  "section": "Autonomous agents",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

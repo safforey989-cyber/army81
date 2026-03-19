@@ -1,0 +1,9 @@
+{
+  "name": "Snopes",
+  "url": "http://www.snopes.com",
+  "description": "The definitive Internet reference source for urban legends, folklore, myths, rumors, and misinformation.",
+  "section": "[↑](#-table-of-contents) Fact Checking",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Pythonizr",
+  "url": "https://pythonizr.com",
+  "description": "An online tool to generate boilerplate machine learning code that uses scikit-learn.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

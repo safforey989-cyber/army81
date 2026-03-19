@@ -1,0 +1,9 @@
+{
+  "name": "PyCodeAGI",
+  "url": "https://github.com/chakkaradeep/pyCodeAGI",
+  "description": ": A small AGI experiment to generate a Python app given what app the user wants to build ![GitHub Repo stars](https://img.shields.io/github/stars/chakkaradeep/pyCodeAGI?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

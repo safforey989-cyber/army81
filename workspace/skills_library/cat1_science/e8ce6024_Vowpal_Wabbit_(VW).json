@@ -1,0 +1,9 @@
+{
+  "name": "Vowpal Wabbit (VW)",
+  "url": "https://github.com/VowpalWabbit/vowpal_wabbit",
+  "description": "](https://github.com/VowpalWabbit/vowpal_wabbit) - A fast out-of-core learning system.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

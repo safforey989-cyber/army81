@@ -1,0 +1,9 @@
+{
+  "name": "Bgpview.io",
+  "url": "https://bgpview.io",
+  "description": "The website bgpview.io allows you to look up detailed information about ASNs, IPs, and BGP routes on the internet.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

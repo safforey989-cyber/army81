@@ -1,0 +1,9 @@
+{
+  "name": "Colossal-AI",
+  "url": "https://github.com/hpcaitech/ColossalAI",
+  "description": ": An open-source deep learning system for large-scale model training and inference with high efficiency and low cost.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

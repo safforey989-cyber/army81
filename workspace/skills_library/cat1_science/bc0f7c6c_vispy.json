@@ -1,0 +1,9 @@
+{
+  "name": "vispy",
+  "url": "https://github.com/vispy/vispy",
+  "description": "GPU-based high-performance interactive OpenGL 2D/3D data visualization library.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

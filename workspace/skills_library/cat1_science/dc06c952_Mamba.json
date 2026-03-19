@@ -1,0 +1,9 @@
+{
+  "name": "Mamba",
+  "url": "https://github.com/brian-j-smith/Mamba.jl",
+  "description": "Markov chain Monte Carlo (MCMC) for Bayesian analysis in Julia.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

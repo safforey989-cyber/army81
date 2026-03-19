@@ -1,0 +1,9 @@
+{
+  "name": "PyHealth",
+  "url": "https://github.com/sunlabuiuc/PyHealth",
+  "description": "A Deep Learning Python Toolkit for Healthcare Application.",
+  "section": "Machine learning",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

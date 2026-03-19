@@ -1,0 +1,9 @@
+{
+  "name": "nilearn",
+  "url": "https://github.com/nilearn/nilearn",
+  "description": "Machine learning for NeuroImaging in Python.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

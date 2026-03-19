@@ -1,0 +1,9 @@
+{
+  "name": "LingPipe",
+  "url": "http://alias-i.com/lingpipe/index.html",
+  "description": "A tool kit for processing text using computational linguistics.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

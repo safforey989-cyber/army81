@@ -1,0 +1,9 @@
+{
+  "name": "Qwen-1.8B|7B|14B|72B",
+  "url": "https://huggingface.co/collections/Qwen/qwen-65c0e50c3f1ab89cb8704144",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

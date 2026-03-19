@@ -1,0 +1,9 @@
+{
+  "name": "Rockpool",
+  "url": "https://github.com/synsense/rockpool",
+  "description": "A machine learning library for spiking neural networks. Supports training with both torch and jax pipelines, and deployment to neuromorphic hardware.",
+  "section": "Spiking Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

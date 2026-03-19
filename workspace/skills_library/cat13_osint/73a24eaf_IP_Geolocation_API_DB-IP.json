@@ -1,0 +1,9 @@
+{
+  "name": "IP Geolocation API DB-IP",
+  "url": "https://db-ip.com",
+  "description": "Pprovides IP geolocation and intelligence.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

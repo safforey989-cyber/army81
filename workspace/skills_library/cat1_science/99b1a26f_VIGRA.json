@@ -1,0 +1,9 @@
+{
+  "name": "VIGRA",
+  "url": "https://github.com/ukoethe/vigra",
+  "description": "VIGRA is a genertic cross-platform C++ computer vision and machine learning library for volumes of arbitrary dimensionality with Python bindings.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "deep_rl_trader",
+  "url": "https://github.com/miroblog/deep_rl_trader",
+  "description": "Trading environment(OpenAI Gym) + DDQN (Keras-RL).",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

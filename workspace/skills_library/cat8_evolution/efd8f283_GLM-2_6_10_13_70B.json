@@ -1,0 +1,9 @@
+{
+  "name": "GLM-2|6|10|13|70B",
+  "url": "https://huggingface.co/THUDM",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

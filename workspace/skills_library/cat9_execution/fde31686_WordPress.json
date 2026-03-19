@@ -1,0 +1,9 @@
+{
+  "name": "WordPress",
+  "url": "https://github.com/wordpress-mobile/WordPress-iOS",
+  "description": ": Official WordPress app",
+  "section": "Official",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

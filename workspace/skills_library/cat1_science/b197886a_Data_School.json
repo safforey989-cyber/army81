@@ -1,0 +1,9 @@
+{
+  "name": "Data School",
+  "url": "https://www.dataschool.io/",
+  "description": "Data science tutorials for beginners!",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

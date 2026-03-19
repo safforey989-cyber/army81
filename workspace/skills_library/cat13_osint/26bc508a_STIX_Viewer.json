@@ -1,0 +1,9 @@
+{
+  "name": "STIX Viewer",
+  "url": "https://stix-viewer.threatlandscape.io/",
+  "description": "An online free STIX 2.1 viewer / visualizer.",
+  "section": "[↑](#-table-of-contents) Threat Intelligence",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

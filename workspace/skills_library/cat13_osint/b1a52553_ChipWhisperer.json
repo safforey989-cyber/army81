@@ -1,0 +1,9 @@
+{
+  "name": "ChipWhisperer",
+  "url": "http://chipwhisperer.com",
+  "description": "Complete open-source toolchain for side-channel power analysis and glitching attacks.",
+  "section": "Side-channel Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

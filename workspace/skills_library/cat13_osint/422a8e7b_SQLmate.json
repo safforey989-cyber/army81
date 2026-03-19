@@ -1,0 +1,9 @@
+{
+  "name": "SQLmate",
+  "url": "https://github.com/UltimateHackers/sqlmate",
+  "description": "Friend of `sqlmap` that identifies SQLi vulnerabilities based on a given dork and (optional) website.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

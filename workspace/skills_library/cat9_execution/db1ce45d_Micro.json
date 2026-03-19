@@ -1,0 +1,9 @@
+{
+  "name": "Micro",
+  "url": "https://micro-editor.github.io/",
+  "description": "A modern and intuitive terminal-based text editor. ([Source Code](https://github.com/zyedidia/micro)) `MIT` `Go`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

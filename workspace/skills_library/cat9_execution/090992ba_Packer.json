@@ -1,0 +1,9 @@
+{
+  "name": "Packer",
+  "url": "https://www.packer.io/",
+  "description": "A tool for creating identical machine images for multiple platforms from a single source configuration. ([Source Code](https://github.com/hashicorp/packer)) `MPL-2.0` `Go`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

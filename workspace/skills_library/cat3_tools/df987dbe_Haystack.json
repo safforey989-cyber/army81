@@ -1,0 +1,9 @@
+{
+  "name": "Haystack",
+  "url": "https://github.com/deepset-ai/haystack",
+  "description": ": NLP framework to interact with your data using Transformer models and LLMs ![GitHub Repo stars](https://img.shields.io/github/stars/deepset-ai/haystack?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

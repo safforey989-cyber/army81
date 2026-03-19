@@ -1,0 +1,9 @@
+{
+  "name": "subbrute",
+  "url": "https://github.com/TheRook/subbrute",
+  "description": "DNS meta-query spider that enumerates DNS records, and subdomains.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

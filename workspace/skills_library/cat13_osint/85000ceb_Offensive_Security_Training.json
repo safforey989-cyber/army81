@@ -1,0 +1,9 @@
+{
+  "name": "Offensive Security Training",
+  "url": "https://www.offensive-security.com/information-security-training/",
+  "description": "Training from BackTrack/Kali developers.",
+  "section": "Security Education Courses",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

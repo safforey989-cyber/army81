@@ -1,0 +1,9 @@
+{
+  "name": "python-ucto",
+  "url": "https://github.com/proycon/python-ucto",
+  "description": "Python binding to ucto (a unicode-aware rule-based tokenizer for various languages).",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

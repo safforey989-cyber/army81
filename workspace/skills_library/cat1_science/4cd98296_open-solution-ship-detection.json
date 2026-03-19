@@ -1,0 +1,9 @@
+{
+  "name": "open-solution-ship-detection",
+  "url": "https://github.com/neptune-ml/open-solution-ship-detection",
+  "description": "> source code and [experiments results](https://app.neptune.ml/neptune-ml/Ships) for [Airbus Ship Detection Challenge](https://www.kaggle.com/c/airbus-ship-detection).",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

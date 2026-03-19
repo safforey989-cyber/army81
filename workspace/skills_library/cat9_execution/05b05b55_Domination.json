@@ -1,0 +1,9 @@
+{
+  "name": "Domination",
+  "url": "https://sourceforge.net/projects/domination/",
+  "description": ": Clone of the classic board game Risk using MOE https://multi-os-engine.org",
+  "section": "Game",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

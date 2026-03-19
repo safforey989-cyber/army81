@@ -1,0 +1,9 @@
+{
+  "name": "Cornac",
+  "url": "https://github.com/PreferredAI/cornac",
+  "description": "A comparative framework for multimodal recommender systems with a focus on models leveraging auxiliary data.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

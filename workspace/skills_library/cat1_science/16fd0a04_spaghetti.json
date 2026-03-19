@@ -1,0 +1,9 @@
+{
+  "name": "spaghetti",
+  "url": "https://github.com/MichaelMathieu/lua---spaghetti",
+  "description": "Spaghetti (sparse linear) module for torch7 by @MichaelMathieu **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

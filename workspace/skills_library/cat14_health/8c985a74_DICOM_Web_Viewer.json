@@ -1,0 +1,9 @@
+{
+  "name": "DICOM Web Viewer",
+  "url": "https://ivmartel.github.io/dwv/",
+  "description": "JavaScript/HTML5-based DICOM viewer with standard tools and a focus on supporting various screen sizes.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

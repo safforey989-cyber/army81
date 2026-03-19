@@ -1,0 +1,9 @@
+{
+  "name": "Visual Prompt Builder",
+  "url": "https://tools.saxifrage.xyz/prompt",
+  "description": ": simple deck of illustrated card to combine modifiers for prompt building",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

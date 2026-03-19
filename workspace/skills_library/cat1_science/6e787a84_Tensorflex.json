@@ -1,0 +1,9 @@
+{
+  "name": "Tensorflex",
+  "url": "https://github.com/anshuman23/tensorflex",
+  "description": "Tensorflow bindings for the Elixir programming language.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "WDK/WinDbg",
+  "url": "https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools",
+  "description": "Windows Driver Kit and WinDbg.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Traccar Manager",
+  "url": "https://github.com/traccar/traccar-manager-ios",
+  "description": ": Track GPS devices on a map",
+  "section": "Location",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

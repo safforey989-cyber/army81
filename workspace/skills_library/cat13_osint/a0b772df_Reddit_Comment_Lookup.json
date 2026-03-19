@@ -1,0 +1,9 @@
+{
+  "name": "Reddit Comment Lookup",
+  "url": "https://randomtools.io/reddit-comment-search/",
+  "description": "Search for reddit comments by reddit username.",
+  "section": "[↑](#-table-of-contents) Reddit",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

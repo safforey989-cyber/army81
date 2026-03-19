@@ -1,0 +1,9 @@
+{
+  "name": "Abuseipdb",
+  "url": "https://www.abuseipdb.com/",
+  "description": "Repository of abuses reported by system administrators for IPs, Domains, and subnets",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

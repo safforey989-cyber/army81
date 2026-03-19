@@ -1,0 +1,9 @@
+{
+  "name": "O'reilly Learning Blog",
+  "url": "https://www.oreilly.com/content/topics/oreilly-learning/",
+  "description": "Tool from data_science",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "bioscala",
+  "url": "https://github.com/bioscala/bioscala",
+  "description": "Bioinformatics for the Scala programming language",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

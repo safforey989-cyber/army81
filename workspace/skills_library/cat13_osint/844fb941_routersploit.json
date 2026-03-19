@@ -1,0 +1,9 @@
+{
+  "name": "routersploit",
+  "url": "https://github.com/reverse-shell/routersploit",
+  "description": "Open source exploitation framework similar to Metasploit but dedicated to embedded devices.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

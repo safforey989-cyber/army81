@@ -1,0 +1,9 @@
+{
+  "name": "Cody",
+  "url": "https://about.sourcegraph.com/cody",
+  "description": ": AI coding assistant",
+  "section": "AI-Powered Code Generation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GPT-4",
+  "url": "https://openai.com/research/gpt-4",
+  "description": "Announcement of GPT-4, a large multimodal model. OpenAI blog, March 14, 2023.",
+  "section": "Milestones",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

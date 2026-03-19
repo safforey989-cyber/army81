@@ -1,0 +1,9 @@
+{
+  "name": "InvokeAI",
+  "url": "https://invoke-ai.github.io/InvokeAI/",
+  "description": ": Stable Diffusion Toolkit and application that runs Windows, Mac and Linux machines, and on GPU cards with as little as 4 GB or RAM",
+  "section": "Inbox: Stable Diffusion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

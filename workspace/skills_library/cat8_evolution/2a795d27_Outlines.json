@@ -1,0 +1,9 @@
+{
+  "name": "Outlines",
+  "url": "https://github.com/normal-computing/outlines",
+  "description": "A Python library that provides a domain-specific language to simplify prompting and constrain generation.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

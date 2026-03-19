@@ -1,0 +1,9 @@
+{
+  "name": "Laminar",
+  "url": "https://laminar.ohwg.net",
+  "description": "Fast, lightweight, simple and flexible Continuous Integration. ([Source Code](https://github.com/ohwgiles/laminar)) `GPL-3.0` `C++`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

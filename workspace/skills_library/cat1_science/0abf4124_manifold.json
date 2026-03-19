@@ -1,0 +1,9 @@
+{
+  "name": "manifold",
+  "url": "https://github.com/clementfarabet/manifold",
+  "description": "A package to manipulate manifolds.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

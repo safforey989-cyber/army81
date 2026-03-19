@@ -1,0 +1,9 @@
+{
+  "name": "Hexabot",
+  "url": "https://github.com/hexastack/hexabot",
+  "description": "Open-Source AI Chatbot / Agent builder with support for LLMs as well as social media channels integration.",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

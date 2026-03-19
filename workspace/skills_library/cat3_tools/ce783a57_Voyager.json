@@ -1,0 +1,9 @@
+{
+  "name": "Voyager",
+  "url": "https://github.com/MineDojo/Voyager",
+  "description": ": An Open-Ended Embodied Agent with Large Language Models ![GitHub Repo stars](https://img.shields.io/github/stars/MineDojo/Voyager?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

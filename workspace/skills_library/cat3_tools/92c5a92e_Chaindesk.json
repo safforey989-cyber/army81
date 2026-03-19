@@ -1,0 +1,9 @@
+{
+  "name": "Chaindesk",
+  "url": "https://github.com/gmpetrov/databerry",
+  "description": ": The no-code platform for semantic search and documents retrieval ![GitHub Repo stars](https://img.shields.io/github/stars/gmpetrov/databerry?style=social)",
+  "section": "Knowledge Management",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

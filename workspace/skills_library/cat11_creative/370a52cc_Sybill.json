@@ -1,0 +1,9 @@
+{
+  "name": "Sybill",
+  "url": "https://www.sybill.ai/",
+  "description": "Sybill generates summaries of sales calls, including next steps, pain points and areas of interest, by combining transcript and emotion-based insights.",
+  "section": "Meeting assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

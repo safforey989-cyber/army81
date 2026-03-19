@@ -1,0 +1,9 @@
+{
+  "name": "RegDateBot",
+  "url": "https://t.me/regdate_clone_bot",
+  "description": "Registration date by ID/forward.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

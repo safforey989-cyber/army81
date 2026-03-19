@@ -1,0 +1,9 @@
+{
+  "name": "Scicloj",
+  "url": "https://scicloj.github.io/pages/libraries/",
+  "description": "Curated list of ML related resources for Clojure.",
+  "section": "Extra",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Intel framework",
+  "url": "https://github.com/intel/idlf",
+  "description": "| Intel® Deep Learning Framework |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "SSLyze",
+  "url": "https://github.com/nabla-c0d3/sslyze",
+  "description": "Fast and comprehensive TLS/SSL configuration analyzer to help identify security mis-configurations.",
+  "section": "Transport Layer Security Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

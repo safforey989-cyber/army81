@@ -1,0 +1,9 @@
+{
+  "name": "Sklearn-genetic-opt",
+  "url": "https://github.com/rodrigo-arenas/Sklearn-genetic-opt",
+  "description": ": An AutoML package for hyperparameters tuning using evolutionary algorithms, with built-in callbacks, plotting, remote logging and more.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

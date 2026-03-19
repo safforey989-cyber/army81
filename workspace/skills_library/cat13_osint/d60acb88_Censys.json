@@ -1,0 +1,9 @@
+{
+  "name": "Censys",
+  "url": "https://search.censys.io/",
+  "description": "Searcher that monitors and analyzes devices.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

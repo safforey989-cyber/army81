@@ -1,0 +1,9 @@
+{
+  "name": "Consul",
+  "url": "https://www.consul.io/",
+  "description": "Consul is a tool for service discovery, monitoring and configuration. ([Source Code](https://github.com/hashicorp/consul)) `MPL-2.0` `Go`",
+  "section": "Service Discovery",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

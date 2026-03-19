@@ -1,0 +1,7 @@
+{
+  "name": "legal_researcher",
+  "type": "prompt_pattern",
+  "prompt_template": "ابحث في السوابق القضائية لـ {case}. قوانين مطبقة، أحكام مشابهة.",
+  "category": "cat15_legal",
+  "source": "built_in"
+}

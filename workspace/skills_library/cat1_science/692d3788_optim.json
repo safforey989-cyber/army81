@@ -1,0 +1,9 @@
+{
+  "name": "optim",
+  "url": "https://github.com/torch/optim",
+  "description": "An optimization library for Torch. SGD, Adagrad, Conjugate-Gradient, LBFGS, RProp and more.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

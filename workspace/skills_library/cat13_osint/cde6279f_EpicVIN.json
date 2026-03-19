@@ -1,0 +1,9 @@
+{
+  "name": "EpicVIN",
+  "url": "https://epicvin.com/",
+  "description": "Vehicle reports are compiled from various data sources, including historical accident records from state agencies and other entities like NMVTIS. License plate lookup that returns VIN and car millage.",
+  "section": "[↑](#-table-of-contents) Vehicle / Automobile Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

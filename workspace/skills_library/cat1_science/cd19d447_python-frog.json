@@ -1,0 +1,9 @@
+{
+  "name": "python-frog",
+  "url": "https://github.com/proycon/python-frog",
+  "description": "Python binding to Frog, an NLP suite for Dutch. (pos tagging, lemmatisation, dependency parsing, NER)",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

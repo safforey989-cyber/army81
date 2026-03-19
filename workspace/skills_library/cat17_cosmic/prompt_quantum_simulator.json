@@ -1,0 +1,7 @@
+{
+  "name": "quantum_simulator",
+  "type": "prompt_pattern",
+  "prompt_template": "حاكِ تجربة كمومية: {experiment}. الحالات، القياسات، الاحتمالات.",
+  "category": "cat17_cosmic",
+  "source": "built_in"
+}

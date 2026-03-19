@@ -1,0 +1,9 @@
+{
+  "name": "Annoy",
+  "url": "https://github.com/spotify/annoy",
+  "description": "Approximate nearest neighbours implementation.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

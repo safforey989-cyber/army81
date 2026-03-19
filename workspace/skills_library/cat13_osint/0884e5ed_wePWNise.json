@@ -1,0 +1,9 @@
+{
+  "name": "wePWNise",
+  "url": "https://labs.mwrinfosecurity.com/tools/wepwnise/",
+  "description": "Generates architecture independent VBA code to be used in Office documents or templates and automates bypassing application control and exploit mitigation software.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

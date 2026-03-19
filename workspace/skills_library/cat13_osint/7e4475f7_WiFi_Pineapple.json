@@ -1,0 +1,9 @@
+{
+  "name": "WiFi Pineapple",
+  "url": "https://www.wifipineapple.com/",
+  "description": "Wireless auditing and penetration testing platform.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

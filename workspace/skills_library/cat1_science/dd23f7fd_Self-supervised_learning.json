@@ -1,0 +1,9 @@
+{
+  "name": "Self-supervised learning",
+  "url": "https://pytorch-lightning-bolts.readthedocs.io/en/latest/self_supervised_models.html",
+  "description": "Tool from ml_tools",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

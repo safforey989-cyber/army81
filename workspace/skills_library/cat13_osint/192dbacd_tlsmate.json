@@ -1,0 +1,9 @@
+{
+  "name": "tlsmate",
+  "url": "https://gitlab.com/guballa/tlsmate",
+  "description": "Framework to create arbitrary TLS test cases. Comes with a TLS server scanner plugin.",
+  "section": "Transport Layer Security Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

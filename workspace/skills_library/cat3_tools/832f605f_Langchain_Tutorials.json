@@ -1,0 +1,9 @@
+{
+  "name": "Langchain Tutorials",
+  "url": "https://github.com/gkamradt/langchain-tutorials",
+  "description": ": overview and tutorial of the LangChain Library ![GitHub Repo stars](https://img.shields.io/github/stars/gkamradt/langchain-tutorials?style=social)",
+  "section": "Notebooks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

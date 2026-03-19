@@ -1,0 +1,9 @@
+{
+  "name": "IntellyWeave",
+  "url": "https://github.com/vericle/intellyweave",
+  "description": "AI-powered OSINT platform with GLiNER entity extraction, Mapbox 3D geospatial visualization, and multi-agent archive research across 30+ international archives.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

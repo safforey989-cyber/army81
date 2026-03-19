@@ -1,0 +1,9 @@
+{
+  "name": "scapy",
+  "url": "https://github.com/secdev/scapy",
+  "description": "Python-based interactive packet manipulation program and library.",
+  "section": "Network Traffic Replay and Editing Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

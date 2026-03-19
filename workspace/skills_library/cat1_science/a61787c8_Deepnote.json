@@ -1,0 +1,9 @@
+{
+  "name": "Deepnote",
+  "url": "https://deepnote.com",
+  "description": "| A new kind of data science notebook. Jupyter-compatible, with real-time collaboration and running in the cloud. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

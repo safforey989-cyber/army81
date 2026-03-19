@@ -1,0 +1,9 @@
+{
+  "name": "Logpasta",
+  "url": "https://logpasta.com/",
+  "description": "Simple, secure log paste service. Command line mode based.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

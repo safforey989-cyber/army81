@@ -1,0 +1,9 @@
+{
+  "name": "starcoder",
+  "url": "https://huggingface.co/bigcode/starcoder",
+  "description": "| [StarCoder: A State-of-the-Art LLM for Code](https://huggingface.co/blog/starcoder), [StarCoder: May the source be with you!](https://drive.google.com/file/d/1cN-b9GnWtHzQRoE7M7gAEyivY0kl4BYs/view) | 1.1-15 | [8192](https://huggingface.co/bigcode/starcoder#model-summary)                         | ",
+  "section": "Open LLMs for code",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

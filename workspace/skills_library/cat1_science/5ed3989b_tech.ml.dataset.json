@@ -1,0 +1,9 @@
+{
+  "name": "tech.ml.dataset",
+  "url": "https://github.com/techascent/tech.ml.dataset",
+  "description": "Clojure dataframe library and pipeline for data processing and machine learning",
+  "section": "Data Analysis",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

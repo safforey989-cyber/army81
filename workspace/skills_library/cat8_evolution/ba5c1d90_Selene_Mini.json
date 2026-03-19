@@ -1,0 +1,9 @@
+{
+  "name": "Selene Mini",
+  "url": "https://huggingface.co/AtlaAI/Selene-1-Mini-Llama-3.1-8B",
+  "description": "| [Atla Selene Mini: A General Purpose Evaluation Model](https://arxiv.org/abs/2501.17195v1), [GitHub](https://github.com/atla-ai/selene-mini) | 8 | [128K](https://github.com/atla-ai/selene-mini) | Apache 2.0 | [Hugging Face Space](https://huggingface.co/spaces/AtlaAI/selene) |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

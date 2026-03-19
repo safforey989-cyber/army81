@@ -1,0 +1,9 @@
+{
+  "name": "Applied AI Blogs",
+  "url": "https://www.appliedaicourse.com/blog/",
+  "description": "In-depth articles on AI, machine learning, and data science concepts with practical applications.",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

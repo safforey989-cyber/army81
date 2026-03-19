@@ -1,0 +1,9 @@
+{
+  "name": "Meka",
+  "url": "http://meka.sourceforge.net/",
+  "description": "An open source implementation of methods for multi-label classification and evaluation (extension to Weka).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

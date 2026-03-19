@@ -1,0 +1,9 @@
+{
+  "name": "Opik",
+  "url": "https://github.com/comet-ml/opik",
+  "description": "Confidently evaluate, test, and ship LLM applications with a suite of observability tools to calibrate language model outputs across your dev and production lifecycle.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

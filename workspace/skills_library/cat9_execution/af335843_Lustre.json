@@ -1,0 +1,9 @@
+{
+  "name": "Lustre",
+  "url": "https://www.lustre.org/",
+  "description": "Parallel distributed file system, generally used for large-scale cluster computing. ([Source Code](https://git.whamcloud.com/?p=fs/lustre-release.git;a=summary)) `GPL-2.0` `C`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

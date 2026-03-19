@@ -1,0 +1,9 @@
+{
+  "name": "Cybertron",
+  "url": "https://github.com/nlpodyssey/cybertron",
+  "description": "Cybertron: the home planet of the Transformers in Go.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Natural Language Toolkit",
+  "url": "https://www.nltk.org/",
+  "description": "| An introductory yet powerful toolkit for natural language processing and classification |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

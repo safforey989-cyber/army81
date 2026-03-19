@@ -1,0 +1,9 @@
+{
+  "name": "Cryptocurrency Info",
+  "url": "https://github.com/denissimon/Cryptocurrency-Info",
+  "description": ": Prices and other related info using the Messari API",
+  "section": "Cryptocurrency",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

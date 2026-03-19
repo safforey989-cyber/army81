@@ -1,0 +1,9 @@
+{
+  "name": "Statsmodels",
+  "url": "https://www.statsmodels.org/stable/index.html",
+  "description": "| A Python-based inferential statistics, hypothesis testing and regression framework |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

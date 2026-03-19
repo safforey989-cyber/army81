@@ -1,0 +1,9 @@
+{
+  "name": "candle",
+  "url": "https://github.com/huggingface/candle",
+  "description": "Candle is a minimalist ML framework for Rust with a focus on performance (including GPU support) and ease of use.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

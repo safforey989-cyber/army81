@@ -1,0 +1,9 @@
+{
+  "name": "OpenAI Prompt Engineering Guide",
+  "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+  "description": "Strategies and tactics for getting better results from large language models.",
+  "section": "Learning resources",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

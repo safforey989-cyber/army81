@@ -1,0 +1,9 @@
+{
+  "name": "NLP",
+  "url": "https://amplab.cs.berkeley.edu/an-nlp-library-for-matlab/",
+  "description": "A NLP library for Matlab.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

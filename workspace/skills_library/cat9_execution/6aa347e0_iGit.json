@@ -1,0 +1,9 @@
+{
+  "name": "iGit",
+  "url": "https://github.com/git-up/GitUp",
+  "description": ": Uses GitUpKit to clone a GitHub repo and perform a commit",
+  "section": "GitHub",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

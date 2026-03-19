@@ -1,0 +1,9 @@
+{
+  "name": "BreachHQ",
+  "url": "https://breach-hq.com/threat-actors",
+  "description": "Provides a list of all known cyber threat actors also referred to as malicious actors, APT groups or hackers.",
+  "section": "[↑](#-threat-actor-search) Threat Actor Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "BLIP+CLIP | CLIP Interrogator | Kaggle",
+  "url": "https://www.kaggle.com/code/leonidkulyk/lb-0-45836-blip-clip-clip-interrogator",
+  "description": ": a Kaggle notebook for image description and captioning (imate-to-text)",
+  "section": "Embeddings and Semantic Search",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

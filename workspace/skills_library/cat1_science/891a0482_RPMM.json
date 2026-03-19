@@ -1,0 +1,9 @@
+{
+  "name": "RPMM",
+  "url": "https://cran.r-project.org/web/packages/RPMM/index.html",
+  "description": "RPMM: Recursively Partitioned Mixture Model.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "PromptHero",
+  "url": "https://prompthero.com/",
+  "description": ": Search the best prompts for Stable Diffusion, DALL-E and Midjourney",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

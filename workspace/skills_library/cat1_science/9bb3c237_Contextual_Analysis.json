@@ -1,0 +1,9 @@
+{
+  "name": "Contextual Analysis",
+  "url": "https://www.sas.com/en_us/software/contextual-analysis.html",
+  "description": "Add structure to unstructured text using a GUI.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AgentFNS_Bot",
+  "url": "https://t.me/AgentFNS_bot",
+  "description": "Free instant counterparty check using official data (INN/OGRN).",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

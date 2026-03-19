@@ -1,0 +1,9 @@
+{
+  "name": "Secure Gateway Live Cyber Threat Map",
+  "url": "https://securegateway.com/map/v5/",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

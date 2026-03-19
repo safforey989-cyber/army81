@@ -1,0 +1,9 @@
+{
+  "name": "CoinPulse",
+  "url": "https://github.com/soutone/coinpulse-python",
+  "description": "Python SDK for cryptocurrency portfolio tracking with real-time prices, P/L calculations, backtesting, and price alerts. Free tier: 25 req/hr.",
+  "section": "Crypto Currencies",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

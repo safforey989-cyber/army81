@@ -1,0 +1,9 @@
+{
+  "name": "Penetration Testing Execution Standard (PTES)",
+  "url": "http://www.pentest-standard.org/",
+  "description": "](http://www.pentest-standard.org/) - Documentation designed to provide a common language and scope for performing and reporting the results of a penetration test.",
+  "section": "Online Penetration Testing Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "BOT-anist",
+  "url": "https://developer.apple.com/documentation/visionos/bot-anist",
+  "description": ": Multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse",
+  "section": "Apple Vision",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

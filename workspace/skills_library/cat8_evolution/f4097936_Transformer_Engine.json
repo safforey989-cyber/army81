@@ -1,0 +1,9 @@
+{
+  "name": "Transformer Engine",
+  "url": "https://github.com/NVIDIA/TransformerEngine",
+  "description": "A library for accelerating Transformer model training on NVIDIA GPUs.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

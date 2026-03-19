@@ -1,0 +1,9 @@
+{
+  "name": "Latent Dirichlet Allocation (LDA)",
+  "url": "https://scikit-learn.org/stable/modules/decomposition.html#latent-dirichlet-allocation-lda",
+  "description": "](https://scikit-learn.org/stable/modules/decomposition.html#latent-dirichlet-allocation-lda)",
+  "section": "Unsupervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

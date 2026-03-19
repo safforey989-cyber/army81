@@ -1,0 +1,9 @@
+{
+  "name": "patternity",
+  "url": "https://github.com/quantium-ai/patternity",
+  "description": "Deterministic algorithm for stock price prediction, focusing on pattern recognition in historical data.",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "NALP",
+  "url": "https://github.com/gugarosa/nalp",
+  "description": "A Natural Adversarial Language Processing framework built over Tensorflow.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

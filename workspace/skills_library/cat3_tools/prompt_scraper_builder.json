@@ -1,0 +1,7 @@
+{
+  "name": "scraper_builder",
+  "type": "prompt_pattern",
+  "prompt_template": "ابنِ web scraper لـ {website} يستخرج {data_type}. استخدم BeautifulSoup/Playwright.",
+  "category": "cat3_tools",
+  "source": "built_in"
+}

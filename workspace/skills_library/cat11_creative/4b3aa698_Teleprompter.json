@@ -1,0 +1,9 @@
+{
+  "name": "Teleprompter",
+  "url": "https://github.com/danielgross/teleprompter",
+  "description": "An on-device AI for your meetings that listens to you and makes charismatic quote suggestions.",
+  "section": "Other",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

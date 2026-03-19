@@ -1,0 +1,9 @@
+{
+  "name": "Langchain-Chatchat",
+  "url": "https://github.com/chatchat-space/Langchain-Chatchat",
+  "description": "Formerly langchain-ChatGLM, local knowledge based LLM (like ChatGLM) QA app with langchain.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

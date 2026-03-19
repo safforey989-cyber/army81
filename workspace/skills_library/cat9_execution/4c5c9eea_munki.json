@@ -1,0 +1,9 @@
+{
+  "name": "munki",
+  "url": "https://www.munki.org/munki/",
+  "description": "Webserver-based repository of packages and package metadata, that allows macOS administrators to manage software installs. ([Source Code](https://github.com/munki/munki)) `Apache-2.0` `Python`",
+  "section": "Deployment Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

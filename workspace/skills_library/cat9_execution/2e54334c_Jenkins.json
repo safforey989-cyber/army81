@@ -1,0 +1,9 @@
+{
+  "name": "Jenkins",
+  "url": "https://jenkins-ci.org/",
+  "description": "Continuous Integration Server. ([Source Code](https://github.com/jenkinsci/jenkins/)) `MIT` `Java`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

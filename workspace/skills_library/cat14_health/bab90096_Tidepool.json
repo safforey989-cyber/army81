@@ -1,0 +1,9 @@
+{
+  "name": "Tidepool",
+  "url": "https://github.com/tidepool-org",
+  "description": "Data platform to reduce the burden of Type 1 Diabetes.",
+  "section": "PHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

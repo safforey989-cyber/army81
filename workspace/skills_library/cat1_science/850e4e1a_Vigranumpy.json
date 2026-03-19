@@ -1,0 +1,9 @@
+{
+  "name": "Vigranumpy",
+  "url": "https://github.com/ukoethe/vigra",
+  "description": "Python bindings for the VIGRA C++ computer vision library.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "SharPyShell",
+  "url": "https://github.com/antonioCoco/SharPyShell",
+  "description": "Tiny and obfuscated ASP.NET webshell for C# web applications.",
+  "section": "Web shells and C2 frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

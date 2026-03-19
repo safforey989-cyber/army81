@@ -1,0 +1,9 @@
+{
+  "name": "delta",
+  "url": "https://github.com/delta-rs/delta",
+  "description": "An open source machine learning framework in Rust Δ",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

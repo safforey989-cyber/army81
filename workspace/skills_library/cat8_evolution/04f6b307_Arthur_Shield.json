@@ -1,0 +1,9 @@
+{
+  "name": "Arthur Shield",
+  "url": "https://www.arthur.ai/get-started",
+  "description": "A paid product for detecting toxicity, hallucination, prompt injection, etc.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

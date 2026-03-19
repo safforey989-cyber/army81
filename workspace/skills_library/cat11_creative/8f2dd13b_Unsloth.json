@@ -1,0 +1,9 @@
+{
+  "name": "Unsloth",
+  "url": "https://unsloth.ai",
+  "description": "A Python library for fine-tuning LLMs [#opensource](https://github.com/unslothai/unsloth).",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

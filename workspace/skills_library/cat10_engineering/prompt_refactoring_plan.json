@@ -1,0 +1,7 @@
+{
+  "name": "refactoring_plan",
+  "type": "prompt_pattern",
+  "prompt_template": "ضع خطة refactoring لـ {codebase}. حدد الأولويات والمخاطر.",
+  "category": "cat10_engineering",
+  "source": "built_in"
+}

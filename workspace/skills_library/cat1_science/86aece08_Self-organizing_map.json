@@ -1,0 +1,9 @@
+{
+  "name": "Self-organizing map",
+  "url": "https://en.wikipedia.org/wiki/Self-organizing_map",
+  "description": "Tool from data_science",
+  "section": "Unsupervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "spammy",
+  "url": "https://github.com/tasdikrahman/spammy",
+  "description": "A library for email Spam filtering built on top of NLTK",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

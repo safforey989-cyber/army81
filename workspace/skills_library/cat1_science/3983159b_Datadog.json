@@ -1,0 +1,9 @@
+{
+  "name": "Datadog",
+  "url": "https://www.datadoghq.com/",
+  "description": "| Solutions, code, and devops for high-scale data science. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

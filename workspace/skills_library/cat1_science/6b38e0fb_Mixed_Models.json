@@ -1,0 +1,9 @@
+{
+  "name": "Mixed Models",
+  "url": "https://github.com/dmbates/MixedModels.jl",
+  "description": "A Julia package for fitting (statistical) mixed-effects models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

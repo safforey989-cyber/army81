@@ -1,0 +1,9 @@
+{
+  "name": "jSciPy",
+  "url": "https://github.com/hissain/jscipy",
+  "description": "A Java port of SciPy's signal processing module, offering filters, transformations, and other scientific computing utilities.",
+  "section": "General Machine Learning Packages",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

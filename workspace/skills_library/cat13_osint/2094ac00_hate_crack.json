@@ -1,0 +1,9 @@
+{
+  "name": "hate_crack",
+  "url": "https://github.com/trustedsec/hate_crack",
+  "description": "Tool for automating cracking methodologies through Hashcat.",
+  "section": "Hash Cracking Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

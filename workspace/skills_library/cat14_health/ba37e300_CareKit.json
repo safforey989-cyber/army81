@@ -1,0 +1,9 @@
+{
+  "name": "CareKit",
+  "url": "https://github.com/carekit-apple/CareKit/",
+  "description": "Open source software framework for creating apps that help people better understand and manage their health.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

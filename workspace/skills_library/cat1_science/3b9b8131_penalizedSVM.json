@@ -1,0 +1,9 @@
+{
+  "name": "penalizedSVM",
+  "url": "https://cran.r-project.org/web/packages/penalizedSVM/index.html",
+  "description": "penalizedSVM: Feature Selection SVM using penalty functions.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

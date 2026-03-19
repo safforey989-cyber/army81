@@ -1,0 +1,9 @@
+{
+  "name": "TensorTrade",
+  "url": "https://github.com/tensortrade-org/tensortrade",
+  "description": "Trade efficiently with reinforcement learning.",
+  "section": "Research Tools",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

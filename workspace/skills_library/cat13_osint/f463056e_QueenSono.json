@@ -1,0 +1,9 @@
+{
+  "name": "QueenSono",
+  "url": "https://github.com/ariary/QueenSono",
+  "description": "Client/Server Binaries for data exfiltration with ICMP. Useful in a network where ICMP protocol is less monitored than others (which is a common case).",
+  "section": "Exfiltration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

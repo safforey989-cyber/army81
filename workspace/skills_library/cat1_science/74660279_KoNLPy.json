@@ -1,0 +1,9 @@
+{
+  "name": "KoNLPy",
+  "url": "http://konlpy.org",
+  "description": "A Python package for Korean natural language processing.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

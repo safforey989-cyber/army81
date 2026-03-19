@@ -1,0 +1,9 @@
+{
+  "name": "catalyst",
+  "url": "https://github.com/enigmampc/catalyst",
+  "description": "An algorithmic trading library for Crypto-Assets in python.",
+  "section": "Crypto Currencies",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

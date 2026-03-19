@@ -1,0 +1,9 @@
+{
+  "name": "nds4ios",
+  "url": "https://github.com/raaxis/nds4ios",
+  "description": ": Nintendo DS emulator, port of DeSmuME",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

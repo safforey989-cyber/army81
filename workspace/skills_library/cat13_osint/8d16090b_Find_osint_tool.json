@@ -1,0 +1,9 @@
+{
+  "name": "Find osint tool",
+  "url": "https://find.osint-tool.com",
+  "description": "Searches multiple OSINT tools to find information across various sources.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

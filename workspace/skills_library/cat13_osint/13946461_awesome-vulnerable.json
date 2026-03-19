@@ -1,0 +1,9 @@
+{
+  "name": "awesome-vulnerable",
+  "url": "https://github.com/kaiiyer/awesome-vulnerable",
+  "description": ".",
+  "section": "Intentionally Vulnerable Systems",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

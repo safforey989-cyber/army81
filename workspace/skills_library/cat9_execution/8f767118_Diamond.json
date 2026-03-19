@@ -1,0 +1,9 @@
+{
+  "name": "Diamond",
+  "url": "https://github.com/python-diamond/Diamond",
+  "description": "Daemon that collects system metrics and publishes them to Graphite (and others). `MIT` `Python`",
+  "section": "Metrics & Metric Collection",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

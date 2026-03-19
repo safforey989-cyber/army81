@@ -1,0 +1,9 @@
+{
+  "name": "Google Hacking Database (GHDB)",
+  "url": "https://www.exploit-db.com/google-hacking-database",
+  "description": "](https://www.exploit-db.com/google-hacking-database) - The GHDB is an index of search queries (we call them dorks) used to find publicly available information, intended for pentesters and security researchers.",
+  "section": "[↑](#-google-dorks-tools) Google Dorks Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

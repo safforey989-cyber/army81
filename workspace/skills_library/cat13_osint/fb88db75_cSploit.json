@@ -1,0 +1,9 @@
+{
+  "name": "cSploit",
+  "url": "https://github.com/cSploit/android",
+  "description": "Advanced IT security professional toolkit on Android featuring an integrated Metasploit daemon and MITM capabilities.",
+  "section": "Android Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Langchain Blog",
+  "url": "https://blog.langchain.dev/",
+  "description": ": The Official Langchain blog",
+  "section": "LangChain Framework",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

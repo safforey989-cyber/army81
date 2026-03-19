@@ -1,0 +1,9 @@
+{
+  "name": "Telegram Finder",
+  "url": "https://www.telegram-finder.io/",
+  "description": "A tool to find Telegram users by their phone number, linkedin url or email.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

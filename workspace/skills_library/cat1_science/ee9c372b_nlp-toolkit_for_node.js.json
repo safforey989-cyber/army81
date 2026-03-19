@@ -1,0 +1,9 @@
+{
+  "name": "nlp-toolkit for node.js",
+  "url": "https://www.npmjs.com/package/nlp-toolkit",
+  "description": "| This module covers some basic nlp principles and implementations. The main focus is performance. When we deal with sample or training data in nlp, we quickly run out of memory. Therefore every implementation in this module is written as stream to only hold that data in memory that is currently pro",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Gray Hat Hacking The Ethical Hacker's Handbook by Daniel Regalado et al., 2015",
+  "url": "http://www.amazon.com/Hacking-Ethical-Hackers-Handbook-Edition/dp/0071832386",
+  "description": "Tool from pentest_tools",
+  "section": "Reverse Engineering Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

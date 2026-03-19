@@ -1,0 +1,9 @@
+{
+  "name": "Swift-SMART",
+  "url": "https://github.com/smart-on-fhir/Swift-SMART",
+  "description": "Swift SMART on FHIR framework for iOS and OS X.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

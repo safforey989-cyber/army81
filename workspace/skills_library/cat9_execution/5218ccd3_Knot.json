@@ -1,0 +1,9 @@
+{
+  "name": "Knot",
+  "url": "https://www.knot-dns.cz/",
+  "description": "High performance authoritative-only DNS server. ([Source Code](https://gitlab.nic.cz/knot/knot-dns)) `GPL-3.0` `C`",
+  "section": "DNS - Servers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

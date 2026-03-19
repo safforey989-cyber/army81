@@ -1,0 +1,9 @@
+{
+  "name": "Vision agent",
+  "url": "https://github.com/landing-ai/vision-agent",
+  "description": ": Vision Agent is a library that helps you utilize agent frameworks to generate code to solve your vision task. ![GitHub Repo stars](https://img.shields.io/github/stars/landing-ai/vision-agent?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Data Science Bookcamp",
+  "url": "https://www.manning.com/books/data-science-bookcamp",
+  "description": "Early access",
+  "section": "Books",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

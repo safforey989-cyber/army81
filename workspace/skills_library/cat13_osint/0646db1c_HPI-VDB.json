@@ -1,0 +1,9 @@
+{
+  "name": "HPI-VDB",
+  "url": "https://hpi-vdb.de/",
+  "description": "Aggregator of cross-referenced software vulnerabilities offering free-of-charge API access, provided by the Hasso-Plattner Institute, Potsdam.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

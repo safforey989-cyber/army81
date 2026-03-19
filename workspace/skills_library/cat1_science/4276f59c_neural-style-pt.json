@@ -1,0 +1,9 @@
+{
+  "name": "neural-style-pt",
+  "url": "https://github.com/ProGamerGov/neural-style-pt",
+  "description": "A PyTorch implementation of Justin Johnson's neural-style (neural style transfer).",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

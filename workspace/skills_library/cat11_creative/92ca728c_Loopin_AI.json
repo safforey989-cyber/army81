@@ -1,0 +1,9 @@
+{
+  "name": "Loopin AI",
+  "url": "https://www.loopinhq.com/",
+  "description": "Loopin is a collaborative meeting workspace that not only enables you to record, transcribe & summaries meetings using AI, but also enables you to auto-organise meeting notes on top of your calendar.",
+  "section": "Meeting assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

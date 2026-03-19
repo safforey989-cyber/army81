@@ -1,0 +1,9 @@
+{
+  "name": "Pixelz AI Art Generator",
+  "url": "https://pixelz.ai/",
+  "description": "Pixelz AI Art Generator enables you to create incredible art from text. Stable Diffusion, CLIP Guided Diffusion & PXL·E realistic algorithms available.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

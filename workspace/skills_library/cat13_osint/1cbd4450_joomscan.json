@@ -1,0 +1,9 @@
+{
+  "name": "joomscan",
+  "url": "https://www.owasp.org/index.php/Category:OWASP_Joomla_Vulnerability_Scanner_Project",
+  "description": "Joomla vulnerability scanner.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

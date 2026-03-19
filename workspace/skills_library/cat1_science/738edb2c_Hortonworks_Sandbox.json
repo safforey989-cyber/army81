@@ -1,0 +1,9 @@
+{
+  "name": "Hortonworks Sandbox",
+  "url": "https://www.cloudera.com/downloads/hortonworks-sandbox.html",
+  "description": "| is a personal, portable Hadoop environment that comes with a dozen interactive Hadoop tutorials. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

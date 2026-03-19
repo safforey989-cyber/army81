@@ -1,0 +1,9 @@
+{
+  "name": "Delight",
+  "url": "https://github.com/datamechanics/delight",
+  "description": "A listener that streams your spark events logs to delight, a free and improved spark UI",
+  "section": "Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

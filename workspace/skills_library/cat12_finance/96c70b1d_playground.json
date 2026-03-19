@@ -1,0 +1,9 @@
+{
+  "name": "playground",
+  "url": "https://github.com/tensorflow/playground",
+  "description": "Play with neural networks.",
+  "section": "Visualizing",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

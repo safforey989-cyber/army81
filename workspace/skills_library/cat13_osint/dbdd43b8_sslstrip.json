@@ -1,0 +1,9 @@
+{
+  "name": "sslstrip",
+  "url": "https://www.thoughtcrime.org/software/sslstrip/",
+  "description": "Demonstration of the HTTPS stripping attacks.",
+  "section": "Web Exploitation",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "IDE",
+  "url": "http://www.neilvandyke.org/racket-sicp/",
+  "description": "Tool from cs_courses",
+  "section": "Introduction to CS",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

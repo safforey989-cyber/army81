@@ -1,0 +1,9 @@
+{
+  "name": "go-pr",
+  "url": "https://github.com/daviddengcn/go-pr",
+  "description": "Pattern recognition package in Go lang. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

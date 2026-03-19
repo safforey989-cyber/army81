@@ -1,0 +1,9 @@
+{
+  "name": "CertGraph",
+  "url": "https://github.com/lanrat/certgraph",
+  "description": "Crawls a domain's SSL/TLS certificates for its certificate alternative names.",
+  "section": "OSINT Online Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

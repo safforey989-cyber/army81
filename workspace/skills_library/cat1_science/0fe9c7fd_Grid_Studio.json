@@ -1,0 +1,9 @@
+{
+  "name": "Grid Studio",
+  "url": "https://github.com/ricklamers/gridstudio",
+  "description": "| Grid studio is a web-based spreadsheet application with full integration of the Python programming language. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

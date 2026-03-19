@@ -1,0 +1,9 @@
+{
+  "name": "Embedchain",
+  "url": "https://github.com/embedchain/embedchain",
+  "description": "Framework to create ChatGPT like bots over your dataset.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

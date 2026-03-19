@@ -1,0 +1,7 @@
+{
+  "name": "symptom_analyzer",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل الأعراض: {symptoms}. احتمالات تشخيصية مرتبة حسب الاحتمالية.",
+  "category": "cat14_health",
+  "source": "built_in"
+}

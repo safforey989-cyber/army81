@@ -1,0 +1,9 @@
+{
+  "name": "IntoDNS.ai",
+  "url": "https://intodns.ai",
+  "description": "AI-powered DNS and email security scanner with SPF, DKIM, DMARC, DNSSEC checks and fix suggestions.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ipychart",
+  "url": "https://github.com/nicohlr/ipychart",
+  "description": "The power of Chart.js in Jupyter Notebook.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

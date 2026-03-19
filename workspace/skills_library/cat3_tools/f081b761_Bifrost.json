@@ -1,0 +1,9 @@
+{
+  "name": "Bifrost",
+  "url": "https://github.com/maximhq/bifrost",
+  "description": ": Bifrost is the fastest LLM gateway, with just 11μs overhead at 5,000 RPS, making it 50x faster than LiteLLM. ![GitHub Repo stars](https://img.shields.io/github/stars/maximhq/bifrost?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

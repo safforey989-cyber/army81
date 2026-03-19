@@ -1,0 +1,9 @@
+{
+  "name": "Karate Club",
+  "url": "https://github.com/benedekrozemberczki/karateclub",
+  "description": "| An unsupervised machine learning extension library for NetworkX with a Scikit-Learn like API. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "WiGLE.net",
+  "url": "https://wigle.net/",
+  "description": "Information about wireless networks world-wide, with user-friendly desktop and web applications.",
+  "section": "OSINT Online Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

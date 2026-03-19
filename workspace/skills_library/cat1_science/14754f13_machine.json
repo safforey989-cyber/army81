@@ -1,0 +1,9 @@
+{
+  "name": "machine",
+  "url": "https://github.com/mathieulaporte/machine",
+  "description": "Simple machine learning algorithm.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "lol_monitor",
+  "url": "https://github.com/misiektoja/lol_monitor",
+  "description": "Tool for real-time tracking of LoL (League of Legends) players gaming activities including detection when a user starts or finishes a match with support for email alerts, CSV logging, playtime stats and more",
+  "section": "[↑](#-table-of-contents) Gaming Platforms",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

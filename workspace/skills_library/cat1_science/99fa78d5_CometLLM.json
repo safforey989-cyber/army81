@@ -1,0 +1,9 @@
+{
+  "name": "CometLLM",
+  "url": "https://github.com/comet-ml/comet-llm",
+  "description": "Track, log, visualize and evaluate your LLM prompts and prompt chains.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

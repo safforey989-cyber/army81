@@ -1,0 +1,9 @@
+{
+  "name": "Metadata Viewer",
+  "url": "https://kriztalz.sh/metadata-viewer/",
+  "description": "Online EXIF data viewer.",
+  "section": "[↑](#-table-of-contents) Image Analysis",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

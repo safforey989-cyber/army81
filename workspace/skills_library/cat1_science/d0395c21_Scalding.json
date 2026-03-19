@@ -1,0 +1,9 @@
+{
+  "name": "Scalding",
+  "url": "https://github.com/twitter/scalding",
+  "description": "A Scala API for Cascading.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

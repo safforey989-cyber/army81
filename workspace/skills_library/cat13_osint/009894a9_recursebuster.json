@@ -1,0 +1,9 @@
+{
+  "name": "recursebuster",
+  "url": "https://github.com/c-sto/recursebuster",
+  "description": "Content discovery tool to perform directory and file bruteforcing.",
+  "section": "Web path discovery and bruteforcing tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

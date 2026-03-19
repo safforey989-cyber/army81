@@ -1,0 +1,9 @@
+{
+  "name": "liffy",
+  "url": "https://github.com/hvqzao/liffy",
+  "description": "LFI exploitation tool.",
+  "section": "Web file inclusion tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

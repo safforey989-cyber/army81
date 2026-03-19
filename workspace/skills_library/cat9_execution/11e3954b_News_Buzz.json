@@ -1,0 +1,9 @@
+{
+  "name": "News Buzz",
+  "url": "https://github.com/theankurkedia/NewsBuzz",
+  "description": ": Uses News API for fetching realtime data and Firebase as the backend and authenticator",
+  "section": "Flutter",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

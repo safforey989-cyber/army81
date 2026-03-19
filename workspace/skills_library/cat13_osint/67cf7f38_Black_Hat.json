@@ -1,0 +1,9 @@
+{
+  "name": "Black Hat",
+  "url": "http://www.blackhat.com/",
+  "description": "Annual security conference in Las Vegas.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Magentic",
+  "url": "https://github.com/jackmpcollins/magentic",
+  "description": ": Seamlessly integrate LLMs as Python functions ![GitHub Repo stars](https://img.shields.io/github/stars/jackmpcollins/magentic?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

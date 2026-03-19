@@ -1,0 +1,9 @@
+{
+  "name": "DD-WRT",
+  "url": "https://dd-wrt.com/",
+  "description": "A Linux-based firmware for wireless routers and access points, originally designed for the Linksys WRT54G series. ([Source Code](https://svn.dd-wrt.com/)) `GPL-2.0` `C`",
+  "section": "Router",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

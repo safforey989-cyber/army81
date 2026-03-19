@@ -1,0 +1,9 @@
+{
+  "name": "grpreg",
+  "url": "https://cran.r-project.org/web/packages/grpreg/index.html",
+  "description": "grpreg: Regularization paths for regression models with grouped covariates.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

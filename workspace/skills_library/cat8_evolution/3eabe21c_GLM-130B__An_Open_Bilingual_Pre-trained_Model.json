@@ -1,0 +1,9 @@
+{
+  "name": "GLM-130B: An Open Bilingual Pre-trained Model",
+  "url": "https://arxiv.org/pdf/2210.02414.pdf",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

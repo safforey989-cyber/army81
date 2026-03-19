@@ -1,0 +1,9 @@
+{
+  "name": "VSCodium",
+  "url": "https://vscodium.com/",
+  "description": "An open source cross-platform extensible code editor based on [VS Code by Microsoft](https://code.visualstudio.com/) removing their non-free additions. ([Source Code](https://github.com/VSCodium/vscodium)) `MIT` `TypeScript`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

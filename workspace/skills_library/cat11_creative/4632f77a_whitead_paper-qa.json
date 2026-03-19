@@ -1,0 +1,9 @@
+{
+  "name": "whitead/paper-qa",
+  "url": "https://github.com/whitead/paper-qa",
+  "description": ": \"LLM Chain for answering questions from documents with citations\", [demo](https://twitter.com/andrewwhite01/status/1629346569756483584?s=20)",
+  "section": "Embeddings and Semantic Search",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

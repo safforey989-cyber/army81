@@ -1,0 +1,9 @@
+{
+  "name": "Duplicity",
+  "url": "https://duplicity.gitlab.io/",
+  "description": "Encrypted bandwidth-efficient backup using the rsync algorithm. ([Source Code](https://gitlab.com/duplicity/duplicity)) `GPL-2.0` `Python`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Sysinternals Suite",
+  "url": "https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite",
+  "description": "The Sysinternals Troubleshooting Utilities.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

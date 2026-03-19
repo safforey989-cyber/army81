@@ -1,0 +1,9 @@
+{
+  "name": "Tourism Demo",
+  "url": "https://github.com/bluemix/tourism-demo",
+  "description": ": Backed by Redux, shows animations, internationalization (i18n), ClipPath, fonts & more",
+  "section": "Travel",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

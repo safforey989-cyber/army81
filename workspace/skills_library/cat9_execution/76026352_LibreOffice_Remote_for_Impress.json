@@ -1,0 +1,9 @@
+{
+  "name": "LibreOffice Remote for Impress",
+  "url": "https://git.libreoffice.org/impress_remote/",
+  "description": ": Interact with [LibreOffice](https://www.libreoffice.org/) slideshows remotely",
+  "section": "Productivity",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

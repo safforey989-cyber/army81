@@ -1,0 +1,9 @@
+{
+  "name": "ElemStatLearn",
+  "url": "https://cran.r-project.org/web/packages/ElemStatLearn/index.html",
+  "description": "ElemStatLearn: Data sets, functions and examples from the book: \"The Elements of Statistical Learning, Data Mining, Inference, and Prediction\" by Trevor Hastie, Robert Tibshirani and Jerome Friedman Prediction\" by Trevor Hastie, Robert Tibshirani and Jerome Friedman.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Ettercap",
+  "url": "http://www.ettercap-project.org",
+  "description": "Comprehensive, mature suite for machine-in-the-middle attacks.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

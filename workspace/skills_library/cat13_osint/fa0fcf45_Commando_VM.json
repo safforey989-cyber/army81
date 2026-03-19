@@ -1,0 +1,9 @@
+{
+  "name": "Commando VM",
+  "url": "https://github.com/fireeye/commando-vm",
+  "description": "Automated installation of over 140 Windows software packages for penetration testing and red teaming.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

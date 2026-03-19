@@ -1,0 +1,9 @@
+{
+  "name": "OpenRouter LLM Rankings",
+  "url": "https://openrouter.ai/rankings",
+  "description": "Language models ranked and analyzed by usage across apps.",
+  "section": "Leaderboards",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

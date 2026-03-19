@@ -1,0 +1,9 @@
+{
+  "name": "Lycos Image Search",
+  "url": "https://search.lycos.com",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Image Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

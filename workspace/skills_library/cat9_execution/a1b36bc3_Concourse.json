@@ -1,0 +1,9 @@
+{
+  "name": "Concourse",
+  "url": "https://concourse-ci.org/",
+  "description": "Concourse is a CI tool that treats pipelines as first class objects and containerizes every step along the way. ([Demo](https://ci.concourse-ci.org/), [Source Code](https://github.com/concourse/concourse)) `Apache-2.0` `Go`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

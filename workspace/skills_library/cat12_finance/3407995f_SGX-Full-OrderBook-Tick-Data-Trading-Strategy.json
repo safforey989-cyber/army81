@@ -1,0 +1,9 @@
+{
+  "name": "SGX-Full-OrderBook-Tick-Data-Trading-Strategy",
+  "url": "https://github.com/rorysroes/SGX-Full-OrderBook-Tick-Data-Trading-Strategy",
+  "description": "Solutions for high-frequency trading (HFT) strategies using data science approaches (Machine Learning) on Full Orderbook Tick Data.",
+  "section": "High Frequency Trading",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

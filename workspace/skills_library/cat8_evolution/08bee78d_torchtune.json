@@ -1,0 +1,9 @@
+{
+  "name": "torchtune",
+  "url": "https://github.com/pytorch/torchtune",
+  "description": "A Native-PyTorch Library for LLM Fine-tuning.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

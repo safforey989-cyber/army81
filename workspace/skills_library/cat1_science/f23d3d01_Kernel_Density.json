@@ -1,0 +1,9 @@
+{
+  "name": "Kernel Density",
+  "url": "https://github.com/JuliaStats/KernelDensity.jl",
+  "description": "Kernel density estimators for Julia.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

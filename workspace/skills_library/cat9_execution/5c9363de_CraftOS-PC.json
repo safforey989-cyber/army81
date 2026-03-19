@@ -1,0 +1,9 @@
+{
+  "name": "CraftOS-PC",
+  "url": "https://github.com/MCJack123/craftos2",
+  "description": ": Modern ComputerCraft emulator",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

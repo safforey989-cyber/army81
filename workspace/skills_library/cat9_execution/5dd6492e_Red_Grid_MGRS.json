@@ -1,0 +1,9 @@
+{
+  "name": "Red Grid MGRS",
+  "url": "https://github.com/RedGridTactical/RedGridMGRS",
+  "description": ": DAGR-class military GPS navigator with live MGRS coordinates, magnetic declination, waypoints, tactical tools & report templates",
+  "section": "Location",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

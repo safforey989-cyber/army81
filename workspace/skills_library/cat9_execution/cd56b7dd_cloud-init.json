@@ -1,0 +1,9 @@
+{
+  "name": "cloud-init",
+  "url": "https://cloud-init.io/",
+  "description": "Initialization tool to automate the configuration of VMs, cloud instances, or machines on a network. ([Source Code](https://github.com/canonical/cloud-init)) `GPL-3.0/Apache-2.0` `Python`",
+  "section": "Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

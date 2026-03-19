@@ -1,0 +1,9 @@
+{
+  "name": "Keras GPT Copilot",
+  "url": "https://github.com/fabprezja/keras-gpt-copilot",
+  "description": "A python package that integrates an LLM copilot inside the keras model development workflow.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "tirreno",
+  "url": "https://www.tirreno.com/",
+  "description": "Application-level security to protect your app from threats, fraud, and abuse. ([Demo](https://play.tirreno.com/), [Source Code](https://github.com/tirrenotechnologies/tirreno)) `AGPL-3.0` `PHP/Docker`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

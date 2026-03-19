@@ -1,0 +1,9 @@
+{
+  "name": "Ruby HL7",
+  "url": "https://github.com/segfault/ruby-hl7",
+  "description": "Ruby HL7 library.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

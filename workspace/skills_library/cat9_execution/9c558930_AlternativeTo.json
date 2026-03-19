@@ -1,0 +1,9 @@
+{
+  "name": "AlternativeTo",
+  "url": "https://alternativeto.net",
+  "description": "Find alternatives to software you know and discover new software.",
+  "section": "Repositories",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

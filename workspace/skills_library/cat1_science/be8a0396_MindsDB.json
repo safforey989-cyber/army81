@@ -1,0 +1,9 @@
+{
+  "name": "MindsDB",
+  "url": "https://github.com/mindsdb/mindsdb",
+  "description": "| MindsDB is an Explainable AutoML framework for developers. With MindsDB you can build, train and use state of the art ML models in as simple as one line of code. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

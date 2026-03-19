@@ -1,0 +1,9 @@
+{
+  "name": "The Art of Network Penetration Testing, 2020",
+  "url": "https://www.manning.com/books/the-art-of-network-penetration-testing",
+  "description": "Tool from pentest_tools",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

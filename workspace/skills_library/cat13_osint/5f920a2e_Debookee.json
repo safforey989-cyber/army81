@@ -1,0 +1,9 @@
+{
+  "name": "Debookee",
+  "url": "http://www.iwaxx.com/debookee/",
+  "description": "Simple and powerful network traffic analyzer for macOS.",
+  "section": "Protocol Analyzers and Sniffers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

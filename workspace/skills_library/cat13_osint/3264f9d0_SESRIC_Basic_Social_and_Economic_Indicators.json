@@ -1,0 +1,9 @@
+{
+  "name": "SESRIC Basic Social and Economic Indicators",
+  "url": "http://www.sesric.org/baseind.php",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Data and Statistics",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

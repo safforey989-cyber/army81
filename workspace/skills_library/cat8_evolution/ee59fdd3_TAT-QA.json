@@ -1,0 +1,9 @@
+{
+  "name": "TAT-QA",
+  "url": "https://nextplusplus.github.io/TAT-QA",
+  "description": "a large-scale question-answering benchmark focused on real-world financial data, integrating both tabular and textual information.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

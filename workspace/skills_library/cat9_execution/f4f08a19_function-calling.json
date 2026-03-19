@@ -1,0 +1,9 @@
+{
+  "name": "function-calling",
+  "url": "https://platform.openai.com/docs/guides/gpt/function-calling",
+  "description": "and developers can add customized tools/APIs  [here](https://github.com/aiwaves-cn/agents/blob/master/src/agents/Component/ToolComponent.py).",
+  "section": "Description",
+  "topic": "ai_agents",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

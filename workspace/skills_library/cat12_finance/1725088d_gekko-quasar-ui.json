@@ -1,0 +1,9 @@
+{
+  "name": "gekko-quasar-ui",
+  "url": "https://github.com/H256/gekko-quasar-ui",
+  "description": "An UI port for gekko trading bot using Quasar framework.",
+  "section": "Others",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "JWT Cracker",
+  "url": "https://github.com/lmammino/jwt-cracker",
+  "description": "Simple HS256 JSON Web Token (JWT) token brute force cracker.",
+  "section": "Hash Cracking Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

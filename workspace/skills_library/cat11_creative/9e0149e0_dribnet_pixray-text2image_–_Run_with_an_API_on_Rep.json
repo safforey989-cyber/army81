@@ -1,0 +1,9 @@
+{
+  "name": "dribnet/pixray-text2image – Run with an API on Replicate",
+  "url": "https://replicate.com/dribnet/pixray-text2image",
+  "description": "Tool from generative_ai",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

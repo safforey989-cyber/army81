@@ -1,0 +1,9 @@
+{
+  "name": "rusty-machine",
+  "url": "https://github.com/AtheMathmo/rusty-machine",
+  "description": "a pure-rust machine learning library.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

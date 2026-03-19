@@ -1,0 +1,9 @@
+{
+  "name": "KRFuzzyCMeans-Algorithm",
+  "url": "https://github.com/Kalvar/ios-KRFuzzyCMeans-Algorithm",
+  "description": "It implemented Fuzzy C-Means (FCM) the fuzzy clustering / classification algorithm on Machine Learning. It could be used in data mining and image compression. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

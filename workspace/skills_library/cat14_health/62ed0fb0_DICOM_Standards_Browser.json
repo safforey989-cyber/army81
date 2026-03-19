@@ -1,0 +1,9 @@
+{
+  "name": "DICOM Standards Browser",
+  "url": "https://dicom.innolitics.com/ciods",
+  "description": "Provides an effective way to learn the DICOM standard and inspect DICOM attributes.",
+  "section": "Specifications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

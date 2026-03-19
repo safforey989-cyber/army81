@@ -1,0 +1,9 @@
+{
+  "name": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+  "url": "https://arxiv.org/pdf/1910.02054.pdf",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

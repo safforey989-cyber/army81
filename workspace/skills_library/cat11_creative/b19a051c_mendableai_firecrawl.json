@@ -1,0 +1,9 @@
+{
+  "name": "mendableai/firecrawl",
+  "url": "https://github.com/mendableai/firecrawl",
+  "description": ": Turn entire websites into LLM-ready markdown or structured data. Scrape, crawl and extract with a single API.",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

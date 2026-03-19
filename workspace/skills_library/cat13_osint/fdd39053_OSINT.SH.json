@@ -1,0 +1,9 @@
+{
+  "name": "OSINT.SH",
+  "url": "https://osint.sh/",
+  "description": "Information Gathering Toolset.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

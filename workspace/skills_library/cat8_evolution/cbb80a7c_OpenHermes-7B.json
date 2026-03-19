@@ -1,0 +1,9 @@
+{
+  "name": "OpenHermes-7B",
+  "url": "https://huggingface.co/teknium/OpenHermes-7B",
+  "description": ", [OpenHermes-13B](https://huggingface.co/teknium/OpenHermes-13B) | [Nous Research](https://nousresearch.com/) | 7, 13 | [4096](https://huggingface.co/teknium/OpenHermes-13B/blob/main/config.json)| MIT | [OpenHermes-V2 Finetuned on Mistral 7B](https://huggingface.co/spaces/artificialguybr/OPENHERMES",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

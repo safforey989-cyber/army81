@@ -1,0 +1,9 @@
+{
+  "name": "Topics Covered",
+  "url": "https://courses.csail.mit.edu/iap/interview/calendar.php",
+  "description": "Tool from cs_courses",
+  "section": "Algorithms",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

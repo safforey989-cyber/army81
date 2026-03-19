@@ -1,0 +1,9 @@
+{
+  "name": "Proxmox VE",
+  "url": "https://www.proxmox.com/proxmox-ve",
+  "description": "Virtualization management solution. ([Source Code](https://git.proxmox.com/)) `GPL-2.0` `Perl/Shell`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Personae",
+  "url": "https://github.com/Ceruleanacg/Personae",
+  "description": "Implements and environment of Deep Reinforcement Learning & Supervised Learning for Quantitative Trading.",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

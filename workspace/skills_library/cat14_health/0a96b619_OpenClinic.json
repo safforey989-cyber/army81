@@ -1,0 +1,9 @@
+{
+  "name": "OpenClinic",
+  "url": "https://github.com/jact/openclinic",
+  "description": "Medical Records System.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

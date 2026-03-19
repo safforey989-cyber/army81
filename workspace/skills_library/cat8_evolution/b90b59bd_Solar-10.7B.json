@@ -1,0 +1,9 @@
+{
+  "name": "Solar-10.7B",
+  "url": "https://huggingface.co/upstage/SOLAR-10.7B-v1.0",
+  "description": "| [Upstage](https://arxiv.org/abs/2312.15166) | 10.7 | [4096](https://huggingface.co/upstage/SOLAR-10.7B-v1.0/blob/main/config.json)| apache-2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

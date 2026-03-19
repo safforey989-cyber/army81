@@ -1,0 +1,9 @@
+{
+  "name": "Diagrams.net",
+  "url": "https://app.diagrams.net/",
+  "description": "A.K.A. [Draw.io](https://app.diagrams.net/). Easy to use Diagram UI with a plethora of templates. ([Source Code](https://github.com/jgraph/drawio)) `Apache-2.0` `JavaScript/Docker`",
+  "section": "Diagramming",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

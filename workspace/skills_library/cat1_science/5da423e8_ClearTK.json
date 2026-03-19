@@ -1,0 +1,9 @@
+{
+  "name": "ClearTK",
+  "url": "https://github.com/ClearTK/cleartk",
+  "description": "ClearTK provides a framework for developing statistical natural language processing (NLP) components in Java and is built on top of Apache UIMA. **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "RRDtool",
+  "url": "https://oss.oetiker.ch/rrdtool/",
+  "description": "Industry standard, high performance data logging and graphing system for time series data. ([Source Code](https://github.com/oetiker/rrdtool-1.x)) `GPL-2.0` `C`",
+  "section": "Metrics & Metric Collection",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

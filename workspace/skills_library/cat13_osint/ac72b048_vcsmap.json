@@ -1,0 +1,9 @@
+{
+  "name": "vcsmap",
+  "url": "https://github.com/melvinsh/vcsmap",
+  "description": "Plugin-based tool to scan public version control systems for sensitive information.",
+  "section": "Source code repository searching tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "geekan/MetaGPT",
+  "url": "https://github.com/geekan/MetaGPT",
+  "description": ": the multi-agent framework that, give one line requirement, return PRD, design, tasks, repo",
+  "section": "AI-Powered Code Generation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ITK",
+  "url": "https://itk.org/",
+  "description": "Toolkit used for the development of image segmentation and image registration programs with leading-edge algorithms in 2 and 3 dimensions.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

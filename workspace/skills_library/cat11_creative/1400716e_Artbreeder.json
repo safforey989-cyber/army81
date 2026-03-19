@@ -1,0 +1,9 @@
+{
+  "name": "Artbreeder",
+  "url": "https://www.artbreeder.com/",
+  "description": ": web-based tool to generate images by breeding existing images",
+  "section": "Online Tools and Applications",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

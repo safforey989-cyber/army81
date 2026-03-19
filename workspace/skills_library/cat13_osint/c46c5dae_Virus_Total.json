@@ -1,0 +1,9 @@
+{
+  "name": "Virus Total",
+  "url": "https://www.virustotal.com/",
+  "description": "Analyse suspicious domains, IPs URLs and files to detect malware and other breaches",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

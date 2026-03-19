@@ -1,0 +1,9 @@
+{
+  "name": "Philidor",
+  "url": "https://docs.philidor.io/docs",
+  "description": "Institutional-grade DeFi risk scoring for 700+ vaults across 9 protocols and 6 chains. REST API and MCP server (Claude, Cursor, Windsurf). Deterministic 0–10 risk scores, tiers (Prime/Core/Edge), portfolio analysis, oracle monitoring. No API key required.",
+  "section": "Crypto Currencies",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

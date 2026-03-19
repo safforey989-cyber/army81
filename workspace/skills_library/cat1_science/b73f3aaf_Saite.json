@@ -1,0 +1,9 @@
+{
+  "name": "Saite",
+  "url": "https://github.com/jsa-aerial/saite",
+  "description": "Clojure(Script) client/server application for dynamic interactive explorations and the creation of live shareable documents capturing them using Vega/Vega-Lite, CodeMirror, markdown, and LaTeX",
+  "section": "Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

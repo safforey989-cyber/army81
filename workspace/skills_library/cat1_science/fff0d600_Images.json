@@ -1,0 +1,9 @@
+{
+  "name": "Images",
+  "url": "https://github.com/JuliaImages/Images.jl",
+  "description": "An image library for Julia.",
+  "section": "Misc Stuff / Presentations",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

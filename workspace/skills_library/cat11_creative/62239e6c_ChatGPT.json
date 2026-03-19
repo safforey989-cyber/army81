@@ -1,0 +1,9 @@
+{
+  "name": "ChatGPT",
+  "url": "https://openai.com/blog/chatgpt/",
+  "description": "Announcement of ChatGPT, a conversational model trained to answer follow-up questions, admit mistakes, challenge incorrect premises, and reject inappropriate requests. OpenAI blog, November 30, 2022.",
+  "section": "Milestones",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

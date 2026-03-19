@@ -1,0 +1,9 @@
+{
+  "name": "Retro",
+  "url": "https://github.com/openai/retro",
+  "description": "Retro Games in Gym",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

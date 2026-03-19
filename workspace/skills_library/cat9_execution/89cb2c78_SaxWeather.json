@@ -1,0 +1,9 @@
+{
+  "name": "SaxWeather",
+  "url": "https://github.com/saxobroko/SaxWeather",
+  "description": ": Weather and forecasts from multiple user-selectable api's or PWS",
+  "section": "Weather",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

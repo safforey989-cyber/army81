@@ -1,0 +1,9 @@
+{
+  "name": "LazyLLM",
+  "url": "https://github.com/LazyAGI/LazyLLM",
+  "description": "An open-source LLM app for building multi-agent LLMs applications in an easy and lazy way, supports model deployment and fine-tuning.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

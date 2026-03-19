@@ -1,0 +1,9 @@
+{
+  "name": "i2b2",
+  "url": "https://www.i2b2.org",
+  "description": "Research data warehouse.",
+  "section": "Research",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

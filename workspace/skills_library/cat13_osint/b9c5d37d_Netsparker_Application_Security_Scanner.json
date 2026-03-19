@@ -1,0 +1,9 @@
+{
+  "name": "Netsparker Application Security Scanner",
+  "url": "https://www.netsparker.com/pricing/",
+  "description": "Application security scanner to automatically find security flaws.",
+  "section": "Network Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Transformers Agents",
+  "url": "https://huggingface.co/docs/transformers/transformers_agents",
+  "description": ": Provides a natural language API on top of transformers",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

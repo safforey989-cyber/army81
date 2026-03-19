@@ -1,0 +1,9 @@
+{
+  "name": "Financial Data",
+  "url": "https://financialdata.net/",
+  "description": "Stock Market and Financial Data API.",
+  "section": "Traditional Markets",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

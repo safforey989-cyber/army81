@@ -1,0 +1,9 @@
+{
+  "name": "DeepSpeed-Mii",
+  "url": "https://github.com/microsoft/DeepSpeed-MII",
+  "description": "MII makes low-latency and high-throughput inference, similar to vLLM powered by DeepSpeed.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

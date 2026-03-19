@@ -1,0 +1,9 @@
+{
+  "name": "ICML",
+  "url": "https://icml.cc/2015/",
+  "description": "International Conference on Machine Learning",
+  "section": "Journals, Publications and Magazines",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

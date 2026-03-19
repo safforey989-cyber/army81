@@ -1,0 +1,9 @@
+{
+  "name": "eZ Server Monitor",
+  "url": "https://www.ezservermonitor.com",
+  "description": "A lightweight and simple dashboard monitor for Linux, available in Web and Bash application. ([Source Code](https://github.com/shevabam/ezservermonitor-web)) `GPL-3.0` `PHP/Shell`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

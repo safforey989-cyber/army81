@@ -1,0 +1,9 @@
+{
+  "name": "Rivet",
+  "url": "https://github.com/Ironclad/rivet",
+  "description": ": An IDE for creating complex AI agents and prompt chaining, and embedding it in your application. ![GitHub Repo stars](https://img.shields.io/github/stars/Ironclad/rivet?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

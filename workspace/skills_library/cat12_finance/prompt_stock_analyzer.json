@@ -1,0 +1,7 @@
+{
+  "name": "stock_analyzer",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل سهم {ticker}. تحليل فني + أساسي + sentiment. توصية: شراء/بيع/انتظار.",
+  "category": "cat12_finance",
+  "source": "built_in"
+}

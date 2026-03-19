@@ -1,0 +1,9 @@
+{
+  "name": "Pattern",
+  "url": "https://github.com/clips/pattern",
+  "description": "A web mining module for the Python programming language. It has tools for natural language processing, machine learning, among others.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "SEAL LLM Leaderboard",
+  "url": "https://scale.com/leaderboard",
+  "description": "Expert-driven LLM benchmarks and updated AI model leaderboards.",
+  "section": "Leaderboards",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

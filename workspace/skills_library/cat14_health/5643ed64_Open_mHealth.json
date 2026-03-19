@@ -1,0 +1,9 @@
+{
+  "name": "Open mHealth",
+  "url": "https://www.openmhealth.org",
+  "description": "Open Standard For Mobile Health Data.",
+  "section": "Specifications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "CHCon",
+  "url": "https://chcon.nz",
+  "description": "Christchurch Hacker Con, Only South Island of New Zealand hacker con.",
+  "section": "Zealandia",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

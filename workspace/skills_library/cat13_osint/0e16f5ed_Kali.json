@@ -1,0 +1,9 @@
+{
+  "name": "Kali",
+  "url": "https://www.kali.org/",
+  "description": "Rolling Debian-based GNU/Linux distribution designed for penetration testing and digital forensics.",
+  "section": "Operating System Distributions",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Related resources from around the web | OpenAI Cookbook",
+  "url": "https://cookbook.openai.com/articles/related_resources",
+  "description": ": tools and papers for improving outputs from GPT",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

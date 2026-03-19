@@ -1,0 +1,9 @@
+{
+  "name": "Distances",
+  "url": "https://github.com/JuliaStats/Distances.jl",
+  "description": "Julia module for Distance evaluation.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Bread Dataset Viewer",
+  "url": "https://github.com/Bread-Technologies/mle_vscode_extension",
+  "description": "A VS Code extension for viewing and exploring large machine learning datasets (CSV, JSON, Parquet, etc.) directly within the editor without VS Code crashing in a clean UI.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

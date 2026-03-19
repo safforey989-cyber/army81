@@ -1,0 +1,9 @@
+{
+  "name": "Wayback Machine",
+  "url": "http://archive.org/web/web.php",
+  "description": "Explore the history of a website.",
+  "section": "[↑](#-table-of-contents) Web History and Website Capture",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

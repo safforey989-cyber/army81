@@ -1,0 +1,9 @@
+{
+  "name": "Authelia",
+  "url": "https://www.authelia.com/",
+  "description": "The Single Sign-On Multi-Factor portal for web apps. ([Source Code](https://github.com/authelia/authelia)) `Apache-2.0` `Go`",
+  "section": "Identity Management - Single Sign-On (SSO)",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

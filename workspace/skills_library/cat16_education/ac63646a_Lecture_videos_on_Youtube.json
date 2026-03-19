@@ -1,0 +1,9 @@
+{
+  "name": "Lecture videos on Youtube",
+  "url": "https://www.youtube.com/user/fillwithlight/videos",
+  "description": "and for direct [download](http://mlecture.uni-bremen.de/ml/index.php?option=com_content&view=article&id=233)",
+  "section": "Misc",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

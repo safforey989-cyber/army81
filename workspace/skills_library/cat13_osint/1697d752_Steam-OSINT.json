@@ -1,0 +1,9 @@
+{
+  "name": "Steam-OSINT",
+  "url": "https://github.com/matiash26/steam-osint",
+  "description": "Open-source OSINT tool for accurate mutual friends analysis on Steam, supporting full friend lists.",
+  "section": "[↑](#-table-of-contents) Steam",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

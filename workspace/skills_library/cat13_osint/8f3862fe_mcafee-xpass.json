@@ -1,0 +1,9 @@
+{
+  "name": "mcafee-xpass",
+  "url": "https://github.com/SujalMeghwal/mcafee-xpass",
+  "description": "– Decrypts encrypted administrator passwords from McAfee `Sitelist.xml` files using known XOR + 3DES logic. Useful for Red Team privilege escalation and forensic recovery.",
+  "section": "Privilege Escalation Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

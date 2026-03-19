@@ -1,0 +1,9 @@
+{
+  "name": "pytorch_geometric",
+  "url": "https://github.com/pyg-team/pytorch_geometric",
+  "description": "Tool from data_science",
+  "section": "PyTorch Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

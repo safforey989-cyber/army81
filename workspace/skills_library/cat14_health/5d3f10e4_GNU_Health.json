@@ -1,0 +1,9 @@
+{
+  "name": "GNU Health",
+  "url": "https://www.gnuhealth.org",
+  "description": "Electronic Medical Record, Hospital Management, and Health Information System.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Vanna.ai",
+  "url": "https://vanna.ai/",
+  "description": "An open-source Python RAG framework for SQL generation and related functionality. [#opensource](https://github.com/vanna-ai/vanna)",
+  "section": "Developer tools",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

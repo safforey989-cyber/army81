@@ -1,0 +1,9 @@
+{
+  "name": "AutoGluon",
+  "url": "https://github.com/awslabs/autogluon",
+  "description": "| AutoML to easily produce accurate predictions for image, text, tabular, time-series, and multi-modal data |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

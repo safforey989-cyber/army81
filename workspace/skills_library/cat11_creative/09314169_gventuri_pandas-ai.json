@@ -1,0 +1,9 @@
+{
+  "name": "gventuri/pandas-ai",
+  "url": "https://github.com/gventuri/pandas-ai",
+  "description": ": Pandas AI is a Python library that integrates LLMs capabilities into Pandas, making dataframes conversational",
+  "section": "AI-Powered Code Generation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GoCV",
+  "url": "https://github.com/hybridgroup/gocv",
+  "description": "Package for computer vision using OpenCV 4 and beyond.",
+  "section": "Computer vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

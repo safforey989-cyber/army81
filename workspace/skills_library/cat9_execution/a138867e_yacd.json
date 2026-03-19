@@ -1,0 +1,9 @@
+{
+  "name": "yacd",
+  "url": "https://github.com/DerekSelander/yacd",
+  "description": ": Yet Another Code Decrypter, decrypts FairPlay (App Store) applications on iOS 13.4.1 and lower, no jailbreak required",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

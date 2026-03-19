@@ -1,0 +1,9 @@
+{
+  "name": "snowball",
+  "url": "https://github.com/tebeka/snowball",
+  "description": "Snowball Stemmer for Go.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

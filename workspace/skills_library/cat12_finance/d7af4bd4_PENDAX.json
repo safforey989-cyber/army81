@@ -1,0 +1,9 @@
+{
+  "name": "PENDAX",
+  "url": "https://github.com/CompendiumFi/PENDAX-SDK",
+  "description": "Javascript SDK for Trading/Data API and Websockets for cryptocurrency exchanges like FTX, FTXUS, OKX, Bybit, & More",
+  "section": "Exchange API",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

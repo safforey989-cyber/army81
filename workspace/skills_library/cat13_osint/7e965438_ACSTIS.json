@@ -1,0 +1,9 @@
+{
+  "name": "ACSTIS",
+  "url": "https://github.com/tijme/angularjs-csti-scanner",
+  "description": "Automated client-side template injection (sandbox escape/bypass) detection for AngularJS.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

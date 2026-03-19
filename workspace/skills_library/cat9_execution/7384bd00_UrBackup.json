@@ -1,0 +1,9 @@
+{
+  "name": "UrBackup",
+  "url": "https://www.urbackup.org/",
+  "description": "Client/Server Open Source Network Backup for Windows, MacOS and Linux. ([Source Code](https://github.com/uroni/urbackup_backend)) `AGPL-3.0` `C/C++`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

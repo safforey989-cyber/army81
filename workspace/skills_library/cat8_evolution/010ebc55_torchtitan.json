@@ -1,0 +1,9 @@
+{
+  "name": "torchtitan",
+  "url": "https://github.com/pytorch/torchtitan",
+  "description": "A native PyTorch Library for large model training.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Anevicon",
+  "url": "https://github.com/rozgo/anevicon",
+  "description": "Powerful UDP-based load generator, written in Rust.",
+  "section": "DDoS Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

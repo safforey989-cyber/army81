@@ -1,0 +1,9 @@
+{
+  "name": "Proton",
+  "url": "https://github.com/rajdeep/proton",
+  "description": ": Example for extending the behavior of a text view to add rich content",
+  "section": "Text",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

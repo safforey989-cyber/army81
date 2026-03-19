@@ -1,0 +1,9 @@
+{
+  "name": "Maigret OSINT bot",
+  "url": "https://t.me/osint_maigret_bot",
+  "description": "Username search on 1,366 sites.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "TradzQAI",
+  "url": "https://github.com/kkuette/TradzQAI",
+  "description": "Trading environment for RL agents, backtesting and training.",
+  "section": "GYM Environment",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

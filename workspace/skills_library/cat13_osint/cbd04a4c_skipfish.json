@@ -1,0 +1,9 @@
+{
+  "name": "skipfish",
+  "url": "https://www.kali.org/tools/skipfish/",
+  "description": "Performant and adaptable active web application security reconnaissance tool.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

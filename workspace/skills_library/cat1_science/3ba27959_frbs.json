@@ -1,0 +1,9 @@
+{
+  "name": "frbs",
+  "url": "https://cran.r-project.org/web/packages/frbs/index.html",
+  "description": "frbs: Fuzzy Rule-based Systems for Classification and Regression Tasks. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

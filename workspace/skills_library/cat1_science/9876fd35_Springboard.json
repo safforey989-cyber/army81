@@ -1,0 +1,9 @@
+{
+  "name": "Springboard",
+  "url": "https://www.springboard.com/blog/",
+  "description": "A blog with resources for data science learners",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

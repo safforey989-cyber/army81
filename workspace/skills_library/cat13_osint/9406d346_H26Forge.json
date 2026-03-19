@@ -1,0 +1,9 @@
+{
+  "name": "H26Forge",
+  "url": "https://github.com/h26forge/h26forge",
+  "description": "Domain-specific infrastructure for analyzing, generating, and manipulating syntactically correct but semantically spec-non-compliant video files.",
+  "section": "Exploit Development Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

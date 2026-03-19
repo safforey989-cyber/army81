@@ -1,0 +1,9 @@
+{
+  "name": "Prompt Engineering for Vision Models",
+  "url": "https://www.deeplearning.ai/short-courses/prompt-engineering-for-vision-models/",
+  "description": "A free DeepLearning.AI short course on how to prompt computer vision models with natural language, bounding boxes, segmentation masks, coordinate points, and other images.",
+  "section": "Learning resources",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

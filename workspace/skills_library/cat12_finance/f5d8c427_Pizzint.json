@@ -1,0 +1,9 @@
+{
+  "name": "Pizzint",
+  "url": "https://www.pizzint.watch/",
+  "description": "Pentagon Pizza Index (PizzINT) is a real-time Pentagon pizza tracker that visualizes unusual activity at Pentagon-area pizzerias. It highlights a signal that has historically aligned with late-night, high-tempo operations and breaking news.",
+  "section": "Alternative Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

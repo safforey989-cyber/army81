@@ -1,0 +1,9 @@
+{
+  "name": "tensor-js",
+  "url": "https://github.com/Hoff97/tensorjs",
+  "description": "A deep learning library for the browser, accelerated by WebGL and WebAssembly.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

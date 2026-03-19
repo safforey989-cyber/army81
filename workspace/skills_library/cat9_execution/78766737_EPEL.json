@@ -1,0 +1,9 @@
+{
+  "name": "EPEL",
+  "url": "https://fedoraproject.org/wiki/EPEL",
+  "description": "Repository for RHEL and compatibles (CentOS, Scientific Linux).",
+  "section": "Repositories",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

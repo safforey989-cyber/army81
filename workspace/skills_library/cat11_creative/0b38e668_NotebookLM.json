@@ -1,0 +1,9 @@
+{
+  "name": "NotebookLM",
+  "url": "https://notebooklm.google/",
+  "description": "A research and note-taking online tool to interact with documents, powered by Google Gemini.",
+  "section": "Productivity",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

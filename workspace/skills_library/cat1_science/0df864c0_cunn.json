@@ -1,0 +1,9 @@
+{
+  "name": "cunn",
+  "url": "https://github.com/torch/cunn",
+  "description": "Torch CUDA Neural Network Implementation.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

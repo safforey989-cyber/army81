@@ -1,0 +1,9 @@
+{
+  "name": "Sigma.js",
+  "url": "http://sigmajs.org/",
+  "description": "JavaScript library dedicated to graph drawing.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

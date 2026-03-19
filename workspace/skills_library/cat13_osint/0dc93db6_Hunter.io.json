@@ -1,0 +1,9 @@
+{
+  "name": "Hunter.io",
+  "url": "https://hunter.io/",
+  "description": "Data broker providing a Web search interface for discovering the email addresses and other organizational details of a company.",
+  "section": "Data Broker and Search Engine Services",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

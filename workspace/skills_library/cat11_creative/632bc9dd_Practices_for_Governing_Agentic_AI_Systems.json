@@ -1,0 +1,9 @@
+{
+  "name": "Practices for Governing Agentic AI Systems",
+  "url": "https://openai.com/research/practices-for-governing-agentic-ai-systems",
+  "description": ": paper by OpenAI that offers a set of practices for keeping agents’ operations safe and accountable.",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

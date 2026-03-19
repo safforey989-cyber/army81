@@ -1,0 +1,9 @@
+{
+  "name": "Barman",
+  "url": "https://pgbarman.org",
+  "description": "Backup and Recovery Manager for PostgreSQL. ([Source Code](https://github.com/EnterpriseDB/barman)) `GPL-3.0` `Python`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

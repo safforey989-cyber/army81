@@ -1,0 +1,9 @@
+{
+  "name": "HDBScan",
+  "url": "https://github.com/lmcinnes/hdbscan",
+  "description": "implementation of the hdbscan algorithm in Python - used for clustering",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

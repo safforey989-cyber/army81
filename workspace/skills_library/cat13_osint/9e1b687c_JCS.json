@@ -1,0 +1,9 @@
+{
+  "name": "JCS",
+  "url": "https://github.com/TheM4hd1/JCS",
+  "description": "Joomla Vulnerability Component Scanner with automatic database updater from exploitdb and packetstorm.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Training Stable Diffusion with Dreambooth using Diffusers",
+  "url": "https://huggingface.co/blog/dreambooth",
+  "description": ": experiments to analyze the effect of different settings in Dreambooth",
+  "section": "DreamBooth",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

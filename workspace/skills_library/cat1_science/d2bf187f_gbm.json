@@ -1,0 +1,9 @@
+{
+  "name": "gbm",
+  "url": "https://cran.r-project.org/web/packages/gbm/index.html",
+  "description": "gbm: Generalized Boosted Regression Models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

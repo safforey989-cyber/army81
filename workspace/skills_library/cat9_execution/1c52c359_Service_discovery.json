@@ -1,0 +1,9 @@
+{
+  "name": "Service discovery",
+  "url": "https://en.wikipedia.org/wiki/Service_discovery",
+  "description": "is the process of automatically detecting devices and services on a computer network.",
+  "section": "Service Discovery",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Megatron-LM",
+  "url": "https://github.com/NVIDIA/Megatron-LM",
+  "description": "Ongoing research training transformer models at scale.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

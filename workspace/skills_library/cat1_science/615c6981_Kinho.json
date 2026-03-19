@@ -1,0 +1,9 @@
+{
+  "name": "Kinho",
+  "url": "https://github.com/kinhosz/Neural",
+  "description": "Simple API for Neural Network. Better for image processing with CPU/GPU + Transfer Learning.",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

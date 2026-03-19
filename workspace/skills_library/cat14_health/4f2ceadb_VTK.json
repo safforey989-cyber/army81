@@ -1,0 +1,9 @@
+{
+  "name": "VTK",
+  "url": "https://vtk.org",
+  "description": "3 dimensional visualization toolkit supporting a variety of algorithms and modeling techniques.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

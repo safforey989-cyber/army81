@@ -1,0 +1,9 @@
+{
+  "name": "Fing",
+  "url": "https://www.fing.com/products/fing-app/",
+  "description": "Network scanning and host enumeration app that performs NetBIOS, UPnP, Bonjour, SNMP, and various other advanced device fingerprinting techniques.",
+  "section": "Android Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

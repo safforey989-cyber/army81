@@ -1,0 +1,9 @@
+{
+  "name": "Optunity examples",
+  "url": "http://optunity.readthedocs.io/en/latest/notebooks/index.html",
+  "description": "Examples demonstrating how to use Optunity in synergy with machine learning libraries.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

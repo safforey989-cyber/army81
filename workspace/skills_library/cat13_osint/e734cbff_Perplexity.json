@@ -1,0 +1,9 @@
+{
+  "name": "Perplexity",
+  "url": "https://www.perplexity.ai",
+  "description": "AI-powered search engine with source citations.",
+  "section": "[↑](#-table-of-contents) General Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

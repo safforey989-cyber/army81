@@ -1,0 +1,9 @@
+{
+  "name": "nateraw/stable-diffusion-videos",
+  "url": "https://github.com/nateraw/stable-diffusion-videos",
+  "description": ": Create videos with Stable Diffusion by exploring the latent space and morphing between text prompts",
+  "section": "Inbox: Stable Diffusion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

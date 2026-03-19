@@ -1,0 +1,9 @@
+{
+  "name": "pynetdicom",
+  "url": "https://github.com/pydicom/pynetdicom",
+  "description": "A Python implementation of the DICOM networking protocol.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

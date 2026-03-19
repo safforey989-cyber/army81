@@ -1,0 +1,9 @@
+{
+  "name": "basujindal/stable-diffusion",
+  "url": "https://github.com/basujindal/stable-diffusion",
+  "description": ": Optimized Stable Diffusion modified to run on lower GPU VRAM",
+  "section": "Inbox: Stable Diffusion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

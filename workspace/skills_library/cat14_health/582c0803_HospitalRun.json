@@ -1,0 +1,9 @@
+{
+  "name": "HospitalRun",
+  "url": "https://hospitalrun.io",
+  "description": "Helps provide the most modern Hospital Information System possible to the least resourced environments.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

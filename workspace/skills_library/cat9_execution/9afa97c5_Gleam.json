@@ -1,0 +1,9 @@
+{
+  "name": "Gleam",
+  "url": "https://github.com/akarataev/gleam-ios",
+  "description": ": Use machine learning to help diagnose melanoma early, get the necessary treatment",
+  "section": "Health",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

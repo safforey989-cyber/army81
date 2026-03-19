@@ -1,0 +1,9 @@
+{
+  "name": "Ghidra",
+  "url": "https://www.ghidra-sre.org/",
+  "description": "Suite of free software reverse engineering tools developed by NSA's Research Directorate originally exposed in WikiLeaks's \"Vault 7\" publication and now maintained as open source software.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

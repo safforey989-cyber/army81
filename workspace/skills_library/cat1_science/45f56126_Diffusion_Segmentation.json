@@ -1,0 +1,9 @@
+{
+  "name": "Diffusion Segmentation",
+  "url": "https://github.com/Wavelets/diffusion-segmentation",
+  "description": "A collection of image segmentation algorithms based on diffusion methods.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "trading-gym",
+  "url": "https://github.com/6-Billionaires/trading-gym",
+  "description": "Trading agent to train with episode of short term trading itself.",
+  "section": "Time Series Data",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

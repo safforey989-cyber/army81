@@ -1,0 +1,9 @@
+{
+  "name": "TensorFlow.js",
+  "url": "https://js.tensorflow.org/",
+  "description": "A WebGL accelerated, browser based JavaScript library for training and deploying ML models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

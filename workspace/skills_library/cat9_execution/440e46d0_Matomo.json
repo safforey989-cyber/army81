@@ -1,0 +1,9 @@
+{
+  "name": "Matomo",
+  "url": "https://github.com/matomo-org/matomo-mobile-2",
+  "description": ": Access analytics on the go (formerly Piwik)",
+  "section": "Developer",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

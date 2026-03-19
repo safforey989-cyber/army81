@@ -1,0 +1,9 @@
+{
+  "name": "Bloodhound",
+  "url": "https://github.com/adaptivethreat/Bloodhound/wiki",
+  "description": "Graphical Active Directory trust relationship explorer.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

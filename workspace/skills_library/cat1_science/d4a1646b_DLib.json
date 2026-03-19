@@ -1,0 +1,9 @@
+{
+  "name": "DLib",
+  "url": "http://dlib.net/imaging.html",
+  "description": "DLib has C++ and Python interfaces for face detection and training general object detectors.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Reminders",
+  "url": "https://github.com/tiagomartinho/Reminders",
+  "description": ": An application to demonstrate how to implement a Clean Architecture",
+  "section": "Sample",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

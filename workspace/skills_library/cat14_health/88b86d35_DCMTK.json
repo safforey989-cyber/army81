@@ -1,0 +1,9 @@
+{
+  "name": "DCMTK",
+  "url": "https://dicom.offis.de/dcmtk.php.en",
+  "description": "DICOM Toolkit.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Eleven Labs Beta",
+  "url": "https://blog.elevenlabs.io/the_first_ai_that_can_laugh/",
+  "description": ": a TTS service that adds emotion to the generated voice",
+  "section": "Text-to-speech (TTS) and avatars",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

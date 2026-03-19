@@ -1,0 +1,9 @@
+{
+  "name": "Valohai",
+  "url": "https://valohai.com",
+  "description": "| An MLOps platform that handles machine orchestration, automatic reproducibility and deployment. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

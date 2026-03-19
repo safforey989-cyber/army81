@@ -1,0 +1,9 @@
+{
+  "name": "minbpe",
+  "url": "https://www.youtube.com/watch?v=zduSFxRajkE&t=1157s",
+  "description": "Minimal, clean code for the Byte Pair Encoding (BPE) algorithm commonly used in LLM tokenization.",
+  "section": "LLM Tutorials and Courses",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

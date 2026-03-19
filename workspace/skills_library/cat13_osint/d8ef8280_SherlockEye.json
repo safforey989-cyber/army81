@@ -1,0 +1,9 @@
+{
+  "name": "SherlockEye",
+  "url": "https://sherlockeye.io/",
+  "description": "Search for publicly available information connected to a username, uncovering associated profiles and activities across the web.",
+  "section": "[↑](#-table-of-contents) Username Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

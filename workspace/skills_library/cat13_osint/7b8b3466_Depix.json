@@ -1,0 +1,9 @@
+{
+  "name": "Depix",
+  "url": "https://github.com/beurtschipper/Depix",
+  "description": "Tool for recovering passwords from pixelized screenshots (by de-pixelating text).",
+  "section": "Open Sources Intelligence (OSINT)",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

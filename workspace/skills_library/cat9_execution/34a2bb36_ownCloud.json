@@ -1,0 +1,9 @@
+{
+  "name": "ownCloud",
+  "url": "https://github.com/owncloud/ios-app",
+  "description": ": File browser & sync for ownCloud file hosting service",
+  "section": "File",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

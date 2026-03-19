@@ -1,0 +1,9 @@
+{
+  "name": "rinongal/textual_inversion",
+  "url": "https://github.com/rinongal/textual_inversion",
+  "description": ": repo contains the official code, data and sample inversions of Textual Inversion paper",
+  "section": "Textual Inversion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

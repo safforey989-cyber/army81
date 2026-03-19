@@ -1,0 +1,9 @@
+{
+  "name": "KREA",
+  "url": "https://www.krea.ai/",
+  "description": "Generate high quality visuals with an AI that knows about your styles, concepts, or products.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

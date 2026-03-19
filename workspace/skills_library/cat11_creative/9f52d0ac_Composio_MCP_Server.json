@@ -1,0 +1,9 @@
+{
+  "name": "Composio MCP Server",
+  "url": "https://mcp.composio.dev/",
+  "description": ": Connect Cursor, Windsurf, and Claude to 100+ fully managed MCP Servers with built-in auth",
+  "section": "Model Context Protocol",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Veritensor",
+  "url": "https://github.com/arsbr/Veritensor",
+  "description": "Native security wrappers for LangChain DocumentLoaders to block prompt injections, stealth attacks, and PII leaks during RAG data ingestion. ![GitHub Repo stars](https://img.shields.io/github/stars/arsbr/Veritensor?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

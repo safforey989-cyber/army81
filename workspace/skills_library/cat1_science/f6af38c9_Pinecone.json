@@ -1,0 +1,9 @@
+{
+  "name": "Pinecone",
+  "url": "https://www.pinecone.io/",
+  "description": "Vector database for applications that require real-time, scalable vector embedding and similarity search.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

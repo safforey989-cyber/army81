@@ -1,0 +1,9 @@
+{
+  "name": "FACTORIE",
+  "url": "https://github.com/factorie/factorie",
+  "description": "FACTORIE is a toolkit for deployable probabilistic modelling, implemented as a software library in Scala. It provides its users with a succinct language for creating relational factor graphs, estimating parameters and performing inference.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

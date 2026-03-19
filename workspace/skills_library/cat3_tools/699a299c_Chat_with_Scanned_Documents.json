@@ -1,0 +1,9 @@
+{
+  "name": "Chat with Scanned Documents",
+  "url": "https://github.com/tony-xlh/Chat-with-Scanned-Documents",
+  "description": ": A demo chatting with documents scanned with Dynamic Web TWAIN.",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

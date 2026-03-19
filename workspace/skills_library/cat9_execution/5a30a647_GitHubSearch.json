@@ -1,0 +1,9 @@
+{
+  "name": "GitHubSearch",
+  "url": "https://github.com/Karambirov/GitHubSearch",
+  "description": ": GitHub client written using MVVM without Rx and Interface Builder",
+  "section": "GitHub",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

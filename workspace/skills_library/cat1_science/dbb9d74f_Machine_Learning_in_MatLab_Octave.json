@@ -1,0 +1,9 @@
+{
+  "name": "Machine Learning in MatLab/Octave",
+  "url": "https://github.com/trekhleb/machine-learning-octave",
+  "description": "Examples of popular machine learning algorithms (neural networks, linear/logistic regressions, K-Means, etc.) with code examples and mathematics behind them being explained.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

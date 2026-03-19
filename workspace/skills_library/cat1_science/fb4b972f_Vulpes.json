@@ -1,0 +1,9 @@
+{
+  "name": "Vulpes",
+  "url": "https://github.com/fsprojects/Vulpes",
+  "description": "Deep belief and deep learning implementation written in F# and leverages CUDA GPU execution with Alea.cuBase.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

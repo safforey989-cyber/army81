@@ -1,0 +1,9 @@
+{
+  "name": "Turi Create",
+  "url": "https://github.com/apple/turicreate",
+  "description": "Machine learning from Apple. Turi Create simplifies the development of custom machine learning models. You don't have to be a machine learning expert to add recommendations, object detection, image classification, image similarity or activity classification to your app.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

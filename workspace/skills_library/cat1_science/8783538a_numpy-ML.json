@@ -1,0 +1,9 @@
+{
+  "name": "numpy-ML",
+  "url": "https://github.com/ddbourgin/numpy-ml",
+  "description": ": Reference implementations of ML models written in numpy",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

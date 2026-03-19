@@ -1,0 +1,9 @@
+{
+  "name": "ArchWiki",
+  "url": "https://wiki.archlinux.org/",
+  "description": "Arch Linux Wiki which has really nice written articles valid for other distros.",
+  "section": "Websites",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

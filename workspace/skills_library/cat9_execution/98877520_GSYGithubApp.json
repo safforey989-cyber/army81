@@ -1,0 +1,9 @@
+{
+  "name": "GSYGithubApp",
+  "url": "https://github.com/CarGuo/gsy_github_app_flutter",
+  "description": ": GitHub client",
+  "section": "Flutter",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

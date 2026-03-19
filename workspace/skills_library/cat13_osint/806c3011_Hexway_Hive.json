@@ -1,0 +1,9 @@
+{
+  "name": "Hexway Hive",
+  "url": "https://hexway.io/hive/",
+  "description": "Commercial collaboration, data aggregation, and reporting framework for red teams with a limited free self-hostable option.",
+  "section": "Collaboration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

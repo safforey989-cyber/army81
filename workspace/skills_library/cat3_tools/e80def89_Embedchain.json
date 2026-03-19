@@ -1,0 +1,9 @@
+{
+  "name": "Embedchain",
+  "url": "https://github.com/embedchain/embedchain",
+  "description": ": Framework to easily create LLM powered bots over any dataset. ![GitHub Repo stars](https://img.shields.io/github/stars/embedchain/embedchain?style=social)",
+  "section": "Templates",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

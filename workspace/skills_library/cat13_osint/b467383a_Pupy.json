@@ -1,0 +1,9 @@
+{
+  "name": "Pupy",
+  "url": "https://github.com/n1nj4sec/pupy",
+  "description": "Cross-platform (Windows, Linux, macOS, Android) remote administration and post-exploitation tool.",
+  "section": "Multi-paradigm Frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Pollinations - pollinations/stable-diffusion-private",
+  "url": "https://pollinations.ai/create/stablediffusion",
+  "description": "Tool from generative_ai",
+  "section": "Stable Diffusion Deployed Web Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

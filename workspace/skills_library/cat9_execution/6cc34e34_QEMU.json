@@ -1,0 +1,9 @@
+{
+  "name": "QEMU",
+  "url": "https://www.qemu.org/",
+  "description": "QEMU is a generic machine emulator and virtualizer. ([Source Code](https://gitlab.com/qemu-project/qemu)) `LGPL-2.1` `C`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

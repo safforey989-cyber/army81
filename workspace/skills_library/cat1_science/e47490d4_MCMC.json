@@ -1,0 +1,9 @@
+{
+  "name": "MCMC",
+  "url": "https://github.com/doobwa/MCMC.jl",
+  "description": "MCMC tools for Julia. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

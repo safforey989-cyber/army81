@@ -1,0 +1,9 @@
+{
+  "name": "DNS",
+  "url": "https://en.wikipedia.org/wiki/Name_server",
+  "description": "servers.",
+  "section": "DNS - Servers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

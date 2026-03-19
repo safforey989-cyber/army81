@@ -1,0 +1,9 @@
+{
+  "name": "UICollectionView-Collapsible-Section-Demo",
+  "url": "https://github.com/sebjvidal/UICollectionView-Collapsible-Section-Demo",
+  "description": ": Create collapsible list sections using UICollectionView and NSDiffableDataSourceSectionSnapshot",
+  "section": "Sample",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

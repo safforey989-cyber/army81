@@ -1,0 +1,9 @@
+{
+  "name": "Blaze",
+  "url": "https://github.com/samply/blaze",
+  "description": "A FHIR Store with internal, fast CQL Evaluation Engine",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

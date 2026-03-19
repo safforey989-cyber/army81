@@ -1,0 +1,9 @@
+{
+  "name": "Cowpatty",
+  "url": "https://github.com/joswr1ght/cowpatty",
+  "description": "Brute-force dictionary attack against WPA-PSK.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

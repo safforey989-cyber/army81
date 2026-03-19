@@ -1,0 +1,9 @@
+{
+  "name": "far-search-tool",
+  "url": "https://github.com/blueskylineassets/far-search-tool",
+  "description": ": LangChain tool for semantic search over Federal Acquisition Regulations (FAR). Enables AI agents to query U.S. government contracting rules and compliance requirements. ![GitHub Repo stars](https://img.shields.io/github/stars/blueskylineassets/far-search-tool?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

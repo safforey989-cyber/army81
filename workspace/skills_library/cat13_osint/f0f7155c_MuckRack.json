@@ -1,0 +1,9 @@
+{
+  "name": "MuckRack",
+  "url": "http://muckrack.com",
+  "description": "Extensive database of U.S. government public records obtained through federal and state public records requests. Automated tool that will make public records requests and follow up until records are obtained on your behalf.",
+  "section": "[↑](#-table-of-contents) Expert Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

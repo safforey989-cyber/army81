@@ -1,0 +1,9 @@
+{
+  "name": "GLaM: Efficient Scaling of Language Models with Mixture-of-Experts",
+  "url": "https://arxiv.org/pdf/2112.06905.pdf",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

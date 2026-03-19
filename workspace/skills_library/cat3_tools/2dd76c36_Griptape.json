@@ -1,0 +1,9 @@
+{
+  "name": "Griptape",
+  "url": "https://github.com/griptape-ai/griptape",
+  "description": ": Python framework for AI workflows and pipelines with chain of thought reasoning, external tools, and memory. ![GitHub Repo stars](https://img.shields.io/github/stars/griptape-ai/griptape?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

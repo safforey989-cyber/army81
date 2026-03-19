@@ -1,0 +1,9 @@
+{
+  "name": "Ludwig",
+  "url": "https://github.com/ludwig-ai/ludwig",
+  "description": "Tool from data_science",
+  "section": "TensorFlow Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

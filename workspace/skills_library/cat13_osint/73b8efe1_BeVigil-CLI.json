@@ -1,0 +1,9 @@
+{
+  "name": "BeVigil-CLI",
+  "url": "https://github.com/Bevigil/BeVigil-OSINT-CLI",
+  "description": "A unified command line interface and python library for using BeVigil OSINT API to search for assets such as subdomains, URLs, applications indexed from mobile applications.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

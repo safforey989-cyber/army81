@@ -1,0 +1,9 @@
+{
+  "name": "jieba-php",
+  "url": "https://github.com/fukuball/jieba-php",
+  "description": "Chinese Words Segmentation Utilities.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "risk_calculator",
+  "type": "prompt_pattern",
+  "prompt_template": "احسب مخاطر {investment}. VAR, maximum drawdown, correlation.",
+  "category": "cat12_finance",
+  "source": "built_in"
+}

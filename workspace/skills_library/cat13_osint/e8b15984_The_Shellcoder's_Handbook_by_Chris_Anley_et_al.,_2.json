@@ -1,0 +1,9 @@
+{
+  "name": "The Shellcoder's Handbook by Chris Anley et al., 2007",
+  "url": "http://www.wiley.com/WileyCDA/WileyTitle/productCd-047008023X.html",
+  "description": "Tool from pentest_tools",
+  "section": "Shellcoding Guides and Tutorials",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DB GPT",
+  "url": "https://github.com/csunny/DB-GPT",
+  "description": ": Interact your data and environment using the local GPT, no data leaks, 100% privately, 100% security ![GitHub Repo stars](https://img.shields.io/github/stars/csunny/DB-GPT?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

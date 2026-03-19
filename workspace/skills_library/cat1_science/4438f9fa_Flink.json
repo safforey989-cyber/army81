@@ -1,0 +1,9 @@
+{
+  "name": "Flink",
+  "url": "https://flink.apache.org/",
+  "description": "Open source platform for distributed stream and batch data processing.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

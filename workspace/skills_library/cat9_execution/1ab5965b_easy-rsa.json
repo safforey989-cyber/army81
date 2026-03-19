@@ -1,0 +1,9 @@
+{
+  "name": "easy-rsa",
+  "url": "https://github.com/OpenVPN/easy-rsa",
+  "description": "Bash script to build and manage a PKI CA. `GPL-2.0` `Shell`",
+  "section": "Identity Management - Tools and web interfaces",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

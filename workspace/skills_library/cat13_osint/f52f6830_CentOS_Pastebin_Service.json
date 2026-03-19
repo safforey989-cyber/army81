@@ -1,0 +1,9 @@
+{
+  "name": "CentOS Pastebin Service",
+  "url": "https://paste.centos.org/",
+  "description": "Stikked is an Open-Source PHP Pastebin, with the aim of keeping a simple and easy to use user interface.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Tablecloth",
+  "url": "https://github.com/scicloj/tablecloth",
+  "description": "A dataframe grammar wrapping tech.ml.dataset, inspired by several R libraries",
+  "section": "Data Analysis",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

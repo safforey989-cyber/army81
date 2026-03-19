@@ -1,0 +1,9 @@
+{
+  "name": "MLlib in Apache Spark",
+  "url": "https://spark.apache.org/docs/latest/mllib-guide.html",
+  "description": "Distributed machine learning library in Spark.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

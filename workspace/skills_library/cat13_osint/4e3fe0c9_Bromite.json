@@ -1,0 +1,9 @@
+{
+  "name": "Bromite",
+  "url": "https://www.bromite.org/",
+  "description": "Bromite is a Chromium fork with ad blocking and enhanced privacy; take back your browser. Works only on Android.",
+  "section": "[↑](#-table-of-contents) Browsers",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

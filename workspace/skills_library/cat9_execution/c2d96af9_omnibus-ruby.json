@@ -1,0 +1,9 @@
+{
+  "name": "omnibus-ruby",
+  "url": "https://github.com/chef/omnibus",
+  "description": "Easily create full-stack installers for your project across a variety of platforms. `Apache-2.0` `Ruby`",
+  "section": "Packaging",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Zarp",
+  "url": "https://github.com/hatRiot/zarp",
+  "description": "Network attack tool centered around the exploitation of local networks.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

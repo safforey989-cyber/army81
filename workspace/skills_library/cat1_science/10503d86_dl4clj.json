@@ -1,0 +1,9 @@
+{
+  "name": "dl4clj",
+  "url": "https://github.com/yetanalytics/dl4clj",
+  "description": "Clojure wrapper for Deeplearning4j.",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

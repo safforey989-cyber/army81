@@ -1,0 +1,9 @@
+{
+  "name": "aiimagegenerator.org",
+  "url": "https://www.aiimagegenerator.org/",
+  "description": ": free AI art generator that supports Stable Diffusion txt2img and img2img generation, drawing and inpainting",
+  "section": "Stable Diffusion Deployed Web Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

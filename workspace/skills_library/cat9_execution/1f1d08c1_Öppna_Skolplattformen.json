@@ -1,0 +1,9 @@
+{
+  "name": "Öppna Skolplattformen",
+  "url": "https://github.com/kolplattformen/skolplattformen",
+  "description": ": For parents to check child information using the city of Stockholm's school platform",
+  "section": "React Native",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Intel® oneAPI Data Analytics Library",
+  "url": "https://github.com/oneapi-src/oneDAL",
+  "description": "A high performance software library developed by Intel and optimized for Intel's architectures. Library provides algorithmic building blocks for all stages of data analytics and allows to process data in batch, online and distributed modes.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

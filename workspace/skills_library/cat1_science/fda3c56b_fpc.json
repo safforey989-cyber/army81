@@ -1,0 +1,9 @@
+{
+  "name": "fpc",
+  "url": "https://cran.r-project.org/web/packages/fpc/index.html",
+  "description": "fpc: Flexible procedures for clustering.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

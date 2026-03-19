@@ -1,0 +1,9 @@
+{
+  "name": "GoogleCloudPlatform/generative-ai",
+  "url": "https://github.com/GoogleCloudPlatform/generative-ai",
+  "description": ": Sample code and notebooks for Generative AI on Google Cloud",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

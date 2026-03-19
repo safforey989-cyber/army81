@@ -1,0 +1,9 @@
+{
+  "name": "Wllama",
+  "url": "https://github.com/ngxson/wllama",
+  "description": "WebAssembly binding for llama.cpp - Enabling in-browser LLM inference",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

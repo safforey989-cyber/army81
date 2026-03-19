@@ -1,0 +1,9 @@
+{
+  "name": "ID3C",
+  "url": "https://github.com/seattleflu/id3c",
+  "description": "Data logistics system enabling real-time genomic epidemiology.",
+  "section": "Logistics",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

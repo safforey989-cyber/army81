@@ -1,0 +1,9 @@
+{
+  "name": "Chips-n-Salsa",
+  "url": "https://github.com/cicirello/Chips-n-Salsa",
+  "description": "A Java library for genetic algorithms, evolutionary computation, and stochastic local search, with a focus on self-adaptation / self-tuning, as well as parallel execution.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GrayhatWarfare",
+  "url": "https://grayhatwarfare.com/",
+  "description": "Searches and indexes open Amazon S3 buckets, allowing users to find and explore potentially exposed data.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

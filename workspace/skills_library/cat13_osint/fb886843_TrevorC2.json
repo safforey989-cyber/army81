@@ -1,0 +1,9 @@
+{
+  "name": "TrevorC2",
+  "url": "https://github.com/trustedsec/trevorc2",
+  "description": "Client/server tool for masking command and control and data exfiltration through a normally browsable website, not typical HTTP POST requests.",
+  "section": "Exfiltration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "TradingGym",
+  "url": "https://github.com/Yvictor/TradingGym",
+  "description": "Trading and Backtesting environment for training reinforcement learning agent.",
+  "section": "GYM Environment",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

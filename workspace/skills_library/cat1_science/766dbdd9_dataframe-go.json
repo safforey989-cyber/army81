@@ -1,0 +1,9 @@
+{
+  "name": "dataframe-go",
+  "url": "https://github.com/rocketlaunchr/dataframe-go",
+  "description": "Dataframes for machine-learning and statistics (similar to pandas).",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

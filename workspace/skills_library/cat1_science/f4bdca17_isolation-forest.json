@@ -1,0 +1,9 @@
+{
+  "name": "isolation-forest",
+  "url": "https://github.com/linkedin/isolation-forest",
+  "description": "A distributed Spark/Scala implementation of the isolation forest algorithm for unsupervised outlier detection, featuring support for scalable training and ONNX export for easy cross-platform inference.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

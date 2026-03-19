@@ -1,0 +1,9 @@
+{
+  "name": "LangChain James Briggs' Playlist",
+  "url": "https://www.youtube.com/watch?v=nE2skSRWTTs&list=PLIUOU7oqGTLieV9uTIFMm6_4PXg-hlN6F",
+  "description": "Tool from langchain_tools",
+  "section": "Videos Playlists",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

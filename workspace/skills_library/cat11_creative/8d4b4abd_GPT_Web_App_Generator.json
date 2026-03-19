@@ -1,0 +1,9 @@
+{
+  "name": "GPT Web App Generator",
+  "url": "https://magic-app-generator.wasp-lang.dev/",
+  "description": ": generates a webapp from a title, description, and other simple parameters",
+  "section": "AI-Powered Code Generation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

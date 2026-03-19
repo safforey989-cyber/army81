@@ -1,0 +1,9 @@
+{
+  "name": "Stats",
+  "url": "https://github.com/JuliaStats/StatsKit.jl",
+  "description": "Statistical tests for Julia.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

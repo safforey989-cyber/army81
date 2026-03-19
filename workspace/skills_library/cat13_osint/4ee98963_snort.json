@@ -1,0 +1,9 @@
+{
+  "name": "snort",
+  "url": "https://github.com/snort3/snort3",
+  "description": "Open Source Intrusion Prevention System",
+  "section": "Network Traffic Replay and Editing Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

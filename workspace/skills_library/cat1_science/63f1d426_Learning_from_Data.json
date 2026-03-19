@@ -1,0 +1,9 @@
+{
+  "name": "Learning from Data",
+  "url": "https://home.work.caltech.edu/telecourse.html",
+  "description": "Introduction to machine learning covering basic theory, algorithms and applications",
+  "section": "Free Courses",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

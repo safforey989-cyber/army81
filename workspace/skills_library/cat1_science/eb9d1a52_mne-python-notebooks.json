@@ -1,0 +1,9 @@
+{
+  "name": "mne-python-notebooks",
+  "url": "https://github.com/mne-tools/mne-python-notebooks",
+  "description": "IPython notebooks for EEG/MEG data processing using mne-python.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

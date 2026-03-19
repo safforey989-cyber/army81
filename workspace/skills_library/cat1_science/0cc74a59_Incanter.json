@@ -1,0 +1,9 @@
+{
+  "name": "Incanter",
+  "url": "http://incanter.org/",
+  "description": "Incanter is a Clojure-based, R-like platform for statistical computing and graphics.",
+  "section": "Data Analysis",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

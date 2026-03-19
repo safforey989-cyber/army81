@@ -1,0 +1,9 @@
+{
+  "name": "LiteChain",
+  "url": "https://github.com/rogeriochaves/litechain",
+  "description": "Lightweight alternative to LangChain for composing LLMs",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

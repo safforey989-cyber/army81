@@ -1,0 +1,9 @@
+{
+  "name": "MetaGPT",
+  "url": "https://github.com/geekan/MetaGPT",
+  "description": ": The Multi-Agent Meta Programming Framework: Given one line Requirement, return PRD, Design, Tasks, Repo and CI ![GitHub Repo stars](https://img.shields.io/github/stars/geekan/MetaGPT?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

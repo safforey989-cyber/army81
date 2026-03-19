@@ -1,0 +1,9 @@
+{
+  "name": "RegEx-DoS",
+  "url": "https://github.com/jagracey/RegEx-DoS",
+  "description": "Analyzes source code for Regular Expressions susceptible to Denial of Service attacks.",
+  "section": "Static Analyzers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

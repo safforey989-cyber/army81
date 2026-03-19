@@ -1,0 +1,9 @@
+{
+  "name": "VALL-E X",
+  "url": "https://vallex-demo.github.io/",
+  "description": "A cross-lingual neural codec language model for cross-lingual speech synthesis.",
+  "section": "Text-to-speech",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

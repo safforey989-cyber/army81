@@ -1,0 +1,9 @@
+{
+  "name": "GhostProject",
+  "url": "https://ghostproject.fr/",
+  "description": "Searchable database of billions of cleartext passwords, partially visible for free.",
+  "section": "OSINT Online Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

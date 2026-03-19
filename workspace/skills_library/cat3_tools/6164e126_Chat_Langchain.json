@@ -1,0 +1,9 @@
+{
+  "name": "Chat Langchain",
+  "url": "https://github.com/hwchase17/chat-langchain",
+  "description": ": locally hosted chatbot specifically focused on question answering over the LangChain documentation ![GitHub Repo stars](https://img.shields.io/github/stars/hwchase17/chat-langchain?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

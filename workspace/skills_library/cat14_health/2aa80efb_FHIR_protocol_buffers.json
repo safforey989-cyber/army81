@@ -1,0 +1,9 @@
+{
+  "name": "FHIR protocol buffers",
+  "url": "https://github.com/google/fhir",
+  "description": "A Google implementation of protocol buffers for FHIR.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

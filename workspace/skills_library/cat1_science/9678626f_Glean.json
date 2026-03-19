@@ -1,0 +1,9 @@
+{
+  "name": "Glean",
+  "url": "https://github.com/glean/glean",
+  "description": "A data management tool for humans. **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

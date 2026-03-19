@@ -1,0 +1,9 @@
+{
+  "name": "Co-Developer GPT engine",
+  "url": "https://github.com/stoerr/CoDeveloperGPTengine",
+  "description": "local r/w file access and execute actions from an OpenAI GPT",
+  "section": "AI-Powered Code Generation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

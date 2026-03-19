@@ -1,0 +1,7 @@
+{
+  "name": "stakeholder_mapper",
+  "type": "prompt_pattern",
+  "prompt_template": "ارسم خريطة أصحاب المصلحة لـ {issue}. حدد القوة والاهتمام لكل طرف.",
+  "category": "cat2_society",
+  "source": "built_in"
+}

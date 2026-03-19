@@ -1,0 +1,9 @@
+{
+  "name": "OpenCV",
+  "url": "https://opencv.org",
+  "description": "OpenCV has C++, C, Python, Java and MATLAB interfaces and supports Windows, Linux, Android and Mac OS.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

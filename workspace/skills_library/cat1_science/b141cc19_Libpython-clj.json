@@ -1,0 +1,9 @@
+{
+  "name": "Libpython-clj",
+  "url": "https://github.com/clj-python/libpython-clj",
+  "description": "Interop with Python",
+  "section": "Interop",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

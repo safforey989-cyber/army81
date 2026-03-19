@@ -1,0 +1,9 @@
+{
+  "name": "Platform-as-a-Service",
+  "url": "https://en.wikipedia.org/wiki/Platform_as_a_service",
+  "description": "software allows customers to provision, instantiate, run, and manage a computing platform and one or more applications, without the complexity of building and maintaining the infrastructure typically associated with developing and launching the application. Also includes [Serverless computing](https",
+  "section": "PaaS",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Emgu CV",
+  "url": "http://www.emgu.com/wiki/index.php/Main_Page",
+  "description": "Cross platform wrapper of OpenCV which can be compiled in Mono to be run on Windows, Linus, Mac OS X, iOS, and Android.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ISC License",
+  "url": "https://spdx.org/licenses/ISC.html",
+  "description": "Tool from sysadmin_tools",
+  "section": "List of Licenses",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

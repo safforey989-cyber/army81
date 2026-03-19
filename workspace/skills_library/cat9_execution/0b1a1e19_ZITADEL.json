@@ -1,0 +1,9 @@
+{
+  "name": "ZITADEL",
+  "url": "https://zitadel.com/",
+  "description": "Cloud-native Identity & Access Management solution providing a platform for secure authentication, authorization and identity management. ([Source Code](https://github.com/zitadel/zitadel)) `Apache-2.0` `Go/Docker/K8S`",
+  "section": "Identity Management - Tools and web interfaces",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

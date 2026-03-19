@@ -1,0 +1,9 @@
+{
+  "name": "GitLab CI",
+  "url": "https://about.gitlab.com/solutions/continuous-integration/",
+  "description": "Gitlab's built-in, full-featured CI/CD solution. ([Source Code](https://gitlab.com/gitlab-org/gitlab-foss)) `MIT` `Ruby`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

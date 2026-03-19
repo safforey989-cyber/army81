@@ -1,0 +1,9 @@
+{
+  "name": "bRAGAI/bRAG-langchain",
+  "url": "https://github.com/bRAGAI/bRAG-langchain",
+  "description": ": Everything you need to know to build your own RAG application",
+  "section": "Retrieval-Augmented Generation (RAG)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

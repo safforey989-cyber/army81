@@ -1,0 +1,9 @@
+{
+  "name": "Voltron",
+  "url": "https://github.com/snare/voltron",
+  "description": "Extensible debugger UI toolkit written in Python.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

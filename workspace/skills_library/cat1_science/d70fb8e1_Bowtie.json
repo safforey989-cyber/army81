@@ -1,0 +1,9 @@
+{
+  "name": "Bowtie",
+  "url": "https://github.com/jwkvam/bowtie",
+  "description": "A dashboard library for interactive visualizations using flask socketio and react.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

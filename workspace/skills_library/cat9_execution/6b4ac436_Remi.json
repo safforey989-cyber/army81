@@ -1,0 +1,9 @@
+{
+  "name": "Remi",
+  "url": "http://rpms.famillecollet.com/",
+  "description": "Repository with LAMP updated packages for RHEL/Centos/Fedora.",
+  "section": "Repositories",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Thampi",
+  "url": "https://github.com/scoremedia/thampi",
+  "description": "Machine Learning Prediction System on AWS Lambda",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

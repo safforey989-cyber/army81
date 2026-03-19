@@ -1,0 +1,9 @@
+{
+  "name": "FireTodo",
+  "url": "https://github.com/sgr-ksmt/FireTodo",
+  "description": ": Simple Todo using SwiftUI, Firebase, Redux",
+  "section": "Tasks",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

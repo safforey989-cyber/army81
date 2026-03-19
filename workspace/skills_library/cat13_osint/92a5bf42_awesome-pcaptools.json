@@ -1,0 +1,9 @@
+{
+  "name": "awesome-pcaptools",
+  "url": "https://github.com/caesar0301/awesome-pcaptools",
+  "description": ".",
+  "section": "Protocol Analyzers and Sniffers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

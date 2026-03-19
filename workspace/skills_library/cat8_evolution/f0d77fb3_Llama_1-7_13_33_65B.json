@@ -1,0 +1,9 @@
+{
+  "name": "Llama 1-7|13|33|65B",
+  "url": "https://ai.facebook.com/blog/large-language-model-llama-meta-ai/",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

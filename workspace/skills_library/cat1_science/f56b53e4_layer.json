@@ -1,0 +1,9 @@
+{
+  "name": "layer",
+  "url": "https://github.com/cloudkj/layer",
+  "description": "Neural network inference from the command line, implemented in [CHICKEN Scheme](https://www.call-cc.org/).",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

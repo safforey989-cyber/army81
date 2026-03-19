@@ -1,0 +1,9 @@
+{
+  "name": "Lynis",
+  "url": "https://cisofy.com/lynis/",
+  "description": "Auditing tool for UNIX-based systems.",
+  "section": "GNU/Linux Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

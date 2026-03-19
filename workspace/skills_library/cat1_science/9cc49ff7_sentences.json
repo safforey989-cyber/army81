@@ -1,0 +1,9 @@
+{
+  "name": "sentences",
+  "url": "https://github.com/neurosnap/sentences",
+  "description": "Golang implementation of Punkt sentence tokenizer.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Java Interop",
+  "url": "https://clojure.org/reference/java_interop",
+  "description": "Clojure has Native Java Interop from which Java's ML ecosystem can be accessed",
+  "section": "Interop",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "kernel smoothing",
+  "url": "https://github.com/rlowrance/kernel-smoothers",
+  "description": "KNN, kernel-weighted average, local linear regression smoothers. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

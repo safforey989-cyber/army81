@@ -1,0 +1,9 @@
+{
+  "name": "Scaler Blogs",
+  "url": "https://www.scaler.com/blog/",
+  "description": "Educational content on software development, AI, and career growth in tech.",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

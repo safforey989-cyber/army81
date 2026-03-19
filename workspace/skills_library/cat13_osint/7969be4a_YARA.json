@@ -1,0 +1,9 @@
+{
+  "name": "YARA",
+  "url": "https://github.com/InQuest/awesome-yara",
+  "description": "YARA rules, tools, and people.",
+  "section": "Other Lists Online",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

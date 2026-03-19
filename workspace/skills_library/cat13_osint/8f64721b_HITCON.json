@@ -1,0 +1,9 @@
+{
+  "name": "HITCON",
+  "url": "https://hitcon.org/",
+  "description": "Hacks In Taiwan Conference held in Taiwan.",
+  "section": "Asia",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

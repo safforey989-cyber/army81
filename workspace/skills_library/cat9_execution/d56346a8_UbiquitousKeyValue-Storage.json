@@ -1,0 +1,9 @@
+{
+  "name": "UbiquitousKeyValue-Storage",
+  "url": "https://github.com/StewartLynch/UbiquitousKeyValue-Storage",
+  "description": ": NSUbiquitousKeyValueStore or iCLoud Shared UserDefaults project",
+  "section": "Sample",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

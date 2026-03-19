@@ -1,0 +1,9 @@
+{
+  "name": "notespace",
+  "url": "https://github.com/scicloj/notespace",
+  "description": "Notebook experience in your Clojure namespace",
+  "section": "Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

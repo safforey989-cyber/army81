@@ -1,0 +1,9 @@
+{
+  "name": "HexEdit.js",
+  "url": "https://hexed.it",
+  "description": "Browser-based hex editing.",
+  "section": "Hex Editors",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

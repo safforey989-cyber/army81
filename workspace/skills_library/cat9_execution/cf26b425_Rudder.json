@@ -1,0 +1,9 @@
+{
+  "name": "Rudder",
+  "url": "https://www.rudder.io/",
+  "description": "Scalable and dynamic configuration management system for patching, security & compliance, based on CFEngine. ([Source Code](https://github.com/Normation/rudder)) `GPL-3.0` `Scala`",
+  "section": "Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

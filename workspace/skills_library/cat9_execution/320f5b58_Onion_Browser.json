@@ -1,0 +1,9 @@
+{
+  "name": "Onion Browser",
+  "url": "https://github.com/OnionBrowser/OnionBrowser",
+  "description": ": A Tor-powered web browser that improves your privacy",
+  "section": "Browser",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

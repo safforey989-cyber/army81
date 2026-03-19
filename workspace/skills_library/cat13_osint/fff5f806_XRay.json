@@ -1,0 +1,9 @@
+{
+  "name": "XRay",
+  "url": "https://github.com/evilsocket/xray",
+  "description": "Network (sub)domain discovery and reconnaissance automation tool.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

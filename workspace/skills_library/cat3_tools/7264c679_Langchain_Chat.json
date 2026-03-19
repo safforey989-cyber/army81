@@ -1,0 +1,9 @@
+{
+  "name": "Langchain Chat",
+  "url": "https://github.com/zahidkhawaja/langchain-chat-nextjs",
+  "description": ": another Next.js frontend for LangChain Chat. ![GitHub Repo stars](https://img.shields.io/github/stars/zahidkhawaja/langchain-chat-nextjs?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

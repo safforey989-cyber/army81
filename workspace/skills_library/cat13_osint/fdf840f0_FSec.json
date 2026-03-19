@@ -1,0 +1,9 @@
+{
+  "name": "FSec",
+  "url": "http://fsec.foi.hr",
+  "description": "FSec - Croatian Information Security Gathering in Varaždin, Croatia.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

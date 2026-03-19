@@ -1,0 +1,9 @@
+{
+  "name": "ChatArena",
+  "url": "https://www.chatarena.org/",
+  "description": ": building multi-agent environments for LLMs",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

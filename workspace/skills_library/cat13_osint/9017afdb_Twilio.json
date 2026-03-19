@@ -1,0 +1,9 @@
+{
+  "name": "Twilio",
+  "url": "https://www.twilio.com/docs/lookup/v2-api",
+  "description": "Look up a phone numbers carrier type, location, etc. Twilio offers free accounts that come with credits you can use with their API. Each lookup is only ~$0.01-$0.02 typically on US and CAN numbers.",
+  "section": "[↑](#-table-of-contents) Phone Number Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

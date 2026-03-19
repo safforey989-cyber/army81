@@ -1,0 +1,9 @@
+{
+  "name": "mljar-supervised",
+  "url": "https://github.com/mljar/mljar-supervised",
+  "description": "An Automated Machine Learning (AutoML) python package for tabular data. It can handle: Binary Classification, MultiClass Classification and Regression. It provides explanations and markdown reports.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

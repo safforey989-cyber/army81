@@ -1,0 +1,9 @@
+{
+  "name": "Frostbyte Crypto API",
+  "url": "https://agent-gateway-kappa.vercel.app",
+  "description": "Free real-time cryptocurrency price data API. Supports BTC, ETH, SOL, and 20+ tokens. No signup or API key required for basic endpoints. JSON responses with price, 24h change, market cap, and volume.",
+  "section": "Crypto Currencies",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

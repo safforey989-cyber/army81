@@ -1,0 +1,9 @@
+{
+  "name": "DVCS Ripper",
+  "url": "https://github.com/kost/dvcs-ripper",
+  "description": "Rip web accessible (distributed) version control systems: SVN/GIT/HG/BZR.",
+  "section": "Web-accessible source code ripping tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

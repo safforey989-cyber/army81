@@ -1,0 +1,9 @@
+{
+  "name": "Code",
+  "url": "http://stanford.edu/class/ee103/julia_files",
+  "description": "Tool from cs_courses",
+  "section": "Machine Learning",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "milvus",
+  "url": "https://milvus.io",
+  "description": "– Milvus is [open source](https://github.com/milvus-io/milvus) vector database for production AI, written in Go and C++, scalable and blazing fast for billions of embedding vectors.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

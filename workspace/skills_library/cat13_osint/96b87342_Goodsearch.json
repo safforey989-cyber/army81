@@ -1,0 +1,9 @@
+{
+  "name": "Goodsearch",
+  "url": "https://www.goodsearch.com",
+  "description": "a search engine for shopping deals online.",
+  "section": "[↑](#-table-of-contents) General Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

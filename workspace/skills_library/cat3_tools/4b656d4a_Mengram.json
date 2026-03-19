@@ -1,0 +1,9 @@
+{
+  "name": "Mengram",
+  "url": "https://github.com/alibaizhanov/mengram",
+  "description": ": Long-term memory for LangChain agents — semantic, episodic & procedural memory with Graph RAG. Includes MengramRetriever for RAG pipelines. ![GitHub Repo stars](https://img.shields.io/github/stars/alibaizhanov/mengram?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Overcast",
+  "url": "https://andrewchilds.github.io/overcast/",
+  "description": "Deploy VMs across different cloud providers, and run commands and scripts across any or all of them in parallel via SSH. ([Source Code](https://github.com/andrewchilds/overcast)) `MIT` `Nodejs`",
+  "section": "Deployment Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

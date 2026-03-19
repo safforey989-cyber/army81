@@ -1,0 +1,9 @@
+{
+  "name": "Cloud computing",
+  "url": "https://en.wikipedia.org/wiki/Cloud_computing",
+  "description": "is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user.",
+  "section": "Cloud Computing",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

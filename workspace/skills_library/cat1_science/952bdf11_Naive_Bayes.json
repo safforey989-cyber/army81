@@ -1,0 +1,9 @@
+{
+  "name": "Naive Bayes",
+  "url": "https://en.wikipedia.org/wiki/Naive_Bayes_classifier",
+  "description": "Tool from data_science",
+  "section": "Data Mining Algorithms",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

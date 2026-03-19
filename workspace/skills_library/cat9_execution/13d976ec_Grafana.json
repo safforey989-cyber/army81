@@ -1,0 +1,9 @@
+{
+  "name": "Grafana",
+  "url": "https://grafana.com/",
+  "description": "A Graphite & InfluxDB Dashboard and Graph Editor. ([Source Code](https://github.com/grafana/grafana)) `AGPL-3.0` `Go`",
+  "section": "Metrics & Metric Collection",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

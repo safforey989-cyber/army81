@@ -1,0 +1,9 @@
+{
+  "name": "Pyret",
+  "url": "https://www.pyret.org/",
+  "description": "programming language & [PAPL](http://papl.cs.brown.edu/2014/) book to understand the fundamentals of programming languages.",
+  "section": "Programming Languages / Compilers",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

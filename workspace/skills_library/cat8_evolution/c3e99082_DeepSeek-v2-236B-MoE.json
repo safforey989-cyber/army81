@@ -1,0 +1,9 @@
+{
+  "name": "DeepSeek-v2-236B-MoE",
+  "url": "https://arxiv.org/abs/2405.04434",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

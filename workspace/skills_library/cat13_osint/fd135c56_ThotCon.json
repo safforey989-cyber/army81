@@ -1,0 +1,9 @@
+{
+  "name": "ThotCon",
+  "url": "http://thotcon.org/",
+  "description": "Annual US hacker conference held in Chicago.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "openai/swarm",
+  "url": "https://github.com/openai/swarm",
+  "description": ": Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.",
+  "section": "Multi-agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

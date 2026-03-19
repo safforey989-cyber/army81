@@ -1,0 +1,9 @@
+{
+  "name": "Muse: Text-To-Image Generation via Masked Generative Transformers",
+  "url": "https://muse-model.github.io/",
+  "description": "Tool from generative_ai",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

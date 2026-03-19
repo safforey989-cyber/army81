@@ -1,0 +1,9 @@
+{
+  "name": "Raccoon",
+  "url": "https://github.com/evyatarmeged/Raccoon",
+  "description": "High performance offensive security tool for reconnaissance and vulnerability scanning.",
+  "section": "Web Exploitation",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

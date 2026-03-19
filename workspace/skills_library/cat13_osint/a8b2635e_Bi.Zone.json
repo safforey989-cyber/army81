@@ -1,0 +1,9 @@
+{
+  "name": "Bi.Zone",
+  "url": "https://gti.bi.zone/",
+  "description": "148 threat groups with detailed TTPs.",
+  "section": "[↑](#-threat-actor-search) Threat Actor Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

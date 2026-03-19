@@ -1,0 +1,9 @@
+{
+  "name": "dsniff",
+  "url": "https://www.monkey.org/~dugsong/dsniff/",
+  "description": "Collection of tools for network auditing and pentesting.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

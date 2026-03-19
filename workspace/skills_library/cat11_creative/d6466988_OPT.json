@@ -1,0 +1,9 @@
+{
+  "name": "OPT",
+  "url": "https://huggingface.co/facebook/opt-350m",
+  "description": "Open Pretrained Transformers (OPT) by Facebook is a suite of decoder-only pre-trained transformers. [Announcement](https://ai.facebook.com/blog/democratizing-access-to-large-scale-language-models-with-opt-175b/). [OPT-175B text generation](https://opt.alpa.ai/) hosted by Alpa.",
+  "section": "Models",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

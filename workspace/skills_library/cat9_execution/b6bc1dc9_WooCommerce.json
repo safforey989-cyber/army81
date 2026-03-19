@@ -1,0 +1,9 @@
+{
+  "name": "WooCommerce",
+  "url": "https://github.com/woocommerce/woocommerce-ios",
+  "description": ": Manage orders, receive sales notifications, and view key metrics",
+  "section": "Shopping",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

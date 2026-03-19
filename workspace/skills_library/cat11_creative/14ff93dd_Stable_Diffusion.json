@@ -1,0 +1,9 @@
+{
+  "name": "Stable Diffusion",
+  "url": "https://stability.ai/blog/stable-diffusion-announcement",
+  "description": ": Stability.Ai's text-to-image model that is a breakthrough in speed and quality meaning that it can run on consumer GPUs",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

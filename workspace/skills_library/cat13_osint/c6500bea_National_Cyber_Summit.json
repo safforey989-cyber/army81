@@ -1,0 +1,9 @@
+{
+  "name": "National Cyber Summit",
+  "url": "https://www.nationalcybersummit.com/",
+  "description": "Annual US security conference and Capture the Flag event, held in Huntsville, Alabama, USA.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

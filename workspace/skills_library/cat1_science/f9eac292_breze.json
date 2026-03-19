@@ -1,0 +1,9 @@
+{
+  "name": "breze",
+  "url": "https://github.com/breze-no-salt/breze",
+  "description": "Theano based library for deep and recurrent neural networks.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

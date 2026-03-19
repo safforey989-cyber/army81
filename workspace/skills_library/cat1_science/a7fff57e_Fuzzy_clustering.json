@@ -1,0 +1,9 @@
+{
+  "name": "Fuzzy clustering",
+  "url": "https://en.wikipedia.org/wiki/Fuzzy_clustering",
+  "description": "Tool from data_science",
+  "section": "Unsupervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

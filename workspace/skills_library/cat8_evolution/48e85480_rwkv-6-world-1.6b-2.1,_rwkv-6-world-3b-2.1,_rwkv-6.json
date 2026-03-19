@@ -1,0 +1,9 @@
+{
+  "name": "rwkv-6-world-1.6b-2.1, rwkv-6-world-3b-2.1, rwkv-6-world-7b-2.1",
+  "url": "https://huggingface.co/BlinkDL/rwkv-6-world",
+  "description": "| [RWKV 6](https://www.rwkv.com/) | 1.6, 3, 7 | [unlimited(RNN), trained on 4096](https://huggingface.co/BlinkDL/rwkv-6-world/tree/main) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

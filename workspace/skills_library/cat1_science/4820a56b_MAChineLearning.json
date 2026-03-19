@@ -1,0 +1,9 @@
+{
+  "name": "MAChineLearning",
+  "url": "https://github.com/gianlucabertani/MAChineLearning",
+  "description": "An Objective-C multilayer perceptron library, with full support for training through backpropagation. Implemented using vDSP and vecLib, it's 20 times faster than its Java equivalent. Includes sample code for use from Swift.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

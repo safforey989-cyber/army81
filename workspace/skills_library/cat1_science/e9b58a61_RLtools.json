@@ -1,0 +1,9 @@
+{
+  "name": "RLtools",
+  "url": "https://github.com/rl-tools/rl-tools",
+  "description": "The fastest deep reinforcement learning library for continuous control, implemented header-only in pure, dependency-free C++ (Python bindings available as well).",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

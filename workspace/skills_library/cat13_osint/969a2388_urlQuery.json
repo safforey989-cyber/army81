@@ -1,0 +1,9 @@
+{
+  "name": "urlQuery",
+  "url": "http://urlquery.net",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

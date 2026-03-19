@@ -1,0 +1,9 @@
+{
+  "name": "QNimGPT",
+  "url": "https://huggingface.co/spaces/rituthombre/QNim",
+  "description": ": Play Nim against an IBM Quantum Computer simulator or OpenAI GPT-3.5",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

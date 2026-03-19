@@ -1,0 +1,9 @@
+{
+  "name": "Designate",
+  "url": "https://wiki.openstack.org/wiki/Designate",
+  "description": "DNSaaS services for OpenStack. ([Source Code](https://opendev.org/openstack/designate)) `Apache-2.0` `Python`",
+  "section": "DNS - Control Panels & Domain Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

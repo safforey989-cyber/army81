@@ -1,0 +1,9 @@
+{
+  "name": "OPFython",
+  "url": "https://github.com/gugarosa/opfython",
+  "description": "A Python-inspired implementation of the Optimum-Path Forest classifier.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

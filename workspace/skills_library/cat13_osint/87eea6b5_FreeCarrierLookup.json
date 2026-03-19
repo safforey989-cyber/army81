@@ -1,0 +1,9 @@
+{
+  "name": "FreeCarrierLookup",
+  "url": "https://freecarrierlookup.com/",
+  "description": "enter a phone number and we'll return the carrier name and whether the number is wireless or landline. We also return the email-to-SMS and email-to-MMS gateway addresses for USA and Canadian* phone numbers.",
+  "section": "[↑](#-table-of-contents) Phone Number Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

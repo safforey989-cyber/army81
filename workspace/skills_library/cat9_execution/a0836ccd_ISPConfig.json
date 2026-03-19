@@ -1,0 +1,9 @@
+{
+  "name": "ISPConfig",
+  "url": "https://www.ispconfig.org",
+  "description": "Manage Linux servers directly through your browser. ([Source Code](https://git.ispconfig.org/ispconfig/ispconfig3)) `BSD-3-Clause` `PHP`",
+  "section": "Control Panels",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

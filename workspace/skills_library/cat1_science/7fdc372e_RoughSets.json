@@ -1,0 +1,9 @@
+{
+  "name": "RoughSets",
+  "url": "https://cran.r-project.org/web/packages/RoughSets/index.html",
+  "description": "RoughSets: Data Analysis Using Rough Set and Fuzzy Rough Set Theories. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DSSTNE",
+  "url": "https://github.com/amznlabs/amazon-dsstne",
+  "description": "A software library created by Amazon for training and deploying deep neural networks using GPUs which emphasizes speed and scale over experimental flexibility.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

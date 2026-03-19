@@ -1,0 +1,9 @@
+{
+  "name": "Beszel",
+  "url": "https://beszel.dev/",
+  "description": "Lightweight server monitoring platform that includes Docker statistics, historical data, and alert functions. ([Source Code](https://github.com/henrygd/beszel)) `MIT` `Go`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

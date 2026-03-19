@@ -1,0 +1,9 @@
+{
+  "name": "InternLM-Math-7B|20B",
+  "url": "https://huggingface.co/collections/internlm/internlm2-math-65b0ce88bf7d3327d0a5ad9f",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

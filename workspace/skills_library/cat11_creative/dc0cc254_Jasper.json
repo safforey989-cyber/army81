@@ -1,0 +1,9 @@
+{
+  "name": "Jasper",
+  "url": "https://www.jasper.ai/",
+  "description": "Create content faster with artificial intelligence.",
+  "section": "Writing assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

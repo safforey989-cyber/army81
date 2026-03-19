@@ -1,0 +1,9 @@
+{
+  "name": "Digital Ocean Tutorials",
+  "url": "https://www.digitalocean.com/community/tutorials",
+  "description": "6,000+ tutorials for getting the basics of certain applications/tools/systems administration topics.",
+  "section": "Websites",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

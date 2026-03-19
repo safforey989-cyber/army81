@@ -1,0 +1,9 @@
+{
+  "name": "Stanford Tokens Regex",
+  "url": "https://nlp.stanford.edu/software/tokensregex.shtml",
+  "description": "A tokenizer divides text into a sequence of tokens, which roughly correspond to \"words\".",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

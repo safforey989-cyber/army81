@@ -1,0 +1,9 @@
+{
+  "name": "ahaz",
+  "url": "https://cran.r-project.org/web/packages/ahaz/index.html",
+  "description": "ahaz: Regularization for semiparametric additive hazards regression. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

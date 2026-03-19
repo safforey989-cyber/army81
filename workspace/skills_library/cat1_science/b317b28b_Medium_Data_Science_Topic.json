@@ -1,0 +1,9 @@
+{
+  "name": "Medium Data Science Topic",
+  "url": "https://medium.com/tag/data-science",
+  "description": "Data Science related publications on medium",
+  "section": "Journals, Publications and Magazines",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

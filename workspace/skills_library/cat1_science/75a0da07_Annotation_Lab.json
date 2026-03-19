@@ -1,0 +1,9 @@
+{
+  "name": "Annotation Lab",
+  "url": "https://www.johnsnowlabs.com/annotation-lab/",
+  "description": "| Free End-to-End No-Code platform for text annotation and DL model training/tuning. Out-of-the-box support for Named Entity Recognition, Classification, Relation extraction and Assertion Status Spark NLP models. Unlimited support for users, teams, projects, documents. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

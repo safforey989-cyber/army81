@@ -1,0 +1,9 @@
+{
+  "name": "ROLL",
+  "url": "https://github.com/alibaba/ROLL",
+  "description": "An Efficient and User-Friendly Scaling Library for Reinforcement Learning with Large Language Models.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

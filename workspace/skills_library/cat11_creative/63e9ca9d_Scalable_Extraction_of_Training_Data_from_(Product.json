@@ -1,0 +1,9 @@
+{
+  "name": "Scalable Extraction of Training Data from (Production) Language Models",
+  "url": "https://arxiv.org/abs/2311.17035",
+  "description": "Language Models](https://arxiv.org/abs/2311.17035): extracting training data from ChatGPT [[webpage]](https://not-just-memorization.github.io/extracting-training-data-from-chatgpt.html)",
+  "section": "Attacks on LLMs",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DorkGPT",
+  "url": "https://www.dorkgpt.com/",
+  "description": "Generate Google Dorks with AI.",
+  "section": "[↑](#-google-dorks-tools) Google Dorks Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

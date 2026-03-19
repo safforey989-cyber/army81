@@ -1,0 +1,9 @@
+{
+  "name": "Infosecurity Europe",
+  "url": "http://www.infosecurityeurope.com/",
+  "description": "Europe's number one information security event, held in London, UK.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

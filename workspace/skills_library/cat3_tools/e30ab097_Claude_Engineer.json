@@ -1,0 +1,9 @@
+{
+  "name": "Claude Engineer",
+  "url": "https://github.com/Doriandarko/claude-engineer",
+  "description": ": Claude Engineer is an interactive command-line interface (CLI) that leverages the power of Anthropic's Claude-3.5-Sonnet model to assist with software development tasks. ![GitHub Repo stars](https://img.shields.io/github/stars/Doriandarko/claude-engineer?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

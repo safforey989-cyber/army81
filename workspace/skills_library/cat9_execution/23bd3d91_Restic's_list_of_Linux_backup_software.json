@@ -1,0 +1,9 @@
+{
+  "name": "Restic's list of Linux backup software",
+  "url": "https://github.com/restic/others",
+  "description": "_",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

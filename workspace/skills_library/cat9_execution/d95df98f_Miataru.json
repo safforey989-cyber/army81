@@ -1,0 +1,9 @@
+{
+  "name": "Miataru",
+  "url": "https://github.com/miataru/miataru-ios-client",
+  "description": ": Location tracking where data can be shared over public or private servers",
+  "section": "Location",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

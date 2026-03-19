@@ -1,0 +1,9 @@
+{
+  "name": "rConfig",
+  "url": "https://www.rconfig.com/",
+  "description": "Network device configuration management tool. ([Source Code](https://github.com/rconfig/rconfig)) `GPL-3.0` `PHP`",
+  "section": "Network Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Support Vector Machines",
+  "url": "https://en.wikipedia.org/wiki/Support_vector_machine",
+  "description": "Tool from data_science",
+  "section": "Supervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Auto-evaluator",
+  "url": "https://github.com/PineappleExpress808/auto-evaluator",
+  "description": ": a lightweight evaluation tool for question-answering using Langchain ![GitHub Repo stars](https://img.shields.io/github/stars/PineappleExpress808/auto-evaluator?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

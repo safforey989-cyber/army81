@@ -1,0 +1,9 @@
+{
+  "name": "Check Point Live Cyber Threat Map",
+  "url": "https://threatmap.checkpoint.com/",
+  "description": "Explore the top cyber threats of 2025, including ransomware, infostealers, and cloud vulnerabilities.",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

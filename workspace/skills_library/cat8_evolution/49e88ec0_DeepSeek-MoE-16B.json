@@ -1,0 +1,9 @@
+{
+  "name": "DeepSeek-MoE-16B",
+  "url": "https://huggingface.co/collections/deepseek-ai/deepseek-moe-65f29679f5cf26fe063686bf",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

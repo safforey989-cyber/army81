@@ -1,0 +1,7 @@
+{
+  "name": "drug_interaction",
+  "type": "prompt_pattern",
+  "prompt_template": "تحقق من تفاعلات: {drugs}. خطورة، بدائل، احتياطات.",
+  "category": "cat14_health",
+  "source": "built_in"
+}

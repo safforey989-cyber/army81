@@ -1,0 +1,9 @@
+{
+  "name": "Stable Diffusion KLMC2 Animation.ipynb",
+  "url": "https://colab.research.google.com/drive/1m8ovBpO2QilE2o4O-p2PONSwqGn4_x2G",
+  "description": ": notebook by [@RiversHaveWings](https://twitter.com/RiversHaveWings) to generate animation based on scripted prompts using a technique called KLMC2 discretization of underdamped Langevin dynamics",
+  "section": "Inbox: Stable Diffusion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

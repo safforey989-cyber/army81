@@ -1,0 +1,9 @@
+{
+  "name": "Half Beer",
+  "url": "https://github.com/sta-ger/HalfBeer",
+  "description": "Beer glass classifier created with [Synaptic](https://github.com/cazala/synaptic).",
+  "section": "Demos and Scripts",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "YuLan-Mini",
+  "url": "https://huggingface.co/yulan-team/YuLan-Mini",
+  "description": "| [YuLan-Mini: An Open Data-efficient Language Model](https://arxiv.org/abs/2412.17743), [GitHub](https://github.com/RUC-GSAI/YuLan-Mini) | 14 | [28672](https://github.com/RUC-GSAI/YuLan-Mini) | MIT | [YuLan-Mini](https://huggingface.co/yulan-team/YuLan-Mini) |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

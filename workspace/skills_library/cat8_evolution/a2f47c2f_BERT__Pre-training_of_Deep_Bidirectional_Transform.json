@@ -1,0 +1,9 @@
+{
+  "name": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "url": "https://aclanthology.org/N19-1423.pdf",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

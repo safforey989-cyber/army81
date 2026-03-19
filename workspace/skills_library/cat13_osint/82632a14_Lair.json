@@ -1,0 +1,9 @@
+{
+  "name": "Lair",
+  "url": "https://github.com/lair-framework/lair/wiki",
+  "description": "Reactive attack collaboration framework and web application built with meteor.",
+  "section": "Collaboration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

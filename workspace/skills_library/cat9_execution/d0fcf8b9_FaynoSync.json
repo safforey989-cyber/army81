@@ -1,0 +1,9 @@
+{
+  "name": "FaynoSync",
+  "url": "https://faynosync.com",
+  "description": "Self-hosted Dynamic Update Server with statistics, supporting multiple updaters. Flexible features for seamless app updates and insights.  ([Source Code](https://github.com/ku9nov/faynoSync), [Clients](https://github.com/ku9nov/faynoSync-dashboard)) `Apache-2.0` `Docker/Go`",
+  "section": "Deployment Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Dingo",
+  "url": "https://github.com/DataEval/dingo",
+  "description": "Dingo: A Comprehensive Data Quality Evaluation Tool",
+  "section": "LLM Data",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

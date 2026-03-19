@@ -1,0 +1,9 @@
+{
+  "name": "Lambda-Proxy",
+  "url": "https://github.com/puresec/lambda-proxy",
+  "description": "Utility for testing SQL Injection vulnerabilities on AWS Lambda serverless functions.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

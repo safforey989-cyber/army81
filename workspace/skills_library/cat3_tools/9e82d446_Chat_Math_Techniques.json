@@ -1,0 +1,9 @@
+{
+  "name": "Chat Math Techniques",
+  "url": "https://huggingface.co/spaces/JavaFXpert/gpt-math-techniques",
+  "description": ": langchain chat with math techniques on Huggingface",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

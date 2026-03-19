@@ -1,0 +1,9 @@
+{
+  "name": "Pavlov.js",
+  "url": "https://github.com/NathanEpstein/Pavlov.js",
+  "description": "Reinforcement learning using Markov Decision Processes.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

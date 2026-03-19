@@ -1,0 +1,9 @@
+{
+  "name": "NLTK",
+  "url": "https://www.nltk.org/",
+  "description": "A leading platform for building Python programs to work with human language data.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

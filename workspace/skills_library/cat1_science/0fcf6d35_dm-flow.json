@@ -1,0 +1,9 @@
+{
+  "name": "dm-flow",
+  "url": "https://github.com/sassoftware/dm-flow",
+  "description": "Library of SAS Enterprise Miner process flow diagrams to help you learn by example about specific data mining topics.",
+  "section": "Demos and Scripts",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

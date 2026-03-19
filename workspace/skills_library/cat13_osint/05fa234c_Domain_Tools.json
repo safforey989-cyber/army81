@@ -1,0 +1,9 @@
+{
+  "name": "Domain Tools",
+  "url": "http://whois.domaintools.com",
+  "description": "Whois lookup and domain/ip historical data.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Thunderbird",
+  "url": "https://www.thunderbird.net/",
+  "description": "Free email application that's easy to set up and customize. ([Source Code](https://hg.mozilla.org/comm-central/file)) `MPL-2.0` `C/C++`",
+  "section": "Mail Clients",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

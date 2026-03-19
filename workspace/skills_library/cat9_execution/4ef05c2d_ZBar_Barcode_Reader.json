@@ -1,0 +1,9 @@
+{
+  "name": "ZBar Barcode Reader",
+  "url": "https://sourceforge.net/projects/zbar/",
+  "description": ": A comprehensive barcode reader",
+  "section": "Scan",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

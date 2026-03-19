@@ -1,0 +1,9 @@
+{
+  "name": "SecurityTrails",
+  "url": "https://securitytrails.com/dns-trails",
+  "description": "API to search current and historical DNS records, current and historical WHOIS, technologies used by sites and whois search for phone, email, address, IPs etc.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "LibreHealth Radiology",
+  "url": "https://librehealth.io/projects/lh-radiology/",
+  "description": "Customized version of LibreHealth Toolkit with additional tools for radiology and imaging professionals.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

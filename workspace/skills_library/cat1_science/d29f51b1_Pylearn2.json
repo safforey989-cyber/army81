@@ -1,0 +1,9 @@
+{
+  "name": "Pylearn2",
+  "url": "https://github.com/lisa-lab/pylearn2",
+  "description": "A Machine Learning library based on [Theano](https://github.com/Theano/Theano). **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

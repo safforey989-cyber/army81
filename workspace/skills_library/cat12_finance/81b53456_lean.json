@@ -1,0 +1,9 @@
+{
+  "name": "lean",
+  "url": "https://github.com/QuantConnect/Lean",
+  "description": "Algorithmic trading engine built for easy strategy research, backtesting and live trading.",
+  "section": "Traditional Market",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

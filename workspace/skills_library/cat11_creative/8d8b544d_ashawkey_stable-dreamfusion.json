@@ -1,0 +1,9 @@
+{
+  "name": "ashawkey/stable-dreamfusion",
+  "url": "https://github.com/ashawkey/stable-dreamfusion",
+  "description": ": A pytorch implementation of text-to-3D dreamfusion, powered by stable diffusion.",
+  "section": "Inbox: Stable Diffusion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

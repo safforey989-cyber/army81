@@ -1,0 +1,9 @@
+{
+  "name": "fastchat-t5-3b-v1.0",
+  "url": "https://huggingface.co/lmsys/fastchat-t5-3b-v1.0",
+  "description": "| [We are excited to release FastChat-T5: our compact and commercial-friendly chatbot!](https://twitter.com/lmsysorg/status/1652037026705985537?s=20) | 3 | [512](https://huggingface.co/lmsys/fastchat-t5-3b-v1.0/blob/main/config.json) | Apache 2.0 |                                                    ",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

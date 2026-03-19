@@ -1,0 +1,9 @@
+{
+  "name": "Langchain Chat Websocket",
+  "url": "https://github.com/pors/langchain-chat-websockets",
+  "description": ": About LangChain LLM chat with streaming response over websockets ![GitHub Repo stars](https://img.shields.io/github/stars/pors/langchain-chat-websockets?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

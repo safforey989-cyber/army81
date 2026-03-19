@@ -1,0 +1,9 @@
+{
+  "name": "SteelCon",
+  "url": "https://www.steelcon.info/",
+  "description": "Security conference in Sheffield UK.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

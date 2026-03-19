@@ -1,0 +1,9 @@
+{
+  "name": "crystal-fann",
+  "url": "https://github.com/NeuraLegion/crystal-fann",
+  "description": "FANN (Fast Artificial Neural Network) binding.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

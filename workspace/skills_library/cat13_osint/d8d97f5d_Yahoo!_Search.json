@@ -1,0 +1,9 @@
+{
+  "name": "Yahoo! Search",
+  "url": "https://www.yahoo.com",
+  "description": "The search engine that helps you find exactly what you're looking for.",
+  "section": "[↑](#-table-of-contents) General Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

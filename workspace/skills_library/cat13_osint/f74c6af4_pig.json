@@ -1,0 +1,9 @@
+{
+  "name": "pig",
+  "url": "https://github.com/rafael-santiago/pig",
+  "description": "GNU/Linux packet crafting tool.",
+  "section": "Network Traffic Replay and Editing Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

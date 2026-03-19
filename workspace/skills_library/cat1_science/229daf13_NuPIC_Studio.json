@@ -1,0 +1,9 @@
+{
+  "name": "NuPIC Studio",
+  "url": "https://github.com/htm-community/nupic.studio",
+  "description": "An all-in-one NuPIC Hierarchical Temporal Memory visualization and debugging super-tool! **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

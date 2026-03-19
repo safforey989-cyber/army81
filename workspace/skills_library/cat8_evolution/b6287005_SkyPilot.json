@@ -1,0 +1,9 @@
+{
+  "name": "SkyPilot",
+  "url": "https://github.com/skypilot-org/skypilot",
+  "description": "Run LLMs and batch jobs on any cloud. Get maximum cost savings, highest GPU availability, and managed execution -- all with a simple interface.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

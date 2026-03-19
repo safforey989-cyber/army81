@@ -1,0 +1,9 @@
+{
+  "name": "Trade It",
+  "url": "https://docs.tradeit.app/mcp",
+  "description": "MCP for trading on common brokerages (Robinhood, ETrade, Schwab, Webull, Public, tastytrade, Coinbase, Kraken so far)",
+  "section": "Exchange API",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

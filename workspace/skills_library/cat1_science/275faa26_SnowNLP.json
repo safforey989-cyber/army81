@@ -1,0 +1,9 @@
+{
+  "name": "SnowNLP",
+  "url": "https://github.com/isnowfy/snownlp",
+  "description": "A library for processing Chinese text.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

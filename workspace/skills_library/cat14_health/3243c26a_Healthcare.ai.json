@@ -1,0 +1,9 @@
+{
+  "name": "Healthcare.ai",
+  "url": "https://healthcare.ai",
+  "description": "Python and R tools for healthcare machine learning.",
+  "section": "Machine learning",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Sushi",
+  "url": "https://github.com/FHIR/sushi",
+  "description": "a reference implementation command-line interpreter/compiler for FHIR",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

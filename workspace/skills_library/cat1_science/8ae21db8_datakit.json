@@ -1,0 +1,9 @@
+{
+  "name": "datakit",
+  "url": "https://github.com/nathanepstein/datakit",
+  "description": "A lightweight framework for data analysis in JavaScript",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

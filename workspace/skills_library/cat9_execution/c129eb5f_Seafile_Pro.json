@@ -1,0 +1,9 @@
+{
+  "name": "Seafile Pro",
+  "url": "https://github.com/haiwen/seafile-iOS",
+  "description": ": App for Seafile self-hosted file sharing",
+  "section": "File",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

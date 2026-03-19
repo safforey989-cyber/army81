@@ -1,0 +1,9 @@
+{
+  "name": "ChatSecure",
+  "url": "https://github.com/ChatSecure/ChatSecure-iOS",
+  "description": ": Send messages with OTR encryption",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

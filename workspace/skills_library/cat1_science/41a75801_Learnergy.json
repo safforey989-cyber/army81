@@ -1,0 +1,9 @@
+{
+  "name": "Learnergy",
+  "url": "https://github.com/gugarosa/learnergy",
+  "description": "Energy-based machine learning models built upon PyTorch.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

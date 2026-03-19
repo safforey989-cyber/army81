@@ -1,0 +1,9 @@
+{
+  "name": "microsoft/markitdown",
+  "url": "https://github.com/microsoft/markitdown",
+  "description": ": Python tool for converting files and office documents to Markdown.",
+  "section": "Everything to Markdown to LLMs",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

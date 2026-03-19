@@ -1,0 +1,9 @@
+{
+  "name": "netbox",
+  "url": "https://netbox.dev/",
+  "description": "IP address management (IPAM) and data center infrastructure management (DCIM) tool. ([Demo](https://demo.netbox.dev/), [Source Code](https://github.com/netbox-community/netbox)) `Apache-2.0` `Python`",
+  "section": "Configuration Management Database",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

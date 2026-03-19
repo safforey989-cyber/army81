@@ -1,0 +1,9 @@
+{
+  "name": "s7scan",
+  "url": "https://github.com/klsecservices/s7scan",
+  "description": "Scanner for enumerating Siemens S7 PLCs on a TCP/IP or LLC network.",
+  "section": "Industrial Control and SCADA Systems",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

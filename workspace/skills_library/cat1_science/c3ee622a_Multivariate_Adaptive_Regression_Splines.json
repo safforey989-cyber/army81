@@ -1,0 +1,9 @@
+{
+  "name": "Multivariate Adaptive Regression Splines",
+  "url": "https://en.wikipedia.org/wiki/Multivariate_adaptive_regression_spline",
+  "description": "Tool from data_science",
+  "section": "Supervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

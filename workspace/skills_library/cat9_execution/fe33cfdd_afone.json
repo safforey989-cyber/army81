@@ -1,0 +1,9 @@
+{
+  "name": "afone",
+  "url": "https://github.com/automat-berlin/afone/",
+  "description": ": Reference implementation for SIP Telephony that can be used on different SIP stacks with no effort",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

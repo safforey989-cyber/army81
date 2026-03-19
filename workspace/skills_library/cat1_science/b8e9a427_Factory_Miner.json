@@ -1,0 +1,9 @@
+{
+  "name": "Factory Miner",
+  "url": "https://www.sas.com/en_us/software/factory-miner.html",
+  "description": "Automatically creates deployable machine learning models across numerous market or customer segments using a GUI.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

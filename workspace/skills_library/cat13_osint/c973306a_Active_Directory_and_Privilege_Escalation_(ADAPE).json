@@ -1,0 +1,9 @@
+{
+  "name": "Active Directory and Privilege Escalation (ADAPE)",
+  "url": "https://github.com/hausec/ADAPE-Script",
+  "description": "](https://github.com/hausec/ADAPE-Script) - Umbrella script that automates numerous useful PowerShell modules to discover security misconfigurations and attempt privilege escalation against Active Directory.",
+  "section": "Privilege Escalation Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

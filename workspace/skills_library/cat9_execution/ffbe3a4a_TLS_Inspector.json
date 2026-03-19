@@ -1,0 +1,9 @@
+{
+  "name": "TLS Inspector",
+  "url": "https://github.com/tls-inspector/tls-inspector",
+  "description": ": Verify the secure connection information of any website and ensure that your information is private",
+  "section": "Developer",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "JSTOR",
+  "url": "http://www.jstor.org",
+  "description": "Search over 10 million academic journal articles, books, and primary sources.",
+  "section": "[↑](#-table-of-contents) Academic Resources and Grey Literature",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

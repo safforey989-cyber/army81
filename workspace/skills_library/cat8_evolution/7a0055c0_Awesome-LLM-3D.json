@@ -1,0 +1,9 @@
+{
+  "name": "Awesome-LLM-3D",
+  "url": "https://github.com/ActiveVisionLab/Awesome-LLM-3D",
+  "description": "A curated list of Multi-modal Large Language Model in 3D world, including 3D understanding, reasoning, generation, and embodied agents.",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

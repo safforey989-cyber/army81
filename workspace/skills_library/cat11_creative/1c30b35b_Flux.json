@@ -1,0 +1,9 @@
+{
+  "name": "Flux",
+  "url": "https://github.com/black-forest-labs/flux",
+  "description": "Text-to-image models by Black Forest Labs with high-quality photorealistic output. #opensource",
+  "section": "Models",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

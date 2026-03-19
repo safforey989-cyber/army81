@@ -1,0 +1,9 @@
+{
+  "name": "dos-over-tor",
+  "url": "https://github.com/skizap/dos-over-tor",
+  "description": "Proof of concept denial of service over Tor stress test tool.",
+  "section": "Tor Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

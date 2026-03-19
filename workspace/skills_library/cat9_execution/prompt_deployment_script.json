@@ -1,0 +1,7 @@
+{
+  "name": "deployment_script",
+  "type": "prompt_pattern",
+  "prompt_template": "اكتب script نشر لـ {app} على {platform}. Docker, CI/CD, monitoring.",
+  "category": "cat9_execution",
+  "source": "built_in"
+}

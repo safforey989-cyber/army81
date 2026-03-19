@@ -1,0 +1,9 @@
+{
+  "name": "TicTacToe",
+  "url": "https://github.com/pointfreeco/swift-composable-architecture/tree/master/Examples/TicTacToe",
+  "description": ": Demonstrate how to build a full, moderately complex application in the Composable Architecture",
+  "section": "Sample",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

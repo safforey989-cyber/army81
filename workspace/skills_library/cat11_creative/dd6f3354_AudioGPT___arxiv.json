@@ -1,0 +1,9 @@
+{
+  "name": "AudioGPT | arxiv",
+  "url": "https://arxiv.org/abs/2304.12995",
+  "description": ": Understanding and Generating Speech, Music, Sound, and Talking Head [[code]](https://github.com/AIGC-Audio/AudioGPT) [[demo]](https://huggingface.co/spaces/AIGC-Audio/AudioGPT)",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

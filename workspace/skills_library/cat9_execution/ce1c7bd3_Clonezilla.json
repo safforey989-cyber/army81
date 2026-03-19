@@ -1,0 +1,9 @@
+{
+  "name": "Clonezilla",
+  "url": "https://clonezilla.org/",
+  "description": "Partition and disk imaging/cloning program. ([Source Code](https://clonezilla.org/downloads/src/)) `GPL-2.0` `Perl/Shell/Other`",
+  "section": "Miscellaneous",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

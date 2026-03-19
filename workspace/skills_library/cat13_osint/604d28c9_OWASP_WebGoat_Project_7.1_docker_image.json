@@ -1,0 +1,9 @@
+{
+  "name": "OWASP WebGoat Project 7.1 docker image",
+  "url": "https://hub.docker.com/r/webgoat/webgoat-7.1/",
+  "description": "`docker pull webgoat/webgoat-7.1`.",
+  "section": "Intentionally Vulnerable Systems as Docker Containers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

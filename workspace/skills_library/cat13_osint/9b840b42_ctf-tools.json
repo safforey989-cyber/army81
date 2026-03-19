@@ -1,0 +1,9 @@
+{
+  "name": "ctf-tools",
+  "url": "https://github.com/zardus/ctf-tools",
+  "description": "Collection of setup scripts to install various security research tools easily and quickly deployable to new machines.",
+  "section": "CTF Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

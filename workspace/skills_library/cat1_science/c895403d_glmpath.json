@@ -1,0 +1,9 @@
+{
+  "name": "glmpath",
+  "url": "https://cran.r-project.org/web/packages/glmpath/index.html",
+  "description": "glmpath: L1 Regularization Path for Generalized Linear Models and Cox Proportional Hazards Model.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "boxxy",
+  "url": "https://github.com/kpcyrd/boxxy-rs",
+  "description": "Linkable sandbox explorer.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Burp Suite",
+  "url": "https://portswigger.net/burp/",
+  "description": "Integrated platform for performing security testing of web applications.",
+  "section": "Intercepting Web proxies",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

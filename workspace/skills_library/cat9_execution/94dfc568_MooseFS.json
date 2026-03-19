@@ -1,0 +1,9 @@
+{
+  "name": "MooseFS",
+  "url": "https://moosefs.com/",
+  "description": "Fault tolerant, network distributed file system. ([Source Code](https://github.com/moosefs/moosefs)) `GPL-2.0` `C`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

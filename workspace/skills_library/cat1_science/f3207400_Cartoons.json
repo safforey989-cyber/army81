@@ -1,0 +1,9 @@
+{
+  "name": "Cartoons",
+  "url": "https://www.kdnuggets.com/websites/cartoons.html",
+  "description": "Tool from data_science",
+  "section": "Comics",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

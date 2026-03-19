@@ -1,0 +1,9 @@
+{
+  "name": "OpenNebula",
+  "url": "https://opennebula.org/",
+  "description": "Build and manage enterprise clouds for virtualized services, containerized applications and serverless computing. ([Source Code](https://github.com/OpenNebula/one)) `Apache-2.0` `C++`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

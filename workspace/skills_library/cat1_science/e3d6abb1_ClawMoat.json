@@ -1,0 +1,9 @@
+{
+  "name": "ClawMoat",
+  "url": "https://github.com/darfaz/clawmoat",
+  "description": "Open-source runtime security scanner for AI agents. Detects prompt injection, jailbreak, PII leakage, memory poisoning, and tool misuse. Zero deps, MIT licensed.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DuckDB",
+  "url": "https://github.com/duckdb/duckdb",
+  "description": "| An in-process SQL OLAP database management system |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

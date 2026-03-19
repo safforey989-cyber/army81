@@ -1,0 +1,9 @@
+{
+  "name": "FlagAI",
+  "url": "https://github.com/FlagAI-Open/FlagAI",
+  "description": ": FlagAI (Fast LArge-scale General AI models) is a fast, easy-to-use and extensible toolkit for large-scale model. ![GitHub Repo stars](https://img.shields.io/github/stars/FlagAI-Open/FlagAI?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

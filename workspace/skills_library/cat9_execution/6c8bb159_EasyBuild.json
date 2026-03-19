@@ -1,0 +1,9 @@
+{
+  "name": "EasyBuild",
+  "url": "https://easybuild.io/",
+  "description": "EasyBuild builds software and modulefiles for High Performance Computing (HPC) systems in an efficient way. ([Source Code](https://github.com/easybuilders/easybuild-easyconfigs)) `GPL-2.0` `Python`",
+  "section": "Build and software organization tools",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

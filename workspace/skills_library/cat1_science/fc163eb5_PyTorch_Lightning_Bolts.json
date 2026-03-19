@@ -1,0 +1,9 @@
+{
+  "name": "PyTorch Lightning Bolts",
+  "url": "https://github.com/PyTorchLightning/pytorch-lightning-bolts",
+  "description": "Toolbox of models, callbacks, and datasets for AI/ML researchers.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

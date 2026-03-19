@@ -1,0 +1,9 @@
+{
+  "name": "Phi2-2.7B",
+  "url": "https://huggingface.co/microsoft/phi-2",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

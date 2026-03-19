@@ -1,0 +1,9 @@
+{
+  "name": "Terrateam",
+  "url": "https://terrateam.io",
+  "description": "GitOps-first automation platform for Terraform and OpenTofu workflows with support for self-hosted runners. ([Source Code](https://github.com/terrateamio/terrateam)) `MPL-2.0` `OCaml/Docker`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

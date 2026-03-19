@@ -1,0 +1,9 @@
+{
+  "name": "Hermes",
+  "url": "https://github.com/wardle/hermes",
+  "description": "a SNOMED CT terminology server.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

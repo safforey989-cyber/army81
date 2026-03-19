@@ -1,0 +1,9 @@
+{
+  "name": "DeepSec",
+  "url": "https://deepsec.net/",
+  "description": "Security Conference in Vienna, Austria.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

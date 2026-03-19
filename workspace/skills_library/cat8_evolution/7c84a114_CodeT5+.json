@@ -1,0 +1,9 @@
+{
+  "name": "CodeT5+",
+  "url": "https://github.com/salesforce/CodeT5/tree/main/CodeT5+",
+  "description": "| [CodeT5+: Open Code Large Language Models for Code Understanding and Generation](https://arxiv.org/abs/2305.07922) | 0.22 - 16 | [512](https://arxiv.org/abs/2305.07922)                                                                                | [BSD-3-Clause](https://github.com/salesforce/Cod",
+  "section": "Open LLMs for code",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

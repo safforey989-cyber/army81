@@ -1,0 +1,9 @@
+{
+  "name": "Catniff",
+  "url": "https://github.com/nguyenphuminh/catniff",
+  "description": "Torch-like deep learning framework for Javascript with support for tensors, autograd, optimizers, and other neural net constructs.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

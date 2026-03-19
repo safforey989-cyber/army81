@@ -1,0 +1,7 @@
+{
+  "name": "automation_script",
+  "type": "prompt_pattern",
+  "prompt_template": "اكتب script أتمتة لـ {task}. شامل: error handling, logging, scheduling.",
+  "category": "cat3_tools",
+  "source": "built_in"
+}

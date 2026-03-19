@@ -1,0 +1,9 @@
+{
+  "name": "Distributions",
+  "url": "https://github.com/JuliaStats/Distributions.jl",
+  "description": "A Julia package for probability distributions and associated functions.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

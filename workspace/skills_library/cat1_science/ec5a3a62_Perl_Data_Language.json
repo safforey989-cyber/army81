@@ -1,0 +1,9 @@
+{
+  "name": "Perl Data Language",
+  "url": "https://metacpan.org/pod/Paws::MachineLearning",
+  "description": ", a pluggable architecture for data and image processing, which can",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

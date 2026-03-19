@@ -1,0 +1,9 @@
+{
+  "name": "KVM",
+  "url": "https://www.linux-kvm.org",
+  "description": "Linux kernel virtualization infrastructure. ([Source Code](https://git.kernel.org/pub/scm/virt/kvm/kvm.git/)) `GPL-2.0/LGPL-2.0` `C`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

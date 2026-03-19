@@ -1,0 +1,9 @@
+{
+  "name": "Scoruby",
+  "url": "https://github.com/asafschers/scoruby",
+  "description": "Creates Random Forest classifiers from PMML files.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

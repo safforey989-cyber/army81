@@ -1,0 +1,9 @@
+{
+  "name": "Bender",
+  "url": "https://github.com/xmartlabs/Bender",
+  "description": "Fast Neural Networks framework built on top of Metal. Supports TensorFlow models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

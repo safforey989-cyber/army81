@@ -1,0 +1,9 @@
+{
+  "name": "Healthchecks",
+  "url": "https://healthchecks.io/docs/self_hosted/",
+  "description": "Monitoring for cron jobs, background services and scheduled tasks. ([Source Code](https://github.com/healthchecks/healthchecks)) `BSD-3-Clause` `Python`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

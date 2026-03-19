@@ -1,0 +1,9 @@
+{
+  "name": "Text2Video-Zero - a Hugging Face Space by PAIR",
+  "url": "https://huggingface.co/spaces/PAIR/Text2Video-Zero",
+  "description": ": zero-shot text-to-video synthesis diffusion framework [[tweet]](https://twitter.com/_akhaliq/status/1639062868850266112) [[arxiv]](https://arxiv.org/abs/2303.13439)",
+  "section": "Video and Animation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

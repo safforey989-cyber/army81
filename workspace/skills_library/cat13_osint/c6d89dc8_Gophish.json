@@ -1,0 +1,9 @@
+{
+  "name": "Gophish",
+  "url": "https://getgophish.com",
+  "description": "Open-source phishing framework.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

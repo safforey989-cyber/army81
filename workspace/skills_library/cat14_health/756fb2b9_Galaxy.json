@@ -1,0 +1,9 @@
+{
+  "name": "Galaxy",
+  "url": "https://galaxyproject.org/",
+  "description": "Open web-based platform for data intensive biomedical research.",
+  "section": "Bioinformatics",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

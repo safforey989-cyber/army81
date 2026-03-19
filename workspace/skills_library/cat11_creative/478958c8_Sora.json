@@ -1,0 +1,9 @@
+{
+  "name": "Sora",
+  "url": "https://openai.com/sora",
+  "description": ": OpenAI's text-to-video model [[technical report]](https://openai.com/research/video-generation-models-as-world-simulators)",
+  "section": "Video and Animation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

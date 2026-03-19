@@ -1,0 +1,9 @@
+{
+  "name": "dream-creator",
+  "url": "https://github.com/ProGamerGov/dream-creator",
+  "description": "A PyTorch implementation of DeepDream. Allows individuals to quickly and easily train their own custom GoogleNet models with custom datasets for DeepDream.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

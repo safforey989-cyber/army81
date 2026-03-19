@@ -1,0 +1,9 @@
+{
+  "name": "DeathStar",
+  "url": "https://github.com/byt3bl33d3r/DeathStar",
+  "description": "Python script that uses Empire's RESTful API to automate gaining Domain Admin rights in Active Directory environments.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

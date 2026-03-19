@@ -1,0 +1,9 @@
+{
+  "name": "GHDx",
+  "url": "https://ghdx.healthdata.org/",
+  "description": "Institute for Health Metrics and Evaluation - a catalog of health and demographic datasets from around the world and including IHME results",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

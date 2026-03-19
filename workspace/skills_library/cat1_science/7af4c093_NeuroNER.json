@@ -1,0 +1,9 @@
+{
+  "name": "NeuroNER",
+  "url": "https://github.com/Franck-Dernoncourt/NeuroNER",
+  "description": "Named-entity recognition using neural networks providing state-of-the-art-results",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

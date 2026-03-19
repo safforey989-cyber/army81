@@ -1,0 +1,9 @@
+{
+  "name": "RStudio",
+  "url": "https://www.rstudio.com",
+  "description": "| IDE – powerful user interface for R. It’s free and open source, and works on Windows, Mac, and Linux. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Tregex, Tsurgeon and Semgrex",
+  "url": "https://nlp.stanford.edu/software/tregex.shtml",
+  "description": "Tregex is a utility for matching patterns in trees, based on tree relationships and regular expression matches on nodes (the name is short for \"tree regular expressions\").",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

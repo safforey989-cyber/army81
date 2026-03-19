@@ -1,0 +1,9 @@
+{
+  "name": "NETSCOUT Cyber Threat Map",
+  "url": "https://horizon.netscout.com/",
+  "description": "Real-Time DDoS Attack Map",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

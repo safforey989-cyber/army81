@@ -1,0 +1,9 @@
+{
+  "name": "wechat-chatgpt",
+  "url": "https://github.com/fuergaosi233/wechat-chatgpt",
+  "description": "Use ChatGPT On Wechat via wechaty",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

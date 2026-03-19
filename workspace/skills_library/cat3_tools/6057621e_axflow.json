@@ -1,0 +1,9 @@
+{
+  "name": "axflow",
+  "url": "https://github.com/axflow/axflow",
+  "description": ": The TypeScript framework for AI development ![GitHub Repo stars](https://img.shields.io/github/stars/axflow/axflow?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

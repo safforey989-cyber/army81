@@ -1,0 +1,9 @@
+{
+  "name": "hwchase17/langchain",
+  "url": "https://github.com/hwchase17/langchain/",
+  "description": ": \"building applications with LLMs through composability\"",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "lm-evaluation-harness",
+  "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+  "description": "A framework for few-shot evaluation of language models.",
+  "section": "LLM Evaluation:",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "FirstData",
+  "url": "https://github.com/MLT-OSS/FirstData",
+  "description": "The world's most comprehensive authoritative data source knowledge base. 210+ curated sources from governments, international organizations, and research institutions. MCP integration for AI agents. MIT licensed.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

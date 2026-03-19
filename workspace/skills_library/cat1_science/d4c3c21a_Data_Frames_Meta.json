@@ -1,0 +1,9 @@
+{
+  "name": "Data Frames Meta",
+  "url": "https://github.com/JuliaData/DataFramesMeta.jl",
+  "description": "Metaprogramming tools for DataFrames.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

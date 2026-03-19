@@ -1,0 +1,9 @@
+{
+  "name": "book",
+  "url": "http://www.amazon.com/Guide-Reliable-Distributed-Systems-High-Assurance/dp/1447124154",
+  "description": "is also a gem and recommended as a must read in Google's tutorial on [Distributed System Design](http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html)",
+  "section": "Systems",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

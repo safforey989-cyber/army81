@@ -1,0 +1,9 @@
+{
+  "name": "Gradio Template",
+  "url": "https://github.com/hwchase17/langchain-gradio-template",
+  "description": ": template for how to deploy a LangChain on Gradio ![GitHub Repo stars](https://img.shields.io/github/stars/hwchase17/langchain-gradio-template?style=social)",
+  "section": "Templates",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

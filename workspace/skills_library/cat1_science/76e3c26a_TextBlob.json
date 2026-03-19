@@ -1,0 +1,9 @@
+{
+  "name": "TextBlob",
+  "url": "http://textblob.readthedocs.io/en/dev/",
+  "description": "Providing a consistent API for diving into common natural language processing (NLP) tasks. Stands on the giant shoulders of NLTK and Pattern, and plays nicely with both.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Covenant",
+  "url": "https://github.com/cobbr/Covenant",
+  "description": "ASP.NET Core application that serves as a collaborative command and control platform for red teamers.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

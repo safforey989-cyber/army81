@@ -1,0 +1,9 @@
+{
+  "name": "Phi1-1.3B",
+  "url": "https://huggingface.co/microsoft/phi-1",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

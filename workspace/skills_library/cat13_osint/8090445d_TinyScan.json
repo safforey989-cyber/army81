@@ -1,0 +1,9 @@
+{
+  "name": "TinyScan",
+  "url": "https://www.tiny-scan.com",
+  "description": "Another powerful URL scan tool that provides comprehensive information about any given URL. Get insights into IP address, location, screenshots, technology stack, performance metrics, and more.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

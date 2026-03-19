@@ -1,0 +1,9 @@
+{
+  "name": "Realtime deployment",
+  "url": "https://www.microprediction.com/python-1",
+  "description": "Tutorial on Python time-series model deployment.",
+  "section": "Tutorials",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

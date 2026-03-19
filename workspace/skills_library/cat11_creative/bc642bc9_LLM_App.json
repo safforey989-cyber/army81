@@ -1,0 +1,9 @@
+{
+  "name": "LLM App",
+  "url": "https://github.com/pathwaycom/llm-app",
+  "description": ": LLM App is a Python library that helps you build real-time AI-powered data pipelines with few lines of code.",
+  "section": "LLMOps",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

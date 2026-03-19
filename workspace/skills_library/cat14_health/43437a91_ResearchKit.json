@@ -1,0 +1,9 @@
+{
+  "name": "ResearchKit",
+  "url": "https://github.com/ResearchKit/ResearchKit",
+  "description": "Software framework that makes it easy to create apps for medical research or for other research projects.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

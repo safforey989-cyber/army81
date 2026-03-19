@@ -1,0 +1,9 @@
+{
+  "name": "DEF CON",
+  "url": "https://www.defcon.org/",
+  "description": "Annual hacker convention in Las Vegas.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

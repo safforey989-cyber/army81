@@ -1,0 +1,9 @@
+{
+  "name": "Wolfram Alpha",
+  "url": "https://www.wolframalpha.com",
+  "description": "Wolfram Alpha is a computational knowledge engine (answer engine) developed by Wolfram Alpha. It will compute expert-level answers using Wolfram’s breakthrough",
+  "section": "[↑](#-table-of-contents) General Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

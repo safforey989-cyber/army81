@@ -1,0 +1,9 @@
+{
+  "name": "Spamhaus",
+  "url": "https://check.spamhaus.org/",
+  "description": "Lookup Reputation Checker.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

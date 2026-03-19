@@ -1,0 +1,9 @@
+{
+  "name": "rclone",
+  "url": "https://rclone.org/",
+  "description": "Command-line program to sync files and directories to and from different cloud storage providers.. ([Source Code](https://github.com/rclone/rclone)) `MIT` `Go`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

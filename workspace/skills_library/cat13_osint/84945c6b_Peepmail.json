@@ -1,0 +1,9 @@
+{
+  "name": "Peepmail",
+  "url": "http://www.samy.pl/peepmail",
+  "description": "is a tool that allows you to discover business email addresses for users, even if their email address may not be publicly available or shared.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

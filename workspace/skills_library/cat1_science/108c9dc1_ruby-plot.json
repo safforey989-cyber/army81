@@ -1,0 +1,9 @@
+{
+  "name": "ruby-plot",
+  "url": "https://www.ruby-toolbox.com/projects/ruby-plot",
+  "description": "gnuplot wrapper for Ruby, especially for plotting ROC curves into SVG files. **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

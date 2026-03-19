@@ -1,0 +1,9 @@
+{
+  "name": "SuperBench",
+  "url": "https://fm.ai.tsinghua.edu.cn/superbench/#/leaderboard",
+  "description": "a benchmark platform designed for evaluating large language models (LLMs) on a range of tasks, particularly focusing on their performance in different aspects such as natural language understanding, reasoning, and generalization.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "mtr",
+  "url": "https://www.bitwizard.nl/mtr/",
+  "description": "Network utility that combines traceroute and ping. ([Source Code](https://github.com/traviscross/mtr)) `GPL-2.0` `C`",
+  "section": "Troubleshooting",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

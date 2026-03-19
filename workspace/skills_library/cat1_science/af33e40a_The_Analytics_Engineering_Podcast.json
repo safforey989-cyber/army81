@@ -1,0 +1,9 @@
+{
+  "name": "The Analytics Engineering Podcast",
+  "url": "https://roundup.getdbt.com/s/the-analytics-engineering-podcast",
+  "description": "Tool from data_science",
+  "section": "Podcasts",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

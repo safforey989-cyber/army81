@@ -1,0 +1,9 @@
+{
+  "name": "QuivrHQ/MegaParse",
+  "url": "https://github.com/quivrhq/megaparse",
+  "description": ": File Parser optimised for LLM Ingestion with no loss. Parse PDFs, Docx, PPTx in a format that is ideal for LLMs.",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

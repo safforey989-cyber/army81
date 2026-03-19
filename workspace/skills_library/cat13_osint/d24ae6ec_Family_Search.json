@@ -1,0 +1,9 @@
+{
+  "name": "Family Search",
+  "url": "https://familysearch.org",
+  "description": "Popular genealogy site. Free, but registration required. Funded by The Church Of Jesus Christ of Latter-day Saints.",
+  "section": "[↑](#-table-of-contents) People Investigations",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

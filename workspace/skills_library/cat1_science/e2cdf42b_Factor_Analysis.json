@@ -1,0 +1,9 @@
+{
+  "name": "Factor Analysis",
+  "url": "https://scikit-learn.org/stable/modules/decomposition.html#factor-analysis",
+  "description": "Tool from data_science",
+  "section": "Unsupervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

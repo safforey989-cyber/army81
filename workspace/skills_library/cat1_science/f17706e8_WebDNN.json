@@ -1,0 +1,9 @@
+{
+  "name": "WebDNN",
+  "url": "https://github.com/mil-tokyo/webdnn",
+  "description": "Fast Deep Neural Network JavaScript Framework. WebDNN uses next generation JavaScript API, WebGPU for GPU execution, and WebAssembly for CPU execution.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

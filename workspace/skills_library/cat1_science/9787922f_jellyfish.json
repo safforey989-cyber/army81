@@ -1,0 +1,9 @@
+{
+  "name": "jellyfish",
+  "url": "https://github.com/jamesturk/jellyfish",
+  "description": "a python library for doing approximate and phonetic matching of strings.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

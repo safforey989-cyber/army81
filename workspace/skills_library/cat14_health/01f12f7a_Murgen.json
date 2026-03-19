@@ -1,0 +1,9 @@
+{
+  "name": "Murgen",
+  "url": "https://hackaday.io/project/9281-murgen-open-source-ultrasound-imaging",
+  "description": "Ultrasound imaging development kit.",
+  "section": "Hardware",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

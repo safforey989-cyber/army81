@@ -1,0 +1,9 @@
+{
+  "name": "TradingAgents",
+  "url": "https://github.com/TauricResearch/TradingAgents",
+  "description": "Multi-Agents LLM Financial Trading Framework.",
+  "section": "Agents",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

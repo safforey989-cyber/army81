@@ -1,0 +1,9 @@
+{
+  "name": "Qwen1.5-32B",
+  "url": "https://huggingface.co/Qwen/Qwen1.5-32B",
+  "description": ", [Qwen1.5-32B-Chat](https://huggingface.co/Qwen/Qwen1.5-32B-Chat) | [Qwen1.5-32B: Fitting the Capstone of the Qwen1.5 Language Model Series](https://qwenlm.github.io/blog/qwen1.5-32b/) | 32 | [32k](https://huggingface.co/Qwen/Qwen1.5-32B-Chat/blob/main/config.json) | [Custom](https://huggingface.co",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

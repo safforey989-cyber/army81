@@ -1,0 +1,9 @@
+{
+  "name": "Numba",
+  "url": "https://numba.pydata.org/",
+  "description": "Python JIT (just in time) compiler to LLVM aimed at scientific Python by the developers of Cython and NumPy.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

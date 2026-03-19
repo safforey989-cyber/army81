@@ -1,0 +1,9 @@
+{
+  "name": "BruCON",
+  "url": "http://brucon.org",
+  "description": "Annual security conference in Belgium.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Smallstep Certificates",
+  "url": "https://smallstep.com/certificates/",
+  "description": "A private certificate authority (X.509 & SSH) and related tools for secure automated certificate management. ([Source Code](https://github.com/smallstep/certificates)) `Apache-2.0` `Go`",
+  "section": "Identity Management - Tools and web interfaces",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

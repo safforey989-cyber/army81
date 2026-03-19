@@ -1,0 +1,9 @@
+{
+  "name": "MailSniper",
+  "url": "https://github.com/dafthack/MailSniper",
+  "description": "Modular tool for searching through email in a Microsoft Exchange environment, gathering the Global Address List from Outlook Web Access (OWA) and Exchange Web Services (EWS), and more.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

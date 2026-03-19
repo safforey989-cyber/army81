@@ -1,0 +1,9 @@
+{
+  "name": "microsoft/semantic-kernel",
+  "url": "https://github.com/microsoft/semantic-kernel",
+  "description": ": integrate cutting-edge LLM technology quickly and easily into your apps",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

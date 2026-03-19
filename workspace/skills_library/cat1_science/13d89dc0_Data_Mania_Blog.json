@@ -1,0 +1,9 @@
+{
+  "name": "Data Mania Blog",
+  "url": "https://www.data-mania.com/blog/",
+  "description": "[The File Drawer](https://chris-said.io/) - Chris Said's science blog",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

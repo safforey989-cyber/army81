@@ -1,0 +1,9 @@
+{
+  "name": "Serpent.AI",
+  "url": "https://github.com/SerpentAI/SerpentAI",
+  "description": "Serpent.AI is a game agent framework that allows you to turn any video game you own into a sandbox to develop AI and machine learning experiments. For both researchers and hobbyists.",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

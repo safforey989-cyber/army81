@@ -1,0 +1,9 @@
+{
+  "name": "Dupli Checker",
+  "url": "https://www.duplichecker.com/reverse-image-search.php",
+  "description": "You can search for an image by uploading + with URL or typing the keyword or any word you want to explore related to images.",
+  "section": "[↑](#-table-of-contents) Image Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

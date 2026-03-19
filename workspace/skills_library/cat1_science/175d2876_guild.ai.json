@@ -1,0 +1,9 @@
+{
+  "name": "guild.ai",
+  "url": "https://guild.ai/",
+  "description": "Tool to log, analyze, compare and \"optimize\" experiments. It's cross-platform and framework independent, and provided integrated visualizers such as tensorboard.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

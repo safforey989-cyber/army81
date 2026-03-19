@@ -1,0 +1,7 @@
+{
+  "name": "feedback_writer",
+  "type": "prompt_pattern",
+  "prompt_template": "اكتب تغذية راجعة لـ {student_work}. نقاط قوة، تحسين، خطوات تالية.",
+  "category": "cat16_education",
+  "source": "built_in"
+}

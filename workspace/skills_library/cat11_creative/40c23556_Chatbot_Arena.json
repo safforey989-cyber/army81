@@ -1,0 +1,9 @@
+{
+  "name": "Chatbot Arena",
+  "url": "https://chat.lmsys.org/?arena",
+  "description": ": benchmarking LLMs through pairwise confrontation and evaluation",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

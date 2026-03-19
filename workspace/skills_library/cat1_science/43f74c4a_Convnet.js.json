@@ -1,0 +1,9 @@
+{
+  "name": "Convnet.js",
+  "url": "https://cs.stanford.edu/people/karpathy/convnetjs/",
+  "description": "ConvNetJS is a JavaScript library for training Deep Learning models[DEEP LEARNING] **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

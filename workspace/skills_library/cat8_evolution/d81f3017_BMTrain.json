@@ -1,0 +1,9 @@
+{
+  "name": "BMTrain",
+  "url": "https://github.com/OpenBMB/BMTrain",
+  "description": "Efficient Training for Big Models.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "osu!",
+  "url": "https://github.com/ppy/osu",
+  "description": ": Rhythm game",
+  "section": "Game",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

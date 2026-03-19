@@ -1,0 +1,9 @@
+{
+  "name": "plotly",
+  "url": "https://plot.ly/python/",
+  "description": "Collaborative web plotting for Python and matplotlib.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

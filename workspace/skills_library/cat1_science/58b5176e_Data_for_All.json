@@ -1,0 +1,9 @@
+{
+  "name": "Data for All",
+  "url": "https://www.manning.com/books/data-for-all",
+  "description": "Tool from data_science",
+  "section": "Books",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

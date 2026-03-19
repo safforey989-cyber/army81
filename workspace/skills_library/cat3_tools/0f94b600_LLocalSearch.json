@@ -1,0 +1,9 @@
+{
+  "name": "LLocalSearch",
+  "url": "https://github.com/nilsherzig/LLocalSearch",
+  "description": ": LLocalSearch is a completely locally running search aggregator using LLM Agents. The user can ask a question and the system will use a chain of LLMs to find the answer. The user can see the progress of the agents and the final answer. No OpenAI or Google API keys are needed. ![GitHub Repo stars](h",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

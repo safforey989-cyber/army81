@@ -1,0 +1,9 @@
+{
+  "name": "Spago",
+  "url": "https://github.com/nlpodyssey/spago",
+  "description": "Self-contained Machine Learning and Natural Language Processing library in Go.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

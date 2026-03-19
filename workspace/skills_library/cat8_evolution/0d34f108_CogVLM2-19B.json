@@ -1,0 +1,9 @@
+{
+  "name": "CogVLM2-19B",
+  "url": "https://huggingface.co/collections/THUDM/cogvlm2-6645f36a29948b67dc4eef75",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

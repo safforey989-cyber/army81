@@ -1,0 +1,9 @@
+{
+  "name": "sd-concepts-library (Stable Diffusion concepts library)",
+  "url": "https://huggingface.co/sd-concepts-library",
+  "description": "](https://huggingface.co/sd-concepts-library): Stable Diffusion Textual Inversion Concepts Library - browse through objects and styles taught by the community to Stable Diffusion and use them in your prompts!",
+  "section": "Textual Inversion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

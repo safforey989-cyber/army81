@@ -1,0 +1,9 @@
+{
+  "name": "HuobiFeeder",
+  "url": "https://github.com/mmmaaaggg/HuobiFeeder",
+  "description": "Connect HUOBIPRO exchange, get market/historical data for ABAT trading platform backtest analysis and live trading.",
+  "section": "Exchange API",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

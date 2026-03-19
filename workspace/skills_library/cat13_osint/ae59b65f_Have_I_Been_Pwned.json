@@ -1,0 +1,9 @@
+{
+  "name": "Have I Been Pwned",
+  "url": "https://haveibeenpwned.com",
+  "description": "Search across multiple data breaches to see if your email address has been compromised.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

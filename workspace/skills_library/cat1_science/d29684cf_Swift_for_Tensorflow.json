@@ -1,0 +1,9 @@
+{
+  "name": "Swift for Tensorflow",
+  "url": "https://github.com/tensorflow/swift",
+  "description": "a next-generation platform for machine learning, incorporating the latest research across machine learning, compilers, differentiable programming, systems design, and beyond.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

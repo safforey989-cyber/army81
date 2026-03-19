@@ -1,0 +1,9 @@
+{
+  "name": "leaves",
+  "url": "https://github.com/dmitryikh/leaves",
+  "description": "A pure Go implementation of the prediction part of GBRTs, including XGBoost and LightGBM.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ATLAS",
+  "url": "https://github.com/chrisworsey55/atlas-gic",
+  "description": "Self-improving AI trading system with 25 agents, Karpathy-style autoresearch, Darwinian selection, autonomous agent spawning, and multi-cohort meta-weighting.",
+  "section": "Agents",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

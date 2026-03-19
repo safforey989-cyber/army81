@@ -1,0 +1,7 @@
+{
+  "name": "data_pipeline",
+  "type": "prompt_pattern",
+  "prompt_template": "صمم data pipeline يأخذ {input} ويحوله لـ {output}. شامل: validation, transformation, loading.",
+  "category": "cat3_tools",
+  "source": "built_in"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Hugging Face Audio Course",
+  "url": "https://huggingface.co/learn/audio-course/chapter0/introduction",
+  "description": "Tool from aigc_tutorials",
+  "section": "🔊 AI Audio",
+  "topic": "aigc_tutorials",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

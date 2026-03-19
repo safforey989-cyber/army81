@@ -1,0 +1,9 @@
+{
+  "name": "LDA.js",
+  "url": "https://github.com/primaryobjects/lda",
+  "description": "LDA topic modelling for Node.js",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

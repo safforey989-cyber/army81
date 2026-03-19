@@ -1,0 +1,9 @@
+{
+  "name": "Offensive Web Testing Framework (OWTF)",
+  "url": "https://www.owasp.org/index.php/OWASP_OWTF",
+  "description": "](https://www.owasp.org/index.php/OWASP_OWTF) - Python-based framework for pentesting Web applications based on the OWASP Testing Guide.",
+  "section": "Web Exploitation",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

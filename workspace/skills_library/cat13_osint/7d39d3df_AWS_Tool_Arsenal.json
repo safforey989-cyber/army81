@@ -1,0 +1,9 @@
+{
+  "name": "AWS Tool Arsenal",
+  "url": "https://github.com/toniblyx/my-arsenal-of-aws-security-tools",
+  "description": "List of tools for testing and securing AWS environments.",
+  "section": "Other Lists Online",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

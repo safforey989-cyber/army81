@@ -1,0 +1,9 @@
+{
+  "name": "Camel-AutoGPT",
+  "url": "https://github.com/SamurAIGPT/Camel-AutoGPT",
+  "description": ": role-playing approach for LLMs and auto-agents like BabyAGI & AutoGPT ![GitHub Repo stars](https://img.shields.io/github/stars/SamurAIGPT/Camel-AutoGPT?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "frequency_analyzer",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل ترددات {signal}. أنماط، harmonics، تطبيقات.",
+  "category": "cat17_cosmic",
+  "source": "built_in"
+}

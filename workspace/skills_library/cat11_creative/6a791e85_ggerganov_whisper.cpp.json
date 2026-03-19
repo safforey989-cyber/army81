@@ -1,0 +1,9 @@
+{
+  "name": "ggerganov/whisper.cpp",
+  "url": "https://github.com/ggerganov/whisper.cpp",
+  "description": ": Port of OpenAI's Whisper model in C/C++. It can be executed locally.",
+  "section": "Speech-to-text (STT) and spoken content analysis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

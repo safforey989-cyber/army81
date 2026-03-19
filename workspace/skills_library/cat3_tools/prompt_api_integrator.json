@@ -1,0 +1,7 @@
+{
+  "name": "api_integrator",
+  "type": "prompt_pattern",
+  "prompt_template": "اكتب كود Python لدمج {api_name} API. شامل: authentication, error handling, rate limiting.",
+  "category": "cat3_tools",
+  "source": "built_in"
+}

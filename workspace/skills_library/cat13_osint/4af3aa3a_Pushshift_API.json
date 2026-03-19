@@ -1,0 +1,9 @@
+{
+  "name": "Pushshift API",
+  "url": "https://pushshift.io/",
+  "description": "A powerful API that provides access to historical Reddit data, including posts, comments, and metadata for analysis and research—more information [here](https://www.reddit.com/r/pushshift/).",
+  "section": "[↑](#-table-of-contents) Reddit",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

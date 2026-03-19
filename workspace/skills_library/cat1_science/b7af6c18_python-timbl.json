@@ -1,0 +1,9 @@
+{
+  "name": "python-timbl",
+  "url": "https://github.com/proycon/python-timbl",
+  "description": "A Python extension module wrapping the full TiMBL C++ programming interface. Timbl is an elaborate k-Nearest Neighbours machine learning toolkit.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

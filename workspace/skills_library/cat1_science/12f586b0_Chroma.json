@@ -1,0 +1,9 @@
+{
+  "name": "Chroma",
+  "url": "https://www.trychroma.com/",
+  "description": "Open-source search and retrieval database for AI applications. Vector, full-text, regex, and metadata search. [Self-host](https://docs.trychroma.com) or [Cloud](https://trychroma.com/signup) available.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

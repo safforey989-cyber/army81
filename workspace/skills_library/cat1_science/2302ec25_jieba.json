@@ -1,0 +1,9 @@
+{
+  "name": "jieba",
+  "url": "https://github.com/fxsjy/jieba#jieba-1",
+  "description": "Chinese Words Segmentation Utilities.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

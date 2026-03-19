@@ -1,0 +1,9 @@
+{
+  "name": "Find YouTube Video",
+  "url": "https://findyoutubevideo.thetechrobo.ca/",
+  "description": "Searches currently 5 YouTube archives for specific videos by ID, which is really useful for finding deleted or private YouTube videos.",
+  "section": "[↑](#-table-of-contents) Video Search and Other Video Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

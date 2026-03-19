@@ -1,0 +1,9 @@
+{
+  "name": "plot-rb",
+  "url": "https://github.com/zuhao/plotrb",
+  "description": "A plotting library in Ruby built on top of Vega and D3. **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

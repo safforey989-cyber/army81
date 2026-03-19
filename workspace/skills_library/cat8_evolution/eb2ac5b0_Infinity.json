@@ -1,0 +1,9 @@
+{
+  "name": "Infinity",
+  "url": "https://github.com/michaelfeil/infinity",
+  "description": "Inference for text-embeddings in Python",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

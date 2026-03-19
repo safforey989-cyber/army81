@@ -1,0 +1,9 @@
+{
+  "name": "Gitrecon",
+  "url": "https://github.com/atiilla/gitrecon",
+  "description": "Node.js tool to scan GitHub repositories for exposed email addresses and names.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

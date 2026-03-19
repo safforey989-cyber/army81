@@ -1,0 +1,9 @@
+{
+  "name": "Apache Hama",
+  "url": "https://hama.apache.org/",
+  "description": "| Apache Hama is an Apache Top-Level open source project, allowing you to do advanced analytics beyond MapReduce. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

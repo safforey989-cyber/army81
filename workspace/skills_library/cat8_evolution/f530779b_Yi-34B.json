@@ -1,0 +1,9 @@
+{
+  "name": "Yi-34B",
+  "url": "https://huggingface.co/collections/01-ai/yi-2023-11-663f3f19119ff712e176720f",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

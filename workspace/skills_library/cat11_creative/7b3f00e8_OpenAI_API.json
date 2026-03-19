@@ -1,0 +1,9 @@
+{
+  "name": "OpenAI API",
+  "url": "https://openai.com/blog/openai-api/",
+  "description": "Announcement of the OpenAI API for text-to-text general-purpose AI models based on GPT-3. OpenAI blog, June 11, 2020.",
+  "section": "Milestones",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

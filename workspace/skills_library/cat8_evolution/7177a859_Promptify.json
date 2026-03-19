@@ -1,0 +1,9 @@
+{
+  "name": "Promptify",
+  "url": "https://github.com/promptslab/Promptify",
+  "description": "A small Python library for using language models to perform NLP tasks.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

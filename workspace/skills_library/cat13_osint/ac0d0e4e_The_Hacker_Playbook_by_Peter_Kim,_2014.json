@@ -1,0 +1,9 @@
+{
+  "name": "The Hacker Playbook by Peter Kim, 2014",
+  "url": "http://www.amazon.com/The-Hacker-Playbook-Practical-Penetration/dp/1494932636/",
+  "description": "Tool from pentest_tools",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

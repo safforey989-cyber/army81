@@ -1,0 +1,9 @@
+{
+  "name": "TLDR Man Page",
+  "url": "https://github.com/freesuraj/TLDR",
+  "description": ": Reference dictionary for computer manual commands, but in tl;dr (too long; didn't read) mode",
+  "section": "Developer",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "wordtune",
+  "url": "https://www.wordtune.com/",
+  "description": "Personal writing assistant.",
+  "section": "Writing assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Ziran",
+  "url": "https://github.com/taoq-ai/ziran",
+  "description": ": Open-source security testing framework for AI agents. Discovers dangerous tool chain compositions via graph analysis, detects execution-level side effects, and runs multi-phase trust exploitation campaigns. ![GitHub Repo stars](https://img.shields.io/github/stars/taoq-ai/ziran?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

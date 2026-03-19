@@ -1,0 +1,9 @@
+{
+  "name": "Puppet",
+  "url": "https://www.puppet.com/",
+  "description": "Software configuration management tool which includes its own declarative language to describe system configuration. ([Source Code](https://github.com/puppetlabs/puppet)) `Apache-2.0` `Ruby/C`",
+  "section": "Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

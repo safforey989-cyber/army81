@@ -1,0 +1,9 @@
+{
+  "name": "forecastHybrid",
+  "url": "https://cran.r-project.org/web/packages/forecastHybrid/index.html",
+  "description": "forecastHybrid: Automatic ensemble and cross validation of ARIMA, ETS, STLM, TBATS, and neural network models from the \"forecast\" package.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

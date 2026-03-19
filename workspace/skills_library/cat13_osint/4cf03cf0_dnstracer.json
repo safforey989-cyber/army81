@@ -1,0 +1,9 @@
+{
+  "name": "dnstracer",
+  "url": "http://www.mavetju.org/unix/dnstracer.php",
+  "description": "Determines where a given DNS server gets its information from, and follows the chain of DNS servers.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

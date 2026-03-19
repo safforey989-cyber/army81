@@ -1,0 +1,9 @@
+{
+  "name": "Salt",
+  "url": "https://docs.saltproject.io/",
+  "description": "Event-driven IT automation, remote task execution, and configuration management software. ([Source Code](https://github.com/saltstack/salt)) `Apache-2.0` `Python`",
+  "section": "Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

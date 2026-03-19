@@ -1,0 +1,9 @@
+{
+  "name": "wifiphisher",
+  "url": "https://github.com/sophron/wifiphisher",
+  "description": "Automated phishing attacks against WiFi networks.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

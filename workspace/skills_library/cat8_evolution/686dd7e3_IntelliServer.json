@@ -1,0 +1,9 @@
+{
+  "name": "IntelliServer",
+  "url": "https://github.com/intelligentnode/IntelliServer",
+  "description": "simplifies the evaluation of LLMs by providing a unified microservice to access and test multiple AI models.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

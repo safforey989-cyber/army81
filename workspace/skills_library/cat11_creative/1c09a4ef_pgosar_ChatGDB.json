@@ -1,0 +1,9 @@
+{
+  "name": "pgosar/ChatGDB",
+  "url": "https://github.com/pgosar/ChatGDB",
+  "description": ": \"Harness the power of ChatGPT inside the GDB debugger\"",
+  "section": "AI-Powered Code Generation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

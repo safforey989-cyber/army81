@@ -1,0 +1,9 @@
+{
+  "name": "SuperAgent",
+  "url": "https://github.com/homanp/superagent",
+  "description": ": Deploy LLM Agents to production ![GitHub Repo stars](https://img.shields.io/github/stars/homanp/superagent?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

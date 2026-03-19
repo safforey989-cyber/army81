@@ -1,0 +1,9 @@
+{
+  "name": "Wireshark",
+  "url": "https://www.wireshark.org/",
+  "description": "Widely-used graphical, cross-platform network protocol analyzer.",
+  "section": "Protocol Analyzers and Sniffers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

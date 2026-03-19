@@ -1,0 +1,9 @@
+{
+  "name": "SpriteKitWatchFace",
+  "url": "https://github.com/steventroughtonsmith/SpriteKitWatchFace",
+  "description": ": SpriteKit-based faux analog watch face example for watchOS",
+  "section": "Apple Watch",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

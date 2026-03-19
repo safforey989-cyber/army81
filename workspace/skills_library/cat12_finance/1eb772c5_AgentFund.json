@@ -1,0 +1,9 @@
+{
+  "name": "AgentFund",
+  "url": "https://github.com/RioBot-Grind/agentfund",
+  "description": "Decentralized crowdfunding platform for AI agents with milestone-based escrow on Base blockchain.",
+  "section": "Agents",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

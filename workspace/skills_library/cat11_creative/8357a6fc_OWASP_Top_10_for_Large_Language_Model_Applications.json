@@ -1,0 +1,9 @@
+{
+  "name": "OWASP Top 10 for Large Language Model Applications",
+  "url": "https://llmtop10.com/",
+  "description": ": the Open Worldwide Application Security Project's list related to LLMs [[Youtube video]](https://www.youtube.com/watch?v=engR9tYSsug)",
+  "section": "Attacks on LLMs",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

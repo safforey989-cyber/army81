@@ -1,0 +1,9 @@
+{
+  "name": "CoreDNS",
+  "url": "https://coredns.io/",
+  "description": "Flexible DNS server. ([Source Code](https://github.com/coredns/coredns)) `Apache-2.0` `Go`",
+  "section": "DNS - Servers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

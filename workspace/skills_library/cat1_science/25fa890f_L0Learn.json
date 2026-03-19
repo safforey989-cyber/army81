@@ -1,0 +1,9 @@
+{
+  "name": "L0Learn",
+  "url": "https://cran.r-project.org/web/packages/L0Learn/index.html",
+  "description": "L0Learn: Fast algorithms for best subset selection.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

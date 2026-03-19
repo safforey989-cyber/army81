@@ -1,0 +1,9 @@
+{
+  "name": "ruptime",
+  "url": "https://github.com/alexmyczko/ruptime",
+  "description": "Classic system status server. `AGPL-3.0` `Shell`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

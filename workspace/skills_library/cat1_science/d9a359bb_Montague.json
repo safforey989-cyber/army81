@@ -1,0 +1,9 @@
+{
+  "name": "Montague",
+  "url": "https://github.com/Workday/upshot-montague",
+  "description": "Montague is a semantic parsing library for Scala with an easy-to-use DSL.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

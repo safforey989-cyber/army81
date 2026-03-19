@@ -1,0 +1,9 @@
+{
+  "name": "e2b",
+  "url": "https://github.com/e2b-dev/e2b",
+  "description": ": Open-source platform for building & deploying virtual developers’ agents",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

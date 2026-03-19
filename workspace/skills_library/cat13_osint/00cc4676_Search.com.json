@@ -1,0 +1,9 @@
+{
+  "name": "Search.com",
+  "url": "https://www.search.com",
+  "description": "Search the Web by searching the best engines from one place.",
+  "section": "[↑](#-table-of-contents) General Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

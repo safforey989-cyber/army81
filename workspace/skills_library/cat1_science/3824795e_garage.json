@@ -1,0 +1,9 @@
+{
+  "name": "garage",
+  "url": "https://github.com/rlworkgroup/garage",
+  "description": "A toolkit for reproducible reinforcement learning research",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

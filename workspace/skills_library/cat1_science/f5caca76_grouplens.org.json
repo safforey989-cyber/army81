@@ -1,0 +1,9 @@
+{
+  "name": "grouplens.org",
+  "url": "https://grouplens.org/datasets/",
+  "description": "Sample movie (with ratings), book and wiki datasets",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

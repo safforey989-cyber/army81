@@ -1,0 +1,9 @@
+{
+  "name": "CrewAI",
+  "url": "https://github.com/joaomdmoura/crewai",
+  "description": ": Cutting-edge framework for orchestrating role-playing, autonomous AI agents. ![GitHub Repo stars](https://img.shields.io/github/stars/joaomdmoura/crewai?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

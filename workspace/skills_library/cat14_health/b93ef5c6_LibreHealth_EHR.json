@@ -1,0 +1,9 @@
+{
+  "name": "LibreHealth EHR",
+  "url": "https://librehealth.io/projects/lh-ehr/",
+  "description": "Clinically-focused Electronic Health Record System.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ArsTechnica OpenForum",
+  "url": "https://arstechnica.com/civis/",
+  "description": "IT Forum which is attached to a large news site.",
+  "section": "Communities / Forums",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

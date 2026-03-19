@@ -1,0 +1,9 @@
+{
+  "name": "Spark NLP",
+  "url": "https://github.com/JohnSnowLabs/spark-nlp",
+  "description": "Natural language processing library built on top of Apache Spark ML to provide simple, performant, and accurate NLP annotations for machine learning pipelines, that scale easily in a distributed environment.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

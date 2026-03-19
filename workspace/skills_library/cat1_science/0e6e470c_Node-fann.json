@@ -1,0 +1,9 @@
+{
+  "name": "Node-fann",
+  "url": "https://github.com/rlidwka/node-fann",
+  "description": "FANN (Fast Artificial Neural Network Library) bindings for Node.js **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

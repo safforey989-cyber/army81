@@ -1,0 +1,9 @@
+{
+  "name": "Kaggle",
+  "url": "https://www.kaggle.com/learn",
+  "description": "Learn about Data Science, Machine Learning, Python etc",
+  "section": "Free Courses",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

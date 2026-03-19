@@ -1,0 +1,9 @@
+{
+  "name": "LLocalSearch",
+  "url": "https://github.com/nilsherzig/LLocalSearch",
+  "description": "Locally running websearch using LLM chains",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

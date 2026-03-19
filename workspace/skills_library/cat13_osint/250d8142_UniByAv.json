@@ -1,0 +1,9 @@
+{
+  "name": "UniByAv",
+  "url": "https://github.com/Mr-Un1k0d3r/UniByAv",
+  "description": "Simple obfuscator that takes raw shellcode and generates Anti-Virus friendly executables by using a brute-forcable, 32-bit XOR key.",
+  "section": "Anti-virus Evasion Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Gower Express",
+  "url": "https://github.com/momonga-ml/gower-express.git",
+  "description": "The Fastest Gower Distance Implementation for Python. GPU-accelerated similarity matching for mixed data types, 15-25% faster than alternatives with production-ready reliability.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

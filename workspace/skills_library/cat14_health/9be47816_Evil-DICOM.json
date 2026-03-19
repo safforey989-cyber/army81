@@ -1,0 +1,9 @@
+{
+  "name": "Evil-DICOM",
+  "url": "https://github.com/rexcardan/Evil-DICOM",
+  "description": "C# DICOM Library.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

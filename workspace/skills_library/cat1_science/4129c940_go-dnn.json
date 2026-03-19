@@ -1,0 +1,9 @@
+{
+  "name": "go-dnn",
+  "url": "https://github.com/sudachen/go-dnn",
+  "description": "Deep Neural Networks for Golang (powered by MXNet)",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

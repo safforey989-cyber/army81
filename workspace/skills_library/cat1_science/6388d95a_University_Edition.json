@@ -1,0 +1,9 @@
+{
+  "name": "University Edition",
+  "url": "https://www.sas.com/en_us/software/university-edition.html",
+  "description": "FREE! Includes all SAS packages necessary for data analysis and visualization, and includes online SAS courses.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

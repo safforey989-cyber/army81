@@ -1,0 +1,9 @@
+{
+  "name": "Jamba-v0.1",
+  "url": "https://huggingface.co/ai21labs/Jamba-v0.1",
+  "description": "| [Introducing Jamba: AI21's Groundbreaking SSM-Transformer Model](https://www.ai21.com/blog/announcing-jamba) | 52 | [256k](https://huggingface.co/ai21labs/Jamba-v0.1/blob/main/config.json) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

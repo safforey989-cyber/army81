@@ -1,0 +1,9 @@
+{
+  "name": "FaviconHash",
+  "url": "https://kriztalz.sh/favicon-hash/",
+  "description": "Generate favicon hashes of a website for use on Shodan, VirusTotal, Censys, ZoomEye or FOFA.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

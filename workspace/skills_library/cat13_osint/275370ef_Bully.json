@@ -1,0 +1,9 @@
+{
+  "name": "Bully",
+  "url": "http://git.kali.org/gitweb/?p=packages/bully.git;a=summary",
+  "description": "Implementation of the WPS brute force attack, written in C.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

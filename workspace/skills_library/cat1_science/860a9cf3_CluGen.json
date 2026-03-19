@@ -1,0 +1,9 @@
+{
+  "name": "CluGen",
+  "url": "https://github.com/clugen/CluGen.jl/",
+  "description": "Multidimensional cluster generation in Julia.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

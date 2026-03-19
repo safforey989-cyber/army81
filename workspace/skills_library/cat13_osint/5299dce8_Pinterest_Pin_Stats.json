@@ -1,0 +1,9 @@
+{
+  "name": "Pinterest Pin Stats",
+  "url": "https://chromewebstore.google.com/detail/pinterest-pin-stats-sort/mcmkeopcpbfgjlakblglpcccpodbjkel",
+  "description": "Display hidden Pinterest stats for each pin.",
+  "section": "[↑](#-table-of-contents) Pinterest",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

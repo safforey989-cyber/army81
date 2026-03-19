@@ -1,0 +1,9 @@
+{
+  "name": "Panthera",
+  "url": "https://github.com/alanmarazzi/panthera",
+  "description": "Clojure API wrapping Python's Pandas library",
+  "section": "Data Analysis",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

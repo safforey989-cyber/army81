@@ -1,0 +1,9 @@
+{
+  "name": "Malpedia",
+  "url": "https://malpedia.caad.fkie.fraunhofer.de/actors",
+  "description": "Get List of threat actor groups.",
+  "section": "[↑](#-threat-actor-search) Threat Actor Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

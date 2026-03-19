@@ -1,0 +1,9 @@
+{
+  "name": "waybackpy",
+  "url": "https://github.com/akamhy/waybackpy",
+  "description": "Python package & CLI tool that interfaces the Wayback Machine APIs.",
+  "section": "[↑](#-table-of-contents) Web History and Website Capture",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

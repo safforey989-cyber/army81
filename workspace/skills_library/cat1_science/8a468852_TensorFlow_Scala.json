@@ -1,0 +1,9 @@
+{
+  "name": "TensorFlow Scala",
+  "url": "https://github.com/eaplatanios/tensorflow_scala",
+  "description": "Strongly-typed Scala API for TensorFlow.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

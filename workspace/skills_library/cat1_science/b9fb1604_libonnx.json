@@ -1,0 +1,9 @@
+{
+  "name": "libonnx",
+  "url": "https://github.com/xboot/libonnx",
+  "description": "A lightweight, portable pure C99 onnx inference engine for embedded devices with hardware acceleration support.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

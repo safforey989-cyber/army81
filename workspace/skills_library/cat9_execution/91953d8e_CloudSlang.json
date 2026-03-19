@@ -1,0 +1,9 @@
+{
+  "name": "CloudSlang",
+  "url": "https://www.cloudslang.io/",
+  "description": "Flow-based orchestration tool for managing deployed applications, with Docker capabilities. ([Source Code](https://github.com/CloudSlang/score)) `Apache-2.0` `Java`",
+  "section": "Deployment Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

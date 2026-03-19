@@ -1,0 +1,9 @@
+{
+  "name": "Pwntools",
+  "url": "https://github.com/Gallopsled/pwntools",
+  "description": "Rapid exploit development framework built for use in CTFs.",
+  "section": "Exploit Development Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

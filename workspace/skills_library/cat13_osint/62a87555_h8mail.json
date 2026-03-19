@@ -1,0 +1,9 @@
+{
+  "name": "h8mail",
+  "url": "https://github.com/khast3x/h8mail",
+  "description": "Password Breach Hunting and Email OSINT, locally or using premium services. Supports chasing down related email.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

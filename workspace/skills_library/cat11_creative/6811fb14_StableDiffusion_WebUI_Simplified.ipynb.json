@@ -1,0 +1,9 @@
+{
+  "name": "StableDiffusion_WebUI_Simplified.ipynb",
+  "url": "https://colab.research.google.com/github/filipecalegario/awesome-generative-deep-art/blob/main/StableDiffusion_WebUI_Simplified.ipynb",
+  "description": ": versão em português do notebook para rodar a Web UI do Stable Diffusion no Google Colab de graça",
+  "section": "Web UI for Stable Diffusion via Google Colab",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

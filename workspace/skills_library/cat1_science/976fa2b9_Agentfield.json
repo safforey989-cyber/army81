@@ -1,0 +1,9 @@
+{
+  "name": "Agentfield",
+  "url": "https://github.com/Agent-Field/agentfield",
+  "description": "Open source Kubernetes-style control plane for deploying AI agents as distributed microservices, with built-in service discovery, durable workflows, and observability.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Vapor Chat",
+  "url": "https://github.com/vapor-community/chat-ios-example",
+  "description": ": Basic realtime chat project using Vapor on the server",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

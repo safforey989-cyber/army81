@@ -1,0 +1,9 @@
+{
+  "name": "Learning.js",
+  "url": "https://github.com/yandongliu/learningjs",
+  "description": "JavaScript implementation of logistic regression/c4.5 decision tree **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

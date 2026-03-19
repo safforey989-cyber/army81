@@ -1,0 +1,9 @@
+{
+  "name": "OpenVPN",
+  "url": "https://community.openvpn.net",
+  "description": "Uses a custom security protocol that utilizes SSL/TLS for key exchange. ([Source Code](https://github.com/OpenVPN/openvpn)) `GPL-2.0` `C`",
+  "section": "VPN",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Scikit-Survival",
+  "url": "https://github.com/sebp/scikit-survival",
+  "description": "scikit-survival is a Python module for survival analysis built on top of scikit-learn. It allows doing survival analysis while utilizing the power of scikit-learn, e.g., for pre-processing or doing cross-validation.",
+  "section": "Python Survival Analysis",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

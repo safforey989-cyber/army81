@@ -1,0 +1,9 @@
+{
+  "name": "Ajenti",
+  "url": "https://ajenti.org/",
+  "description": "Control panel for Linux and BSD. ([Source Code](https://github.com/ajenti/ajenti)) `MIT` `Python/Shell`",
+  "section": "Control Panels",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

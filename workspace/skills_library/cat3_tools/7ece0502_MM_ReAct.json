@@ -1,0 +1,9 @@
+{
+  "name": "MM ReAct",
+  "url": "https://github.com/microsoft/MM-REACT",
+  "description": ": Multi Modal ReAct Design",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

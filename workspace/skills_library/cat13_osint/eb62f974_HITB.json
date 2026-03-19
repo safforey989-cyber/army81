@@ -1,0 +1,9 @@
+{
+  "name": "HITB",
+  "url": "https://conference.hitb.org/",
+  "description": "Deep-knowledge security conference held in Malaysia and The Netherlands.",
+  "section": "Asia",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

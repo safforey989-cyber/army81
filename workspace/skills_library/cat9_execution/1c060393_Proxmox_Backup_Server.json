@@ -1,0 +1,9 @@
+{
+  "name": "Proxmox Backup Server",
+  "url": "https://www.proxmox.com/en/proxmox-backup-server",
+  "description": "Proxmox Backup Server is an enterprise-class, client-server backup solution thatis capable of backing up virtual machines, containers, and physical hosts. ([Source Code](https://git.proxmox.com/?p=proxmox-backup.git;a=tree)) `GPL-3.0` `Rust`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

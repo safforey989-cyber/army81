@@ -1,0 +1,9 @@
+{
+  "name": "nnet",
+  "url": "https://cran.r-project.org/web/packages/nnet/index.html",
+  "description": "nnet: Feed-forward Neural Networks and Multinomial Log-Linear Models. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

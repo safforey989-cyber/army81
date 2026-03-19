@@ -1,0 +1,9 @@
+{
+  "name": "Reverse Phone Lookup",
+  "url": "http://www.reversephonelookup.com/",
+  "description": "Detailed information about phone carrier, region, service provider, and switch information.",
+  "section": "[↑](#-table-of-contents) Phone Number Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

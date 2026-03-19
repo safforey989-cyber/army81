@@ -1,0 +1,9 @@
+{
+  "name": "authoscope",
+  "url": "https://github.com/kpcyrd/authoscope",
+  "description": "Scriptable network authentication cracker.",
+  "section": "Web Exploitation",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

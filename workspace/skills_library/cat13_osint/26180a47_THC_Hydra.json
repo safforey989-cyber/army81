@@ -1,0 +1,9 @@
+{
+  "name": "THC Hydra",
+  "url": "https://github.com/vanhauser-thc/thc-hydra",
+  "description": "Online password cracking tool with built-in support for many network protocols, including HTTP, SMB, FTP, telnet, ICQ, MySQL, LDAP, IMAP, VNC, and more.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

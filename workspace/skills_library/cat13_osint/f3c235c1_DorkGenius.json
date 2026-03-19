@@ -1,0 +1,9 @@
+{
+  "name": "DorkGenius",
+  "url": "https://dorkgenius.com/",
+  "description": "DorkGenius is the ultimate tool for generating custom search queries for Google, Bing, and DuckDuckGo. - Our cutting-edge app uses the power of AI to help you create advanced search queries that can find exactly what you're looking for on the web.",
+  "section": "[↑](#-google-dorks-tools) Google Dorks Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

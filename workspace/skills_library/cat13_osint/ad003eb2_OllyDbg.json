@@ -1,0 +1,9 @@
+{
+  "name": "OllyDbg",
+  "url": "http://www.ollydbg.de/",
+  "description": "x86 debugger for Windows binaries that emphasizes binary code analysis.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

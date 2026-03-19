@@ -1,0 +1,9 @@
+{
+  "name": "Armitage",
+  "url": "http://fastandeasyhacking.com/",
+  "description": "Java-based GUI front-end for the Metasploit Framework.",
+  "section": "Multi-paradigm Frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

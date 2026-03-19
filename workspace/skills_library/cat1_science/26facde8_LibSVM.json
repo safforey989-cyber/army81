@@ -1,0 +1,9 @@
+{
+  "name": "LibSVM",
+  "url": "https://www.csie.ntu.edu.tw/~cjlin/libsvm/#matlab",
+  "description": "A Library for Support Vector Machines.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+  "url": "https://arxiv.org/abs/2312.10997",
+  "description": "Tool from generative_ai",
+  "section": "Retrieval-Augmented Generation (RAG)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

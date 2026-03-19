@@ -1,0 +1,9 @@
+{
+  "name": "Prey",
+  "url": "https://github.com/prey/prey-ios-client",
+  "description": ": Track lost or stolen devices & perform actions remotely",
+  "section": "Location",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Guardrails.ai",
+  "url": "https://www.guardrailsai.com/docs/",
+  "description": "A Python library for validating outputs and retrying failures. Still in alpha, so expect sharp edges and bugs.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

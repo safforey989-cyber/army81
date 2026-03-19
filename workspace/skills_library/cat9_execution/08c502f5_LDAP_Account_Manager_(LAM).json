@@ -1,0 +1,9 @@
+{
+  "name": "LDAP Account Manager (LAM)",
+  "url": "https://www.ldap-account-manager.org/lamcms/",
+  "description": "](https://www.ldap-account-manager.org/lamcms/) - Web frontend for managing entries (e.g. users, groups, DHCP settings) stored in an LDAP directory. ([Source Code](https://github.com/LDAPAccountManager/lam/)) `GPL-3.0` `PHP`",
+  "section": "Identity Management - Tools and web interfaces",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

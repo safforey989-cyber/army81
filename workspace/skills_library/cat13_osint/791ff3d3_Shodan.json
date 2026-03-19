@@ -1,0 +1,9 @@
+{
+  "name": "Shodan",
+  "url": "https://www.shodan.io/",
+  "description": "Shodan is a search engine for the IOT(Internet of Things) that allows you to search variety of servers that are connected to the internet using various searching filters.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

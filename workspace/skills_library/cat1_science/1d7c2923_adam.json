@@ -1,0 +1,9 @@
+{
+  "name": "adam",
+  "url": "https://github.com/bigdatagenomics/adam",
+  "description": "A genomics processing engine and specialized file format built using Apache Avro, Apache Spark and Parquet. Apache 2 licensed.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

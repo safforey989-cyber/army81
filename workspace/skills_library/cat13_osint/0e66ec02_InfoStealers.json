@@ -1,0 +1,9 @@
+{
+  "name": "InfoStealers",
+  "url": "https://infostealers.info/en/info",
+  "description": "Indexes darknet-exposed infostealer logs and makes them searchable and actionable for security teams, investigators, researchers, and digital forensics professionals.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

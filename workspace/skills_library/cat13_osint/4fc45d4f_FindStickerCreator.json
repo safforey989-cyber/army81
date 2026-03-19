@@ -1,0 +1,9 @@
+{
+  "name": "FindStickerCreator",
+  "url": "https://t.me/SPOwnerBot",
+  "description": "Finds creator of any Telegram sticker pack.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

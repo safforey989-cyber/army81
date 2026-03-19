@@ -1,0 +1,9 @@
+{
+  "name": "BLOOMZ&mT0",
+  "url": "https://huggingface.co/bigscience/bloomz",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

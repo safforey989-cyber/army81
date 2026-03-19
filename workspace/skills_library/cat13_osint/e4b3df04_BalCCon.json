@@ -1,0 +1,9 @@
+{
+  "name": "BalCCon",
+  "url": "https://www.balccon.org",
+  "description": "Balkan Computer Congress, annually held in Novi Sad, Serbia.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

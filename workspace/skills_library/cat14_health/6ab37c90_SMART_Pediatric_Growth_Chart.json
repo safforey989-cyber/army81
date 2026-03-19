@@ -1,0 +1,9 @@
+{
+  "name": "SMART Pediatric Growth Chart",
+  "url": "https://github.com/smart-on-fhir/growth-chart-app",
+  "description": "Pediatric growth charts.",
+  "section": "Applications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

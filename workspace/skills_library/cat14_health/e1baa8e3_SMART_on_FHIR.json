@@ -1,0 +1,9 @@
+{
+  "name": "SMART on FHIR",
+  "url": "https://docs.smarthealthit.org/",
+  "description": "Open standards based technology platform.",
+  "section": "Specifications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

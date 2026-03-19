@@ -1,0 +1,9 @@
+{
+  "name": "CIA World Factbook",
+  "url": "https://www.cia.gov/the-world-factbook/",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Data and Statistics",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

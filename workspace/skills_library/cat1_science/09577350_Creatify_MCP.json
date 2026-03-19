@@ -1,0 +1,9 @@
+{
+  "name": "Creatify MCP",
+  "url": "https://github.com/TSavo/creatify-mcp",
+  "description": "Model Context Protocol server that exposes Creatify AI's video generation capabilities to AI assistants, enabling natural language video creation workflows.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

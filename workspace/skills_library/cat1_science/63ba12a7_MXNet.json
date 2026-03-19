@@ -1,0 +1,9 @@
+{
+  "name": "MXNet",
+  "url": "https://github.com/apache/incubator-mxnet",
+  "description": "Lightweight, Portable, Flexible Distributed/Mobile Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Go, JavaScript and more.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

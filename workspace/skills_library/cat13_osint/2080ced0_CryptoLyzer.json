@@ -1,0 +1,9 @@
+{
+  "name": "CryptoLyzer",
+  "url": "https://gitlab.com/coroner/cryptolyzer",
+  "description": "Fast and flexible server cryptographic (TLS/SSL/SSH/HTTP) settings analyzer library for Python with CLI.",
+  "section": "Transport Layer Security Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

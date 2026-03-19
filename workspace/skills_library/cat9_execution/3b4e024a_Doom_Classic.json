@@ -1,0 +1,9 @@
+{
+  "name": "Doom Classic",
+  "url": "https://github.com/id-Software/DOOM-iOS",
+  "description": "Tool from mobile_apps",
+  "section": "Game",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

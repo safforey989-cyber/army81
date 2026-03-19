@@ -1,0 +1,9 @@
+{
+  "name": "StegOnline",
+  "url": "https://stegonline.georgeom.net/",
+  "description": "Web-based, enhanced, and open-source port of StegSolve.",
+  "section": "Steganography Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

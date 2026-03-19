@@ -1,0 +1,9 @@
+{
+  "name": "Golden TensorFlow",
+  "url": "https://golden.com/wiki/TensorFlow",
+  "description": "A page of content on TensorFlow, including academic papers and links to related topics.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

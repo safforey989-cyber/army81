@@ -1,0 +1,9 @@
+{
+  "name": "TradingView",
+  "url": "http://tradingview.com/",
+  "description": "Get real-time information and market insights.",
+  "section": "Traditional Market",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

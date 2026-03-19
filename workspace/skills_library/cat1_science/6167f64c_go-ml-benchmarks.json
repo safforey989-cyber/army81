@@ -1,0 +1,9 @@
+{
+  "name": "go-ml-benchmarks",
+  "url": "https://github.com/nikolaydubina/go-ml-benchmarks",
+  "description": "benchmarks of machine learning inference for Go.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

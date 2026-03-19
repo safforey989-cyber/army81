@@ -1,0 +1,9 @@
+{
+  "name": "PHP Censor",
+  "url": "https://github.com/php-censor/php-censor",
+  "description": "Open source self-hosted continuous integration server for PHP projects. `BSD-2-Clause` `PHP`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

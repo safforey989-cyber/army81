@@ -1,0 +1,9 @@
+{
+  "name": "FasterTransformer",
+  "url": "https://github.com/NVIDIA/FasterTransformer",
+  "description": "NVIDIA Framework for LLM Inference(Transitioned to TensorRT-LLM)",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

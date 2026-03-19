@@ -1,0 +1,9 @@
+{
+  "name": "Weather",
+  "url": "https://github.com/niazoff/Weather",
+  "description": ": Simple SwiftUI weather app using MVVM",
+  "section": "SwiftUI",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

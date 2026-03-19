@@ -1,0 +1,9 @@
+{
+  "name": "MachineLearning",
+  "url": "https://github.com/benhamner/MachineLearning.jl",
+  "description": "Julia Machine Learning library. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

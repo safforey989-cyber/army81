@@ -1,0 +1,9 @@
+{
+  "name": "EyeWitness",
+  "url": "https://github.com/ChrisTruncer/EyeWitness",
+  "description": "Tool to take screenshots of websites, provide some server header info, and identify default credentials if possible.",
+  "section": "Web application and resource analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

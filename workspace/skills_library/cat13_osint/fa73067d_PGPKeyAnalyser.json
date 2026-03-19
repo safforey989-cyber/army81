@@ -1,0 +1,9 @@
+{
+  "name": "PGPKeyAnalyser",
+  "url": "https://kriztalz.sh/pgp-key-analyser/",
+  "description": "Analyse and view the details of a PGP key online without having to download the asc file.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

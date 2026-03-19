@@ -1,0 +1,9 @@
+{
+  "name": "NobodyWho",
+  "url": "https://github.com/nobodywho-ooo/nobodywho",
+  "description": "The simplest way to run an LLM locally. Supports tool calling and grammar constrained sampling.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

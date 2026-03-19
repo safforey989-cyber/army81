@@ -1,0 +1,9 @@
+{
+  "name": "Financial Trading as a Game: A Deep Reinforcement Learning Approach",
+  "url": "https://arxiv.org/pdf/1807.02787.pdf",
+  "description": "Deep reinforcement learning provides a framework toward end-to-end training of such trading agent.",
+  "section": "Papers",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

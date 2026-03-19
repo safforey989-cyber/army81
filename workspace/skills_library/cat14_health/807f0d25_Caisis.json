@@ -1,0 +1,9 @@
+{
+  "name": "Caisis",
+  "url": "http://www.caisis.org/",
+  "description": "Oncology research software with a Patient Data Management System.",
+  "section": "Data",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

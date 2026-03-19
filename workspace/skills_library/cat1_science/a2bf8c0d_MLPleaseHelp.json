@@ -1,0 +1,9 @@
+{
+  "name": "MLPleaseHelp",
+  "url": "https://github.com/jgreenemi/MLPleaseHelp",
+  "description": "MLPleaseHelp is a simple ML resource search engine. You can use this search engine right now at [https://jgreenemi.github.io/MLPleaseHelp/](https://jgreenemi.github.io/MLPleaseHelp/), provided via GitHub Pages.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

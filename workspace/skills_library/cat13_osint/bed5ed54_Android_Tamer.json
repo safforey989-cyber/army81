@@ -1,0 +1,9 @@
+{
+  "name": "Android Tamer",
+  "url": "https://androidtamer.com/",
+  "description": "Distribution built for Android security professionals that includes tools required for Android security testing.",
+  "section": "Operating System Distributions",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DefCamp",
+  "url": "http://def.camp/",
+  "description": "Largest Security Conference in Eastern Europe, held annually in Bucharest, Romania.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

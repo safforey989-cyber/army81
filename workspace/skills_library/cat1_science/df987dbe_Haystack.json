@@ -1,0 +1,9 @@
+{
+  "name": "Haystack",
+  "url": "https://github.com/deepset-ai/haystack",
+  "description": "A framework for building industrial-strength applications with Transformer models and LLMs.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

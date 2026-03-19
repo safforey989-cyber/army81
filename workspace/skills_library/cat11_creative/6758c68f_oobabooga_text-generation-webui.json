@@ -1,0 +1,9 @@
+{
+  "name": "oobabooga/text-generation-webui",
+  "url": "https://github.com/oobabooga/text-generation-webui",
+  "description": ": a gradio web UI for running Large Language Models like GPT-J 6B, OPT, GALACTICA, LLaMA, and Pygmalion",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

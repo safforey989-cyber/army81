@@ -1,0 +1,9 @@
+{
+  "name": "cheminfo",
+  "url": "https://www.cheminfo.org/",
+  "description": "Platform for data visualization and analysis, using the [visualizer](https://github.com/npellet/visualizer) project.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

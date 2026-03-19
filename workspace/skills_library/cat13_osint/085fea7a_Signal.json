@@ -1,0 +1,9 @@
+{
+  "name": "Signal",
+  "url": "https://signal.org",
+  "description": "End-to-end encrypted messaging and calls.",
+  "section": "[↑](#-table-of-contents) Privacy and Encryption Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

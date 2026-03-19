@@ -1,0 +1,9 @@
+{
+  "name": "WWDCast",
+  "url": "https://github.com/sgl0v/WWDCast",
+  "description": ": The unofficial WWDC application to watch WWDC videos and sessions on your ChromeCast",
+  "section": "Developer",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

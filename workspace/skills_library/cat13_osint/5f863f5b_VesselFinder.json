@@ -1,0 +1,9 @@
+{
+  "name": "VesselFinder",
+  "url": "https://www.vesselfinder.com",
+  "description": "a FREE AIS vessel tracking web site. VesselFinder displays real time ship positions and marine traffic detected by global AIS network.",
+  "section": "[↑](#-table-of-contents) Maritime",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

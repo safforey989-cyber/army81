@@ -1,0 +1,9 @@
+{
+  "name": "neon",
+  "url": "https://github.com/NervanaSystems/neon",
+  "description": "Nervana's [high-performance](https://github.com/soumith/convnet-benchmarks) Python-based Deep Learning framework [DEEP LEARNING]. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

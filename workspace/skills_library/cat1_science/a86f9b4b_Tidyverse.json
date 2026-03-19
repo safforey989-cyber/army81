@@ -1,0 +1,9 @@
+{
+  "name": "Tidyverse",
+  "url": "https://www.tidyverse.org/",
+  "description": "| is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

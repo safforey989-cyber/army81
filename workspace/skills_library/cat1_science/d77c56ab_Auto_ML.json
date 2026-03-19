@@ -1,0 +1,9 @@
+{
+  "name": "Auto ML",
+  "url": "https://github.com/ClimbsRocks/auto_ml",
+  "description": "Automated machine learning, data formatting, ensembling, and hyperparameter optimization for competitions and exploration- just give it a .csv file! **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

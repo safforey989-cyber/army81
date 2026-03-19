@@ -1,0 +1,9 @@
+{
+  "name": "Available regions",
+  "url": "https://ai.google.dev/gemini-api/docs/available-regions#available_regions",
+  "description": "|[URL](https://aistudio.google.com/)|Free|",
+  "section": "GPT LLMs Applications",
+  "topic": "ai_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

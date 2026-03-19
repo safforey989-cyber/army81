@@ -1,0 +1,9 @@
+{
+  "name": "HELM",
+  "url": "https://github.com/stanford-crfm/helm",
+  "description": "Holistic Evaluation of Language Models (HELM), a framework to increase the transparency of language models.",
+  "section": "LLM Evaluation:",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

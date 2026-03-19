@@ -1,0 +1,9 @@
+{
+  "name": "passivedns",
+  "url": "https://github.com/gamelinux/passivedns",
+  "description": "Network sniffer that logs all DNS server replies for use in a passive DNS setup.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

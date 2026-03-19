@@ -1,0 +1,9 @@
+{
+  "name": "UQLM",
+  "url": "https://github.com/cvs-health/uqlm",
+  "description": ": UQLM: Uncertainty Quantification for Language Models, is a Python library for LLM hallucination detection using state-of-the-art uncertainty quantification techniques ![GitHub Repo stars](https://img.shields.io/github/stars/cvs-health/uqlm?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

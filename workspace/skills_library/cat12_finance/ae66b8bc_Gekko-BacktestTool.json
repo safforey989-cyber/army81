@@ -1,0 +1,9 @@
+{
+  "name": "Gekko-BacktestTool",
+  "url": "https://github.com/xFFFFF/Gekko-BacktestTool",
+  "description": "Batch backtest, import and strategy params optimalization for Gekko Trading Bot.",
+  "section": "Plugins",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

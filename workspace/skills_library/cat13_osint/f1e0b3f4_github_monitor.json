@@ -1,0 +1,9 @@
+{
+  "name": "github_monitor",
+  "url": "https://github.com/misiektoja/github_monitor",
+  "description": "Tool for real-time tracking of GitHub users' activities including profile and repository changes with support for email alerts, CSV logging, detection when a user blocks or unblocks you and more",
+  "section": "[↑](#-table-of-contents) GitHub",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

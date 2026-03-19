@@ -1,0 +1,9 @@
+{
+  "name": "Nivo",
+  "url": "https://nivo.rocks",
+  "description": "built on top of the awesome d3 and Reactjs libraries",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

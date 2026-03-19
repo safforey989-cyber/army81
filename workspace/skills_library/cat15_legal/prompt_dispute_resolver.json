@@ -1,0 +1,7 @@
+{
+  "name": "dispute_resolver",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل النزاع بين {party1} و {party2}. خيارات: تفاوض، وساطة، تحكيم.",
+  "category": "cat15_legal",
+  "source": "built_in"
+}

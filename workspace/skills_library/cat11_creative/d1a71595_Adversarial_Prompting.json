@@ -1,0 +1,9 @@
+{
+  "name": "Adversarial Prompting",
+  "url": "https://www.promptingguide.ai/risks/adversarial",
+  "description": ": a list of adversarial prompts attacks by Prompt Engineering Guide",
+  "section": "Attacks on LLMs",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

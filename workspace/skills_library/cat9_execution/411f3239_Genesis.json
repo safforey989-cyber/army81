@@ -1,0 +1,9 @@
+{
+  "name": "Genesis",
+  "url": "https://github.com/starkandwayne/genesis",
+  "description": "A template framework for multi-environment BOSH deployments. `MIT` `Perl`",
+  "section": "Deployment Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

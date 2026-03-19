@@ -1,0 +1,9 @@
+{
+  "name": "Roboschool",
+  "url": "https://github.com/openai/roboschool",
+  "description": "Open-source software for robot simulation, integrated with OpenAI Gym.",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

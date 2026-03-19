@@ -1,0 +1,9 @@
+{
+  "name": "DALL·E 2",
+  "url": "https://openai.com/blog/dall-e-2/",
+  "description": "Announcement of the release of DALL·E 2, an advanced image generation system with improved resolution, expanded image creation capabilities, and various safety mitigations. OpenAI blog, April 6, 2022.",
+  "section": "Milestones",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

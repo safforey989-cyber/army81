@@ -1,0 +1,9 @@
+{
+  "name": "Hudson Rock",
+  "url": "https://www.hudsonrock.com/threat-intelligence-cybercrime-tools",
+  "description": "is a free cybercrime intelligence toolkit to check exposure in Infostealer malware infection.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Gemma2-9|27B",
+  "url": "https://blog.google/technology/developers/google-gemma-2/",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

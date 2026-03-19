@@ -1,0 +1,9 @@
+{
+  "name": "PyTorch Geometric",
+  "url": "https://github.com/pyg-team/pytorch_geometric",
+  "description": "> Graph Neural Network Library for PyTorch.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

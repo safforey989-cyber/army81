@@ -1,0 +1,9 @@
+{
+  "name": "frog",
+  "url": "https://github.com/LanguageMachines/frog",
+  "description": "Memory-based NLP suite developed for Dutch: PoS tagger, lemmatiser, dependency parser, NER, shallow parser, morphological analyzer.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

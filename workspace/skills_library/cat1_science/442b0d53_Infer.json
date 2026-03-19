@@ -1,0 +1,9 @@
+{
+  "name": "Infer",
+  "url": "https://github.com/aria42/infer",
+  "description": "Inference and machine learning in Clojure. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

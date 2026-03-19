@@ -1,0 +1,9 @@
+{
+  "name": "NeuralTalk",
+  "url": "https://github.com/karpathy/neuraltalk",
+  "description": "NeuralTalk is a Python+numpy project for learning Multimodal Recurrent Neural Networks that describe images with sentences.",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

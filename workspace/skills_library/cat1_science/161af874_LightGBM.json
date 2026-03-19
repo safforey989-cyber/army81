@@ -1,0 +1,9 @@
+{
+  "name": "LightGBM",
+  "url": "https://github.com/microsoft/LightGBM",
+  "description": "Tool from data_science",
+  "section": "General Machine Learning Packages",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

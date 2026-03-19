@@ -1,0 +1,9 @@
+{
+  "name": "SPARTA",
+  "url": "https://sparta.secforce.com/",
+  "description": "Graphical interface offering scriptable, configurable access to existing network infrastructure scanning and enumeration tools.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

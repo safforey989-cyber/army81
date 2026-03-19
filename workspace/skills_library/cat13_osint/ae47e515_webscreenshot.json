@@ -1,0 +1,9 @@
+{
+  "name": "webscreenshot",
+  "url": "https://github.com/maaaaz/webscreenshot",
+  "description": "Simple script to take screenshots of websites from a list of sites.",
+  "section": "Web application and resource analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

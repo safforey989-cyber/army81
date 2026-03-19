@@ -1,0 +1,9 @@
+{
+  "name": "Synaptic",
+  "url": "https://github.com/cazala/synaptic",
+  "description": "Architecture-free neural network library for Node.js and the browser.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Clojure-openNLP",
+  "url": "https://github.com/dakrone/clojure-opennlp",
+  "description": "Natural Language Processing in Clojure (opennlp).",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

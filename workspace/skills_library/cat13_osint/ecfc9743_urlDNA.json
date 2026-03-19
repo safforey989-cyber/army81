@@ -1,0 +1,9 @@
+{
+  "name": "urlDNA",
+  "url": "https://urldna.io/",
+  "description": "Unleash website insights! urldna.io analyzes url, monitors brands and track phishing sites.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Bitwarden",
+  "url": "https://bitwarden.com",
+  "description": "Open-source password manager with cross-platform support.",
+  "section": "[↑](#-table-of-contents) Privacy and Encryption Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

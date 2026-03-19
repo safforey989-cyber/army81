@@ -1,0 +1,9 @@
+{
+  "name": "GLPI",
+  "url": "https://www.glpi-project.org/",
+  "description": "Information Resource-Manager with an additional Administration Interface. ([Source Code](https://github.com/glpi-project/glpi)) `GPL-3.0` `PHP`",
+  "section": "IT Asset Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

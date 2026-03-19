@@ -1,0 +1,9 @@
+{
+  "name": "zmap",
+  "url": "https://zmap.io/",
+  "description": "Open source network scanner that enables researchers to easily perform Internet-wide network studies.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

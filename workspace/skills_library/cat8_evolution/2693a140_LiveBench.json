@@ -1,0 +1,9 @@
+{
+  "name": "LiveBench",
+  "url": "https://livebench.ai/#/",
+  "description": "A Challenging, Contamination-Free LLM Benchmark.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

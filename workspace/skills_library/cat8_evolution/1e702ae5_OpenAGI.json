@@ -1,0 +1,9 @@
+{
+  "name": "OpenAGI",
+  "url": "https://github.com/agiresearch/OpenAGI",
+  "description": "When LLM Meets Domain Experts.",
+  "section": "Miscellaneous",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

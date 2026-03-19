@@ -1,0 +1,9 @@
+{
+  "name": "OLMo-7B",
+  "url": "https://huggingface.co/collections/allenai/olmo-suite-65aeaae8fe5b6b2122b46778",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

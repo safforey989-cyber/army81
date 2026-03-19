@@ -1,0 +1,9 @@
+{
+  "name": "Awesome LLM Security",
+  "url": "https://github.com/corca-ai/awesome-llm-security",
+  "description": "A curation of awesome tools, documents and projects about LLM Security.",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

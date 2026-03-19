@@ -1,0 +1,9 @@
+{
+  "name": "Cubist",
+  "url": "https://cran.r-project.org/web/packages/Cubist/index.html",
+  "description": "Cubist: Rule- and Instance-Based Regression Modelling.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

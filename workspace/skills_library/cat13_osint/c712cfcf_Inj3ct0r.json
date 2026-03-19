@@ -1,0 +1,9 @@
+{
+  "name": "Inj3ct0r",
+  "url": "https://www.0day.today/",
+  "description": "Exploit marketplace and vulnerability information aggregator. ([Onion service](http://mvfjfugdwgc5uwho.onion/).)",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

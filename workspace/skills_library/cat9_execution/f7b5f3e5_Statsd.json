@@ -1,0 +1,9 @@
+{
+  "name": "Statsd",
+  "url": "https://github.com/etsy/statsd/",
+  "description": "Daemon that listens for statistics like counters and timers, sent over UDP or TCP, and sends aggregates to one or more pluggable backend services. `MIT` `Nodejs`",
+  "section": "Metrics & Metric Collection",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

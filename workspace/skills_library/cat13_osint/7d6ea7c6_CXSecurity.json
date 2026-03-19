@@ -1,0 +1,9 @@
+{
+  "name": "CXSecurity",
+  "url": "https://cxsecurity.com/",
+  "description": "Archive of published CVE and Bugtraq software vulnerabilities cross-referenced with a Google dork database for discovering the listed vulnerability.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "bmrm",
+  "url": "https://cran.r-project.org/web/packages/bmrm/index.html",
+  "description": "bmrm: Bundle Methods for Regularized Risk Minimization Package.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

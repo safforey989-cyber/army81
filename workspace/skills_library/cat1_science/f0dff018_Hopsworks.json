@@ -1,0 +1,9 @@
+{
+  "name": "Hopsworks",
+  "url": "https://github.com/logicalclocks/hopsworks",
+  "description": "| Open-source data-intensive machine learning platform with a feature store. Ingest and manage features for both online (MySQL Cluster)  and offline (Apache Hive) access, train and serve models at scale. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Nagios",
+  "url": "https://www.nagios.org/",
+  "description": "Computer system, network and infrastructure monitoring software application. ([Source Code](https://github.com/NagiosEnterprises/nagioscore)) `GPL-2.0` `C`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

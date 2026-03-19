@@ -1,0 +1,9 @@
+{
+  "name": "awesome-hallucination-detection",
+  "url": "https://github.com/EdinburghNLP/awesome-hallucination-detection",
+  "description": "List of papers on hallucination detection in LLMs.",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

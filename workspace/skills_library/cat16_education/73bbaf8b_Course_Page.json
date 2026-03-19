@@ -1,0 +1,9 @@
+{
+  "name": "Course Page",
+  "url": "http://cilvr.cs.nyu.edu/doku.php?id=deeplearning2015:schedule",
+  "description": "Tool from cs_courses",
+  "section": "Machine Learning",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

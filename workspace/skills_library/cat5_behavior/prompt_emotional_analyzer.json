@@ -1,0 +1,7 @@
+{
+  "name": "emotional_analyzer",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل المشاعر في هذا النص: {text}. حدد العاطفة الرئيسية والنية.",
+  "category": "cat5_behavior",
+  "source": "built_in"
+}

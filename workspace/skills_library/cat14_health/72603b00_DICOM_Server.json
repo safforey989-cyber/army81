@@ -1,0 +1,9 @@
+{
+  "name": "DICOM Server",
+  "url": "https://github.com/microsoft/dicom-server",
+  "description": "OSS Implementation of DICOMweb standard.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

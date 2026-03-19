@@ -1,0 +1,9 @@
+{
+  "name": "Exa Wallet Monero",
+  "url": "https://github.com/exantech/exa-wallet-ios",
+  "description": ": Receive, spend and store your Monero with a multisignature wallet",
+  "section": "Cryptocurrency",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "VSCode Extension",
+  "url": "https://marketplace.visualstudio.com/items?itemName=blinky.blinky",
+  "description": "Tool from ai_agents",
+  "section": "Links",
+  "topic": "ai_agents",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

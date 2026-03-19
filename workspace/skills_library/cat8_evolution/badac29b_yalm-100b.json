@@ -1,0 +1,9 @@
+{
+  "name": "yalm-100b",
+  "url": "https://huggingface.co/yandex/yalm-100b",
+  "description": "| [Yandex publishes YaLM 100B, the largest GPT-like neural network in open source](https://yandex.com/company/press_center/press_releases/2022/2022-23-06) | 100 | [1024](https://github.com/yandex/YaLM-100B/blob/main/examples/generate_interactive.sh) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

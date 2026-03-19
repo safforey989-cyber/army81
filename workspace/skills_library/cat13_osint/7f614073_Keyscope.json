@@ -1,0 +1,9 @@
+{
+  "name": "Keyscope",
+  "url": "https://github.com/SpectralOps/keyscope",
+  "description": "An extensible key and secret validation for auditing active secrets against multiple SaaS vendors.",
+  "section": "Open Sources Intelligence (OSINT)",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

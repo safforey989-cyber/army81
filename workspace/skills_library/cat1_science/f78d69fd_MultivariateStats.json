@@ -1,0 +1,9 @@
+{
+  "name": "MultivariateStats",
+  "url": "https://github.com/JuliaStats/MultivariateStats.jl",
+  "description": "Methods for dimensionality reduction.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

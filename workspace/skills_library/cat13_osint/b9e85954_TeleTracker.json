@@ -1,0 +1,9 @@
+{
+  "name": "TeleTracker",
+  "url": "https://github.com/tsale/TeleTracker",
+  "description": "TeleTracker is a simple set of Python scripts designed for anyone investigating Telegram channels. It helps you send messages quickly and gather useful channel information easily.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

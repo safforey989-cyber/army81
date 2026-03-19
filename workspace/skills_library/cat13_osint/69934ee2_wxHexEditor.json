@@ -1,0 +1,9 @@
+{
+  "name": "wxHexEditor",
+  "url": "http://www.wxhexeditor.org/",
+  "description": "Free GUI hex editor for GNU/Linux, macOS, and Windows.",
+  "section": "Hex Editors",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

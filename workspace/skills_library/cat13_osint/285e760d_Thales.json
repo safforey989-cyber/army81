@@ -1,0 +1,9 @@
+{
+  "name": "Thales",
+  "url": "https://cds.thalesgroup.com/en/cyberthreat/attacks-page",
+  "description": "Find Threat actor groups in a graphical attack explorer.",
+  "section": "[↑](#-threat-actor-search) Threat Actor Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

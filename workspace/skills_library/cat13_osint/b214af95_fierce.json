@@ -1,0 +1,9 @@
+{
+  "name": "fierce",
+  "url": "https://github.com/mschwager/fierce",
+  "description": "Python3 port of the original `fierce.pl` DNS reconnaissance tool for locating non-contiguous IP space.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

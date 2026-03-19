@@ -1,0 +1,9 @@
+{
+  "name": "Vulnerable WordPress Installation",
+  "url": "https://hub.docker.com/r/wpscanteam/vulnerablewordpress/",
+  "description": "`docker pull wpscanteam/vulnerablewordpress`.",
+  "section": "Intentionally Vulnerable Systems as Docker Containers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

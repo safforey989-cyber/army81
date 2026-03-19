@@ -1,0 +1,9 @@
+{
+  "name": "Logistic Regression",
+  "url": "https://en.wikipedia.org/wiki/Logistic_regression",
+  "description": "Tool from data_science",
+  "section": "Supervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "389 Directory Server",
+  "url": "https://www.port389.org/",
+  "description": "Enterprise-class Open Source LDAP server for Linux. ([Source Code](https://github.com/389ds/389-ds-base)) `GPL-3.0` `C`",
+  "section": "Identity Management - LDAP",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

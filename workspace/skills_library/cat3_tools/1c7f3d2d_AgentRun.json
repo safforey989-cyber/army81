@@ -1,0 +1,9 @@
+{
+  "name": "AgentRun",
+  "url": "https://github.com/Jonathan-Adly/AgentRun",
+  "description": ": The easiest, and fastest way to run AI-generated Python code safely ![GitHub Repo stars](https://img.shields.io/github/stars/Jonathan-Adly/AgentRun?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

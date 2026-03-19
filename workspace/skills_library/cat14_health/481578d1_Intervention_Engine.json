@@ -1,0 +1,9 @@
+{
+  "name": "Intervention Engine",
+  "url": "https://github.com/intervention-engine/ie",
+  "description": "Provides a web-application for data-driven team huddles.",
+  "section": "Applications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "fast-recon",
+  "url": "https://github.com/DanMcInerney/fast-recon",
+  "description": "Perform Google dorks against a domain.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DNSDumpster",
+  "url": "https://dnsdumpster.com",
+  "description": "is a website that will help you discover hosts related to a specific domain.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

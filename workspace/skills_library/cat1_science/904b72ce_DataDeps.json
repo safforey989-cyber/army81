@@ -1,0 +1,9 @@
+{
+  "name": "DataDeps",
+  "url": "https://github.com/oxinabox/DataDeps.jl",
+  "description": "Reproducible data setup for reproducible science.",
+  "section": "Misc Stuff / Presentations",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

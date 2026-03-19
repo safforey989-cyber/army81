@@ -1,0 +1,9 @@
+{
+  "name": "Detecto",
+  "url": "https://github.com/alankbi/detecto",
+  "description": "Train and run a computer vision model with 5-10 lines of code.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

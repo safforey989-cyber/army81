@@ -1,0 +1,9 @@
+{
+  "name": "MyHeartCounts",
+  "url": "https://github.com/ResearchKit/MyHeartCounts",
+  "description": ": Personalized tool that can help you measure daily activity, fitness, & cardiovascular risk",
+  "section": "ResearchKit",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

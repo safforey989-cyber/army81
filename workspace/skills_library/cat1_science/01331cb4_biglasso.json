@@ -1,0 +1,9 @@
+{
+  "name": "biglasso",
+  "url": "https://cran.r-project.org/web/packages/biglasso/index.html",
+  "description": "biglasso: Extending Lasso Model Fitting to Big Data in R.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

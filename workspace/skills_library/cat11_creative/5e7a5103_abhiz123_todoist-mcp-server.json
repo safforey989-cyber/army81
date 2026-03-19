@@ -1,0 +1,9 @@
+{
+  "name": "abhiz123/todoist-mcp-server",
+  "url": "https://github.com/abhiz123/todoist-mcp-server/tree/main",
+  "description": ": MCP server for Todoist integration enabling natural language task management with Claude",
+  "section": "Model Context Protocol",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

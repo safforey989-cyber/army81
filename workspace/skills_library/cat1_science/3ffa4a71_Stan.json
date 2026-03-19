@@ -1,0 +1,9 @@
+{
+  "name": "Stan",
+  "url": "http://mc-stan.org/",
+  "description": "A probabilistic programming language implementing full Bayesian statistical inference with Hamiltonian Monte Carlo sampling.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

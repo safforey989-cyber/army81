@@ -1,0 +1,9 @@
+{
+  "name": "ThunderGBM",
+  "url": "https://github.com/Xtra-Computing/thundergbm",
+  "description": "A fast library for GBDTs and Random Forests on GPUs.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

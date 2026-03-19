@@ -1,0 +1,9 @@
+{
+  "name": "pyro",
+  "url": "https://github.com/pyro-ppl/pyro",
+  "description": "Tool from data_science",
+  "section": "PyTorch Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Stanford SPIED",
+  "url": "https://nlp.stanford.edu/software/patternslearning.shtml",
+  "description": "Learning entities from unlabeled text starting with seed sets using patterns in an iterative fashion.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ELKI",
+  "url": "https://elki-project.github.io/",
+  "description": "Java toolkit for data mining. (unsupervised: clustering, outlier detection etc.)",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

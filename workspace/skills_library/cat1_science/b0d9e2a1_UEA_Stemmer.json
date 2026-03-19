@@ -1,0 +1,9 @@
+{
+  "name": "UEA Stemmer",
+  "url": "https://github.com/ealdent/uea-stemmer",
+  "description": "Ruby port of UEALite Stemmer - a conservative stemmer for search and indexing.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

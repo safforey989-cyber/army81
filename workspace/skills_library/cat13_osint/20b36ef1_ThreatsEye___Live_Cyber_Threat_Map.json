@@ -1,0 +1,9 @@
+{
+  "name": "ThreatsEye | Live Cyber Threat Map",
+  "url": "https://threatseye.io/threats-map",
+  "description": "Real-time visualization of global cyber attacks and threats. Monitor live cyber security incidents, attack origins, targets, and threat categories worldwide.",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

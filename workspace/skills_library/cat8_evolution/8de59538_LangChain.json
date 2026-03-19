@@ -1,0 +1,9 @@
+{
+  "name": "LangChain",
+  "url": "https://github.com/hwchase17/langchain",
+  "description": "A popular Python/JavaScript library for chaining sequences of language model prompts.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

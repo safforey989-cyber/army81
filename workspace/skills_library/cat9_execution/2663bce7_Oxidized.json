@@ -1,0 +1,9 @@
+{
+  "name": "Oxidized",
+  "url": "https://github.com/ytti/oxidized",
+  "description": "Network device configuration backup tool. `Apache-2.0` `Ruby`",
+  "section": "Network Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

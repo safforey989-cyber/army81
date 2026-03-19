@@ -1,0 +1,9 @@
+{
+  "name": "ExportData",
+  "url": "https://www.exportdata.io/",
+  "description": "Data export tool for historical tweets, followers & followings and historical trends.",
+  "section": "[↑](#-table-of-contents) Twitter",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

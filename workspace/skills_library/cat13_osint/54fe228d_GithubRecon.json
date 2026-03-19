@@ -1,0 +1,9 @@
+{
+  "name": "GithubRecon",
+  "url": "https://kriztalz.sh/github-recon/",
+  "description": "Lookup Github users by username or email and gather associated data.",
+  "section": "[↑](#-table-of-contents) GitHub",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

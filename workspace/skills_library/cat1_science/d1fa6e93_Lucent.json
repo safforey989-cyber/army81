@@ -1,0 +1,9 @@
+{
+  "name": "Lucent",
+  "url": "https://github.com/greentfrapp/lucent",
+  "description": "Tensorflow and OpenAI Clarity's Lucid adapted for PyTorch.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "StemGen: A music generation model that listens",
+  "url": "https://julian-parker.github.io/stemgen/",
+  "description": "Tool from generative_ai",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

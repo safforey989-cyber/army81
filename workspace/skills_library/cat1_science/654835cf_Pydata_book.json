@@ -1,0 +1,9 @@
+{
+  "name": "Pydata book",
+  "url": "https://github.com/wesm/pydata-book",
+  "description": "Materials and IPython notebooks for \"Python for Data Analysis\" by Wes McKinney, published by O'Reilly Media",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

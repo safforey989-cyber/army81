@@ -1,0 +1,9 @@
+{
+  "name": "Python SMART on FHIR client",
+  "url": "https://github.com/smart-on-fhir/client-py",
+  "description": "Flexible Python client for FHIR servers supporting the SMART on FHIR protocol.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

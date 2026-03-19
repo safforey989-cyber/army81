@@ -1,0 +1,9 @@
+{
+  "name": "Intervention Engine FHIR Server",
+  "url": "https://github.com/intervention-engine/fhir",
+  "description": "Generic FHIR server implementation in GoLang.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

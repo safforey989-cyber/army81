@@ -1,0 +1,9 @@
+{
+  "name": "PowerInfer",
+  "url": "https://github.com/SJTU-IPADS/PowerInfer",
+  "description": ": a high-speed inference engine for deploying LLMs locally",
+  "section": "Running LLMs Locally",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

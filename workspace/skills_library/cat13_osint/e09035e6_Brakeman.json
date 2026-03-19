@@ -1,0 +1,9 @@
+{
+  "name": "Brakeman",
+  "url": "https://github.com/presidentbeef/brakeman",
+  "description": "Static analysis security vulnerability scanner for Ruby on Rails applications.",
+  "section": "Static Analyzers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

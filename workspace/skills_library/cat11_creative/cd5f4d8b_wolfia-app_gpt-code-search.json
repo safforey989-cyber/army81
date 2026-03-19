@@ -1,0 +1,9 @@
+{
+  "name": "wolfia-app/gpt-code-search",
+  "url": "https://github.com/wolfia-app/gpt-code-search/",
+  "description": ": search a codebase with natural language using AI",
+  "section": "AI-Powered Code Generation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "mallory",
+  "url": "https://github.com/justmao945/mallory",
+  "description": "HTTP/HTTPS proxy over SSH.",
+  "section": "Proxies and Machine-in-the-Middle (MITM) Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Vosk",
+  "url": "https://github.com/alphacep/vosk-api",
+  "description": "An offline speech recognition toolkit with C++ support, designed for low-resource devices and multiple languages.",
+  "section": "Speech Recognition",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

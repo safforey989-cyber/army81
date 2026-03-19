@@ -1,0 +1,9 @@
+{
+  "name": "Firefox",
+  "url": "https://github.com/mozilla-mobile/firefox-ios",
+  "description": ": Official Firefox app",
+  "section": "Browser",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "skynet",
+  "url": "https://github.com/Tyill/skynet",
+  "description": "A library for learning neural networks, has C-interface, net set in JSON. Written in C++ with bindings in Python, C++ and C#.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

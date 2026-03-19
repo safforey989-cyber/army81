@@ -1,0 +1,9 @@
+{
+  "name": "Full Fact",
+  "url": "https://fullfact.org",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Fact Checking",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

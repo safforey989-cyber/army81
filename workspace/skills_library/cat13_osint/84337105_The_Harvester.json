@@ -1,0 +1,9 @@
+{
+  "name": "The Harvester",
+  "url": "https://github.com/laramies/theHarvester",
+  "description": "Gather emails, subdomains, hosts, employee names, open ports and banners from different public sources like search engines, PGP key servers and SHODAN computer database.",
+  "section": "[↑](#-table-of-contents) Other Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

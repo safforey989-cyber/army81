@@ -1,0 +1,9 @@
+{
+  "name": "AudioKit ROM Player",
+  "url": "https://github.com/AudioKit/ROMPlayer",
+  "description": ": Make your own sample music instrument",
+  "section": "Audio",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

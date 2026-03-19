@@ -1,0 +1,9 @@
+{
+  "name": "CRF++",
+  "url": "https://taku910.github.io/crfpp/",
+  "description": "Open source implementation of Conditional Random Fields (CRFs) for segmenting/labeling sequential data & other Natural Language Processing tasks. **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

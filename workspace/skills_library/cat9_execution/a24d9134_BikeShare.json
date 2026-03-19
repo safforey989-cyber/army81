@@ -1,0 +1,9 @@
+{
+  "name": "BikeShare",
+  "url": "https://github.com/joreilly/BikeShare",
+  "description": ": Jetpack Compose and SwiftUI based Kotlin Multiplatform sample project using the CityBikes API",
+  "section": "macOS",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

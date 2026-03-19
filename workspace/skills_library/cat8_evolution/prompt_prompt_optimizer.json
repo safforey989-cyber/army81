@@ -1,0 +1,7 @@
+{
+  "name": "prompt_optimizer",
+  "type": "prompt_pattern",
+  "prompt_template": "حسّن هذا الـ prompt: {prompt}. اجعله أدق وأقصر مع نفس النتيجة.",
+  "category": "cat8_evolution",
+  "source": "built_in"
+}

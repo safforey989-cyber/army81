@@ -1,0 +1,9 @@
+{
+  "name": "Searchforchats",
+  "url": "https://telegram.me/searchforchatsbot",
+  "description": "Searches chats by keywords.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

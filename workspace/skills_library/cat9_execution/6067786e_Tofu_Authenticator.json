@@ -1,0 +1,9 @@
+{
+  "name": "Tofu Authenticator",
+  "url": "https://github.com/iKenndac/Tofu",
+  "description": ": Easy-to-use two-factor authentication",
+  "section": "Security",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

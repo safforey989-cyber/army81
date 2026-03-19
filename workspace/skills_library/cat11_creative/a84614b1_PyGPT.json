@@ -1,0 +1,9 @@
+{
+  "name": "PyGPT",
+  "url": "https://pygpt.net/",
+  "description": "Personal desktop AI assistant with chat, vision, agents, image generation, tools and commands, voice control and more. #opensource",
+  "section": "Local LLM Deployment",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

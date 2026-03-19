@@ -1,0 +1,9 @@
+{
+  "name": "cerebro2",
+  "url": "https://github.com/numenta/nupic.cerebro2",
+  "description": "A web-based visualization and debugging platform for NuPIC. **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

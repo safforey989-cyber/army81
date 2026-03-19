@@ -1,0 +1,9 @@
+{
+  "name": "JSMLT",
+  "url": "https://github.com/jsmlt/jsmlt",
+  "description": "Machine learning toolkit with classification and clustering for Node.js; supports visualization (see [visualml.io](https://visualml.io)).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

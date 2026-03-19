@@ -1,0 +1,9 @@
+{
+  "name": "topik",
+  "url": "https://github.com/ContinuumIO/topik",
+  "description": "Topic modelling toolkit. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

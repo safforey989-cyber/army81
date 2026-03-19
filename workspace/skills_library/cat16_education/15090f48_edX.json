@@ -1,0 +1,9 @@
+{
+  "name": "edX",
+  "url": "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x",
+  "description": ".",
+  "section": "Introduction to CS",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

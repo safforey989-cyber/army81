@@ -1,0 +1,9 @@
+{
+  "name": "Neptune.ai",
+  "url": "https://neptune.ai",
+  "description": "| Community-friendly platform supporting data scientists in creating and sharing machine learning models. Neptune facilitates teamwork, infrastructure management, models comparison and reproducibility. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

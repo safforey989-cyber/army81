@@ -1,0 +1,9 @@
+{
+  "name": "Riffusion",
+  "url": "https://www.riffusion.com/",
+  "description": ": this AI system generates singing voice for literally any text as input",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

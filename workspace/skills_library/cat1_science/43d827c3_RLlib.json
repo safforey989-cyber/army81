@@ -1,0 +1,9 @@
+{
+  "name": "RLlib",
+  "url": "https://github.com/ray-project/ray",
+  "description": "RLlib is an industry level, highly scalable RL library for tf and torch, based on Ray. It's used by companies like Amazon and Microsoft to solve real-world decision making problems at scale.",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

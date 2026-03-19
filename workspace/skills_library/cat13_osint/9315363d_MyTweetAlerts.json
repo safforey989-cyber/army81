@@ -1,0 +1,9 @@
+{
+  "name": "MyTweetAlerts",
+  "url": "https://www.mytweetalerts.com/",
+  "description": "A tool to create custom email alerts based on Twitter search.",
+  "section": "[↑](#-table-of-contents) Twitter",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

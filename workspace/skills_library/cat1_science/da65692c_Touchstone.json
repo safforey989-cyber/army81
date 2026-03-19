@@ -1,0 +1,9 @@
+{
+  "name": "Touchstone",
+  "url": "https://github.com/ptaoussanis/touchstone",
+  "description": "Clojure A/B testing library.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

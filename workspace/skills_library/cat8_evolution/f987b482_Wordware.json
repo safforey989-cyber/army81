@@ -1,0 +1,9 @@
+{
+  "name": "Wordware",
+  "url": "https://www.wordware.ai",
+  "description": "A web-hosted IDE where non-technical domain experts work with AI Engineers to build task-specific AI agents. We approach prompting as a new programming language rather than low/no-code blocks.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

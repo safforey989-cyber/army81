@@ -1,0 +1,9 @@
+{
+  "name": "Arch Tools",
+  "url": "https://archtools.dev",
+  "description": "61 production-ready AI API tools for data science workflows: code analysis, web scraping, NLP, image generation, crypto data, and search. REST API and MCP protocol support. [GitHub](https://github.com/Deesmo/Arch-AI-Tools)",
+  "section": "Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

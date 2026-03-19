@@ -1,0 +1,9 @@
+{
+  "name": "tcollector",
+  "url": "http://opentsdb.net/docs/build/html/user_guide/utilities/tcollector.html",
+  "description": "Gathers data from local collectors and pushes the data to OpenTSDB. ([Source Code](https://github.com/OpenTSDB/tcollector/)) `LGPL-3.0/GPL-3.0` `Python`",
+  "section": "Metrics & Metric Collection",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

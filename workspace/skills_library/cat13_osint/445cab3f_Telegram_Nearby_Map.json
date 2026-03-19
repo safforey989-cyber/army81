@@ -1,0 +1,9 @@
+{
+  "name": "Telegram Nearby Map",
+  "url": "https://github.com/tejado/telegram-nearby-map",
+  "description": "Webapp based on OpenStreetMap and the official Telegram library to find the position of nearby users.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "WFGY ProblemMap",
+  "url": "https://github.com/onestardao/WFGY/blob/main/ProblemMap/README.md",
+  "description": "| Open source “failure atlas” of 16 recurring issues in LLM and RAG pipelines, with observable symptoms and suggested fixes for data science teams. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

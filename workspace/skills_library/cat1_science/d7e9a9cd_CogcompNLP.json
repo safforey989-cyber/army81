@@ -1,0 +1,9 @@
+{
+  "name": "CogcompNLP",
+  "url": "https://github.com/CogComp/cogcomp-nlp",
+  "description": "This project collects a number of core libraries for Natural Language Processing (NLP) developed in the University of Illinois' Cognitive Computation Group, for example `illinois-core-utilities` which provides a set of NLP-friendly data structures and a number of NLP-related utilities that support w",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GPT Engineer",
+  "url": "https://github.com/AntonOsika/gpt-engineer",
+  "description": "Specify what you want it to build, the AI asks for clarification, and then builds it.",
+  "section": "Autonomous agents",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GNS3",
+  "url": "https://www.gns3.com/",
+  "description": "Graphical network simulator that provides a variety of virtual appliances. ([Source Code](https://github.com/GNS3/gns3-gui/)) `GPL-3.0` `Python`",
+  "section": "Network Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

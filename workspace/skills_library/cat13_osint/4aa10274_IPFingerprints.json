@@ -1,0 +1,9 @@
+{
+  "name": "IPFingerprints",
+  "url": "http://www.ipfingerprints.com",
+  "description": "is used to find the approximate geographic location of an IP address along with some other useful information including ISP, TimeZone, Area Code, State.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Stanford Phrasal: A Phrase-Based Translation System",
+  "url": "https://nlp.stanford.edu/phrasal/",
+  "description": "Tool from ml_tools",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

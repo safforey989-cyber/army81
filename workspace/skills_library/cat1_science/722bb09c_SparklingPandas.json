@@ -1,0 +1,9 @@
+{
+  "name": "SparklingPandas",
+  "url": "https://github.com/sparklingpandas/sparklingpandas",
+  "description": "Pandas on PySpark (POPS).",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

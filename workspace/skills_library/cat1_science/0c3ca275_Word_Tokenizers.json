@@ -1,0 +1,9 @@
+{
+  "name": "Word Tokenizers",
+  "url": "https://github.com/JuliaText/WordTokenizers.jl",
+  "description": "Tokenizers for Natural Language Processing in Julia",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

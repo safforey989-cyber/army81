@@ -1,0 +1,9 @@
+{
+  "name": "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism",
+  "url": "https://arxiv.org/pdf/1909.08053.pdf",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

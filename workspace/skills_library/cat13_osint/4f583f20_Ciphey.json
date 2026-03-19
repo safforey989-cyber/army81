@@ -1,0 +1,9 @@
+{
+  "name": "Ciphey",
+  "url": "https://github.com/ciphey/ciphey",
+  "description": "Automated decryption tool using artificial intelligence and natural language processing.",
+  "section": "CTF Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

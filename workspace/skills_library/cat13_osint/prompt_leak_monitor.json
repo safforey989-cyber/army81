@@ -1,0 +1,7 @@
+{
+  "name": "leak_monitor",
+  "type": "prompt_pattern",
+  "prompt_template": "ابحث عن تسريبات متعلقة بـ {organization}. Breach databases, paste sites.",
+  "category": "cat13_osint",
+  "source": "built_in"
+}

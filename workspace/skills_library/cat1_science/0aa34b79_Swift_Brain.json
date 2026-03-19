@@ -1,0 +1,9 @@
+{
+  "name": "Swift Brain",
+  "url": "https://github.com/vlall/Swift-Brain",
+  "description": "The first neural network / machine learning library written in Swift. This is a project for AI algorithms in Swift for iOS and OS X development. This project includes algorithms focused on Bayes theorem, neural networks, SVMs, Matrices, etc...",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

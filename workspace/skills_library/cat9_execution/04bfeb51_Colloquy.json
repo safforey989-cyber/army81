@@ -1,0 +1,9 @@
+{
+  "name": "Colloquy",
+  "url": "https://github.com/colloquy/colloquy",
+  "description": ": IRC client",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

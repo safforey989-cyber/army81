@@ -1,0 +1,9 @@
+{
+  "name": "Resemble AI",
+  "url": "https://www.resemble.ai/",
+  "description": "AI voice generator and voice cloning for text to speech.",
+  "section": "Text-to-speech",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

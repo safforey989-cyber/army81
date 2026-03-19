@@ -1,0 +1,9 @@
+{
+  "name": "Rawsec's CyberSecurity Inventory",
+  "url": "https://inventory.raw.pm/",
+  "description": "An open-source inventory of tools, resources, CTF platforms and Operating Systems about CyberSecurity. ([Source](https://gitlab.com/rawsec/rawsec-cybersecurity-list))",
+  "section": "Other Lists Online",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

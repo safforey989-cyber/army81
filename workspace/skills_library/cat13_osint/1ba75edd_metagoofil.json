@@ -1,0 +1,9 @@
+{
+  "name": "metagoofil",
+  "url": "https://github.com/laramies/metagoofil",
+  "description": "Metadata harvester.",
+  "section": "Metadata harvesting and analysis",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

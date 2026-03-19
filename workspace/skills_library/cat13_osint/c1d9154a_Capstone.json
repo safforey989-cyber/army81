@@ -1,0 +1,9 @@
+{
+  "name": "Capstone",
+  "url": "http://www.capstone-engine.org/",
+  "description": "Lightweight multi-platform, multi-architecture disassembly framework.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "mil-tokyo",
+  "url": "https://github.com/mil-tokyo",
+  "description": "List of several machine learning libraries.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

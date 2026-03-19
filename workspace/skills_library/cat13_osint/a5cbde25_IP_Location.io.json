@@ -1,0 +1,9 @@
+{
+  "name": "IP Location.io",
+  "url": "https://iplocation.io",
+  "description": "IPLocation.io allows you to check the location of an IP for free",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

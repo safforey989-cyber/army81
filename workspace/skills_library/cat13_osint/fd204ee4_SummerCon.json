@@ -1,0 +1,9 @@
+{
+  "name": "SummerCon",
+  "url": "https://www.summercon.org/",
+  "description": "One of the oldest hacker conventions in America, held during Summer.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

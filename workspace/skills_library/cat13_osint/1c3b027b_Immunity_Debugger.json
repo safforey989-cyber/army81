@@ -1,0 +1,9 @@
+{
+  "name": "Immunity Debugger",
+  "url": "https://immunityinc.com/products/debugger/",
+  "description": "Powerful way to write exploits and analyze malware.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

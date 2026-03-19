@@ -1,0 +1,9 @@
+{
+  "name": "htm.java",
+  "url": "https://github.com/numenta/htm.java",
+  "description": "General Machine Learning library using Numenta’s Cortical Learning Algorithm.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

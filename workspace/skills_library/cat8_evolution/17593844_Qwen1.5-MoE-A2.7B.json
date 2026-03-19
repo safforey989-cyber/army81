@@ -1,0 +1,9 @@
+{
+  "name": "Qwen1.5-MoE-A2.7B",
+  "url": "https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B",
+  "description": ", [Qwen1.5-MoE-A2.7B-Chat](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B-Chat) | [Qwen1.5-MoE: Matching 7B Model Performance with 1/3 Activated Parameters](https://qwenlm.github.io/blog/qwen-moe/) | 14.3 | [8192](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B/blob/main/config.json) | [Custom](https:/",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

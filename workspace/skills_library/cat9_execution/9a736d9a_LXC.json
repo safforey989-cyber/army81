@@ -1,0 +1,9 @@
+{
+  "name": "LXC",
+  "url": "https://linuxcontainers.org/lxc/",
+  "description": "Userspace interface for the Linux kernel containment features. ([Source Code](https://github.com/lxc/lxc)) `GPL-2.0` `C`",
+  "section": "Software Containers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

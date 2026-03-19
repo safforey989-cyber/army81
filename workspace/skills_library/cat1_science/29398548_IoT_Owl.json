@@ -1,0 +1,9 @@
+{
+  "name": "IoT Owl",
+  "url": "https://github.com/Ret2Me/IoT-Owl",
+  "description": "Light face detection and recognition system with huge possibilities, based on Microsoft Face API and TensorFlow made for small IoT devices like raspberry pi.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

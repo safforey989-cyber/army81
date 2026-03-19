@@ -1,0 +1,9 @@
+{
+  "name": "lambda-ml",
+  "url": "https://github.com/cloudkj/lambda-ml",
+  "description": "Simple, concise implementations of machine learning techniques and utilities in Clojure.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

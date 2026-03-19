@@ -1,0 +1,9 @@
+{
+  "name": "scrt.link",
+  "url": "https://scrt.link/",
+  "description": "Share a Secret with a link that only works one time and then self-destructs.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

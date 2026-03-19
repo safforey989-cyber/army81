@@ -1,0 +1,9 @@
+{
+  "name": "LineaPy",
+  "url": "https://github.com/LineaLabs/lineapy",
+  "description": "| Ever been frustrated with cleaning up long, messy Jupyter notebooks? With LineaPy, an open source Python library, it takes as little as two lines of code to transform messy development code into production pipelines. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

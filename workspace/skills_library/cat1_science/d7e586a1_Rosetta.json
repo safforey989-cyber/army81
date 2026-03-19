@@ -1,0 +1,9 @@
+{
+  "name": "Rosetta",
+  "url": "https://github.com/columbia-applied-data-science/rosetta",
+  "description": "Text processing tools and wrappers (e.g. Vowpal Wabbit)",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

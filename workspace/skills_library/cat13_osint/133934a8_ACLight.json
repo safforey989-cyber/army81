@@ -1,0 +1,9 @@
+{
+  "name": "ACLight",
+  "url": "https://github.com/cyberark/ACLight",
+  "description": "Script for advanced discovery of sensitive Privileged Accounts - includes Shadow Admins.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

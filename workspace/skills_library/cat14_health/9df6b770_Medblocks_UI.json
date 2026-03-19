@@ -1,0 +1,9 @@
+{
+  "name": "Medblocks UI",
+  "url": "https://github.com/medblocks/medblocks-ui",
+  "description": "Web Components for rapid development of openEHR and FHIR systems.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

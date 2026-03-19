@@ -1,0 +1,9 @@
+{
+  "name": "VDP",
+  "url": "https://github.com/instill-ai/vdp",
+  "description": "open source visual data ETL to streamline the end-to-end visual data processing pipeline: extract unstructured visual data from pre-built data sources, transform it into analysable structured insights by Vision AI models imported from various ML platforms, and load the insights into warehouses or ap",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

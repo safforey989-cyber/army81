@@ -1,0 +1,9 @@
+{
+  "name": "Databasus",
+  "url": "https://databasus.com/",
+  "description": "PostgreSQL, MySQL, MariaDB and MongoDB backup tool with web UI, external storages (local, S3, FTP, Google Drive, etc.), notifications (webhook, Discord, Slack, etc.) and team management. ([Source Code](https://github.com/databasus/databasus)) `Apache-2.0` `Docker`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

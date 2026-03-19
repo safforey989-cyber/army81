@@ -1,0 +1,9 @@
+{
+  "name": "python-recsys",
+  "url": "https://github.com/ocelma/python-recsys",
+  "description": "A Python library for implementing a Recommender System.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

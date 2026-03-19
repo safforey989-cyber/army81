@@ -1,0 +1,9 @@
+{
+  "name": "GPT Researcher",
+  "url": "https://app.tavily.com/",
+  "description": ": AI agents for insights and research",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

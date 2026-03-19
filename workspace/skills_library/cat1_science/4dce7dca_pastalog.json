@@ -1,0 +1,9 @@
+{
+  "name": "pastalog",
+  "url": "https://github.com/rewonc/pastalog",
+  "description": "Simple, realtime visualization of neural network training performance.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

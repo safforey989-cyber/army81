@@ -1,0 +1,9 @@
+{
+  "name": "scruffy",
+  "url": "https://github.com/delano/scruffy",
+  "description": "A beautiful graphing toolkit for Ruby.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

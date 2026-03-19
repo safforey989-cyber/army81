@@ -1,0 +1,9 @@
+{
+  "name": "NDScala",
+  "url": "https://github.com/SciScala/NDScala",
+  "description": "N-dimensional arrays in Scala 3. Think NumPy ndarray, but with compile-time type-checking/inference over shapes, tensor/axis labels & numeric data types",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

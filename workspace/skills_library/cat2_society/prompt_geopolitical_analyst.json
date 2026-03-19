@@ -1,0 +1,7 @@
+{
+  "name": "geopolitical_analyst",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل التداعيات الجيوسياسية لـ {event}. من المستفيد ومن المتضرر؟",
+  "category": "cat2_society",
+  "source": "built_in"
+}

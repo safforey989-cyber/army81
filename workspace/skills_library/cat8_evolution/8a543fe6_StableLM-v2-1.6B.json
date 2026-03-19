@@ -1,0 +1,9 @@
+{
+  "name": "StableLM-v2-1.6B",
+  "url": "https://huggingface.co/stabilityai/stablelm-2-1_6b",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

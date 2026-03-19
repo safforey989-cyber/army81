@@ -1,0 +1,9 @@
+{
+  "name": "EmailHippo",
+  "url": "https://tools.verifyemailaddress.io",
+  "description": "is an email address verification platform that will check whether a given email address exist or not.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

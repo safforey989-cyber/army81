@@ -1,0 +1,9 @@
+{
+  "name": "PyGrid",
+  "url": "https://github.com/OpenMined/PyGrid/",
+  "description": "Peer-to-peer network of data owners and data scientists who can collectively train AI models using PySyft",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

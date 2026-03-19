@@ -1,0 +1,9 @@
+{
+  "name": "Openstack Swift",
+  "url": "https://docs.openstack.org/developer/swift/",
+  "description": "A highly available, distributed, eventually consistent object/blob store. ([Source Code](https://opendev.org/openstack/swift)) `Apache-2.0` `Python`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DragGAN",
+  "url": "https://github.com/XingangPan/DragGAN",
+  "description": "Drag Your GAN: Interactive Point-based Manipulation on the Generative Image Manifold.",
+  "section": "Models",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

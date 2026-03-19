@@ -1,0 +1,9 @@
+{
+  "name": "LLMStack",
+  "url": "https://github.com/trypromptly/LLMStack",
+  "description": ": No code platform for building LLM-powered applications with custom data. ![GitHub Repo stars](https://img.shields.io/github/stars/trypromptly/LLMStack?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

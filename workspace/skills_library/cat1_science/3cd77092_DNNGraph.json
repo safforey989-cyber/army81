@@ -1,0 +1,9 @@
+{
+  "name": "DNNGraph",
+  "url": "https://github.com/ajtulloch/dnngraph",
+  "description": "A DSL for deep neural networks. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

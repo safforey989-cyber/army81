@@ -1,0 +1,9 @@
+{
+  "name": "Omero",
+  "url": "https://github.com/ome/openmicroscopy",
+  "description": "open source client/server system written in Java for visualizing, managing, and annotating microscope images and metadata",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

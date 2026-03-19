@@ -1,0 +1,9 @@
+{
+  "name": "Data Driven Code",
+  "url": "https://github.com/atmb4u/data-driven-code",
+  "description": "Very simple implementation of neural networks for dummies in python without using any libraries, with detailed comments.",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

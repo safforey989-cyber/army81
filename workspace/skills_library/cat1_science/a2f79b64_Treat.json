@@ -1,0 +1,9 @@
+{
+  "name": "Treat",
+  "url": "https://github.com/louismullie/treat",
+  "description": "Text Retrieval and Annotation Toolkit, definitely the most comprehensive toolkit I’ve encountered so far for Ruby.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "saliency",
+  "url": "https://github.com/marcoscoffier/torch-saliency",
+  "description": "code and tools around integral images. A library for finding interest points based on fast integral histograms. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

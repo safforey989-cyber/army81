@@ -1,0 +1,9 @@
+{
+  "name": "ThinkGPT",
+  "url": "https://github.com/alaeddine-13/thinkgpt",
+  "description": ": Agent techniques to augment your LLM and push it beyond its limits ![GitHub Repo stars](https://img.shields.io/github/stars/alaeddine-13/thinkgpt?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

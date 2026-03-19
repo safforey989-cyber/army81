@@ -1,0 +1,9 @@
+{
+  "name": "Ralph",
+  "url": "https://ralph.allegro.tech/",
+  "description": "Asset management, DCIM and CMDB system for large Data Centers as well as smaller LAN networks. ([Demo](https://github.com/allegro/ralph#live-demo), [Source Code](https://github.com/allegro/ralph)) `Apache-2.0` `Python/Docker`",
+  "section": "IT Asset Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Fiddler AI",
+  "url": "https://www.fiddler.ai",
+  "description": "The all-in-one AI Observability and Security platform for responsible AI. It provides monitoring, analytics, and centralized controls to operationalize ML, GenAI, and LLM applications with trust. Fiddler helps enterprises scale LLM and ML deployments to deliver high performance AI, reduce costs, and",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

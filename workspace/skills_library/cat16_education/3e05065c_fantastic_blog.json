@@ -1,0 +1,9 @@
+{
+  "name": "fantastic blog",
+  "url": "http://matt.might.net/articles/",
+  "description": "you ought to give this a shot. The course covers the design and implementation of compilers, and it explores related topics such as interpreters, virtual machines and runtime systems. Aside from the Prof's witty take on [cheating](http://matt.might.net/teaching/compilers/spring-2015/#collaboration) ",
+  "section": "Programming Languages / Compilers",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

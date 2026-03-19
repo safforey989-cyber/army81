@@ -1,0 +1,7 @@
+{
+  "name": "trend_forecaster",
+  "type": "prompt_pattern",
+  "prompt_template": "تنبأ بالاتجاهات في {field} للـ 5 سنوات القادمة بناءً على البيانات الحالية.",
+  "category": "cat2_society",
+  "source": "built_in"
+}

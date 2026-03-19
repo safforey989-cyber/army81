@@ -1,0 +1,9 @@
+{
+  "name": "Prompt engineering - OpenAI API",
+  "url": "https://platform.openai.com/docs/guides/prompt-engineering",
+  "description": ": OpenAI's document with strategies and tactics for getting better results from large language models",
+  "section": "Prompt Engineering",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "services",
+  "url": "https://www.promptingguide.ai/services",
+  "description": "like corporate training, consulting, and talks.",
+  "section": "Announcements / Updates",
+  "topic": "prompt_engineering",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

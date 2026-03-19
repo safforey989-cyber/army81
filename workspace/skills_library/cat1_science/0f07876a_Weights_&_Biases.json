@@ -1,0 +1,9 @@
+{
+  "name": "Weights & Biases",
+  "url": "https://github.com/wandb/wandb",
+  "description": "| Experiment tracking, dataset versioning, and model management |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

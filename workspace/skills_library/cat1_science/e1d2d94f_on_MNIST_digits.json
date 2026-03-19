@@ -1,0 +1,9 @@
+{
+  "name": "on MNIST digits",
+  "url": "https://www.cs.toronto.edu/~hinton/MatlabForSciencePaper.html",
+  "description": "Training a deep autoencoder or a classifier",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

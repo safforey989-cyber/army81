@@ -1,0 +1,9 @@
+{
+  "name": "EDGAR U.S. Securities and Exchange Commission Filings",
+  "url": "http://www.edgar-online.com",
+  "description": "Periodic reports and extensive corporate disclosures from all businesses publicly traded in the United States.",
+  "section": "[↑](#-table-of-contents) Company Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

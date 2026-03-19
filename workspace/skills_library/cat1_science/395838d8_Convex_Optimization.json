@@ -1,0 +1,9 @@
+{
+  "name": "Convex Optimization",
+  "url": "https://www.edx.org/course/convex-optimization",
+  "description": "Convex Optimization (basics of convex analysis; least-squares, linear and quadratic programs, semidefinite programming, minimax, extremal volume, and other problems; optimality conditions, duality theory...)",
+  "section": "Free Courses",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

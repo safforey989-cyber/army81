@@ -1,0 +1,9 @@
+{
+  "name": "kalman",
+  "url": "https://github.com/itamarwe/kalman",
+  "description": "Kalman filter for JavaScript. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

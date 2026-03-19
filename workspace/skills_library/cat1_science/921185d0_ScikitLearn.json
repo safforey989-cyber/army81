@@ -1,0 +1,9 @@
+{
+  "name": "ScikitLearn",
+  "url": "https://github.com/cstjean/ScikitLearn.jl",
+  "description": "Julia implementation of the scikit-learn API.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "TextMate",
+  "url": "https://macromates.com/",
+  "description": "A graphical text editor for OS X. ([Source Code](https://github.com/textmate/textmate/)) `GPL-3.0` `C++`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

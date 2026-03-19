@@ -1,0 +1,9 @@
+{
+  "name": "GreatCircle",
+  "url": "https://github.com/mwgg/GreatCircle",
+  "description": "Library for calculating great circle distance.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

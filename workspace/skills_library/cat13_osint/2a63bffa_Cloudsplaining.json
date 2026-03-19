@@ -1,0 +1,9 @@
+{
+  "name": "Cloudsplaining",
+  "url": "https://cloudsplaining.readthedocs.io/",
+  "description": "Identifies violations of least privilege in AWS IAM policies and generates a pretty HTML report with a triage worksheet.",
+  "section": "Cloud Platform Attack Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

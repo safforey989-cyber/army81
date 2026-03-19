@@ -1,0 +1,9 @@
+{
+  "name": "Polars",
+  "url": "https://github.com/pola-rs/polars",
+  "description": "| Fast DataFrame library for Rust and Python, designed as a faster alternative to Pandas |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "OpenLDAP",
+  "url": "https://www.openldap.org/",
+  "description": "Open-source implementation of the Lightweight Directory Access Protocol (server, libraries and clients). ([Source Code](https://git.openldap.org/openldap/openldap)) `OLDAP-2.8` `C`",
+  "section": "Identity Management - LDAP",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

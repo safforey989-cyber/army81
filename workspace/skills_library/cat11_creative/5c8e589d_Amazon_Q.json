@@ -1,0 +1,9 @@
+{
+  "name": "Amazon Q",
+  "url": "https://aws.amazon.com/q/",
+  "description": "The AWS generative AI–powered assistant that helps answer questions, write code, and automate tasks.",
+  "section": "Coding Assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

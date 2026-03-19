@@ -1,0 +1,9 @@
+{
+  "name": "VisualWebArena",
+  "url": "https://jykoh.com/vwa",
+  "description": "a benchmark designed to assess the performance of multimodal web agents on realistic visually grounded tasks.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

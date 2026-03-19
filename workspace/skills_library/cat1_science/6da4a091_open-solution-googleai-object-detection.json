@@ -1,0 +1,9 @@
+{
+  "name": "open-solution-googleai-object-detection",
+  "url": "https://github.com/neptune-ml/open-solution-googleai-object-detection",
+  "description": "> source code and [experiments results](https://app.neptune.ml/neptune-ml/Google-AI-Object-Detection-Challenge) for [Google AI Open Images - Object Detection Track](https://www.kaggle.com/c/google-ai-open-images-object-detection-track).",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

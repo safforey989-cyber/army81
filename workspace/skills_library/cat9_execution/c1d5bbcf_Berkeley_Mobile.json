@@ -1,0 +1,9 @@
+{
+  "name": "Berkeley Mobile",
+  "url": "https://github.com/asuc-octo/berkeley-mobile-ios",
+  "description": ": UC Berkeley companion (track buses, find library hours, see dining menus, and access campus resources)",
+  "section": "Education",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

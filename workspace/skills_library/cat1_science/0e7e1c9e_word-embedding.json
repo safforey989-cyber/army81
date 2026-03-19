@@ -1,0 +1,9 @@
+{
+  "name": "word-embedding",
+  "url": "https://github.com/ynqa/word-embedding",
+  "description": "Word Embeddings: the full implementation of word2vec, GloVe in Go.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

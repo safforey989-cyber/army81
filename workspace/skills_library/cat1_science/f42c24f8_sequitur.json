@@ -1,0 +1,9 @@
+{
+  "name": "sequitur",
+  "url": "https://github.com/shobrook/sequitur",
+  "description": "PyTorch library for creating and training sequence autoencoders in just two lines of code",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

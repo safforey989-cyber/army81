@@ -1,0 +1,9 @@
+{
+  "name": "Atari2600",
+  "url": "https://github.com/fidlej/aledataset",
+  "description": "Scripts to generate a dataset with static frames from the Arcade Learning Environment.",
+  "section": "Demos and Scripts",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

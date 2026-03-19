@@ -1,0 +1,9 @@
+{
+  "name": "Telegraf",
+  "url": "https://github.com/influxdata/telegraf",
+  "description": "Plugin-driven server agent for collecting, processing, aggregating, and writing metrics. `MIT` `Go`",
+  "section": "Metrics & Metric Collection",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

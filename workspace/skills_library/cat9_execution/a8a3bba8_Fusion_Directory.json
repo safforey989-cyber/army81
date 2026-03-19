@@ -1,0 +1,9 @@
+{
+  "name": "Fusion Directory",
+  "url": "https://www.fusiondirectory.org",
+  "description": "Improve the Management of the services and the company directory based on OpenLDAP. ([Source Code](https://github.com/fusiondirectory/fusiondirectory)) `GPL-2.0` `PHP`",
+  "section": "Identity Management - Tools and web interfaces",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

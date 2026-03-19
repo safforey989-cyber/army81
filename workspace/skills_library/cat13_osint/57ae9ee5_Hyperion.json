@@ -1,0 +1,9 @@
+{
+  "name": "Hyperion",
+  "url": "http://nullsecurity.net/tools/binary.html",
+  "description": "Runtime encryptor for 32-bit portable executables (\"PE `.exe`s\").",
+  "section": "Anti-virus Evasion Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

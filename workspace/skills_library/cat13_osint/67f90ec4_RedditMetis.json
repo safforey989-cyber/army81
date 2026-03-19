@@ -1,0 +1,9 @@
+{
+  "name": "RedditMetis",
+  "url": "https://redditmetis.com/",
+  "description": "RedditMetis is a Reddit user analysis tool to see the summary and statistics for a Reddit account, including top posts and user activity etc.",
+  "section": "[↑](#-table-of-contents) Reddit",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

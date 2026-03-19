@@ -1,0 +1,9 @@
+{
+  "name": "Ansible",
+  "url": "https://www.ansible.com/",
+  "description": "Provisioning, configuration management, and application-deployment tool. ([Source Code](https://github.com/ansible/ansible)) `GPL-3.0` `Python`",
+  "section": "Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

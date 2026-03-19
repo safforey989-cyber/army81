@@ -1,0 +1,9 @@
+{
+  "name": "OWASP Amass",
+  "url": "https://github.com/OWASP/Amass",
+  "description": "Subdomain enumeration via scraping, web archives, brute forcing, permutations, reverse DNS sweeping, TLS certificates, passive DNS data sources, etc.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

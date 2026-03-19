@@ -1,0 +1,9 @@
+{
+  "name": "CMU Sphinx",
+  "url": "https://cmusphinx.github.io",
+  "description": "Open Source Toolkit For Speech Recognition purely based on Java speech recognition library.",
+  "section": "Speech Recognition",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

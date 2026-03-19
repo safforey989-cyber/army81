@@ -1,0 +1,9 @@
+{
+  "name": "HtDP",
+  "url": "http://htdp.org/2003-09-26/Book/",
+  "description": ") and numerous other [awesome](http://cs.brown.edu/courses/cs173/2012/book/) [books](http://papl.cs.brown.edu/2014/index.html) on programming languages. Uses a custom designed [Pyret](http://www.pyret.org/) programming language to teach the concepts. There was an [online class](http://cs.brown.edu/c",
+  "section": "Programming Languages / Compilers",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

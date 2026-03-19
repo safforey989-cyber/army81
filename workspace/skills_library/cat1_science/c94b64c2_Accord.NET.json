@@ -1,0 +1,9 @@
+{
+  "name": "Accord.NET",
+  "url": "http://accord-framework.net",
+  "description": "Together with AForge.NET, this library can provide image processing and computer vision algorithms to Windows, Windows RT and Windows Phone. Some components are also available for Java and Android.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

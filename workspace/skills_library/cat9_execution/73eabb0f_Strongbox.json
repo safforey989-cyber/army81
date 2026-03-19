@@ -1,0 +1,9 @@
+{
+  "name": "Strongbox",
+  "url": "https://github.com/strongbox-password-safe/Strongbox",
+  "description": ": A Safe Client for KeePass/Password",
+  "section": "Password",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

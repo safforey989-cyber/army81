@@ -1,0 +1,9 @@
+{
+  "name": "rqalpha",
+  "url": "https://github.com/ricequant/rqalpha",
+  "description": "A extendable, replaceable Python algorithmic backtest & trading framework.",
+  "section": "Traditional Market",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

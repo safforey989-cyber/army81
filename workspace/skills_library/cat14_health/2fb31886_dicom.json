@@ -1,0 +1,9 @@
+{
+  "name": "dicom",
+  "url": "https://github.com/suyashkumar/dicom",
+  "description": "High Performance DICOM Medical Image Parser in GoLang.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

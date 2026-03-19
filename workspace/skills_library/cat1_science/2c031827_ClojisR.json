@@ -1,0 +1,9 @@
+{
+  "name": "ClojisR",
+  "url": "https://github.com/scicloj/clojisr",
+  "description": "Interop with R and Renjin (R on the JVM)",
+  "section": "Interop",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

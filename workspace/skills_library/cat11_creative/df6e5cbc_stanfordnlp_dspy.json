@@ -1,0 +1,9 @@
+{
+  "name": "stanfordnlp/dspy",
+  "url": "https://github.com/stanfordnlp/dspy",
+  "description": ": DSPy: The framework for programming — not prompting — foundation models",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

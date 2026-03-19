@@ -1,0 +1,9 @@
+{
+  "name": "ragapp/ragapp",
+  "url": "https://github.com/ragapp/ragapp",
+  "description": ": an alternative to use Agentic RAG in enterprises",
+  "section": "Retrieval-Augmented Generation (RAG)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Revolution Analytics",
+  "url": "https://blog.revolutionanalytics.com/",
+  "description": "Data Science Blog",
+  "section": "Bloggers",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

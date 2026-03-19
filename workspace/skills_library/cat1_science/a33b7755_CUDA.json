@@ -1,0 +1,9 @@
+{
+  "name": "CUDA",
+  "url": "https://code.google.com/p/cuda-convnet/",
+  "description": "This is a fast C++/CUDA implementation of convolutional [DEEP LEARNING]",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

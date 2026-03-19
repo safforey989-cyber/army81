@@ -1,0 +1,9 @@
+{
+  "name": "Rubeus",
+  "url": "https://github.com/GhostPack/Rubeus",
+  "description": "Toolset for raw Kerberos interaction and abuses.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

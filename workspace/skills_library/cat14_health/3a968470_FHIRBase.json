@@ -1,0 +1,9 @@
+{
+  "name": "FHIRBase",
+  "url": "https://fhirbase.github.io",
+  "description": "Storage based on the FHIR Standard.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

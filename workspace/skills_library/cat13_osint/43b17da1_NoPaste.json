@@ -1,0 +1,9 @@
+{
+  "name": "NoPaste",
+  "url": "https://nopaste.boris.sh/",
+  "description": "NoPaste is an open-source website similar to Pastebin where you can store any piece of code, and generate links for easy sharing.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

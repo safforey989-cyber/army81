@@ -1,0 +1,9 @@
+{
+  "name": "Model2App Test App",
+  "url": "https://github.com/Q-Mobile/Model2App",
+  "description": ": Simple CRM app built using Model2App library, lets you quickly generate a CRUD iOS app based on just a data model",
+  "section": "Realm",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

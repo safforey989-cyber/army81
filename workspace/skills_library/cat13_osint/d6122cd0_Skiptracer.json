@@ -1,0 +1,9 @@
+{
+  "name": "Skiptracer",
+  "url": "https://github.com/xillwillx/skiptracer",
+  "description": "OSINT scraping framework that utilizes basic Python webscraping (BeautifulSoup) of PII paywall sites to compile passive information on a target on a ramen noodle budget.",
+  "section": "Open Sources Intelligence (OSINT)",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

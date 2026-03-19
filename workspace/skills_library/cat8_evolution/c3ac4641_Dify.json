@@ -1,0 +1,9 @@
+{
+  "name": "Dify",
+  "url": "https://github.com/langgenius/dify",
+  "description": "An open-source LLM app development platform with an intuitive interface that streamlines AI workflows, model management, and production deployment.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

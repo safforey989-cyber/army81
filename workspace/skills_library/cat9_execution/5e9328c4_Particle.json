@@ -1,0 +1,9 @@
+{
+  "name": "Particle",
+  "url": "https://github.com/jaredwolff/swift-bluetooth-particle-rgb",
+  "description": ": Works with Particle Mesh boards over Bluetooth",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

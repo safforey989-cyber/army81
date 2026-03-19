@@ -1,0 +1,9 @@
+{
+  "name": "Jupyter AI",
+  "url": "https://github.com/jupyterlab/jupyter-ai",
+  "description": "An open-source, configurable AI assistant in Jupyter Notebook and JupyterLab that supports 100+ LLMs, including locally-hosted models from Ollama and GPT4All. #opensource",
+  "section": "Coding Assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "MAME4iOS",
+  "url": "https://github.com/yoshisuga/MAME4iOS",
+  "description": ": MAME frontend",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

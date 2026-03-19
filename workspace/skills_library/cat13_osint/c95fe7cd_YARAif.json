@@ -1,0 +1,9 @@
+{
+  "name": "YARAif",
+  "url": "https://yaraify.abuse.ch/scan/",
+  "description": "Collaborative YARA engine providing open threat intelligence through file pattern matching.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

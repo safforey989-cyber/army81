@@ -1,0 +1,9 @@
+{
+  "name": "TensorFlow Fold",
+  "url": "https://github.com/tensorflow/fold",
+  "description": "Tool from data_science",
+  "section": "TensorFlow Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

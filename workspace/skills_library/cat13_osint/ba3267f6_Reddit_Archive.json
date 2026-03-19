@@ -1,0 +1,9 @@
+{
+  "name": "Reddit Archive",
+  "url": "http://www.redditarchive.com",
+  "description": "Historical archives of reddit posts.",
+  "section": "[↑](#-table-of-contents) Reddit",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

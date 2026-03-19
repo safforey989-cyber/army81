@@ -1,0 +1,9 @@
+{
+  "name": "HeyGen",
+  "url": "https://app.heygen.com/",
+  "description": "Turn scripts into talking videos with customizable AI avatars in minutes.",
+  "section": "Video",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

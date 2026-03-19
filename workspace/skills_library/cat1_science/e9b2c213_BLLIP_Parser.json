@@ -1,0 +1,9 @@
+{
+  "name": "BLLIP Parser",
+  "url": "https://github.com/BLLIP/bllip-parser",
+  "description": "BLLIP Natural Language Parser (also known as the Charniak-Johnson parser).",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

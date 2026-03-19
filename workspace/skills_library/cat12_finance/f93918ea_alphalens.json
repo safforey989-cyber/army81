@@ -1,0 +1,9 @@
+{
+  "name": "alphalens",
+  "url": "https://github.com/quantopian/alphalens",
+  "description": "Performance analysis of predictive (alpha) stock factors.",
+  "section": "Research Tools",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

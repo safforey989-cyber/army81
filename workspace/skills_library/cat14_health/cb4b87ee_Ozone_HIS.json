@@ -1,0 +1,9 @@
+{
+  "name": "Ozone HIS",
+  "url": "https://www.ozone-his.com",
+  "description": "The entreprise-grade integrated health information system built with OpenMRS 3",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

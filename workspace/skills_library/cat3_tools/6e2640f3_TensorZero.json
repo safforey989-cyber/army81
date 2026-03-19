@@ -1,0 +1,9 @@
+{
+  "name": "TensorZero",
+  "url": "https://github.com/tensorzero/tensorzero",
+  "description": ": An open-source framework for building production-grade LLM applications. It unifies an LLM gateway, observability, optimization, evaluations, and experimentation. ![GitHub Repo stars](https://img.shields.io/github/stars/tensorzero/tensorzero?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Fluxion",
+  "url": "https://github.com/FluxionNetwork/fluxion",
+  "description": "Suite of automated social engineering based WPA attacks.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

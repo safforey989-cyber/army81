@@ -1,0 +1,9 @@
+{
+  "name": "phpList",
+  "url": "https://www.phplist.org/",
+  "description": "Newsletter and email marketing software. ([Source Code](https://github.com/phpList/phplist3)) `AGPL-3.0` `PHP`",
+  "section": "Miscellaneous",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

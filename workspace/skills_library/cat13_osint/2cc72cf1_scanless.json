@@ -1,0 +1,9 @@
+{
+  "name": "scanless",
+  "url": "https://github.com/vesche/scanless",
+  "description": "Utility for using websites to perform port scans on your behalf so as not to reveal your own IP.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

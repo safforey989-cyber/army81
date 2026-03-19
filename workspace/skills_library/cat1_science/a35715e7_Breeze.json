@@ -1,0 +1,9 @@
+{
+  "name": "Breeze",
+  "url": "https://github.com/scalanlp/breeze",
+  "description": "Breeze is a numerical processing library for Scala.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DuckDuckGo",
+  "url": "https://duckduckgo.com",
+  "description": "an Internet search engine that emphasizes protecting searchers' privacy.",
+  "section": "[↑](#-table-of-contents) Privacy Focused Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

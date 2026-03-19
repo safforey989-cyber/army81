@@ -1,0 +1,9 @@
+{
+  "name": "LLMEval",
+  "url": "http://llmeval.com",
+  "description": "focuses on understanding how these models perform in various scenarios and analyzing results from an interpretability perspective.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

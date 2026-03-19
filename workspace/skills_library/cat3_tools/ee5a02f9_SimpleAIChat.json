@@ -1,0 +1,9 @@
+{
+  "name": "SimpleAIChat",
+  "url": "https://github.com/minimaxir/simpleaichat",
+  "description": ": Python package for easily interfacing with chat apps, with robust features and minimal code complexity. ![GitHub Repo stars](https://img.shields.io/github/stars/minimaxir/simpleaichat?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

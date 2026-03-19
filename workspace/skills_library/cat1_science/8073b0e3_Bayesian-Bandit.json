@@ -1,0 +1,9 @@
+{
+  "name": "Bayesian-Bandit",
+  "url": "https://github.com/omphalos/bayesian-bandit.js",
+  "description": "Bayesian bandit implementation for Node and the browser. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

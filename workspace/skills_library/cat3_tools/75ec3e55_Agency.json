@@ -1,0 +1,9 @@
+{
+  "name": "Agency",
+  "url": "https://github.com/neurocult/agency",
+  "description": ": 🕵️‍♂️ Library designed for developers eager to explore the potential of Large Language Models (LLMs) and other generative AI through a clean, effective, and Go-idiomatic approach ![GitHub Repo stars](https://img.shields.io/github/stars/neurocult/agency?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

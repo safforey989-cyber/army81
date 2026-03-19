@@ -1,0 +1,9 @@
+{
+  "name": "Buildbot",
+  "url": "https://buildbot.net/",
+  "description": "Python-based toolkit for continuous integration. ([Source Code](https://github.com/buildbot/buildbot)) `GPL-2.0` `Python`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

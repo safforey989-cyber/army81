@@ -1,0 +1,9 @@
+{
+  "name": "CHARL-E",
+  "url": "https://www.charl-e.com/",
+  "description": ": Run Stable Diffusion on your M1 Mac",
+  "section": "Inbox: Stable Diffusion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

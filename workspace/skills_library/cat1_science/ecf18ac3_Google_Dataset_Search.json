@@ -1,0 +1,9 @@
+{
+  "name": "Google Dataset Search",
+  "url": "https://datasetsearch.research.google.com/",
+  "description": "– Find datasets across the web.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GitHub Advisories",
+  "url": "https://github.com/advisories/",
+  "description": "Public vulnerability advisories published by or affecting codebases hosted by GitHub, including open source projects.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

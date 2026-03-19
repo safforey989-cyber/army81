@@ -1,0 +1,9 @@
+{
+  "name": "AlpacaEval",
+  "url": "https://tatsu-lab.github.io/alpaca_eval/",
+  "description": "An Automatic Evaluator for Instruction-following Language Models using Nous benchmark suite.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

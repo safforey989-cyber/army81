@@ -1,0 +1,9 @@
+{
+  "name": "Cheshire Cat",
+  "url": "https://github.com/cheshire-cat-ai/core",
+  "description": ": Custom AGI boT with ready-to-use chat integration and plugins development platform. ![GitHub Repo stars](https://img.shields.io/github/stars/cheshire-cat-ai/core?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

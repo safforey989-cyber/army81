@@ -1,0 +1,9 @@
+{
+  "name": "OHIF",
+  "url": "https://github.com/OHIF/Viewers",
+  "description": "OHIF zero-footprint DICOM viewer and oncology specific Lesion Tracker.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

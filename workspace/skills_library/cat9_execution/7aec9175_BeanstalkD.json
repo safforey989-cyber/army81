@@ -1,0 +1,9 @@
+{
+  "name": "BeanstalkD",
+  "url": "https://beanstalkd.github.io/",
+  "description": "A simple, fast work queue. ([Source Code](https://github.com/beanstalkd/beanstalkd)) `MIT` `C`",
+  "section": "Queuing",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

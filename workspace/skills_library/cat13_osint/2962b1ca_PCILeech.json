@@ -1,0 +1,9 @@
+{
+  "name": "PCILeech",
+  "url": "https://github.com/ufrisk/pcileech",
+  "description": "Uses PCIe hardware devices to read and write from the target system memory via Direct Memory Access (DMA) over PCIe.",
+  "section": "Physical Access Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

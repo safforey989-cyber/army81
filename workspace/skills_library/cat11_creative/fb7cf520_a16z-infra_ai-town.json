@@ -1,0 +1,9 @@
+{
+  "name": "a16z-infra/ai-town",
+  "url": "https://github.com/a16z-infra/AI-town",
+  "description": ": A MIT-licensed, deployable starter kit for building and customizing your own version of AI town - a virtual town where AI characters live, chat and socialize.",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

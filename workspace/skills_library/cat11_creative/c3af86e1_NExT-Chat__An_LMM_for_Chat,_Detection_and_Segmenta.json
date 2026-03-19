@@ -1,0 +1,9 @@
+{
+  "name": "NExT-Chat: An LMM for Chat, Detection and Segmentation",
+  "url": "https://huggingface.co/papers/2311.04498",
+  "description": "Tool from generative_ai",
+  "section": "Multimodal",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

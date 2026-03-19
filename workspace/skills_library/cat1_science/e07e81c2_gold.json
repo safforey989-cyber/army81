@@ -1,0 +1,9 @@
+{
+  "name": "gold",
+  "url": "https://github.com/aunum/gold",
+  "description": "A reinforcement learning library.",
+  "section": "Reinforcement learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

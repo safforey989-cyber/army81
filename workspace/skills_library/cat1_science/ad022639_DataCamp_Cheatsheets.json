@@ -1,0 +1,9 @@
+{
+  "name": "DataCamp Cheatsheets",
+  "url": "https://www.datacamp.com/cheat-sheet",
+  "description": "Cheatsheets for data science.",
+  "section": "Tutorials",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

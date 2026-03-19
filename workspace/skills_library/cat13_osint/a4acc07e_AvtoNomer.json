@@ -1,0 +1,9 @@
+{
+  "name": "AvtoNomer",
+  "url": "https://t.me/avtonomerbot",
+  "description": "Finds vehicle photos by plate via platesmania.com.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

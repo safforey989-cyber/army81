@@ -1,0 +1,9 @@
+{
+  "name": "An Introduction to Statistical Learning, with Applications in R",
+  "url": "http://www-bcf.usc.edu/~gareth/ISL/",
+  "description": "which is a more approachable version of the [Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/) (or ESL) book.",
+  "section": "Machine Learning",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

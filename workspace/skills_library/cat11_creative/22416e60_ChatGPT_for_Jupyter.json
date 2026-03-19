@@ -1,0 +1,9 @@
+{
+  "name": "ChatGPT for Jupyter",
+  "url": "https://github.com/TiesdeKok/chat-gpt-jupyter-extension",
+  "description": "Add various helper functions in Jupyter Notebooks and Jupyter Lab, powered by ChatGPT.",
+  "section": "ChatGPT extensions",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

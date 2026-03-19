@@ -1,0 +1,9 @@
+{
+  "name": "Autonomous HR Chatbot",
+  "url": "https://github.com/stepanogil/autonomous-hr-chatbot",
+  "description": ": An autonomous agent that can answer HR related queries autonomously using the tools it has on hand ![GitHub Repo stars](https://img.shields.io/github/stars/stepanogil/autonomous-hr-chatbot?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

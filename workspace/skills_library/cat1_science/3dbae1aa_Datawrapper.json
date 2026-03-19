@@ -1,0 +1,9 @@
+{
+  "name": "Datawrapper",
+  "url": "https://www.datawrapper.de/",
+  "description": "| An open source data visualization platform helping everyone to create simple, correct and embeddable charts. Also at [github.com](https://github.com/datawrapper/datawrapper) |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

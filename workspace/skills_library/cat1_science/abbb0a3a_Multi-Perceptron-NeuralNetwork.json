@@ -1,0 +1,9 @@
+{
+  "name": "Multi-Perceptron-NeuralNetwork",
+  "url": "https://github.com/Kalvar/ios-Multi-Perceptron-NeuralNetwork",
+  "description": "It implemented multi-perceptrons neural network (ニューラルネットワーク) based on Back Propagation Neural Networks (BPN) and designed unlimited-hidden-layers.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Spark",
+  "url": "https://github.com/apache/spark",
+  "description": "Spark is a fast and general engine for large-scale data processing.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

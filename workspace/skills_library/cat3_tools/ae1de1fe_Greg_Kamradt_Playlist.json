@@ -1,0 +1,9 @@
+{
+  "name": "Greg Kamradt Playlist",
+  "url": "https://www.youtube.com/watch?v=_v_fgW2SkkQ&list=PLqZXAkvF1bPNQER9mLmDbntNfSpzdDIU5",
+  "description": "Tool from langchain_tools",
+  "section": "Videos Playlists",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

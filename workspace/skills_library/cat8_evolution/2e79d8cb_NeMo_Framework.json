@@ -1,0 +1,9 @@
+{
+  "name": "NeMo Framework",
+  "url": "https://github.com/NVIDIA/NeMo",
+  "description": "Generative AI framework built for researchers and PyTorch developers working on Large Language Models (LLMs), Multimodal Models (MMs), Automatic Speech Recognition (ASR), Text to Speech (TTS), and Computer Vision (CV) domains.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

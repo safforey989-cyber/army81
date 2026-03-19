@@ -1,0 +1,9 @@
+{
+  "name": "BrainSoup",
+  "url": "https://www.nurgo-software.com/products/brainsoup",
+  "description": ": multi-agent & multi-LLM client with RAG, multi-modality, automation, code interpreter, and sandboxed file system",
+  "section": "Multi-agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

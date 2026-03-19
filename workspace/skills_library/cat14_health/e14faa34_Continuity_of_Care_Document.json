@@ -1,0 +1,9 @@
+{
+  "name": "Continuity of Care Document",
+  "url": "https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7",
+  "description": "Continuity of Care Document specifications",
+  "section": "Specifications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

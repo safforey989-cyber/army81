@@ -1,0 +1,9 @@
+{
+  "name": "ORYX",
+  "url": "https://github.com/oryxproject/oryx",
+  "description": "Lambda Architecture Framework using Apache Spark and Apache Kafka with a specialization for real-time large-scale machine learning.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

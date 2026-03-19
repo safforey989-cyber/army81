@@ -1,0 +1,9 @@
+{
+  "name": "SQLmap",
+  "url": "http://sqlmap.org/",
+  "description": "Automatic SQL injection and database takeover tool.",
+  "section": "Web injection tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Technologies in LabLab",
+  "url": "https://lablab.ai/tech",
+  "description": ": list of AI tools suggested by [lablab.ai](https://lablab.ai) for their hackathons",
+  "section": "Generative AI Tools Directories",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

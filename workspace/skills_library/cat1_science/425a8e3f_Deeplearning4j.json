@@ -1,0 +1,9 @@
+{
+  "name": "Deeplearning4j",
+  "url": "https://github.com/deeplearning4j/deeplearning4j",
+  "description": "Scalable deep learning for industry with parallel GPUs.",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

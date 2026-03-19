@@ -1,0 +1,9 @@
+{
+  "name": "steppy",
+  "url": "https://github.com/minerva-ml/steppy",
+  "description": "| Lightweight, Python library for fast and reproducible machine learning experimentation. Introduces very simple interface that enables clean machine learning pipeline design. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "IJulia",
+  "url": "https://github.com/JuliaLang/IJulia.jl",
+  "description": "| a Julia-language backend combined with the Jupyter interactive environment |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

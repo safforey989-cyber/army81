@@ -1,0 +1,9 @@
+{
+  "name": "segmentation_models",
+  "url": "https://github.com/qubvel/segmentation_models",
+  "description": "A TensorFlow Keras-based toolkit that offers pre-trained segmentation models for computer vision tasks. It simplifies the development of image segmentation applications by providing a collection of popular architecture implementations, such as UNet and PSPNet, along with pre-trained weights, making ",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

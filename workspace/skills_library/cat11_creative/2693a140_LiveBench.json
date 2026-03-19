@@ -1,0 +1,9 @@
+{
+  "name": "LiveBench",
+  "url": "https://livebench.ai/",
+  "description": ": A Challenging, Contamination-Free LLM Benchmark",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

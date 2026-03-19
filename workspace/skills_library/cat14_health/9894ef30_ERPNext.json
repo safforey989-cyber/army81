@@ -1,0 +1,9 @@
+{
+  "name": "ERPNext",
+  "url": "https://github.com/frappe/erpnext",
+  "description": "Modules that help manage patients, appointments, consultations, lab tests, and billing.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

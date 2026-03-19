@@ -1,0 +1,9 @@
+{
+  "name": "PyDexter",
+  "url": "https://github.com/D3xterjs/pydexter",
+  "description": "Simple plotting for Python. Wrapper for D3xterjs; easily render charts in-browser.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

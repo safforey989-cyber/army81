@@ -1,0 +1,9 @@
+{
+  "name": "Search with Lepton",
+  "url": "https://github.com/leptonai/search_with_lepton",
+  "description": "Build your own conversational search engine using less than 500 lines of code by [LeptonAI](https://github.com/leptonai).",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

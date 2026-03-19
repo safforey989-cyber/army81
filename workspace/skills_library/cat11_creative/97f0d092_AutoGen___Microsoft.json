@@ -1,0 +1,9 @@
+{
+  "name": "AutoGen | Microsoft",
+  "url": "https://microsoft.github.io/autogen/",
+  "description": ": multi-agent conversation framework as a high-level abstraction by Microsoft [[github](https://github.com/microsoft/autogen)]",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

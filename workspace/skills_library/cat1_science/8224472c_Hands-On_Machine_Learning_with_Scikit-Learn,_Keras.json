@@ -1,0 +1,9 @@
+{
+  "name": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+  "url": "https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1098125975",
+  "description": "Through a recent series of breakthroughs, deep learning has boosted the entire field of machine learning. Now, even programmers who know close to nothing about this technology can use simple, efficient tools to implement programs capable of learning from data. This bestselling book uses concrete exa",
+  "section": "Books",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

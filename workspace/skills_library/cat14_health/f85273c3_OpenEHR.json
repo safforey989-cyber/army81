@@ -1,0 +1,9 @@
+{
+  "name": "OpenEHR",
+  "url": "https://www.openehr.org",
+  "description": "Open specification upon which software can be built.",
+  "section": "Specifications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

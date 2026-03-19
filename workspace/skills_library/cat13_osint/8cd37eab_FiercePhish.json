@@ -1,0 +1,9 @@
+{
+  "name": "FiercePhish",
+  "url": "https://github.com/Raikia/FiercePhish",
+  "description": "Full-fledged phishing framework to manage all phishing engagements.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Machine Learning Bookcamp",
+  "url": "https://mlbookcamp.com/",
+  "description": "Early access",
+  "section": "Books",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

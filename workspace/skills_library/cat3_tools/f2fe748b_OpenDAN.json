@@ -1,0 +1,9 @@
+{
+  "name": "OpenDAN",
+  "url": "https://github.com/fiatrete/OpenDAN-Personal-AI-OS",
+  "description": ": open source Personal AI OS , which consolidates various AI modules in one place for your personal use. ![GitHub Repo stars](https://img.shields.io/github/stars/fiatrete/OpenDAN-Personal-AI-OS?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

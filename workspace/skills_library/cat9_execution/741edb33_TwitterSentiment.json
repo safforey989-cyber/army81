@@ -1,0 +1,9 @@
+{
+  "name": "TwitterSentiment",
+  "url": "https://github.com/draese/TwitterSentiment",
+  "description": ": Score Twitter messages using a CoreML model for NLP sentiment analysis",
+  "section": "Education",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "KeyCloak",
+  "url": "https://www.keycloak.org",
+  "description": "Open Source Identity and Access Management. ([Source Code](https://github.com/keycloak/keycloak)) `Apache-2.0` `Java`",
+  "section": "Identity Management - Single Sign-On (SSO)",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

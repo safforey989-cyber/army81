@@ -1,0 +1,9 @@
+{
+  "name": "Virtualmin",
+  "url": "https://www.virtualmin.com/",
+  "description": "Powerful and flexible web hosting control panel for Linux and BSD systems. ([Source Code](https://github.com/virtualmin)) `GPL-3.0` `Shell/Perl/Other`",
+  "section": "Control Panels",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

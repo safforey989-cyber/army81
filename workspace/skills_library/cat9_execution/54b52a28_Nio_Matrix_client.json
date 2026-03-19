@@ -1,0 +1,9 @@
+{
+  "name": "Nio Matrix client",
+  "url": "https://github.com/niochat/nio",
+  "description": "Tool from mobile_apps",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "NumPy",
+  "url": "https://numpy.org/",
+  "description": "| NumPy is fundamental for scientific computing with Python. It supports large, multi-dimensional arrays and matrices and includes an assortment of high-level mathematical functions to operate on these arrays. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

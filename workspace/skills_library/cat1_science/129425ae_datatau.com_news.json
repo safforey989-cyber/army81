@@ -1,0 +1,9 @@
+{
+  "name": "datatau.com/news",
+  "url": "https://www.datatau.com/news",
+  "description": "Like Hacker News, but for data",
+  "section": "Journals, Publications and Magazines",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

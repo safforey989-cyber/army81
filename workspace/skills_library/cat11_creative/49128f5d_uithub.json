@@ -1,0 +1,9 @@
+{
+  "name": "uithub",
+  "url": "https://uithub.com/",
+  "description": ": convert GitHub repositories into Markdown by placing the URL in the search bar",
+  "section": "Everything to Markdown to LLMs",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Weaviate",
+  "url": "https://www.semi.technology/developers/weaviate/current/",
+  "description": "– Weaviate is an [open source](https://github.com/semi-technologies/weaviate) vector search engine and vector database. Weaviate uses machine learning to vectorize and store data, and to find answers to natural language queries. With Weaviate you can also bring your custom ML models to production sc",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

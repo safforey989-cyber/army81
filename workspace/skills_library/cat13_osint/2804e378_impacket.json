@@ -1,0 +1,9 @@
+{
+  "name": "impacket",
+  "url": "https://github.com/CoreSecurity/impacket",
+  "description": "Collection of Python classes for working with network protocols.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

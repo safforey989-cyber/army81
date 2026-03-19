@@ -1,0 +1,9 @@
+{
+  "name": "ActiveMQ",
+  "url": "https://activemq.apache.org/",
+  "description": "Java message broker. ([Source Code](https://github.com/apache/activemq)) `Apache-2.0` `Java`",
+  "section": "Queuing",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

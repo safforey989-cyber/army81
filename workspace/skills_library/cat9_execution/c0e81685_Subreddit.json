@@ -1,0 +1,9 @@
+{
+  "name": "Subreddit",
+  "url": "https://www.reddit.com/r/LocalGPT/",
+  "description": "Tool from ai_agents",
+  "section": "Links",
+  "topic": "ai_agents",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

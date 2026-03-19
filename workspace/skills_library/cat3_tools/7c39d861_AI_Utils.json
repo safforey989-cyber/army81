@@ -1,0 +1,9 @@
+{
+  "name": "AI Utils",
+  "url": "https://github.com/lgrammel/ai-utils.js",
+  "description": ": TypeScript-first library for building AI apps, chatbots, and agents. ![GitHub Repo stars](https://img.shields.io/github/stars/lgrammel/ai-utils.js?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

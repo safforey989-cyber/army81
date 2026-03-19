@@ -1,0 +1,9 @@
+{
+  "name": "theHarvester",
+  "url": "https://github.com/laramies/theHarvester",
+  "description": "E-mail, subdomain and people names harvester.",
+  "section": "Metadata harvesting and analysis",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

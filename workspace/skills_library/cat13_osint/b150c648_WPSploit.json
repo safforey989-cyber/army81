@@ -1,0 +1,9 @@
+{
+  "name": "WPSploit",
+  "url": "https://github.com/espreto/wpsploit",
+  "description": "Exploit WordPress-powered websites with Metasploit.",
+  "section": "Web Exploitation",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

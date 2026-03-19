@@ -1,0 +1,9 @@
+{
+  "name": "UC Irvine Machine Learning Repository",
+  "url": "https://archive.ics.uci.edu/ml/",
+  "description": "contains data sets good for machine learning",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

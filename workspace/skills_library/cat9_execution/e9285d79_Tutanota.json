@@ -1,0 +1,9 @@
+{
+  "name": "Tutanota",
+  "url": "https://github.com/tutao/tutanota",
+  "description": ": End-to-end encrypted email",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

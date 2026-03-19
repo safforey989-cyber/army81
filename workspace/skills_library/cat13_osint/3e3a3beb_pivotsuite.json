@@ -1,0 +1,9 @@
+{
+  "name": "pivotsuite",
+  "url": "https://github.com/RedTeamOperations/PivotSuite",
+  "description": "Portable, platform independent and powerful network pivoting toolkit.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

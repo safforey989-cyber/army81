@@ -1,0 +1,9 @@
+{
+  "name": "Apriori",
+  "url": "https://en.wikipedia.org/wiki/Apriori_algorithm",
+  "description": "Tool from data_science",
+  "section": "Data Mining Algorithms",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

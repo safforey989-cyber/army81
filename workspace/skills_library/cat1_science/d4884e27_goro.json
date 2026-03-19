@@ -1,0 +1,9 @@
+{
+  "name": "goro",
+  "url": "https://github.com/aunum/goro",
+  "description": "A high-level machine learning library in the vein of Keras.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

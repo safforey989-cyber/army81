@@ -1,0 +1,9 @@
+{
+  "name": "Fasten Health",
+  "url": "https://github.com/fastenhealth/fasten-onprem",
+  "description": "open-source, self-hosted, personal/family electronic medical record aggregator",
+  "section": "PHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

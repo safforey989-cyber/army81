@@ -1,0 +1,9 @@
+{
+  "name": "OmniLLM-12B",
+  "url": "https://huggingface.co/openbmb/OmniLMM-12B",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AgentGPT",
+  "url": "https://agentgpt.reworkd.ai/",
+  "description": ": \"assemble, configure, and deploy autonomous AI Agents in your browser\"",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

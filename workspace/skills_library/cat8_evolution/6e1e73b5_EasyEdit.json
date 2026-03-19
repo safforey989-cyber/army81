@@ -1,0 +1,9 @@
+{
+  "name": "EasyEdit",
+  "url": "https://github.com/zjunlp/EasyEdit",
+  "description": "An easy-to-use framework to edit large language models.",
+  "section": "Miscellaneous",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

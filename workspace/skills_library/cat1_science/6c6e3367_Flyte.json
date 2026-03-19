@@ -1,0 +1,9 @@
+{
+  "name": "Flyte",
+  "url": "https://flyte.org/",
+  "description": "Flyte makes it easy to create concurrent, scalable, and maintainable workflows for machine learning and data processing.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

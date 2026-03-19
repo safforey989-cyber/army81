@@ -1,0 +1,9 @@
+{
+  "name": "Dicoogle",
+  "url": "https://github.com/bioinformatics-ua/dicoogle",
+  "description": "Dicoogle is an extensible, platform-independent and open-source PACS",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

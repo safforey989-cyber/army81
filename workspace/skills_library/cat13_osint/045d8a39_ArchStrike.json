@@ -1,0 +1,9 @@
+{
+  "name": "ArchStrike",
+  "url": "https://archstrike.org/",
+  "description": "Arch GNU/Linux repository for security professionals and enthusiasts.",
+  "section": "Operating System Distributions",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

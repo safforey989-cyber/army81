@@ -1,0 +1,9 @@
+{
+  "name": "unix-privesc-check",
+  "url": "https://github.com/pentestmonkey/unix-privesc-check",
+  "description": "Shell script to check for simple privilege escalation vectors on UNIX systems.",
+  "section": "Privilege Escalation Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "LSTM-Crypto-Price-Prediction",
+  "url": "https://github.com/SC4RECOIN/LSTM-Crypto-Price-Prediction",
+  "description": "Predicting price trends in crypto markets using an LSTM-RNN for trading.",
+  "section": "Crypto Currencies Strategies",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

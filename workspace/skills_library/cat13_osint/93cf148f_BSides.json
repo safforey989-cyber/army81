@@ -1,0 +1,9 @@
+{
+  "name": "BSides",
+  "url": "http://www.securitybsides.com/",
+  "description": "Framework for organising and holding security conferences.",
+  "section": "Conferences and Events",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

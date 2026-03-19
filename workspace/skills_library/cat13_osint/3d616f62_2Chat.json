@@ -1,0 +1,9 @@
+{
+  "name": "2Chat",
+  "url": "https://2chat.co/tools/whatsapp-checker",
+  "description": "Check if a number is on WhatsApp.",
+  "section": "[↑](#-table-of-contents) WhatsApp",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

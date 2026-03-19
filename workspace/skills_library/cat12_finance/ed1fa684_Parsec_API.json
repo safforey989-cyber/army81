@@ -1,0 +1,9 @@
+{
+  "name": "Parsec API",
+  "url": "https://docs.parsecapi.com",
+  "description": "Unified prediction market infrastructure for normalized data, execution, and live streams across Polymarket, Kalshi, Opinion, Limitless, and PredictFun. MCP server for AI agent trading. Generous free tier.",
+  "section": "Prediction Markets",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

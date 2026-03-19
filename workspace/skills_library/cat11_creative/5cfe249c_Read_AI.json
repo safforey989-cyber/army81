@@ -1,0 +1,9 @@
+{
+  "name": "Read AI",
+  "url": "https://www.read.ai/",
+  "description": "An AI copilot for wherever you work, making your meetings, emails, and messages more productive with summaries, content discovery, and recommendations.",
+  "section": "Meeting assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

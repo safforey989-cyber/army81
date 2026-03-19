@@ -1,0 +1,9 @@
+{
+  "name": "Automatic Hallucination detection with SelfCheckGPT NLI",
+  "url": "https://huggingface.co/blog/dhuynh95/automatic-hallucination-detection",
+  "description": "Tool from generative_ai",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

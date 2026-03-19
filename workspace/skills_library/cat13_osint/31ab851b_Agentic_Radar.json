@@ -1,0 +1,9 @@
+{
+  "name": "Agentic Radar",
+  "url": "https://github.com/splx-ai/agentic-radar",
+  "description": "Open-source CLI security scanner for agentic AI workflows.",
+  "section": "Static Analyzers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

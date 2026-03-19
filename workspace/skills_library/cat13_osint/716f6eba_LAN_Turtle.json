@@ -1,0 +1,9 @@
+{
+  "name": "LAN Turtle",
+  "url": "https://lanturtle.com/",
+  "description": "Covert \"USB Ethernet Adapter\" that provides remote access, network intelligence gathering, and MITM capabilities when installed in a local network.",
+  "section": "Physical Access Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

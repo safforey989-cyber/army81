@@ -1,0 +1,9 @@
+{
+  "name": "PPSSPP",
+  "url": "https://github.com/hrydgard/ppsspp",
+  "description": ": PSP emulator",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "SearXNG",
+  "url": "https://searxng.org/",
+  "description": "A privacy-respecting, open-source metasearch engine.",
+  "section": "[↑](#-table-of-contents) Meta Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

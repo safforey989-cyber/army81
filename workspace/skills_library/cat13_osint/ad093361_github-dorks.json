@@ -1,0 +1,9 @@
+{
+  "name": "github-dorks",
+  "url": "https://github.com/techgaun/github-dorks",
+  "description": "CLI tool to scan GitHub repos/organizations for potential sensitive information leaks.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

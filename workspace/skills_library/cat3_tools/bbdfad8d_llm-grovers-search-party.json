@@ -1,0 +1,9 @@
+{
+  "name": "llm-grovers-search-party",
+  "url": "https://github.com/JavaFXpert/llm-grovers-search-party",
+  "description": ": Leveraging Qiskit, OpenAI and LangChain to demonstrate Grover's algorithm",
+  "section": "Notebooks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

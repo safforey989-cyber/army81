@@ -1,0 +1,9 @@
+{
+  "name": "SimplyEmail",
+  "url": "https://github.com/SimplySecurity/SimplyEmail",
+  "description": "Email recon made fast and easy.",
+  "section": "Email search and analysis tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

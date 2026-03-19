@@ -1,0 +1,9 @@
+{
+  "name": "C3.js",
+  "url": "https://c3js.org/",
+  "description": "customizable library based on D3.js for easy chart drawing.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

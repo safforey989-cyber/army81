@@ -1,0 +1,9 @@
+{
+  "name": "MortyUI",
+  "url": "https://github.com/Dimillian/MortyUI",
+  "description": ": Simple Rick & Morty app to demo GraphQL + SwiftUI",
+  "section": "GraphQL",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

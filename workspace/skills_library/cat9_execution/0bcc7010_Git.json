@@ -1,0 +1,9 @@
+{
+  "name": "Git",
+  "url": "https://git-scm.com/",
+  "description": "Distributed revision control and source code management (SCM) with an emphasis on speed. ([Source Code](https://github.com/git/git)) `GPL-2.0` `C`",
+  "section": "Version control",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

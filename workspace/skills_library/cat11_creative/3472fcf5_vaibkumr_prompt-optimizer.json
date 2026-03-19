@@ -1,0 +1,9 @@
+{
+  "name": "vaibkumr/prompt-optimizer",
+  "url": "https://github.com/vaibkumr/prompt-optimizer",
+  "description": ": Minimize LLM token complexity to save API costs and model computations.",
+  "section": "Prompt Optimizers",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

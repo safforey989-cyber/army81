@@ -1,0 +1,9 @@
+{
+  "name": "LangWatch",
+  "url": "https://github.com/langwatch/langwatch",
+  "description": ": An Open Source tool for observing, evaluating and optimising your llm apps and prompts, which supports LangChain out of the box! ![GitHub Repo stars](https://img.shields.io/github/stars/langwatch/langwatch?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

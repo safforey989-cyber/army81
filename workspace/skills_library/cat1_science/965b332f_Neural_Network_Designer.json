@@ -1,0 +1,9 @@
+{
+  "name": "Neural Network Designer",
+  "url": "https://sourceforge.net/projects/nnd/",
+  "description": "DBMS management system and designer for neural networks. The designer application is developed using WPF, and is a user interface which allows you to design your neural network, query the network, create and configure chat bots that are capable of asking questions and learning from your feedback. Th",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

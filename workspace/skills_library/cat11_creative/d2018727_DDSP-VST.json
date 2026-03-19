@@ -1,0 +1,9 @@
+{
+  "name": "DDSP-VST",
+  "url": "https://magenta.tensorflow.org/ddsp-vst-blog",
+  "description": ": Neural Audio Synthesis for All",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

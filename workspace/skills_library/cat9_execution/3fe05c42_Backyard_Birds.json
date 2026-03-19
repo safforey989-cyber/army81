@@ -1,0 +1,9 @@
+{
+  "name": "Backyard Birds",
+  "url": "https://github.com/apple/sample-backyard-birds",
+  "description": ": App with persistent data, interactive widgets, and an all new in-app purchase experience - WWDC 2023 sample code by Apple",
+  "section": "Sample",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AI Dungeon",
+  "url": "https://aidungeon.io/",
+  "description": "A text-based adventure-story game you direct (and star in) while the AI brings it to life.",
+  "section": "Other",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

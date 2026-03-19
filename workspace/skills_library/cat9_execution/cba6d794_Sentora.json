@@ -1,0 +1,9 @@
+{
+  "name": "Sentora",
+  "url": "https://sentora.org/",
+  "description": "Open-Source Web hosting control panel for Linux, BSD (fork of ZPanel). ([Source Code](https://github.com/sentora/sentora-core)) `GPL-3.0` `PHP`",
+  "section": "Control Panels",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AI Chatbot",
+  "url": "https://github.com/vercel-labs/ai-chatbot",
+  "description": ": A full-featured, hackable Next.js AI chatbot built by Vercel Labs ![GitHub Repo stars](https://img.shields.io/github/stars/vercel-labs/ai-chatbot?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

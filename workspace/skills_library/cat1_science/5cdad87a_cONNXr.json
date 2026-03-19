@@ -1,0 +1,9 @@
+{
+  "name": "cONNXr",
+  "url": "https://github.com/alrevuelta/cONNXr",
+  "description": "An `ONNX` runtime written in pure C (99) with zero dependencies focused on small embedded devices. Run inference on your machine learning models no matter which framework you train it with. Easy to install and compiles everywhere, even in very old devices.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

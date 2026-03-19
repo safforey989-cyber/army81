@@ -1,0 +1,9 @@
+{
+  "name": "King Phisher",
+  "url": "https://github.com/securestate/king-phisher",
+  "description": "Phishing campaign toolkit used for creating and managing multiple simultaneous phishing attacks with custom email and server content.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

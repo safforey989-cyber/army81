@@ -1,0 +1,9 @@
+{
+  "name": "SCOMDecrypt",
+  "url": "https://github.com/nccgroup/SCOMDecrypt",
+  "description": "Retrieve and decrypt RunAs credentials stored within Microsoft System Center Operations Manager (SCOM) databases.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

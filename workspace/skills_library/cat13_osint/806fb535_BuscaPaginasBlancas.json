@@ -1,0 +1,9 @@
+{
+  "name": "BuscaPaginasBlancas",
+  "url": "https://github.com/GeiserX/BuscaPaginasBlancas",
+  "description": "OSINT tool for extracting contact information from Spanish white pages (Paginas Blancas).",
+  "section": "[↑](#-table-of-contents) People Investigations",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "TOsint",
+  "url": "https://github.com/drego85/tosint",
+  "description": "Tosint (Telegram OSINT) is a powerful tool designed to extract valuable information from Telegram bots and channels. It serves as an essential resource for security researchers, investigators, and anyone interested in gathering insights from various Telegram entities.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

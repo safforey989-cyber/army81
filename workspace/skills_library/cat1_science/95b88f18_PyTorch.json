@@ -1,0 +1,9 @@
+{
+  "name": "PyTorch",
+  "url": "https://github.com/pytorch/pytorch",
+  "description": "Tool from data_science",
+  "section": "PyTorch Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Repositories",
+  "url": "https://github.com/kitasuke/SwiftUI-Flux",
+  "description": ": SwiftUI + Flux and Combine using GitHub API (Flux enables unidirectional data flow which is testable)",
+  "section": "SwiftUI",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

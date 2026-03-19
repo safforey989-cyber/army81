@@ -1,0 +1,9 @@
+{
+  "name": "brushfire",
+  "url": "https://github.com/stripe/brushfire",
+  "description": "Distributed decision tree ensemble learning in Scala.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

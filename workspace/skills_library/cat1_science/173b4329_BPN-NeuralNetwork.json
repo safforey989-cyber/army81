@@ -1,0 +1,9 @@
+{
+  "name": "BPN-NeuralNetwork",
+  "url": "https://github.com/Kalvar/ios-BPN-NeuralNetwork",
+  "description": "It implemented 3 layers of neural networks ( Input Layer, Hidden Layer and Output Layer ) and it was named Back Propagation Neural Networks (BPN). This network can be used in products recommendation, user behavior analysis, data mining and data analysis. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

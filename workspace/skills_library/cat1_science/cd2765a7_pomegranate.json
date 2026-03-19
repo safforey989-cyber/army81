@@ -1,0 +1,9 @@
+{
+  "name": "pomegranate",
+  "url": "https://github.com/jmschrei/pomegranate",
+  "description": "Hidden Markov Models for Python, implemented in Cython for speed and efficiency.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

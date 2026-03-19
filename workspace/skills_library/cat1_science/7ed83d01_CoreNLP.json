@@ -1,0 +1,9 @@
+{
+  "name": "CoreNLP",
+  "url": "https://nlp.stanford.edu/software/corenlp.shtml",
+  "description": "Stanford CoreNLP provides a set of natural language analysis tools which can take raw English language text input and give the base forms of words.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

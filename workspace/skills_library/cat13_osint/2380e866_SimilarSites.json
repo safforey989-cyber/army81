@@ -1,0 +1,9 @@
+{
+  "name": "SimilarSites",
+  "url": "http://www.similarsites.com",
+  "description": "Discover websites that are similar to each other",
+  "section": "[↑](#-table-of-contents) Similar Sites Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

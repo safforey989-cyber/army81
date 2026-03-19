@@ -1,0 +1,9 @@
+{
+  "name": "Shellcode Examples",
+  "url": "http://shell-storm.org/shellcode/",
+  "description": "Shellcodes database.",
+  "section": "Shellcoding Guides and Tutorials",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

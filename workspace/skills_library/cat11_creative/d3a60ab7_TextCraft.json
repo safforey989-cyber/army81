@@ -1,0 +1,9 @@
+{
+  "name": "TextCraft",
+  "url": "https://github.com/suncloudsmoon/TextCraft",
+  "description": "Add-in for Microsoft Word that seamlessly integrates essential AI tools, including text generation, proofreading, and more, directly into the user interface.",
+  "section": "Text-related Generative Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

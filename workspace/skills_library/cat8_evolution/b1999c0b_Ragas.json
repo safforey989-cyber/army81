@@ -1,0 +1,9 @@
+{
+  "name": "Ragas",
+  "url": "https://github.com/explodinggradients/ragas",
+  "description": "a framework that helps you evaluate your Retrieval Augmented Generation (RAG) pipelines.",
+  "section": "LLM Evaluation:",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

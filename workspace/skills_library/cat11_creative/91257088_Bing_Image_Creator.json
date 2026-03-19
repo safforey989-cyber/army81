@@ -1,0 +1,9 @@
+{
+  "name": "Bing Image Creator",
+  "url": "https://www.bing.com/images/create",
+  "description": "DALLE·3 based text-to-image generator with safety features.",
+  "section": "Services",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

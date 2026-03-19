@@ -1,0 +1,9 @@
+{
+  "name": "clj-boost",
+  "url": "https://gitlab.com/alanmarazzi/clj-boost",
+  "description": "Wrapper for XGBoost",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "SolidGPT",
+  "url": "https://github.com/AI-Citizen/SolidGPT",
+  "description": ": Chat everything with your code repository, ask repository level code questions, and discuss your requirements ![GitHub Repo stars](https://img.shields.io/github/stars/AI-Citizen/SolidGPT?style=social)",
+  "section": "Knowledge Management",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

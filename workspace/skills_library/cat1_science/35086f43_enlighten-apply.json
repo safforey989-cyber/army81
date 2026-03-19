@@ -1,0 +1,9 @@
+{
+  "name": "enlighten-apply",
+  "url": "https://github.com/sassoftware/enlighten-apply",
+  "description": "Example code and materials that illustrate applications of SAS machine learning techniques.",
+  "section": "Demos and Scripts",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

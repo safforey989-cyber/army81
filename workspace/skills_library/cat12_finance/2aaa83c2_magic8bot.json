@@ -1,0 +1,9 @@
+{
+  "name": "magic8bot",
+  "url": "https://github.com/magic8bot/magic8bot",
+  "description": "Crypto currency trading bot using Node.js and MongoDB.",
+  "section": "Crypto Currencies",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

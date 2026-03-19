@@ -1,0 +1,9 @@
+{
+  "name": "Data Arrays",
+  "url": "https://github.com/JuliaStats/DataArrays.jl",
+  "description": "Data structures that allow missing values. **[Deprecated]**",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

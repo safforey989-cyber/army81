@@ -1,0 +1,9 @@
+{
+  "name": "Agentic Radar",
+  "url": "https://github.com/splx-ai/agentic-radar",
+  "description": "Open-source CLI security scanner for agentic workflows. Scans your workflow’s source code, detects vulnerabilities, and generates an interactive visualization along with a detailed security report. Supports LangGraph, CrewAI, n8n, OpenAI Agents, and more.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

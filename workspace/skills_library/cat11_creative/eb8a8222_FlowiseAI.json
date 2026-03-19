@@ -1,0 +1,9 @@
+{
+  "name": "FlowiseAI",
+  "url": "https://flowiseai.com/",
+  "description": ": \"Open source UI visual tool to build your customized LLM flow using LangchainJS, written in Node Typescript/Javascript\"",
+  "section": "LangChain",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

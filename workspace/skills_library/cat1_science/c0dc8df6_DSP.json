@@ -1,0 +1,9 @@
+{
+  "name": "DSP",
+  "url": "https://github.com/JuliaDSP/DSP.jl",
+  "description": "Digital Signal Processing (filtering, periodograms, spectrograms, window functions).",
+  "section": "Misc Stuff / Presentations",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

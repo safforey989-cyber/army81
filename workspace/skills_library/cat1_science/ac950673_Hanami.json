@@ -1,0 +1,9 @@
+{
+  "name": "Hanami",
+  "url": "https://github.com/jsa-aerial/hanami",
+  "description": "Clojure(Script) library and framework for creating interactive visualization applications based in Vega-Lite (VGL) and/or Vega (VG) specifications. Automatic framing and layouts along with a powerful templating system for abstracting visualization specs",
+  "section": "Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

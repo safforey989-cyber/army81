@@ -1,0 +1,9 @@
+{
+  "name": "wav2letter",
+  "url": "https://github.com/facebookresearch/wav2letter",
+  "description": "a simple and efficient end-to-end Automatic Speech Recognition (ASR) system from Facebook AI Research.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

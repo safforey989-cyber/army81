@@ -1,0 +1,9 @@
+{
+  "name": "enigma.com",
+  "url": "https://enigma.com/",
+  "description": "Navigate the world of public data - Quickly search and analyze billions of public records published by governments, companies and organizations.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

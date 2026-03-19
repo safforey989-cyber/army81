@@ -1,0 +1,9 @@
+{
+  "name": "Qwen2-VL-2B|7B|72B",
+  "url": "https://qwenlm.github.io/blog/qwen2-vl/",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

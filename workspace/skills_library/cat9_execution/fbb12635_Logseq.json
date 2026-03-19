@@ -1,0 +1,9 @@
+{
+  "name": "Logseq",
+  "url": "https://github.com/logseq/logseq",
+  "description": ": Outliner that works on top of local plain-text Markdown and Org-mode files",
+  "section": "Notes",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

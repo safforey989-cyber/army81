@@ -1,0 +1,9 @@
+{
+  "name": "Rake",
+  "url": "https://ruby.github.io/rake/",
+  "description": "Build automation tool similar to Make, written in and extensible in Ruby. ([Source Code](https://github.com/ruby/rake)) `MIT` `Ruby`",
+  "section": "Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

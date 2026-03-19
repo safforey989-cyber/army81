@@ -1,0 +1,9 @@
+{
+  "name": "Chef",
+  "url": "https://www.chef.io/products/chef-infra",
+  "description": "Configuration management tool using a pure-Ruby, domain-specific language (DSL) for writing system configuration \"recipes\". ([Source Code](https://github.com/chef/chef)) `Apache-2.0` `Ruby`",
+  "section": "Configuration Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

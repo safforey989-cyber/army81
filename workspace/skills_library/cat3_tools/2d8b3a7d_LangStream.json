@@ -1,0 +1,9 @@
+{
+  "name": "LangStream",
+  "url": "https://github.com/LangStream/langstream",
+  "description": ": Framework for building and running event-driven LLM applications using no-code and Python (including LangChain-based) agents. ![GitHub Repo stars](https://img.shields.io/github/stars/LangStream/langstream?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

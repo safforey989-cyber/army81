@@ -1,0 +1,9 @@
+{
+  "name": "RunAnywhere",
+  "url": "https://github.com/RunanywhereAI/runanywhere-sdks",
+  "description": "Open-source SDK for running LLMs and multimodal models on-device across iOS, Android, and cross-platform apps.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Semantic Kernel",
+  "url": "https://github.com/microsoft/semantic-kernel",
+  "description": ": Microsoft C# SDK to integrate cutting-edge LLM technology quickly and easily into your apps ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/semantic-kernel?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

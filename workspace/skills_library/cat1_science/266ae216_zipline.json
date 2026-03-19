@@ -1,0 +1,9 @@
+{
+  "name": "zipline",
+  "url": "https://github.com/quantopian/zipline",
+  "description": "A Pythonic algorithmic trading library.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

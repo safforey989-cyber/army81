@@ -1,0 +1,9 @@
+{
+  "name": "RECAP Archive",
+  "url": "https://www.courtlistener.com/recap/",
+  "description": "Public archive of PACER court documents.",
+  "section": "[↑](#-table-of-contents) Document and Slides Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

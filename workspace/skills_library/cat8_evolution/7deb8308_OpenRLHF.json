@@ -1,0 +1,9 @@
+{
+  "name": "OpenRLHF",
+  "url": "https://github.com/OpenRLHF/OpenRLHF",
+  "description": "An Easy-to-use, Scalable and High-performance RLHF Framework (70B+ PPO Full Tuning & Iterative DPO & LoRA & RingAttention & RFT).",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Postenum",
+  "url": "https://github.com/mbahadou/postenum",
+  "description": "Shell script used for enumerating possible privilege escalation opportunities on a local GNU/Linux system.",
+  "section": "Privilege Escalation Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

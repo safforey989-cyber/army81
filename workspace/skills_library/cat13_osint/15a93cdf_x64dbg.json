@@ -1,0 +1,9 @@
+{
+  "name": "x64dbg",
+  "url": "http://x64dbg.com/",
+  "description": "Open source x64/x32 debugger for windows.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

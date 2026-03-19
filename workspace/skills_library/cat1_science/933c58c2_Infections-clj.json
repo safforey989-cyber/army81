@@ -1,0 +1,9 @@
+{
+  "name": "Infections-clj",
+  "url": "https://github.com/r0man/inflections-clj",
+  "description": "Rails-like inflection library for Clojure and ClojureScript.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "3D Slicer",
+  "url": "https://www.slicer.org",
+  "description": "Cross-platform application for analyzing, visualizing and understanding medical image data.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

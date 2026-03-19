@@ -1,0 +1,9 @@
+{
+  "name": "grt",
+  "url": "https://github.com/nickgillian/grt",
+  "description": "The Gesture Recognition Toolkit (GRT) is a cross-platform, open-source, C++ machine learning library designed for real-time gesture recognition.",
+  "section": "Gesture Detection",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

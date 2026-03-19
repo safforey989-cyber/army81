@@ -1,0 +1,9 @@
+{
+  "name": "Autogen",
+  "url": "https://github.com/microsoft/autogen",
+  "description": ": Enable Next-Gen Large Language Model Applications.",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

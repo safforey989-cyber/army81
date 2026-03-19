@@ -1,0 +1,9 @@
+{
+  "name": "Little Ball of Fur",
+  "url": "https://github.com/benedekrozemberczki/littleballoffur",
+  "description": "| A graph sampling library for NetworkX with a Scikit-Learn like API.  |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "libfolia",
+  "url": "https://github.com/LanguageMachines/libfolia",
+  "description": "C++ library for the [FoLiA format](https://proycon.github.io/folia/)",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

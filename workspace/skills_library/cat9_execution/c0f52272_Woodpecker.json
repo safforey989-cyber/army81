@@ -1,0 +1,9 @@
+{
+  "name": "Woodpecker",
+  "url": "https://woodpecker-ci.org/",
+  "description": "Community fork of Drone that uses Docker containers. ([Source Code](https://github.com/woodpecker-ci/woodpecker)) `Apache-2.0` `Go`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

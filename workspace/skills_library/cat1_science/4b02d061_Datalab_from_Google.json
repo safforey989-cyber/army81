@@ -1,0 +1,9 @@
+{
+  "name": "Datalab from Google",
+  "url": "https://cloud.google.com/datalab/docs/",
+  "description": "| easily explore, visualize, analyze, and transform data using familiar languages, such as Python and SQL, interactively. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

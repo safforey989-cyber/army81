@@ -1,0 +1,9 @@
+{
+  "name": "ChatGPT Strategy by OctoBot",
+  "url": "https://blog.octobot.online/trading-using-chat-gpt",
+  "description": "Use ChatGPT to determine which cryptocurrency to trade based on technical indicators.",
+  "section": "LLMs",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

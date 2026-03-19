@@ -1,0 +1,9 @@
+{
+  "name": "Fog",
+  "url": "https://www.fogproject.org/",
+  "description": "Cloning/imaging solution/rescue suite. ([Source Code](https://github.com/FOGProject/fogproject)) `GPL-3.0` `PHP/Shell`",
+  "section": "Miscellaneous",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

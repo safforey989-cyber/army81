@@ -1,0 +1,9 @@
+{
+  "name": "ssh-audit",
+  "url": "https://github.com/jtesta/ssh-audit",
+  "description": "SSH server & client auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc).",
+  "section": "Secure Shell Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

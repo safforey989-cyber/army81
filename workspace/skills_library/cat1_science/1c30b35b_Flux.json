@@ -1,0 +1,9 @@
+{
+  "name": "Flux",
+  "url": "https://fluxml.ai/",
+  "description": "Relax! Flux is the ML library that doesn't make you tensor",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "LLM",
+  "url": "https://llm.datasette.io/",
+  "description": "A CLI utility and Python library for interacting with Large Language Models, remote and local. [#opensource](https://github.com/simonw/llm)",
+  "section": "Local LLM Deployment",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

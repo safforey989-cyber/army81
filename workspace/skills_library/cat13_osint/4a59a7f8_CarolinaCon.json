@@ -1,0 +1,9 @@
+{
+  "name": "CarolinaCon",
+  "url": "https://carolinacon.org/",
+  "description": "Infosec conference, held annually in North Carolina.",
+  "section": "North America",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

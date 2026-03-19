@@ -1,0 +1,7 @@
+{
+  "name": "swot_analyzer",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل SWOT لـ {entity}. Strengths, Weaknesses, Opportunities, Threats.",
+  "category": "cat6_leadership",
+  "source": "built_in"
+}

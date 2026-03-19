@@ -1,0 +1,9 @@
+{
+  "name": "KotlinDL",
+  "url": "https://github.com/JetBrains/KotlinDL",
+  "description": "Deep learning framework written in Kotlin.",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

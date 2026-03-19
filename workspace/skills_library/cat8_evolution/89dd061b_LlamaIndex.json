@@ -1,0 +1,9 @@
+{
+  "name": "LlamaIndex",
+  "url": "https://github.com/jerryjliu/llama_index",
+  "description": "A Python library for augmenting LLM apps with data.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "pamr",
+  "url": "https://cran.r-project.org/web/packages/pamr/index.html",
+  "description": "pamr: Pam: prediction analysis for microarrays. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

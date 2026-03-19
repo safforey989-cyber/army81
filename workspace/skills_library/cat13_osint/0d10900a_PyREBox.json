@@ -1,0 +1,9 @@
+{
+  "name": "PyREBox",
+  "url": "https://github.com/Cisco-Talos/pyrebox",
+  "description": "Python scriptable Reverse Engineering sandbox by Cisco-Talos.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

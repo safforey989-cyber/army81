@@ -1,0 +1,9 @@
+{
+  "name": "Hexinator",
+  "url": "https://hexinator.com/",
+  "description": "World's finest (proprietary, commercial) Hex Editor.",
+  "section": "Hex Editors",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Wallabag",
+  "url": "https://github.com/wallabag/ios-app",
+  "description": ": A self-hosted read-it-later app",
+  "section": "Media",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

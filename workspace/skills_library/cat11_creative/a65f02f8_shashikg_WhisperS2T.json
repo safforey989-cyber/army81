@@ -1,0 +1,9 @@
+{
+  "name": "shashikg/WhisperS2T",
+  "url": "https://github.com/shashikg/WhisperS2T",
+  "description": ": An Optimized Speech-to-Text Pipeline for the Whisper Model",
+  "section": "Speech-to-text (STT) and spoken content analysis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

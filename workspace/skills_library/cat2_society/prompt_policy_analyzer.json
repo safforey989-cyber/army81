@@ -1,0 +1,7 @@
+{
+  "name": "policy_analyzer",
+  "type": "prompt_pattern",
+  "prompt_template": "حلل هذه السياسة: {policy}. حدد المستفيدين، المتضررين، والبدائل.",
+  "category": "cat2_society",
+  "source": "built_in"
+}

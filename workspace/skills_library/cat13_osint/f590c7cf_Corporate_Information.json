@@ -1,0 +1,9 @@
+{
+  "name": "Corporate Information",
+  "url": "http://www.corporateinformation.com",
+  "description": "Aggregated information from publicly available sources on publicly traded companies worldwide.",
+  "section": "[↑](#-table-of-contents) Company Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

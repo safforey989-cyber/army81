@@ -1,0 +1,9 @@
+{
+  "name": "Langroid",
+  "url": "https://github.com/langroid/langroid",
+  "description": "Harness LLMs with Multi-Agent Programming",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

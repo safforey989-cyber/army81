@@ -1,0 +1,9 @@
+{
+  "name": "Ultralytics YOLO",
+  "url": "https://github.com/ultralytics/yolo-ios-app",
+  "description": ": Ultralytics vision and AI",
+  "section": "Official",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

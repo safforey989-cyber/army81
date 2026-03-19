@@ -1,0 +1,9 @@
+{
+  "name": "forex.analytics",
+  "url": "https://github.com/mkmarek/forex.analytics",
+  "description": "Node.js native library performing technical analysis over an OHLC dataset with use of genetic algorithmv.",
+  "section": "Technical Analysis",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

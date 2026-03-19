@@ -1,0 +1,9 @@
+{
+  "name": "CeWL",
+  "url": "https://digi.ninja/projects/cewl.php",
+  "description": "Generates custom wordlists by spidering a target's website and collecting unique words.",
+  "section": "Hash Cracking Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

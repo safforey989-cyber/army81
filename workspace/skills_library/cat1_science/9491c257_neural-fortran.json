@@ -1,0 +1,9 @@
+{
+  "name": "neural-fortran",
+  "url": "https://github.com/modern-fortran/neural-fortran",
+  "description": "A parallel neural net microframework.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

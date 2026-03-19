@@ -1,0 +1,9 @@
+{
+  "name": "MeTA",
+  "url": "https://github.com/meta-toolkit/meta",
+  "description": "[MeTA : ModErn Text Analysis](https://meta-toolkit.org/) is a C++ Data Sciences Toolkit that facilitates mining big text data.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

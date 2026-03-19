@@ -1,0 +1,9 @@
+{
+  "name": "Immich",
+  "url": "https://github.com/immich-app/immich",
+  "description": ": Self-hosted photo and video backup",
+  "section": "Flutter",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Proxmark3",
+  "url": "https://proxmark3.com/",
+  "description": "RFID/NFC cloning, replay, and spoofing toolkit often used for analyzing and attacking proximity cards/readers, wireless keys/keyfobs, and more.",
+  "section": "Physical Access Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

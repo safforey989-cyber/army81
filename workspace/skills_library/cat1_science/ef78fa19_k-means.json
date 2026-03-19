@@ -1,0 +1,9 @@
+{
+  "name": "k-means",
+  "url": "https://scikit-learn.org/stable/modules/clustering.html#k-means",
+  "description": "Tool from data_science",
+  "section": "Unsupervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

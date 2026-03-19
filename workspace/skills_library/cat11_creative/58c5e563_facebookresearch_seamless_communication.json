@@ -1,0 +1,9 @@
+{
+  "name": "facebookresearch/seamless_communication",
+  "url": "https://github.com/facebookresearch/seamless_communication",
+  "description": ": Foundational Models for State-of-the-Art Speech and Text Translation",
+  "section": "Speech-to-text (STT) and spoken content analysis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GitPhish",
+  "url": "https://github.com/praetorian-inc/GitPhish",
+  "description": "GitHub Device Code phishing security assessment tool with dynamic device-code generation and automated landing page deployment.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

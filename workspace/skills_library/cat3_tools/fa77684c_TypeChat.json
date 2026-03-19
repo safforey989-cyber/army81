@@ -1,0 +1,9 @@
+{
+  "name": "TypeChat",
+  "url": "https://github.com/microsoft/TypeChat",
+  "description": ": TypeChat is a library that makes it easy to build natural language interfaces using types. ![GitHub Repo stars](https://img.shields.io/github/stars/microsoft/TypeChat?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "CodeGen2.5-7B-multi",
+  "url": "https://huggingface.co/Salesforce/codegen25-7b-multi",
+  "description": "| [CodeGen2.5: Small, but mighty](https://blog.salesforceairesearch.com/codegen25/) | 7 | [2048](https://huggingface.co/Salesforce/codegen25-7b-multi/blob/main/config.json) | [Apache 2.0](https://huggingface.co/Salesforce/codegen25-7b-multi/blob/main/README.md) |",
+  "section": "Open LLMs for code",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

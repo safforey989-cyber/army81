@@ -1,0 +1,9 @@
+{
+  "name": "Apache Directory Server",
+  "url": "https://directory.apache.org/apacheds/",
+  "description": "Extensible and embeddable directory server, certified LDAPv3 compatible, with Kerberos 5 and Change Password Protocol support, triggers, stored procedures, queues and views. ([Source Code](https://github.com/apache/directory-server)) `Apache-2.0` `Java`",
+  "section": "Identity Management - LDAP",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

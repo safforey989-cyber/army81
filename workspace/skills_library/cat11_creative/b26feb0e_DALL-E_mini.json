@@ -1,0 +1,9 @@
+{
+  "name": "DALL-E mini",
+  "url": "https://huggingface.co/spaces/flax-community/dalle-mini",
+  "description": ": DALL·E mini is an AI model that generates images from any prompt you give!",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

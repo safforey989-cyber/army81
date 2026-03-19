@@ -1,0 +1,7 @@
+{
+  "name": "model_evaluator",
+  "type": "prompt_pattern",
+  "prompt_template": "قيّم {model} على {task}. معايير: دقة، سرعة، تكلفة، جودة العربية.",
+  "category": "cat8_evolution",
+  "source": "built_in"
+}

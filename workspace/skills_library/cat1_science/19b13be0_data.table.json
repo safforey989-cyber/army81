@@ -1,0 +1,9 @@
+{
+  "name": "data.table",
+  "url": "https://rdatatable.gitlab.io/data.table/",
+  "description": "`data.table` provides a high-performance version of base R’s `data.frame` with syntax and feature enhancements for ease of use, convenience and programming speed.",
+  "section": "Data Manipulation | Data Analysis | Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

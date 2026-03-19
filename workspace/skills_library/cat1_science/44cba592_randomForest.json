@@ -1,0 +1,9 @@
+{
+  "name": "randomForest",
+  "url": "https://cran.r-project.org/web/packages/randomForest/index.html",
+  "description": "randomForest: Breiman and Cutler's random forests for classification and regression.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

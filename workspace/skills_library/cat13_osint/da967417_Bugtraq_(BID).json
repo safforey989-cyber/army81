@@ -1,0 +1,9 @@
+{
+  "name": "Bugtraq (BID)",
+  "url": "http://www.securityfocus.com/bid/",
+  "description": "](http://www.securityfocus.com/bid/) - Software security bug identification database compiled from submissions to the SecurityFocus mailing list and other sources, operated by Symantec, Inc.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

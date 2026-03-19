@@ -1,0 +1,9 @@
+{
+  "name": "jutsu.ai",
+  "url": "https://github.com/hswick/jutsu.ai",
+  "description": "Clojure wrapper for deeplearning4j with some added syntactic sugar.",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

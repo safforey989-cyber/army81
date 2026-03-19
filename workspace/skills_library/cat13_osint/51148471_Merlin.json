@@ -1,0 +1,9 @@
+{
+  "name": "Merlin",
+  "url": "https://github.com/Ne0nd0g/merlin",
+  "description": "Cross-platform post-exploitation HTTP/2 Command and Control server and agent written in Golang.",
+  "section": "Web shells and C2 frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

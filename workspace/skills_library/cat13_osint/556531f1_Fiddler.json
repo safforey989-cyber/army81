@@ -1,0 +1,9 @@
+{
+  "name": "Fiddler",
+  "url": "https://www.telerik.com/fiddler",
+  "description": "Free cross-platform web debugging proxy with user-friendly companion tools.",
+  "section": "Intercepting Web proxies",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

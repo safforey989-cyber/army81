@@ -1,0 +1,9 @@
+{
+  "name": "Old Exams",
+  "url": "https://hkn.eecs.berkeley.edu/exams/course/CS/61C",
+  "description": "Tool from cs_courses",
+  "section": "Systems",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

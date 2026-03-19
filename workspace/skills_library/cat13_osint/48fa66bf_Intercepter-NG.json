@@ -1,0 +1,9 @@
+{
+  "name": "Intercepter-NG",
+  "url": "http://sniff.su/",
+  "description": "Multifunctional network toolkit.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

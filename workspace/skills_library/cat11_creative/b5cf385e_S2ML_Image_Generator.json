@@ -1,0 +1,9 @@
+{
+  "name": "S2ML Image Generator",
+  "url": "https://colab.research.google.com/github/justin-bennington/S2ML-Generators/blob/main/S2ML_Image_Generator.ipynb",
+  "description": ": evolution of the first VQGAN+CLIP Google Colab notebook by Katherine Crownson maintained by Justin Bennington",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

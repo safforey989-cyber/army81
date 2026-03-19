@@ -1,0 +1,9 @@
+{
+  "name": "mistral.rs",
+  "url": "https://github.com/EricLBuehler/mistral.rs",
+  "description": "Blazingly fast LLM inference.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

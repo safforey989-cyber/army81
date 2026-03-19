@@ -1,0 +1,9 @@
+{
+  "name": "Strider",
+  "url": "https://strider-cd.github.io/",
+  "description": "Open Source Continuous Deployment / Continuous Integration platform. ([Source Code](https://github.com/Strider-CD/strider)) `MIT` `Nodejs`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

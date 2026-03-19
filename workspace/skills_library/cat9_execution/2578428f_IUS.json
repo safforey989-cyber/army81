@@ -1,0 +1,9 @@
+{
+  "name": "IUS",
+  "url": "https://ius.io/",
+  "description": "Community project that provides RPM packages for newer versions of select software for Enterprise Linux distributions.",
+  "section": "Repositories",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

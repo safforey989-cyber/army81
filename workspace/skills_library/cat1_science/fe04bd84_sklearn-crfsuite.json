@@ -1,0 +1,9 @@
+{
+  "name": "sklearn-crfsuite",
+  "url": "https://github.com/TeamHG-Memex/sklearn-crfsuite",
+  "description": "Tool from data_science",
+  "section": "General Machine Learning Packages",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

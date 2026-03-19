@@ -1,0 +1,9 @@
+{
+  "name": "Constitutional Classifiers",
+  "url": "https://arxiv.org/abs/2501.18837",
+  "description": ": Defending against Universal Jailbreaks across Thousands of Hours of Red Teaming",
+  "section": "Attacks on LLMs",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

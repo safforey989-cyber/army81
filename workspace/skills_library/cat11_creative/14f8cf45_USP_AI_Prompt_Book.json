@@ -1,0 +1,9 @@
+{
+  "name": "USP AI Prompt Book",
+  "url": "https://app.usp.ai/static/Stable%20Diffusion%202.1%20Prompt%20Book%20by%20USP.ai.pdf",
+  "description": ": Stable Diffusion v2.1 Prompt Book",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

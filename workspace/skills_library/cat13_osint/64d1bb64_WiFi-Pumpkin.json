@@ -1,0 +1,9 @@
+{
+  "name": "WiFi-Pumpkin",
+  "url": "https://github.com/P0cL4bs/WiFi-Pumpkin",
+  "description": "Framework for rogue Wi-Fi access point attack.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

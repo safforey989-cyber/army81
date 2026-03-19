@@ -1,0 +1,9 @@
+{
+  "name": "snitch",
+  "url": "https://github.com/Smaash/snitch",
+  "description": "Information gathering via dorks.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

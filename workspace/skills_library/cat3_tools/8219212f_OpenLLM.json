@@ -1,0 +1,9 @@
+{
+  "name": "OpenLLM",
+  "url": "https://github.com/bentoml/OpenLLM",
+  "description": ": An open platform for operating large language models (LLMs) in production. Fine-tune, serve, deploy, and monitor any LLMs with ease using OpenLLM. ![GitHub Repo stars](https://img.shields.io/github/stars/bentoml/OpenLLM?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

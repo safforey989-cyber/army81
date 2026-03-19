@@ -1,0 +1,9 @@
+{
+  "name": "StarCoder: A State-of-the-Art LLM for Code",
+  "url": "https://huggingface.co/blog/starcoder",
+  "description": "| [starcoderdata](https://huggingface.co/datasets/bigcode/starcoderdata) |  0.25 | Apache 2.0 |",
+  "section": "Open LLM datasets for pre-training",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

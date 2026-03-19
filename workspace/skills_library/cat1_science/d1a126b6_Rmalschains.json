@@ -1,0 +1,9 @@
+{
+  "name": "Rmalschains",
+  "url": "https://cran.r-project.org/web/packages/Rmalschains/index.html",
+  "description": "Rmalschains: Continuous Optimization using Memetic Algorithms with Local Search Chains (MA-LS-Chains) in R.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

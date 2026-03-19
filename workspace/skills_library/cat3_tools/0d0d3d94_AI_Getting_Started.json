@@ -1,0 +1,9 @@
+{
+  "name": "AI Getting Started",
+  "url": "https://github.com/a16z-infra/ai-getting-started",
+  "description": ": A Javascript AI getting started stack for weekend projects, including image/text models, vector stores, auth, and deployment configs ![GitHub Repo stars](https://img.shields.io/github/stars/a16z-infra/ai-getting-started?style=social)",
+  "section": "Templates",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

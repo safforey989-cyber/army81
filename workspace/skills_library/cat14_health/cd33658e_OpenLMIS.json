@@ -1,0 +1,9 @@
+{
+  "name": "OpenLMIS",
+  "url": "https://openlmis.org",
+  "description": "Open source, web-based, electronic logistics management information system (LMIS) software, purpose-built to manage health commodity supply chains.",
+  "section": "Logistics",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

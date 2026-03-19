@@ -1,0 +1,9 @@
+{
+  "name": "Nano",
+  "url": "https://nano-editor.org",
+  "description": "Easy to use, customizable text editor. ([Source Code](https://git.savannah.gnu.org/cgit/nano.git/tree/)) `GPL-3.0` `C`",
+  "section": "Editors",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Traccar Client",
+  "url": "https://github.com/traccar/traccar-client-ios",
+  "description": ": Report device location to the server",
+  "section": "Location",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

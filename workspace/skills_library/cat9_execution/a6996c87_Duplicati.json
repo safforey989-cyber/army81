@@ -1,0 +1,9 @@
+{
+  "name": "Duplicati",
+  "url": "https://www.duplicati.com",
+  "description": "Backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers. ([Source Code](https://github.com/duplicati/duplicati)) `LGPL-2.1` `C#`",
+  "section": "Backups",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

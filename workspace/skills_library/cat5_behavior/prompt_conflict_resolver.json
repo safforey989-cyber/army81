@@ -1,0 +1,7 @@
+{
+  "name": "conflict_resolver",
+  "type": "prompt_pattern",
+  "prompt_template": "حل النزاع بين {party1} و {party2}. حدد الأسباب الجذرية واقترح حلول win-win.",
+  "category": "cat5_behavior",
+  "source": "built_in"
+}

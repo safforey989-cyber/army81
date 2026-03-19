@@ -1,0 +1,9 @@
+{
+  "name": "lunary-ai/abso",
+  "url": "https://github.com/lunary-ai/abso",
+  "description": ": TypeScript SDK to easily call 100+ LLMs using OpenAI's format",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

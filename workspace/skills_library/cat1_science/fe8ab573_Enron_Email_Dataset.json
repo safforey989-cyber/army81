@@ -1,0 +1,9 @@
+{
+  "name": "Enron Email Dataset",
+  "url": "https://www.cs.cmu.edu/~./enron/",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Jukebox",
+  "url": "https://openai.com/blog/jukebox/",
+  "description": ": \"a neural net that generates music, including rudimentary singing, as raw audio in a variety of genres and artist styles\"",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Desbordante",
+  "url": "https://github.com/desbordante/desbordante-core/",
+  "description": "| An open-source data profiler specifically focused on discovery and validation of complex patterns, such as [numerical association rules](https://colab.research.google.com/github/Desbordante/desbordante-core/blob/main/examples/notebooks/Numerical_Association_Rules.ipynb), [differential dependencies",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

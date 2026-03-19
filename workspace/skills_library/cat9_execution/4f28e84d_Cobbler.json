@@ -1,0 +1,9 @@
+{
+  "name": "Cobbler",
+  "url": "https://cobbler.github.io/",
+  "description": "Cobbler is a Linux installation server that allows for rapid setup of network installation environments. ([Source Code](https://github.com/cobbler/cobbler)) `GPL-2.0` `Python`",
+  "section": "Deployment Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

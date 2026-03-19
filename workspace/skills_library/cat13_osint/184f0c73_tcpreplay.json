@@ -1,0 +1,9 @@
+{
+  "name": "tcpreplay",
+  "url": "https://tcpreplay.appneta.com/",
+  "description": "Suite of free Open Source utilities for editing and replaying previously captured network traffic.",
+  "section": "Network Traffic Replay and Editing Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

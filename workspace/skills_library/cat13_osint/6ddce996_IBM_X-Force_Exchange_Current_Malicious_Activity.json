@@ -1,0 +1,9 @@
+{
+  "name": "IBM X-Force Exchange Current Malicious Activity",
+  "url": "https://exchange.xforce.ibmcloud.com/activity/map",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

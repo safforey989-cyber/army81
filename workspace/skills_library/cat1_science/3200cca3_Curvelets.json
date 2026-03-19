@@ -1,0 +1,9 @@
+{
+  "name": "Curvelets",
+  "url": "http://www.curvelet.org/software.html",
+  "description": "The Curvelet transform is a higher dimensional generalization of the Wavelet transform designed to represent images at different scales and different angles.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

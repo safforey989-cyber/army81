@@ -1,0 +1,9 @@
+{
+  "name": "AT Commands",
+  "url": "https://atcommands.org/",
+  "description": "Use AT commands over an Android device's USB port to rewrite device firmware, bypass security mechanisms, exfiltrate sensitive information, perform screen unlocks, and inject touch events.",
+  "section": "Physical Access Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

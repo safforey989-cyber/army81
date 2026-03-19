@@ -1,0 +1,9 @@
+{
+  "name": "Handouts",
+  "url": "https://courses.csail.mit.edu/iap/interview/materials.php",
+  "description": "Tool from cs_courses",
+  "section": "Algorithms",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

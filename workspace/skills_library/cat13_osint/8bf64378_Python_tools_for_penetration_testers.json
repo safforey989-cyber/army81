@@ -1,0 +1,9 @@
+{
+  "name": "Python tools for penetration testers",
+  "url": "https://github.com/dloss/python-pentest-tools",
+  "description": "Lots of pentesting tools are written in Python.",
+  "section": "Other Lists Online",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

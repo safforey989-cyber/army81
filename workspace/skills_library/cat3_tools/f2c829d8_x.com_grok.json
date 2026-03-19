@@ -1,0 +1,9 @@
+{
+  "name": "x.com/grok",
+  "url": "https://x.com/i/grok",
+  "description": "|[URL](https://grok.com/)|Free/Paid|",
+  "section": "ChatGPT and other AI chatbot",
+  "topic": "ai_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

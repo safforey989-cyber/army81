@@ -1,0 +1,9 @@
+{
+  "name": "Libra-Tk",
+  "url": "https://libra.cs.uoregon.edu",
+  "description": "Algorithms for learning and inference with discrete probabilistic models.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "UBIAI",
+  "url": "https://ubiai.tools",
+  "description": "| Easy-to-use text annotation tool for teams with most comprehensive auto-annotation features. Supports NER, relations and document classification as well as OCR annotation for invoice labeling |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

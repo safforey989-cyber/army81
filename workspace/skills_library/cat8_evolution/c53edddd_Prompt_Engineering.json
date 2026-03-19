@@ -1,0 +1,9 @@
+{
+  "name": "Prompt Engineering",
+  "url": "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
+  "description": "Tool from llm_techniques",
+  "section": "Great thoughts about LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

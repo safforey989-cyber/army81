@@ -1,0 +1,9 @@
+{
+  "name": "Gradle",
+  "url": "https://gradle.org/",
+  "description": "Another build automation system. ([Source Code](https://github.com/gradle/gradle)) `Apache-2.0` `Groovy/Java`",
+  "section": "Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

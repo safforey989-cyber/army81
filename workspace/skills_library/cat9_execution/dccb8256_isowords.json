@@ -1,0 +1,9 @@
+{
+  "name": "isowords",
+  "url": "https://github.com/pointfreeco/isowords",
+  "description": ": Word search game played on a vanishing cube",
+  "section": "SwiftUI",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

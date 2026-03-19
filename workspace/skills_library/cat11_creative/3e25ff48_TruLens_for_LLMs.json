@@ -1,0 +1,9 @@
+{
+  "name": "TruLens for LLMs",
+  "url": "https://www.trulens.org/",
+  "description": ": Evaluate and Track LLM Applications",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

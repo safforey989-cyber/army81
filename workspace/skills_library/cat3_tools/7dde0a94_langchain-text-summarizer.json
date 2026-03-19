@@ -1,0 +1,9 @@
+{
+  "name": "langchain-text-summarizer",
+  "url": "https://github.com/alphasecio/langchain-text-summarizer",
+  "description": ": A sample streamlit application summarizing text using LangChain ![GitHub Repo stars](https://img.shields.io/github/stars/alphasecio/langchain-text-summarizer?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

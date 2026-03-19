@@ -1,0 +1,9 @@
+{
+  "name": "Browserling",
+  "url": "https://www.browserling.com",
+  "description": "Browserling is an online sandbox that lets users safely test potentially malicious links across browsers and operating systems in real time.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

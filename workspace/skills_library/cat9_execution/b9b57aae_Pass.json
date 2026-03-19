@@ -1,0 +1,9 @@
+{
+  "name": "Pass",
+  "url": "https://github.com/mssun/passforios",
+  "description": ": Client for the Pass command line app https://www.passwordstore.org/",
+  "section": "Password",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

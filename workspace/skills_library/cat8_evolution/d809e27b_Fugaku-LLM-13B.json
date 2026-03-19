@@ -1,0 +1,9 @@
+{
+  "name": "Fugaku-LLM-13B",
+  "url": "https://huggingface.co/Fugaku-LLM/Fugaku-LLM-13B",
+  "description": ", [Fugaku-LLM-13B-instruct](https://huggingface.co/Fugaku-LLM/Fugaku-LLM-13B-instruct) | [Release of \"Fugaku-LLM\" – a large language model trained on the supercomputer \"Fugaku\"](https://www.titech.ac.jp/english/news/2024/069223) | 13 | [2048](https://huggingface.co/Fugaku-LLM/Fugaku-LLM-13B/blob/mai",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

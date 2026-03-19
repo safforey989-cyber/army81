@@ -1,0 +1,9 @@
+{
+  "name": "skfolio",
+  "url": "https://github.com/skfolio/skfolio",
+  "description": "Python library for portfolio optimization built on top of scikit-learn.",
+  "section": "Portfolio Management",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

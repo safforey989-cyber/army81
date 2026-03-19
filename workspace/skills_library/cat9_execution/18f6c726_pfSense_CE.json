@@ -1,0 +1,9 @@
+{
+  "name": "pfSense CE",
+  "url": "https://www.pfsense.org/",
+  "description": "Free network firewall distribution, based on the FreeBSD operating system with a custom kernel and including third party free software packages for additional functionality. ([Source Code](https://github.com/pfsense/pfsense)) `Apache-2.0` `Shell/PHP/Other`",
+  "section": "Router",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Restricted Boltzmann Machines",
+  "url": "https://github.com/echen/restricted-boltzmann-machines",
+  "description": "Restricted Boltzmann Machines in Python. [DEEP LEARNING]",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

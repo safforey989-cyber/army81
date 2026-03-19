@@ -1,0 +1,9 @@
+{
+  "name": "ArgoCD",
+  "url": "https://argo-cd.readthedocs.io/en/stable/",
+  "description": "Declarative, GitOps continuous delivery tool for Kubernetes. ([Source Code](https://github.com/argoproj/argo-cd)) `Apache-2.0` `Go`",
+  "section": "Continuous Integration & Continuous Deployment",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

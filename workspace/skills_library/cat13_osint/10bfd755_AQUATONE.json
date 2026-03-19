@@ -1,0 +1,9 @@
+{
+  "name": "AQUATONE",
+  "url": "https://github.com/michenriksen/aquatone",
+  "description": "Subdomain discovery tool utilizing various open sources producing a report that can be used as input to other tools.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

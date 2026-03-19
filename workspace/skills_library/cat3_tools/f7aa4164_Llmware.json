@@ -1,0 +1,9 @@
+{
+  "name": "Llmware",
+  "url": "https://github.com/llmware-ai/llmware",
+  "description": ": Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. ![GitHub Repo stars](https://img.shields.io/github/stars/llmware-ai/llmware?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

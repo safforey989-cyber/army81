@@ -1,0 +1,9 @@
+{
+  "name": "GPS Stone",
+  "url": "https://github.com/frostland/GPS-Stone",
+  "description": ": Record your position and export your trip in GPX with GPS Stone",
+  "section": "Location",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

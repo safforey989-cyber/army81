@@ -1,0 +1,9 @@
+{
+  "name": "xbox_monitor",
+  "url": "https://github.com/misiektoja/xbox_monitor",
+  "description": "Tool for real-time tracking of Xbox Live players gaming activities including detection when a user gets online/offline or plays games with support for email alerts, CSV logging, playtime stats and more",
+  "section": "[↑](#-table-of-contents) Gaming Platforms",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

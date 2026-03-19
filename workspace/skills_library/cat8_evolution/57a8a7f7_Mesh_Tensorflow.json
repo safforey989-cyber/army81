@@ -1,0 +1,9 @@
+{
+  "name": "Mesh Tensorflow",
+  "url": "https://github.com/tensorflow/mesh",
+  "description": "Mesh TensorFlow: Model Parallelism Made Easier.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

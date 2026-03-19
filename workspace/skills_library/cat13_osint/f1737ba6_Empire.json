@@ -1,0 +1,9 @@
+{
+  "name": "Empire",
+  "url": "https://www.powershellempire.com/",
+  "description": "Pure PowerShell post-exploitation agent.",
+  "section": "Windows Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

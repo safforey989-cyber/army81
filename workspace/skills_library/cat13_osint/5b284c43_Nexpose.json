@@ -1,0 +1,9 @@
+{
+  "name": "Nexpose",
+  "url": "https://www.rapid7.com/products/nexpose/",
+  "description": "Commercial vulnerability and risk management assessment engine that integrates with Metasploit, sold by Rapid7.",
+  "section": "Network Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

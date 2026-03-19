@@ -1,0 +1,9 @@
+{
+  "name": "Agentic Context Engine",
+  "url": "https://github.com/kayba-ai/agentic-context-engine",
+  "description": "In-context learning framework that allows agents to learn from execution feedback.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

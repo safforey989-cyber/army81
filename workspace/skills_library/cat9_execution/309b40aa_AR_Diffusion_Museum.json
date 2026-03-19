@@ -1,0 +1,9 @@
+{
+  "name": "AR Diffusion Museum",
+  "url": "https://github.com/ynagatomo/ARDiffMuseum",
+  "description": ": Generate images using Stable Diffusion and displays them in AR",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "kalitorify",
+  "url": "https://github.com/brainfuckSec/kalitorify",
+  "description": "Transparent proxy through Tor for Kali Linux OS.",
+  "section": "Tor Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

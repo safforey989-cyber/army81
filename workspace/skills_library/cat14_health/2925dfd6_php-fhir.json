@@ -1,0 +1,9 @@
+{
+  "name": "php-fhir",
+  "url": "https://github.com/dcarbone/php-fhir",
+  "description": "Tools for creating PHP classes from the HL7 FHIR Specification.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

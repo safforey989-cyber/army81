@@ -1,0 +1,9 @@
+{
+  "name": "Onyx",
+  "url": "https://github.com/onyx-platform/onyx",
+  "description": "Distributed, masterless, high performance, fault tolerant data processing. Written entirely in Clojure.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "pwnat",
+  "url": "https://github.com/samyk/pwnat",
+  "description": "Punches holes in firewalls and NATs.",
+  "section": "Exfiltration Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

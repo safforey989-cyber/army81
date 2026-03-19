@@ -1,0 +1,9 @@
+{
+  "name": "go-mxnet-predictor",
+  "url": "https://github.com/songtianyi/go-mxnet-predictor",
+  "description": "Go binding for MXNet c_predict_api to do inference with a pre-trained model.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

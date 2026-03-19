@@ -1,0 +1,9 @@
+{
+  "name": "Gempix2",
+  "url": "https://gempix2.site",
+  "description": "Free production platform for text-to-image generation using Nano Banana V2 model.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

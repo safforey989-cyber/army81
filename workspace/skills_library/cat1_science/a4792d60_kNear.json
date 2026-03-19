@@ -1,0 +1,9 @@
+{
+  "name": "kNear",
+  "url": "https://github.com/NathanEpstein/kNear",
+  "description": "JavaScript implementation of the k nearest neighbors algorithm for supervised learning.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

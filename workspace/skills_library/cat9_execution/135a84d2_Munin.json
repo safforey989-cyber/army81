@@ -1,0 +1,9 @@
+{
+  "name": "Munin",
+  "url": "https://munin-monitoring.org/",
+  "description": "Networked resource monitoring tool. ([Source Code](https://github.com/munin-monitoring/munin)) `GPL-2.0` `Perl/Shell`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

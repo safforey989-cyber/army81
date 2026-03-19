@@ -1,0 +1,9 @@
+{
+  "name": "AudioKitSynthOne",
+  "url": "https://github.com/AudioKit/AudioKitSynthOne",
+  "description": ": Free synthesizer https://audiokitpro.com/synth/",
+  "section": "Audio",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

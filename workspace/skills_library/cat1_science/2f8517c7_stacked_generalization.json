@@ -1,0 +1,9 @@
+{
+  "name": "stacked_generalization",
+  "url": "https://github.com/fukatani/stacked_generalization",
+  "description": "Implementation of machine learning stacking technique as a handy library in Python.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

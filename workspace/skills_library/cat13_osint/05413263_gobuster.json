@@ -1,0 +1,9 @@
+{
+  "name": "gobuster",
+  "url": "https://github.com/OJ/gobuster",
+  "description": "Lean multipurpose brute force search/fuzzing tool for Web (and DNS) reconnaissance.",
+  "section": "Web Exploitation",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

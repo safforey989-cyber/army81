@@ -1,0 +1,9 @@
+{
+  "name": "LangWatch",
+  "url": "https://github.com/langwatch/langwatch",
+  "description": "Open-source LLM observability, prompt evaulation, and prompt optimzation platform.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Shell-Pilot",
+  "url": "https://github.com/reid41/shell-pilot",
+  "description": "Interact with LLM using Ollama models(or openAI, mistralAI)via pure shell scripts on your Linux(or MacOS) system, enhancing intelligent system management without any dependencies.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

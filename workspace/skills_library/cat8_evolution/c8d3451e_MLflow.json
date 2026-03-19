@@ -1,0 +1,9 @@
+{
+  "name": "MLflow",
+  "url": "https://mlflow.org/",
+  "description": "MLflow: An open-source framework for the end-to-end machine learning lifecycle, helping developers track experiments, evaluate models/prompts, deploy models, and add observability with tracing.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

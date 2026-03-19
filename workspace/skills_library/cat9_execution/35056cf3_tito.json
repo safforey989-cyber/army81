@@ -1,0 +1,9 @@
+{
+  "name": "tito",
+  "url": "https://github.com/dgoodwin/tito",
+  "description": "Builds RPMs for git-based projects. `GPL-2.0` `Python`",
+  "section": "Packaging",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

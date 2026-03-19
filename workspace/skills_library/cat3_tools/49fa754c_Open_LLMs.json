@@ -1,0 +1,9 @@
+{
+  "name": "Open LLMs",
+  "url": "https://github.com/eugeneyan/open-llms",
+  "description": ": A list of open LLMs available for commercial use ![GitHub Repo stars](https://img.shields.io/github/stars/eugeneyan/open-llms?style=social)",
+  "section": "Complement to this list",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

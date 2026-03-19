@@ -1,0 +1,9 @@
+{
+  "name": "w3af",
+  "url": "https://github.com/andresriancho/w3af",
+  "description": "Web application attack and audit framework.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

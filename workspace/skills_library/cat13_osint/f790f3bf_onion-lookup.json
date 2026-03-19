@@ -1,0 +1,9 @@
+{
+  "name": "onion-lookup",
+  "url": "https://onion.ail-project.org/",
+  "description": "Free online service and API for checking the existence of Tor hidden services (.onion address) and retrieving their associated metadata. onion-lookup relies on an private AIL instance to obtain the metadata.",
+  "section": "[↑](#-table-of-contents) Threat Intelligence",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

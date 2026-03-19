@@ -1,0 +1,9 @@
+{
+  "name": "DreamBench++",
+  "url": "https://dreambenchplus.github.io/#leaderboard",
+  "description": "a benchmark for evaluating the performance of large language models (LLMs) in various tasks related to both textual and visual imagination.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

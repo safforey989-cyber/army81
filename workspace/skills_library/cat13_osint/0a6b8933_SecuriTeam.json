@@ -1,0 +1,9 @@
+{
+  "name": "SecuriTeam",
+  "url": "http://www.securiteam.com/",
+  "description": "Independent source of software vulnerability information.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "InstaBot",
+  "url": "https://telegram.me/InstaBot",
+  "description": "Downloads Instagram media.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

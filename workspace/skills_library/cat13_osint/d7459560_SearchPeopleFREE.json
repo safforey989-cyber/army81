@@ -1,0 +1,9 @@
+{
+  "name": "SearchPeopleFREE",
+  "url": "https://www.searchpeoplefree.com/phone-lookup",
+  "description": "a reverse name, address, email address, or phone lookup that allows you to discover the owner of a phone number or who lives at an address.",
+  "section": "[↑](#-table-of-contents) Phone Number Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

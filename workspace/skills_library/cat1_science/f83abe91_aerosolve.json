@@ -1,0 +1,9 @@
+{
+  "name": "aerosolve",
+  "url": "https://github.com/airbnb/aerosolve",
+  "description": "A machine learning library by Airbnb designed from the ground up to be human friendly.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Langstream",
+  "url": "https://github.com/rogeriochaves/langstream",
+  "description": ": Build robust LLM applications with true composability 🔗 ![GitHub Repo stars](https://img.shields.io/github/stars/rogeriochaves/langstream?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

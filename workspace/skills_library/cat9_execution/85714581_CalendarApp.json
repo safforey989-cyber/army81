@@ -1,0 +1,9 @@
+{
+  "name": "CalendarApp",
+  "url": "https://github.com/richardtop/CalendarApp",
+  "description": ": Sample calendar app created with CalendarKit (template repository), shows events from EventKit",
+  "section": "Calendar",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

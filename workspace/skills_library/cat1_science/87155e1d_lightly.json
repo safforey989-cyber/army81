@@ -1,0 +1,9 @@
+{
+  "name": "lightly",
+  "url": "https://github.com/lightly-ai/lightly",
+  "description": "Lightly is a computer vision framework for self-supervised learning.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

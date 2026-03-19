@@ -1,0 +1,9 @@
+{
+  "name": "SKTetris",
+  "url": "https://github.com/chsxf/SKTetris",
+  "description": ": Partial recreation of the Tetris game using SpriteKit 2D",
+  "section": "SpriteKit",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

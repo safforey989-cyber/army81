@@ -1,0 +1,9 @@
+{
+  "name": "AI Displacement Tracker",
+  "url": "https://github.com/noahaust2/ai-displacement-tracker",
+  "description": "Structured dataset tracking 92 AI-attributed workforce reduction events affecting 453,748 workers across 12 countries and 11 sectors. JSON and CSV formats. CC-BY-4.0 licensed.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "h2o",
+  "url": "https://cran.r-project.org/web/packages/h2o/index.html",
+  "description": "A framework for fast, parallel, and distributed machine learning algorithms at scale -- Deeplearning, Random forests, GBM, KMeans, PCA, GLM.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

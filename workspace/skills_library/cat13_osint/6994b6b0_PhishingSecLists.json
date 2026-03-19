@@ -1,0 +1,9 @@
+{
+  "name": "PhishingSecLists",
+  "url": "https://github.com/spmedia/PhishingSecLists",
+  "description": "This list is to be used with web scanning tools (Gobuster, ffuf, Burp Suite, DirBuster). These lists are specifically tailored and designed for fuzzing phishing, crypto scam landing pages, and other malicious sketch af websites. You can gain vaulable intel on successful hits.",
+  "section": "[↑](#-table-of-contents) Threat Intelligence",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "GPT Builder",
+  "url": "https://chat.openai.com/gpts/editor",
+  "description": "Assistant for creating GPT-based assistants.",
+  "section": "Custom assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

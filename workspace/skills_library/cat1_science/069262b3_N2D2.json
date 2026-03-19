@@ -1,0 +1,9 @@
+{
+  "name": "N2D2",
+  "url": "https://github.com/CEA-LIST/N2D2",
+  "description": "CEA-List's CAD framework for designing and simulating Deep Neural Network, and building full DNN-based applications on embedded platforms",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

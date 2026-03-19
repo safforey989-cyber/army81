@@ -1,0 +1,9 @@
+{
+  "name": "OpenAI specification",
+  "url": "https://github.com/openai/openai-openapi",
+  "description": "with [Stainless](https://stainlessapi.com/) | [Github](https://github.com/openai/openai-python)![GitHub Repo stars](https://img.shields.io/github/stars/openai/openai-python?style=social)| Free, need OpenAI [apikey](https://platform.openai.com/account/api-keys) |",
+  "section": "GPT LLMs Applications",
+  "topic": "ai_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

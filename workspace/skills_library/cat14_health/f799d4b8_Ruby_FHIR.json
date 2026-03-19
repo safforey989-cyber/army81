@@ -1,0 +1,9 @@
+{
+  "name": "Ruby FHIR",
+  "url": "https://github.com/fhir-crucible/fhir_client",
+  "description": "FHIR client implementation in Ruby.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

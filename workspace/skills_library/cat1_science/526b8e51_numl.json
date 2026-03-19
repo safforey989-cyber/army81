@@ -1,0 +1,9 @@
+{
+  "name": "numl",
+  "url": "https://www.nuget.org/packages/numl/",
+  "description": "numl is a machine learning library intended to ease the use of using standard modelling techniques for both prediction and clustering.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

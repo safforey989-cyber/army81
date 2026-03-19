@@ -1,0 +1,9 @@
+{
+  "name": "IntelBase",
+  "url": "https://intelbase.is/",
+  "description": "Forensics platform focused on reverse email lookup and email data enrichment.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

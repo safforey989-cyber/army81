@@ -1,0 +1,9 @@
+{
+  "name": "Notebooks",
+  "url": "https://github.com/rlan/notebooks",
+  "description": "A starter kit for Jupyter notebooks and machine learning. Companion docker images consist of all combinations of python versions, machine learning frameworks (Keras, PyTorch and Tensorflow) and CPU/CUDA versions.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

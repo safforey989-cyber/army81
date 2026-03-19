@@ -1,0 +1,9 @@
+{
+  "name": "openai/point-e",
+  "url": "https://github.com/openai/point-e",
+  "description": ": OpenAI's point cloud diffusion for 3D model synthesis",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DVC",
+  "url": "https://github.com/iterative/dvc",
+  "description": "| An open-source data science version control system. It helps track, organize and make data science projects reproducible. In its very basic scenario it helps version control and share large data and model files. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

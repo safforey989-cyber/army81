@@ -1,0 +1,9 @@
+{
+  "name": "PyStan",
+  "url": "https://pypi.org/project/pystan/",
+  "description": "| Python interface to Stan (Bayesian inference and modeling) |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

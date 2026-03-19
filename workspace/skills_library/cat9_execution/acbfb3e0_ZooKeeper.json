@@ -1,0 +1,9 @@
+{
+  "name": "ZooKeeper",
+  "url": "https://zookeeper.apache.org/",
+  "description": "ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. ([Source Code](https://github.com/apache/zookeeper)) `Apache-2.0` `Java/C++`",
+  "section": "Service Discovery",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

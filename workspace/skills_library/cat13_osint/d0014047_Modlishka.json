@@ -1,0 +1,9 @@
+{
+  "name": "Modlishka",
+  "url": "https://github.com/drk1wi/Modlishka",
+  "description": "Flexible and powerful reverse proxy with real-time two-factor authentication.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "World Monitor",
+  "url": "https://www.worldmonitor.app",
+  "description": "Real-time global intelligence platform with live conflict tracking, military flight and vessel monitoring, GPS jamming data, satellite imagery, and geopolitical risk scores across 5 specialized dashboards.",
+  "section": "[↑](#-table-of-contents) Geospatial Research and Mapping Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

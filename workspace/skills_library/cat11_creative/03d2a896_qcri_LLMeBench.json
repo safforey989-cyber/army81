@@ -1,0 +1,9 @@
+{
+  "name": "qcri/LLMeBench",
+  "url": "https://github.com/qcri/LLMeBench/",
+  "description": ": Benchmarking Large Language Models",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

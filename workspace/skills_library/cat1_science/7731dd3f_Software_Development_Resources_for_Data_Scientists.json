@@ -1,0 +1,9 @@
+{
+  "name": "Software Development Resources for Data Scientists",
+  "url": "https://www.rstudio.com/blog/software-development-resources-for-data-scientists/",
+  "description": "|_Data scientists concentrate on making sense of data through exploratory analysis, statistics, and models. Software developers apply a separate set of knowledge with different tools. Although their focus may seem unrelated, data science teams can benefit from adopting software development best prac",
+  "section": "What is Data Science?",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

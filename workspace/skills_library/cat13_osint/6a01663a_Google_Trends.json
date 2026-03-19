@@ -1,0 +1,9 @@
+{
+  "name": "Google Trends",
+  "url": "https://www.google.com/trends",
+  "description": "See how many users are searching for specific keywords.",
+  "section": "[↑](#-table-of-contents) Keywords Discovery and Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

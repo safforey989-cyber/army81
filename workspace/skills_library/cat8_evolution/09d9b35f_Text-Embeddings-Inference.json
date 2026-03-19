@@ -1,0 +1,9 @@
+{
+  "name": "Text-Embeddings-Inference",
+  "url": "https://github.com/huggingface/text-embeddings-inference",
+  "description": "Inference for text-embeddings in Rust, HFOIL Licence.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

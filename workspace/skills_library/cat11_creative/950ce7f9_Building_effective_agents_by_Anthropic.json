@@ -1,0 +1,9 @@
+{
+  "name": "Building effective agents by Anthropic",
+  "url": "https://www.anthropic.com/research/building-effective-agents",
+  "description": ": this article introduces basic concepts related to agents and didactically presents agent architectures.",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

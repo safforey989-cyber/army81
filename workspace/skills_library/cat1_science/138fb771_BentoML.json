@@ -1,0 +1,9 @@
+{
+  "name": "BentoML",
+  "url": "https://github.com/bentoml/bentoml",
+  "description": ": Toolkit for package and deploy machine learning models for serving in production",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "autochrome",
+  "url": "https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2017/march/autochrome/",
+  "description": "Chrome browser profile preconfigured with appropriate settings needed for web application testing.",
+  "section": "Web Exploitation",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

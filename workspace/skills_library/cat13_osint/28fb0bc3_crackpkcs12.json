@@ -1,0 +1,9 @@
+{
+  "name": "crackpkcs12",
+  "url": "https://github.com/crackpkcs12/crackpkcs12",
+  "description": "Multithreaded program to crack PKCS#12 files (`.p12` and `.pfx` extensions), such as TLS/SSL certificates.",
+  "section": "Transport Layer Security Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

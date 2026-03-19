@@ -1,0 +1,9 @@
+{
+  "name": "gorse",
+  "url": "https://github.com/zhenghaoz/gorse",
+  "description": "An offline recommender system backend based on collaborative filtering written in Go.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

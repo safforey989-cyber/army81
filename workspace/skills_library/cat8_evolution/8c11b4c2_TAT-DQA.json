@@ -1,0 +1,9 @@
+{
+  "name": "TAT-DQA",
+  "url": "https://nextplusplus.github.io/TAT-DQA",
+  "description": "a large-scale Document Visual Question Answering (VQA) dataset designed for complex document understanding, particularly in financial reports.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

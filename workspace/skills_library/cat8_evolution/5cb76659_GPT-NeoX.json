@@ -1,0 +1,9 @@
+{
+  "name": "GPT-NeoX",
+  "url": "https://github.com/EleutherAI/gpt-neox",
+  "description": "An implementation of model parallel autoregressive transformers on GPUs, based on the DeepSpeed library.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

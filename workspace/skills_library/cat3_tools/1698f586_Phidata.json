@@ -1,0 +1,9 @@
+{
+  "name": "Phidata",
+  "url": "https://github.com/phidatahq/phidata",
+  "description": ": Build AI Assistants with memory, knowledge and tools. ![GitHub Repo stars](https://img.shields.io/github/stars/phidatahq/phidata?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

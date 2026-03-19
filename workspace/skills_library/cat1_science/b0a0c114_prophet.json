@@ -1,0 +1,9 @@
+{
+  "name": "prophet",
+  "url": "https://facebook.github.io/prophet/",
+  "description": "Fast and automated time series forecasting framework by Facebook.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

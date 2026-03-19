@@ -1,0 +1,9 @@
+{
+  "name": "Text Miner",
+  "url": "https://www.sas.com/en_us/software/text-miner.html",
+  "description": "Text mining using a GUI or code.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "TF-GAN",
+  "url": "https://github.com/tensorflow/gan",
+  "description": "TF-GAN is a lightweight library for training and evaluating Generative Adversarial Networks (GANs).",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

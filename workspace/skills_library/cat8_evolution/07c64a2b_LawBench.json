@@ -1,0 +1,9 @@
+{
+  "name": "LawBench",
+  "url": "https://lawbench.opencompass.org.cn/leaderboard",
+  "description": "a benchmark designed to evaluate large language models in the legal domain.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

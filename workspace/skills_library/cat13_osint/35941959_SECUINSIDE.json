@@ -1,0 +1,9 @@
+{
+  "name": "SECUINSIDE",
+  "url": "http://secuinside.com",
+  "description": "Security Conference in Seoul.",
+  "section": "Asia",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Kodi",
+  "url": "https://github.com/xbmc/xbmc",
+  "description": ": Media player & entertainment hub, includes a separate remote app",
+  "section": "Media",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

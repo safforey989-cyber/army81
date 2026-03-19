@@ -1,0 +1,9 @@
+{
+  "name": "Codel",
+  "url": "https://github.com/semanser/codel",
+  "description": ": ✨ Fully autonomous AI Agent that can perform complicated tasks and projects using terminal, browser, and editor. ![GitHub Repo stars](https://img.shields.io/github/stars/semanser/codel?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

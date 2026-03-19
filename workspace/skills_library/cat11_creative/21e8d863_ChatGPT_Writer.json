@@ -1,0 +1,9 @@
+{
+  "name": "ChatGPT Writer",
+  "url": "https://chatgptwriter.ai/",
+  "description": "Generate entire emails and messages using ChatGPT AI.",
+  "section": "ChatGPT extensions",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

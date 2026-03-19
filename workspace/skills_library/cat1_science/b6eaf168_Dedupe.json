@@ -1,0 +1,9 @@
+{
+  "name": "Dedupe",
+  "url": "https://github.com/dedupeio/dedupe",
+  "description": "A python library for accurate and scalable fuzzy matching, record deduplication and entity-resolution.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "IRIS",
+  "url": "https://github.com/cortical-io/Iris",
+  "description": "[Cortical.io's](https://cortical.io) FREE NLP, Retina API Analysis Tool (written in JavaFX!) - [See the Tutorial Video](https://www.youtube.com/watch?v=CsF4pd7fGF0).",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

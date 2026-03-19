@@ -1,0 +1,9 @@
+{
+  "name": "Conceptual Framework for Autonomous Cognitive Entities",
+  "url": "https://arxiv.org/abs/2310.06775",
+  "description": ": a paper that \"introduces the Autonomous Cognitive Entity (ACE) model, a novel framework for a cognitive architecture, enabling machines and software agents to operate more independently\"",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

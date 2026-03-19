@@ -1,0 +1,9 @@
+{
+  "name": "LendTrain",
+  "url": "https://www.lendtrain.com",
+  "description": "AI-native mortgage refinance plugin for Claude Code with real-time institutional pricing, state-specific closing costs, FHA Streamline/VA IRRRL detection, and regulatory compliance. Uses MCP (Model Context Protocol) to connect LLMs to live mortgage pricing.",
+  "section": "Others",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Awesome-Align-LLM-Human",
+  "url": "https://github.com/GaryYufei/AlignLLMHumanSurvey",
+  "description": "A collection of papers and resources about aligning large language models (LLMs) with human.",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

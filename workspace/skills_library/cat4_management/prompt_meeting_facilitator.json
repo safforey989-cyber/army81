@@ -1,0 +1,7 @@
+{
+  "name": "meeting_facilitator",
+  "type": "prompt_pattern",
+  "prompt_template": "أدِر اجتماع حول {topic}. حدد الأجندة، الأسئلة الرئيسية، والقرارات المطلوبة.",
+  "category": "cat4_management",
+  "source": "built_in"
+}

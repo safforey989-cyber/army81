@@ -1,0 +1,9 @@
+{
+  "name": "Chinese Large Model Leaderboard",
+  "url": "https://github.com/jeinlee1991/chinese-llm-benchmark",
+  "description": "an expert-driven benchmark for Chineses LLMs.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

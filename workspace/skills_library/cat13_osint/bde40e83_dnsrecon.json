@@ -1,0 +1,9 @@
+{
+  "name": "dnsrecon",
+  "url": "https://github.com/darkoperator/dnsrecon/",
+  "description": "DNS enumeration script.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

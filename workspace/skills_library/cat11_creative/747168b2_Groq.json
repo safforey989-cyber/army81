@@ -1,0 +1,9 @@
+{
+  "name": "Groq",
+  "url": "https://groq.com/",
+  "description": ": service focused on fast inference speed, providing API access to Llama 2 70B-4K and Mixtral 8x7B-32K",
+  "section": "Large Language Models (LLMs)",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

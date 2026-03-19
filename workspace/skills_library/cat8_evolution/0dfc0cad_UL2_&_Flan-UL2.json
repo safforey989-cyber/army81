@@ -1,0 +1,9 @@
+{
+  "name": "UL2 & Flan-UL2",
+  "url": "https://github.com/google-research/google-research/tree/master/ul2#checkpoints",
+  "description": ", [Flan-UL2 (HF)](https://huggingface.co/google/flan-ul2)          | [UL2 20B: An Open Source Unified Language Learner](https://ai.googleblog.com/2022/10/ul2-20b-open-source-unified-language.html)                                                       | 20             | [512, 2048](https://huggingfac",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

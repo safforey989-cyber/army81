@@ -1,0 +1,9 @@
+{
+  "name": "XAD",
+  "url": "https://github.com/auto-differentiation/XAD",
+  "description": "Comprehensive backpropagation tool for C++.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Spy Dialer",
+  "url": "http://spydialer.com/",
+  "description": "Get the voicemail of a cell phone & owner name lookup.",
+  "section": "[↑](#-table-of-contents) Phone Number Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

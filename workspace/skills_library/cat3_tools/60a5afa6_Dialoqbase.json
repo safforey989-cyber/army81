@@ -1,0 +1,9 @@
+{
+  "name": "Dialoqbase",
+  "url": "https://github.com/n4ze3m/dialoqbase",
+  "description": ": web application that allows you to create custom chatbots with your own knowledge base ![GitHub Repo stars](https://img.shields.io/github/stars/n4ze3m/dialoqbase?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

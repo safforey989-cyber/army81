@@ -1,0 +1,9 @@
+{
+  "name": "rasbt/LLMs-from-scratch",
+  "url": "https://github.com/rasbt/LLMs-from-scratch",
+  "description": ": Implementing a ChatGPT-like LLM from scratch, step by step",
+  "section": "Courses and Educational Materials",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

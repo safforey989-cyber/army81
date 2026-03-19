@@ -1,0 +1,9 @@
+{
+  "name": "Encog",
+  "url": "https://github.com/jimpil/enclog",
+  "description": "Clojure wrapper for Encog (v3) (Machine-Learning framework that specializes in neural-nets). **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

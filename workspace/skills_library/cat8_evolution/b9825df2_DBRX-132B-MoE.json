@@ -1,0 +1,9 @@
+{
+  "name": "DBRX-132B-MoE",
+  "url": "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

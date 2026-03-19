@@ -1,0 +1,9 @@
+{
+  "name": "World Monitor Tech",
+  "url": "https://tech.worldmonitor.app",
+  "description": "Live cyber threat intelligence dashboard combining CISA advisories, active malware campaigns, CVE feeds, and global cyber event heatmaps alongside geopolitical and military context.",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

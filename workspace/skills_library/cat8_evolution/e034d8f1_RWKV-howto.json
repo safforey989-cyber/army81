@@ -1,0 +1,9 @@
+{
+  "name": "RWKV-howto",
+  "url": "https://github.com/Hannibal046/RWKV-howto",
+  "description": "possibly useful materials and tutorial for learning RWKV.",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

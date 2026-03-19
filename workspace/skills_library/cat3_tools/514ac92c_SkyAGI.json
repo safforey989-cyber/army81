@@ -1,0 +1,9 @@
+{
+  "name": "SkyAGI",
+  "url": "https://github.com/litanlitudan/skyagi",
+  "description": ": Emerging human-behavior simulation capability in LLM agents ![GitHub Repo stars](https://img.shields.io/github/stars/litanlitudan/skyagi?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

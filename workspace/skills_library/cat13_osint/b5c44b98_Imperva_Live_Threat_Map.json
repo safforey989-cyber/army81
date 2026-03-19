@@ -1,0 +1,9 @@
+{
+  "name": "Imperva Live Threat Map",
+  "url": "https://www.imperva.com/cyber-threat-attack-map/",
+  "description": "A real-time global view of DDoS attacks, hacking attempts, and bot assaults mitigated by Imperva security services.",
+  "section": "[↑](#-live-cyberthreat-maps) Live Cyber Threat Maps",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

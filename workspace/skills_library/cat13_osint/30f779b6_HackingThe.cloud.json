@@ -1,0 +1,9 @@
+{
+  "name": "HackingThe.cloud",
+  "url": "https://hackingthe.cloud/",
+  "description": "*.",
+  "section": "Cloud Platform Attack Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

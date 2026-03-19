@@ -1,0 +1,9 @@
+{
+  "name": "Discord Sensor",
+  "url": "https://telegram.me/discordsensorbot",
+  "description": "Retrieves Discord account data.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

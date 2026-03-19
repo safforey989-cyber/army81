@@ -1,0 +1,9 @@
+{
+  "name": "Wapiti",
+  "url": "http://wapiti.sourceforge.net/",
+  "description": "Black box web application vulnerability scanner with built-in fuzzer.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

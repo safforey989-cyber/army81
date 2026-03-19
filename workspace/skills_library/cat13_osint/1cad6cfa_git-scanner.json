@@ -1,0 +1,9 @@
+{
+  "name": "git-scanner",
+  "url": "https://github.com/HightechSec/git-scanner",
+  "description": "Tool for bug hunting or pentesting websites that have open `.git` repositories available in public.",
+  "section": "Web-accessible source code ripping tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

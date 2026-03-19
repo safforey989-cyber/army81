@@ -1,0 +1,9 @@
+{
+  "name": "yt-dlp",
+  "url": "https://github.com/yt-dlp/yt-dlp/",
+  "description": "Downloads videos from almost any online platform, along with information, thumbnails, subtitles, descriptions, and comments (comments only on a select few sites like Youtube and a few small sites). If a site is not supported, or a useful or crucial piece of metadata, including comments, is missing, ",
+  "section": "[↑](#-table-of-contents) Video Search and Other Video Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

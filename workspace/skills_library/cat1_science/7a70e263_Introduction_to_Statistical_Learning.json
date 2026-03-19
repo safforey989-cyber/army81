@@ -1,0 +1,9 @@
+{
+  "name": "Introduction to Statistical Learning",
+  "url": "https://www-bcf.usc.edu/~gareth/ISL/",
+  "description": "Tool from ml_tools",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

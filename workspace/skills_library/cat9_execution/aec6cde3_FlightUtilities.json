@@ -1,0 +1,9 @@
+{
+  "name": "FlightUtilities",
+  "url": "https://github.com/BalestraPatrick/FlightUtilities",
+  "description": ": Uses the private FlightUtilities.framework to show information about any flight given the airline code, flight code & date",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

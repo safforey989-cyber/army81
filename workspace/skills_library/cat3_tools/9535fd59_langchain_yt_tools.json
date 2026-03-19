@@ -1,0 +1,9 @@
+{
+  "name": "langchain_yt_tools",
+  "url": "https://github.com/venuv/langchain_yt_tools",
+  "description": ": Langchain tools to search/extract/transcribe text transcripts of Youtube videos ![GitHub Repo stars](https://img.shields.io/github/stars/venuv/langchain_yt_tools?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

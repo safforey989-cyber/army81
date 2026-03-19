@@ -1,0 +1,9 @@
+{
+  "name": "D3.js",
+  "url": "https://d3js.org/",
+  "description": "Tool from ml_tools",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

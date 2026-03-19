@@ -1,0 +1,9 @@
+{
+  "name": "Stanford Word Segmenter",
+  "url": "https://nlp.stanford.edu/software/segmenter.shtml",
+  "description": "Tokenization of raw text is a standard pre-processing step for many NLP tasks.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

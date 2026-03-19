@@ -1,0 +1,9 @@
+{
+  "name": "Featuretools",
+  "url": "https://github.com/alteryx/featuretools",
+  "description": "| An open source framework for automated feature engineering written in python |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

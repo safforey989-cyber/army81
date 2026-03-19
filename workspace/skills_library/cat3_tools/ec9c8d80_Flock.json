@@ -1,0 +1,9 @@
+{
+  "name": "Flock",
+  "url": "https://github.com/Onelevenvy/flock",
+  "description": ": Flock is a workflow-based low-code platform for rapidly building chatbots, RAG, and coordinating multi-agent teams![GitHub Repo stars](https://img.shields.io/github/stars/Onelevenvy/flock?style=social)",
+  "section": "Low-code",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

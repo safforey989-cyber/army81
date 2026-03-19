@@ -1,0 +1,9 @@
+{
+  "name": "Docker Compose",
+  "url": "https://docs.docker.com/compose/",
+  "description": "Define and run multi-container Docker applications. ([Source Code](https://github.com/docker/compose)) `Apache-2.0` `Go`",
+  "section": "Software Containers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

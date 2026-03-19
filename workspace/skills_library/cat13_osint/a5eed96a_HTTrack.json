@@ -1,0 +1,9 @@
+{
+  "name": "HTTrack",
+  "url": "http://www.httrack.com",
+  "description": "Allows you to download a World Wide Web site from the Internet to a local directory, building recursively all directories, getting HTML, images, and other files from the server to your computer.",
+  "section": "[↑](#-table-of-contents) Offline Browsing",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

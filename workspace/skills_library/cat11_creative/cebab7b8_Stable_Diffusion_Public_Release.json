@@ -1,0 +1,9 @@
+{
+  "name": "Stable Diffusion Public Release",
+  "url": "https://stability.ai/blog/stable-diffusion-public-release",
+  "description": "Announcement of the public release of Stable Diffusion, an AI-based image generation model trained on a broad internet scrape and licensed under a Creative ML OpenRAIL-M license. Stable Diffusion blog, 22 August, 2022.",
+  "section": "Milestones",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Stanford Parser",
+  "url": "https://nlp.stanford.edu/software/lex-parser.shtml",
+  "description": "A natural language parser is a program that works out the grammatical structure of sentences.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

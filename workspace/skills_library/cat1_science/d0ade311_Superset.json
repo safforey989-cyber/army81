@@ -1,0 +1,9 @@
+{
+  "name": "Superset",
+  "url": "https://github.com/apache/incubator-superset",
+  "description": "A data exploration platform designed to be visual, intuitive, and interactive.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

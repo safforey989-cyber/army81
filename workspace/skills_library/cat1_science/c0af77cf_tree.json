@@ -1,0 +1,9 @@
+{
+  "name": "tree",
+  "url": "https://cran.r-project.org/web/packages/tree/index.html",
+  "description": "tree: Classification and regression trees.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

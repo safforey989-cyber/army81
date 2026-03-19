@@ -1,0 +1,9 @@
+{
+  "name": "go-geom",
+  "url": "https://github.com/twpayne/go-geom",
+  "description": "Go library to handle geometries.",
+  "section": "Spatial analysis and geometry",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "news_verifier",
+  "type": "prompt_pattern",
+  "prompt_template": "تحقق من صحة هذا الخبر: {news}. مصادر متقاطعة، أصل الخبر، تحليل bias.",
+  "category": "cat13_osint",
+  "source": "built_in"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Beelogger",
+  "url": "https://github.com/4w4k3/BeeLogger",
+  "description": "Tool for generating keylooger.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

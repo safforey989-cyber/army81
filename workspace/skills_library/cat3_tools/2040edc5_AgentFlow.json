@@ -1,0 +1,9 @@
+{
+  "name": "AgentFlow",
+  "url": "https://github.com/simonmesmith/agentflow",
+  "description": ": About Complex LLM Workflows from Simple JSON. ![GitHub Repo stars](https://img.shields.io/github/stars/simonmesmith/agentflow?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

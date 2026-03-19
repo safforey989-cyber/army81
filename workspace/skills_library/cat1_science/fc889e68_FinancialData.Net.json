@@ -1,0 +1,9 @@
+{
+  "name": "FinancialData.Net",
+  "url": "https://financialdata.net/documentation",
+  "description": "Financial datasets (stock market data, financial statements, sustainability data, and more).",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

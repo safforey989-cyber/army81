@@ -1,0 +1,9 @@
+{
+  "name": "Wregex",
+  "url": "https://ehubio.ehu.eus/wregex/",
+  "description": "Amino acid motif searching software with optional Position-Specific Scoring Matrix.",
+  "section": "Bioinformatics",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

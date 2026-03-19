@@ -1,0 +1,9 @@
+{
+  "name": "GitHub Code Search",
+  "url": "https://github.com/search?type=code",
+  "description": "GitHub's enhanced code search with advanced filtering.",
+  "section": "[↑](#-table-of-contents) Code Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

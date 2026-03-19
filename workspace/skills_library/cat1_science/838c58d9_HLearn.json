@@ -1,0 +1,9 @@
+{
+  "name": "HLearn",
+  "url": "https://github.com/mikeizbicki/HLearn",
+  "description": "a suite of libraries for interpreting machine learning models according to their algebraic structure. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

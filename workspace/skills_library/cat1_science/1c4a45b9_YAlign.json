@@ -1,0 +1,9 @@
+{
+  "name": "YAlign",
+  "url": "https://github.com/machinalis/yalign",
+  "description": "A sentence aligner, a friendly tool for extracting parallel sentences from comparable corpora. **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

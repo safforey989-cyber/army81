@@ -1,0 +1,9 @@
+{
+  "name": "Creep - YouTube",
+  "url": "https://www.youtube.com/watch?v=c6LlG4g_9lk",
+  "description": "by [Glenn Marshall Neural Art](https://www.youtube.com/channel/UCes-tiSj7VO6nNOsUB76lZw): how did they translated the images using VQGAN+CLIP? How did they seamlessly wander on the latent space?",
+  "section": "Artists and Artworks",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

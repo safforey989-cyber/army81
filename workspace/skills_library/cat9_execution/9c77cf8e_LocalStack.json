@@ -1,0 +1,9 @@
+{
+  "name": "LocalStack",
+  "url": "https://localstack.cloud/",
+  "description": "LocalStack is a fully functional local AWS cloud stack. This includes Lambda for serverless computation. ([Source Code](https://github.com/localstack/localstack)) `Apache-2.0` `Python/Docker/K8S`",
+  "section": "PaaS",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

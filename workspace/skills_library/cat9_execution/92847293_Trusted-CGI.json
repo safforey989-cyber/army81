@@ -1,0 +1,9 @@
+{
+  "name": "Trusted-CGI",
+  "url": "https://github.com/reddec/trusted-cgi",
+  "description": "Lightweight self-hosted lambda/applications/cgi/serverless-functions platform. `MIT` `Go/deb/Docker`",
+  "section": "PaaS",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

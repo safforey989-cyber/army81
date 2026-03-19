@@ -1,0 +1,9 @@
+{
+  "name": "Awesome ElectronJS Hacking",
+  "url": "https://github.com/doyensec/awesome-electronjs-hacking",
+  "description": "A curated list of awesome resources about Electron.js (in)security",
+  "section": "Other Lists Online",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

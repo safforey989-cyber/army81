@@ -1,0 +1,9 @@
+{
+  "name": "checksec.sh",
+  "url": "https://www.trapkit.de/tools/checksec.html",
+  "description": "Shell script designed to test what standard Linux OS and PaX security features are being used.",
+  "section": "GNU/Linux Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AutoGPT",
+  "url": "https://github.com/Significant-Gravitas/Auto-GPT",
+  "description": "an experimental open-source application showcasing the capabilities of the GPT-4 language model.",
+  "section": "Miscellaneous",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

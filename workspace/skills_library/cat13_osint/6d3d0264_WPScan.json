@@ -1,0 +1,9 @@
+{
+  "name": "WPScan",
+  "url": "https://wpscan.org/",
+  "description": "Black box WordPress vulnerability scanner.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

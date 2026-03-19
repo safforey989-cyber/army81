@@ -1,0 +1,9 @@
+{
+  "name": "Mini vMac",
+  "url": "https://github.com/zydeco/minivmac4ios",
+  "description": ": Early 68K Macintosh emulator",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

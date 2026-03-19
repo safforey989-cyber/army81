@@ -1,0 +1,9 @@
+{
+  "name": "CSV-AI 🧠",
+  "url": "https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/snowflake.html",
+  "description": ": CSV-AI is the ultimate app powered by LangChain that allows you to unlock hidden insights in your CSV files.",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

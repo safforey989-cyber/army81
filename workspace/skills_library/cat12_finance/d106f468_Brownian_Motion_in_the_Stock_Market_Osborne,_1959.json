@@ -1,0 +1,9 @@
+{
+  "name": "Brownian Motion in the Stock Market Osborne, 1959",
+  "url": "http://m.e-m-h.org/Osbo59.pdf",
+  "description": "The common-stock prices can be regarded as an ensemble of decisions in statistical equilibrium.",
+  "section": "Papers",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

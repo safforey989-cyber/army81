@@ -1,0 +1,9 @@
+{
+  "name": "LangServe",
+  "url": "https://github.com/langchain-ai/langserve",
+  "description": ": LangServe helps developers deploy LangChain runnables and chains as a REST API. ![GitHub Repo stars](https://img.shields.io/github/stars/langchain-ai/langserve?style=social)",
+  "section": "LangChain Framework",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

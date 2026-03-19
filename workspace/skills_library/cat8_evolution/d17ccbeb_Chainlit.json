@@ -1,0 +1,9 @@
+{
+  "name": "Chainlit",
+  "url": "https://docs.chainlit.io/overview",
+  "description": "A Python library for making chatbot interfaces.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "lasso2",
+  "url": "https://cran.r-project.org/web/packages/lasso2/index.html",
+  "description": "lasso2: L1 constrained estimation aka ‘lasso’.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

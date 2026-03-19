@@ -1,0 +1,9 @@
+{
+  "name": "CodiumAI",
+  "url": "https://www.codium.ai/",
+  "description": "With CodiumAI, you get non-trivial tests suggested right inside your IDE, so you stay confident when you push.",
+  "section": "Coding Assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

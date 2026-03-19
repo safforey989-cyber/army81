@@ -1,0 +1,9 @@
+{
+  "name": "Leaker",
+  "url": "https://github.com/vflame6/leaker",
+  "description": "Passive leak enumeration CLI tool that searches across 10 breach databases simultaneously.",
+  "section": "[↑](#-table-of-contents) Data Breach Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

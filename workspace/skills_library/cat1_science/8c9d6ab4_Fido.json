@@ -1,0 +1,9 @@
+{
+  "name": "Fido",
+  "url": "https://github.com/FidoProject/Fido",
+  "description": "A highly-modular C++ machine learning library for embedded electronics and robotics.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

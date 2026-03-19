@@ -1,0 +1,9 @@
+{
+  "name": "datacite.org",
+  "url": "https://datacite.org/",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

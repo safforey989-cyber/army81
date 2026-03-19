@@ -1,0 +1,9 @@
+{
+  "name": "SignalProcessing",
+  "url": "https://github.com/JuliaDSP/DSP.jl",
+  "description": "Signal Processing tools for Julia.",
+  "section": "Misc Stuff / Presentations",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

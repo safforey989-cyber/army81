@@ -1,0 +1,9 @@
+{
+  "name": "GeoSpyer",
+  "url": "https://github.com/atiilla/geospy \"Original service: https://geospy.web.app/\"",
+  "description": "Python tool using Graylark's AI-powered geo-location service to uncover the location where photos were taken.",
+  "section": "[↑](#-table-of-contents) Image Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

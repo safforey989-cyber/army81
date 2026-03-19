@@ -1,0 +1,9 @@
+{
+  "name": "MCP Memory Service",
+  "url": "https://github.com/doobidoo/mcp-memory-service",
+  "description": "Universal memory service with semantic search, autonomous consolidation, and multi-client support for AI applications.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

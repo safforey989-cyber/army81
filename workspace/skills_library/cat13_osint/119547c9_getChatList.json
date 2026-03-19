@@ -1,0 +1,9 @@
+{
+  "name": "getChatList",
+  "url": "https://telegram.me/getchatlistbot",
+  "description": "Shows user’s group list.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

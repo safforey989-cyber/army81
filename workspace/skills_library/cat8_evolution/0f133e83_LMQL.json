@@ -1,0 +1,9 @@
+{
+  "name": "LMQL",
+  "url": "https://lmql.ai",
+  "description": "A programming language for LLM interaction with support for typed prompting, control flow, constraints, and tools.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

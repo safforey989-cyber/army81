@@ -1,0 +1,9 @@
+{
+  "name": "Speedster",
+  "url": "https://github.com/nebuly-ai/nebullvm/tree/main/apps/accelerate/speedster",
+  "description": "Automatically apply SOTA optimization techniques to achieve the maximum inference speed-up on your hardware. [DEEP LEARNING]",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

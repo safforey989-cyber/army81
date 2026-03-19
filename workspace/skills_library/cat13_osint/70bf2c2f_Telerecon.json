@@ -1,0 +1,9 @@
+{
+  "name": "Telerecon",
+  "url": "https://github.com/sockysec/Telerecon",
+  "description": "A reconnaissance framework for researching and investigating Telegram.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

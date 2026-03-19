@@ -1,0 +1,9 @@
+{
+  "name": "DRBD",
+  "url": "https://linbit.com/drbd/",
+  "description": "Distributed replicated storage system, implemented as a Linux kernel driver. ([Source Code](https://github.com/LINBIT/drbd)) `GPL-2.0` `C`",
+  "section": "Distributed Filesystems",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

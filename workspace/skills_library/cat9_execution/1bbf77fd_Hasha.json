@@ -1,0 +1,9 @@
+{
+  "name": "Hasha",
+  "url": "https://github.com/LemonPepperSeasoning/Hasher",
+  "description": ": SHA-256 Hash collision computer",
+  "section": "Security",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

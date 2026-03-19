@@ -1,0 +1,9 @@
+{
+  "name": "shaman",
+  "url": "https://github.com/luccastera/shaman",
+  "description": "Node.js library with support for both simple and multiple linear regression. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

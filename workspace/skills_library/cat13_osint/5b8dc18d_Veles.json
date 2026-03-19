@@ -1,0 +1,9 @@
+{
+  "name": "Veles",
+  "url": "https://codisec.com/veles/",
+  "description": "Binary data visualization and analysis tool.",
+  "section": "File Format Analysis Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Edge",
+  "url": "https://www.microsoft.com/en-us/windows/microsoft-edge/microsoft-edge",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Browsers",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

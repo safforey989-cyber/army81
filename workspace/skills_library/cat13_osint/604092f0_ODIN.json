@@ -1,0 +1,9 @@
+{
+  "name": "ODIN",
+  "url": "https://search.odin.io/",
+  "description": "Used to search for Hosts, CVEs & Exposed Buckets/Files and shows a website is vulnerable or not. 10 Free Searches Per Day.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

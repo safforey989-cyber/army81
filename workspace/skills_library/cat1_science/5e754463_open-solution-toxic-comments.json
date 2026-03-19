@@ -1,0 +1,9 @@
+{
+  "name": "open-solution-toxic-comments",
+  "url": "https://github.com/neptune-ml/open-solution-toxic-comments",
+  "description": "> source code for [Toxic Comment Classification Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge).",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

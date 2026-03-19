@@ -1,0 +1,9 @@
+{
+  "name": "Contribution Graphs for GitHub",
+  "url": "https://github.com/AnderGoig/github-contributions-ios",
+  "description": ": Check your GitHub contributions using Home Screen Widgets",
+  "section": "GitHub",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

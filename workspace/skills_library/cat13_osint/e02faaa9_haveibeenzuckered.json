@@ -1,0 +1,9 @@
+{
+  "name": "haveibeenzuckered",
+  "url": "https://haveibeenzuckered.com/",
+  "description": "A large dataset containing 533 million Facebook accounts was made available for download. The data was obtained by exploiting a vulnerability that was, according to Facebook, corrected in August 2019. Check if a telephone number is present within the Facebook data breach.",
+  "section": "[↑](#-table-of-contents) Facebook",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

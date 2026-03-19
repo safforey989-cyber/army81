@@ -1,0 +1,9 @@
+{
+  "name": "Cortex",
+  "url": "https://github.com/cortexlabs/cortex",
+  "description": "Open source platform for deploying machine learning models in production.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

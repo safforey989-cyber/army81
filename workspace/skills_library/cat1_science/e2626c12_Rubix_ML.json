@@ -1,0 +1,9 @@
+{
+  "name": "Rubix ML",
+  "url": "https://github.com/RubixML",
+  "description": "A high-level machine learning (ML) library that lets you build programs that learn from data using the PHP language.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

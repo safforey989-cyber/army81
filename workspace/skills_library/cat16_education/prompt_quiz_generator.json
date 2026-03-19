@@ -1,0 +1,7 @@
+{
+  "name": "quiz_generator",
+  "type": "prompt_pattern",
+  "prompt_template": "أنشئ 20 سؤال اختبار لـ {topic}. متدرجة الصعوبة مع إجابات.",
+  "category": "cat16_education",
+  "source": "built_in"
+}

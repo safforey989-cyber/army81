@@ -1,0 +1,9 @@
+{
+  "name": "Analog Synth X",
+  "url": "https://github.com/audiokit/AudioKit",
+  "description": ": Simple analog synthesizer music keyboard example",
+  "section": "Audio",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

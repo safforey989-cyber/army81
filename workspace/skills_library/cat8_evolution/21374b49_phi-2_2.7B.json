@@ -1,0 +1,9 @@
+{
+  "name": "phi-2 2.7B",
+  "url": "https://huggingface.co/microsoft/phi-2",
+  "description": "| [Microsoft](https://www.microsoft.com/en-us/research/blog/phi-2-the-surprising-power-of-small-language-models/) | 2.7 | [2048](https://huggingface.co/microsoft/phi-2/blob/main/config.json)| MIT | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

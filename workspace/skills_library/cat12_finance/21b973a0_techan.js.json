@@ -1,0 +1,9 @@
+{
+  "name": "techan.js",
+  "url": "https://github.com/andredumas/techan.js",
+  "description": "A visual, technical analysis and charting (Candlestick, OHLC, indicators) library built on D3.",
+  "section": "TA Lib",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

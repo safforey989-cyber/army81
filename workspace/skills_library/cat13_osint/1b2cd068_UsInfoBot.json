@@ -1,0 +1,9 @@
+{
+  "name": "UsInfoBot",
+  "url": "https://t.me/usinfobot",
+  "description": "Resolves username from ID (inline).",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

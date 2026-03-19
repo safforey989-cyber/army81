@@ -1,0 +1,9 @@
+{
+  "name": "United States Census Bureau",
+  "url": "https://www.census.gov/",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

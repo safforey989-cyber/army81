@@ -1,0 +1,9 @@
+{
+  "name": "Tony Jebara",
+  "url": "http://www.cs.columbia.edu/~jebara/resume.html",
+  "description": "introduces topics in Machine Learning for both generative and discriminative estimation. Material will include least squares methods, Gaussian distributions, linear classification, linear regression, maximum likelihood, exponential family distributions, Bayesian networks, Bayesian inference, mixture",
+  "section": "Machine Learning",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

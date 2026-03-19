@@ -1,0 +1,9 @@
+{
+  "name": "FHIR Works on AWS",
+  "url": "https://github.com/awslabs/fhir-works-on-aws-deployment",
+  "description": "FHIR Works on AWS deployment.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

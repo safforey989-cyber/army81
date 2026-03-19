@@ -1,0 +1,9 @@
+{
+  "name": "TResNet: High Performance GPU-Dedicated Architecture",
+  "url": "https://github.com/mrT23/TResNet",
+  "description": "TResNet models were designed and optimized to give the best speed-accuracy tradeoff out there on GPUs.",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

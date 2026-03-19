@@ -1,0 +1,9 @@
+{
+  "name": "fhir.js",
+  "url": "https://github.com/FHIR/fhir.js",
+  "description": "JavaScript client for FHIR.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

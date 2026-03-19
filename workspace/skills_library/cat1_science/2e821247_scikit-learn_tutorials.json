@@ -1,0 +1,9 @@
+{
+  "name": "scikit-learn tutorials",
+  "url": "https://github.com/GaelVaroquaux/scikit-learn-tutorial",
+  "description": "Series of notebooks for learning scikit-learn.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

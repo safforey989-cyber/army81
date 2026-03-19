@@ -1,0 +1,9 @@
+{
+  "name": "microsoft/JARVIS",
+  "url": "https://github.com/microsoft/JARVIS",
+  "description": ": JARVIS, a system to connect LLMs with ML community",
+  "section": "Autonomous LLM Agents",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

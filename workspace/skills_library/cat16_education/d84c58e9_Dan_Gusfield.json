@@ -1,0 +1,9 @@
+{
+  "name": "Dan Gusfield",
+  "url": "http://web.cs.ucdavis.edu/~gusfield/",
+  "description": "in 2010, this course is an undergraduate introduction to algorithm design and analysis. It features traditional topics, such as Big Oh notation, as well as an importance on implementing specific algorithms. Also featured are sorting (in linear time), graph algorithms, depth-first search, string matc",
+  "section": "Algorithms",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

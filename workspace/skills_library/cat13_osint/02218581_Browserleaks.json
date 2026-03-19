@@ -1,0 +1,9 @@
+{
+  "name": "Browserleaks",
+  "url": "https://browserleaks.com/",
+  "description": "BrowserLeaks tests your browser for privacy and fingerprinting leaks",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

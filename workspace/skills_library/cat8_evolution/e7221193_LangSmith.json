@@ -1,0 +1,9 @@
+{
+  "name": "LangSmith",
+  "url": "https://www.langchain.com/langsmith",
+  "description": "a unified platform from LangChain framework for: evaluation, collaboration HITL (Human In The Loop), logging and monitoring LLM applications.",
+  "section": "LLM Evaluation:",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

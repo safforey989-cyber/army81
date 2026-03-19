@@ -1,0 +1,9 @@
+{
+  "name": "skrub",
+  "url": "https://github.com/skrub-data/skrub/",
+  "description": "| A Python library to ease preprocessing and feature engineering for tabular machine learning |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Angewandte Data Science",
+  "url": "https://angewandtedatascience.de/",
+  "description": "German book about applied data science",
+  "section": "Books",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

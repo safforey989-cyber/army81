@@ -1,0 +1,9 @@
+{
+  "name": "Civitai",
+  "url": "https://civitai.com/",
+  "description": "Community driven AI model sharing tool.",
+  "section": "Model libraries",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

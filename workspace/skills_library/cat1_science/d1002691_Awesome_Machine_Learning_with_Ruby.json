@@ -1,0 +1,9 @@
+{
+  "name": "Awesome Machine Learning with Ruby",
+  "url": "https://github.com/arbox/machine-learning-with-ruby",
+  "description": "Curated list of ML related resources for Ruby.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

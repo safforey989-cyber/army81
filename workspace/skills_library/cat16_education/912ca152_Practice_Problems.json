@@ -1,0 +1,9 @@
+{
+  "name": "Practice Problems",
+  "url": "http://cs61a.org/problems/",
+  "description": "Tool from cs_courses",
+  "section": "Introduction to CS",
+  "topic": "cs_courses",
+  "category": "cat16_education",
+  "source": "github_awesome"
+}

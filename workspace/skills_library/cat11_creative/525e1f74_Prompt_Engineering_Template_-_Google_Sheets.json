@@ -1,0 +1,9 @@
+{
+  "name": "Prompt Engineering Template - Google Sheets",
+  "url": "https://docs.google.com/spreadsheets/d/1-snKDn38-KypoYCk9XLPg799bHcNFSBAVu2HVvFEAkA/edit#gid=0",
+  "description": ": spreadsheet with lists of modifiers for prompt building and a lot of interesting links for reference",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "sentiment_classifier",
+  "url": "https://github.com/kevincobain2000/sentiment_classifier",
+  "description": "Sentiment classifier using word sense disambiguation.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

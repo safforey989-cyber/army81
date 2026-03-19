@@ -1,0 +1,9 @@
+{
+  "name": "Google Hacking Database",
+  "url": "https://www.exploit-db.com/google-hacking-database/",
+  "description": "Database of Google dorks; can be used for recon.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

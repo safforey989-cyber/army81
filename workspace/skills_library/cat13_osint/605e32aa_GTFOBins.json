@@ -1,0 +1,9 @@
+{
+  "name": "GTFOBins",
+  "url": "https://gtfobins.github.io/",
+  "description": "Curated list of Unix binaries that can be used to bypass local security restrictions in misconfigured systems.",
+  "section": "Privilege Escalation Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Msty",
+  "url": "https://msty.app/",
+  "description": "A straightforward and powerful interface for local and online AI models.",
+  "section": "Local LLM Deployment",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

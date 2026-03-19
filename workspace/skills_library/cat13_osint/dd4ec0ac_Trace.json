@@ -1,0 +1,9 @@
+{
+  "name": "Trace",
+  "url": "https://trace.manus.space",
+  "description": "Real-time OSINT platform to search usernames, emails, phone numbers, and full names across 600+ platforms with breach detection and AI risk scoring.",
+  "section": "[↑](#-table-of-contents) Username Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

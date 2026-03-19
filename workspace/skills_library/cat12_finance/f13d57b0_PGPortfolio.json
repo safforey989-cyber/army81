@@ -1,0 +1,9 @@
+{
+  "name": "PGPortfolio",
+  "url": "https://github.com/ZhengyaoJiang/PGPortfolio",
+  "description": "A Deep Reinforcement Learning framework for the financial portfolio management problem.",
+  "section": "Portfolio Management",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

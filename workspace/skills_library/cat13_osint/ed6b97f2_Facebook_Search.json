@@ -1,0 +1,9 @@
+{
+  "name": "Facebook Search",
+  "url": "http://search.fb.com/",
+  "description": "Tool from osint_tools",
+  "section": "[↑](#-table-of-contents) Facebook",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

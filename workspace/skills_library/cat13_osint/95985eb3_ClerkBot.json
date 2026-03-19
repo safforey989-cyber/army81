@@ -1,0 +1,9 @@
+{
+  "name": "ClerkBot",
+  "url": "https://t.me/clerksecretbot",
+  "description": "Phone + username lookup; vehicle info.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

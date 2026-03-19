@@ -1,0 +1,9 @@
+{
+  "name": "unslothai",
+  "url": "https://github.com/unslothai/unsloth",
+  "description": "A framework that specializes in efficient fine-tuning. On its GitHub page, you can find ready-to-use fine-tuning templates for various LLMs, allowing you to easily train your own data for free on the Google Colab cloud.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

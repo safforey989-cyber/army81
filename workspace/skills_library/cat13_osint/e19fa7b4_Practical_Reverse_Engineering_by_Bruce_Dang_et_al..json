@@ -1,0 +1,9 @@
+{
+  "name": "Practical Reverse Engineering by Bruce Dang et al., 2014",
+  "url": "http://www.wiley.com/WileyCDA/WileyTitle/productCd-1118787315.html",
+  "description": "Tool from pentest_tools",
+  "section": "Reverse Engineering Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

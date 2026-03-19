@@ -1,0 +1,9 @@
+{
+  "name": "USB Rubber Ducky",
+  "url": "http://usbrubberducky.com/",
+  "description": "Customizable keystroke injection attack platform masquerading as a USB thumbdrive.",
+  "section": "Physical Access Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

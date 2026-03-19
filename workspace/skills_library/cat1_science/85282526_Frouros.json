@@ -1,0 +1,9 @@
+{
+  "name": "Frouros",
+  "url": "https://github.com/IFCA/frouros",
+  "description": ": Frouros is an open source Python library for drift detection in machine learning systems.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

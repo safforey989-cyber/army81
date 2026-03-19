@@ -1,0 +1,9 @@
+{
+  "name": "CISA Known Vulnerabilities Database (KEV)",
+  "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+  "description": "](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) - Vulnerabilities in various systems already known to America's cyber defense agency, the Cybersecurity and Infrastructure Security Agency, to be actively exploited.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

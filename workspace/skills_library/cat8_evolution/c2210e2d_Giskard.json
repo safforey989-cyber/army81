@@ -1,0 +1,9 @@
+{
+  "name": "Giskard",
+  "url": "https://github.com/Giskard-AI/giskard",
+  "description": "Testing & evaluation library for LLM applications, in particular RAGs",
+  "section": "LLM Evaluation:",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

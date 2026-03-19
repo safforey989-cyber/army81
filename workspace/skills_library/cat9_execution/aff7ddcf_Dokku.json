@@ -1,0 +1,9 @@
+{
+  "name": "Dokku",
+  "url": "https://dokku.com/",
+  "description": "An open-source PaaS (alternative to Heroku). ([Source Code](https://github.com/dokku/dokku)) `MIT` `Docker/Shell/Go/deb`",
+  "section": "PaaS",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

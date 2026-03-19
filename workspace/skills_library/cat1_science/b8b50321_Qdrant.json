@@ -1,0 +1,9 @@
+{
+  "name": "Qdrant",
+  "url": "https://qdrant.tech",
+  "description": "– Qdrant is [open source](https://github.com/qdrant/qdrant) vector similarity search engine with extended filtering support, written in Rust.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

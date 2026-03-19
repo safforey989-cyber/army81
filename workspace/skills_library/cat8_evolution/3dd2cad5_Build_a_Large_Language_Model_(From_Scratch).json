@@ -1,0 +1,9 @@
+{
+  "name": "Build a Large Language Model (From Scratch)",
+  "url": "https://www.manning.com/books/build-a-large-language-model-from-scratch",
+  "description": "](https://www.manning.com/books/build-a-large-language-model-from-scratch) - A guide to building your own working LLM.",
+  "section": "LLM Books",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

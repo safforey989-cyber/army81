@@ -1,0 +1,9 @@
+{
+  "name": "OpenAPS",
+  "url": "https://openaps.org/",
+  "description": "The Open Artificial Pancreas System project is an open and transparent effort to make safe and effective basic Artificial Pancreas System.",
+  "section": "Hardware",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

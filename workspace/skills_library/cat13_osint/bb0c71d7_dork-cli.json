@@ -1,0 +1,9 @@
+{
+  "name": "dork-cli",
+  "url": "https://github.com/jgor/dork-cli",
+  "description": "Command line Google dork tool.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

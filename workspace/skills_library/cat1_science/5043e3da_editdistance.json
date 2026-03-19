@@ -1,0 +1,9 @@
+{
+  "name": "editdistance",
+  "url": "https://pypi.org/project/editdistance/",
+  "description": "fast implementation of edit distance.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Pomelo",
+  "url": "https://gitlab.com/pomelo-emu/Pomelo",
+  "description": ": Nintendo Switch emulator",
+  "section": "Emulator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Stanford.NLP for .NET",
+  "url": "https://github.com/sergey-tihon/Stanford.NLP.NET/",
+  "description": "A full port of Stanford NLP packages to .NET and also available precompiled as a NuGet package.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

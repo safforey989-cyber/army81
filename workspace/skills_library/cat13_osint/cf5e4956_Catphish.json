@@ -1,0 +1,9 @@
+{
+  "name": "Catphish",
+  "url": "https://github.com/ring0lab/catphish",
+  "description": "Tool for phishing and corporate espionage written in Ruby.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

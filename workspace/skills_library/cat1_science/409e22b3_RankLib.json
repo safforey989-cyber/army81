@@ -1,0 +1,9 @@
+{
+  "name": "RankLib",
+  "url": "https://sourceforge.net/p/lemur/wiki/RankLib/",
+  "description": "RankLib is a library of learning to rank algorithms. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

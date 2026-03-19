@@ -1,0 +1,9 @@
+{
+  "name": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+  "url": "https://arxiv.org/pdf/2101.03961.pdf",
+  "description": "|",
+  "section": "Milestone Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "LLFn",
+  "url": "https://github.com/orgexyz/LLFn",
+  "description": ": A light-weight framework for creating applications using LLMs ![GitHub Repo stars](https://img.shields.io/github/stars/orgexyz/LLFn?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "AutoRAG",
+  "url": "https://github.com/Marker-Inc-Korea/AutoRAG",
+  "description": "Open source AutoML tool for RAG. Optimize the RAG answer quality automatically. From generation evaluation datset to deploying optimized RAG pipeline.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

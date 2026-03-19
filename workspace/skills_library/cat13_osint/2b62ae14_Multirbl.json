@@ -1,0 +1,9 @@
+{
+  "name": "Multirbl",
+  "url": "https://multirbl.valli.org/dnsbl-lookup",
+  "description": "MultiRBL Valli checks if an IP or domain is listed on multiple public RBLs (blacklists) simultaneously.",
+  "section": "[↑](#-table-of-contents) Email Search / Email Check",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

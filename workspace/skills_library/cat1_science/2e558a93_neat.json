@@ -1,0 +1,9 @@
+{
+  "name": "neat",
+  "url": "https://github.com/jinyeom/neat",
+  "description": "Plug-and-play, parallel Go framework for NeuroEvolution of Augmenting Topologies (NEAT). **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

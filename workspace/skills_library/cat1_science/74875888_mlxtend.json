@@ -1,0 +1,9 @@
+{
+  "name": "mlxtend",
+  "url": "https://github.com/rasbt/mlxtend",
+  "description": "A library consisting of useful tools for data science and machine learning tasks.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

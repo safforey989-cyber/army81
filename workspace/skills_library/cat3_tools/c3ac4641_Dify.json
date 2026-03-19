@@ -1,0 +1,9 @@
+{
+  "name": "Dify",
+  "url": "https://github.com/langgenius/dify",
+  "description": ": One API for plugins and datasets, one interface for prompt engineering and visual operation, all for creating powerful AI applications. ![GitHub Repo stars](https://img.shields.io/github/stars/langgenius/dify?style=social)",
+  "section": "Services",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

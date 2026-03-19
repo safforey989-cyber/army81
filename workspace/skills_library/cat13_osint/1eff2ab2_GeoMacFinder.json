@@ -1,0 +1,9 @@
+{
+  "name": "GeoMacFinder",
+  "url": "https://t.me/geomacbot",
+  "description": "Finds Wi-Fi AP location by MAC/BSSID.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

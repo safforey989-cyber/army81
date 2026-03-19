@@ -1,0 +1,9 @@
+{
+  "name": "Colossal-AI",
+  "url": "https://github.com/hpcaitech/ColossalAI",
+  "description": "Making large AI models cheaper, faster, and more accessible.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

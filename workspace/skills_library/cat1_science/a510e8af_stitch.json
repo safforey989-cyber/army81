@@ -1,0 +1,9 @@
+{
+  "name": "stitch",
+  "url": "https://github.com/marcoscoffier/lua---stitch",
+  "description": "allows us to use hugin to stitch images and apply same stitching to a video sequence. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

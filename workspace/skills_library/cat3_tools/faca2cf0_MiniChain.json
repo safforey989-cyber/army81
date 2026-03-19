@@ -1,0 +1,9 @@
+{
+  "name": "MiniChain",
+  "url": "https://github.com/srush/MiniChain",
+  "description": ": A tiny library for coding with large language models. ![GitHub Repo stars](https://img.shields.io/github/stars/srush/MiniChain?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

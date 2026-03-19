@@ -1,0 +1,9 @@
+{
+  "name": "dfdx",
+  "url": "https://github.com/coreylowman/dfdx",
+  "description": "Deep learning in Rust, with shape checked tensors and neural networks",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

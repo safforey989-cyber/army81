@@ -1,0 +1,9 @@
+{
+  "name": "NuPIC",
+  "url": "https://github.com/numenta/nupic",
+  "description": "Numenta Platform for Intelligent Computing.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

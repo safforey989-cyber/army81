@@ -1,0 +1,9 @@
+{
+  "name": "European Union Agency for Network and Information Security",
+  "url": "https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material",
+  "description": "ENISA Cyber Security Training material.",
+  "section": "Security Education Courses",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

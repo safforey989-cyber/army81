@@ -1,0 +1,9 @@
+{
+  "name": "Islegitsite",
+  "url": "https://www.islegitsite.com/",
+  "description": "Checks if a website is trustworthy by analyzing its reputation, domain, and security based on public sources.",
+  "section": "[↑](#-table-of-contents) Speciality Search Engines",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

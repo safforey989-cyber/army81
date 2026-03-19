@@ -1,0 +1,9 @@
+{
+  "name": "Linear Algebra",
+  "url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+  "description": "Linear Algebra course by Gilbert Strang",
+  "section": "MOOC's",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

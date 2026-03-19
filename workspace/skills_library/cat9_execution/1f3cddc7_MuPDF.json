@@ -1,0 +1,9 @@
+{
+  "name": "MuPDF",
+  "url": "https://github.com/ArtifexSoftware/mupdf",
+  "description": ": A PDF, XPS/OpenXPS, CBZ & EPUB document viewer",
+  "section": "Media",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

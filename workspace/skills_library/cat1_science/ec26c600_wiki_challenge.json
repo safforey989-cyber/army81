@@ -1,0 +1,9 @@
+{
+  "name": "wiki challenge",
+  "url": "https://github.com/hammer/wikichallenge",
+  "description": "An implementation of Dell Zhang's solution to Wikipedia's Participation Challenge on Kaggle.",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

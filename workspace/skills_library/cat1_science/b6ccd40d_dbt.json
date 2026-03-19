@@ -1,0 +1,9 @@
+{
+  "name": "dbt",
+  "url": "https://github.com/dbt-labs/dbt-core",
+  "description": "| Data build tool |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

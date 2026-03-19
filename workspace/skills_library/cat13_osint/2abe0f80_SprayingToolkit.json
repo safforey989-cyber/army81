@@ -1,0 +1,9 @@
+{
+  "name": "SprayingToolkit",
+  "url": "https://github.com/byt3bl33d3r/SprayingToolkit",
+  "description": "Scripts to make password spraying attacks against Lync/S4B, Outlook Web Access (OWA) and Office 365 (O365) a lot quicker, less painful and more efficient.",
+  "section": "Password Spraying Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

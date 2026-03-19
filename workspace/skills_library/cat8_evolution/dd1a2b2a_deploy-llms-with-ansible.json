@@ -1,0 +1,9 @@
+{
+  "name": "deploy-llms-with-ansible",
+  "url": "https://github.com/xamey/deploy-llms-with-ansible",
+  "description": "Easily deploy any LLM on a VM with minimal configuration, using Ansible.",
+  "section": "LLM Inference",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

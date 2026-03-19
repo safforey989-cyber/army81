@@ -1,0 +1,9 @@
+{
+  "name": "Machine Learning for Trading",
+  "url": "https://cims.nyu.edu/~ritter/ritter2017machine.pdf",
+  "description": "With an appropriate choice of the reward function, reinforcement learning techniques can successfully handle the risk-averse case.",
+  "section": "Papers",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "systemd-nspawn",
+  "url": "https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html",
+  "description": "Lightweight, chroot-like, environment to run an OS or command directly under systemd. ([Source Code](https://github.com/systemd/systemd)) `GPL-2.0` `C`",
+  "section": "Software Containers",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

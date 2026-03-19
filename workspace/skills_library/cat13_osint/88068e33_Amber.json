@@ -1,0 +1,9 @@
+{
+  "name": "Amber",
+  "url": "https://github.com/EgeBalci/amber",
+  "description": "Reflective PE packer for converting native PE files to position-independent shellcode.",
+  "section": "Anti-virus Evasion Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

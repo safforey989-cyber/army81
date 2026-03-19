@@ -1,0 +1,9 @@
+{
+  "name": "Potpie",
+  "url": "https://potpie.ai",
+  "description": "Open Source AI Agents for your codebase in minutes. Use pre-built agents for Q&A, Testing, Debugging and System Design or create your own purpose-built agents.",
+  "section": "AI-Powered Code Generation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

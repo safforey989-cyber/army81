@@ -1,0 +1,9 @@
+{
+  "name": "onnx-c",
+  "url": "https://github.com/onnx/onnx-c",
+  "description": "A lightweight C library for ONNX model inference, optimized for performance and portability across platforms.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

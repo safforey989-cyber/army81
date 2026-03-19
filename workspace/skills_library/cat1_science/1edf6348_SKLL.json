@@ -1,0 +1,9 @@
+{
+  "name": "SKLL",
+  "url": "https://github.com/EducationalTestingService/skll",
+  "description": "A wrapper around scikit-learn that makes it simpler to conduct experiments.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

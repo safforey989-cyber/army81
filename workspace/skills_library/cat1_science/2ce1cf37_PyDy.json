@@ -1,0 +1,9 @@
+{
+  "name": "PyDy",
+  "url": "https://www.pydy.org/",
+  "description": "Short for Python Dynamics, used to assist with workflow in the modelling of dynamic motion based around NumPy, SciPy, IPython, and matplotlib.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

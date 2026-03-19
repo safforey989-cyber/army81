@@ -1,0 +1,9 @@
+{
+  "name": "Threat Crowd",
+  "url": "https://www.threatcrowd.org/",
+  "description": "Search engine for threats.",
+  "section": "Data Broker and Search Engine Services",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

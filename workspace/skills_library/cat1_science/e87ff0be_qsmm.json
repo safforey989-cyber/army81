@@ -1,0 +1,9 @@
+{
+  "name": "qsmm",
+  "url": "http://qsmm.org",
+  "description": "A C library implementing the rudiments of a toolchain for working with adaptive probabilistic assembler programs.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

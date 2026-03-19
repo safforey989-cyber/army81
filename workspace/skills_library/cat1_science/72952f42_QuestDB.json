@@ -1,0 +1,9 @@
+{
+  "name": "QuestDB",
+  "url": "https://questdb.io/",
+  "description": "A relational column-oriented database designed for real-time analytics on time series and event data.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

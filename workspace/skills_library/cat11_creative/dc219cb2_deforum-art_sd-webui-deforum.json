@@ -1,0 +1,9 @@
+{
+  "name": "deforum-art/sd-webui-deforum",
+  "url": "https://github.com/deforum-art/sd-webui-deforum",
+  "description": ": Deforum extension for AUTOMATIC1111's Stable Diffusion webui [[wiki docs]](https://github.com/deforum-art/sd-webui-deforum/wiki)",
+  "section": "Deforum",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

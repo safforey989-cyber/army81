@@ -1,0 +1,9 @@
+{
+  "name": "simple-evals",
+  "url": "https://github.com/openai/simple-evals",
+  "description": "Eval tools by OpenAI.",
+  "section": "LLM Evaluation:",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

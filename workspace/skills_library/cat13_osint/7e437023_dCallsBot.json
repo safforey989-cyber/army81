@@ -1,0 +1,9 @@
+{
+  "name": "dCallsBot",
+  "url": "https://t.me/dCallsBot",
+  "description": "Anonymous calls, masking, eSIM/DID.",
+  "section": "[↑](#-table-of-contents) Telegram",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

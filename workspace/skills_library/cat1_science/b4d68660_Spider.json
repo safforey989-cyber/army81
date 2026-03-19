@@ -1,0 +1,9 @@
+{
+  "name": "Spider",
+  "url": "https://people.kyb.tuebingen.mpg.de/spider/",
+  "description": "The spider is intended to be a complete object orientated environment for machine learning in Matlab.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

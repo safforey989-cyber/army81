@@ -1,0 +1,9 @@
+{
+  "name": "InternVL-2|6|14|26",
+  "url": "https://huggingface.co/collections/OpenGVLab/internvl-65b92d6be81c86166ca0dde4",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

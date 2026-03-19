@@ -1,0 +1,9 @@
+{
+  "name": "zipline-tensorboard",
+  "url": "https://github.com/jimgoo/zipline-tensorboard",
+  "description": "TensorBoard as a Zipline dashboard.",
+  "section": "Others",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

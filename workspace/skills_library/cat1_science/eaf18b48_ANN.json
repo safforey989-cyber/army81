@@ -1,0 +1,9 @@
+{
+  "name": "ANN",
+  "url": "https://github.com/EricChiang/ANN.jl",
+  "description": "Julia artificial neural networks. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "lldap",
+  "url": "https://github.com/nitnelave/lldap",
+  "description": "Light (simplified) LDAP implementation with a simple, intuitive web interface and GraphQL support. `GPL-3.0` `Rust`",
+  "section": "Identity Management - LDAP",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "LangChain.js LLM Template",
+  "url": "https://github.com/Conner1115/LangChain.js-LLM-Template",
+  "description": ": LangChain LLM template that allows you to train your own custom AI LLM model. ![GitHub Repo stars](https://img.shields.io/github/stars/Conner1115/LangChain.js-LLM-Template?style=social)",
+  "section": "Templates",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

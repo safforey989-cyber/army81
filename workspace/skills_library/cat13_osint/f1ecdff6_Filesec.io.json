@@ -1,0 +1,9 @@
+{
+  "name": "Filesec.io",
+  "url": "https://filesec.io/",
+  "description": "Central resource cataloging malicious file extensions, their risks, OS and mitigations.",
+  "section": "[↑](#-table-of-contents) File Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "krackattacks-scripts",
+  "url": "https://github.com/vanhoefm/krackattacks-scripts",
+  "description": "WPA2 Krack attack scripts.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

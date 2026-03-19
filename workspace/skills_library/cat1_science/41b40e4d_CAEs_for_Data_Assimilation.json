@@ -1,0 +1,9 @@
+{
+  "name": "CAEs for Data Assimilation",
+  "url": "https://github.com/julianmack/Data_Assimilation",
+  "description": "Convolutional autoencoders for 3D image/field compression applied to reduced order [Data Assimilation](https://en.wikipedia.org/wiki/Data_assimilation).",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

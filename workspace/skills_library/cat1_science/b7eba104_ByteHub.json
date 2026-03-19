@@ -1,0 +1,9 @@
+{
+  "name": "ByteHub",
+  "url": "https://github.com/bytehub-ai/bytehub",
+  "description": "An easy-to-use, Python-based feature store. Optimized for time-series data.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

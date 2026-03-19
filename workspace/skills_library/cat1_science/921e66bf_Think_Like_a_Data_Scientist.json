@@ -1,0 +1,9 @@
+{
+  "name": "Think Like a Data Scientist",
+  "url": "https://www.manning.com/books/think-like-a-data-scientist",
+  "description": "Tool from data_science",
+  "section": "Books",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Parler-TTS",
+  "url": "https://huggingface.co/collections/parler-tts/parler-tts-fully-open-source-high-quality-tts-66164ad285ba03e8ffde214c",
+  "description": ": fully open-source high-quality TTS",
+  "section": "Text-to-speech (TTS) and avatars",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

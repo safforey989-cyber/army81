@@ -1,0 +1,9 @@
+{
+  "name": "OnionShare",
+  "url": "https://github.com/onionshare/onionshare",
+  "description": ": Securely and anonymously share files using the Tor network",
+  "section": "File",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

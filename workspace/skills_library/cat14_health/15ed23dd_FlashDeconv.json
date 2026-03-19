@@ -1,0 +1,9 @@
+{
+  "name": "FlashDeconv",
+  "url": "https://github.com/cafferychen777/flashdeconv",
+  "description": "High-performance spatial transcriptomics deconvolution for cell type mapping in tissue samples.",
+  "section": "Bioinformatics",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

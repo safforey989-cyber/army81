@@ -1,0 +1,9 @@
+{
+  "name": "Scrutiny",
+  "url": "https://github.com/AnalogJ/scrutiny",
+  "description": "Web UI for hard drive S.M.A.R.T monitoring, historical trends & real-world failure thresholds. `MIT` `Go`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Tune Studio",
+  "url": "https://studio.tune.app/",
+  "description": "Playground for devs to finetune & deploy LLMs",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

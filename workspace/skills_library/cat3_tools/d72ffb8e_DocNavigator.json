@@ -1,0 +1,9 @@
+{
+  "name": "DocNavigator",
+  "url": "https://github.com/vgulerianb/DocNavigator",
+  "description": ": AI-powered chatbot builder that is designed to improve the user experience on product documentation/support websites ![GitHub Repo stars](https://img.shields.io/github/stars/vgulerianb/DocNavigator?style=social)",
+  "section": "Knowledge Management",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

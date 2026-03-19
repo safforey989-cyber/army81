@@ -1,0 +1,9 @@
+{
+  "name": "MusicLM",
+  "url": "https://google-research.github.io/seanet/musiclm/examples/",
+  "description": ": generating music from text",
+  "section": "Audio and Music",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

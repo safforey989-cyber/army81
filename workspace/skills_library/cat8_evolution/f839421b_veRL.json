@@ -1,0 +1,9 @@
+{
+  "name": "veRL",
+  "url": "https://github.com/volcengine/verl",
+  "description": "veRL is a flexible and efficient RL framework for LLMs.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

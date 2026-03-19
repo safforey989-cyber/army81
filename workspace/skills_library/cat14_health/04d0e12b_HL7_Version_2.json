@@ -1,0 +1,9 @@
+{
+  "name": "HL7 Version 2",
+  "url": "https://www.hl7.org/implement/standards/product_brief.cfm?product_id=185",
+  "description": "Specifications for all versions of HL7v2",
+  "section": "Specifications",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

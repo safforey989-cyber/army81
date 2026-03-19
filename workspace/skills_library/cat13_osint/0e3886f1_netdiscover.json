@@ -1,0 +1,9 @@
+{
+  "name": "netdiscover",
+  "url": "https://github.com/netdiscover-scanner/netdiscover",
+  "description": "Network address discovery scanner, based on ARP sweeps, developed mainly for those wireless networks without a DHCP server.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

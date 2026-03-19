@@ -1,0 +1,9 @@
+{
+  "name": "the0",
+  "url": "https://github.com/alexanderwanyoike/the0",
+  "description": "Self-hosted execution engine for algorithmic trading bots. Supports Python, TypeScript, Rust, C++, C#, Scala, and Haskell. Each bot runs in an isolated container with scheduled or streaming execution.",
+  "section": "Traditional Market",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "HealthLocker",
+  "url": "https://github.com/healthlocker/healthlocker",
+  "description": "Elixir-based personal health record.",
+  "section": "PHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

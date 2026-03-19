@@ -1,0 +1,9 @@
+{
+  "name": "OSINT-Steam",
+  "url": "https://osint-steam.vercel.app/en",
+  "description": "An [open-source](https://github.com/Berchez/OSINT-steam) tool that returns public information, such as friends list and possible locations, from Steam profiles.",
+  "section": "[↑](#-table-of-contents) Steam",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

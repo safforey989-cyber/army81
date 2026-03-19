@@ -1,0 +1,9 @@
+{
+  "name": "SuperLearner",
+  "url": "https://github.com/ecpolley/SuperLearner",
+  "description": "Multi-algorithm ensemble learning packages.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

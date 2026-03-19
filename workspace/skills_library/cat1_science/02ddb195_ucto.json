@@ -1,0 +1,9 @@
+{
+  "name": "ucto",
+  "url": "https://github.com/LanguageMachines/ucto",
+  "description": "Unicode-aware regular-expression based tokenizer for various languages. Tool and C++ library. Supports FoLiA format.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

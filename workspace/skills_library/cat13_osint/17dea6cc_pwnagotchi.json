@@ -1,0 +1,9 @@
+{
+  "name": "pwnagotchi",
+  "url": "https://github.com/evilsocket/pwnagotchi",
+  "description": "Deep reinforcement learning based AI that learns from the Wi-Fi environment and instruments BetterCAP in order to maximize the WPA key material captured.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

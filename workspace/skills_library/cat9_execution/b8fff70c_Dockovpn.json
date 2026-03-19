@@ -1,0 +1,9 @@
+{
+  "name": "Dockovpn",
+  "url": "https://dockovpn.io",
+  "description": "Out-of-the-box stateless dockerized OpenVPN server which starts in less than 2 seconds. ([Source Code](https://github.com/dockovpn/dockovpn)) `GPL-2.0` `Docker`",
+  "section": "VPN",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

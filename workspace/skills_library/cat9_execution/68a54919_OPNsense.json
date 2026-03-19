@@ -1,0 +1,9 @@
+{
+  "name": "OPNsense",
+  "url": "https://opnsense.org/",
+  "description": "An open source FreeBSD-based firewall and router with traffic shaping, load balancing, and virtual private network capabilities. ([Source Code](https://github.com/opnsense)) `BSD-2-Clause` `C/PHP`",
+  "section": "Router",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

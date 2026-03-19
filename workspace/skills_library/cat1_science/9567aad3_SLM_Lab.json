@@ -1,0 +1,9 @@
+{
+  "name": "SLM Lab",
+  "url": "https://github.com/kengz/SLM-Lab",
+  "description": "Modular Deep Reinforcement Learning framework in PyTorch.",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

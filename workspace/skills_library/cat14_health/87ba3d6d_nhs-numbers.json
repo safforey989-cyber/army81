@@ -1,0 +1,9 @@
+{
+  "name": "nhs-numbers",
+  "url": "https://github.com/uk-fci/nhs-number",
+  "description": "Python package to provide utilities for NHS Numbers, including validity checks, normalisation, and generation.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

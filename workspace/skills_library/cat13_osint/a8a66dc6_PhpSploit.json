@@ -1,0 +1,9 @@
+{
+  "name": "PhpSploit",
+  "url": "https://github.com/nil0x42/phpsploit",
+  "description": "Full-featured C2 framework which silently persists on webserver via evil PHP oneliner.",
+  "section": "Web shells and C2 frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

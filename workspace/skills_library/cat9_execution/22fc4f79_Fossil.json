@@ -1,0 +1,9 @@
+{
+  "name": "Fossil",
+  "url": "https://www.fossil-scm.org/",
+  "description": "Distributed version control with built-in wiki and bug tracking. ([Source Code](https://www.fossil-scm.org/home/dir?ci=trunk)) `BSD-2-Clause` `C`",
+  "section": "Version control",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

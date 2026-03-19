@@ -1,0 +1,9 @@
+{
+  "name": "Reddit",
+  "url": "https://www.reddit.com",
+  "description": "Really, really large bulletin board system.",
+  "section": "Communities / Forums",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

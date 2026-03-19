@@ -1,0 +1,9 @@
+{
+  "name": "FAOSTAT",
+  "url": "https://www.fao.org/faostat/en/",
+  "description": "UN FAO statistics on food production, trade, land use, and emissions for 245+ countries. Free API and bulk download.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

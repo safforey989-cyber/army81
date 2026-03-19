@@ -1,0 +1,9 @@
+{
+  "name": "AIToolbox",
+  "url": "https://github.com/KevinCoble/AIToolbox",
+  "description": "A toolbox framework of AI modules written in Swift: Graphs/Trees, Linear Regression, Support Vector Machines, Neural Networks, PCA, KMeans, Genetic Algorithms, MDP, Mixture of Gaussians.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Portfolio",
+  "url": "https://github.com/bastienFalcou/Portfolio",
+  "description": ": Use MVI (Model View Intent) to keep track of your portfolio over time",
+  "section": "SwiftUI",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "SVM Explorer",
+  "url": "https://github.com/plotly/dash-svm",
+  "description": "Interactive SVM Explorer, using Dash and scikit-learn",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

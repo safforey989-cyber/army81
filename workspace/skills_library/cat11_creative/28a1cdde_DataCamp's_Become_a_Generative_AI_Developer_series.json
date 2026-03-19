@@ -1,0 +1,9 @@
+{
+  "name": "DataCamp's Become a Generative AI Developer series",
+  "url": "https://www.datacamp.com/ai-code-alongs",
+  "description": ": 9 code-alongs on building chatbots using LangChain and the OpenAI and Pinecone APIs, and working with the Hugging Face ecosystem. Free, for a limited time only.",
+  "section": "Courses and Educational Materials",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

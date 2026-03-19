@@ -1,0 +1,9 @@
+{
+  "name": "Professional Penetration Testing by Thomas Wilhelm, 2013",
+  "url": "https://www.elsevier.com/books/professional-penetration-testing/wilhelm/978-1-59749-993-4",
+  "description": "Tool from pentest_tools",
+  "section": "Books",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

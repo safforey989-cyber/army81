@@ -1,0 +1,9 @@
+{
+  "name": "MMedBench",
+  "url": "https://henrychur.github.io/MultilingualMedQA",
+  "description": "a benchmark that evaluates large language models' ability to answer medical questions across multiple languages.",
+  "section": "LLM Leaderboard",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

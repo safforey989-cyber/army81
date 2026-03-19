@@ -1,0 +1,9 @@
+{
+  "name": "Indico LLM Leaderboard",
+  "url": "https://indicodata.ai/llm",
+  "description": ": Indico Data runs a monthly benchmarking exercise across providers (LLama, Azure OpenAI, Google, AWS Bedrock, and Indico trained discriminative standard language models RoBERTa and DeBERTa), datasets (e.g. cord and CUAD), and capabilities (text classification, key information extraction, and genera",
+  "section": "LLM Evaluation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

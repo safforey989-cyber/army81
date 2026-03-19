@@ -1,0 +1,9 @@
+{
+  "name": "Stepwise Regression",
+  "url": "https://en.wikipedia.org/wiki/Stepwise_regression",
+  "description": "Tool from data_science",
+  "section": "Supervised Learning",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

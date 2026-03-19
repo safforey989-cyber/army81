@@ -1,0 +1,9 @@
+{
+  "name": "Parrot",
+  "url": "https://parrotlinux.org/",
+  "description": "Distribution similar to Kali, with support for multiple hardware architectures.",
+  "section": "Operating System Distributions",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

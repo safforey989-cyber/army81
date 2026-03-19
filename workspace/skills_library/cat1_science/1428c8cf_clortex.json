@@ -1,0 +1,9 @@
+{
+  "name": "clortex",
+  "url": "https://github.com/htm-community/clortex",
+  "description": "General Machine Learning library using Numenta’s Cortical Learning Algorithm. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

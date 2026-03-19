@@ -1,0 +1,9 @@
+{
+  "name": "backtrader",
+  "url": "https://github.com/backtrader/backtrader",
+  "description": "Python backtesting library for trading strategies.",
+  "section": "Traditional Market",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "cwe_checker",
+  "url": "https://github.com/fkie-cad/cwe_checker",
+  "description": "Suite of tools built atop the Binary Analysis Platform (BAP) to heuristically detect CWEs in compiled binaries and firmware.",
+  "section": "Static Analyzers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

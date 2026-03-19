@@ -1,0 +1,9 @@
+{
+  "name": "kaggle-cifar",
+  "url": "https://github.com/zygmuntz/kaggle-cifar",
+  "description": "Code for the CIFAR-10 competition at Kaggle, uses cuda-convnet.",
+  "section": "Kaggle Competition Source Code",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

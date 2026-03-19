@@ -1,0 +1,9 @@
+{
+  "name": "LLMDatahub",
+  "url": "https://github.com/Zjh-819/LLMDataHub",
+  "description": "a curated collection of datasets specifically designed for chatbot training, including links, size, language, usage, and a brief description of each dataset",
+  "section": "Other Papers",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

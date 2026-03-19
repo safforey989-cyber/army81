@@ -1,0 +1,9 @@
+{
+  "name": "SwiftHub",
+  "url": "https://github.com/khoren93/SwiftHub",
+  "description": ": GitHub client written with RxSwift and MVVM clean architecture",
+  "section": "GitHub",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

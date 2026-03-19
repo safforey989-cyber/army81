@@ -1,0 +1,9 @@
+{
+  "name": "Grokking Bayes",
+  "url": "https://www.manning.com/books/grokking-bayes",
+  "description": "Tool from data_science",
+  "section": "Books",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

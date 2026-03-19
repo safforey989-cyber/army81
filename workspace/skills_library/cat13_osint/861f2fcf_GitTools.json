@@ -1,0 +1,9 @@
+{
+  "name": "GitTools",
+  "url": "https://github.com/internetwache/GitTools",
+  "description": "Automatically find and download Web-accessible `.git` repositories.",
+  "section": "Web-accessible source code ripping tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

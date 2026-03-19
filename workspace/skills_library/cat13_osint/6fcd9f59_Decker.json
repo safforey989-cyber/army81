@@ -1,0 +1,9 @@
+{
+  "name": "Decker",
+  "url": "https://github.com/stevenaldinger/decker",
+  "description": "Penetration testing orchestration and automation framework, which allows writing declarative, reusable configurations capable of ingesting variables and using outputs of tools it has run as inputs to others.",
+  "section": "Multi-paradigm Frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "drawanyone",
+  "url": "https://drawanyone.com/",
+  "description": ": generate drawings based on five input images",
+  "section": "Stable Diffusion Deployed Web Tools",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

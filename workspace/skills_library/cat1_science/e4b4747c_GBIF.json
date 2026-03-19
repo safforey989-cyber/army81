@@ -1,0 +1,9 @@
+{
+  "name": "GBIF",
+  "url": "https://www.gbif.org/",
+  "description": "Global Biodiversity Information Facility: 2.4B+ species occurrence records. Free, open API for ecological modeling and ML research.",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

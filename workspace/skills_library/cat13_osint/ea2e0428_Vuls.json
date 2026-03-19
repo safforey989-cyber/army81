@@ -1,0 +1,9 @@
+{
+  "name": "Vuls",
+  "url": "https://github.com/future-architect/vuls",
+  "description": "Agentless vulnerability scanner for GNU/Linux and FreeBSD, written in Go.",
+  "section": "Network Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

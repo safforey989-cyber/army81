@@ -1,0 +1,9 @@
+{
+  "name": "ITK-SNAP",
+  "url": "http://www.itksnap.org/pmwiki/pmwiki.php",
+  "description": "Interactive software for 3 dimensional image navigation, annotation, and automatic segmentation with an emphasis on user-friendliness.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

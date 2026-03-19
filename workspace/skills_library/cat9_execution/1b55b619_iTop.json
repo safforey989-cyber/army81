@@ -1,0 +1,9 @@
+{
+  "name": "iTop",
+  "url": "https://www.combodo.com/itop-193",
+  "description": "Complete ITIL web based service management tool. ([Source Code](https://sourceforge.net/projects/itop/files/)) `AGPL-3.0` `PHP`",
+  "section": "Configuration Management Database",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

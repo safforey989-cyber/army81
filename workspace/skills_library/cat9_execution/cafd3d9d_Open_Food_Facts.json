@@ -1,0 +1,9 @@
+{
+  "name": "Open Food Facts",
+  "url": "https://github.com/openfoodfacts/smooth-app",
+  "description": ": Scan food products barcode to see if they are good for you and the planet",
+  "section": "Health",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

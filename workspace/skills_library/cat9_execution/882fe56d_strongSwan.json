@@ -1,0 +1,9 @@
+{
+  "name": "strongSwan",
+  "url": "https://www.strongswan.org/",
+  "description": "Complete IPsec implementation for Linux. ([Source Code](https://github.com/strongswan/strongswan)) `GPL-2.0` `C`",
+  "section": "VPN",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

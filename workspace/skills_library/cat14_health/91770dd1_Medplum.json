@@ -1,0 +1,9 @@
+{
+  "name": "Medplum",
+  "url": "https://github.com/medplum/medplum",
+  "description": "Developer platform that enables flexible and rapid development of healthcare apps.",
+  "section": "EHR",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

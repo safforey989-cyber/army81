@@ -1,0 +1,9 @@
+{
+  "name": "Metasploit",
+  "url": "https://www.metasploit.com/",
+  "description": "Software for offensive security teams to help verify vulnerabilities and manage security assessments.",
+  "section": "Multi-paradigm Frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

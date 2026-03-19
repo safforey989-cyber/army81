@@ -1,0 +1,9 @@
+{
+  "name": "d3py",
+  "url": "https://github.com/mikedewar/d3py",
+  "description": "A plotting library for Python, based on [D3.js](https://d3js.org/).",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

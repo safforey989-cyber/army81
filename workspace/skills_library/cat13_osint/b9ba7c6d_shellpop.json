@@ -1,0 +1,9 @@
+{
+  "name": "shellpop",
+  "url": "https://github.com/0x00-0x00/shellpop",
+  "description": "Easily generate sophisticated reverse or bind shell commands to help you save time during penetration tests.",
+  "section": "CTF Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Gensim",
+  "url": "https://radimrehurek.com/gensim/",
+  "description": "| An open-source library for topic modeling of natural language text |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

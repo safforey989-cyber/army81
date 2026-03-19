@@ -1,0 +1,9 @@
+{
+  "name": "Guidance",
+  "url": "https://github.com/microsoft/guidance",
+  "description": "A handy looking Python library from Microsoft that uses Handlebars templating to interleave generation, prompting, and logical control.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

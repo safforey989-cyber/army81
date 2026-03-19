@@ -1,0 +1,9 @@
+{
+  "name": "WireGuard",
+  "url": "https://github.com/WireGuard/wireguard-apple",
+  "description": ": WireGuard: fast, modern, secure VPN tunnel (less battery consumption than OpenVPN)",
+  "section": "Security",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

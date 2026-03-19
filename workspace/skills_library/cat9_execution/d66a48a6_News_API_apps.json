@@ -1,0 +1,9 @@
+{
+  "name": "News API apps",
+  "url": "https://github.com/dkhamsing/news",
+  "description": ": News app in the style of the NYT, CNN, BBC, Reddit, Twitter, Facebook - includes tvOS app, Today widget",
+  "section": "Apple TV",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

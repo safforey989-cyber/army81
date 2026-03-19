@@ -1,0 +1,9 @@
+{
+  "name": "GeneticSharp",
+  "url": "https://github.com/giacomelli/GeneticSharp",
+  "description": "Multi-platform genetic algorithm library for .NET Core and .NET Framework. The library has several implementations of GA operators, like: selection, crossover, mutation, reinsertion and termination.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "heartrate",
+  "url": "https://github.com/coolioxlr/watchOS-2-heartrate",
+  "description": ": Show streaming heart rate from the watch",
+  "section": "Apple Watch",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "oVirt",
+  "url": "https://www.ovirt.org/",
+  "description": "Manages virtual machines, storage and virtual networks. ([Source Code](https://github.com/oVirt)) `Apache-2.0` `Java`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "snippet.host",
+  "url": "https://snippet.host/",
+  "description": "Minimal text and code snippet hosting.",
+  "section": "[↑](#-table-of-contents) Pastebins",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

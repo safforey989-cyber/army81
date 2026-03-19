@@ -1,0 +1,9 @@
+{
+  "name": "SAS/STAT",
+  "url": "https://www.sas.com/en_us/software/stat.html",
+  "description": "For conducting advanced statistical analysis.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

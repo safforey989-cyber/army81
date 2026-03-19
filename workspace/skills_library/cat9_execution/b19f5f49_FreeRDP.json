@@ -1,0 +1,9 @@
+{
+  "name": "FreeRDP",
+  "url": "https://github.com/FreeRDP/FreeRDP",
+  "description": ": An implementation of the Remote Desktop Protocol (RDP)",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Mixtral-8x22B-v0.1",
+  "url": "https://huggingface.co/mistralai/Mixtral-8x22B-v0.1",
+  "description": ", [Mixtral-8x22B-Instruct-v0.1](https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1) | [Cheaper, Better, Faster, Stronger](https://mistral.ai/news/mixtral-8x22b/) | 141 | [64k](https://mistral.ai/news/mixtral-8x22b/) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

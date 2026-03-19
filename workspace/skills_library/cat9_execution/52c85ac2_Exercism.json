@@ -1,0 +1,9 @@
+{
+  "name": "Exercism",
+  "url": "https://github.com/apps-fab/exercism-app",
+  "description": ": Choose an exercism.org track, join it and code",
+  "section": "Education",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

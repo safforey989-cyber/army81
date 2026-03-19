@@ -1,0 +1,9 @@
+{
+  "name": "Star Wars",
+  "url": "https://github.com/joreilly/StarWars",
+  "description": ": Uses swapi",
+  "section": "Content",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

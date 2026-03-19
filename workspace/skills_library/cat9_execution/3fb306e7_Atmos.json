@@ -1,0 +1,9 @@
+{
+  "name": "Atmos",
+  "url": "https://github.com/dejager/atmos",
+  "description": ": SwiftUI proof-of-concept which adds rain to a view's background using Metal",
+  "section": "SwiftUI",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

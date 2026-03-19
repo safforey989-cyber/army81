@@ -1,0 +1,9 @@
+{
+  "name": "KRKmeans-Algorithm",
+  "url": "https://github.com/Kalvar/ios-KRKmeans-Algorithm",
+  "description": "It implemented K-Means  clustering and classification algorithm. It could be used in data mining and image compression. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

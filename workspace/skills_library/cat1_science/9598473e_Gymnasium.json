@@ -1,0 +1,9 @@
+{
+  "name": "Gymnasium",
+  "url": "https://github.com/Farama-Foundation/Gymnasium",
+  "description": "A library for developing and comparing reinforcement learning algorithms (successor of [gym])(https://github.com/openai/gym).",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

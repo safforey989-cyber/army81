@@ -1,0 +1,9 @@
+{
+  "name": "Social Engineering Framework",
+  "url": "http://www.social-engineer.org/framework/general-discussion/",
+  "description": "Information resource for social engineers.",
+  "section": "Social Engineering Online Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

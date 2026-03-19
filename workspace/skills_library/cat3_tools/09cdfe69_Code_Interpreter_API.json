@@ -1,0 +1,9 @@
+{
+  "name": "Code Interpreter API",
+  "url": "https://github.com/shroominic/codeinterpreter-api",
+  "description": ": About Open source implementation of the ChatGPT Code Interpreter ![GitHub Repo stars](https://img.shields.io/github/stars/shroominic/codeinterpreter-api?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

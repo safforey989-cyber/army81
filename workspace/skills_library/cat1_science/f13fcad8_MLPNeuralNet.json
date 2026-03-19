@@ -1,0 +1,9 @@
+{
+  "name": "MLPNeuralNet",
+  "url": "https://github.com/nikolaypavlov/MLPNeuralNet",
+  "description": "Fast multilayer perceptron neural network library for iOS and Mac OS X. MLPNeuralNet predicts new examples by trained neural networks. It is built on top of the Apple's Accelerate Framework, using vectorized operations and hardware acceleration if available. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

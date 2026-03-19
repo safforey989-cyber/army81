@@ -1,0 +1,9 @@
+{
+  "name": "Faraday",
+  "url": "https://github.com/infobyte/faraday",
+  "description": "Multiuser integrated pentesting environment for red teams performing cooperative penetration tests, security audits, and risk assessments.",
+  "section": "Multi-paradigm Frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "BinGoo",
+  "url": "https://github.com/Hood3dRob1n/BinGoo",
+  "description": "GNU/Linux bash based Bing and Google Dorking Tool.",
+  "section": "Dorking tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

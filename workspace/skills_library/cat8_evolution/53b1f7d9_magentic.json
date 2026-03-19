@@ -1,0 +1,9 @@
+{
+  "name": "magentic",
+  "url": "https://github.com/jackmpcollins/magentic",
+  "description": "Seamlessly integrate LLMs as Python functions",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

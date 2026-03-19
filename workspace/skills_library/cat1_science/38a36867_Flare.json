@@ -1,0 +1,9 @@
+{
+  "name": "Flare",
+  "url": "https://github.com/aria42/flare",
+  "description": "Dynamic Tensor Graph library in Clojure (think PyTorch, DynNet, etc.)",
+  "section": "Deep Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

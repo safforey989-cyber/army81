@@ -1,0 +1,9 @@
+{
+  "name": "nn_builder",
+  "url": "https://github.com/p-christ/nn_builder",
+  "description": "nn_builder is a python package that lets you build neural networks in 1 line",
+  "section": "Neural Networks",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

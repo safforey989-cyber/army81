@@ -1,0 +1,9 @@
+{
+  "name": "llama-agents",
+  "url": "https://github.com/run-llama/llama-agents",
+  "description": ": llama-agents is an async-first framework for building, iterating, and productionizing multi-agent systems, including multi-agent communication, distributed tool execution, human-in-the-loop, and more ![GitHub Repo stars](https://img.shields.io/github/stars/run-llama/llama-agents?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

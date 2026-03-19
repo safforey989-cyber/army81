@@ -1,0 +1,9 @@
+{
+  "name": "TPOT",
+  "url": "https://github.com/EpistasisLab/tpot",
+  "description": "Tool that automatically creates and optimizes machine learning pipelines using genetic programming. Consider it your personal data science assistant, automating a tedious part of machine learning.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

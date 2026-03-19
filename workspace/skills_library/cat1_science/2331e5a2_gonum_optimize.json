@@ -1,0 +1,9 @@
+{
+  "name": "gonum/optimize",
+  "url": "https://godoc.org/gonum.org/v1/gonum/optimize",
+  "description": "Implementations of optimization algorithms.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

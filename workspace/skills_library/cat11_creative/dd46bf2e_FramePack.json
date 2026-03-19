@@ -1,0 +1,9 @@
+{
+  "name": "FramePack",
+  "url": "https://www.framepack.video/",
+  "description": ": next-frame prediction neural network structure that generates videos progressively",
+  "section": "Video and Animation",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

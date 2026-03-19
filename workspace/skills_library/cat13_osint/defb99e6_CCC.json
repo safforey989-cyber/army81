@@ -1,0 +1,9 @@
+{
+  "name": "CCC",
+  "url": "https://events.ccc.de/congress/",
+  "description": "Annual meeting of the international hacker scene in Germany.",
+  "section": "Europe",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

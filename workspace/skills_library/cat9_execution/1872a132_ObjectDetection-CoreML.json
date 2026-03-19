@@ -1,0 +1,9 @@
+{
+  "name": "ObjectDetection-CoreML",
+  "url": "https://github.com/tucan9389/ObjectDetection-CoreML",
+  "description": ": Real-time object detection using Core ML and Vision",
+  "section": "Misc",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "hda",
+  "url": "https://cran.r-project.org/web/packages/hda/index.html",
+  "description": "hda: Heteroscedastic Discriminant Analysis. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

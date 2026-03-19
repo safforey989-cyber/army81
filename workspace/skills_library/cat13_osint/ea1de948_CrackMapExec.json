@@ -1,0 +1,9 @@
+{
+  "name": "CrackMapExec",
+  "url": "https://github.com/byt3bl33d3r/CrackMapExec",
+  "description": "Swiss army knife for pentesting networks.",
+  "section": "Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

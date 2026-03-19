@@ -1,0 +1,9 @@
+{
+  "name": "FHIR Proxy",
+  "url": "https://github.com/microsoft/fhir-proxy",
+  "description": "secure application that acts as an intermediary in the transfer of FHIR data to and from Azure API.",
+  "section": "Frameworks",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

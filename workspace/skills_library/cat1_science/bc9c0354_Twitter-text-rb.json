@@ -1,0 +1,9 @@
+{
+  "name": "Twitter-text-rb",
+  "url": "https://github.com/twitter/twitter-text/tree/master/rb",
+  "description": "A library that does auto linking and extraction of usernames, lists and hashtags in tweets.",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

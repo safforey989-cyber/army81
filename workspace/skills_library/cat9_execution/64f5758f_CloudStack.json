@@ -1,0 +1,9 @@
+{
+  "name": "CloudStack",
+  "url": "https://cloudstack.apache.org/",
+  "description": "Cloud computing software for creating, managing, and deploying infrastructure cloud services. ([Source Code](https://github.com/apache/cloudstack)) `Apache-2.0` `Java/Python`",
+  "section": "Deployment Automation",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

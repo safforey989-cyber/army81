@@ -1,0 +1,9 @@
+{
+  "name": "Cybrary",
+  "url": "http://cybrary.it",
+  "description": "Free courses in ethical hacking and advanced penetration testing. Advanced penetration testing courses are based on the book 'Penetration Testing for Highly Secured Environments'.",
+  "section": "Security Education Courses",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "S2DS",
+  "url": "https://www.s2ds.org/",
+  "description": "Tool from data_science",
+  "section": "Intensive Programs",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Node-hl7-parser",
+  "url": "https://github.com/RedoxEngine/redox-hl7-v2",
+  "description": "Open source version of Redox's HL7 v2 to schema-fied JSON parser.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

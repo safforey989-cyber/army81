@@ -1,0 +1,9 @@
+{
+  "name": "ML Workspace",
+  "url": "https://github.com/ml-tooling/ml-workspace",
+  "description": "| All-in-one web-based IDE for machine learning and data science. The workspace is deployed as a Docker container and is preloaded with a variety of popular data science libraries (e.g., Tensorflow, PyTorch) and dev tools (e.g., Jupyter, VS Code) |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

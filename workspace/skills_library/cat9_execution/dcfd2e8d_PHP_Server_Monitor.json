@@ -1,0 +1,9 @@
+{
+  "name": "PHP Server Monitor",
+  "url": "https://www.phpservermonitor.org/",
+  "description": "Open source tool to monitor your servers and websites. ([Source Code](https://github.com/phpservermon/phpservermon)) `GPL-3.0` `PHP`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

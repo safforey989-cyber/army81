@@ -1,0 +1,9 @@
+{
+  "name": "Zabbix",
+  "url": "https://www.zabbix.com/",
+  "description": "Enterprise-class software for monitoring of networks and applications. ([Source Code](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse)) `GPL-2.0` `C`",
+  "section": "Monitoring & Status Pages",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "CollosalAI Chat",
+  "url": "https://github.com/hpcaitech/ColossalAI/tree/main/applications/Chat",
+  "description": ": implement LLM with RLHF, powered by the Colossal-AI project ![GitHub Repo stars](https://img.shields.io/github/stars/hpcaitech/ColossalAI?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

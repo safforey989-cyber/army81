@@ -1,0 +1,9 @@
+{
+  "name": "Recommender",
+  "url": "https://github.com/GHamrouni/Recommender",
+  "description": "A C library for product recommendations/suggestions using collaborative filtering (CF).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

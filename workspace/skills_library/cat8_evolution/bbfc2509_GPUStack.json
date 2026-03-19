@@ -1,0 +1,9 @@
+{
+  "name": "GPUStack",
+  "url": "https://github.com/gpustack/gpustack",
+  "description": "An open-source GPU cluster manager for running LLMs",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

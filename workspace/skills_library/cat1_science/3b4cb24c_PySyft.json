@@ -1,0 +1,9 @@
+{
+  "name": "PySyft",
+  "url": "https://github.com/OpenMined/PySyft",
+  "description": "A Python library for secure and private Deep Learning built on PyTorch and TensorFlow.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "angr",
+  "url": "https://angr.io/",
+  "description": "Platform-agnostic binary analysis framework.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

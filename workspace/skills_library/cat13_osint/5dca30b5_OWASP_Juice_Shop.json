@@ -1,0 +1,9 @@
+{
+  "name": "OWASP Juice Shop",
+  "url": "https://github.com/bkimminich/juice-shop#docker-container--",
+  "description": "`docker pull bkimminich/juice-shop`.",
+  "section": "Intentionally Vulnerable Systems as Docker Containers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

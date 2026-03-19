@@ -1,0 +1,9 @@
+{
+  "name": "Holistic Evaluation of Language Models (HELM)",
+  "url": "https://crfm.stanford.edu/helm/latest/?groups=1",
+  "description": "](https://crfm.stanford.edu/helm/latest/?groups=1)",
+  "section": "Evals on open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

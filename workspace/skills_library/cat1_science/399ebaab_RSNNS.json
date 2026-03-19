@@ -1,0 +1,9 @@
+{
+  "name": "RSNNS",
+  "url": "https://cran.r-project.org/web/packages/RSNNS/index.html",
+  "description": "RSNNS: Neural Networks in R using the Stuttgart Neural Network Simulator (SNNS).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "DiffusionDB",
+  "url": "https://diffusiondb.com/",
+  "description": "A list of all public apps, developer tools, guides and plugins for Stable Diffusion. [Airtable version](https://airtable.com/shr0HlBwbw3nZ8Ht3/tblxOCylXV8ynh7ti).",
+  "section": "Stable Diffusion resources",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

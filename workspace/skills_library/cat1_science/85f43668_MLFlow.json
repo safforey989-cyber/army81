@@ -1,0 +1,9 @@
+{
+  "name": "MLFlow",
+  "url": "https://mlflow.org/",
+  "description": "platform to manage the ML lifecycle, including experimentation, reproducibility and deployment. Framework and language agnostic, take a look at all the built-in integrations.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

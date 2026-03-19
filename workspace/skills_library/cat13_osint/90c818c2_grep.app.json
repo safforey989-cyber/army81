@@ -1,0 +1,9 @@
+{
+  "name": "grep.app",
+  "url": "https://grep.app/",
+  "description": "Searches code from the entire github public repositories for a given specific string or using regular expression.",
+  "section": "[↑](#-table-of-contents) Code Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

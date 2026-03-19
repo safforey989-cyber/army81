@@ -1,0 +1,9 @@
+{
+  "name": "CNTK",
+  "url": "https://github.com/Microsoft/CNTK",
+  "description": "The Computational Network Toolkit (CNTK) by Microsoft Research, is a unified deep-learning toolkit that describes neural networks as a series of computational steps via a directed graph.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

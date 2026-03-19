@@ -1,0 +1,9 @@
+{
+  "name": "The Bot",
+  "url": "https://github.com/sta-ger/TheBot",
+  "description": "Example of how the neural network learns to predict the angle between two points created with [Synaptic](https://github.com/cazala/synaptic).",
+  "section": "Demos and Scripts",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

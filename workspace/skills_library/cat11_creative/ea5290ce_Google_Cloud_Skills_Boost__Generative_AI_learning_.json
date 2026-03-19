@@ -1,0 +1,9 @@
+{
+  "name": "Google Cloud Skills Boost: Generative AI learning path",
+  "url": "https://www.cloudskillsboost.google/journeys/118",
+  "description": ": curated content on Generative AI \"from the fundamentals of Large Language Models to how to create and deploy generative AI solutions on Google Cloud\"",
+  "section": "Courses and Educational Materials",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

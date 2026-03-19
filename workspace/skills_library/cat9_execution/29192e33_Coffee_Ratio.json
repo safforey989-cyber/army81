@@ -1,0 +1,9 @@
+{
+  "name": "Coffee Ratio",
+  "url": "https://github.com/johnmahlon/Coffee-Ratio",
+  "description": ": Calculates grams of water needed given grams of coffee based off ratio chosen",
+  "section": "Calculator",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

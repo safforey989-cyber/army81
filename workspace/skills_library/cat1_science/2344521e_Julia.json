@@ -1,0 +1,9 @@
+{
+  "name": "Julia",
+  "url": "https://julialang.org",
+  "description": "| high-level, high-performance dynamic programming language for technical computing |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

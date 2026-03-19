@@ -1,0 +1,9 @@
+{
+  "name": "chatgpt-wrapper",
+  "url": "https://github.com/mmabrouk/chatgpt-wrapper",
+  "description": "ChatGPT Wrapper is an open-source unofficial Python API and CLI that lets you interact with ChatGPT.",
+  "section": "Miscellaneous",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "OpenSlide",
+  "url": "https://github.com/openslide/openslide",
+  "description": "is a C library for reading whole slide image files.",
+  "section": "Imaging",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

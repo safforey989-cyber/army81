@@ -1,0 +1,9 @@
+{
+  "name": "Archie",
+  "url": "https://github.com/openehr/archie",
+  "description": "OpenEHR Library written in Java.",
+  "section": "Libraries",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Hwacha",
+  "url": "https://github.com/n00py/Hwacha",
+  "description": "Post-exploitation tool to quickly execute payloads via SSH on one or more Linux systems simultaneously.",
+  "section": "GNU/Linux Utilities",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

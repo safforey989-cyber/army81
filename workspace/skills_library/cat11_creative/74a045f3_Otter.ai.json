@@ -1,0 +1,9 @@
+{
+  "name": "Otter.ai",
+  "url": "https://otter.ai/",
+  "description": "A meeting assistant that records audio, writes notes, automatically captures slides, and generates summaries.",
+  "section": "Meeting assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

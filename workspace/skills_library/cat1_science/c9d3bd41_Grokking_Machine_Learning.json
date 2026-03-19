@@ -1,0 +1,9 @@
+{
+  "name": "Grokking Machine Learning",
+  "url": "https://www.manning.com/books/grokking-machine-learning",
+  "description": "Grokking Machine Learning teaches you how to apply ML to your projects using only standard Python code and high school-level math.",
+  "section": "Books",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

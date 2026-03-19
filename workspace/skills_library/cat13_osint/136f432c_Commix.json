@@ -1,0 +1,9 @@
+{
+  "name": "Commix",
+  "url": "https://github.com/commixproject/commix",
+  "description": "Automated all-in-one operating system command injection and exploitation tool.",
+  "section": "Web injection tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "CLIP Interrogator - a Hugging Face Space by pharma",
+  "url": "https://huggingface.co/spaces/pharma/CLIP-Interrogator",
+  "description": ": image-to-text tool to figure out what a good prompt might be to create new images like an existing one",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

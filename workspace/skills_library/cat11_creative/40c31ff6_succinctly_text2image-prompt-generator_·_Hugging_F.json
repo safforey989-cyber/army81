@@ -1,0 +1,9 @@
+{
+  "name": "succinctly/text2image-prompt-generator · Hugging Face",
+  "url": "https://huggingface.co/succinctly/text2image-prompt-generator",
+  "description": ": a GPT-2 model fine-tuned on the succinctly/midjourney-prompts dataset, which contains 250k text prompts that users issued to the Midjourney text-to-image service over a month period",
+  "section": "Prompt Engineering for Text-to-image",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

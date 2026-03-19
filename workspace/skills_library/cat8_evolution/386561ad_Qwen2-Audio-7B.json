@@ -1,0 +1,9 @@
+{
+  "name": "Qwen2-Audio-7B",
+  "url": "https://qwenlm.github.io/blog/qwen2-audio/",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "BlackArch",
+  "url": "https://www.blackarch.org/",
+  "description": "Arch GNU/Linux-based distribution for penetration testers and security researchers.",
+  "section": "Operating System Distributions",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

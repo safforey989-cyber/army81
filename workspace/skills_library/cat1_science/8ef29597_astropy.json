@@ -1,0 +1,9 @@
+{
+  "name": "astropy",
+  "url": "https://www.astropy.org/",
+  "description": "A community Python library for Astronomy.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

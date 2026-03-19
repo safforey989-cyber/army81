@@ -1,0 +1,9 @@
+{
+  "name": "Tor",
+  "url": "https://www.torproject.org/",
+  "description": "Free software and onion routed overlay network that helps you defend against traffic analysis.",
+  "section": "Tor Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "isMalicious",
+  "url": "https://ismalicious.com",
+  "description": "Threat intelligence platform aggregating malicious IP and domain data from multiple security feeds with real-time reputation scoring and threat categorization.",
+  "section": "[↑](#-table-of-contents) Domain and IP Research",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

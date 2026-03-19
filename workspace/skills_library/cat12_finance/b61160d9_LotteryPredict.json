@@ -1,0 +1,9 @@
+{
+  "name": "LotteryPredict",
+  "url": "https://github.com/chengstone/LotteryPredict",
+  "description": "Use LSTM to predict lottery.",
+  "section": "Lottery & Gamble",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

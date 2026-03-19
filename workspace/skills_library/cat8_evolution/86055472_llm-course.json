@@ -1,0 +1,9 @@
+{
+  "name": "llm-course",
+  "url": "https://github.com/mlabonne/llm-course",
+  "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
+  "section": "LLM Tutorials and Courses",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

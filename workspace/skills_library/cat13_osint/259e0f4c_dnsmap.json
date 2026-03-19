@@ -1,0 +1,9 @@
+{
+  "name": "dnsmap",
+  "url": "https://github.com/makefu/dnsmap/",
+  "description": "Passive DNS network mapper.",
+  "section": "Network Reconnaissance Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

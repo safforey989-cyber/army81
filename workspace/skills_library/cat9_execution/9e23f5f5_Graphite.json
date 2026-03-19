@@ -1,0 +1,9 @@
+{
+  "name": "Graphite",
+  "url": "https://graphite.readthedocs.org/en/latest/",
+  "description": "Scalable graphing server. ([Source Code](https://github.com/graphite-project/graphite-web)) `Apache-2.0` `Python`",
+  "section": "Metrics & Metric Collection",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

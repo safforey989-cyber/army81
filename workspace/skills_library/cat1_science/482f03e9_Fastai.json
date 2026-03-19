@@ -1,0 +1,9 @@
+{
+  "name": "Fastai",
+  "url": "https://github.com/fastai/fastai",
+  "description": "High-level wrapper built on the top of Pytorch which supports vision, text, tabular data and collaborative filtering.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

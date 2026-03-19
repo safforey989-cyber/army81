@@ -1,0 +1,9 @@
+{
+  "name": "Nikto",
+  "url": "https://github.com/sullo/nikto",
+  "description": "Noisy but fast black box web server and web application vulnerability scanner.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

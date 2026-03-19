@@ -1,0 +1,9 @@
+{
+  "name": "maptree",
+  "url": "https://cran.r-project.org/web/packages/maptree/index.html",
+  "description": "maptree: Mapping, pruning, and graphing tree models. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

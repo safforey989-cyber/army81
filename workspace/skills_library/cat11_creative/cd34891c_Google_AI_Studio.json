@@ -1,0 +1,9 @@
+{
+  "name": "Google AI Studio",
+  "url": "https://aistudio.google.com/",
+  "description": "A web-based tool to prototype with Gemini and experimental models.",
+  "section": "Playgrounds",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

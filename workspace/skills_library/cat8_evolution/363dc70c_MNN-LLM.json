@@ -1,0 +1,9 @@
+{
+  "name": "MNN-LLM",
+  "url": "https://github.com/alibaba/MNN",
+  "description": "A Device-Inference framework, including LLM Inference on device(Mobile Phone/PC/IOT)",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

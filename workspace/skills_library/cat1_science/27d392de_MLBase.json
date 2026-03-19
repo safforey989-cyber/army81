@@ -1,0 +1,9 @@
+{
+  "name": "MLBase",
+  "url": "https://github.com/JuliaStats/MLBase.jl",
+  "description": "A set of functions to support the development of machine learning algorithms.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

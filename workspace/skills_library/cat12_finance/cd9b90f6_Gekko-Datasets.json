@@ -1,0 +1,9 @@
+{
+  "name": "Gekko-Datasets",
+  "url": "https://github.com/xFFFFF/Gekko-Datasets",
+  "description": "Gekko trading bot dataset dumps. Download and use history files in SQLite format.",
+  "section": "Crypto Currencies",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

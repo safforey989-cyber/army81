@@ -1,0 +1,9 @@
+{
+  "name": "Cloud Native Landscape - Streaming & Messaging",
+  "url": "https://landscape.cncf.io/?group=projects-and-products&view-mode=card#app-definition-and-development--streaming-messaging",
+  "description": "_",
+  "section": "Queuing",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

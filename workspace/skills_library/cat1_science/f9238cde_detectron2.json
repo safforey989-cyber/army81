@@ -1,0 +1,9 @@
+{
+  "name": "detectron2",
+  "url": "https://github.com/facebookresearch/detectron2",
+  "description": "FAIR's next-generation research platform for object detection and segmentation. It is a ground-up rewrite of the previous version, Detectron, and is powered by the PyTorch deep learning framework.",
+  "section": "Computer Vision",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "xgen-7b-4k-base",
+  "url": "https://huggingface.co/Salesforce/xgen-7b-4k-base",
+  "description": ", [xgen-7b-8k-base](https://huggingface.co/Salesforce/xgen-7b-8k-base)  | [Long Sequence Modeling with XGen](https://blog.salesforceairesearch.com/xgen/) | 7 | [4096](https://huggingface.co/Salesforce/xgen-7b-4k-base), [8192](https://huggingface.co/Salesforce/xgen-7b-8k-base) | Apache 2.0 | |",
+  "section": "Open LLMs",
+  "topic": "open_source_llms",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

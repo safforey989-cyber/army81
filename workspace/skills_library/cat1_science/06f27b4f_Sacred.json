@@ -1,0 +1,9 @@
+{
+  "name": "Sacred",
+  "url": "https://github.com/IDSIA/sacred",
+  "description": "Python tool to help  you configure, organize, log and reproduce experiments. Like a notebook lab in the context of Chemistry/Biology. The community has built multiple add-ons leveraging the proposed standard.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

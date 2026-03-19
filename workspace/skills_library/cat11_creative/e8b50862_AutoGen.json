@@ -1,0 +1,9 @@
+{
+  "name": "AutoGen",
+  "url": "https://github.com/microsoft/autogen",
+  "description": "AutoGen is a framework that enables the development of LLM applications using multiple agents that can converse with each other to solve tasks.",
+  "section": "Autonomous agents",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

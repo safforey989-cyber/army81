@@ -1,0 +1,9 @@
+{
+  "name": "group-lasso",
+  "url": "https://github.com/fabianp/group_lasso",
+  "description": "Some experiments with the coordinate descent algorithm used in the (Sparse) Group Lasso model.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

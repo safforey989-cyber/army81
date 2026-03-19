@@ -1,0 +1,9 @@
+{
+  "name": "GPT Pilot",
+  "url": "https://github.com/Pythagora-io/gpt-pilot",
+  "description": "Dev tool that writes scalable apps from scratch while the developer oversees the implementation.",
+  "section": "Autonomous agents",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

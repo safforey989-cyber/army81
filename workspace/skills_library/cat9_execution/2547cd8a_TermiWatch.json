@@ -1,0 +1,9 @@
+{
+  "name": "TermiWatch",
+  "url": "https://github.com/kuglee/TermiWatch",
+  "description": ": A terminal face for Apple Watch",
+  "section": "Apple Watch",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

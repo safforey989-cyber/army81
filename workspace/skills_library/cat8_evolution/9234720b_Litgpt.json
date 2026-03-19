@@ -1,0 +1,9 @@
+{
+  "name": "Litgpt",
+  "url": "https://github.com/Lightning-AI/litgpt",
+  "description": "20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale.",
+  "section": "LLM Training Frameworks",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

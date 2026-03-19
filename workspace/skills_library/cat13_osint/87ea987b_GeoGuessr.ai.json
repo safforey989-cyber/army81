@@ -1,0 +1,9 @@
+{
+  "name": "GeoGuessr.ai",
+  "url": "https://geoguessr.ai",
+  "description": "AI-powered geolocation tool for identifying locations from images.",
+  "section": "[↑](#-table-of-contents) Geospatial Research and Mapping Tools",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

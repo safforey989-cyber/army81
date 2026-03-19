@@ -1,0 +1,9 @@
+{
+  "name": "LinEnum",
+  "url": "https://github.com/rebootuser/LinEnum",
+  "description": "Scripted local Linux enumeration and privilege escalation checker useful for auditing a host and during CTF gaming.",
+  "section": "Privilege Escalation Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

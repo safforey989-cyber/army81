@@ -1,0 +1,9 @@
+{
+  "name": "octoDNS",
+  "url": "https://github.com/github/octodns",
+  "description": "DNS as code - Tools for managing DNS across multiple providers. `MIT` `Python`",
+  "section": "DNS - Control Panels & Domain Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

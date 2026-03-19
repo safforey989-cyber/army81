@@ -1,0 +1,9 @@
+{
+  "name": "randomForestSRC",
+  "url": "https://cran.r-project.org/web/packages/randomForestSRC/index.html",
+  "description": "randomForestSRC: Random Forests for Survival, Regression and Classification (RF-SRC).",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "NextGen Connect Integration Engine",
+  "url": "https://github.com/nextgenhealthcare/connect",
+  "description": "The swiss army knife of healthcare integration.",
+  "section": "Integration",
+  "topic": "healthcare_ai",
+  "category": "cat14_health",
+  "source": "github_awesome"
+}

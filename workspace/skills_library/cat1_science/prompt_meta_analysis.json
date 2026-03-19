@@ -1,0 +1,7 @@
+{
+  "name": "meta_analysis",
+  "type": "prompt_pattern",
+  "prompt_template": "قم بتحليل ميتا لـ {studies}. حدد الأنماط المشتركة والتناقضات.",
+  "category": "cat1_science",
+  "source": "built_in"
+}

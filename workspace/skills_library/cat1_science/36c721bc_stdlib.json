@@ -1,0 +1,9 @@
+{
+  "name": "stdlib",
+  "url": "https://github.com/stdlib-js/stdlib",
+  "description": "A standard library for JavaScript and Node.js, with an emphasis on numeric computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

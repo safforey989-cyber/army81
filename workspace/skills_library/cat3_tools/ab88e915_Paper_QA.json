@@ -1,0 +1,9 @@
+{
+  "name": "Paper QA",
+  "url": "https://github.com/whitead/paper-qa",
+  "description": ": LLM Chain for answering questions from documents with citations ![GitHub Repo stars](https://img.shields.io/github/stars/whitead/paper-qa?style=social)",
+  "section": "Other / Chatbots",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

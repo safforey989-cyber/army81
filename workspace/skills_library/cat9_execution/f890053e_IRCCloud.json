@@ -1,0 +1,9 @@
+{
+  "name": "IRCCloud",
+  "url": "https://github.com/irccloud/ios",
+  "description": ": IRC client/service",
+  "section": "Communication",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

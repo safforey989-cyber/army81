@@ -1,0 +1,9 @@
+{
+  "name": "Pandas",
+  "url": "https://pandas.pydata.org/",
+  "description": "A library providing high-performance, easy-to-use data structures and data analysis tools.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

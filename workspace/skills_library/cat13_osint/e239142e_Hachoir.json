@@ -1,0 +1,9 @@
+{
+  "name": "Hachoir",
+  "url": "https://hachoir.readthedocs.io/",
+  "description": "Python library to view and edit a binary stream as tree of fields and tools for metadata extraction.",
+  "section": "File Format Analysis Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

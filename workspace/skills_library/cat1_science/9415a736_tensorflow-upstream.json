@@ -1,0 +1,9 @@
+{
+  "name": "tensorflow-upstream",
+  "url": "https://github.com/ROCmSoftwarePlatform/tensorflow-upstream",
+  "description": "Tool from data_science",
+  "section": "TensorFlow Ecosystem",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

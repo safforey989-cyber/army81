@@ -1,0 +1,9 @@
+{
+  "name": "Phrack Magazine",
+  "url": "http://www.phrack.org/",
+  "description": "By far the longest running hacker zine.",
+  "section": "Periodicals",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

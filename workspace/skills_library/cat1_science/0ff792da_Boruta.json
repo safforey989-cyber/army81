@@ -1,0 +1,9 @@
+{
+  "name": "Boruta",
+  "url": "https://cran.r-project.org/web/packages/Boruta/index.html",
+  "description": "Boruta: A wrapper algorithm for all-relevant feature selection.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

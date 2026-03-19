@@ -1,0 +1,9 @@
+{
+  "name": "m2cgen",
+  "url": "https://github.com/BayesWitnesses/m2cgen",
+  "description": "A tool that allows the conversion of ML models into native code (Java, C, Python, Go, JavaScript, Visual Basic, C#, R, PowerShell, PHP, Dart) with zero dependencies.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

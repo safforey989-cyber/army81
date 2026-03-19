@@ -1,0 +1,9 @@
+{
+  "name": "climin",
+  "url": "https://github.com/BRML/climin",
+  "description": "Optimization library focused on machine learning, pythonic implementations of gradient descent, LBFGS, rmsprop, adadelta and others.",
+  "section": "Misc Scripts / iPython Notebooks / Codebases",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

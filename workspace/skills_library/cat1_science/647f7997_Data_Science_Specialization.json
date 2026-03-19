@@ -1,0 +1,9 @@
+{
+  "name": "Data Science Specialization",
+  "url": "https://github.com/DataScienceSpecialization/courses",
+  "description": "Tool from data_science",
+  "section": "MOOC's",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

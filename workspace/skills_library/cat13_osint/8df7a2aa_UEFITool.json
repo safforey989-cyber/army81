@@ -1,0 +1,9 @@
+{
+  "name": "UEFITool",
+  "url": "https://github.com/LongSoft/UEFITool",
+  "description": "UEFI firmware image viewer and editor.",
+  "section": "Reverse Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

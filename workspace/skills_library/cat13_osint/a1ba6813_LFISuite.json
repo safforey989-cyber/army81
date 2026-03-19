@@ -1,0 +1,9 @@
+{
+  "name": "LFISuite",
+  "url": "https://github.com/D35m0nd142/LFISuite",
+  "description": "Automatic LFI scanner and exploiter.",
+  "section": "Web file inclusion tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

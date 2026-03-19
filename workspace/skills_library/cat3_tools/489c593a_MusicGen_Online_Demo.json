@@ -1,0 +1,9 @@
+{
+  "name": "MusicGen Online Demo",
+  "url": "https://huggingface.co/spaces/facebook/MusicGen",
+  "description": "|[GitHub](https://github.com/facebookresearch/audiocraft)  <br> ![GitHub Repo stars](https://img.shields.io/github/stars/facebookresearch/audiocraft?style=social)|Free|",
+  "section": "AI generated music or sound effects",
+  "topic": "ai_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

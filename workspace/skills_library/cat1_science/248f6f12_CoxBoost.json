@@ -1,0 +1,9 @@
+{
+  "name": "CoxBoost",
+  "url": "https://cran.r-project.org/web/packages/CoxBoost/index.html",
+  "description": "CoxBoost: Cox models by likelihood based boosting for a single survival endpoint or competing risks **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

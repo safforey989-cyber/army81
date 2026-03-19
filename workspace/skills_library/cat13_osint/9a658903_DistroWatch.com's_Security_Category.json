@@ -1,0 +1,9 @@
+{
+  "name": "DistroWatch.com's Security Category",
+  "url": "https://distrowatch.com/search.php?category=Security",
+  "description": "Website dedicated to talking about, reviewing, and keeping up to date with open source operating systems.",
+  "section": "Online Operating Systems Resources",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

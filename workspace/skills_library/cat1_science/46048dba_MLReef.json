@@ -1,0 +1,9 @@
+{
+  "name": "MLReef",
+  "url": "https://about.mlreef.com/",
+  "description": "MLReef is an end-to-end development platform using the power of git to give structure and deep collaboration possibilities to the ML development process.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

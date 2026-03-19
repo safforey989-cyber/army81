@@ -1,0 +1,9 @@
+{
+  "name": "Listof",
+  "url": "https://github.com/kevincobain2000/listof",
+  "description": "Community based data collection, packed in gem. Get list of pretty much anything (stop words, countries, non words) in txt, JSON or hash. [Demo/Search for a list](http://kevincobain2000.github.io/listof/)",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Bayesian Methods for Hackers",
+  "url": "https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers",
+  "description": "Book/iPython notebooks on Probabilistic Programming in Python.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Gym4ReaL",
+  "url": "https://github.com/Daveonwave/gym4ReaL",
+  "description": "Gym4ReaL is a comprehensive suite of realistic environments designed to support the development and evaluation of RL algorithms that can operate in real-world scenarios. The suite includes a diverse set of tasks exposing RL algorithms to a variety of practical challenges.",
+  "section": "Reinforcement Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

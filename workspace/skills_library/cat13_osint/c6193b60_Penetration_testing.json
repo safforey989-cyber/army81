@@ -1,0 +1,9 @@
+{
+  "name": "Penetration testing",
+  "url": "https://en.wikipedia.org/wiki/Penetration_test",
+  "description": "is the practice of launching authorized, simulated attacks against computer systems and their physical infrastructure to expose potential security weaknesses and vulnerabilities. Should you discover a vulnerability, please follow [this guidance](https://kb.cert.org/vuls/guidance/) to report it respo",
+  "section": "Awesome Penetration Testing [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

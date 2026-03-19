@@ -1,0 +1,9 @@
+{
+  "name": "Humanloop",
+  "url": "https://humanloop.com",
+  "description": "– Humanloop is a platform for prompt experimentation, finetuning models for better performance, cost optimization, and collecting model generated data and user feedback.",
+  "section": "Misc",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

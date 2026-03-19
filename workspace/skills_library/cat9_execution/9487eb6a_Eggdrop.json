@@ -1,0 +1,9 @@
+{
+  "name": "Eggdrop",
+  "url": "https://www.eggheads.org/",
+  "description": "The oldest Internet Relay Chat (IRC) bot still in active development. ([Source Code](https://github.com/eggheads/eggdrop)) `GPL-2.0` `C`",
+  "section": "ChatOps",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

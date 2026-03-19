@@ -1,0 +1,9 @@
+{
+  "name": "New Zealand Institute of Economic Research – Data1850",
+  "url": "https://data1850.nz/",
+  "description": "Tool from data_science",
+  "section": "Datasets",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

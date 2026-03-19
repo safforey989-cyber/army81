@@ -1,0 +1,9 @@
+{
+  "name": "pixray/pixray",
+  "url": "https://github.com/pixray/pixray",
+  "description": ": Pixray is an image generation system",
+  "section": "Image Synthesis",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

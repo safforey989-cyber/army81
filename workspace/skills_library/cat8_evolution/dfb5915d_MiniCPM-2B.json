@@ -1,0 +1,9 @@
+{
+  "name": "MiniCPM-2B",
+  "url": "https://huggingface.co/collections/openbmb/minicpm-2b-65d48bf958302b9fd25b698f",
+  "description": "Tool from llm_techniques",
+  "section": "Open LLM",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

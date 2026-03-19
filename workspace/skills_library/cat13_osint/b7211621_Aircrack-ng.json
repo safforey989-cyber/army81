@@ -1,0 +1,9 @@
+{
+  "name": "Aircrack-ng",
+  "url": "http://www.aircrack-ng.org/",
+  "description": "Set of tools for auditing wireless networks.",
+  "section": "Wireless Network Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

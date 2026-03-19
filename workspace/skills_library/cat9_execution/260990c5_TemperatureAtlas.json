@@ -1,0 +1,9 @@
+{
+  "name": "TemperatureAtlas",
+  "url": "https://github.com/jhatin94/tempatlas-swiftui",
+  "description": ": Uses Apple Maps combined with the OpenWeather API",
+  "section": "Weather",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

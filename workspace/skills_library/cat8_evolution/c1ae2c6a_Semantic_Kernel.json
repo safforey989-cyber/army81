@@ -1,0 +1,9 @@
+{
+  "name": "Semantic Kernel",
+  "url": "https://github.com/microsoft/semantic-kernel",
+  "description": "A Python/C#/Java library from Microsoft that supports prompt templating, function chaining, vectorized memory, and intelligent planning.",
+  "section": "LLM Applications",
+  "topic": "llm_techniques",
+  "category": "cat8_evolution",
+  "source": "github_awesome"
+}

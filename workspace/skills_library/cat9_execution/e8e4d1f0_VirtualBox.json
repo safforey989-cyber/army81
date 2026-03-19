@@ -1,0 +1,9 @@
+{
+  "name": "VirtualBox",
+  "url": "https://www.virtualbox.org/",
+  "description": "Virtualization product from Oracle Corporation. ([Source Code](https://www.virtualbox.org/browser/vbox)) `GPL-3.0/CDDL-1.0` `C++`",
+  "section": "Virtualization",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

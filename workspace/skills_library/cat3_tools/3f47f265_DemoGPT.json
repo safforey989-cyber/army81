@@ -1,0 +1,9 @@
+{
+  "name": "DemoGPT",
+  "url": "https://github.com/melih-unsal/DemoGPT",
+  "description": ": DemoGPT enables you to create quick demos by just using prompt. It applies ToT approach on Langchain documentation tree. ![GitHub Repo stars](https://img.shields.io/github/stars/melih-unsal/DemoGPT?style=social)",
+  "section": "Agents",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

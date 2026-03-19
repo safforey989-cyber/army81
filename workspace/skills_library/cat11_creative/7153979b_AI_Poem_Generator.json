@@ -1,0 +1,9 @@
+{
+  "name": "AI Poem Generator",
+  "url": "https://www.aipoemgenerator.org",
+  "description": "AI Poem Generator writes a beautiful rhyming poem for you on any subject, given a text prompt.",
+  "section": "Other text generators",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Local Regression",
+  "url": "https://github.com/JuliaStats/Loess.jl",
+  "description": "Local regression, so smooooth!",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

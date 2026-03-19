@@ -1,0 +1,9 @@
+{
+  "name": "WebReaver",
+  "url": "https://www.webreaver.com/",
+  "description": "Commercial, graphical web application vulnerability scanner designed for macOS.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Botpress",
+  "url": "https://github.com/botpress/botpress",
+  "description": ": The building blocks for building chatbots ![GitHub Repo stars](https://img.shields.io/github/stars/botpress/botpress?style=social)",
+  "section": "Other LLM Frameworks",
+  "topic": "langchain_tools",
+  "category": "cat3_tools",
+  "source": "github_awesome"
+}

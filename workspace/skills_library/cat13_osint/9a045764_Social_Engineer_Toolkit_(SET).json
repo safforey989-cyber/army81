@@ -1,0 +1,9 @@
+{
+  "name": "Social Engineer Toolkit (SET)",
+  "url": "https://github.com/trustedsec/social-engineer-toolkit",
+  "description": "](https://github.com/trustedsec/social-engineer-toolkit) - Open source pentesting framework designed for social engineering featuring a number of custom attack vectors to make believable attacks quickly.",
+  "section": "Social Engineering Tools",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

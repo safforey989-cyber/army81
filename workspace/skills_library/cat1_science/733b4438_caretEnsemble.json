@@ -1,0 +1,9 @@
+{
+  "name": "caretEnsemble",
+  "url": "https://cran.r-project.org/web/packages/caretEnsemble/index.html",
+  "description": "caretEnsemble: Framework for fitting multiple caret models as well as creating ensembles of such models. **[Deprecated]**",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

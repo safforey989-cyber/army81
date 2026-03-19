@@ -1,0 +1,9 @@
+{
+  "name": "Mercurial",
+  "url": "https://www.mercurial-scm.org/",
+  "description": "Distributed source control management tool. ([Source Code](https://repo.mercurial-scm.org/hg/file/tip)) `GPL-2.0` `Python/C/Rust`",
+  "section": "Version control",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

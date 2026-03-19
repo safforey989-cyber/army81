@@ -1,0 +1,9 @@
+{
+  "name": "Weka",
+  "url": "https://ml.cms.waikato.ac.nz/weka/index.html",
+  "description": "| Weka is a collection of machine learning algorithms for data mining tasks. |",
+  "section": "Miscellaneous Tools",
+  "topic": "data_science",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

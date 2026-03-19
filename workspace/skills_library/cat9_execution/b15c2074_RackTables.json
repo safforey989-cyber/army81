@@ -1,0 +1,9 @@
+{
+  "name": "RackTables",
+  "url": "https://racktables.org/",
+  "description": "Datacenter and server room asset management like document hardware assets, network addresses, space in racks, networks configuration. ([Demo](https://www.racktables.org/demo.php), [Source Code](https://github.com/RackTables/racktables)) `GPL-2.0` `PHP`",
+  "section": "IT Asset Management",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

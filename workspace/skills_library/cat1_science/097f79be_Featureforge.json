@@ -1,0 +1,9 @@
+{
+  "name": "Featureforge",
+  "url": "https://github.com/machinalis/featureforge",
+  "description": "A set of tools for creating and testing machine learning features, with a scikit-learn compatible API.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

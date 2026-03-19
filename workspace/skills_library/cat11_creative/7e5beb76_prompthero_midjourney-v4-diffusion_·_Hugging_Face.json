@@ -1,0 +1,9 @@
+{
+  "name": "prompthero/midjourney-v4-diffusion · Hugging Face",
+  "url": "https://huggingface.co/prompthero/midjourney-v4-diffusion",
+  "description": ": Stable Diffusion fine tuned on Midjourney v4 images, by [PromptHero](https://prompthero.com/)",
+  "section": "Inbox: Stable Diffusion",
+  "topic": "generative_ai",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

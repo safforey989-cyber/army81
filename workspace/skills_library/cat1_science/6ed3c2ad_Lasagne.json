@@ -1,0 +1,9 @@
+{
+  "name": "Lasagne",
+  "url": "https://github.com/Lasagne/Lasagne",
+  "description": "Lightweight library to build and train neural networks in Theano.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

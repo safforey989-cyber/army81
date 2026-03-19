@@ -1,0 +1,9 @@
+{
+  "name": "Tusker",
+  "url": "https://git.shadowfacts.net/shadowfacts/Tusker",
+  "description": "Tool from mobile_apps",
+  "section": "Mastodon",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

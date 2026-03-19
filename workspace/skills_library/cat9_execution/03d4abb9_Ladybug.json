@@ -1,0 +1,9 @@
+{
+  "name": "Ladybug",
+  "url": "https://github.com/ethanhuang13/ladybug",
+  "description": ": Handle rdar:// links gracefully",
+  "section": "Developer",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ChatGPT for Search Engines",
+  "url": "https://chrome.google.com/webstore/detail/chatgpt-for-search-engine/feeonheemodpkdckaljcjogdncpiiban",
+  "description": "Display ChatGPT response alongside Google, Bing, and DuckDuckGo search results.",
+  "section": "ChatGPT extensions",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

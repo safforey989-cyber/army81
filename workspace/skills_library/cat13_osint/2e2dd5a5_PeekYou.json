@@ -1,0 +1,9 @@
+{
+  "name": "PeekYou",
+  "url": "https://www.peekyou.com/",
+  "description": "PeekYou offers the ability to search for people with checks done against more sites. Can check for arrest records as well.",
+  "section": "[↑](#-table-of-contents) People Investigations",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

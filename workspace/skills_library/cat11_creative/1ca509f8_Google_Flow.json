@@ -1,0 +1,9 @@
+{
+  "name": "Google Flow",
+  "url": "https://flow.google",
+  "description": "An AI filmmaking tool from Google, powered by Veo.",
+  "section": "Video",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

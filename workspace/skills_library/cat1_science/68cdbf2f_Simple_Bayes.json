@@ -1,0 +1,9 @@
+{
+  "name": "Simple Bayes",
+  "url": "https://github.com/fredwu/simple_bayes",
+  "description": "A Simple Bayes / Naive Bayes implementation in Elixir.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

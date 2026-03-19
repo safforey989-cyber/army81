@@ -1,0 +1,9 @@
+{
+  "name": "nuclei",
+  "url": "https://github.com/projectdiscovery/nuclei",
+  "description": "Fast and customizable vulnerability scanner based on simple YAML based DSL.",
+  "section": "Web Vulnerability Scanners",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

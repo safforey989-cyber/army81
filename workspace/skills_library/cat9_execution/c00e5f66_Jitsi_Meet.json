@@ -1,0 +1,9 @@
+{
+  "name": "Jitsi Meet",
+  "url": "https://github.com/jitsi/jitsi-meet",
+  "description": ": Video meetings for everyone",
+  "section": "React Native",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

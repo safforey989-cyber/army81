@@ -1,0 +1,9 @@
+{
+  "name": "NLP4J",
+  "url": "https://github.com/emorynlp/nlp4j",
+  "description": "The NLP4J project provides software and resources for natural language processing. The project started at the Center for Computational Language and EducAtion Research, and is currently developed by the Center for Language and Information Research at Emory University. **[Deprecated]**",
+  "section": "Natural Language Processing",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

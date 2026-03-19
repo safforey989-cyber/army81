@@ -1,0 +1,9 @@
+{
+  "name": "OpenAI Codex",
+  "url": "https://platform.openai.com/docs/guides/code/",
+  "description": "An AI system by OpenAI that translates natural language to code.",
+  "section": "Coding Assistants",
+  "topic": "gen_ai_tools",
+  "category": "cat11_creative",
+  "source": "github_awesome"
+}

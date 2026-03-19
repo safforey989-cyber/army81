@@ -1,0 +1,9 @@
+{
+  "name": "RDataSets",
+  "url": "https://github.com/johnmyleswhite/RDatasets.jl",
+  "description": "Julia package for loading many of the data sets available in R.",
+  "section": "Data Analysis / Data Visualization",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

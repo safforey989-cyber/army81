@@ -1,0 +1,9 @@
+{
+  "name": "ValueRay",
+  "url": "https://www.valueray.com/api",
+  "description": "Technical, quantitative and sentiment data for stocks and ETFs with risk metrics, peer percentiles and market regime signals. Optimized for AI/LLM agents.",
+  "section": "Traditional Markets",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}

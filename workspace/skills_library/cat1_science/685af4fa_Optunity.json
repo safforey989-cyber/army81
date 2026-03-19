@@ -1,0 +1,9 @@
+{
+  "name": "Optunity",
+  "url": "https://optunity.readthedocs.io/en/latest/",
+  "description": "A library dedicated to automated hyperparameter optimization with a simple, lightweight API to facilitate drop-in replacement of grid search. Optunity is written in Python but interfaces seamlessly with MATLAB.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

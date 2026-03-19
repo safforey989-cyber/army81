@@ -1,0 +1,9 @@
+{
+  "name": "torchnet",
+  "url": "https://github.com/torchnet/torchnet",
+  "description": "framework for torch which provides a set of abstractions aiming at encouraging code re-use as well as encouraging modular programming.",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

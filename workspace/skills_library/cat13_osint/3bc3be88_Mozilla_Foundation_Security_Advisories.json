@@ -1,0 +1,9 @@
+{
+  "name": "Mozilla Foundation Security Advisories",
+  "url": "https://www.mozilla.org/security/advisories/",
+  "description": "Archive of security advisories impacting Mozilla software, including the Firefox Web Browser.",
+  "section": "Vulnerability Databases",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

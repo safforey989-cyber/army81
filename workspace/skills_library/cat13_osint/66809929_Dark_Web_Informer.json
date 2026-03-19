@@ -1,0 +1,9 @@
+{
+  "name": "Dark Web Informer",
+  "url": "https://darkwebinformer.com/threat-actor-database/",
+  "description": "Tracking 854 Threat Actors as of 29th of May 2025.",
+  "section": "[↑](#-threat-actor-search) Threat Actor Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

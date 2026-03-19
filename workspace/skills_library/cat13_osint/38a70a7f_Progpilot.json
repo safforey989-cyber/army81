@@ -1,0 +1,9 @@
+{
+  "name": "Progpilot",
+  "url": "https://github.com/designsecurity/progpilot",
+  "description": "Static security analysis tool for PHP code.",
+  "section": "Static Analyzers",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

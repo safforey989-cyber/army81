@@ -1,0 +1,9 @@
+{
+  "name": "DAws",
+  "url": "https://github.com/dotcppfile/DAws",
+  "description": "Advanced Web shell.",
+  "section": "Web shells and C2 frameworks",
+  "topic": "pentest_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Cybergeist",
+  "url": "https://cybergeist.io/threat-actor",
+  "description": "Cybergeist.io generates intelligence profiles about key threats and threat context that is actively being discussed and reported upon across the internet.",
+  "section": "[↑](#-threat-actor-search) Threat Actor Search",
+  "topic": "osint_tools",
+  "category": "cat13_osint",
+  "source": "github_awesome"
+}

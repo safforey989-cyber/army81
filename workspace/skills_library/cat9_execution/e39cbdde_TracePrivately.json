@@ -1,0 +1,9 @@
+{
+  "name": "TracePrivately",
+  "url": "https://github.com/CrunchyBagel/TracePrivately",
+  "description": ": Uses Apple's Privacy-preserving ExposureNotification framework",
+  "section": "Contact Tracing Reference",
+  "topic": "mobile_apps",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

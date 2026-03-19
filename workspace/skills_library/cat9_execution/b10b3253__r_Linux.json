@@ -1,0 +1,9 @@
+{
+  "name": "/r/Linux",
+  "url": "https://www.reddit.com/r/linux",
+  "description": "News and information about Linux.",
+  "section": "Communities / Forums",
+  "topic": "sysadmin_tools",
+  "category": "cat9_execution",
+  "source": "github_awesome"
+}

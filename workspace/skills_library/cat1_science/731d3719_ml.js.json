@@ -1,0 +1,9 @@
+{
+  "name": "ml.js",
+  "url": "https://github.com/mljs/ml",
+  "description": "Machine learning and numerical analysis tools for Node.js and the Browser!",
+  "section": "General-Purpose Machine Learning",
+  "topic": "ml_tools",
+  "category": "cat1_science",
+  "source": "github_awesome"
+}

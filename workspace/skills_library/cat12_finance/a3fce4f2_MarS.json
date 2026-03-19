@@ -1,0 +1,9 @@
+{
+  "name": "MarS",
+  "url": "https://github.com/microsoft/MarS",
+  "description": "A Financial Market Simulation Engine Powered by Generative Foundation Model.",
+  "section": "LLMs",
+  "topic": "ai_finance",
+  "category": "cat12_finance",
+  "source": "github_awesome"
+}
