@@ -21,7 +21,8 @@ load_dotenv()
 
 from core.base_agent import BaseAgent, load_agent_from_json
 from router.smart_router import SmartRouter
-from tools.web_search import web_search, fetch_news
+from tools.web_search import web_search
+from tools.news_fetcher import fetch_news
 from tools.registry import build_tools_registry
 from core.base_agent import Tool
 from protocols.a2a import A2AProtocol
