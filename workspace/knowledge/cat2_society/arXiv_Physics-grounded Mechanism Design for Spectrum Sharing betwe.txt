@@ -1,0 +1,5 @@
+Title: Physics-grounded Mechanism Design for Spectrum Sharing between Passive and Active Users
+Source: arXiv
+Date: 2026-03-20T03:17:07.665729
+
+We propose a physics-grounded mechanism design for dynamic spectrum sharing that bridges the gap between radiometric retrieval constraints and economic incentives. We formulate the active and passive users coexistence problem as a Vickrey-Clarke-Groves (VCG) auctions mechanism, where the radiometer dynamically procures ``quiet'' time-frequency tiles from active users based on the marginal reduction in retrieval error variance. This approach ensures allocative efficiency and dominant-strategy inc

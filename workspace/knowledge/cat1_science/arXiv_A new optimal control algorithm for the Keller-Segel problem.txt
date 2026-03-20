@@ -1,0 +1,5 @@
+Title: A new optimal control algorithm for the Keller-Segel problem
+Source: arXiv
+Date: 2026-03-20T03:16:53.836812
+
+In this work we introduce a new optimal control algorithm for the Keller-Segel chemo-attraction system, where both boundary and distributed controls are considered and both are associated with introducing/removing the amount of chemical substances in the system. The key idea of our approach is to design the optimal control algorithm after discretizing the state problem system, which is done using an upwind finite volume scheme in space and a semi-implicit finite difference in time. Then, the dis

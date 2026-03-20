@@ -6,9 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "FreeMedForms EMR",
-    "OpenEHR",
-    "symptom_analyzer",
     "Medplum",
     "OpenMRS",
     "OpenEMR",
@@ -55,7 +52,10 @@
     "Cornerstone",
     "DICOM Standards Browser",
     "DICOMcloud",
-    "research_c24_7959ea21"
+    "research_c24_7959ea21",
+    "research_c24_46f0b556",
+    "research_c24_1720c653",
+    "skill_A30_4795"
   ],
   "knowledge_topics": [],
   "performance": {

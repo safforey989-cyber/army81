@@ -1,0 +1,5 @@
+Title: A Human-in/on-the-Loop Framework for Accessible Text Generation
+Source: arXiv
+Date: 2026-03-20T03:17:17.990720
+
+Plain Language and Easy-to-Read formats in text simplification are essential for cognitive accessibility. Yet current automatic simplification and evaluation pipelines remain largely automated, metric-driven, and fail to reflect user comprehension or normative standards. This paper introduces a hybrid framework that explicitly integrates human participation into LLM-based accessible text generation. Human-in-the-Loop (HiTL) contributions guide adjustments during generation, while Human-on-the-Lo

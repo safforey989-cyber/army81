@@ -6,11 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Qwant",
-    "news_verifier",
-    "Parseek (Iran)",
-    "spmedia",
-    "leak_monitor",
     "Bing",
     "Onet.pl (Poland)",
     "Orange (France)",
@@ -55,7 +50,12 @@
     "Search.ch (Switzerland)",
     "Brave",
     "Alleba (Philippines)",
-    "research_c15_d32b3af6"
+    "research_c15_d32b3af6",
+    "research_c24_6e47fb84",
+    "skill_A82_3289",
+    "research_c24_638db236",
+    "research_c24_992c7317",
+    "research_c24_343a6498"
   ],
   "knowledge_topics": [],
   "performance": {

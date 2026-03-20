@@ -1,0 +1,5 @@
+Title: PromptHub: Enhancing Multi-Prompt Visual In-Context Learning with Locality-Aware Fusion, Concentration and Alignment
+Source: arXiv
+Date: 2026-03-20T03:17:14.501880
+
+Visual In-Context Learning (VICL) aims to complete vision tasks by imitating pixel demonstrations. Recent work pioneered prompt fusion that combines the advantages of various demonstrations, which shows a promising way to extend VICL. Unfortunately, the patch-wise fusion framework and model-agnostic supervision hinder the exploitation of informative cues, thereby limiting performance gains. To overcome this deficiency, we introduce PromptHub, a framework that holistically strengthens multi-promp

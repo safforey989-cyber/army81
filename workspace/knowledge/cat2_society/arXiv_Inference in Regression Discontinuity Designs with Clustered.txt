@@ -1,0 +1,5 @@
+Title: Inference in Regression Discontinuity Designs with Clustered Data
+Source: arXiv
+Date: 2026-03-20T03:17:07.665729
+
+Clustered sampling is prevalent in empirical regression discontinuity (RD) designs, but it has not received much attention in the theoretical literature. In this paper, we introduce a general model-based framework for such settings and derive high-level conditions under which the standard local linear RD estimator is asymptotically normal. We verify that our high-level assumptions hold across a wide range of empirical designs, including settings of growing cluster sizes. We further show that clu

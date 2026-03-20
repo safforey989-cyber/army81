@@ -6,8 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "nofx",
-    "MACD + RSI + ADX Strategy (ChatGPT-powered) by TradeSmart",
     "Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy, 2020",
     "Ten Financial Applications of Machine Learning, 2018",
     "ATLAS",
@@ -55,7 +53,9 @@
     "The Theory of Speculation L. Bachelier, 1900",
     "FinRobot",
     "trading-gym",
-    "research_c24_d8388cb6"
+    "research_c24_d8388cb6",
+    "research_c24_46f0b556",
+    "research_c24_343a6498"
   ],
   "knowledge_topics": [],
   "performance": {

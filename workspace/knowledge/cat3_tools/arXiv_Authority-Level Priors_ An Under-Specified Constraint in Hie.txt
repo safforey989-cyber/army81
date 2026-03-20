@@ -1,0 +1,5 @@
+Title: Authority-Level Priors: An Under-Specified Constraint in Hierarchical Predictive Processing
+Source: arXiv
+Date: 2026-03-20T03:17:21.523408
+
+Hierarchical predictive processing explains adaptive behaviour through precision-weighted inference. Explicit belief revision often fails to produce corresponding changes in stress reactivity or autonomic regulation. This asymmetry suggests the framework leaves under-specified a governance-level constraint concerning which identity-level hypotheses regulate autonomic and behavioural control under uncertainty. We introduce Authority-Level Priors (ALPs) as meta-structural constraints defining a re

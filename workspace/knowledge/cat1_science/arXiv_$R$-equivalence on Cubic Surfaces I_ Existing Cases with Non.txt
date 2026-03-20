@@ -1,0 +1,5 @@
+Title: $R$-equivalence on Cubic Surfaces I: Existing Cases with Non-Trivial Universal Equivalence
+Source: arXiv
+Date: 2026-03-20T04:14:07.367873
+
+Let $V$ be a smooth cubic surface over a $p$-adic field $k$ with good reduction. Swinnerton-Dyer (1981) proved that $R$-equivalence is trivial on $V(k)$ except perhaps if $V$ is one of three special types--those whose $R$-equivalence he could not bound by proving the universal (admissible) equivalence is trivial. We consider all surfaces $V$ currently known to have non-trivial universal equivalence. Beyond being intractable to Swinnerton-Dyer's approach, we observe that if these surfaces also ha

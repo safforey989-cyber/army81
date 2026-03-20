@@ -6,9 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Qwen1.5-32B",
-    "OpenHermes-7B",
-    "synthetic_generator",
     "jais-30b-v1",
     "chatglm2-6b",
     "MPT-7B",
@@ -55,7 +52,10 @@
     "pythia 70M - 12B",
     "Grok-1",
     "research_c24_f7d7878b",
-    "research_c24_e634931f"
+    "research_c24_e634931f",
+    "skill_A82_3289",
+    "research_c24_d8388cb6",
+    "research_c24_7959ea21"
   ],
   "knowledge_topics": [],
   "performance": {

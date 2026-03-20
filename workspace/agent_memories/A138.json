@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Qwant",
     "news_verifier",
     "Parseek (Iran)",
     "spmedia",
@@ -55,7 +54,8 @@
     "Search.ch (Switzerland)",
     "Brave",
     "Alleba (Philippines)",
-    "research_c15_7d6f469b"
+    "research_c15_7d6f469b",
+    "research_c24_1720c653"
   ],
   "knowledge_topics": [],
   "performance": {

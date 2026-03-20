@@ -2,19 +2,19 @@
   "type": "speed",
   "task": "لخّص مفهوم الذكاء الاصطناعي في 3 جمل",
   "agent1": {
-    "id": "A61",
-    "model": "deepseek-r1",
-    "score": 346
+    "id": "A12",
+    "model": "claude-fast",
+    "score": 425
   },
   "agent2": {
-    "id": "A31",
-    "model": "grok-3",
-    "score": 345
+    "id": "A111",
+    "model": "qwen-coder",
+    "score": 425
   },
-  "winner": "A61",
+  "winner": "A12",
   "improved": true,
-  "improvement_pct": 0.3,
+  "improvement_pct": 0.0,
   "knowledge_transferred": true,
   "cycle": 24,
-  "timestamp": "2026-03-19T12:00:56.745196"
+  "timestamp": "2026-03-20T06:42:35.922591"
 }

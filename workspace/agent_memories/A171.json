@@ -6,9 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Lecture Series: An interesting topic every week on the fundamentals of art - Niji Academy",
-    "quiz_generator",
-    "Practical AI for Teachers and Students - Wharton School",
     "AI-Systems (LLM Edition) 294-162",
     "Learn the fundamentals of generative AI for real-world applications - AWS x DeepLearning.AI",
     "feedback_writer",
@@ -55,7 +52,10 @@
     "6.S191: Introduction to Deep Learning - Massachusetts Institute of Technology",
     "11-777: MultiModal Machine Learning (Fall 2022) - Carnegie Mellon University",
     "skill_A69_315",
-    "research_c24_530b0845"
+    "research_c24_530b0845",
+    "research_c24_343a6498",
+    "research_c24_e634931f",
+    "skill_A30_4795"
   ],
   "knowledge_topics": [],
   "performance": {

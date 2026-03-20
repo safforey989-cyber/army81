@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "ChatGPT Strategy by OctoBot",
     "Reinforcement Learning for Trading, 1994",
     "risk_calculator",
     "Train and Deploy a Serverless API to predict crypto prices",
@@ -55,7 +54,8 @@
     "Udacity: Artificial Intelligence for Trading",
     "nofx",
     "A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem",
-    "research_c24_6e47fb84"
+    "research_c24_6e47fb84",
+    "research_c24_1a708f40"
   ],
   "knowledge_topics": [],
   "performance": {

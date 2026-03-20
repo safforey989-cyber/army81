@@ -2,7 +2,11 @@
   "agent_id": "A51",
   "created_at": "2026-03-18T22:10:10.302995",
   "known_agents": {},
-  "skills_learned": [],
+  "skills_learned": [
+    "research_c24_1720c653",
+    "research_c24_46f0b556",
+    "research_c24_6e47fb84"
+  ],
   "collaborations": [],
   "decisions": [],
   "insights": [

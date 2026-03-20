@@ -1,0 +1,4 @@
+# skill_A90_500
+# Agent: A90 | وكيل بناء الرسوم المعرفية
+
+AgentResult(agent_id='A90', agent_name='وكيل بناء الرسوم المعرفية', task='أنت وكيل بناء الرسوم المعرفية. تعلّم مهارة جديدة تناسب تخصصك في cat8_evolution.\n\nاختر واحدة من هذه وأتقنها:\n- تقنية تحليل جديدة\n- أداة برمجية مفيدة\n- منهجية عمل متقدمة\n- طريقة تقطير معرفة\n\nاشرح المهارة بالتفصيل وكيف ستستخدمها. أعطِ مثال عملي.', result='خطأ: table episodes has no column named task_type', status='error', model_used='deepseek-r1', elapsed_seconds=148.81, tokens_used=0, timestamp='2026-03-20T11:55:00.582703')

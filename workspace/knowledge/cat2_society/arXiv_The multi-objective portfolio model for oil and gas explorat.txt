@@ -1,0 +1,5 @@
+Title: The multi-objective portfolio model for oil and gas exploration drilling projects selection and its operator-enhanced NSGA-II based solution
+Source: arXiv
+Date: 2026-03-20T03:17:07.665729
+
+Drilling investment is pivotal to operational planning in oil and gas (O\&G) exploration. Conventional deployment relies heavily on fragmented expert assessments of geological and economic factors, with limited integration ability of information. As the tool of portfolio show strong potential for mitigating uncertainty and selecting superior drilling plans, this study develops a multi-objective mean-variance portfolio model that accounts for geological-parameter uncertainty, enabling an effectiv

@@ -1,0 +1,5 @@
+Title: Evaluating LLM-Generated Lessons from the Language Learning Students' Perspective: A Short Case Study on Duolingo
+Source: arXiv
+Date: 2026-03-20T03:16:53.837811
+
+Popular language learning applications such as Duolingo use large language models (LLMs) to generate lessons for its users. Most lessons focus on general real-world scenarios such as greetings, ordering food, or asking directions, with limited support for profession-specific contexts. This gap can hinder learners from achieving professional-level fluency, which we define as the ability to communicate comfortably various work-related and domain-specific information in the target language. We surv

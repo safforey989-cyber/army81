@@ -2,19 +2,19 @@
   "type": "strategy",
   "task": "ضع خطة 90 يوماً لبناء شركة AI ناشئة بميزانية 10000$",
   "agent1": {
-    "id": "A40",
-    "model": "gpt4o-mini",
-    "score": 517
+    "id": "A97",
+    "model": "gemini-flash",
+    "score": 442
   },
   "agent2": {
-    "id": "A20",
-    "model": "llama-70b",
-    "score": 478
+    "id": "A89",
+    "model": "deepseek-r1",
+    "score": 440
   },
-  "winner": "A40",
+  "winner": "A97",
   "improved": true,
-  "improvement_pct": 8.2,
+  "improvement_pct": 0.5,
   "knowledge_transferred": true,
   "cycle": 24,
-  "timestamp": "2026-03-19T11:47:54.188087"
+  "timestamp": "2026-03-20T06:56:53.540658"
 }

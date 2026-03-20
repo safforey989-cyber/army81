@@ -1,0 +1,5 @@
+Title: Constitutive vs. Corrective: A Causal Taxonomy of Human Runtime Involvement in AI Systems
+Source: arXiv
+Date: 2026-03-20T04:14:07.367873
+
+As AI systems increasingly permeate high-stakes decision-making, the terminology regarding human involvement - Human-in-the-Loop (HITL), Human-on-the-Loop (HOTL), and Human Oversight - has become vexingly ambiguous. This ambiguity complicates interdisciplinary collaboration between computer science, law, philosophy, psychology, and sociology and can lead to regulatory uncertainty. We propose a clarification grounded in causal structure, focused on human involvement during the runtime of AI syste

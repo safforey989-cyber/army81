@@ -1,0 +1,5 @@
+Title: On the $S$-version of some special elements in commutative rings
+Source: arXiv
+Date: 2026-03-20T03:17:14.501880
+
+In this paper, we introduce and study the $S$-versions of several fundamental elements in commutative rings. Specifically, for a commutative ring $R$ with identity and a multiplicative subset $S$, we define and investigate the notions of $S$-invertible, $S$-idempotent, $S$-von Neumann regular, and $S$-$π$-regular elements. We establish their basic properties, interrelations, and structural inclusions, and use them to characterize classes of rings. Special attention is given to the uniform $S$-co

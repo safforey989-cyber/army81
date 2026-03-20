@@ -1,0 +1,5 @@
+Title: MultihopSpatial: Multi-hop Compositional Spatial Reasoning Benchmark for Vision-Language Model
+Source: arXiv
+Date: 2026-03-20T03:17:04.311711
+
+Spatial reasoning is foundational for Vision-Language Models (VLMs), particularly when deployed as Vision-Language-Action (VLA) agents in physical environments. However, existing benchmarks predominantly focus on elementary, single-hop relations, neglecting the multi-hop compositional reasoning and precise visual grounding essential for real-world scenarios. To address this, we introduce MultihopSpatial, offering three key contributions: (1) A comprehensive benchmark designed for multi-hop and c

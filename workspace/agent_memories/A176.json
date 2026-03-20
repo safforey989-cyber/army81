@@ -10,7 +10,9 @@
     "quantum_simulator",
     "frequency_analyzer",
     "gematria_calculator",
-    "sacred_geometry_finder"
+    "sacred_geometry_finder",
+    "skill_A154_4483",
+    "skill_A60_5899"
   ],
   "knowledge_topics": [],
   "performance": {

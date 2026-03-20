@@ -1,0 +1,5 @@
+Title: Analytic Expressions for Quasinormal Modes of a Regular Black Hole Sourced by a Dehnen-Type Halo
+Source: arXiv
+Date: 2026-03-20T03:17:00.790303
+
+Using an expansion beyond the eikonal regime, we derive relatively compact and accurate analytic expressions for the gravitational quasinormal modes of an asymptotically flat black hole supported by a Dehnen-type dark-matter halo. The spacetime admits a simple analytic metric describing a supermassive black hole embedded in a galactic environment, with the lapse function $f(r)=1-\frac{2 M r^{2}}{(r+a)^{3}}.$ The parameter $a$ sets the characteristic scale of the surrounding halo and controls the

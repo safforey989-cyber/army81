@@ -2,19 +2,19 @@
   "type": "quality",
   "task": "حلّل مخاطر الاستثمار في البيتكوين مع أدلة",
   "agent1": {
-    "id": "A43",
-    "model": "gemini-pro",
-    "score": 426
+    "id": "A153",
+    "model": "claude-smart",
+    "score": 388
   },
   "agent2": {
-    "id": "A33",
-    "model": "gemini-pro",
-    "score": 387
+    "id": "A85",
+    "model": "deepseek-r1",
+    "score": 390
   },
-  "winner": "A43",
+  "winner": "A85",
   "improved": true,
-  "improvement_pct": 10.1,
+  "improvement_pct": 0.5,
   "knowledge_transferred": true,
   "cycle": 24,
-  "timestamp": "2026-03-19T12:02:07.911246"
+  "timestamp": "2026-03-20T06:45:56.184374"
 }

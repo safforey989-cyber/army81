@@ -6,10 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Learn the fundamentals of generative AI for real-world applications - AWS x DeepLearning.AI",
-    "6.S191: Introduction to Deep Learning - Massachusetts Institute of Technology",
-    "11-777: MultiModal Machine Learning (Fall 2022) - Carnegie Mellon University",
-    "Generative AI learning path - Google Cloud",
     "CS25: Transformers United V2 - Stanford University",
     "feedback_writer",
     "How Diffusion Models Work - DeepLearning.AI",
@@ -55,7 +51,11 @@
     "Building Systems with the ChatGPT API - DeepLearning.AI",
     "LangChain for LLM Application Development - DeepLearning.AI",
     "research_c15_7959ea21",
-    "research_c24_6e47fb84"
+    "research_c24_6e47fb84",
+    "research_c24_1720c653",
+    "research_c24_343a6498",
+    "research_c24_7d6f469b",
+    "skill_A143_5491"
   ],
   "knowledge_topics": [],
   "performance": {

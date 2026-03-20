@@ -1,0 +1,5 @@
+Title: nostr-profile 0.1.2
+Source: NewsAPI
+Date: 2026-03-20T03:19:33.862399
+
+Nostr profile management for OpenClaw AI agents — publish, read, and update kind 0 metadata

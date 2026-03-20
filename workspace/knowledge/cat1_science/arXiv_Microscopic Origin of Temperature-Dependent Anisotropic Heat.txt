@@ -1,0 +1,5 @@
+Title: Microscopic Origin of Temperature-Dependent Anisotropic Heat Transport in Ultrawide-Bandgap Rutile GeO2
+Source: arXiv
+Date: 2026-03-20T03:16:53.836812
+
+Ultrawide-bandgap rutile GeO2 is emerging as a promising semiconductor for power electronics, where efficient heat dissipation is essential to suppress self-heating and ensure device reliability. However, the temperature dependence and microscopic origin of its anisotropic heat transport have remained experimentally unresolved. Here, temperature-dependent time-domain thermoreflectance measurements combined with first-principles phonon transport calculations are used to quantify the thermal condu

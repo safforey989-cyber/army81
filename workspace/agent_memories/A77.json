@@ -73,7 +73,10 @@
     }
   },
   "skills_learned": [
-    "research_c15_d8388cb6"
+    "skill_A77_4954",
+    "research_c15_d8388cb6",
+    "skill_A134_4591",
+    "research_c24_7959ea21"
   ],
   "collaborations": [],
   "decisions": [],
@@ -234,5 +237,9 @@
   "interaction_count": 6,
   "last_active": "2026-03-18T22:03:08.031389",
   "skills_count": 0,
-  "skills_updated": "2026-03-19T14:56:27.979779"
+  "skills_updated": "2026-03-19T14:56:27.979779",
+  "performance": {
+    "last_improved": "2026-03-20T07:35:54.594897",
+    "improvement_count": 1
+  }
 }

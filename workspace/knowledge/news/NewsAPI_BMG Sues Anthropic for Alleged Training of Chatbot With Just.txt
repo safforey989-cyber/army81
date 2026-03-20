@@ -1,0 +1,5 @@
+Title: BMG Sues Anthropic for Alleged Training of Chatbot With Justin Bieber, Bruno Mars, Rolling Stones Lyrics
+Source: NewsAPI
+Date: 2026-03-20T01:31:29.888518
+
+BMG claims Anthropic used lyrics from artists including Justin Bieber, Bruno Mars, Ariana Grande, and the Rolling Stones to train its Claude chatbot.
