@@ -1,4 +1,4 @@
-﻿"""
+"""
 Army81 Gateway — FastAPI
 نقطة الدخول الوحيدة للنظام
 v1.3.0 — Phase 3: /workflow endpoint + 40 agents
@@ -21,7 +21,7 @@ load_dotenv()
 
 from core.base_agent import BaseAgent, load_agent_from_json
 from router.smart_router import SmartRouter
-from tools.web_search import web_search
+from tools.web_search import search_web as web_search
 try:
     from tools.news_fetcher import fetch_news
 except ImportError:
@@ -1829,5 +1829,6 @@ async def run_unified_cycle():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8181, log_level="info")
+
 
 
