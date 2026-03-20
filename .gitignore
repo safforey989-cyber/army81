@@ -31,6 +31,10 @@ workspace/firestore_local/
 workspace/monitor/
 workspace/lessons/
 workspace/auto_prompt_optimizer/
+workspace/episodic_memory.db
+workspace/memory_operations.json
+workspace/skillbank/
+workspace/token_economy.json
 
 # السجلات
 logs/
