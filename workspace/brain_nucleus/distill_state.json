@@ -1,15 +1,15 @@
 {
-  "distill_count": 94,
+  "distill_count": 110,
   "domains_trained": [
-    "science",
-    "creative",
-    "strategy",
-    "security",
-    "arabic",
     "financial",
+    "arabic",
+    "security",
     "reasoning",
+    "coding",
     "medical",
-    "coding"
+    "strategy",
+    "science",
+    "creative"
   ],
-  "last_updated": "2026-03-20T10:27:56.458983"
+  "last_updated": "2026-03-20T13:52:59.991904"
 }
