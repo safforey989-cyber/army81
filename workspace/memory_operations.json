@@ -5218,14 +5218,15 @@
   "A105_retrieve": {
     "agent_id": "A105",
     "type": "retrieve",
-    "usage_count": 2,
-    "total_reward": 1.0,
+    "usage_count": 3,
+    "total_reward": 1.5,
     "avg_reward": 0.5,
     "recent_rewards": [
       0.5,
+      0.5,
       0.5
     ],
-    "last_used": "2026-03-20T08:56:58.242695"
+    "last_used": "2026-03-20T14:57:19.701980"
   },
   "A136_retrieve": {
     "agent_id": "A136",
