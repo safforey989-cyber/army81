@@ -27,6 +27,10 @@ workspace/chroma_db/
 
 # ملفات الـ workspace المؤقتة
 workspace/test_*.txt
+workspace/firestore_local/
+workspace/monitor/
+workspace/lessons/
+workspace/auto_prompt_optimizer/
 
 # السجلات
 logs/
