@@ -76,6 +76,16 @@ class _EpisodicMemory:
                     created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
+            # Migration: إضافة أعمدة جديدة إذا لم تكن موجودة
+            existing = {row[1] for row in conn.execute("PRAGMA table_info(episodes)").fetchall()}
+            if "task_type" not in existing:
+                conn.execute("ALTER TABLE episodes ADD COLUMN task_type TEXT DEFAULT 'general'")
+            if "teacher_example" not in existing:
+                conn.execute("ALTER TABLE episodes ADD COLUMN teacher_example BOOLEAN DEFAULT 0")
+            if "tokens" not in existing:
+                conn.execute("ALTER TABLE episodes ADD COLUMN tokens INTEGER DEFAULT 0")
+            if "model_used" not in existing:
+                conn.execute("ALTER TABLE episodes ADD COLUMN model_used TEXT DEFAULT ''")
             conn.commit()
 
     def record(self, agent_id: str, task_summary: str, result_summary: str,

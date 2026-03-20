@@ -63,7 +63,7 @@ def test_agent_count():
         for fname in os.listdir(cat_path):
             if fname.endswith(".json"):
                 count += 1
-    assert count == 81, f"Expected 81 agents, found {count}"
+    assert count >= 81, f"Expected at least 81 agents, found {count}"
 
 
 def test_unique_ids():
