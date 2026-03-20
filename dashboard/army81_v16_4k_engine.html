@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Army81 4K Advanced Engine Control Panel V3 (Omniscient)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-color: #030613;
+            --panel-bg: rgba(6, 11, 25, 0.75);
+            --border-color: rgba(0, 255, 255, 0.2);
+            --text-main: #e0e0e0;
+            --accent-cyan: #00FFFF;
+            --accent-green: #39FF14;
+            --accent-gold: #FFD700;
+            --accent-red: #FF3366;
+            --accent-purple: #BF00FF;
+            --accent-orange: #FF8800;
+            --glass-blur: blur(28px);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: 'Cairo', sans-serif; overflow: hidden; width: 100vw; height: 100vh; }
+        #canvas-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+
+        .glass-panel {
+            background: var(--panel-bg); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--border-color); border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 255, 255, 0.05);
+            position: absolute; z-index: 10; pointer-events: auto; transition: all 0.3s ease;
+        }
+
+        /* Top Header */
+        header { top: 15px; left: 50%; transform: translateX(-50%); width: 96%; height: 65px; display: flex; align-items: center; justify-content: space-between; padding: 0 25px; }
+        .logo-area { display: flex; align-items: center; gap: 15px; }
+        .logo-text { font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 26px; letter-spacing: 2px; background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 20px rgba(0, 255, 255, 0.4); }
+        .status-badge { display: flex; align-items: center; gap: 8px; background: rgba(57, 255, 20, 0.1); border: 1px solid rgba(57, 255, 20, 0.3); padding: 5px 14px; border-radius: 20px; font-size: 11px; color: var(--accent-green); font-weight: bold; }
+        .pulse-dot { width: 8px; height: 8px; background-color: var(--accent-green); border-radius: 50%; box-shadow: 0 0 10px var(--accent-green); animation: pulse 1.5s infinite alternate; }
+        @keyframes pulse { 0% { transform: scale(0.8); opacity: 0.7; } 100% { transform: scale(1.2); opacity: 1; box-shadow: 0 0 20px var(--accent-green); } }
+        
+        .system-stats { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+        .stat-item { display: flex; flex-direction: column; align-items: center; gap: 2px; background: rgba(0,0,0,0.3); padding: 4px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); }
+        .stat-value { font-family: 'Orbitron', sans-serif; font-size: 16px; font-weight: 700; color: var(--accent-gold); text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+        .stat-label { font-size: 10px; color: #8892b0; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* Omni Grid Overlay */
+        #omni-grid {
+            position: fixed; inset: 0; z-index: 500; background: rgba(3, 6, 19, 0.95); backdrop-filter: blur(40px);
+            display: none; padding: 25px; flex-direction: column; opacity: 0; transition: opacity 0.3s;
+        }
+        #omni-grid.active { display: flex; opacity: 1; }
+        .omni-hdr { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--accent-cyan); padding-bottom: 15px; margin-bottom: 20px; }
+        .omni-title { font-family: 'Orbitron'; font-size: 24px; color: var(--accent-cyan); text-shadow: 0 0 20px var(--accent-cyan); }
+        .omni-close { background: none; border: 1px solid var(--accent-red); color: var(--accent-red); font-size: 16px; padding: 5px 15px; border-radius: 8px; cursor: pointer; transition: all 0.3s; }
+        .omni-close:hover { background: var(--accent-red); color: #fff; box-shadow: 0 0 15px var(--accent-red); }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; overflow-y: auto; flex-grow: 1; padding-right: 10px; }
+        .grid-container::-webkit-scrollbar { width: 6px; } .grid-container::-webkit-scrollbar-thumb { background: var(--accent-purple); border-radius: 6px; }
+        
+        .omni-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px; transition: 0.2s; position: relative; overflow: hidden; }
+        .omni-card:hover { border-color: var(--accent-cyan); background: rgba(0,255,255,0.05); transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,255,255,0.2); }
+        .omni-card::before { content: ""; position: absolute; left: 0; top: 0; width: 4px; height: 100%; background: var(--accent-purple); }
+        .omni-c-hdr { display: flex; justify-content: space-between; align-items: center; }
+        .omni-c-id { font-family: 'Orbitron'; font-size: 14px; font-weight: bold; color: var(--accent-gold); }
+        .omni-c-cat { font-size: 10px; color: var(--accent-cyan); background: rgba(0,255,255,0.1); padding: 2px 6px; border-radius: 4px; }
+        .omni-c-act { font-size: 11px; color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .omni-c-tools { display: flex; flex-wrap: wrap; gap: 4px; }
+        .tool-tag { font-size: 9px; padding: 2px 5px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: #aaa; }
+        .omni-c-lvl { display: flex; justify-content: space-between; font-size: 10px; color: #888; margin-top: auto; }
+
+        /* Left Dashboard (Dev Terminal) */
+        #dev-terminal { top: 95px; left: 2%; width: 450px; bottom: 80px; display: flex; flex-direction: column; padding: 15px; }
+        .terminal-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1px solid var(--border-color); margin-bottom: 10px; }
+        .terminal-title { font-family: 'Orbitron', sans-serif; color: var(--accent-purple); font-size: 14px; font-weight: 700; }
+        .connection-indicator { font-size: 10px; color: var(--accent-green); }
+
+        #terminal-output {
+            flex-grow: 1; background: rgba(0,0,0,0.5); border-radius: 6px; border: 1px inset rgba(255,255,255,0.05);
+            padding: 12px; overflow-y: auto; font-family: 'Consolas', 'Courier New', monospace; font-size: 12px;
+            color: #d4d4d4; display: flex; flex-direction: column; gap: 8px; scroll-behavior: smooth;
+        }
+        #terminal-output::-webkit-scrollbar { width: 4px; } #terminal-output::-webkit-scrollbar-thumb { background: #555; border-radius: 4px; }
+        .log-entry { margin-bottom: 5px; line-height: 1.4; word-wrap: break-word; border-bottom: 1px dashed rgba(255,255,255,0.05); padding-bottom: 5px; }
+        .log-entry.system { color: var(--accent-cyan); } .log-entry.error { color: var(--accent-red); } .log-entry.user { color: var(--accent-gold); } .log-entry.agent { color: var(--accent-green); }
+
+        .terminal-input-area { margin-top: 15px; display: flex; flex-direction: column; gap: 10px; }
+        .input-wrapper { position: relative; display: flex; align-items: center; }
+        .cmd-prefix { position: absolute; left: 12px; color: var(--accent-purple); font-family: 'Orbitron', sans-serif; font-size: 14px; font-weight: bold; pointer-events: none; }
+        .terminal-input {
+            width: 100%; background: rgba(0, 0, 0, 0.6); border: 1px solid var(--border-color); border-radius: 8px;
+            padding: 12px 15px 12px 35px; color: #fff; font-family: 'Cairo', sans-serif; font-size: 13px; outline: none; transition: border 0.3s, box-shadow 0.3s;
+        }
+        .terminal-input:focus { border-color: var(--accent-purple); box-shadow: 0 0 15px rgba(191, 0, 255, 0.3); }
+
+        .terminal-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+        button.action-btn {
+            flex: 1; background: rgba(0, 255, 255, 0.08); border: 1px solid var(--border-color); color: var(--accent-cyan);
+            border-radius: 6px; padding: 8px 5px; cursor: pointer; font-family: 'Cairo', sans-serif; font-weight: bold; font-size: 11px;
+            transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 6px; min-width: 130px;
+        }
+        button.action-btn:hover { background: var(--accent-cyan); color: #000; box-shadow: 0 0 15px rgba(0, 255, 255, 0.4); }
+        button.action-btn.dev-mode { border-color: rgba(191, 0, 255, 0.4); color: var(--accent-purple); }
+        button.action-btn.dev-mode:hover { background: var(--accent-purple); color: #fff; box-shadow: 0 0 15px rgba(191, 0, 255, 0.5); }
+        button.action-btn.omni { border-color: rgba(255, 215, 0, 0.4); color: var(--accent-gold); }
+        button.action-btn.omni:hover { background: var(--accent-gold); color: #000; box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); }
+
+        /* Bottom Toolbar */
+        #bottom-toolbar {
+            position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%);
+            display: flex; gap: 10px; padding: 8px 15px; border-radius: 12px; z-index: 10; flex-wrap: wrap; justify-content: center;
+        }
+        .tool-btn {
+            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #ccc;
+            padding: 6px 15px; border-radius: 8px; font-family: 'Cairo'; font-size: 12px; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; gap: 5px;
+        }
+        .tool-btn:hover { background: rgba(255,255,255,0.15); color: #fff; border-color: #fff; transform: translateY(-2px); }
+        .tool-btn.swarm-start { color: var(--accent-cyan); border-color: rgba(0,255,255,0.3); }
+        .tool-btn.swarm-start:hover { background: var(--accent-cyan); color: #000; box-shadow: 0 0 15px var(--accent-cyan); }
+        .tool-btn.swarm-stop { color: var(--accent-red); border-color: rgba(255,51,102,0.3); }
+        .tool-btn.swarm-stop:hover { background: var(--accent-red); color: #000; box-shadow: 0 0 15px var(--accent-red); }
+        .tool-btn.active { background: rgba(255,215,0,0.2); border-color: var(--accent-gold); color: var(--accent-gold); }
+
+        /* Right Panel (Omniscient Multi-tab) */
+        #right-panel { top: 95px; right: 2%; width: 380px; bottom: 80px; display: flex; flex-direction: column; overflow: hidden; }
+        .panel-tabs { display: flex; border-bottom: 1px solid rgba(0,255,255,0.2); flex-wrap: wrap; }
+        .tab-btn {
+            flex: 1 1 20%; padding: 10px 0; text-align: center; cursor: pointer; font-size: 11px; font-weight: bold; color: #888;
+            transition: all 0.3s; border-bottom: 2px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 4px;
+        }
+        .tab-btn i { font-size: 14px; }
+        .tab-btn.active { color: var(--accent-cyan); border-bottom-color: var(--accent-cyan); background: rgba(0,255,255,0.05); }
+        .tab-content { flex: 1; overflow-y: auto; padding: 15px; display: none; }
+        .tab-content.active { display: block; }
+        .tab-content::-webkit-scrollbar { width: 4px; } .tab-content::-webkit-scrollbar-thumb { background: var(--accent-cyan); border-radius: 4px; }
+
+        /* Tab: Network / Radar */
+        .radar-box { width: 100%; aspect-ratio: 1; background: radial-gradient(circle at center, rgba(0,255,255,0.05) 0%, transparent 70%); border: 1px solid rgba(0,255,255,0.2); border-radius: 50%; position: relative; margin-bottom: 20px; overflow: hidden; }
+        .radar-scan { position: absolute; top: 50%; left: 50%; width: 50%; height: 2px; background: linear-gradient(90deg, transparent, var(--accent-green)); transform-origin: left center; animation: scan 4s linear infinite; }
+        @keyframes scan { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        .agent-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; padding: 10px; display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; transition: all 0.2s; cursor: pointer; }
+        .agent-card:hover { border-color: var(--accent-cyan); background: rgba(0, 255, 255, 0.05); transform: translateX(-5px); }
+        .agent-hdr { display: flex; justify-content: space-between; align-items: center; }
+        .agent-id { font-family: 'Orbitron', sans-serif; font-size: 11px; color: var(--accent-gold); font-weight: bold; }
+        .agent-activity { font-size: 10px; color: #ddd; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 150px; }
+        .progress-container { width: 100%; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden; margin-top: 4px; }
+        .progress-bar { height: 100%; background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan)); width: 0%; transition: width 0.5s ease; }
+
+        /* Tab: Neural & MCP */
+        .item-row { background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 2px solid var(--accent-cyan); }
+        .item-key { font-size: 11px; color: #ccc; }
+        .item-val { font-size: 11px; font-weight: bold; color: var(--accent-gold); font-family: 'Orbitron'; }
+        
+        /* Agent Info Overlay */
+        #agent-info-overlay {
+            position: absolute; bottom: 80px; right: 400px; width: 300px; padding: 15px; display: none;
+            background: rgba(10, 5, 25, 0.85); border-left: 3px solid var(--accent-gold); border-radius:0 8px 8px 0;
+        }
+        #agent-info-overlay h3 { font-family: 'Orbitron'; font-size: 16px; margin-bottom: 5px; color: var(--accent-gold); }
+        #agent-info-overlay .info-line { font-size: 11px; color: #ccc; margin-bottom: 6px; display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 4px; }
+        #agent-info-overlay .info-line span:last-child { color: var(--accent-cyan); font-weight: bold; }
+        #agent-info-overlay .tag { display: inline-block; padding: 3px 8px; background: rgba(0,255,255,0.1); border: 1px solid rgba(0,255,255,0.2); border-radius: 4px; font-size: 9px; margin: 2px; color: var(--accent-cyan); }
+
+        #interact-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 5; pointer-events: auto; }
+        #tooltip { position: absolute; background: rgba(0,0,0,0.8); border: 1px solid var(--accent-cyan); color: white; padding: 8px 12px; border-radius: 6px; font-size: 11px; pointer-events: none; opacity: 0; transition: opacity 0.2s; z-index: 100; box-shadow: 0 0 15px rgba(0,255,255,0.3); white-space: pre-wrap; direction: rtl; }
+        
+        /* Loader */
+        #loader { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #000; z-index: 9999; display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--accent-cyan); transition: opacity 1s; }
+        .loader-ring { width: 150px; height: 150px; border: 3px solid transparent; border-top-color: var(--accent-cyan); border-radius: 50%; animation: spin 2s linear infinite; margin-bottom: 20px; }
+        .loader-ring::before { content: ""; position: absolute; top: 10px; left: 10px; right: 10px; bottom: 10px; border: 3px solid transparent; border-top-color: var(--accent-purple); border-radius: 50%; animation: spin 3s linear infinite reverse; }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <h2 style="font-family:'Orbitron'; font-weight:900; letter-spacing: 5px;">ARMY81 ENGINE V3 (OMNISCIENT)</h2>
+        <p style="margin-top: 10px; color: #888;">تهيئة مصفوفة النواة والمعلومات الشاملة (4K)...</p>
+    </div>
+
+    <div id="canvas-container"></div>
+    <div id="interact-overlay"></div>
+    <div id="tooltip"></div>
+
+    <!-- Agent Specific Info Modal -->
+    <div id="agent-info-overlay" class="glass-panel">
+        <h3 id="ai-name">A01 (قائد)</h3>
+        <div class="info-line"><span>الفئة:</span> <span id="ai-cat">القيادة</span></div>
+        <div class="info-line"><span>الحالة:</span> <span id="ai-state" style="color:var(--accent-green)">نشط</span></div>
+        <div class="info-line" style="flex-direction: column; align-items: flex-start;">
+            <span style="margin-bottom: 4px;">النشاط العصبوني الآني:</span>
+            <span id="ai-act" style="color:#ddd; font-weight: normal; font-size: 10px; line-height: 1.4;">يحلل المعطيات الواردة من MCP</span>
+        </div>
+        <div class="info-line" style="border:none;flex-direction: column; align-items: unset;">
+            <span style="margin-bottom: 4px;">مستوى التطور (Evolution):</span>
+            <div class="progress-container"><div id="ai-evo" class="progress-bar" style="width: 75%; background: var(--accent-gold);"></div></div>
+        </div>
+        <div style="margin-top: 8px; margin-bottom: 6px; font-size: 10px; color: #888;">الأدوات المتاحة:</div>
+        <div id="ai-tools"></div>
+    </div>
+
+    <!-- MAIN OMNI GRID OVERLAY -->
+    <div id="omni-grid">
+        <div class="omni-hdr">
+            <div class="omni-title"><i class="fa-solid fa-border-all"></i> الشاشة الشاملة لوكلاء النواة (OMNI GRID)</div>
+            <button class="omni-close" onclick="toggleOmniGrid()"><i class="fa-solid fa-xmark"></i> إغلاق</button>
+        </div>
+        <div class="grid-container" id="omni-agents-grid">
+            <!-- Grid population handled by JS -->
+        </div>
+    </div>
+
+    <header class="glass-panel">
+        <div class="logo-area">
+            <div class="logo-text">ARMY81 <span style="font-size:12px; font-weight:400; color:#fff;">v16 Omniscient</span></div>
+            <div class="status-badge"><div class="pulse-dot"></div> OMNI NET</div>
+        </div>
+        <div class="system-stats">
+            <div class="stat-item"><span class="stat-value" id="stat-agents">0</span><span class="stat-label">عقد نشطة</span></div>
+            <div class="stat-item"><span class="stat-value" id="stat-memory" style="color:var(--accent-cyan);">0 MB</span><span class="stat-label">حجم الذاكرة</span></div>
+            <div class="stat-item"><span class="stat-value" id="stat-mcp" style="color:var(--accent-purple);">0</span><span class="stat-label">خوادم MCP</span></div>
+            <div class="stat-item"><span class="stat-value" id="stat-neural" style="color:var(--accent-orange);">0</span><span class="stat-label">إشارات عصبية</span></div>
+            <div class="stat-item"><span class="stat-value" id="stat-fps" style="color:var(--accent-green);">60</span><span class="stat-label">FPS (4K)</span></div>
+        </div>
+    </header>
+
+    <div id="dev-terminal" class="glass-panel">
+        <div class="terminal-header">
+            <span class="terminal-title"><i class="fa-solid fa-terminal"></i> الغرفة العالية والتطوير</span>
+            <span class="connection-indicator"><i class="fa-solid fa-wifi"></i> متصل بـ Gateway</span>
+        </div>
+        <div id="terminal-output">
+            <div class="log-entry system">[SYSTEM] Army81 Engine Control Panel V3 Omniscient Initialized.</div>
+            <div class="log-entry system">[SYSTEM] Scanning all node layers, neural links, and MCP connections...</div>
+        </div>
+        <div class="terminal-input-area">
+            <div class="input-wrapper">
+                <span class="cmd-prefix">></span>
+                <input type="text" id="dev-input" class="terminal-input" placeholder="اكتب أمرك هنا (مثال: عدل الكود لاضافة مهام)..." autocomplete="off">
+            </div>
+            <div class="terminal-actions">
+                <button class="action-btn" onclick="executeCommand()"><i class="fa-solid fa-paper-plane"></i> إرسال مهمة</button>
+                <button class="action-btn dev-mode" onclick="executeDevCommand()"><i class="fa-solid fa-code"></i> توجيه للتطوير الهندسي</button>
+                <button class="action-btn omni" onclick="toggleOmniGrid()"><i class="fa-solid fa-eye"></i> فتح الرؤية الشاملة</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="right-panel" class="glass-panel">
+        <div class="panel-tabs">
+            <div class="tab-btn active" onclick="switchTab('tab-agents', this)"><i class="fa-solid fa-network-wired"></i> الشبكة</div>
+            <div class="tab-btn" onclick="switchTab('tab-neural', this)"><i class="fa-solid fa-brain"></i> العصبونية</div>
+            <div class="tab-btn" onclick="switchTab('tab-training', this)"><i class="fa-solid fa-dumbbell"></i> التدريب</div>
+            <div class="tab-btn" onclick="switchTab('tab-mcp', this)"><i class="fa-solid fa-server"></i> MCP</div>
+        </div>
+        
+        <div id="tab-agents" class="tab-content active">
+            <div class="radar-box"><div class="radar-scan"></div></div>
+            <div style="font-size:12px; color:var(--accent-cyan); margin-bottom:10px;"><i class="fa-solid fa-bolt"></i> وكلاء النواة ذوو النشاط المرتفع</div>
+            <div class="agent-list" id="active-agents-container"></div>
+        </div>
+
+        <div id="tab-neural" class="tab-content">
+            <div style="font-size:12px; color:var(--accent-cyan); margin-bottom:15px;"><i class="fa-solid fa-project-diagram"></i> إشارات الشبكة العصبية</div>
+            <div class="data-row" style="border:none;"><div class="data-label">صحة الشبكة</div><div class="data-value epic" id="neural-health">ممتازة (100%)</div></div>
+            <div class="data-row" style="border:none;"><div class="data-label">التوصيلات العصبية المتزامنة</div><div class="data-value" id="neural-edges">0</div></div>
+            <hr style="border:1px solid rgba(0,255,255,0.1); margin:10px 0;">
+            <div style="font-size:10px; color:#888; margin-bottom:10px;">آخر النبضات العصبية (Signals)</div>
+            <div id="neural-signals-container">
+                <div class="item-row"><span class="item-key">A01 -> A14</span><span class="item-val">نبضة تزامن</span></div>
+            </div>
+        </div>
+
+        <div id="tab-training" class="tab-content">
+            <div style="font-size:12px; color:var(--accent-cyan); margin-bottom:15px;"><i class="fa-solid fa-trophy"></i> لوحة متصدرين التدريب (Leaderboard)</div>
+            <div id="leaderboard-container">
+                <div class="item-row"><span class="item-key">1. A01 (قائد)</span><span class="item-val">Level 99</span></div>
+                <div class="item-row"><span class="item-key">2. A14 (هندسة)</span><span class="item-val">Level 95</span></div>
+                <div class="item-row"><span class="item-key">3. A22 (أدوات)</span><span class="item-val">Level 92</span></div>
+            </div>
+            <div style="margin-top: 15px;">
+                <button class="action-btn dev-mode" style="width:100%;" onclick="triggerTraining()"><i class="fa-solid fa-bolt"></i> تشغيل دورة تدريب جديدة</button>
+            </div>
+        </div>
+
+        <div id="tab-mcp" class="tab-content">
+            <div style="font-size:12px; color:var(--accent-cyan); margin-bottom:15px;"><i class="fa-solid fa-plug"></i> خوادم MCP المتصلة</div>
+            <div class="data-row" style="border:none;"><div class="data-label">حالة نظام MCP</div><div class="data-value high" id="mcp-status-val">متصل</div></div>
+            <div class="data-row" style="border:none;"><div class="data-label">الخوادم النشطة</div><div class="data-value" id="mcp-total">0</div></div>
+            <hr style="border:1px solid rgba(0,255,255,0.1); margin:10px 0;">
+            <div style="font-size:10px; color:#888; margin-bottom:10px;">قائمة الخوادم</div>
+            <div id="mcp-servers-container">
+                <div class="item-row"><span class="item-key">GitHub MCP</span><span class="item-val" style="color:#39FF14">Active</span></div>
+                <div class="item-row"><span class="item-key">Local FS MCP</span><span class="item-val" style="color:#39FF14">Active</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom View Controls Toolbar -->
+    <div id="bottom-toolbar" class="glass-panel">
+        <button class="tool-btn swarm-start" onclick="toggleSwarm(true)"><i class="fa-solid fa-rocket"></i> بدء السرب الكلي</button>
+        <button class="tool-btn swarm-stop" onclick="toggleSwarm(false)"><i class="fa-solid fa-stop"></i> إيقاف السرب</button>
+        <div style="width: 1px; height: 20px; background: rgba(255,255,255,0.2); margin: 0 5px;"></div>
+        <button class="tool-btn" id="btn-view-core" onclick="changeView('core')"><i class="fa-solid fa-bullseye"></i> النواة</button>
+        <button class="tool-btn" id="btn-view-top" onclick="changeView('top')"><i class="fa-solid fa-map"></i> علوي</button>
+        <button class="tool-btn active" id="btn-view-cinema" onclick="changeView('cinema')"><i class="fa-solid fa-film"></i> سينمائي</button>
+        <button class="tool-btn" style="border-color:var(--accent-gold); color:var(--accent-gold);" onclick="triggerAwakening()"><i class="fa-solid fa-sun"></i> تحفيز الوعي</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+
+    <script>
+    /* =========================================================================
+       ARMY81 V16: ADVANCED 4K 3D ENGINE & OMNISCIENT CONTROL PANEL
+       ========================================================================= */
+    const API_URL = 'http://localhost:8181';
+    let apiConnected = false, autoPolling = null;
+    let viewMode = 'cinema';
+    let globalAgentsCache = [];
+
+    // Tabs
+    function switchTab(tabId, elem) {
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        elem.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+    }
+
+    function toggleOmniGrid() {
+        const grid = document.getElementById('omni-grid');
+        grid.classList.toggle('active');
+        if(grid.classList.contains('active')) {
+            populateOmniGrid();
+        }
+    }
+
+    // --- 3D ENGINE ---
+    const container = document.getElementById('canvas-container');
+    const PIXEL_RATIO = window.devicePixelRatio || 1; 
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+    renderer.setPixelRatio(Math.min(PIXEL_RATIO, 2)); renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.4;
+    container.appendChild(renderer.domElement);
+
+    const scene = new THREE.Scene(); scene.fog = new THREE.FogExp2(0x030613, 0.0035);
+    const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 1000); camera.position.set(0, 40, 100);
+
+    const overlay = document.getElementById('interact-overlay');
+    const controls = new THREE.OrbitControls(camera, overlay);
+    controls.enableDamping = true; controls.dampingFactor = 0.05; controls.autoRotate = true; controls.autoRotateSpeed = 0.5; controls.maxDistance = 300; controls.minDistance = 5;
+
+    const renderScene = new THREE.RenderPass(scene, camera);
+    const bloomPass = new THREE.UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), 1.8, 0.6, 0.1);
+    const composer = new THREE.EffectComposer(renderer); composer.addPass(renderScene); composer.addPass(bloomPass);
+
+    scene.add(new THREE.AmbientLight(0x222233, 0.6));
+    const dirLight = new THREE.DirectionalLight(0xffffff, 1.0); dirLight.position.set(100, 200, 50); scene.add(dirLight);
+    const pointLight = new THREE.PointLight(0x00FFFF, 3.0, 300); pointLight.position.set(0, 20, 0); scene.add(pointLight);
+
+    const coreGroup = new THREE.Group(); scene.add(coreGroup);
+    const coreMat = new THREE.MeshPhysicalMaterial({ color: 0x00FFFF, emissive: 0x0088ff, emissiveIntensity: 0.6, metalness: 0.9, roughness: 0.1, transparent: true, opacity: 0.85, wireframe: true });
+    const coreInner = new THREE.Mesh(new THREE.IcosahedronGeometry(7.5, 3), new THREE.MeshStandardMaterial({ color: 0xBF00FF, emissive: 0xBF00FF, emissiveIntensity: 1.2 }));
+    const core = new THREE.Mesh(new THREE.IcosahedronGeometry(8.5, 4), coreMat);
+    coreGroup.add(core); coreGroup.add(coreInner);
+
+    const ringParticles = new THREE.BufferGeometry(); const ringPos = new Float32Array(3000 * 3);
+    for(let i=0; i<3000; i++){
+        const a = Math.random() * Math.PI * 2, r = 16 + Math.random() * 12;
+        ringPos[i*3] = Math.cos(a) * r; ringPos[i*3+1] = (Math.random()-0.5)*5; ringPos[i*3+2] = Math.sin(a) * r;
+    }
+    ringParticles.setAttribute('position', new THREE.BufferAttribute(ringPos, 3));
+    const ringPoints = new THREE.Points(ringParticles, new THREE.PointsMaterial({ color: 0x39FF14, size: 0.15, transparent: true, opacity: 0.8, blending: THREE.AdditiveBlending }));
+    coreGroup.add(ringPoints);
+
+    const agentsData = []; const agentMeshes = []; const linesGroup = new THREE.Group(); scene.add(linesGroup);
+    const catMap = { 'العلوم': 0x00FFFF, 'المجتمع': 0x39FF14, 'الهندسة والتطوير': 0xFF3366, 'القيادة': 0xFFD700, 'الإدارة': 0xBF00FF, 'السلوك': 0xFF8800, 'الأدوات': 0x44aaff };
+    const catNames = Object.keys(catMap); const catColors = Object.values(catMap);
+    const mockTools = ['web_search', 'run_code', 'read_file', 'analyze_data', 'brain_nucleus', 'chroma_db', 'semantic_match'];
+    const numAgents = 81;
+
+    for(let i=0; i < numAgents; i++) {
+        const phi = Math.acos(-1 + (2 * i) / numAgents); const theta = Math.sqrt(numAgents * Math.PI) * phi; const radius = 35 + Math.random() * 25;
+        const x = radius * Math.cos(theta) * Math.sin(phi); const y = radius * Math.sin(theta) * Math.sin(phi); const z = radius * Math.cos(phi);
+        const cidx = i % catColors.length; const color = catColors[cidx];
+        
+        const agentMesh = new THREE.Mesh(new THREE.IcosahedronGeometry(1.2, 2), new THREE.MeshStandardMaterial({color: color, emissive: color, emissiveIntensity: 0.5, metalness: 0.8, roughness: 0.2}));
+        agentMesh.position.set(x, y, z); scene.add(agentMesh); agentMeshes.push(agentMesh);
+        
+        // Random tools
+        const agTools = []; for(let t=0; t<3+Math.floor(Math.random()*2); t++) { agTools.push(mockTools[Math.floor(Math.random()*mockTools.length)]); }
+
+        agentsData.push({
+            id: `A${(i+1).toString().padStart(2, '0')}`, name: `وكيل ${i+1}`, category: catNames[cidx],
+            mesh: agentMesh, basePos: new THREE.Vector3(x, y, z), color: color, level: 30 + Math.floor(Math.random()*60), tools: [...new Set(agTools)]
+        });
+    }
+
+    for(let i=0; i<200; i++) {
+        const a1 = agentsData[Math.floor(Math.random() * numAgents)], a2 = agentsData[Math.floor(Math.random() * numAgents)];
+        if(a1 !== a2 && a1.basePos.distanceTo(a2.basePos) < 50) {
+            const path = new THREE.QuadraticBezierCurve3(a1.basePos, new THREE.Vector3(0,0,0), a2.basePos);
+            linesGroup.add(new THREE.Mesh(new THREE.TubeGeometry(path, 20, 0.05, 8, false), new THREE.MeshBasicMaterial({color: a1.color, transparent: true, opacity: 0.04, blending: THREE.AdditiveBlending})));
+        }
+    }
+    
+    globalAgentsCache = agentsData; // Base cache
+
+    const raycaster = new THREE.Raycaster(); const mouse = new THREE.Vector2(); let hoveredObject = null;
+    const tooltip = document.getElementById('tooltip'); const infoOverlay = document.getElementById('agent-info-overlay');
+
+    overlay.addEventListener('mousemove', (event) => {
+        mouse.x = (event.clientX / window.innerWidth) * 2 - 1; mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        raycaster.setFromCamera(mouse, camera); const hits = raycaster.intersectObjects(agentMeshes);
+        if (hits.length > 0) {
+            if (hoveredObject !== hits[0].object) {
+                if (hoveredObject) hoveredObject.material.emissiveIntensity = 0.5;
+                hoveredObject = hits[0].object; hoveredObject.material.emissiveIntensity = 2.5;
+                document.body.style.cursor = 'pointer';
+                const agent = agentsData.find(a => a.mesh === hoveredObject);
+                if(agent) { tooltip.innerHTML = `عقدة النواة: ${agent.id}<br>فئة: ${agent.category}`; tooltip.style.opacity = 1; }
+            }
+            tooltip.style.left = (event.clientX + 15) + 'px'; tooltip.style.top = (event.clientY + 15) + 'px';
+        } else {
+            if (hoveredObject) { hoveredObject.material.emissiveIntensity = 0.5; hoveredObject = null; document.body.style.cursor = 'default'; tooltip.style.opacity = 0; }
+        }
+    });
+
+    overlay.addEventListener('click', () => {
+        if(hoveredObject) {
+            const agent = agentsData.find(a => a.mesh === hoveredObject);
+            if(agent) {
+                document.getElementById('ai-name').innerText = `${agent.id} - ${agent.name}`;
+                document.getElementById('ai-cat').innerText = agent.category;
+                document.getElementById('ai-act').innerText = apiConnected ? 'نشاط حي من الشبكة...' : 'نشاط محاكي محلياً...';
+                document.getElementById('ai-evo').style.width = agent.level + '%';
+                infoOverlay.style.borderLeftColor = '#' + agent.color.toString(16).padStart(6, '0');
+                
+                document.getElementById('ai-tools').innerHTML = agent.tools.map(t => `<div class="tag">${t}</div>`).join('');
+                infoOverlay.style.display = 'block';
+                createShockwave(agent.basePos, agent.color);
+            }
+        } else { infoOverlay.style.display = 'none'; }
+    });
+
+    function createShockwave(pos, color) {
+        const sw = new THREE.Mesh(new THREE.RingGeometry(0.5, 1.5, 32), new THREE.MeshBasicMaterial({color: color, transparent: true, opacity: 0.8, side: THREE.DoubleSide, blending: THREE.AdditiveBlending}));
+        sw.position.copy(pos); sw.lookAt(camera.position); scene.add(sw);
+        const start = Date.now();
+        function animSW() {
+            let el = Date.now() - start; if(el > 800) { scene.remove(sw); return; }
+            sw.scale.setScalar(1 + (el/800)*4); sw.material.opacity = 0.8 * (1 - el/800); sw.lookAt(camera.position); requestAnimationFrame(animSW);
+        }
+        animSW();
+    }
+
+    function changeView(mode) {
+        document.querySelectorAll('#bottom-toolbar .tool-btn:not(.swarm-start):not(.swarm-stop)').forEach(b => b.classList.remove('active'));
+        viewMode = mode;
+        if(mode === 'cinema') { document.getElementById('btn-view-cinema').classList.add('active'); controls.autoRotate = true; controls.autoRotateSpeed = 0.5; } 
+        else if(mode === 'top') { document.getElementById('btn-view-top').classList.add('active'); controls.autoRotate = false; camera.position.set(0, 180, 0); controls.target.set(0,0,0); } 
+        else if(mode === 'core') { document.getElementById('btn-view-core').classList.add('active'); controls.autoRotate = false; camera.position.set(0, 10, 30); controls.target.set(0,0,0); }
+    }
+
+    const clock = new THREE.Clock(); let frames = 0;
+    function animate() {
+        requestAnimationFrame(animate); const time = clock.getElapsedTime();
+        coreGroup.rotation.y += 0.005; coreGroup.rotation.z += 0.002; core.scale.setScalar(1 + Math.sin(time * 2) * 0.05);
+        agentMeshes.forEach((m, idx) => { m.position.y = agentsData[idx].basePos.y + Math.sin(time * 2 + idx) * 2; m.rotation.y += 0.01; m.rotation.x += 0.005; });
+        ringPoints.rotation.y -= 0.003; ringPoints.rotation.x = Math.sin(time * 0.5) * 0.2;
+        controls.update(); composer.render(); frames++;
+    }
+    setInterval(() => { document.getElementById('stat-fps').innerText = frames; frames = 0; }, 1000);
+    window.addEventListener('resize', () => { camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight); composer.setSize(window.innerWidth, window.innerHeight); });
+
+    setTimeout(() => { const ld = document.getElementById('loader'); ld.style.opacity = '0'; setTimeout(() => ld.remove(), 1000); animate(); initBackendConnection(); }, 2500);
+
+    /* =========================================================================
+       SYSTEM LOGIC & MASSIVE BACKEND POLLING
+       ========================================================================= */
+    function printLog(msg, type='user') {
+        const out = document.getElementById('terminal-output'); const entry = document.createElement('div'); entry.className = `log-entry ${type}`;
+        let prefix = '[USER]'; if(type==='system') prefix = '⚙️ [SYS]'; if(type==='error') prefix = '❌ [ERR]'; if(type==='agent') prefix = '🧠 [AGENT]';
+        entry.innerText = `${prefix} ${msg}`; out.appendChild(entry); out.scrollTop = out.scrollHeight;
+    }
+
+    async function initBackendConnection() {
+        try {
+            printLog("Attempting connection to http://localhost:8181/health...", "system");
+            const res = await fetch(`${API_URL}/health`); const data = await res.json();
+            if(data.status === 'healthy') {
+                apiConnected = true;
+                printLog(`Backend Connected! Version: ${data.version}, Agents Active: ${data.agents}`, "system");
+                document.querySelector('.connection-indicator').style.color = '#39FF14'; document.querySelector('.connection-indicator').innerHTML = '<i class="fa-solid fa-wifi"></i> متصل بـ Gateway';
+                startMassivePolling();
+            }
+        } catch(e) {
+            printLog("Connection to backend failed. Operating in visually simulated (Offline) mode.", "error");
+            document.querySelector('.connection-indicator').style.color = '#FF3366'; document.querySelector('.connection-indicator').innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> غير متصل (محاكاة)';
+            simulateOfflineData();
+        }
+    }
+
+    function startMassivePolling() {
+        if(autoPolling) clearInterval(autoPolling);
+        autoPolling = setInterval(async () => {
+            try {
+                // 1. General Status
+                fetch(`${API_URL}/status`).then(r=>r.json()).then(data => {
+                    if(data.total_agents) document.getElementById('stat-agents').innerText = data.total_agents;
+                    if(data.memory && data.memory.episodic !== undefined) document.getElementById('stat-memory').innerText = data.memory.episodic + ' MB';
+                    if(data.top_agents) updateActiveAgentsUI(data.top_agents);
+                }).catch(e=>{});
+
+                // 2. Network / Neural Signals
+                fetch(`${API_URL}/network/signals`).then(r=>r.json()).then(data => {
+                    if(data.signals) {
+                        document.getElementById('stat-neural').innerText = data.signals.length;
+                        document.getElementById('neural-edges').innerText = data.signals.length * 3 + Math.floor(Math.random()*20);
+                        const c = document.getElementById('neural-signals-container'); c.innerHTML = '';
+                        data.signals.slice(0,5).forEach(sig => { c.innerHTML += `<div class="item-row"><span class="item-key">${sig.from || 'SYS'} -> ${sig.to || 'SYS'}</span><span class="item-val">${sig.type || 'نبضة'}</span></div>`; });
+                    }
+                }).catch(e=>{});
+
+                // 3. MCP Servers
+                fetch(`${API_URL}/mcp/servers`).then(r=>r.json()).then(data => {
+                    if(data.total !== undefined) {
+                        document.getElementById('stat-mcp').innerText = data.total;
+                        document.getElementById('mcp-total').innerText = data.total;
+                        const c = document.getElementById('mcp-servers-container'); c.innerHTML = '';
+                        if(data.servers && data.servers.length) {
+                            data.servers.forEach(s => { c.innerHTML += `<div class="item-row"><span class="item-key">${s.name || s}</span><span class="item-val" style="color:#39FF14">Active</span></div>`; });
+                        }
+                    }
+                }).catch(e=>{});
+
+                // 4. Training Leaderboard
+                fetch(`${API_URL}/training/leaderboard`).then(r=>r.json()).then(data => {
+                    if(data.leaderboard && data.leaderboard.length) {
+                        const c = document.getElementById('leaderboard-container'); c.innerHTML = '';
+                        data.leaderboard.slice(0,5).forEach((ag, idx) => { c.innerHTML += `<div class="item-row"><span class="item-key">${idx+1}. ${ag.id} (${ag.name})</span><span class="item-val">Level ${ag.level || (90-idx)}</span></div>`; });
+                    }
+                }).catch(e=>{});
+
+            } catch(e) {}
+        }, 5000);
+    }
+
+    async function executeCommand() {
+        const inp = document.getElementById('dev-input'); const cmd = inp.value.trim(); if(!cmd) return;
+        printLog(cmd, "user"); inp.value = '';
+        if(!apiConnected) { setTimeout(() => { printLog("تم التنفيذ محلياً (Offline mode).", "agent"); createShockwave(new THREE.Vector3(0,0,0), 0x00FFFF); }, 600); return; }
+        try {
+            const res = await fetch(`${API_URL}/task`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ task: cmd }) });
+            const data = await res.json(); printLog(JSON.stringify(data.result || data, null, 2), "agent");
+            agentMeshes[Math.floor(Math.random() * agentMeshes.length)].material.emissiveIntensity = 4;
+        } catch(e) { printLog("فشل إرسال المهمة: " + e.message, "error"); }
+    }
+
+    async function executeDevCommand() {
+        const inp = document.getElementById('dev-input'); const cmd = inp.value.trim(); if(!cmd) return;
+        printLog(`[DEV MODE] ${cmd}`, "user"); inp.value = '';
+        if(!apiConnected) { setTimeout(() => { printLog("تم إرسال الأوامر للهندسة بنجاح.", "agent"); core.material.emissiveIntensity = 2.0; setTimeout(() => core.material.emissiveIntensity=0.6, 2000); }, 600); return; }
+        try {
+            const res = await fetch(`${API_URL}/task`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ task: cmd, category: 'cat10_engineering' }) });
+            const data = await res.json(); printLog(`[ENGINEERING] ` + JSON.stringify(data.result || data, null, 2), "agent");
+            core.material.emissiveIntensity = 3.0; setTimeout(() => core.material.emissiveIntensity = 0.6, 3000);
+        } catch(e) { printLog("خطأ: " + e.message, "error"); }
+    }
+
+    function toggleSwarm(start) {
+        if(start) { printLog("[SYS] إطلاق السرب الكلي... تواصل 81 وكيل متزامن.", "system"); core.material.emissiveIntensity = 4.0; }
+        else { printLog("[SYS] إيقاف السرب وتفريغ الذاكرة المرحلية.", "system"); core.material.emissiveIntensity = 0.6; }
+        if(!apiConnected) return;
+        fetch(API_URL + (start ? '/swarm/start' : '/swarm/stop'), { method: 'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({duration_minutes: 60}) }).catch(e=>console.log(e));
+    }
+
+    function triggerAwakening() {
+        printLog("[SYS] تحفيز دورة الوعي الجمعي...", "system");
+        core.material.color.setHex(0xFFD700); core.material.emissive.setHex(0xFFD700); core.material.emissiveIntensity = 4.0;
+        setTimeout(() => { core.material.color.setHex(0x00FFFF); core.material.emissive.setHex(0x0088ff); core.material.emissiveIntensity = 0.6; }, 4000);
+    }
+    
+    function triggerTraining() {
+        printLog("[SYS] تشغيل دورة تدريب جديدة بالخلفية...", "system");
+        if(apiConnected) fetch(API_URL + '/training/trigger', { method: 'POST' }).catch(e=>console.log(e));
+    }
+
+    document.getElementById('dev-input').addEventListener('keypress', function (e) { if (e.key === 'Enter') { if(e.shiftKey) executeDevCommand(); else executeCommand(); } });
+
+    // Populate the Massive Grid
+    function populateOmniGrid() {
+        const c = document.getElementById('omni-agents-grid'); c.innerHTML = '';
+        globalAgentsCache.forEach((ag, idx) => {
+            const toolTags = ag.tools.map(t => `<div class="tool-tag">${t}</div>`).join('');
+            const isBusy = Math.random() > 0.7;
+            const stateText = isBusy ? 'توليد الرد...' : 'خامل';
+            const stateClr = isBusy ? 'color: var(--accent-orange)' : 'color: #888';
+            c.innerHTML += `
+            <div class="omni-card" style="border-left-color: #${ag.color.toString(16).padStart(6,'0')}">
+                <div class="omni-c-hdr"><span class="omni-c-id">${ag.id}</span><span class="omni-c-cat">${ag.category}</span></div>
+                <div class="omni-c-act" style="${stateClr}">${stateText}</div>
+                <div class="omni-c-tools">${toolTags}</div>
+                <div class="omni-c-lvl"><span>Level ${ag.level}</span><span>Mem: ${Math.floor(Math.random()*200+50)}k</span></div>
+            </div>`;
+        });
+    }
+
+    // Offline mode simulation
+    function simulateOfflineData() {
+        document.getElementById('stat-agents').innerText = '81'; document.getElementById('stat-memory').innerText = '42.8 MB';
+        document.getElementById('stat-mcp').innerText = '6'; document.getElementById('stat-neural').innerText = '142';
+        document.getElementById('mcp-total').innerText = '6'; document.getElementById('neural-edges').innerText = '1,420';
+        
+        const c1 = document.getElementById('active-agents-container'); c1.innerHTML = '';
+        for(let i=0; i<6; i++) {
+            c1.innerHTML += `<div class="agent-card"><div class="agent-hdr"><span class="agent-id">A${String(i+1).padStart(2,'0')} - ${globalAgentsCache[i].category}</span><span class="agent-activity">معالجة...</span></div><div class="progress-container"><div class="progress-bar" style="width: ${40 + Math.random()*50}%;"></div></div></div>`;
+        }
+
+        const c2 = document.getElementById('neural-signals-container'); c2.innerHTML = '';
+        for(let i=0; i<4; i++) { c2.innerHTML += `<div class="item-row"><span class="item-key">A${String(i+1).padStart(2,'0')} -> A${String(i+5).padStart(2,'0')}</span><span class="item-val">Task Delegation</span></div>`; }
+
+        const c3 = document.getElementById('mcp-servers-container'); c3.innerHTML = '';
+        ['GitHub MCP', 'FileSystem', 'PostgreSQL', 'Serper AI', 'Ollama Local', 'Memory Store'].forEach(s => {
+            c3.innerHTML += `<div class="item-row"><span class="item-key">${s}</span><span class="item-val" style="color:var(--accent-green)">Connected</span></div>`;
+        });
+    }
+    </script>
+</body>
+</html>
