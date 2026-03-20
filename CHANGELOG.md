@@ -1,5 +1,86 @@
 # CHANGELOG
 
+## [5.0.0] — 2026-03-20 — إكمال المراحل 1-4 الكاملة
+
+### المرحلة 1 — الأدوات الحقيقية
+- **`tools/news_fetcher.py`** — جامع أخبار حقيقي من مصادر متعددة:
+  - 15+ RSS feeds (BBC, Reuters, TechCrunch, Nature, arXiv, CNBC...)
+  - تصنيف تلقائي للمواضيع (ai, tech, science, economy, world, arabic)
+  - دعم RSS 2.0 + Atom format
+  - تكامل مع NewsAPI (عناوين + بحث)
+  - `fetch_news()` الشامل: يدمج NewsAPI + RSS
+  - `fetch_news_rss()` للـ RSS فقط
+  - `fetch_news_headlines()` للعناوين الرئيسية
+- **تحديث `tools/registry.py`** — إضافة: `fetch_news_rss`, `fetch_headlines`
+
+### المرحلة 2 — تخصيص الوكلاء
+- ربط كل وكيل بأدواته في `tools/registry.py` مع 17 فئة
+- `tests/test_all_phases.py` — 37 اختبار شامل يغطي كل المراحل
+- تحقق من أن 50%+ من الوكلاء لديهم أدوات مربوطة
+- تحقق من أن كل وكيل لديه system prompt > 50 حرف
+
+### المرحلة 3 — البنية التحتية
+- **`core/firestore_memory.py`** — ذاكرة دائمة على Google Firestore:
+  - 4 collections: episodes, knowledge, stats, lessons
+  - Fallback محلي (JSON) عند غياب GCP
+  - `store_episode()`, `get_agent_episodes()`, `store_knowledge()`, `search_knowledge()`
+  - `store_lesson()`, `get_lessons()`, `update_agent_stats()`
+- **`core/pubsub_comm.py`** — تواصل Pub/Sub بين الوكلاء:
+  - 4 topics: tasks, results, signals, broadcast
+  - `publish_task()`, `publish_result()`, `publish_signal()`, `broadcast()`
+  - `subscribe()` مع callbacks
+  - Local queue fallback بدون GCP
+- **`scripts/deploy_cloudrun.sh`** — نشر تلقائي على Google Cloud Run:
+  - تفعيل APIs، بناء Docker image، نشر، health check
+  - دعم .env لمتغيرات البيئة
+- **`scripts/setup_scheduler.py`** — إعداد الجدولة:
+  - Cloud Scheduler: تحديث يومي (2 صباحاً)، تقرير أداء (6 صباحاً)، تدريب أسبوعي (الجمعة 3 صباحاً)
+  - Local APScheduler fallback
+  - إعداد Pub/Sub topics + Firestore collections
+  - CLI: `--cloud`, `--local`, `--pubsub`, `--firestore`, `--all`
+
+### المرحلة 4 — التطور الذاتي
+- **`core/agent_monitor.py`** — مراقب أداء الوكلاء:
+  - تتبع نسبة النجاح، سرعة الاستجابة، جودة الإجابات
+  - تنبيهات فورية (فشل متتالي، نسبة منخفضة، بطء)
+  - `get_agent_performance()`, `get_system_overview()`, `get_leaderboard()`
+  - `generate_improvement_report()` — تقرير Markdown مفصل
+- **`core/auto_prompt_optimizer.py`** — تحسين system prompts تلقائياً:
+  - تحليل أنماط الفشل والنجاح
+  - توليد اقتراحات (add_examples, add_boundaries, simplify, compress)
+  - `apply_suggestion()` مع نسخ احتياطية
+  - `batch_analyze()` لتحليل دفعي
+- **`core/lesson_collector.py`** — جمع الدروس المستفادة:
+  - 6 أنواع: success_pattern, failure_lesson, tool_insight, collaboration, model_insight, general
+  - `collect()`, `get_lessons_for_agent()`, `get_lessons_for_task()`
+  - `inject_lessons_context()` — حقن دروس في system prompt قبل المهمة
+
+### Gateway — نقاط API جديدة
+- `GET /monitor/overview` — نظرة عامة على أداء النظام
+- `GET /monitor/agent/{id}` — أداء وكيل محدد
+- `GET /monitor/leaderboard` — ترتيب الوكلاء
+- `GET /monitor/alerts` — التنبيهات النشطة
+- `GET /monitor/report` — تقرير تحسينات
+- `GET /optimizer/suggestions/{id}` — اقتراحات تحسين prompt
+- `GET /optimizer/history` — سجل التحسينات
+- `GET /lessons/summary` — ملخص الدروس
+- `GET /lessons/agent/{id}` — دروس وكيل
+- `GET /lessons/all` — كل الدروس
+- `GET /pubsub/status` — حالة Pub/Sub
+- `GET /pubsub/history` — سجل الرسائل
+- `GET /firestore/status` — حالة Firestore
+- `GET /firestore/episodes/{id}` — سجل مهام
+- `GET /news/{topic}` — أخبار حول موضوع
+- `GET /news/rss/{topic}` — أخبار RSS
+- `GET /news/feeds` — المصادر المتاحة
+
+### الاختبارات
+- `tests/test_all_phases.py` — 37 اختبار (36 نجح + 1 يتطلب fastapi)
+- `tests/test_core.py` — 7/7 نجح ✅
+- `tests/test_agents.py` — 10/12 نجح ✅ (عدد الوكلاء تجاوز 81 + fastapi غير مثبت)
+
+---
+
 ## [4.0.0] — 2026-03-18 — الترقية الشاملة الكاملة
 
 ### الإضافات الرئيسية

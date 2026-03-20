@@ -1821,6 +1821,180 @@ async def run_unified_cycle():
         return {"error": str(e)}
 
 
+# ══════════════════════════════════════════════════════════════
+# Phase 3 & 4 Endpoints — البنية التحتية + التطور الذاتي
+# ══════════════════════════════════════════════════════════════
+
+# ── Monitor (Phase 4) ─────────────────────────────────────────
+
+@app.get("/monitor/overview")
+async def monitor_overview():
+    """نظرة عامة على أداء النظام"""
+    try:
+        from core.agent_monitor import get_monitor
+        return get_monitor().get_system_overview()
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/monitor/agent/{agent_id}")
+async def monitor_agent(agent_id: str):
+    """أداء وكيل محدد"""
+    try:
+        from core.agent_monitor import get_monitor
+        return get_monitor().get_agent_performance(agent_id)
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/monitor/leaderboard")
+async def monitor_leaderboard(limit: int = 20):
+    """ترتيب الوكلاء حسب الأداء"""
+    try:
+        from core.agent_monitor import get_monitor
+        return {"leaderboard": get_monitor().get_leaderboard(limit)}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/monitor/alerts")
+async def monitor_alerts(limit: int = 20):
+    """التنبيهات النشطة"""
+    try:
+        from core.agent_monitor import get_monitor
+        return {"alerts": get_monitor().get_alerts(limit)}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/monitor/report")
+async def monitor_report():
+    """تقرير تحسينات مفصل"""
+    try:
+        from core.agent_monitor import get_monitor
+        report = get_monitor().generate_improvement_report()
+        return {"report": report}
+    except Exception as e:
+        return {"error": str(e)}
+
+# ── Prompt Optimizer (Phase 4) ─────────────────────────────────
+
+@app.get("/optimizer/suggestions/{agent_id}")
+async def optimizer_suggestions(agent_id: str):
+    """اقتراحات تحسين system prompt لوكيل"""
+    try:
+        from core.auto_prompt_optimizer import get_auto_optimizer
+        return {"agent_id": agent_id,
+                "suggestions": get_auto_optimizer().get_suggestions(agent_id)}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/optimizer/history")
+async def optimizer_history(agent_id: str = "", limit: int = 20):
+    """سجل التحسينات المطبقة"""
+    try:
+        from core.auto_prompt_optimizer import get_auto_optimizer
+        return {"history": get_auto_optimizer().get_history(agent_id, limit)}
+    except Exception as e:
+        return {"error": str(e)}
+
+# ── Lessons (Phase 4) ─────────────────────────────────────────
+
+@app.get("/lessons/summary")
+async def lessons_summary():
+    """ملخص الدروس المستفادة"""
+    try:
+        from core.lesson_collector import get_lesson_collector
+        return get_lesson_collector().get_summary()
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lessons/agent/{agent_id}")
+async def lessons_for_agent(agent_id: str, limit: int = 10):
+    """دروس وكيل"""
+    try:
+        from core.lesson_collector import get_lesson_collector
+        return {"agent_id": agent_id,
+                "lessons": get_lesson_collector().get_lessons_for_agent(agent_id, limit)}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/lessons/all")
+async def all_lessons(limit: int = 50, lesson_type: str = ""):
+    """كل الدروس"""
+    try:
+        from core.lesson_collector import get_lesson_collector
+        return {"lessons": get_lesson_collector().get_all_lessons(limit, lesson_type)}
+    except Exception as e:
+        return {"error": str(e)}
+
+# ── Pub/Sub (Phase 3) ─────────────────────────────────────────
+
+@app.get("/pubsub/status")
+async def pubsub_status():
+    """حالة نظام Pub/Sub"""
+    try:
+        from core.pubsub_comm import get_pubsub
+        return get_pubsub().status()
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/pubsub/history")
+async def pubsub_history(limit: int = 50, agent_id: str = ""):
+    """سجل الرسائل"""
+    try:
+        from core.pubsub_comm import get_pubsub
+        return {"messages": get_pubsub().get_history(limit, agent_id)}
+    except Exception as e:
+        return {"error": str(e)}
+
+# ── Firestore Memory (Phase 3) ─────────────────────────────────
+
+@app.get("/firestore/status")
+async def firestore_status():
+    """حالة ذاكرة Firestore"""
+    try:
+        from core.firestore_memory import get_firestore_memory
+        return get_firestore_memory().status()
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/firestore/episodes/{agent_id}")
+async def firestore_episodes(agent_id: str, limit: int = 20):
+    """سجل مهام وكيل من Firestore"""
+    try:
+        from core.firestore_memory import get_firestore_memory
+        return {"agent_id": agent_id,
+                "episodes": get_firestore_memory().get_agent_episodes(agent_id, limit)}
+    except Exception as e:
+        return {"error": str(e)}
+
+# ── News (Phase 1 enhancement) ─────────────────────────────────
+
+@app.get("/news/{topic}")
+async def get_news(topic: str, max_items: int = 10):
+    """أخبار حول موضوع"""
+    try:
+        from tools.news_fetcher import fetch_news
+        return {"topic": topic, "news": fetch_news(topic, max_items=max_items)}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/news/rss/{topic}")
+async def get_rss_news(topic: str, max_items: int = 10):
+    """أخبار RSS"""
+    try:
+        from tools.news_fetcher import fetch_news_rss
+        return {"topic": topic, "news": fetch_news_rss(topic, max_items)}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/news/feeds")
+async def list_feeds():
+    """المصادر المتاحة"""
+    try:
+        from tools.news_fetcher import list_available_feeds
+        return {"feeds": list_available_feeds()}
+    except Exception as e:
+        return {"error": str(e)}
+
+
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn

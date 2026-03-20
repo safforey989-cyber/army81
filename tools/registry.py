@@ -38,9 +38,23 @@ def build_tools_registry() -> Dict[str, Tool]:
 
     registry["fetch_news"] = Tool(
         name="fetch_news",
-        description="جلب أخبار حديثة حول موضوع معين",
-        func=_lazy_import("tools.web_search", "fetch_news"),
+        description="جلب أخبار حديثة حول موضوع معين من RSS + NewsAPI",
+        func=_lazy_import("tools.news_fetcher", "fetch_news"),
         parameters={"topic": "الموضوع", "lang": "اللغة (ar/en)"}
+    )
+
+    registry["fetch_news_rss"] = Tool(
+        name="fetch_news_rss",
+        description="جلب أخبار من RSS feeds حسب الموضوع (ai, tech, science, economy, world)",
+        func=_lazy_import("tools.news_fetcher", "fetch_news_rss"),
+        parameters={"topic": "الموضوع (ai/tech/science/economy/world)"}
+    )
+
+    registry["fetch_headlines"] = Tool(
+        name="fetch_headlines",
+        description="عناوين الأخبار الرئيسية (يتطلب NewsAPI key)",
+        func=_lazy_import("tools.news_fetcher", "fetch_news_headlines"),
+        parameters={"country": "البلد (us/gb/ae)", "category": "الفئة (technology/business/science)"}
     )
 
     # LangSearch / Tavily — بحث عميق للوكلاء
