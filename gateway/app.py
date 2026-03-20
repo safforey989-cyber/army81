@@ -1742,6 +1742,33 @@ async def brain_prepare_training():
     except Exception as e:
         return {"error": str(e)}
 
+@app.post("/brain/qlora-train")
+async def brain_qlora_train(request: Request):
+    """تدريب QLoRA حقيقي على GPU — Qwen3:8b"""
+    try:
+        data = await request.json()
+        domain = data.get("domain")
+        epochs = data.get("epochs", 1)
+        from core.qlora_trainer import get_trainer
+        trainer = get_trainer()
+        import threading
+        t = threading.Thread(target=trainer.train, kwargs={
+            "domain": domain, "epochs": epochs
+        }, daemon=True)
+        t.start()
+        return {"status": "training_started", "domain": domain or "all", "epochs": epochs}
+    except Exception as e:
+        return {"error": str(e)}
+
+@app.get("/brain/qlora-status")
+def brain_qlora_status():
+    """حالة تدريب QLoRA"""
+    try:
+        from core.qlora_trainer import get_trainer
+        return get_trainer().get_status()
+    except Exception as e:
+        return {"error": str(e)}
+
 
 # ── Unified Evolution Endpoints ──────────────────────────
 
