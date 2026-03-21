@@ -1854,6 +1854,20 @@ def singular_status():
         "epistemic": epistemic
     }
 
+@app.get("/singular/logs")
+def singular_logs(lines: int = 50):
+    """جلب السجلات الحية لمحرك Singular"""
+    from pathlib import Path
+    try:
+        log_file = Path("workspace/compound_log.txt")
+        if not log_file.exists():
+            return {"logs": ["[System] No logs found yet."]}
+        with open(log_file, "r", encoding="utf-8") as f:
+            all_lines = f.readlines()
+        return {"logs": [l.strip() for l in all_lines[-lines:] if l.strip()]}
+    except Exception as e:
+        return {"error": str(e)}
+
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn

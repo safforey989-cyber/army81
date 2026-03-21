@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Singular System - Live</title>
+    <title>The Singular System - Live C2</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -122,28 +122,7 @@
             padding: 1.5rem;
             backdrop-filter: blur(16px);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
             position: relative;
-            overflow: hidden;
-        }
-
-        .panel::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .panel:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-            border-color: rgba(0, 240, 255, 0.3);
-        }
-
-        .panel:hover::before {
-            opacity: 1;
         }
 
         .panel-header {
@@ -161,185 +140,88 @@
             color: #fff;
         }
 
-        .panel-icon {
-            font-size: 1.2rem;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
         /* Grid Placements */
-        .civilizational { grid-column: span 8; grid-row: span 2; }
+        .actions-panel { grid-column: span 5; grid-row: span 2; }
+        .terminal-panel { grid-column: span 7; }
+        .civilizational { grid-column: span 7; }
         .epistemic { grid-column: span 4; }
         .predictions { grid-column: span 4; }
-        .contradictions { grid-column: span 6; }
-        .identity { grid-column: span 6; }
+        .contradictions { grid-column: span 4; }
 
-        /* ─── Epistemic Map Chart ─── */
-        .certainty-bar {
-            margin-top: 15px;
+        /* ─── Controls (C2) ─── */
+        .control-group { margin-bottom: 1rem; }
+        .control-group label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-muted); }
+        .control-input { 
+            width: 100%; padding: 10px; background: rgba(0,0,0,0.5); 
+            border: 1px solid var(--primary); color: #fff; border-radius: 6px; 
+            font-family: inherit;
         }
-        .bar-label {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.85rem;
-            margin-bottom: 5px;
-            color: var(--text-muted);
+        .control-input:focus { outline: none; box-shadow: 0 0 10px rgba(0,240,255,0.2); }
+        .control-btn {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: #fff; border: none; padding: 12px 20px; border-radius: 6px; 
+            cursor: pointer; font-weight: bold; font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s; width: 100%;
         }
-        .bar-track {
-            height: 8px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 4px;
-            overflow: hidden;
+        .control-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 240, 255, 0.4); }
+        .control-btn.alt { background: transparent; border: 1px solid var(--warning); color: var(--warning); padding: 8px;}
+        .control-btn.alt:hover { background: rgba(255, 179, 0, 0.1); box-shadow: 0 5px 15px rgba(255, 179, 0, 0.3); }
+        
+        .response-box {
+            background: rgba(0,0,0,0.4); border-right: 4px solid var(--secondary);
+            padding: 15px; border-radius: 6px; margin-top: 15px; min-height: 120px;
+            font-size: 0.95rem; line-height: 1.6; max-height: 300px; overflow-y: auto; white-space: pre-wrap;
         }
-        .bar-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-        }
-        .fill-certain { background: var(--success); box-shadow: 0 0 10px var(--success); }
-        .fill-uncertain { background: var(--warning); box-shadow: 0 0 10px var(--warning); }
-        .fill-unknown { background: var(--danger); box-shadow: 0 0 10px var(--danger); }
 
-        /* ─── Predictions List ─── */
-        .prediction-item {
-            background: rgba(0,0,0,0.3);
-            border-right: 3px solid var(--primary);
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            transition: background 0.2s;
-        }
-        .prediction-item:hover { background: rgba(0, 240, 255, 0.05); }
-        .pred-header {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            margin-bottom: 5px;
-        }
-        .pred-text {
-            font-size: 0.95rem;
-            line-height: 1.4;
-        }
-        .pred-acc {
-            display: inline-block;
-            margin-top: 8px;
-            font-size: 0.75rem;
-            padding: 3px 8px;
-            border-radius: 12px;
-            background: rgba(0, 255, 136, 0.1);
-            color: var(--success);
+        /* ─── Terminal ─── */
+        .terminal {
+            background: #050510;
             border: 1px solid rgba(0, 255, 136, 0.3);
-        }
-
-        /* ─── Contradictions Breakthroughs ─── */
-        .breakthrough-box {
-            background: linear-gradient(135deg, rgba(189, 0, 255, 0.1), rgba(0, 240, 255, 0.05));
-            border: 1px solid rgba(189, 0, 255, 0.3);
-            border-radius: 12px;
-            padding: 1.2rem;
-            position: relative;
-        }
-        .breakthrough-box::before {
-            content: '💡 رؤية جديدة';
-            position: absolute;
-            top: -10px;
-            right: 20px;
-            background: var(--secondary);
-            color: #fff;
-            font-size: 0.7rem;
-            font-weight: bold;
-            padding: 2px 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px var(--secondary);
-        }
-        .bt-question {
-            font-size: 1.05rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-        .bt-synthesis {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-            white-space: pre-wrap;
-        }
-
-        /* ─── Identity Evolution ─── */
-        .agent-avatar {
-            width: 40px; height: 40px;
-            border-radius: 10px;
-            background: rgba(255,255,255,0.05);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.2rem;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .identity-row {
-            display: flex;
-            gap: 15px;
-            align-items: flex-start;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px dashed rgba(255,255,255,0.1);
-        }
-        .identity-row:last-child {
-            margin-bottom: 0; padding-bottom: 0; border-bottom: none;
-        }
-        .identity-content h4 { font-size: 0.9rem; margin-bottom: 4px; color: var(--primary); }
-        .identity-content p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; font-style: italic;}
-
-        /* ─── Civilizational Graph Mock ─── */
-        .graph-container {
-            width: 100%;
-            height: 300px;
-            position: relative;
-            background: radial-gradient(circle at center, rgba(0, 240, 255, 0.05) 0%, transparent 70%);
             border-radius: 8px;
-            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 1rem;
+            height: 300px;
+            overflow-y: auto;
+            color: #00ff88;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            box-shadow: inset 0 0 15px rgba(0, 255, 136, 0.05);
+            direction: ltr;
+            text-align: left;
         }
-        .node {
-            position: absolute;
-            width: 12px; height: 12px;
-            background: var(--primary);
-            border-radius: 50%;
-            box-shadow: 0 0 15px var(--primary);
-            animation: float 4s ease-in-out infinite;
-        }
-        .edge {
-            position: absolute;
-            background: linear-gradient(90deg, var(--primary), transparent);
-            height: 1px;
-            transform-origin: left center;
-            opacity: 0.3;
-        }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
+        .terminal span.time { color: var(--text-muted); margin-right: 10px; }
+        .terminal span.warn { color: var(--warning); }
+        .terminal span.err { color: var(--danger); }
+
+        /* ─── Small UI Items ─── */
+        .certainty-bar { margin-top: 10px; }
+        .bar-label { display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 3px; color: var(--text-muted); }
+        .bar-track { height: 6px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; }
+        .bar-fill { height: 100%; border-radius: 4px; transition: width 1s; }
+        .fill-certain { background: var(--success); }
+        .fill-uncertain { background: var(--warning); }
+        .fill-unknown { background: var(--danger); }
 
         .cycle-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(0,0,0,0.5);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-right: 20px;
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);
+            padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; margin-right: 20px;
         }
+
+        /* ─── Civilizational Breakthrough box ─── */
+        .breakthrough-box {
+            background: linear-gradient(135deg, rgba(189, 0, 255, 0.1), rgba(0, 240, 255, 0.05));
+            border: 1px solid rgba(189, 0, 255, 0.3); border-radius: 12px; padding: 1.2rem;
+        }
+        .bt-question { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: #fff; }
+        .bt-synthesis { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; white-space: pre-wrap; }
+
         @media (max-width: 1200px) {
-            .civilizational { grid-column: span 12; }
-            .epistemic, .predictions, .contradictions, .identity { grid-column: span 6; }
+            .actions-panel, .terminal-panel, .civilizational { grid-column: span 12; }
+            .epistemic, .predictions, .contradictions { grid-column: span 6; }
         }
         @media (max-width: 768px) {
-            .epistemic, .predictions, .contradictions, .identity { grid-column: span 12; }
+            .epistemic, .predictions, .contradictions { grid-column: span 12; }
         }
     </style>
 </head>
@@ -348,208 +230,259 @@
     <header>
         <div class="logo-container">
             <div class="pulsing-dot"></div>
-            <div class="logo">الـنـظـام الـمـتـفـرد</div>
+            <div class="logo" style="cursor:pointer;" onclick="location.reload()">الـنـظـام الـمـتـفـرد (C2)</div>
             <div class="cycle-badge">
-                <span style="color:var(--text-muted)">الدورة الحالية:</span>
                 <span id="cycle-num" style="color:#fff; font-weight:bold;">#1</span>
             </div>
             <div class="cycle-badge" id="conn-status" style="border-color: var(--warning); color: var(--warning)">جاري الاتصال..</div>
         </div>
         <div class="compound-score">
             <div id="compound-score" class="score-value">1.00x</div>
-            <div class="score-label">True Compound Score</div>
+            <div class="score-label">Compound Base</div>
         </div>
     </header>
 
     <main>
-        
-        <!-- Civilizational Memory -->
-        <div class="panel civilizational">
-            <div class="panel-header">
-                <div class="panel-icon">🏛️</div>
-                <div class="panel-title">الخريطة السببية للحضارة (Live Event Monitoring)</div>
+        <!-- ACTIONS PANEL -->
+        <div class="panel actions-panel">
+            <div class="panel-header"><div class="panel-icon">🛠️</div><div class="panel-title">وحدة القيادة (Command & Control)</div></div>
+            <div class="control-group">
+                <label>توجيه المهمة (الوكيل)</label>
+                <select id="agent-select" class="control-input">
+                    <option value="">التوجيه الذكي التلقائي للشبكة (Smart Router)</option>
+                    <option value="A81">A81 - الوكيل الأسمى (Singular Intellect)</option>
+                    <option value="A01">A01 - المفكر الاستراتيجي</option>
+                    <option value="A04">A04 - مهندس التقنيات الأساسية</option>
+                    <option value="A31">A31 - المحلل الجيوسياسي</option>
+                    <option value="A37">A37 - خبير الاقتصاد الرقمي</option>
+                </select>
             </div>
-            <div class="graph-container" id="graph"></div>
-            <div style="margin-top: 15px; font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
-                <strong>اكتشاف نمط:</strong> يتم هنا سحب أحدث التحليلات من النظام المتفرد لربط الواقع بالتاريخ.
+            <div class="control-group">
+                <label>المهمة / التشخيص / السؤال</label>
+                <textarea id="task-input" class="control-input" rows="5" placeholder="اطلب تحليلاً، اصدر أمراً، أو ادفع النظام للتطور..."></textarea>
+            </div>
+            <button class="control-btn" id="send-btn" onclick="sendTask()">إصدار الأمر إلى الجيش (Deploy) ⚡</button>
+            
+            <div class="response-box" id="task-response">
+                <div style="color:var(--text-muted); text-align:center; margin-top:30px;">رد النظام سيظهر هنا...</div>
+            </div>
+            
+            <div style="margin-top:20px; display:flex; gap:10px;">
+                <button class="control-btn alt" onclick="triggerAction('/training/trigger')">إجبار دورة تدريب</button>
+                <button class="control-btn alt" onclick="triggerSwarm()" style="color: var(--success); border-color: var(--success);">تشغيل سرب (Swarm)</button>
             </div>
         </div>
 
-        <!-- Epistemic Map -->
-        <div class="panel epistemic">
+        <!-- TERMINAL PANEL -->
+        <div class="panel terminal-panel">
             <div class="panel-header">
-                <div class="panel-icon">🧠</div>
-                <div class="panel-title">خريطة المعرفة لـ الوكيل (A81)</div>
+                <div class="panel-icon">💻</div>
+                <div class="panel-title">العمليات المباشرة للأساس (Background Logs)</div>
+                <button style="margin-right:auto; padding:3px 10px; background:rgba(0,0,0,0.5); border:1px solid #333; color:#fff; border-radius:4px; cursor:pointer;" onclick="fetchLogs()">⟳</button>
             </div>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 20px;">
-                البيانات تسحب دورياً من workspace/epistemic
-            </p>
-            
+            <div class="terminal" id="terminal-logs">
+                <div style="color:#666;">[System] جاري سحب السجلات الحية...</div>
+            </div>
+        </div>
+
+        <!-- CIVILIZATIONAL MEMORY -->
+        <div class="panel civilizational">
+            <div class="panel-header"><div class="panel-icon">🏛️</div><div class="panel-title">الذاكرة السببية (Civilizational)</div></div>
+            <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 10px;">
+                النظام الآن يقرأ التاريخ لربطه بالحدث الحالي.
+            </div>
+            <div class="breakthrough-box" id="contradictions-box">
+                <div class="bt-question">في انتظار توليفات وتناقضات الوكلاء...</div>
+            </div>
+        </div>
+
+        <!-- EPISTEMIC -->
+        <div class="panel epistemic">
+            <div class="panel-header"><div class="panel-icon">🧠</div><div class="panel-title">اليقين (A81 Epistemic)</div></div>
             <div class="certainty-bar">
-                <div class="bar-label"><span>معلومات بيقين تام (Certain)</span> <span id="c-count">0</span></div>
+                <div class="bar-label"><span>يقين (Certain)</span> <span id="c-count">0</span></div>
                 <div class="bar-track"><div id="c-fill" class="bar-fill fill-certain" style="width: 0%;"></div></div>
             </div>
             <div class="certainty-bar">
-                <div class="bar-label"><span>معلومات مشكوك بها (Uncertain)</span> <span id="u-count">0</span></div>
+                <div class="bar-label"><span>ظن (Uncertain)</span> <span id="u-count">0</span></div>
                 <div class="bar-track"><div id="u-fill" class="bar-fill fill-uncertain" style="width: 0%;"></div></div>
             </div>
             <div class="certainty-bar">
-                <div class="bar-label"><span>ثغرات معرفية (Unknown)</span> <span id="un-count">0</span></div>
+                <div class="bar-label"><span>جهل (Unknown)</span> <span id="un-count">0</span></div>
                 <div class="bar-track"><div id="un-fill" class="bar-fill fill-unknown" style="width: 0%;"></div></div>
             </div>
         </div>
 
-        <!-- Prediction Tracker -->
+        <!-- PREDICTIONS -->
         <div class="panel predictions">
-            <div class="panel-header">
-                <div class="panel-icon">🎯</div>
-                <div class="panel-title">تتبع التنبؤات الاستراتيجية</div>
-            </div>
-            <div id="predictions-list">
-                <div class="pred-text" style="color:var(--text-muted)">في انتظار البيانات...</div>
-            </div>
-        </div>
-
-        <!-- Contradiction Engine -->
-        <div class="panel contradictions">
-            <div class="panel-header">
-                <div class="panel-icon">⚡</div>
-                <div class="panel-title">محرك التناقضات (Live Breakthroughs)</div>
-            </div>
-            <div id="contradictions-box" class="breakthrough-box">
-                <div class="bt-question">سؤال: انتظار البيانات...</div>
-                <div class="bt-synthesis">توليف الآراء قيد الجلب...</div>
-            </div>
-        </div>
-
-        <!-- Identity Evolution -->
-        <div class="panel identity">
-            <div class="panel-header">
-                <div class="panel-icon">🧬</div>
-                <div class="panel-title">تطور هوية الوكلاء المستمر</div>
-            </div>
-            
-            <div class="identity-row">
-                <div class="agent-avatar" style="color: #00f0ff; border-color: rgba(0, 240, 255, 0.3);">A81</div>
-                <div class="identity-content">
-                    <h4>الوعي الذاتي - الوكيل الأسمى</h4>
-                    <p>"تتسع شخصية الوكلاء كل 10 دورات من محرك التطور (Singular System)، وتنعكس في هذه المساحة."</p>
-                </div>
+            <div class="panel-header"><div class="panel-icon">🎯</div><div class="panel-title">آخر التنبؤات الاستراتيجية</div></div>
+            <div id="predictions-list" style="font-size: 0.85rem; color: var(--text-muted);">
+                في انتظار التنبؤات...
             </div>
         </div>
 
     </main>
 
     <script>
-        // Graph effects
-        const graph = document.getElementById('graph');
-        const width = graph.clientWidth;
-        const height = graph.clientHeight || 300;
-        
-        const nodesData = Array.from({length: 12}).map(() => ({
-            x: Math.random() * (width - 40) + 20,
-            y: Math.random() * (height - 40) + 20,
-            delay: Math.random() * 4
-        }));
+        const API_BASE = 'http://localhost:8181';
 
-        nodesData.forEach((pos, i) => {
-            const node = document.createElement('div');
-            node.className = 'node';
-            node.style.left = `${pos.x}px`;
-            node.style.top = `${pos.y}px`;
-            node.style.animationDelay = `${pos.delay}s`;
-            graph.appendChild(node);
-            
-            if (i > 0) {
-                const target = nodesData[Math.floor(Math.random() * i)];
-                const dx = target.x - pos.x;
-                const dy = target.y - pos.y;
-                const distance = Math.sqrt(dx*dx + dy*dy);
-                const angle = Math.atan2(dy, dx) * 180 / Math.PI;
-                
-                const edge = document.createElement('div');
-                edge.className = 'edge';
-                edge.style.left = `${pos.x + 6}px`;
-                edge.style.top = `${pos.y + 6}px`;
-                edge.style.width = `${distance}px`;
-                edge.style.transform = `rotate(${angle}deg)`;
-                graph.appendChild(edge);
-            }
-        });
-
-        // ── LIVE FETCH LOGIC ──
+        // ── LIVE FETCH LOGIC (STATUS) ──
         async function fetchSingularData() {
             try {
-                const res = await fetch('http://localhost:8181/singular/status');
+                const res = await fetch(`${API_BASE}/singular/status`);
                 if(!res.ok) throw new Error("HTTP error " + res.status);
                 const data = await res.json();
                 
-                document.getElementById('conn-status').innerText = "متصل";
+                document.getElementById('conn-status').innerText = "متصل بالقاعدة";
                 document.getElementById('conn-status').style.borderColor = "var(--success)";
                 document.getElementById('conn-status').style.color = "var(--success)";
 
-                // Update Compound Score
                 if (data.compound && data.compound.compound_score) {
                     document.getElementById("compound-score").innerText = parseFloat(data.compound.compound_score).toFixed(2) + "x";
                     document.getElementById("cycle-num").innerText = "#" + data.compound.cycle;
                 }
                 
-                // Predictions
                 if (data.predictions && data.predictions.predictions && data.predictions.predictions.length > 0) {
-                    const preds = data.predictions.predictions.slice(-3).reverse();
+                    const preds = data.predictions.predictions.slice(-2).reverse();
                     let html = "";
                     preds.forEach(p => {
                         html += `
-                        <div class="prediction-item">
-                            <div class="pred-header"><span>الوكيل ${p.agent}</span></div>
-                            <div class="pred-text">${p.prediction}</div>
-                            <div class="pred-acc">${p.outcome ? String(p.outcome).substring(0,30) + '...' : 'قيد المراقبة'}</div>
+                        <div style="background:rgba(0,0,0,0.3); padding:8px; border-radius:6px; margin-bottom:8px; border-right:2px solid var(--primary);">
+                            <div style="display:flex; justify-content:space-between; color:var(--text-muted); font-size:0.7rem;">
+                                <span>الوكيل ${p.agent}</span> 
+                                <span style="background:rgba(0,255,136,0.1); color:var(--success); padding:2px 6px; border-radius:8px;">${p.outcome ? String(p.outcome).substring(0,15) : 'قيد الانتظار'}</span>
+                            </div>
+                            <div style="margin-top:4px;">${p.prediction}</div>
                         </div>`;
                     });
                     document.getElementById("predictions-list").innerHTML = html;
                 }
                 
-                // Breakthroughs
                 if (data.singular && data.singular.breakthroughs && data.singular.breakthroughs.length > 0) {
-                    const bts = data.singular.breakthroughs.slice(-1);
-                    const bt = bts[0];
+                    const bt = data.singular.breakthroughs[data.singular.breakthroughs.length - 1];
                     document.getElementById("contradictions-box").innerHTML = `
-                        <div class="bt-question">سؤال: ${bt.question}</div>
+                        <div class="bt-question">${bt.question || 'قضية تطورية'}</div>
                         <div class="bt-synthesis">
-                            <strong>الرؤية الجديدة (Synthesis):</strong><br>
-                            ${bt.synthesis}
+                            <span style="color:var(--primary)">التوليف (Synthesis):</span><br>
+                            ${bt.synthesis || 'لا يوجد توليف متاح.'}
                         </div>
                     `;
                 }
                 
-                // Epistemic Map A81
                 if (data.epistemic && data.epistemic.A81) {
                     const a81 = data.epistemic.A81;
                     const c = a81.certain ? a81.certain.length : 0;
                     const u = a81.uncertain ? a81.uncertain.length : 0;
                     const un = a81.unknown ? a81.unknown.length : 0;
                     const total = c + u + un || 1;
-                    
                     document.getElementById("c-fill").style.width = ((c/total)*100) + "%";
                     document.getElementById("u-fill").style.width = ((u/total)*100) + "%";
                     document.getElementById("un-fill").style.width = ((un/total)*100) + "%";
-
                     document.getElementById("c-count").innerText = c;
                     document.getElementById("u-count").innerText = u;
                     document.getElementById("un-count").innerText = un;
                 }
                 
             } catch (err) {
-                console.error("Error fetching data:", err);
-                document.getElementById('conn-status').innerText = "غير متصل بالبوابة";
+                document.getElementById('conn-status').innerText = "غير متصل بالخادم";
                 document.getElementById('conn-status').style.borderColor = "var(--danger)";
                 document.getElementById('conn-status').style.color = "var(--danger)";
             }
         }
+
+        // ── FETCH LIVE LOGS (TERMINAL) ──
+        async function fetchLogs() {
+            try {
+                const res = await fetch(`${API_BASE}/singular/logs`);
+                if(!res.ok) return;
+                const data = await res.json();
+                if (data.logs && data.logs.length > 0) {
+                    const term = document.getElementById("terminal-logs");
+                    const isScrolledToBottom = term.scrollHeight - term.clientHeight <= term.scrollTop + 1;
+                    let html = "";
+                    data.logs.forEach(line => {
+                        // Highlight errors or success optionally
+                        let color = "inherit";
+                        if (line.includes("❌") || line.toLowerCase().includes("error")) color = "var(--danger)";
+                        if (line.includes("✅")) color = "var(--success)";
+                        html += `<div style="color:${color}">${line.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</div>`;
+                    });
+                    term.innerHTML = html;
+                    if (isScrolledToBottom) {
+                        term.scrollTop = term.scrollHeight;
+                    }
+                }
+            } catch(e) {}
+        }
         
-        // Initial fetch and interval
+        // ── ACTION COMMANDS (C2) ──
+        async function sendTask() {
+            const task = document.getElementById("task-input").value;
+            const agent = document.getElementById("agent-select").value;
+            const btn = document.getElementById("send-btn");
+            const resBox = document.getElementById("task-response");
+
+            if (!task.trim()) {
+                resBox.innerHTML = "<span style='color:var(--warning)'>يرجى كتابة المهمة أو السؤال أولاً.</span>";
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerText = "جاري التحليل... ⏳";
+            resBox.innerHTML = "<div style='text-align:center;'><br>الوكلاء يبحثون في الخرائط السببية والتاريخية للإجابة...<br><br></div>";
+
+            try {
+                const response = await fetch(`${API_BASE}/task`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ task: task, agent_id: agent || null })
+                });
+
+                const json = await response.json();
+                const output = json.result || json.response || JSON.stringify(json);
+                const executedAgent = json.agent_id || agent || 'التوجيه الذكي';
+                const model = json.model_used || 'gemini / local';
+                
+                resBox.innerHTML = `
+                    <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:10px;">انتهى التنفيذ عبر: <span style="color:var(--primary)">${executedAgent}</span> | نموذج: ${model}</div>
+                    <div style="white-space:pre-wrap;">${output}</div>
+                `;
+            } catch (err) {
+                resBox.innerHTML = `<span style='color:var(--danger)'>خطأ في الاتصال بالقيادة المركزية: ${err.message}</span>`;
+            }
+
+            btn.disabled = false;
+            btn.innerText = "إصدار الأمر إلى الجيش (Deploy) ⚡";
+        }
+
+        async function triggerAction(endpoint) {
+            try {
+                await fetch(`${API_BASE}${endpoint}`, { method: 'POST' });
+                alert("تم الإرسال بنجاح إلى " + endpoint);
+            } catch (e) {
+                alert("فشل الإرسال.");
+            }
+        }
+
+        async function triggerSwarm() {
+            try {
+                await fetch(`${API_BASE}/swarm/start`, { 
+                    method: 'POST', 
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ duration_minutes: 5, topic: "مناقشة عامة لتحديث الخرائط المعرفية" })
+                });
+                alert("تم تفعيل السرب بنجاح! راقب الـ Logs في الخلفية.");
+            } catch (e) {
+                alert("فشل إطلاق السرب.");
+            }
+        }
+
+        // INIT
         fetchSingularData();
+        fetchLogs();
         setInterval(fetchSingularData, 5000);
+        setInterval(fetchLogs, 2500); // تحديث الـ terminal بشكل أسرع
+
     </script>
 </body>
 </html>

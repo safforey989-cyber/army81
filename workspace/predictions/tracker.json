@@ -1,0 +1,41 @@
+{
+  "predictions": [
+    {
+      "id": "79968525-63a6-4961-9f42-006f87cc4bbc",
+      "agent": "A81",
+      "topic": "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
+      "made_at": "2026-03-21T00:25:48.733179",
+      "due_at": "2026-03-28T00:25:48.733183",
+      "prediction": "",
+      "confidence": 50,
+      "falsification": "",
+      "outcome": null,
+      "accuracy": null
+    },
+    {
+      "id": "02b58ead-6d04-4201-9db5-036a71802872",
+      "agent": "A81",
+      "topic": "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
+      "made_at": "2026-03-21T00:32:25.665486",
+      "due_at": "2026-03-28T00:32:25.665492",
+      "prediction": "",
+      "confidence": 50,
+      "falsification": "",
+      "outcome": null,
+      "accuracy": null
+    },
+    {
+      "id": "1b7e8413-ed16-4f50-b388-66d69c1cdc34",
+      "agent": "A81",
+      "topic": "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
+      "made_at": "2026-03-21T00:35:00.039988",
+      "due_at": "2026-03-28T00:35:00.039993",
+      "prediction": "",
+      "confidence": 50,
+      "falsification": "",
+      "outcome": null,
+      "accuracy": null
+    }
+  ],
+  "lessons": []
+}
