@@ -152,6 +152,31 @@ services:
         condition: service_healthy
     restart: always
     command: python scripts/singular_system.py
+    environment:
+      - GATEWAY_URL=http://gateway:8181
     volumes:
       - ./workspace:/app/workspace
       - ./agents:/app/agents
+      - ./core:/app/core
+
+  # ═══════════════════════════════════════
+  # 10. Real System Engine — المحرك الحقيقي
+  #     يجمع كل المكونات في حلقة دقيقة 100%
+  # ═══════════════════════════════════════
+  real_engine:
+    build: .
+    env_file: .env
+    depends_on:
+      gateway:
+        condition: service_healthy
+    restart: always
+    command: python scripts/real_system_engine.py
+    environment:
+      - GATEWAY_URL=http://gateway:8181
+    volumes:
+      - ./workspace:/app/workspace
+      - ./agents:/app/agents
+      - ./core:/app/core
+      - ./tools:/app/tools
+      - ./memory:/app/memory
+      - ./scripts:/app/scripts

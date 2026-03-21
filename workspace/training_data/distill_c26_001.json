@@ -1,0 +1,15 @@
+{
+  "problem": "اكتب خوارزمية بحث دلالي عربي-إنجليزي بدقة > 90%. أعطِ الكود كاملاً مع الشرح.",
+  "teacher": {
+    "id": "A149",
+    "model": "deepseek-r1",
+    "solution": "AgentResult(agent_id='A149', agent_name='وكيل علم الأوبئة', task='فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\n\\nقواعد ذهبية من التجارب السابقة:\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\'A34\\', agen\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\'A05\\', agen\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\'A62\\', agen\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 24 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\n\\nاكتب خوارزمية بحث دلالي عربي-إنجليزي بدقة > 90%. أعطِ الكود كاملاً مع الشرح.', result='خطأ: table episodes has no column named task_type', status='error', model_used='deepseek-r1', elapsed_seconds=35.39, tokens_used=0, timestamp='2026-03-21T01:23:43.824384')"
+  },
+  "student": {
+    "id": "A107",
+    "model": "qwen-coder",
+    "solution": "AgentResult(agent_id='A107', agent_name='وكيل الواجهات الخلفية', task='ادرس هذا الحل من خبير (وكيل علم الأوبئة) وأعد كتابته بأسلوبك مع تحسين:\\n\\nAgentResult(agent_id=\\'A149\\', agent_name=\\'وكيل علم الأوبئة\\', task=\\'فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\\\n\\\\nقواعد ذهبية من التجارب السابقة:\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\\\\\'A34\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\\\\\'A05\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\\\\\'A62\\\\\\', agen\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 24 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\n\\\\nاكتب خوارزمية بحث دلالي عربي-إنجليزي بدقة > 90%. أعطِ الكود كاملاً مع الشرح.\\', result=\\'خطأ: table episodes has no column named task_type\\', status=\\'error\\', model_used=\\'deepseek-r1\\', elapsed_seconds=35.39, tokens_used=0, timestamp=\\'2026-03-21T01:23:43.824384\\')', result='خطأ: table episodes has no column named task_type', status='error', model_used='qwen-coder', elapsed_seconds=125.42, tokens_used=0, timestamp='2026-03-21T01:25:49.242572')"
+  },
+  "cycle": 26,
+  "timestamp": "2026-03-21T01:25:49.242622"
+}

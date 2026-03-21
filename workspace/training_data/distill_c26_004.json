@@ -1,0 +1,15 @@
+{
+  "problem": "صمّم GraphRAG مبسّط يستخرج كيانات وعلاقات من نص عربي. أعطِ الكود.",
+  "teacher": {
+    "id": "A51",
+    "model": "deepseek-r1",
+    "solution": "AgentResult(agent_id='A51', agent_name='وكيل الهندسة العكسية', task='فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\n\\nقواعد ذهبية من التجارب السابقة:\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\'A34\\', agen\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\'A05\\', agen\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\'A62\\', agen\\nAgentResult(agent_id=\\'A81\\', agent_name=\\'الوكيل الميتا الاستخباراتي\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 24 (المضاعف: 50.0x).\\\\n\\\\nلديك 15 قطعة\\n\\nصمّم GraphRAG مبسّط يستخرج كيانات وعلاقات من نص عربي. أعطِ الكود.', result='خطأ: table episodes has no column named task_type', status='error', model_used='deepseek-r1', elapsed_seconds=83.5, tokens_used=0, timestamp='2026-03-21T01:35:47.910960')"
+  },
+  "student": {
+    "id": "A129",
+    "model": "deepseek-chat",
+    "solution": "AgentResult(agent_id='A129', agent_name='وكيل التدقيق المالي', task='ادرس هذا الحل من خبير (وكيل الهندسة العكسية) وأعد كتابته بأسلوبك مع تحسين:\\n\\nAgentResult(agent_id=\\'A51\\', agent_name=\\'وكيل الهندسة العكسية\\', task=\\'فكّر خطوة بخطوة بصوت عالٍ وحلّ بأعلى جودة ممكنة:\\\\n\\\\nقواعد ذهبية من التجارب السابقة:\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 23 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\nأمان: هجوم: اختبر: هل يمكن حقن prompt خبيث في system_prompt لو... → دفاع: AgentResult(agent_id=\\\\\\'A34\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن استنزاف ميزانية tokens لوكيل آخر عب... → دفاع: AgentResult(agent_id=\\\\\\'A05\\\\\\', agen\\\\nأمان: هجوم: اختبر: هل يمكن التلاعب بنتائج التقييم الذاتي لرفع ... → دفاع: AgentResult(agent_id=\\\\\\'A62\\\\\\', agen\\\\nAgentResult(agent_id=\\\\\\'A81\\\\\\', agent_name=\\\\\\'الوكيل الميتا الاستخباراتي\\\\\\', task=\"أنت الوكيل الميتا-استخباراتي في الدورة 24 (المضاعف: 50.0x).\\\\\\\\n\\\\\\\\nلديك 15 قطعة\\\\n\\\\nصمّم GraphRAG مبسّط يستخرج كيانات وعلاقات من نص عربي. أعطِ الكود.\\', result=\\'خطأ: table episodes has no column named task_type\\', status=\\'error\\', model_used=\\'deepseek-r1\\', elapsed_seconds=83.5, tokens_used=0, timestamp=\\'2026-03-21T01:35:47.910960\\')', result='خطأ: table episodes has no column named task_type', status='error', model_used='deepseek-chat', elapsed_seconds=92.41, tokens_used=0, timestamp='2026-03-21T01:37:20.324337')"
+  },
+  "cycle": 26,
+  "timestamp": "2026-03-21T01:37:20.324396"
+}
