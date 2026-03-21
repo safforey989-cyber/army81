@@ -39,8 +39,17 @@ class SingularSystem:
             "ما هو الحل الأمثل للتوازن بين الخصوصية وتحليل البيانات للذكاء الاصطناعي؟"
         ]
         
+    def save_singular_state(self):
+        import json
+        state = {
+            "breakthroughs": self.breakthroughs,
+            "latest_update": time.time()
+        }
+        Path("workspace/singular_state.json").write_text(json.dumps(state, ensure_ascii=False), encoding="utf-8")
+        
     def save_breakthrough(self, insight):
         self.breakthroughs.append(insight)
+        self.save_singular_state()
         
     def get_insight_count(self):
         return len(self.breakthroughs)

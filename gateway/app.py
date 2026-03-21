@@ -1822,6 +1822,38 @@ async def run_unified_cycle():
         return {"error": str(e)}
 
 
+@app.get("/singular/status")
+def singular_status():
+    """حالة النظام المتفرد"""
+    import json
+    from pathlib import Path
+    
+    def load_json(path):
+        try:
+            p = Path(path)
+            if p.exists():
+                return json.loads(p.read_text(encoding='utf-8'))
+        except:
+            pass
+        return {}
+        
+    compound = load_json("workspace/compound_state.json")
+    singular = load_json("workspace/singular_state.json")
+    predictions = load_json("workspace/predictions/tracker.json")
+    
+    epistemic = {
+        "A81": load_json("workspace/epistemic/A81_map.json"),
+        "A31": load_json("workspace/epistemic/A31_map.json"),
+        "A04": load_json("workspace/epistemic/A04_map.json"),
+    }
+    
+    return {
+        "compound": compound,
+        "singular": singular,
+        "predictions": predictions,
+        "epistemic": epistemic
+    }
+
 # ── Run ───────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn
