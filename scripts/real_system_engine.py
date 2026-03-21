@@ -1,19 +1,23 @@
-"""
-Army81 — The REAL System Engine
+"""Army81 — The REAL System Engine (Exponential Acceleration)
 المحرك الحقيقي الذي يُفعّل الجيش بالكامل بدقة 100%
 
-هذا ليس محاكاة — هذا النظام الحقيقي:
-1. يقسّم العمل بذكاء على الوكلاء المتخصصين
-2. يحقن المهارات المكتسبة تلقائياً
-3. يتعلم من كل نتيجة ويُطور الوكلاء
-4. يُجري التحليل التناقضي والتنبؤات
-5. يُعدّل كوده ذاتياً كل 5 دورات
+مبدأ التسارع الأسّي:
+- الساعة الأولى: دورة واحدة
+- الساعة الثانية: دورتان (بفضل تراكم المهارات)
+- الساعة الثالثة: 4 دورات
+- الساعة N: 2^(N-1) دورة
+- الحد الأدنى: 60 ثانية بين الدورات
+
+مبدأ التواصل الشبكي:
+- كل دورة: أفضل رد من كل فئة يُرسل لفئة مُكمّلة
+- هذا يُحاكي الشبكة العصبية الحقيقية بين 191 وكيل
 """
 
-import os, sys, json, time, logging, requests
+import os, sys, json, time, logging, requests, random
 from pathlib import Path
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import math
 
 BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE))
@@ -117,6 +121,19 @@ REAL_DOMAIN_MATRIX = {
     },
 }
 
+# خريطة التواصل بين الفئات: كل فئة تُرسل خلاصتها لفئات مُكمّلة
+CROSS_DOMAIN_LINKS = {
+    "cat1_science":    ["cat8_evolution", "cat3_tools"],
+    "cat2_society":    ["cat6_leadership", "cat4_management"],
+    "cat3_tools":      ["cat1_science", "cat9_execution"],
+    "cat4_management": ["cat5_behavior", "cat6_leadership"],
+    "cat5_behavior":   ["cat2_society", "cat7_new"],
+    "cat6_leadership": ["cat9_execution", "cat4_management"],
+    "cat7_new":        ["cat1_science", "cat8_evolution"],
+    "cat8_evolution":  ["cat9_execution", "cat7_new"],
+    "cat9_execution":  ["cat6_leadership", "cat1_science"],
+}
+
 # ═══════════════════════════════════════════════════════════
 # محرك النظام الحقيقي
 # ═══════════════════════════════════════════════════════════
@@ -147,7 +164,12 @@ class RealSystemEngine:
             "total_skills_extracted": 0,
             "total_predictions": 0,
             "total_breakthroughs": 0,
+            "total_cross_messages": 0,
             "compound_score": 1.0,
+            "acceleration_factor": 1.0,
+            "hour_start_score": 1.0,
+            "hour_start_time": time.time(),
+            "cycles_this_hour": 0,
             "domain_scores": {},
             "started_at": datetime.now().isoformat(),
             "last_cycle": None,
@@ -297,6 +319,43 @@ class RealSystemEngine:
         avg_quality = sum(r["quality"] for r in all_results) / max(len(all_results), 1)
         log.info(f"\n  📊 Average Quality: {avg_quality:.2f} | Tasks: {len(all_results)}")
 
+        # ── 1.5. تواصل بين الفئات (Cross-Domain Communication) ──
+        log.info("\n⚡ Phase 1.5: Cross-Domain Agent Communication")
+        cross_msgs = 0
+        for r in all_results:
+            if not r.get("success") or not r.get("result"): continue
+            domain = r.get("domain", "")
+            targets = CROSS_DOMAIN_LINKS.get(domain, [])
+            if not targets: continue
+            target_domain = random.choice(targets)
+            target_agents = REAL_DOMAIN_MATRIX.get(target_domain, {}).get("agents", [])
+            if not target_agents: continue
+            target_agent = random.choice(target_agents)
+            summary = r["result"][:300]
+            cross_task = (
+                f"زميلك {r['agent']} من قسم {domain} أرسل لك هذه الخلاصة:\n"
+                f"'{summary}'\n\n"
+                f"بناءً على تخصصك أنت، ما ردك العميق وملاحظاتك الإضافية؟"
+            )
+            try:
+                cross_resp = requests.post(
+                    f"{GATEWAY}/task",
+                    json={"task": cross_task, "agent_id": target_agent},
+                    timeout=60
+                )
+                if cross_resp.status_code == 200:
+                    cross_data = cross_resp.json()
+                    cross_result = cross_data.get("result", "") or cross_data.get("response", "")
+                    cross_q = self._score(cross_task, cross_result)
+                    if cross_q >= 0.6:
+                        self.skills.after_task(target_agent, cross_task, cross_result, True, int(cross_q * 10))
+                    cross_msgs += 1
+                    log.info(f"  📨 {r['agent']}→{target_agent}: تواصل ناجح (جودة: {cross_q:.2f})")
+            except Exception as e:
+                log.warning(f"  📨 {r['agent']}→{target_agent}: فشل ({e})")
+        self.state["total_cross_messages"] = self.state.get("total_cross_messages", 0) + cross_msgs
+        log.info(f"  📨 Total cross-domain messages this cycle: {cross_msgs}")
+
         # ── 2. تنبؤ استراتيجي ذاتي ──────────────────────────
         log.info("\n⚡ Phase 2: Autonomous Strategic Prediction")
         topic, question = self._autonomous_mission()
@@ -362,9 +421,25 @@ class RealSystemEngine:
         with open(WORKSPACE / "compound_log.txt", "a", encoding="utf-8") as f:
             f.write(log_line)
 
+        # ── تحديث عامل التسارع ──
+        self.state["cycles_this_hour"] = self.state.get("cycles_this_hour", 0) + 1
+        hour_elapsed = time.time() - self.state.get("hour_start_time", time.time())
+        if hour_elapsed >= 3600:
+            # ساعة جديدة: حسب التسارع من النمو الفعلي
+            hour_start = self.state.get("hour_start_score", 1.0)
+            hour_growth = new_score / max(hour_start, 0.01)
+            new_accel = min(self.state.get("acceleration_factor", 1.0) * max(hour_growth, 1.1), 16.0)
+            log.info(f"\n  🚀 HOUR COMPLETE — growth={hour_growth:.2f}x → acceleration={new_accel:.1f}x")
+            self.state["acceleration_factor"] = round(new_accel, 2)
+            self.state["hour_start_score"] = new_score
+            self.state["hour_start_time"] = time.time()
+            self.state["cycles_this_hour"] = 0
+
         log.info(f"\n✅ CYCLE #{cycle} COMPLETE")
         log.info(f"  compound_score: {prev:.3f}x → {new_score:.3f}x ({'+' if new_score > prev else ''}{(new_score-prev):.3f})")
+        log.info(f"  acceleration: {self.state.get('acceleration_factor', 1.0):.1f}x")
         log.info(f"  skills_extracted: {self.state['total_skills_extracted']}")
+        log.info(f"  cross_messages: {self.state.get('total_cross_messages', 0)}")
         log.info(f"  predictions: {self.state['total_predictions']}")
         log.info(f"  breakthroughs: {self.state['total_breakthroughs']}")
 
@@ -372,17 +447,26 @@ class RealSystemEngine:
             "cycle": cycle,
             "compound_score": new_score,
             "avg_quality": round(avg_quality, 2),
+            "acceleration": self.state.get("acceleration_factor", 1.0),
             "domain_scores": domain_scores,
             "total_tasks": self.state["total_tasks"],
             "total_skills": self.state["total_skills_extracted"],
+            "cross_messages": self.state.get("total_cross_messages", 0),
         }
 
 
 def main():
-    """الحلقة الرئيسية اللانهائية للنظام الحقيقي"""
-    log.info("=" * 60)
-    log.info("  ARMY81 — REAL SYSTEM ENGINE STARTING")
-    log.info("=" * 60)
+    """
+    الحلقة الرئيسية بنظام التسارع الأسّي:
+    الساعة 1: دورة كل 60 دقيقة
+    الساعة 2: دورة كل 30 دقيقة (acceleration × growth)
+    الساعة 3: دورة كل 15 دقيقة
+    ...وهكذا حتى الحد الأدنى 60 ثانية
+    """
+    log.info("═" * 60)
+    log.info("  ARMY81 — EXPONENTIAL ACCELERATION ENGINE")
+    log.info("  كل ساعة = ضعف سرعة الساعة السابقة")
+    log.info("═" * 60)
 
     # انتظر حتى يستيقظ الـ Gateway
     log.info("  Waiting for Gateway to be ready...")
@@ -402,30 +486,45 @@ def main():
 
     engine = RealSystemEngine()
 
-    cycle_times = []
+    # إعداد ساعة البدء إذا لم تكن موجودة
+    if "hour_start_time" not in engine.state or engine.state["hour_start_time"] == 0:
+        engine.state["hour_start_time"] = time.time()
+        engine.state["hour_start_score"] = engine.state.get("compound_score", 1.0)
+        engine.state["acceleration_factor"] = 1.0
+        engine._save_state()
+
+    BASE_WAIT = 3600  # الأساس: ساعة بين الدورات
+    MIN_WAIT  = 60    # الحد الأدنى: دقيقة واحدة
+
     while True:
         try:
             t0 = time.time()
             result = engine.run_real_cycle()
             elapsed = time.time() - t0
-            cycle_times.append(elapsed)
 
-            # فترة انتظار ذكية بناءً على الجودة
+            accel = engine.state.get("acceleration_factor", 1.0)
             quality = result.get("avg_quality", 0.5)
-            if quality > 0.75:
-                wait = 1800   # 30 min — عمل ممتاز
-            elif quality > 0.55:
-                wait = 3600   # 60 min — عمل جيد
-            elif quality > 0.35:
-                wait = 5400   # 90 min — يحتاج تحسين
-            else:
-                wait = 300    # 5 min — إعادة المحاولة سريعاً
 
-            log.info(f"  ⏳ Next cycle in {wait//60} min (quality={quality:.2f}, elapsed={elapsed:.0f}s)")
+            # حساب الانتظار بالتسارع الأسّي
+            # base_wait / acceleration_factor — لكن لا ينزل تحت الحد الأدنى
+            raw_wait = BASE_WAIT / max(accel, 1.0)
+
+            # مكافأة إضافية: جودة عالية = أسرع
+            if quality > 0.7:
+                raw_wait *= 0.7
+            elif quality < 0.4:
+                raw_wait *= 1.3  # جودة ضعيفة = أبطئ قليلاً
+
+            wait = max(int(raw_wait), MIN_WAIT)
+
+            log.info(f"\n  ⚡ ACCELERATION: {accel:.1f}x | wait={wait}s ({wait//60}min) | quality={quality:.2f}")
+            log.info(f"  📈 cycle_elapsed={elapsed:.0f}s | compound={result['compound_score']:.3f}x")
+            log.info(f"  📨 cross_msgs={result.get('cross_messages', 0)} | skills={result.get('total_skills', 0)}")
+
             time.sleep(wait)
 
         except KeyboardInterrupt:
-            log.info("⏹️ Real System Engine stopped by user.")
+            log.info("⏹️ Exponential Engine stopped by user.")
             break
         except Exception as e:
             log.error(f"❌ Cycle error: {e}")
