@@ -1,8 +1,8 @@
 {
-  "cycle": 8,
+  "cycle": 12,
   "total_tasks": 1,
   "total_lessons": 1,
-  "compound_score": 0.738,
+  "compound_score": 0.641,
   "best_responses": {
     "حلل أحدث ورقة بحثية في الذكاء الاصطناعي وما تأثيره": {
       "len": 49,
@@ -58,6 +58,30 @@
       "avg_quality": 0.0,
       "multiplier": 0.95,
       "compound_score": 0.72675
+    },
+    {
+      "cycle": 9,
+      "avg_quality": 0.0,
+      "multiplier": 0.95,
+      "compound_score": 0.7011
+    },
+    {
+      "cycle": 10,
+      "avg_quality": 0.0,
+      "multiplier": 0.95,
+      "compound_score": 0.6763999999999999
+    },
+    {
+      "cycle": 11,
+      "avg_quality": 0.0,
+      "multiplier": 0.95,
+      "compound_score": 0.6526500000000001
+    },
+    {
+      "cycle": 12,
+      "avg_quality": 0.0,
+      "multiplier": 0.95,
+      "compound_score": 0.6308
     }
   ],
   "started_at": "2026-03-21T02:09:00.297425"

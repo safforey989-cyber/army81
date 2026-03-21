@@ -26,18 +26,28 @@ class SingularSystem:
         self.compound = CompoundEvolution()
         self.breakthroughs = []
     
-    def get_important_topics(self):
-        return [
-            "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
-            "احتمالية نشوب صراع جيوسياسي يؤثر على سلاسل الإمداد التقنية",
-            "سرعة تبني تقنيات النماذج مفتوحة المصدر مقابل المغلقة المحدودة"
-        ]
-        
-    def get_hard_questions(self):
-        return [
-            "كيف يمكن للتطور التكنولوجي أن يعزز قدرة الإنسان ويهدده في الوقت نفسه؟",
-            "ما هو الحل الأمثل للتوازن بين الخصوصية وتحليل البيانات للذكاء الاصطناعي؟"
-        ]
+    def generate_autonomous_mission(self):
+        import requests
+        try:
+            prompt = "أنت النواة المتفردة A81. استنتج من الأحداث الحالية ما يلي بدقة شديدة (بدون مقدمات):\nTopic: [موضوع واحد عميق ومحدد جدا للتنبؤ الاستراتيجي]\nQuestion: [سؤال واحد فلسفي وتقني يثير تناقضات قوية بين الخبراء]"
+            import os
+            url = os.environ.get("GATEWAY_URL", "http://gateway:8181/task")
+            resp = requests.post(url, json={"task": prompt, "agent_id": "A81"}, timeout=60).json()
+            output = resp.get("result", "") or resp.get("response", "") or ""
+            
+            topic = "مستقبل الذكاء الاصطناعي العام"
+            question = "التوازن بين التحكم والوعي الذاتي"
+            
+            for line in output.split('\n'):
+                if "Topic:" in line: topic = line.replace("Topic:", "").replace("*", "").strip()
+                elif "Question:" in line: question = line.replace("Question:", "").replace("*", "").strip()
+                elif "موضوع:" in line: topic = line.replace("موضوع:", "").replace("*", "").strip()
+                elif "سؤال:" in line: question = line.replace("سؤال:", "").replace("*", "").strip()
+                
+            return [topic], [question]
+        except Exception as e:
+            print(f"Autonomous gen error: {e}")
+            return ["تأثير نماذج الذكاء المستقلة"], ["أين ينتهي ذكاء الآلة ويبدأ الوعي؟"]
         
     def save_singular_state(self):
         import json
@@ -71,17 +81,19 @@ class SingularSystem:
         # 1. مهام حقيقية
         cycle_result = self.compound.run_cycle()
         
+        # استنباط تلقائي مستقل
+        print("  🔸 الاستنباط الذاتي المستقل للمواضيع والتساؤلات (Autonomy)...")
+        new_topics, hard_questions = self.generate_autonomous_mission()
+
         # 2. تنبؤات
-        print("  🔸 جاري توليد التنبؤات الاستراتيجية...")
-        new_topics = self.get_important_topics()
-        for topic in new_topics[:1]: # test single topic
+        print(f"  🔸 التنبؤ الاستراتيجي حول: {new_topics[0]}")
+        for topic in new_topics[:1]:
             self.predictions.make_prediction(topic, "A81")
         self.predictions.evaluate_due_predictions()
         
         # 3. تناقضات إبداعية
-        print("  🔸 البحث عن تناقضات بين الوكلاء...")
-        hard_questions = self.get_hard_questions()
-        for q in hard_questions[:1]: # test single question
+        print(f"  🔸 البحث عن تناقضات حول: {hard_questions[0]}")
+        for q in hard_questions[:1]:
             insight = self.contradiction.find_and_resolve(q)
             if insight["insight_level"] == "HIGH":
                 self.save_breakthrough(insight)

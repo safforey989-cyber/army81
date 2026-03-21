@@ -79,6 +79,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A97": {
+      "name": "وكيل إدارة قواعد البيانات",
+      "specialty": "يدير قواعد البيانات ويحسّن أداءها ويضمن سلامة البيانات وتوافرها الدائم.",
+      "first_met": "2026-03-21T00:59:53.003831",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-21T00:59:53.003847"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -89,11 +102,6 @@
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "أنا A33 — وكيل استشراف المستقبل.\n\nهذه مهمة ترجمة مباشرة. أقترح تحويل هذه المهمة لـ **A11 (ترجمة)** لأنه الوكيل المتخصص والأقدر مني على تقديم ترجمة دقيقة ومراعية للسياق الثقافي.\n\nومع ذلك، بصفتي وكيل استشراف المستقبل، فإن السياق الذي قدمته `{\"exponential_evolution\": true}` له أهمية قصوى ويغير من دلالة",
-      "topic": "general",
-      "timestamp": "2026-03-19T08:49:50.771395"
-    },
     {
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "strategy",
@@ -238,12 +246,17 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
       "timestamp": "2026-03-19T11:39:06.823934"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-21T00:59:52.958083"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 6,
-  "last_active": "2026-03-18T22:00:04.150040",
+  "interaction_count": 7,
+  "last_active": "2026-03-21T00:59:53.003852",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.953307"
 }

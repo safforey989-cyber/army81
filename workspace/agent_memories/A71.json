@@ -79,6 +79,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A04": {
+      "name": "وكيل الاستخبارات الإعلامية",
+      "specialty": "يرصد الأخبار يومياً من مئات المصادر، يلخصها، ويوزع الأهم منها.",
+      "first_met": "2026-03-21T00:58:20.476165",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل الاستخبارات الإعلامية",
+          "timestamp": "2026-03-21T00:58:20.476222"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -257,8 +270,8 @@
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 6,
-  "last_active": "2026-03-18T22:01:01.919864",
+  "interaction_count": 7,
+  "last_active": "2026-03-21T00:58:20.476231",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.975615"
 }

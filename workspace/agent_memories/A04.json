@@ -27,6 +27,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A71": {
+      "name": "وكيل الأمن الداخلي والنزاهة",
+      "specialty": "يحمي المنظمة من المخاطر الداخلية ويبني ثقافة النزاهة والامتثال.",
+      "first_met": "2026-03-21T00:58:20.470579",
+      "interactions": [
+        {
+          "summary": "خطأ: table episodes has no column named task_type",
+          "timestamp": "2026-03-21T00:58:20.470602"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -196,8 +209,8 @@
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 2,
-  "last_active": "2026-03-20T16:05:33.994273",
+  "interaction_count": 3,
+  "last_active": "2026-03-21T00:58:20.470606",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.905184",
   "performance": {
