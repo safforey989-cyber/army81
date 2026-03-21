@@ -123,3 +123,20 @@ services:
       - GATEWAY_URL=http://gateway:8181
     volumes:
       - ./workspace:/app/workspace
+
+  # ═══════════════════════════════════════
+  # 8. Compound Evolution — النواة الحقيقية
+  # ═══════════════════════════════════════
+  compound_evolution:
+    build: .
+    env_file: .env
+    depends_on:
+      gateway:
+        condition: service_healthy
+    restart: always
+    command: python scripts/compound_evolution.py
+    environment:
+      - GATEWAY_URL=http://gateway:8181
+    volumes:
+      - ./workspace:/app/workspace
+      - ./agents:/app/agents
