@@ -1153,8 +1153,8 @@
   "A12_retrieve": {
     "agent_id": "A12",
     "type": "retrieve",
-    "usage_count": 69,
-    "total_reward": 34.5,
+    "usage_count": 70,
+    "total_reward": 35.0,
     "avg_reward": 0.5,
     "recent_rewards": [
       0.5,
@@ -1178,7 +1178,7 @@
       0.5,
       0.5
     ],
-    "last_used": "2026-03-21T01:43:41.129325"
+    "last_used": "2026-03-21T01:46:27.179661"
   },
   "A12_insert": {
     "agent_id": "A12",
@@ -1753,8 +1753,8 @@
   "A50_retrieve": {
     "agent_id": "A50",
     "type": "retrieve",
-    "usage_count": 70,
-    "total_reward": 35.0,
+    "usage_count": 71,
+    "total_reward": 35.5,
     "avg_reward": 0.5,
     "recent_rewards": [
       0.5,
@@ -1778,7 +1778,7 @@
       0.5,
       0.5
     ],
-    "last_used": "2026-03-19T23:30:04.876251"
+    "last_used": "2026-03-21T01:49:18.307372"
   },
   "A50_insert": {
     "agent_id": "A50",
@@ -1813,8 +1813,8 @@
   "A40_retrieve": {
     "agent_id": "A40",
     "type": "retrieve",
-    "usage_count": 135,
-    "total_reward": 67.5,
+    "usage_count": 136,
+    "total_reward": 68.0,
     "avg_reward": 0.5,
     "recent_rewards": [
       0.5,
@@ -1838,7 +1838,7 @@
       0.5,
       0.5
     ],
-    "last_used": "2026-03-21T01:16:00.828819"
+    "last_used": "2026-03-21T01:48:48.429885"
   },
   "A40_insert": {
     "agent_id": "A40",
@@ -3433,8 +3433,8 @@
   "A30_retrieve": {
     "agent_id": "A30",
     "type": "retrieve",
-    "usage_count": 46,
-    "total_reward": 23.0,
+    "usage_count": 47,
+    "total_reward": 23.5,
     "avg_reward": 0.5,
     "recent_rewards": [
       0.5,
@@ -3458,7 +3458,7 @@
       0.5,
       0.5
     ],
-    "last_used": "2026-03-21T01:43:41.130331"
+    "last_used": "2026-03-21T01:47:54.865429"
   },
   "A30_insert": {
     "agent_id": "A30",
@@ -3793,8 +3793,8 @@
   "A20_retrieve": {
     "agent_id": "A20",
     "type": "retrieve",
-    "usage_count": 30,
-    "total_reward": 15.0,
+    "usage_count": 31,
+    "total_reward": 15.5,
     "avg_reward": 0.5,
     "recent_rewards": [
       0.5,
@@ -3818,7 +3818,7 @@
       0.5,
       0.5
     ],
-    "last_used": "2026-03-21T01:43:41.129937"
+    "last_used": "2026-03-21T01:45:29.886495"
   },
   "A20_insert": {
     "agent_id": "A20",

@@ -194,7 +194,7 @@ class RealSystemEngine:
             resp = requests.post(
                 f"{GATEWAY}/task",
                 json={"task": enriched_task, "agent_id": agent_id},
-                timeout=90
+                timeout=180
             )
 
             if resp.status_code != 200:
@@ -298,8 +298,8 @@ class RealSystemEngine:
         domain_scores = {}
 
         # ── 1. تشغيل جميع الفئات بالتوازي ──────────────────
-        log.info("\n⚡ Phase 1: Domain Execution (Parallel)")
-        with ThreadPoolExecutor(max_workers=4) as pool:
+        log.info("\n⚡ Phase 1: Domain Execution (2-parallel)")
+        with ThreadPoolExecutor(max_workers=2) as pool:
             futures = {
                 pool.submit(self._run_domain_parallel, domain, cfg): domain
                 for domain, cfg in REAL_DOMAIN_MATRIX.items()

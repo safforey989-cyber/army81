@@ -146,3 +146,4 @@
 2026-03-21 01:22:48,326   إجمالي الدروس: 1
 2026-03-21 01:22:48,326   ⏳ الانتظار 120 دقيقة قبل الدورة القادمة...
 [2026-03-21T01:38:44.062530] REAL_CYCLE #1 | score=0.980x | quality=0.00 | tasks=9 | skills=0 | breakthroughs=0
+[2026-03-21T01:43:41.127088] REAL_CYCLE #2 | score=0.960x | quality=0.00 | tasks=9 | skills=0 | breakthroughs=0
