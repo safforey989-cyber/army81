@@ -9,6 +9,18 @@ from pathlib import Path
 GATEWAY = os.getenv("GATEWAY_URL", "http://localhost:8181")
 log = logging.getLogger("army81.compound")
 
+# تحميل محول المهارات والذاكرة
+try:
+    import sys
+    from pathlib import Path as _P
+    sys.path.insert(0, str(_P(__file__).resolve().parent.parent))
+    from core.skill_memory_adapter import get_skill_memory_adapter
+    _skill_adapter = get_skill_memory_adapter()
+    log.info("[Skills] SkillMemoryAdapter loaded ✅")
+except Exception as _e:
+    _skill_adapter = None
+    log.warning(f"[Skills] Could not load SkillMemoryAdapter: {_e}")
+
 # مهام تدريب حقيقية لكل فئة
 TRAINING_TASKS = {
     "cat1_science": [
@@ -65,24 +77,45 @@ class CompoundEvolution:
         self.state_file.write_text(json.dumps(self.state, ensure_ascii=False, indent=2))
     
     def run_task(self, task: str, agent_id: str = None, category: str = None) -> dict:
-        """ينفذ مهمة حقيقية ويقيّمها"""
+        """ينفذ مهمة حقيقية ويقيّمها — مع حقن المهارات واستخراجها"""
         try:
+            # ── 1. حقن المهارات قبل المهمة (AutoSkill retrieve) ──
+            skill_context = ""
+            if _skill_adapter and agent_id:
+                skill_context = _skill_adapter.before_task(agent_id, task)
+                if skill_context:
+                    log.info(f"    [Skills] حقن {len(skill_context)} حرف من المهارات للوكيل {agent_id}")
+
             payload = {"task": task}
             if agent_id:
                 payload["preferred_agent"] = agent_id
             if category:
                 payload["preferred_category"] = category
-            
+            # حقن المهارات كسياق إضافي في المهمة
+            if skill_context:
+                payload["task"] = skill_context + "\n\n---\n" + task
+
             r = requests.post(f"{GATEWAY}/task", json=payload, timeout=60)
             if r.status_code == 200:
                 result = r.json()
                 response = result.get("result", "")
+                actual_agent = result.get("agent_id", agent_id or "unknown")
                 quality = self.score_response(task, response)
+
+                # ── 2. استخراج مهارة بعد المهمة إذا كانت عالية الجودة ──
+                if _skill_adapter and quality >= 0.6:
+                    rating = int(quality * 10)  # تحويل الجودة إلى تقييم 1-10
+                    _skill_adapter.after_task(
+                        actual_agent, task, response,
+                        success=True, rating=rating
+                    )
+                    log.info(f"    [Skills] استخرجت مهارة من {actual_agent} (جودة: {quality})")
+
                 return {
                     "success": True,
                     "response": response,
                     "quality": quality,
-                    "agent": result.get("agent_id"),
+                    "agent": actual_agent,
                     "model": result.get("model_used"),
                     "elapsed": result.get("elapsed_seconds", 0),
                 }

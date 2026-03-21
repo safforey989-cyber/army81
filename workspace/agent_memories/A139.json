@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Parseek (Iran)",
     "spmedia",
     "leak_monitor",
     "Bing",
@@ -55,7 +54,8 @@
     "Alleba (Philippines)",
     "research_c24_638db236",
     "skill_A82_3289",
-    "invention_c25_4"
+    "invention_c25_4",
+    "research_c26_f7d7878b"
   ],
   "knowledge_topics": [],
   "performance": {

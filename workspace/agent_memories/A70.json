@@ -81,6 +81,17 @@
       "result": "خطأ: table episodes has no column named task_type",
       "success": true,
       "timestamp": "2026-03-21T01:01:37.501829"
+    },
+    {
+      "partners": [
+        "A172",
+        "A105",
+        "A66"
+      ],
+      "task": "اقترح طريقة لتحسين سرعة استجابة النظام بنسبة 50%",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-21T01:02:32.189714"
     }
   ],
   "decisions": [],

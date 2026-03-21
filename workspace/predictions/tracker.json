@@ -143,6 +143,66 @@
       "falsification": "",
       "outcome": null,
       "accuracy": null
+    },
+    {
+      "id": "1c03a5c0-4928-46f9-be77-b39ffd7e847c",
+      "agent": "A81",
+      "topic": "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
+      "made_at": "2026-03-21T01:02:44.915766",
+      "due_at": "2026-03-28T01:02:44.915771",
+      "prediction": "",
+      "confidence": 50,
+      "falsification": "",
+      "outcome": null,
+      "accuracy": null
+    },
+    {
+      "id": "f32d96c1-b424-4814-b848-de28bf17292c",
+      "agent": "A81",
+      "topic": "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
+      "made_at": "2026-03-21T01:05:22.632462",
+      "due_at": "2026-03-28T01:05:22.632467",
+      "prediction": "",
+      "confidence": 50,
+      "falsification": "",
+      "outcome": null,
+      "accuracy": null
+    },
+    {
+      "id": "dfe379ac-665b-4aaf-b74b-6f92eacd0b4b",
+      "agent": "A81",
+      "topic": "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
+      "made_at": "2026-03-21T01:08:00.332497",
+      "due_at": "2026-03-28T01:08:00.332502",
+      "prediction": "",
+      "confidence": 50,
+      "falsification": "",
+      "outcome": null,
+      "accuracy": null
+    },
+    {
+      "id": "90ec0675-b592-48e4-b143-394ee20bc267",
+      "agent": "A81",
+      "topic": "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
+      "made_at": "2026-03-21T01:10:34.705306",
+      "due_at": "2026-03-28T01:10:34.705316",
+      "prediction": "",
+      "confidence": 50,
+      "falsification": "",
+      "outcome": null,
+      "accuracy": null
+    },
+    {
+      "id": "7cc0d13a-ba02-4584-8a40-d4018eeb8995",
+      "agent": "A81",
+      "topic": "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
+      "made_at": "2026-03-21T01:13:12.435067",
+      "due_at": "2026-03-28T01:13:12.435077",
+      "prediction": "",
+      "confidence": 50,
+      "falsification": "",
+      "outcome": null,
+      "accuracy": null
     }
   ],
   "lessons": []

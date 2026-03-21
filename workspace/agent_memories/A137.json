@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Onet.pl (Poland)",
     "Orange (France)",
     "SAPO (Portugal)",
     "Search.com",
@@ -55,7 +54,8 @@
     "research_c24_638db236",
     "research_c24_992c7317",
     "research_c24_343a6498",
-    "skill_A141_1085"
+    "skill_A141_1085",
+    "research_c26_157c7780"
   ],
   "knowledge_topics": [],
   "performance": {
