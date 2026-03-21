@@ -79,6 +79,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A177": {
+      "name": "وكيل استكشاف الفضاء الرقمي",
+      "specialty": "يستكشف الفضاء الرقمي بحثاً عن معارف وأدوات وفرص جديدة للنظام.",
+      "first_met": "2026-03-20T16:13:50.338256",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-20T16:13:50.338256"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -90,11 +103,6 @@
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "أنا A28 — وكيل الاستراتيجية العسكرية.\n\nهذه المهمة تتطلب خبرة فنية عالية في البرمجة، معالجة اللغات الطبيعية، والنماذج اللغوية المتقدمة، وهي خارج نطاق تخصصي الدقيق في الاستراتيجيات العسكرية والأمنية. محاولتي السابقة لكتابة دالة Python أدت إلى خطأ، مما يؤكد ضرورة إسناد هذه المهمة للمختص.\n\nلضمان أعلى جو",
-      "topic": "code",
-      "timestamp": "2026-03-19T08:40:38.686072"
-    },
     {
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
@@ -239,12 +247,17 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
       "timestamp": "2026-03-19T11:44:32.716398"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-20T16:13:50.336908"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 6,
-  "last_active": "2026-03-18T21:47:10.847805",
+  "interaction_count": 7,
+  "last_active": "2026-03-20T16:13:50.338256",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.950304"
 }

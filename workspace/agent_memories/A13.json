@@ -118,6 +118,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A104": {
+      "name": "وكيل إصلاح الأخطاء",
+      "specialty": "يشخّص الأخطاء البرمجية ويصلحها بسرعة ودقة مع ضمان عدم ظهور أخطاء جانبية.",
+      "first_met": "2026-03-20T16:14:37.797227",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-20T16:14:37.797227"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -125,16 +138,12 @@
     "research_c24_638db236",
     "research_c24_e634931f",
     "research_c24_7959ea21",
-    "skill_A13_8838"
+    "skill_A13_8838",
+    "skill_A90_500"
   ],
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "code",
-      "timestamp": "2026-03-19T09:02:24.331832"
-    },
     {
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
@@ -279,12 +288,17 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
       "timestamp": "2026-03-19T11:38:17.241893"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-20T16:14:37.790142"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 9,
-  "last_active": "2026-03-18T22:02:08.200007",
+  "interaction_count": 10,
+  "last_active": "2026-03-20T16:14:37.797227",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.921408",
   "performance": {

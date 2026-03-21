@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "jais-30b-v1",
     "chatglm2-6b",
     "MPT-7B",
     "fastchat-t5-3b-v1.0",
@@ -55,7 +54,8 @@
     "skill_A69_315",
     "research_c24_e634931f",
     "research_c24_1a708f40",
-    "research_c24_6e47fb84"
+    "research_c24_6e47fb84",
+    "invention_c25_2"
   ],
   "knowledge_topics": [],
   "performance": {

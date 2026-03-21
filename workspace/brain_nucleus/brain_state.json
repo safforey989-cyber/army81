@@ -2,9 +2,10 @@
   "version": 1,
   "base_model": "qwen3:8b",
   "adapters": [],
-  "total_distillations": 16,
+  "total_distillations": 32,
   "total_training_runs": 0,
   "knowledge_layers": 1,
   "created_at": "2026-03-20T04:14:19.203337",
-  "consciousness_level": 0.16
+  "consciousness_level": 0.21000000000000002,
+  "last_mega_cycle": "20260320_161144"
 }

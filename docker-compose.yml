@@ -140,3 +140,18 @@ services:
     volumes:
       - ./workspace:/app/workspace
       - ./agents:/app/agents
+
+  # ═══════════════════════════════════════
+  # 9. Singular System — النظام المتفرد
+  # ═══════════════════════════════════════
+  singular_core:
+    build: .
+    env_file: .env
+    depends_on:
+      gateway:
+        condition: service_healthy
+    restart: always
+    command: python scripts/singular_system.py
+    volumes:
+      - ./workspace:/app/workspace
+      - ./agents:/app/agents

@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Deep Reinforcement Learning for Automated Stock Trading: An Ensemble Strategy, 2020",
     "Ten Financial Applications of Machine Learning, 2018",
     "ATLAS",
     "Use chatgpt to adjust strategy parameters",
@@ -55,7 +54,8 @@
     "trading-gym",
     "research_c24_46f0b556",
     "skill_A134_4591",
-    "skill_A84_5186"
+    "skill_A84_5186",
+    "skill_A80_1247"
   ],
   "knowledge_topics": [],
   "performance": {

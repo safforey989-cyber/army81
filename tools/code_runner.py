@@ -1,176 +1,135 @@
 """
 Army81 Tools - Code Runner
-تنفيذ كود Python بأمان في بيئة معزولة
+تنفيذ كود Python بأمان مطلق في حاويات Docker المعزولة (Isolation)
 """
+
 import os
-import sys
-import subprocess
-import tempfile
 import logging
-import time
+import tempfile
+import docker # python-docker package (pip install docker)
 from typing import Optional
+
+from core.base_agent import Tool
 
 logger = logging.getLogger("army81.tools.code_runner")
 
-# حد زمني للتنفيذ (ثواني)
-TIMEOUT_SECONDS = 15
+# حدود التنفيذ لضمان عدم استهلاك موارد المخدم الأساسي
+TIMEOUT_SECONDS = 20
+MAX_OUTPUT_CHARS = 5000
+DOCKER_IMAGE = "python:3.9-slim"
 
-# حجم output أقصى
-MAX_OUTPUT_CHARS = 4000
+def _ensure_docker_client():
+    """التحقق من اتصال عميل Docker"""
+    try:
+        client = docker.from_env()
+        # محاولة سحب الصورة إذا لم تكن موجودة
+        try:
+            client.images.get(DOCKER_IMAGE)
+        except docker.errors.ImageNotFound:
+            logger.info(f"Pulling Docker image {DOCKER_IMAGE} (This might take a moment)...")
+            client.images.pull(DOCKER_IMAGE)
+            
+        return client, None
+    except Exception as e:
+        logger.error(f"فشل الاتصال بمحرك Docker: {e}")
+        return None, str(e)
 
-# مكتبات مسموح باستيرادها فقط
-ALLOWED_IMPORTS = {
-    "math", "random", "json", "re", "datetime", "time",
-    "collections", "itertools", "functools", "string",
-    "statistics", "decimal", "fractions", "hashlib",
-    "base64", "urllib", "os.path", "pathlib",
-}
-
-# كلمات محظورة في الكود
-BLOCKED_KEYWORDS = [
-    "import os", "import sys", "import subprocess",
-    "__import__", "exec(", "eval(", "open(",
-    "socket", "requests", "urllib.request",
-    "shutil", "glob", "os.system", "os.popen",
-    "os.remove", "os.unlink", "os.rmdir",
-]
-
-
-def _is_safe_code(code: str) -> tuple[bool, str]:
-    """التحقق من أمان الكود قبل تنفيذه"""
-    code_lower = code.lower()
-
-    for blocked in BLOCKED_KEYWORDS:
-        if blocked.lower() in code_lower:
-            return False, f"الكود يحتوي على عملية محظورة: '{blocked}'"
-
-    return True, ""
-
-
-def run_code_safe(code: str) -> str:
+def run_code_docker(code: str) -> str:
     """
-    تنفيذ كود Python بسيط في subprocess معزول
-    للحسابات والتحليل البسيط
+    ينفذ كود Python داخل Docker Container جديد وحصري،
+    ثب يحذفه فوراً عند انتهاء التنفيذ لالتقاط النتائج (stdout/stderr).
+    
+    Args:
+        code (str): الكود البرمجي المكتوب بلغة Python
+        
+    Returns:
+        str: المخرجات النصية الناتجة من تنفيذ الكود أو رسائل الأخطاء.
     """
-    is_safe, reason = _is_safe_code(code)
-    if not is_safe:
-        return f"رُفض تنفيذ الكود: {reason}"
-
-    # اكتب الكود في ملف مؤقت
+    
+    # 1. الاتصال بـ Docker
+    client, err = _ensure_docker_client()
+    if not client:
+        return f"فشل تشغيل بيئة العزل (Docker): {err}\nتأكد من أن Docker يعمل على الخادم الحالي."
+        
+    # 2. إنشاء ملف آمن للكود
     with tempfile.NamedTemporaryFile(
         mode="w", suffix=".py", delete=False, encoding="utf-8"
     ) as f:
-        # أضف header آمن
-        header = (
-            "import math, random, json, re, datetime, time, collections, "
-            "itertools, functools, string, statistics\n"
-        )
-        f.write(header + code)
+        # يمكن إضافة استيرادات افتراضية أو أكواد مساعدة هنا
+        f.write("# Army81 Isolated Execution\n" + code)
         tmp_path = f.name
-
+        
+    container = None
     try:
-        start = time.time()
-
-        result = subprocess.run(
-            [sys.executable, tmp_path],
-            capture_output=True,
-            text=True,
-            timeout=TIMEOUT_SECONDS,
-            # بيئة محدودة
-            env={
-                "PATH": os.environ.get("PATH", ""),
-                "PYTHONPATH": "",
-            },
+        # سنقوم بربط الملف المؤقت داخل الكونتينر
+        container_code_path = "/tmp/script.py"
+        volumes = {
+            tmp_path: {'bind': container_code_path, 'mode': 'ro'}
+        }
+        
+        # 3. تشغيل الحاوية
+        logger.info("Spinning up secure Python container for code execution...")
+        container = client.containers.run(
+            image=DOCKER_IMAGE,
+            command=f"python {container_code_path}",
+            volumes=volumes,
+            network_disabled=True,      # منع الكود من الاتصال بالإنترنت بالافتراضي (أمان)
+            mem_limit="128m",           # حد أقصى للـ RAM
+            cpu_period=100000,
+            cpu_quota=50000,            # 50% من طاقة قلب واحد للمعالج
+            detach=True,
+            remove=False                # نحن سنحذفه يدوياً لقراءة العوائد
         )
-
-        elapsed = round(time.time() - start, 2)
-        output = result.stdout + result.stderr
-
+        
+        try:
+            # الانتظار حتى انتهاء التنفيذ (أو بلوغ المدة القصوى)
+            result = container.wait(timeout=TIMEOUT_SECONDS)
+            exit_code = result.get("StatusCode", -1)
+            
+            # 4. جلب المخرجات (Logs)
+            logs = container.logs(stdout=True, stderr=True).decode("utf-8")
+            
+            if exit_code == 0:
+                output = f"✅ تم تنفيذ الكود بنجاح (Exit Code 0):\n```python\n{logs.strip()}\n```"
+            else:
+                output = f"❌ انتهى الكود بخطأ (Exit Code {exit_code}):\n```python\n{logs.strip()}\n```"
+                
+        except Exception as timeout_ext:
+            # إذا استغرق الكود وقتاً أطول من المسموح يتم قتله
+            container.kill()
+            output = f"⏰ انتهت المهلة المحددة ({TIMEOUT_SECONDS} ثانية) وتم إيقاف الكود إجبارياً لمنع استنزاف الموارد."
+            
+        # الاقتطاع إذا كان المخرج طويلاً جداً
         if len(output) > MAX_OUTPUT_CHARS:
-            output = output[:MAX_OUTPUT_CHARS] + f"\n... (تم اقتطاع الباقي)"
+            output = output[:MAX_OUTPUT_CHARS] + "\n...(تم اقتطاع المخرجات المتبقية لحماية الذاكرة)"
+            
+        return output
 
-        if result.returncode == 0:
-            return f"✅ تم التنفيذ في {elapsed}ث:\n```\n{output.strip()}\n```"
-        else:
-            return f"❌ خطأ في الكود:\n```\n{output.strip()}\n```"
-
-    except subprocess.TimeoutExpired:
-        return f"⏰ انتهت المهلة ({TIMEOUT_SECONDS}ث) — الكود يستغرق وقتاً طويلاً"
+    except docker.errors.ContainerError as ce:
+        return f"خطأ أثناء إنشاء أو تشغيل حاوية Docker: {str(ce)}"
     except Exception as e:
-        logger.error(f"code_runner error: {e}")
-        return f"خطأ في التنفيذ: {e}"
+        logger.error(f"Code runner final exception: {e}")
+        return f"خطأ استثنائي في مشغل الأكواد: {str(e)}"
+        
     finally:
+        # 5. تنظيف البيئة (إزالة الكونتينر والملف المؤقت)
+        if container:
+            try:
+                container.remove(force=True)
+            except:
+                pass
+                
         try:
             os.unlink(tmp_path)
-        except Exception:
+        except:
             pass
 
-
-def run_code_e2b(code: str, packages: str = "") -> str:
-    """
-    تنفيذ كود Python في E2B cloud sandbox (آمن تماماً)
-    يتطلب E2B_API_KEY في .env
-    """
-    api_key = os.getenv("E2B_API_KEY", "")
-    if not api_key:
-        # fallback لـ safe runner
-        logger.info("E2B_API_KEY not set, falling back to safe runner")
-        return run_code_safe(code)
-
-    try:
-        from e2b_code_interpreter import Sandbox
-
-        with Sandbox(api_key=api_key) as sbx:
-            # تثبيت packages إضافية إذا طُلب
-            if packages:
-                pkg_list = [p.strip() for p in packages.split(",") if p.strip()]
-                for pkg in pkg_list:
-                    sbx.commands.run(f"pip install {pkg} -q")
-
-            execution = sbx.run_code(code)
-
-            output_parts = []
-
-            if execution.logs.stdout:
-                output_parts.append("Output:\n" + "\n".join(execution.logs.stdout))
-
-            if execution.logs.stderr:
-                output_parts.append("Errors:\n" + "\n".join(execution.logs.stderr))
-
-            if execution.results:
-                for r in execution.results:
-                    if hasattr(r, "text"):
-                        output_parts.append(str(r.text))
-
-            output = "\n\n".join(output_parts) if output_parts else "لا output"
-
-            if len(output) > MAX_OUTPUT_CHARS:
-                output = output[:MAX_OUTPUT_CHARS] + "\n...(مقتطع)"
-
-            return f"✅ E2B تنفيذ:\n```\n{output}\n```"
-
-    except ImportError:
-        logger.warning("e2b_code_interpreter not installed, using safe runner")
-        return run_code_safe(code)
-    except Exception as e:
-        logger.error(f"E2B error: {e}")
-        return f"خطأ في E2B: {e}\n\nجارٍ التنفيذ المحلي...\n" + run_code_safe(code)
-
-
-def run_python_snippet(code: str) -> str:
-    """دالة مختصرة — تختار التنفيذ الأنسب تلقائياً"""
-    if os.getenv("E2B_API_KEY"):
-        return run_code_e2b(code)
-    return run_code_safe(code)
-
-
-if __name__ == "__main__":
-    print("اختبار code_runner...")
-    test_code = """
-x = [1, 2, 3, 4, 5]
-print("المجموع:", sum(x))
-print("المتوسط:", sum(x) / len(x))
-import math
-print("جذر 144:", math.sqrt(144))
-"""
-    print(run_code_safe(test_code))
+# تعريف الأداة لوكلاء الهندسة/البرمجة
+code_runner_tool = Tool(
+    name="run_code",
+    description="تنفذ كود بايثون حقيقي بأمان تام في حاوية دوكر معزولة (Docker Sandbox) وتعيد المخرجات الخاصة بالكود (stdout/stderr). استخدم هذه الأداة لاختبار أي كود قبل اعتماده، أو لإجراء العمليات الحسابية والبرمجية المعقدة.",
+    func=run_code_docker,
+    parameters={
+        "code": "الكود البرمجي الكامل بلغة Python المراد تنفيذه"
+    }
+)

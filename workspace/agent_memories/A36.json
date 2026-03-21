@@ -59,7 +59,19 @@
     "research_c15_d32b3af6",
     "skill_A189_861"
   ],
-  "collaborations": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A34",
+        "A109",
+        "A17"
+      ],
+      "task": "اقترح نظام تقييم ذاتي لقياس أداء كل وكيل",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:29:08.606746"
+    }
+  ],
   "decisions": [],
   "insights": [
     {

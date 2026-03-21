@@ -8,7 +8,19 @@
     "research_c24_e634931f",
     "research_c24_7959ea21"
   ],
-  "collaborations": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A34",
+        "A137",
+        "A64"
+      ],
+      "task": "صمم آلية لمشاركة المعرفة تلقائياً بين الوكلاء",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:33:35.726510"
+    }
+  ],
   "decisions": [],
   "insights": [
     {

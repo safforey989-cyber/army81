@@ -40,6 +40,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A89": {
+      "name": "وكيل التبلور المعرفي",
+      "specialty": "يحوّل الذكريات والتجارب المتراكمة إلى بلورات معرفية صلبة يسهل استرجاعها واستخدامها.",
+      "first_met": "2026-03-20T15:56:24.477932",
+      "interactions": [
+        {
+          "summary": "شاركني معرفة عن cat4_management",
+          "timestamp": "2026-03-20T15:56:24.477932"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -202,8 +215,8 @@
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 3,
-  "last_active": "2026-03-18T22:03:31.340542",
+  "interaction_count": 4,
+  "last_active": "2026-03-20T15:56:24.477932",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.973610"
 }

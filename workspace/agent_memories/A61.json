@@ -92,6 +92,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A63": {
+      "name": "وكيل إدارة المؤسسات الكبرى",
+      "specialty": "متخصص في تعقيدات إدارة المنظمات الكبيرة: التنسيق والتوافق وكسر الصوامع.",
+      "first_met": "2026-03-20T16:07:19.009353",
+      "interactions": [
+        {
+          "summary": "تعرّف عليّ وكيل إدارة المؤسسات الكبرى",
+          "timestamp": "2026-03-20T16:07:19.009353"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -256,8 +269,8 @@
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 7,
-  "last_active": "2026-03-18T21:56:25.113536",
+  "interaction_count": 8,
+  "last_active": "2026-03-20T16:07:19.009353",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.969580"
 }

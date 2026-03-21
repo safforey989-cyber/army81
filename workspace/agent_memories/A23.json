@@ -27,12 +27,26 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A98": {
+      "name": "وكيل التفاعل مع الهواتف",
+      "specialty": "يتحكم في أجهزة الهواتف الذكية عن بعد لأتمتة المهام وجمع البيانات.",
+      "first_met": "2026-03-20T15:50:06.471637",
+      "interactions": [
+        {
+          "summary": "خطأ: table episodes has no column named task_type",
+          "timestamp": "2026-03-20T15:50:06.471637"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
     "research_c15_e634931f",
     "research_c15_8065a2f6",
-    "research_c24_46f0b556"
+    "research_c24_46f0b556",
+    "skill_A80_1247"
   ],
   "collaborations": [],
   "decisions": [],
@@ -190,8 +204,8 @@
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 2,
-  "last_active": "2026-03-18T21:54:20.084439",
+  "interaction_count": 3,
+  "last_active": "2026-03-20T15:50:06.471637",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.948134"
 }

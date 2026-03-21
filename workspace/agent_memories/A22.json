@@ -79,6 +79,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A132": {
+      "name": "وكيل الاستخبارات المفتوحة",
+      "specialty": "يجمع ويحلل المعلومات الاستخباراتية من المصادر المفتوحة بمنهجية احترافية.",
+      "first_met": "2026-03-20T16:11:04.494915",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-20T16:11:04.494915"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -88,16 +101,12 @@
     "skill_A69_315",
     "research_c24_d32b3af6",
     "research_c24_992c7317",
-    "research_c24_1720c653"
+    "research_c24_1720c653",
+    "skill_A117_734"
   ],
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "strategy",
-      "timestamp": "2026-03-19T09:14:48.343469"
-    },
     {
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
@@ -242,12 +251,17 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
       "timestamp": "2026-03-19T11:41:45.485506"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-20T16:11:04.489247"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 6,
-  "last_active": "2026-03-18T22:05:44.502874",
+  "interaction_count": 7,
+  "last_active": "2026-03-20T16:11:04.494915",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.947108"
 }

@@ -70,6 +70,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A89": {
+      "name": "وكيل التبلور المعرفي",
+      "specialty": "يحوّل الذكريات والتجارب المتراكمة إلى بلورات معرفية صلبة يسهل استرجاعها واستخدامها.",
+      "first_met": "2026-03-20T16:12:50.721674",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-20T16:12:50.721674"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -81,11 +94,6 @@
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "code",
-      "timestamp": "2026-03-19T10:34:37.123040"
-    },
     {
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
@@ -230,12 +238,17 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
       "timestamp": "2026-03-19T11:47:38.109228"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-20T16:12:50.721674"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 6,
-  "last_active": "2026-03-18T22:03:08.031389",
+  "interaction_count": 7,
+  "last_active": "2026-03-20T16:12:50.721674",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.979779",
   "performance": {

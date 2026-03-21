@@ -46,7 +46,17 @@
     "research_c24_6e47fb84",
     "skill_A82_3289"
   ],
-  "collaborations": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A96"
+      ],
+      "task": "تقطير: اشرح آلية: كيف نستخدم RAG مع Knowledge Graph لجعل ",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:25:42.358097"
+    }
+  ],
   "decisions": [],
   "insights": [
     {

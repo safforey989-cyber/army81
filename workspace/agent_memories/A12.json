@@ -1,7 +1,21 @@
 {
   "agent_id": "A12",
   "created_at": "2026-03-18T22:13:02.105205",
-  "known_agents": {},
+  "known_agents": {
+    "A152": {
+      "name": "وكيل صياغة العقود",
+      "specialty": "يصيغ عقوداً قانونية محكمة ويراجع البنود ويكشف الثغرات القانونية.",
+      "first_met": "2026-03-20T16:06:16.560687",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-20T16:06:16.560687"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
   "skills_learned": [
     "research_c24_f7d7878b",
     "research_c24_6e47fb84",
@@ -12,11 +26,6 @@
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "code",
-      "timestamp": "2026-03-19T09:10:22.045208"
-    },
     {
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
@@ -161,12 +170,17 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
       "timestamp": "2026-03-19T11:28:44.612214"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-20T16:06:16.556852"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 0,
-  "last_active": null,
+  "interaction_count": 1,
+  "last_active": "2026-03-20T16:06:16.560687",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.917407"
 }

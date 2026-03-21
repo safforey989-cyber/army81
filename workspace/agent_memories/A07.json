@@ -40,6 +40,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A113": {
+      "name": "وكيل تحرير الفيديو",
+      "specialty": "يحرر ويعدل مقاطع الفيديو آلياً باستخدام تقنيات الذكاء الاصطناعي المتقدمة.",
+      "first_met": "2026-03-20T16:09:41.387376",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-20T16:09:41.387376"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -57,11 +70,6 @@
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "general",
-      "timestamp": "2026-03-19T10:21:06.038246"
-    },
     {
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "code",
@@ -206,12 +214,17 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "medical",
       "timestamp": "2026-03-19T11:53:17.672846"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-20T16:09:41.384375"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 3,
-  "last_active": "2026-03-18T21:46:52.438083",
+  "interaction_count": 4,
+  "last_active": "2026-03-20T16:09:41.387376",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.906216"
 }

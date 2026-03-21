@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Generative AI learning path - Google Cloud",
     "CS25: Transformers United V2 - Stanford University",
     "feedback_writer",
     "How Diffusion Models Work - DeepLearning.AI",
@@ -55,7 +54,8 @@
     "skill_A69_315",
     "research_c24_992c7317",
     "research_c24_343a6498",
-    "research_c24_e634931f"
+    "research_c24_e634931f",
+    "skill_A90_500"
   ],
   "knowledge_topics": [],
   "performance": {

@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "news_verifier",
     "Parseek (Iran)",
     "spmedia",
     "leak_monitor",
@@ -55,7 +54,8 @@
     "Brave",
     "Alleba (Philippines)",
     "research_c15_7d6f469b",
-    "research_c24_1720c653"
+    "research_c24_1720c653",
+    "skill_A147_628"
   ],
   "knowledge_topics": [],
   "performance": {

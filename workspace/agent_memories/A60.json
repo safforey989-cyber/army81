@@ -47,7 +47,19 @@
     "skill_A60_5899",
     "skill_A60_100"
   ],
-  "collaborations": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A71",
+        "A62",
+        "A93"
+      ],
+      "task": "صمم بروتوكول طوارئ عندما يفشل أحد الوكلاء",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:30:11.175617"
+    }
+  ],
   "decisions": [],
   "insights": [
     {

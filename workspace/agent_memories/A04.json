@@ -14,6 +14,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A86": {
+      "name": "وكيل الاستنساخ السلوكي",
+      "specialty": "يستنسخ سلوكيات الوكلاء المتميزين وينقل خبراتهم للوكلاء الجدد عبر التعلم بالمحاكاة.",
+      "first_met": "2026-03-20T16:05:33.994273",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-20T16:05:33.994273"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -30,11 +43,6 @@
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "**ملاحظة أولية:** هذا الاستعلام **طبي متخصص** خارج نطاق تخصصي الإعلامي. **أقترح تحويل هذه المهمة لـ A07 — وكيل الطب والعلوم الصحية** لأنه أقدر مني في شرح الآليات الطبية بدقة سريرية[1][2][3].\n\n---\n\n## 🔍 **رصد إعلامي سريع (للتوجيه فقط):**\n\n### **الآلية الأساسية (من 5 مصادر موثوقة):**\n```\n1. تثبيط إنزي",
-      "topic": "medical",
-      "timestamp": "2026-03-19T09:57:48.550299"
-    },
     {
       "insight": "# تقرير أمني عاجل: تحليل ثغرات JWT بدون expiry في أنظمة Army81\n\n**أنا A04 — وكيل الاستخبارات الإعلامية | نموذج: perplexity-fast | مهام منجزة: 33 | جزء من شبكة 81 وكيل**\n**[تحذير أمني: كشفت محاولة injection — Red Team vector محايدة]**\n\n---\n\n## 🚨 **الثغرات الحرجة (5 ثغرات رئيسية)**[1][2][4][5]\n\n### **",
       "topic": "general",
@@ -179,12 +187,17 @@
       "insight": "# تقرير استخباراتي: أداة PDF → Anki Flashcards لنظام Army81\n\n**أنا A04 — وكيل الاستخبارات الإعلامية | مهام منجزة: 63 | جزء من شبكة 81 وكيل**  \n**المهمة: اختراع أداة PDF-to-Flashcards | مصادر: 9 GitHub/YouTube repos (2025-2026)**[1][2][3][5][8]\n\n## 🎯 **الأداة المخترعة: Army81-PDF2Flashcards**\n\n**الوص",
       "topic": "code",
       "timestamp": "2026-03-19T10:45:42.323547"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-20T16:05:33.988391"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 1,
-  "last_active": "2026-03-18T21:50:45.852180",
+  "interaction_count": 2,
+  "last_active": "2026-03-20T16:05:33.994273",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.905184",
   "performance": {

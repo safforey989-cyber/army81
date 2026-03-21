@@ -79,6 +79,32 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A61": {
+      "name": "وكيل الحوسبة البيولوجية",
+      "specialty": "يطبق أدوات الحوسبة والذكاء الاصطناعي على مشاكل البيولوجيا والجينوم والطب.",
+      "first_met": "2026-03-20T16:07:19.006689",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-20T16:07:19.006689"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    },
+    "A187": {
+      "name": "وكيل فك الشفرات",
+      "specialty": "يفك الشفرات والرموز المعقدة ويحلل الأنماط المخفية في البيانات والنصوص.",
+      "first_met": "2026-03-20T16:07:19.016783",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-20T16:07:19.016783"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -94,11 +120,6 @@
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "أنا A63، وكيل إدارة المؤسسات الكبرى.\n\nبعد تحليل المهمة المطلوبة، يتضح أنها ذات طابع تقني وبرمجي بحت، وتتعلق بهندسة نماذج الذكاء الاصطناعي. هذا يقع خارج نطاق تخصصي الذي يركز على الهياكل التنظيمية، وإدارة التغيير، والتوافق الاستراتيجي في المؤسسات الكبيرة.\n\nلضمان أعلى جودة ممكنة في الحل، **أقترح تحويل ",
-      "topic": "general",
-      "timestamp": "2026-03-19T08:36:25.088789"
-    },
     {
       "insight": "أنا A63، وكيل إدارة المؤسسات الكبرى.\n\nهذه المهمة، في جوهرها، هي تحدٍ في التصميم التنظيمي والتشغيلي لشبكتنا. إنها ليست مجرد مسألة برمجية، بل تتعلق بكيفية تخصيص الموارد (الوكلاء) للمهام بكفاءة قصوى، وكيفية بناء نظام يتعلم ويتطور، تمامًا كما تفعل مؤسسة كبرى ناجحة. سأقوم بتصميم الحل من منظور إداري أولاً",
       "topic": "code",
@@ -243,12 +264,17 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
       "timestamp": "2026-03-19T11:28:22.905570"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-20T16:07:19.004634"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 6,
-  "last_active": "2026-03-18T22:00:31.474175",
+  "interaction_count": 8,
+  "last_active": "2026-03-20T16:07:19.016783",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.970579"
 }

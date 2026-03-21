@@ -83,9 +83,55 @@
   },
   "skills_learned": [
     "research_c15_7d6f469b",
-    "research_c24_530b0845"
+    "research_c24_530b0845",
+    "skill_A141_1085"
   ],
-  "collaborations": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A36",
+        "A109",
+        "A17"
+      ],
+      "task": "اقترح نظام تقييم ذاتي لقياس أداء كل وكيل",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:29:08.612801"
+    },
+    {
+      "partners": [
+        "A168",
+        "A144",
+        "A160"
+      ],
+      "task": "صمم بروتوكول طوارئ عندما يفشل أحد الوكلاء",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:31:32.252214"
+    },
+    {
+      "partners": [
+        "A37",
+        "A137",
+        "A64"
+      ],
+      "task": "صمم آلية لمشاركة المعرفة تلقائياً بين الوكلاء",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:33:35.722994"
+    },
+    {
+      "partners": [
+        "A67",
+        "A160",
+        "A139"
+      ],
+      "task": "صمم آلية لمشاركة المعرفة تلقائياً بين الوكلاء",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:36:04.684252"
+    }
+  ],
   "decisions": [],
   "insights": [
     {

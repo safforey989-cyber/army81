@@ -38,9 +38,9 @@ def build_tools_registry() -> Dict[str, Tool]:
 
     registry["fetch_news"] = Tool(
         name="fetch_news",
-        description="جلب أخبار حديثة حول موضوع معين",
-        func=_lazy_import("tools.web_search", "fetch_news"),
-        parameters={"topic": "الموضوع", "lang": "اللغة (ar/en)"}
+        description="جلب أخبار حديثة حول موضوع معين من NewsAPI",
+        func=_lazy_import("tools.news_fetcher", "fetch_news"),
+        parameters={"topic": "الموضوع", "days_back": "عدد الأيام", "num_articles": "عدد المقالات المطلوبة"}
     )
 
     # LangSearch / Tavily — بحث عميق للوكلاء
@@ -92,7 +92,14 @@ def build_tools_registry() -> Dict[str, Tool]:
         name="write_file",
         description="كتابة أو حفظ محتوى في ملف",
         func=_lazy_import("tools.file_ops", "write_file"),
-        parameters={"path": "مسار الملف", "content": "المحتوى"}
+        parameters={"payload": "المحتوى والمسار بصيغة: path|content"}
+    )
+
+    registry["list_files"] = Tool(
+        name="list_files",
+        description="استعراض الملفات الموجودة في مجلد الأمان Sandbox",
+        func=_lazy_import("tools.file_ops", "list_files"),
+        parameters={"directory": "المسار (اختياري)"}
     )
 
     registry["analyze_data"] = Tool(
@@ -104,21 +111,13 @@ def build_tools_registry() -> Dict[str, Tool]:
 
     # ── 3. تنفيذ الكود ───────────────────────────────────
 
-    # E2B — تنفيذ كود آمن في cloud
-    if os.getenv("E2B_API_KEY"):
-        registry["run_code"] = Tool(
-            name="run_code",
-            description="تنفيذ كود Python في بيئة آمنة معزولة ومشاهدة النتيجة",
-            func=_lazy_import("tools.code_runner", "run_code_e2b"),
-            parameters={"code": "كود Python", "packages": "مكتبات إضافية"}
-        )
-    else:
-        registry["run_code"] = Tool(
-            name="run_code",
-            description="تنفيذ كود Python بسيط وآمن",
-            func=_lazy_import("tools.code_runner", "run_code_safe"),
-            parameters={"code": "كود Python بسيط"}
-        )
+    # Docker Container - Isolation Engine
+    registry["run_code"] = Tool(
+        name="run_code",
+        description="تنفيذ كود Python حقيقي بأمان تام في حاوية دوكر Docker معزولة (Sandbox/Isolation) وتعيد العوائد (stdout/stderr).",
+        func=_lazy_import("tools.code_runner", "run_code_docker"),
+        parameters={"code": "الكود البرمجي الكامل بلغة Python"}
+    )
 
     # ── 4. أدوات متخصصة ──────────────────────────────────
 

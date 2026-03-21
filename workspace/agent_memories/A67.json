@@ -45,7 +45,30 @@
   "skills_learned": [
     "research_c15_e634931f"
   ],
-  "collaborations": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A164",
+        "A68",
+        "A58"
+      ],
+      "task": "اقترح طريقة لتحسين سرعة استجابة النظام بنسبة 50%",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:32:36.794544"
+    },
+    {
+      "partners": [
+        "A34",
+        "A160",
+        "A139"
+      ],
+      "task": "صمم آلية لمشاركة المعرفة تلقائياً بين الوكلاء",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:36:04.684252"
+    }
+  ],
   "decisions": [],
   "insights": [
     {

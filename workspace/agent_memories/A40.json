@@ -64,7 +64,19 @@
     "research_c24_7d6f469b",
     "research_c24_1a708f40"
   ],
-  "collaborations": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A70",
+        "A93",
+        "A33"
+      ],
+      "task": "اقترح طريقة لتقليل تكاليف API بنسبة 30%",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:28:07.047625"
+    }
+  ],
   "decisions": [],
   "insights": [
     {

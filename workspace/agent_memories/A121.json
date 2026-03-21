@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Generative AI in a nutshell",
     "Emerging Trends in Generative AI Research: A Selection of Recent Papers",
     "Who Owns the Generative AI Platform? | Andreessen Horowitz",
     "GenAI Prism Infographic by Brian Solis",
@@ -55,7 +54,8 @@
     "research_c24_46f0b556",
     "research_c24_343a6498",
     "research_c24_530b0845",
-    "research_c24_6e47fb84"
+    "research_c24_6e47fb84",
+    "skill_A104_1412"
   ],
   "knowledge_topics": [],
   "performance": {

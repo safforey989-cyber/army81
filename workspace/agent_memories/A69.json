@@ -111,7 +111,19 @@
     "skill_A69_315",
     "skill_A130_679"
   ],
-  "collaborations": [],
+  "collaborations": [
+    {
+      "partners": [
+        "A149",
+        "A67",
+        "A59"
+      ],
+      "task": "صمم نظام أولويات ذكي للمهام القادمة",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-20T16:26:29.145900"
+    }
+  ],
   "decisions": [],
   "insights": [
     {

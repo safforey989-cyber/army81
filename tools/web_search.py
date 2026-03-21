@@ -1,218 +1,111 @@
 """
-Army81 Tools - Web Search
-بحث حقيقي على الإنترنت
+Army81 - Web Search Tool
+أداة للبحث في الإنترنت باستخدام Serper API أو Google Custom Search
 """
+
 import os
-import logging
+import json
 import requests
-from typing import List, Dict
+import urllib.parse
+import logging
+from typing import Dict, Any
 
-logger = logging.getLogger("army81.tools.search")
+from core.base_agent import Tool
 
+logger = logging.getLogger("army81.tools.web_search")
 
-def web_search(query: str, num_results: int = 5) -> str:
+def search_web(query: str, num_results: int = 5) -> str:
     """
-    بحث على الإنترنت — ترتيب الأولوية:
-    1. LangSearch (أعمق — يعطي محتوى كامل)
-    2. Serper (أسرع — Google results)
-    3. Google CSE (بديل)
+    يبحث في الإنترنت عن الكلمات المفتاحية المطلوبة باستخدام Serper API كمفضل،
+    أو Google Custom Search كبديل، ويعيد ملخصاً نصياً بالنتائج.
+    
+    Args:
+        query (str): جملة البحث أو الكلمات المفتاحية
+        num_results (int): عدد النتائج المطلوبة (الافتراضي 5)
+        
+    Returns:
+        str: نص منسق يحتوي على أهم نتائج البحث ومقتطفاتها (Snippets)
     """
-    # 1. LangSearch أولاً (بحث عميق مع محتوى)
-    langsearch_key = os.getenv("LANGSEARCH_API_KEY", "")
-    if langsearch_key:
-        result = _search_langsearch(query, num_results, langsearch_key)
-        if result and "خطأ" not in result:
-            return result
+    
+    serper_api_key = os.getenv("SERPER_API_KEY")
+    google_api_key = os.getenv("GOOGLE_API_KEY")
+    google_cse_id = os.getenv("GOOGLE_CSE_ID")
+    
+    if serper_api_key:
+        return _search_serper(query, serper_api_key, num_results)
+    
+    if google_api_key and google_cse_id:
+        return _search_google(query, google_api_key, google_cse_id, num_results)
+        
+    return "خطأ: لم يتم العثور على مفاتيح API للبحث (SERPER_API_KEY أو GOOGLE_API_KEY/GOOGLE_CSE_ID) في البيئة."
 
-    # 2. Serper (أسرع)
-    serper_key = os.getenv("SERPER_API_KEY", "")
-    if serper_key:
-        return _search_serper(query, num_results, serper_key)
-
-    # 3. Google Custom Search
-    google_key = os.getenv("GOOGLE_API_KEY", "")
-    cse_id = os.getenv("GOOGLE_CSE_ID", "")
-    if google_key and cse_id:
-        return _search_google_cse(query, num_results, google_key, cse_id)
-
-    return "خطأ: لا يوجد مفتاح API للبحث. أضف LANGSEARCH_API_KEY أو SERPER_API_KEY في .env"
-
-
-def _search_langsearch(query: str, num: int, api_key: str) -> str:
-    """
-    بحث عبر LangSearch API — يعطي محتوى كامل للصفحات
-    أفضل للوكلاء لأنه يوفر سياقاً أعمق
-    """
-    url = "https://api.langsearch.com/v1/web-search"
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json",
-    }
-    payload = {
-        "query": query,
-        "count": min(num, 10),
-    }
-
-    try:
-        resp = requests.post(url, headers=headers, json=payload, timeout=20)
-        resp.raise_for_status()
-        data = resp.json()
-
-        results = []
-        # LangSearch response: data.webPages.value[]
-        web_pages = data.get("data", {})
-        if isinstance(web_pages, dict):
-            items = web_pages.get("webPages", {}).get("value", [])
-        else:
-            items = data.get("results", [])
-
-        for item in items[:num]:
-            title = item.get("name", item.get("title", ""))
-            snippet = item.get("snippet", item.get("summary", ""))
-            link = item.get("url", item.get("link", ""))
-            # LangSearch يعطي محتوى أطول — اقتطع بذكاء
-            if len(snippet) > 500:
-                snippet = snippet[:500] + "..."
-            results.append(
-                f"**{title}**\n"
-                f"{snippet}\n"
-                f"المصدر: {link}"
-            )
-
-        if not results:
-            return "لم تُوجد نتائج من LangSearch"
-
-        return "\n\n---\n\n".join(results)
-
-    except requests.exceptions.HTTPError as e:
-        logger.warning(f"LangSearch HTTP error: {e}")
-        return f"خطأ LangSearch: {e}"
-    except Exception as e:
-        logger.warning(f"LangSearch error: {e}")
-        return f"خطأ في LangSearch: {e}"
-
-
-def deep_search(query: str, num_results: int = 5) -> str:
-    """
-    بحث عميق — يستخدم LangSearch للحصول على محتوى كامل
-    مخصص للوكلاء الذين يحتاجون سياقاً غنياً (A04, A60, A01)
-    """
-    langsearch_key = os.getenv("LANGSEARCH_API_KEY", "")
-    if langsearch_key:
-        return _search_langsearch(query, num_results, langsearch_key)
-    # fallback
-    return web_search(query, num_results)
-
-
-def _search_serper(query: str, num: int, api_key: str) -> str:
-    """بحث عبر Serper.dev"""
+def _search_serper(query: str, api_key: str, num_results: int) -> str:
+    """Implement search using Serper.dev API"""
     url = "https://google.serper.dev/search"
-    headers = {"X-API-KEY": api_key, "Content-Type": "application/json"}
-    payload = {"q": query, "num": num, "gl": "us", "hl": "ar"}
-
-    try:
-        resp = requests.post(url, headers=headers, json=payload, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
-
-        results = []
-        for item in data.get("organic", [])[:num]:
-            results.append(
-                f"**{item.get('title', '')}**\n"
-                f"{item.get('snippet', '')}\n"
-                f"المصدر: {item.get('link', '')}"
-            )
-
-        if not results:
-            return "لم تُوجد نتائج"
-
-        return "\n\n---\n\n".join(results)
-
-    except Exception as e:
-        logger.error(f"Serper search error: {e}")
-        return f"خطأ في البحث: {e}"
-
-
-def _search_google_cse(query: str, num: int, api_key: str, cse_id: str) -> str:
-    """بحث عبر Google Custom Search Engine"""
-    url = "https://www.googleapis.com/customsearch/v1"
-    params = {
-        "key": api_key,
-        "cx": cse_id,
+    payload = json.dumps({
         "q": query,
-        "num": min(num, 10),
+        "num": num_results,
+        "hl": "ar"
+    })
+    headers = {
+        'X-API-KEY': api_key,
+        'Content-Type': 'application/json'
     }
-
+    
     try:
-        resp = requests.get(url, params=params, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
-
-        results = []
-        for item in data.get("items", []):
-            results.append(
-                f"**{item.get('title', '')}**\n"
-                f"{item.get('snippet', '')}\n"
-                f"المصدر: {item.get('link', '')}"
-            )
-
-        return "\n\n---\n\n".join(results) if results else "لم تُوجد نتائج"
-
+        response = requests.post(url, headers=headers, data=payload, timeout=10)
+        response.raise_for_status()
+        data = response.json()
+        
+        results = data.get("organic", [])
+        if not results:
+            return "لم يتم العثور على نتائج مفيدة لهذا البحث."
+            
+        formatted_results = [f"نتائج بحث (Serper) لـ '{query}':\n"]
+        for idx, res in enumerate(results[:num_results], 1):
+            title = res.get("title", "بدون عنوان")
+            snippet = res.get("snippet", "لا يوجد وصف متاح للاستعراض")
+            link = res.get("link", "#")
+            formatted_results.append(f"{idx}. {title}\nالمقتطف: {snippet}\nالرابط: {link}\n")
+            
+        return "\n".join(formatted_results)
+        
     except Exception as e:
-        logger.error(f"Google CSE error: {e}")
-        return f"خطأ في البحث: {e}"
+        logger.error(f"فشل البحث عبر Serper: {e}")
+        return f"خطأ أثناء جلب نتائج البحث من Serper: {str(e)}"
 
+def _search_google(query: str, api_key: str, cse_id: str, num_results: int) -> str:
+    """Implement search using Google Custom Search API"""
+    try:
+        url = f"https://www.googleapis.com/customsearch/v1?q={urllib.parse.quote(query)}&key={api_key}&cx={cse_id}&num={num_results}&hl=ar"
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        data = response.json()
+        
+        items = data.get("items", [])
+        if not items:
+            return "لم يتم العثور على نتائج مفيدة لهذا البحث."
+            
+        formatted_results = [f"نتائج بحث (Google) لـ '{query}':\n"]
+        for idx, item in enumerate(items[:num_results], 1):
+            title = item.get("title", "بدون عنوان")
+            snippet = item.get("snippet", "لا يوجد وصف متاح للاستعراض")
+            link = item.get("link", "#")
+            formatted_results.append(f"{idx}. {title}\nالمقتطف: {snippet}\nالرابط: {link}\n")
+            
+        return "\n".join(formatted_results)
+        
+    except Exception as e:
+        logger.error(f"فشل البحث عبر Google: {e}")
+        return f"خطأ أثناء جلب نتائج البحث من Google: {str(e)}"
 
-def fetch_news(topic: str = "artificial intelligence", lang: str = "ar") -> str:
-    """
-    جمع أخبار حديثة حول موضوع معين
-    يستخدم NewsAPI إذا كان مفتاحه متاحاً، وإلا يبحث عبر Serper
-    """
-    news_key = os.getenv("NEWSAPI_KEY", "")
-
-    if news_key:
-        return _fetch_newsapi(topic, lang, news_key)
-    else:
-        # استخدم البحث العادي كبديل
-        return web_search(f"أخبار {topic} اليوم", num_results=5)
-
-
-def _fetch_newsapi(topic: str, lang: str, api_key: str) -> str:
-    """جمع أخبار عبر NewsAPI.org"""
-    url = "https://newsapi.org/v2/everything"
-    params = {
-        "q": topic,
-        "language": lang,
-        "sortBy": "publishedAt",
-        "pageSize": 5,
-        "apiKey": api_key,
+# تعريف الأداة لنظام Army81
+web_search_tool = Tool(
+    name="web_search",
+    description="أداة للبحث في الإنترنت عن أحدث المعلومات والمقالات باستخدام كلمات مفتاحية.",
+    func=search_web,
+    parameters={
+        "query": "الكلمات المفتاحية للبحث (نص/String)",
+        "num_results": "(اختياري) عدد النتائج المطلوبة كحد أقصى (رقم بحد أقصى 10)"
     }
-
-    try:
-        resp = requests.get(url, params=params, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
-
-        articles = data.get("articles", [])
-        if not articles:
-            return f"لا توجد أخبار حول: {topic}"
-
-        results = []
-        for art in articles[:5]:
-            results.append(
-                f"**{art.get('title', '')}**\n"
-                f"{art.get('description', '')}\n"
-                f"المصدر: {art.get('source', {}).get('name', '')} — {art.get('publishedAt', '')[:10]}"
-            )
-
-        return "\n\n---\n\n".join(results)
-
-    except Exception as e:
-        return f"خطأ في جلب الأخبار: {e}"
-
-
-# للاختبار المباشر
-if __name__ == "__main__":
-    print("اختبار البحث...")
-    result = web_search("أحدث تطورات الذكاء الاصطناعي 2026")
-    print(result)
+)

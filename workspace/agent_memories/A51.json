@@ -1,11 +1,26 @@
 {
   "agent_id": "A51",
   "created_at": "2026-03-18T22:10:10.302995",
-  "known_agents": {},
+  "known_agents": {
+    "A31": {
+      "name": "وكيل تحليل الاستخبارات",
+      "specialty": "يجمع المعلومات من مصادر متعددة ويحللها لإنتاج استخبارات استراتيجية قابلة للتنفيذ.",
+      "first_met": "2026-03-20T15:50:54.507971",
+      "interactions": [
+        {
+          "summary": "خطأ: table episodes has no column named task_type",
+          "timestamp": "2026-03-20T15:50:54.507971"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
+    }
+  },
   "skills_learned": [
     "research_c24_1720c653",
     "research_c24_46f0b556",
-    "research_c24_6e47fb84"
+    "research_c24_6e47fb84",
+    "skill_A90_500"
   ],
   "collaborations": [],
   "decisions": [],
@@ -163,8 +178,8 @@
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 0,
-  "last_active": null,
+  "interaction_count": 1,
+  "last_active": "2026-03-20T15:50:54.507971",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.963514"
 }
