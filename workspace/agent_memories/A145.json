@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "OpenEHR",
     "symptom_analyzer",
     "Medplum",
     "OpenMRS",
@@ -55,7 +54,8 @@
     "DICOM Standards Browser",
     "DICOMcloud",
     "research_c24_1a708f40",
-    "research_c24_d8388cb6"
+    "research_c24_d8388cb6",
+    "skill_A164_9536"
   ],
   "knowledge_topics": [],
   "performance": {

@@ -1,0 +1,5 @@
+Title: SAMA: Factorized Semantic Anchoring and Motion Alignment for Instruction-Guided Video Editing
+Source: arXiv
+Date: 2026-03-21T00:38:20.153946
+
+Current instruction-guided video editing models struggle to simultaneously balance precise semantic modifications with faithful motion preservation. While existing approaches rely on injecting explicit external priors (e.g., VLM features or structural conditions) to mitigate these issues, this reliance severely bottlenecks model robustness and generalization. To overcome this limitation, we present SAMA (factorized Semantic Anchoring and Motion Alignment), a framework that factorizes video editi

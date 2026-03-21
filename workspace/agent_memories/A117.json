@@ -6,8 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "LLM Visualization",
-    "The Story of AI Winters and What it Teaches Us Today",
     "A Brief History of Generative AI - DATAVERSITY",
     "The Building Blocks of Generative AI | by Jonathan Shriftman | Medium",
     "Generative AI Iceberg",
@@ -56,7 +54,8 @@
     "A jargon-free explanation of how AI large language models work | Ars Technica",
     "2310.04438] A Brief History of Prompt: Leveraging Language Models",
     "Generative AI in a nutshell",
-    "The landscape of generative AI landscape reports | by Ramsri Goutham | Jan, 2023 | Medium"
+    "The landscape of generative AI landscape reports | by Ramsri Goutham | Jan, 2023 | Medium",
+    "skill_A17_274"
   ],
   "knowledge_topics": [],
   "performance": {

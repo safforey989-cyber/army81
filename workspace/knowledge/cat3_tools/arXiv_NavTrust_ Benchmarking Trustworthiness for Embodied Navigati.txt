@@ -1,0 +1,5 @@
+Title: NavTrust: Benchmarking Trustworthiness for Embodied Navigation
+Source: arXiv
+Date: 2026-03-21T00:38:01.170209
+
+There are two major categories of embodied navigation: Vision-Language Navigation (VLN), where agents navigate by following natural language instructions; and Object-Goal Navigation (OGN), where agents navigate to a specified target object. However, existing work primarily evaluates model performance under nominal conditions, overlooking the potential corruptions that arise in real-world settings. To address this gap, we present NavTrust, a unified benchmark that systematically corrupts input mo

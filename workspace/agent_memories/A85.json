@@ -6,8 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "chatglm2-6b",
-    "MPT-7B",
     "fastchat-t5-3b-v1.0",
     "UL2 & Flan-UL2",
     "dolly-v2-12b",
@@ -55,7 +53,9 @@
     "research_c24_e634931f",
     "research_c24_1a708f40",
     "research_c24_6e47fb84",
-    "invention_c25_2"
+    "invention_c25_2",
+    "skill_A80_1247",
+    "skill_A147_628"
   ],
   "knowledge_topics": [],
   "performance": {

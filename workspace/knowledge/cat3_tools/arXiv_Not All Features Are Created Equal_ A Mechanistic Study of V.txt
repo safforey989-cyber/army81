@@ -1,0 +1,5 @@
+Title: Not All Features Are Created Equal: A Mechanistic Study of Vision-Language-Action Models
+Source: arXiv
+Date: 2026-03-21T00:38:01.163983
+
+Vision-Language-Action (VLA) models combine perception, language, and motor control in a single architecture, yet how they translate multimodal inputs into actions remains poorly understood. We apply activation injection, sparse autoencoders (SAEs), and linear probes to six models spanning 80M--7B parameters across 394,000+ rollout episodes on four benchmarks. The visual pathway dominates action generation across all architectures: injecting baseline activations into null-prompt episodes recover

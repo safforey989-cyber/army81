@@ -1,0 +1,6 @@
+Title: Robustness, Cost, and Attack-Surface Concentration in Phishing Detection
+Source: arXiv
+Date: 2026-03-21T00:37:46.688050
+
+Phishing detectors built on engineered website features attain near-perfect accuracy under i.i.d.\ evaluation, yet deployment security depends on robustness to post-deployment feature manipulation. We study this gap through a cost-aware evasion framework that models discrete, monotone feature edits under explicit attacker budgets. Three diagnostics are introduced: minimal evasion cost (MEC), the evasion survival rate $S(B)$, and the robustness concentration index (RCI).
+  On the UCI Phishing Web

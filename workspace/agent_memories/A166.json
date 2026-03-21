@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Practical Deep Learning for Coders part 2: Deep Learning Foundations to Stable Diffusion - fast.ai",
     "Learn the fundamentals of generative AI for real-world applications - AWS x DeepLearning.AI",
     "6.S191: Introduction to Deep Learning - Massachusetts Institute of Technology",
     "11-777: MultiModal Machine Learning (Fall 2022) - Carnegie Mellon University",
@@ -55,7 +54,8 @@
     "Speech and Language Processing - Dan Jurafsky and James H. Martin",
     "Building Systems with the ChatGPT API - DeepLearning.AI",
     "LangChain for LLM Application Development - DeepLearning.AI",
-    "research_c24_d8388cb6"
+    "research_c24_d8388cb6",
+    "skill_A117_734"
   ],
   "knowledge_topics": [],
   "performance": {

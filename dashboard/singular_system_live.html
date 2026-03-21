@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Singular System - Live C2</title>
+    <title>The Singular System - Live Neural C2</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
         :root {
-            --bg-color: #05050f;
-            --panel-bg: rgba(20, 20, 35, 0.6);
-            --panel-border: rgba(100, 150, 255, 0.15);
+            --bg-color: #020205;
+            --panel-bg: rgba(10, 10, 20, 0.7);
+            --panel-border: rgba(0, 240, 255, 0.15);
             --primary: #00f0ff;
             --secondary: #bd00ff;
             --text-main: #f0f0f5;
@@ -29,8 +30,8 @@
         body {
             background-color: var(--bg-color);
             background-image: 
-                radial-gradient(circle at 15% 50%, rgba(189, 0, 255, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 85% 30%, rgba(0, 240, 255, 0.08) 0%, transparent 50%);
+                radial-gradient(circle at 10% 50%, rgba(189, 0, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 30%, rgba(0, 240, 255, 0.05) 0%, transparent 40%);
             color: var(--text-main);
             min-height: 100vh;
             overflow-x: hidden;
@@ -38,162 +39,83 @@
             flex-direction: column;
         }
 
-        /* ─── Header ─── */
         header {
-            padding: 1.5rem 3rem;
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid var(--panel-border);
-            background: rgba(5, 5, 15, 0.8);
-            backdrop-filter: blur(12px);
+            background: rgba(2, 2, 5, 0.9);
+            backdrop-filter: blur(16px);
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
+        .logo-container { display: flex; align-items: center; gap: 15px; }
         .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
+            font-size: 1.5rem; font-weight: 900;
             background: linear-gradient(90deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
             text-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
-            letter-spacing: 1px;
         }
+        .pulsing-dot { width: 10px; height: 10px; background-color: var(--success); border-radius: 50%; box-shadow: 0 0 10px var(--success); animation: pulse 2s infinite ease-in-out; }
+        @keyframes pulse { 0% { transform: scale(0.8); opacity: 0.5; } 50% { transform: scale(1.2); opacity: 1; } 100% { transform: scale(0.8); opacity: 0.5; } }
 
-        .pulsing-dot {
-            width: 10px;
-            height: 10px;
-            background-color: var(--success);
-            border-radius: 50%;
-            box-shadow: 0 0 10px var(--success);
-            animation: pulse 2s infinite ease-in-out;
-        }
+        .compound-score { display: flex; flex-direction: column; align-items: flex-end; }
+        .score-value { font-size: 1.8rem; font-weight: 900; color: var(--success); text-shadow: 0 0 15px rgba(0, 255, 136, 0.4); line-height: 1; }
+        .score-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; margin-top: 5px; }
 
-        @keyframes pulse {
-            0% { transform: scale(0.8); opacity: 0.5; }
-            50% { transform: scale(1.2); opacity: 1; }
-            100% { transform: scale(0.8); opacity: 0.5; }
-        }
-
-        .compound-score {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
-        .score-value {
-            font-size: 2.2rem;
-            font-weight: 900;
-            color: var(--success);
-            text-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
-            line-height: 1;
-        }
-
-        .score-label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-top: 5px;
-        }
-
-        /* ─── Main Grid ─── */
         main {
-            padding: 2rem 3rem;
+            padding: 1.5rem 2rem;
             flex: 1;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+            grid-gap: 1.5rem;
             grid-auto-rows: minmax(min-content, max-content);
-            gap: 1.5rem;
         }
 
         .panel {
             background: var(--panel-bg);
             border: 1px solid var(--panel-border);
-            border-radius: 16px;
-            padding: 1.5rem;
-            backdrop-filter: blur(16px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            padding: 1.2rem;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
             position: relative;
         }
+        .panel-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 0.8rem; }
+        .panel-title { font-size: 1rem; font-weight: 700; color: #fff; }
+        .panel-icon { background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 1.2rem; }
 
-        .panel-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 1.2rem;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            padding-bottom: 0.8rem;
-        }
-
-        .panel-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #fff;
-        }
-
-        /* Grid Placements */
-        .actions-panel { grid-column: span 5; grid-row: span 2; }
-        .terminal-panel { grid-column: span 7; }
-        .civilizational { grid-column: span 7; }
-        .epistemic { grid-column: span 4; }
-        .predictions { grid-column: span 4; }
-        .contradictions { grid-column: span 4; }
-
-        /* ─── Controls (C2) ─── */
-        .control-group { margin-bottom: 1rem; }
-        .control-group label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-muted); }
-        .control-input { 
-            width: 100%; padding: 10px; background: rgba(0,0,0,0.5); 
-            border: 1px solid var(--primary); color: #fff; border-radius: 6px; 
-            font-family: inherit;
-        }
-        .control-input:focus { outline: none; box-shadow: 0 0 10px rgba(0,240,255,0.2); }
-        .control-btn {
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            color: #fff; border: none; padding: 12px 20px; border-radius: 6px; 
-            cursor: pointer; font-weight: bold; font-size: 1rem;
-            transition: transform 0.2s, box-shadow 0.2s; width: 100%;
-        }
-        .control-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0, 240, 255, 0.4); }
-        .control-btn.alt { background: transparent; border: 1px solid var(--warning); color: var(--warning); padding: 8px;}
-        .control-btn.alt:hover { background: rgba(255, 179, 0, 0.1); box-shadow: 0 5px 15px rgba(255, 179, 0, 0.3); }
+        /* Grid specific */
+        .actions-panel { grid-column: span 3; grid-row: span 2; display: flex; flex-direction: column; }
+        .neural-panel { grid-column: span 9; grid-row: span 2; position: relative; padding: 0; overflow: hidden; display: flex; flex-direction: column;}
+        .neural-title-overlay { position: absolute; top: 1.2rem; right: 1.2rem; z-index: 10; background: rgba(0,0,0,0.5); padding: 10px 15px; border-radius: 8px; border: 1px solid var(--panel-border); backdrop-filter: blur(5px);}
         
-        .response-box {
-            background: rgba(0,0,0,0.4); border-right: 4px solid var(--secondary);
-            padding: 15px; border-radius: 6px; margin-top: 15px; min-height: 120px;
-            font-size: 0.95rem; line-height: 1.6; max-height: 300px; overflow-y: auto; white-space: pre-wrap;
-        }
+        .terminal-panel { grid-column: span 12; }
+        .epistemic { grid-column: span 4; }
+        .predictions { grid-column: span 8; }
+
+        /* ─── Neural Canvas ─── */
+        #neural-canvas { width: 100%; min-height: 480px; flex: 1; background: radial-gradient(circle at center, #0a0a1a 0%, #000000 100%); border-radius: 12px; }
+
+        /* ─── C2 Controls ─── */
+        .control-group { margin-bottom: 1rem; }
+        .control-group label { display: block; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--text-muted); }
+        .control-input { width: 100%; padding: 10px; background: rgba(0,0,0,0.6); border: 1px solid rgba(0, 240, 255, 0.3); color: #fff; border-radius: 6px; font-family: inherit; font-size: 0.9rem;}
+        .control-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 15px rgba(0,240,255,0.2); }
+        .control-btn { background: linear-gradient(90deg, var(--primary), var(--secondary)); color: #fff; border: none; padding: 12px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; transition: 0.2s; }
+        .control-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(0, 240, 255, 0.4); }
+        .control-btn.alt { background: transparent; border: 1px solid var(--warning); color: var(--warning); padding: 8px; font-size: 0.8rem;}
+        .control-btn.alt:hover { background: rgba(255, 179, 0, 0.1); }
+        
+        .response-box { background: rgba(0,0,0,0.5); border-right: 3px solid var(--secondary); padding: 12px; border-radius: 6px; margin-top: auto; min-height: 150px; font-size: 0.85rem; line-height: 1.6; max-height: 250px; overflow-y: auto; white-space: pre-wrap; }
 
         /* ─── Terminal ─── */
-        .terminal {
-            background: #050510;
-            border: 1px solid rgba(0, 255, 136, 0.3);
-            border-radius: 8px;
-            font-family: 'Courier New', Courier, monospace;
-            padding: 1rem;
-            height: 300px;
-            overflow-y: auto;
-            color: #00ff88;
-            font-size: 0.85rem;
-            line-height: 1.6;
-            box-shadow: inset 0 0 15px rgba(0, 255, 136, 0.05);
-            direction: ltr;
-            text-align: left;
-        }
-        .terminal span.time { color: var(--text-muted); margin-right: 10px; }
-        .terminal span.warn { color: var(--warning); }
-        .terminal span.err { color: var(--danger); }
+        .terminal { background: #030308; border: 1px solid rgba(0, 255, 136, 0.2); border-radius: 6px; font-family: 'Courier New', monospace; padding: 1rem; height: 280px; overflow-y: auto; color: #00ff88; font-size: 0.85rem; line-height: 1.5; direction: ltr; text-align: left; }
 
-        /* ─── Small UI Items ─── */
+        /* ─── Details ─── */
         .certainty-bar { margin-top: 10px; }
         .bar-label { display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 3px; color: var(--text-muted); }
         .bar-track { height: 6px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; }
@@ -201,28 +123,16 @@
         .fill-certain { background: var(--success); }
         .fill-uncertain { background: var(--warning); }
         .fill-unknown { background: var(--danger); }
+        
+        .cycle-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; margin-right: 15px; }
 
-        .cycle-badge {
-            display: inline-flex; align-items: center; gap: 8px;
-            background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);
-            padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; margin-right: 20px;
-        }
+        /* ─── Breakthrough box ─── */
+        .breakthrough-box { background: linear-gradient(135deg, rgba(189, 0, 255, 0.1), rgba(0, 240, 255, 0.05)); border: 1px solid rgba(189, 0, 255, 0.2); border-radius: 8px; padding: 1rem; margin-top: 10px;}
+        .bt-question { font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: #fff; }
+        .bt-synthesis { font-size: 0.8rem; color: var(--text-muted); line-height: 1.6; white-space: pre-wrap; }
 
-        /* ─── Civilizational Breakthrough box ─── */
-        .breakthrough-box {
-            background: linear-gradient(135deg, rgba(189, 0, 255, 0.1), rgba(0, 240, 255, 0.05));
-            border: 1px solid rgba(189, 0, 255, 0.3); border-radius: 12px; padding: 1.2rem;
-        }
-        .bt-question { font-size: 0.95rem; font-weight: 700; margin-bottom: 10px; color: #fff; }
-        .bt-synthesis { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; white-space: pre-wrap; }
-
-        @media (max-width: 1200px) {
-            .actions-panel, .terminal-panel, .civilizational { grid-column: span 12; }
-            .epistemic, .predictions, .contradictions { grid-column: span 6; }
-        }
-        @media (max-width: 768px) {
-            .epistemic, .predictions, .contradictions { grid-column: span 12; }
-        }
+        /* Responsive */
+        @media (max-width: 1200px) { .actions-panel, .neural-panel, .terminal-panel { grid-column: span 12; } }
     </style>
 </head>
 <body>
@@ -230,75 +140,73 @@
     <header>
         <div class="logo-container">
             <div class="pulsing-dot"></div>
-            <div class="logo" style="cursor:pointer;" onclick="location.reload()">الـنـظـام الـمـتـفـرد (C2)</div>
-            <div class="cycle-badge">
-                <span id="cycle-num" style="color:#fff; font-weight:bold;">#1</span>
-            </div>
+            <div class="logo">Singular Neural Command (C2)</div>
+            <div class="cycle-badge"><span id="cycle-num" style="color:#fff; font-weight:bold;">#1</span></div>
             <div class="cycle-badge" id="conn-status" style="border-color: var(--warning); color: var(--warning)">جاري الاتصال..</div>
         </div>
         <div class="compound-score">
             <div id="compound-score" class="score-value">1.00x</div>
-            <div class="score-label">Compound Base</div>
+            <div class="score-label">Compound Vector</div>
         </div>
     </header>
 
     <main>
         <!-- ACTIONS PANEL -->
         <div class="panel actions-panel">
-            <div class="panel-header"><div class="panel-icon">🛠️</div><div class="panel-title">وحدة القيادة (Command & Control)</div></div>
+            <div class="panel-header"><div class="panel-icon">🛠️</div><div class="panel-title">وحدة التوجيه الاستراتيجي</div></div>
             <div class="control-group">
-                <label>توجيه المهمة (الوكيل)</label>
+                <label>توجيه المهمة (Node Targeting)</label>
                 <select id="agent-select" class="control-input">
-                    <option value="">التوجيه الذكي التلقائي للشبكة (Smart Router)</option>
-                    <option value="A81">A81 - الوكيل الأسمى (Singular Intellect)</option>
-                    <option value="A01">A01 - المفكر الاستراتيجي</option>
-                    <option value="A04">A04 - مهندس التقنيات الأساسية</option>
+                    <option value="">التوجيه الشبكي التلقائي (Swarm Matrix)</option>
+                    <option value="A81">A81 - النواة المتفردة (The Core)</option>
+                    <option value="A01">A01 - الاستراتيجي المتقدم</option>
+                    <option value="A04">A04 - مهندس التقنية الأساسية</option>
                     <option value="A31">A31 - المحلل الجيوسياسي</option>
                     <option value="A37">A37 - خبير الاقتصاد الرقمي</option>
                 </select>
             </div>
             <div class="control-group">
-                <label>المهمة / التشخيص / السؤال</label>
-                <textarea id="task-input" class="control-input" rows="5" placeholder="اطلب تحليلاً، اصدر أمراً، أو ادفع النظام للتطور..."></textarea>
+                <label>المعطيات / الأمر</label>
+                <textarea id="task-input" class="control-input" rows="4" placeholder="اكتب أمرك هنا ليتم ضخه في الشبكة العصبية للوكلاء..."></textarea>
             </div>
-            <button class="control-btn" id="send-btn" onclick="sendTask()">إصدار الأمر إلى الجيش (Deploy) ⚡</button>
+            <button class="control-btn" id="send-btn" onclick="sendTask()">تنفيذ (Execute) ⚡</button>
             
-            <div class="response-box" id="task-response">
-                <div style="color:var(--text-muted); text-align:center; margin-top:30px;">رد النظام سيظهر هنا...</div>
+            <div style="margin-top:15px; display:flex; gap:10px;">
+                <button class="control-btn alt" onclick="triggerAction('/training/trigger')">دورة تدريب 🧠</button>
+                <button class="control-btn alt" onclick="triggerSwarm()" style="color: var(--success); border-color: var(--success);">استنفار السرب 🚀</button>
             </div>
-            
-            <div style="margin-top:20px; display:flex; gap:10px;">
-                <button class="control-btn alt" onclick="triggerAction('/training/trigger')">إجبار دورة تدريب</button>
-                <button class="control-btn alt" onclick="triggerSwarm()" style="color: var(--success); border-color: var(--success);">تشغيل سرب (Swarm)</button>
+
+            <div class="response-box" id="task-response" style="margin-top:20px;">
+                <div style="color:var(--text-muted); text-align:center; padding-top:20px;">ردود الوكلاء والمحرك هنا..</div>
             </div>
+        </div>
+
+        <!-- NEURAL 3D PANEL -->
+        <div class="panel neural-panel">
+            <div class="neural-title-overlay">
+                <div class="panel-header" style="border:none; margin:0; padding:0;">
+                    <div class="panel-icon">🕸️</div>
+                    <div class="panel-title">النشاط العصبي الحقيقي للشبكة (81 Nodes)</div>
+                </div>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-top:5px;">العُقد تُضيء حياً عند رصد نشاط أي وكيل في الخلفية.</div>
+            </div>
+            <div id="neural-canvas"></div>
         </div>
 
         <!-- TERMINAL PANEL -->
         <div class="panel terminal-panel">
-            <div class="panel-header">
+            <div class="panel-header" style="margin-bottom:0.8rem;">
                 <div class="panel-icon">💻</div>
-                <div class="panel-title">العمليات المباشرة للأساس (Background Logs)</div>
-                <button style="margin-right:auto; padding:3px 10px; background:rgba(0,0,0,0.5); border:1px solid #333; color:#fff; border-radius:4px; cursor:pointer;" onclick="fetchLogs()">⟳</button>
+                <div class="panel-title">سجلات السيرفر المباشرة (Localhost:8181 System Logs)</div>
             </div>
             <div class="terminal" id="terminal-logs">
                 <div style="color:#666;">[System] جاري سحب السجلات الحية...</div>
             </div>
         </div>
 
-        <!-- CIVILIZATIONAL MEMORY -->
-        <div class="panel civilizational">
-            <div class="panel-header"><div class="panel-icon">🏛️</div><div class="panel-title">الذاكرة السببية (Civilizational)</div></div>
-            <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 10px;">
-                النظام الآن يقرأ التاريخ لربطه بالحدث الحالي.
-            </div>
-            <div class="breakthrough-box" id="contradictions-box">
-                <div class="bt-question">في انتظار توليفات وتناقضات الوكلاء...</div>
-            </div>
-        </div>
-
         <!-- EPISTEMIC -->
         <div class="panel epistemic">
-            <div class="panel-header"><div class="panel-icon">🧠</div><div class="panel-title">اليقين (A81 Epistemic)</div></div>
+            <div class="panel-header"><div class="panel-icon">🧠</div><div class="panel-title">خريطة الإدراك (A81 Epistemic)</div></div>
             <div class="certainty-bar">
                 <div class="bar-label"><span>يقين (Certain)</span> <span id="c-count">0</span></div>
                 <div class="bar-track"><div id="c-fill" class="bar-fill fill-certain" style="width: 0%;"></div></div>
@@ -308,32 +216,162 @@
                 <div class="bar-track"><div id="u-fill" class="bar-fill fill-uncertain" style="width: 0%;"></div></div>
             </div>
             <div class="certainty-bar">
-                <div class="bar-label"><span>جهل (Unknown)</span> <span id="un-count">0</span></div>
+                <div class="bar-label"><span>ثغرات (Unknown)</span> <span id="un-count">0</span></div>
                 <div class="bar-track"><div id="un-fill" class="bar-fill fill-unknown" style="width: 0%;"></div></div>
             </div>
         </div>
 
-        <!-- PREDICTIONS -->
+        <!-- PREDICTIONS & CONTRADICTIONS -->
         <div class="panel predictions">
-            <div class="panel-header"><div class="panel-icon">🎯</div><div class="panel-title">آخر التنبؤات الاستراتيجية</div></div>
-            <div id="predictions-list" style="font-size: 0.85rem; color: var(--text-muted);">
-                في انتظار التنبؤات...
+            <div class="panel-header"><div class="panel-icon">⚡</div><div class="panel-title">رؤى وتناقضات وتنبؤات حديثة</div></div>
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div id="predictions-list" style="font-size: 0.8rem; color: var(--text-muted); padding-left:15px; border-left:1px solid rgba(255,255,255,0.05);">
+                    في انتظار التنبؤات الاستراتيجية...
+                </div>
+                <div class="breakthrough-box" id="contradictions-box" style="margin-top:0;">
+                    <div class="bt-question">في انتظار توليفات وتناقضات الوكلاء...</div>
+                </div>
             </div>
         </div>
 
     </main>
 
     <script>
+        // ─────────────────────────────────────────────────────────
+        // 1. NEURAL 3D SWARM ENGINE (THREE.JS)
+        // ─────────────────────────────────────────────────────────
+        const canvasContainer = document.getElementById('neural-canvas');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(50, canvasContainer.clientWidth / canvasContainer.clientHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+        renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        canvasContainer.appendChild(renderer.domElement);
+
+        const group = new THREE.Group();
+        scene.add(group);
+
+        const agents3D = {};
+        const numAgents = 81;
+        const radius = 18;
+
+        const sphereGeo = new THREE.SphereGeometry(0.3, 16, 16);
+        const baseColor = 0x8ab2d9;
+        
+        for(let i=1; i<=numAgents; i++) {
+            const id = "A" + i.toString().padStart(2, '0');
+            const phi = Math.acos(-1 + (2 * i) / numAgents);
+            const theta = Math.sqrt(numAgents * Math.PI) * phi;
+            
+            const x = radius * Math.cos(theta) * Math.sin(phi);
+            const y = radius * Math.sin(theta) * Math.sin(phi);
+            const z = radius * Math.cos(phi);
+            
+            const mat = new THREE.MeshBasicMaterial({ color: baseColor, transparent: true, opacity: 0.4 });
+            const mesh = new THREE.Mesh(sphereGeo, mat);
+            mesh.position.set(x, y, z);
+            
+            agents3D[id] = { mesh: mesh, targetScale: 1, activeFade: 0 };
+            group.add(mesh);
+        }
+
+        // The Core A81 or Central Logic
+        const coreGeo = new THREE.SphereGeometry(2, 32, 32);
+        const coreMat = new THREE.MeshBasicMaterial({ color: 0xbd00ff, wireframe: true, transparent: true, opacity: 0.8 });
+        const coreMesh = new THREE.Mesh(coreGeo, coreMat);
+        group.add(coreMesh);
+
+        // Subtly connect random nodes to form a web
+        const lineGeo = new THREE.BufferGeometry();
+        const pts = [];
+        const agentArr = Object.values(agents3D);
+        for(let a=0; a<agentArr.length; a++){
+            for(let b=a+1; b<agentArr.length; b++){
+                if(Math.random() < 0.04) {
+                    pts.push(agentArr[a].mesh.position.x, agentArr[a].mesh.position.y, agentArr[a].mesh.position.z);
+                    pts.push(agentArr[b].mesh.position.x, agentArr[b].mesh.position.y, agentArr[b].mesh.position.z);
+                }
+            }
+        }
+        lineGeo.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
+        const networkLines = new THREE.LineSegments(lineGeo, new THREE.LineBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.03 }));
+        group.add(networkLines);
+
+        // Layer for dynamic laser fires
+        const activeLasers = new THREE.Group();
+        group.add(activeLasers);
+
+        camera.position.z = 35;
+
+        function animate3D() {
+            requestAnimationFrame(animate3D);
+            group.rotation.y += 0.001;
+            group.rotation.x += 0.0005;
+            coreMesh.rotation.y -= 0.005;
+            coreMesh.rotation.x -= 0.005;
+            
+            // Lerp scales and fade lasers
+            Object.values(agents3D).forEach(a => {
+                a.mesh.scale.lerp(new THREE.Vector3(a.targetScale, a.targetScale, a.targetScale), 0.1);
+                if(a.targetScale > 1) a.targetScale -= 0.05;
+                if(a.targetScale < 1) a.targetScale = 1;
+
+                if (a.targetScale <= 1.05) {
+                    a.mesh.material.color.setHex(baseColor);
+                    a.mesh.material.opacity = 0.4;
+                }
+            });
+
+            activeLasers.children.forEach(line => {
+                line.material.opacity -= 0.02;
+                if(line.material.opacity <= 0) activeLasers.remove(line);
+            });
+            
+            renderer.render(scene, camera);
+        }
+        animate3D();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = canvasContainer.clientWidth / canvasContainer.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+        });
+
+        function triggerAgent3D(id) {
+            if(agents3D[id]) {
+                const ag = agents3D[id];
+                ag.targetScale = 4.5;
+                ag.mesh.material.color.setHex(0x00ff88); // Cyan/Green Glow
+                ag.mesh.material.opacity = 1;
+
+                // Fire laser from core to agent
+                const tGeo = new THREE.BufferGeometry().setFromPoints([ new THREE.Vector3(0,0,0), ag.mesh.position ]);
+                const tMat = new THREE.LineBasicMaterial({ color: 0x00ff88, transparent: true, opacity: 1, linewidth: 2 });
+                activeLasers.add(new THREE.Line(tGeo, tMat));
+            }
+        }
+        function triggerCore3D() {
+            coreMesh.scale.set(1.4, 1.4, 1.4);
+            coreMesh.material.color.setHex(0x00f0ff);
+            setTimeout(() => { 
+                coreMesh.scale.set(1, 1, 1); 
+                coreMesh.material.color.setHex(0xbd00ff);
+            }, 400);
+        }
+
+
+        // ─────────────────────────────────────────────────────────
+        // 2. LIVE FETCH & SYNC LOGIC
+        // ─────────────────────────────────────────────────────────
         const API_BASE = 'http://localhost:8181';
 
-        // ── LIVE FETCH LOGIC (STATUS) ──
         async function fetchSingularData() {
             try {
                 const res = await fetch(`${API_BASE}/singular/status`);
-                if(!res.ok) throw new Error("HTTP error " + res.status);
+                if(!res.ok) throw new Error("error " + res.status);
                 const data = await res.json();
                 
-                document.getElementById('conn-status').innerText = "متصل بالقاعدة";
+                document.getElementById('conn-status').innerText = "متصل";
                 document.getElementById('conn-status').style.borderColor = "var(--success)";
                 document.getElementById('conn-status').style.color = "var(--success)";
 
@@ -349,8 +387,8 @@
                         html += `
                         <div style="background:rgba(0,0,0,0.3); padding:8px; border-radius:6px; margin-bottom:8px; border-right:2px solid var(--primary);">
                             <div style="display:flex; justify-content:space-between; color:var(--text-muted); font-size:0.7rem;">
-                                <span>الوكيل ${p.agent}</span> 
-                                <span style="background:rgba(0,255,136,0.1); color:var(--success); padding:2px 6px; border-radius:8px;">${p.outcome ? String(p.outcome).substring(0,15) : 'قيد الانتظار'}</span>
+                                <span style="color:#fff;">الوكيل ${p.agent}</span> 
+                                <span style="background:rgba(0,255,136,0.1); color:var(--success); padding:2px 6px; border-radius:8px;">${p.outcome ? String(p.outcome).substring(0,18) : 'قيد الانتظار'}</span>
                             </div>
                             <div style="margin-top:4px;">${p.prediction}</div>
                         </div>`;
@@ -363,7 +401,7 @@
                     document.getElementById("contradictions-box").innerHTML = `
                         <div class="bt-question">${bt.question || 'قضية تطورية'}</div>
                         <div class="bt-synthesis">
-                            <span style="color:var(--primary)">التوليف (Synthesis):</span><br>
+                            <span style="color:var(--primary)">التوليف الحديث (Synthesis):</span><br>
                             ${bt.synthesis || 'لا يوجد توليف متاح.'}
                         </div>
                     `;
@@ -382,15 +420,11 @@
                     document.getElementById("u-count").innerText = u;
                     document.getElementById("un-count").innerText = un;
                 }
-                
-            } catch (err) {
-                document.getElementById('conn-status').innerText = "غير متصل بالخادم";
-                document.getElementById('conn-status').style.borderColor = "var(--danger)";
-                document.getElementById('conn-status').style.color = "var(--danger)";
-            }
+            } catch (err) {}
         }
 
-        // ── FETCH LIVE LOGS (TERMINAL) ──
+        let lastLineProcessed = "";
+
         async function fetchLogs() {
             try {
                 const res = await fetch(`${API_BASE}/singular/logs`);
@@ -399,23 +433,38 @@
                 if (data.logs && data.logs.length > 0) {
                     const term = document.getElementById("terminal-logs");
                     const isScrolledToBottom = term.scrollHeight - term.clientHeight <= term.scrollTop + 1;
+                    
                     let html = "";
                     data.logs.forEach(line => {
-                        // Highlight errors or success optionally
                         let color = "inherit";
                         if (line.includes("❌") || line.toLowerCase().includes("error")) color = "var(--danger)";
                         if (line.includes("✅")) color = "var(--success)";
                         html += `<div style="color:${color}">${line.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</div>`;
                     });
                     term.innerHTML = html;
-                    if (isScrolledToBottom) {
-                        term.scrollTop = term.scrollHeight;
+
+                    // Sync 3D Network Highlights
+                    let newIndex = data.logs.indexOf(lastLineProcessed);
+                    let startIndex = newIndex === -1 ? Math.max(0, data.logs.length - 5) : newIndex + 1;
+                    
+                    let agentTriggered = false;
+                    for(let i = startIndex; i < data.logs.length; i++) {
+                        const line = data.logs[i];
+                        const match = line.match(/A[0-8][0-9]/);
+                        if(match) {
+                            triggerAgent3D(match[0]);
+                            agentTriggered = true;
+                        }
                     }
+                    if(agentTriggered) triggerCore3D();
+
+                    lastLineProcessed = data.logs[data.logs.length - 1];
+
+                    if (isScrolledToBottom) term.scrollTop = term.scrollHeight;
                 }
             } catch(e) {}
         }
         
-        // ── ACTION COMMANDS (C2) ──
         async function sendTask() {
             const task = document.getElementById("task-input").value;
             const agent = document.getElementById("agent-select").value;
@@ -423,13 +472,25 @@
             const resBox = document.getElementById("task-response");
 
             if (!task.trim()) {
-                resBox.innerHTML = "<span style='color:var(--warning)'>يرجى كتابة المهمة أو السؤال أولاً.</span>";
+                resBox.innerHTML = "<span style='color:var(--warning)'>يرجى كتابة أوامرك أولاً.</span>";
                 return;
             }
 
             btn.disabled = true;
-            btn.innerText = "جاري التحليل... ⏳";
-            resBox.innerHTML = "<div style='text-align:center;'><br>الوكلاء يبحثون في الخرائط السببية والتاريخية للإجابة...<br><br></div>";
+            btn.innerText = "جاري الحوسبة الشبكية... ⏳";
+            resBox.innerHTML = "<div style='text-align:center;'><br>السرب يعالج المعطيات...<br><br></div>";
+
+            triggerCore3D();
+            if(agent) triggerAgent3D(agent);
+            else {
+                // If no specific agent, fire randomly to simulate swarm
+                for(let i=0; i<5; i++){
+                    setTimeout(()=>{
+                        const rand = "A" + Math.floor(Math.random()*81 + 1).toString().padStart(2, '0');
+                        triggerAgent3D(rand);
+                    }, i * 300);
+                }
+            }
 
             try {
                 const response = await fetch(`${API_BASE}/task`, {
@@ -440,48 +501,45 @@
 
                 const json = await response.json();
                 const output = json.result || json.response || JSON.stringify(json);
-                const executedAgent = json.agent_id || agent || 'التوجيه الذكي';
-                const model = json.model_used || 'gemini / local';
+                const executedAgent = json.agent_id || agent || 'التوجيه الذكي (Swarm)';
                 
                 resBox.innerHTML = `
-                    <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:10px;">انتهى التنفيذ عبر: <span style="color:var(--primary)">${executedAgent}</span> | نموذج: ${model}</div>
+                    <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">تم التنفيذ: <span style="color:var(--primary)">${executedAgent}</span></div>
                     <div style="white-space:pre-wrap;">${output}</div>
                 `;
+                triggerCore3D();
+                triggerAgent3D(executedAgent);
             } catch (err) {
-                resBox.innerHTML = `<span style='color:var(--danger)'>خطأ في الاتصال بالقيادة المركزية: ${err.message}</span>`;
+                resBox.innerHTML = `<span style='color:var(--danger)'>خطأ اتصال: ${err.message}</span>`;
             }
 
             btn.disabled = false;
-            btn.innerText = "إصدار الأمر إلى الجيش (Deploy) ⚡";
+            btn.innerText = "تنفيذ (Execute) ⚡";
         }
 
         async function triggerAction(endpoint) {
-            try {
-                await fetch(`${API_BASE}${endpoint}`, { method: 'POST' });
-                alert("تم الإرسال بنجاح إلى " + endpoint);
-            } catch (e) {
-                alert("فشل الإرسال.");
-            }
+            try { await fetch(`${API_BASE}${endpoint}`, { method: 'POST' }); triggerCore3D(); } catch (e) {}
         }
 
         async function triggerSwarm() {
+            triggerCore3D();
+            // Simulate massive swarm fireworks
+            Object.keys(agents3D).forEach((id, i) => {
+                setTimeout(() => { if(Math.random() > 0.5) triggerAgent3D(id); }, Math.random() * 2000);
+            });
             try {
                 await fetch(`${API_BASE}/swarm/start`, { 
                     method: 'POST', 
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ duration_minutes: 5, topic: "مناقشة عامة لتحديث الخرائط المعرفية" })
+                    body: JSON.stringify({ duration_minutes: 5, topic: "استنفار عالي للشبكة والمراجعة" })
                 });
-                alert("تم تفعيل السرب بنجاح! راقب الـ Logs في الخلفية.");
-            } catch (e) {
-                alert("فشل إطلاق السرب.");
-            }
+            } catch (e) {}
         }
 
-        // INIT
         fetchSingularData();
         fetchLogs();
         setInterval(fetchSingularData, 5000);
-        setInterval(fetchLogs, 2500); // تحديث الـ terminal بشكل أسرع
+        setInterval(fetchLogs, 1500);
 
     </script>
 </body>

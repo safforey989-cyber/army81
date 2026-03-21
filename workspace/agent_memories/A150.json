@@ -6,7 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "Medplum",
     "OpenMRS",
     "OpenEMR",
     "Horos",
@@ -55,7 +54,8 @@
     "research_c24_e634931f",
     "research_c24_f7d7878b",
     "research_c24_46f0b556",
-    "research_c24_343a6498"
+    "research_c24_343a6498",
+    "skill_A80_1247"
   ],
   "knowledge_topics": [],
   "performance": {

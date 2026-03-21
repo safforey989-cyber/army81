@@ -1,0 +1,5 @@
+Title: Matryoshka Gaussian Splatting
+Source: arXiv
+Date: 2026-03-21T00:37:53.934976
+
+The ability to render scenes at adjustable fidelity from a single model, known as level of detail (LoD), is crucial for practical deployment of 3D Gaussian Splatting (3DGS). Existing discrete LoD methods expose only a limited set of operating points, while concurrent continuous LoD approaches enable smoother scaling but often suffer noticeable quality degradation at full capacity, making LoD a costly design decision. We introduce Matryoshka Gaussian Splatting (MGS), a training framework that ena

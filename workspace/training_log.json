@@ -1,0 +1,164 @@
+[
+  {
+    "timestamp": "2026-03-21T00:42:06.963560",
+    "trained": 10,
+    "passed": 0,
+    "failed": 10,
+    "leveled_up": 0,
+    "intensive_triggered": 0,
+    "agents": [
+      {
+        "id": "A102",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A103",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A104",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A105",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A106",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A107",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A108",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A109",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A110",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A111",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      }
+    ],
+    "elapsed_seconds": 0.0
+  },
+  {
+    "timestamp": "2026-03-21T00:42:25.876175",
+    "trained": 10,
+    "passed": 0,
+    "failed": 10,
+    "leveled_up": 0,
+    "intensive_triggered": 0,
+    "agents": [
+      {
+        "id": "A102",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A103",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A104",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A105",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A106",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A107",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A108",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A109",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A110",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      },
+      {
+        "id": "A111",
+        "score": 0,
+        "grade": "F",
+        "level": 3,
+        "passed": false
+      }
+    ],
+    "elapsed_seconds": 0.0
+  }
+]

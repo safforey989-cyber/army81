@@ -63,3 +63,17 @@
 2026-03-21 00:36:37,080 Task failed: HTTPConnectionPool(host='gateway', port=8181): Read timed out. (read timeout=60)
 2026-03-21 00:36:37,080     ❌ فشلت
 2026-03-21 00:36:40,081   [cat5_behavior] حلل نمط التفاعلات الأخيرة للنظام وما تكشفه نفسياً...
+2026-03-21 00:36:54,006 Task failed: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-03-21 00:36:54,008     ❌ فشلت
+2026-03-21 00:36:57,009   [cat6_leadership] ما القرار الاستراتيجي الأهم الذي يجب أن يتخذه النظ...
+2026-03-21 00:38:03,694 Task failed: HTTPConnectionPool(host='gateway', port=8181): Read timed out. (read timeout=60)
+2026-03-21 00:38:03,694     ❌ فشلت
+2026-03-21 00:38:06,695   [cat7_new] كيف يمكن تحسين آلية التطور الذاتي في النظام؟...
+2026-03-21 00:39:13,387 Task failed: HTTPConnectionPool(host='gateway', port=8181): Read timed out. (read timeout=60)
+2026-03-21 00:39:13,387     ❌ فشلت
+2026-03-21 00:39:16,403 
+  ✅ دورة #3 اكتملت
+2026-03-21 00:39:16,404   compound_score: 0.87x
+2026-03-21 00:39:16,404   الدروس المضافة: 0
+2026-03-21 00:39:16,404   إجمالي الدروس: 1
+2026-03-21 00:39:16,405   ⏳ الانتظار 120 دقيقة قبل الدورة القادمة...

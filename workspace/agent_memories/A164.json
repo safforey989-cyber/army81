@@ -6,8 +6,6 @@
   "known_agents": {},
   "interactions": [],
   "skills_learned": [
-    "CS11-711 Advanced Natural Language Processing - Carnegie Mellon University",
-    "Reinforcement Learning Lecture Series 2021 - DeepMind x University College London",
     "CSCI-GA.3033-102 Special Topic - Learning with Large Language and Vision Models",
     "Speech and Language Processing - Dan Jurafsky and James H. Martin",
     "skill_A130_679",
@@ -56,7 +54,8 @@
     "LangChain: Chat with Your Data - DeepLearning.AI",
     "CS324 - Advances in Foundation Models - Stanford University",
     "learning_path",
-    "CS25: Transformers United V3 - Stanford University"
+    "CS25: Transformers United V3 - Stanford University",
+    "skill_A104_1412"
   ],
   "knowledge_topics": [],
   "performance": {
