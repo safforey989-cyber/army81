@@ -2,9 +2,9 @@
   "A04_retrieve": {
     "agent_id": "A04",
     "type": "retrieve",
-    "usage_count": 149,
-    "total_reward": 74.8,
-    "avg_reward": 0.5020134228187919,
+    "usage_count": 150,
+    "total_reward": 75.3,
+    "avg_reward": 0.502,
     "recent_rewards": [
       0.5,
       0.5,
@@ -27,7 +27,7 @@
       0.5,
       0.5
     ],
-    "last_used": "2026-03-21T00:57:53.166847"
+    "last_used": "2026-03-21T01:01:44.756407"
   },
   "A04_insert": {
     "agent_id": "A04",
@@ -2173,8 +2173,8 @@
   "A70_retrieve": {
     "agent_id": "A70",
     "type": "retrieve",
-    "usage_count": 42,
-    "total_reward": 21.0,
+    "usage_count": 44,
+    "total_reward": 22.0,
     "avg_reward": 0.5,
     "recent_rewards": [
       0.5,
@@ -2198,7 +2198,7 @@
       0.5,
       0.5
     ],
-    "last_used": "2026-03-20T16:26:38.287408"
+    "last_used": "2026-03-21T01:01:45.240349"
   },
   "A70_insert": {
     "agent_id": "A70",

@@ -14,6 +14,7 @@ from core.contradiction_engine import ContradictionEngine
 from core.epistemic_map import EpistemicMap
 from core.prediction_tracker import PredictionTracker
 from core.identity_evolution import AgentIdentityEvolution
+from core.self_modifying_genome import SelfModifyingGenome
 from scripts.compound_evolution import CompoundEvolution
 
 class SingularSystem:
@@ -23,6 +24,7 @@ class SingularSystem:
         self.epistemic = {}  # خريطة لكل وكيل
         self.predictions = PredictionTracker()
         self.identity = AgentIdentityEvolution()
+        self.genome = SelfModifyingGenome()
         self.compound = CompoundEvolution()
         self.breakthroughs = []
     
@@ -103,6 +105,16 @@ class SingularSystem:
             print("  🔸 تحديث وتطور هويات الوكلاء...")
             for agent_id in ["A01","A07","A31","A81"]:
                 self.identity.evolve_identity(agent_id, recent_tasks=[])
+                
+        # 4.5. تعديل الكود ذاتياً (Self-Programming Code Evolution)
+        if self.compound.state["cycle"] % 5 == 0:
+            print("  🔸 النواة تعيد برمجة نفسها (Code Evolution Mode)...")
+            genome_insight = self.genome.contemplate_and_evolve_codebase()
+            self.save_breakthrough({
+                "question": "الاحتياج التشغيلي البرمجي",
+                "synthesis": genome_insight,
+                "insight_level": "SYSTEM_CODE"
+            })
         
         # 5. احسب المضاعف الحقيقي المركب
         true_multiplier = self.calculate_true_compound(cycle_result)

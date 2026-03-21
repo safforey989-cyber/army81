@@ -131,6 +131,18 @@
       "falsification": "",
       "outcome": null,
       "accuracy": null
+    },
+    {
+      "id": "f12c469d-6d76-4de6-a249-e32cc814415c",
+      "agent": "A81",
+      "topic": "تأثير الذكاء الاصطناعي على الوظائف المعرفية في 2026",
+      "made_at": "2026-03-21T01:00:26.447285",
+      "due_at": "2026-03-28T01:00:26.447291",
+      "prediction": "",
+      "confidence": 50,
+      "falsification": "",
+      "outcome": null,
+      "accuracy": null
     }
   ],
   "lessons": []

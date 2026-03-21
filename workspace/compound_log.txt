@@ -88,3 +88,9 @@
 2026-03-21 00:59:09,810 Task failed: HTTPConnectionPool(host='gateway', port=8181): Read timed out. (read timeout=60)
 2026-03-21 00:59:09,822     ❌ فشلت
 2026-03-21 00:59:12,830   [cat2_society] ما المؤشرات الاقتصادية الأهم الآن وكيف تؤثر على ال...
+2026-03-21 01:00:19,546 Task failed: HTTPConnectionPool(host='gateway', port=8181): Read timed out. (read timeout=60)
+2026-03-21 01:00:19,546     ❌ فشلت
+2026-03-21 01:00:22,547   [cat3_tools] ما أهم أخبار التقنية اليوم؟...
+2026-03-21 01:01:29,221 Task failed: HTTPConnectionPool(host='gateway', port=8181): Read timed out. (read timeout=60)
+2026-03-21 01:01:29,227     ❌ فشلت
+2026-03-21 01:01:32,230   [cat4_management] ما الأولويات الإدارية للنظام الأسبوع القادم؟...

@@ -70,6 +70,17 @@
       "result": "خطأ: table episodes has no column named task_type",
       "success": true,
       "timestamp": "2026-03-20T16:28:07.043378"
+    },
+    {
+      "partners": [
+        "A48",
+        "A110",
+        "A39"
+      ],
+      "task": "صمم آلية لمشاركة المعرفة تلقائياً بين الوكلاء",
+      "result": "خطأ: table episodes has no column named task_type",
+      "success": true,
+      "timestamp": "2026-03-21T01:01:37.501829"
     }
   ],
   "decisions": [],

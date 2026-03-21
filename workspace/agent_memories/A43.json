@@ -92,6 +92,19 @@
       ],
       "trust_score": 0.5,
       "collaboration_count": 1
+    },
+    "A136": {
+      "name": "وكيل تتبع الأصول",
+      "specialty": "يتتبع الأصول المالية والرقمية ويكشف حركتها عبر الأنظمة والمنصات المختلفة.",
+      "first_met": "2026-03-21T01:01:08.339385",
+      "interactions": [
+        {
+          "summary": "مناقشة حول تكامل التخصصات",
+          "timestamp": "2026-03-21T01:01:08.339396"
+        }
+      ],
+      "trust_score": 0.5,
+      "collaboration_count": 1
     }
   },
   "skills_learned": [
@@ -103,11 +116,6 @@
   "collaborations": [],
   "decisions": [],
   "insights": [
-    {
-      "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
-      "topic": "general",
-      "timestamp": "2026-03-19T07:14:43.412316"
-    },
     {
       "insight": "أنا A43، وكيل تحليل التاريخ.\n\nهذه المهمة تقع خارج نطاق تخصصي الأساسي.\n\nأقترح تحويل هذه المهمة إلى **A05 (وكيل البرمجة)** لأنه أقدر مني على تقديم تعريف تقني دقيق وموجز.\n\nيمكنك أيضاً سؤال **A02 (وكيل البحث العلمي)** عن الأسس النظرية للمفهوم وتطوره العلمي.",
       "topic": "general",
@@ -252,12 +260,17 @@
       "insight": "ERROR: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/chat (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=11434): Failed to establish a new connection: [Errno 111] Connection refused\"))",
       "topic": "general",
       "timestamp": "2026-03-19T11:33:51.343547"
+    },
+    {
+      "insight": "خطأ: table episodes has no column named task_type",
+      "topic": "collaboration",
+      "timestamp": "2026-03-21T01:01:08.325828"
     }
   ],
   "strengths": [],
   "weaknesses": [],
-  "interaction_count": 7,
-  "last_active": "2026-03-18T22:03:31.340542",
+  "interaction_count": 8,
+  "last_active": "2026-03-21T01:01:08.339399",
   "skills_count": 0,
   "skills_updated": "2026-03-19T14:56:27.959394"
 }
